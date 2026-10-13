@@ -5,6 +5,7 @@ from fastapi.testclient import TestClient
 from sqlalchemy import delete, select
 
 from app.database.models import Assessment, HSKLevel, Lesson
+from app.database.seeds.required import seed_required_data
 from app.database.session import SessionFactory
 from app.main import app
 
@@ -13,6 +14,7 @@ def test_admin_lesson_and_assessment_detail_reads(persisted_admin_override):
     lesson_id, assessment_id = uuid4(), uuid4()
 
     async def seed():
+        await seed_required_data()
         async with SessionFactory.begin() as session:
             hsk = (await session.execute(select(HSKLevel).where(HSKLevel.level_number == 1))).scalar_one()
             lesson = Lesson(

@@ -10,6 +10,7 @@ from app.database.models import (Assessment, AssessmentAttempt, AttemptAnswer, C
     Lesson, LessonGrammar, LessonVocabulary, PronunciationProgress, PronunciationSection, Question,
     QuestionOption, User, Vocabulary)
 from app.database.session import SessionFactory
+from app.database.seeds.required import seed_required_data
 from app.exercise.grading import GradeResult, get_ai_grader
 from app.exercise import service as exercise_service
 from app.main import app
@@ -19,6 +20,7 @@ def test_postgres_learner_lesson_and_attempt_flow(monkeypatch):
     user_id, outsider_id, lesson_id, next_lesson_id, archived_lesson_id, curriculum_candidate_id, assessment_id, unavailable_assessment_id, uncertain_assessment_id = uuid4(), uuid4(), uuid4(), uuid4(), uuid4(), uuid4(), uuid4(), uuid4(), uuid4()
     vocab_link_id, grammar_link_id = uuid4(), uuid4()
     async def seed():
+        await seed_required_data()
         async with SessionFactory.begin() as session:
             hsk = (await session.execute(select(HSKLevel).where(HSKLevel.level_number == 1))).scalar_one()
             index = (await session.execute(select(func.max(CurriculumUnit.order_index)).where(CurriculumUnit.hsk_level_id == hsk.id))).scalar_one() or 0

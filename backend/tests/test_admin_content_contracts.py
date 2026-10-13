@@ -6,6 +6,7 @@ from sqlalchemy import delete, select
 
 from app.database.models import (Chunk, Grammar, HSKLevel, KnowledgeSource, KnowledgeVersion,
                                  Lesson, LessonGrammar, LessonVocabulary, Vocabulary)
+from app.database.seeds.required import seed_required_data
 from app.database.session import SessionFactory
 from app.main import app
 
@@ -14,6 +15,7 @@ def test_admin_vocabulary_and_grammar_attach_contracts(persisted_admin_override)
     lesson_id, vocabulary_id, grammar_id = uuid4(), uuid4(), uuid4()
 
     async def seed():
+        await seed_required_data()
         async with SessionFactory.begin() as session:
             hsk = (await session.execute(select(HSKLevel).where(HSKLevel.level_number == 1))).scalar_one()
             lesson = Lesson(id=lesson_id, hsk_level_id=hsk.id, lesson_number=950000 + lesson_id.int % 50000,

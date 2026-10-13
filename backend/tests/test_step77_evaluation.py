@@ -1511,15 +1511,17 @@ def test_step77_all_cli_track_writes_one_shared_run_identity(request, monkeypatc
                 assert json.loads(content)["run_id"]==run_id
 
 
-def test_offline_runner_manifest_contains_reproducibility_identities(request):
-    from app.evaluation.step77.runner import run_grading_offline
+def test_offline_runner_manifest_contains_reproducibility_identities(request, monkeypatch):
+    from app.evaluation.step77 import runner
 
+    fake_commit = "a" * 40
+    monkeypatch.setattr(runner, "_code_commit", lambda: fake_commit)
     output_root = _workspace_temp_path(request, directory=True)
-    result=asyncio.run(run_grading_offline(_offline_settings(),run_id="step77-manifest-test",output_root=output_root))
+    result=asyncio.run(runner.run_grading_offline(_offline_settings(),run_id="step77-manifest-test",output_root=output_root))
     manifest=json.loads((Path(result["directory"])/"manifest.json").read_text(encoding="utf-8"))
     assert manifest["run_id"]=="step77-manifest-test" and manifest["track"]=="grading"
     assert manifest["dataset_case_count"]==60 and manifest["development_case_count"]==45 and manifest["holdout_case_count"]==15
-    assert manifest["code_commit"] is None
+    assert manifest["code_commit"] == fake_commit
     assert manifest["dataset_sha256"] and manifest["prompt_sha256"] and manifest["structured_schema_identity"]
     assert manifest["agreement_policy_identity"]=={"primary_unit":"D-106/v1","denominator":"D-107/v1"}
     assert manifest["runtime_api_calls"]==0 and manifest["official_eligible"] is False
@@ -1542,6 +1544,8 @@ def test_generation_runner_manifest_contains_frozen_reproducibility_identities(r
             "generation_questions":[],"generated_questions":[],"human_annotation_status":"DRAFT",
             "human_annotation_statuses":["DRAFT"]*3,"human_review_complete":False,
             "generation_case_status":"DEFERRED_HUMAN_REVIEW","generation_case_pass":None}
+    fake_commit = "a" * 40
+    monkeypatch.setattr(runner, "_code_commit", lambda: fake_commit)
     monkeypatch.setattr(runner,"seed_curriculum_fixture",no_op)
     monkeypatch.setattr(runner,"cleanup_generation_assessments",no_op)
     monkeypatch.setattr(runner,"cleanup_curriculum_fixture",no_op)
@@ -1557,4 +1561,4 @@ def test_generation_runner_manifest_contains_frozen_reproducibility_identities(r
     assert manifest["materialized_scope_fixture_id"]=="step77-curriculum-fixture/v0.1.0"
     assert manifest["materialized_scope_fixture_sha256"] and manifest["scope_domain_validator_identity"]
     assert manifest["dataset_sha256"] and manifest["prompt_sha256"] and manifest["structured_schema_identity"]
-    assert manifest["code_commit"] is None and manifest["runtime_api_calls"]==0
+    assert manifest["code_commit"] == fake_commit and manifest["runtime_api_calls"]==0

@@ -5,6 +5,7 @@ from fastapi.testclient import TestClient
 from sqlalchemy import delete, select
 
 from app.database.models import Assessment, HSKLevel, Lesson
+from app.database.seeds.required import seed_required_data
 from app.database.session import SessionFactory
 from app.main import app
 
@@ -13,6 +14,7 @@ def test_admin_lesson_and_assessment_pages_are_bounded_and_stable(persisted_admi
     lesson_ids=[uuid4(),uuid4()]
     assessment_ids=[uuid4(),uuid4()]
     async def seed():
+        await seed_required_data()
         async with SessionFactory.begin() as session:
             hsk=(await session.execute(select(HSKLevel).where(HSKLevel.level_number==3))).scalar_one()
             for index,ident in enumerate(lesson_ids):
