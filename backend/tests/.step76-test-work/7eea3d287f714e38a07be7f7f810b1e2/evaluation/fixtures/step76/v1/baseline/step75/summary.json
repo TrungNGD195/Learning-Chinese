@@ -1,0 +1,25 @@
+{
+  "e2e_case_pass_rate": 1.0,
+  "holdout_repeat_stability_test_only": {
+    "fixture-holdout-01": {
+      "execution_count": 3,
+      "pass_count": 3
+    }
+  },
+  "operational_latency_test_only": {
+    "total_latency_ms": {
+      "count": 4,
+      "mean": 1100,
+      "p50": 1100,
+      "p95": 1100
+    }
+  },
+  "overall_e2e_hard_validity_pass_rate": 1.0,
+  "quality_rates_by_bucket": {
+    "CURRENT_LESSON_ANSWERABLE": {
+      "e2e_case_pass_rate": 1.0
+    }
+  },
+  "run_id": "step76-fixture-baseline-step75-v1",
+  "technical_failure_rate": 0.0
+}

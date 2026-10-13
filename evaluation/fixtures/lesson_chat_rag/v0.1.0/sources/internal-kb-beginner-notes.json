@@ -1,0 +1,125 @@
+{
+  "source_id": "fixture.internal-kb.hsk1.beginner-notes",
+  "source_kind": "INTERNAL_KB",
+  "source_locator": "fixture:internal-kb:hsk1:beginner-notes",
+  "title": "Beginner notes: common distinctions and particles (synthetic fixture)",
+  "hsk_identity_note": "Synthetic project fixture identity; NOT official HSK syllabus certification.",
+  "status": "ACCEPTED_FOR_EVALUATION_FIXTURE",
+  "blocks": [
+    {
+      "source_id": "fixture.internal-kb.hsk1.beginner-notes",
+      "block_id": "beginner-notes.pronouns.ni-vs-nin",
+      "stable_locator": "fixture:internal-kb:hsk1:beginner-notes:pronouns:ni-vs-nin",
+      "source_locator": "fixture:internal-kb:hsk1:beginner-notes#pronouns/ni-vs-nin",
+      "content_type": "DOCUMENT_TEXT",
+      "content": {
+        "forms": [
+          {
+            "chinese": "你",
+            "pinyin": "nǐ",
+            "vietnamese": "bạn; cách xưng hô thông thường"
+          },
+          {
+            "chinese": "您",
+            "pinyin": "nín",
+            "vietnamese": "ngài; cách xưng hô lịch sự, kính trọng"
+          }
+        ],
+        "vietnamese_explanation": "您 thể hiện sự kính trọng hoặc trang trọng hơn 你. Chọn cách xưng hô theo quan hệ và tình huống; không phải lúc nào cũng cần dùng 您.",
+        "examples": [
+          {
+            "chinese": "你好！",
+            "pinyin": "Nǐ hǎo!",
+            "vietnamese": "Xin chào!"
+          },
+          {
+            "chinese": "您好！",
+            "pinyin": "Nín hǎo!",
+            "vietnamese": "Xin chào ngài/ông/bà (lịch sự)!"
+          }
+        ]
+      }
+    },
+    {
+      "source_id": "fixture.internal-kb.hsk1.beginner-notes",
+      "block_id": "beginner-notes.numbers.er-vs-liang",
+      "stable_locator": "fixture:internal-kb:hsk1:beginner-notes:numbers:er-vs-liang",
+      "source_locator": "fixture:internal-kb:hsk1:beginner-notes#numbers/er-vs-liang",
+      "content_type": "DOCUMENT_TEXT",
+      "content": {
+        "forms": [
+          {
+            "chinese": "二",
+            "pinyin": "èr",
+            "vietnamese": "hai; thường dùng khi đọc số hoặc nói thứ tự"
+          },
+          {
+            "chinese": "两",
+            "pinyin": "liǎng",
+            "vietnamese": "hai; thường đứng trước lượng từ khi đếm hai người hoặc vật"
+          }
+        ],
+        "vietnamese_explanation": "Trong cách dùng cơ bản, 二 thường dùng để đọc số và trong số thứ tự; 两 thường đứng trước lượng từ để chỉ hai đối tượng. Cách dùng còn tùy cụm từ.",
+        "examples": [
+          {
+            "chinese": "二月",
+            "pinyin": "èr yuè",
+            "vietnamese": "tháng hai"
+          },
+          {
+            "chinese": "两个人",
+            "pinyin": "liǎng ge rén",
+            "vietnamese": "hai người"
+          }
+        ]
+      }
+    },
+    {
+      "source_id": "fixture.internal-kb.hsk1.beginner-notes",
+      "block_id": "beginner-notes.particle.de",
+      "stable_locator": "fixture:internal-kb:hsk1:beginner-notes:particle:de",
+      "source_locator": "fixture:internal-kb:hsk1:beginner-notes#particle/de",
+      "content_type": "DOCUMENT_TEXT",
+      "content": {
+        "chinese": "的",
+        "pinyin": "de",
+        "vietnamese": "trợ từ nối thành phần bổ nghĩa với danh từ; thường biểu thị sở hữu trong ví dụ cơ bản",
+        "example": "我的书。",
+        "example_pinyin": "Wǒ de shū.",
+        "example_vietnamese": "Sách của tôi."
+      }
+    },
+    {
+      "source_id": "fixture.internal-kb.hsk1.beginner-notes",
+      "block_id": "beginner-notes.measure-word.ge",
+      "stable_locator": "fixture:internal-kb:hsk1:beginner-notes:measure-word:ge",
+      "source_locator": "fixture:internal-kb:hsk1:beginner-notes#measure-word/ge",
+      "content_type": "DOCUMENT_TEXT",
+      "content": {
+        "chinese": "个",
+        "pinyin": "gè",
+        "vietnamese": "lượng từ thông dụng cho người và một số danh từ; danh từ có lượng từ riêng thường dùng lượng từ riêng đó",
+        "example": "两个人。",
+        "example_pinyin": "Liǎng ge rén.",
+        "example_vietnamese": "Hai người."
+      }
+    },
+    {
+      "source_id": "fixture.internal-kb.hsk1.beginner-notes",
+      "block_id": "beginner-notes.particle.ne",
+      "stable_locator": "fixture:internal-kb:hsk1:beginner-notes:particle:ne",
+      "source_locator": "fixture:internal-kb:hsk1:beginner-notes#particle/ne",
+      "content_type": "DOCUMENT_TEXT",
+      "content": {
+        "chinese": "呢",
+        "pinyin": "ne",
+        "vietnamese": "trợ từ cuối câu; trong câu hỏi đối ứng có thể mang nghĩa còn...thì sao?",
+        "example": "我很好，你呢？",
+        "example_pinyin": "Wǒ hěn hǎo, nǐ ne?",
+        "example_vietnamese": "Tôi khỏe, còn bạn thì sao?"
+      }
+    }
+  ],
+  "intended_scope": "INTERNAL_KB",
+  "hsk_level_number": 1
+}

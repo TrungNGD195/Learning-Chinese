@@ -1,0 +1,10 @@
+{
+  "mean_score_by_dimension": {
+    "answer_correctness": 1.2,
+    "completeness": 1.3,
+    "faithfulness_groundedness": 1.1,
+    "language_quality": 1.1,
+    "learning_usefulness": 1.2
+  },
+  "run_id": "step76-fixture-candidate-step74-v1"
+}

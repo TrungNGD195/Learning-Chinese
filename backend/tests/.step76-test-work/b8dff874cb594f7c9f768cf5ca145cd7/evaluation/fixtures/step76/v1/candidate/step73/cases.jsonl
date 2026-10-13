@@ -1,0 +1,2 @@
+{"bucket": "CURRENT_LESSON_ANSWERABLE", "case_id": "fixture-dev-01", "critical_failures": [], "split": "DEVELOPMENT"}
+{"bucket": "CURRENT_LESSON_ANSWERABLE", "case_id": "fixture-holdout-01", "critical_failures": [], "split": "HOLDOUT"}

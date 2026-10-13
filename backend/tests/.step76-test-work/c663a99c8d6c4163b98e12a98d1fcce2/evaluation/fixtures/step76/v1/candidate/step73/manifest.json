@@ -1,0 +1,27 @@
+{
+  "RAG_EVIDENCE_CALIBRATION_MODE": true,
+  "candidate_k": 20,
+  "chunking_version": "structure_aware/v1",
+  "code_commit": "fixture-candidate",
+  "dataset_schema_version": "1.0.0",
+  "dataset_splits": [
+    "DEVELOPMENT",
+    "HOLDOUT"
+  ],
+  "dataset_version": "v0.8.0",
+  "embedding_model": "BAAI/bge-m3",
+  "embedding_model_version": "pinned-test-revision",
+  "evaluation_step": "7.3",
+  "reranker_config": {
+    "batch_size": 8,
+    "input_version": "v1"
+  },
+  "reranker_model": "BAAI/bge-reranker-v2-m3",
+  "reranker_model_version": "pinned-test-revision",
+  "reranker_top_k": 5,
+  "retrieval_filter_config": {
+    "CURRENT_LESSON": "scoped",
+    "INTERNAL_KB": "approved-internal"
+  },
+  "run_id": "step76-fixture-candidate-step73-v1"
+}

@@ -1,0 +1,10 @@
+{
+  "mean_score_by_dimension": {
+    "answer_correctness": 1.1,
+    "completeness": 1.2,
+    "faithfulness_groundedness": 1.0,
+    "language_quality": 1.0,
+    "learning_usefulness": 1.1
+  },
+  "run_id": "step76-fixture-baseline-step74-v1"
+}

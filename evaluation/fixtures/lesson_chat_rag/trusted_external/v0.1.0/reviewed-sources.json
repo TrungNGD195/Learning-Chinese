@@ -1,0 +1,79 @@
+{
+  "fixture_pack": "lesson_chat_rag_trusted_external",
+  "fixture_pack_version": "0.1.0",
+  "status": "ACCEPTED_FOR_EVALUATION_FIXTURE",
+  "scope": "EVALUATION_ONLY",
+  "runtime_external_retrieval_implemented": false,
+  "provider_selected": false,
+  "domain_allowlist_configured": false,
+  "source_count": 5,
+  "sources": [
+    {
+      "source_id": "external.openlearn.chinese3.bi-comparison",
+      "source_kind": "EXTERNAL_URL",
+      "url": "https://www.open.edu/openlearn/mod/oucontent/view.php?id=109137&section=_unit3.4",
+      "domain": "www.open.edu",
+      "title": "Getting started with Chinese 3: 3",
+      "reviewed_section_title": "3 Comparisons with bǐ 比",
+      "reviewed_claims": [
+        "A basic comparison with 比 uses the order A + 比 + B + adjective.",
+        "比 is placed between the two compared people or things, with the adjective after B.",
+        "The reviewed page illustrates the pattern with 王京比李月高。"
+      ],
+      "review_status": "ACCEPTED_FOR_EVALUATION_FIXTURE"
+    },
+    {
+      "source_id": "external.openlearn.chinese2.zai-location",
+      "source_kind": "EXTERNAL_URL",
+      "url": "https://www.open.edu/openlearn/mod/oucontent/view.php?id=109075&section=_unit3.8",
+      "domain": "www.open.edu",
+      "title": "Getting started with Chinese 2: 7",
+      "reviewed_section_title": "7 Location, location, location",
+      "reviewed_claims": [
+        "For an action at a location, the location expression 在 + place comes before the action verb.",
+        "The reviewed page illustrates the pattern with 我在北京学中文。"
+      ],
+      "review_status": "ACCEPTED_FOR_EVALUATION_FIXTURE"
+    },
+    {
+      "source_id": "external.openlearn.chinese2.shenme-placement",
+      "source_kind": "EXTERNAL_URL",
+      "url": "https://www.open.edu/openlearn/mod/oucontent/view.php?id=109075&section=_unit3.4",
+      "domain": "www.open.edu",
+      "title": "Getting started with Chinese 2: 3",
+      "reviewed_section_title": "3 Asking questions with ‘what’ and ‘where’",
+      "reviewed_claims": [
+        "什么 replaces the unknown answer element and remains in the position where that answer would appear.",
+        "The reviewed page uses 他明天晚上做什么？ to show 什么 after 做 in the answer slot."
+      ],
+      "review_status": "ACCEPTED_FOR_EVALUATION_FIXTURE"
+    },
+    {
+      "source_id": "external.openlearn.chinese2.dou-placement",
+      "source_kind": "EXTERNAL_URL",
+      "url": "https://www.open.edu/openlearn/mod/oucontent/view.php?id=106447&section=5",
+      "domain": "www.open.edu",
+      "title": "Getting started with Chinese 2: Week 2: 4",
+      "reviewed_section_title": "4 Use of dōu 都 (both/all)",
+      "reviewed_claims": [
+        "When 都 means both/all in a basic statement, it is placed before the verb.",
+        "The reviewed page illustrates this placement with 老师们都是英国人吗？, where 都 precedes 是."
+      ],
+      "review_status": "ACCEPTED_FOR_EVALUATION_FIXTURE"
+    },
+    {
+      "source_id": "external.openlearn.chinese2.haishi-choice",
+      "source_kind": "EXTERNAL_URL",
+      "url": "https://www.open.edu/openlearn/mod/oucontent/view.php?id=109075&section=_unit3.9",
+      "domain": "www.open.edu",
+      "title": "Getting started with Chinese 2: 8",
+      "reviewed_section_title": "8 Choice questions with háishi 还是",
+      "reviewed_claims": [
+        "还是 links the alternatives in a choice question.",
+        "A choice question with 还是 does not add 吗 at the end.",
+        "The reviewed page illustrates the pattern with 她是英国人还是美国人？"
+      ],
+      "review_status": "ACCEPTED_FOR_EVALUATION_FIXTURE"
+    }
+  ]
+}

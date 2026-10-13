@@ -1,0 +1,9 @@
+{
+  "regression_metrics": {
+    "reranked_ndcg5": 0.75,
+    "reranked_precision5": 0.7,
+    "reranked_recall5": 0.8,
+    "semantic_recall20": 0.91
+  },
+  "run_id": "step76-fixture-baseline-step73-v1"
+}

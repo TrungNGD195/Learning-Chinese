@@ -1,0 +1,17 @@
+# Python environments and generated files
+**/.venv/
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+/backend/.env
+.env
+.env.*
+!.env.example
+!.env.*.example
+**/node_modules/
+**/dist/
+**/playwright-report/
+**/test-results/
+
+# Local temporary artifacts
+/tmp/

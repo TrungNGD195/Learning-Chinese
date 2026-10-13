@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://trung-chinese-learning.local/evaluation/evaluation_case.schema.json",
+  "title": "Lesson Chat RAG EvaluationCase",
+  "description": "Versioned logical ground truth for one Lesson Chat RAG request. Human review is required before official use.",
+  "x-schema-version": "1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "case_id", "schema_version", "dataset_version", "bucket", "split", "question",
+    "expected_information", "required_evidence", "acceptable_evidence", "expected_scope",
+    "expected_tier", "expected_behavior", "expected_answer_properties",
+    "expected_citation_sources", "critical_failure_expectations", "review_status"
+  ],
+  "properties": {
+    "case_id": {"type": "string", "minLength": 1},
+    "schema_version": {"type": "string", "minLength": 1},
+    "dataset_version": {"type": "string", "minLength": 1},
+    "bucket": {
+      "enum": ["CURRENT_LESSON_ANSWERABLE", "INTERNAL_KB_FALLBACK", "TRUSTED_EXTERNAL_FALLBACK", "NO_EVIDENCE_REFUSAL", "OUT_OF_DOMAIN_REFUSAL", "MULTI_TURN_CONTEXT"]
+    },
+    "split": {"enum": ["DEVELOPMENT", "HOLDOUT"]},
+    "question": {"type": "string", "minLength": 1},
+    "conversation_context": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["user_text", "assistant_text"],
+        "properties": {
+          "user_text": {"type": "string", "minLength": 1},
+          "assistant_text": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "lesson_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lesson_locator"],
+      "properties": {
+        "lesson_locator": {"type": "string", "minLength": 1},
+        "hsk_identity": {"type": ["string", "null"]},
+        "lesson_title": {"type": ["string", "null"]}
+      }
+    },
+    "expected_information": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "reference_answer": {"type": ["string", "null"]},
+    "required_evidence": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/RequiredEvidenceRef"}
+    },
+    "acceptable_evidence": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/AcceptableEvidenceRef"}
+    },
+    "expected_scope": {"$ref": "#/$defs/ExpectedScope"},
+    "expected_tier": {"enum": ["CURRENT_LESSON", "INTERNAL_KB", "TRUSTED_EXTERNAL", "NONE"]},
+    "expected_behavior": {"enum": ["ANSWER", "FALLBACK_INTERNAL", "FALLBACK_EXTERNAL", "REFUSE_NO_EVIDENCE", "REFUSE_OUT_OF_DOMAIN"]},
+    "expected_answer_properties": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "expected_citation_sources": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+    "critical_failure_expectations": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "SERIOUS_FACTUAL_ERROR", "UNSUPPORTED_CONFIDENT_CLAIM", "FABRICATED_CITATION_OR_SOURCE",
+          "CITATION_PROVENANCE_MISMATCH", "OUT_OF_DOMAIN_ANSWER",
+          "CONFIDENT_ANSWER_WITH_INSUFFICIENT_EVIDENCE", "RETRIEVAL_SCOPE_VIOLATION",
+          "TIER_FALLBACK_POLICY_VIOLATION", "TECHNICAL_FAILURE_TREATED_AS_NO_EVIDENCE",
+          "REQUIRED_CITATION_MISSING"
+        ]
+      }
+    },
+    "review_status": {"enum": ["DRAFT", "APPROVED", "REJECTED"]}
+  },
+  "$defs": {
+    "EvidenceBase": {
+      "type": "object",
+      "properties": {
+        "evidence_id": {"type": "string", "minLength": 1},
+        "source_kind": {"enum": ["INTERNAL_CHUNK", "EXTERNAL_URL"]},
+        "relevance_role": {"enum": ["REQUIRED", "ACCEPTABLE"]},
+        "requirement_id": {"type": "string", "minLength": 1}
+      }
+    },
+    "InternalEvidenceRef": {
+      "allOf": [{"$ref": "#/$defs/EvidenceBase"}],
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["evidence_id", "source_kind", "stable_locator", "source_title", "relevance_role"],
+      "properties": {
+        "evidence_id": {"type": "string", "minLength": 1},
+        "source_kind": {"const": "INTERNAL_CHUNK"},
+        "stable_locator": {"type": "string", "minLength": 1},
+        "chunk_id": {"type": ["string", "null"]},
+        "source_title": {"type": "string", "minLength": 1},
+        "lesson_locator": {"type": ["string", "null"]},
+        "section": {"type": ["string", "null"]},
+        "page_or_locator": {"type": ["string", "null"]},
+        "relevance_role": {"enum": ["REQUIRED", "ACCEPTABLE"]},
+        "requirement_id": {"type": "string", "minLength": 1}
+      }
+    },
+    "ExternalEvidenceRef": {
+      "allOf": [{"$ref": "#/$defs/EvidenceBase"}],
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["evidence_id", "source_kind", "url", "domain", "relevance_role"],
+      "properties": {
+        "evidence_id": {"type": "string", "minLength": 1},
+        "source_kind": {"const": "EXTERNAL_URL"},
+        "url": {"type": "string", "format": "uri", "pattern": "^https://"},
+        "domain": {"type": "string", "minLength": 1},
+        "title": {"type": ["string", "null"]},
+        "relevance_role": {"enum": ["REQUIRED", "ACCEPTABLE"]},
+        "requirement_id": {"type": "string", "minLength": 1}
+      }
+    },
+    "RequiredEvidenceRef": {
+      "oneOf": [
+        {"allOf": [{"$ref": "#/$defs/InternalEvidenceRef"}], "required": ["requirement_id"], "properties": {"relevance_role": {"const": "REQUIRED"}}},
+        {"allOf": [{"$ref": "#/$defs/ExternalEvidenceRef"}], "required": ["requirement_id"], "properties": {"relevance_role": {"const": "REQUIRED"}}}
+      ]
+    },
+    "AcceptableEvidenceRef": {
+      "oneOf": [
+        {"allOf": [{"$ref": "#/$defs/InternalEvidenceRef"}], "properties": {"relevance_role": {"const": "ACCEPTABLE"}}},
+        {"allOf": [{"$ref": "#/$defs/ExternalEvidenceRef"}], "properties": {"relevance_role": {"const": "ACCEPTABLE"}}}
+      ]
+    },
+    "ExpectedScope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scope_kind"],
+      "properties": {
+        "scope_kind": {"enum": ["CURRENT_LESSON", "INTERNAL_KB", "TRUSTED_EXTERNAL", "NONE"]},
+        "lesson_locator": {"type": ["string", "null"]},
+        "constraints": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "hsk_identities": {"type": "array", "items": {"type": "string", "minLength": 1}},
+            "content_types": {"type": "array", "items": {"enum": ["DOCUMENT_TEXT", "VOCABULARY", "GRAMMAR", "LESSON_GENERAL"]}},
+            "source_types": {"type": "array", "items": {"enum": ["DOCUMENT", "LESSON"]}},
+            "source_categories": {"type": "array", "items": {"enum": ["CURRICULUM_MATERIAL", "INTERNAL_AUTHORED"]}, "uniqueItems": true},
+            "source_languages": {"type": "array", "items": {"enum": ["vi", "zh", "en"]}, "uniqueItems": true}
+          }
+        }
+      }
+    }
+  }
+}

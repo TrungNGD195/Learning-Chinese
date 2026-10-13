@@ -1,0 +1,70 @@
+{
+  "pack_version": "0.1.0",
+  "status": "NEGATIVE_SPACE_ACCEPTED_FOR_EVALUATION_FIXTURE",
+  "purpose": "Accepted corpus-wide omission registry for Step 7.2 NO_EVIDENCE case drafting; targets are absent from all controlled fixture educational content.",
+  "scan_scope": "All educational content values inside every source block in sources/*.json. Metadata in this registry is excluded from the absence scan.",
+  "targets": [
+    {
+      "target_id": "ba-construction",
+      "label": "把 construction",
+      "forms": [
+        "把"
+      ]
+    },
+    {
+      "target_id": "passive-bei",
+      "label": "被 passive",
+      "forms": [
+        "被"
+      ]
+    },
+    {
+      "target_id": "experiential-guo",
+      "label": "experiential 过",
+      "forms": [
+        "过"
+      ]
+    },
+    {
+      "target_id": "aspectual-le",
+      "label": "aspectual 了",
+      "forms": [
+        "了"
+      ]
+    },
+    {
+      "target_id": "result-complements",
+      "label": "result complements",
+      "forms": [
+        "看懂",
+        "吃完",
+        "写好",
+        "听见"
+      ]
+    },
+    {
+      "target_id": "directional-complements",
+      "label": "directional complements",
+      "forms": [
+        "进去",
+        "出来",
+        "上来",
+        "回去"
+      ]
+    },
+    {
+      "target_id": "yibian-construction",
+      "label": "一边…一边…",
+      "forms": [
+        "一边"
+      ]
+    },
+    {
+      "target_id": "yuelaiyue-construction",
+      "label": "越来越…",
+      "forms": [
+        "越来越"
+      ]
+    }
+  ]
+}

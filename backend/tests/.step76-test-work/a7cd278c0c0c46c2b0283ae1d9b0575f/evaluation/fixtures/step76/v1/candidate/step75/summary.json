@@ -1,0 +1,8 @@
+{
+  "regression_metrics": {
+    "latency_p95_ms": 1080,
+    "pass_rate": 0.91,
+    "technical_failure_rate": 0.01
+  },
+  "run_id": "step76-fixture-candidate-step75-v1"
+}

@@ -1,0 +1,476 @@
+{
+  "baseline_promoted": false,
+  "baseline_run_id": "step76-fixture-baseline-system-v1",
+  "baseline_source_identities": {
+    "step73": {
+      "dataset_schema_version": "1.0.0",
+      "dataset_version": "v0.8.0",
+      "directory": "D:\\Study\\Projects\\Learn_chinese\\backend\\tests\\.step76-test-work\\fdddab30134a44d1ae624c8a9d5b9078\\evaluation\\fixtures\\step76\\v1\\baseline\\step73",
+      "evaluation_step": "7.3",
+      "producer_identities": {
+        "RAG_EVIDENCE_CALIBRATION_MODE": true,
+        "candidate_k": 20,
+        "chunking_version": "structure_aware/v1",
+        "code_commit": "fixture-base",
+        "dataset_schema_version": "1.0.0",
+        "dataset_version": "v0.8.0",
+        "embedding_model": "BAAI/bge-m3",
+        "embedding_model_version": "pinned-test-revision",
+        "reranker_config": {
+          "batch_size": 8,
+          "input_version": "v1"
+        },
+        "reranker_model": "BAAI/bge-reranker-v2-m3",
+        "reranker_model_version": "pinned-test-revision",
+        "retrieval_filter_config": {
+          "CURRENT_LESSON": "scoped",
+          "INTERNAL_KB": "approved-internal"
+        }
+      },
+      "run_id": "step76-fixture-baseline-step73-v1",
+      "source_hashes": {
+        "cases.jsonl": "103545e43e412453819270e93dea853330e57496dd0a44a7705a3aa917b9dcbf",
+        "manifest.json": "e91f1069c6597c1889f1e2877ba503758a539a9e02b4154835f63943e863359c",
+        "summary.json": "9f09e64c8a9b33195070a58d330db5541e8c4234380d484f3ff49458d96fe24a"
+      }
+    },
+    "step74": {
+      "dataset_schema_version": "1.0.0",
+      "dataset_version": "v0.8.0",
+      "directory": "D:\\Study\\Projects\\Learn_chinese\\backend\\tests\\.step76-test-work\\fdddab30134a44d1ae624c8a9d5b9078\\evaluation\\fixtures\\step76\\v1\\baseline\\step74\\generation",
+      "evaluation_step": "7.4",
+      "producer_identities": {
+        "dataset_name": "lesson_chat_rag",
+        "dataset_schema_version": "1.0.0",
+        "dataset_version": "v0.8.0",
+        "eligible_case_policy_version": "step74-eligible/v1",
+        "fixed_evidence_policy_version": "fixed-approved-evidence/v1",
+        "fixed_memory_policy_version": "fixed-memory/v1",
+        "generator_identity": {
+          "model": "gpt-5.4-mini-2026-03-17",
+          "provider": "test-only"
+        },
+        "generator_model": "gpt-5.4-mini-2026-03-17",
+        "generator_prompt_version_or_hash": "fixture-prompt-hash",
+        "human_annotation_version": "lesson-chat-generation-human/v0.1.0",
+        "judge_identity": {
+          "model": "gpt-5.4-2026-03-05",
+          "provider": "test-only"
+        },
+        "judge_model": "gpt-5.4-2026-03-05",
+        "judge_prompt_version": "lesson-chat-generation-judge/v1",
+        "rubric_version": "lesson-chat-generation-rubric/v1",
+        "technical_failure_policy_version": "generation-vs-judge-technical-failure/v1"
+      },
+      "run_id": "step76-fixture-baseline-step74-v1",
+      "source_hashes": {
+        "cases.jsonl": "eb1e78dc3dbbc2b484b05c6716a80934ae1e460f1cf1bd45a5db48d31f9e89a7",
+        "manifest.json": "eba565bd587778bec545d020d7402b09d1e904d959b615133f83876ff96b0348",
+        "summary.json": "c64b29a525316e8ff27aaac7eceaa39d7bd7671dbbc7255467171586846dcdcb"
+      }
+    },
+    "step75": {
+      "dataset_schema_version": "1.0.0",
+      "dataset_version": "v0.8.0",
+      "directory": "D:\\Study\\Projects\\Learn_chinese\\backend\\tests\\.step76-test-work\\fdddab30134a44d1ae624c8a9d5b9078\\evaluation\\fixtures\\step76\\v1\\baseline\\step75",
+      "evaluation_step": "7.5",
+      "producer_identities": {
+        "critical_failure_policy_version": "lesson-chat-e2e-critical/v1",
+        "dataset_name": "lesson_chat_rag",
+        "dataset_schema_version": "1.0.0",
+        "dataset_version": "v0.8.0",
+        "e2e_policy_version": "lesson-chat-e2e-policy/v1",
+        "e2e_rubric_version": "lesson-chat-e2e-rubric/v1",
+        "execution_plan_version": "step75-execution-plan/v1",
+        "human_annotation_version": "lesson-chat-e2e-human/v0.1.0",
+        "judge_max_output_tokens": 1600,
+        "judge_model": "gpt-5.4-2026-03-05",
+        "judge_prompt_version": "lesson-chat-e2e-judge/v1",
+        "judge_reasoning_effort": "none",
+        "judge_schema_version": "1.0.0",
+        "judge_temperature": 0,
+        "prompt_system_identity": "production-system-instructions",
+        "prompt_system_sha256": "test-only",
+        "rag_min_rerank_score": -1.0,
+        "retrieval_scope_policy_version": "lesson-chat-tier-scope/v1"
+      },
+      "run_id": "step76-fixture-baseline-step75-v1",
+      "source_hashes": {
+        "cases.jsonl": "3408dce61de8b67135bbc4d3be8b119a2810f93354dd2d4644a145b16317bee7",
+        "manifest.json": "142779075025349564398fa0022a1093c9cae863b5515077522366890f58dbaf",
+        "summary.json": "e1a245338ef53c1e7a0814c40dc928367307d46f51d93e7e000a85911edfd696"
+      }
+    }
+  },
+  "candidate_run_id": "step76-fixture-candidate-system-v1",
+  "candidate_source_identities": {
+    "step73": {
+      "dataset_schema_version": "1.0.0",
+      "dataset_version": "v0.8.0",
+      "directory": "D:\\Study\\Projects\\Learn_chinese\\backend\\tests\\.step76-test-work\\fdddab30134a44d1ae624c8a9d5b9078\\evaluation\\fixtures\\step76\\v1\\candidate\\step73",
+      "evaluation_step": "7.3",
+      "producer_identities": {
+        "RAG_EVIDENCE_CALIBRATION_MODE": true,
+        "candidate_k": 20,
+        "chunking_version": "structure_aware/v1",
+        "code_commit": "fixture-candidate",
+        "dataset_schema_version": "1.0.0",
+        "dataset_version": "v0.8.0",
+        "embedding_model": "BAAI/bge-m3",
+        "embedding_model_version": "pinned-test-revision",
+        "reranker_config": {
+          "batch_size": 8,
+          "input_version": "v1"
+        },
+        "reranker_model": "BAAI/bge-reranker-v2-m3",
+        "reranker_model_version": "pinned-test-revision",
+        "retrieval_filter_config": {
+          "CURRENT_LESSON": "scoped",
+          "INTERNAL_KB": "approved-internal"
+        }
+      },
+      "run_id": "step76-fixture-candidate-step73-v1",
+      "source_hashes": {
+        "cases.jsonl": "103545e43e412453819270e93dea853330e57496dd0a44a7705a3aa917b9dcbf",
+        "manifest.json": "d0a761c1a3dede11e0b9e8c31b4799a1b9296dc574ec6f2369e5d1526dc06e6f",
+        "summary.json": "5c30fd2e30a7fb3259e5c1efde718c1c7cc1614e0401c9fe848b2037643d0776"
+      }
+    },
+    "step74": {
+      "dataset_schema_version": "1.0.0",
+      "dataset_version": "v0.8.0",
+      "directory": "D:\\Study\\Projects\\Learn_chinese\\backend\\tests\\.step76-test-work\\fdddab30134a44d1ae624c8a9d5b9078\\evaluation\\fixtures\\step76\\v1\\candidate\\step74\\generation",
+      "evaluation_step": "7.4",
+      "producer_identities": {
+        "dataset_name": "lesson_chat_rag",
+        "dataset_schema_version": "1.0.0",
+        "dataset_version": "v0.8.0",
+        "eligible_case_policy_version": "step74-eligible/v1",
+        "fixed_evidence_policy_version": "fixed-approved-evidence/v1",
+        "fixed_memory_policy_version": "fixed-memory/v1",
+        "generator_identity": {
+          "model": "gpt-5.4-mini-2026-03-17",
+          "provider": "test-only"
+        },
+        "generator_model": "gpt-5.4-mini-2026-03-17",
+        "generator_prompt_version_or_hash": "fixture-prompt-hash",
+        "human_annotation_version": "lesson-chat-generation-human/v0.1.0",
+        "judge_identity": {
+          "model": "gpt-5.4-2026-03-05",
+          "provider": "test-only"
+        },
+        "judge_model": "gpt-5.4-2026-03-05",
+        "judge_prompt_version": "lesson-chat-generation-judge/v1",
+        "rubric_version": "lesson-chat-generation-rubric/v1",
+        "technical_failure_policy_version": "generation-vs-judge-technical-failure/v1"
+      },
+      "run_id": "step76-fixture-candidate-step74-v1",
+      "source_hashes": {
+        "cases.jsonl": "eb1e78dc3dbbc2b484b05c6716a80934ae1e460f1cf1bd45a5db48d31f9e89a7",
+        "manifest.json": "2ea8ce25b093b346e43308ca8564f34ae5d0867f2bec9453cdffaccc48e1bc5e",
+        "summary.json": "e2bed32449af7cf2ccc4d68e7662a1f4722a6ac768deb735b1ec05f587f2e4fb"
+      }
+    },
+    "step75": {
+      "dataset_schema_version": "1.0.0",
+      "dataset_version": "v0.8.0",
+      "directory": "D:\\Study\\Projects\\Learn_chinese\\backend\\tests\\.step76-test-work\\fdddab30134a44d1ae624c8a9d5b9078\\evaluation\\fixtures\\step76\\v1\\candidate\\step75",
+      "evaluation_step": "7.5",
+      "producer_identities": {
+        "critical_failure_policy_version": "lesson-chat-e2e-critical/v1",
+        "dataset_name": "lesson_chat_rag",
+        "dataset_schema_version": "1.0.0",
+        "dataset_version": "v0.8.0",
+        "e2e_policy_version": "lesson-chat-e2e-policy/v1",
+        "e2e_rubric_version": "lesson-chat-e2e-rubric/v1",
+        "execution_plan_version": "step75-execution-plan/v1",
+        "human_annotation_version": "lesson-chat-e2e-human/v0.1.0",
+        "judge_max_output_tokens": 1600,
+        "judge_model": "gpt-5.4-2026-03-05",
+        "judge_prompt_version": "lesson-chat-e2e-judge/v1",
+        "judge_reasoning_effort": "none",
+        "judge_schema_version": "1.0.0",
+        "judge_temperature": 0,
+        "prompt_system_identity": "production-system-instructions",
+        "prompt_system_sha256": "test-only",
+        "rag_min_rerank_score": -1.0,
+        "retrieval_scope_policy_version": "lesson-chat-tier-scope/v1"
+      },
+      "run_id": "step76-fixture-candidate-step75-v1",
+      "source_hashes": {
+        "cases.jsonl": "c66395dcd5f0bddcc17d1ad1843777443df471ddaba3a991e819f00fd37c628f",
+        "manifest.json": "eceaa72f1cab6e14be1bd2eb90bbe5b4b4730692a318ddc965d26c4de531d233",
+        "summary.json": "d09fb3d9a936b8fdc7c294689f7a8da11f72a016eb477c96f3c501f8165d4390"
+      }
+    }
+  },
+  "comparison_id": "step76-test-comparison-v1",
+  "comparison_policy_version": "lesson-chat-regression-policy/v1",
+  "compatibility_result": {
+    "checks": [
+      {
+        "compatible": true,
+        "field": "dataset_version",
+        "layer": "step73"
+      },
+      {
+        "compatible": true,
+        "field": "dataset_schema_version",
+        "layer": "step73"
+      },
+      {
+        "compatible": true,
+        "field": "case_set",
+        "layer": "step73"
+      },
+      {
+        "compatible": true,
+        "field": "split_assignment",
+        "layer": "step73"
+      },
+      {
+        "compatible": true,
+        "field": "repeat_identity",
+        "layer": "step73"
+      },
+      {
+        "compatible": true,
+        "field": "dataset_name",
+        "layer": "step74"
+      },
+      {
+        "compatible": true,
+        "field": "dataset_version",
+        "layer": "step74"
+      },
+      {
+        "compatible": true,
+        "field": "dataset_schema_version",
+        "layer": "step74"
+      },
+      {
+        "compatible": true,
+        "field": "eligible_case_policy_version",
+        "layer": "step74"
+      },
+      {
+        "compatible": true,
+        "field": "fixed_evidence_policy_version",
+        "layer": "step74"
+      },
+      {
+        "compatible": true,
+        "field": "fixed_memory_policy_version",
+        "layer": "step74"
+      },
+      {
+        "compatible": true,
+        "field": "rubric_version",
+        "layer": "step74"
+      },
+      {
+        "compatible": true,
+        "field": "judge_prompt_version",
+        "layer": "step74"
+      },
+      {
+        "compatible": true,
+        "field": "human_annotation_version",
+        "layer": "step74"
+      },
+      {
+        "compatible": true,
+        "field": "technical_failure_policy_version",
+        "layer": "step74"
+      },
+      {
+        "compatible": true,
+        "field": "judge_identity",
+        "layer": "step74"
+      },
+      {
+        "compatible": true,
+        "field": "case_set",
+        "layer": "step74"
+      },
+      {
+        "compatible": true,
+        "field": "split_assignment",
+        "layer": "step74"
+      },
+      {
+        "compatible": true,
+        "field": "repeat_identity",
+        "layer": "step74"
+      },
+      {
+        "compatible": true,
+        "field": "dataset_name",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "dataset_version",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "dataset_schema_version",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "execution_plan_version",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "retrieval_scope_policy_version",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "e2e_policy_version",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "critical_failure_policy_version",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "human_annotation_version",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "judge_prompt_version",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "judge_schema_version",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "e2e_rubric_version",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "judge_model",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "judge_reasoning_effort",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "judge_temperature",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "judge_max_output_tokens",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "case_set",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "split_assignment",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "repeat_identity",
+        "layer": "step75"
+      }
+    ],
+    "compatible": true,
+    "issues": [],
+    "system_under_test_differences": {
+      "step73": {
+        "code_commit": {
+          "baseline": "fixture-base",
+          "candidate": "fixture-candidate"
+        }
+      },
+      "step74": {},
+      "step75": {}
+    }
+  },
+  "dataset_version": "v0.8.0",
+  "e2e_baseline_run_id": "step76-fixture-baseline-step75-v1",
+  "e2e_candidate_run_id": "step76-fixture-candidate-step75-v1",
+  "execution_mode": "TEST_ONLY",
+  "files": {
+    "cases.jsonl": "d5453fc6dc71df5ce632dc0598b15c7aaf84e57958d97b6152a65979475a94d9",
+    "report.md": "17cbf29564ce60f3ce1408ed70442beb0b035ef65b6e8cef8ad1431c53f54d77",
+    "summary.json": "8d3a2b3215ea97eefb85c0177053da0a221e7c30ea165436a8ff8a2a1fb14ad7"
+  },
+  "generation_baseline_run_id": "step76-fixture-baseline-step74-v1",
+  "generation_candidate_run_id": "step76-fixture-candidate-step74-v1",
+  "official_comparison_eligible": false,
+  "retrieval_baseline_run_id": "step76-fixture-baseline-step73-v1",
+  "retrieval_candidate_run_id": "step76-fixture-candidate-step73-v1",
+  "schema_version": "1.0.0",
+  "source_artifact_hashes": {
+    "baseline": {
+      "step73": {
+        "cases.jsonl": "103545e43e412453819270e93dea853330e57496dd0a44a7705a3aa917b9dcbf",
+        "manifest.json": "e91f1069c6597c1889f1e2877ba503758a539a9e02b4154835f63943e863359c",
+        "summary.json": "9f09e64c8a9b33195070a58d330db5541e8c4234380d484f3ff49458d96fe24a"
+      },
+      "step74": {
+        "cases.jsonl": "eb1e78dc3dbbc2b484b05c6716a80934ae1e460f1cf1bd45a5db48d31f9e89a7",
+        "manifest.json": "eba565bd587778bec545d020d7402b09d1e904d959b615133f83876ff96b0348",
+        "summary.json": "c64b29a525316e8ff27aaac7eceaa39d7bd7671dbbc7255467171586846dcdcb"
+      },
+      "step75": {
+        "cases.jsonl": "3408dce61de8b67135bbc4d3be8b119a2810f93354dd2d4644a145b16317bee7",
+        "manifest.json": "142779075025349564398fa0022a1093c9cae863b5515077522366890f58dbaf",
+        "summary.json": "e1a245338ef53c1e7a0814c40dc928367307d46f51d93e7e000a85911edfd696"
+      }
+    },
+    "candidate": {
+      "step73": {
+        "cases.jsonl": "103545e43e412453819270e93dea853330e57496dd0a44a7705a3aa917b9dcbf",
+        "manifest.json": "d0a761c1a3dede11e0b9e8c31b4799a1b9296dc574ec6f2369e5d1526dc06e6f",
+        "summary.json": "5c30fd2e30a7fb3259e5c1efde718c1c7cc1614e0401c9fe848b2037643d0776"
+      },
+      "step74": {
+        "cases.jsonl": "eb1e78dc3dbbc2b484b05c6716a80934ae1e460f1cf1bd45a5db48d31f9e89a7",
+        "manifest.json": "2ea8ce25b093b346e43308ca8564f34ae5d0867f2bec9453cdffaccc48e1bc5e",
+        "summary.json": "e2bed32449af7cf2ccc4d68e7662a1f4722a6ac768deb735b1ec05f587f2e4fb"
+      },
+      "step75": {
+        "cases.jsonl": "c66395dcd5f0bddcc17d1ad1843777443df471ddaba3a991e819f00fd37c628f",
+        "manifest.json": "eceaa72f1cab6e14be1bd2eb90bbe5b4b4730692a318ddc965d26c4de531d233",
+        "summary.json": "d09fb3d9a936b8fdc7c294689f7a8da11f72a016eb477c96f3c501f8165d4390"
+      }
+    }
+  },
+  "source_artifact_paths": {
+    "baseline": {
+      "step73": "D:\\Study\\Projects\\Learn_chinese\\backend\\tests\\.step76-test-work\\fdddab30134a44d1ae624c8a9d5b9078\\evaluation\\fixtures\\step76\\v1\\baseline\\step73",
+      "step74": "D:\\Study\\Projects\\Learn_chinese\\backend\\tests\\.step76-test-work\\fdddab30134a44d1ae624c8a9d5b9078\\evaluation\\fixtures\\step76\\v1\\baseline\\step74\\generation",
+      "step75": "D:\\Study\\Projects\\Learn_chinese\\backend\\tests\\.step76-test-work\\fdddab30134a44d1ae624c8a9d5b9078\\evaluation\\fixtures\\step76\\v1\\baseline\\step75"
+    },
+    "candidate": {
+      "step73": "D:\\Study\\Projects\\Learn_chinese\\backend\\tests\\.step76-test-work\\fdddab30134a44d1ae624c8a9d5b9078\\evaluation\\fixtures\\step76\\v1\\candidate\\step73",
+      "step74": "D:\\Study\\Projects\\Learn_chinese\\backend\\tests\\.step76-test-work\\fdddab30134a44d1ae624c8a9d5b9078\\evaluation\\fixtures\\step76\\v1\\candidate\\step74\\generation",
+      "step75": "D:\\Study\\Projects\\Learn_chinese\\backend\\tests\\.step76-test-work\\fdddab30134a44d1ae624c8a9d5b9078\\evaluation\\fixtures\\step76\\v1\\candidate\\step75"
+    }
+  },
+  "status": "PASS",
+  "step77_included": false,
+  "timestamp": "2026-10-12T00:00:00Z"
+}

@@ -1,0 +1,1 @@
+"""Reusable database bootstrap seeds."""

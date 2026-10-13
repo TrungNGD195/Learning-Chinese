@@ -1,0 +1,155 @@
+{
+  "active_source_version_count": 4,
+  "created_at": "2026-10-08T03:58:39.206114+00:00",
+  "database_isolation": {
+    "database_isolation": "DEDICATED_TEST_EVALUATION",
+    "database_name": "chinese_learning_test",
+    "environment": "test",
+    "normal_database_configured": false
+  },
+  "embedding_profile_id": "6a520ff2-424f-4eb0-b5b6-7b081822b7bb",
+  "fixture_block_count": 26,
+  "fixture_bootstrap_id": "e528b7a3bf9c1096ee99940e8fe08be8a380f92e6dd42e3eb3be72bc061d97d9",
+  "fixture_bootstrap_identity": {
+    "aggregate_fixture_content_sha256": "5ce2ceef80df6b6fabb8a223a57761a36b9b834749a3c76a91e6b0b4d940ca38",
+    "chunking_identity": "structure_aware/v1;target=1200;max=1800;overlap=150",
+    "embedding_identity": {
+      "dimensions": 1024,
+      "input_version": "v1",
+      "model": "BAAI/bge-m3",
+      "normalize_embeddings": true,
+      "provider": "LOCAL",
+      "provider_version": "sentence-transformers/6.1.0",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181"
+    },
+    "fixture_pack": "lesson_chat_rag",
+    "fixture_pack_version": "0.1.0",
+    "source_adapter": "step73_accepted_fixture_adapter/v1",
+    "transformation_identity": "canonical_document/v1;raw_lesson_snapshot/v1"
+  },
+  "fixture_hashes": {
+    "aggregate_fixture_content_sha256": "5ce2ceef80df6b6fabb8a223a57761a36b9b834749a3c76a91e6b0b4d940ca38",
+    "fixture_manifest_sha256": "6a02b5c6d43063dcaa381586628cf9b7b3e68945025872039947f02c848b3276",
+    "per_source_sha256": {
+      "fixture.internal-kb.hsk1.beginner-notes": "cef9b36e2f4a426ee49146eccae1f1df503f7494ae791144b5c01e7b1c610c0f",
+      "fixture.lesson.hsk1.01.greetings": "64bc5a7252d14b28e72ea34934df0411f48584ab2c65b3b2c5eaf049aad6bf3f",
+      "fixture.lesson.hsk1.02.numbers-age": "765d0ab8c7a05b010fc917538bb690add88622800e58f0aad6b437f052b31a6d",
+      "fixture.lesson.hsk1.03.family": "797a912041b0f36417eb6c140d5869b1029205e9b3e6987825ca7808dfab94c0"
+    }
+  },
+  "fixture_pack": "lesson_chat_rag",
+  "fixture_pack_status": "ACCEPTED_FOR_EVALUATION_FIXTURE",
+  "fixture_pack_version": "0.1.0",
+  "fixture_source_count": 4,
+  "internal_document_id": "8766e8d0-8959-4ad0-a68b-b5415c4bb4bd",
+  "internal_kb_source_count": 1,
+  "lesson_runtime_ids": {
+    "fixture:hsk1:lesson:01:greetings": "682a549d-28ea-47a2-a9b0-8c3cf1c09aa1",
+    "fixture:hsk1:lesson:02:numbers-age": "bddc60e9-91c3-49e7-8520-aebb88e62af6",
+    "fixture:hsk1:lesson:03:family": "5daa4d0e-3f69-4253-994c-80588132ef43"
+  },
+  "lesson_runtime_ids_by_source_id": {
+    "fixture.lesson.hsk1.01.greetings": "682a549d-28ea-47a2-a9b0-8c3cf1c09aa1",
+    "fixture.lesson.hsk1.02.numbers-age": "bddc60e9-91c3-49e7-8520-aebb88e62af6",
+    "fixture.lesson.hsk1.03.family": "5daa4d0e-3f69-4253-994c-80588132ef43"
+  },
+  "lesson_source_count": 3,
+  "runtime_map": {
+    "fixture:hsk1:lesson:01:greetings:grammar:a-jiao-b": [
+      "0d4ac4c2-6063-422d-a45e-e2567e02ff18"
+    ],
+    "fixture:hsk1:lesson:01:greetings:grammar:ma-question": [
+      "4ab9a329-0c99-4d5b-b1a6-3d87728c3a5f"
+    ],
+    "fixture:hsk1:lesson:01:greetings:vocabulary:jiao": [
+      "fb8d37b7-5298-4e26-b73e-f44e96ea248e"
+    ],
+    "fixture:hsk1:lesson:01:greetings:vocabulary:ni": [
+      "0913709d-e1d0-4883-9022-72c8f99bcba7"
+    ],
+    "fixture:hsk1:lesson:01:greetings:vocabulary:nihao": [
+      "6c7fdc65-c626-459f-af5c-db9762155d3f"
+    ],
+    "fixture:hsk1:lesson:01:greetings:vocabulary:wo": [
+      "f6548aad-1261-4e90-a3a4-9421bd1de796"
+    ],
+    "fixture:hsk1:lesson:01:greetings:vocabulary:zaijian": [
+      "2f9175f6-059b-4696-bdc9-a4fa6864102b"
+    ],
+    "fixture:hsk1:lesson:02:numbers-age:grammar:answer-age": [
+      "610db85d-dbc3-4386-be3a-5928cb70a751"
+    ],
+    "fixture:hsk1:lesson:02:numbers-age:grammar:ask-age": [
+      "a10253c0-2ac2-424a-8381-bc34580433e2"
+    ],
+    "fixture:hsk1:lesson:02:numbers-age:vocabulary:ji": [
+      "401e650e-fb06-489f-be43-a6ebb9d0130f"
+    ],
+    "fixture:hsk1:lesson:02:numbers-age:vocabulary:jisui": [
+      "1f9d8b86-381d-49f7-9fc1-484ddd87741c"
+    ],
+    "fixture:hsk1:lesson:02:numbers-age:vocabulary:numbers-1-5": [
+      "27af480f-4479-4120-af63-d6bb5005bd04",
+      "9046cb6d-1e6f-4d39-b19a-937ab2426373",
+      "a3e2c3a1-2439-4a77-9f38-2bc7115a5b49",
+      "e426db9a-330e-4f83-a97e-af5496a9614c",
+      "ec791832-f1b4-4cb4-a8df-616c280372a5"
+    ],
+    "fixture:hsk1:lesson:02:numbers-age:vocabulary:numbers-6-10": [
+      "2f7c1e68-0fd8-418d-ba53-55380498aed3",
+      "3044ebe4-20f4-4218-b490-72a20d8f91ec",
+      "334a4fb9-67a0-4a08-a513-a017f8213026",
+      "7866f543-09a4-4b8b-836f-62f269d36f7f",
+      "d33c7a97-33d9-4c57-843a-73641f81be3a"
+    ],
+    "fixture:hsk1:lesson:02:numbers-age:vocabulary:sui": [
+      "5ea955ca-87c0-467e-86ce-cb528182e86e"
+    ],
+    "fixture:hsk1:lesson:03:family:grammar:zhe-shi": [
+      "1821d677-b4b7-4762-899c-2c5d6968d729"
+    ],
+    "fixture:hsk1:lesson:03:family:lesson-general:examples": [
+      "cdf6bf84-f591-4cfc-a942-87e440640171"
+    ],
+    "fixture:hsk1:lesson:03:family:vocabulary:older-siblings": [
+      "1b308de2-40d8-4f32-9b53-7154b72bf582",
+      "d55b0e25-4791-4a6b-91b2-df84c58462a8"
+    ],
+    "fixture:hsk1:lesson:03:family:vocabulary:parents": [
+      "10a0ccdf-5d82-4816-8a16-44256172914d",
+      "922a3dfd-4236-47e7-ab49-444c70bd3680"
+    ],
+    "fixture:hsk1:lesson:03:family:vocabulary:shi": [
+      "882e31a3-5660-4cb1-8099-0adc2eb77d17"
+    ],
+    "fixture:hsk1:lesson:03:family:vocabulary:younger-siblings": [
+      "acf05921-e474-4b2f-bf6d-d80eb8935506",
+      "b58fce2c-704a-4e41-8ab6-68bb6654a720"
+    ],
+    "fixture:hsk1:lesson:03:family:vocabulary:zhe": [
+      "f40b3f9f-0f3d-400c-b8a8-0fd28597e6d0"
+    ],
+    "fixture:internal-kb:hsk1:beginner-notes:measure-word:ge": [
+      "f1032433-3c0d-47b8-9631-831cfa19ea15"
+    ],
+    "fixture:internal-kb:hsk1:beginner-notes:numbers:er-vs-liang": [
+      "92731178-3f8e-4e70-a37f-bc94407895ff"
+    ],
+    "fixture:internal-kb:hsk1:beginner-notes:particle:de": [
+      "92731178-3f8e-4e70-a37f-bc94407895ff"
+    ],
+    "fixture:internal-kb:hsk1:beginner-notes:particle:ne": [
+      "f1032433-3c0d-47b8-9631-831cfa19ea15"
+    ],
+    "fixture:internal-kb:hsk1:beginner-notes:pronouns:ni-vs-nin": [
+      "92731178-3f8e-4e70-a37f-bc94407895ff"
+    ]
+  },
+  "source_runtime_ids": {
+    "fixture.internal-kb.hsk1.beginner-notes": "5714f356-bd09-42fd-a94c-5d44f6047a57",
+    "fixture.lesson.hsk1.01.greetings": "a1aaf57c-7687-41c7-a621-ab65bfd70954",
+    "fixture.lesson.hsk1.02.numbers-age": "74f6105d-e014-41d2-a834-5c71ce8c7194",
+    "fixture.lesson.hsk1.03.family": "d0d6b936-9499-41f1-8811-87a111dd278e"
+  },
+  "stable_locator_count": 26
+}

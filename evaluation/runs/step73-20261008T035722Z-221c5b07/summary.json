@@ -1,0 +1,444 @@
+{
+  "case_counts_by_bucket": {
+    "CURRENT_LESSON_ANSWERABLE": 20,
+    "INTERNAL_KB_FALLBACK": 10,
+    "MULTI_TURN_CONTEXT": 10,
+    "NO_EVIDENCE_REFUSAL": 8,
+    "TRUSTED_EXTERNAL_FALLBACK": 5
+  },
+  "case_counts_by_split": {
+    "DEVELOPMENT": 42,
+    "HOLDOUT": 11
+  },
+  "cases_with_scope_violation": 0,
+  "dataset_version": "v0.8.0",
+  "development_calibration_headline": {
+    "false_evidence_acceptance_rate_current_lesson": 0.0,
+    "false_evidence_acceptance_rate_internal_kb": 0.0,
+    "false_evidence_acceptance_rate_overall": 0.0,
+    "negative_attempts_falsely_accepted": 0,
+    "positive_attempts_accepted": 22,
+    "threshold": -1.0815147161483765,
+    "true_evidence_acceptance_rate_current_lesson": 0.75,
+    "true_evidence_acceptance_rate_internal_kb": 0.5833333333333334,
+    "true_evidence_acceptance_rate_overall": 0.6875
+  },
+  "holdout_verification_headline": {
+    "false_evidence_acceptance_rate_current_lesson": 0.0,
+    "false_evidence_acceptance_rate_internal_kb": 0.0,
+    "false_evidence_acceptance_rate_overall": 0.0,
+    "negative_attempts_falsely_accepted": 0,
+    "positive_attempts_accepted": 6,
+    "true_evidence_acceptance_rate_current_lesson": 0.8,
+    "true_evidence_acceptance_rate_internal_kb": 0.6666666666666666,
+    "true_evidence_acceptance_rate_overall": 0.75
+  },
+  "metrics_by_bucket": {
+    "CURRENT_LESSON_ANSWERABLE": {
+      "attempt_count": 20,
+      "cases_with_scope_violation": 0,
+      "negative_attempts": 0,
+      "negative_score_distributions": {
+        "fallback_negatives": [],
+        "no_evidence_diagnostics": [],
+        "trusted_external_internal_negatives": []
+      },
+      "positive_attempts": 20,
+      "reranked_ndcg5": 0.9161732909393884,
+      "reranked_precision5": 0.33999999999999997,
+      "reranked_recall20": null,
+      "reranked_recall5": 1.0,
+      "reranker_deltas": {
+        "ndcg5": 0.05873767522051545,
+        "precision5": 0.009999999999999998,
+        "recall5": 0.05
+      },
+      "scope_violation_rate": 0.0,
+      "scope_violations": 0,
+      "semantic_ndcg5": 0.8574356157188727,
+      "semantic_precision5": 0.33,
+      "semantic_recall20": 1.0,
+      "semantic_recall5": 0.95
+    },
+    "INTERNAL_KB_FALLBACK": {
+      "attempt_count": 20,
+      "cases_with_scope_violation": 0,
+      "negative_attempts": 10,
+      "negative_score_distributions": {
+        "fallback_negatives": [
+          -8.257312774658203,
+          -9.08709716796875,
+          -4.416547775268555,
+          -4.605332374572754,
+          -6.248963356018066,
+          -2.811901330947876,
+          -2.803865432739258,
+          -8.077120780944824,
+          -9.45483684539795,
+          -4.754310607910156
+        ],
+        "no_evidence_diagnostics": [],
+        "trusted_external_internal_negatives": []
+      },
+      "positive_attempts": 10,
+      "reranked_ndcg5": 1.0,
+      "reranked_precision5": 0.22000000000000003,
+      "reranked_recall20": null,
+      "reranked_recall5": 1.0,
+      "reranker_deltas": {
+        "ndcg5": 0.29762809857141703,
+        "precision5": 0.02,
+        "recall5": 0.1
+      },
+      "scope_violation_rate": 0.0,
+      "scope_violations": 0,
+      "semantic_ndcg5": 0.702371901428583,
+      "semantic_precision5": 0.2,
+      "semantic_recall20": 1.0,
+      "semantic_recall5": 0.9
+    },
+    "MULTI_TURN_CONTEXT": {
+      "attempt_count": 15,
+      "cases_with_scope_violation": 0,
+      "negative_attempts": 5,
+      "negative_score_distributions": {
+        "fallback_negatives": [],
+        "no_evidence_diagnostics": [],
+        "trusted_external_internal_negatives": []
+      },
+      "positive_attempts": 10,
+      "reranked_ndcg5": 0.9163797735485103,
+      "reranked_precision5": 0.22000000000000003,
+      "reranked_recall20": null,
+      "reranked_recall5": 0.95,
+      "reranker_deltas": {
+        "ndcg5": 0.06578612820052727,
+        "precision5": 0.0,
+        "recall5": 0.0
+      },
+      "scope_violation_rate": 0.0,
+      "scope_violations": 0,
+      "semantic_ndcg5": 0.850593645347983,
+      "semantic_precision5": 0.22000000000000003,
+      "semantic_recall20": 1.0,
+      "semantic_recall5": 0.95
+    },
+    "NO_EVIDENCE_REFUSAL": {
+      "attempt_count": 8,
+      "cases_with_scope_violation": 0,
+      "negative_attempts": 8,
+      "negative_score_distributions": {
+        "fallback_negatives": [],
+        "no_evidence_diagnostics": [
+          -5.6168317794799805,
+          -2.5171079635620117,
+          -6.640243053436279,
+          -6.23388147354126,
+          -6.079904556274414,
+          -5.668036460876465,
+          -4.919699192047119,
+          -6.867714881896973
+        ],
+        "trusted_external_internal_negatives": []
+      },
+      "positive_attempts": 0,
+      "reranked_ndcg5": null,
+      "reranked_precision5": null,
+      "reranked_recall20": null,
+      "reranked_recall5": null,
+      "reranker_deltas": {
+        "ndcg5": null,
+        "precision5": null,
+        "recall5": null
+      },
+      "scope_violation_rate": 0.0,
+      "scope_violations": 0,
+      "semantic_ndcg5": null,
+      "semantic_precision5": null,
+      "semantic_recall20": null,
+      "semantic_recall5": null
+    },
+    "TRUSTED_EXTERNAL_FALLBACK": {
+      "attempt_count": 10,
+      "cases_with_scope_violation": 0,
+      "negative_attempts": 10,
+      "negative_score_distributions": {
+        "fallback_negatives": [],
+        "no_evidence_diagnostics": [],
+        "trusted_external_internal_negatives": [
+          -6.183312892913818,
+          -4.750797748565674,
+          -7.218252182006836,
+          -4.8420090675354,
+          -5.627596378326416,
+          -4.209646224975586,
+          -6.527130126953125,
+          -6.439849853515625,
+          -1.8507909774780273,
+          -1.8507955074310303
+        ]
+      },
+      "positive_attempts": 0,
+      "reranked_ndcg5": null,
+      "reranked_precision5": null,
+      "reranked_recall20": null,
+      "reranked_recall5": null,
+      "reranker_deltas": {
+        "ndcg5": null,
+        "precision5": null,
+        "recall5": null
+      },
+      "scope_violation_rate": 0.0,
+      "scope_violations": 0,
+      "semantic_ndcg5": null,
+      "semantic_precision5": null,
+      "semantic_recall20": null,
+      "semantic_recall5": null
+    }
+  },
+  "metrics_by_split": {
+    "DEVELOPMENT": {
+      "attempt_count": 58,
+      "cases_with_scope_violation": 0,
+      "negative_attempts": 26,
+      "negative_score_distributions": {
+        "fallback_negatives": [
+          -8.257312774658203,
+          -9.08709716796875,
+          -4.416547775268555,
+          -4.605332374572754,
+          -6.248963356018066,
+          -2.811901330947876,
+          -2.803865432739258,
+          -8.077120780944824
+        ],
+        "no_evidence_diagnostics": [
+          -5.6168317794799805,
+          -2.5171079635620117,
+          -6.640243053436279,
+          -6.23388147354126,
+          -6.079904556274414,
+          -5.668036460876465
+        ],
+        "trusted_external_internal_negatives": [
+          -6.183312892913818,
+          -4.750797748565674,
+          -7.218252182006836,
+          -4.8420090675354,
+          -5.627596378326416,
+          -4.209646224975586,
+          -6.527130126953125,
+          -6.439849853515625
+        ]
+      },
+      "positive_attempts": 32,
+      "reranked_ndcg5": 0.9508017888321255,
+      "reranked_precision5": 0.29375,
+      "reranked_recall20": null,
+      "reranked_recall5": 0.984375,
+      "reranker_deltas": {
+        "ndcg5": 0.11765850066534064,
+        "precision5": 0.006249999999999999,
+        "recall5": 0.03125
+      },
+      "scope_violation_rate": 0.0,
+      "scope_violations": 0,
+      "semantic_ndcg5": 0.833143288166785,
+      "semantic_precision5": 0.28750000000000003,
+      "semantic_recall20": 1.0,
+      "semantic_recall5": 0.953125
+    },
+    "HOLDOUT": {
+      "attempt_count": 15,
+      "cases_with_scope_violation": 0,
+      "negative_attempts": 7,
+      "negative_score_distributions": {
+        "fallback_negatives": [
+          -9.45483684539795,
+          -4.754310607910156
+        ],
+        "no_evidence_diagnostics": [
+          -4.919699192047119,
+          -6.867714881896973
+        ],
+        "trusted_external_internal_negatives": [
+          -1.8507909774780273,
+          -1.8507955074310303
+        ]
+      },
+      "positive_attempts": 8,
+      "reranked_ndcg5": 0.8827007889556063,
+      "reranked_precision5": 0.225,
+      "reranked_recall20": null,
+      "reranked_recall5": 1.0,
+      "reranker_deltas": {
+        "ndcg5": 0.13047796885485644,
+        "precision5": 0.025,
+        "recall5": 0.125
+      },
+      "scope_violation_rate": 0.0,
+      "scope_violations": 0,
+      "semantic_ndcg5": 0.7522228201007499,
+      "semantic_precision5": 0.2,
+      "semantic_recall20": 1.0,
+      "semantic_recall5": 0.875
+    }
+  },
+  "metrics_by_tier": {
+    "CURRENT_LESSON": {
+      "attempt_count": 45,
+      "cases_with_scope_violation": 0,
+      "negative_attempts": 20,
+      "negative_score_distributions": {
+        "fallback_negatives": [
+          -8.257312774658203,
+          -9.08709716796875,
+          -4.416547775268555,
+          -4.605332374572754,
+          -6.248963356018066,
+          -2.811901330947876,
+          -2.803865432739258,
+          -8.077120780944824,
+          -9.45483684539795,
+          -4.754310607910156
+        ],
+        "no_evidence_diagnostics": [],
+        "trusted_external_internal_negatives": [
+          -6.183312892913818,
+          -7.218252182006836,
+          -5.627596378326416,
+          -6.527130126953125,
+          -1.8507909774780273
+        ]
+      },
+      "positive_attempts": 25,
+      "reranked_ndcg5": 0.9149646544602965,
+      "reranked_precision5": 0.32,
+      "reranked_recall20": null,
+      "reranked_recall5": 1.0,
+      "reranker_deltas": {
+        "ndcg5": 0.029016161885198156,
+        "precision5": 0.007999999999999998,
+        "recall5": 0.04
+      },
+      "scope_violation_rate": 0.0,
+      "scope_violations": 0,
+      "semantic_ndcg5": 0.8859484925750982,
+      "semantic_precision5": 0.31200000000000006,
+      "semantic_recall20": 1.0,
+      "semantic_recall5": 0.96
+    },
+    "INTERNAL_KB": {
+      "attempt_count": 28,
+      "cases_with_scope_violation": 0,
+      "negative_attempts": 13,
+      "negative_score_distributions": {
+        "fallback_negatives": [],
+        "no_evidence_diagnostics": [
+          -5.6168317794799805,
+          -2.5171079635620117,
+          -6.640243053436279,
+          -6.23388147354126,
+          -6.079904556274414,
+          -5.668036460876465,
+          -4.919699192047119,
+          -6.867714881896973
+        ],
+        "trusted_external_internal_negatives": [
+          -4.750797748565674,
+          -4.8420090675354,
+          -4.209646224975586,
+          -6.439849853515625,
+          -1.8507955074310303
+        ]
+      },
+      "positive_attempts": 15,
+      "reranked_ndcg5": 0.9742098128510306,
+      "reranked_precision5": 0.21333333333333335,
+      "reranked_recall20": null,
+      "reranked_recall5": 0.9666666666666667,
+      "reranker_deltas": {
+        "ndcg5": 0.2722327816666532,
+        "precision5": 0.013333333333333334,
+        "recall5": 0.06666666666666667
+      },
+      "scope_violation_rate": 0.0,
+      "scope_violations": 0,
+      "semantic_ndcg5": 0.7019770311843774,
+      "semantic_precision5": 0.2,
+      "semantic_recall20": 1.0,
+      "semantic_recall5": 0.9
+    }
+  },
+  "metrics_overall": {
+    "attempt_count": 73,
+    "cases_with_scope_violation": 0,
+    "negative_attempts": 33,
+    "negative_score_distributions": {
+      "fallback_negatives": [
+        -8.257312774658203,
+        -9.08709716796875,
+        -4.416547775268555,
+        -4.605332374572754,
+        -6.248963356018066,
+        -2.811901330947876,
+        -2.803865432739258,
+        -8.077120780944824,
+        -9.45483684539795,
+        -4.754310607910156
+      ],
+      "no_evidence_diagnostics": [
+        -5.6168317794799805,
+        -2.5171079635620117,
+        -6.640243053436279,
+        -6.23388147354126,
+        -6.079904556274414,
+        -5.668036460876465,
+        -4.919699192047119,
+        -6.867714881896973
+      ],
+      "trusted_external_internal_negatives": [
+        -6.183312892913818,
+        -4.750797748565674,
+        -7.218252182006836,
+        -4.8420090675354,
+        -5.627596378326416,
+        -4.209646224975586,
+        -6.527130126953125,
+        -6.439849853515625,
+        -1.8507909774780273,
+        -1.8507955074310303
+      ]
+    },
+    "positive_attempts": 40,
+    "reranked_ndcg5": 0.9371815888568218,
+    "reranked_precision5": 0.28,
+    "reranked_recall20": null,
+    "reranked_recall5": 0.9875,
+    "reranker_deltas": {
+      "ndcg5": 0.1202223943032438,
+      "precision5": 0.009999999999999998,
+      "recall5": 0.05
+    },
+    "scope_violation_rate": 0.0,
+    "scope_violations": 0,
+    "semantic_ndcg5": 0.816959194553578,
+    "semantic_precision5": 0.27,
+    "semantic_recall20": 1.0,
+    "semantic_recall5": 0.9375
+  },
+  "recommended_threshold": -1.0815147161483765,
+  "run_id": "step73-20261008T035722Z-221c5b07",
+  "scope_violation_rate": 0.0,
+  "threshold_recommendation_status": "RECOMMENDATION_READY_FOR_PM",
+  "tier_attempt_counts_by_split_tier_label": {
+    "DEVELOPMENT/CURRENT_LESSON/NEGATIVE": 16,
+    "DEVELOPMENT/CURRENT_LESSON/POSITIVE": 20,
+    "DEVELOPMENT/INTERNAL_KB/NEGATIVE": 10,
+    "DEVELOPMENT/INTERNAL_KB/POSITIVE": 12,
+    "HOLDOUT/CURRENT_LESSON/NEGATIVE": 4,
+    "HOLDOUT/CURRENT_LESSON/POSITIVE": 5,
+    "HOLDOUT/INTERNAL_KB/NEGATIVE": 3,
+    "HOLDOUT/INTERNAL_KB/POSITIVE": 3
+  }
+}

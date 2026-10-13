@@ -1,0 +1,163 @@
+{
+  "source_id": "fixture.lesson.hsk1.02.numbers-age",
+  "source_kind": "LESSON",
+  "lesson_locator": "fixture:hsk1:lesson:02:numbers-age",
+  "lesson_title": "Numbers and age (synthetic HSK1 fixture)",
+  "hsk_level_number": 1,
+  "hsk_identity_note": "Synthetic project fixture identity only; not official syllabus certification.",
+  "status": "ACCEPTED_FOR_EVALUATION_FIXTURE",
+  "blocks": [
+    {
+      "source_id": "fixture.lesson.hsk1.02.numbers-age",
+      "block_id": "numbers-age.vocabulary.numbers-1-5",
+      "stable_locator": "fixture:hsk1:lesson:02:numbers-age:vocabulary:numbers-1-5",
+      "source_locator": "fixture:hsk1:lesson:02:numbers-age#vocabulary/numbers-1-5",
+      "content_type": "VOCABULARY",
+      "content": {
+        "items": [
+          {
+            "chinese": "一",
+            "pinyin": "yī",
+            "vietnamese": "một"
+          },
+          {
+            "chinese": "二",
+            "pinyin": "èr",
+            "vietnamese": "hai"
+          },
+          {
+            "chinese": "三",
+            "pinyin": "sān",
+            "vietnamese": "ba"
+          },
+          {
+            "chinese": "四",
+            "pinyin": "sì",
+            "vietnamese": "bốn"
+          },
+          {
+            "chinese": "五",
+            "pinyin": "wǔ",
+            "vietnamese": "năm"
+          }
+        ],
+        "example": "二加三是五。",
+        "example_pinyin": "Èr jiā sān shì wǔ.",
+        "example_vietnamese": "Hai cộng ba bằng năm."
+      }
+    },
+    {
+      "source_id": "fixture.lesson.hsk1.02.numbers-age",
+      "block_id": "numbers-age.vocabulary.numbers-6-10",
+      "stable_locator": "fixture:hsk1:lesson:02:numbers-age:vocabulary:numbers-6-10",
+      "source_locator": "fixture:hsk1:lesson:02:numbers-age#vocabulary/numbers-6-10",
+      "content_type": "VOCABULARY",
+      "content": {
+        "items": [
+          {
+            "chinese": "六",
+            "pinyin": "liù",
+            "vietnamese": "sáu"
+          },
+          {
+            "chinese": "七",
+            "pinyin": "qī",
+            "vietnamese": "bảy"
+          },
+          {
+            "chinese": "八",
+            "pinyin": "bā",
+            "vietnamese": "tám"
+          },
+          {
+            "chinese": "九",
+            "pinyin": "jiǔ",
+            "vietnamese": "chín"
+          },
+          {
+            "chinese": "十",
+            "pinyin": "shí",
+            "vietnamese": "mười"
+          }
+        ],
+        "example": "六、七、八、九、十。",
+        "example_pinyin": "Liù, qī, bā, jiǔ, shí.",
+        "example_vietnamese": "Sáu, bảy, tám, chín, mười."
+      }
+    },
+    {
+      "source_id": "fixture.lesson.hsk1.02.numbers-age",
+      "block_id": "numbers-age.vocabulary.ji",
+      "stable_locator": "fixture:hsk1:lesson:02:numbers-age:vocabulary:ji",
+      "source_locator": "fixture:hsk1:lesson:02:numbers-age#vocabulary/ji",
+      "content_type": "VOCABULARY",
+      "content": {
+        "chinese": "几",
+        "pinyin": "jǐ",
+        "vietnamese": "mấy; bao nhiêu (dùng trong một số câu hỏi về số lượng nhỏ)",
+        "example": "你几岁？"
+      }
+    },
+    {
+      "source_id": "fixture.lesson.hsk1.02.numbers-age",
+      "block_id": "numbers-age.vocabulary.sui",
+      "stable_locator": "fixture:hsk1:lesson:02:numbers-age:vocabulary:sui",
+      "source_locator": "fixture:hsk1:lesson:02:numbers-age#vocabulary/sui",
+      "content_type": "VOCABULARY",
+      "content": {
+        "chinese": "岁",
+        "pinyin": "suì",
+        "vietnamese": "tuổi; từ chỉ tuổi khi nói tuổi tác",
+        "example": "我十岁。",
+        "example_pinyin": "Wǒ shí suì.",
+        "example_vietnamese": "Tôi mười tuổi."
+      }
+    },
+    {
+      "source_id": "fixture.lesson.hsk1.02.numbers-age",
+      "block_id": "numbers-age.vocabulary.jisui",
+      "stable_locator": "fixture:hsk1:lesson:02:numbers-age:vocabulary:jisui",
+      "source_locator": "fixture:hsk1:lesson:02:numbers-age#vocabulary/jisui",
+      "content_type": "VOCABULARY",
+      "content": {
+        "chinese": "几岁",
+        "pinyin": "jǐ suì",
+        "vietnamese": "mấy tuổi",
+        "example": "你几岁？",
+        "example_pinyin": "Nǐ jǐ suì?",
+        "example_vietnamese": "Bạn mấy tuổi?"
+      }
+    },
+    {
+      "source_id": "fixture.lesson.hsk1.02.numbers-age",
+      "block_id": "numbers-age.grammar.ask-age",
+      "stable_locator": "fixture:hsk1:lesson:02:numbers-age:grammar:ask-age",
+      "source_locator": "fixture:hsk1:lesson:02:numbers-age#grammar/ask-age",
+      "content_type": "GRAMMAR",
+      "content": {
+        "pattern": "你 + 几 + 岁？",
+        "pinyin": "Nǐ + jǐ + suì?",
+        "vietnamese_explanation": "Hỏi một người mấy tuổi; câu hỏi trực tiếp này thường dùng với trẻ em hoặc trong ngữ cảnh thân mật.",
+        "example": "你几岁？",
+        "example_pinyin": "Nǐ jǐ suì?",
+        "example_vietnamese": "Bạn mấy tuổi?"
+      }
+    },
+    {
+      "source_id": "fixture.lesson.hsk1.02.numbers-age",
+      "block_id": "numbers-age.grammar.answer-age",
+      "stable_locator": "fixture:hsk1:lesson:02:numbers-age:grammar:answer-age",
+      "source_locator": "fixture:hsk1:lesson:02:numbers-age#grammar/answer-age",
+      "content_type": "GRAMMAR",
+      "content": {
+        "pattern": "我 + number + 岁。",
+        "pinyin": "Wǒ + number + suì.",
+        "vietnamese_explanation": "Nói tuổi bằng số đứng trước 岁.",
+        "example": "我十岁。",
+        "example_pinyin": "Wǒ shí suì.",
+        "example_vietnamese": "Tôi mười tuổi."
+      }
+    }
+  ],
+  "intended_scope": "CURRENT_LESSON"
+}

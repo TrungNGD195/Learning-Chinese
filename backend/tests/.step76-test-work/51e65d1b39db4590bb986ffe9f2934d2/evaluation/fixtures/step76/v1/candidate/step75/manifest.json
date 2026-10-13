@@ -1,0 +1,32 @@
+{
+  "case_set_sha256": "fixture-case-set-sha256-v1",
+  "chunking_config": "fixture-chunking",
+  "code_commit": "fixture-code-b",
+  "critical_failure_policy_version": "fixture-critical-v1",
+  "critical_failure_semantics_version": "fixture-critical-semantics-v1",
+  "dataset_name": "step76-deterministic-test-fixture",
+  "dataset_schema_version": "fixture-schema-v1",
+  "dataset_version": "fixture-v1",
+  "embedding_profile": "fixture-embedding",
+  "evaluation_step": "7.5",
+  "evaluator_policy_version": "fixture-evaluator-v1",
+  "execution_mode": "OFFLINE_TEST",
+  "holdout_repeat_policy_version": "D-110",
+  "holdout_repeat_structure": {
+    "DEVELOPMENT": 1,
+    "HOLDOUT": 3
+  },
+  "judge_policy_version": "fixture-judge-v1",
+  "llm_config": "fixture-llm",
+  "metric_definition_id": "fixture-metrics-v1",
+  "metric_policy_version": "fixture-metric-policy-v1",
+  "official_baseline_eligible": false,
+  "official_run_executed": false,
+  "prompt_version": "fixture-prompt",
+  "rag_evidence_threshold": "fixture-threshold",
+  "reranker_config": "fixture-reranker",
+  "retrieval_config": "fixture-retrieval",
+  "rubric_version": "fixture-rubric-v1",
+  "run_id": "step76-fixture-candidate-step75-v1",
+  "split_assignment_sha256": "fixture-split-sha256-v1"
+}

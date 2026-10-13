@@ -1,0 +1,88 @@
+{
+  "fixture_id": "step77-curriculum-fixture/v0.1.0",
+  "grammar": [
+    {
+      "id": "2e205f12-ca06-5527-bcb5-b3c933f4c99e",
+      "lesson_id": "a28551ba-5bef-5225-b633-0b78fd2beccf",
+      "order_index": 1,
+      "name": "Câu hỏi với 吗",
+      "structure": "statement + 吗",
+      "explanation": "Thêm 吗 vào cuối câu trần thuật để tạo câu hỏi có/không.",
+      "usage": "Evaluation fixture only.",
+      "example": "你好吗？"
+    },
+    {
+      "id": "7bdfb5fe-8280-56a9-90f0-0c56bab2bafe",
+      "lesson_id": "627aae34-427c-58b4-bc74-b7d02ac03da7",
+      "order_index": 1,
+      "name": "Mẫu câu nói tên",
+      "structure": "A 叫 B",
+      "explanation": "Dùng A + 叫 + B để nói A tên là B.",
+      "usage": "Evaluation fixture only.",
+      "example": "我叫小安。"
+    },
+    {
+      "id": "8fe116c1-134a-5f70-8bb7-d275e0d8057c",
+      "lesson_id": "4354c302-40e8-51ba-bb45-667780709c1a",
+      "order_index": 1,
+      "name": "Số đếm cơ bản",
+      "structure": "number + 个 + noun",
+      "explanation": "Dùng số đếm trước 个 để đếm người hoặc sự vật trong ví dụ này.",
+      "usage": "Evaluation fixture only.",
+      "example": "一个人。"
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "a28551ba-5bef-5225-b633-0b78fd2beccf",
+      "lesson_number": 971,
+      "title": "Lời chào tiếng Trung",
+      "description": "Fixture tập trung vào lời chào cơ bản."
+    },
+    {
+      "lesson_id": "627aae34-427c-58b4-bc74-b7d02ac03da7",
+      "lesson_number": 972,
+      "title": "Giới thiệu tên",
+      "description": "Fixture tập trung vào cách nói tên."
+    },
+    {
+      "lesson_id": "4354c302-40e8-51ba-bb45-667780709c1a",
+      "lesson_number": 973,
+      "title": "Số đếm và tuổi",
+      "description": "Fixture minh họa số đếm cơ bản."
+    }
+  ],
+  "notice": "Synthetic repo-controlled content for offline evaluator integration only; not official instructional content.",
+  "vocabulary": [
+    {
+      "id": "ead9e727-cb32-5d56-a4d3-1815e453b12c",
+      "lesson_id": "a28551ba-5bef-5225-b633-0b78fd2beccf",
+      "order_index": 1,
+      "hanzi": "你好",
+      "pinyin": "nǐ hǎo",
+      "vietnamese_meaning": "xin chào",
+      "part_of_speech": "greeting",
+      "example": "你好！"
+    },
+    {
+      "id": "51cfe997-b2f6-5dec-ac44-091dab34859b",
+      "lesson_id": "627aae34-427c-58b4-bc74-b7d02ac03da7",
+      "order_index": 1,
+      "hanzi": "叫",
+      "pinyin": "jiào",
+      "vietnamese_meaning": "tên là; gọi là",
+      "part_of_speech": "verb",
+      "example": "我叫小安。"
+    },
+    {
+      "id": "d641c484-0f62-5a36-a16b-08eed506393e",
+      "lesson_id": "4354c302-40e8-51ba-bb45-667780709c1a",
+      "order_index": 1,
+      "hanzi": "一",
+      "pinyin": "yī",
+      "vietnamese_meaning": "một",
+      "part_of_speech": "number",
+      "example": "一个人。"
+    }
+  ]
+}

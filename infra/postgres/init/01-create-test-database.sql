@@ -1,0 +1,1 @@
+CREATE DATABASE chinese_learning_test;

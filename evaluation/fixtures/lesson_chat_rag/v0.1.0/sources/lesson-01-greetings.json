@@ -1,0 +1,107 @@
+{
+  "source_id": "fixture.lesson.hsk1.01.greetings",
+  "source_kind": "LESSON",
+  "lesson_locator": "fixture:hsk1:lesson:01:greetings",
+  "lesson_title": "Greetings and names (synthetic HSK1 fixture)",
+  "hsk_level_number": 1,
+  "hsk_identity_note": "Synthetic project fixture identity only; not official syllabus certification.",
+  "status": "ACCEPTED_FOR_EVALUATION_FIXTURE",
+  "blocks": [
+    {
+      "source_id": "fixture.lesson.hsk1.01.greetings",
+      "block_id": "greetings.vocabulary.nihao",
+      "stable_locator": "fixture:hsk1:lesson:01:greetings:vocabulary:nihao",
+      "source_locator": "fixture:hsk1:lesson:01:greetings#vocabulary/nihao",
+      "content_type": "VOCABULARY",
+      "content": {
+        "chinese": "你好",
+        "pinyin": "nǐ hǎo",
+        "vietnamese": "xin chào",
+        "example": "你好！"
+      }
+    },
+    {
+      "source_id": "fixture.lesson.hsk1.01.greetings",
+      "block_id": "greetings.vocabulary.zaijian",
+      "stable_locator": "fixture:hsk1:lesson:01:greetings:vocabulary:zaijian",
+      "source_locator": "fixture:hsk1:lesson:01:greetings#vocabulary/zaijian",
+      "content_type": "VOCABULARY",
+      "content": {
+        "chinese": "再见",
+        "pinyin": "zàijiàn",
+        "vietnamese": "tạm biệt",
+        "example": "再见！"
+      }
+    },
+    {
+      "source_id": "fixture.lesson.hsk1.01.greetings",
+      "block_id": "greetings.vocabulary.wo",
+      "stable_locator": "fixture:hsk1:lesson:01:greetings:vocabulary:wo",
+      "source_locator": "fixture:hsk1:lesson:01:greetings#vocabulary/wo",
+      "content_type": "VOCABULARY",
+      "content": {
+        "chinese": "我",
+        "pinyin": "wǒ",
+        "vietnamese": "tôi",
+        "example": "我叫小安。"
+      }
+    },
+    {
+      "source_id": "fixture.lesson.hsk1.01.greetings",
+      "block_id": "greetings.vocabulary.ni",
+      "stable_locator": "fixture:hsk1:lesson:01:greetings:vocabulary:ni",
+      "source_locator": "fixture:hsk1:lesson:01:greetings#vocabulary/ni",
+      "content_type": "VOCABULARY",
+      "content": {
+        "chinese": "你",
+        "pinyin": "nǐ",
+        "vietnamese": "bạn; đại từ ngôi hai số ít thông dụng",
+        "example": "你叫小安吗？"
+      }
+    },
+    {
+      "source_id": "fixture.lesson.hsk1.01.greetings",
+      "block_id": "greetings.vocabulary.jiao",
+      "stable_locator": "fixture:hsk1:lesson:01:greetings:vocabulary:jiao",
+      "source_locator": "fixture:hsk1:lesson:01:greetings#vocabulary/jiao",
+      "content_type": "VOCABULARY",
+      "content": {
+        "chinese": "叫",
+        "pinyin": "jiào",
+        "vietnamese": "được gọi là; tên là (trong mẫu giới thiệu tên)",
+        "example": "我叫小安。"
+      }
+    },
+    {
+      "source_id": "fixture.lesson.hsk1.01.greetings",
+      "block_id": "greetings.grammar.a-jiao-b",
+      "stable_locator": "fixture:hsk1:lesson:01:greetings:grammar:a-jiao-b",
+      "source_locator": "fixture:hsk1:lesson:01:greetings#grammar/a-jiao-b",
+      "content_type": "GRAMMAR",
+      "content": {
+        "pattern": "A + 叫 + B",
+        "pinyin": "A + jiào + B",
+        "vietnamese_explanation": "Dùng để nói A tên là B hoặc A được gọi là B.",
+        "example": "我叫小安。",
+        "example_pinyin": "Wǒ jiào Xiǎo'ān.",
+        "example_vietnamese": "Tôi tên là Tiểu An."
+      }
+    },
+    {
+      "source_id": "fixture.lesson.hsk1.01.greetings",
+      "block_id": "greetings.grammar.ma-question",
+      "stable_locator": "fixture:hsk1:lesson:01:greetings:grammar:ma-question",
+      "source_locator": "fixture:hsk1:lesson:01:greetings#grammar/ma-question",
+      "content_type": "GRAMMAR",
+      "content": {
+        "pattern": "statement + 吗？",
+        "pinyin": "statement + ma?",
+        "vietnamese_explanation": "吗 đặt cuối câu để tạo câu hỏi có/không.",
+        "example": "你叫小安吗？",
+        "example_pinyin": "Nǐ jiào Xiǎo'ān ma?",
+        "example_vietnamese": "Bạn tên là Tiểu An phải không?"
+      }
+    }
+  ],
+  "intended_scope": "CURRENT_LESSON"
+}

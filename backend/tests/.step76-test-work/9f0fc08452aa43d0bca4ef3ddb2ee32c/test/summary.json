@@ -1,0 +1,866 @@
+{
+  "baseline_run_id": "baseline",
+  "bucket_changes": [],
+  "bucket_level_deltas": {
+    "step73": {
+      "CURRENT_LESSON_ANSWERABLE": {
+        "reranked_ndcg5": {
+          "baseline": 0.9,
+          "candidate": 0.91,
+          "classification": "STABLE",
+          "delta": 0.010000000000000009,
+          "direction": "higher_is_better",
+          "threshold": 0.02
+        },
+        "reranked_precision5": {
+          "baseline": 0.9,
+          "candidate": 0.91,
+          "classification": "STABLE",
+          "delta": 0.010000000000000009,
+          "direction": "higher_is_better",
+          "threshold": 0.02
+        },
+        "reranked_recall5": {
+          "baseline": 0.9,
+          "candidate": 0.91,
+          "classification": "STABLE",
+          "delta": 0.010000000000000009,
+          "direction": "higher_is_better",
+          "threshold": 0.02
+        },
+        "semantic_recall20": {
+          "baseline": 0.9,
+          "candidate": 0.91,
+          "classification": "STABLE",
+          "delta": 0.010000000000000009,
+          "direction": "higher_is_better",
+          "threshold": 0.02
+        }
+      }
+    },
+    "step74": {
+      "CURRENT_LESSON_ANSWERABLE": {
+        "answer_correctness": {
+          "baseline": 1.1,
+          "candidate": 1.12,
+          "classification": "STABLE",
+          "delta": 0.020000000000000018,
+          "direction": "higher_is_better",
+          "threshold": 0.1
+        },
+        "completeness": {
+          "baseline": 1.1,
+          "candidate": 1.12,
+          "classification": "STABLE",
+          "delta": 0.020000000000000018,
+          "direction": "higher_is_better",
+          "threshold": 0.1
+        },
+        "faithfulness_groundedness": {
+          "baseline": 1.1,
+          "candidate": 1.12,
+          "classification": "STABLE",
+          "delta": 0.020000000000000018,
+          "direction": "higher_is_better",
+          "threshold": 0.1
+        },
+        "language_quality": {
+          "baseline": 1.1,
+          "candidate": 1.12,
+          "classification": "STABLE",
+          "delta": 0.020000000000000018,
+          "direction": "higher_is_better",
+          "threshold": 0.1
+        },
+        "learning_usefulness": {
+          "baseline": 1.1,
+          "candidate": 1.12,
+          "classification": "STABLE",
+          "delta": 0.020000000000000018,
+          "direction": "higher_is_better",
+          "threshold": 0.1
+        }
+      }
+    },
+    "step75": {
+      "CURRENT_LESSON_ANSWERABLE": {
+        "pass_rate": {
+          "baseline": 1.0,
+          "candidate": 1.0,
+          "classification": "STABLE",
+          "delta": 0.0,
+          "direction": "higher_is_better",
+          "threshold": 0.02
+        }
+      }
+    }
+  },
+  "candidate_run_id": "candidate",
+  "case_transitions": [
+    {
+      "baseline_pass": true,
+      "candidate_pass": true,
+      "case_id": "fixture-dev-01",
+      "classification": "UNCHANGED_PASS"
+    },
+    {
+      "baseline_pass": true,
+      "candidate_pass": true,
+      "case_id": "fixture-holdout-01",
+      "classification": "UNCHANGED_PASS"
+    }
+  ],
+  "comparison_id": "test",
+  "comparison_mode": "TEST_ONLY",
+  "comparison_policy_version": "lesson-chat-regression-policy/v1",
+  "compatibility": {
+    "checks": [
+      {
+        "compatible": true,
+        "field": "dataset_version",
+        "layer": "step73"
+      },
+      {
+        "compatible": true,
+        "field": "dataset_schema_version",
+        "layer": "step73"
+      },
+      {
+        "compatible": true,
+        "field": "case_set",
+        "layer": "step73"
+      },
+      {
+        "compatible": true,
+        "field": "split_assignment",
+        "layer": "step73"
+      },
+      {
+        "compatible": true,
+        "field": "repeat_identity",
+        "layer": "step73"
+      },
+      {
+        "compatible": true,
+        "field": "dataset_name",
+        "layer": "step74"
+      },
+      {
+        "compatible": true,
+        "field": "dataset_version",
+        "layer": "step74"
+      },
+      {
+        "compatible": true,
+        "field": "dataset_schema_version",
+        "layer": "step74"
+      },
+      {
+        "compatible": true,
+        "field": "eligible_case_policy_version",
+        "layer": "step74"
+      },
+      {
+        "compatible": true,
+        "field": "fixed_evidence_policy_version",
+        "layer": "step74"
+      },
+      {
+        "compatible": true,
+        "field": "fixed_memory_policy_version",
+        "layer": "step74"
+      },
+      {
+        "compatible": true,
+        "field": "rubric_version",
+        "layer": "step74"
+      },
+      {
+        "compatible": true,
+        "field": "judge_prompt_version",
+        "layer": "step74"
+      },
+      {
+        "compatible": true,
+        "field": "human_annotation_version",
+        "layer": "step74"
+      },
+      {
+        "compatible": true,
+        "field": "technical_failure_policy_version",
+        "layer": "step74"
+      },
+      {
+        "compatible": true,
+        "field": "judge_identity",
+        "layer": "step74"
+      },
+      {
+        "compatible": true,
+        "field": "case_set",
+        "layer": "step74"
+      },
+      {
+        "compatible": true,
+        "field": "split_assignment",
+        "layer": "step74"
+      },
+      {
+        "compatible": true,
+        "field": "repeat_identity",
+        "layer": "step74"
+      },
+      {
+        "compatible": true,
+        "field": "dataset_name",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "dataset_version",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "dataset_schema_version",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "execution_plan_version",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "retrieval_scope_policy_version",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "e2e_policy_version",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "critical_failure_policy_version",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "human_annotation_version",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "judge_prompt_version",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "judge_schema_version",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "e2e_rubric_version",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "judge_model",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "judge_reasoning_effort",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "judge_temperature",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "judge_max_output_tokens",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "case_set",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "split_assignment",
+        "layer": "step75"
+      },
+      {
+        "compatible": true,
+        "field": "repeat_identity",
+        "layer": "step75"
+      }
+    ],
+    "compatible": true,
+    "issues": [],
+    "system_under_test_differences": {
+      "step73": {
+        "code_commit": {
+          "baseline": "fixture-base",
+          "candidate": "fixture-candidate"
+        }
+      },
+      "step74": {},
+      "step75": {}
+    }
+  },
+  "critical_failure_deltas": {
+    "new": [],
+    "persisting": [],
+    "resolved": []
+  },
+  "critical_failure_diff": {
+    "new": [],
+    "persisting": [],
+    "resolved": []
+  },
+  "e2e_pass_classification": "STABLE",
+  "e2e_pass_delta": 0.0,
+  "fixed_case_count": 0,
+  "gate_results": {
+    "holdout_pass_to_fail": false,
+    "new_critical_failure": false,
+    "numeric_regression": false,
+    "unresolved_review": false
+  },
+  "generation_dimension_classifications": {
+    "by_bucket:CURRENT_LESSON_ANSWERABLE": {
+      "answer_correctness": "STABLE",
+      "completeness": "STABLE",
+      "faithfulness_groundedness": "STABLE",
+      "language_quality": "STABLE",
+      "learning_usefulness": "STABLE"
+    },
+    "by_split:DEVELOPMENT": {
+      "answer_correctness": "STABLE",
+      "completeness": "STABLE",
+      "faithfulness_groundedness": "STABLE",
+      "language_quality": "STABLE",
+      "learning_usefulness": "STABLE"
+    },
+    "by_split:HOLDOUT": {
+      "answer_correctness": "STABLE",
+      "completeness": "STABLE",
+      "faithfulness_groundedness": "STABLE",
+      "language_quality": "STABLE",
+      "learning_usefulness": "STABLE"
+    },
+    "overall:overall": {
+      "answer_correctness": "STABLE",
+      "completeness": "STABLE",
+      "faithfulness_groundedness": "STABLE",
+      "language_quality": "STABLE",
+      "learning_usefulness": "STABLE"
+    }
+  },
+  "generation_dimension_deltas": {
+    "by_bucket:CURRENT_LESSON_ANSWERABLE": {
+      "answer_correctness": 0.020000000000000018,
+      "completeness": 0.020000000000000018,
+      "faithfulness_groundedness": 0.020000000000000018,
+      "language_quality": 0.020000000000000018,
+      "learning_usefulness": 0.020000000000000018
+    },
+    "by_split:DEVELOPMENT": {
+      "answer_correctness": 0.020000000000000018,
+      "completeness": 0.020000000000000018,
+      "faithfulness_groundedness": 0.020000000000000018,
+      "language_quality": 0.020000000000000018,
+      "learning_usefulness": 0.020000000000000018
+    },
+    "by_split:HOLDOUT": {
+      "answer_correctness": 0.020000000000000018,
+      "completeness": 0.020000000000000018,
+      "faithfulness_groundedness": 0.020000000000000018,
+      "language_quality": 0.020000000000000018,
+      "learning_usefulness": 0.020000000000000018
+    },
+    "overall:overall": {
+      "answer_correctness": 0.020000000000000018,
+      "completeness": 0.020000000000000018,
+      "faithfulness_groundedness": 0.020000000000000018,
+      "language_quality": 0.020000000000000018,
+      "learning_usefulness": 0.020000000000000018
+    }
+  },
+  "holdout_transitions": [
+    {
+      "baseline_pass_count": 3,
+      "baseline_stability_state": "STABLE_PASS",
+      "baseline_state": "STABLE_PASS",
+      "candidate_pass_count": 3,
+      "candidate_stability_state": "STABLE_PASS",
+      "candidate_state": "STABLE_PASS",
+      "case_id": "fixture-holdout-01",
+      "classification": "STABLE",
+      "stability_change": "STABLE_PASS->STABLE_PASS",
+      "stability_gate": "STABLE"
+    }
+  ],
+  "issues": [],
+  "latency_classification": "STABLE",
+  "latency_delta": {
+    "baseline_ms": 1100.0,
+    "candidate_ms": 1080.0,
+    "classification": "STABLE",
+    "relative_delta": -0.01818181818181818,
+    "threshold": 0.2
+  },
+  "metrics": {
+    "step73": {
+      "groups": {
+        "by_bucket": {
+          "CURRENT_LESSON_ANSWERABLE": {
+            "reranked_ndcg5": {
+              "baseline": 0.9,
+              "candidate": 0.91,
+              "classification": "STABLE",
+              "delta": 0.010000000000000009,
+              "direction": "higher_is_better",
+              "threshold": 0.02
+            },
+            "reranked_precision5": {
+              "baseline": 0.9,
+              "candidate": 0.91,
+              "classification": "STABLE",
+              "delta": 0.010000000000000009,
+              "direction": "higher_is_better",
+              "threshold": 0.02
+            },
+            "reranked_recall5": {
+              "baseline": 0.9,
+              "candidate": 0.91,
+              "classification": "STABLE",
+              "delta": 0.010000000000000009,
+              "direction": "higher_is_better",
+              "threshold": 0.02
+            },
+            "semantic_recall20": {
+              "baseline": 0.9,
+              "candidate": 0.91,
+              "classification": "STABLE",
+              "delta": 0.010000000000000009,
+              "direction": "higher_is_better",
+              "threshold": 0.02
+            }
+          }
+        },
+        "by_split": {
+          "DEVELOPMENT": {
+            "reranked_ndcg5": {
+              "baseline": 0.9,
+              "candidate": 0.91,
+              "classification": "STABLE",
+              "delta": 0.010000000000000009,
+              "direction": "higher_is_better",
+              "threshold": 0.02
+            },
+            "reranked_precision5": {
+              "baseline": 0.9,
+              "candidate": 0.91,
+              "classification": "STABLE",
+              "delta": 0.010000000000000009,
+              "direction": "higher_is_better",
+              "threshold": 0.02
+            },
+            "reranked_recall5": {
+              "baseline": 0.9,
+              "candidate": 0.91,
+              "classification": "STABLE",
+              "delta": 0.010000000000000009,
+              "direction": "higher_is_better",
+              "threshold": 0.02
+            },
+            "semantic_recall20": {
+              "baseline": 0.9,
+              "candidate": 0.91,
+              "classification": "STABLE",
+              "delta": 0.010000000000000009,
+              "direction": "higher_is_better",
+              "threshold": 0.02
+            }
+          },
+          "HOLDOUT": {
+            "reranked_ndcg5": {
+              "baseline": 0.9,
+              "candidate": 0.91,
+              "classification": "STABLE",
+              "delta": 0.010000000000000009,
+              "direction": "higher_is_better",
+              "threshold": 0.02
+            },
+            "reranked_precision5": {
+              "baseline": 0.9,
+              "candidate": 0.91,
+              "classification": "STABLE",
+              "delta": 0.010000000000000009,
+              "direction": "higher_is_better",
+              "threshold": 0.02
+            },
+            "reranked_recall5": {
+              "baseline": 0.9,
+              "candidate": 0.91,
+              "classification": "STABLE",
+              "delta": 0.010000000000000009,
+              "direction": "higher_is_better",
+              "threshold": 0.02
+            },
+            "semantic_recall20": {
+              "baseline": 0.9,
+              "candidate": 0.91,
+              "classification": "STABLE",
+              "delta": 0.010000000000000009,
+              "direction": "higher_is_better",
+              "threshold": 0.02
+            }
+          }
+        },
+        "overall": {
+          "overall": {
+            "reranked_ndcg5": {
+              "baseline": 0.9,
+              "candidate": 0.91,
+              "classification": "STABLE",
+              "delta": 0.010000000000000009,
+              "direction": "higher_is_better",
+              "threshold": 0.02
+            },
+            "reranked_precision5": {
+              "baseline": 0.9,
+              "candidate": 0.91,
+              "classification": "STABLE",
+              "delta": 0.010000000000000009,
+              "direction": "higher_is_better",
+              "threshold": 0.02
+            },
+            "reranked_recall5": {
+              "baseline": 0.9,
+              "candidate": 0.91,
+              "classification": "STABLE",
+              "delta": 0.010000000000000009,
+              "direction": "higher_is_better",
+              "threshold": 0.02
+            },
+            "semantic_recall20": {
+              "baseline": 0.9,
+              "candidate": 0.91,
+              "classification": "STABLE",
+              "delta": 0.010000000000000009,
+              "direction": "higher_is_better",
+              "threshold": 0.02
+            }
+          }
+        }
+      }
+    },
+    "step74": {
+      "groups": {
+        "by_bucket": {
+          "CURRENT_LESSON_ANSWERABLE": {
+            "answer_correctness": {
+              "baseline": 1.1,
+              "candidate": 1.12,
+              "classification": "STABLE",
+              "delta": 0.020000000000000018,
+              "direction": "higher_is_better",
+              "threshold": 0.1
+            },
+            "completeness": {
+              "baseline": 1.1,
+              "candidate": 1.12,
+              "classification": "STABLE",
+              "delta": 0.020000000000000018,
+              "direction": "higher_is_better",
+              "threshold": 0.1
+            },
+            "faithfulness_groundedness": {
+              "baseline": 1.1,
+              "candidate": 1.12,
+              "classification": "STABLE",
+              "delta": 0.020000000000000018,
+              "direction": "higher_is_better",
+              "threshold": 0.1
+            },
+            "language_quality": {
+              "baseline": 1.1,
+              "candidate": 1.12,
+              "classification": "STABLE",
+              "delta": 0.020000000000000018,
+              "direction": "higher_is_better",
+              "threshold": 0.1
+            },
+            "learning_usefulness": {
+              "baseline": 1.1,
+              "candidate": 1.12,
+              "classification": "STABLE",
+              "delta": 0.020000000000000018,
+              "direction": "higher_is_better",
+              "threshold": 0.1
+            }
+          }
+        },
+        "by_split": {
+          "DEVELOPMENT": {
+            "answer_correctness": {
+              "baseline": 1.1,
+              "candidate": 1.12,
+              "classification": "STABLE",
+              "delta": 0.020000000000000018,
+              "direction": "higher_is_better",
+              "threshold": 0.1
+            },
+            "completeness": {
+              "baseline": 1.1,
+              "candidate": 1.12,
+              "classification": "STABLE",
+              "delta": 0.020000000000000018,
+              "direction": "higher_is_better",
+              "threshold": 0.1
+            },
+            "faithfulness_groundedness": {
+              "baseline": 1.1,
+              "candidate": 1.12,
+              "classification": "STABLE",
+              "delta": 0.020000000000000018,
+              "direction": "higher_is_better",
+              "threshold": 0.1
+            },
+            "language_quality": {
+              "baseline": 1.1,
+              "candidate": 1.12,
+              "classification": "STABLE",
+              "delta": 0.020000000000000018,
+              "direction": "higher_is_better",
+              "threshold": 0.1
+            },
+            "learning_usefulness": {
+              "baseline": 1.1,
+              "candidate": 1.12,
+              "classification": "STABLE",
+              "delta": 0.020000000000000018,
+              "direction": "higher_is_better",
+              "threshold": 0.1
+            }
+          },
+          "HOLDOUT": {
+            "answer_correctness": {
+              "baseline": 1.1,
+              "candidate": 1.12,
+              "classification": "STABLE",
+              "delta": 0.020000000000000018,
+              "direction": "higher_is_better",
+              "threshold": 0.1
+            },
+            "completeness": {
+              "baseline": 1.1,
+              "candidate": 1.12,
+              "classification": "STABLE",
+              "delta": 0.020000000000000018,
+              "direction": "higher_is_better",
+              "threshold": 0.1
+            },
+            "faithfulness_groundedness": {
+              "baseline": 1.1,
+              "candidate": 1.12,
+              "classification": "STABLE",
+              "delta": 0.020000000000000018,
+              "direction": "higher_is_better",
+              "threshold": 0.1
+            },
+            "language_quality": {
+              "baseline": 1.1,
+              "candidate": 1.12,
+              "classification": "STABLE",
+              "delta": 0.020000000000000018,
+              "direction": "higher_is_better",
+              "threshold": 0.1
+            },
+            "learning_usefulness": {
+              "baseline": 1.1,
+              "candidate": 1.12,
+              "classification": "STABLE",
+              "delta": 0.020000000000000018,
+              "direction": "higher_is_better",
+              "threshold": 0.1
+            }
+          }
+        },
+        "overall": {
+          "overall": {
+            "answer_correctness": {
+              "baseline": 1.1,
+              "candidate": 1.12,
+              "classification": "STABLE",
+              "delta": 0.020000000000000018,
+              "direction": "higher_is_better",
+              "threshold": 0.1
+            },
+            "completeness": {
+              "baseline": 1.1,
+              "candidate": 1.12,
+              "classification": "STABLE",
+              "delta": 0.020000000000000018,
+              "direction": "higher_is_better",
+              "threshold": 0.1
+            },
+            "faithfulness_groundedness": {
+              "baseline": 1.1,
+              "candidate": 1.12,
+              "classification": "STABLE",
+              "delta": 0.020000000000000018,
+              "direction": "higher_is_better",
+              "threshold": 0.1
+            },
+            "language_quality": {
+              "baseline": 1.1,
+              "candidate": 1.12,
+              "classification": "STABLE",
+              "delta": 0.020000000000000018,
+              "direction": "higher_is_better",
+              "threshold": 0.1
+            },
+            "learning_usefulness": {
+              "baseline": 1.1,
+              "candidate": 1.12,
+              "classification": "STABLE",
+              "delta": 0.020000000000000018,
+              "direction": "higher_is_better",
+              "threshold": 0.1
+            }
+          }
+        }
+      }
+    },
+    "step75": {
+      "groups": {
+        "by_bucket": {
+          "CURRENT_LESSON_ANSWERABLE": {
+            "pass_rate": {
+              "baseline": 1.0,
+              "candidate": 1.0,
+              "classification": "STABLE",
+              "delta": 0.0,
+              "direction": "higher_is_better",
+              "threshold": 0.02
+            }
+          }
+        },
+        "overall": {
+          "overall": {
+            "latency_p95": {
+              "baseline_ms": 1100.0,
+              "candidate_ms": 1080.0,
+              "classification": "STABLE",
+              "relative_delta": -0.01818181818181818,
+              "threshold": 0.2
+            },
+            "pass_rate": {
+              "baseline": 1.0,
+              "candidate": 1.0,
+              "classification": "STABLE",
+              "delta": 0.0,
+              "direction": "higher_is_better",
+              "threshold": 0.02
+            },
+            "technical_failure_rate": {
+              "baseline": 0.0,
+              "candidate": 0.0,
+              "classification": "STABLE",
+              "delta": 0.0,
+              "direction": "lower_is_better",
+              "threshold": 0.01
+            }
+          }
+        }
+      }
+    }
+  },
+  "official_eligible": false,
+  "overall_status": "PASS",
+  "policy_version": "lesson-chat-regression-policy/v1",
+  "regressed_case_count": 0,
+  "retrieval_metric_classifications": {
+    "by_bucket:CURRENT_LESSON_ANSWERABLE": {
+      "reranked_ndcg5": "STABLE",
+      "reranked_precision5": "STABLE",
+      "reranked_recall5": "STABLE",
+      "semantic_recall20": "STABLE"
+    },
+    "by_split:DEVELOPMENT": {
+      "reranked_ndcg5": "STABLE",
+      "reranked_precision5": "STABLE",
+      "reranked_recall5": "STABLE",
+      "semantic_recall20": "STABLE"
+    },
+    "by_split:HOLDOUT": {
+      "reranked_ndcg5": "STABLE",
+      "reranked_precision5": "STABLE",
+      "reranked_recall5": "STABLE",
+      "semantic_recall20": "STABLE"
+    },
+    "overall:overall": {
+      "reranked_ndcg5": "STABLE",
+      "reranked_precision5": "STABLE",
+      "reranked_recall5": "STABLE",
+      "semantic_recall20": "STABLE"
+    }
+  },
+  "retrieval_metric_deltas": {
+    "by_bucket:CURRENT_LESSON_ANSWERABLE": {
+      "reranked_ndcg5": 0.010000000000000009,
+      "reranked_precision5": 0.010000000000000009,
+      "reranked_recall5": 0.010000000000000009,
+      "semantic_recall20": 0.010000000000000009
+    },
+    "by_split:DEVELOPMENT": {
+      "reranked_ndcg5": 0.010000000000000009,
+      "reranked_precision5": 0.010000000000000009,
+      "reranked_recall5": 0.010000000000000009,
+      "semantic_recall20": 0.010000000000000009
+    },
+    "by_split:HOLDOUT": {
+      "reranked_ndcg5": 0.010000000000000009,
+      "reranked_precision5": 0.010000000000000009,
+      "reranked_recall5": 0.010000000000000009,
+      "semantic_recall20": 0.010000000000000009
+    },
+    "overall:overall": {
+      "reranked_ndcg5": 0.010000000000000009,
+      "reranked_precision5": 0.010000000000000009,
+      "reranked_recall5": 0.010000000000000009,
+      "semantic_recall20": 0.010000000000000009
+    }
+  },
+  "stability_deltas": [
+    {
+      "baseline_pass_count": 3,
+      "baseline_stability_state": "STABLE_PASS",
+      "baseline_state": "STABLE_PASS",
+      "candidate_pass_count": 3,
+      "candidate_stability_state": "STABLE_PASS",
+      "candidate_state": "STABLE_PASS",
+      "case_id": "fixture-holdout-01",
+      "classification": "STABLE",
+      "stability_change": "STABLE_PASS->STABLE_PASS",
+      "stability_gate": "STABLE"
+    }
+  ],
+  "stability_gate_results": {
+    "fixture-holdout-01": "STABLE"
+  },
+  "status": "PASS",
+  "technical_failure_classification": "STABLE",
+  "technical_failure_delta": 0.0,
+  "unchanged_fail_count": 0,
+  "unchanged_pass_count": 2
+}

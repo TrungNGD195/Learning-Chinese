@@ -1,0 +1,5 @@
+﻿SUPERSEDED — DO NOT USE FOR PM APPROVAL
+
+This run used a Documents-only INTERNAL_KB filter, which did not match the accepted Step 6.8-A broader internal scope. It is superseded by run step73-20261008T035722Z-221c5b07, which uses build_scope_filter(INTERNAL_KB) -> None and evaluates published Lesson knowledge plus approved internal Documents.
+
+The new run independently recalculated the threshold from its own DEVELOPMENT scores. Its numeric candidate happens to match this run's old value; use only the new run artifact and evidence.

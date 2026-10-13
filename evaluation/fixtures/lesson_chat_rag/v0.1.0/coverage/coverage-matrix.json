@@ -1,0 +1,44 @@
+{
+  "pack_version": "0.1.0",
+  "status": "DRAFT_FOR_HUMAN_REVIEW",
+  "coverage_rows": [
+    {
+      "lead_id": "coverage.current.greetings",
+      "bucket_lead": "CURRENT_LESSON_ANSWERABLE",
+      "selected_lesson_source_id": "fixture.lesson.hsk1.01.greetings",
+      "positive_evidence_locators": ["fixture:hsk1:lesson:01:greetings:vocabulary:nihao", "fixture:hsk1:lesson:01:greetings:grammar:a-jiao-b"],
+      "review_claim": "The greeting and name-introduction forms are present in the selected lesson fixture.",
+      "status": "DRAFT_REVIEW_LEAD_NOT_APPROVED"
+    },
+    {
+      "lead_id": "coverage.fallback.ni-vs-nin",
+      "bucket_lead": "INTERNAL_KB_FALLBACK",
+      "selected_lesson_source_id": "fixture.lesson.hsk1.01.greetings",
+      "target": "你 versus 您 usage distinction",
+      "lesson_absence_check": {"term": "您", "result": "ABSENT_FROM_SELECTED_LESSON"},
+      "internal_kb_evidence_locator": "fixture:internal-kb:hsk1:beginner-notes:pronouns:ni-vs-nin",
+      "status": "DRAFT_REVIEW_LEAD_NOT_APPROVED"
+    },
+    {
+      "lead_id": "coverage.fallback.er-vs-liang",
+      "bucket_lead": "INTERNAL_KB_FALLBACK",
+      "selected_lesson_source_id": "fixture.lesson.hsk1.02.numbers-age",
+      "target": "distinguishing 二 and 两",
+      "lesson_positive_evidence_locator": "fixture:hsk1:lesson:02:numbers-age:vocabulary:numbers-1-5",
+      "lesson_contains": ["二"],
+      "lesson_absence_check": {"term": "两", "result": "ABSENT_FROM_SELECTED_LESSON"},
+      "internal_kb_evidence_locator": "fixture:internal-kb:hsk1:beginner-notes:numbers:er-vs-liang",
+      "status": "DRAFT_REVIEW_LEAD_NOT_APPROVED"
+    },
+    {
+      "lead_id": "coverage.fallback.de-ge",
+      "bucket_lead": "INTERNAL_KB_FALLBACK",
+      "selected_lesson_source_id": "fixture.lesson.hsk1.03.family",
+      "target": "introductory 的 and 个 usage",
+      "lesson_absence_checks": [{"term": "的", "result": "ABSENT_FROM_SELECTED_LESSON"}, {"term": "个", "result": "ABSENT_FROM_SELECTED_LESSON"}],
+      "internal_kb_evidence_locators": ["fixture:internal-kb:hsk1:beginner-notes:particle:de", "fixture:internal-kb:hsk1:beginner-notes:measure-word:ge"],
+      "status": "DRAFT_REVIEW_LEAD_NOT_APPROVED"
+    }
+  ],
+  "coverage_claim_limit": "These source-presence/absence checks do not establish retrieval behavior or approve any EvaluationCase. Human review must verify both current-Lesson insufficiency and broader Internal-KB sufficiency for each proposed fallback question."
+}

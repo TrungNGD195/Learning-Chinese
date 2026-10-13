@@ -1,0 +1,1 @@
+"""Constrained Admin assessment generation."""

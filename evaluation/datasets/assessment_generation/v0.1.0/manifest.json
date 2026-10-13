@@ -1,0 +1,27 @@
+{
+  "case_curation_status": "DRAFT",
+  "dataset_name": "assessment_generation",
+  "dataset_version": "v0.1.0",
+  "development_cases": 12,
+  "difficulty_coverage": [
+    "EASY",
+    "MEDIUM",
+    "HARD"
+  ],
+  "holdout_cases": 4,
+  "human_approved_annotations": 0,
+  "lesson_exercise_cases": 8,
+  "periodic_test_cases": 8,
+  "question_count_per_case": 3,
+  "schema_version": "1.0.0",
+  "supported_question_types": [
+    "multiple_choice",
+    "fill_blank",
+    "matching",
+    "reorder_sentence",
+    "translate_vi_zh",
+    "translate_zh_vi",
+    "sentence_writing"
+  ],
+  "total_cases": 16
+}

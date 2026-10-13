@@ -1,0 +1,22 @@
+{
+  "case_curation_status": "DRAFT",
+  "dataset_name": "ai_grading",
+  "dataset_version": "v0.1.0",
+  "development_cases": 45,
+  "holdout_cases": 15,
+  "human_approved_annotations": 0,
+  "question_types": [
+    "translate_vi_zh",
+    "translate_zh_vi",
+    "sentence_writing"
+  ],
+  "schema_version": "1.0.0",
+  "semantic_classes": [
+    "CLEAR_CORRECT",
+    "CLEAR_INCORRECT",
+    "PARTIAL",
+    "AMBIGUOUS",
+    "EXPECTED_UNCERTAIN"
+  ],
+  "total_cases": 60
+}

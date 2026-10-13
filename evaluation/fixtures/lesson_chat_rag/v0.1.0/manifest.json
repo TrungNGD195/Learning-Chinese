@@ -1,0 +1,44 @@
+{
+  "fixture_pack": "lesson_chat_rag",
+  "fixture_pack_version": "0.1.0",
+  "status": "ACCEPTED_FOR_EVALUATION_FIXTURE",
+  "synthetic_level_identity": "HSK1",
+  "official_hsk_certification": false,
+  "sources": [
+    {
+      "source_id": "fixture.lesson.hsk1.01.greetings",
+      "path": "sources/lesson-01-greetings.json",
+      "kind": "LESSON",
+      "block_count": 7,
+      "intended_scope": "CURRENT_LESSON"
+    },
+    {
+      "source_id": "fixture.lesson.hsk1.02.numbers-age",
+      "path": "sources/lesson-02-numbers-age.json",
+      "kind": "LESSON",
+      "block_count": 7,
+      "intended_scope": "CURRENT_LESSON"
+    },
+    {
+      "source_id": "fixture.lesson.hsk1.03.family",
+      "path": "sources/lesson-03-family.json",
+      "kind": "LESSON",
+      "block_count": 7,
+      "intended_scope": "CURRENT_LESSON"
+    },
+    {
+      "source_id": "fixture.internal-kb.hsk1.beginner-notes",
+      "path": "sources/internal-kb-beginner-notes.json",
+      "kind": "INTERNAL_KB",
+      "block_count": 5,
+      "intended_scope": "INTERNAL_KB"
+    }
+  ],
+  "source_count": 4,
+  "lesson_source_count": 3,
+  "internal_kb_source_count": 1,
+  "educational_block_count": 26,
+  "trusted_external_source_count": 0,
+  "evaluation_case_ground_truth": false,
+  "automatic_approval": false
+}

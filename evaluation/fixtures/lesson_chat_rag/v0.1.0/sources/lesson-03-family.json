@@ -1,0 +1,150 @@
+{
+  "source_id": "fixture.lesson.hsk1.03.family",
+  "source_kind": "LESSON",
+  "lesson_locator": "fixture:hsk1:lesson:03:family",
+  "lesson_title": "Family (synthetic HSK1 fixture)",
+  "hsk_level_number": 1,
+  "hsk_identity_note": "Synthetic project fixture identity only; not official syllabus certification.",
+  "status": "ACCEPTED_FOR_EVALUATION_FIXTURE",
+  "blocks": [
+    {
+      "source_id": "fixture.lesson.hsk1.03.family",
+      "block_id": "family.vocabulary.parents",
+      "stable_locator": "fixture:hsk1:lesson:03:family:vocabulary:parents",
+      "source_locator": "fixture:hsk1:lesson:03:family#vocabulary/parents",
+      "content_type": "VOCABULARY",
+      "content": {
+        "items": [
+          {
+            "chinese": "爸爸",
+            "pinyin": "bàba",
+            "vietnamese": "bố; ba"
+          },
+          {
+            "chinese": "妈妈",
+            "pinyin": "māma",
+            "vietnamese": "mẹ"
+          }
+        ],
+        "example": "这是我妈妈。",
+        "example_pinyin": "Zhè shì wǒ māma.",
+        "example_vietnamese": "Đây là mẹ tôi."
+      }
+    },
+    {
+      "source_id": "fixture.lesson.hsk1.03.family",
+      "block_id": "family.vocabulary.older-siblings",
+      "stable_locator": "fixture:hsk1:lesson:03:family:vocabulary:older-siblings",
+      "source_locator": "fixture:hsk1:lesson:03:family#vocabulary/older-siblings",
+      "content_type": "VOCABULARY",
+      "content": {
+        "items": [
+          {
+            "chinese": "哥哥",
+            "pinyin": "gēge",
+            "vietnamese": "anh trai"
+          },
+          {
+            "chinese": "姐姐",
+            "pinyin": "jiějie",
+            "vietnamese": "chị gái"
+          }
+        ],
+        "example": "这是我哥哥。",
+        "example_pinyin": "Zhè shì wǒ gēge.",
+        "example_vietnamese": "Đây là anh trai tôi."
+      }
+    },
+    {
+      "source_id": "fixture.lesson.hsk1.03.family",
+      "block_id": "family.vocabulary.younger-siblings",
+      "stable_locator": "fixture:hsk1:lesson:03:family:vocabulary:younger-siblings",
+      "source_locator": "fixture:hsk1:lesson:03:family#vocabulary/younger-siblings",
+      "content_type": "VOCABULARY",
+      "content": {
+        "items": [
+          {
+            "chinese": "弟弟",
+            "pinyin": "dìdi",
+            "vietnamese": "em trai"
+          },
+          {
+            "chinese": "妹妹",
+            "pinyin": "mèimei",
+            "vietnamese": "em gái"
+          }
+        ],
+        "example": "这是我妹妹。",
+        "example_pinyin": "Zhè shì wǒ mèimei.",
+        "example_vietnamese": "Đây là em gái tôi."
+      }
+    },
+    {
+      "source_id": "fixture.lesson.hsk1.03.family",
+      "block_id": "family.vocabulary.zhe",
+      "stable_locator": "fixture:hsk1:lesson:03:family:vocabulary:zhe",
+      "source_locator": "fixture:hsk1:lesson:03:family#vocabulary/zhe",
+      "content_type": "VOCABULARY",
+      "content": {
+        "chinese": "这",
+        "pinyin": "zhè",
+        "vietnamese": "đây; này",
+        "example": "这是我妈妈。",
+        "example_pinyin": "Zhè shì wǒ māma.",
+        "example_vietnamese": "Đây là mẹ tôi."
+      }
+    },
+    {
+      "source_id": "fixture.lesson.hsk1.03.family",
+      "block_id": "family.vocabulary.shi",
+      "stable_locator": "fixture:hsk1:lesson:03:family:vocabulary:shi",
+      "source_locator": "fixture:hsk1:lesson:03:family#vocabulary/shi",
+      "content_type": "VOCABULARY",
+      "content": {
+        "chinese": "是",
+        "pinyin": "shì",
+        "vietnamese": "là (động từ nối chủ ngữ với danh từ hoặc cụm danh từ)",
+        "example": "这是我妈妈。",
+        "example_pinyin": "Zhè shì wǒ māma.",
+        "example_vietnamese": "Đây là mẹ tôi."
+      }
+    },
+    {
+      "source_id": "fixture.lesson.hsk1.03.family",
+      "block_id": "family.grammar.zhe-shi",
+      "stable_locator": "fixture:hsk1:lesson:03:family:grammar:zhe-shi",
+      "source_locator": "fixture:hsk1:lesson:03:family#grammar/zhe-shi",
+      "content_type": "GRAMMAR",
+      "content": {
+        "pattern": "这 + 是 + noun phrase",
+        "pinyin": "zhè + shì + noun phrase",
+        "vietnamese_explanation": "Dùng 这是... để giới thiệu người hoặc vật ở gần: Đây là...",
+        "example": "这是我妈妈。",
+        "example_pinyin": "Zhè shì wǒ māma.",
+        "example_vietnamese": "Đây là mẹ tôi."
+      }
+    },
+    {
+      "source_id": "fixture.lesson.hsk1.03.family",
+      "block_id": "family.lesson-general.examples",
+      "stable_locator": "fixture:hsk1:lesson:03:family:lesson-general:examples",
+      "source_locator": "fixture:hsk1:lesson:03:family#lesson-general/examples",
+      "content_type": "LESSON_GENERAL",
+      "content": {
+        "examples": [
+          {
+            "chinese": "这是我爸爸。",
+            "pinyin": "Zhè shì wǒ bàba.",
+            "vietnamese": "Đây là bố tôi."
+          },
+          {
+            "chinese": "这是我姐姐。",
+            "pinyin": "Zhè shì wǒ jiějie.",
+            "vietnamese": "Đây là chị gái tôi."
+          }
+        ]
+      }
+    }
+  ],
+  "intended_scope": "CURRENT_LESSON"
+}

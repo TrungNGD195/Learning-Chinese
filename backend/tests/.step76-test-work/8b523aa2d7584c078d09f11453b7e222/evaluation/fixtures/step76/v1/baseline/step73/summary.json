@@ -1,0 +1,34 @@
+{
+  "cases_with_scope_violation": 0,
+  "dataset_version": "v0.8.0",
+  "metrics_by_bucket": {
+    "CURRENT_LESSON_ANSWERABLE": {
+      "reranked_ndcg5": 0.9,
+      "reranked_precision5": 0.9,
+      "reranked_recall5": 0.9,
+      "semantic_recall20": 0.9
+    }
+  },
+  "metrics_by_split": {
+    "DEVELOPMENT": {
+      "reranked_ndcg5": 0.9,
+      "reranked_precision5": 0.9,
+      "reranked_recall5": 0.9,
+      "semantic_recall20": 0.9
+    },
+    "HOLDOUT": {
+      "reranked_ndcg5": 0.9,
+      "reranked_precision5": 0.9,
+      "reranked_recall5": 0.9,
+      "semantic_recall20": 0.9
+    }
+  },
+  "metrics_overall": {
+    "reranked_ndcg5": 0.9,
+    "reranked_precision5": 0.9,
+    "reranked_recall5": 0.9,
+    "semantic_recall20": 0.9
+  },
+  "run_id": "step76-fixture-baseline-step73-v1",
+  "scope_violation_rate": 0.0
+}
