@@ -1,0 +1,81 @@
+{
+  "benchmark_gate": {
+    "available_ram_bytes": 1266544640,
+    "configured_safety_threshold_bytes": 4294967296,
+    "reason": "INSUFFICIENT_AVAILABLE_RAM",
+    "scenario": "all-real-model-scenarios",
+    "status": "ENVIRONMENT_GATE"
+  },
+  "database_or_provider_calls_performed": false,
+  "environment": {
+    "architecture": "AMD64",
+    "available_ram_bytes": 1266544640,
+    "cpu_model": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+    "logical_cores": 4,
+    "os": "Windows",
+    "package_versions": {
+      "numpy": "2.5.3",
+      "psutil": "7.2.2",
+      "sentence-transformers": "6.1.0",
+      "torch": "2.14.1",
+      "transformers": "5.18.0"
+    },
+    "physical_cores": 2,
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python_version": "3.12.14",
+    "release": "11",
+    "total_ram_bytes": 8299257856
+  },
+  "git_commit": "d0483319a6a2f5bb7c7a221c1a469c15be57e3eb",
+  "inference_performed": false,
+  "model_loading_performed": false,
+  "models": {
+    "embedding": {
+      "batch_size": 32,
+      "cache_root": "C:\\Users\\Diep_PC\\.cache\\huggingface\\hub",
+      "dimensions": 1024,
+      "exact_revision_present": true,
+      "input_version": "v1",
+      "loading": "lazy on first embed_documents/embed_query use",
+      "model_cache_present": true,
+      "model_name": "BAAI/bge-m3",
+      "model_weights_present": true,
+      "normalize_embeddings": true,
+      "provider": "SentenceTransformerEmbeddingProvider",
+      "requested_device": "auto",
+      "required_config_present": true,
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181"
+    },
+    "reranker": {
+      "batch_size": 8,
+      "cache_root": "C:\\Users\\Diep_PC\\.cache\\huggingface\\hub",
+      "candidate_pool_size": 20,
+      "exact_revision_present": true,
+      "input_version": "v1",
+      "loading": "lazy on first pair validation/scoring",
+      "model_cache_present": true,
+      "model_name": "BAAI/bge-reranker-v2-m3",
+      "model_weights_present": true,
+      "provider": "TransformersRerankerProvider",
+      "requested_device": "auto",
+      "required_config_present": true,
+      "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+      "top_k": 5
+    }
+  },
+  "network_access_performed": false,
+  "runtime_capability": {
+    "cuda_available": false,
+    "cuda_devices": [],
+    "mps_available": false,
+    "torch_available": true,
+    "torch_version": "2.14.1+cpu"
+  },
+  "safety_guard": {
+    "default_min_available_ram_gib": 4.0,
+    "purpose": "benchmark-machine safety guard only; not a production or hosting requirement"
+  },
+  "schema_version": "step8.3-preflight/1.0",
+  "status": "PREFLIGHT_ONLY",
+  "timestamp_utc": "2026-10-14T03:39:58.544250+00:00"
+}
