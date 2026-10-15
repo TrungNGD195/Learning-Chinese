@@ -67,7 +67,7 @@ class SentenceTransformerEmbeddingProvider:
                 raise
             raise embedding_error("EMBEDDING_PROVIDER_FAILED", "Embedding input could not be tokenized.", 500) from exc
 
-    def embed_documents(self, texts: list[str], *, batch_size: int) -> list[list[float]]:
+    async def embed_documents(self, texts: list[str], *, batch_size: int) -> list[list[float]]:
         model = self._load_model()
         self._validate_lengths(texts)
         try:
@@ -78,6 +78,6 @@ class SentenceTransformerEmbeddingProvider:
                 raise
             raise embedding_error("EMBEDDING_PROVIDER_FAILED", "Embedding model inference failed.", 500) from exc
 
-    def embed_query(self, text: str) -> list[float]:
-        vectors = self.embed_documents([text], batch_size=1)
+    async def embed_query(self, text: str) -> list[float]:
+        vectors = await self.embed_documents([text], batch_size=1)
         return vectors[0]

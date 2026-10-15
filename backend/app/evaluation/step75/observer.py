@@ -191,11 +191,11 @@ class ProductionTraceObserver:
 
         class RerankerProxy:
             def __init__(self, delegate): self.delegate = delegate
-            def rerank(self, query, candidates):
+            async def rerank(self, query, candidates):
                 row = observer._tier_row(observer._active_tier)
                 started = perf_counter()
                 try:
-                    result = self.delegate.rerank(query, candidates)
+                    result = await self.delegate.rerank(query, candidates)
                     row["rerank_status"] = "SUCCESS"
                     row["reranked_evidence"] = [observer._internal_candidate(item) for item in result.scored_candidates]
                     scores = [float(item.rerank_score) for item in result.scored_candidates]
@@ -261,11 +261,11 @@ class ProductionTraceObserver:
             finally:
                 row["retrieval_latency_ms"] = max(0, round((perf_counter() - started) * 1000))
 
-        def external_rerank(query, candidates):
+        async def external_rerank(query, candidates):
             started = perf_counter()
             row = self._tier_row("TRUSTED_EXTERNAL")
             try:
-                result = original_external_rerank(query, candidates)
+                result = await original_external_rerank(query, candidates)
                 self.external_result = result
                 row["rerank_status"] = "SUCCESS"
                 row["reranked_evidence"] = [self._external_candidate(item, reranked=True)

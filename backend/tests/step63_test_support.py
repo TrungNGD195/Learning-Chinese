@@ -57,7 +57,7 @@ class FakeProvider:
         self.queries = []
         self.documents_calls = 0
 
-    def embed_query(self, text: str):
+    async def embed_query(self, text: str):
         self.queries.append(text)
         if self.on_embed:
             self.on_embed()
@@ -65,6 +65,6 @@ class FakeProvider:
             raise self.error
         return self.vector
 
-    def embed_documents(self, texts, *, batch_size: int):
+    async def embed_documents(self, texts, *, batch_size: int):
         self.documents_calls += 1
         raise AssertionError("retrieval must not call embed_documents")

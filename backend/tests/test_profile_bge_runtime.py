@@ -333,8 +333,9 @@ def test_concurrency_has_two_warmup_workloads_before_ten_measured_pairs():
     def embed(query): events.append(("embed", query))
     def rerank(query, _candidates): events.append(("rerank", query))
     def pair_runner(request_a, request_b):
+        import asyncio
         events.append("pair")
-        request_a(); request_b()
+        asyncio.run(request_a()); asyncio.run(request_b())
         return {"overlap_observed": False}
     result = profiler.measure_concurrency_2(["qa", "qb"], [], embed, rerank, pair_runner=pair_runner)
     assert events[:4] == [("embed", "qa"), ("rerank", "qa"), ("embed", "qb"), ("rerank", "qb")]

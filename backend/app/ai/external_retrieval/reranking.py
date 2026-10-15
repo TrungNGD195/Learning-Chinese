@@ -26,7 +26,7 @@ class ExternalRerankingService:
             "status": "FAILED", "error_stage": "RERANK", "error_code": code,
         })
 
-    def rerank(self, query: str, candidates: tuple[ExternalCandidate, ...]) -> ExternalRerankResult:
+    async def rerank(self, query: str, candidates: tuple[ExternalCandidate, ...]) -> ExternalRerankResult:
         started = perf_counter()
         if not candidates:
             return ExternalRerankResult((), ())
@@ -34,14 +34,19 @@ class ExternalRerankingService:
             candidates = candidates[:10]
         provider = self.provider or get_reranker_provider()
         identity = provider.identity
-        expected = ("LOCAL", self.settings.reranker_model_name, self.settings.reranker_model_revision, self.settings.reranker_input_version)
+        expected = (
+            "MODAL" if self.settings.reranker_provider == "modal" else "LOCAL",
+            self.settings.reranker_model_name, self.settings.reranker_model_revision,
+            self.settings.reranker_input_version,
+        )
         actual = (identity.provider, identity.model_name, identity.model_revision, identity.reranker_input_version)
-        if actual != expected or not identity.provider_version:
+        expected_version = "modal-bge-runtime/v1" if self.settings.reranker_provider == "modal" else None
+        if actual != expected or not identity.provider_version or (expected_version and identity.provider_version != expected_version):
             self._log_failure(len(candidates), started, "RERANKER_NOT_AVAILABLE")
             raise reranking_error("RERANKER_NOT_AVAILABLE", "Configured reranker identity is invalid.", 503)
         passages = [f"Title: {item.title}\nDomain: {item.domain}\n\n{item.content}" for item in candidates]
         try:
-            provider.validate_pair_lengths(query, passages)
+            await provider.validate_pair_lengths(query, passages)
         except Exception as exc:
             code = getattr(exc, "code", "RERANK_INPUT_TOO_LONG")
             self._log_failure(len(candidates), started, code)
@@ -52,7 +57,7 @@ class ExternalRerankingService:
         for start in range(0, len(passages), self.settings.reranker_batch_size):
             batch = passages[start:start + self.settings.reranker_batch_size]
             try:
-                batch_scores = provider.score(query, batch)
+                batch_scores = await provider.score(query, batch)
             except Exception as exc:
                 code = getattr(exc, "code", "RERANKER_INFERENCE_FAILED")
                 self._log_failure(len(candidates), started, code)

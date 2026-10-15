@@ -117,7 +117,7 @@ class RagOrchestrator:
             )
         retrieval_duration = round((perf_counter() - started) * 1000, 2)
         rerank_started = perf_counter()
-        result = self.reranker.rerank(query, candidates)
+        result = await self.reranker.rerank(query, candidates)
         rerank_duration = round((perf_counter() - rerank_started) * 1000, 2)
         logger.info("rag_tier_scored", extra={
             "tier": tier.value,
@@ -152,7 +152,7 @@ class RagOrchestrator:
                     tiers.append(RagTierUsed.TRUSTED_EXTERNAL)
                     normalized_query = QueryPreprocessor.preprocess(request.content)
                     external_candidates = await self.external_retrieval_service.search(normalized_query)
-                    external_result = self.external_reranking_service.rerank(normalized_query, external_candidates)
+                    external_result = await self.external_reranking_service.rerank(normalized_query, external_candidates)
                     logger.info("external_tier_completed", extra={
                         "external_provider": "tavily", "external_requested_count": 10,
                         "external_returned_count": len(external_candidates),

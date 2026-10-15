@@ -134,7 +134,7 @@ async def _evaluate_attempt(session, case: dict, plan: dict, settings: Settings,
     semantic_rows = [_as_dict(candidate, evidence_by_locator) for candidate in semantic]
     for row, candidate in zip(semantic_rows, semantic, strict=True):
         row["scope_pass"] = _candidate_in_scope(candidate, tier, lesson_id)
-    rerank = RerankingService(provider=reranker_provider, settings=settings).rerank(case["question"], semantic)
+    rerank = await RerankingService(provider=reranker_provider, settings=settings).rerank(case["question"], semantic)
     reranked_rows = [_as_dict(candidate, evidence_by_locator) for candidate in rerank.scored_candidates]
     for row, candidate in zip(reranked_rows, rerank.scored_candidates, strict=True):
         row["rerank_rank"] = candidate.rerank_rank

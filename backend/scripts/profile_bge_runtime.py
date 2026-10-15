@@ -9,6 +9,7 @@ import argparse
 import asyncio
 from dataclasses import asdict
 import importlib.metadata
+import inspect
 import json
 import os
 import platform
@@ -81,7 +82,8 @@ def run_concurrency_pair(workload_a: Callable[[], Any], workload_b: Callable[[],
         await release.wait()
         started[key] = clock()
         try:
-            results[key] = workload()
+            value = workload()
+            results[key] = await value if inspect.isawaitable(value) else value
         except Exception as exc:  # captured per request so the other arrival still runs
             errors[key] = type(exc).__name__
         finally:
@@ -591,16 +593,16 @@ def measure_concurrency_2(query_texts: list[str], candidates: list[Any], embed_q
         raise ValueError("concurrency-2 requires at least two deterministic query fixtures")
     for index in range(2):
         query = query_texts[index % len(query_texts)]
-        embed_query(query)
-        rerank(query, candidates)
+        _run_sync(embed_query(query))
+        _run_sync(rerank(query, candidates))
     pairs = []
     for index in range(10):
         query_a = query_texts[(2 * index) % len(query_texts)]
         query_b = query_texts[(2 * index + 1) % len(query_texts)]
         def request(query: str) -> Callable[[], Any]:
-            def run_request():
-                embed_query(query)
-                return rerank(query, candidates)
+            async def run_request():
+                await _await_maybe(embed_query(query))
+                return await _await_maybe(rerank(query, candidates))
             return run_request
         pairs.append(pair_runner(request(query_a), request(query_b)))
     return {"warmup_workloads": 2, "pair_repetitions": 10, "arrivals_per_pair": 2, "pairs": pairs,
@@ -624,7 +626,7 @@ def measure_ingestion_embedding(blocks: list[dict[str, Any]], embed_documents: C
     warmup_texts = texts[:batch_size]
     warmup_batches = 0
     if warmup_texts:
-        embed_documents(warmup_texts, batch_size=batch_size)
+        _run_sync(embed_documents(warmup_texts, batch_size=batch_size))
         warmup_batches = 1
     started = clock()
     vectors = []
@@ -633,7 +635,7 @@ def measure_ingestion_embedding(blocks: list[dict[str, Any]], embed_documents: C
     for offset in range(0, len(texts), batch_size):
         batch = texts[offset:offset + batch_size]
         try:
-            vectors.extend(embed_documents(batch, batch_size=batch_size))
+            vectors.extend(_run_sync(embed_documents(batch, batch_size=batch_size)))
             measured_batches += 1
         except Exception as exc:
             errors.append({"batch_index": measured_batches, "error_type": type(exc).__name__})
@@ -654,11 +656,20 @@ def measure_ingestion_embedding(blocks: list[dict[str, Any]], embed_documents: C
 def measure_both_loaded_workload(embedding_first_use: Callable[[], Any], reranker_first_use: Callable[[], Any],
                                  embed_query: Callable[[], Any], rerank: Callable[[], Any], *,
                                  clock: Callable[[], float] = time.perf_counter) -> dict[str, float]:
-    embedding_started = clock(); embedding_first_use(); embedding_ms = (clock() - embedding_started) * 1000
-    reranker_started = clock(); reranker_first_use(); reranker_ms = (clock() - reranker_started) * 1000
-    warm_started = clock(); embed_query(); rerank(); warm_ms = (clock() - warm_started) * 1000
+    embedding_started = clock(); _run_sync(embedding_first_use()); embedding_ms = (clock() - embedding_started) * 1000
+    reranker_started = clock(); _run_sync(reranker_first_use()); reranker_ms = (clock() - reranker_started) * 1000
+    warm_started = clock(); _run_sync(embed_query()); _run_sync(rerank()); warm_ms = (clock() - warm_started) * 1000
     return {"embedding_cold_first_use_ms": embedding_ms, "reranker_cold_first_use_ms": reranker_ms,
             "both_loaded_workload_ms": warm_ms}
+
+
+def _run_sync(value):
+    """Resolve the profiler's async provider boundary from its synchronous CLI harness."""
+    return asyncio.run(value) if inspect.isawaitable(value) else value
+
+
+async def _await_maybe(value):
+    return await value if inspect.isawaitable(value) else value
 
 
 def _provider_workload(scenario: str, selected: dict[str, Any]) -> dict[str, Any]:
@@ -701,14 +712,14 @@ def _provider_workload(scenario: str, selected: dict[str, Any]) -> dict[str, Any
                         "resolved_device": embedding.device, "dimensions": len(vectors[0]) if vectors else None,
                         **steady_rss_summary(sampler.samples)}
             if scenario == "embedding-load":
-                sample_started = time.perf_counter(); embedding.embed_query(query_texts[0]); elapsed = time.perf_counter() - sample_started
+                sample_started = time.perf_counter(); _run_sync(embedding.embed_query(query_texts[0])); elapsed = time.perf_counter() - sample_started
                 time.sleep(1.0)
                 return {"scenario": scenario, "status": "MEASURED", "cold_first_use_ms": elapsed * 1000, "provider_identity": _provider_identity(embedding), "resolved_device": embedding.device, **steady_rss_summary(sampler.samples)}
             if scenario == "warm-embedding":
-                for query in query_texts[:5]: embedding.embed_query(query)
+                for query in query_texts[:5]: _run_sync(embedding.embed_query(query))
                 samples = []
                 for i in range(30):
-                    started = time.perf_counter(); embedding.embed_query(query_texts[i % len(query_texts)]); samples.append((time.perf_counter() - started) * 1000)
+                    started = time.perf_counter(); _run_sync(embedding.embed_query(query_texts[i % len(query_texts)])); samples.append((time.perf_counter() - started) * 1000)
                 time.sleep(1.0)
                 return {"scenario": scenario, "status": "MEASURED", "warmups": 5, "query_count": len(query_texts),
                         "query_size": text_size_summary(query_texts), "latency": aggregate_samples(samples),
@@ -723,14 +734,14 @@ def _provider_workload(scenario: str, selected: dict[str, Any]) -> dict[str, Any
             service = RerankingService(provider=reranker, settings=settings)
             candidates = build_rerank_candidates(rerank_blocks)
             if scenario == "reranker-load":
-                sample_started = time.perf_counter(); service.rerank(query_texts[0], candidates); elapsed = time.perf_counter()-sample_started
+                sample_started = time.perf_counter(); _run_sync(service.rerank(query_texts[0], candidates)); elapsed = time.perf_counter()-sample_started
                 time.sleep(1.0)
                 return {"scenario": scenario, "status": "MEASURED", "cold_first_use_ms": elapsed*1000, "candidate_count": len(candidates), "provider_identity": _provider_identity(reranker), "resolved_device": reranker.device, **steady_rss_summary(sampler.samples)}
             if scenario == "warm-reranking":
-                for query in query_texts[:3]: service.rerank(query, candidates)
+                for query in query_texts[:3]: _run_sync(service.rerank(query, candidates))
                 samples = []
                 for i in range(30):
-                    sample_started=time.perf_counter(); service.rerank(query_texts[i % len(query_texts)], candidates); samples.append((time.perf_counter()-sample_started)*1000)
+                    sample_started=time.perf_counter(); _run_sync(service.rerank(query_texts[i % len(query_texts)], candidates)); samples.append((time.perf_counter()-sample_started)*1000)
                 time.sleep(1.0)
                 passage_texts = [candidate.content for candidate in candidates]
                 return {"scenario": scenario, "status": "MEASURED", "warmups": 3, "candidate_count": len(candidates),
@@ -747,8 +758,8 @@ def _provider_workload(scenario: str, selected: dict[str, Any]) -> dict[str, Any
             query = query_texts[0]
             warm_query = query_texts[1 % len(query_texts)]
             measured = measure_both_loaded_workload(
-                lambda: embedding_provider.embed_query(query), lambda: service.rerank(query, candidates),
-                lambda: embedding_provider.embed_query(warm_query), lambda: service.rerank(warm_query, candidates),
+                    lambda: _run_sync(embedding_provider.embed_query(query)), lambda: _run_sync(service.rerank(query, candidates)),
+                    lambda: _run_sync(embedding_provider.embed_query(warm_query)), lambda: _run_sync(service.rerank(warm_query, candidates)),
             )
             time.sleep(1.0)
             return {"scenario": scenario, "status": "MEASURED", **measured,

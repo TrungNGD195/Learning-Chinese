@@ -77,7 +77,7 @@ class Reranker:
         self.by_scope = by_scope
         self.calls = []
 
-    def rerank(self, query, rows):
+    async def rerank(self, query, rows):
         result = self.by_scope[len(self.calls)]
         self.calls.append(rows)
         return result
@@ -232,7 +232,7 @@ def test_technical_current_lesson_rerank_error_does_not_fall_through_to_internal
         def __init__(self):
             self.calls = 0
 
-        def rerank(self, query, rows):
+        async def rerank(self, query, rows):
             self.calls += 1
             raise RuntimeError("private reranker failure")
 

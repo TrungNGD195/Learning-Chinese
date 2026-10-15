@@ -42,7 +42,7 @@ def test_step73_wires_real_retrieval_and_reranking_services_without_llm():
                 lesson_ids=frozenset({lesson_id}), hsk_levels=frozenset({hsk_number}),
                 source_types=frozenset({"LESSON"}),
             ))
-            result = RerankingService(provider=reranker, settings=settings).rerank(
+            result = await RerankingService(provider=reranker, settings=settings).rerank(
                 "你好 means hello; what does 你好 mean?", candidates,
             )
             assert embedding.identity.model_version == "5617a9f61b028005a4858fdac845db406aefb181"

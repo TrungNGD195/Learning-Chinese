@@ -1,3 +1,4 @@
+import asyncio
 from app.ai.embeddings.sentence_transformer_provider import SentenceTransformerEmbeddingProvider
 from app.core.config import Settings
 from app.core.errors import ApplicationError
@@ -34,7 +35,7 @@ def test_provider_lazy_model_auto_device_normalization_and_query(monkeypatch):
         return model
     provider = SentenceTransformerEmbeddingProvider(_settings(), model_factory=factory)
     assert provider._model is None
-    vectors = provider.embed_documents(["one", "two"], batch_size=2)
+    vectors = asyncio.run(provider.embed_documents(["one", "two"], batch_size=2))
     assert len(vectors) == 2 and len(vectors[0]) == 1024
     assert received["name"] == "BAAI/bge-m3"
     assert received["kwargs"]["device"] is None
@@ -42,7 +43,7 @@ def test_provider_lazy_model_auto_device_normalization_and_query(monkeypatch):
     assert "model_kwargs" not in received["kwargs"]
     assert model.tokenizer.kwargs == {"add_special_tokens": True, "truncation": False}
     assert model.calls[0][1]["normalize_embeddings"] is True
-    assert provider.embed_query("query")[0] == 1.0
+    assert asyncio.run(provider.embed_query("query"))[0] == 1.0
     assert len(model.calls) == 2
     assert received["factory_calls"] == 1
 
@@ -53,7 +54,7 @@ def test_provider_rejects_overlength_without_calling_encode(monkeypatch):
     model = _Model(); model.tokenizer = lambda texts, **kwargs: {"input_ids": [[0] * 9]}
     provider = SentenceTransformerEmbeddingProvider(_settings(), model_factory=lambda *_a, **_k: model)
     try:
-        provider.embed_documents(["too long"], batch_size=1)
+        asyncio.run(provider.embed_documents(["too long"], batch_size=1))
         assert False, "expected input length error"
     except ApplicationError as exc:
         assert exc.code == "EMBEDDING_INPUT_TOO_LONG"
@@ -68,7 +69,7 @@ def test_provider_accepts_exact_max_length_and_rejects_max_plus_one(monkeypatch)
     accepted_model.max_seq_length = 8
     accepted_model.tokenizer = lambda texts, **kwargs: {"input_ids": [[0] * 8 for _ in texts]}
     accepted = SentenceTransformerEmbeddingProvider(_settings(), model_factory=lambda *_a, **_k: accepted_model)
-    assert len(accepted.embed_documents(["exact max"], batch_size=1)) == 1
+    assert len(asyncio.run(accepted.embed_documents(["exact max"], batch_size=1))) == 1
     assert len(accepted_model.calls) == 1
 
     rejected_model = _Model()
@@ -76,7 +77,7 @@ def test_provider_accepts_exact_max_length_and_rejects_max_plus_one(monkeypatch)
     rejected_model.tokenizer = lambda texts, **kwargs: {"input_ids": [[0] * 9 for _ in texts]}
     rejected = SentenceTransformerEmbeddingProvider(_settings(), model_factory=lambda *_a, **_k: rejected_model)
     with pytest.raises(ApplicationError) as error:
-        rejected.embed_documents(["max plus one"], batch_size=1)
+        asyncio.run(rejected.embed_documents(["max plus one"], batch_size=1))
     assert error.value.code == "EMBEDDING_INPUT_TOO_LONG"
     assert rejected_model.calls == []
 
@@ -92,7 +93,7 @@ def test_provider_maps_tokenizer_exception_without_leaking_details(monkeypatch):
     model.tokenizer = broken_tokenizer
     provider = SentenceTransformerEmbeddingProvider(_settings(), model_factory=lambda *_a, **_k: model)
     with pytest.raises(ApplicationError) as error:
-        provider.embed_documents(["text"], batch_size=1)
+        asyncio.run(provider.embed_documents(["text"], batch_size=1))
     assert error.value.code == "EMBEDDING_PROVIDER_FAILED"
     assert error.value.message == "Embedding input could not be tokenized."
     assert error.value.details is None
@@ -112,7 +113,7 @@ def test_provider_maps_inference_exception_without_returning_vector_or_details(m
     model.encode = broken_encode
     provider = SentenceTransformerEmbeddingProvider(_settings(), model_factory=lambda *_a, **_k: model)
     with pytest.raises(ApplicationError) as error:
-        provider.embed_documents(["text"], batch_size=1)
+        asyncio.run(provider.embed_documents(["text"], batch_size=1))
     assert error.value.code == "EMBEDDING_PROVIDER_FAILED"
     assert error.value.message == "Embedding model inference failed."
     assert error.value.details is None
@@ -141,7 +142,7 @@ def test_provider_passes_explicit_device_without_fallback(monkeypatch, device):
         _settings(embedding_device=device),
         model_factory=lambda name, **kwargs: (received.update(name=name, kwargs=kwargs) or model),
     )
-    provider.embed_query("query")
+    asyncio.run(provider.embed_query("query"))
     assert received["kwargs"]["device"] == device
 
 
@@ -155,7 +156,8 @@ def test_cached_provider_factory_reuses_provider_and_can_reset(monkeypatch):
             created.append(self)
 
     monkeypatch.setattr(module, "SentenceTransformerEmbeddingProvider", _SentinelProvider)
-    monkeypatch.setattr(module, "get_settings", lambda: object())
+    from types import SimpleNamespace
+    monkeypatch.setattr(module, "get_settings", lambda: SimpleNamespace(embedding_provider="local"))
     module.get_embedding_provider.cache_clear()
     try:
         first = module.get_embedding_provider()

@@ -39,14 +39,14 @@ class _FakeProvider:
         self.calls = []
         self.fail_on_call = fail_on_call
 
-    def embed_documents(self, texts, *, batch_size):
+    async def embed_documents(self, texts, *, batch_size):
         assert self.session is None or not self.session.in_transaction()
         self.calls.append((texts, batch_size))
         if self.fail_on_call == len(self.calls):
             raise ApplicationError("EMBEDDING_PROVIDER_FAILED", "safe", status_code=500)
         return [[1.0] + [0.0] * 1023 for _ in texts]
 
-    def embed_query(self, text):
+    async def embed_query(self, text):
         return [1.0] + [0.0] * 1023
 
 

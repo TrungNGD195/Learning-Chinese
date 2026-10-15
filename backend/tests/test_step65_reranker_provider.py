@@ -1,3 +1,4 @@
+import asyncio
 from contextlib import nullcontext
 from types import SimpleNamespace
 
@@ -126,9 +127,9 @@ def provider(monkeypatch, *, max_length=4):
 def test_pinned_model_identity_passed_to_both_loaders_and_loaded_once(monkeypatch):
     instance, _tokenizer, model, tokenizer_loader, model_loader = provider(monkeypatch)
 
-    instance.validate_pair_lengths("one", ["two"])
-    instance.score("one", ["two"])
-    instance.validate_pair_lengths("one", ["three"])
+    asyncio.run(instance.validate_pair_lengths("one", ["two"]))
+    asyncio.run(instance.score("one", ["two"]))
+    asyncio.run(instance.validate_pair_lengths("one", ["three"]))
 
     revision = "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
     assert tokenizer_loader.calls == [(("BAAI/bge-reranker-v2-m3",), {"revision": revision})]
@@ -145,7 +146,7 @@ def test_pinned_model_identity_passed_to_both_loaders_and_loaded_once(monkeypatc
 def test_pair_length_validation_disables_truncation_and_accepts_exact_limit(monkeypatch):
     instance, tokenizer, _model, *_ = provider(monkeypatch, max_length=4)
 
-    instance.validate_pair_lengths("one two", ["three four"])
+    asyncio.run(instance.validate_pair_lengths("one two", ["three four"]))
 
     assert tokenizer.calls[0][1]["truncation"] is False
 
@@ -154,7 +155,7 @@ def test_overlong_pair_fails_without_truncation(monkeypatch):
     instance, tokenizer, _model, *_ = provider(monkeypatch, max_length=3)
 
     with pytest.raises(Exception) as caught:
-        instance.validate_pair_lengths("one two", ["three four"])
+        asyncio.run(instance.validate_pair_lengths("one two", ["three four"]))
 
     assert getattr(caught.value, "code", None) == "RERANK_INPUT_TOO_LONG"
     assert tokenizer.calls[0][1]["truncation"] is False
@@ -163,7 +164,7 @@ def test_overlong_pair_fails_without_truncation(monkeypatch):
 def test_provider_returns_raw_negative_logits_without_assuming_fp16(monkeypatch):
     instance, tokenizer, _model, *_ = provider(monkeypatch)
 
-    assert instance.score("query", ["passage"]) == [-0.75]
+    assert asyncio.run(instance.score("query", ["passage"])) == [-0.75]
     kwargs = tokenizer.calls[-1][1]
     assert kwargs["truncation"] is False
     assert "torch_dtype" not in kwargs
@@ -182,7 +183,7 @@ def test_explicit_reranker_device_is_independent_from_embedding_device(monkeypat
         torch_module=FakeTorch(),
     )
 
-    instance.validate_pair_lengths("q", ["p"])
+    asyncio.run(instance.validate_pair_lengths("q", ["p"]))
 
     assert instance.device == "cpu"
     assert model.to_calls == ["cpu"]
@@ -200,7 +201,7 @@ def test_model_initialization_failure_is_normalized(monkeypatch):
     )
 
     with pytest.raises(Exception) as caught:
-        instance.validate_pair_lengths("query", ["passage"])
+        asyncio.run(instance.validate_pair_lengths("query", ["passage"]))
 
     assert getattr(caught.value, "code", None) == "RERANKER_NOT_AVAILABLE"
     assert "model download detail" not in str(caught.value)
@@ -216,7 +217,7 @@ def test_model_inference_failure_is_normalized(monkeypatch):
     instance._tokenizer = FakeTokenizer()
 
     with pytest.raises(Exception) as caught:
-        instance.score("query", ["passage"])
+        asyncio.run(instance.score("query", ["passage"]))
 
     assert getattr(caught.value, "code", None) == "RERANKER_INFERENCE_FAILED"
     assert "private model input" not in str(caught.value)

@@ -1,3 +1,4 @@
+import asyncio
 from dataclasses import fields
 from uuid import UUID, uuid4
 
@@ -63,10 +64,10 @@ class FakeProvider:
         self.validation_calls = []
         self.score_calls = []
 
-    def validate_pair_lengths(self, query, passages):
+    async def validate_pair_lengths(self, query, passages):
         self.validation_calls.append((query, list(passages)))
 
-    def score(self, query, passages):
+    async def score(self, query, passages):
         batch = list(passages)
         self.score_calls.append((query, batch))
         return self.score_fn(query, batch)
@@ -84,7 +85,7 @@ def test_candidate_pool_is_exactly_first_twenty_all_scored_sequentially_then_top
     candidates = [candidate(i) for i in range(1, 26)]
     provider = provider_for_numbered_content()
 
-    result = RerankingService(provider=provider, settings=settings()).rerank("  q\t text ", candidates)
+    result = asyncio.run(RerankingService(provider=provider, settings=settings()).rerank("  q\t text ", candidates))
 
     assert sum(len(batch) for _, batch in provider.score_calls) == 20
     assert [len(batch) for _, batch in provider.score_calls] == [8, 8, 4]
@@ -103,7 +104,7 @@ def test_every_candidate_below_or_at_twenty_is_scored_count_times(count):
     candidates = [candidate(i) for i in range(1, count + 1)]
     provider = provider_for_numbered_content()
 
-    result = RerankingService(provider=provider, settings=settings()).rerank("query", candidates)
+    result = asyncio.run(RerankingService(provider=provider, settings=settings()).rerank("query", candidates))
 
     assert sum(len(batch) for _, batch in provider.score_calls) == count
     assert len(result.top_candidates) == min(count, 5)
@@ -120,16 +121,16 @@ def test_empty_candidate_list_does_not_load_or_call_provider_even_for_empty_quer
         def device(self):
             raise AssertionError("provider must not be loaded for empty input")
 
-    assert RerankingService(provider=ForbiddenProvider(), settings=settings()).rerank("", []).scored_candidates == ()
+    assert asyncio.run(RerankingService(provider=ForbiddenProvider(), settings=settings()).rerank("", [])).scored_candidates == ()
 
 
 def test_configured_top_k_is_applied_after_all_selected_candidates_are_scored():
     items = [candidate(i) for i in range(1, 9)]
     provider = provider_for_numbered_content()
 
-    result = RerankingService(
+    result = asyncio.run(RerankingService(
         provider=provider, settings=settings(reranker_top_k=1)
-    ).rerank("query", items)
+    ).rerank("query", items))
 
     assert sum(len(batch) for _, batch in provider.score_calls) == 8
     assert len(result.top_candidates) == 1
@@ -143,7 +144,7 @@ def test_output_preserves_every_semantic_field_and_does_not_mutate_candidate():
     original_snapshot = tuple(getattr(original, f.name) for f in fields(RetrievalCandidate))
     provider = FakeProvider(lambda _query, _passages: [-2.375])
 
-    result = RerankingService(provider=provider, settings=settings()).rerank("query", [original])
+    result = asyncio.run(RerankingService(provider=provider, settings=settings()).rerank("query", [original]))
 
     ranked = result.scored_candidates[0]
     assert tuple(getattr(ranked, f.name) for f in fields(RetrievalCandidate)) == original_snapshot
@@ -160,7 +161,7 @@ def test_raw_positive_negative_scores_are_not_fused_and_ties_are_deterministic()
     inputs = [candidate(2, chunk_id=high_id), candidate(1, chunk_id=low_id), candidate(3)]
     provider = FakeProvider(lambda _query, _passages: [-1.5, -1.5, 2.0])
 
-    result = RerankingService(provider=provider, settings=settings()).rerank("query", inputs)
+    result = asyncio.run(RerankingService(provider=provider, settings=settings()).rerank("query", inputs))
 
     assert [item.chunk_id for item in result.scored_candidates] == [inputs[2].chunk_id, low_id, high_id]
     assert [item.rerank_score for item in result.scored_candidates] == [2.0, -1.5, -1.5]
@@ -172,7 +173,7 @@ def test_equal_rerank_and_semantic_ranks_use_stable_chunk_id_key():
     items = [candidate(1, chunk_id=higher_id), candidate(1, chunk_id=lower_id)]
     provider = FakeProvider(lambda _query, _passages: [0.4, 0.4])
 
-    result = RerankingService(provider=provider, settings=settings()).rerank("query", items)
+    result = asyncio.run(RerankingService(provider=provider, settings=settings()).rerank("query", items))
 
     assert [item.chunk_id for item in result.scored_candidates] == [lower_id, higher_id]
 
@@ -183,14 +184,14 @@ def test_mismatch_nan_and_infinity_fail_the_whole_operation(scores):
     items = [candidate(1), candidate(2)]
 
     with pytest.raises(Exception) as caught:
-        RerankingService(provider=provider, settings=settings()).rerank("query", items)
+        asyncio.run(RerankingService(provider=provider, settings=settings()).rerank("query", items))
 
     assert getattr(caught.value, "code", None) == "INVALID_RERANKER_OUTPUT"
 
 
 def test_later_batch_failure_discards_prior_batch_results_and_does_not_retry():
     class PartialFailure(FakeProvider):
-        def score(self, query, passages):
+        async def score(self, query, passages):
             self.score_calls.append((query, list(passages)))
             if len(self.score_calls) == 1:
                 return [0.9] * len(passages)
@@ -200,7 +201,7 @@ def test_later_batch_failure_discards_prior_batch_results_and_does_not_retry():
     items = [candidate(i) for i in range(1, 10)]
 
     with pytest.raises(Exception) as caught:
-        RerankingService(provider=provider, settings=settings()).rerank("private query", items)
+        asyncio.run(RerankingService(provider=provider, settings=settings()).rerank("private query", items))
 
     assert getattr(caught.value, "code", None) == "RERANKER_INFERENCE_FAILED"
     assert len(provider.score_calls) == 2
@@ -211,7 +212,7 @@ def test_duplicate_ids_and_malformed_candidates_fail_closed():
     duplicate = [candidate(1, chunk_id=duplicate_id), candidate(2, chunk_id=duplicate_id)]
     for inputs in (duplicate, [candidate(1, content=" \t ")], [object()]):
         with pytest.raises(Exception) as caught:
-            RerankingService(provider=provider_for_numbered_content(), settings=settings()).rerank("query", inputs)
+            asyncio.run(RerankingService(provider=provider_for_numbered_content(), settings=settings()).rerank("query", inputs))
         assert getattr(caught.value, "code", None) == "INVALID_RERANK_INPUT"
 
 
@@ -219,7 +220,7 @@ def test_duplicate_passage_text_with_distinct_ids_stays_distinct():
     items = [candidate(1, content="same passage"), candidate(2, content="same passage")]
     provider = FakeProvider(lambda _query, passages: [0.0] * len(passages))
 
-    result = RerankingService(provider=provider, settings=settings()).rerank("query", items)
+    result = asyncio.run(RerankingService(provider=provider, settings=settings()).rerank("query", items))
 
     assert [item.chunk_id for item in result.scored_candidates] == [item.chunk_id for item in items]
 
@@ -229,19 +230,19 @@ def test_provider_identity_mismatch_fails_closed():
     provider.identity = RerankerProviderIdentity("LOCAL", "x", "unexpected", REVISION, "v1")
 
     with pytest.raises(Exception) as caught:
-        RerankingService(provider=provider, settings=settings()).rerank("query", [candidate(1)])
+        asyncio.run(RerankingService(provider=provider, settings=settings()).rerank("query", [candidate(1)]))
 
     assert getattr(caught.value, "code", None) == "RERANKER_NOT_AVAILABLE"
 
 
 def test_overlong_input_error_is_not_replaced_with_empty_or_semantic_success():
     class TooLong(FakeProvider):
-        def validate_pair_lengths(self, _query, _passages):
+        async def validate_pair_lengths(self, _query, _passages):
             from app.ai.reranking.errors import reranking_error
             raise reranking_error("RERANK_INPUT_TOO_LONG", "too long", 422)
 
     with pytest.raises(Exception) as caught:
-        RerankingService(provider=TooLong(), settings=settings()).rerank("query", [candidate(1)])
+        asyncio.run(RerankingService(provider=TooLong(), settings=settings()).rerank("query", [candidate(1)]))
 
     assert getattr(caught.value, "code", None) == "RERANK_INPUT_TOO_LONG"
 
@@ -251,7 +252,7 @@ def test_structured_logs_exclude_query_passage_and_uuid(caplog):
     provider = FakeProvider(lambda _query, _passages: [0.5])
 
     with caplog.at_level("INFO", logger="app.ai.reranking.service"):
-        RerankingService(provider=provider, settings=settings()).rerank("private query", [item])
+        asyncio.run(RerankingService(provider=provider, settings=settings()).rerank("private query", [item]))
 
     serialized = " ".join(record.getMessage() + repr(record.__dict__) for record in caplog.records)
     assert "private query" not in serialized
@@ -265,14 +266,14 @@ def test_structured_logs_exclude_query_passage_and_uuid(caplog):
 
 def test_failure_log_uses_safe_error_code_without_raw_inference_exception(caplog):
     class UnsafeFailure(FakeProvider):
-        def score(self, _query, _passages):
+        async def score(self, _query, _passages):
             raise RuntimeError("private passage text must never appear")
 
     with caplog.at_level("WARNING", logger="app.ai.reranking.service"):
         with pytest.raises(Exception) as caught:
-            RerankingService(provider=UnsafeFailure(), settings=settings()).rerank(
+            asyncio.run(RerankingService(provider=UnsafeFailure(), settings=settings()).rerank(
                 "private learner query", [candidate(1, content="private passage text")]
-            )
+            ))
 
     serialized = " ".join(record.getMessage() + repr(record.__dict__) for record in caplog.records)
     assert getattr(caught.value, "code", None) == "RERANKER_INFERENCE_FAILED"

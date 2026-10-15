@@ -17119,3 +17119,64 @@ Implementation target:
 
 Do not introduce a second CI provider.
 ```
+
+### D-111 — Production BGE Runtime Placement
+
+**Decision:** Production không chạy `BAAI/bge-m3` và `BAAI/bge-reranker-v2-m3` trong cùng FastAPI process. Heavy embedding/reranking inference sẽ đi qua existing provider boundary tới một separate hosted/dedicated inference runtime. Local development vẫn giữ current local BGE implementation.
+
+**Reason:** Real profiling cho thấy both-loaded peak ~3.53 GiB; reranker CPU p95 ~40 s; concurrency=2 bị serialize và request thứ hai ~79 s. Small shared backend host không phù hợp với current in-process placement.
+
+**Constraints:** Không redesign public API, không tách business logic/database sang AI service, không thêm microservice architecture ngoài inference boundary cần thiết.
+
+**Status:** DECIDED.
+
+**Affects:** Step 8.3 production topology, backend hosting selection, embedding/reranker production adapters.
+
+**Deferred:** Concrete inference vendor/runtime và backend hosting vendor sẽ được chọn riêng trong Step 8.3 theo budget near-$0.
+
+**D-005:** UNCHANGED.
+
+### D-112 — Production BGE Inference Vendor
+
+**Decision:** Use **Modal** as the production hosted inference runtime for `BAAI/bge-m3` and `BAAI/bge-reranker-v2-m3`, behind the existing embedding/reranker provider boundaries.
+
+**Reason:** Fits the near-$0 budget goal, supports serverless GPU/scale-to-zero, and provides useful AI Engineering learning value without forcing heavy BGE models into the FastAPI host.
+
+**Constraints:**
+- Modal owns inference only; no business logic, database ownership, or public API redesign.
+- Keep the frozen BGE model identities/revisions unless a later PM decision changes them.
+- GPU hardware tier is **not yet frozen**.
+- Validate with the lowest suitable GPU tier first; upgrade only from measured evidence.
+- Any paid spend beyond free/credit allowance requires explicit user approval.
+
+**Status:** DECIDED.
+
+**Affects:** Step 8.3 production topology, embedding/reranker production adapters, deployment configuration.
+
+**Deferred:** Exact Modal GPU tier and measured production inference latency/cold-start validation.
+
+### D-113 — Modal Embedding Provider Identity
+
+**Decision:** Modal embedding runtime phải dùng honest provider identity `MODAL`; không masquerade thành `LOCAL` và không weaken existing EmbeddingProfile identity guard.
+
+**Contract:** `provider = MODAL`, `provider_version = modal-bge-runtime/v1`.
+
+**Rollout:** Step validation hiện tại không tạo/activate production Modal EmbeddingProfile và không re-embed production data. Production rollout sau này sẽ tạo profile mới và re-embed theo existing profile/versioning design.
+
+**Status:** DECIDED.
+
+**Affects:** Step 8.3 Modal embedding adapter, production embedding profile rollout.
+
+### D-114 — Async AI Provider Boundary
+
+**Decision:** Evolve embedding and reranker inference methods at the existing provider boundary to `async`.
+
+**Reason:** Production Modal inference is remote I/O and must use native async invocation rather than blocking the FastAPI event loop.
+
+**Scope:** Update only required embedding/retrieval/reranking/RAG call sites and affected tests/fakes. Local BGE providers keep existing model behavior; no local inference optimization is introduced.
+
+**Constraints:** No thread-pool workaround, worker/queue, public API change, RAG semantic change, or D-005 change.
+
+**Status:** DECIDED.
+
+**Affects:** Step 8.3 Modal adapters and AI provider interfaces.

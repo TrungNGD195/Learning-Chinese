@@ -234,7 +234,7 @@ class SemanticRetrievalService:
                     "Configured query embedding identity does not match the active profile.",
                 )
             embedding_started = perf_counter()
-            vector = provider.embed_query(normalized_query)
+            vector = await provider.embed_query(normalized_query)
             embedding_ms = (perf_counter() - embedding_started) * 1000
         except ApplicationError as exc:
             code = (

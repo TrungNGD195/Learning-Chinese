@@ -45,7 +45,7 @@ class Settings(BaseSettings):
     cookie_samesite: Literal["lax", "strict"] = "lax"
     document_max_upload_mb: int = Field(default=20, gt=0)
     document_storage_root: Path = Path("storage/documents")
-    embedding_provider: Literal["local"] = "local"
+    embedding_provider: Literal["local", "modal"] = "local"
     embedding_model_name: Literal["BAAI/bge-m3"] = "BAAI/bge-m3"
     embedding_model_revision: Literal["5617a9f61b028005a4858fdac845db406aefb181"] = "5617a9f61b028005a4858fdac845db406aefb181"
     embedding_device: Literal["auto", "cpu", "cuda", "mps"] = "auto"
@@ -62,13 +62,18 @@ class Settings(BaseSettings):
     external_retrieval_allowed_domains: Annotated[tuple[str, ...], NoDecode] = TRUSTED_EXTERNAL_DOMAINS
     external_retrieval_request_timeout_seconds: float = Field(default=10.0, gt=0)
     rag_memory_max_turns: int = Field(default=3, ge=0, le=3)
-    reranker_provider: Literal["local"] = "local"
+    reranker_provider: Literal["local", "modal"] = "local"
     reranker_model_name: Literal["BAAI/bge-reranker-v2-m3"] = "BAAI/bge-reranker-v2-m3"
     reranker_model_revision: Literal["953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"] = "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
     reranker_device: Literal["auto", "cpu", "cuda", "mps"] = "auto"
     reranker_batch_size: int = Field(default=8, ge=1, le=20)
     reranker_top_k: int = Field(default=5, ge=1, le=5)
     reranker_input_version: Literal["v1"] = "v1"
+    modal_token_id: SecretStr | None = None
+    modal_token_secret: SecretStr | None = None
+    modal_environment: str | None = None
+    modal_bge_app_name: str | None = None
+    modal_bge_class_name: str | None = None
     llm_provider: Literal["openai"] = "openai"
     llm_model: Literal["gpt-5.4-mini-2026-03-17"] = "gpt-5.4-mini-2026-03-17"
     llm_api_key: SecretStr | None = None
@@ -213,6 +218,21 @@ class Settings(BaseSettings):
                 raise ValueError("COOKIE_SECURE must be enabled in production")
             if len(self.secret_key.get_secret_value()) < 32:
                 raise ValueError("SECRET_KEY must contain at least 32 characters in production")
+            if self.embedding_provider != "modal" or self.reranker_provider != "modal":
+                raise ValueError("Production must use Modal for embedding and reranking providers")
+
+        modal_selected = self.embedding_provider == "modal" or self.reranker_provider == "modal"
+        if modal_selected:
+            if not self.modal_token_id or not self.modal_token_id.get_secret_value():
+                raise ValueError("MODAL_TOKEN_ID is required when a Modal provider is selected")
+            if not self.modal_token_secret or not self.modal_token_secret.get_secret_value():
+                raise ValueError("MODAL_TOKEN_SECRET is required when a Modal provider is selected")
+            if not self.modal_environment or not self.modal_environment.strip():
+                raise ValueError("MODAL_ENVIRONMENT is required when a Modal provider is selected")
+            if not self.modal_bge_app_name or not self.modal_bge_app_name.strip():
+                raise ValueError("MODAL_BGE_APP_NAME is required when a Modal provider is selected")
+            if not self.modal_bge_class_name or not self.modal_bge_class_name.strip():
+                raise ValueError("MODAL_BGE_CLASS_NAME is required when a Modal provider is selected")
 
         if self.app_env == "test":
             if not self.test_database_url:

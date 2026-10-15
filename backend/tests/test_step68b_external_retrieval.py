@@ -168,9 +168,9 @@ class FakeReranker:
         return RerankerProviderIdentity("LOCAL", "v", "BAAI/bge-reranker-v2-m3", "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e", "v1")
     @property
     def device(self): return "cpu"
-    def validate_pair_lengths(self, query, passages):
+    async def validate_pair_lengths(self, query, passages):
         self.calls.append((query, tuple(passages)))
-    def score(self, query, passages):
+    async def score(self, query, passages):
         self.score_calls.append((query, tuple(passages)))
         return self.scores[:len(passages)]
 
@@ -179,7 +179,7 @@ def test_external_reranking_uses_frozen_passage_gate_and_deterministic_order():
     provider = FakeReranker([0.1, -1.0815147161483765, 0.8])
     service = ExternalRerankingService(settings(reranker_top_k=1), provider=provider)
     rows = (candidate(rank=2), candidate("https://en.wiktionary.org/b", rank=1), candidate("https://www.chinesetest.cn/c", rank=3))
-    result = service.rerank("normalized q", rows)
+    result = asyncio.run(service.rerank("normalized q", rows))
     assert len(provider.calls) == 1
     assert provider.calls[0][0] == "normalized q"
     assert provider.calls[0][1][0] == "Title: A trusted page\nDomain: fake.invalid\n\nReviewable reference content"
@@ -191,16 +191,16 @@ def test_external_reranking_uses_frozen_passage_gate_and_deterministic_order():
 def test_external_threshold_equality_passes_and_empty_skips_provider():
     provider = FakeReranker([-1.0815147161483765])
     service = ExternalRerankingService(settings(), provider=provider)
-    assert len(service.rerank("q", (candidate(),)).eligible_top_candidates) == 1
+    assert len(asyncio.run(service.rerank("q", (candidate(),))).eligible_top_candidates) == 1
     calls = len(provider.calls)
-    assert service.rerank("q", ()).scored_candidates == ()
+    assert asyncio.run(service.rerank("q", ())).scored_candidates == ()
     assert len(provider.calls) == calls
 
 
 def test_external_reranking_keeps_all_scores_then_selects_top_five():
     rows = tuple(candidate(f"https://www.open.edu/{i}", rank=i) for i in range(1, 8))
     provider = FakeReranker([float(i) for i in range(7)])
-    result = ExternalRerankingService(settings(rag_min_rerank_score=-1.0815147161483765), provider=provider).rerank("q", rows)
+    result = asyncio.run(ExternalRerankingService(settings(rag_min_rerank_score=-1.0815147161483765), provider=provider).rerank("q", rows))
     assert len(result.scored_candidates) == 7
     assert len(result.eligible_top_candidates) == 5
     assert [row.rerank_rank for row in result.scored_candidates] == list(range(1, 8))
@@ -210,7 +210,7 @@ def test_external_reranking_discards_partial_or_nonfinite_scores():
     rows = (candidate(rank=1), candidate("https://en.wiktionary.org/a", rank=2))
     for values in ([0.1], [0.1, float("nan")]):
         with pytest.raises(ApplicationError):
-            ExternalRerankingService(settings(), provider=FakeReranker(values)).rerank("q", rows)
+            asyncio.run(ExternalRerankingService(settings(), provider=FakeReranker(values)).rerank("q", rows))
 
 
 def test_external_prompt_keeps_url_backend_only_and_citations_resolve_trusted_source():
@@ -282,9 +282,9 @@ def test_internal_and_external_passages_never_share_one_reranker_invocation():
         document_title=None, lesson_title="Lesson A", hsk_level_number=1, page_number=None, section=None,
         locator_metadata=None, distance=0.1, retrieval_score=0.9,
     )
-    RerankingService(provider=provider, settings=settings()).rerank("q", (internal,))
+    asyncio.run(RerankingService(provider=provider, settings=settings()).rerank("q", (internal,)))
     external = ExternalCandidate("A trusted page", "https://www.open.edu/example", "fake.invalid", "External web passage", 1, 0.98)
-    ExternalRerankingService(settings(), provider=provider).rerank("q", (external,))
+    asyncio.run(ExternalRerankingService(settings(), provider=provider).rerank("q", (external,)))
     assert len(provider.score_calls) == 2
     internal_batch, external_batch = (batch for _query, batch in provider.score_calls)
     assert len(internal_batch) == len(external_batch) == 1
@@ -316,7 +316,7 @@ class EmptyInternalRetrieval:
 
 class InternalReranker:
     def __init__(self, fail=False): self.calls, self.fail = 0, fail
-    def rerank(self, _query, _rows):
+    async def rerank(self, _query, _rows):
         self.calls += 1
         if self.fail: raise ApplicationError("RERANKER_NOT_AVAILABLE", "failed", status_code=503)
         return RerankResult((), ())

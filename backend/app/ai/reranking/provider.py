@@ -13,11 +13,16 @@ class RerankerProvider(Protocol):
     @property
     def device(self) -> str: ...
 
-    def validate_pair_lengths(self, query: str, passages: list[str]) -> None: ...
+    async def validate_pair_lengths(self, query: str, passages: list[str]) -> None: ...
 
-    def score(self, query: str, passages: list[str]) -> list[float]: ...
+    async def score(self, query: str, passages: list[str]) -> list[float]: ...
 
 
 @lru_cache(maxsize=1)
 def get_reranker_provider() -> RerankerProvider:
-    return TransformersRerankerProvider(get_settings())
+    settings = get_settings()
+    if settings.reranker_provider == "modal":
+        from app.ai.reranking.modal_provider import ModalRerankerProvider
+
+        return ModalRerankerProvider(settings)
+    return TransformersRerankerProvider(settings)

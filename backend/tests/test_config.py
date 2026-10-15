@@ -30,6 +30,12 @@ def clean_settings_environment(monkeypatch: pytest.MonkeyPatch) -> None:
         "DOCUMENT_MAX_UPLOAD_MB",
         "DOCUMENT_STORAGE_ROOT",
         "EMBEDDING_PROVIDER",
+        "RERANKER_PROVIDER",
+        "MODAL_TOKEN_ID",
+        "MODAL_TOKEN_SECRET",
+        "MODAL_ENVIRONMENT",
+        "MODAL_BGE_APP_NAME",
+        "MODAL_BGE_CLASS_NAME",
         "EMBEDDING_MODEL_NAME",
         "EMBEDDING_MODEL_REVISION",
         "EMBEDDING_DEVICE",
@@ -212,7 +218,13 @@ def test_supported_environments_are_accepted(environment: str) -> None:
     else:
         values["database_url"] = "postgresql+psycopg://test:test@localhost/learning_runtime"
     if environment == "production":
-        values["cookie_secure"] = True
+        values.update({
+            "cookie_secure": True, "secret_key": "p" * 40,
+            "embedding_provider": "modal", "reranker_provider": "modal",
+            "modal_token_id": "test-id", "modal_token_secret": "test-secret",
+            "modal_environment": "test", "modal_bge_app_name": "test-app",
+            "modal_bge_class_name": "BgeInference",
+        })
 
     settings = Settings(_env_file=None, **values)
 
@@ -298,11 +310,18 @@ def test_production_cors_has_no_wildcard_default(
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     monkeypatch.delenv("CORS_ORIGINS", raising=False)
-    settings = Settings(_env_file=None, app_env="production", debug=False, cookie_secure=True)
+    config = {
+        "_env_file": None, "app_env": "production", "debug": False, "cookie_secure": True,
+        "database_url": "postgresql+psycopg://test:test@localhost/production_placeholder",
+        "secret_key": "p" * 40, "embedding_provider": "modal", "reranker_provider": "modal",
+        "modal_token_id": "test-id", "modal_token_secret": "test-secret", "modal_environment": "test",
+        "modal_bge_app_name": "test-app", "modal_bge_class_name": "BgeInference",
+    }
+    settings = Settings(**config)
 
     assert settings.cors_origins == []
     with pytest.raises(ValidationError, match="Wildcard CORS origins"):
-        Settings(_env_file=None, app_env="production", debug=False, cors_origins="*")
+        Settings(**{**config, "cors_origins": "*"})
 
 
 @pytest.mark.parametrize("level", ["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"])
@@ -438,3 +457,35 @@ def test_fastapi_consumes_configured_settings_and_cors() -> None:
         assert response.headers["access-control-allow-credentials"] == "true"
     finally:
         root_logger.setLevel(previous_level)
+
+
+def test_modal_configuration_is_conditional_and_production_requires_both_providers():
+    base = {
+        "_env_file": None, "app_env": "test", "debug": False,
+        "test_database_url": "postgresql+psycopg://test:test@localhost/chinese_learning_test",
+        "secret_key": "test-only-signing-key",
+    }
+    local = Settings(**base)
+    assert local.embedding_provider == local.reranker_provider == "local"
+    with pytest.raises(ValidationError, match="MODAL_TOKEN_ID"):
+        Settings(**base, embedding_provider="modal")
+
+    modal_config = {
+        **base, "embedding_provider": "modal", "reranker_provider": "modal",
+        "modal_token_id": "fake-test-id", "modal_token_secret": "fake-test-secret",
+        "modal_environment": "test", "modal_bge_app_name": "test-app",
+        "modal_bge_class_name": "BgeInference",
+    }
+    selected = Settings(**modal_config)
+    assert selected.modal_token_id.get_secret_value() == "fake-test-id"
+
+    production = {
+        "_env_file": None, "app_env": "production", "debug": False,
+        "database_url": "postgresql+psycopg://test:test@localhost/prod_placeholder",
+        "secret_key": "p" * 40, "cookie_secure": True,
+    }
+    with pytest.raises(ValidationError, match="Production must use Modal"):
+        Settings(**production)
+    production.update({key: value for key, value in modal_config.items()
+                       if key not in {"_env_file", "app_env", "debug", "test_database_url", "secret_key"}})
+    Settings(**production)

@@ -127,7 +127,7 @@ class TransformersRerankerProvider:
             )
         return min(limits)
 
-    def validate_pair_lengths(self, query: str, passages: list[str]) -> None:
+    async def validate_pair_lengths(self, query: str, passages: list[str]) -> None:
         try:
             tokenizer, model = self._load_model()
             max_length = self._max_pair_length(tokenizer, model)
@@ -143,7 +143,7 @@ class TransformersRerankerProvider:
                 "RERANKER_NOT_AVAILABLE", "Reranker input could not be validated.", 503
             ) from None
 
-    def score(self, query: str, passages: list[str]) -> list[float]:
+    async def score(self, query: str, passages: list[str]) -> list[float]:
         if not passages:
             return []
         try:

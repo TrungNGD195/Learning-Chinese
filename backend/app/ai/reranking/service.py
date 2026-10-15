@@ -36,7 +36,7 @@ class RerankingService:
         provider = self.provider or get_reranker_provider()
         identity = provider.identity
         expected = (
-            "LOCAL",
+            "MODAL" if self.settings.reranker_provider == "modal" else "LOCAL",
             self.settings.reranker_model_name,
             self.settings.reranker_model_revision,
             self.settings.reranker_input_version,
@@ -47,7 +47,8 @@ class RerankingService:
             identity.model_revision,
             identity.reranker_input_version,
         )
-        if actual != expected or not identity.provider_version:
+        expected_version = "modal-bge-runtime/v1" if self.settings.reranker_provider == "modal" else None
+        if actual != expected or not identity.provider_version or (expected_version and identity.provider_version != expected_version):
             raise reranking_error(
                 "RERANKER_NOT_AVAILABLE", "Configured reranker identity is invalid.", 503
             )
@@ -125,7 +126,7 @@ class RerankingService:
             "error_code": error_code,
         }
 
-    def rerank(
+    async def rerank(
         self,
         query_text: str,
         candidates: Sequence[RetrievalCandidate],
@@ -161,14 +162,14 @@ class RerankingService:
             selected_count = len(pool)
             passages = [RerankPassageFormatter.format(candidate) for candidate in pool]
             active_provider = self._provider()
-            active_provider.validate_pair_lengths(normalized_query, passages)
+            await active_provider.validate_pair_lengths(normalized_query, passages)
 
             batch_scores: list[float] = []
             batch_size = self.settings.reranker_batch_size
             batch_count = math.ceil(len(passages) / batch_size)
             for start in range(0, len(passages), batch_size):
                 passage_batch = passages[start : start + batch_size]
-                scores = active_provider.score(normalized_query, passage_batch)
+                scores = await active_provider.score(normalized_query, passage_batch)
                 if not isinstance(scores, Sequence) or isinstance(scores, (str, bytes)):
                     raise reranking_error("INVALID_RERANKER_OUTPUT", "Reranker returned invalid scores.")
                 if len(scores) != len(passage_batch):

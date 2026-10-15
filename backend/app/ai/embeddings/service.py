@@ -35,8 +35,11 @@ class EmbeddingService:
     def _desired_identity(self) -> EmbeddingProfileIdentity:
         provider_identity = self.provider.identity
         if (
-            provider_identity.provider != "LOCAL"
-            or provider_identity.provider_version != "sentence-transformers/6.1.0"
+            provider_identity.provider != ("MODAL" if self.settings.embedding_provider == "modal" else "LOCAL")
+            or provider_identity.provider_version != (
+                "modal-bge-runtime/v1" if self.settings.embedding_provider == "modal"
+                else "sentence-transformers/6.1.0"
+            )
             or provider_identity.model_name != self.settings.embedding_model_name
             or provider_identity.model_version != self.settings.embedding_model_revision
             or provider_identity.dimensions != 1024
@@ -150,7 +153,7 @@ class EmbeddingService:
                 texts = [self.formatter.format(item) for item in to_encode]
                 started = perf_counter()
                 try:
-                    vectors = self.provider.embed_documents(texts, batch_size=self.settings.embedding_batch_size)
+                    vectors = await self.provider.embed_documents(texts, batch_size=self.settings.embedding_batch_size)
                 except ApplicationError:
                     raise
                 except Exception as exc:
