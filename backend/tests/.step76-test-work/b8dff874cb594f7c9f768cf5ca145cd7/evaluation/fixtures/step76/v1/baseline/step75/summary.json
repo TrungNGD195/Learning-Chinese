@@ -1,8 +1,0 @@
-{
-  "regression_metrics": {
-    "latency_p95_ms": 1100,
-    "pass_rate": 0.9,
-    "technical_failure_rate": 0.02
-  },
-  "run_id": "step76-fixture-baseline-step75-v1"
-}

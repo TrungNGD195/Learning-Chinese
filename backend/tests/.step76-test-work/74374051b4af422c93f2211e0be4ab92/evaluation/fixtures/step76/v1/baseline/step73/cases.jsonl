@@ -1,2 +1,0 @@
-{"bucket": "CURRENT_LESSON_ANSWERABLE", "case_id": "fixture-dev-01", "case_scope_violation": false, "split": "DEVELOPMENT", "tier_attempts": []}
-{"bucket": "CURRENT_LESSON_ANSWERABLE", "case_id": "fixture-holdout-01", "case_scope_violation": false, "split": "HOLDOUT", "tier_attempts": []}

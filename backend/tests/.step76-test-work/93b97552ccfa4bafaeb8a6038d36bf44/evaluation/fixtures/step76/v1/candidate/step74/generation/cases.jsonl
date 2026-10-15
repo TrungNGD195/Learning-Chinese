@@ -1,2 +1,0 @@
-{"bucket": "CURRENT_LESSON_ANSWERABLE", "case_id": "fixture-dev-01", "critical_failures": [], "dimension_scores": {"answer_correctness": 1.3}, "judge": {"status": "SUCCESS"}, "split": "DEVELOPMENT"}
-{"bucket": "CURRENT_LESSON_ANSWERABLE", "case_id": "fixture-holdout-01", "critical_failures": [], "dimension_scores": {"answer_correctness": 1.3}, "judge": {"status": "SUCCESS"}, "split": "HOLDOUT"}

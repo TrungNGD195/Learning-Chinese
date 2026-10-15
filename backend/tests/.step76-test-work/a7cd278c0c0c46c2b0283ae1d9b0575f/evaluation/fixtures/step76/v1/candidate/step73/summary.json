@@ -1,9 +1,0 @@
-{
-  "regression_metrics": {
-    "reranked_ndcg5": 0.76,
-    "reranked_precision5": 0.71,
-    "reranked_recall5": 0.81,
-    "semantic_recall20": 0.92
-  },
-  "run_id": "step76-fixture-candidate-step73-v1"
-}
