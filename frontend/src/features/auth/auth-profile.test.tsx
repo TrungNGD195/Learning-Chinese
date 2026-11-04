@@ -1,4 +1,4 @@
-import { act, fireEvent, render, screen, waitFor } from '@testing-library/react'
+import { act, fireEvent, render, screen, waitFor, within } from '@testing-library/react'
 import { QueryClientProvider } from '@tanstack/react-query'
 import { createMemoryRouter, RouterProvider } from 'react-router'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
@@ -296,8 +296,10 @@ describe('Logout, Profile, and change password', () => {
   it('keeps explanatory logout failure feedback and alert semantics in the Admin shell', async () => {
     vi.mocked(authApi.logout).mockRejectedValueOnce(apiError(503, 'HTTP_ERROR'))
     renderApp('/admin', admin)
-    fireEvent.click(await screen.findByRole('button', { name: 'Đăng xuất' }))
-    expect(await screen.findByRole('alert')).toHaveTextContent('Chưa thể xác nhận đăng xuất. Phiên đăng nhập vẫn đang hoạt động; bạn có thể thử lại.')
+    const logout = await screen.findByRole('button', { name: 'Đăng xuất' })
+    const logoutRegion = within(logout.closest('.logout-action') as HTMLElement)
+    fireEvent.click(logout)
+    expect(await logoutRegion.findByRole('alert')).toHaveTextContent('Chưa thể xác nhận đăng xuất. Phiên đăng nhập vẫn đang hoạt động; bạn có thể thử lại.')
     expect(screen.getByRole('button', { name: 'Thử đăng xuất lại' })).toBeEnabled()
     expect(authApi.logout).toHaveBeenCalledTimes(1)
   })
