@@ -1,10 +1,12 @@
 import { useQuery } from '@tanstack/react-query'
 import { Link, useParams } from 'react-router'
 import type { components } from '../../types/api.generated'
+import { Alert, Button, LoadingState, PageHeader, StatusBadge, Surface } from '../../components/ui'
 import { queryKeys } from '../../app/query/keys'
 import { getDashboard } from '../dashboard/api'
 import { continueLearningPath } from '../dashboard/continueLearning'
 import { getAttempt } from './api'
+import { Companion } from '../../components/academy/Companion'
 
 type AnswerResult = components['schemas']['AttemptDetailResponse']['answers'][number]
 
@@ -28,10 +30,10 @@ function AnswerText({ answer }: { answer: AnswerResult }) {
 }
 function GradingLabel({ answer }: { answer: AnswerResult }) {
   switch (answer.grading_status) {
-    case 'UNCERTAIN': return <><p className="result-neutral">Uncertain · Needs review</p><p className="result-neutral">This item was not counted in your score.</p></>
-    case 'FAILED': return <p className="result-neutral">Grading could not be completed for this answer.</p>
-    case 'PENDING': return <p className="result-neutral">Awaiting grading.</p>
-    case 'GRADED': return <p className={answer.is_correct === true ? 'result-good' : answer.is_correct === false ? 'result-bad' : 'result-neutral'}>{answer.is_correct === true ? 'Correct' : answer.is_correct === false ? 'Incorrect' : 'Graded'}</p>
+    case 'UNCERTAIN': return <><StatusBadge tone="neutral">Uncertain · Needs review</StatusBadge><p>This item was not counted in your score.</p></>
+    case 'FAILED': return <><StatusBadge tone="warning">Grading failed</StatusBadge><p>Grading could not be completed for this answer.</p></>
+    case 'PENDING': return <StatusBadge tone="neutral">Awaiting grading</StatusBadge>
+    case 'GRADED': return <StatusBadge tone={answer.is_correct === true ? 'success' : answer.is_correct === false ? 'danger' : 'neutral'}>{answer.is_correct === true ? 'Correct' : answer.is_correct === false ? 'Incorrect' : 'Graded'}</StatusBadge>
   }
 }
 
@@ -41,26 +43,39 @@ export function AssessmentResultPage() {
   const attempt = attemptQuery.data
   const dashboardQuery = useQuery({ queryKey: queryKeys.dashboard, queryFn: getDashboard, enabled: !!attempt && attempt.status === 'GRADED' && attempt.passed === true })
   const continuePath = dashboardQuery.data?.continue_learning ? continueLearningPath(dashboardQuery.data.continue_learning) : null
-  if (attemptQuery.isPending) return <section className="screen"><h1 id="page-title">Assessment Result</h1><p role="status">Loading result…</p></section>
-  if ((attemptQuery.isError && !attempt) || !attempt) return <section className="screen"><h1 id="page-title">Assessment Result</h1><p role="alert">Could not load assessment result.</p><button className="secondary-action" type="button" onClick={() => void attemptQuery.refetch()}>Retry</button></section>
+  if (attemptQuery.isPending && !attempt) return <section className="learner-page assessment-result-page screen" aria-labelledby="page-title"><PageHeader title="Assessment Result" titleId="page-title" /><LoadingState>Loading result…</LoadingState></section>
+  if ((attemptQuery.isError && !attempt) || !attempt) return <section className="learner-page assessment-result-page screen" aria-labelledby="page-title"><PageHeader title="Assessment Result" titleId="page-title" />
+    <Alert role="alert" tone="error" action={<Button onClick={() => void attemptQuery.refetch()}>Retry</Button>}>Could not load assessment result.</Alert></section>
+
   const canRetry = attempt.status === 'GRADING_FAILED' || attempt.passed === false
-  return <section className="screen" aria-labelledby="page-title">
-    <h1 id="page-title">Assessment Result</h1>
-    {attemptQuery.isFetching && <p role="status">Refreshing result…</p>}
-    {attemptQuery.isError && <p role="status">Could not refresh result. Showing the last loaded result.</p>}
-    {dashboardQuery.isError && <p role="status">Continue Learning is temporarily unavailable. <button type="button" onClick={() => void dashboardQuery.refetch()}>Retry</button></p>}
-    <section className="learning-card result-summary"><p>Attempt: {attempt.attempt_number}</p><p>Status: <strong>{attempt.status}</strong></p>
+  const isPassed = attempt.status === 'GRADED' && attempt.passed === true
+  const isNotPassed = attempt.status === 'GRADED' && attempt.passed === false
+  const outcome = isPassed ? 'Passed' : isNotPassed ? 'Not passed' : attempt.status === 'GRADING_FAILED' ? 'Grading could not be completed' : 'Result pending'
+  const outcomeTone = isPassed ? 'success' : isNotPassed ? 'warning' : attempt.status === 'GRADING_FAILED' ? 'danger' : 'neutral'
+  return <section className="learner-page assessment-result-page screen" aria-labelledby="page-title">
+    <PageHeader title="Assessment Result" titleId="page-title" />
+    {attemptQuery.isFetching && <LoadingState>Refreshing result…</LoadingState>}
+    {attemptQuery.isError && <Alert role="status" tone="warning">Could not refresh result. Showing the last loaded result.</Alert>}
+    {dashboardQuery.isError && <Alert role="status" tone="warning" action={<Button onClick={() => void dashboardQuery.refetch()}>Retry</Button>}>Continue Learning is temporarily unavailable.</Alert>}
+    <Surface as="section" className="learner-surface assessment-result-summary" aria-labelledby="assessment-outcome-title">
+      <h2 id="assessment-outcome-title">Assessment outcome</h2>
+      <Companion pose={isPassed?'celebrate':isNotPassed||attempt.status==='GRADING_FAILED'?'encourage':'think'} className="academy-result-companion"/>
+      <StatusBadge tone={outcomeTone}>{outcome}</StatusBadge>
+      <p>Attempt: {attempt.attempt_number}</p>
+      <p>Status: <strong>{attempt.status}</strong></p>
       {attempt.status === 'GRADING_FAILED' && <p role="status">Answers were saved, but grading could not be completed.</p>}
-      {attempt.status === 'GRADED' && <><p>Score: {attempt.score === null ? 'Not available' : `${attempt.score}%`}</p><p>{attempt.passed === true ? 'Passed' : attempt.passed === false ? 'Not passed' : 'Pass state not available'}</p></>}
+      {attempt.status === 'GRADED' && <><p>Score: {attempt.score === null ? 'Not available' : `${attempt.score}%`}</p>{attempt.passed === null && <p>Pass state not available</p>}</>}
       {!['GRADED', 'GRADING_FAILED'].includes(attempt.status) && <p>This attempt does not have a final result yet.</p>}
-      {canRetry && <Link className="primary-action" to={`/assessments/${encodeURIComponent(attempt.assessment_id)}`}>Retry</Link>}
-      {attempt.status === 'GRADED' && attempt.passed === true && continuePath && <Link className="primary-action" to={continuePath}>Continue Learning</Link>}
-    </section>
-    <section className="learning-section" aria-labelledby="answer-review-title"><h2 id="answer-review-title">Answer review</h2>
-      {attempt.answers.length === 0 ? <p>No answer details are available.</p> : <div className="section-grid">{attempt.answers.map((answer, index) => <article className="learning-card" key={`${answer.question_id}-${index}`}>
-        <h3>Question {index + 1}</h3><p>{answer.prompt}</p><AnswerText answer={answer} /><GradingLabel answer={answer} />
+      {canRetry && <Link className="learner-link-action learner-link-action--secondary assessment-result-summary__primary" to={`/assessments/${encodeURIComponent(attempt.assessment_id)}`}>Retry</Link>}
+      {isPassed && continuePath && <Link className="learner-link-action assessment-result-summary__primary" to={continuePath}>Continue Learning</Link>}
+      {isPassed && !continuePath && !dashboardQuery.isError && <p>No next learning destination is available yet.</p>}
+    </Surface>
+    <section className="assessment-answer-review" aria-labelledby="answer-review-title">
+      <h2 id="answer-review-title">Answer review</h2>
+      {attempt.answers.length === 0 ? <p>No answer details are available.</p> : <div className="assessment-answer-list">{attempt.answers.map((answer, index) => <Surface as="article" className="learner-surface assessment-answer-card" key={`${answer.question_id}-${index}`}>
+        <h3>Question {index + 1}</h3><p>{answer.prompt}</p><h4>Submitted answer</h4><AnswerText answer={answer} /><GradingLabel answer={answer} />
         {answer.score !== null && <p>Score: {answer.score}</p>}{answer.feedback && <p>Feedback: {answer.feedback}</p>}{answer.reference_answer && <p>Reference answer: {answer.reference_answer}</p>}{answer.rubric && <p>Rubric: {answer.rubric}</p>}
-      </article>)}</div>}
+      </Surface>)}</div>}
     </section>
   </section>
 }

@@ -144,9 +144,17 @@ describe('Step 4.3 lesson and theory behavior', () => {
     expect(await screen.findByRole('heading', { name: 'Lesson 1: Greetings' })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: 'Vocabulary' })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: 'Grammar' })).toBeInTheDocument()
+    expect(screen.getByRole('navigation', { name: 'Lesson sections' })).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: /Vocabulary/ })).toHaveAttribute('href', '#vocabulary')
+    expect(screen.getByRole('link', { name: /Grammar/ })).toHaveAttribute('href', '#grammar')
+    expect(screen.getByRole('link', { name: /Practice/ })).toHaveAttribute('href', '#exercise')
+    expect(screen.getByRole('heading', { name: '你好' })).toHaveAttribute('lang', 'zh-Hans')
+    expect(screen.getByRole('heading', { name: 'Vocabulary' }).closest('section')?.id).toBe('vocabulary')
+    expect(screen.getByRole('heading', { name: 'Grammar' }).closest('section')?.id).toBe('grammar')
+    expect(screen.getByRole('heading', { name: 'Exercise' }).closest('section')?.id).toBe('exercise')
     expect(screen.getByRole('heading', { name: 'AI Chat' })).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: 'Open Exercise 1' })).toHaveAttribute('href', '/assessments/assessment-1')
-    expect(screen.getByRole('link', { name: 'Open Exercise 2' })).toHaveAttribute('href', '/assessments/assessment-2')
+    expect(screen.getByRole('button', { name: 'Open Exercise 1' })).toBeDisabled()
+    expect(screen.getByRole('button', { name: 'Open Exercise 2' })).toBeDisabled()
     expect(markVocabularyViewed).not.toHaveBeenCalled()
     expect(markGrammarViewed).not.toHaveBeenCalled()
   })
@@ -305,6 +313,7 @@ describe('Step 4.3 lesson and theory behavior', () => {
 describe('Step 4.3 Assessment lifecycle and answer submission', () => {
   it.each(lessonExerciseCases)('renders safely with %s Lesson Exercise IDs', async (_label, assessmentIds) => {
     vi.mocked(getLesson).mockResolvedValue({ ...lessonFixture(), assessment_ids: assessmentIds })
+    vi.mocked(getLessonProgress).mockResolvedValue({ ...lessonProgressFixture(), theory_completed_at: theoryTimestamp })
     renderAt('/lessons/lesson-1')
     expect(await screen.findByRole('heading', { name: 'Lesson 1: Greetings' })).toBeInTheDocument()
     if (assessmentIds.length === 0) {
@@ -324,9 +333,12 @@ describe('Step 4.3 Assessment lifecycle and answer submission', () => {
     expect(startAttempt).not.toHaveBeenCalled()
     fireEvent.click(screen.getByRole('button', { name: 'Start / Resume Assessment' }))
     expect(await screen.findByText('Question 1 of 7')).toBeInTheDocument()
+    expect(screen.getByText('Responses complete: 0 / 7')).toBeInTheDocument()
     expect(startAttempt).toHaveBeenCalledWith('assessment-1')
 
     fireEvent.click(screen.getByLabelText('Option One'))
+    expect(screen.getByText('Responses complete: 1 / 7')).toBeInTheDocument()
+    expect(submitAttempt).not.toHaveBeenCalled()
     fireEvent.click(screen.getByRole('button', { name: 'Next' }))
     fireEvent.change(await screen.findByLabelText('Fill the blank'), { target: { value: '你好' } })
     fireEvent.click(screen.getByRole('button', { name: 'Next' }))
@@ -377,7 +389,7 @@ describe('Step 4.3 Assessment lifecycle and answer submission', () => {
   it('blocks navigation only for dirty active attempts and supports Stay, Leave, and beforeunload', async () => {
     vi.mocked(getAssessment).mockResolvedValue(assessmentFixture(questionFixture().slice(0, 1)))
     renderAt('/assessments/assessment-1')
-    expect(screen.queryByRole('alertdialog', { name: 'Unsaved assessment answers' })).not.toBeInTheDocument()
+    expect(screen.queryByRole('dialog', { name: 'Unsaved assessment answers' })).not.toBeInTheDocument()
     fireEvent.click(await screen.findByRole('button', { name: 'Start / Resume Assessment' }))
     fireEvent.click(await screen.findByLabelText('Option One'))
     const beforeUnload = new Event('beforeunload', { cancelable: true })
@@ -385,7 +397,7 @@ describe('Step 4.3 Assessment lifecycle and answer submission', () => {
     expect(beforeUnload.defaultPrevented).toBe(true)
 
     fireEvent.click(screen.getByRole('link', { name: 'Leave page' }))
-    expect(await screen.findByRole('alertdialog', { name: 'Unsaved assessment answers' })).toBeInTheDocument()
+    expect(await screen.findByRole('dialog', { name: 'Unsaved assessment answers' })).toBeInTheDocument()
     fireEvent.click(screen.getByRole('button', { name: 'Stay' }))
     expect(screen.getByRole('heading', { name: 'Greetings practice' })).toBeInTheDocument()
     expect(screen.queryByTestId('current-path')).not.toBeInTheDocument()
@@ -544,20 +556,39 @@ describe('Step 4.3 curriculum, progress, and Continue Learning', () => {
     expect(screen.getByRole('link', { name: 'Open Periodic Test' })).toHaveAttribute('href', '/assessments/periodic-1')
   })
 
+  it('renders curriculum units in backend order_index order', async () => {
+    vi.mocked(getCurriculum).mockResolvedValue({ hsk: { id: 'hsk-1', level_number: 1, title: 'HSK 1' }, units: [
+      { id: 'unit-2', order_index: 2, unit_type: 'PERIODIC_TEST', state: 'AVAILABLE', lesson: null,
+        assessment: { id: 'periodic-1', title: 'Checkpoint', type: 'PERIODIC_TEST', status: 'PUBLISHED' } },
+      { id: 'unit-1', order_index: 1, unit_type: 'LESSON', state: 'LOCKED',
+        lesson: { id: 'lesson-1', lesson_number: 1, title: 'Greetings', status: 'PUBLISHED' }, assessment: null },
+    ] })
+    renderAt('/hsk/1')
+    const units = await screen.findAllByRole('heading', { level: 2 })
+    expect(units.map((heading) => heading.textContent)).toEqual(['Lesson 1: Greetings', 'Periodic Test 2: Checkpoint'])
+  })
+
   it('renders backend progress percentages verbatim and includes Periodic Test units', async () => {
     vi.mocked(getHskProgress).mockResolvedValue({ hsk: { id: 'hsk-1', level_number: 1, title: 'HSK 1' }, progress_percentage: 12.34,
-      units: [{ id: 'periodic-unit', order_index: 4, unit_type: 'PERIODIC_TEST', state: 'LOCKED', lesson: null,
-        assessment: { id: 'periodic-1', title: 'Periodic checkpoint', type: 'PERIODIC_TEST', status: 'PUBLISHED' } }] })
+      units: [
+        { id: 'completed-unit', order_index: 1, unit_type: 'LESSON', state: 'COMPLETED', lesson: { id: 'lesson-done', lesson_number: 1, title: 'Completed lesson', status: 'PUBLISHED' }, assessment: null },
+        { id: 'periodic-unit', order_index: 4, unit_type: 'PERIODIC_TEST', state: 'LOCKED', lesson: null,
+          assessment: { id: 'periodic-1', title: 'Periodic checkpoint', type: 'PERIODIC_TEST', status: 'PUBLISHED' } },
+      ] })
     renderAt('/progress')
     expect(await screen.findByText('Overall progress: 37.25%')).toBeInTheDocument()
     expect(screen.getByText('12.34%')).toBeInTheDocument()
-    expect(screen.getByText('State: AVAILABLE')).toBeInTheDocument()
+    const available = screen.getByText('State: AVAILABLE')
+    expect(available).toBeInTheDocument()
+    expect(available.closest('.ui-status-badge')).toHaveClass('ui-status-badge--info')
+    expect(screen.getByText('COMPLETED').closest('.ui-status-badge')).toHaveClass('ui-status-badge--success')
+    expect(screen.getByText('LOCKED').closest('.ui-status-badge')).toHaveClass('ui-status-badge--neutral')
     expect(screen.getByText('Periodic Test 4: Periodic checkpoint')).toBeInTheDocument()
     expect(screen.queryByText('12%')).not.toBeInTheDocument()
   })
 
   it.each([
-    [{ type: 'PRONUNCIATION', section_id: 'section-1', code: 'pinyin', lesson_id: null, assessment_id: null }, '/pronunciation'],
+    [{ type: 'PRONUNCIATION', section_id: 'section-1', code: 'pinyin', lesson_id: null, assessment_id: null }, '/pronunciation/lesson'],
     [{ type: 'LESSON', section_id: null, code: null, lesson_id: 'lesson-1', assessment_id: null }, '/lessons/lesson-1'],
     [{ type: 'PERIODIC_TEST', section_id: null, code: null, lesson_id: null, assessment_id: 'assessment-1' }, '/assessments/assessment-1'],
   ] as const)('routes Continue Learning from the backend target %s', async (target, href) => {
@@ -566,6 +597,16 @@ describe('Step 4.3 curriculum, progress, and Continue Learning', () => {
     expect(await screen.findByRole('link', { name: 'Continue Learning' })).toHaveAttribute('href', href)
     expect(screen.getByText('37.25%')).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: 'Dashboard' })).toBeInTheDocument()
+  })
+
+  it('presents the current unit state from the backend without inferring a different state', async () => {
+    vi.mocked(getDashboard).mockResolvedValue({ ...dashboardFixture(), current_unit: {
+      id: 'unit-1', order_index: 4, unit_type: 'LESSON', state: 'LOCKED',
+      lesson: { id: 'lesson-locked', lesson_number: 4, title: 'Locked lesson', status: 'PUBLISHED' }, assessment: null,
+    } })
+    renderAt('/dashboard')
+    expect(await screen.findByText('Lesson · LOCKED')).toBeInTheDocument()
+    expect(screen.getByText('LOCKED').closest('.ui-status-badge')).toBeInTheDocument()
   })
 
   it('shows no fabricated target when the backend Continue Learning target is null', async () => {

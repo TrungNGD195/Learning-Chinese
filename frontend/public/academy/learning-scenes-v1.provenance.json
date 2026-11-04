@@ -1,0 +1,160 @@
+{
+  "asset": "learning-scenes-v1.png",
+  "created_at": "2026-11-04",
+  "generator": "built-in tools.image_gen__imagegen",
+  "generation_mode": "reference-guided illustration-story",
+  "transparent_background_requested": true,
+  "source_generated_file": "C:\\Users\\Diep_PC\\.codex\\generated_images\\01a1a5bb-a77f-77d2-a8bd-be6122809636\\exec-1fdad255-bf70-4d0b-a8a4-4c1277a9aee0.png",
+  "source_sha256": "9b18b39ef33bfea9574b43fe52f5bb1531440fbf8aa212da2ada84160ed4a2aa",
+  "saved_sha256": "9b18b39ef33bfea9574b43fe52f5bb1531440fbf8aa212da2ada84160ed4a2aa",
+  "original_copied_unmodified": true,
+  "postprocessing": "None on final atlas. Preview only: deterministic 50% Lanczos resize preserving RGBA.",
+  "prompt_file": "learning-scenes-v1.prompt.txt",
+  "reference_files": [
+    "landscape.png",
+    "companions.png",
+    "vocabulary-hsk1.png"
+  ],
+  "reference_roles": [
+    "academy environment and palette",
+    "storybook painted finish; no mascot copied",
+    "human figures, objects and brushwork"
+  ],
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "mode": "RGBA",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "cell_width": 512,
+    "cell_height": 512,
+    "order": "left to right, top to bottom",
+    "cells": [
+      {
+        "index": 0,
+        "subject": "two adult learners greeting in courtyard",
+        "rect": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "alpha_128_content_bounds": [
+          40,
+          37,
+          494,
+          477
+        ]
+      },
+      {
+        "index": 1,
+        "subject": "family of three",
+        "rect": [
+          512,
+          0,
+          512,
+          512
+        ],
+        "alpha_128_content_bounds": [
+          19,
+          51,
+          490,
+          471
+        ]
+      },
+      {
+        "index": 2,
+        "subject": "scholarly reading desk",
+        "rect": [
+          1024,
+          0,
+          512,
+          512
+        ],
+        "alpha_128_content_bounds": [
+          14,
+          85,
+          485,
+          458
+        ]
+      },
+      {
+        "index": 3,
+        "subject": "garden path and academy arch",
+        "rect": [
+          0,
+          512,
+          512,
+          512
+        ],
+        "alpha_128_content_bounds": [
+          27,
+          37,
+          492,
+          469
+        ]
+      },
+      {
+        "index": 4,
+        "subject": "exercise notebook and paper tiles",
+        "rect": [
+          512,
+          512,
+          512,
+          512
+        ],
+        "alpha_128_content_bounds": [
+          18,
+          55,
+          476,
+          451
+        ]
+      },
+      {
+        "index": 5,
+        "subject": "library shelf and source documents",
+        "rect": [
+          1024,
+          512,
+          512,
+          512
+        ],
+        "alpha_128_content_bounds": [
+          38,
+          20,
+          483,
+          447
+        ]
+      }
+    ]
+  },
+  "alpha_validation": {
+    "minimum": 0,
+    "maximum": 254,
+    "fully_transparent_pixels": 602021,
+    "fully_transparent_ratio": 0.382755,
+    "semi_transparent_pixels": 970843,
+    "fully_opaque_pixels": 0,
+    "notes": "Generated RGBA alpha ranges 0?254; preserved exactly, without thresholding or background removal."
+  },
+  "visual_review": {
+    "scene_count": 6,
+    "order_correct": true,
+    "equal_square_cells": true,
+    "no_labels_text_or_borders": true,
+    "no_cross_cell_subjects": true,
+    "no_new_mascot_identity": true,
+    "all_cell_10px_edges_clear_at_alpha_128": true
+  },
+  "preview_file": "learning-scenes-v1.preview.png",
+  "deliveryDerivative": {
+    "path": "frontend/public/academy/learning-scenes-v1.webp",
+    "format": "lossless WebP",
+    "identicalRGBA": true,
+    "alphaPreserved": true,
+    "bytes": 2029116,
+    "sha256": "1eff9a2f7951f1dcae389cd43170c4e45ac76020dd636504151bc482e26f725d"
+  }
+}

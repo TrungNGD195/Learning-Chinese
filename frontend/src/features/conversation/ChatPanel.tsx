@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import type { KeyboardEvent as ReactKeyboardEvent } from 'react'
+import type { RefObject } from 'react'
 import { useInfiniteQuery, useMutation, useQueryClient } from '@tanstack/react-query'
 import type { InfiniteData } from '@tanstack/react-query'
 import type { components } from '../../types/api.generated'
@@ -32,17 +33,44 @@ function mergeMessages(current: Message[], incoming: Message[]) {
 function isAmbiguousTechnicalFailure(error: unknown) {
   return !(error instanceof ApiError) || error.code === 'NETWORK_ERROR' || error.code === 'INVALID_RESPONSE' || (error.status !== null && error.status >= 500)
 }
+function formatTimestamp(value: string) {
+  const date = new Date(value)
+  return Number.isNaN(date.getTime()) ? value : new Intl.DateTimeFormat(undefined, { dateStyle: 'medium', timeStyle: 'short' }).format(date)
+}
+function isHttpsCitationUrl(value: string | null): value is string {
+  if (!value) return false
+  try { return new URL(value).protocol === 'https:' } catch { return false }
+}
+function MessageSources({ message }: { message: Message }) {
+  if (message.role !== 'ASSISTANT' || message.citations.length === 0) return null
+  return <section className="chat-sources" aria-label={`Sources for response ${message.sequence_number}`}>
+    <h3>Sources</h3>
+    <ol>{message.citations.map((citation) => <li key={citation.label}>
+      <span className="chat-source-label">[{citation.label}]</span>{' '}
+      {citation.source_kind === 'EXTERNAL_URL' && isHttpsCitationUrl(citation.url)
+        ? <a href={citation.url} target="_blank" rel="noopener noreferrer">{citation.title} (opens in a new tab)</a>
+        : <strong>{citation.title}</strong>}
+      <span className="chat-source-details">
+        {citation.section && <span>{citation.section}</span>}
+        {citation.page_number !== null && <span>Page {citation.page_number}</span>}
+        {citation.domain && <span>{citation.domain}</span>}
+        {citation.source_type && <span>{citation.source_type === 'LESSON' ? 'Lesson' : 'Document'}</span>}
+      </span>
+    </li>)}</ol>
+  </section>
+}
 function ConversationMessage({ message, onRetry, retryPending, disabled }: { message: Message; onRetry: (messageId: string) => void; retryPending: boolean; disabled: boolean }) {
   const isAssistant = message.role === 'ASSISTANT'
   return <article className={`chat-message ${isAssistant ? 'chat-message-assistant' : 'chat-message-user'}`} data-sequence={message.sequence_number}>
     <p className="chat-message-role">{isAssistant ? 'AI Tutor' : 'You'}</p>
+    <time className="chat-message-time" dateTime={message.created_at}>{formatTimestamp(message.created_at)}</time>
     {message.status === 'PENDING' && isAssistant ? <p role="status">AI is thinking…</p>
       : message.status === 'FAILED' && isAssistant ? <><p role="status">The AI response could not be completed.</p><button className="secondary-action" type="button" disabled={retryPending || disabled} onClick={() => onRetry(message.id)}>Retry</button></>
-        : isAssistant ? message.content !== null && <AssistantMarkdown content={message.content} /> : <p className="chat-user-content">{message.content ?? ''}</p>}
+        : isAssistant ? <>{message.content !== null && <AssistantMarkdown content={message.content} />}<MessageSources message={message} /></> : <p className="chat-user-content">{message.content ?? ''}</p>}
   </article>
 }
 
-export function ChatPanel({ lessonId, lessonNumber, hskLabel, onClose }: { lessonId: string; lessonNumber: number; hskLabel: string | null; onClose: () => void }) {
+export function ChatPanel({ lessonId, lessonNumber, hskLabel, onClose, openerRef }: { lessonId: string; lessonNumber: number; hskLabel: string | null; onClose: () => void; openerRef?: RefObject<HTMLButtonElement | null> }) {
   const queryClient = useQueryClient()
   const [selectedConversationId, setSelectedConversationId] = useState<string | null>(null)
   const [createPending, setCreatePending] = useState(false)
@@ -61,9 +89,35 @@ export function ChatPanel({ lessonId, lessonNumber, hskLabel, onClose }: { lesso
   const sendPendingRef = useRef(false)
   const retryPendingRef = useRef(false)
   const messageScrollRef = useRef<HTMLDivElement>(null)
+  const panelRef = useRef<HTMLElement>(null)
+  const closeButtonRef = useRef<HTMLButtonElement>(null)
   const nearBottomRef = useRef(true)
   const scrollModeRef = useRef<'bottom' | 'near' | 'preserve'>('bottom')
   const prependRestoreRef = useRef<{ height: number; top: number } | null>(null)
+
+  useLayoutEffect(() => {
+    const opener = openerRef?.current
+    closeButtonRef.current?.focus()
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') { event.preventDefault(); onClose(); return }
+      if (event.key !== 'Tab') return
+      const panel = panelRef.current
+      if (!panel) return
+      const focusable = Array.from(panel.querySelectorAll<HTMLElement>('a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'))
+        .filter((element) => !element.hasAttribute('hidden') && element.getAttribute('aria-hidden') !== 'true')
+      if (focusable.length === 0) { event.preventDefault(); panel.focus(); return }
+      const first = focusable[0]
+      const last = focusable[focusable.length - 1]
+      const active = document.activeElement
+      if (event.shiftKey && (active === first || !panel.contains(active))) { event.preventDefault(); last.focus() }
+      else if (!event.shiftKey && (active === last || !panel.contains(active))) { event.preventDefault(); first.focus() }
+    }
+    document.addEventListener('keydown', onKeyDown)
+    return () => {
+      document.removeEventListener('keydown', onKeyDown)
+      if (opener?.isConnected) opener.focus()
+    }
+  }, [onClose, openerRef])
 
   const conversationKey = queryKeys.conversationsByLesson(lessonId)
   const conversationsQuery = useInfiniteQuery({
@@ -254,9 +308,9 @@ export function ChatPanel({ lessonId, lessonNumber, hskLabel, onClose }: { lesso
   const currentUncertain = uncertainSend?.conversationId === selectedConversationId ? uncertainSend : null
   const selectedTitle = selectedConversation?.title?.trim() || 'Untitled conversation'
 
-  return <section className="chat-panel" role="dialog" aria-modal="true" aria-label="AI Tutor Chat">
+  return <section ref={panelRef} className="chat-panel" role="dialog" aria-modal="true" aria-label="AI Tutor Chat" tabIndex={-1}>
     <header className="chat-panel-header"><div><p className="chat-eyebrow">AI Tutor</p><p className="chat-context">{hskLabel ? `${hskLabel} · ` : ''}Lesson {lessonNumber}</p></div>
-      <button className="icon-action" type="button" aria-label="Close chat" onClick={onClose}>Close</button></header>
+      <button ref={closeButtonRef} className="icon-action" type="button" aria-label="Close chat" onClick={onClose}>Close</button></header>
     <div className="chat-panel-body"><aside className="chat-conversation-sidebar" aria-label="Conversations"><div className="chat-conversation-toolbar"><h2>Conversations</h2>
       <button className="secondary-action" type="button" disabled={createPending} onClick={() => void startConversation()}>New conversation</button></div>
       {conversationsQuery.isPending && <p role="status">Loading conversations…</p>}
@@ -264,7 +318,7 @@ export function ChatPanel({ lessonId, lessonNumber, hskLabel, onClose }: { lesso
       <ul className="chat-conversation-list">{conversations.map((conversation) => <li key={conversation.id}>
         {renameId === conversation.id ? <div className="chat-rename-form"><label>Conversation title<input aria-label="Conversation title" value={renameDraft} onChange={(event) => setRenameDraft(event.target.value)} /></label>
           <button type="button" disabled={renamePending} onClick={() => void saveRename()}>Save title</button><button type="button" disabled={renamePending} onClick={() => { setRenameId(null); setRenameDraft('') }}>Cancel rename</button></div>
-          : <button className="chat-conversation-select" type="button" aria-pressed={conversation.id === selectedConversationId} onClick={() => selectConversation(conversation)}><strong>{conversation.title?.trim() || 'Untitled conversation'}</strong><span>Updated: {conversation.updated_at}</span></button>}
+          : <button className="chat-conversation-select" type="button" aria-pressed={conversation.id === selectedConversationId} onClick={() => selectConversation(conversation)}><strong>{conversation.title?.trim() || 'Untitled conversation'}</strong><span>Updated: <time dateTime={conversation.updated_at}>{formatTimestamp(conversation.updated_at)}</time></span></button>}
         <div className="chat-conversation-actions">{renameId !== conversation.id && <button type="button" aria-label={`Rename ${conversation.title?.trim() || 'conversation'}`} onClick={() => { setRenameId(conversation.id); setRenameDraft(conversation.title ?? ''); setDeleteConfirmId(null) }}>Rename</button>}
           {deleteConfirmId === conversation.id ? <span className="chat-delete-confirmation" role="group" aria-label="Confirm conversation deletion"><span>Delete this conversation?</span>
             <button type="button" disabled={deletePendingId === conversation.id} onClick={() => void confirmDelete(conversation.id)}>Confirm delete</button><button type="button" onClick={() => setDeleteConfirmId(null)}>Cancel delete</button></span>

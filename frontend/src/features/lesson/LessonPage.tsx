@@ -9,6 +9,7 @@ import { ExerciseSection } from './ExerciseSection'
 import { LessonHeader } from './LessonHeader'
 import { GrammarSection, VocabularySection } from './TheorySections'
 import { LessonChatRegion } from '../conversation/LessonChatRegion'
+import { Alert, Button, LoadingState, PageHeader } from '../../components/ui'
 
 export function LessonPage() {
   const { lessonId } = useParams()
@@ -84,22 +85,31 @@ export function LessonPage() {
       })
   }
 
-  if (!lessonId) return <section className="screen"><h1 id="page-title">Lesson</h1><p role="alert">Lesson was not found.</p></section>
-  if (lessonQuery.isPending || (lesson && progressQuery.isPending)) return <section className="screen"><h1 id="page-title">Lesson</h1><p role="status">Loading lesson…</p></section>
-  if ((lessonQuery.isError && !lesson) || (progressQuery.isError && !progress) || !lesson || !progress) return <section className="screen"><h1 id="page-title">Lesson</h1><p role="alert">Could not load lesson content.</p>
-    <button className="secondary-action" type="button" onClick={() => void (lessonQuery.isError ? lessonQuery.refetch() : progressQuery.refetch())}>Retry</button></section>
+  if (!lessonId) return <section className="learner-page lesson-page lesson-manuscript screen" aria-labelledby="page-title"><PageHeader title="Lesson" titleId="page-title" /><Alert role="alert" tone="error">Lesson was not found.</Alert></section>
+  if (lessonQuery.isPending || (lesson && progressQuery.isPending)) return <section className="learner-page lesson-page lesson-manuscript screen" aria-labelledby="page-title"><PageHeader title="Lesson" titleId="page-title" /><LoadingState>Loading lesson…</LoadingState></section>
+  if ((lessonQuery.isError && !lesson) || (progressQuery.isError && !progress) || !lesson || !progress) return <section className="learner-page lesson-page lesson-manuscript screen" aria-labelledby="page-title"><PageHeader title="Lesson" titleId="page-title" />
+    <Alert role="alert" tone="error" action={<Button variant="secondary" onClick={() => void (lessonQuery.isError ? lessonQuery.refetch() : progressQuery.refetch())}>Retry</Button>}>Could not load lesson content.</Alert></section>
 
-  return <section className="screen lesson-screen" aria-labelledby="page-title">
-    {(lessonQuery.isFetching || progressQuery.isFetching) && <p role="status">Refreshing lesson…</p>}
-    {(lessonQuery.isError || progressQuery.isError) && <p role="status">Could not refresh lesson information. Showing the last loaded information.</p>}
+  return <section className="learner-page lesson-page lesson-manuscript screen" aria-labelledby="page-title">
+    {(lessonQuery.isFetching || progressQuery.isFetching) && <LoadingState>Refreshing lesson…</LoadingState>}
+    {(lessonQuery.isError || progressQuery.isError) && <Alert role="status" tone="warning">Could not refresh lesson information. Showing the last loaded information.</Alert>}
     <LessonHeader lesson={lesson} progress={progress} hskLabel={hskLabel} />
-    <VocabularySection items={lesson.vocabulary} viewed={vocabularyViewed} expanded={vocabularyExpanded}
-      pending={vocabularyPending}
-      errors={Object.fromEntries(lesson.vocabulary.map((item) => [item.id, actionErrors[`v:${item.id}`]]))} onToggle={onVocabularyToggle} />
-    <GrammarSection items={lesson.grammar} viewed={grammarViewed} expanded={grammarExpanded}
-      pending={grammarPending}
-      errors={Object.fromEntries(lesson.grammar.map((item) => [item.id, actionErrors[`g:${item.id}`]]))} onToggle={onGrammarToggle} />
-    <ExerciseSection assessmentIds={lesson.assessment_ids} />
+    <div className="lesson-manuscript__body">
+      <nav className="lesson-sequence-nav lesson-manuscript__index" aria-label="Lesson sections">
+        <a href="#vocabulary"><span lang="zh-Hans">生词</span><span>Vocabulary</span></a>
+        <a href="#grammar"><span lang="zh-Hans">语法</span><span>Grammar</span></a>
+        <a href="#exercise"><span lang="zh-Hans">练习</span><span>Practice</span></a>
+      </nav>
+      <div className="lesson-manuscript__chapters">
+        <VocabularySection items={lesson.vocabulary} viewed={vocabularyViewed} expanded={vocabularyExpanded}
+          pending={vocabularyPending}
+          errors={Object.fromEntries(lesson.vocabulary.map((item) => [item.id, actionErrors[`v:${item.id}`]]))} onToggle={onVocabularyToggle} />
+        <GrammarSection items={lesson.grammar} viewed={grammarViewed} expanded={grammarExpanded}
+          pending={grammarPending}
+          errors={Object.fromEntries(lesson.grammar.map((item) => [item.id, actionErrors[`g:${item.id}`]]))} onToggle={onGrammarToggle} />
+        <ExerciseSection assessmentIds={lesson.assessment_ids} theoryCompleted={Boolean(progress.theory_completed_at)} />
+      </div>
+    </div>
     <LessonChatRegion lessonId={lesson.id} lessonNumber={lesson.lesson_number} hskLabel={hskLabel} />
   </section>
 }

@@ -33,6 +33,10 @@ function answerFor(question: AssessmentQuestion, draft: DraftAnswer | undefined)
   }
 }
 
+export function hasCompleteDraftAnswer(question: AssessmentQuestion, draft: DraftAnswer | undefined): boolean {
+  return answerFor(question, draft) !== null
+}
+
 export function createSubmitRequest(questions: AssessmentQuestion[], drafts: Record<string, DraftAnswer>): SubmitRequest | null {
   const answers: SubmitRequest['answers'] = []
   for (const question of questions) {

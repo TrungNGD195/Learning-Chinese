@@ -74,10 +74,10 @@ def test_register_login_cookie_contract_and_generic_invalid_credentials(caplog):
         access_cookie = next(value for value in cookies if value.startswith("access_token="))
         refresh_cookie = next(value for value in cookies if value.startswith("refresh_token="))
         assert "httponly" in access_cookie.lower() and "path=/;" in access_cookie.lower()
-        assert f"max-age={get_settings().access_token_expire_minutes * 60}" in access_cookie.lower()
+        assert "max-age=" not in access_cookie.lower() and "expires=" not in access_cookie.lower()
         assert "secure" not in access_cookie.lower() and "samesite=lax" in access_cookie.lower()
         assert "httponly" in refresh_cookie.lower() and "path=/api/v1/auth" in refresh_cookie.lower()
-        assert f"max-age={get_settings().refresh_token_expire_days * 86400}" in refresh_cookie.lower()
+        assert "max-age=" not in refresh_cookie.lower() and "expires=" not in refresh_cookie.lower()
         assert "domain=" not in access_cookie.lower() and "domain=" not in refresh_cookie.lower()
         assert client.get("/api/v1/auth/me").json() == body
         duplicate = client.post("/api/v1/auth/register", json={"email": email.strip().lower(), "password": password, "full_name": "Other"})

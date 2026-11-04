@@ -1,0 +1,32 @@
+* { box-sizing: border-box; }
+
+html { min-width: 320px; background: var(--color-bg); }
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  color: var(--color-text);
+  background: var(--color-bg);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: var(--text-base);
+  line-height: 1.55;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+button, input, select, textarea { font: inherit; }
+a { color: var(--color-primary); }
+a:hover { color: var(--color-primary-hover); }
+
+h1, h2, h3, h4 { color: var(--color-text-strong); line-height: 1.2; }
+h1 { font-size: clamp(var(--text-2xl), 3vw, var(--text-3xl)); }
+h2 { font-size: var(--text-xl); }
+p { line-height: 1.6; }
+
+:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 3px; }
+
+.form-field { display: grid; gap: var(--space-2); color: var(--color-text); font-weight: 650; }
+.field-help { margin: 0; color: var(--color-text-muted); font-size: var(--text-sm); font-weight: 400; }
+.field-error { margin: 0; color: var(--color-danger); font-size: var(--text-sm); }
+.inline-save-state { color: var(--color-text-muted); font-size: var(--text-sm); }

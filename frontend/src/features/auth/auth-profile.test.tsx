@@ -52,18 +52,19 @@ beforeEach(() => {
 afterEach(() => { queryClient.clear() })
 
 describe('Login and Register session restoration', () => {
-  it.each([learner, admin])('sends exact Login fields and restores /auth/me before Dashboard for role $role', async (user) => {
+  it.each([[learner, '/dashboard'], [admin, '/admin']] as const)('sends exact Login fields and routes from restored /auth/me role $user.role', async (user, destination) => {
     vi.mocked(authApi.getMe).mockRejectedValueOnce(apiError(401, 'AUTHENTICATION_REQUIRED')).mockResolvedValueOnce(user)
     const { router } = renderApp('/login')
     fireEvent.change(await screen.findByLabelText('Email'), { target: { value: user.email } })
     fireEvent.change(screen.getByLabelText('Password'), { target: { value: 'secret-pass' } })
     fireEvent.click(screen.getByRole('button', { name: 'Sign in' }))
-    await waitFor(() => expect(router.state.location.pathname).toBe('/dashboard'))
+    await waitFor(() => expect(router.state.location.pathname).toBe(destination))
     expect(authApi.login).toHaveBeenCalledTimes(1)
     expect(vi.mocked(authApi.login).mock.calls[0]?.[0]).toEqual({ email: user.email, password: 'secret-pass' })
     expect(authApi.getMe).toHaveBeenCalledTimes(2)
     expect(queryClient.getQueryData(queryKeys.authMe)).toEqual(user)
-    expect(await screen.findByRole('heading', { name: 'Dashboard' })).toBeInTheDocument()
+    if (destination === '/dashboard') expect(await screen.findByRole('heading', { name: 'Dashboard' })).toBeInTheDocument()
+    else expect(await screen.findByRole('heading', { name: 'Quản trị học liệu' })).toBeInTheDocument()
   })
 
   it('does not navigate before authoritative /auth/me resolves and blocks duplicate Login submit', async () => {
@@ -109,6 +110,20 @@ describe('Login and Register session restoration', () => {
     expect(authApi.login).toHaveBeenCalledTimes(1)
     fireEvent.click(screen.getByRole('button', { name: /Retry/ }))
     await waitFor(() => expect(router.state.location.pathname).toBe('/dashboard'))
+    expect(authApi.login).toHaveBeenCalledTimes(1)
+  })
+
+  it('uses the restored Admin role after successful Login session-verification retry', async () => {
+    vi.mocked(authApi.getMe).mockRejectedValueOnce(apiError(401, 'AUTHENTICATION_REQUIRED'))
+      .mockRejectedValueOnce(apiError(503, 'HTTP_ERROR')).mockResolvedValueOnce(admin)
+    const { router } = renderApp('/login')
+    fireEvent.change(await screen.findByLabelText('Email'), { target: { value: admin.email } })
+    fireEvent.change(screen.getByLabelText('Password'), { target: { value: 'secret-pass' } })
+    fireEvent.click(screen.getByRole('button', { name: 'Sign in' }))
+    expect(await screen.findByRole('alert')).toHaveTextContent(/could not verify .*session/i)
+    expect(router.state.location.pathname).toBe('/login')
+    fireEvent.click(screen.getByRole('button', { name: /Retry/ }))
+    await waitFor(() => expect(router.state.location.pathname).toBe('/admin'))
     expect(authApi.login).toHaveBeenCalledTimes(1)
   })
 
@@ -257,7 +272,10 @@ describe('Logout, Profile, and change password', () => {
   it('adds learner logout and clears the shared authenticated cache only after backend success', async () => {
     queryClient.setQueryData(queryKeys.dashboard, dashboard)
     const { router } = renderApp('/dashboard', learner)
-    fireEvent.click(await screen.findByRole('button', { name: 'Logout' }))
+    const logout = await screen.findByRole('button', { name: 'Logout' })
+    expect(logout.closest('.logout-action')).toBeInTheDocument()
+    expect(logout.closest('.learner-shell .logout-action')).toBeInTheDocument()
+    fireEvent.click(logout)
     await waitFor(() => expect(router.state.location.pathname).toBe('/login'))
     expect(authApi.logout).toHaveBeenCalledTimes(1)
     expect(queryClient.getQueryData(queryKeys.authMe)).toBeNull()
@@ -266,10 +284,22 @@ describe('Logout, Profile, and change password', () => {
 
   it('shows Logout in the existing Admin shell without changing Admin page scope', async () => {
     renderApp('/admin', admin)
-    expect(await screen.findByRole('button', { name: 'Logout' })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: 'Admin Dashboard' })).toBeInTheDocument()
-    fireEvent.click(screen.getByRole('button', { name: 'Logout' }))
+    const logout = await screen.findByRole('button', { name: 'Đăng xuất' })
+    expect(logout.closest('.logout-action')).toBeInTheDocument()
+    expect(logout.closest('.admin-sidebar > .logout-action')).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'Quản trị học liệu' })).toBeInTheDocument()
+    fireEvent.click(logout)
     await waitFor(() => expect(authApi.logout).toHaveBeenCalledTimes(1))
+    expect(await screen.findByRole('heading', { name: 'Login' })).toBeInTheDocument()
+  })
+
+  it('keeps explanatory logout failure feedback and alert semantics in the Admin shell', async () => {
+    vi.mocked(authApi.logout).mockRejectedValueOnce(apiError(503, 'HTTP_ERROR'))
+    renderApp('/admin', admin)
+    fireEvent.click(await screen.findByRole('button', { name: 'Đăng xuất' }))
+    expect(await screen.findByRole('alert')).toHaveTextContent('Chưa thể xác nhận đăng xuất. Phiên đăng nhập vẫn đang hoạt động; bạn có thể thử lại.')
+    expect(screen.getByRole('button', { name: 'Thử đăng xuất lại' })).toBeEnabled()
+    expect(authApi.logout).toHaveBeenCalledTimes(1)
   })
 
   it('keeps the session/cache after technical Logout failure and retries only on learner action', async () => {
@@ -352,27 +382,31 @@ describe('Logout, Profile, and change password', () => {
   })
 })
 
-describe('D-044 public Auth route boundary', () => {
-  it.each(['/login', '/register', '/forgot-password'])('redirects an authenticated User from %s to Dashboard', async (path) => {
-    const { router } = renderApp(path, learner)
-    await waitFor(() => expect(router.state.location.pathname).toBe('/dashboard'))
+describe('public Auth route boundary', () => {
+  it.each([[learner, '/dashboard'], [admin, '/admin']] as const)('%s redirects authenticated public-auth pages by /auth/me role', async (user, destination) => {
+    for (const path of ['/login', '/register', '/forgot-password']) {
+      const { router, unmount } = renderApp(path, user)
+      await waitFor(() => expect(router.state.location.pathname).toBe(destination))
+      unmount()
+      queryClient.clear()
+    }
   })
 
-  it('keeps reset accessible to authenticated users', async () => {
-    renderApp('/reset-password?token=recovery-token', learner)
+  it.each([learner, admin])('keeps reset accessible for authenticated role $role', async (user) => {
+    renderApp('/reset-password?token=recovery-token', user)
     expect(await screen.findByRole('heading', { name: 'Reset password' })).toBeInTheDocument()
     expect(screen.getByLabelText('New password')).toBeInTheDocument()
   })
 
-  it('waits without redirecting while the current session is unknown', async () => {
+  it('waits without redirecting while the current session is unknown and then uses the restored role', async () => {
     let finish!: (value: typeof learner) => void
     vi.mocked(authApi.getMe).mockImplementationOnce(() => new Promise((resolve) => { finish = resolve }))
     const { router } = renderApp('/login')
     expect(await screen.findByRole('status')).toHaveTextContent('Checking your session')
     expect(router.state.location.pathname).toBe('/login')
     expect(screen.queryByRole('heading', { name: 'Login' })).not.toBeInTheDocument()
-    await act(async () => { finish(learner) })
-    await waitFor(() => expect(router.state.location.pathname).toBe('/dashboard'))
+    await act(async () => { finish(admin) })
+    await waitFor(() => expect(router.state.location.pathname).toBe('/admin'))
   })
 
   it('preserves recoverable technical session-verification UI on public routes', async () => {

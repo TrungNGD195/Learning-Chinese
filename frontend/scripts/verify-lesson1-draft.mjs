@@ -1,0 +1,32 @@
+import assert from 'node:assert/strict'
+import {mkdir,writeFile} from 'node:fs/promises'
+import {resolve} from 'node:path'
+import {chromium} from 'playwright'
+
+const origin='http://127.0.0.1:5173',api='http://127.0.0.1:8001/api/v1'
+const lessonId='d84c81ba-57b3-5132-b15e-dee32ed22bbf',assessmentId='2185832f-164e-59b8-ae3c-b9ead02e1f64'
+const folder=resolve('../.impeccable/review/lesson1');await mkdir(folder,{recursive:true})
+assert(process.env.LESSON_REVIEW_ADMIN&&process.env.LESSON_REVIEW_LEARNER,'In-memory, short-lived local review credentials required')
+const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true})
+const errors=[],captures=[],checks={}
+async function context(role,width=1440){const c=await browser.newContext({viewport:{width,height:1000},reducedMotion:'reduce'});await c.addCookies([{name:'access_token',value:process.env[role==='admin'?'LESSON_REVIEW_ADMIN':'LESSON_REVIEW_LEARNER'],url:origin,httpOnly:true,sameSite:'Lax'}]);return c}
+async function json(c,path){const r=await c.request.get(api+path);assert.equal(r.status(),200,path);return r.json()}
+async function capture(page,name,width){await page.evaluate(async()=>{await document.fonts.ready;await Promise.all([...document.images].map(i=>i.decode()));const urls=new Set([...document.querySelectorAll('*')].flatMap(e=>[...getComputedStyle(e).backgroundImage.matchAll(/url\("?([^"\)]+)"?\)/g)].map(m=>m[1])));await Promise.all([...urls].map(src=>{const i=new Image();i.src=src;return i.decode()}));scrollTo({top:0,behavior:'instant'})});await page.evaluate(()=>new Promise(requestAnimationFrame));assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),name+' horizontal overflow');await page.screenshot({path:folder+'/'+name+'-'+width+'.png',fullPage:true});captures.push({name,width})}
+try{
+  const admin=await context('admin'),lesson=await json(admin,'/admin/lessons/'+lessonId),words=await json(admin,'/admin/lessons/'+lessonId+'/vocabulary'),grammar=await json(admin,'/admin/lessons/'+lessonId+'/grammar'),assessment=await json(admin,'/admin/assessments/'+assessmentId),questions=await json(admin,'/admin/assessments/'+assessmentId+'/questions')
+  assert.equal(lesson.status,'DRAFT');assert.equal(assessment.status,'DRAFT');assert.equal(assessment.pass_threshold,80);assert.equal(words.length,12);assert.equal(grammar.length,0);assert.equal(questions.length,20);assert(words.every(w=>w.hanzi&&w.pinyin&&w.vietnamese_meaning&&w.part_of_speech&&w.example&&w.note));assert.equal(new Set(questions.map(q=>q.type)).size,4);assert.equal(questions.reduce((s,q)=>s+q.points,0),20)
+  const related=await json(admin,'/admin/assessments?lesson_id='+lessonId);assert.equal(related.total,1);assert.equal(related.items[0].id,assessmentId)
+  const unrelated=await json(admin,'/admin/assessments?lesson_id=00000000-0000-4000-8000-000000000000');assert.equal(unrelated.total,0)
+  checks.content={lessonId,assessmentId,lessonStatus:lesson.status,assessmentStatus:assessment.status,vocabulary:words.length,grammar:grammar.length,questions:questions.length,passThreshold:assessment.pass_threshold,questionTypes:questions.reduce((s,q)=>({...s,[q.type]:(s[q.type]||0)+1}),{})};await admin.close()
+  const learner=await context('learner');for(const path of ['/lessons/'+lessonId,'/assessments/'+assessmentId]){assert.equal((await learner.request.get(api+path)).status(),404)}assert.equal((await learner.request.post(api+'/assessments/'+assessmentId+'/attempts')).status(),404);const curriculum=await json(learner,'/hsk-levels/'+lesson.hsk_level_id+'/curriculum');assert(!curriculum.units.some(u=>u.lesson?.id===lessonId));checks.draftHiddenFromLearner=true;await learner.close()
+  for(const width of [1440,390]){
+    const c=await context('admin',width),page=await c.newPage();page.on('pageerror',e=>errors.push(e.message))
+    await page.goto(origin+'/admin/lessons/'+lessonId);await page.getByRole('heading',{level:1,name:/你好/}).waitFor();const cards=page.locator('.admin-lesson-content-item--vocabulary');await cards.nth(11).waitFor();assert.equal(await cards.count(),12);assert.equal(await cards.locator('.academy-word-illustration,.academy-numeral-illustration').count(),12);assert.equal(await page.locator('.admin-lesson-word-example').count(),12)
+    for(const [word,count] of [['一',1],['五',5],['八',8]]){const card=cards.filter({has:page.getByRole('heading',{name:new RegExp('^'+word+' ')})});assert.equal(await card.locator('.academy-numeral-illustration i').count(),count)}
+    await page.getByRole('link',{name:assessment.title,exact:true}).waitFor();await capture(page,'admin-lesson1-draft',width);await cards.first().screenshot({path:folder+'/first-vocabulary-'+width+'.png'})
+    await page.getByRole('link',{name:assessment.title,exact:true}).click();await page.getByRole('heading',{level:1,name:assessment.title}).waitFor();assert.equal(await page.getByLabel('Pass threshold',{exact:true}).inputValue(),'80');await page.locator('.admin-assessment-question-card').nth(19).waitFor();await capture(page,'admin-exercise-draft',width)
+    await page.goto(origin+'/admin/assessments');await page.getByRole('button',{name:'Create Assessment',exact:true}).click();let form=page.locator('form').first();assert.equal(await form.getByLabel('Pass threshold',{exact:true}).inputValue(),'80');await form.locator('select').first().selectOption('PERIODIC_TEST');assert.equal(await form.getByLabel('Pass threshold',{exact:true}).inputValue(),'90');await page.getByRole('button',{name:'Close Create Assessment',exact:true}).click()
+    await page.getByRole('button',{name:'Generate AI Draft',exact:true}).click();form=page.locator('.admin-ai-generation-form');assert.equal(await form.getByLabel('Pass threshold',{exact:true}).inputValue(),'80');await form.locator('select').first().selectOption('PERIODIC_TEST');assert.equal(await form.getByLabel('Pass threshold',{exact:true}).inputValue(),'90');await c.close()
+  }
+  assert.deepEqual(errors,[]);await writeFile(folder+'/web-verification.json',JSON.stringify({origin,checks,captures,errors,scope:'Real Docker frontend and backend; existing account roles with short-lived in-memory review cookies; no intercepted APIs, publishing or learner-progress mutations'},null,2));console.log(JSON.stringify({draft:checks.content,captures:captures.length,draftHiddenFromLearner:true,errors}))
+}finally{await browser.close()}

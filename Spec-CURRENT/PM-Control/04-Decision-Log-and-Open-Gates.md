@@ -17143,6 +17143,7 @@ Do not introduce a second CI provider.
 **Reason:** Fits the near-$0 budget goal, supports serverless GPU/scale-to-zero, and provides useful AI Engineering learning value without forcing heavy BGE models into the FastAPI host.
 
 **Constraints:**
+
 - Modal owns inference only; no business logic, database ownership, or public API redesign.
 - Keep the frozen BGE model identities/revisions unless a later PM decision changes them.
 - GPU hardware tier is **not yet frozen**.
@@ -17180,3 +17181,217 @@ Do not introduce a second CI provider.
 **Status:** DECIDED.
 
 **Affects:** Step 8.3 Modal adapters and AI provider interfaces.
+
+## D-115 — Frontend Product Quality Refinement Scope
+
+**Status:** DECIDED
+
+Frontend sẽ được nâng cấp theo hướng **Product-quality refinement**, không full redesign.
+
+In scope:
+
+- visual hierarchy và consistency;
+- typography, spacing, color/design tokens;
+- shared UI primitives;
+- learner/admin application layouts;
+- responsive behavior;
+- loading / error / empty / success states;
+- forms, tables, badges, dialogs, feedback states;
+- accessibility basics;
+- cải thiện UX của các flow hiện có.
+
+Must preserve:
+
+- React + TypeScript + Vite;
+- feature-oriented structure;
+- generated OpenAPI types;
+- TanStack Query;
+- backend-authoritative business/progress/grading state;
+- Lesson-scoped AI Chat;
+- existing API/auth/RAG contracts.
+
+Out of scope:
+
+- Next.js migration;
+- Redux/Zustand unless new evidence requires;
+- micro-frontends;
+- complex animation system;
+- new business features;
+- backend/API redesign;
+- gamification/SRS;
+- frontend-owned grading/progression logic.
+
+Goal:
+Make the existing product feel like a coherent professional learning application while keeping frontend learning proportional to the project's DE/AI focus.
+
+## D-116 — Frontend Visual Direction
+
+**Status:** DECIDED
+
+Visual direction: **Clean modern learning SaaS**.
+
+Principles:
+
+- light, clean, spacious;
+- strong information hierarchy;
+- professional but approachable;
+- subtle Chinese-learning identity, không dùng decoration quá mức;
+- consistent typography, spacing, colors, borders và component states;
+- learner UI ưu tiên clarity và learning flow;
+- Admin UI ưu tiên density hợp lý, scanability và operational clarity;
+- motion chỉ dùng khi hỗ trợ feedback/navigation.
+
+Avoid:
+
+- gamification-heavy UI;
+- excessive gradients/animations;
+- childish visual language;
+- enterprise-dashboard look quá lạnh;
+- visual redesign làm thay đổi business flow/API contracts.
+
+Goal:
+Một sản phẩm nhìn coherent và portfolio-ready nhưng vẫn giữ trọng tâm học DE/AI thay vì biến project thành frontend-design project.
+
+## D-117 — History Scope During Frontend Refinement
+
+**Status:** DECIDED
+
+`/history` implementation is explicitly excluded from the Frontend Product Quality Refinement workstream.
+
+Reason:
+
+- current `HistoryPage` is a functional placeholder;
+- implementing real history behavior would be feature-completion work, not visual/UX refinement;
+- D-115 must remain focused on product-quality presentation without silently expanding business scope.
+
+Current behavior may receive only styling consistent with shared layout/state primitives if needed.
+
+Real History functionality must be tracked as a separate functional-completeness task if PM later decides it is required before MVP/release.
+
+## D-118 — Chinese-Inspired Product Visual Identity
+
+**Status:** DECIDED
+
+Frontend visual identity will refine D-116 into:
+
+**Modern Chinese-inspired Learning SaaS**
+
+Principles:
+
+- preserve clean modern SaaS structure;
+- use subtle Chinese cultural cues rather than decorative theming;
+- warm rice-paper/off-white surfaces;
+- ink/deep-blue primary text;
+- cinnabar red as restrained primary accent;
+- muted jade/green for completion/success;
+- muted gold only for limited emphasis;
+- Hanzi should receive strong typographic hierarchy where learning content displays Chinese text;
+- decorative motifs, if used, must remain subtle and non-essential.
+
+Avoid:
+
+- red/gold everywhere;
+- ornamental Chinese fonts for body/UI text;
+- dragons, lanterns, clouds, lattice patterns used as dominant decoration;
+- stereotypical “Chinese restaurant” visual language;
+- cultural styling that reduces readability/accessibility;
+- new image/icon/design dependencies only for decoration.
+
+Goal:
+The product should feel recognizably Chinese-learning oriented while remaining professional, readable, portfolio-ready and appropriate for a beginner education product.
+
+## D-119 — Admin Visual Identity During Frontend Refinement
+
+**Status:** DECIDED
+
+Admin frontend will preserve the professional operational SaaS direction established in R1.
+
+Chinese-inspired identity may appear only as restrained product branding/accent:
+
+- existing ink/deep-blue foundation;
+- limited cinnabar accent for primary/product identity;
+- warm neutral surfaces where appropriate;
+- no learner-style decorative treatment on dense operational screens.
+
+Admin priority:
+**scanability → workflow clarity → state/action hierarchy → visual identity**
+
+Avoid:
+
+- decorative Chinese motifs;
+- excessive bilingual labels;
+- red/gold-heavy Admin surfaces;
+- styling that reduces table/form/status readability.
+
+## D-120 — Browser-Session-Scoped Login
+
+**Status:** DECIDED
+
+Per the user's requested local product behavior, browser authentication cookies are session cookies. The Access and Refresh cookie `Max-Age`/`Expires` attributes are omitted so closing the browser session returns the user to Login on the next visit.
+
+All other D-014 cookie attributes remain unchanged. JWT expiration, refresh-token expiration, and server-side revocation remain enforced. Browser session-restore behavior may restore session cookies according to the browser's settings.
+
+**Affects:** Authentication cookie issuance and the browser login experience.
+
+## D-120 — Strict Learner / Admin Role Separation
+
+**Status:** DECIDED
+
+MVP sử dụng strict role separation:
+
+```text
+LEARNER
+→ Learner Experience only
+
+ADMIN
+→ Admin Experience only
+
+## D-121 — Chinese Visual Identity Unification
+
+**Status:** DECIDED
+
+Trang Login hiện tại là canonical visual reference cho toàn bộ frontend.
+
+Visual language:
+- modern Chinese-inspired SaaS;
+- shanshui / ink-wash influence;
+- rice-paper / warm ivory surfaces;
+- dark jade / ink-green foundation;
+- restrained cinnabar red;
+- muted gold details;
+- elegant Hanzi emphasis;
+- subtle seal / circular / ink motifs.
+
+Application intensity:
+
+```text
+Public/Auth
+→ strongest Chinese identity
+
+Learner
+→ clearly Chinese-learning oriented
+→ scenic/motif treatment concentrated in hero/header/supporting surfaces
+
+Admin
+→ same palette/product DNA
+→ restrained Chinese identity
+→ operational readability remains priority
+
+## D-122 — Rich Chinese Visual Experience
+
+**Status:** DECIDED
+
+D-122 extends the accepted D-121 visual foundation.
+
+### Goal
+
+Make all Public, Learner, and Admin screens feel more visually rich, premium, professional, and recognizably Chinese-inspired.
+
+### Visual intensity
+
+Use **Rich but controlled** imagery.
+
+Target approximately:
+
+```text
+10–15 reusable local artworks / illustrations

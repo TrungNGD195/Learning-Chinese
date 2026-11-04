@@ -1,6 +1,6 @@
 # Project status and study handoff
 
-This document is a practical orientation note. The authoritative project state remains in `Spec-CURRENT/PM-Control/04-Decision-Log-and-Open-Gates.md` and each frozen task under `codex-tasks/`. Recheck those files before implementation; this summary does not accept or close a project Step.
+This document is a practical orientation note. The authoritative project state remains in `Spec-CURRENT/PM-Control/04-Decision-Log-and-Open-Gates.md` and the relevant current specification under `Spec-CURRENT/`. Codex execution task packets are maintained outside this checkout. Recheck the current specifications before implementation; this summary does not accept or close a project Step.
 
 ## Product and architecture
 
@@ -17,7 +17,7 @@ Start with:
 1. `Spec-CURRENT/PROJECT_CONTEXT.md` for product and architecture context.
 2. `Spec-CURRENT/PM-Control/04-Decision-Log-and-Open-Gates.md` for frozen decisions and open gates.
 3. `Spec-CURRENT/PM-Control/05-Codex-Execution-Protocol.md` for implementation workflow.
-4. The exact step task under `codex-tasks/` before changing code.
+4. The relevant current step specification under `Spec-CURRENT/` before changing code.
 5. The related `docs/` note and tests for the current implementation.
 
 Current source layout:
@@ -28,7 +28,6 @@ frontend/      learner/admin UI, API client, component and browser tests
 evaluation/    dataset schemas, fixtures, validators, and run tooling
 docs/          step notes and handoffs by backend/data/AI/frontend/evaluation/QA
 Spec-CURRENT/  product specifications and PM control documents
-codex-tasks/   frozen and draft execution packets, grouped by phase
 infra/         local PostgreSQL initialization
 ```
 

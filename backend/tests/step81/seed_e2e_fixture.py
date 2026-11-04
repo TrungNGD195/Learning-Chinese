@@ -17,7 +17,7 @@ from app.core.config import get_settings
 from app.database.models import (
     Assessment, AssessmentLesson, CurriculumUnit, Grammar, HSKLevel, Lesson,
     LessonGrammar, LessonVocabulary, LearnerHSKProgress, LearnerLessonProgress,
-    PronunciationProgress, PronunciationSection, Question, QuestionOption,
+    PronunciationLessonProgress, PronunciationProgress, PronunciationSection, Question, QuestionOption,
     User, Vocabulary,
 )
 from app.database.session import SessionFactory
@@ -94,6 +94,7 @@ async def seed() -> None:
             Question(id=question_ids[1], assessment_id=periodic_id, type="multiple_choice", prompt="Which word means goodbye?", order_index=1, points=1),
             LearnerLessonProgress(user_id=learner_id, lesson_id=lesson_a_id, started_at=datetime.now(timezone.utc), completed_at=datetime.now(timezone.utc), theory_completed_at=datetime.now(timezone.utc)),
             LearnerHSKProgress(user_id=learner_id, hsk_level_id=hsk1.id),
+            PronunciationLessonProgress(user_id=learner_id, section_index=3, step_index=0, completed_at=datetime.now(timezone.utc)),
         ])
         await session.flush()
         session.add_all([

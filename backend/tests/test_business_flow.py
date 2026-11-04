@@ -1,6 +1,7 @@
 import asyncio
 from uuid import uuid4
 
+from fastapi import Request
 from fastapi.testclient import TestClient
 from sqlalchemy import delete, func, select
 
@@ -17,20 +18,21 @@ from app.main import app
 
 
 def test_postgres_learner_lesson_and_attempt_flow(monkeypatch):
-    user_id, outsider_id, lesson_id, next_lesson_id, archived_lesson_id, curriculum_candidate_id, assessment_id, unavailable_assessment_id, uncertain_assessment_id = uuid4(), uuid4(), uuid4(), uuid4(), uuid4(), uuid4(), uuid4(), uuid4(), uuid4()
+    user_id, outsider_id, admin_id, lesson_id, next_lesson_id, archived_lesson_id, curriculum_candidate_id, assessment_id, unavailable_assessment_id, uncertain_assessment_id = uuid4(), uuid4(), uuid4(), uuid4(), uuid4(), uuid4(), uuid4(), uuid4(), uuid4(), uuid4()
     vocab_link_id, grammar_link_id = uuid4(), uuid4()
     async def seed():
         await seed_required_data()
         async with SessionFactory.begin() as session:
             hsk = (await session.execute(select(HSKLevel).where(HSKLevel.level_number == 1))).scalar_one()
             index = (await session.execute(select(func.max(CurriculumUnit.order_index)).where(CurriculumUnit.hsk_level_id == hsk.id))).scalar_one() or 0
-            user = User(id=user_id, email=f"step34-{user_id}@example.invalid", password_hash="test-only", full_name="Step 3.4 Test", role="ADMIN")
+            user = User(id=user_id, email=f"step34-{user_id}@example.invalid", password_hash="test-only", full_name="Step 3.4 Test", role="LEARNER")
             outsider = User(id=outsider_id,email=f"step34-outsider-{outsider_id}@example.invalid",password_hash="test-only",full_name="Other Test",role="LEARNER")
+            admin = User(id=admin_id, email=f"step34-admin-{admin_id}@example.invalid", password_hash="test-only", full_name="Step 3.4 Admin", role="ADMIN")
             lesson = Lesson(id=lesson_id, hsk_level_id=hsk.id, lesson_number=900000 + user_id.int % 100000,
                             title="Integration lesson", description="Test", status="PUBLISHED")
             next_lesson = Lesson(id=next_lesson_id,hsk_level_id=hsk.id,lesson_number=800000 + user_id.int % 100000,
                                  title="Locked lesson",description="Test",status="PUBLISHED")
-            session.add_all([user, outsider, lesson, next_lesson]); await session.flush()
+            session.add_all([user, outsider, admin, lesson, next_lesson]); await session.flush()
             session.add_all([CurriculumUnit(hsk_level_id=hsk.id, unit_type="LESSON", lesson_id=lesson.id, order_index=index + 1),
                              CurriculumUnit(hsk_level_id=hsk.id, unit_type="LESSON", lesson_id=next_lesson.id, order_index=index + 2)])
             vocab=Vocabulary(hanzi="你",pinyin="nǐ",vietnamese_meaning="bạn",part_of_speech="pronoun")
@@ -61,9 +63,10 @@ def test_postgres_learner_lesson_and_attempt_flow(monkeypatch):
             return hsk.id, q.id, correct.id, free.id, deterministic.id, deterministic_option.id, uncertain_free.id, uncertain_mcq.id, uncertain_option.id
     hsk_id, question_id, correct_option_id, free_question_id, deterministic_question_id, deterministic_option_id, uncertain_free_id, uncertain_mcq_id, uncertain_option_id = asyncio.run(seed())
     active_user={"id":user_id}
-    async def current_user():
+    async def current_user(request: Request):
         async with SessionFactory() as session:
-            return await session.get(User, active_user["id"])
+            user_id_for_request = admin_id if request.url.path.startswith("/api/v1/admin/") else active_user["id"]
+            return await session.get(User, user_id_for_request)
     app.dependency_overrides[get_current_user] = current_user
     try:
         with TestClient(app,raise_server_exceptions=False) as client:
@@ -82,9 +85,13 @@ def test_postgres_learner_lesson_and_attempt_flow(monkeypatch):
             hsk_progress_before=client.get(f"/api/v1/me/progress/hsk/{hsk_id}")
             assert hsk_progress_before.status_code==200 and hsk_progress_before.json()["progress_percentage"]==0
             sections = client.get("/api/v1/pronunciation").json()
-            for section in sections:
+            for code, count in (("INITIALS", 21), ("FINALS", 36), ("TONES", 5)):
+                section = next(item for item in sections if item["code"] == code)
+                for index in range(count):
+                    assert client.post("/api/v1/pronunciation/lesson/advance", json={"section_code": code, "step_index": index}).status_code == 200
                 assert client.post(f"/api/v1/pronunciation/{section['id']}/complete").status_code == 200
                 assert client.post(f"/api/v1/pronunciation/{section['id']}/complete").status_code == 200
+            assert client.post("/api/v1/pronunciation/lesson/complete").status_code == 200
             persisted_sections = client.get("/api/v1/pronunciation")
             assert persisted_sections.status_code == 200
             assert {row["id"] for row in persisted_sections.json()} == {row["id"] for row in sections}
@@ -114,6 +121,12 @@ def test_postgres_learner_lesson_and_attempt_flow(monkeypatch):
             assert client.patch(f"/api/v1/admin/assessments/{assessment_id}",json={"status":"ARCHIVED"}).status_code == 422
             assert client.patch(f"/api/v1/admin/assessments/{assessment_id}/questions/{question_id}",json={"prompt":"Changed"}).status_code == 409
 
+            assert client.get(f"/api/v1/assessments/{assessment_id}").status_code == 403
+            assert client.post(f"/api/v1/assessments/{assessment_id}/attempts").status_code == 403
+            assert client.get(f"/api/v1/lessons/{next_lesson_id}").status_code == 403
+            grammar_seen=client.post(f"/api/v1/lessons/{lesson_id}/theory/grammar/{grammar_link_id}/view").json()
+            assert grammar_seen["theory_completed_at"] is not None
+            assert client.get(f"/api/v1/me/progress/lessons/{lesson_id}").json()["completed_at"] is None
             public = client.get(f"/api/v1/assessments/{assessment_id}")
             assert public.status_code == 200
             assert "is_correct" not in public.json()["questions"][0]["options"][0]
@@ -135,8 +148,8 @@ def test_postgres_learner_lesson_and_attempt_flow(monkeypatch):
             submitted = client.post(f"/api/v1/assessment-attempts/{attempt_id}/submit", json={"answers":[{"question_id":str(question_id),"answer":{"option_id":str(correct_option_id)}}]})
             assert submitted.status_code == 200 and submitted.json()["passed"] is True
             unfinished=client.get(f"/api/v1/me/progress/lessons/{lesson_id}").json()
-            assert unfinished["theory_completed_at"] is None and unfinished["completed_at"] is None
-            assert client.get(f"/api/v1/lessons/{next_lesson_id}").status_code == 403
+            assert unfinished["theory_completed_at"] is not None and unfinished["completed_at"] is not None
+            assert client.get(f"/api/v1/lessons/{next_lesson_id}").status_code == 200
             grammar_seen=client.post(f"/api/v1/lessons/{lesson_id}/theory/grammar/{grammar_link_id}/view").json()
             assert grammar_seen["theory_completed_at"] is not None
             assert client.get(f"/api/v1/me/progress/lessons/{lesson_id}").json()["completed_at"] is not None
@@ -304,4 +317,5 @@ def test_postgres_learner_lesson_and_attempt_flow(monkeypatch):
                 await session.execute(delete(Lesson).where(Lesson.id == archived_lesson_id))
                 await session.execute(delete(User).where(User.id == user_id))
                 await session.execute(delete(User).where(User.id == outsider_id))
+                await session.execute(delete(User).where(User.id == admin_id))
         asyncio.run(cleanup())

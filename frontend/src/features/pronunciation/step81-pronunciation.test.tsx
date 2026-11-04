@@ -1,133 +1,155 @@
 import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
-import { createMemoryRouter, Link, RouterProvider } from 'react-router'
+import { createMemoryRouter, RouterProvider } from 'react-router'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
-import { queryKeys } from '../../app/query/keys'
-import { ApiError } from '../../lib/api/errors'
-import { getDashboard } from '../dashboard/api'
-import { DashboardPage } from '../dashboard/DashboardPage'
+import { getHskLevels } from '../curriculum/api'
+import { getHskProgress, getProgressOverview } from '../progress/api'
 import * as api from './api'
 import { PronunciationPage } from './PronunciationPage'
+import { PronunciationLessonPage } from './PronunciationLessonPage'
 
-vi.mock('./api', () => ({ getSections: vi.fn(), completeSection: vi.fn() }))
-vi.mock('../dashboard/api', () => ({ getDashboard: vi.fn() }))
+vi.mock('./api', () => ({ getPronunciationLesson: vi.fn(), advancePronunciation: vi.fn(), completeSection: vi.fn(), finishPronunciationLesson: vi.fn() }))
+vi.mock('../curriculum/api', () => ({ getHskLevels: vi.fn() }))
+vi.mock('../progress/api', () => ({ getHskProgress: vi.fn(), getProgressOverview: vi.fn() }))
 
-const initialSections = [
-  { id: 'section-tones-id', code: 'TONES', title: 'Tones', description: null, order_index: 1, completed_at: null },
-  { id: 'section-initials-id', code: 'INITIALS', title: 'Initials', description: null, order_index: 2, completed_at: null },
-  { id: 'section-finals-id', code: 'FINALS', title: 'Finals', description: null, order_index: 3, completed_at: null },
-]
+const initial: api.PronunciationLessonState = {
+  sections: [
+    { id: 'initials-id', code: 'INITIALS', completed_at: null, total_steps: 21 },
+    { id: 'finals-id', code: 'FINALS', completed_at: null, total_steps: 36 },
+    { id: 'tones-id', code: 'TONES', completed_at: null, total_steps: 5 },
+  ],
+  current_section: 'INITIALS', step_index: 0, total_steps: 21, completed_at: null, can_finish: false,
+}
 
 function setup(path = '/pronunciation') {
   const client = new QueryClient({ defaultOptions: { queries: { retry: false }, mutations: { retry: false } } })
   const router = createMemoryRouter([
-    { path: '/pronunciation', element: <><PronunciationPage /><Link to="/dashboard">Dashboard</Link></> },
-    { path: '/dashboard', element: <DashboardPage /> },
+    { path: '/pronunciation', element: <PronunciationPage /> },
+    { path: '/pronunciation/lesson', element: <PronunciationLessonPage /> },
   ], { initialEntries: [path] })
-  const view = render(<QueryClientProvider client={client}><RouterProvider router={router} /></QueryClientProvider>)
-  return { ...view, client, router }
+  return { ...render(<QueryClientProvider client={client}><RouterProvider router={router} /></QueryClientProvider>), client, router }
 }
 
 beforeEach(() => {
   vi.resetAllMocks()
-  vi.mocked(api.getSections).mockResolvedValue(initialSections)
-  vi.mocked(api.completeSection).mockResolvedValue({} as Awaited<ReturnType<typeof api.completeSection>>)
+  vi.mocked(api.getPronunciationLesson).mockResolvedValue(initial)
+  vi.mocked(getHskLevels).mockResolvedValue([{ id: 'hsk-1', level_number: 1, title: 'HSK 1', description: null, state: 'LOCKED' }])
+  vi.mocked(getProgressOverview).mockResolvedValue({ current_hsk: 1, progress_percentage: 37.25, pronunciation_complete: false, hsk_levels: [] })
+  vi.mocked(getHskProgress).mockResolvedValue({ hsk: { id: 'hsk-1', level_number: 1, title: 'HSK 1' }, progress_percentage: 12, units: [] })
 })
 
-describe('Step 8.1 B1 pronunciation completion', () => {
-  it('loads canonical sections and makes every incomplete section actionable', async () => {
+describe('server-owned pronunciation lesson', () => {
+  it('shows one pronunciation block and a locked HSK 1 without a self-complete action', async () => {
     setup()
-    expect(await screen.findByRole('button', { name: 'Mark Tones complete' })).toBeInTheDocument()
-    expect(screen.getByRole('button', { name: 'Mark Initials complete' })).toBeInTheDocument()
-    expect(screen.getByRole('button', { name: 'Mark Finals complete' })).toBeInTheDocument()
-    expect(api.getSections).toHaveBeenCalledTimes(1)
+    expect(await screen.findByRole('link', { name: /Mở bài học/ })).toHaveAttribute('href', '/pronunciation/lesson')
+    expect(screen.getByText('Hoàn thành bài phát âm để mở khóa.')).toBeInTheDocument()
+    expect(screen.queryByRole('link', { name: /Mở HSK 1/ })).not.toBeInTheDocument()
+    expect(screen.queryByRole('button', { name: /Mark .* complete/ })).not.toBeInTheDocument()
   })
 
-  it('posts the canonical backend section id when the learner marks a section complete', async () => {
+  it('shows the backend progress alongside the learning path', async () => {
     setup()
-    fireEvent.click(await screen.findByRole('button', { name: 'Mark Tones complete' }))
-    await waitFor(() => expect(api.completeSection).toHaveBeenCalledWith('section-tones-id', expect.any(Object)))
+    expect(await screen.findByText('37.25%')).toBeInTheDocument()
+    expect(await screen.findByText('12%')).toBeInTheDocument()
+    expect(screen.getByText('Chi tiết bài học (0)')).toBeInTheDocument()
   })
 
-  it('disables all completion actions while one request is pending', async () => {
-    let resolve!: (value: Awaited<ReturnType<typeof api.completeSection>>) => void
-    vi.mocked(api.completeSection).mockReturnValueOnce(new Promise((done) => { resolve = done }))
+  it('allows completed material to be reviewed without altering saved progress', async () => {
+    const doneSections = initial.sections.map((item) => ({ ...item, completed_at: '2026-11-03T00:00:00Z' }))
+    vi.mocked(api.getPronunciationLesson).mockResolvedValue({ ...initial, sections: doneSections, current_section: null, step_index: 0, total_steps: 0, completed_at: '2026-11-03T00:00:00Z', can_finish: false })
+    setup('/pronunciation/lesson')
+    fireEvent.click(await screen.findByRole('button', { name: 'Học lại từ đầu' }))
+    expect(await screen.findByText('b', { selector: '.pronunciation-session__symbol' })).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: 'Tiếp theo' }))
+    expect(screen.getByText('p', { selector: '.pronunciation-session__symbol' })).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: 'Quay lại' }))
+    expect(screen.getByText('b', { selector: '.pronunciation-session__symbol' })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Quay lại' })).toBeDisabled()
+    fireEvent.click(screen.getByRole('button', { name: 'Ôn vận mẫu' }))
+    expect(screen.getByText('a', { selector: '.pronunciation-session__symbol' })).toBeInTheDocument()
+    expect(api.advancePronunciation).not.toHaveBeenCalled()
+    expect(api.completeSection).not.toHaveBeenCalled()
+    expect(api.finishPronunciationLesson).not.toHaveBeenCalled()
+  })
+
+  it('shows HSK as available only when the backend reports it available', async () => {
+    vi.mocked(api.getPronunciationLesson).mockResolvedValue({ ...initial, current_section: null, step_index: 0, total_steps: 0, completed_at: '2026-11-03T00:00:00Z', can_finish: false })
+    vi.mocked(getHskLevels).mockResolvedValue([{ id: 'hsk-1', level_number: 1, title: 'HSK 1', description: null, state: 'AVAILABLE' }])
     setup()
-    const tones = await screen.findByRole('button', { name: 'Mark Tones complete' })
-    fireEvent.click(tones)
-    expect(await screen.findByRole('button', { name: 'Completing…' })).toBeDisabled()
-    expect(screen.getByRole('button', { name: 'Mark Initials complete' })).toBeDisabled()
-    fireEvent.click(screen.getByRole('button', { name: 'Completing…' }))
-    expect(api.completeSection).toHaveBeenCalledTimes(1)
-    resolve({} as Awaited<ReturnType<typeof api.completeSection>>)
+    expect(await screen.findByRole('link', { name: 'Mở HSK 1' })).toHaveAttribute('href', '/hsk/1')
   })
 
-  it('surfaces a safe error and keeps the backend section incomplete after failure', async () => {
-    vi.mocked(api.completeSection).mockRejectedValueOnce(new ApiError({
-      status: 503, code: 'HTTP_ERROR', message: 'private server details', details: null,
-    }))
-    setup()
-    fireEvent.click(await screen.findByRole('button', { name: 'Mark Tones complete' }))
-    expect(await screen.findByRole('alert')).toHaveTextContent('A temporary problem prevented completion. Please try again.')
-    expect(screen.queryByText('Completed')).not.toBeInTheDocument()
-    expect(screen.getByRole('button', { name: 'Mark Tones complete' })).toBeEnabled()
+  it('resumes the step returned by the backend and advances one sound at a time', async () => {
+    vi.mocked(api.getPronunciationLesson).mockResolvedValue({ ...initial, step_index: 1 })
+    vi.mocked(api.advancePronunciation).mockResolvedValue({ ...initial, step_index: 2 })
+    setup('/pronunciation/lesson')
+    expect(await screen.findByText('p', { selector: '.pronunciation-session__symbol' })).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: 'Tiếp theo' }))
+    await waitFor(() => expect(api.advancePronunciation).toHaveBeenCalledWith('INITIALS', 1))
+    expect(await screen.findByText('m', { selector: '.pronunciation-session__symbol' })).toBeInTheDocument()
+    expect(screen.queryByRole('button', { name: /Hoàn thành thanh mẫu/ })).not.toBeInTheDocument()
   })
 
-  it('refetches completion state and invalidates backend-owned progression reads', async () => {
-    let canonical = initialSections
-    vi.mocked(api.getSections).mockImplementation(async () => canonical)
-    vi.mocked(api.completeSection).mockImplementationOnce(async (id) => {
-      canonical = canonical.map((section) => section.id === id ? { ...section, completed_at: '2026-10-13T00:00:00Z' } : section)
-      return {} as Awaited<ReturnType<typeof api.completeSection>>
-    })
-    const { client } = setup()
-    const invalidate = vi.spyOn(client, 'invalidateQueries')
-    fireEvent.click(await screen.findByRole('button', { name: 'Mark Tones complete' }))
-    expect(await screen.findByText('Completed')).toBeInTheDocument()
-    expect(screen.queryByRole('button', { name: 'Mark Tones complete' })).not.toBeInTheDocument()
-    await waitFor(() => expect(api.getSections).toHaveBeenCalledTimes(2))
-    expect(invalidate).toHaveBeenCalledWith({ queryKey: queryKeys.pronunciation })
-    expect(invalidate).toHaveBeenCalledWith({ queryKey: queryKeys.dashboard })
-    expect(invalidate).toHaveBeenCalledWith({ queryKey: queryKeys.curriculumLevels })
-    expect(invalidate).toHaveBeenCalledWith({ queryKey: queryKeys.curriculumHskRoot })
-    expect(invalidate).toHaveBeenCalledWith({ queryKey: queryKeys.progressOverview })
-    expect(invalidate).toHaveBeenCalledWith({ queryKey: queryKeys.progressHskRoot })
+  it('goes back through visited sounds without changing saved progress', async () => {
+    vi.mocked(api.getPronunciationLesson).mockResolvedValue({ ...initial, step_index: 2 })
+    vi.mocked(api.advancePronunciation).mockResolvedValue({ ...initial, step_index: 3 })
+    setup('/pronunciation/lesson')
+    expect(await screen.findByText('m', { selector: '.pronunciation-session__symbol' })).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: 'Quay lại' }))
+    expect(screen.getByText('p', { selector: '.pronunciation-session__symbol' })).toBeInTheDocument()
+    expect(screen.getByRole('progressbar', { name: 'Tiến độ thanh mẫu' })).toHaveAttribute('value', '2')
+    fireEvent.click(screen.getByRole('button', { name: 'Quay lại' }))
+    expect(screen.getByText('b', { selector: '.pronunciation-session__symbol' })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Quay lại' })).toBeDisabled()
+    fireEvent.click(screen.getByRole('button', { name: 'Tiếp theo' }))
+    fireEvent.click(screen.getByRole('button', { name: 'Tiếp theo' }))
+    expect(api.advancePronunciation).not.toHaveBeenCalled()
+    fireEvent.click(screen.getByRole('button', { name: 'Tiếp theo' }))
+    await waitFor(() => expect(api.advancePronunciation).toHaveBeenCalledWith('INITIALS', 2))
   })
 
-  it('shows persisted completion after a fresh mount from the canonical GET response', async () => {
-    vi.mocked(api.getSections).mockResolvedValueOnce(initialSections).mockResolvedValueOnce([
-      { ...initialSections[0], completed_at: '2026-10-13T00:00:00Z' }, ...initialSections.slice(1),
-    ])
-    const first = setup()
-    expect(await screen.findByRole('button', { name: 'Mark Tones complete' })).toBeInTheDocument()
-    first.unmount()
-    const client = new QueryClient({ defaultOptions: { queries: { retry: false } } })
-    const router = createMemoryRouter([{ path: '/pronunciation', element: <PronunciationPage /> }], { initialEntries: ['/pronunciation'] })
-    render(<QueryClientProvider client={client}><RouterProvider router={router} /></QueryClientProvider>)
-    expect(await screen.findByText('Completed')).toBeInTheDocument()
-    expect(screen.queryByRole('button', { name: 'Mark Tones complete' })).not.toBeInTheDocument()
+  it('disables the next action while the backend is saving', async () => {
+    let resolve!: (state: api.PronunciationLessonState) => void
+    vi.mocked(api.advancePronunciation).mockReturnValueOnce(new Promise((done) => { resolve = done }))
+    setup('/pronunciation/lesson')
+    fireEvent.click(await screen.findByRole('button', { name: 'Tiếp theo' }))
+    expect(await screen.findByRole('button', { name: 'Đang lưu…' })).toBeDisabled()
+    expect(api.advancePronunciation).toHaveBeenCalledTimes(1)
+    resolve({ ...initial, step_index: 1 })
   })
 
-  it('renders HSK availability from the backend Dashboard read after completion', async () => {
-    let canonical = initialSections
-    vi.mocked(api.getSections).mockImplementation(async () => canonical)
-    vi.mocked(api.completeSection).mockImplementation(async (id) => {
-      canonical = canonical.map((section) => ({ ...section, completed_at: section.id === id ? '2026-10-13T00:00:00Z' : section.completed_at }))
-      return {} as Awaited<ReturnType<typeof api.completeSection>>
-    })
-    vi.mocked(getDashboard).mockResolvedValue({
-      current_hsk: { id: 'hsk-1', level_number: 1, title: 'HSK 1' },
-      current_unit: { id: 'unit-1', order_index: 1, unit_type: 'LESSON', state: 'AVAILABLE', lesson: { id: 'lesson-1', lesson_number: 1, title: 'Lesson One', status: 'PUBLISHED' }, assessment: null },
-      current_lesson: { id: 'lesson-1', lesson_number: 1, title: 'Lesson One', description: null },
-      progress_percentage: 0, continue_learning: { type: 'LESSON', section_id: null, code: null, lesson_id: 'lesson-1', assessment_id: null },
-    })
-    const { router } = setup()
-    for (const label of ['Tones', 'Initials', 'Finals']) {
-      fireEvent.click(await screen.findByRole('button', { name: `Mark ${label} complete` }))
-      await screen.findByText(`${label} marked complete.`)
-    }
-    await router.navigate('/dashboard')
-    expect(await screen.findByText('Lesson · AVAILABLE')).toBeInTheDocument()
-    expect(getDashboard).toHaveBeenCalledTimes(1)
+  it('sends the backend section id only after all its sounds have been visited', async () => {
+    const last = { ...initial, step_index: 21 }
+    const next: api.PronunciationLessonState = { ...initial, current_section: 'FINALS', total_steps: 36, sections: initial.sections.map((item) => item.code === 'INITIALS' ? { ...item, completed_at: '2026-11-03T00:00:00Z' } : item) }
+    vi.mocked(api.getPronunciationLesson).mockResolvedValueOnce(last).mockResolvedValue(next)
+    vi.mocked(api.completeSection).mockResolvedValue({} as Awaited<ReturnType<typeof api.completeSection>>)
+    setup('/pronunciation/lesson')
+    fireEvent.click(await screen.findByRole('button', { name: 'Hoàn thành thanh mẫu' }))
+    await waitFor(() => expect(api.completeSection).toHaveBeenCalledWith('initials-id', expect.any(Object)))
+    expect(await screen.findByText('a', { selector: '.pronunciation-session__symbol' })).toBeInTheDocument()
+  })
+
+  it('requires the separate final completion after the three sections', async () => {
+    const doneSections = initial.sections.map((item) => ({ ...item, completed_at: '2026-11-03T00:00:00Z' }))
+    vi.mocked(api.getPronunciationLesson).mockResolvedValue({ ...initial, sections: doneSections, current_section: null, step_index: 0, total_steps: 0, can_finish: true })
+    setup('/pronunciation/lesson')
+    expect(await screen.findByRole('button', { name: 'Hoàn thành bài học' })).toBeInTheDocument()
+    expect(api.finishPronunciationLesson).not.toHaveBeenCalled()
+  })
+
+  it('shows a safe error and reloads the backend step when saving fails', async () => {
+    vi.mocked(api.advancePronunciation).mockRejectedValueOnce(new Error('private details'))
+    setup('/pronunciation/lesson')
+    fireEvent.click(await screen.findByRole('button', { name: 'Tiếp theo' }))
+    expect(await screen.findByRole('alert')).toHaveTextContent('Không thể lưu bước học')
+    await waitFor(() => expect(api.getPronunciationLesson).toHaveBeenCalledTimes(2))
+    expect(screen.queryByText('private details')).not.toBeInTheDocument()
+  })
+
+  it('does not advance when the client and backend disagree on the curriculum length', async () => {
+    vi.mocked(api.getPronunciationLesson).mockResolvedValue({ ...initial, total_steps: 20 })
+    setup('/pronunciation/lesson')
+    expect(await screen.findByRole('alert')).toHaveTextContent('chưa đồng bộ với máy chủ')
+    expect(screen.queryByRole('button', { name: 'Tiếp theo' })).not.toBeInTheDocument()
   })
 })

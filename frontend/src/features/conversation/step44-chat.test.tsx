@@ -36,6 +36,7 @@ vi.mock('../curriculum/api', () => ({ getCurriculum: vi.fn(), getHskLevels: vi.f
 
 type Conversation = components['schemas']['ConversationResponse']
 type Message = components['schemas']['MessageResponse']
+type Citation = components['schemas']['CitationResponse']
 type Lesson = components['schemas']['LessonResponse']
 type LessonProgress = components['schemas']['LessonProgressResponse']
 type ConversationPage = components['schemas']['ConversationPage']
@@ -51,8 +52,8 @@ function conversationPage(items: Conversation[], page = 1, pageSize = 20, total 
   return { items, page, page_size: pageSize, total }
 }
 
-function message(id: string, sequence: number, role: Message['role'] = 'USER', content: string | null = `Message ${sequence}`, status: Message['status'] = 'COMPLETED', replyTo: string | null = null): Message {
-  return { id, conversation_id: 'conversation-a', sequence_number: sequence, role, content, status, reply_to_message_id: replyTo, created_at: sequence % 2 ? '2026-01-01T00:00:00Z' : '2026-12-31T23:59:59Z', citations: [] }
+function message(id: string, sequence: number, role: Message['role'] = 'USER', content: string | null = `Message ${sequence}`, status: Message['status'] = 'COMPLETED', replyTo: string | null = null, citations: Citation[] = []): Message {
+  return { id, conversation_id: 'conversation-a', sequence_number: sequence, role, content, status, reply_to_message_id: replyTo, created_at: sequence % 2 ? '2026-01-01T00:00:00Z' : '2026-12-31T23:59:59Z', citations }
 }
 
 function messagePage(items: Message[], page = 1, pageSize = 50, total = items.length): MessagePage {
@@ -124,6 +125,69 @@ beforeEach(() => {
 })
 
 describe('Step 4.4 placement and explicit Conversation lifecycle', () => {
+  it('focuses the chat on open and restores focus to its opener after Escape', async () => {
+    renderLesson()
+    const opener = await screen.findByRole('button', { name: 'Open AI chat' })
+    fireEvent.click(opener)
+    const panel = await screen.findByRole('dialog', { name: 'AI Tutor Chat' })
+    const close = within(panel).getByRole('button', { name: 'Close chat' })
+    expect(close).toHaveFocus()
+    fireEvent.keyDown(document, { key: 'Escape' })
+    await waitFor(() => expect(screen.queryByRole('dialog', { name: 'AI Tutor Chat' })).not.toBeInTheDocument())
+    expect(opener).toHaveFocus()
+  })
+
+  it('contains Tab and Shift+Tab within the open chat modal', async () => {
+    renderLesson()
+    const panel = await openChat()
+    const close = within(panel).getByRole('button', { name: 'Close chat' })
+    const focusable = Array.from(panel.querySelectorAll<HTMLElement>('a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'))
+    const last = focusable[focusable.length - 1]
+    last.focus()
+    fireEvent.keyDown(last, { key: 'Tab' })
+    expect(close).toHaveFocus()
+    fireEvent.keyDown(close, { key: 'Tab', shiftKey: true })
+    expect(last).toHaveFocus()
+  })
+
+  it('renders an INTERNAL_CHUNK source only from backend citations and never invents a URL', async () => {
+    vi.mocked(listConversations).mockResolvedValue(conversationPage([conversation('conversation-a', 'First')]))
+    vi.mocked(getMessages).mockResolvedValue(messagePage([message('assistant-1', 1, 'ASSISTANT', 'See [S1] for this.', 'COMPLETED', null, [{
+      label: 'S1', source_kind: 'INTERNAL_CHUNK', title: 'Lesson greetings', source_type: 'LESSON', section: 'Introductions', page_number: 2, url: null, domain: null,
+    }])]))
+    const panel = await openExistingConversation()
+    const sources = await within(panel).findByRole('region', { name: 'Sources for response 1' })
+    expect(sources).toHaveTextContent('[S1]')
+    expect(sources).toHaveTextContent('Lesson greetings')
+    expect(sources).toHaveTextContent('Introductions')
+    expect(sources).toHaveTextContent('Page 2')
+    expect(within(sources).queryByRole('link')).not.toBeInTheDocument()
+  })
+
+  it('renders an external source link only for the backend HTTPS URL with safe link attributes', async () => {
+    vi.mocked(listConversations).mockResolvedValue(conversationPage([conversation('conversation-a', 'First')]))
+    vi.mocked(getMessages).mockResolvedValue(messagePage([message('assistant-1', 1, 'ASSISTANT', 'Answer', 'COMPLETED', null, [{
+      label: 'S1', source_kind: 'EXTERNAL_URL', title: 'Open Education source', source_type: null, section: null, page_number: null, url: 'https://www.open.edu/example', domain: 'www.open.edu',
+    }])]))
+    const panel = await openExistingConversation()
+    const sources = await within(panel).findByRole('region', { name: 'Sources for response 1' })
+    const link = within(sources).getByRole('link', { name: 'Open Education source (opens in a new tab)' })
+    expect(link).toHaveAttribute('href', 'https://www.open.edu/example')
+    expect(link).toHaveAttribute('target', '_blank')
+    expect(link).toHaveAttribute('rel', 'noopener noreferrer')
+  })
+
+  it.each([
+    ['assistant [S1] marker without backend citations', 'This answer mentions [S1].'],
+    ['arbitrary Markdown URL without backend citations', 'Read [this page](https://example.test/private).'],
+  ])('does not infer a trusted source from %s', async (_case, content) => {
+    vi.mocked(listConversations).mockResolvedValue(conversationPage([conversation('conversation-a', 'First')]))
+    vi.mocked(getMessages).mockResolvedValue(messagePage([message('assistant-1', 1, 'ASSISTANT', content)]))
+    const panel = await openExistingConversation()
+    expect(within(panel).queryByRole('region', { name: /Sources for response/ })).not.toBeInTheDocument()
+    expect(within(panel).queryByRole('link', { name: /example.test/ })).not.toBeInTheDocument()
+  })
+
   it('shows a Conversation list error and retries the list query', async () => {
     vi.mocked(listConversations).mockRejectedValueOnce(new Error('temporary list failure')).mockResolvedValue(conversationPage([conversation('conversation-a', 'Recovered')]))
     renderLesson()
@@ -143,7 +207,7 @@ describe('Step 4.4 placement and explicit Conversation lifecycle', () => {
     expect(listConversations).toHaveBeenCalledWith({ lesson_id: 'lesson-1', page: 1, page_size: 20 })
     expect(createConversation).not.toHaveBeenCalled()
     expect(sendMessage).not.toHaveBeenCalled()
-    expect(screen.queryByRole('link', { name: /open exercise/i })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /open exercise/i })).toBeDisabled()
   })
 
   it('creates only after explicit Start with exactly lesson_id and does not send a Message', async () => {
@@ -236,7 +300,7 @@ describe('Step 4.4 Conversation rename and delete', () => {
     expect(await within(panel).findByRole('heading', { name: 'New title', level: 2 })).toBeInTheDocument()
     expect(renameConversation).toHaveBeenCalledExactlyOnceWith('conversation-a', { title: 'New title' })
     expect(listConversations).toHaveBeenCalledTimes(2)
-    expect(within(panel).getByText(`Updated: ${renamed.updated_at}`)).toBeInTheDocument()
+    expect(within(panel).getByText('Updated:').querySelector('time')).toHaveAttribute('dateTime', renamed.updated_at)
   })
 
   it('requires confirmation and selects the first remaining backend-ordered Conversation after deleting the selected one', async () => {
@@ -729,7 +793,7 @@ describe('Step 4.4 backend-authoritative Chat availability', () => {
 
   it('does not locally block Chat because the Lesson has an Exercise', async () => {
     const panel = await openExistingConversation()
-    expect(screen.getByRole('link', { name: 'Open Exercise 1' })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Open Exercise 1' })).toBeDisabled()
     expect(within(panel).getByRole('textbox', { name: 'Message' })).toBeEnabled()
     expect(within(panel).getByRole('button', { name: 'Send' })).toBeEnabled()
   })

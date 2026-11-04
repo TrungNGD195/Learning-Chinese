@@ -7,7 +7,7 @@ export type ContinueLearningTarget = NonNullable<
 export function continueLearningPath(target: ContinueLearningTarget): string {
   switch (target.type) {
     case 'PRONUNCIATION':
-      return '/pronunciation'
+      return '/pronunciation/lesson'
     case 'LESSON':
       return `/lessons/${encodeURIComponent(target.lesson_id)}`
     case 'PERIODIC_TEST':

@@ -4,6 +4,7 @@ import { queryKeys } from '../../app/query/keys'
 export function invalidatePronunciationCompletion(queryClient: QueryClient) {
   return Promise.all([
     queryKeys.pronunciation,
+    queryKeys.pronunciationLesson,
     queryKeys.dashboard,
     queryKeys.curriculumLevels,
     queryKeys.curriculumHskRoot,

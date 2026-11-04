@@ -1,13 +1,15 @@
 import { useState } from 'react'
 import { flushSync } from 'react-dom'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
-import { useBeforeUnload, useBlocker, useNavigate, useParams } from 'react-router'
+import { Link, useBeforeUnload, useBlocker, useNavigate, useParams } from 'react-router'
 import type { components } from '../../types/api.generated'
+import { Alert, Button, Dialog, LoadingState, PageHeader, StatusBadge, Surface } from '../../components/ui'
 import { queryKeys } from '../../app/query/keys'
 import { ApiError } from '../../lib/api/errors'
 import { getAssessment, startAttempt, submitAttempt } from './api'
 import { QuestionRenderer, type DraftAnswer } from './QuestionRenderer'
-import { createSubmitRequest } from './submission'
+import { createSubmitRequest, hasCompleteDraftAnswer } from './submission'
+import { Companion } from '../../components/academy/Companion'
 
 type Assessment = components['schemas']['AssessmentResponse']
 
@@ -80,29 +82,51 @@ export function AssessmentPage() {
     }
   }
 
-  if (assessmentQuery.isPending) return <section className="screen"><h1 id="page-title">Assessment</h1><p role="status">Loading assessment…</p></section>
-  if ((assessmentQuery.isError && !assessment) || !assessment) return <section className="screen"><h1 id="page-title">Assessment</h1><p role="alert">Could not load assessment.</p>
-    <button className="secondary-action" type="button" onClick={() => void assessmentQuery.refetch()}>Retry</button></section>
+  if (assessmentQuery.isPending && !assessment) return <section className="learner-page assessment-page screen" aria-labelledby="page-title">
+    <PageHeader title="Assessment" titleId="page-title" />
+    <LoadingState>Loading assessment…</LoadingState>
+  </section>
+  if (assessmentQuery.error instanceof ApiError && assessmentQuery.error.code==='THEORY_INCOMPLETE') return <section className="learner-page assessment-page screen" aria-labelledby="page-title"><PageHeader title="Hoàn thành lý thuyết trước" titleId="page-title"/><Alert tone="info">Bạn cần xem hết từ vựng và ngữ pháp bắt buộc của bài học trước khi mở luyện tập.</Alert><Link className="learner-link-action" to="/dashboard">Tiếp tục bài học</Link></section>
+  if ((assessmentQuery.isError && !assessment) || !assessment) return <section className="learner-page assessment-page screen" aria-labelledby="page-title">
+    <PageHeader title="Assessment" titleId="page-title" />
+    <Alert role="alert" tone="error" action={<Button onClick={() => void assessmentQuery.refetch()}>Retry</Button>}>Could not load assessment.</Alert>
+  </section>
 
   const activeQuestion = activeAttemptId ? assessment.questions[questionIndex] : undefined
-  return <section className="screen assessment-screen" aria-labelledby="page-title">
-    {assessmentQuery.isFetching && <p role="status">Refreshing assessment…</p>}
-    {assessmentQuery.isError && <p role="status">Could not refresh assessment. Showing the last loaded information.</p>}
-    <header className="learning-card"><p className="eyebrow">{assessment.type === 'LESSON_EXERCISE' ? 'Lesson Exercise' : 'Periodic Test'}</p><h1 id="page-title">{assessment.title}</h1>
-      {assessment.description && <p>{assessment.description}</p>}{!activeAttemptId && <p>{assessment.questions.length} questions</p>}</header>
-    {error && <p role="alert">{error}</p>}
-    {!activeAttemptId && <section className="learning-card"><h2>Ready when you are</h2><p>Your assessment attempt begins only when you choose to start.</p>
-      <button type="button" className="primary-action" disabled={startMutation.isPending} onClick={() => void beginAttempt()}>{startMutation.isPending ? 'Starting…' : 'Start / Resume Assessment'}</button></section>}
-    {activeAttemptId && activeQuestion && <section className="learning-card question-card"><p>Question {questionIndex + 1} of {assessment.questions.length}</p>
+  const completeResponseCount = assessment.questions.filter((question) => hasCompleteDraftAnswer(question, drafts[question.id])).length
+  const questionCount = assessment.questions.length
+  return <section className="learner-page assessment-page screen assessment-screen" aria-labelledby="page-title">
+    {assessmentQuery.isFetching && <LoadingState>Refreshing assessment…</LoadingState>}
+    {assessmentQuery.isError && <Alert role="status" tone="warning">Could not refresh assessment. Showing the last loaded information.</Alert>}
+    <Surface as="section" className="learner-surface">
+      <PageHeader title={assessment.title} titleId="page-title" eyebrow={assessment.type === 'LESSON_EXERCISE' ? 'Lesson Exercise' : 'Periodic Test'} description={assessment.description ?? undefined} />
+      {!activeAttemptId && <div className="assessment-page__meta"><span>{questionCount} questions</span><StatusBadge tone="info">Ready</StatusBadge></div>}
+    </Surface>
+    {error && <Alert role="alert" tone="error">{error}</Alert>}
+    {!activeAttemptId && <Surface as="section" className="learner-surface assessment-panel">
+      <div className="academy-practice-buddy"><Companion pose="but"/><p>Bút cùng bạn luyện tập. Đọc kỹ câu hỏi và làm theo nhịp của bạn.</p></div>
+      <h2>Ready when you are</h2>
+      <p>Your assessment attempt begins only when you choose to start.</p>
+      <Button variant="primary" disabled={startMutation.isPending} onClick={() => void beginAttempt()}>{startMutation.isPending ? 'Starting…' : 'Start / Resume Assessment'}</Button>
+    </Surface>}
+    {activeAttemptId && activeQuestion && <Surface as="section" className="learner-surface assessment-panel assessment-question">
+      <div className="academy-practice-buddy"><Companion pose="think"/><p>Bo đang suy nghĩ cùng bạn. Bạn có thể xem lại các câu trước khi nộp bài.</p></div>
+      <div className="assessment-progress">
+        <p>Question {questionIndex + 1} of {questionCount}</p>
+        <progress aria-label={`Question ${questionIndex + 1} of ${questionCount}`} max={questionCount} value={questionIndex + 1} />
+        <p className="assessment-progress__complete">Responses complete: {completeResponseCount} / {questionCount}</p>
+      </div>
       <QuestionRenderer question={activeQuestion} draft={drafts[activeQuestion.id]} onChange={(answer) => setDrafts((current) => ({ ...current, [activeQuestion.id]: answer }))} />
-      <div className="question-navigation"><button type="button" className="secondary-action" disabled={questionIndex === 0 || submitMutation.isPending} onClick={() => setQuestionIndex((index) => index - 1)}>Previous</button>
-        {questionIndex < assessment.questions.length - 1 && <button type="button" className="secondary-action" disabled={submitMutation.isPending} onClick={() => setQuestionIndex((index) => index + 1)}>Next</button>}
-        {questionIndex === assessment.questions.length - 1 && <button type="button" className="primary-action" disabled={submitMutation.isPending} onClick={() => void submit()}>{submitMutation.isPending ? 'Submitting…' : 'Submit Assessment'}</button>}</div>
-    </section>}
-    {activeAttemptId && !activeQuestion && <section className="learning-card"><p>This assessment has no questions to display.</p></section>}
-    {blocker.state === 'blocked' && <section className="learning-card" role="alertdialog" aria-label="Unsaved assessment answers">
-      <p>You have unsaved assessment answers.</p><button type="button" className="secondary-action" onClick={() => blocker.reset?.()}>Stay</button>
-      <button type="button" className="primary-action" onClick={() => blocker.proceed?.()}>Leave</button>
-    </section>}
+      <div className="assessment-question__navigation">
+        <Button disabled={questionIndex === 0 || submitMutation.isPending} onClick={() => setQuestionIndex((index) => index - 1)}>Previous</Button>
+        {questionIndex < questionCount - 1 && <Button variant="primary" disabled={submitMutation.isPending} onClick={() => setQuestionIndex((index) => index + 1)}>Next</Button>}
+        {questionIndex === questionCount - 1 && <Button variant="primary" disabled={submitMutation.isPending} onClick={() => void submit()}>{submitMutation.isPending ? 'Submitting…' : 'Submit Assessment'}</Button>}
+      </div>
+    </Surface>}
+    {activeAttemptId && !activeQuestion && <Surface as="section" className="learner-surface"><p>This assessment has no questions to display.</p></Surface>}
+    <Dialog open={blocker.state === 'blocked'} title="Unsaved assessment answers" cancelLabel="Stay" confirmLabel="Leave"
+      onCancel={() => blocker.reset?.()} onConfirm={() => blocker.proceed?.()}>
+      <p>You have unsaved assessment answers.</p>
+    </Dialog>
   </section>
 }

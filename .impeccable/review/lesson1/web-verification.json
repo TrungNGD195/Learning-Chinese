@@ -1,0 +1,42 @@
+{
+  "origin": "http://127.0.0.1:5173",
+  "checks": {
+    "content": {
+      "lessonId": "d84c81ba-57b3-5132-b15e-dee32ed22bbf",
+      "assessmentId": "2185832f-164e-59b8-ae3c-b9ead02e1f64",
+      "lessonStatus": "DRAFT",
+      "assessmentStatus": "DRAFT",
+      "vocabulary": 12,
+      "grammar": 0,
+      "questions": 20,
+      "passThreshold": 80,
+      "questionTypes": {
+        "multiple_choice": 6,
+        "fill_blank": 6,
+        "matching": 4,
+        "reorder_sentence": 4
+      }
+    },
+    "draftHiddenFromLearner": true
+  },
+  "captures": [
+    {
+      "name": "admin-lesson1-draft",
+      "width": 1440
+    },
+    {
+      "name": "admin-exercise-draft",
+      "width": 1440
+    },
+    {
+      "name": "admin-lesson1-draft",
+      "width": 390
+    },
+    {
+      "name": "admin-exercise-draft",
+      "width": 390
+    }
+  ],
+  "errors": [],
+  "scope": "Real Docker frontend and backend; existing account roles with short-lived in-memory review cookies; no intercepted APIs, publishing or learner-progress mutations"
+}

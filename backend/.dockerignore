@@ -1,0 +1,14 @@
+.env
+.venv
+__pycache__
+*.py[cod]
+.pytest_cache
+.mypy_cache
+.ruff_cache
+.coverage
+htmlcov
+storage
+tests
+scripts/*
+!scripts/create_hsk1_lesson1_draft.py
+codex-tasks

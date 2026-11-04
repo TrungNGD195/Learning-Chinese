@@ -16,12 +16,23 @@ function renderAt(path: string, initialUser?: typeof learner) {
   const client = new QueryClient({ defaultOptions: { queries: { retry: false } } })
   if (initialUser) client.setQueryData(queryKeys.authMe, initialUser)
   const router = createMemoryRouter([
-    { element: <ProtectedRoute />, children: [{ path: '/learner', element: <p>Learner content</p> }] },
+    { element: <ProtectedRoute />, children: [{ path: '/learner', element: <p>Learner content</p> }, { path: '/dashboard', element: <p>Learner dashboard</p> }] },
     { element: <AdminRoute />, children: [{ path: '/admin', element: <p>Admin content</p> }] },
     { path: '/login', element: <p>Login page</p> },
     { path: '/broken', element: <ThrowDuringRender />, errorElement: <RouteErrorBoundary /> },
+    {
+      path: '/broken-response',
+      loader: () => {
+        throw new Response('SYNTHETIC_RESPONSE_BODY_MUST_NOT_BE_SHOWN', {
+          status: 418,
+          statusText: 'SYNTHETIC_STATUS_TEXT_MUST_NOT_BE_SHOWN',
+        })
+      },
+      element: <p>Unreachable route content</p>,
+      errorElement: <RouteErrorBoundary />,
+    },
   ], { initialEntries: [path] })
-  return render(<QueryClientProvider client={client}><RouterProvider router={router} /></QueryClientProvider>)
+  return { client, router, ...render(<QueryClientProvider client={client}><RouterProvider router={router} /></QueryClientProvider>) }
 }
 function ThrowDuringRender(): never { throw new Error('unexpected render failure') }
 
@@ -56,23 +67,57 @@ describe('session-backed route guards', () => {
     expect(screen.queryByText('We could not verify your session.')).not.toBeInTheDocument()
   })
 
-  it('renders authenticated learner and D-041 Forbidden for non-admin without Admin layout', () => {
+  it('allows a Learner on Learner routes', () => {
     renderAt('/learner', learner)
     expect(screen.getByText('Learner content')).toBeInTheDocument()
   })
 
-  it('allows Admin and shows Forbidden with Dashboard link to an authenticated learner', () => {
+  it('allows Admin routes and keeps a Learner authenticated after Admin denial', async () => {
     const { unmount } = renderAt('/admin', admin)
     expect(screen.getByText('Admin content')).toBeInTheDocument()
     unmount()
-    renderAt('/admin', learner)
+    const { router, client } = renderAt('/admin', learner)
     expect(screen.getByTestId('admin-forbidden')).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: 'Back to Dashboard' })).toHaveAttribute('href', '/dashboard')
+    expect(screen.getByRole('link', { name: 'Quay lại góc học tập' })).toHaveAttribute('href', '/dashboard')
     expect(screen.queryByText('Admin content')).not.toBeInTheDocument()
+    fireEvent.click(screen.getByRole('link', { name: 'Quay lại góc học tập' }))
+    expect(await screen.findByText('Learner dashboard')).toBeInTheDocument()
+    expect(router.state.location.pathname).toBe('/dashboard')
+    expect(client.getQueryData(queryKeys.authMe)).toEqual(learner)
   })
 
-  it('catches unexpected route render errors at the route boundary', () => {
+  it('denies an Admin from Learner routes without rendering Learner content or clearing session', async () => {
+    const { router, client } = renderAt('/learner', admin)
+    expect(screen.getByTestId('learner-forbidden')).toBeInTheDocument()
+    expect(screen.getByText('This area requires a Learner account.')).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Go to Admin Dashboard' })).toHaveAttribute('href', '/admin')
+    expect(screen.queryByText('Learner content')).not.toBeInTheDocument()
+    fireEvent.click(screen.getByRole('link', { name: 'Go to Admin Dashboard' }))
+    expect(await screen.findByText('Admin content')).toBeInTheDocument()
+    expect(router.state.location.pathname).toBe('/admin')
+    expect(client.getQueryData(queryKeys.authMe)).toEqual(admin)
+  })
+
+  it('shows a generic message and login recovery link for unexpected route render errors', () => {
     renderAt('/broken')
     expect(screen.getByTestId('route-error-boundary')).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'Something went wrong' })).toBeInTheDocument()
+    expect(screen.getByRole('alert')).toHaveTextContent(/^An unexpected error occurred\.$/)
+    expect(screen.getByRole('alert')).not.toHaveTextContent('unexpected render failure')
+    expect(screen.getByRole('link', { name: 'Return to Academy' })).toHaveAttribute('href', '/login')
+  })
+
+  it('does not expose route response status, statusText, or body details', async () => {
+    renderAt('/broken-response')
+    expect(await screen.findByTestId('route-error-boundary')).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'Something went wrong' })).toBeInTheDocument()
+    expect(screen.getByRole('alert')).toHaveTextContent(/^An unexpected error occurred\.$/)
+    expect(screen.getByRole('alert')).not.toHaveTextContent('418')
+    expect(screen.getByRole('alert')).not.toHaveTextContent('SYNTHETIC_STATUS_TEXT_MUST_NOT_BE_SHOWN')
+    expect(screen.getByRole('alert')).not.toHaveTextContent('SYNTHETIC_RESPONSE_BODY_MUST_NOT_BE_SHOWN')
+    const recoveryLink = screen.getByRole('link', { name: 'Return to Academy' })
+    expect(recoveryLink).toHaveAttribute('href', '/login')
+    fireEvent.click(recoveryLink)
+    expect(await screen.findByText('Login page')).toBeInTheDocument()
   })
 })

@@ -1,0 +1,38 @@
+{
+  "origin": "http://127.0.0.1:5173",
+  "checks": [
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/academy/fonts/fonts.css",
+      "status": 200
+    },
+    {
+      "path": "/academy/companions.png",
+      "status": 200
+    },
+    {
+      "path": "/academy/vocabulary-hsk1.png",
+      "status": 200
+    },
+    {
+      "path": "/src/app/layouts/LearnerLayout.tsx",
+      "status": 200
+    }
+  ],
+  "results": [
+    {
+      "width": 1440,
+      "font": "\"Noto Sans\", sans-serif",
+      "errors": []
+    },
+    {
+      "width": 390,
+      "font": "\"Noto Sans\", sans-serif",
+      "errors": []
+    }
+  ],
+  "authentication": "Real backend, no intercepted API calls"
+}

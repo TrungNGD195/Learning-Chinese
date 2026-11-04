@@ -1,40 +1,40 @@
 import { ApiError } from '../../lib/api/errors'
 
 const knownErrors: Record<string, string> = {
-  ADMIN_REQUIRED: 'Your account does not have Admin access.',
-  NOT_FOUND: 'This resource could not be found.',
-  INVALID_FIELDS: 'Check the submitted fields and try again.',
-  INVALID_CURRICULUM: 'The curriculum order is invalid.',
-  INVALID_CURRICULUM_TARGET: 'A curriculum item is no longer available.',
-  INVALID_LESSON: 'The lesson fields are invalid.',
-  LESSON_IMMUTABLE: 'This lesson can no longer be changed.',
-  LESSON_CONTENT_IMMUTABLE: 'Content cannot be changed for an archived lesson.',
-  LESSON_CONTENT_DETACH_DRAFT_ONLY: 'Content can only be detached from a draft lesson.',
-  ITEM_HAS_LEARNER_HISTORY: 'This item has learner history and cannot be detached.',
-  INVALID_ITEM_MODE: 'The selected content operation is invalid.',
-  INVALID_ASSESSMENT: 'The assessment fields are invalid.',
-  INVALID_ASSESSMENT_TARGET: 'Choose a valid lesson for this assessment.',
-  INVALID_ASSESSMENT_SCOPE: 'The assessment scope is invalid.',
-  ASSESSMENT_IMMUTABLE: 'This assessment can no longer be changed.',
-  ASSESSMENT_HAS_NO_QUESTIONS: 'Add at least one question before submitting for review.',
-  INVALID_LIFECYCLE_TRANSITION: 'The resource changed state. Its current state has been reloaded.',
-  INVALID_QUESTION: 'Check the question fields and try again.',
-  QUESTION_TYPE_IMMUTABLE: 'A question type cannot be changed after creation.',
-  QUESTIONS_IMMUTABLE: 'Questions cannot be changed for this assessment.',
-  QUESTION_HAS_HISTORY: 'This question has learner history and cannot be deleted.',
-  INVALID_REQUEST: 'Check the document metadata and eligibility fields.',
-  UNSUPPORTED_DOCUMENT_TYPE: 'Upload a PDF, DOCX, TXT, or MD file.',
-  DOCUMENT_TOO_LARGE: "The document exceeds the server's configured upload limit.",
-  EMPTY_DOCUMENT: 'The selected document is empty.',
-  INVALID_DOCUMENT_FILE: 'The selected file is invalid or does not match its declared format.',
-  DUPLICATE_DOCUMENT: 'An identical document has already been uploaded.',
-  RAW_STORAGE_FAILED: 'The document could not be stored. Retry when safe.',
-  PROCESSING_ALREADY_IN_PROGRESS: 'This document is already being processed.',
-  INVALID_SOURCE_STATE: 'The document state changed. Reloaded server state must be used.',
-  INGESTION_PROCESSING_FAILED: 'Processing failed. Reload the document before deciding whether to retry.',
-  DOCUMENT_NOT_PREVIEW_READY: 'A reviewable preview is not currently available.',
-  DOCUMENT_ALREADY_APPROVED: 'The document was already approved; refetching current state.',
-  KNOWLEDGE_BUILD_FAILED: 'The knowledge build could not be started or completed; current state is reloading.',
+  ADMIN_REQUIRED: "Tài khoản của bạn không có quyền quản trị.",
+  NOT_FOUND: "Không tìm thấy nội dung này.",
+  INVALID_FIELDS: "Kiểm tra các trường thông tin và thử lại.",
+  INVALID_CURRICULUM: "Thứ tự lộ trình không hợp lệ.",
+  INVALID_CURRICULUM_TARGET: "Một nội dung trong lộ trình không còn khả dụng.",
+  INVALID_LESSON: "Thông tin bài học không hợp lệ.",
+  LESSON_IMMUTABLE: "Bài học này không còn cho phép chỉnh sửa.",
+  LESSON_CONTENT_IMMUTABLE: "Không thể chỉnh sửa nội dung của bài học đã lưu trữ.",
+  LESSON_CONTENT_DETACH_DRAFT_ONLY: "Chỉ có thể gỡ nội dung khỏi bài học còn ở dạng nháp.",
+  ITEM_HAS_LEARNER_HISTORY: "Nội dung đã có lịch sử học tập nên không thể gỡ.",
+  INVALID_ITEM_MODE: "Thao tác với nội dung không hợp lệ.",
+  INVALID_ASSESSMENT: "Thông tin bài luyện tập không hợp lệ.",
+  INVALID_ASSESSMENT_TARGET: "Chọn bài học hợp lệ cho bài luyện tập này.",
+  INVALID_ASSESSMENT_SCOPE: "Phạm vi bài luyện tập không hợp lệ.",
+  ASSESSMENT_IMMUTABLE: "Bài luyện tập này không còn cho phép chỉnh sửa.",
+  ASSESSMENT_HAS_NO_QUESTIONS: "Thêm ít nhất một câu hỏi trước khi gửi duyệt.",
+  INVALID_LIFECYCLE_TRANSITION: "Trạng thái nội dung đã thay đổi. Hệ thống đã tải lại trạng thái hiện tại.",
+  INVALID_QUESTION: "Kiểm tra nội dung câu hỏi và thử lại.",
+  QUESTION_TYPE_IMMUTABLE: "Không thể đổi dạng câu hỏi sau khi tạo.",
+  QUESTIONS_IMMUTABLE: "Bài luyện tập này không cho phép chỉnh sửa câu hỏi.",
+  QUESTION_HAS_HISTORY: "Câu hỏi đã có lịch sử làm bài nên không thể xóa.",
+  INVALID_REQUEST: "Kiểm tra thông tin tài liệu và điều kiện sử dụng.",
+  UNSUPPORTED_DOCUMENT_TYPE: "Chọn tệp PDF, DOCX, TXT hoặc MD.",
+  DOCUMENT_TOO_LARGE: "Tài liệu vượt quá giới hạn dung lượng cho phép.",
+  EMPTY_DOCUMENT: "Tệp đã chọn không có nội dung.",
+  INVALID_DOCUMENT_FILE: "Tệp đã chọn không hợp lệ hoặc không đúng định dạng khai báo.",
+  DUPLICATE_DOCUMENT: "Tài liệu giống hệt đã được tải lên trước đó.",
+  RAW_STORAGE_FAILED: "Không thể lưu tài liệu. Vui lòng thử lại.",
+  PROCESSING_ALREADY_IN_PROGRESS: "Tài liệu đang được xử lý.",
+  INVALID_SOURCE_STATE: "Trạng thái tài liệu đã thay đổi. Vui lòng sử dụng trạng thái vừa tải lại.",
+  INGESTION_PROCESSING_FAILED: "Xử lý thất bại. Tải lại tài liệu trước khi thử lại.",
+  DOCUMENT_NOT_PREVIEW_READY: "Hiện chưa có bản xem trước để duyệt.",
+  DOCUMENT_ALREADY_APPROVED: "Tài liệu đã được duyệt. Đang tải lại trạng thái hiện tại.",
+  KNOWLEDGE_BUILD_FAILED: "Không thể tạo dữ liệu tra cứu. Đang tải lại trạng thái hiện tại.",
 }
 
 export function adminErrorText(error: unknown, fallback: string) {
@@ -43,7 +43,7 @@ export function adminErrorText(error: unknown, fallback: string) {
   if (error.status === 404 || error.code === 'NOT_FOUND') return knownErrors.NOT_FOUND
   const mappedMessage = knownErrors[error.code]
   if (mappedMessage) return mappedMessage
-  if (error.code === 'NETWORK_ERROR' || (error.status !== null && error.status >= 500)) return 'A temporary problem prevented this action. Please retry.'
+  if (error.code === 'NETWORK_ERROR' || (error.status !== null && error.status >= 500)) return "Có sự cố tạm thời. Vui lòng thử lại."
   return fallback
 }
 

@@ -2,6 +2,7 @@
 **/.venv/
 **/.venv-*/
 **/.uv-cache/
+**/.uv-cache-*/
 **/__pycache__/
 **/*.py[cod]
 **/.pytest_cache/
@@ -25,6 +26,28 @@
 
 # Local temporary artifacts
 /tmp/
+/frontend/coverage/
+/backend/coverage/
+**/.coverage
+**/.coverage.*
+**/htmlcov/
+**/.mypy_cache/
+**/.ruff_cache/
+**/*.tsbuildinfo
+
+# Installed agent tools and machine-specific hooks stay local.
+/.agents/
+/.codex/
+**/.impeccable/build/
+**/.impeccable/questions/
+**/.impeccable/hook.cache.json
+**/.impeccable/review/**/*.png
+**/.impeccable/review/**/*.log
+**/.impeccable/review/**/frontend-tests.json
+**/.impeccable/review/**/final-targeted*.json
+
+# Local textbook originals are not required to build or run the application.
+/docs/HSK*.pdf
 
 # Local runtime data: uploaded source files, parsed/transformed artifacts,
 # embeddings, caches, and test-generated evaluation storage.

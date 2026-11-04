@@ -23,6 +23,8 @@ async def get_curriculum(session: AsyncSession,user_id: UUID,hsk_id: UUID):
     units=[]
     for entry in states.get(hsk_id,[]):
         unit,lesson,assessment=entry["unit"],entry["lesson"],entry["assessment"]
+        if (lesson is not None and lesson.status == "DRAFT") or (assessment is not None and assessment.status in {"DRAFT", "REVIEW"}):
+            continue
         units.append({"id":unit.id,"order_index":unit.order_index,"unit_type":unit.unit_type,"state":entry["state"],
             "lesson":None if lesson is None else {"id":lesson.id,"lesson_number":lesson.lesson_number,"title":lesson.title,"status":lesson.status},
             "assessment":None if assessment is None else {"id":assessment.id,"title":assessment.title,"type":assessment.type,"status":assessment.status}})

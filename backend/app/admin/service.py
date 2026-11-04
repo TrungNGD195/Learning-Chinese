@@ -49,7 +49,7 @@ async def lesson_items(session, lesson_id, kind): return await curriculum_servic
 async def attach_item(session, lesson_id, kind, body): return await curriculum_service.admin_attach_item(session,lesson_id,kind,body)
 async def patch_item(session, lesson_id, link_id, kind, body): return await curriculum_service.admin_patch_item(session,lesson_id,link_id,kind,body)
 async def detach_item(session, lesson_id, link_id, kind): return await curriculum_service.admin_detach_item(session,lesson_id,link_id,kind)
-async def assessments(session, page=1, page_size=20, status=None, assessment_type=None): return await exercise_service.admin_assessments(session,page,page_size,status,assessment_type)
+async def assessments(session, page=1, page_size=20, status=None, assessment_type=None, lesson_id=None): return await exercise_service.admin_assessments(session,page,page_size,status,assessment_type,lesson_id)
 async def assessment_detail(session, assessment_id):
     assessment = await exercise_service.admin_get_assessment(session, assessment_id)
     if assessment is None: exercise_service.fail("NOT_FOUND", "Assessment was not found")

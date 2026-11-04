@@ -7,6 +7,7 @@ import { ApiError } from '../../lib/api/errors'
 import { authApi } from '../auth/api'
 import { useSession } from '../auth/session'
 import { getProgressOverview } from '../progress/api'
+import { Alert, Button, PageHeader, Surface } from '../../components/ui'
 
 export function ProfilePage() {
   const session = useSession()
@@ -44,36 +45,35 @@ export function ProfilePage() {
   }
 
   const user = session.user
-  return <section className="screen" aria-labelledby="page-title">
-    <h1 id="page-title">Profile</h1>
-    <div className="section-grid">
-      <section className="learning-card" aria-labelledby="identity-title">
-        <h2 id="identity-title">Account</h2>
+  return <section className="screen profile-page" aria-labelledby="page-title">
+    <PageHeader title="Profile" titleId="page-title" eyebrow="学习档案 · LEARNER PROFILE" description="Manage your account details and password." />
+    <div className="profile-sections">
+      <Surface as="section" className="profile-surface" aria-labelledby="identity-title">
+        <p className="profile-eyebrow">Account</p><h2 id="identity-title">Account details</h2>
         <dl className="profile-details"><dt>Full name</dt><dd>{user?.full_name}</dd><dt>Email</dt><dd>{user?.email}</dd></dl>
-      </section>
-      <section className="learning-card" aria-labelledby="progress-title">
-        <h2 id="progress-title">Learning progress</h2>
+      </Surface>
+      <Surface as="section" className="profile-surface" aria-labelledby="progress-title">
+        <p className="profile-eyebrow">Learning context</p><h2 id="progress-title">Learning progress</h2>
         {progressQuery.isPending && <p role="status">Loading progress…</p>}
-        {progressQuery.isError && !progressQuery.data && <><p role="alert">Could not load your progress summary.</p><button type="button" className="secondary-action" onClick={() => void progressQuery.refetch()}>Retry</button></>}
+        {progressQuery.isError && !progressQuery.data && <><Alert role="alert" tone="error">Could not load your progress summary.</Alert><Button className="secondary-action" onClick={() => void progressQuery.refetch()}>Retry</Button></>}
         {progressQuery.data && <>
-          {progressQuery.isFetching && <p role="status">Refreshing progress…</p>}
-          {progressQuery.isError && <p role="status">Could not refresh progress. Showing the last loaded summary.</p>}
-          <p>Current HSK: {progressQuery.data.current_hsk === null ? 'Not started yet' : `HSK ${progressQuery.data.current_hsk}`}</p>
-          <p>Overall progress: {progressQuery.data.progress_percentage}%</p>
+          {progressQuery.isFetching && <p className="profile-refresh" role="status">Refreshing progress…</p>}
+          {progressQuery.isError && <Alert role="status" tone="warning">Could not refresh progress. Showing the last loaded summary.</Alert>}
+          <div className="profile-learning-facts"><p>Current HSK: {progressQuery.data.current_hsk === null ? 'Not started yet' : `HSK ${progressQuery.data.current_hsk}`}</p><p>Overall progress: {progressQuery.data.progress_percentage}%</p></div>
         </>}
-      </section>
-      <section className="learning-card" aria-labelledby="password-title">
-        <h2 id="password-title">Change password</h2>
-        <form className="form-card" onSubmit={submit} noValidate>
-          <label className="form-field">Current password<input type="password" name="current_password" autoComplete="current-password" value={currentPassword} onChange={(event) => setCurrentPassword(event.target.value)} required /></label>
-          {currentPasswordError && <p className="field-error" role="alert">{currentPasswordError}</p>}
-          <label className="form-field">New password<input type="password" name="new_password" autoComplete="new-password" value={newPassword} onChange={(event) => setNewPassword(event.target.value)} required /></label>
-          {newPasswordError && <p className="field-error" role="alert">{newPasswordError}</p>}
-          <label className="form-field">Confirm new password<input type="password" name="confirm_password" autoComplete="new-password" value={confirmation} onChange={(event) => setConfirmation(event.target.value)} required /></label>
-          {formError && <p role="alert">{formError}</p>}
-          <button className="primary-action" type="submit" disabled={mutation.isPending}>{mutation.isPending ? 'Changing password…' : 'Change password'}</button>
+      </Surface>
+      <Surface as="section" className="profile-surface profile-security" aria-labelledby="password-title">
+        <p className="profile-eyebrow">Security</p><h2 id="password-title">Change password</h2>
+        <form className="profile-password-form" onSubmit={submit} noValidate>
+          <label className="profile-field">Current password<input type="password" name="current_password" autoComplete="current-password" value={currentPassword} onChange={(event) => setCurrentPassword(event.target.value)} required /></label>
+          {currentPasswordError && <Alert role="alert" tone="error">{currentPasswordError}</Alert>}
+          <label className="profile-field">New password<input type="password" name="new_password" autoComplete="new-password" value={newPassword} onChange={(event) => setNewPassword(event.target.value)} required /></label>
+          {newPasswordError && <Alert role="alert" tone="error">{newPasswordError}</Alert>}
+          <label className="profile-field">Confirm new password<input type="password" name="confirm_password" autoComplete="new-password" value={confirmation} onChange={(event) => setConfirmation(event.target.value)} required /></label>
+          {formError && <Alert role="alert" tone="error">{formError}</Alert>}
+          <Button variant="primary" type="submit" disabled={mutation.isPending}>{mutation.isPending ? 'Changing password…' : 'Change password'}</Button>
         </form>
-      </section>
+      </Surface>
     </div>
   </section>
 }

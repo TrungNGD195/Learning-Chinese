@@ -25,7 +25,11 @@ describe('frontend API security and transport boundary', () => {
   it('contains no Bearer token, token storage, or manual JWT decoding', async () => {
     const combined = applicationSources().map(([, contents]) => contents).join('\n')
     expect(combined).not.toMatch(/Authorization\s*[:=].{0,40}Bearer/i)
-    expect(combined).not.toMatch(/localStorage|sessionStorage/i)
+    const withoutReadingPreferences=applicationSources().filter(([path])=>!path.endsWith('/lib/readingPreferences.ts')).map(([,contents])=>contents).join('\n')
+    expect(withoutReadingPreferences).not.toMatch(/localStorage|sessionStorage/i)
+    const preferences=applicationSources().find(([path])=>path.endsWith('/lib/readingPreferences.ts'))?.[1]??''
+    expect(preferences).toContain("const key='chinese-learning.reading.v1'")
+    expect(preferences).not.toMatch(/token|password|authorization|lesson|score|progress|sessionStorage/i)
     expect(combined).not.toMatch(/\batob\s*\(|jwtDecode|decodeJwt|jwt-decode/i)
   })
 
@@ -41,7 +45,7 @@ describe('frontend API security and transport boundary', () => {
   })
 
   it('uses TanStack Query for server state without adding another state library', async () => {
-    const combined = applicationSources().map(([, contents]) => contents).join('\n')
+    const combined = applicationSources().filter(([path])=>!path.endsWith('/lib/readingPreferences.ts')).map(([, contents]) => contents).join('\n')
     expect(combined).toMatch(/@tanstack\/react-query/)
     expect(combined).toMatch(/\buseQuery\s*\(/)
     expect(combined).not.toMatch(/from\s+['"]redux['"]|from\s+['"]zustand['"]|@tanstack\/react-query-devtools/)

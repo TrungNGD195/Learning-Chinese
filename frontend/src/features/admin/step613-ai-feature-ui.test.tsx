@@ -60,12 +60,12 @@ function renderAdmin() {
 }
 
 async function openGenerationForm() {
-  fireEvent.click(await screen.findByRole('button', { name: 'Generate AI Draft' }))
-  expect(await screen.findByRole('heading', { name: 'Generate AI Draft' })).toBeInTheDocument()
+  fireEvent.click(await screen.findByRole('button', { name: "Tạo bản nháp bằng AI" }))
+  expect(await screen.findByRole('heading', { name: "Tạo bản nháp bằng AI" })).toBeInTheDocument()
 }
 
 async function fillCommonFields() {
-  fireEvent.change(screen.getByLabelText('Difficulty'), { target: { value: 'MEDIUM' } })
+  fireEvent.change(screen.getByLabelText("Độ khó"), { target: { value: 'MEDIUM' } })
 }
 
 describe('Step 6.13 AI feature UI integration', () => {
@@ -88,13 +88,13 @@ describe('Step 6.13 AI feature UI integration', () => {
     const invalidateQueries = vi.spyOn(queryClient, 'invalidateQueries')
     await openGenerationForm()
     await fillCommonFields()
-    fireEvent.change(screen.getByLabelText('Lesson', { selector: 'select' }), { target: { value: 'lesson-a' } })
-    fireEvent.change(screen.getByLabelText('Title (optional)'), { target: { value: '  Practice  ' } })
-    fireEvent.change(screen.getByLabelText('Question count'), { target: { value: '3' } })
-    await waitFor(() => expect(screen.getByRole('button', { name: 'Generate Draft' })).toBeEnabled())
-    fireEvent.click(screen.getByRole('button', { name: 'Generate Draft' }))
+    fireEvent.change(screen.getByLabelText("Bài học", { selector: 'select' }), { target: { value: 'lesson-a' } })
+    fireEvent.change(screen.getByLabelText("Tiêu đề (không bắt buộc)"), { target: { value: '  Practice  ' } })
+    fireEvent.change(screen.getByLabelText("Số câu hỏi"), { target: { value: '3' } })
+    await waitFor(() => expect(screen.getByRole('button', { name: "Tạo bản nháp" })).toBeEnabled())
+    fireEvent.click(screen.getByRole('button', { name: "Tạo bản nháp" }))
     await waitFor(() => expect(adminApi.generateAssessmentDraft).toHaveBeenCalledWith({
-      type: 'LESSON_EXERCISE', lesson_id: 'lesson-a', title: 'Practice', pass_threshold: 90,
+      type: 'LESSON_EXERCISE', lesson_id: 'lesson-a', title: 'Practice', pass_threshold: 80,
       question_count: 3, allowed_types: ['multiple_choice'], difficulty: 'MEDIUM',
     }))
     expect(adminApi.listLessonVocabulary).not.toHaveBeenCalled()
@@ -110,15 +110,15 @@ describe('Step 6.13 AI feature UI integration', () => {
     renderAdmin()
     await openGenerationForm()
     await fillCommonFields()
-    fireEvent.change(screen.getByLabelText('Lesson', { selector: 'select' }), { target: { value: 'lesson-a' } })
+    fireEvent.change(screen.getByLabelText("Bài học", { selector: 'select' }), { target: { value: 'lesson-a' } })
     const controlMap = [
-      ['Multiple Choice', 'multiple_choice'],
-      ['Fill in the Blank', 'fill_blank'],
-      ['Matching', 'matching'],
-      ['Reorder Sentence', 'reorder_sentence'],
-      ['Translate Vietnamese → Chinese', 'translate_vi_zh'],
-      ['Translate Chinese → Vietnamese', 'translate_zh_vi'],
-      ['Sentence Writing', 'sentence_writing'],
+      ["Chọn đáp án", 'multiple_choice'],
+      ["Điền vào chỗ trống", 'fill_blank'],
+      ["Nối cặp", 'matching'],
+      ["Sắp xếp câu", 'reorder_sentence'],
+      ["Dịch Việt → Trung", 'translate_vi_zh'],
+      ["Dịch Trung → Việt", 'translate_zh_vi'],
+      ["Viết câu", 'sentence_writing'],
     ] as const
     expect(screen.getAllByRole('checkbox')).toHaveLength(controlMap.length)
     for (const [label] of controlMap) {
@@ -129,8 +129,8 @@ describe('Step 6.13 AI feature UI integration', () => {
     expect(controlMap.map(([, canonicalValue]) => canonicalValue)).toEqual([
       'multiple_choice', 'fill_blank', 'matching', 'reorder_sentence', 'translate_vi_zh', 'translate_zh_vi', 'sentence_writing',
     ])
-    await waitFor(() => expect(screen.getByRole('button', { name: 'Generate Draft' })).toBeEnabled())
-    fireEvent.click(screen.getByRole('button', { name: 'Generate Draft' }))
+    await waitFor(() => expect(screen.getByRole('button', { name: "Tạo bản nháp" })).toBeEnabled())
+    fireEvent.click(screen.getByRole('button', { name: "Tạo bản nháp" }))
     await waitFor(() => expect(adminApi.generateAssessmentDraft).toHaveBeenCalledWith(expect.objectContaining({
       type: 'LESSON_EXERCISE', lesson_id: 'lesson-a',
       allowed_types: ['multiple_choice', 'fill_blank', 'matching', 'reorder_sentence', 'translate_vi_zh', 'translate_zh_vi', 'sentence_writing'],
@@ -141,12 +141,12 @@ describe('Step 6.13 AI feature UI integration', () => {
     renderAdmin()
     await openGenerationForm()
     await fillCommonFields()
-    fireEvent.change(screen.getByLabelText('Lesson', { selector: 'select' }), { target: { value: 'lesson-a' } })
-    const onlySelectedType = screen.getByLabelText('Multiple Choice')
+    fireEvent.change(screen.getByLabelText("Bài học", { selector: 'select' }), { target: { value: 'lesson-a' } })
+    const onlySelectedType = screen.getByLabelText("Chọn đáp án")
     expect(onlySelectedType).toBeChecked()
     fireEvent.click(onlySelectedType)
     expect(onlySelectedType).not.toBeChecked()
-    expect(screen.getByRole('button', { name: 'Generate Draft' })).toBeDisabled()
+    expect(screen.getByRole('button', { name: "Tạo bản nháp" })).toBeDisabled()
     expect(adminApi.generateAssessmentDraft).not.toHaveBeenCalled()
   })
 
@@ -154,9 +154,9 @@ describe('Step 6.13 AI feature UI integration', () => {
     renderAdmin()
     await openGenerationForm()
     await fillCommonFields()
-    fireEvent.change(screen.getByLabelText('Lesson', { selector: 'select' }), { target: { value: 'lesson-a' } })
-    fireEvent.change(screen.getByLabelText('Pass threshold'), { target: { value: String(threshold) } })
-    expect(screen.getByRole('button', { name: 'Generate Draft' })).toBeDisabled()
+    fireEvent.change(screen.getByLabelText("Bài học", { selector: 'select' }), { target: { value: 'lesson-a' } })
+    fireEvent.change(screen.getByLabelText("Điểm đạt (%)"), { target: { value: String(threshold) } })
+    expect(screen.getByRole('button', { name: "Tạo bản nháp" })).toBeDisabled()
     expect(adminApi.generateAssessmentDraft).not.toHaveBeenCalled()
   })
 
@@ -164,23 +164,23 @@ describe('Step 6.13 AI feature UI integration', () => {
     renderAdmin()
     await openGenerationForm()
     await fillCommonFields()
-    fireEvent.change(screen.getByLabelText('Lesson', { selector: 'select' }), { target: { value: 'lesson-a' } })
-    fireEvent.change(screen.getByLabelText('Pass threshold'), { target: { value: String(threshold) } })
-    await waitFor(() => expect(screen.getByRole('button', { name: 'Generate Draft' })).toBeEnabled())
-    fireEvent.click(screen.getByRole('button', { name: 'Generate Draft' }))
+    fireEvent.change(screen.getByLabelText("Bài học", { selector: 'select' }), { target: { value: 'lesson-a' } })
+    fireEvent.change(screen.getByLabelText("Điểm đạt (%)"), { target: { value: String(threshold) } })
+    await waitFor(() => expect(screen.getByRole('button', { name: "Tạo bản nháp" })).toBeEnabled())
+    fireEvent.click(screen.getByRole('button', { name: "Tạo bản nháp" }))
     await waitFor(() => expect(adminApi.generateAssessmentDraft).toHaveBeenCalledWith(expect.objectContaining({ pass_threshold: threshold })))
   })
 
   it('requires a difficulty, then accepts a valid choice when the remaining scope is valid', async () => {
     renderAdmin()
     await openGenerationForm()
-    fireEvent.change(screen.getByLabelText('Lesson', { selector: 'select' }), { target: { value: 'lesson-a' } })
-    expect(screen.getByLabelText('Difficulty')).toHaveValue('')
-    expect(screen.getByRole('button', { name: 'Generate Draft' })).toBeDisabled()
+    fireEvent.change(screen.getByLabelText("Bài học", { selector: 'select' }), { target: { value: 'lesson-a' } })
+    expect(screen.getByLabelText("Độ khó")).toHaveValue('')
+    expect(screen.getByRole('button', { name: "Tạo bản nháp" })).toBeDisabled()
     expect(adminApi.generateAssessmentDraft).not.toHaveBeenCalled()
-    fireEvent.change(screen.getByLabelText('Difficulty'), { target: { value: 'EASY' } })
-    await waitFor(() => expect(screen.getByRole('button', { name: 'Generate Draft' })).toBeEnabled())
-    fireEvent.click(screen.getByRole('button', { name: 'Generate Draft' }))
+    fireEvent.change(screen.getByLabelText("Độ khó"), { target: { value: 'EASY' } })
+    await waitFor(() => expect(screen.getByRole('button', { name: "Tạo bản nháp" })).toBeEnabled())
+    fireEvent.click(screen.getByRole('button', { name: "Tạo bản nháp" }))
     await waitFor(() => expect(adminApi.generateAssessmentDraft).toHaveBeenCalledWith(expect.objectContaining({ difficulty: 'EASY' })))
   })
 
@@ -188,9 +188,9 @@ describe('Step 6.13 AI feature UI integration', () => {
     renderAdmin()
     await openGenerationForm()
     await fillCommonFields()
-    fireEvent.change(screen.getByLabelText('Lesson', { selector: 'select' }), { target: { value: 'lesson-a' } })
-    await waitFor(() => expect(screen.getByRole('button', { name: 'Generate Draft' })).toBeEnabled())
-    fireEvent.click(screen.getByRole('button', { name: 'Generate Draft' }))
+    fireEvent.change(screen.getByLabelText("Bài học", { selector: 'select' }), { target: { value: 'lesson-a' } })
+    await waitFor(() => expect(screen.getByRole('button', { name: "Tạo bản nháp" })).toBeEnabled())
+    fireEvent.click(screen.getByRole('button', { name: "Tạo bản nháp" }))
     await waitFor(() => expect(adminApi.generateAssessmentDraft).toHaveBeenCalled())
     const request = vi.mocked(adminApi.generateAssessmentDraft).mock.calls[0][0]
     expect(request).not.toHaveProperty('title')
@@ -201,22 +201,22 @@ describe('Step 6.13 AI feature UI integration', () => {
   it('loads content only for selected Lessons and sends canonical entity IDs for Periodic Test', async () => {
     const { router } = renderAdmin()
     await openGenerationForm()
-    fireEvent.change(screen.getByLabelText('Assessment type'), { target: { value: 'PERIODIC_TEST' } })
+    fireEvent.change(screen.getByLabelText("Loại bài luyện tập"), { target: { value: 'PERIODIC_TEST' } })
     await fillCommonFields()
-    fireEvent.click(await screen.findByLabelText(/HSK 1 · Lesson 1 · Greetings/))
+    fireEvent.click(await screen.findByLabelText(/HSK 1 · Bài 1 · Greetings/))
     await screen.findByLabelText(/你好 \(nǐ hǎo\)/)
     expect(adminApi.listLessonVocabulary).toHaveBeenCalledTimes(1)
     expect(adminApi.listLessonVocabulary).toHaveBeenCalledWith('lesson-a')
     expect(adminApi.listLessonVocabulary).not.toHaveBeenCalledWith('lesson-b')
 
-    fireEvent.click(await screen.findByLabelText(/HSK 1 · Lesson 2 · Names/))
+    fireEvent.click(await screen.findByLabelText(/HSK 1 · Bài 2 · Names/))
     const sharedItem = await screen.findByLabelText(/你好 \(nǐ hǎo\)/)
     expect(screen.getAllByLabelText(/你好 \(nǐ hǎo\)/)).toHaveLength(1)
     fireEvent.click(sharedItem)
     fireEvent.click(screen.getByLabelText(/A 叫 B/))
     fireEvent.click(screen.getByLabelText(/吗 question/))
-    await waitFor(() => expect(screen.getByRole('button', { name: 'Generate Draft' })).toBeEnabled())
-    fireEvent.click(screen.getByRole('button', { name: 'Generate Draft' }))
+    await waitFor(() => expect(screen.getByRole('button', { name: "Tạo bản nháp" })).toBeEnabled())
+    fireEvent.click(screen.getByRole('button', { name: "Tạo bản nháp" }))
 
     await waitFor(() => expect(adminApi.generateAssessmentDraft).toHaveBeenCalledWith({
       type: 'PERIODIC_TEST', lesson_ids: ['lesson-a', 'lesson-b'], vocabulary_ids: ['vocab-shared'],
@@ -238,15 +238,15 @@ describe('Step 6.13 AI feature UI integration', () => {
     }])
     renderAdmin()
     await openGenerationForm()
-    fireEvent.change(screen.getByLabelText('Assessment type'), { target: { value: 'PERIODIC_TEST' } })
+    fireEvent.change(screen.getByLabelText("Loại bài luyện tập"), { target: { value: 'PERIODIC_TEST' } })
     await fillCommonFields()
-    fireEvent.click(await screen.findByLabelText(/HSK 1 · Lesson 1 · Greetings/))
-    fireEvent.click(await screen.findByLabelText(/HSK 1 · Lesson 2 · Names/))
+    fireEvent.click(await screen.findByLabelText(/HSK 1 · Bài 1 · Greetings/))
+    fireEvent.click(await screen.findByLabelText(/HSK 1 · Bài 2 · Names/))
     const sharedGrammar = await screen.findByLabelText(/Shared Grammar/)
     expect(screen.getAllByLabelText(/Shared Grammar/)).toHaveLength(1)
     fireEvent.click(sharedGrammar)
-    await waitFor(() => expect(screen.getByRole('button', { name: 'Generate Draft' })).toBeEnabled())
-    fireEvent.click(screen.getByRole('button', { name: 'Generate Draft' }))
+    await waitFor(() => expect(screen.getByRole('button', { name: "Tạo bản nháp" })).toBeEnabled())
+    fireEvent.click(screen.getByRole('button', { name: "Tạo bản nháp" }))
     await waitFor(() => expect(adminApi.generateAssessmentDraft).toHaveBeenCalledWith(expect.objectContaining({
       lesson_ids: ['lesson-a', 'lesson-b'], vocabulary_ids: [], grammar_ids: ['grammar-shared'],
     })))
@@ -265,9 +265,9 @@ describe('Step 6.13 AI feature UI integration', () => {
     const { router } = renderAdmin()
     await openGenerationForm()
     await fillCommonFields()
-    fireEvent.change(screen.getByLabelText('Lesson', { selector: 'select' }), { target: { value: 'lesson-a' } })
-    await waitFor(() => expect(screen.getByRole('button', { name: 'Generate Draft' })).toBeEnabled())
-    fireEvent.click(screen.getByRole('button', { name: 'Generate Draft' }))
+    fireEvent.change(screen.getByLabelText("Bài học", { selector: 'select' }), { target: { value: 'lesson-a' } })
+    await waitFor(() => expect(screen.getByRole('button', { name: "Tạo bản nháp" })).toBeEnabled())
+    fireEvent.click(screen.getByRole('button', { name: "Tạo bản nháp" }))
     await waitFor(() => expect(router.state.location.pathname).toBe('/admin/assessments/canonical-question-read-id'))
     await waitFor(() => expect(adminApi.listAssessmentQuestions).toHaveBeenCalledWith('canonical-question-read-id'))
     expect(screen.queryByText('Response-only question must not act as editor authority')).not.toBeInTheDocument()
@@ -279,11 +279,11 @@ describe('Step 6.13 AI feature UI integration', () => {
     vi.mocked(adminApi.listLessonVocabulary).mockImplementationOnce(() => pendingVocabulary.promise)
     renderAdmin()
     await openGenerationForm()
-    fireEvent.change(screen.getByLabelText('Assessment type'), { target: { value: 'PERIODIC_TEST' } })
+    fireEvent.change(screen.getByLabelText("Loại bài luyện tập"), { target: { value: 'PERIODIC_TEST' } })
     await fillCommonFields()
-    fireEvent.click(await screen.findByLabelText(/HSK 1 · Lesson 1 · Greetings/))
-    expect(await screen.findByText(/Loading selected Lesson content/)).toBeInTheDocument()
-    expect(screen.getByRole('button', { name: 'Generate Draft' })).toBeDisabled()
+    fireEvent.click(await screen.findByLabelText(/HSK 1 · Bài 1 · Greetings/))
+    expect(await screen.findByText(/Đang tải nội dung bài học đã chọn/)).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: "Tạo bản nháp" })).toBeDisabled()
     expect(adminApi.generateAssessmentDraft).not.toHaveBeenCalled()
     pendingVocabulary.resolve(vocabularyA)
     expect(await screen.findByLabelText(/你好/)).toBeInTheDocument()
@@ -293,17 +293,17 @@ describe('Step 6.13 AI feature UI integration', () => {
   it('prunes content IDs that no longer belong to selected Lessons', async () => {
     renderAdmin()
     await openGenerationForm()
-    fireEvent.change(screen.getByLabelText('Assessment type'), { target: { value: 'PERIODIC_TEST' } })
+    fireEvent.change(screen.getByLabelText("Loại bài luyện tập"), { target: { value: 'PERIODIC_TEST' } })
     await fillCommonFields()
-    fireEvent.click(await screen.findByLabelText(/HSK 1 · Lesson 1 · Greetings/))
-    fireEvent.click(await screen.findByLabelText(/HSK 1 · Lesson 2 · Names/))
+    fireEvent.click(await screen.findByLabelText(/HSK 1 · Bài 1 · Greetings/))
+    fireEvent.click(await screen.findByLabelText(/HSK 1 · Bài 2 · Names/))
     fireEvent.click(await screen.findByLabelText(/再见/))
     fireEvent.click(screen.getByLabelText(/A 叫 B/))
-    fireEvent.click(screen.getByLabelText(/HSK 1 · Lesson 1 · Greetings/))
+    fireEvent.click(screen.getByLabelText(/HSK 1 · Bài 1 · Greetings/))
     fireEvent.click(await screen.findByLabelText(/你好 \(nǐ hǎo\)/))
     fireEvent.click(screen.getByLabelText(/吗 question/))
-    await waitFor(() => expect(screen.getByRole('button', { name: 'Generate Draft' })).toBeEnabled())
-    fireEvent.click(screen.getByRole('button', { name: 'Generate Draft' }))
+    await waitFor(() => expect(screen.getByRole('button', { name: "Tạo bản nháp" })).toBeEnabled())
+    fireEvent.click(screen.getByRole('button', { name: "Tạo bản nháp" }))
     await waitFor(() => expect(adminApi.generateAssessmentDraft).toHaveBeenCalledWith(expect.objectContaining({
       type: 'PERIODIC_TEST', lesson_ids: ['lesson-b'], vocabulary_ids: ['vocab-shared'], grammar_ids: ['grammar-b'],
     })))
@@ -315,17 +315,17 @@ describe('Step 6.13 AI feature UI integration', () => {
     renderAdmin()
     await openGenerationForm()
     await fillCommonFields()
-    fireEvent.change(screen.getByLabelText('Lesson', { selector: 'select' }), { target: { value: 'lesson-a' } })
-    fireEvent.change(screen.getByLabelText('Question count'), { target: { value: '11' } })
-    expect(screen.getByRole('button', { name: 'Generate Draft' })).toBeDisabled()
-    fireEvent.change(screen.getByLabelText('Question count'), { target: { value: '1' } })
-    await waitFor(() => expect(screen.getByRole('button', { name: 'Generate Draft' })).toBeEnabled())
-    fireEvent.click(screen.getByRole('button', { name: 'Generate Draft' }))
-    expect(await screen.findByRole('button', { name: 'Generating draft…' })).toBeDisabled()
-    fireEvent.click(screen.getByRole('button', { name: 'Close AI Draft Form' }))
+    fireEvent.change(screen.getByLabelText("Bài học", { selector: 'select' }), { target: { value: 'lesson-a' } })
+    fireEvent.change(screen.getByLabelText("Số câu hỏi"), { target: { value: '11' } })
+    expect(screen.getByRole('button', { name: "Tạo bản nháp" })).toBeDisabled()
+    fireEvent.change(screen.getByLabelText("Số câu hỏi"), { target: { value: '1' } })
+    await waitFor(() => expect(screen.getByRole('button', { name: "Tạo bản nháp" })).toBeEnabled())
+    fireEvent.click(screen.getByRole('button', { name: "Tạo bản nháp" }))
+    expect(await screen.findByRole('button', { name: "Đang tạo bản nháp…" })).toBeDisabled()
+    fireEvent.click(screen.getByRole('button', { name: "Đóng tạo bản nháp bằng AI" }))
     expect(adminApi.generateAssessmentDraft).toHaveBeenCalledTimes(1)
     resolveGeneration(generatedResult('canonical-editor-id'))
-    expect(await screen.findByRole('heading', { name: 'Admin Assessment Editor' })).toBeInTheDocument()
+    expect(await screen.findByRole('heading', { name: 'Generated test' })).toBeInTheDocument()
     await waitFor(() => expect(adminApi.getAdminAssessment).toHaveBeenCalledWith('canonical-editor-id'))
   })
 
@@ -336,27 +336,27 @@ describe('Step 6.13 AI feature UI integration', () => {
     renderAdmin()
     await openGenerationForm()
     await fillCommonFields()
-    fireEvent.change(screen.getByLabelText('Lesson', { selector: 'select' }), { target: { value: 'lesson-a' } })
-    fireEvent.change(screen.getByLabelText('Title (optional)'), { target: { value: 'Keep this title' } })
-    await waitFor(() => expect(screen.getByRole('button', { name: 'Generate Draft' })).toBeEnabled())
-    fireEvent.click(screen.getByRole('button', { name: 'Generate Draft' }))
-    expect(await screen.findByRole('alert')).toHaveTextContent('AI generation is temporarily unavailable. You can explicitly retry.')
+    fireEvent.change(screen.getByLabelText("Bài học", { selector: 'select' }), { target: { value: 'lesson-a' } })
+    fireEvent.change(screen.getByLabelText("Tiêu đề (không bắt buộc)"), { target: { value: 'Keep this title' } })
+    await waitFor(() => expect(screen.getByRole('button', { name: "Tạo bản nháp" })).toBeEnabled())
+    fireEvent.click(screen.getByRole('button', { name: "Tạo bản nháp" }))
+    expect(await screen.findByRole('alert')).toHaveTextContent("Tính năng tạo đề bằng AI tạm thời không khả dụng. Bạn có thể thử lại.")
     expect(screen.getByRole('alert')).not.toHaveTextContent('raw provider detail')
-    expect(screen.getByLabelText('Title (optional)')).toHaveValue('Keep this title')
+    expect(screen.getByLabelText("Tiêu đề (không bắt buộc)")).toHaveValue('Keep this title')
     expect(adminApi.generateAssessmentDraft).toHaveBeenCalledTimes(1)
-    fireEvent.click(screen.getByRole('button', { name: 'Generate Draft' }))
-    expect(await screen.findByRole('heading', { name: 'Admin Assessment Editor' })).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: "Tạo bản nháp" }))
+    expect(await screen.findByRole('heading', { name: 'Generated test' })).toBeInTheDocument()
     expect(adminApi.generateAssessmentDraft).toHaveBeenCalledTimes(2)
   })
 
   it.each([
-    ['INVALID_REQUEST', 422, 'Check the generation settings and try again.'],
-    ['INVALID_GENERATION_SCOPE', 422, 'Review the selected Lessons, Vocabulary, and Grammar, then try again.'],
-    ['AI_GENERATION_INPUT_TOO_LARGE', 422, 'The selected generation scope is too large. Reduce the selected Lessons or content items.'],
-    ['AI_GENERATION_INVALID_OUTPUT', 502, 'AI generation returned an invalid result. Review the settings and explicitly retry.'],
-    ['AI_GENERATION_UNAVAILABLE', 503, 'AI generation is temporarily unavailable. You can explicitly retry.'],
-    ['AI_GENERATION_PERSISTENCE_FAILED', 500, 'The generated draft could not be saved. No draft was created; you can explicitly retry.'],
-    ['ADMIN_REQUIRED', 403, 'Your account does not have Admin access.'],
+    ['INVALID_REQUEST', 422, "Kiểm tra thiết lập tạo đề và thử lại."],
+    ['INVALID_GENERATION_SCOPE', 422, "Kiểm tra bài học, từ vựng và ngữ pháp đã chọn rồi thử lại."],
+    ['AI_GENERATION_INPUT_TOO_LARGE', 422, "Phạm vi tạo đề quá lớn. Hãy giảm số bài học hoặc mục nội dung đã chọn."],
+    ['AI_GENERATION_INVALID_OUTPUT', 502, "AI trả về nội dung chưa hợp lệ. Kiểm tra thiết lập rồi thử tạo lại."],
+    ['AI_GENERATION_UNAVAILABLE', 503, "Tính năng tạo đề bằng AI tạm thời không khả dụng. Bạn có thể thử lại."],
+    ['AI_GENERATION_PERSISTENCE_FAILED', 500, "Không thể lưu đề vừa tạo. Chưa có bản nháp mới; bạn có thể thử lại."],
+    ['ADMIN_REQUIRED', 403, "Tài khoản của bạn không có quyền quản trị."],
   ])('maps %s to safe UI text without automatic replay', async (code, status, message) => {
     vi.mocked(adminApi.generateAssessmentDraft).mockRejectedValueOnce(new ApiError({
       status, code, message: 'private provider detail', details: { trace: 'private' },
@@ -364,9 +364,9 @@ describe('Step 6.13 AI feature UI integration', () => {
     renderAdmin()
     await openGenerationForm()
     await fillCommonFields()
-    fireEvent.change(screen.getByLabelText('Lesson', { selector: 'select' }), { target: { value: 'lesson-a' } })
-    await waitFor(() => expect(screen.getByRole('button', { name: 'Generate Draft' })).toBeEnabled())
-    fireEvent.click(screen.getByRole('button', { name: 'Generate Draft' }))
+    fireEvent.change(screen.getByLabelText("Bài học", { selector: 'select' }), { target: { value: 'lesson-a' } })
+    await waitFor(() => expect(screen.getByRole('button', { name: "Tạo bản nháp" })).toBeEnabled())
+    fireEvent.click(screen.getByRole('button', { name: "Tạo bản nháp" }))
     const alert = await screen.findByRole('alert')
     expect(alert).toHaveTextContent(message)
     expect(alert).not.toHaveTextContent('private provider detail')
@@ -380,18 +380,18 @@ describe('Step 6.13 AI feature UI integration', () => {
       .mockResolvedValue(vocabularyA)
     renderAdmin()
     await openGenerationForm()
-    fireEvent.change(screen.getByLabelText('Assessment type'), { target: { value: 'PERIODIC_TEST' } })
+    fireEvent.change(screen.getByLabelText("Loại bài luyện tập"), { target: { value: 'PERIODIC_TEST' } })
     await fillCommonFields()
-    fireEvent.click(await screen.findByLabelText(/HSK 1 · Lesson 1 · Greetings/))
-    expect(await screen.findByRole('alert')).toHaveTextContent('Could not load Vocabulary for the selected Lesson.')
-    expect(screen.getByLabelText(/HSK 1 · Lesson 1 · Greetings/)).toBeChecked()
-    expect(screen.getByRole('button', { name: 'Generate Draft' })).toBeDisabled()
-    fireEvent.click(screen.getByRole('button', { name: 'Retry Vocabulary' }))
+    fireEvent.click(await screen.findByLabelText(/HSK 1 · Bài 1 · Greetings/))
+    expect(await screen.findByRole('alert')).toHaveTextContent("Không thể tải từ vựng của bài học đã chọn.")
+    expect(screen.getByLabelText(/HSK 1 · Bài 1 · Greetings/)).toBeChecked()
+    expect(screen.getByRole('button', { name: "Tạo bản nháp" })).toBeDisabled()
+    fireEvent.click(screen.getByRole('button', { name: "Thử tải lại từ vựng" }))
     expect(await screen.findByLabelText(/你好 \(nǐ hǎo\)/)).toBeInTheDocument()
-    expect(screen.getByRole('button', { name: 'Generate Draft' })).toBeDisabled()
+    expect(screen.getByRole('button', { name: "Tạo bản nháp" })).toBeDisabled()
     fireEvent.click(screen.getByLabelText(/你好 \(nǐ hǎo\)/))
-    fireEvent.click(screen.getByRole('button', { name: 'Generate Draft' }))
-    expect(await screen.findByRole('heading', { name: 'Admin Assessment Editor' })).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: "Tạo bản nháp" }))
+    expect(await screen.findByRole('heading', { name: 'Generated test' })).toBeInTheDocument()
     expect(adminApi.listLessonGrammar).toHaveBeenCalledWith('lesson-a')
   })
 })

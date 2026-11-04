@@ -12,28 +12,29 @@ import {
 } from '../../features/auth/PublicPages'
 import { DashboardPage } from '../../features/dashboard/DashboardPage'
 import { PronunciationPage } from '../../features/pronunciation/PronunciationPage'
+import { PronunciationLessonPage } from '../../features/pronunciation/PronunciationLessonPage'
 import { HskCurriculumPage } from '../../features/curriculum/HskCurriculumPage'
 import { LessonPage } from '../../features/lesson/LessonPage'
 import { AssessmentPage } from '../../features/assessment/AssessmentPage'
 import { AssessmentResultPage } from '../../features/assessment/AssessmentResultPage'
-import { ProgressPage } from '../../features/progress/ProgressPage'
 import { HistoryPage } from '../../features/history/HistoryPage'
 import { ProfilePage } from '../../features/profile/ProfilePage'
+import { CompanionsPage } from '../../features/profile/CompanionsPage'
 import { AdminDocumentsPage } from '../../features/admin/documents/AdminDocumentsPage'
 import { AdminDocumentDetailPage } from '../../features/admin/documents/AdminDocumentDetailPage'
 import { AdminDashboardPage } from '../../features/admin/AdminDashboardPage'
+import { AdminStatsPage } from '../../features/admin/AdminStatsPage'
 import { AdminCurriculumPage } from '../../features/admin/AdminCurriculumPage'
 import { AdminLessonsPage } from '../../features/admin/AdminLessonsPage'
 import { AdminLessonEditorPage } from '../../features/admin/AdminLessonEditorPage'
 import { AdminAssessmentsPage, AdminAssessmentEditorPage } from '../../features/admin/AdminAssessmentsPage'
-import { AdminStatsPage } from '../../features/admin/AdminStatsPage'
 import { AdminRoute, ProtectedRoute, PublicAuthRoute } from './RouteGuards'
 import { RouteErrorBoundary } from '../RouteErrorBoundary'
 
 export function createAppRoutes(): RouteObject[] {
   return [
     { element: <Outlet />, errorElement: <RouteErrorBoundary />, children: [
-    { path: '/', loader: () => redirect('/dashboard') },
+    { path: '/', loader: () => redirect('/login') },
     {
       element: <PublicLayout />,
       children: [
@@ -51,6 +52,7 @@ export function createAppRoutes(): RouteObject[] {
         { element: <LearnerLayout />, children: [
         { path: '/dashboard', element: <DashboardPage /> },
         { path: '/pronunciation', element: <PronunciationPage /> },
+        { path: '/pronunciation/lesson', element: <PronunciationLessonPage /> },
         { path: '/hsk/:hskLevel', element: <HskCurriculumPage /> },
         { path: '/lessons/:lessonId', element: <LessonPage /> },
         { path: '/assessments/:assessmentId', element: <AssessmentPage /> },
@@ -58,9 +60,10 @@ export function createAppRoutes(): RouteObject[] {
           path: '/assessment-attempts/:attemptId/result',
           element: <AssessmentResultPage />,
         },
-        { path: '/progress', element: <ProgressPage /> },
+        { path: '/progress', loader: () => redirect('/pronunciation') },
         { path: '/history', element: <HistoryPage /> },
         { path: '/profile', element: <ProfilePage /> },
+        { path: '/companions', element: <CompanionsPage /> },
         ] },
       ],
     },

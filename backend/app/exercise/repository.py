@@ -114,10 +114,11 @@ async def admin_list_assessments(session:AsyncSession,status=None,assessment_typ
     return (await session.execute(statement)).scalars().all()
 
 
-async def admin_assessments_page(session:AsyncSession,page:int,page_size:int,status=None,assessment_type=None):
+async def admin_assessments_page(session:AsyncSession,page:int,page_size:int,status=None,assessment_type=None,lesson_id=None):
     filters=[]
     if status:filters.append(Assessment.status==status)
     if assessment_type:filters.append(Assessment.type==assessment_type)
+    if lesson_id:filters.append(Assessment.lesson_id==lesson_id)
     total=(await session.execute(select(func.count()).select_from(Assessment).where(*filters))).scalar_one()
     rows=(await session.execute(select(Assessment).where(*filters).order_by(Assessment.created_at,Assessment.id)
         .offset((page-1)*page_size).limit(page_size))).scalars().all()
@@ -125,6 +126,8 @@ async def admin_assessments_page(session:AsyncSession,page:int,page_size:int,sta
 
 
 async def admin_create_assessment(session:AsyncSession,fields:dict):
+    from app.exercise.policy import default_pass_threshold
+    fields={"pass_threshold":default_pass_threshold(fields["type"]),**fields}
     row=Assessment(**fields,status="DRAFT");session.add(row);await session.flush();return row
 
 

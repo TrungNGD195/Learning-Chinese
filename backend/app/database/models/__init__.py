@@ -10,6 +10,7 @@ from app.database.models.curriculum import (
     CurriculumUnit,
     PronunciationSection,
     PronunciationProgress,
+    PronunciationLessonProgress,
     Vocabulary,
     LessonVocabulary,
     Grammar,

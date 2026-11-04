@@ -18,6 +18,7 @@ from app.database.models import (
     Lesson,
     Message,
     PronunciationProgress,
+    PronunciationLessonProgress,
     PronunciationSection,
     User,
 )
@@ -71,6 +72,9 @@ async def seed_user_lesson(*, accessible: bool = True, completed: bool = False) 
         ))
         if accessible:
             now = datetime.now(UTC)
+            session.add(PronunciationLessonProgress(
+                user_id=user_id, section_index=3, step_index=0, completed_at=now,
+            ))
             session.add_all([
                 PronunciationProgress(
                     user_id=user_id,
@@ -106,6 +110,9 @@ async def seed_user_for_lesson(lesson_id: UUID) -> UUID:
         ))
         await session.flush()
         now = datetime.now(UTC)
+        session.add(PronunciationLessonProgress(
+            user_id=user_id, section_index=3, step_index=0, completed_at=now,
+        ))
         session.add_all([
             PronunciationProgress(
                 user_id=user_id,

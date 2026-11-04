@@ -1,0 +1,33 @@
+{
+    "asset":  "vocabulary-hsk1.png",
+    "tool":  "image_gen.imagegen",
+    "mode":  "built-in",
+    "source":  "C:/Users/Diep_PC/.codex/generated_images/01a1a0c6-9753-73c1-81b9-a79559c8a581/exec-498f739f-870d-4bdf-b9e3-53b8aac73076.png",
+    "source_preserved":  true,
+    "reference_image":  "vocabulary.png",
+    "reference_role":  "style reference only",
+    "prompt_file":  "vocabulary-hsk1.prompt.txt",
+    "prompt":  "Use case: scientific-educational\nAsset type: production vocabulary illustration atlas for a Chinese learning academy.\nPrimary request: Create ONE new landscape 3:2 image containing a precise invisible 3-column by 2-row grid of SIX equal SQUARE cells. Use the attached existing atlas ONLY as a style reference, and replace all subjects with the six subjects specified below. Match its refined dimensional painted gouache, tactile brush strokes, softly modelled realistic forms, warm natural light, muted sage/terracotta palette and inviting adult educational tone.\nBackground: continuous flat warm ivory #fff5df, no cell frames or separator lines. Keep every scene fully within its own equal square cell, at least 10% empty margin on all four edges of EACH cell. Exactly centered cell positions; no subject or scenery crossing a cell boundary. Full canvas 1536x1024 or equivalent exact 3:2 proportions.\nCell mapping, reading order, positions are mandatory:\nTOP LEFT: isolated anatomical human mouth closeup, just friendly neutral natural lips with teeth barely visible through a slight opening. Tasteful educational mouth study, soft warm skin around lips, NO entire face, no nose, no eyes. This cell teaches mouth.\nTOP CENTER: ONE calm chestnut horse, full body including all four legs and hooves, standing in a side three-quarter pose, subtly warm ground shadow, no rider, no tack, no extra animals. This cell teaches horse.\nTOP RIGHT: ONE friendly adult woman, waist-up portrait, sage green blouse, warm natural expression, neatly arranged dark hair. This cell teaches woman.\nBOTTOM LEFT: two matching-design ceramic vases side by side: the left vase clearly much larger and taller than the right vase, same muted sage glaze and shape, visibly and unambiguously a size comparison. No decorative objects. This cell teaches big.\nBOTTOM CENTER: ONE bright WHITE porcelain plate, slightly tilted face-on on a small piece of muted beige cloth. Plate is unmistakably white with restrained soft gray dimensional shading and luminous white highlights; neutral warm backdrop gives enough contrast to read white. This cell teaches white.\nBOTTOM RIGHT: TWO diverse friendly adults greeting each other by raising a hand in a natural wave, smiling warmly, one sage top and one terracotta top, in a tiny simply suggested Chinese courtyard with minimal warm paving and one small green plant. Clearly greeting each other, full gestures visible. Courtyard details stay inside this one cell. This cell teaches hello.\nConstraints: precisely six cells; all subjects listed above exactly once in the specified order; no additional subjects. No text, Chinese characters, Latin letters, captions, numbers, pseudowriting, labels, frames, logos, watermark, mascot or dragon. Do not reproduce any tea, water glass, book, mountains or previous atlas subjects. Keep artwork generous and legible at small learning-card size. Professional finished painting, cohesive atlas, not a UI screenshot.\n",
+    "prompt_embedded":  true,
+    "dimensions":  {
+                       "width":  1536,
+                       "height":  1024
+                   },
+    "grid":  {
+                 "columns":  3,
+                 "rows":  2,
+                 "cell_width":  512,
+                 "cell_height":  512,
+                 "order":  [
+                               "mouth (口)",
+                               "horse (马)",
+                               "woman (女)",
+                               "big (大)",
+                               "white (白)",
+                               "hello (你好)"
+                           ]
+             },
+    "sha256":  "251e5e718be593e1ce8f8fb470936b5bba5537e3611a44eed2d3e615b084743e",
+    "inspection":  "Six legible subjects in correct cells; cohesive painted gouache; no text, frames, or cell overlap. Some subject margins are narrower than requested 10 percent; greeting scene adults have similar visual ethnicity.",
+    "embedding_note":  "Required .cmd launcher embedded only the first prompt line; corrected using its bundled impeccable.exe with the full UTF-8 prompt."
+}

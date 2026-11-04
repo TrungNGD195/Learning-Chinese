@@ -176,9 +176,10 @@ _lesson_item_routes("grammar")
 
 @router.get("/assessments",response_model=AssessmentAdminPageResponse)
 async def assessments(status:str|None=None,assessment_type:str|None=None,
+                      lesson_id:UUID|None=None,
                       page:int=Query(1,ge=1),page_size:int=Query(20,ge=1,le=100),
                       session:AsyncSession=Depends(get_db_session)):
-    return await service.assessments(session,page,page_size,status,assessment_type)
+    return await service.assessments(session,page,page_size,status,assessment_type,lesson_id)
 
 
 @router.post("/assessments/generate-draft", status_code=201, response_model=AssessmentGenerationDraftResponse)

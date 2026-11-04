@@ -9,6 +9,40 @@ from app.curriculum import repository as curriculum_repository
 from app.exercise import repository as exercise_repository
 from app.progress import repository
 
+PRONUNCIATION_STEPS = (("INITIALS", 21), ("FINALS", 36), ("TONES", 5))
+
+
+def _pronunciation_rows_by_code(rows):
+    by_code = {section.code: (section, progress) for section, progress in rows}
+    if any(code not in by_code for code, _ in PRONUNCIATION_STEPS):
+        raise ApplicationError("PRONUNCIATION_UNAVAILABLE", "Pronunciation lesson is not available", status_code=503)
+    return by_code
+
+
+def _first_unfinished_section(by_code):
+    return next((index for index, (code, _) in enumerate(PRONUNCIATION_STEPS)
+                 if by_code[code][1] is None or by_code[code][1].completed_at is None), 3)
+
+
+def _pronunciation_lesson_payload(by_code, lesson):
+    index = lesson.section_index if lesson is not None else _first_unfinished_section(by_code)
+    steps = lesson.step_index if lesson is not None else 0
+    return {
+        "sections": [{"id": by_code[code][0].id, "code": code,
+                      "completed_at": by_code[code][1].completed_at if by_code[code][1] else None,
+                      "total_steps": total} for code, total in PRONUNCIATION_STEPS],
+        "current_section": PRONUNCIATION_STEPS[index][0] if index < 3 else None,
+        "step_index": steps,
+        "total_steps": PRONUNCIATION_STEPS[index][1] if index < 3 else 0,
+        "completed_at": lesson.completed_at if lesson is not None else None,
+        "can_finish": index == 3 and (lesson is None or lesson.completed_at is None),
+    }
+
+
+async def pronunciation_lesson(session: AsyncSession, user_id: UUID) -> dict:
+    rows = await curriculum_repository.pronunciation_rows(session, user_id)
+    return _pronunciation_lesson_payload(_pronunciation_rows_by_code(rows), await repository.get_pronunciation_lesson(session, user_id))
+
 
 def _active_target(unit_type: str, lesson, assessment) -> bool:
     if unit_type == "LESSON":
@@ -21,7 +55,12 @@ async def progression_snapshot(session: AsyncSession, user_id: UUID):
     lesson_done = await repository.learner_completion_snapshot(session,user_id)
     passed_assessments = await exercise_repository.passed_periodic_assessment_ids(session,user_id)
     pronunciation = await curriculum_repository.pronunciation_rows(session,user_id)
-    all_sections_complete = bool(pronunciation) and all(progress is not None and progress.completed_at is not None for _, progress in pronunciation)
+    required = {section.code: progress for section, progress in pronunciation}
+    lesson_progress = await repository.get_pronunciation_lesson(session, user_id)
+    all_sections_complete = bool(lesson_progress and lesson_progress.completed_at) and all(
+        code in required and required[code] is not None and required[code].completed_at is not None
+        for code, _ in PRONUNCIATION_STEPS
+    )
     per_hsk: dict[UUID, list[dict]] = {level.id: [] for level in levels}
     for unit, lesson, assessment in raw_units:
         complete = (
@@ -85,6 +124,8 @@ def _unit_payload(entry: dict) -> dict:
 async def dashboard(session: AsyncSession, user_id: UUID) -> dict:
     levels, states, pronunciation, pronunciation_complete, current_level = await progression_snapshot(session, user_id)
     section_target = next((section for section, progress in pronunciation if progress is None or progress.completed_at is None), None)
+    if section_target is None and not pronunciation_complete:
+        section_target = next((section for section, _ in pronunciation if section.code in dict(PRONUNCIATION_STEPS)), None)
     active = states.get(current_level.id, []) if current_level else []
     required = [entry for entry in active if entry["active"]]
     completed = sum(1 for entry in required if entry["complete"])
@@ -124,16 +165,62 @@ async def pronunciation_list(session: AsyncSession, user_id: UUID) -> list[dict]
 
 
 async def complete_pronunciation(session: AsyncSession, user_id: UUID, section_id: UUID) -> dict:
-    section = await curriculum_repository.get_pronunciation_section(session,section_id)
-    if section is None:
-        raise ApplicationError("NOT_FOUND", "Pronunciation section was not found", status_code=404)
     async with session.begin_nested():
+        by_code = _pronunciation_rows_by_code(await curriculum_repository.pronunciation_rows(session, user_id))
+        section = next((section for section, _ in by_code.values() if section.id == section_id), None)
+        if section is None or section.code not in dict(PRONUNCIATION_STEPS):
+            raise ApplicationError("NOT_FOUND", "Pronunciation section was not found", status_code=404)
+        lesson = await repository.lock_pronunciation_lesson(session, user_id, _first_unfinished_section(by_code))
+        existing = by_code[section.code][1]
+        if existing is not None and existing.completed_at is not None:
+            return {"section_id": section_id, "completed_at": existing.completed_at}
+        index = lesson.section_index
+        if index >= 3 or PRONUNCIATION_STEPS[index][0] != section.code or lesson.step_index != PRONUNCIATION_STEPS[index][1]:
+            raise ApplicationError("PRONUNCIATION_INCOMPLETE", "Complete each sound in order first", status_code=409)
         completed_at = await repository.complete_pronunciation(session, user_id, section_id)
-        levels, _, pronunciation, complete, _ = await progression_snapshot(session, user_id)
-        if complete and levels:
-            await repository.ensure_hsk_started(session, user_id, levels[0].id)
+        lesson.section_index = index + 1
+        lesson.step_index = 0
+        while lesson.section_index < 3:
+            next_progress = by_code[PRONUNCIATION_STEPS[lesson.section_index][0]][1]
+            if next_progress is None or next_progress.completed_at is None:
+                break
+            lesson.section_index += 1
     await session.commit()
     return {"section_id": section_id, "completed_at": completed_at}
+
+
+async def advance_pronunciation(session: AsyncSession, user_id: UUID, section_code: str, step_index: int) -> dict:
+    async with session.begin_nested():
+        by_code = _pronunciation_rows_by_code(await curriculum_repository.pronunciation_rows(session, user_id))
+        lesson = await repository.lock_pronunciation_lesson(session, user_id, _first_unfinished_section(by_code))
+        index = lesson.section_index
+        if lesson.completed_at is not None or index >= 3 or PRONUNCIATION_STEPS[index][0] != section_code:
+            raise ApplicationError("PRONUNCIATION_OUT_OF_ORDER", "Continue with the current section", status_code=409)
+        if lesson.step_index != step_index or step_index >= PRONUNCIATION_STEPS[index][1]:
+            raise ApplicationError("PRONUNCIATION_STEP_CONFLICT", "Refresh your current lesson step", status_code=409)
+        lesson.step_index += 1
+        await session.flush()
+        result = _pronunciation_lesson_payload(by_code, lesson)
+    await session.commit()
+    return result
+
+
+async def finish_pronunciation(session: AsyncSession, user_id: UUID) -> dict:
+    async with session.begin_nested():
+        by_code = _pronunciation_rows_by_code(await curriculum_repository.pronunciation_rows(session, user_id))
+        lesson = await repository.lock_pronunciation_lesson(session, user_id, _first_unfinished_section(by_code))
+        if lesson.section_index != 3 or _first_unfinished_section(by_code) != 3:
+            raise ApplicationError("PRONUNCIATION_INCOMPLETE", "Complete all three sections first", status_code=409)
+        if lesson.completed_at is None:
+            lesson.completed_at = datetime.now(UTC)
+            levels, _ = await curriculum_repository.catalog_snapshot(session)
+            first_level = next((level for level in levels if level.level_number == 1), None)
+            if first_level:
+                await repository.ensure_hsk_started(session, user_id, first_level.id)
+        await session.flush()
+        result = _pronunciation_lesson_payload(by_code, lesson)
+    await session.commit()
+    return result
 
 
 async def require_lesson_access(session: AsyncSession, user_id: UUID, lesson_id: UUID):

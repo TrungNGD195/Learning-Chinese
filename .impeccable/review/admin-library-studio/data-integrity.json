@@ -1,0 +1,13 @@
+{
+  "checkedAfterFinalProtectedBrowserRun": true,
+  "source": "backend/content/hsk1/lesson-01.json",
+  "vocabularyRecordsCompared": 12,
+  "vocabularyFields": ["hanzi", "pinyin", "vietnamese_meaning", "part_of_speech"],
+  "questionsCompared": 20,
+  "questionFields": ["type", "prompt", "reference_answer", "rubric", "config", "option_text", "is_correct"],
+  "mismatches": [],
+  "lessonStatus": "DRAFT",
+  "assessmentStatus": "DRAFT",
+  "passThreshold": 80,
+  "precedingReviewIncident": "One review prompt was accidentally saved during an earlier attempt, restored to its original source through a guarded transaction, and verified again after the protected run."
+}

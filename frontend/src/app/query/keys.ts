@@ -2,6 +2,7 @@ export const queryKeys = {
   authMe: ['auth', 'me'] as const,
   dashboard: ['dashboard'] as const,
   pronunciation: ['pronunciation'] as const,
+  pronunciationLesson: ['pronunciation', 'lesson'] as const,
   curriculumLevels: ['curriculum', 'levels'] as const,
   curriculumHsk: (hskId: string) => ['curriculum', 'hsk', hskId] as const,
   curriculumHskRoot: ['curriculum', 'hsk'] as const,

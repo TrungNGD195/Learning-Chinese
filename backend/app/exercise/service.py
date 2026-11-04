@@ -9,6 +9,7 @@ from app.exercise.grading import DeterministicGrader, GradingUnavailable, Unavai
 from app.exercise import repository
 from app.exercise import repository as exercise_repository
 from app.progress import service as progress
+from app.progress import repository as progress_repository
 
 
 def _error(code: str, message: str, status: int):
@@ -20,6 +21,9 @@ async def _assessment_access(session: AsyncSession, user_id: UUID, assessment: A
         raise _error("NOT_FOUND", "Assessment was not found", 404)
     if assessment.type == "LESSON_EXERCISE":
         await progress.require_lesson_access(session, user_id, assessment.lesson_id)
+        lesson_progress = await progress_repository.get_lesson_progress(session, user_id, assessment.lesson_id)
+        if lesson_progress is None or lesson_progress.theory_completed_at is None:
+            raise _error("THEORY_INCOMPLETE", "View all required lesson theory before opening the exercise", 403)
         return
     _, states, _, _, _ = await progress.progression_snapshot(session, user_id)
     if not any(entry["unit"].assessment_id == assessment.id and entry["state"] in {"AVAILABLE", "COMPLETED"}
@@ -247,8 +251,8 @@ def _dump(obj, fields): return {field: getattr(obj, field) for field in fields}
 async def admin_get_assessment(session, assessment_id, *, for_update=False):
     return await exercise_repository.get_assessment(session,assessment_id,for_update=for_update)
 
-async def admin_assessments(session, page=1, page_size=20, status=None, assessment_type=None):
-    total,rows=await exercise_repository.admin_assessments_page(session,page,page_size,status,assessment_type)
+async def admin_assessments(session, page=1, page_size=20, status=None, assessment_type=None, lesson_id=None):
+    total,rows=await exercise_repository.admin_assessments_page(session,page,page_size,status,assessment_type,lesson_id)
     return {"items":[_dump(a,("id","type","lesson_id","title","description","status","pass_threshold","published_at")) for a in rows],
         "page":page,"page_size":page_size,"total":total}
 

@@ -1,0 +1,104 @@
+.academy-scene-illustration { display: block; width: 144px; aspect-ratio: 1; flex-shrink: 0; background: url('/academy/learning-scenes-v1.webp') 0 0 / 300% 200% no-repeat; }
+.academy-header-art { position: relative; width: 180px; height: 144px; justify-self: end; flex-shrink: 0; pointer-events: none; }
+.academy-header-art > .academy-scene-illustration { width: 150px; position: absolute; left: 0; bottom: 0; }
+.academy-header-art > .academy-companion { width: 76px; height: 76px; position: absolute; right: -4px; bottom: -4px; }
+.bo-shell .ui-page-header:has(.academy-header-art),
+.admin-shell.admin-academy-workspace .screen .ui-page-header:has(.academy-header-art) { display: grid; grid-template-columns: minmax(0,1fr) 180px; align-items: center; gap: 16px 24px; min-height: 156px; padding: 24px 28px; background: #fbfaf2; border: 1px solid #dfe5d4; border-radius: 14px; box-shadow: none; }
+.bo-shell .ui-page-header:has(.academy-header-art) .ui-page-header__copy,
+.admin-shell.admin-academy-workspace .screen .ui-page-header:has(.academy-header-art) .ui-page-header__copy { grid-column: 1; grid-row: 1; background: transparent; min-width: 0; }
+.bo-shell .ui-page-header:has(.academy-header-art) > .ui-page-header__actions,
+.admin-shell.admin-academy-workspace .screen .ui-page-header:has(.academy-header-art) > .ui-page-header__actions { grid-column: 1/-1; grid-row: 2; justify-self: start; background: transparent; }
+.bo-shell .ui-page-header:has(.academy-header-art)::after,
+.admin-shell.admin-academy-workspace .screen .ui-page-header:has(.academy-header-art)::after { display: none; }
+.admin-shell.admin-academy-workspace .admin-documents-intro,
+.admin-shell.admin-academy-workspace .admin-document-detail-intro { padding: 0; background: none; border: 0; }
+.admin-shell.admin-academy-workspace .screen .ui-page-header__description { max-width: 65ch; }
+.admin-shell.admin-academy-workspace .admin-workbench-heading { display: grid; grid-template-columns: minmax(0,1fr) 164px auto; gap: 24px; align-items: center; padding: 12px 0 24px; }
+.admin-workbench-heading .academy-header-art { width: 164px; height: 132px; }
+.admin-workbench-secondary .admin-workbench-panel { position: relative; padding-right: 132px; }
+.admin-workbench-secondary .admin-workbench-panel > .academy-scene-illustration { position: absolute; width: 112px; right: 14px; top: 28px; }
+.admin-workbench-exercises .admin-workbench-panel-heading > .academy-scene-illustration { width: 88px; order: 2; }
+.admin-workbench-exercises .admin-workbench-panel-heading { align-items: center; }
+.admin-shell.admin-academy-workspace .admin-book-cover { min-height: 148px; height: 148px; background: #edf1e2; }
+.admin-shell.admin-academy-workspace .admin-book-cover > .academy-scene-illustration { width: 144px; max-width: 100%; }
+.admin-shell.admin-academy-workspace .admin-book-cover--1 { background: #f4ead8; }
+.admin-shell.admin-academy-workspace .admin-book-cover--2 { background: #e8eee4; }
+.admin-shell.admin-academy-workspace .admin-library-grid > :only-child .admin-book-cover { width: 176px; flex-basis: 176px; height: auto; }
+.admin-shell.admin-academy-workspace .admin-library-grid > :only-child .admin-book-cover .academy-scene-illustration { width: 160px; }
+.admin-shell.admin-academy-workspace .admin-lesson-glimpse { display: grid; grid-template-columns: 92px minmax(0,1fr); gap: 4px 12px; text-align: left; align-items: center; }
+.admin-shell.admin-academy-workspace .admin-lesson-glimpse > p:first-child { grid-column: 1/-1; margin-bottom: 12px; }
+.admin-shell.admin-academy-workspace .admin-lesson-glimpse > :is(.academy-word-illustration,.academy-numeral-illustration) { grid-column: 1; grid-row: 2/5; width: 92px; min-width: 92px; max-width: 92px; height: 92px; margin: 0; }
+.admin-shell.admin-academy-workspace .admin-lesson-glimpse > .admin-glimpse-hanzi { font-size: 34px; grid-column: 2; }
+.admin-shell.admin-academy-workspace .admin-lesson-glimpse > p { font-size: 13px; margin: 2px 0; grid-column: 2; line-height: 1.7; }
+.admin-shell.admin-academy-workspace .admin-record-status { gap: 6px; }
+.admin-shell.admin-academy-workspace .admin-current-state > p { margin: 0; }
+.admin-shell.admin-academy-workspace .admin-student-word > :is(.academy-word-illustration,.academy-numeral-illustration) { width: 144px; max-width: 100%; height: auto; min-height: 0; aspect-ratio: 1; box-sizing: border-box; }
+.academy-section-icon { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 10px; background: #e4ecd5; color: #355b3e; flex-shrink: 0; }
+.academy-section-icon--grammar { background: #f0e5ce; color: #76522b; }
+.academy-section-icon--practice { background: #f0dfd2; color: #874b30; }
+.lesson-section__heading > div { display: flex; align-items: center; gap: 14px; }
+.bo-shell .screen .lesson-header { display: block; min-height: 0; padding: 24px; background: #edf2df; }
+.bo-shell .lesson-header > .ui-page-header:has(.academy-header-art) { border: 0; padding: 0; background: transparent; }
+.bo-shell .lesson-header > .academy-context-label { margin: 8px 0; }
+.bo-shell .lesson-header .lesson-progress { margin-top: 16px; }
+.bo-shell .screen .academy-path-hero { display: block; min-height: 0; padding: 0; background: transparent; border: 0; }
+.bo-shell .academy-path-hero > .ui-page-header:has(.academy-header-art) { max-width: 100%; box-sizing: border-box; }
+.bo-shell .lesson-header > .ui-page-header:has(.academy-header-art) { max-width: 100%; width: 100%; }
+.bo-shell .academy-path-hero > .ui-page-header:has(.academy-header-art) { margin: 0; width: 100%; }
+.bo-shell .curriculum-hero > .curriculum-intro { padding: 0 28px; }
+.bo-shell .curriculum-unit { display: flex; flex-wrap: wrap; align-items: center; gap: 18px; padding: 22px; }
+.bo-shell .curriculum-unit > .academy-scene-illustration { width: 96px; }
+.bo-shell .curriculum-unit__content { flex: 1 1 230px; }
+.bo-shell .curriculum-unit:has(.curriculum-unit__locked) > .academy-scene-illustration { filter: saturate(.55); }
+.bo-shell .learning-hub__level { position: relative; padding-right: 136px; }
+.bo-shell .learning-hub__level > .academy-scene-illustration { width: 106px; position: absolute; right: 18px; top: 22px; }
+.bo-shell .learning-hub__level:has(.ui-status-badge) > .academy-scene-illustration { filter: saturate(.7); }
+.academy-empty-illustration { width: 116px; float: right; margin: 0 0 12px 20px; }
+.ui-page-state:has(.academy-empty-illustration) { display: flow-root; min-height: 144px; }
+.academy-activity-illustration { display: flex; align-items: center; gap: 22px; }
+.academy-activity-illustration > div { min-width: 0; }
+.academy-activity-illustration p { margin: 8px 0 0; font-size: 15px; line-height: 1.8; }
+.admin-file-control { position: relative; display: flex; align-items: center; flex-wrap: wrap; gap: 12px; padding: 12px; border: 1px solid #b9c8b1; border-radius: 8px; background: #fffef8; min-height: 52px; }
+.admin-file-control > span:first-child { padding: 7px 12px; border-radius: 5px; background: #e5ecd9; color: #35503d; }
+.admin-file-control > span:nth-child(2) { overflow-wrap: anywhere; font-weight: 400; }
+.admin-file-control:focus-within { outline: 3px solid #a95b2b; outline-offset: 3px; }
+.admin-file-control input[type="file"] { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; }
+@media(max-width:1100px) {
+  .admin-shell.admin-academy-workspace .admin-workbench-heading { grid-template-columns: minmax(0,1fr) 120px; }
+  .admin-shell.admin-academy-workspace .admin-workbench-create { grid-column: 1/-1; justify-self: start; }
+  .admin-workbench-heading .academy-header-art { width: 120px; height: 112px; }
+  .admin-workbench-heading .academy-header-art > .academy-scene-illustration { width: 116px; }
+}
+@media(max-width:700px) {
+  .bo-shell .ui-page-header:has(.academy-header-art),
+  .admin-shell.admin-academy-workspace .screen .ui-page-header:has(.academy-header-art) { grid-template-columns: minmax(0,1fr) 100px; gap: 12px; padding: 20px; min-height: 124px; }
+  .academy-header-art { width: 100px; height: 100px; }
+  .academy-header-art > .academy-scene-illustration { width: 96px; }
+  .academy-header-art > .academy-companion { width: 50px; height: 50px; right: -4px; bottom: -6px; }
+  .bo-shell .lesson-header > .ui-page-header:has(.academy-header-art) { padding: 0; }
+  .admin-shell.admin-academy-workspace .admin-library-grid > :only-child .admin-book-cover { width: 104px; flex-basis: 104px; }
+  .admin-shell.admin-academy-workspace .admin-library-grid > :only-child .admin-book-cover .academy-scene-illustration { width: 100px; }
+  .admin-workbench-secondary .admin-workbench-panel { padding-right: 116px; }
+  .admin-workbench-secondary .admin-workbench-panel > .academy-scene-illustration { width: 90px; right: 12px; }
+  .bo-shell .learning-hub__level { padding-right: 110px; }
+  .bo-shell .learning-hub__level > .academy-scene-illustration { width: 84px; right: 14px; }
+  .bo-shell .curriculum-unit > .academy-scene-illustration { width: 72px; }
+  .academy-empty-illustration { width: 88px; }
+  .academy-activity-illustration > .academy-scene-illustration { width: 96px; }
+}
+@media(max-width:440px) {
+  .bo-shell .ui-page-header:has(.academy-header-art),
+  .admin-shell.admin-academy-workspace .screen .ui-page-header:has(.academy-header-art) { grid-template-columns: minmax(0,1fr); }
+  .academy-header-art { grid-column: 1; grid-row: 1; justify-self: end; height: 86px; }
+  .bo-shell .ui-page-header:has(.academy-header-art) .ui-page-header__copy,
+  .admin-shell.admin-academy-workspace .screen .ui-page-header:has(.academy-header-art) .ui-page-header__copy { grid-column: 1; grid-row: 2; }
+  .bo-shell .ui-page-header:has(.academy-header-art) > .ui-page-header__actions,
+  .admin-shell.admin-academy-workspace .screen .ui-page-header:has(.academy-header-art) > .ui-page-header__actions { grid-row: 3; }
+  .admin-shell.admin-academy-workspace .admin-book-cover { min-height: 164px; width: 86px; flex-basis: 86px; }
+  .admin-shell.admin-academy-workspace .admin-book-cover > .academy-scene-illustration { width: 86px; }
+  .admin-shell.admin-academy-workspace .admin-workbench-heading { gap: 12px; }
+  .admin-shell.admin-academy-workspace .admin-workbench-heading > div:first-child { grid-column: 1/-1; grid-row: 2; }
+  .admin-shell.admin-academy-workspace .admin-workbench-heading > .academy-header-art { grid-column: 1/-1; grid-row: 1; justify-self: end; }
+  .admin-shell.admin-academy-workspace .admin-workbench-heading > .admin-workbench-create { grid-column: 1/-1; grid-row: 3; }
+  .academy-activity-illustration { flex-direction: column; text-align: center; }
+}

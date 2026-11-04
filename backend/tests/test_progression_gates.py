@@ -44,13 +44,22 @@ def test_empty_theory_historical_pass_converges_and_unlocks_periodic_and_next_hs
     app.dependency_overrides[get_current_user]=current_user
     try:
         with TestClient(app) as client:
-            for section in client.get("/api/v1/pronunciation").json():
-                assert client.post(f"/api/v1/pronunciation/{section['id']}/complete").status_code==200
+            sections = client.get("/api/v1/pronunciation").json()
+            for code, count in (("INITIALS", 21), ("FINALS", 36), ("TONES", 5)):
+                section = next(item for item in sections if item["code"] == code)
+                for index in range(count):
+                    assert client.post("/api/v1/pronunciation/lesson/advance", json={"section_code": code, "step_index": index}).status_code == 200
+                assert client.post(f"/api/v1/pronunciation/{section['id']}/complete").status_code == 200
+            assert client.post("/api/v1/pronunciation/lesson/complete").status_code == 200
+            assert client.post(f"/api/v1/assessments/{exercise_id}/attempts").status_code==403
+            before_start=client.get(f"/api/v1/me/progress/lessons/{lesson1_id}").json()
+            assert before_start["theory_completed_at"] is None and before_start["completed_at"] is None
+            assert client.get(f"/api/v1/lessons/{lesson1_id}").status_code==200
+            before_attempt=client.get(f"/api/v1/me/progress/lessons/{lesson1_id}").json()
+            assert before_attempt["theory_completed_at"] is not None and before_attempt["completed_at"] is None
             exercise_attempt=client.post(f"/api/v1/assessments/{exercise_id}/attempts").json()
             passed=client.post(f"/api/v1/assessment-attempts/{exercise_attempt['id']}/submit",json={"answers":[{"question_id":str(exq_id),"answer":{"option_id":str(exgood_id)}}]})
             assert passed.status_code==200 and passed.json()["passed"] is True
-            before_start=client.get(f"/api/v1/me/progress/lessons/{lesson1_id}").json()
-            assert before_start["theory_completed_at"] is None and before_start["completed_at"] is None
             assert client.get(f"/api/v1/lessons/{lesson1_id}").status_code==200
             after_start=client.get(f"/api/v1/me/progress/lessons/{lesson1_id}").json()
             assert after_start["theory_completed_at"] is not None and after_start["completed_at"] is not None

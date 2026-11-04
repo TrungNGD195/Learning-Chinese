@@ -1,0 +1,306 @@
+{
+  "layouts": [
+    {
+      "label": "home",
+      "viewport": 360,
+      "scrollWidth": 360,
+      "height": 2100
+    },
+    {
+      "label": "home",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "height": 1167
+    },
+    {
+      "label": "home",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "height": 2085
+    },
+    {
+      "label": "home",
+      "viewport": 768,
+      "scrollWidth": 768,
+      "height": 1286
+    },
+    {
+      "label": "lesson",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "height": 1673
+    },
+    {
+      "label": "lesson",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "height": 1358
+    },
+    {
+      "label": "lesson",
+      "viewport": 768,
+      "scrollWidth": 768,
+      "height": 1639
+    },
+    {
+      "label": "lesson",
+      "viewport": 360,
+      "scrollWidth": 360,
+      "height": 1642
+    },
+    {
+      "label": "lesson-friends",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "height": 1358
+    },
+    {
+      "label": "lesson-friends",
+      "viewport": 360,
+      "scrollWidth": 360,
+      "height": 1632
+    },
+    {
+      "label": "lesson-friends",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "height": 1663
+    },
+    {
+      "label": "lesson-friends",
+      "viewport": 768,
+      "scrollWidth": 768,
+      "height": 1664
+    },
+    {
+      "label": "practice",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "height": 1357
+    },
+    {
+      "label": "practice",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "height": 1096
+    },
+    {
+      "label": "practice",
+      "viewport": 360,
+      "scrollWidth": 360,
+      "height": 1334
+    },
+    {
+      "label": "practice",
+      "viewport": 768,
+      "scrollWidth": 768,
+      "height": 1364
+    },
+    {
+      "label": "retry",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "height": 1491
+    },
+    {
+      "label": "retry",
+      "viewport": 360,
+      "scrollWidth": 360,
+      "height": 1468
+    },
+    {
+      "label": "retry",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "height": 1216
+    },
+    {
+      "label": "retry",
+      "viewport": 768,
+      "scrollWidth": 768,
+      "height": 1484
+    },
+    {
+      "label": "complete",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "height": 1049
+    },
+    {
+      "label": "complete",
+      "viewport": 360,
+      "scrollWidth": 360,
+      "height": 1049
+    },
+    {
+      "label": "complete",
+      "viewport": 768,
+      "scrollWidth": 768,
+      "height": 1007
+    },
+    {
+      "label": "journey",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "height": 1661
+    },
+    {
+      "label": "complete",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "height": 1000
+    },
+    {
+      "label": "journey",
+      "viewport": 360,
+      "scrollWidth": 360,
+      "height": 1695
+    },
+    {
+      "label": "notebook",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "height": 1049
+    },
+    {
+      "label": "journey",
+      "viewport": 768,
+      "scrollWidth": 768,
+      "height": 1655
+    },
+    {
+      "label": "journey",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "height": 1491
+    },
+    {
+      "label": "notebook",
+      "viewport": 360,
+      "scrollWidth": 360,
+      "height": 1049
+    },
+    {
+      "label": "notebook",
+      "viewport": 768,
+      "scrollWidth": 768,
+      "height": 1007
+    },
+    {
+      "label": "notebook",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "height": 1000
+    },
+    {
+      "label": "companions",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "height": 1546
+    },
+    {
+      "label": "companions",
+      "viewport": 360,
+      "scrollWidth": 360,
+      "height": 1531
+    },
+    {
+      "label": "companions",
+      "viewport": 768,
+      "scrollWidth": 768,
+      "height": 1384
+    },
+    {
+      "label": "return",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "height": 2085
+    },
+    {
+      "label": "companions",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "height": 1031
+    },
+    {
+      "label": "return",
+      "viewport": 360,
+      "scrollWidth": 360,
+      "height": 2100
+    },
+    {
+      "label": "return",
+      "viewport": 768,
+      "scrollWidth": 768,
+      "height": 1286
+    },
+    {
+      "label": "large-type",
+      "viewport": 390,
+      "scrollWidth": 390,
+      "height": 1686
+    },
+    {
+      "label": "return",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "height": 1167
+    },
+    {
+      "label": "large-type",
+      "viewport": 360,
+      "scrollWidth": 360,
+      "height": 1655
+    },
+    {
+      "label": "large-type",
+      "viewport": 768,
+      "scrollWidth": 768,
+      "height": 1679
+    },
+    {
+      "label": "large-type",
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "height": 1372
+    }
+  ],
+  "typeChecks": [
+    {
+      "width": 1440,
+      "hanzi": 96,
+      "pinyin": 22,
+      "meaning": 18
+    },
+    {
+      "width": 390,
+      "hanzi": 83,
+      "pinyin": 20,
+      "meaning": 17
+    },
+    {
+      "width": 768,
+      "hanzi": 96,
+      "pinyin": 22,
+      "meaning": 18
+    },
+    {
+      "width": 360,
+      "hanzi": 77,
+      "pinyin": 18,
+      "meaning": 16
+    }
+  ],
+  "errors": [],
+  "apiCalls": [],
+  "failedResources": [],
+  "interactions": "passed",
+  "persistence": "passed",
+  "storageFailure": "passed",
+  "mobileSpeechOverlap": "none",
+  "pronunciation": {
+    "status": "passed",
+    "availableChineseVoices": [],
+    "message": "Thiết bị chưa có giọng đọc tiếng Trung. Pinyin và ví dụ vẫn sẵn sàng để bạn đối chiếu."
+  }
+}

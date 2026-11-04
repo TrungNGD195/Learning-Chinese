@@ -1,0 +1,739 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-04T06:24:19.361729Z",
+  "title": "Design System: Chinese Learning",
+  "extensions": {
+    "colorMeta": {
+      "jade": {
+        "role": "primary",
+        "displayName": "Jade",
+        "tonalRamp": [
+          "oklch(15% 0.0144 158.10)",
+          "oklch(26% 0.0441 158.10)",
+          "oklch(38% 0.0689 158.10)",
+          "oklch(49% 0.0813 158.10)",
+          "oklch(61% 0.0813 158.10)",
+          "oklch(72% 0.0689 158.10)",
+          "oklch(84% 0.0441 158.10)",
+          "oklch(95% 0.0144 158.10)"
+        ]
+      },
+      "jade-hover": {
+        "role": "primary",
+        "displayName": "Jade Hover",
+        "tonalRamp": [
+          "oklch(15% 0.0127 158.16)",
+          "oklch(26% 0.0387 158.16)",
+          "oklch(38% 0.0605 158.16)",
+          "oklch(49% 0.0714 158.16)",
+          "oklch(61% 0.0714 158.16)",
+          "oklch(72% 0.0605 158.16)",
+          "oklch(84% 0.0387 158.16)",
+          "oklch(95% 0.0127 158.16)"
+        ]
+      },
+      "pine": {
+        "role": "primary",
+        "displayName": "Pine",
+        "tonalRamp": [
+          "oklch(15% 0.0083 176.18)",
+          "oklch(26% 0.0254 176.18)",
+          "oklch(38% 0.0397 176.18)",
+          "oklch(49% 0.0469 176.18)",
+          "oklch(61% 0.0469 176.18)",
+          "oklch(72% 0.0397 176.18)",
+          "oklch(84% 0.0254 176.18)",
+          "oklch(95% 0.0083 176.18)"
+        ]
+      },
+      "cinnabar": {
+        "role": "secondary",
+        "displayName": "Cinnabar",
+        "tonalRamp": [
+          "oklch(15% 0.0278 27.58)",
+          "oklch(26% 0.0849 27.58)",
+          "oklch(38% 0.1329 27.58)",
+          "oklch(49% 0.1568 27.58)",
+          "oklch(61% 0.1568 27.58)",
+          "oklch(72% 0.1329 27.58)",
+          "oklch(84% 0.0849 27.58)",
+          "oklch(95% 0.0278 27.58)"
+        ]
+      },
+      "cinnabar-hover": {
+        "role": "secondary",
+        "displayName": "Cinnabar Hover",
+        "tonalRamp": [
+          "oklch(15% 0.0257 27.32)",
+          "oklch(26% 0.0783 27.32)",
+          "oklch(38% 0.1225 27.32)",
+          "oklch(49% 0.1445 27.32)",
+          "oklch(61% 0.1445 27.32)",
+          "oklch(72% 0.1225 27.32)",
+          "oklch(84% 0.0783 27.32)",
+          "oklch(95% 0.0257 27.32)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "tonalRamp": [
+          "oklch(15% 0.0016 119.58)",
+          "oklch(26% 0.0050 119.58)",
+          "oklch(38% 0.0079 119.58)",
+          "oklch(49% 0.0093 119.58)",
+          "oklch(61% 0.0093 119.58)",
+          "oklch(72% 0.0079 119.58)",
+          "oklch(84% 0.0050 119.58)",
+          "oklch(95% 0.0016 119.58)"
+        ]
+      },
+      "ivory": {
+        "role": "neutral",
+        "displayName": "Ivory",
+        "tonalRamp": [
+          "oklch(15% 0.0014 98.87)",
+          "oklch(26% 0.0042 98.87)",
+          "oklch(38% 0.0066 98.87)",
+          "oklch(49% 0.0078 98.87)",
+          "oklch(61% 0.0078 98.87)",
+          "oklch(72% 0.0066 98.87)",
+          "oklch(84% 0.0042 98.87)",
+          "oklch(95% 0.0014 98.87)"
+        ]
+      },
+      "sage": {
+        "role": "neutral",
+        "displayName": "Sage",
+        "tonalRamp": [
+          "oklch(15% 0.0045 118.88)",
+          "oklch(26% 0.0136 118.88)",
+          "oklch(38% 0.0213 118.88)",
+          "oklch(49% 0.0251 118.88)",
+          "oklch(61% 0.0251 118.88)",
+          "oklch(72% 0.0213 118.88)",
+          "oklch(84% 0.0136 118.88)",
+          "oklch(95% 0.0045 118.88)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15% 0.0064 167.83)",
+          "oklch(26% 0.0195 167.83)",
+          "oklch(38% 0.0305 167.83)",
+          "oklch(49% 0.0360 167.83)",
+          "oklch(61% 0.0360 167.83)",
+          "oklch(72% 0.0305 167.83)",
+          "oklch(84% 0.0195 167.83)",
+          "oklch(95% 0.0064 167.83)"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Ink Soft",
+        "tonalRamp": [
+          "oklch(15% 0.0087 148.44)",
+          "oklch(26% 0.0266 148.44)",
+          "oklch(38% 0.0417 148.44)",
+          "oklch(49% 0.0492 148.44)",
+          "oklch(61% 0.0492 148.44)",
+          "oklch(72% 0.0417 148.44)",
+          "oklch(84% 0.0266 148.44)",
+          "oklch(95% 0.0087 148.44)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "oklch(15% 0.0085 139.86)",
+          "oklch(26% 0.0261 139.86)",
+          "oklch(38% 0.0408 139.86)",
+          "oklch(49% 0.0481 139.86)",
+          "oklch(61% 0.0481 139.86)",
+          "oklch(72% 0.0408 139.86)",
+          "oklch(84% 0.0261 139.86)",
+          "oklch(95% 0.0085 139.86)"
+        ]
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Border",
+        "tonalRamp": [
+          "oklch(15% 0.0015 168.74)",
+          "oklch(26% 0.0045 168.74)",
+          "oklch(38% 0.0070 168.74)",
+          "oklch(49% 0.0083 168.74)",
+          "oklch(61% 0.0083 168.74)",
+          "oklch(72% 0.0070 168.74)",
+          "oklch(84% 0.0045 168.74)",
+          "oklch(95% 0.0015 168.74)"
+        ]
+      },
+      "border-strong": {
+        "role": "neutral",
+        "displayName": "Border Strong",
+        "tonalRamp": [
+          "oklch(15% 0.0037 181.75)",
+          "oklch(26% 0.0113 181.75)",
+          "oklch(38% 0.0177 181.75)",
+          "oklch(49% 0.0209 181.75)",
+          "oklch(61% 0.0209 181.75)",
+          "oklch(72% 0.0177 181.75)",
+          "oklch(84% 0.0113 181.75)",
+          "oklch(95% 0.0037 181.75)"
+        ]
+      },
+      "reading-border": {
+        "role": "neutral",
+        "displayName": "Reading Border",
+        "tonalRamp": [
+          "oklch(15% 0.0044 126.57)",
+          "oklch(26% 0.0136 126.57)",
+          "oklch(38% 0.0212 126.57)",
+          "oklch(49% 0.0250 126.57)",
+          "oklch(61% 0.0250 126.57)",
+          "oklch(72% 0.0212 126.57)",
+          "oklch(84% 0.0136 126.57)",
+          "oklch(95% 0.0044 126.57)"
+        ]
+      },
+      "nav-active": {
+        "role": "neutral",
+        "displayName": "Nav Active",
+        "tonalRamp": [
+          "oklch(15% 0.0071 120.78)",
+          "oklch(26% 0.0216 120.78)",
+          "oklch(38% 0.0338 120.78)",
+          "oklch(49% 0.0399 120.78)",
+          "oklch(61% 0.0399 120.78)",
+          "oklch(72% 0.0338 120.78)",
+          "oklch(84% 0.0216 120.78)",
+          "oklch(95% 0.0071 120.78)"
+        ]
+      },
+      "nav-text": {
+        "role": "neutral",
+        "displayName": "Nav Text",
+        "tonalRamp": [
+          "oklch(15% 0.0060 137.08)",
+          "oklch(26% 0.0182 137.08)",
+          "oklch(38% 0.0285 137.08)",
+          "oklch(49% 0.0337 137.08)",
+          "oklch(61% 0.0337 137.08)",
+          "oklch(72% 0.0285 137.08)",
+          "oklch(84% 0.0182 137.08)",
+          "oklch(95% 0.0060 137.08)"
+        ]
+      },
+      "focus-gold": {
+        "role": "secondary",
+        "displayName": "Focus Gold",
+        "tonalRamp": [
+          "oklch(15% 0.0192 67.41)",
+          "oklch(26% 0.0585 67.41)",
+          "oklch(38% 0.0915 67.41)",
+          "oklch(49% 0.1079 67.41)",
+          "oklch(61% 0.1079 67.41)",
+          "oklch(72% 0.0915 67.41)",
+          "oklch(84% 0.0585 67.41)",
+          "oklch(95% 0.0192 67.41)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "tonalRamp": [
+          "oklch(15% 0.0000 89.88)",
+          "oklch(26% 0.0000 89.88)",
+          "oklch(38% 0.0000 89.88)",
+          "oklch(49% 0.0000 89.88)",
+          "oklch(61% 0.0000 89.88)",
+          "oklch(72% 0.0000 89.88)",
+          "oklch(84% 0.0000 89.88)",
+          "oklch(95% 0.0000 89.88)"
+        ]
+      },
+      "success": {
+        "role": "semantic",
+        "displayName": "Success",
+        "tonalRamp": [
+          "oklch(15% 0.0178 154.36)",
+          "oklch(26% 0.0542 154.36)",
+          "oklch(38% 0.0848 154.36)",
+          "oklch(49% 0.1000 154.36)",
+          "oklch(61% 0.1000 154.36)",
+          "oklch(72% 0.0848 154.36)",
+          "oklch(84% 0.0542 154.36)",
+          "oklch(95% 0.0178 154.36)"
+        ]
+      },
+      "success-soft": {
+        "role": "semantic",
+        "displayName": "Success Soft",
+        "tonalRamp": [
+          "oklch(15% 0.0023 159.92)",
+          "oklch(26% 0.0070 159.92)",
+          "oklch(38% 0.0109 159.92)",
+          "oklch(49% 0.0129 159.92)",
+          "oklch(61% 0.0129 159.92)",
+          "oklch(72% 0.0109 159.92)",
+          "oklch(84% 0.0070 159.92)",
+          "oklch(95% 0.0023 159.92)"
+        ]
+      },
+      "warning": {
+        "role": "semantic",
+        "displayName": "Warning",
+        "tonalRamp": [
+          "oklch(15% 0.0178 70.83)",
+          "oklch(26% 0.0543 70.83)",
+          "oklch(38% 0.0850 70.83)",
+          "oklch(49% 0.1003 70.83)",
+          "oklch(61% 0.1003 70.83)",
+          "oklch(72% 0.0850 70.83)",
+          "oklch(84% 0.0543 70.83)",
+          "oklch(95% 0.0178 70.83)"
+        ]
+      },
+      "warning-soft": {
+        "role": "semantic",
+        "displayName": "Warning Soft",
+        "tonalRamp": [
+          "oklch(15% 0.0038 89.79)",
+          "oklch(26% 0.0116 89.79)",
+          "oklch(38% 0.0182 89.79)",
+          "oklch(49% 0.0215 89.79)",
+          "oklch(61% 0.0215 89.79)",
+          "oklch(72% 0.0182 89.79)",
+          "oklch(84% 0.0116 89.79)",
+          "oklch(95% 0.0038 89.79)"
+        ]
+      },
+      "danger": {
+        "role": "semantic",
+        "displayName": "Danger",
+        "tonalRamp": [
+          "oklch(15% 0.0243 24.07)",
+          "oklch(26% 0.0742 24.07)",
+          "oklch(38% 0.1160 24.07)",
+          "oklch(49% 0.1369 24.07)",
+          "oklch(61% 0.1369 24.07)",
+          "oklch(72% 0.1160 24.07)",
+          "oklch(84% 0.0742 24.07)",
+          "oklch(95% 0.0243 24.07)"
+        ]
+      },
+      "danger-soft": {
+        "role": "semantic",
+        "displayName": "Danger Soft",
+        "tonalRamp": [
+          "oklch(15% 0.0026 17.42)",
+          "oklch(26% 0.0080 17.42)",
+          "oklch(38% 0.0125 17.42)",
+          "oklch(49% 0.0148 17.42)",
+          "oklch(61% 0.0148 17.42)",
+          "oklch(72% 0.0125 17.42)",
+          "oklch(84% 0.0080 17.42)",
+          "oklch(95% 0.0026 17.42)"
+        ]
+      },
+      "info": {
+        "role": "semantic",
+        "displayName": "Info",
+        "tonalRamp": [
+          "oklch(15% 0.0138 203.01)",
+          "oklch(26% 0.0421 203.01)",
+          "oklch(38% 0.0659 203.01)",
+          "oklch(49% 0.0777 203.01)",
+          "oklch(61% 0.0777 203.01)",
+          "oklch(72% 0.0659 203.01)",
+          "oklch(84% 0.0421 203.01)",
+          "oklch(95% 0.0138 203.01)"
+        ]
+      },
+      "info-soft": {
+        "role": "semantic",
+        "displayName": "Info Soft",
+        "tonalRamp": [
+          "oklch(15% 0.0032 171.51)",
+          "oklch(26% 0.0099 171.51)",
+          "oklch(38% 0.0154 171.51)",
+          "oklch(49% 0.0182 171.51)",
+          "oklch(61% 0.0182 171.51)",
+          "oklch(72% 0.0154 171.51)",
+          "oklch(84% 0.0099 171.51)",
+          "oklch(95% 0.0032 171.51)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Academy page headings."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Section headings."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Vietnamese UI body text."
+      },
+      "reading": {
+        "displayName": "Reading",
+        "purpose": "Default adjustable lesson reading text; 19, 21 or 23px."
+      },
+      "control": {
+        "displayName": "Control",
+        "purpose": "Shared action controls."
+      },
+      "hanzi": {
+        "displayName": "Hanzi",
+        "purpose": "Vocabulary entry identity; responsive reductions are documented in DESIGN.md."
+      },
+      "pinyin": {
+        "displayName": "Pinyin",
+        "purpose": "Pronunciation beside Hanzi; optionally hidden for vocabulary."
+      }
+    },
+    "shadows": [
+      {
+        "name": "surface",
+        "value": "0 1px 2px rgb(46 50 40 / 8%)",
+        "purpose": "Existing shared surface primitive; academy reading cards explicitly use no shadow."
+      },
+      {
+        "name": "overlay",
+        "value": "0 1rem 3rem rgb(46 50 40 / 24%)",
+        "purpose": "Shared modal dialogs."
+      },
+      {
+        "name": "reading-settings",
+        "value": "0 12px 28px #21422a16",
+        "purpose": "Reading preferences popover."
+      },
+      {
+        "name": "companion-speech",
+        "value": "0 5px 15px #22442a16",
+        "purpose": "Bo contextual speech surface."
+      }
+    ],
+    "motion": [
+      {
+        "name": "bo-breathe",
+        "value": "5s ease-in-out infinite; translateY(0) to translateY(-5px) and back",
+        "purpose": "Dashboard Bo only, under prefers-reduced-motion: no-preference."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation: none; transition: none; scroll-behavior: auto",
+        "purpose": "Applied to learner, public and admin descendants when reduced motion is requested."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "1600px"
+      },
+      {
+        "name": "compact-desktop",
+        "value": "1250px"
+      },
+      {
+        "name": "stacked-study",
+        "value": "1050px"
+      },
+      {
+        "name": "icon-rail",
+        "value": "800px"
+      },
+      {
+        "name": "mobile-navigation",
+        "value": "600px"
+      },
+      {
+        "name": "narrow-mobile",
+        "value": "370px"
+      },
+      {
+        "name": "admin-primary-stack",
+        "value": "1000px"
+      },
+      {
+        "name": "admin-secondary-stack",
+        "value": "700px"
+      },
+      {
+        "name": "admin-library-cover-row",
+        "value": "480px"
+      },
+      {
+        "name": "admin-header-copy-reflow",
+        "value": "639px"
+      }
+    ],
+    "adminLibraryStudio": {
+      "scope": ".admin-shell.admin-academy-workspace",
+      "source": [
+        "frontend/src/styles/admin-library-studio.css",
+        "frontend/src/features/admin/AdminLibrary.tsx",
+        "frontend/src/features/admin/AuthoringSession.tsx",
+        "frontend/src/features/admin/LessonContentSection.tsx",
+        "frontend/src/features/admin/QuestionEditor.tsx",
+        "frontend/src/features/admin/AdminLessonEditorPage.tsx",
+        "frontend/src/features/admin/AdminAssessmentsPage.tsx"
+      ],
+      "background": "Warm paper #f4f3eb with background pseudo-elements removed; near-ivory #fffef9 tools and cards; sage filter, outline and preview frames. Relevant scholar-library/exam-pavilion artwork stays in compact headers; category book covers do not depict uploaded contents.",
+      "typography": "Scoped Noto Sans, Noto Sans SC, sans-serif at 16px/1.7; headings share the stack and input, textarea, select and button inherit it. Fields use 16px/1.6, labels 14px/1.6 weight 600. Vocabulary preview Hanzi is 56px; quick-glimpse Hanzi is 44px Noto Sans SC.",
+      "fields": "Near-ivory #fffefb ground, #253c32 text and #bcc8ba border; textarea minimum height 96px with vertical resize; 3px #a95b2b focus outline offset 3px. These are administration overrides, not replacements for shared/public field variants.",
+      "layout": {
+        "container": "Maximum 1600px; 32px clamp(18px, 3vw, 44px) 64px padding, then 20px 18px 40px at 800px.",
+        "library": "Results plus 240?300px sticky quick preview, 24px gap. At 1250px: 250px preview, 18px gap, one card column. At 800px: stacked preview and two card columns. At 480px: one horizontal cover-and-copy card column. A sole result also uses a horizontal card. Tables scroll in a labeled focusable region.",
+        "workshop": "200px sticky outline plus content stage; editor/preview columns at 1.15:0.85 with 240px preview minimum and 24px gap. At 1250px: 160px outline, 16px gap and stacked edit/preview. At 800px: wrapping outline, static preview and explicit Edit/Preview controls. Hidden panes remain mounted."
+      },
+      "selection": "Quick summary resolves only against records on the current filtered result page, using the matching selected ID or first visible record; no visible record means no summary. Title buttons select, separate links open canonical destinations. Pagination remains external to AdminLibrary.",
+      "drafts": "In-memory mounted drafts survive item, area and mobile pane switches in the current record session. Explicit item saves retain failed input and update only the saved item baseline. Aggregate dirty state protects route departure/browser unload and disables lesson publish and assessment review/publish. Existing lifecycle/read-only/deletion restrictions remain authoritative.",
+      "contentOwnership": "Separate shared canonical content fields from lesson order/note/example. Explain shared effects; detachment removes only the lesson association.",
+      "preview": "Current draft student-style content with unsaved labels, supported exact-match illustrations and local interactive question answers through the learner renderer. Question answer keys, accepted answers and rubrics stay in the editor. Previews have no learner progress, submission or publication side effects and do not represent a full learner session."
+    },
+    "academyVisualsVi": {
+      "scope": "Contextual learner and administration artwork; Vietnamese administration presentation. Extends Bo's Illustrated Academy without replacing incumbent tokens, layouts, workflows or public/learner copy.",
+      "surfaceBrief": ".impeccable/surfaces/academy-visuals-vi.md",
+      "source": [
+        "frontend/src/components/academy/AcademyArtwork.tsx",
+        "frontend/src/components/academy/artworkContext.ts",
+        "frontend/src/components/academy/AcademyIcon.tsx",
+        "frontend/src/styles/academy-illustrations.css",
+        "frontend/src/components/ui/PageHeader.tsx",
+        "frontend/src/components/ui/PageState.tsx",
+        "frontend/src/app/layouts/AdminLayout.tsx",
+        "frontend/src/features/admin/labels.ts"
+      ],
+      "atlas": {
+        "original": "frontend/public/academy/learning-scenes-v1.png",
+        "delivery": "frontend/public/academy/learning-scenes-v1.webp",
+        "deliveryTreatment": "Lossless WebP derivative with identical alpha; original generated PNG retained unmodified. Preserve watercolor transparency without thresholding, background removal or cross-cell cropping.",
+        "provenance": "frontend/public/academy/learning-scenes-v1.provenance.json",
+        "exactPrompt": "frontend/public/academy/learning-scenes-v1.prompt.txt",
+        "canvas": "1536x1024 RGBA; 3 columns by 2 rows; 512x512 square cells; left to right, top to bottom.",
+        "backgroundSize": "300% 200%",
+        "slots": [
+          {
+            "index": 0,
+            "key": "greeting",
+            "subject": "Two adult learners greeting in a courtyard",
+            "backgroundPosition": "0% 0%"
+          },
+          {
+            "index": 1,
+            "key": "family",
+            "subject": "Family of three",
+            "backgroundPosition": "50% 0%"
+          },
+          {
+            "index": 2,
+            "key": "study",
+            "subject": "Scholarly reading desk",
+            "backgroundPosition": "100% 0%"
+          },
+          {
+            "index": 3,
+            "key": "path",
+            "subject": "Garden path and academy arch",
+            "backgroundPosition": "0% 100%"
+          },
+          {
+            "index": 4,
+            "key": "practice",
+            "subject": "Exercise notebook and paper tiles",
+            "backgroundPosition": "50% 100%"
+          },
+          {
+            "index": 5,
+            "key": "library",
+            "subject": "Library shelf and source documents",
+            "backgroundPosition": "100% 100%"
+          }
+        ]
+      },
+      "mapping": {
+        "lessonTitles": {
+          "greeting": "ch?o|greeting|??|giao ti?p (case-insensitive)",
+          "family": "gia ??nh|family|?? (case-insensitive)",
+          "fallback": "study"
+        },
+        "covers": "Lessons use supported title matches or neutral study; assessments use practice; source documents use library. Covers identify topic/category and do not depict uploaded file contents.",
+        "routeContext": "Documents and history: library; assessments: practice; pronunciation, curriculum and HSK: path; otherwise study.",
+        "companions": "Practice defaults to B?t; library to Tr?c; other scene headers to Bo guide. Explicit real lesson completion uses celebrate; unfinished lessons use think. Preserve other explicit progress-based pose choices.",
+        "integration": "ArtworkProvider supplies context inside learner/admin surfaces. PageHeader defaults to HeaderArtwork, accepts explicit artwork/scene and permits artwork=false. Contextual EmptyState uses a compact relevant scene beside real text/action. Decorative scenes, header art and section icons are hidden from assistive technology."
+      },
+      "layout": {
+        "desktopHeader": "Flexible copy plus 180px artwork column, 16px/24px row/column gaps, 156px minimum height and 24px/28px padding. Artwork region 180x144px; 150px square scene; 76px square companion overlapping lower right. Actions use a separate full-width second row.",
+        "mobileHeader": "At 700px: 100px artwork column, 12px gaps, 20px padding, 124px minimum height; 96px scene and 50px companion. At 440px: one column with artwork, copy, then actions; artwork height 86px. Flexible copy retains min-width:0 and wraps.",
+        "adminDashboardHeader": "Dedicated heading grid with 164x132px artwork. At 1100px artwork becomes 120x112px and create action moves beneath. At 440px artwork, copy and create action stack in that order.",
+        "squarePreviews": "Scene cells retain aspect-ratio:1 and flex-shrink:0. Admin student word art is 144px wide, max-width:100%, height:auto, min-height:0, aspect-ratio:1 and border-box sizing; quick glimpse pairs 92px square art with flexible text and 34px Hanzi. Preserve supported exact-match word art and avoid cross-axis stretching."
+      },
+      "semanticIcons": {
+        "vocabulary": "book",
+        "grammar": "structure",
+        "practice": "exercise",
+        "curriculum": "path",
+        "sourceDocuments": "library",
+        "history": "history",
+        "treatment": "Native SVG, 24px view box, no fill, currentColor 1.7px stroke, round caps/joins; 24px section icons inside 44px tonal tiles. Keep visible labels understandable without icons."
+      },
+      "administrationPresentation": {
+        "language": "Vietnamese navigation, headings, labels, status names, question types, confirmations, errors, upload controls and local question-preview controls, including administration logout.",
+        "labels": "Known API values map through adminLabel; unknown values remain visible; missing values show an em dash.",
+        "dates": "adminDate uses Intl.DateTimeFormat vi-VN with medium date and short time; missing values show an em dash and invalid dates show Ch?a x?c ??nh.",
+        "boundary": "Presentation only: preserve API enums/payload fields, identifiers, lifecycle and progress rules, authored lesson/source text and existing public/learner interface copy."
+      }
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "description": "Shared primary action; page-specific continuation and authentication variants retain their source styling.",
+      "html": "<button type=\"button\" class=\"ds-button-primary\">Continue</button>",
+      "css": ".ds-button-primary{display:inline-flex;align-items:center;justify-content:center;gap:var(--space-2,.5rem);min-height:46px;padding:.55rem .9rem;border:1px solid var(--color-border-strong,#b8cbc7);border-radius:var(--radius-md,.625rem);font:600 16px/1.5 'Noto Sans',sans-serif;letter-spacing:0;cursor:pointer;background:var(--color-primary,#296747);color:#fff;border-color:var(--color-primary,#296747);} .ds-button-primary:hover{background:var(--color-primary-hover,#1e5338);} .ds-button-primary:focus-visible{outline:3px solid #a56c26;outline-offset:4px;} .ds-button-primary:disabled{opacity:.58;cursor:not-allowed;}",
+      "refersTo": "button-primary"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "description": "Shared secondary action; page-specific continuation and authentication variants retain their source styling.",
+      "html": "<button type=\"button\" class=\"ds-button-secondary\">Show details</button>",
+      "css": ".ds-button-secondary{display:inline-flex;align-items:center;justify-content:center;gap:var(--space-2,.5rem);min-height:46px;padding:.55rem .9rem;border:1px solid var(--color-border-strong,#b8cbc7);border-radius:var(--radius-md,.625rem);font:600 16px/1.5 'Noto Sans',sans-serif;letter-spacing:0;cursor:pointer;background:var(--color-surface,#fffef8);color:var(--color-primary,#296747);border-color:var(--color-border-strong,#b8cbc7);} .ds-button-secondary:hover{background:var(--color-surface,#fffef8);} .ds-button-secondary:focus-visible{outline:3px solid #a56c26;outline-offset:4px;} .ds-button-secondary:disabled{opacity:.58;cursor:not-allowed;}",
+      "refersTo": "button-secondary"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "description": "Shared ghost action; page-specific continuation and authentication variants retain their source styling.",
+      "html": "<button type=\"button\" class=\"ds-button-ghost\">Cancel</button>",
+      "css": ".ds-button-ghost{display:inline-flex;align-items:center;justify-content:center;gap:var(--space-2,.5rem);min-height:46px;padding:.55rem .9rem;border:1px solid var(--color-border-strong,#b8cbc7);border-radius:var(--radius-md,.625rem);font:600 16px/1.5 'Noto Sans',sans-serif;letter-spacing:0;cursor:pointer;background:transparent;color:var(--color-primary,#296747);border-color:transparent;} .ds-button-ghost:hover{background:transparent;} .ds-button-ghost:focus-visible{outline:3px solid #a56c26;outline-offset:4px;} .ds-button-ghost:disabled{opacity:.58;cursor:not-allowed;}",
+      "refersTo": "button-ghost"
+    },
+    {
+      "name": "Danger Button",
+      "kind": "button",
+      "description": "Shared danger action; page-specific continuation and authentication variants retain their source styling.",
+      "html": "<button type=\"button\" class=\"ds-button-danger\">Delete</button>",
+      "css": ".ds-button-danger{display:inline-flex;align-items:center;justify-content:center;gap:var(--space-2,.5rem);min-height:46px;padding:.55rem .9rem;border:1px solid var(--color-border-strong,#b8cbc7);border-radius:var(--radius-md,.625rem);font:600 16px/1.5 'Noto Sans',sans-serif;letter-spacing:0;cursor:pointer;background:var(--color-danger,#9d3434);color:#fff;border-color:var(--color-danger,#9d3434);} .ds-button-danger:hover{background:var(--color-danger,#9d3434);} .ds-button-danger:focus-visible{outline:3px solid #a56c26;outline-offset:4px;} .ds-button-danger:disabled{opacity:.58;cursor:not-allowed;}"
+    },
+    {
+      "name": "Account Field",
+      "kind": "input",
+      "description": "Shared labeled authentication field, before page-specific login overrides.",
+      "html": "<label class=\"ds-field\">Email<input class=\"ds-field-input\" type=\"email\" autocomplete=\"email\" placeholder=\"you@example.com\" /></label>",
+      "css": ".ds-field{display:grid;gap:var(--space-2,.5rem);font:650 18px/1.8 'Noto Sans',sans-serif;color:var(--color-text,#37523b);} .ds-field-input{width:100%;min-height:50px;padding:var(--space-2,.5rem) var(--space-3,.75rem);border:1px solid var(--color-border-strong,#b8cbc7);border-radius:var(--radius-sm,.375rem);background:var(--color-surface,#fffef8);color:var(--color-text,#37523b);font:400 18px/1.8 'Noto Sans',sans-serif;caret-color:#296747;} .ds-field-input:hover{border-color:var(--color-border-strong,#b8cbc7);} .ds-field-input:focus-visible{outline:3px solid var(--color-focus,#296747);outline-offset:2px;}"
+    },
+    {
+      "name": "Academy Navigation",
+      "kind": "nav",
+      "description": "Pine learner navigation with a clear selected row.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Learner navigation\"><a href=\"#dashboard\" aria-current=\"page\">Góc học tập</a><a href=\"#journey\">Hành trình</a></nav>",
+      "css": ".ds-nav{display:grid;gap:8px;padding:18px;background:var(--color-product-jade-deep,#173f36);} .ds-nav a{display:flex;align-items:center;gap:12px;min-height:50px;padding:12px;border-radius:8px;color:#cadac4;text-decoration:none;font:400 15px/1.5 'Noto Sans',sans-serif;} .ds-nav a:hover{color:#fff9e6;background:#285442;} .ds-nav a[aria-current]{background:#e4edcf;color:#214a34;} .ds-nav a:focus-visible{outline:3px solid #a56c26;outline-offset:4px;}",
+      "refersTo": "nav-current"
+    },
+    {
+      "name": "Completion Badge",
+      "kind": "chip",
+      "description": "Text and semantic color show completion without relying on color alone.",
+      "html": "<span class=\"ds-status\">Đã xong</span>",
+      "css": ".ds-status{display:inline-flex;align-items:center;min-height:1.65rem;padding:4px 9px;border:1px solid transparent;border-radius:var(--radius-pill,999px);background:var(--color-success-soft,#eef8f2);color:var(--color-success,#17663b);font:650 14px/1.6 'Noto Sans',sans-serif;}",
+      "refersTo": "status-success"
+    },
+    {
+      "name": "Reading Card",
+      "kind": "card",
+      "description": "Quiet ivory container for lesson material.",
+      "html": "<article class=\"ds-reading\"><h2>Ví dụ và ghi chú</h2><p>Đọc ví dụ, sau đó xem phần giải thích bên cạnh.</p></article>",
+      "css": ".ds-reading{padding:25px;border:1px solid #dbe3d1;border-radius:14px;background:var(--color-product-ivory,#fffef8);color:var(--color-text,#37523b);box-shadow:none;} .ds-reading h2{margin:0 0 12px;font:600 24px/1.4 'Noto Sans',sans-serif;letter-spacing:-.02em;color:#2a4836;} .ds-reading p{margin:0;font:400 var(--reader-font-size,19px)/1.9 'Noto Sans',sans-serif;}",
+      "refersTo": "reading-card"
+    },
+    {
+      "name": "Vocabulary Identity",
+      "kind": "custom",
+      "description": "Chinese-first identity with pinyin and meaning; word art is present only for supported exact matches.",
+      "html": "<article class=\"ds-vocabulary\"><h3 lang=\"zh-Hans\">你好</h3><p class=\"ds-pinyin\">nǐ hǎo</p><p class=\"ds-meaning\">xin chào</p></article>",
+      "css": ".ds-vocabulary{padding:25px;border:1px solid #dbe3d1;border-radius:14px;background:var(--color-product-ivory,#fffef8);} .ds-vocabulary h3{margin:0 0 7px;font:550 64px/1.5 'Noto Sans SC',sans-serif;letter-spacing:0;color:#254c32;overflow-wrap:anywhere;} .ds-pinyin{margin:0 0 6px;font:400 23px/1.7 'Noto Sans',sans-serif;color:#4f7447;} .ds-meaning{margin:0;font:400 var(--reader-font-size,19px)/1.8 'Noto Sans',sans-serif;color:#667a5b;} @media(max-width:600px){.ds-vocabulary h3{font-size:49px;line-height:1.55;}.ds-pinyin{font-size:21px;}}"
+    },
+    {
+      "name": "Pronunciation Stage",
+      "kind": "custom",
+      "description": "A large sound and Chinese example sit in an inset study plane.",
+      "html": "<section class=\"ds-sound\"><div><strong>b</strong></div><div><span lang=\"zh-Hans\">八</span><p>bā</p></div></section>",
+      "css": ".ds-sound{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:22px;padding:25px 18px;border:0;border-radius:12px;background:#f5f3e7;text-align:center;box-shadow:none;} .ds-sound strong{font:600 82px/1.2 'Noto Sans',sans-serif;color:#2d5639;} .ds-sound [lang]{font:550 68px/1.3 'Noto Sans SC',sans-serif;color:#254b32;} .ds-sound p{margin:12px 0 0;font:400 23px/1.7 'Noto Sans',sans-serif;color:#5c7950;} @media(max-width:600px){.ds-sound{gap:12px;padding:23px 10px;}.ds-sound strong{font-size:67px;}.ds-sound [lang]{font-size:56px;}.ds-sound p{font-size:22px;}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Bo's Illustrated Academy",
+    "overview": "A calm painted academy frames practical study. Pine navigation, pale paper and ivory reading surfaces make room for an expressive dragon named Bo. Local Noto Sans keeps Vietnamese explanations direct and comfortable; Noto Sans SC gives Chinese learning material a distinct, larger voice.\n\nIllustration accompanies the task: Bo welcomes, guides and responds; Trúc explains; Bút supports practice. Reading surfaces remain quiet so the learner can distinguish a sound, Hanzi, pinyin, meaning and evidence. Public authentication and administration share the palette and type identity while retaining their existing workflows. Administration extends this academy through quiet management panels, real-record libraries and a focused authoring workshop with explicit item saves and local student-style previews.\n\nThe contextual artwork extension is recorded in `.impeccable/surfaces/academy-visuals-vi.md`. It adds watercolor scenes, semantic outlined icons and activity companions across learner and administration surfaces, while keeping the incumbent identity and content workflows. Administration interface copy is Vietnamese; this presentation scope does not change authored content or public and learner interface copy.",
+    "keyCharacteristics": [
+      "Painted academy scenery with a contextual companion cast.",
+      "Large Chinese learning content and adjustable Vietnamese reading text.",
+      "Pine navigation, ivory reading cards and restrained tonal boundaries.",
+      "Explicit progress, availability, source references and action states."
+    ],
+    "rules": [
+      {
+        "name": "The Quiet Page Rule",
+        "body": "Keep explanatory and vocabulary surfaces ivory or pale sage; place painted scenery in the surrounding academy and dedicated scene regions.",
+        "section": "colors"
+      },
+      {
+        "name": "The Chinese First Rule",
+        "body": "Make Hanzi the vocabulary entry's strongest text, followed by pinyin and Vietnamese meaning; keep the example and explanatory note adjacent when details expand.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Reading Rule",
+        "body": "Preserve the academy lesson and pronunciation cards' shadow-free reading plane; use elevation to explain an overlay or contextual floating surface.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Current Page Rule",
+        "body": "Resolve the library quick summary from the visible filtered result page; keep selecting a summary distinct from opening the canonical editor.",
+        "section": "components"
+      },
+      {
+        "name": "The Mounted Draft Rule",
+        "body": "Retain inactive item editors and workspace areas while switching, protect unsaved departure and save each item explicitly. Draft retention lasts within the mounted record session.",
+        "section": "components"
+      },
+      {
+        "name": "The Honest Preview Rule",
+        "body": "Show the current draft with an unsaved label, keep grading answers in the editor and keep preview interactions local without recording learning results or publishing.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "**Do** keep Vietnamese explanations readable and Chinese content visually distinct with the locally served Noto families.",
+      "**Do** preserve all three reading-size choices and the optional vocabulary pinyin preference.",
+      "**Do** use Bo, Trúc and Bút according to their contextual roles and preserve sprite proportions.",
+      "**Do** keep examples, notes, source references, save states and errors next to the material or action they explain.",
+      "**Do** derive progress, completion and availability from the API; store only presentation preferences locally in the production academy.",
+      "**Do** keep administration's lesson and practice actions ahead of supporting statistics, with real drafts and adjacent data-state feedback.",
+      "**Do** keep library selection tied to the current result page and distinguish selecting a quick summary from opening its canonical editor.",
+      "**Do** preserve mounted authoring drafts across item, area and mobile pane switches, with explicit per-item saves and honest unsaved preview labels.",
+      "**Do** choose topic artwork only for supported title matches and use the reading desk as the neutral lesson fallback.",
+      "**Do** keep scene and word-art cells square, preserve transparent edges and let narrow-screen header controls wrap beneath the content.",
+      "**Do** present administration controls, status labels and dates in Vietnamese while preserving API values and authored content."
+    ],
+    "donts": [
+      "**Don't** show an unrelated vocabulary picture or imply complete illustration coverage.",
+      "**Don't** replace real completion or unlock rules with prototype sample progress.",
+      "**Don't** reduce Chinese or Vietnamese font coverage to the prototype's limited subset.",
+      "**Don't** promote legacy cascade artifacts, heading kickers, thick colored section stripes or inherited ornamental gradients into reusable academy rules.",
+      "**Don't** treat the local textbook PDF as a public visual asset; keep concise source-page references visible in the lesson.",
+      "**Don't** imply that category covers depict uploaded content, or that an administration preview records a learner result or publishes a draft.",
+      "**Don't** apply the scoped administration workspace's typography, field or background overrides to learner and public surfaces.",
+      "**Don't** infer completion from decorative scenes, translate authored lesson/source material automatically, or extend administration copy changes into public and learner surfaces."
+    ]
+  }
+}

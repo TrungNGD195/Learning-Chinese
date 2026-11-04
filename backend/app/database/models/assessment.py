@@ -6,8 +6,9 @@ from sqlalchemy.dialects.postgresql import JSONB
 from app.database.models._factory import association, model
 from app.database.models.curriculum import created, id_col, updated
 from app.database.base import Base
+from app.exercise.policy import insert_pass_threshold
 
-Assessment = model("Assessment", "assessments", [id_col(), ("type", String, {"nullable": False}), ("lesson_id", Uuid(as_uuid=True), {"foreign_key": "lessons.id"}), ("title", Text, {"nullable": False}), ("description", Text), ("status", String, {"nullable": False}), ("pass_threshold", Integer, {"nullable": False, "server_default": "90"}), created(), updated(), ("published_at", DateTime(timezone=True))], CheckConstraint("type IN ('LESSON_EXERCISE','PERIODIC_TEST')", name="type_values"), CheckConstraint("status IN ('DRAFT','REVIEW','PUBLISHED','ARCHIVED')", name="status_values"), CheckConstraint("pass_threshold BETWEEN 0 AND 100", name="pass_threshold_range"), CheckConstraint("(type = 'LESSON_EXERCISE' AND lesson_id IS NOT NULL) OR (type = 'PERIODIC_TEST' AND lesson_id IS NULL)", name="lesson_target"))
+Assessment = model("Assessment", "assessments", [id_col(), ("type", String, {"nullable": False}), ("lesson_id", Uuid(as_uuid=True), {"foreign_key": "lessons.id"}), ("title", Text, {"nullable": False}), ("description", Text), ("status", String, {"nullable": False}), ("pass_threshold", Integer, {"nullable": False, "default": insert_pass_threshold}), created(), updated(), ("published_at", DateTime(timezone=True))], CheckConstraint("type IN ('LESSON_EXERCISE','PERIODIC_TEST')", name="type_values"), CheckConstraint("status IN ('DRAFT','REVIEW','PUBLISHED','ARCHIVED')", name="status_values"), CheckConstraint("pass_threshold BETWEEN 0 AND 100", name="pass_threshold_range"), CheckConstraint("(type = 'LESSON_EXERCISE' AND lesson_id IS NOT NULL) OR (type = 'PERIODIC_TEST' AND lesson_id IS NULL)", name="lesson_target"))
 AssessmentLesson = association("assessment_lessons", "assessments.id", "lessons.id")
 AssessmentVocabulary = association("assessment_vocabulary", "assessments.id", "vocabulary.id")
 AssessmentGrammar = association("assessment_grammar", "assessments.id", "grammar.id")

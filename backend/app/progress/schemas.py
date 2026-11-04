@@ -50,6 +50,27 @@ class PronunciationSectionResponse(BaseModel):
     completed_at: datetime | None
 
 
+class PronunciationLessonSection(BaseModel):
+    id: UUID
+    code: Literal["INITIALS", "FINALS", "TONES"]
+    completed_at: datetime | None
+    total_steps: int
+
+
+class PronunciationLessonResponse(BaseModel):
+    sections: list[PronunciationLessonSection]
+    current_section: Literal["INITIALS", "FINALS", "TONES"] | None
+    step_index: int
+    total_steps: int
+    completed_at: datetime | None
+    can_finish: bool
+
+
+class PronunciationAdvanceRequest(BaseModel):
+    section_code: Literal["INITIALS", "FINALS", "TONES"]
+    step_index: int = Field(ge=0)
+
+
 class ViewProgressResponse(BaseModel):
     viewed_at: datetime
     theory_completed_at: datetime | None

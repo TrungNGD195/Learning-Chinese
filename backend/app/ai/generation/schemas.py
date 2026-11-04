@@ -40,6 +40,7 @@ class _GenerationRequest(BaseModel):
 
 class LessonExerciseGenerationRequest(_GenerationRequest):
     type: Literal["LESSON_EXERCISE"]
+    pass_threshold: int = Field(default=80, ge=0, le=100)
     lesson_id: UUID
 
 

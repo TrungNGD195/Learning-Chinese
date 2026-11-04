@@ -11,9 +11,13 @@ A Vietnamese-first Chinese learning web app with a structured curriculum and a l
 | `evaluation/` | Versioned evaluation cases, fixtures, validators, and evaluation assets |
 | `docs/` | Implementation notes, run reports, and learning/evaluation documentation |
 | `Spec-CURRENT/` | Current product specifications, PM decisions, and execution protocol |
-| `codex-tasks/` | Step-specific implementation tasks and review packets |
 | `infra/` | Local PostgreSQL initialization assets |
 | `compose.yaml` | Local pgvector PostgreSQL service |
+| `compose.app.yaml` | Development containers for the backend and frontend |
+| `DESIGN.md`, `PRODUCT.md` | Approved visual system and product direction |
+
+The approved academy interface is implemented in the application. The superseded
+`/design-lab` and `/journey-test.html` prototypes have been removed.
 
 ## Local development
 
@@ -59,4 +63,10 @@ Step 8.3 Stage B T4 validation is paused. Modal required a payment method to con
 
 ## Safety and local-only files
 
-Do not commit `.env` files, credentials, PostgreSQL data, uploaded documents, model weights, Python/Node environments, caches, or test-generated files. These are excluded by `.gitignore`. Keep PM specifications and step task files with the project so later work can resume against the current contracts.
+Do not commit `.env` files, credentials, PostgreSQL data, uploaded documents, model weights, Python/Node environments, caches, or test-generated files. These are excluded by `.gitignore`. Keep `Spec-CURRENT/` and `docs/` as the in-repository project context. Codex execution task packets are maintained outside this checkout.
+
+Installed agent skills (`.agents/`), machine-specific hooks (`.codex/`), generated
+design previews, screenshots, and local textbook PDFs also stay outside Git.
+The textbook filenames and checksums are recorded in [the source inventory](docs/learning-sources.md).
+Committed design review notes describe past checks; regenerate their screenshots
+with the verification scripts in `frontend/scripts/` when needed.

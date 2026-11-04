@@ -2,7 +2,7 @@
 
 ## Implementation Contract
 
-Implement the frozen task at `codex-tasks/phase7/step-7.3-retrieval-evaluation-codex-task.md`. This specification records its implementation-facing runtime contract.
+This specification records the implementation-facing runtime contract for the retrieval evaluation.
 
 ### Inputs
 

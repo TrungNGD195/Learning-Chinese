@@ -1,4 +1,7 @@
+import { SectionIcon } from '../../components/academy/AcademyArtwork'
+import { Alert, Button, EmptyState, StatusBadge, Surface } from '../../components/ui'
 import type { components } from '../../types/api.generated'
+import { Companion, VocabularyIllustration } from '../../components/academy/Companion'
 
 type Vocabulary = components['schemas']['VocabularyLessonItem']
 type Grammar = components['schemas']['GrammarLessonItem']
@@ -12,57 +15,64 @@ type TheoryProps<T> = {
   onToggle: (id: string, wasOpen: boolean) => void
 }
 
+function SectionHeading({ chinese, english, count, id }: { chinese: string; english: string; count: string; id: string }) {
+  return <div className="lesson-section__heading">
+    <div><SectionIcon kind={id === 'vocabulary-title' ? 'vocabulary' : 'grammar'}/><h2 id={id}>{english} <span lang="zh-Hans" className="academy-section-chinese" aria-hidden="true">{chinese}</span></h2></div>
+    <span className="lesson-section__eyebrow">{count}</span>
+  </div>
+}
+
 export function VocabularySection({ items, viewed, expanded, pending, errors, onToggle }: TheoryProps<Vocabulary>) {
   const viewedCount = items.filter((item) => viewed[item.id]).length
-  return <section className="learning-section" aria-labelledby="vocabulary-title">
-    <div className="section-heading"><h2 id="vocabulary-title">Vocabulary</h2><span>{viewedCount} / {items.length} viewed</span></div>
-    {items.length === 0 && <p>No vocabulary in this lesson.</p>}
-    <div className="section-grid">
+  return <section className="lesson-section" id="vocabulary" aria-labelledby="vocabulary-title">
+    <SectionHeading chinese="生词" english="Vocabulary" count={`${viewedCount} / ${items.length} viewed`} id="vocabulary-title" />
+    {items.length === 0 ? <EmptyState title="No vocabulary yet">There are no vocabulary items in this lesson.</EmptyState> : <div className="lesson-card-grid">
       {items.map((entry) => {
         const isOpen = Boolean(expanded[entry.id])
         const isPending = Boolean(pending[entry.id])
-        return <article className="theory-card" key={entry.id}>
-          <h3>{entry.item.hanzi}</h3><p className="pinyin">{entry.item.pinyin}</p><p>{entry.item.vietnamese_meaning}</p>
-          <p className="viewed-indicator">{viewed[entry.id] ? 'Viewed' : 'Not viewed'}</p>
-          <button type="button" className="secondary-action" aria-expanded={isOpen} disabled={isPending}
-            onClick={() => onToggle(entry.id, isOpen)}>{isOpen ? 'Hide details' : 'Show details'}</button>
+        return <Surface as="article" className="learner-surface lesson-theory-card" key={entry.id}>
+          <div className="academy-vocabulary-identity"><div><h3 className="lesson-theory-card__hanzi" lang="zh-Hans">{entry.item.hanzi}</h3>
+          <p className="lesson-theory-card__pinyin">{entry.item.pinyin}</p>
+          <p className="lesson-theory-card__meaning">{entry.item.vietnamese_meaning}</p>
+          </div><VocabularyIllustration hanzi={entry.item.hanzi}/></div>
+          <StatusBadge tone={viewed[entry.id] ? 'success' : 'neutral'}>{viewed[entry.id] ? 'Viewed' : 'Not viewed'}</StatusBadge>
+          <Button aria-expanded={isOpen} disabled={isPending} onClick={() => onToggle(entry.id, isOpen)}>{isOpen ? 'Hide details' : 'Show details'}</Button>
           {isPending && <p role="status">Saving viewed state…</p>}
-          {errors[entry.id] && <p role="alert">{errors[entry.id]}</p>}
-          {isOpen && <div className="theory-details">
+          {errors[entry.id] && <Alert role="alert" tone="error">{errors[entry.id]}</Alert>}
+          {isOpen && <div className="lesson-theory-card__details">
             {entry.item.part_of_speech && <p>Part of speech: {entry.item.part_of_speech}</p>}
-            {entry.example && <p>Example: {entry.example}</p>}
-            {entry.note && <p>Note: {entry.note}</p>}
+            {entry.example && <p>Example: <span lang="zh-Hans">{entry.example}</span></p>}
+            {entry.note && <div className="academy-theory-note"><Companion pose="truc" decorative/><p>Note: {entry.note}</p></div>}
           </div>}
-        </article>
+        </Surface>
       })}
-    </div>
+    </div>}
   </section>
 }
 
 export function GrammarSection({ items, viewed, expanded, pending, errors, onToggle }: TheoryProps<Grammar>) {
   const viewedCount = items.filter((item) => viewed[item.id]).length
-  return <section className="learning-section" aria-labelledby="grammar-title">
-    <div className="section-heading"><h2 id="grammar-title">Grammar</h2><span>{viewedCount} / {items.length} viewed</span></div>
-    {items.length === 0 && <p>No grammar in this lesson.</p>}
-    <div className="section-grid">
+  return <section className="lesson-section" id="grammar" aria-labelledby="grammar-title">
+    <SectionHeading chinese="语法" english="Grammar" count={`${viewedCount} / ${items.length} viewed`} id="grammar-title" />
+    {items.length === 0 ? <EmptyState title="No grammar yet">There are no grammar points in this lesson.</EmptyState> : <div className="lesson-card-grid">
       {items.map((entry) => {
         const isOpen = Boolean(expanded[entry.id])
         const isPending = Boolean(pending[entry.id])
-        return <article className="theory-card" key={entry.id}>
-          <h3>{entry.item.name}</h3>{entry.item.structure && <p className="pinyin">{entry.item.structure}</p>}
-          <p className="viewed-indicator">{viewed[entry.id] ? 'Viewed' : 'Not viewed'}</p>
-          <button type="button" className="secondary-action" aria-expanded={isOpen} disabled={isPending}
-            onClick={() => onToggle(entry.id, isOpen)}>{isOpen ? 'Hide details' : 'Show details'}</button>
+        return <Surface as="article" className="learner-surface lesson-theory-card" key={entry.id}>
+          <h3>{entry.item.name}</h3>
+          {entry.item.structure && <p className="lesson-theory-card__structure">{entry.item.structure}</p>}
+          <StatusBadge tone={viewed[entry.id] ? 'success' : 'neutral'}>{viewed[entry.id] ? 'Viewed' : 'Not viewed'}</StatusBadge>
+          <Button aria-expanded={isOpen} disabled={isPending} onClick={() => onToggle(entry.id, isOpen)}>{isOpen ? 'Hide details' : 'Show details'}</Button>
           {isPending && <p role="status">Saving viewed state…</p>}
-          {errors[entry.id] && <p role="alert">{errors[entry.id]}</p>}
-          {isOpen && <div className="theory-details">
+          {errors[entry.id] && <Alert role="alert" tone="error">{errors[entry.id]}</Alert>}
+          {isOpen && <div className="lesson-theory-card__details">
             <p>{entry.item.explanation}</p>
             {entry.item.usage && <p>Usage: {entry.item.usage}</p>}
-            {entry.example && <p>Example: {entry.example}</p>}
-            {entry.note && <p>Note: {entry.note}</p>}
+            {entry.example && <p>Example: <span lang="zh-Hans">{entry.example}</span></p>}
+            {entry.note && <div className="academy-theory-note"><Companion pose="truc" decorative/><p>Note: {entry.note}</p></div>}
           </div>}
-        </article>
+        </Surface>
       })}
-    </div>
+    </div>}
   </section>
 }

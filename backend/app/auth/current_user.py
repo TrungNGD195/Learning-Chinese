@@ -26,3 +26,9 @@ async def require_admin(current_user: User = Depends(get_current_user)) -> User:
     if current_user.role != "ADMIN":
         raise ApplicationError("ADMIN_REQUIRED", "Admin access is required", status_code=403)
     return current_user
+
+
+async def require_learner(current_user: User = Depends(get_current_user)) -> User:
+    if current_user.role != "LEARNER":
+        raise ApplicationError("LEARNER_REQUIRED", "Learner access is required", status_code=403)
+    return current_user

@@ -1,0 +1,625 @@
+.public-auth-page { display: grid; justify-items: start; gap: var(--space-4); }
+.public-auth-page .ui-page-header { width: 100%; }
+.public-auth-page .ui-page-header h1 { color: var(--color-text-strong); }
+.public-auth-surface { width: min(100%, 38rem); padding: clamp(1rem, 3vw, var(--space-6)); background: var(--color-surface); }
+.public-auth-form { display: grid; gap: var(--space-4); min-width: 0; }
+.public-auth-form > .ui-button { justify-self: start; }
+.public-auth-links { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); margin: 0; }
+.public-auth-links a, .public-forbidden-page a { min-height: 2.5rem; display: inline-flex; align-items: center; }
+.auth-field { display: grid; min-width: 0; gap: var(--space-2); color: var(--color-text); font-weight: 650; }
+.auth-field input { width: 100%; min-height: 2.75rem; padding: var(--space-2) var(--space-3); border: 1px solid var(--color-border-strong); border-radius: var(--radius-sm); background: var(--color-surface); color: var(--color-text); font: inherit; }
+.auth-field input:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 2px; }
+
+.public-shell:has(.public-login-page) .site-header {
+  min-height: 4.5rem;
+  border-bottom-color: transparent;
+  background: transparent;
+}
+.public-shell:has(.public-login-page) .brand { color: #213641; letter-spacing: -.02em; }
+.public-shell:has(.public-login-page) .brand::before { border-color: #b73c34; background: #b73c34; }
+.public-shell:has(.public-login-page) .page-container { width: min(100% - 3rem, 80rem); max-width: 80rem; padding-top: clamp(1.25rem, 3vw, 2.5rem); }
+.public-shell:has(.public-login-page) {
+  background:
+    radial-gradient(circle at 12% 18%, rgb(8 127 134 / 9%), transparent 27rem),
+    radial-gradient(circle at 88% 82%, rgb(183 60 52 / 5%), transparent 28rem),
+    linear-gradient(180deg, #fcfaf5, #f6f8f6);
+}
+.public-login-page { display: block; }
+.public-login-layout {
+  display: grid;
+  grid-template-areas: 'introduction panel' 'artwork panel' 'story panel';
+  grid-template-columns: minmax(0, 1.05fr) minmax(23rem, .95fr);
+  grid-template-rows: auto auto minmax(0, 1fr);
+  min-height: min(42rem, calc(100vh - 8.5rem));
+  overflow: hidden;
+  border: 1px solid #e3eae7;
+  border-radius: 1.25rem;
+  background:
+    radial-gradient(circle at 46% 16%, rgb(8 127 134 / 12%), transparent 20rem),
+    linear-gradient(145deg, #f6f8f6 0%, #fcfaf5 64%, #ffffff 100%);
+  box-shadow: 0 1.25rem 3rem rgb(33 54 65 / 8%);
+}
+.public-login-introduction { grid-area: introduction; min-width: 0; padding: clamp(2rem, 5vw, 4rem) clamp(2rem, 5vw, 4rem) 0; color: #213641; }
+.public-login-page .public-login-artwork {
+  grid-area: artwork;
+  width: auto;
+  max-width: 34rem;
+  min-width: 0;
+  aspect-ratio: 2.22;
+  margin: 1.25rem clamp(2rem, 5vw, 4rem) 0;
+  overflow: hidden;
+  border: 1px solid #e3eae7;
+  border-radius: 1rem;
+  background-color: #e5f0eb;
+  background-image: url('../assets/cloud-guide-dragon-bg02-r1-concept.png');
+  background-position: 9.5% center;
+  background-repeat: no-repeat;
+  background-size: 165.5% auto;
+}
+.public-login-story {
+  grid-area: story;
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0 clamp(2rem, 5vw, 4rem) clamp(2rem, 5vw, 4rem);
+  color: #213641;
+}
+.public-login-story::before,
+.public-login-story::after { position: absolute; z-index: -1; border: 1px solid rgb(8 127 134 / 13%); border-radius: 50%; content: ''; pointer-events: none; }
+.public-login-story::before { top: 8%; right: -8rem; width: 22rem; aspect-ratio: 1; }
+.public-login-story::after { right: -4.5rem; bottom: -9rem; width: 24rem; aspect-ratio: 1; }
+.public-login-kicker { display: flex; align-items: center; gap: .7rem; margin: 0; color: #087f86; font-size: .8125rem; font-weight: 750; letter-spacing: .12em; }
+.public-login-kicker > span { display: grid; width: 2rem; height: 2rem; place-items: center; border: 1px solid rgb(8 127 134 / 24%); border-radius: 50%; color: #087f86; font-family: 'Noto Sans CJK SC', ui-sans-serif, system-ui, sans-serif; font-size: .9rem; letter-spacing: 0; }
+.public-login-page .public-login-story-copy { max-width: 34rem; margin-top: clamp(1.25rem, 3vh, 2rem); }
+.public-login-chinese-line { margin: 0 0 1rem; color: #087f86; font-family: 'Noto Sans CJK SC', ui-sans-serif, system-ui, sans-serif; font-size: 1rem; letter-spacing: .08em; }
+.public-login-greeting { position: relative; display: grid; width: min(100%, 22rem); min-height: 8.5rem; align-content: center; justify-items: center; gap: .3rem; margin-top: 1.25rem; padding: 1rem 2rem; border: 1px solid #e3eae7; border-radius: 1.25rem; background: #ffffff; box-shadow: 0 .75rem 2rem rgb(33 54 65 / 6%); }
+.public-login-greeting__characters { color: #087f86; font-family: 'Noto Sans CJK SC', ui-sans-serif, system-ui, sans-serif; font-size: clamp(3.25rem, 5.5vw, 4.5rem); letter-spacing: .12em; line-height: 1.1; }
+.public-login-greeting__pinyin { color: #49616d; font-size: .875rem; letter-spacing: .12em; text-transform: uppercase; }
+.public-login-greeting__pinyin > span { padding-inline: .35rem; color: #087f86; }
+.public-login-greeting__seal { position: absolute; right: 1rem; bottom: 1rem; display: grid; width: 2.1rem; height: 2.1rem; place-items: center; border: 1px solid #b73c34; border-radius: .25rem; color: #b73c34; font-family: 'Noto Sans CJK SC', ui-sans-serif, system-ui, sans-serif; font-size: .95rem; }
+.public-login-panel { grid-area: panel; display: grid; align-content: center; justify-items: center; min-width: 0; padding: clamp(2rem, 5vw, 4rem); border-inline-start: 1px solid #e3eae7; background: #ffffff; }
+.public-login-card { width: min(100%, 26rem); }
+.public-login-welcome { margin: 0 0 .75rem; color: #087f86; font-size: .8125rem; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
+.public-login-welcome > span:first-child { font-family: 'Noto Sans CJK SC', ui-sans-serif, system-ui, sans-serif; font-size: 1rem; letter-spacing: .04em; text-transform: none; }
+.public-login-page .public-login-card h1 { margin: 0; color: #213641; font-size: clamp(1.875rem, 2.6vw, 2rem); font-weight: 700; letter-spacing: -.035em; }
+.public-login-intro { margin: .6rem 0 2rem; color: #49616d; }
+.public-login-form { gap: 1.1rem; }
+.public-login-page .auth-field { gap: .45rem; color: #213641; font-size: .875rem; font-weight: 650; }
+.public-login-page .auth-field input { min-height: 3.15rem; padding: .75rem .9rem; border-color: #e3eae7; border-radius: .625rem; background: #ffffff; color: #213641; transition: border-color .16s ease, box-shadow .16s ease; }
+.public-login-page .auth-field input:hover { border-color: #087f86; }
+.public-login-page .auth-field input:focus-visible { border-color: #087f86; outline: 2px solid #087f86; outline-offset: 2px; }
+.public-login-help-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem; margin-top: -.3rem; color: #49616d; font-size: .875rem; }
+.public-login-help-row a, .public-login-register a { color: #087f86; font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.public-login-help-row a:hover, .public-login-register a:hover { color: #213641; }
+.public-login-page .public-auth-form > .ui-button--primary { width: 100%; min-height: 3.15rem; justify-self: stretch; border-color: #b73c34; border-radius: .625rem; background: #b73c34; color: #ffffff; box-shadow: 0 .35rem .8rem rgb(183 60 52 / 14%); font-weight: 700; }
+.public-login-page .public-auth-form > .ui-button--primary:hover:not(:disabled) { border-color: #b73c34; background: #b73c34; filter: brightness(.92); }
+.public-login-page .public-auth-form > .secondary-action { justify-self: stretch; border-color: #087f86; background: #ffffff; color: #087f86; }
+.public-login-page .public-auth-form > .ui-button:focus-visible { outline: 2px solid #087f86; outline-offset: 3px; }
+.public-login-register { margin: 1.75rem 0 0; padding-top: 1.35rem; border-top: 1px solid #e3eae7; color: #49616d; font-size: .875rem; text-align: center; }
+.public-login-register a { margin-left: .2rem; }
+.public-login-register a span { display: inline-block; padding-left: .1rem; text-decoration: none; }
+.public-login-security { align-self: end; margin: 2rem 0 0; color: #49616d; font-size: .8125rem; letter-spacing: .025em; }
+.public-login-security > span { margin-right: .35rem; color: #087f86; }
+.public-session-page, .public-forbidden-page { display: grid; justify-items: start; gap: var(--space-4); }
+.public-session-page .ui-page-header, .public-forbidden-page .ui-page-header { width: 100%; }
+@media (max-width: 639px) {
+  .public-auth-page { gap: var(--space-3); }
+  .public-auth-surface { width: 100%; }
+  .public-auth-form > .ui-button { width: 100%; }
+}
+@media (min-width: 761px) and (max-width: 900px) {
+  .public-login-page .public-login-layout { justify-self: center; }
+}
+
+@media (min-width: 901px) {
+  .public-login-page .public-login-layout { width: 100%; }
+}
+
+@media (max-width: 900px) {
+  .public-shell:has(.public-login-page) .site-header { min-height: 3.75rem; }
+  .public-shell:has(.public-login-page) .page-container { width: min(100% - 2rem, 36rem); padding-top: .5rem; }
+  .public-shell:has(.public-login-page) { background-attachment: scroll; }
+  .public-login-page .public-login-layout { grid-template-areas: 'introduction' 'artwork' 'panel' 'story'; grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto auto auto; min-height: auto; border-radius: 1rem; }
+  .public-login-page .public-login-introduction { padding: .75rem clamp(1rem, 3vw, 1.5rem); }
+  .public-login-page .public-login-artwork { width: min(100%, 28rem); max-width: none; aspect-ratio: 358 / 145; margin: 0 auto .5rem; border-radius: .875rem; }
+  .public-login-page .public-login-story { min-height: 0; padding: clamp(1rem, 3vw, 1.5rem); border-block-start: 1px solid #e3eae7; }
+  .public-login-page .public-login-story-copy { margin-top: 0; }
+  .public-login-page .public-login-chinese-line { margin-bottom: .5rem; font-size: .9375rem; line-height: 1.4; }
+  .public-login-page .public-login-greeting { width: min(100%, 19rem); min-height: 4.5rem; margin-top: .75rem; padding: .5rem 1rem; }
+  .public-login-page .public-login-greeting__characters { font-size: 2.25rem; }
+  .public-login-page .public-login-panel { padding: clamp(1.25rem, 5vw, 2rem); border-inline-start: 0; border-block-start: 1px solid #e3eae7; }
+  .public-login-page .public-login-intro { margin-bottom: 1.25rem; }
+  .public-login-page .public-login-form { gap: .875rem; }
+  .public-login-page .public-login-register { margin-top: 1.25rem; padding-top: 1rem; }
+  .public-login-page .public-login-security { margin-top: .75rem; }
+}
+@media (max-width: 380px) {
+  .public-login-kicker { gap: .5rem; font-size: .8125rem; letter-spacing: .08em; }
+  .public-login-help-row { align-items: flex-start; flex-direction: column; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .public-login-page .auth-field input { transition: none; }
+}
+
+.public-shell:has(:is(.public-register-page, .public-forgot-page, .public-reset-page)) {
+  background:
+    radial-gradient(circle at 12% 18%, rgb(8 127 134 / 9%), transparent 27rem),
+    radial-gradient(circle at 88% 82%, rgb(183 60 52 / 5%), transparent 28rem),
+    linear-gradient(180deg, #fcfaf5, #f6f8f6);
+}
+.public-shell:has(:is(.public-register-page, .public-forgot-page, .public-reset-page)) .site-header {
+  min-height: 4.5rem;
+  border-bottom-color: transparent;
+  background: transparent;
+}
+.public-shell:has(:is(.public-register-page, .public-forgot-page, .public-reset-page)) .brand {
+  color: #213641;
+  letter-spacing: -.02em;
+}
+.public-shell:has(:is(.public-register-page, .public-forgot-page, .public-reset-page)) .brand::before {
+  border-color: #b73c34;
+  background: #b73c34;
+}
+.public-shell:has(:is(.public-register-page, .public-forgot-page, .public-reset-page)) .page-container {
+  width: min(100% - 3rem, 80rem);
+  max-width: 80rem;
+  padding-top: clamp(1.25rem, 3vw, 2.5rem);
+}
+@media (max-width: 639px) {
+  .public-shell:has(:is(.public-register-page, .public-forgot-page, .public-reset-page)) .site-header { min-height: 3.75rem; }
+  .public-shell:has(:is(.public-register-page, .public-forgot-page, .public-reset-page)) .page-container { width: min(100% - 1.5rem, 36rem); padding-top: .5rem; }
+}
+/* D-123: A09 is a state canvas for session, route-error, and empty states. */
+.public-shell:has(.public-session-page),
+.public-shell:has(.public-forbidden-page) {
+  background-color: var(--color-product-paper);
+  background-image:
+    linear-gradient(180deg, rgb(250 247 239 / 20%) 0%, rgb(250 247 239 / 68%) 30rem, var(--color-product-paper) 46rem),
+    linear-gradient(90deg, var(--color-product-paper) 0%, rgb(250 247 239 / 76%) 38%, rgb(250 247 239 / 24%) 82%, var(--color-product-paper) 100%),
+    url('../assets/d122/d122-ink-circle-bamboo.webp');
+  background-position: center top, center top, right top;
+  background-size: 100% 46rem, 100% 46rem, min(64vw, 54rem) 42rem;
+  background-repeat: no-repeat;
+}
+body:has(.not-found),
+body:has(.public-session-page),
+body:has(.public-forbidden-page),
+body:has(.public-route-error-page) {
+  background-color: var(--color-product-paper);
+  background-image:
+    linear-gradient(180deg, rgb(250 247 239 / 22%) 0%, rgb(250 247 239 / 72%) 31rem, var(--color-product-paper) 45rem),
+    linear-gradient(90deg, var(--color-product-paper) 0%, rgb(250 247 239 / 76%) 34%, rgb(250 247 239 / 24%) 84%, var(--color-product-paper) 100%),
+    url('../assets/d122/d122-ink-circle-bamboo.webp');
+  background-position: center top, center top, right top;
+  background-size: 100% 45rem, 100% 45rem, min(64vw, 54rem) 41rem;
+  background-repeat: no-repeat;
+}
+.public-session-page,
+.public-forbidden-page,
+.not-found,
+.public-route-error-page { position: relative; isolation: isolate; }
+.public-session-page::after,
+.public-forbidden-page::after,
+.not-found::after,
+.public-route-error-page::after {
+  position: absolute;
+  z-index: -1;
+  inset-block: 0;
+  right: 0;
+  width: min(12rem, 38%);
+  background: url('../assets/d122/d122-ink-circle-bamboo.webp') right center / contain no-repeat;
+  content: '';
+  opacity: .18;
+  pointer-events: none;
+}
+.public-shell:has(.public-session-page) .public-session-page::after,
+.public-shell:has(.public-forbidden-page) .public-forbidden-page::after,
+body:has(.not-found) .not-found::after,
+body:has(.public-session-page) .public-session-page::after,
+body:has(.public-forbidden-page) .public-forbidden-page::after,
+body:has(.public-route-error-page) .public-route-error-page::after { display: none; }
+@media (min-width: 640px) and (max-width: 1024px) {
+  .public-shell:has(.public-session-page),
+  .public-shell:has(.public-forbidden-page),
+  body:has(.not-found),
+  body:has(.public-session-page),
+  body:has(.public-forbidden-page),
+  body:has(.public-route-error-page) {
+    background-size: 100% 36rem, 100% 36rem, 54vw 33rem;
+  }
+}
+@media (max-width: 639px) {
+  .public-shell:has(.public-session-page),
+  .public-shell:has(.public-forbidden-page),
+  body:has(.not-found),
+  body:has(.public-session-page),
+  body:has(.public-forbidden-page),
+  body:has(.public-route-error-page) {
+    background-size: 100% 23rem, 100% 23rem, 84vw 21rem;
+    background-position: center top, center top, right top;
+  }
+}
+
+/* PUBLIC/AUTH - Cloudlight Academy CSS-only, without artwork. */
+:is(.public-register-page, .public-forgot-page, .public-reset-page) {
+  display: grid;
+  width: min(100%, 38rem);
+  min-width: 0;
+  justify-items: stretch;
+  gap: clamp(1.25rem, 2.8vw, 1.75rem);
+  margin-inline: auto;
+  padding: clamp(1.25rem, 3.5vw, 2.5rem);
+  border: 1px solid #e3eae7;
+  border-radius: 1.25rem;
+  background: #fff;
+  box-shadow: 0 1.25rem 3rem rgb(33 54 65 / 8%);
+  color: #213641;
+}
+:is(.public-forgot-page, .public-reset-page) { max-width: 34rem; }
+:is(.public-register-page, .public-forgot-page, .public-reset-page) > .ui-page-header {
+  width: 100%;
+  margin-bottom: 0;
+}
+:is(.public-register-page, .public-forgot-page, .public-reset-page) .ui-page-header h1 {
+  color: #213641;
+  font-family: inherit;
+  font-size: clamp(1.875rem, 2.6vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -.035em;
+  overflow-wrap: anywhere;
+}
+:is(.public-register-page, .public-forgot-page, .public-reset-page) .ui-page-header__description {
+  color: #49616d;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+:is(.public-register-page, .public-forgot-page, .public-reset-page) > .public-auth-surface {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+:is(.public-register-page, .public-forgot-page, .public-reset-page) .public-auth-form { gap: 1.1rem; }
+:is(.public-register-page, .public-forgot-page, .public-reset-page) .auth-field {
+  min-width: 0;
+  gap: .45rem;
+  color: #213641;
+  font-size: .875rem;
+  font-weight: 650;
+}
+:is(.public-register-page, .public-forgot-page, .public-reset-page) .auth-field input {
+  width: 100%;
+  min-width: 0;
+  min-height: 3.15rem;
+  padding: .75rem .9rem;
+  border: 1px solid #e3eae7;
+  border-radius: .625rem;
+  background: #fff;
+  color: #213641;
+}
+:is(.public-register-page, .public-forgot-page, .public-reset-page) .auth-field input:hover { border-color: #087f86; }
+:is(.public-register-page, .public-forgot-page, .public-reset-page) .auth-field input:focus-visible {
+  border-color: #087f86;
+  outline: 2px solid #087f86;
+  outline-offset: 2px;
+}
+:is(.public-register-page, .public-forgot-page, .public-reset-page) .public-auth-form > .ui-button--primary {
+  width: 100%;
+  min-height: 3.15rem;
+  justify-self: stretch;
+  border-color: #b73c34;
+  border-radius: .625rem;
+  background: #b73c34;
+  color: #fff;
+  box-shadow: 0 .35rem .8rem rgb(183 60 52 / 14%);
+  font-weight: 700;
+}
+:is(.public-register-page, .public-forgot-page, .public-reset-page) .public-auth-form > .ui-button--primary:hover:not(:disabled) {
+  border-color: #b73c34;
+  background: #b73c34;
+  filter: brightness(.92);
+}
+:is(.public-register-page, .public-forgot-page, .public-reset-page) .public-auth-form > .secondary-action,
+.public-reset-page > .secondary-action {
+  width: 100%;
+  min-height: 3.15rem;
+  justify-self: stretch;
+  border-color: #087f86;
+  border-radius: .625rem;
+  background: #fff;
+  color: #087f86;
+}
+:is(.public-register-page, .public-forgot-page, .public-reset-page) :is(a, button):focus-visible {
+  outline: 2px solid #087f86;
+  outline-offset: 3px;
+}
+:is(.public-register-page, .public-forgot-page, .public-reset-page) .public-auth-links {
+  width: 100%;
+  justify-content: center;
+  margin: 0;
+  color: #49616d;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+:is(.public-register-page, .public-forgot-page, .public-reset-page) .public-auth-links a {
+  color: #087f86;
+  font-weight: 700;
+  text-underline-offset: .2em;
+}
+:is(.public-register-page, .public-forgot-page, .public-reset-page) .public-auth-links a:hover { color: #213641; }
+:is(.public-register-page, .public-forgot-page, .public-reset-page) .ui-alert {
+  min-width: 0;
+  width: 100%;
+  overflow-wrap: anywhere;
+  border-radius: .625rem;
+  line-height: 1.6;
+}
+@media (max-width: 639px) {
+  :is(.public-register-page, .public-forgot-page, .public-reset-page) {
+    gap: 1.25rem;
+    padding: 1.15rem;
+    border-radius: 1rem;
+  }
+  :is(.public-register-page, .public-forgot-page, .public-reset-page) .public-auth-form { gap: .875rem; }
+}
+@media (min-width: 640px) and (max-width: 1024px) {
+  .public-register-page { max-width: 36rem; }
+}
+/* Academy Welcome: a small scenic chapter marker, with forms on opaque paper. */
+:is(.public-register-page, .public-forgot-page, .public-reset-page) {
+  position: relative;
+  overflow: hidden;
+  gap: clamp(1rem, 2vw, 1.5rem);
+  border-top: .3rem solid #087f86;
+  box-shadow: 0 1.5rem 3.5rem rgb(33 54 65 / 10%);
+}
+:is(.public-register-page, .public-forgot-page, .public-reset-page)::before {
+  display: block;
+  width: 100%;
+  height: clamp(4rem, 7vw, 5.5rem);
+  border: 1px solid #e3eae7;
+  border-radius: .75rem;
+  background: #e7f7f1 url('../assets/bg02-academy-morning.png') 60% 48% / cover no-repeat;
+  content: '';
+  pointer-events: none;
+}
+:is(.public-register-page, .public-forgot-page, .public-reset-page) > .ui-page-header { max-width: 31rem; }
+:is(.public-register-page, .public-forgot-page, .public-reset-page) .ui-page-header h1 { font-size: clamp(1.95rem, 3vw, 2.35rem); }
+:is(.public-register-page, .public-forgot-page, .public-reset-page) .ui-page-header__description { max-width: 52ch; }
+@media (max-width: 639px) {
+  :is(.public-register-page, .public-forgot-page, .public-reset-page)::before { height: 3.75rem; }
+}
+/* S01 FORBIDDEN — isolated Academy Editorial treatment */
+.public-forbidden-page {
+  box-sizing: border-box;
+  width: min(100%, 52rem);
+  min-width: 0;
+  margin: 0 auto;
+  padding: clamp(1.5rem, 3.5vw, 3rem);
+  border: 1px solid var(--color-product-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-product-ivory);
+  box-shadow: var(--shadow-raised);
+}
+
+.public-forbidden-page > .ui-page-header {
+  margin-bottom: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.public-forbidden-page > .ui-page-header .ui-page-header__copy {
+  width: 100%;
+}
+
+.public-forbidden-page > .ui-page-header h1 {
+  color: var(--color-product-ink);
+  font-family: var(--font-product-display);
+  font-size: clamp(2.25rem, 4vw, 3.5rem);
+  letter-spacing: -.025em;
+}
+
+.public-forbidden-page > .ui-page-header .ui-page-header__description {
+  max-width: 42ch;
+  color: var(--color-product-muted);
+  font-size: clamp(1rem, 1.25vw, 1.125rem);
+  line-height: 1.65;
+}
+
+.public-forbidden-page > .secondary-action {
+  min-height: 3rem;
+  padding: .7rem 1.15rem;
+  border-color: var(--color-product-jade);
+  border-radius: var(--radius-md);
+  background: var(--color-product-jade);
+  color: var(--color-product-ivory);
+  font-weight: 700;
+  text-align: center;
+}
+
+.public-forbidden-page > .secondary-action:hover {
+  border-color: var(--color-product-jade-deep);
+  background: var(--color-product-jade-deep);
+  color: var(--color-product-ivory);
+}
+
+.public-forbidden-page > .secondary-action:focus-visible {
+  outline-offset: 4px;
+}
+
+@media (min-width: 640px) and (max-width: 1024px) {
+  .public-forbidden-page {
+    width: min(100%, 42rem);
+    padding: clamp(1.75rem, 4vw, 2.5rem);
+  }
+}
+
+@media (max-width: 639px) {
+  .public-forbidden-page {
+    width: 100%;
+    padding: 1.25rem;
+  }
+
+  .public-forbidden-page > .ui-page-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .public-forbidden-page > .ui-page-header h1 {
+    font-size: clamp(2rem, 9vw, 2.5rem);
+  }
+
+  .public-forbidden-page > .secondary-action {
+    width: 100%;
+  }
+}
+
+
+/* S02 NOT FOUND — message-only Academy Editorial treatment */
+.not-found {
+  box-sizing: border-box;
+  width: min(100%, 50rem);
+  min-width: 0;
+  margin-inline: auto;
+}
+
+.not-found > .ui-surface > p {
+  font-size: clamp(1rem, 1.35vw, 1.125rem);
+  line-height: 1.7;
+}
+
+@media (min-width: 640px) and (max-width: 1024px) {
+  .not-found {
+    width: min(100%, 44rem);
+  }
+}
+
+@media (max-width: 639px) {
+  .not-found {
+    width: 100%;
+  }
+}
+
+/* S03 ROUTE ERROR — ACADEMY EDITORIAL */
+.public-route-error-page {
+  box-sizing: border-box;
+  width: min(100%, 50rem);
+  min-width: 0;
+  margin-inline: auto;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  background: var(--color-product-ivory);
+  box-shadow: var(--shadow-raised);
+}
+
+.public-route-error-page > .ui-page-header h1 {
+  max-width: 20ch;
+  letter-spacing: -.03em;
+}
+
+.public-route-error-page > .ui-alert--error {
+  padding: clamp(1rem, 2.5vw, 1.5rem);
+  border-radius: var(--radius-lg);
+  font-size: var(--text-base);
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+.public-route-error-page > .secondary-action {
+  min-height: 3rem;
+  margin-top: clamp(1.25rem, 2.5vw, 1.75rem);
+  padding: .7rem 1.15rem;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (min-width: 640px) and (max-width: 1024px) {
+  .public-route-error-page {
+    width: min(100%, 42rem);
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+  }
+}
+
+@media (max-width: 639px) {
+  .public-route-error-page {
+    width: 100%;
+    padding: 1.25rem;
+  }
+
+  .public-route-error-page > .secondary-action {
+    width: 100%;
+  }
+}
+
+/* Wave 2 A03 — invalid reset-link state only */
+.public-reset-page > .ui-alert {
+  box-sizing: border-box;
+  width: min(100%, 38rem);
+  min-width: 0;
+  margin-inline: auto;
+  padding: clamp(1rem, 2.5vw, 1.5rem);
+  border-color: var(--color-product-cinnabar);
+  border-inline-start: 3px solid var(--color-product-cinnabar);
+  border-radius: var(--radius-lg);
+  background: var(--color-product-cinnabar-soft);
+  color: #7e2929;
+  box-shadow: var(--shadow-surface);
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+.public-reset-page > .secondary-action {
+  box-sizing: border-box;
+  width: min(100%, 38rem);
+  min-width: 0;
+  min-height: 3.15rem;
+  justify-content: center;
+  justify-self: center;
+  margin-inline: auto;
+  padding: .7rem 1.15rem;
+  border-color: #087f86;
+  border-radius: .625rem;
+  background: #fff;
+  color: #087f86;
+  font-weight: 700;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 639px) {
+  .public-reset-page > .ui-alert {
+    width: 100%;
+    padding: var(--space-3);
+  }
+
+  .public-reset-page > .secondary-action {
+    width: 100%;
+  }
+}
+
+/* Welcome atmosphere stays outside the opaque Auth surfaces. */
+.public-shell:has(:is(.public-login-page, .public-register-page, .public-forgot-page, .public-reset-page, .public-session-page, .public-forbidden-page)) {
+  background-color: #fcfaf5;
+  background-image:
+    linear-gradient(180deg, rgb(252 250 245 / 5%) 0%, rgb(246 248 246 / 14%) 28rem, #f6f8f6 58rem),
+    url('../assets/academy-atmosphere-welcome.png');
+  background-size: 100% 58rem, min(100%, 110rem) auto;
+  background-position: center top, center top 2rem;
+  background-repeat: no-repeat;
+}
+@media (max-width: 900px) {
+  .public-shell:has(:is(.public-login-page, .public-register-page, .public-forgot-page, .public-reset-page, .public-session-page, .public-forbidden-page)) {
+    background-size: 100% 38rem, auto 28rem;
+    background-position: center top, left -11rem top 3rem;
+  }
+}
+@media (max-width: 639px) {
+  .public-shell:has(:is(.public-login-page, .public-register-page, .public-forgot-page, .public-reset-page, .public-session-page, .public-forbidden-page)) {
+    background-size: 100% 25rem, auto 18rem;
+    background-position: center top, left -8rem top 4rem;
+  }
+}

@@ -166,10 +166,17 @@ class AssessmentCreateRequest(AdminInput):
     lesson_id: UUID | None = None
     title: str
     description: str | None = None
-    pass_threshold: int = Field(default=90,ge=0,le=100)
+    pass_threshold: int = Field(default=80,ge=0,le=100,description="Defaults to 80 for lesson exercises and 90 for periodic tests.")
     lesson_ids: list[UUID] | None = None
     vocabulary_ids: list[UUID] | None = None
     grammar_ids: list[UUID] | None = None
+
+    @model_validator(mode="after")
+    def apply_type_default(self):
+        if "pass_threshold" not in self.model_fields_set:
+            from app.exercise.policy import default_pass_threshold
+            self.pass_threshold = default_pass_threshold(self.type)
+        return self
 
 
 class AssessmentPatchRequest(ExplicitNullForbidden):

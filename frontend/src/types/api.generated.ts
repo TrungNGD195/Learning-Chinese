@@ -274,6 +274,57 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/v1/pronunciation/lesson": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Pronunciation Lesson */
+        get: operations["pronunciation_lesson_api_v1_pronunciation_lesson_get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/pronunciation/lesson/advance": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Pronunciation Advance */
+        post: operations["pronunciation_advance_api_v1_pronunciation_lesson_advance_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/pronunciation/lesson/complete": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Pronunciation Lesson Complete */
+        post: operations["pronunciation_lesson_complete_api_v1_pronunciation_lesson_complete_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/v1/pronunciation/{section_id}/complete": {
         parameters: {
             query?: never;
@@ -1139,7 +1190,8 @@ export interface components {
             description?: string | null;
             /**
              * Pass Threshold
-             * @default 90
+             * @description Defaults to 80 for lesson exercises and 90 for periodic tests.
+             * @default 80
              */
             pass_threshold: number;
             /** Lesson Ids */
@@ -2174,7 +2226,7 @@ export interface components {
             description?: string | null;
             /**
              * Pass Threshold
-             * @default 90
+             * @default 80
              */
             pass_threshold: number;
             /** Question Count */
@@ -2568,6 +2620,16 @@ export interface components {
             /** Hsk Levels */
             hsk_levels: components["schemas"]["HSKLevelResponse"][];
         };
+        /** PronunciationAdvanceRequest */
+        PronunciationAdvanceRequest: {
+            /**
+             * Section Code
+             * @enum {string}
+             */
+            section_code: "INITIALS" | "FINALS" | "TONES";
+            /** Step Index */
+            step_index: number;
+        };
         /** PronunciationContinueLearning */
         PronunciationContinueLearning: {
             /**
@@ -2586,6 +2648,38 @@ export interface components {
             lesson_id?: null;
             /** Assessment Id */
             assessment_id?: null;
+        };
+        /** PronunciationLessonResponse */
+        PronunciationLessonResponse: {
+            /** Sections */
+            sections: components["schemas"]["PronunciationLessonSection"][];
+            /** Current Section */
+            current_section: ("INITIALS" | "FINALS" | "TONES") | null;
+            /** Step Index */
+            step_index: number;
+            /** Total Steps */
+            total_steps: number;
+            /** Completed At */
+            completed_at: string | null;
+            /** Can Finish */
+            can_finish: boolean;
+        };
+        /** PronunciationLessonSection */
+        PronunciationLessonSection: {
+            /**
+             * Id
+             * Format: uuid
+             */
+            id: string;
+            /**
+             * Code
+             * @enum {string}
+             */
+            code: "INITIALS" | "FINALS" | "TONES";
+            /** Completed At */
+            completed_at: string | null;
+            /** Total Steps */
+            total_steps: number;
         };
         /** PronunciationSectionResponse */
         PronunciationSectionResponse: {
@@ -3686,6 +3780,103 @@ export interface operations {
                 };
                 content: {
                     "application/json": components["schemas"]["PronunciationSectionResponse"][];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    pronunciation_lesson_api_v1_pronunciation_lesson_get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["PronunciationLessonResponse"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    pronunciation_advance_api_v1_pronunciation_lesson_advance_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["PronunciationAdvanceRequest"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["PronunciationLessonResponse"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    pronunciation_lesson_complete_api_v1_pronunciation_lesson_complete_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["PronunciationLessonResponse"];
                 };
             };
             /** @description Validation Error */
@@ -5103,6 +5294,7 @@ export interface operations {
             query?: {
                 status?: string | null;
                 assessment_type?: string | null;
+                lesson_id?: string | null;
                 page?: number;
                 page_size?: number;
             };

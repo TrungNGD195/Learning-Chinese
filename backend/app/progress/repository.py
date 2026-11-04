@@ -11,6 +11,7 @@ from app.database.models import (
     LearnerLessonProgress,
     LearnerVocabularyProgress,
     PronunciationProgress,
+    PronunciationLessonProgress,
 )
 
 
@@ -144,6 +145,22 @@ async def complete_pronunciation(session: AsyncSession, user_id: UUID, section_i
         ))
     ).scalar_one()
     return existing
+
+
+async def get_pronunciation_lesson(session: AsyncSession, user_id: UUID, *, for_update: bool = False):
+    query = select(PronunciationLessonProgress).where(PronunciationLessonProgress.user_id == user_id)
+    if for_update:
+        query = query.with_for_update()
+    return (await session.execute(query)).scalar_one_or_none()
+
+
+async def lock_pronunciation_lesson(session: AsyncSession, user_id: UUID, initial_section: int):
+    await session.execute(
+        insert(PronunciationLessonProgress)
+        .values(user_id=user_id, section_index=initial_section, step_index=0)
+        .on_conflict_do_nothing(index_elements=["user_id"])
+    )
+    return await get_pronunciation_lesson(session, user_id, for_update=True)
 
 
 async def update_lesson_completion(session: AsyncSession, user_id: UUID, lesson_id: UUID, has_passing_exercise: bool) -> bool:

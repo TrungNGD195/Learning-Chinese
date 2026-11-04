@@ -1,0 +1,30 @@
+{
+  "prompt": "Use case: illustration-storytelling. Asset type: a new reusable vocabulary illustration sprite sheet for a Chinese learning web app. Generate one horizontal 3:1 PNG canvas, preferably 1536 by 512 pixels, with exactly three equal square cells in one row. There are no visible cell boundaries. Reading order is left to right. Each illustration stays fully inside its own third of the canvas, with at least 10 percent quiet padding around every cell and no overlap between cells.\n\nReference image role: STYLE REFERENCE ONLY. Use the attached existing academy vocabulary sheet only to match its warm pale ivory paper ground, detailed watercolor and gouache brushwork, delicate natural ink detail, softly realistic friendly adult characters, and muted jade green, vermilion and warm ochre accents. Do not copy any of its six subjects or its two-row composition; do not edit the reference image. Create a new matching sheet with the three subjects below.\n\nLEFT CELL, concept YOU: one friendly young adult seen approximately waist-up, smiling toward the viewer and indicating the viewer with a relaxed open hand directed gently toward us. This is a courteous conversational gesture, with the full hand clearly drawn. Do not use an aggressive pointed index finger. Simple jade clothing, no accessories or surrounding scene.\n\nMIDDLE CELL, concept GOOD: one friendly young adult seen approximately waist-up, smiling and showing one clearly readable thumbs-up gesture with anatomically coherent fingers. The thumb points up. Simple warm ochre clothing, no accessories or surrounding scene.\n\nRIGHT CELL, concept NOT / NO: one friendly young adult seen approximately waist-up, politely refusing a small plain ceramic cup offered from one side by a partial hand and forearm. Show the adult's relaxed open palm facing the offered cup, a gentle head turn and kind calm expression. The cup remains separate from the refusal hand. Simple muted vermilion clothing. Include only that offered cup and the necessary partial offering forearm, no extra objects or scene.\n\nKeep all three figures similarly scaled and calmly centered within their square cells. Pale ivory ground throughout; sparse soft ground washes only. The gestures provide supporting context; the web interface supplies the precise vocabulary labels. No writing of any kind anywhere: no Chinese, Vietnamese, English, text, numerals, arrows, labels, symbols, borders, dividers, watermarks, badges, logos or UI. No teacher identity or authority claims. Finished polished illustration asset in the reference's academy watercolor style, not a mockup.\n\nCRITICAL SPRITE PADDING: Draw every character smaller so that ALL painted subjects occupy only the central 76 percent of their own square cell in both directions. Leave a completely empty ivory band of at least 12 percent of cell width at every left and right cell edge and 12 percent of cell height at top and bottom. In the right cell, the COMPLETE refusal scene, including the offering hand, its short forearm, and the cup, must fit inside that central 76 percent area. Make the cup and offering hand compact, not extended to the canvas edge. The whole sprite sheet must have clear empty ivory margins at the outermost edges. No subject may be clipped.",
+  "tool": "image_gen.imagegen",
+  "mode": "built-in generation",
+  "generated_at": "2026-11-03",
+  "source_generated_path": "C:/Users/Diep_PC/.codex/generated_images/01a1a1fd-6d2a-7001-a9ab-a6ec6756a491/exec-257f521b-c219-4d46-ba47-a42c33957508.png",
+  "reference_images": [
+    {
+      "path": "frontend/public/academy/vocabulary-hsk1.png",
+      "role": "style reference only; unchanged"
+    }
+  ],
+  "width": 2172,
+  "height": 724,
+  "layout": {
+    "columns": 3,
+    "rows": 1,
+    "cell_width": 724,
+    "cell_height": 724,
+    "order": [
+      "你 (you)",
+      "好 (good)",
+      "不 (not/no)"
+    ]
+  },
+  "background": "opaque pale ivory",
+  "provenance": "Exact generation prompt embedded in PNG tEXt by impeccable embed-prompt; matching .prompt.txt sidecar.",
+  "review_status": "needs_parent_review",
+  "notes": "Supplemental new sprite sheet produced from parent-provided vocabulary brief. UI labels supply exact semantics. No text baked into image."
+}

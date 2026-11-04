@@ -5,8 +5,9 @@ import { clearAuthenticatedSessionCache, prepareAuthenticatedSessionCache } from
 import { ApiError } from '../../lib/api/errors'
 import { authApi } from './api'
 import { authMeQueryOptions } from './session'
+import { Alert, Button, PageHeader, Surface } from '../../components/ui'
 
-const fieldClass = 'form-field'
+const fieldClass = 'auth-field'
 
 function isTechnicalError(error: unknown) {
   return error instanceof ApiError && (error.code === 'NETWORK_ERROR' || (error.status !== null && error.status >= 500))
@@ -41,8 +42,8 @@ export function LoginPage() {
     setRestoring(true)
     setFormError(null)
     try {
-      await restoreAuthoritativeSession(queryClient)
-      await navigate('/dashboard', { replace: true })
+      const user = await restoreAuthoritativeSession(queryClient)
+      await navigate(user.role === 'ADMIN' ? '/admin' : '/dashboard', { replace: true })
     } catch {
       setFormError('Your sign-in was submitted, but we could not verify the session. Retry session verification.')
     } finally {
@@ -65,18 +66,42 @@ export function LoginPage() {
   }
 
   const busy = mutation.isPending || restoring
-  return <section className="screen auth-screen" aria-labelledby="page-title">
-    <h1 id="page-title">Login</h1>
-    {notice === 'password-reset' && <p role="status">Password reset successfully. Please sign in with your new password.</p>}
-    {notice === 'password-changed' && <p role="status">Password changed successfully. Please sign in again.</p>}
-    <form className="form-card" onSubmit={submit} noValidate>
-      <label className={fieldClass}>Email<input autoComplete="email" type="email" name="email" value={email} onChange={(event) => setEmail(event.target.value)} required /></label>
-      <label className={fieldClass}>Password<input autoComplete="current-password" type="password" name="password" value={password} onChange={(event) => setPassword(event.target.value)} required /></label>
-      {formError && <p role="alert">{formError}</p>}
-      <button className="primary-action" type="submit" disabled={busy}>{busy ? 'Signing in…' : 'Sign in'}</button>
-      {formError?.includes('Retry session verification') && <button className="secondary-action" type="button" disabled={busy} onClick={() => void restore()}>Retry session verification</button>}
-    </form>
-    <p><Link to="/register">Create an account</Link> · <Link to="/forgot-password">Forgot password?</Link></p>
+  return <section className="screen public-auth-page public-login-page" aria-labelledby="page-title">
+    <div className="public-login-layout">
+      <div className="public-login-introduction" />
+
+      <div className="public-login-artwork" aria-hidden="true"><img src="/academy/landscape.png" alt=""/><span className="academy-companion public-login-bo"/></div>
+
+      <section className="public-login-panel" aria-labelledby="page-title">
+        <div className="public-login-card">
+          <h1 id="page-title">Login</h1>
+          <p className="public-login-intro">Sign in to continue your learning journey.</p>
+          {notice === 'password-reset' && <Alert role="status" tone="success">Password reset successfully. Please sign in with your new password.</Alert>}
+          {notice === 'password-changed' && <Alert role="status" tone="success">Password changed successfully. Please sign in again.</Alert>}
+          <form className="public-auth-form public-login-form" onSubmit={submit} noValidate>
+            <label className={fieldClass}>Email<input autoComplete="email" type="email" name="email" value={email} onChange={(event) => setEmail(event.target.value)} required /></label>
+            <label className={fieldClass}>Password<input autoComplete="current-password" type="password" name="password" value={password} onChange={(event) => setPassword(event.target.value)} required /></label>
+            <div className="public-login-help-row"><span>We’re glad you’re here.</span><Link to="/forgot-password">Forgot password?</Link></div>
+            {formError && <Alert role="alert" tone="error">{formError}</Alert>}
+            <Button variant="primary" className="primary-action" type="submit" disabled={busy}>{busy ? 'Signing in…' : 'Sign in'}</Button>
+            {formError?.includes('Retry session verification') && <Button className="secondary-action" disabled={busy} onClick={() => void restore()}>Retry session verification</Button>}
+          </form>
+          <p className="public-login-register">New to learning Chinese? <Link to="/register">Create an account <span aria-hidden="true">↗</span></Link></p>
+        </div>
+        <p className="public-login-security"><span aria-hidden="true">◇</span> Your learning space, ready when you are.</p>
+      </section>
+
+      <section className="public-login-story" aria-labelledby="login-story-title">
+        <div className="public-login-story-copy">
+          <p id="login-story-title" className="public-login-chinese-line">在每一次学习中，遇见新的可能</p>
+        </div>
+        <div className="public-login-greeting" aria-label="Nǐ hǎo, hello">
+          <span className="public-login-greeting__characters" lang="zh">你好</span>
+          <span className="public-login-greeting__pinyin">nǐ hǎo <span aria-hidden="true">/</span> hello</span>
+          <span className="public-login-greeting__seal" aria-hidden="true">学</span>
+        </div>
+      </section>
+    </div>
   </section>
 }
 
@@ -122,19 +147,19 @@ export function RegisterPage() {
   }
 
   const busy = mutation.isPending || restoring
-  return <section className="screen auth-screen" aria-labelledby="page-title">
-    <h1 id="page-title">Create an account</h1>
-    <form className="form-card" onSubmit={submit} noValidate>
+  return <section className="screen public-auth-page public-register-page" aria-labelledby="page-title">
+    <PageHeader title="Create an account" titleId="page-title" description="Create your learner account to begin." />
+    <Surface as="section" className="public-auth-surface"><form className="public-auth-form" onSubmit={submit} noValidate>
       <label className={fieldClass}>Full name<input autoComplete="name" name="full_name" value={fullName} onChange={(event) => setFullName(event.target.value)} required /></label>
       <label className={fieldClass}>Email<input autoComplete="email" type="email" name="email" value={email} onChange={(event) => setEmail(event.target.value)} required /></label>
       <label className={fieldClass}>Password<input autoComplete="new-password" type="password" name="password" value={password} onChange={(event) => setPassword(event.target.value)} required /></label>
       <label className={fieldClass}>Confirm password<input autoComplete="new-password" type="password" name="confirm_password" value={confirmation} onChange={(event) => setConfirmation(event.target.value)} required /></label>
-      {formError && <p role="alert">{formError}</p>}
+      {formError && <Alert role="alert" tone="error">{formError}</Alert>}
       {registrationComplete && formError?.includes('Retry session verification')
-        ? <button className="secondary-action" type="button" disabled={busy} onClick={() => void restore()}>Retry session verification</button>
-        : <button className="primary-action" type="submit" disabled={busy || registrationComplete}>{busy ? 'Creating account…' : 'Create account'}</button>}
-    </form>
-    <p>Already have an account? <Link to="/login">Sign in</Link></p>
+        ? <Button className="secondary-action" disabled={busy} onClick={() => void restore()}>Retry session verification</Button>
+        : <Button variant="primary" className="primary-action" type="submit" disabled={busy || registrationComplete}>{busy ? 'Creating account…' : 'Create account'}</Button>}
+    </form></Surface>
+    <p className="public-auth-links">Already have an account? <Link to="/login">Sign in</Link></p>
   </section>
 }
 
@@ -149,16 +174,15 @@ export function ForgotPasswordPage() {
     try { await mutation.mutateAsync({ email: email.trim() }); setAcknowledged(true) }
     catch (error) { setFormError(safeFormError(error)) }
   }
-  return <section className="screen auth-screen" aria-labelledby="page-title">
-    <h1 id="page-title">Forgot password</h1>
-    <p>Request a password-reset link.</p>
-    <form className="form-card" onSubmit={submit} noValidate>
+  return <section className="screen public-auth-page public-forgot-page" aria-labelledby="page-title">
+    <PageHeader title="Forgot password" titleId="page-title" description="Request a password-reset link." />
+    <Surface as="section" className="public-auth-surface"><form className="public-auth-form" onSubmit={submit} noValidate>
       <label className={fieldClass}>Email<input autoComplete="email" type="email" name="email" value={email} onChange={(event) => setEmail(event.target.value)} required /></label>
-      {formError && <p role="alert">{formError}</p>}
-      {acknowledged && <p role="status">If an eligible account exists for that email, password-reset instructions will be sent.</p>}
-      <button className="primary-action" type="submit" disabled={mutation.isPending}>{mutation.isPending ? 'Sending…' : formError ? 'Retry' : 'Send reset instructions'}</button>
-    </form>
-    <p><Link to="/login">Back to login</Link></p>
+      {formError && <Alert role="alert" tone="error">{formError}</Alert>}
+      {acknowledged && <Alert role="status" tone="info">If an eligible account exists for that email, password-reset instructions will be sent.</Alert>}
+      <Button variant="primary" className="primary-action" type="submit" disabled={mutation.isPending}>{mutation.isPending ? 'Sending…' : formError ? 'Retry' : 'Send reset instructions'}</Button>
+    </form></Surface>
+    <p className="public-auth-links"><Link to="/login">Back to login</Link></p>
   </section>
 }
 
@@ -172,8 +196,8 @@ export function ResetPasswordPage() {
   const [invalidLink, setInvalidLink] = useState(false)
   const mutation = useMutation({ mutationFn: authApi.confirmPasswordReset, retry: false })
 
-  if (!token || invalidLink) return <section className="screen auth-screen" aria-labelledby="page-title">
-    <h1 id="page-title">Reset password</h1><p role="alert">This password reset link is missing or invalid.</p><Link className="secondary-action" to="/forgot-password">Request a new reset link</Link>
+  if (!token || invalidLink) return <section className="screen public-auth-page public-reset-page" aria-labelledby="page-title">
+    <PageHeader title="Reset password" titleId="page-title" description="Choose a new password for your account." /><Alert role="alert" tone="error">This password reset link is missing or invalid.</Alert><Link className="secondary-action" to="/forgot-password">Request a new reset link</Link>
   </section>
 
   const submit = async (event: FormEvent<HTMLFormElement>) => {
@@ -193,18 +217,18 @@ export function ResetPasswordPage() {
     }
   }
 
-  return <section className="screen auth-screen" aria-labelledby="page-title">
-    <h1 id="page-title">Reset password</h1>
-    <form className="form-card" onSubmit={submit} noValidate>
+  return <section className="screen public-auth-page public-reset-page" aria-labelledby="page-title">
+    <PageHeader title="Reset password" titleId="page-title" description="Choose a new password for your account." />
+    <Surface as="section" className="public-auth-surface"><form className="public-auth-form" onSubmit={submit} noValidate>
       <label className={fieldClass}>New password<input autoComplete="new-password" type="password" name="new_password" value={password} onChange={(event) => setPassword(event.target.value)} required /></label>
       <label className={fieldClass}>Confirm new password<input autoComplete="new-password" type="password" name="confirm_password" value={confirmation} onChange={(event) => setConfirmation(event.target.value)} required /></label>
-      {formError && <p role="alert">{formError}</p>}
-      <button className="primary-action" type="submit" disabled={mutation.isPending}>{mutation.isPending ? 'Resetting…' : 'Reset password'}</button>
-    </form>
+      {formError && <Alert role="alert" tone="error">{formError}</Alert>}
+      <Button variant="primary" className="primary-action" type="submit" disabled={mutation.isPending}>{mutation.isPending ? 'Resetting…' : 'Reset password'}</Button>
+    </form></Surface>
   </section>
 }
 
-export function LogoutAction() {
+export function LogoutAction({ language = 'en' }: { language?: 'en' | 'vi' }) {
   const navigate = useNavigate()
   const [error, setError] = useState(false)
   const mutation = useMutation({
@@ -218,7 +242,7 @@ export function LogoutAction() {
     onError: () => setError(true),
   })
   return <div className="logout-action">
-    {error && <p role="alert">Logout could not be confirmed. Your session is still shown as active; retry when ready.</p>}
-    <button type="button" className="secondary-action" disabled={mutation.isPending} onClick={() => mutation.mutate()}>{mutation.isPending ? 'Signing out…' : error ? 'Retry logout' : 'Logout'}</button>
+    {error && <Alert role="alert" tone="error">{language === 'vi' ? 'Chưa thể xác nhận đăng xuất. Phiên đăng nhập vẫn đang hoạt động; bạn có thể thử lại.' : 'Logout could not be confirmed. Your session is still shown as active; retry when ready.'}</Alert>}
+    <Button className="secondary-action" disabled={mutation.isPending} onClick={() => mutation.mutate()}>{language === 'vi' ? mutation.isPending ? 'Đang đăng xuất…' : error ? 'Thử đăng xuất lại' : 'Đăng xuất' : mutation.isPending ? 'Signing out…' : error ? 'Retry logout' : 'Logout'}</Button>
   </div>
 }

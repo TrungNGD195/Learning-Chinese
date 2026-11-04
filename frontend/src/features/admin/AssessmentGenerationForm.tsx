@@ -11,6 +11,7 @@ import {
   type AssessmentGenerationRequest,
 } from './api'
 import { invalidateAssessmentList } from './invalidation'
+import { Alert, Button, Surface } from '../../components/ui'
 
 type GenerationKind = AssessmentGenerationRequest['type']
 type QuestionType = components['schemas']['LessonExerciseGenerationRequest']['allowed_types'][number]
@@ -20,32 +21,32 @@ type VocabularyChoice = Awaited<ReturnType<typeof listLessonVocabulary>>[number]
 type GrammarChoice = Awaited<ReturnType<typeof listLessonGrammar>>[number]
 
 const questionTypeOptions = [
-  ['multiple_choice', 'Multiple Choice'],
-  ['fill_blank', 'Fill in the Blank'],
-  ['matching', 'Matching'],
-  ['reorder_sentence', 'Reorder Sentence'],
-  ['translate_vi_zh', 'Translate Vietnamese → Chinese'],
-  ['translate_zh_vi', 'Translate Chinese → Vietnamese'],
-  ['sentence_writing', 'Sentence Writing'],
+  ['multiple_choice', "Chọn đáp án"],
+  ['fill_blank', "Điền vào chỗ trống"],
+  ['matching', "Nối cặp"],
+  ['reorder_sentence', "Sắp xếp câu"],
+  ['translate_vi_zh', "Dịch Việt → Trung"],
+  ['translate_zh_vi', "Dịch Trung → Việt"],
+  ['sentence_writing', "Viết câu"],
 ] as const satisfies readonly (readonly [QuestionType, string])[]
 
 function generationErrorText(error: unknown): string {
   if (error instanceof ApiError) {
     switch (error.code) {
-      case 'INVALID_REQUEST': return 'Check the generation settings and try again.'
-      case 'INVALID_GENERATION_SCOPE': return 'Review the selected Lessons, Vocabulary, and Grammar, then try again.'
-      case 'AI_GENERATION_INPUT_TOO_LARGE': return 'The selected generation scope is too large. Reduce the selected Lessons or content items.'
-      case 'AI_GENERATION_INVALID_OUTPUT': return 'AI generation returned an invalid result. Review the settings and explicitly retry.'
-      case 'AI_GENERATION_UNAVAILABLE': return 'AI generation is temporarily unavailable. You can explicitly retry.'
-      case 'AI_GENERATION_PERSISTENCE_FAILED': return 'The generated draft could not be saved. No draft was created; you can explicitly retry.'
-      default: return adminErrorText(error, 'Could not generate the assessment draft.')
+      case 'INVALID_REQUEST': return "Kiểm tra thiết lập tạo đề và thử lại."
+      case 'INVALID_GENERATION_SCOPE': return "Kiểm tra bài học, từ vựng và ngữ pháp đã chọn rồi thử lại."
+      case 'AI_GENERATION_INPUT_TOO_LARGE': return "Phạm vi tạo đề quá lớn. Hãy giảm số bài học hoặc mục nội dung đã chọn."
+      case 'AI_GENERATION_INVALID_OUTPUT': return "AI trả về nội dung chưa hợp lệ. Kiểm tra thiết lập rồi thử tạo lại."
+      case 'AI_GENERATION_UNAVAILABLE': return "Tính năng tạo đề bằng AI tạm thời không khả dụng. Bạn có thể thử lại."
+      case 'AI_GENERATION_PERSISTENCE_FAILED': return "Không thể lưu đề vừa tạo. Chưa có bản nháp mới; bạn có thể thử lại."
+      default: return adminErrorText(error, "Không thể tạo bản nháp bài luyện tập.")
     }
   }
-  return adminErrorText(error, 'Could not generate the assessment draft.')
+  return adminErrorText(error, "Không thể tạo bản nháp bài luyện tập.")
 }
 
 function lessonLabel(lesson: LessonChoice, levelNumber?: number) {
-  return `HSK ${levelNumber ?? '—'} · Lesson ${lesson.lesson_number} · ${lesson.title}`
+  return `HSK ${levelNumber ?? '—'} · Bài ${lesson.lesson_number} · ${lesson.title}`
 }
 
 export function AssessmentGenerationForm() {
@@ -54,7 +55,7 @@ export function AssessmentGenerationForm() {
   const [generationKind, setGenerationKind] = useState<GenerationKind>('LESSON_EXERCISE')
   const [title, setTitle] = useState('')
   const [description, setDescription] = useState('')
-  const [passThreshold, setPassThreshold] = useState('90')
+  const [passThreshold, setPassThreshold] = useState('80')
   const [questionCount, setQuestionCount] = useState('1')
   const [difficulty, setDifficulty] = useState<Difficulty | ''>('')
   const [allowedTypes, setAllowedTypes] = useState<QuestionType[]>(['multiple_choice'])
@@ -194,84 +195,94 @@ export function AssessmentGenerationForm() {
     mutation.mutate(request)
   }
 
-  return <form className="learning-card" onSubmit={submit} aria-labelledby="generate-assessment-title">
-    <h2 id="generate-assessment-title">Generate AI Draft</h2>
-    <p>Generated assessments are saved as drafts for Admin review.</p>
-    <div className="admin-edit-fields">
-      <label>Assessment type<select value={generationKind} disabled={mutation.isPending} onChange={(event) => setGenerationKind(event.target.value as GenerationKind)}>
-        <option value="LESSON_EXERCISE">Lesson Exercise</option><option value="PERIODIC_TEST">Periodic Test</option>
+  return <Surface as="section" className="admin-ai-generation-surface">
+    <form className="admin-ai-generation-form" onSubmit={submit} aria-labelledby="generate-assessment-title">
+    <header className="admin-ai-generation-header"><div><h2 id="generate-assessment-title">Tạo bản nháp bằng AI</h2></div><p>Đề do AI tạo được lưu dưới dạng nháp. Quản trị viên cần duyệt và xuất bản trước khi học viên sử dụng.</p></header>
+    <div className="admin-ai-generation-fields">
+      <section className="admin-ai-generation-group" aria-labelledby="generation-type-heading"><h3 id="generation-type-heading">1. Loại bài luyện tập</h3>
+      <label>Loại bài luyện tập<select value={generationKind} disabled={mutation.isPending} onChange={(event) => { setGenerationKind(event.target.value as GenerationKind); setPassThreshold(event.target.value === 'LESSON_EXERCISE' ? '80' : '90') }}>
+        <option value="LESSON_EXERCISE">Luyện tập bài học</option><option value="PERIODIC_TEST">Kiểm tra định kỳ</option>
       </select></label>
-      <label>Title (optional)<input value={title} disabled={mutation.isPending} onChange={(event) => setTitle(event.target.value)} /></label>
-      <label>Description (optional)<textarea value={description} disabled={mutation.isPending} onChange={(event) => setDescription(event.target.value)} /></label>
-      <label>Pass threshold<input type="number" min="0" max="100" step="1" value={passThreshold} disabled={mutation.isPending} onChange={(event) => setPassThreshold(event.target.value)} /></label>
-      <label>Question count<input type="number" min="1" max="10" step="1" value={questionCount} disabled={mutation.isPending} onChange={(event) => setQuestionCount(event.target.value)} /></label>
-      <label>Difficulty<select required value={difficulty} disabled={mutation.isPending} onChange={(event) => setDifficulty(event.target.value as Difficulty | '')}>
-        <option value="">Select difficulty</option><option value="EASY">Easy</option><option value="MEDIUM">Medium</option><option value="HARD">Hard</option>
-      </select></label>
-      <fieldset disabled={mutation.isPending}>
-        <legend>Allowed question types</legend>
-        {questionTypeOptions.map(([value, label]) => <label key={value}>
-          <input type="checkbox" checked={allowedTypes.includes(value)} onChange={() => toggleQuestionType(value)} />{label}
-        </label>)}
-      </fieldset>
+      </section>
 
-      {generationKind === 'LESSON_EXERCISE' ? <section aria-label="Lesson generation scope">
-        <h3>Lesson scope</h3>
-        <label>Filter lessons by HSK<select value={hskFilter} disabled={mutation.isPending} onChange={(event) => { setHskFilter(event.target.value); setLessonPage(1) }}>
-          <option value="">All HSK levels</option>{(hskQuery.data ?? []).map((level) => <option key={level.id} value={level.id}>HSK {level.level_number}{level.title ? ` · ${level.title}` : ''}</option>)}
+      {generationKind === 'LESSON_EXERCISE' ? <section className="admin-ai-generation-group" aria-label="Phạm vi tạo luyện tập bài học">
+        <h3>2. Phạm vi · Luyện tập bài học</h3>
+        <label>Lọc bài học theo HSK<select value={hskFilter} disabled={mutation.isPending} onChange={(event) => { setHskFilter(event.target.value); setLessonPage(1) }}>
+          <option value="">Tất cả cấp độ HSK</option>{(hskQuery.data ?? []).map((level) => <option key={level.id} value={level.id}>HSK {level.level_number}{level.title ? ` · ${level.title}` : ''}</option>)}
         </select></label>
-        {hskQuery.isError && <p role="alert">{adminErrorText(hskQuery.error, 'Could not load HSK levels.')}</p>}
-        {lessonsQuery.isPending && <p role="status">Loading lesson choices…</p>}
-        {lessonsQuery.isError && <><p role="alert">{adminErrorText(lessonsQuery.error, 'Could not load lesson choices.')}</p><button type="button" onClick={() => void lessonsQuery.refetch()}>Retry lessons</button></>}
+        {hskQuery.isError && <p role="alert">{adminErrorText(hskQuery.error, "Không thể tải cấp độ HSK.")}</p>}
+        {lessonsQuery.isPending && <p role="status">Đang tải danh sách bài học…</p>}
+        {lessonsQuery.isError && <><p role="alert">{adminErrorText(lessonsQuery.error, "Không thể tải danh sách bài học.")}</p><button type="button" onClick={() => void lessonsQuery.refetch()}>Thử tải lại bài học</button></>}
         {lessonsQuery.data && <>
-          <label>Lesson<select required value={lessonId} disabled={mutation.isPending} onChange={(event) => setLessonId(event.target.value)}>
-            <option value="">Select a lesson</option>{currentLessons.map((lesson) => <option key={lesson.id} value={lesson.id}>{lessonLabel(lesson, levelNumberFor(lesson))}</option>)}
+          <label>Bài học<select required value={lessonId} disabled={mutation.isPending} onChange={(event) => setLessonId(event.target.value)}>
+            <option value="">Chọn một bài học</option>{currentLessons.map((lesson) => <option key={lesson.id} value={lesson.id}>{lessonLabel(lesson, levelNumberFor(lesson))}</option>)}
           </select></label>
-          <div className="admin-page-controls"><button type="button" disabled={lessonPage <= 1 || lessonsQuery.isFetching} onClick={() => setLessonPage((page) => Math.max(1, page - 1))}>Previous lessons</button><span>Page {lessonsQuery.data.page}</span><button type="button" disabled={lessonPage * lessonsQuery.data.page_size >= lessonsQuery.data.total || lessonsQuery.isFetching} onClick={() => setLessonPage((page) => page + 1)}>Next lessons</button></div>
+          <div className="admin-page-controls"><button type="button" disabled={lessonPage <= 1 || lessonsQuery.isFetching} onClick={() => setLessonPage((page) => Math.max(1, page - 1))}>Bài học trước</button><span>Trang {lessonsQuery.data.page}</span><button type="button" disabled={lessonPage * lessonsQuery.data.page_size >= lessonsQuery.data.total || lessonsQuery.isFetching} onClick={() => setLessonPage((page) => page + 1)}>Bài học tiếp</button></div>
         </>}
-      </section> : <section aria-label="Periodic Test generation scope">
-        <h3>Periodic Test scope</h3>
-        <label>Filter lessons by HSK<select value={hskFilter} disabled={mutation.isPending} onChange={(event) => { setHskFilter(event.target.value); setLessonPage(1) }}>
-          <option value="">All HSK levels</option>{(hskQuery.data ?? []).map((level) => <option key={level.id} value={level.id}>HSK {level.level_number}{level.title ? ` · ${level.title}` : ''}</option>)}
+      </section> : <section className="admin-ai-generation-group admin-ai-generation-periodic" aria-label="Phạm vi tạo bài kiểm tra định kỳ">
+        <h3>2. Phạm vi · Kiểm tra định kỳ</h3>
+        <label>Lọc bài học theo HSK<select value={hskFilter} disabled={mutation.isPending} onChange={(event) => { setHskFilter(event.target.value); setLessonPage(1) }}>
+          <option value="">Tất cả cấp độ HSK</option>{(hskQuery.data ?? []).map((level) => <option key={level.id} value={level.id}>HSK {level.level_number}{level.title ? ` · ${level.title}` : ''}</option>)}
         </select></label>
-        {hskQuery.isError && <p role="alert">{adminErrorText(hskQuery.error, 'Could not load HSK levels.')}</p>}
-        {lessonsQuery.isPending && <p role="status">Loading lesson choices…</p>}
-        {lessonsQuery.isError && <><p role="alert">{adminErrorText(lessonsQuery.error, 'Could not load lesson choices.')}</p><button type="button" onClick={() => void lessonsQuery.refetch()}>Retry lessons</button></>}
+        {hskQuery.isError && <p role="alert">{adminErrorText(hskQuery.error, "Không thể tải cấp độ HSK.")}</p>}
+        {lessonsQuery.isPending && <p role="status">Đang tải danh sách bài học…</p>}
+        {lessonsQuery.isError && <><p role="alert">{adminErrorText(lessonsQuery.error, "Không thể tải danh sách bài học.")}</p><button type="button" onClick={() => void lessonsQuery.refetch()}>Thử tải lại bài học</button></>}
         {lessonsQuery.data && <>
           <fieldset disabled={mutation.isPending}>
-            <legend>Select Lessons</legend>
+            <legend>Chọn bài học</legend>
             {currentLessons.map((lesson) => <label key={lesson.id}>
               <input type="checkbox" checked={selectedLessonIds.includes(lesson.id)} onChange={() => togglePeriodicLesson(lesson)} />{lessonLabel(lesson, levelNumberFor(lesson))}
             </label>)}
           </fieldset>
-          <div className="admin-page-controls"><button type="button" disabled={lessonPage <= 1 || lessonsQuery.isFetching} onClick={() => setLessonPage((page) => Math.max(1, page - 1))}>Previous lessons</button><span>Page {lessonsQuery.data.page}</span><button type="button" disabled={lessonPage * lessonsQuery.data.page_size >= lessonsQuery.data.total || lessonsQuery.isFetching} onClick={() => setLessonPage((page) => page + 1)}>Next lessons</button></div>
+          <div className="admin-page-controls"><button type="button" disabled={lessonPage <= 1 || lessonsQuery.isFetching} onClick={() => setLessonPage((page) => Math.max(1, page - 1))}>Bài học trước</button><span>Trang {lessonsQuery.data.page}</span><button type="button" disabled={lessonPage * lessonsQuery.data.page_size >= lessonsQuery.data.total || lessonsQuery.isFetching} onClick={() => setLessonPage((page) => page + 1)}>Bài học tiếp</button></div>
         </>}
         {selectedLessonIds.map((id, index) => <div key={id}>
-          {vocabularyQueries[index]?.isPending && <p role="status">Loading Vocabulary for {selectedLessons[id] ? lessonLabel(selectedLessons[id], levelNumberFor(selectedLessons[id])) : 'selected Lesson'}…</p>}
-          {grammarQueries[index]?.isPending && <p role="status">Loading Grammar for {selectedLessons[id] ? lessonLabel(selectedLessons[id], levelNumberFor(selectedLessons[id])) : 'selected Lesson'}…</p>}
-          {vocabularyQueries[index]?.isError && <><p role="alert">Could not load Vocabulary for the selected Lesson.</p><button type="button" onClick={() => void vocabularyQueries[index]?.refetch()}>Retry Vocabulary</button></>}
-          {grammarQueries[index]?.isError && <><p role="alert">Could not load Grammar for the selected Lesson.</p><button type="button" onClick={() => void grammarQueries[index]?.refetch()}>Retry Grammar</button></>}
+          {vocabularyQueries[index]?.isPending && <p role="status">Đang tải từ vựng của {selectedLessons[id] ? lessonLabel(selectedLessons[id], levelNumberFor(selectedLessons[id])) : "bài học đã chọn"}…</p>}
+          {grammarQueries[index]?.isPending && <p role="status">Đang tải ngữ pháp của {selectedLessons[id] ? lessonLabel(selectedLessons[id], levelNumberFor(selectedLessons[id])) : "bài học đã chọn"}…</p>}
+          {vocabularyQueries[index]?.isError && <><p role="alert">Không thể tải từ vựng của bài học đã chọn.</p><button type="button" onClick={() => void vocabularyQueries[index]?.refetch()}>Thử tải lại từ vựng</button></>}
+          {grammarQueries[index]?.isError && <><p role="alert">Không thể tải ngữ pháp của bài học đã chọn.</p><button type="button" onClick={() => void grammarQueries[index]?.refetch()}>Thử tải lại ngữ pháp</button></>}
         </div>)}
         {selectedLessonIds.length > 0 && !discoveryLoading && !discoveryFailed && <>
-          <fieldset disabled={mutation.isPending}><legend>Vocabulary</legend>
+          <fieldset disabled={mutation.isPending}><legend>Từ vựng</legend>
             {[...discoveredVocabulary.entries()].map(([id, { item, lessonIds: members }]) => <label key={id}>
               <input type="checkbox" checked={selectedVocabularyIds.includes(id)} onChange={() => setSelectedVocabularyIds((current) => current.includes(id) ? current.filter((value) => value !== id) : [...current, id])} />
-              {item.hanzi} ({item.pinyin}) — {item.vietnamese_meaning}{members.length > 1 ? ` · ${members.length} selected Lessons` : ''}
+              {item.hanzi} ({item.pinyin}) — {item.vietnamese_meaning}{members.length > 1 ? ` · ${members.length} bài học đã chọn` : ''}
             </label>)}
-            {discoveredVocabulary.size === 0 && <p>No Vocabulary was found in the selected Lessons.</p>}
+            {discoveredVocabulary.size === 0 && <p>Các bài học đã chọn chưa có từ vựng.</p>}
           </fieldset>
-          <fieldset disabled={mutation.isPending}><legend>Grammar</legend>
+          <fieldset disabled={mutation.isPending}><legend>Ngữ pháp</legend>
             {[...discoveredGrammar.entries()].map(([id, { item, lessonIds: members }]) => <label key={id}>
               <input type="checkbox" checked={selectedGrammarIds.includes(id)} onChange={() => setSelectedGrammarIds((current) => current.includes(id) ? current.filter((value) => value !== id) : [...current, id])} />
-              {item.name}{item.structure ? ` · ${item.structure}` : ''} — {item.explanation}{members.length > 1 ? ` · ${members.length} selected Lessons` : ''}
+              {item.name}{item.structure ? ` · ${item.structure}` : ''} — {item.explanation}{members.length > 1 ? ` · ${members.length} bài học đã chọn` : ''}
             </label>)}
-            {discoveredGrammar.size === 0 && <p>No Grammar was found in the selected Lessons.</p>}
+            {discoveredGrammar.size === 0 && <p>Các bài học đã chọn chưa có ngữ pháp.</p>}
           </fieldset>
         </>}
-        {discoveryLoading && <p role="status">Loading selected Lesson content…</p>}
+        <dl className="admin-ai-generation-selection-summary" aria-label="Tóm tắt nội dung đã chọn">
+          <div><dt>Bài học đã chọn</dt><dd>{selectedLessonIds.length}</dd></div>
+          <div><dt>Từ vựng đã chọn</dt><dd>{selectedVocabularyIds.filter((id) => discoveredVocabulary.has(id)).length}</dd></div>
+          <div><dt>Ngữ pháp đã chọn</dt><dd>{selectedGrammarIds.filter((id) => discoveredGrammar.has(id)).length}</dd></div>
+        </dl>
+        {discoveryLoading && <p role="status">Đang tải nội dung bài học đã chọn…</p>}
       </section>}
-      {mutation.isError && <p role="alert">{generationErrorText(mutation.error)}</p>}
-      <button type="submit" disabled={!canGenerate || mutation.isPending}>{mutation.isPending ? 'Generating draft…' : 'Generate Draft'}</button>
+      <section className="admin-ai-generation-group" aria-labelledby="generation-config-heading"><h3 id="generation-config-heading">3. Thiết lập tạo đề</h3>
+        <div className="admin-ai-generation-config">
+          <label>Tiêu đề (không bắt buộc)<input value={title} disabled={mutation.isPending} onChange={(event) => setTitle(event.target.value)} /></label>
+          <label>Mô tả (không bắt buộc)<textarea value={description} disabled={mutation.isPending} onChange={(event) => setDescription(event.target.value)} /></label>
+          <label>Điểm đạt (%)<input type="number" min="0" max="100" step="1" value={passThreshold} disabled={mutation.isPending} onChange={(event) => setPassThreshold(event.target.value)} /></label>
+          <label>Số câu hỏi<input type="number" min="1" max="10" step="1" value={questionCount} disabled={mutation.isPending} onChange={(event) => setQuestionCount(event.target.value)} /></label>
+          <label>Độ khó<select required value={difficulty} disabled={mutation.isPending} onChange={(event) => setDifficulty(event.target.value as Difficulty | '')}>
+            <option value="">Chọn độ khó</option><option value="EASY">Dễ</option><option value="MEDIUM">Trung bình</option><option value="HARD">Khó</option>
+          </select></label>
+        </div>
+      </section>
+      <fieldset className="admin-ai-generation-group admin-ai-generation-question-types" disabled={mutation.isPending}>
+        <legend>4. Dạng câu hỏi</legend>
+        {questionTypeOptions.map(([value, label]) => <label key={value}><input type="checkbox" checked={allowedTypes.includes(value)} onChange={() => toggleQuestionType(value)} />{label}</label>)}
+      </fieldset>
+      {mutation.isError && <Alert role="alert" tone="error">{generationErrorText(mutation.error)}</Alert>}
+      <div className="admin-ai-generation-submit"><p>5. Tạo bản nháp để quản trị viên duyệt.</p><Button variant="primary" type="submit" disabled={!canGenerate || mutation.isPending}>{mutation.isPending ? "Đang tạo bản nháp…" : "Tạo bản nháp"}</Button></div>
     </div>
-  </form>
+    </form>
+  </Surface>
 }
