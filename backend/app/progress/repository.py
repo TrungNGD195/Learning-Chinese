@@ -91,7 +91,19 @@ async def mark_grammar_viewed(session: AsyncSession, user_id: UUID, junction_id:
 
 
 async def mark_theory_complete_if_ready(session: AsyncSession, user_id: UUID, lesson_id: UUID, vocab_ids, grammar_ids):
-    progress = await get_lesson_progress(session, user_id, lesson_id)
+    # Serialize the final theory checks for this learner/lesson. Otherwise two
+    # overlapping views can each miss the other's uncommitted row and neither
+    # transaction records completion. The lock lasts until the caller commits.
+    await session.execute(
+        insert(LearnerLessonProgress).values(user_id=user_id, lesson_id=lesson_id)
+        .on_conflict_do_nothing(index_elements=["user_id", "lesson_id"])
+    )
+    progress = (await session.execute(
+        select(LearnerLessonProgress).where(
+            LearnerLessonProgress.user_id == user_id,
+            LearnerLessonProgress.lesson_id == lesson_id,
+        ).with_for_update().execution_options(populate_existing=True)
+    )).scalar_one()
     vocab_ids=set(vocab_ids); grammar_ids=set(grammar_ids)
     viewed_vocab = set((await session.execute(select(LearnerVocabularyProgress.lesson_vocabulary_id).where(
         LearnerVocabularyProgress.user_id == user_id,
@@ -101,10 +113,6 @@ async def mark_theory_complete_if_ready(session: AsyncSession, user_id: UUID, le
         LearnerGrammarProgress.user_id == user_id,
         LearnerGrammarProgress.lesson_grammar_id.in_(grammar_ids) if grammar_ids else False,
     ))).scalars()) if grammar_ids else set()
-    if progress is None:
-        progress = LearnerLessonProgress(user_id=user_id, lesson_id=lesson_id)
-        session.add(progress)
-        await session.flush()
     if progress.theory_completed_at is None and vocab_ids == viewed_vocab and grammar_ids == viewed_grammar:
         progress.theory_completed_at = datetime.now(UTC)
         await session.flush()
