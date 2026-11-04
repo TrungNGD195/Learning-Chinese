@@ -16,6 +16,7 @@ jobs:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: ci-local-only-not-a-production-secret
       POSTGRES_DB: chinese_learning
+      POSTGRES_PORT: "5432"
       APP_ENV: test
       DEBUG: "false"
       DATABASE_URL: postgresql+psycopg://postgres:ci-local-only-not-a-production-secret@127.0.0.1:5432/chinese_learning

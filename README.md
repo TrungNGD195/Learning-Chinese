@@ -29,6 +29,10 @@ Start the local database from the repository root:
 docker compose up -d db
 ```
 
+PostgreSQL is available on `127.0.0.1:5433` by default. Set `POSTGRES_PORT`
+to override the host port and use the same port in both backend database URLs.
+CI explicitly uses port `5432` for its temporary database.
+
 ### Backend
 
 ```powershell
