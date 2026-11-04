@@ -191,7 +191,7 @@ test('B5 AI draft defaults to 80 percent and needs review before publishing', as
     await expect(page.getByText('Trạng thái: Đã xuất bản', { exact: true })).toBeVisible()
     await expect(page.getByRole('button', { name: 'Lưu câu hỏi', exact: true })).toHaveCount(0)
     await learner.goto(`/assessments/${assessmentId}`)
-    await expect(learner.getByRole('heading', { name: 'AI Draft', exact: true })).toBeVisible()
+    await expect(learner.getByRole('heading', { name: 'AI Draft — Step 8.1 Lesson A', exact: true })).toBeVisible()
   } finally { await context.close() }
 })
 
