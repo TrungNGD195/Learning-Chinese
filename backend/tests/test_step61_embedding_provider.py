@@ -157,7 +157,7 @@ def test_cached_provider_factory_reuses_provider_and_can_reset(monkeypatch):
 
     monkeypatch.setattr(module, "SentenceTransformerEmbeddingProvider", _SentinelProvider)
     from types import SimpleNamespace
-    monkeypatch.setattr(module, "get_settings", lambda: SimpleNamespace(embedding_provider="local"))
+    monkeypatch.setattr(module, "get_settings", lambda: SimpleNamespace(embedding_provider="local", knowledge_ai_enabled=True))
     module.get_embedding_provider.cache_clear()
     try:
         first = module.get_embedding_provider()

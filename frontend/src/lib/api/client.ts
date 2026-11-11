@@ -197,6 +197,7 @@ const publicAuthPaths = new Set([
 ])
 
 let refreshPromise: Promise<void> | null = null
+let signInPromise: Promise<unknown> | null = null
 
 function isDefinitiveSessionError(error: unknown) {
   return error instanceof ApiError && (error.status === 401 || error.code === 'ACCOUNT_DISABLED')
@@ -222,11 +223,31 @@ function refreshSessionOnce() {
 export async function apiClient<Result = unknown, Body = never>(
   options: ApiRequestOptions<Body>,
 ): Promise<Result | undefined> {
+  // An expired refresh response clears cookies. Finish it before issuing new
+  // credentials, and let older protected reads replay against the new session.
+  if (options.path === '/auth/login' || options.path === '/auth/register') {
+    const previousSignIn = signInPromise
+    const pendingRefresh = refreshPromise
+    const operation = (async () => {
+      await previousSignIn?.catch(() => undefined)
+      await pendingRefresh?.catch(() => undefined)
+      return requestOnce<Result, Body>(options)
+    })()
+    signInPromise = operation
+    try { return await operation } finally {
+      if (signInPromise === operation) signInPromise = null
+    }
+  }
   try {
     return await requestOnce<Result, Body>(options)
   } catch (error) {
     invalidateIfAccountDisabled(error)
     if (!(error instanceof ApiError) || error.status !== 401 || publicAuthPaths.has(options.path)) throw error
+
+    if (signInPromise) {
+      await signInPromise
+      return requestOnce<Result, Body>(options)
+    }
 
     await refreshSessionOnce()
     try {

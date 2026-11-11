@@ -1047,6 +1047,7 @@ def test_track_a_official_eligibility_rejects_incomplete_or_untrusted_runs(mutat
 
 
 def _track_b_official_fixture():
+    from app.ai.generation.prompt import ASSESSMENT_GENERATION_PROMPT_VERSION
     from app.evaluation.step77.artifacts import digest, file_sha256
     from app.evaluation.step77.eligibility import generation_official_eligibility
     cases=_all(GENERATION_DATASET); run_id="official-track-b"
@@ -1056,7 +1057,7 @@ def _track_b_official_fixture():
         "provider":"openai","model":"gpt-5.4-mini-2026-03-17","generation_config":{
             "temperature":0.2,"max_output_tokens":4000,"reasoning_effort":"none",
             "model_input_limit":400000,"request_timeout_seconds":60.0,"max_transient_retries":1},
-        "prompt_version":"v1","prompt_sha256":file_sha256(Path(__file__).parents[1] / "app/ai/generation/prompt.py"),
+        "prompt_version":ASSESSMENT_GENERATION_PROMPT_VERSION,"prompt_sha256":file_sha256(Path(__file__).parents[1] / "app/ai/generation/prompt.py"),
         "structured_schema_identity":"app.ai.generation.schemas.StructuredAssessmentGenerationOutput/v1","structured_schema_version":"1.0.0",
         "evaluator_version":"step77-offline/v1","annotation_version":"assessment-generation-human/v0.1.0",
         "rubric_version":"assessment-generation-rubric/v1",

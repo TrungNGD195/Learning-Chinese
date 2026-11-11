@@ -5,7 +5,7 @@ the learning application with document processing/retrieval AI disabled.
 
 ## Live services
 
-- Primary web (Hanfolio release): https://hanfolio.vercel.app
+- Primary web (Hanfolio release): https://hanfolio-mcbo1.vercel.app
 - Legacy web alias: https://learn-chinese-mcbo1.vercel.app
 - Additional production alias: https://learn-chinese-pied-three.vercel.app
 - Backend: https://backend-production-bc51b.up.railway.app
@@ -110,7 +110,8 @@ automatic deployments from GitHub are not configured.
 The user authorized committing and pushing the complete current local version,
 then deploying it to the existing Railway production backend and renamed Vercel
 project. The public UI name and document title are Hanfolio. The intended primary
-address is `hanfolio.vercel.app`; no paid domain was purchased or registered.
+address is `hanfolio-mcbo1.vercel.app`, selected by the user because
+`hanfolio.vercel.app` is already in use; no paid domain was purchased or registered.
 Legacy production origins remain allowed and the new origin is added explicitly.
 Deployment uses the existing database and migrations; local database records are
 not restored over production. AI document processing remains disabled.

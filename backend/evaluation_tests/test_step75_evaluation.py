@@ -853,7 +853,7 @@ def test_observer_captures_real_orchestrator_per_tier_rerank_gate_facts(monkeypa
     class Retrieval:
         async def retrieve(self, query, *, retrieval_filter): return (candidate,)
     class Reranker:
-        def rerank(self, query, candidates): return RerankResult((scored,), (scored,))
+        async def rerank(self, query, candidates): return RerankResult((scored,), (scored,))
     class External:
         provider = None
         async def search(self, query): return ()

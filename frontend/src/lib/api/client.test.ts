@@ -185,6 +185,45 @@ describe('central API session recovery', () => {
     unsubscribe()
   })
 
+  it('finishes a failing old refresh before login sets new cookies', async () => {
+    vi.stubEnv('VITE_API_BASE_URL', '/api/v1')
+    let finishRefresh!: (response: Response) => void
+    const fetchMock = vi.fn((input: RequestInfo | URL) => {
+      const url = String(input)
+      if (url.endsWith('/auth/refresh')) return new Promise<Response>(resolve => { finishRefresh = resolve })
+      if (url.endsWith('/auth/login')) return Promise.resolve(new Response('{"id":"new-session"}', { status: 200 }))
+      return Promise.resolve(apiError(401))
+    })
+    vi.stubGlobal('fetch', fetchMock)
+    const oldRead = apiClient({ path: '/auth/me' }).catch(() => undefined)
+    await waitFor(() => expect(finishRefresh).toBeTypeOf('function'))
+    const login = apiClient({ method: 'POST', path: '/auth/login', body: { email: 'test@example.test' } })
+    expect(fetchMock.mock.calls.some(([url]) => String(url).endsWith('/auth/login'))).toBe(false)
+    finishRefresh(apiError(401, 'INVALID_REFRESH_TOKEN'))
+    await oldRead
+    await expect(login).resolves.toEqual({ id: 'new-session' })
+  })
+
+  it('replays an older unauthorized read after an in-flight login instead of refreshing old cookies', async () => {
+    vi.stubEnv('VITE_API_BASE_URL', '/api/v1')
+    let finishLogin!: (response: Response) => void
+    let reads = 0
+    const fetchMock = vi.fn((input: RequestInfo | URL) => {
+      if (String(input).endsWith('/auth/login')) return new Promise<Response>(resolve => { finishLogin = resolve })
+      reads++
+      return Promise.resolve(reads === 1 ? apiError(401) : new Response('{"id":"new-session"}', { status: 200 }))
+    })
+    vi.stubGlobal('fetch', fetchMock)
+    const login = apiClient({ method: 'POST', path: '/auth/login' })
+    await waitFor(() => expect(finishLogin).toBeTypeOf('function'))
+    const oldRead = apiClient({ path: '/auth/me' })
+    await waitFor(() => expect(reads).toBe(1))
+    finishLogin(new Response('{"id":"new-session"}', { status: 200 }))
+    await login
+    await expect(oldRead).resolves.toEqual({ id: 'new-session' })
+    expect(fetchMock.mock.calls.some(([url]) => String(url).endsWith('/auth/refresh'))).toBe(false)
+  })
+
   it('does not refresh a replayed 401 or recurse on /auth/refresh', async () => {
     vi.stubEnv('VITE_API_BASE_URL', '/api/v1')
     const fetchMock = vi.fn().mockResolvedValueOnce(apiError(401)).mockResolvedValueOnce(new Response(null, { status: 204 })).mockResolvedValueOnce(apiError(401))

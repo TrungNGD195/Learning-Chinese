@@ -5,11 +5,11 @@ def test_d009_learner_and_admin_question_schemas_are_typed_and_answer_safe():
     components = app.openapi()["components"]["schemas"]
 
     matching_learner = components["MatchingLearnerConfig"]
-    assert set(matching_learner["properties"]) == {"left_items", "right_items"}
+    assert set(matching_learner["properties"]) == {"left_items", "right_items", "presentation"}
     reorder_learner = components["ReorderLearnerConfig"]
-    assert set(reorder_learner["properties"]) == {"items"}
+    assert set(reorder_learner["properties"]) == {"items", "presentation"}
     answer_key_free = components["AnswerKeyFreeConfig"]
-    assert answer_key_free.get("properties", {}) == {}
+    assert set(answer_key_free.get("properties", {})) == {"presentation"}
     assert answer_key_free.get("additionalProperties") is False
 
     assessment = components["AssessmentResponse"]
@@ -23,7 +23,7 @@ def test_d009_learner_and_admin_question_schemas_are_typed_and_answer_safe():
     for schema_name, expected in (("MatchingConfigInput", {"left_items", "right_items", "correct_pairs"}),
                                   ("ReorderConfigInput", {"items", "correct_order"}),
                                   ("FillBlankConfigInput", {"accepted_answers"})):
-        assert set(components[schema_name]["properties"]) == expected
+        assert set(components[schema_name]["properties"]) == expected | {"presentation"}
 
     create_request = components["QuestionCreateRequest"]["properties"]
     assert "config" in create_request
