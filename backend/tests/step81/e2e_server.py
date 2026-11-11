@@ -12,6 +12,9 @@ from app.ai.rag.schemas import (
 )
 from app.admin import service as admin_service
 from app.ai.generation.schemas import (
+    GeneratedFillBlankQuestion,
+    GeneratedMatchingQuestion,
+    GeneratedReorderSentenceQuestion,
     GeneratedMultipleChoiceQuestion,
     GeneratedMCQOption,
     StructuredAssessmentGenerationOutput,
@@ -69,17 +72,20 @@ class DeterministicGenerationProvider:
         match = re.search(r'"allowed_source_refs"\s*:\s*\[\s*"([^"]+)"', request.user_content)
         if not match:
             raise RuntimeError("Step 8.1 generation fixture has no allowed source ref")
-        output = StructuredAssessmentGenerationOutput(
-            questions=[GeneratedMultipleChoiceQuestion(
-                type="multiple_choice",
-                prompt="Which word means hello?",
-                source_refs=[match.group(1)],
-                options=[
-                    GeneratedMCQOption(option_text="你好", is_correct=True),
-                    GeneratedMCQOption(option_text="再见", is_correct=False),
-                ],
-            )]
-        )
+        questions=[]
+        for index in range(request.requested_question_count):
+            kind=request.allowed_types[index % len(request.allowed_types)]
+            common=dict(type=kind, prompt=f'{kind}: ôn tập lời chào {index + 1}', source_refs=[match.group(1)])
+            if kind=='multiple_choice':
+                question=GeneratedMultipleChoiceQuestion(**common, options=[GeneratedMCQOption(option_text='你好',is_correct=True),GeneratedMCQOption(option_text='再见',is_correct=False)])
+            elif kind=='fill_blank':
+                question=GeneratedFillBlankQuestion(**common,reference_answer='你好',accepted_answers=['你好'])
+            elif kind=='matching':
+                question=GeneratedMatchingQuestion(**common,left_items=[dict(id='a',text='你好')],right_items=[dict(id='b',text='xin chào')],correct_pairs=[dict(left_id='a',right_id='b')])
+            else:
+                question=GeneratedReorderSentenceQuestion(**common,items=[dict(id='a',text='你'),dict(id='b',text='好')],correct_order=['a','b'])
+            questions.append(question)
+        output=StructuredAssessmentGenerationOutput(questions=questions)
         return StructuredAssessmentGenerationProviderResult(
             output=output,
             provider="step81_deterministic_test",

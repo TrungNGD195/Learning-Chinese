@@ -41,7 +41,14 @@ class _GenerationRequest(BaseModel):
 class LessonExerciseGenerationRequest(_GenerationRequest):
     type: Literal["LESSON_EXERCISE"]
     pass_threshold: int = Field(default=80, ge=0, le=100)
+    question_count: int = Field(default=30, ge=1, le=30)
     lesson_id: UUID
+
+    @model_validator(mode="after")
+    def varied_full_lesson_practice(self) -> "LessonExerciseGenerationRequest":
+        if self.question_count == 30 and len(self.allowed_types) < 3:
+            raise ValueError("A full lesson practice requires at least three question types")
+        return self
 
 
 class PeriodicTestGenerationRequest(_GenerationRequest):
@@ -74,6 +81,7 @@ class GeneratedModel(BaseModel):
 class GeneratedCommon(GeneratedModel):
     prompt: str
     source_refs: list[str] = Field(min_length=1)
+    explanation: str | None = None
 
     @field_validator("prompt")
     @classmethod
@@ -176,7 +184,7 @@ GeneratedQuestion = Annotated[
 
 
 class StructuredAssessmentGenerationOutput(GeneratedModel):
-    questions: list[GeneratedQuestion] = Field(min_length=1, max_length=10)
+    questions: list[GeneratedQuestion] = Field(min_length=1, max_length=30)
 
 
 @dataclass(frozen=True)

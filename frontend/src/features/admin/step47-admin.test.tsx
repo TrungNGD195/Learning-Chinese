@@ -8,6 +8,7 @@ import { ApiError } from '../../lib/api/errors'
 import { authApi } from '../auth/api'
 import { createAppRoutes } from '../../app/router/routes'
 import * as api from './api'
+import * as readingApi from './readingApi'
 import {
   invalidateAssessmentLifecycle, invalidateCurriculumOrder, invalidateHskMetadata,
   invalidateLessonContent, invalidateLessonLifecycle,
@@ -15,15 +16,16 @@ import {
 
 vi.mock('./api', () => Object.fromEntries([
   'listHskLevels', 'updateHskLevel', 'getAdminCurriculum', 'replaceAdminCurriculum',
-  'listAdminLessons', 'getAdminLesson', 'createAdminLesson', 'updateAdminLesson', 'publishAdminLesson', 'archiveAdminLesson',
+  'listAdminLessons', 'getAdminLesson', 'createAdminLesson', 'updateAdminLesson', 'publishAdminLesson', 'archiveAdminLesson', 'unpublishAdminLesson', 'publishAdminLessonPackage',
   'listLessonVocabulary', 'attachVocabulary', 'updateLessonVocabulary', 'detachVocabulary',
   'listLessonGrammar', 'attachGrammar', 'updateLessonGrammar', 'detachGrammar',
   'listAdminAssessments', 'getAdminAssessment', 'createAdminAssessment', 'updateAdminAssessment',
   'listAssessmentQuestions', 'createAssessmentQuestion', 'updateAssessmentQuestion', 'deleteAssessmentQuestion',
-  'submitAssessmentReview', 'publishAdminAssessment', 'archiveAdminAssessment', 'getAdminStats',
+  'submitAssessmentReview', 'publishAdminAssessment', 'archiveAdminAssessment', 'getAdminStats', 'generateAssessmentDraft',
   'listAdminDocuments', 'getAdminDocument', 'getAdminDocumentPreview', 'uploadDocument',
   'processAdminDocument', 'approveAdminDocument', 'rejectAdminDocument', 'retryAdminDocumentKnowledge',
 ].map((name) => [name, vi.fn()])))
+vi.mock('./readingApi', () => ({ listLessonReadings: vi.fn(), createLessonReading: vi.fn(), updateLessonReading: vi.fn(), deleteLessonReading: vi.fn() }))
 
 vi.mock('../auth/api', () => ({ authApi: {
   register: vi.fn(), login: vi.fn(), getMe: vi.fn(), refresh: vi.fn(), logout: vi.fn(), logoutAll: vi.fn(),
@@ -84,6 +86,9 @@ beforeEach(() => {
   vi.mocked(api.updateAdminLesson).mockResolvedValue(lesson)
   vi.mocked(api.publishAdminLesson).mockResolvedValue({ ...lesson, status: 'PUBLISHED' })
   vi.mocked(api.archiveAdminLesson).mockResolvedValue({ ...lesson, status: 'ARCHIVED' })
+  vi.mocked(api.unpublishAdminLesson).mockResolvedValue(lesson)
+  vi.mocked(api.publishAdminLessonPackage).mockResolvedValue({ ...lesson, status: 'PUBLISHED' })
+  vi.mocked(readingApi.listLessonReadings).mockResolvedValue([])
   vi.mocked(api.listLessonVocabulary).mockResolvedValue([])
   vi.mocked(api.attachVocabulary).mockResolvedValue({ id: 'vocab-link', vocabulary_id: 'vocab-id', hanzi: '你好', pinyin: 'nǐ hǎo', vietnamese_meaning: 'xin chào', part_of_speech: null, order_index: 1, note: null, example: null, grammar_id: null, name: null, structure: null, explanation: null, usage: null })
   vi.mocked(api.updateLessonVocabulary).mockResolvedValue({ id: 'vocab-link', vocabulary_id: 'vocab-id', hanzi: '你好', pinyin: 'nǐ hǎo', vietnamese_meaning: 'xin chào', part_of_speech: null, order_index: 1, note: null, example: null, grammar_id: null, name: null, structure: null, explanation: null, usage: null })
@@ -113,9 +118,9 @@ describe('Step 4.7 Admin routes and authorization', () => {
   it('puts content management first and retains all administrator destinations', async () => {
     renderAt('/admin')
     const nav = screen.getByRole('navigation', { name: "Điều hướng quản trị" })
-    expect(within(nav).getAllByRole('link').map((link) => link.textContent)).toEqual(["Tổng quan", "Lộ trình", "Bài học", "Luyện tập", "Tài liệu"])
+    expect(within(nav).getAllByRole('link').map((link) => link.textContent)).toEqual(["Tổng quan", "Bài học", "Kiểm tra định kỳ", "Tài liệu", "Hồ sơ"])
     const destinations = within(document.querySelector('.admin-workbench')!)
-    for (const [name, href] of [['Quản lý lộ trình', '/admin/curriculum'], ['Quản lý tất cả bài học', '/admin/lessons'], ['Quản lý đề', '/admin/assessments'], ['Mở kho tài liệu', '/admin/documents']]) {
+    for (const [name, href] of [['Sắp xếp bài học', '/admin/lessons?view=curriculum'], ['Quản lý tất cả bài học', '/admin/lessons'], ['Quản lý bài kiểm tra', '/admin/assessments'], ['Mở kho tài liệu', '/admin/documents']]) {
       expect(destinations.getByRole('link', { name })).toHaveAttribute('href', href)
     }
     expect(screen.getByRole('heading', {name:'Bài học'})).toBeInTheDocument()
@@ -125,18 +130,18 @@ describe('Step 4.7 Admin routes and authorization', () => {
   })
 
   it('keeps an authenticated Learner on the D-041 Forbidden page', () => {
-    renderAt('/admin/curriculum', learner)
+    renderAt('/admin/lessons?view=curriculum', learner)
     expect(screen.getByTestId('admin-forbidden')).toBeInTheDocument()
     expect(api.listHskLevels).not.toHaveBeenCalled()
   })
 
   it('renders ADMIN_REQUIRED without logging out or clearing current User', async () => {
     vi.mocked(api.listHskLevels).mockRejectedValueOnce(apiError(403, 'ADMIN_REQUIRED'))
-    const { client, router } = renderAt('/admin/curriculum')
+    const { client, router } = renderAt('/admin/lessons?view=curriculum')
     expect(await screen.findByRole('alert')).toHaveTextContent("Tài khoản của bạn không có quyền quản trị.")
     expect(authApi.logout).not.toHaveBeenCalled()
     expect(client.getQueryData(queryKeys.authMe)).toEqual(admin)
-    expect(router.state.location.pathname).toBe('/admin/curriculum')
+    expect(router.state.location.pathname).toBe('/admin/lessons')
   })
 
   it('renders the real Documents list and upload entry', async () => {
@@ -150,7 +155,7 @@ describe('Step 4.7 Admin routes and authorization', () => {
 describe('HSK and curriculum editing', () => {
   it('loads fixed HSK levels and sends only metadata fields with duplicate-submit protection', async () => {
     vi.mocked(api.updateHskLevel).mockImplementationOnce(() => new Promise(() => {}))
-    const { client } = renderAt('/admin/curriculum')
+    const { client } = renderAt('/admin/lessons?view=curriculum')
     expect(await screen.findByText('Thông tin HSK 1')).toBeInTheDocument()
     await act(async () => {})
     expect(screen.queryByLabelText(/level number|order index/i)).not.toBeInTheDocument()
@@ -173,7 +178,7 @@ describe('HSK and curriculum editing', () => {
     const saved = { ...level, title: 'Confirmed title', description: 'Confirmed description' }
     vi.mocked(api.updateHskLevel).mockReturnValueOnce(save.promise)
     vi.mocked(api.listHskLevels).mockResolvedValueOnce([level]).mockReturnValueOnce(refresh.promise)
-    renderAt('/admin/curriculum')
+    renderAt('/admin/lessons?view=curriculum')
     expect(await screen.findByText('Thông tin HSK 1')).toBeInTheDocument()
     await waitFor(() => expect(screen.getByLabelText("Tiêu đề")).toHaveValue(level.title))
     fill("Tiêu đề", 'Draft title')
@@ -195,7 +200,7 @@ describe('HSK and curriculum editing', () => {
     const saved = { ...level, title: 'Saved title' }
     vi.mocked(api.updateHskLevel).mockResolvedValueOnce(saved)
     vi.mocked(api.listHskLevels).mockResolvedValueOnce([level]).mockRejectedValueOnce(apiError(503, 'TEMPORARY_FAILURE'))
-    renderAt('/admin/curriculum')
+    renderAt('/admin/lessons?view=curriculum')
     expect(await screen.findByText('Thông tin HSK 1')).toBeInTheDocument()
     fill("Tiêu đề", saved.title)
     fireEvent.click(screen.getByRole('button', { name: "Lưu thông tin HSK" }))
@@ -207,7 +212,7 @@ describe('HSK and curriculum editing', () => {
   it('preserves HSK metadata drafts through background refetch and failed Save', async () => {
     vi.mocked(api.listHskLevels).mockResolvedValueOnce([level]).mockResolvedValueOnce([{ ...level, title: 'External title' }])
     vi.mocked(api.updateHskLevel).mockRejectedValueOnce(apiError(409, 'CONFLICT'))
-    const { client } = renderAt('/admin/curriculum')
+    const { client } = renderAt('/admin/lessons?view=curriculum')
     expect(await screen.findByText('Thông tin HSK 1')).toBeInTheDocument()
     fill("Tiêu đề", 'Local draft')
     await act(async () => { await client.invalidateQueries({ queryKey: queryKeys.adminHskLevels }) })
@@ -221,7 +226,7 @@ describe('HSK and curriculum editing', () => {
 
   it('reorders canonical membership, normalizes 1..N, confirms, PUTs the exact body and refetches', async () => {
     vi.mocked(api.getAdminCurriculum).mockResolvedValueOnce(curriculum).mockResolvedValueOnce([curriculum[1], curriculum[0]])
-    renderAt('/admin/curriculum')
+    renderAt('/admin/lessons?view=curriculum')
     expect(await screen.findByText(/1\. Bài học: Greetings/)).toBeInTheDocument()
     fireEvent.click(screen.getByRole('button', { name: "Đưa HSK Test lên" }))
     expect(screen.getByText(/1\. Kiểm tra định kỳ: HSK Test/)).toBeInTheDocument()
@@ -242,7 +247,7 @@ describe('HSK and curriculum editing', () => {
 
   it('preserves a dirty reorder draft through background refetch and retains it after save failure', async () => {
     vi.mocked(api.replaceAdminCurriculum).mockRejectedValue(apiError(422, 'INVALID_CURRICULUM'))
-    const { client } = renderAt('/admin/curriculum')
+    const { client } = renderAt('/admin/lessons?view=curriculum')
     expect(await screen.findByText(/1\. Bài học: Greetings/)).toBeInTheDocument()
     fireEvent.click(screen.getByRole('button', { name: "Đưa HSK Test lên" }))
     await act(async () => { await client.invalidateQueries({ queryKey: queryKeys.adminCurriculum(level.id) }) })
@@ -269,7 +274,7 @@ describe('HSK and curriculum editing', () => {
     ], page: 1, page_size: 20, total: 3 })
     vi.mocked(api.replaceAdminCurriculum).mockResolvedValue(canonical)
     vi.mocked(api.getAdminCurriculum).mockResolvedValueOnce(curriculum).mockResolvedValueOnce(canonical)
-    const { client } = renderAt('/admin/curriculum')
+    const { client } = renderAt('/admin/lessons?view=curriculum')
     const invalidate = vi.spyOn(client, 'invalidateQueries')
 
     expect(await screen.findByRole('button', { name: "Thêm Family words vào lộ trình" })).toBeInTheDocument()
@@ -307,7 +312,7 @@ describe('HSK and curriculum editing', () => {
   it('keeps the local membership draft after a failed PUT and retries only after an explicit click', async () => {
     vi.mocked(api.listAdminLessons).mockResolvedValue({ items: [publishedCandidateLesson], page: 1, page_size: 20, total: 1 })
     vi.mocked(api.replaceAdminCurriculum).mockRejectedValueOnce(apiError(422, 'INVALID_CURRICULUM_TARGET'))
-    renderAt('/admin/curriculum')
+    renderAt('/admin/lessons?view=curriculum')
     fireEvent.click(await screen.findByRole('button', { name: "Thêm Family words vào lộ trình" }))
     fireEvent.click(screen.getByRole('button', { name: "Lưu lộ trình" }))
     confirmOpenDialog("Lưu lộ trình")
@@ -326,7 +331,7 @@ describe('HSK and curriculum editing', () => {
     vi.mocked(api.listAdminLessons).mockImplementation(async (filters) => ({
       items: filters.page === 1 ? [publishedCandidateLesson] : [], page: filters.page ?? 1, page_size: 20, total: 21,
     }))
-    const { client } = renderAt('/admin/curriculum')
+    const { client } = renderAt('/admin/lessons?view=curriculum')
     fireEvent.click(await screen.findByRole('button', { name: "Thêm Family words vào lộ trình" }))
     fireEvent.click(screen.getByRole('button', { name: "Trang bài học tiếp" }))
     expect(await screen.findByText("Trang bài học 2")).toBeInTheDocument()
@@ -352,7 +357,7 @@ describe('HSK and curriculum editing', () => {
     vi.mocked(api.listAdminLessons).mockResolvedValue({ items: [publishedCandidateLesson], page: 1, page_size: 20, total: 1 })
     vi.mocked(api.getAdminCurriculum).mockResolvedValueOnce(curriculum).mockResolvedValueOnce(canonical)
     vi.mocked(api.replaceAdminCurriculum).mockReturnValueOnce(save.promise)
-    renderAt('/admin/curriculum')
+    renderAt('/admin/lessons?view=curriculum')
     expect(await screen.findByText(/1\. Bài học: Greetings/)).toBeInTheDocument()
     expect(await screen.findByRole('button', { name: "Thêm Family words vào lộ trình" })).toBeEnabled()
     fireEvent.click(screen.getByRole('button', { name: "Đưa HSK Test lên" }))
@@ -373,7 +378,7 @@ describe('HSK and curriculum editing', () => {
   it('unlocks membership edits and retains the draft after a pending PUT fails until explicit retry', async () => {
     const save = deferred<typeof curriculum>()
     vi.mocked(api.replaceAdminCurriculum).mockReturnValueOnce(save.promise).mockResolvedValueOnce(curriculum)
-    renderAt('/admin/curriculum')
+    renderAt('/admin/lessons?view=curriculum')
     expect(await screen.findByText(/1\. Bài học: Greetings/)).toBeInTheDocument()
     fireEvent.click(screen.getByRole('button', { name: "Đưa HSK Test lên" }))
     fireEvent.click(screen.getByRole('button', { name: "Lưu lộ trình" }))
@@ -406,7 +411,7 @@ describe('Lesson list, canonical editor, lifecycle and content', () => {
   it('filters and paginates the lesson list, creates exact payload without status, then opens canonical detail', async () => {
     vi.mocked(api.listAdminLessons).mockResolvedValue({ items: [lesson], page: 1, page_size: 20, total: 40 })
     const { router } = renderAt('/admin/lessons')
-    expect(await screen.findByRole('button', { name: 'Greetings' })).toBeInTheDocument()
+    expect(await screen.findByRole('link', { name: 'Biên soạn bài học: Greetings' })).toBeInTheDocument()
     fireEvent.click(screen.getAllByRole('button', { name: "Tạo bài học" }).at(-1)!)
     fireEvent.click(screen.getByRole('button', { name: "Đóng tạo bài học" }))
     expect(api.createAdminLesson).not.toHaveBeenCalled()
@@ -562,15 +567,60 @@ describe('Lesson list, canonical editor, lifecycle and content', () => {
     expect(screen.getByLabelText("Tiêu đề")).toHaveValue(lesson.title)
   })
 
-  it('publishes a Draft Lesson and shows content actions without detach', async () => {
+  it('reviews theory and practice together before one publication action', async () => {
+    const practice = { ...assessment, type: 'LESSON_EXERCISE' as const, lesson_id: lesson.id, pass_threshold: 80 }
+    vi.mocked(api.listAdminAssessments).mockResolvedValue({ items: [practice], page: 1, page_size: 100, total: 1 })
+    vi.mocked(api.getAdminAssessment).mockResolvedValue(practice)
+    vi.mocked(api.listAssessmentQuestions).mockResolvedValue(Array.from({ length: 30 }, (_, index) => ({ ...question, id: `question-${index}`, assessment_id: practice.id, order_index: index + 1, type: (['fill_blank', 'translate_zh_vi', 'sentence_writing'] as const)[index % 3] })))
     renderAt(`/admin/lessons/${lesson.id}`)
-    expect(await screen.findByRole('button', { name: "Xuất bản bài học" })).toBeInTheDocument()
+    expect(await screen.findByRole('button', { name: 'Duyệt và xuất bản' })).toBeInTheDocument()
     expect(screen.getByRole('button', { name: 'Thêm từ vựng' })).toBeInTheDocument()
     fireEvent.click(screen.getByRole('button', { name: "Ngữ pháp" }))
     expect(screen.getByRole('button', { name: 'Thêm ngữ pháp' })).toBeInTheDocument()
     expect(screen.queryByRole('button', { name: /Gỡ từ vựng|Gỡ ngữ pháp/i })).not.toBeInTheDocument()
-    fireEvent.click(screen.getByRole('button', { name: "Xuất bản bài học" }))
-    await waitFor(() => expect(api.publishAdminLesson).toHaveBeenCalledTimes(1))
+    fireEvent.click(screen.getByRole('button', { name: 'Duyệt và xuất bản' }))
+    const publish = await screen.findByRole('button', { name: 'Xác nhận xuất bản toàn bộ' })
+    await waitFor(() => expect(publish).toBeEnabled())
+    expect(screen.getByText('30/30 câu · 3 dạng bài · Điểm đạt 80%')).toBeInTheDocument()
+    expect(api.publishAdminLessonPackage).not.toHaveBeenCalled()
+    fireEvent.click(publish)
+    await waitFor(() => expect(api.publishAdminLessonPackage).toHaveBeenCalledExactlyOnceWith(lesson.id))
+    expect(api.publishAdminLesson).not.toHaveBeenCalled()
+    expect(api.submitAssessmentReview).not.toHaveBeenCalled()
+    expect(api.publishAdminAssessment).not.toHaveBeenCalled()
+  })
+
+  it('edits practice in the lesson and retains unsaved question changes across theory and review', async () => {
+    const practice = { ...assessment, type: 'LESSON_EXERCISE' as const, lesson_id: lesson.id, pass_threshold: 80 }
+    vi.mocked(api.listAdminAssessments).mockResolvedValue({ items: [practice], page: 1, page_size: 100, total: 1 })
+    vi.mocked(api.getAdminAssessment).mockResolvedValue(practice)
+    vi.mocked(api.listAssessmentQuestions).mockResolvedValue([question])
+    const { router } = renderAt(`/admin/lessons/${lesson.id}?section=exercises&exercise=${practice.id}`)
+    const prompt = await screen.findByLabelText('Nội dung câu hỏi')
+    fireEvent.change(prompt, { target: { value: 'Câu hỏi đang sửa' } })
+    fireEvent.click(screen.getByRole('button', { name: 'Từ vựng' }))
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: 'Duyệt xuất bản' }))
+    expect(await screen.findByText('Lưu các thay đổi ở từng mục trước khi xuất bản.')).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Xác nhận xuất bản toàn bộ' })).toBeDisabled()
+    fireEvent.click(screen.getByRole('button', { name: 'Luyện tập' }))
+    expect(screen.getByLabelText('Nội dung câu hỏi')).toHaveValue('Câu hỏi đang sửa')
+    expect(screen.getAllByRole('heading', { level: 1 })).toHaveLength(1)
+    expect(screen.queryByRole('button', { name: 'Gửi duyệt' })).not.toBeInTheDocument()
+    expect(router.state.location.pathname).toBe(`/admin/lessons/${lesson.id}`)
+    fireEvent.click(screen.getByRole('button', { name: 'Lưu câu hỏi' }))
+    await waitFor(() => expect(api.updateAssessmentQuestion).toHaveBeenCalledWith(practice.id, question.id, expect.objectContaining({ prompt: 'Câu hỏi đang sửa' })))
+  })
+
+  it('requires confirmation to unpublish and returns to Draft without archiving', async () => {
+    vi.mocked(api.getAdminLesson).mockResolvedValueOnce({ ...lesson, status: 'PUBLISHED' }).mockResolvedValue(lesson)
+    renderAt(`/admin/lessons/${lesson.id}`)
+    fireEvent.click(await screen.findByRole('button', { name: 'Hủy xuất bản' }))
+    expect(api.unpublishAdminLesson).not.toHaveBeenCalled()
+    confirmOpenDialog('Hủy xuất bản')
+    await waitFor(() => expect(api.unpublishAdminLesson).toHaveBeenCalledExactlyOnceWith(lesson.id))
+    expect(api.archiveAdminLesson).not.toHaveBeenCalled()
+    await waitFor(() => expect(screen.queryByRole('button', { name: 'Hủy xuất bản' })).not.toBeInTheDocument())
   })
 
   it('creates and attaches Vocabulary without an existing UUID field and keeps canonical/association groups separate', async () => {
@@ -615,22 +665,57 @@ describe('Lesson list, canonical editor, lifecycle and content', () => {
 })
 
 describe('Assessment metadata, lifecycle, questions and Stats', () => {
-  it('creates a Lesson Exercise from a readable paginated Lesson selector with exact payload', async () => {
-    renderAt('/admin/assessments')
+  it('creates a lesson exercise inside its lesson without a second management page', async () => {
+    const practice = { ...assessment, type: 'LESSON_EXERCISE' as const, lesson_id: lesson.id, title: 'Lesson practice', pass_threshold: 80 }
+    vi.mocked(api.createAdminAssessment).mockImplementation(async () => {
+      vi.mocked(api.listAdminAssessments).mockResolvedValue({ items: [practice], page: 1, page_size: 100, total: 1 })
+      vi.mocked(api.getAdminAssessment).mockResolvedValue(practice)
+      return practice
+    })
+    const { router } = renderAt(`/admin/lessons/${lesson.id}?section=exercises`)
+    fireEvent.click(await screen.findByRole('button', { name: 'Thêm bài luyện tập' }))
+    fireEvent.change(screen.getByLabelText('Tiêu đề bài luyện tập'), { target: { value: 'Lesson practice' } })
     fireEvent.click(screen.getByRole('button', { name: "Tạo bài luyện tập" }))
-    expect(await screen.findByRole('option', { name: "HSK 1 · Bài 1 · Greetings" })).toBeInTheDocument()
-    fireEvent.change(screen.getByLabelText("Bài học"), { target: { value: lesson.id } })
-    fill("Tiêu đề", 'Lesson practice'); fill("Mô tả", ''); fill("Điểm đạt (%)", '85')
-    fireEvent.click(screen.getByRole('button', { name: "Tạo bài luyện tập" }))
-    await waitFor(() => expect(api.createAdminAssessment).toHaveBeenCalledWith({ type: 'LESSON_EXERCISE', lesson_id: lesson.id, title: 'Lesson practice', pass_threshold: 85 }))
+    await waitFor(() => expect(api.createAdminAssessment).toHaveBeenCalledWith({ type: 'LESSON_EXERCISE', lesson_id: lesson.id, title: 'Lesson practice', description: null, pass_threshold: 80 }))
+    expect(router.state.location.pathname).toBe(`/admin/lessons/${lesson.id}`)
+    expect(await screen.findByRole('heading', { name: practice.title })).toBeInTheDocument()
+  })
+
+  it('generates practice for the current lesson and opens it without navigating away', async () => {
+    const practice = { ...assessment, type: 'LESSON_EXERCISE' as const, lesson_id: lesson.id, title: 'Generated lesson practice', pass_threshold: 80 }
+    vi.mocked(api.generateAssessmentDraft).mockImplementation(async () => {
+      vi.mocked(api.listAdminAssessments).mockResolvedValue({ items: [practice], page: 1, page_size: 100, total: 1 })
+      vi.mocked(api.getAdminAssessment).mockResolvedValue(practice)
+      return { assessment: practice, questions: [] }
+    })
+    const { router } = renderAt(`/admin/lessons/${lesson.id}?section=exercises`)
+    fireEvent.click(await screen.findByRole('button', { name: 'Tạo bản nháp bằng AI' }))
+    expect(screen.queryByLabelText('Loại bài luyện tập')).not.toBeInTheDocument()
+    expect(screen.queryByLabelText('Bài học', { selector: 'select' })).not.toBeInTheDocument()
+    fireEvent.change(screen.getByLabelText('Độ khó'), { target: { value: 'EASY' } })
+    fireEvent.click(screen.getByRole('button', { name: 'Tạo bản nháp' }))
+    await waitFor(() => expect(api.generateAssessmentDraft).toHaveBeenCalledWith(expect.objectContaining({ type: 'LESSON_EXERCISE', lesson_id: lesson.id, question_count: 30, pass_threshold: 80 })))
+    expect(await screen.findByRole('heading', { name: practice.title })).toBeInTheDocument()
+    expect(router.state.location.pathname).toBe(`/admin/lessons/${lesson.id}`)
+    expect(api.listAdminLessons).not.toHaveBeenCalled()
+  })
+
+  it('redirects a legacy lesson exercise editor URL to its owning lesson', async () => {
+    const practice = { ...assessment, type: 'LESSON_EXERCISE' as const, lesson_id: lesson.id }
+    vi.mocked(api.getAdminAssessment).mockResolvedValue(practice)
+    vi.mocked(api.listAdminAssessments).mockResolvedValue({ items: [practice], page: 1, page_size: 100, total: 1 })
+    const { router } = renderAt(`/admin/assessments/${practice.id}`)
+    await waitFor(() => expect(router.state.location.pathname).toBe(`/admin/lessons/${lesson.id}`))
+    expect(router.state.location.search).toBe(`?section=exercises&exercise=${practice.id}`)
   })
 
   it('creates PERIODIC_TEST without deferred scope fields', async () => {
     renderAt('/admin/assessments')
-    fireEvent.click(screen.getByRole('button', { name: "Tạo bài luyện tập" }))
-    fireEvent.change(screen.getAllByLabelText("Loại").at(0)!, { target: { value: 'PERIODIC_TEST' } })
+    await waitFor(() => expect(api.listAdminAssessments).toHaveBeenCalledWith({ page: 1, page_size: 20, assessment_type: 'PERIODIC_TEST' }))
+    fireEvent.click(screen.getByRole('button', { name: 'Tạo bài kiểm tra' }))
+    expect(screen.queryByLabelText('Loại')).not.toBeInTheDocument()
     fill("Tiêu đề", "Kiểm tra định kỳ"); fill("Điểm đạt (%)", '90')
-    fireEvent.click(screen.getAllByRole('button', { name: "Tạo bài luyện tập" }).at(-1)!)
+    fireEvent.click(screen.getAllByRole('button', { name: 'Tạo bài kiểm tra' }).at(-1)!)
     await waitFor(() => expect(api.createAdminAssessment).toHaveBeenCalledWith({ type: 'PERIODIC_TEST', title: "Kiểm tra định kỳ", pass_threshold: 90 }))
     const payload = vi.mocked(api.createAdminAssessment).mock.calls[0]?.[0]
     expect(payload).not.toHaveProperty('lesson_id')
@@ -852,8 +937,8 @@ describe('Assessment metadata, lifecycle, questions and Stats', () => {
     const edit=await screen.findByRole('link', {name:'Tiếp tục chỉnh sửa: Greetings'})
     expect(edit).toHaveAttribute('href','/admin/lessons/lesson-1')
     expect(api.listAdminLessons).toHaveBeenCalledWith({status:'DRAFT',page:1,page_size:3})
-    expect(api.listAdminAssessments).toHaveBeenCalledWith({assessment_type:'LESSON_EXERCISE',page:1,page_size:2})
-    const sections=['Bài học','Luyện tập','Lộ trình HSK','Tài liệu nguồn','Thống kê tóm tắt'].map(name=>screen.getByRole('heading',{name}))
+    expect(api.listAdminAssessments).toHaveBeenCalledWith({assessment_type:'PERIODIC_TEST',page:1,page_size:2})
+    const sections=['Bài học','Kiểm tra định kỳ','Sắp xếp HSK','Tài liệu nguồn','Thống kê tóm tắt'].map(name=>screen.getByRole('heading',{name}))
     sections.slice(1).forEach((heading,index)=>expect(sections[index].compareDocumentPosition(heading)&Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy())
     expect(screen.getByRole('link',{name:'Xem chi tiết'})).toHaveAttribute('href','/admin/stats')
   })
@@ -874,18 +959,19 @@ describe('Assessment metadata, lifecycle, questions and Stats', () => {
     expect(screen.getByLabelText("Số thứ tự bài học")).toBeInTheDocument()
   })
 
-  it('opens the existing AI draft form directly from the exercise section', async () => {
+  it('opens periodic-test generation from its dashboard section', async () => {
     renderAt('/admin')
     fireEvent.click(screen.getByRole('link',{name:'Tạo đề bằng AI'}))
     expect(await screen.findByRole('heading',{name:"Tạo bản nháp bằng AI"})).toBeInTheDocument()
-    expect(screen.getByLabelText("Điểm đạt (%)")).toHaveValue(80)
+    expect(screen.getByLabelText("Điểm đạt (%)")).toHaveValue(90)
+    expect(screen.queryByLabelText('Loại bài luyện tập')).not.toBeInTheDocument()
   })
 
   it('isolates a failed draft request from the remaining management actions', async () => {
     vi.mocked(api.listAdminLessons).mockRejectedValue(new Error('temporary'))
     renderAt('/admin')
     expect(await screen.findByRole('alert')).toHaveTextContent('Không thể tải bản nháp bài học.')
-    expect(screen.getByRole('link',{name:'Quản lý lộ trình'})).toHaveAttribute('href','/admin/curriculum')
+    expect(screen.getByRole('link',{name:'Sắp xếp bài học'})).toHaveAttribute('href','/admin/lessons?view=curriculum')
     expect(screen.getByRole('link',{name:'Mở kho tài liệu'})).toHaveAttribute('href','/admin/documents')
     expect(screen.getByRole('link',{name:'Tạo bài học'})).toBeInTheDocument()
     expect(await screen.findByText('82.5%')).toBeInTheDocument()
@@ -916,7 +1002,7 @@ describe('Assessment metadata, lifecycle, questions and Stats', () => {
     vi.mocked(api.getAdminStats).mockRejectedValueOnce(new Error('temporary'))
     renderAt('/admin')
     expect(await screen.findByRole('alert')).toHaveTextContent('Không thể tải thống kê.')
-    expect(screen.getByRole('link', { name: 'Quản lý lộ trình' })).toHaveAttribute('href', '/admin/curriculum')
+    expect(screen.getByRole('link', { name: 'Sắp xếp bài học' })).toHaveAttribute('href', '/admin/lessons?view=curriculum')
     fireEvent.click(screen.getByRole('button', { name: 'Thử tải lại thống kê' }))
     expect(await screen.findByText('82.5%')).toBeInTheDocument()
     expect(api.getAdminStats).toHaveBeenCalledTimes(2)
@@ -983,10 +1069,11 @@ describe('type-specific Question editors', () => {
   })
 
   it('sets reorder_sentence correct_order to row order while preserving IDs', async () => {
-    const reorder = { ...question, type: 'reorder_sentence' as const, config: { items: [{ id: 'first', text: 'first' }, { id: 'second', text: 'second' }], correct_order: ['first', 'second'] } }
+    const reorder = { ...question, type: 'reorder_sentence' as const, config: { items: [{ id: 'second', text: 'second' }, { id: 'first', text: 'first' }], correct_order: ['first', 'second'] } }
     vi.mocked(api.listAssessmentQuestions).mockResolvedValue([reorder])
     renderAt(`/admin/assessments/${assessment.id}`)
     expect(await screen.findByRole('heading', { name: "Chỉnh sửa câu hỏi" })).toBeInTheDocument()
+    expect(screen.getByLabelText('Mảnh câu 1')).toHaveValue('first')
     fireEvent.click(within(document.querySelector('.admin-assessment-question-form')!).getByRole('button', { name: "Đưa second lên" }))
     fireEvent.click(screen.getByRole('button', { name: "Lưu câu hỏi" }))
     await waitFor(() => expect(api.updateAssessmentQuestion).toHaveBeenCalledWith(assessment.id, reorder.id, expect.objectContaining({ config: { items: [{ id: 'second', text: 'second' }, { id: 'first', text: 'first' }], correct_order: ['second', 'first'] } })))

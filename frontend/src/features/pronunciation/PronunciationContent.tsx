@@ -1,5 +1,4 @@
 import { pronunciationContent, useMandarinSpeech, type PronunciationCode } from './pronunciationData'
-import { PronunciationSource } from './PronunciationSource'
 
 export function PronunciationContent({ code }: { code: string }) {
   const { voiceAvailable, speak } = useMandarinSpeech()
@@ -24,7 +23,6 @@ export function PronunciationContent({ code }: { code: string }) {
         </li>)}</ul>
       </section>)}
       <div className="pronunciation-lesson__notes"><h3>Ghi nhớ</h3><ul>{lesson.notes.map((note) => <li key={note}>{note}</li>)}</ul></div>
-      <PronunciationSource code={code as PronunciationCode}/>
     </div>
   </details>
 }

@@ -1,4 +1,4 @@
-# Trung Chinese Learning
+# Hanfolio
 
 A Vietnamese-first Chinese learning web app with a structured curriculum and a lesson-aware AI assistant. The backend is a modular monolith; the frontend is a separate React client. AI providers are called through backend interfaces.
 
@@ -60,6 +60,13 @@ npm run dev
 ```
 
 The frontend expects the backend API at the base URL configured by the frontend environment. See the current frontend and backend configuration for local values.
+
+For local Vite development, use `VITE_API_BASE_URL=/api/v1` as shown in
+`frontend/.env.example`. Vite proxies requests to `http://127.0.0.1:8000`;
+set the shell variable `API_PROXY_TARGET` if your backend uses another port.
+The app Compose configuration sets the internal backend target automatically.
+This keeps session cookies on the frontend hostname whether you open
+`localhost:5173` or `127.0.0.1:5173`.
 
 ## Current pause point
 

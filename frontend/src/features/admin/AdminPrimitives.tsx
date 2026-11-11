@@ -1,6 +1,7 @@
 import { ApiError } from '../../lib/api/errors'
 
 const knownErrors: Record<string, string> = {
+  KNOWLEDGE_AI_DISABLED: 'Xử lý và tìm kiếm tài liệu bằng AI đang tạm tắt trên bản triển khai này.',
   ADMIN_REQUIRED: "Tài khoản của bạn không có quyền quản trị.",
   NOT_FOUND: "Không tìm thấy nội dung này.",
   INVALID_FIELDS: "Kiểm tra các trường thông tin và thử lại.",
@@ -12,11 +13,14 @@ const knownErrors: Record<string, string> = {
   LESSON_CONTENT_DETACH_DRAFT_ONLY: "Chỉ có thể gỡ nội dung khỏi bài học còn ở dạng nháp.",
   ITEM_HAS_LEARNER_HISTORY: "Nội dung đã có lịch sử học tập nên không thể gỡ.",
   INVALID_ITEM_MODE: "Thao tác với nội dung không hợp lệ.",
+  READING_ORDER_CONFLICT: 'Thứ tự này đã được dùng cho một bài khóa khác. Hãy chọn thứ tự khác.',
   INVALID_ASSESSMENT: "Thông tin bài luyện tập không hợp lệ.",
   INVALID_ASSESSMENT_TARGET: "Chọn bài học hợp lệ cho bài luyện tập này.",
   INVALID_ASSESSMENT_SCOPE: "Phạm vi bài luyện tập không hợp lệ.",
   ASSESSMENT_IMMUTABLE: "Bài luyện tập này không còn cho phép chỉnh sửa.",
   ASSESSMENT_HAS_NO_QUESTIONS: "Thêm ít nhất một câu hỏi trước khi gửi duyệt.",
+  LESSON_PRACTICE_REQUIRED: 'Thêm bài luyện tập trước khi xuất bản bài học.',
+  LESSON_PRACTICE_NOT_READY: 'Mỗi bài luyện tập cần đủ 30 câu hỏi và ít nhất 3 dạng bài. Hãy kiểm tra lại mục Luyện tập.',
   INVALID_LIFECYCLE_TRANSITION: "Trạng thái nội dung đã thay đổi. Hệ thống đã tải lại trạng thái hiện tại.",
   INVALID_QUESTION: "Kiểm tra nội dung câu hỏi và thử lại.",
   QUESTION_TYPE_IMMUTABLE: "Không thể đổi dạng câu hỏi sau khi tạo.",

@@ -6,21 +6,24 @@ import { ApiError } from '../../lib/api/errors'
 import { authApi } from './api'
 import { authMeQueryOptions } from './session'
 import { Alert, Button, PageHeader, Surface } from '../../components/ui'
+import { AcademyIcon } from '../../components/academy/AcademyIcon'
 
 const fieldClass = 'auth-field'
+const loginSessionRestoreError = 'Đã gửi thông tin đăng nhập nhưng chưa thể xác thực phiên. Hãy thử xác thực lại.'
+const registerSessionRestoreError = 'Tài khoản đã được tạo nhưng chưa thể xác thực phiên đăng nhập. Hãy thử xác thực lại.'
 
 function isTechnicalError(error: unknown) {
   return error instanceof ApiError && (error.code === 'NETWORK_ERROR' || (error.status !== null && error.status >= 500))
 }
 
 function safeFormError(error: unknown) {
-  return isTechnicalError(error) ? 'A temporary problem prevented this request. Please try again.' : 'We could not complete this request. Please try again.'
+  return isTechnicalError(error) ? "Có sự cố tạm thời. Vui lòng thử lại." : "Không thể hoàn tất yêu cầu. Vui lòng thử lại."
 }
 
 async function restoreAuthoritativeSession(queryClient: ReturnType<typeof useQueryClient>) {
   await prepareAuthenticatedSessionCache()
   const user = await queryClient.fetchQuery(authMeQueryOptions())
-  if (!user) throw new ApiError({ status: null, code: 'INVALID_RESPONSE', message: 'Session verification failed', details: null })
+  if (!user) throw new ApiError({ status: null, code: 'INVALID_RESPONSE', message: "Không thể xác thực phiên đăng nhập", details: null })
   return user
 }
 
@@ -43,9 +46,9 @@ export function LoginPage() {
     setFormError(null)
     try {
       const user = await restoreAuthoritativeSession(queryClient)
-      await navigate(user.role === 'ADMIN' ? '/admin' : '/dashboard', { replace: true })
+      await navigate(user.role === 'ADMIN' ? '/admin' : '/pronunciation', { replace: true })
     } catch {
-      setFormError('Your sign-in was submitted, but we could not verify the session. Retry session verification.')
+      setFormError(loginSessionRestoreError)
     } finally {
       setRestoring(false)
     }
@@ -54,13 +57,13 @@ export function LoginPage() {
   const submit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     setFormError(null)
-    if (!email.trim() || !password) { setFormError('Enter your email and password.'); return }
+    if (!email.trim() || !password) { setFormError("Vui lòng nhập email và mật khẩu."); return }
     try {
       await mutation.mutateAsync({ email: email.trim(), password })
       await restore()
     } catch (error) {
-      if (error instanceof ApiError && error.code === 'INVALID_CREDENTIALS') setFormError('Email or password is incorrect.')
-      else if (error instanceof ApiError && error.code === 'ACCOUNT_DISABLED') setFormError('This account is disabled. Contact support for help.')
+      if (error instanceof ApiError && error.code === 'INVALID_CREDENTIALS') setFormError("Email hoặc mật khẩu chưa chính xác.")
+      else if (error instanceof ApiError && error.code === 'ACCOUNT_DISABLED') setFormError("Tài khoản đã bị vô hiệu hóa. Vui lòng liên hệ hỗ trợ.")
       else setFormError(safeFormError(error))
     }
   }
@@ -74,30 +77,32 @@ export function LoginPage() {
 
       <section className="public-login-panel" aria-labelledby="page-title">
         <div className="public-login-card">
-          <h1 id="page-title">Login</h1>
-          <p className="public-login-intro">Sign in to continue your learning journey.</p>
-          {notice === 'password-reset' && <Alert role="status" tone="success">Password reset successfully. Please sign in with your new password.</Alert>}
-          {notice === 'password-changed' && <Alert role="status" tone="success">Password changed successfully. Please sign in again.</Alert>}
+          <h1 id="page-title">Đăng nhập</h1>
+          <p className="public-login-intro">Đăng nhập để tiếp tục hành trình học của bạn.</p>
+          {notice === 'password-reset' && <Alert role="status" tone="success">Đã đặt lại mật khẩu thành công. Vui lòng đăng nhập bằng mật khẩu mới.</Alert>}
+          {notice === 'password-changed' && <Alert role="status" tone="success">Đã đổi mật khẩu thành công. Vui lòng đăng nhập lại.</Alert>}
           <form className="public-auth-form public-login-form" onSubmit={submit} noValidate>
             <label className={fieldClass}>Email<input autoComplete="email" type="email" name="email" value={email} onChange={(event) => setEmail(event.target.value)} required /></label>
-            <label className={fieldClass}>Password<input autoComplete="current-password" type="password" name="password" value={password} onChange={(event) => setPassword(event.target.value)} required /></label>
-            <div className="public-login-help-row"><span>We’re glad you’re here.</span><Link to="/forgot-password">Forgot password?</Link></div>
+            <div className={`${fieldClass} public-login-password`}>
+              <div className="public-login-password-heading"><label htmlFor="login-password">Mật khẩu</label><div className="public-login-help-row"><Link to="/forgot-password">Quên mật khẩu?</Link></div></div>
+              <input id="login-password" autoComplete="current-password" type="password" name="password" value={password} onChange={(event) => setPassword(event.target.value)} required />
+            </div>
             {formError && <Alert role="alert" tone="error">{formError}</Alert>}
-            <Button variant="primary" className="primary-action" type="submit" disabled={busy}>{busy ? 'Signing in…' : 'Sign in'}</Button>
-            {formError?.includes('Retry session verification') && <Button className="secondary-action" disabled={busy} onClick={() => void restore()}>Retry session verification</Button>}
+            <Button variant="primary" className="primary-action" type="submit" disabled={busy}>{busy ? "Đang đăng nhập…" : "Đăng nhập"}</Button>
+            {formError === loginSessionRestoreError && <Button className="secondary-action" disabled={busy} onClick={() => void restore()}>Thử xác thực phiên đăng nhập lại</Button>}
           </form>
-          <p className="public-login-register">New to learning Chinese? <Link to="/register">Create an account <span aria-hidden="true">↗</span></Link></p>
+          <p className="public-login-register">Bạn mới bắt đầu học tiếng Trung? <Link to="/register">Tạo tài khoản <span aria-hidden="true">↗</span></Link></p>
         </div>
-        <p className="public-login-security"><span aria-hidden="true">◇</span> Your learning space, ready when you are.</p>
+        <p className="public-login-security"><span aria-hidden="true">◇</span> Không gian học tập của bạn, luôn sẵn sàng khi bạn cần.</p>
       </section>
 
       <section className="public-login-story" aria-labelledby="login-story-title">
         <div className="public-login-story-copy">
           <p id="login-story-title" className="public-login-chinese-line">在每一次学习中，遇见新的可能</p>
         </div>
-        <div className="public-login-greeting" aria-label="Nǐ hǎo, hello">
+        <div className="public-login-greeting" aria-label="Nǐ hǎo, xin chào">
           <span className="public-login-greeting__characters" lang="zh">你好</span>
-          <span className="public-login-greeting__pinyin">nǐ hǎo <span aria-hidden="true">/</span> hello</span>
+          <span className="public-login-greeting__pinyin">nǐ hǎo <span aria-hidden="true">/</span> xin chào</span>
           <span className="public-login-greeting__seal" aria-hidden="true">学</span>
         </div>
       </section>
@@ -122,44 +127,44 @@ export function RegisterPage() {
     setFormError(null)
     try {
       await restoreAuthoritativeSession(queryClient)
-      await navigate('/dashboard', { replace: true })
+      await navigate('/pronunciation', { replace: true })
     } catch {
-      setFormError('Your account was created, but we could not verify the session. Retry session verification.')
+      setFormError(registerSessionRestoreError)
     } finally { setRestoring(false) }
   }
 
   const submit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     setFormError(null)
-    if (!fullName.trim() || !email.trim() || !password || !confirmation) { setFormError('Complete all fields.'); return }
-    if (password !== confirmation) { setFormError('Passwords do not match.'); return }
-    if (password.length < 8 || password.length > 128) { setFormError('Password must be between 8 and 128 characters.'); return }
+    if (!fullName.trim() || !email.trim() || !password || !confirmation) { setFormError("Vui lòng điền đầy đủ thông tin."); return }
+    if (password !== confirmation) { setFormError("Mật khẩu xác nhận chưa khớp."); return }
+    if (password.length < 8 || password.length > 128) { setFormError("Mật khẩu cần có từ 8 đến 128 ký tự."); return }
     try {
       await mutation.mutateAsync({ full_name: fullName.trim(), email: email.trim(), password })
       setPassword(''); setConfirmation(''); setRegistrationComplete(true)
       await restore()
     } catch (error) {
       if (registrationComplete) return
-      if (error instanceof ApiError && error.code === 'EMAIL_ALREADY_REGISTERED') setFormError('An account already exists for this email.')
-      else if (error instanceof ApiError && error.code === 'INVALID_PASSWORD') setFormError('Password does not meet the required policy.')
+      if (error instanceof ApiError && error.code === 'EMAIL_ALREADY_REGISTERED') setFormError('Email này đã được đăng ký tài khoản.')
+      else if (error instanceof ApiError && error.code === 'INVALID_PASSWORD') setFormError("Mật khẩu chưa đáp ứng yêu cầu bảo mật.")
       else setFormError(safeFormError(error))
     } finally { setRestoring(false) }
   }
 
   const busy = mutation.isPending || restoring
   return <section className="screen public-auth-page public-register-page" aria-labelledby="page-title">
-    <PageHeader title="Create an account" titleId="page-title" description="Create your learner account to begin." />
+    <PageHeader title="Tạo tài khoản" titleId="page-title" description="Tạo tài khoản học viên để bắt đầu học." />
     <Surface as="section" className="public-auth-surface"><form className="public-auth-form" onSubmit={submit} noValidate>
-      <label className={fieldClass}>Full name<input autoComplete="name" name="full_name" value={fullName} onChange={(event) => setFullName(event.target.value)} required /></label>
+      <label className={fieldClass}>Họ và tên<input autoComplete="name" name="full_name" value={fullName} onChange={(event) => setFullName(event.target.value)} required /></label>
       <label className={fieldClass}>Email<input autoComplete="email" type="email" name="email" value={email} onChange={(event) => setEmail(event.target.value)} required /></label>
-      <label className={fieldClass}>Password<input autoComplete="new-password" type="password" name="password" value={password} onChange={(event) => setPassword(event.target.value)} required /></label>
-      <label className={fieldClass}>Confirm password<input autoComplete="new-password" type="password" name="confirm_password" value={confirmation} onChange={(event) => setConfirmation(event.target.value)} required /></label>
+      <label className={fieldClass}>Mật khẩu<input autoComplete="new-password" type="password" name="password" value={password} onChange={(event) => setPassword(event.target.value)} required /></label>
+      <label className={fieldClass}>Xác nhận mật khẩu<input autoComplete="new-password" type="password" name="confirm_password" value={confirmation} onChange={(event) => setConfirmation(event.target.value)} required /></label>
       {formError && <Alert role="alert" tone="error">{formError}</Alert>}
-      {registrationComplete && formError?.includes('Retry session verification')
-        ? <Button className="secondary-action" disabled={busy} onClick={() => void restore()}>Retry session verification</Button>
-        : <Button variant="primary" className="primary-action" type="submit" disabled={busy || registrationComplete}>{busy ? 'Creating account…' : 'Create account'}</Button>}
+      {registrationComplete && formError === registerSessionRestoreError
+        ? <Button className="secondary-action" disabled={busy} onClick={() => void restore()}>Thử xác thực phiên đăng nhập lại</Button>
+        : <Button variant="primary" className="primary-action" type="submit" disabled={busy || registrationComplete}>{busy ? "Đang tạo tài khoản…" : "Tạo tài khoản"}</Button>}
     </form></Surface>
-    <p className="public-auth-links">Already have an account? <Link to="/login">Sign in</Link></p>
+    <p className="public-auth-links">Bạn đã có tài khoản? <Link to="/login">Đăng nhập</Link></p>
   </section>
 }
 
@@ -170,19 +175,19 @@ export function ForgotPasswordPage() {
   const mutation = useMutation({ mutationFn: authApi.requestPasswordReset, retry: false })
   const submit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault(); setFormError(null); setAcknowledged(false)
-    if (!email.trim()) { setFormError('Enter your email.'); return }
+    if (!email.trim()) { setFormError("Vui lòng nhập email."); return }
     try { await mutation.mutateAsync({ email: email.trim() }); setAcknowledged(true) }
     catch (error) { setFormError(safeFormError(error)) }
   }
   return <section className="screen public-auth-page public-forgot-page" aria-labelledby="page-title">
-    <PageHeader title="Forgot password" titleId="page-title" description="Request a password-reset link." />
+    <PageHeader title="Quên mật khẩu" titleId="page-title" description="Nhận liên kết để đặt lại mật khẩu." />
     <Surface as="section" className="public-auth-surface"><form className="public-auth-form" onSubmit={submit} noValidate>
       <label className={fieldClass}>Email<input autoComplete="email" type="email" name="email" value={email} onChange={(event) => setEmail(event.target.value)} required /></label>
       {formError && <Alert role="alert" tone="error">{formError}</Alert>}
-      {acknowledged && <Alert role="status" tone="info">If an eligible account exists for that email, password-reset instructions will be sent.</Alert>}
-      <Button variant="primary" className="primary-action" type="submit" disabled={mutation.isPending}>{mutation.isPending ? 'Sending…' : formError ? 'Retry' : 'Send reset instructions'}</Button>
+      {acknowledged && <Alert role="status" tone="info">Nếu email này thuộc tài khoản hợp lệ, hướng dẫn đặt lại mật khẩu sẽ được gửi đến bạn.</Alert>}
+      <Button variant="primary" className="primary-action" type="submit" disabled={mutation.isPending}>{mutation.isPending ? "Đang gửi…" : formError ? "Thử lại" : "Gửi liên kết đặt lại mật khẩu"}</Button>
     </form></Surface>
-    <p className="public-auth-links"><Link to="/login">Back to login</Link></p>
+    <p className="public-auth-links"><Link to="/login">Quay lại đăng nhập</Link></p>
   </section>
 }
 
@@ -197,14 +202,14 @@ export function ResetPasswordPage() {
   const mutation = useMutation({ mutationFn: authApi.confirmPasswordReset, retry: false })
 
   if (!token || invalidLink) return <section className="screen public-auth-page public-reset-page" aria-labelledby="page-title">
-    <PageHeader title="Reset password" titleId="page-title" description="Choose a new password for your account." /><Alert role="alert" tone="error">This password reset link is missing or invalid.</Alert><Link className="secondary-action" to="/forgot-password">Request a new reset link</Link>
+    <PageHeader title="Đặt lại mật khẩu" titleId="page-title" description="Tạo mật khẩu mới cho tài khoản của bạn." /><Alert role="alert" tone="error">Liên kết đặt lại mật khẩu bị thiếu hoặc không hợp lệ.</Alert><Link className="secondary-action" to="/forgot-password">Yêu cầu liên kết đặt lại mật khẩu mới</Link>
   </section>
 
   const submit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault(); setFormError(null)
-    if (!password || !confirmation) { setFormError('Enter and confirm your new password.'); return }
-    if (password !== confirmation) { setFormError('Passwords do not match.'); return }
-    if (password.length < 8 || password.length > 128) { setFormError('Password must be between 8 and 128 characters.'); return }
+    if (!password || !confirmation) { setFormError("Vui lòng nhập và xác nhận mật khẩu mới."); return }
+    if (password !== confirmation) { setFormError("Mật khẩu xác nhận chưa khớp."); return }
+    if (password.length < 8 || password.length > 128) { setFormError("Mật khẩu cần có từ 8 đến 128 ký tự."); return }
     try {
       await mutation.mutateAsync({ token, new_password: password })
       setPassword(''); setConfirmation('')
@@ -212,23 +217,23 @@ export function ResetPasswordPage() {
       await navigate('/login', { replace: true, state: { notice: 'password-reset' } })
     } catch (error) {
       if (error instanceof ApiError && error.code === 'INVALID_RESET_TOKEN') setInvalidLink(true)
-      else if (error instanceof ApiError && error.code === 'INVALID_PASSWORD') setFormError('Password does not meet the required policy.')
+      else if (error instanceof ApiError && error.code === 'INVALID_PASSWORD') setFormError("Mật khẩu chưa đáp ứng yêu cầu bảo mật.")
       else setFormError(safeFormError(error))
     }
   }
 
   return <section className="screen public-auth-page public-reset-page" aria-labelledby="page-title">
-    <PageHeader title="Reset password" titleId="page-title" description="Choose a new password for your account." />
+    <PageHeader title="Đặt lại mật khẩu" titleId="page-title" description="Tạo mật khẩu mới cho tài khoản của bạn." />
     <Surface as="section" className="public-auth-surface"><form className="public-auth-form" onSubmit={submit} noValidate>
-      <label className={fieldClass}>New password<input autoComplete="new-password" type="password" name="new_password" value={password} onChange={(event) => setPassword(event.target.value)} required /></label>
-      <label className={fieldClass}>Confirm new password<input autoComplete="new-password" type="password" name="confirm_password" value={confirmation} onChange={(event) => setConfirmation(event.target.value)} required /></label>
+      <label className={fieldClass}>Mật khẩu mới<input autoComplete="new-password" type="password" name="new_password" value={password} onChange={(event) => setPassword(event.target.value)} required /></label>
+      <label className={fieldClass}>Xác nhận mật khẩu mới<input autoComplete="new-password" type="password" name="confirm_password" value={confirmation} onChange={(event) => setConfirmation(event.target.value)} required /></label>
       {formError && <Alert role="alert" tone="error">{formError}</Alert>}
-      <Button variant="primary" className="primary-action" type="submit" disabled={mutation.isPending}>{mutation.isPending ? 'Resetting…' : 'Reset password'}</Button>
+      <Button variant="primary" className="primary-action" type="submit" disabled={mutation.isPending}>{mutation.isPending ? "Đang đặt lại mật khẩu…" : "Đặt lại mật khẩu"}</Button>
     </form></Surface>
   </section>
 }
 
-export function LogoutAction({ language = 'en' }: { language?: 'en' | 'vi' }) {
+export function LogoutAction({ iconOnly = false }: { iconOnly?: boolean }) {
   const navigate = useNavigate()
   const [error, setError] = useState(false)
   const mutation = useMutation({
@@ -241,8 +246,9 @@ export function LogoutAction({ language = 'en' }: { language?: 'en' | 'vi' }) {
     },
     onError: () => setError(true),
   })
+  const label = mutation.isPending ? 'Đang đăng xuất…' : error ? 'Thử đăng xuất lại' : 'Đăng xuất'
   return <div className="logout-action">
-    {error && <Alert role="alert" tone="error">{language === 'vi' ? 'Chưa thể xác nhận đăng xuất. Phiên đăng nhập vẫn đang hoạt động; bạn có thể thử lại.' : 'Logout could not be confirmed. Your session is still shown as active; retry when ready.'}</Alert>}
-    <Button className="secondary-action" disabled={mutation.isPending} onClick={() => mutation.mutate()}>{language === 'vi' ? mutation.isPending ? 'Đang đăng xuất…' : error ? 'Thử đăng xuất lại' : 'Đăng xuất' : mutation.isPending ? 'Signing out…' : error ? 'Retry logout' : 'Logout'}</Button>
+    {error && <Alert role="alert" tone="error">Chưa thể xác nhận đăng xuất. Phiên đăng nhập vẫn đang hoạt động; bạn có thể thử lại.</Alert>}
+    <Button className="secondary-action" aria-label={label} title={iconOnly ? label : undefined} disabled={mutation.isPending} onClick={() => mutation.mutate()}>{iconOnly ? <AcademyIcon name="logout"/> : label}</Button>
   </div>
 }

@@ -21,7 +21,7 @@ async def seed_required_data() -> None:
             insert(PronunciationSection).values(
                 [
                     {"code": code, "order_index": order}
-                    for order, code in enumerate(("TONES", "INITIALS", "FINALS"), start=1)
+                    for order, code in enumerate(("TONES", "INITIALS", "FINALS", "SANDHI"), start=1)
                 ]
             ).on_conflict_do_nothing(index_elements=["code"])
         )

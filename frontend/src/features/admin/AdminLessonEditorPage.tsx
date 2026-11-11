@@ -1,7 +1,7 @@
 import { adminLabel, adminDate } from './labels'
 import { useEffect, useState } from 'react'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
-import { Link, useParams } from 'react-router'
+import { Link, useParams, useSearchParams } from 'react-router'
 import { queryKeys } from '../../app/query/keys'
 import { Alert } from '../../components/ui/Alert'
 import { Button } from '../../components/ui/Button'
@@ -12,13 +12,16 @@ import { StatusBadge } from '../../components/ui/StatusBadge'
 import { Surface } from '../../components/ui/Surface'
 import { ApiError } from '../../lib/api/errors'
 import { adminErrorText, isNotFound } from './AdminPrimitives'
-import { getAdminLesson, listHskLevels, publishAdminLesson, archiveAdminLesson, updateAdminLesson } from './api'
+import { getAdminLesson, listHskLevels, unpublishAdminLesson, archiveAdminLesson, updateAdminLesson } from './api'
 import { invalidateLessonLifecycle, invalidateLessonMetadata } from './invalidation'
 import { LessonContentSection } from './LessonContentSection'
 import { LessonExercisesSection } from './LessonExercisesSection'
+import { LessonReadingsSection } from './LessonReadingsSection'
+import { LessonReviewSection } from './LessonReviewSection'
 import { AuthoringSession, AuthoringNotice, useAuthoringDirty, useHasUnsavedDrafts } from './AuthoringSession'
 
 function LessonEditor({ lessonId }: { lessonId: string }) {
+  const [searchParams] = useSearchParams()
   const client = useQueryClient()
   const query = useQuery({ queryKey: queryKeys.adminLesson(lessonId), queryFn: () => getAdminLesson(lessonId) })
   const hskQuery = useQuery({ queryKey: queryKeys.adminHskLevels, queryFn: listHskLevels })
@@ -26,7 +29,10 @@ function LessonEditor({ lessonId }: { lessonId: string }) {
   const [description, setDescription] = useState('')
   const [dirty, setDirty] = useState(false)
   const [archiveOpen, setArchiveOpen] = useState(false)
-  const [area, setArea] = useState<'vocabulary' | 'grammar' | 'metadata' | 'exercises'>('vocabulary')
+  const [unpublishOpen, setUnpublishOpen] = useState(false)
+  const validAreas = ['vocabulary', 'grammar', 'readings', 'exercises', 'metadata', 'review'] as const
+  type Area = typeof validAreas[number]
+  const [area, setArea] = useState<Area>(() => validAreas.find((value) => value === searchParams.get('section')) ?? 'vocabulary')
   const unsaved = useHasUnsavedDrafts()
   useAuthoringDirty('lesson-metadata', Boolean(dirty && query.data && (title.trim() !== query.data.title || description !== (query.data.description ?? ''))))
   useEffect(() => {
@@ -48,7 +54,7 @@ function LessonEditor({ lessonId }: { lessonId: string }) {
     },
   })
   const lifecycle = useMutation({
-    mutationFn: (action: 'publish' | 'archive') => action === 'publish' ? publishAdminLesson(lessonId) : archiveAdminLesson(lessonId),
+    mutationFn: (action: 'unpublish' | 'archive') => action === 'unpublish' ? unpublishAdminLesson(lessonId) : archiveAdminLesson(lessonId),
     retry: false,
     onSuccess: async (lesson) => await invalidateLessonLifecycle(client, lesson.id, lesson.hsk_level_id),
     onError: async (error) => {
@@ -77,16 +83,16 @@ function LessonEditor({ lessonId }: { lessonId: string }) {
       <Surface as="section" className="admin-editor-card admin-lesson-lifecycle-panel" aria-labelledby="lesson-lifecycle-title">
         <h2 id="lesson-lifecycle-title">Trạng thái bài học</h2>
         <div className="admin-current-state"><p><span>Trạng thái: {adminLabel(lesson.status)}</span></p><StatusBadge aria-hidden="true" tone={lesson.status === 'PUBLISHED' ? 'success' : 'neutral'}>{adminLabel(lesson.status)}</StatusBadge></div>
-        {lesson.published_at && <p>Ngày xuất bản: {adminDate(lesson.published_at)}</p>}
+        {lesson.published_at && <p>{lesson.status === 'DRAFT' ? 'Lần xuất bản trước' : 'Ngày xuất bản'}: {adminDate(lesson.published_at)}</p>}
         <div className="admin-action-bar">
-          {lesson.status === 'DRAFT' && <Button variant="primary" className="admin-primary-action" disabled={unsaved || lifecycle.isPending} onClick={() => lifecycle.mutate('publish')}>{lifecycle.isPending ? "Đang cập nhật trạng thái…" : "Xuất bản bài học"}</Button>}
-          {lesson.status === 'PUBLISHED' && <Button variant="danger" disabled={lifecycle.isPending} onClick={() => setArchiveOpen(true)}>{lifecycle.isPending ? "Đang cập nhật trạng thái…" : "Lưu trữ bài học"}</Button>}
+          {lesson.status !== 'ARCHIVED' && <Button variant="primary" className="admin-primary-action" onClick={() => setArea('review')}>Duyệt và xuất bản</Button>}
+          {lesson.status === 'PUBLISHED' && <><Button variant="secondary" disabled={unsaved || lifecycle.isPending} onClick={() => setUnpublishOpen(true)}>Hủy xuất bản</Button><Button variant="danger" disabled={unsaved || lifecycle.isPending} onClick={() => setArchiveOpen(true)}>{lifecycle.isPending ? "Đang cập nhật trạng thái…" : "Lưu trữ bài học"}</Button></>}
         </div>
         {lifecycle.isError && <Alert role="alert" tone="error">{adminErrorText(lifecycle.error, "Không thể thay đổi trạng thái bài học.")}</Alert>}
       </Surface>
     </div>
     <AuthoringNotice/>
-    <nav className="admin-studio-nav" aria-label="Khu vực biên soạn bài học">{(['vocabulary', 'grammar', 'exercises', 'metadata'] as const).map((value) => <button key={value} type="button" aria-pressed={area === value} onClick={() => setArea(value)}>{{vocabulary: "Từ vựng", grammar: "Ngữ pháp", exercises: 'Luyện tập', metadata: "Thông tin bài học"}[value]}</button>)}</nav>
+    <nav className="admin-studio-nav" aria-label="Khu vực biên soạn bài học">{validAreas.map((value) => <button key={value} type="button" aria-pressed={area === value} onClick={() => setArea(value)}>{{vocabulary: "Từ vựng", grammar: "Ngữ pháp", readings: 'Bài khóa', exercises: 'Luyện tập', metadata: "Thông tin bài học", review: 'Duyệt xuất bản'}[value]}</button>)}</nav>
     <div className="admin-lesson-workspace">
       <div hidden={area !== 'metadata'}>
       <Surface as="section" className="admin-editor-section admin-editor-card admin-lesson-metadata-panel" aria-labelledby="lesson-metadata-title">
@@ -104,13 +110,20 @@ function LessonEditor({ lessonId }: { lessonId: string }) {
       </div>
       <div hidden={area !== 'grammar'}><LessonContentSection lessonId={lesson.id} hskId={lesson.hsk_level_id} kind="grammar" lessonStatus={lesson.status} />
       </div>
+      <div hidden={area !== 'readings'}><LessonReadingsSection lessonId={lesson.id} lessonStatus={lesson.status} active={area === 'readings'}/></div>
     </div>
-    <div hidden={area !== 'exercises'}><LessonExercisesSection lessonId={lesson.id}/></div>
+    <div hidden={area !== 'exercises'}><LessonExercisesSection lessonId={lesson.id} readOnly={lesson.status === 'ARCHIVED'} initialExerciseId={searchParams.get('exercise')}/></div>
+    {area === 'review' && <LessonReviewSection lessonId={lesson.id} lessonStatus={lesson.status} onEdit={setArea}/>}
     {lesson.status === 'ARCHIVED' && <Alert tone="info">Bài học đã lưu trữ chỉ có thể xem.</Alert>}
     <Dialog cancelLabel="Hủy" open={archiveOpen} title="Lưu trữ bài học?" confirmLabel="Lưu trữ bài học" confirmVariant="danger" busy={lifecycle.isPending}
       onCancel={() => setArchiveOpen(false)} onClose={() => setArchiveOpen(false)}
       onConfirm={() => { lifecycle.mutate('archive'); setArchiveOpen(false) }}>
       Bài học sẽ được chuyển sang trạng thái lưu trữ.
+    </Dialog>
+    <Dialog cancelLabel="Hủy" open={unpublishOpen} title="Hủy xuất bản bài học?" confirmLabel="Hủy xuất bản" busy={lifecycle.isPending}
+      onCancel={() => setUnpublishOpen(false)} onClose={() => setUnpublishOpen(false)}
+      onConfirm={() => { lifecycle.mutate('unpublish'); setUnpublishOpen(false) }}>
+      Bài học sẽ trở về bản nháp và được ẩn với học viên. Nội dung, tiến độ học và lịch sử làm bài được giữ nguyên.
     </Dialog>
   </section>
 }

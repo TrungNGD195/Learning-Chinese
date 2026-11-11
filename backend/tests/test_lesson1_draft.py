@@ -1,15 +1,16 @@
 import asyncio
 from uuid import uuid4
 
-from sqlalchemy import select, text, func
+from sqlalchemy import delete, select, text, func
 
 from app.admin.schemas import AssessmentCreateRequest
 from app.ai.generation.schemas import LessonExerciseGenerationRequest, PeriodicTestGenerationRequest
-from app.database.models import Assessment, HSKLevel, LessonVocabulary, Question, QuestionOption
+from app.database.models import Assessment, HSKLevel, LessonVocabulary, LessonReading, Question, QuestionOption
 from app.database.session import SessionFactory
 from app.exercise.grading import DeterministicGrader, GradeResult
 from app.exercise.service import calculate_score
 from scripts.create_hsk1_lesson1_draft import create_draft, load_definition
+from scripts.upgrade_lesson1_practice_30 import upgrade
 
 
 def test_type_defaults_preserve_explicit_values():
@@ -41,9 +42,11 @@ def test_draft_import_and_sql_defaults_with_real_answer_keys():
                 assert repeated["created"] is False
                 assert repeated["lesson_id"] == imported["lesson_id"]
                 assert await session.scalar(select(func.count()).select_from(LessonVocabulary).where(LessonVocabulary.lesson_id == imported["lesson_id"])) == 12
+                readings = (await session.execute(select(LessonReading).where(LessonReading.lesson_id == imported['lesson_id']))).scalars().all()
+                assert len(readings) == 1 and readings[0].content == 'A：你好！\nB：你好！'
                 assessment_id = imported["assessment_id"]
                 stored = (await session.execute(select(Question).where(Question.assessment_id == assessment_id).order_by(Question.order_index))).scalars().all()
-                assert len(stored) == 20
+                assert len(stored) == 30
                 grading_questions, results = [], {}
                 for row in stored:
                     options = (await session.execute(select(QuestionOption).where(QuestionOption.question_id == row.id))).scalars().all()
@@ -59,10 +62,24 @@ def test_draft_import_and_sql_defaults_with_real_answer_keys():
                     results[row.id] = DeterministicGrader().grade(question, answer)
                     assert results[row.id].is_correct is True
                 assert calculate_score(grading_questions, results, 80) == (100, True)
-                for row in stored[:4]: results[row.id] = GradeResult("GRADED", 0, False)
+                for row in stored[:6]: results[row.id] = GradeResult("GRADED", 0, False)
                 assert calculate_score(grading_questions, results, 80) == (80, True)
-                results[stored[4].id] = GradeResult("GRADED", 0, False)
-                assert calculate_score(grading_questions, results, 80) == (75, False)
+                results[stored[6].id] = GradeResult("GRADED", 0, False)
+                assert calculate_score(grading_questions, results, 80) == (76.67, False)
+                existing_ids = [row.id for row in stored[:20]]
+                removed_ids = [row.id for row in stored[20:]]
+                await session.execute(delete(QuestionOption).where(QuestionOption.question_id.in_(removed_ids)))
+                await session.execute(delete(Question).where(Question.id.in_(removed_ids)))
+                expanded = await upgrade(session, definition, questions)
+                assert expanded['updated'] is True and expanded['added'] == 10
+                restored = (await session.execute(select(Question).where(Question.assessment_id == assessment_id).order_by(Question.order_index))).scalars().all()
+                assert len(restored) == 30 and [row.id for row in restored[:20]] == existing_ids
+                assert (await upgrade(session, definition, questions))['updated'] is False
+                restored[0].prompt = 'Edited by administrator'
+                await session.flush()
+                import pytest
+                with pytest.raises(RuntimeError, match='edited question'):
+                    await upgrade(session, definition, questions)
                 for kind, expected in (("LESSON_EXERCISE", 80), ("PERIODIC_TEST", 90)):
                     value = await session.scalar(text("INSERT INTO assessments (id,type,lesson_id,title,status) VALUES (:id,:kind,:lesson,'SQL default','DRAFT') RETURNING pass_threshold"),
                                                  {"id": uuid4(), "kind": kind, "lesson": imported["lesson_id"] if kind == "LESSON_EXERCISE" else None})

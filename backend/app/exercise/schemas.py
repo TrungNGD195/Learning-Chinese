@@ -39,7 +39,22 @@ class MatchItemResponse(BaseModel):
     text: str
 
 
-class MatchingLearnerConfig(BaseModel):
+class PracticePresentation(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    skill: Literal["vocabulary", "grammar", "listening", "reading", "communication"]
+    difficulty: Literal["easy", "medium", "challenge"]
+    focus: Literal["vocabulary", "grammar", "communication"]
+    review: bool = False
+    audio_text: str | None = Field(default=None, max_length=400)
+    image_hanzi: str | None = Field(default=None, max_length=20)
+    reading_text: str | None = Field(default=None, max_length=2000)
+
+
+class PresentationConfig(BaseModel):
+    presentation: PracticePresentation | None = Field(default=None, exclude_if=lambda value: value is None)
+
+
+class MatchingLearnerConfig(PresentationConfig):
     left_items: list[MatchItemResponse]
     right_items: list[MatchItemResponse]
 
@@ -50,11 +65,11 @@ class ReorderItemResponse(BaseModel):
     text: str
 
 
-class ReorderLearnerConfig(BaseModel):
+class ReorderLearnerConfig(PresentationConfig):
     items: list[ReorderItemResponse]
 
 
-class AnswerKeyFreeConfig(BaseModel):
+class AnswerKeyFreeConfig(PresentationConfig):
     model_config=ConfigDict(extra="forbid")
 
 
@@ -139,7 +154,7 @@ class AttemptHistoryPage(BaseModel):
     total: int
 
 
-class ResultConfigBase(BaseModel):
+class ResultConfigBase(PresentationConfig):
     model_config = ConfigDict(extra="forbid")
 
     @model_serializer(mode="wrap")
@@ -178,6 +193,7 @@ class MultipleChoiceAttemptAnswerResult(AttemptAnswerResultBase):
     type: Literal["multiple_choice"]
     answer: MultipleChoiceAnswer | None
     config: AnswerKeyFreeConfig | None = None
+    selected_option_text: str | None = None
 
 
 class FillBlankAttemptAnswerResult(AttemptAnswerResultBase):

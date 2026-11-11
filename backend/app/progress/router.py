@@ -8,6 +8,7 @@ from app.curriculum import service as curriculum_service
 from app.database.session import get_db_session
 from app.database.models import User
 from app.progress import service
+from app.readings.schemas import ReadingCompleteRequest, ReadingCompleteResponse
 from app.progress.schemas import (DashboardResponse, HSKProgressResponse, LessonProgressResponse,
     ProgressOverviewResponse, PronunciationAdvanceRequest, PronunciationLessonResponse,
     PronunciationSectionResponse, ViewProgressResponse)
@@ -59,6 +60,12 @@ async def grammar_view(lesson_id: UUID, lesson_grammar_id: UUID, current_user: U
 @router.get("/me/progress",response_model=ProgressOverviewResponse)
 async def progress(current_user: User = Depends(require_learner), session: AsyncSession = Depends(get_db_session)):
     return await service.progress_overview(session, current_user.id)
+
+
+@router.post('/lessons/{lesson_id}/theory/readings/{reading_id}/complete', response_model=ReadingCompleteResponse)
+async def complete_reading(lesson_id: UUID, reading_id: UUID, payload: ReadingCompleteRequest,
+                           current_user: User = Depends(require_learner), session: AsyncSession = Depends(get_db_session)):
+    return await service.complete_reading(session, current_user.id, lesson_id, reading_id, payload.version)
 
 
 @router.get("/me/progress/hsk/{hsk_id}",response_model=HSKProgressResponse)

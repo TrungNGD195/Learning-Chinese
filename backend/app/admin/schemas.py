@@ -4,7 +4,7 @@ from uuid import UUID
 
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 from app.ai.generation.schemas import AssessmentGenerationRequest
-from app.exercise.schemas import MatchItemResponse, ReorderItemResponse
+from app.exercise.schemas import MatchItemResponse, ReorderItemResponse, PracticePresentation
 
 LessonStatus = Literal["DRAFT", "PUBLISHED", "ARCHIVED"]
 AssessmentType = Literal["LESSON_EXERCISE", "PERIODIC_TEST"]
@@ -217,7 +217,11 @@ class QuestionOptionInput(AdminInput):
     is_correct: bool
 
 
-class MatchingConfigInput(AdminInput):
+class PresentationConfigInput(AdminInput):
+    presentation: PracticePresentation | None = Field(default=None, exclude_if=lambda value: value is None)
+
+
+class MatchingConfigInput(PresentationConfigInput):
     left_items: list[MatchItemResponse]
     right_items: list[MatchItemResponse]
     correct_pairs: list["CorrectPairInput"]
@@ -228,20 +232,20 @@ class CorrectPairInput(AdminInput):
     right_id: str
 
 
-class ReorderConfigInput(AdminInput):
+class ReorderConfigInput(PresentationConfigInput):
     items: list[ReorderItemResponse]
     correct_order: list[str]
 
 
-class FillBlankConfigInput(AdminInput):
+class FillBlankConfigInput(PresentationConfigInput):
     accepted_answers: list[str] = Field(default_factory=list)
 
 
-class AnswerKeyFreeConfig(AdminInput):
+class AnswerKeyFreeConfig(PresentationConfigInput):
     pass
 
 
-QuestionConfigInput = MatchingConfigInput | ReorderConfigInput | FillBlankConfigInput | AnswerKeyFreeConfig
+QuestionConfigInput = MatchingConfigInput | ReorderConfigInput | AnswerKeyFreeConfig | FillBlankConfigInput
 
 
 class QuestionConfigContract(AdminInput):
@@ -251,9 +255,11 @@ class QuestionConfigContract(AdminInput):
             raise ValueError("matching questions require matching config")
         if self.type == "reorder_sentence" and not isinstance(self.config, ReorderConfigInput):
             raise ValueError("reorder_sentence questions require reorder config")
+        if self.type == "fill_blank" and isinstance(self.config, AnswerKeyFreeConfig):
+            self.config = FillBlankConfigInput(**self.config.model_dump())
         if self.type == "fill_blank" and self.config is not None and not isinstance(self.config, FillBlankConfigInput):
             raise ValueError("fill_blank config is invalid")
-        if self.type in {"multiple_choice","translate_vi_zh","translate_zh_vi","sentence_writing"} and self.config not in (None, AnswerKeyFreeConfig()):
+        if self.type in {"multiple_choice","translate_vi_zh","translate_zh_vi","sentence_writing"} and self.config is not None and not isinstance(self.config, AnswerKeyFreeConfig):
             raise ValueError("this question type does not accept config")
         return self
 

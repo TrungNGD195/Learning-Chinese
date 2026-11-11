@@ -7,6 +7,8 @@ import { Button } from '../../components/ui/Button'
 import { Dialog } from '../../components/ui/Dialog'
 import { useAuthoringDirty } from './AuthoringSession'
 import { QuestionRenderer, type AssessmentQuestion, type DraftAnswer } from '../assessment/QuestionRenderer'
+import { QuestionMedia } from '../assessment/QuestionMedia'
+import { difficultyLabels, skillLabels } from '../assessment/practicePresentation'
 
 type Question = Awaited<ReturnType<typeof listAssessmentQuestions>>[number]
 type QuestionCreate = Parameters<typeof createAssessmentQuestion>[1]
@@ -14,6 +16,7 @@ type QuestionPatch = Parameters<typeof updateAssessmentQuestion>[2]
 type QuestionType = QuestionCreate['type']
 type MatchRow = { id: string; text: string }
 type OptionRow = { text: string; correct: boolean }
+type Presentation = NonNullable<AssessmentQuestion['config']['presentation']>
 
 function previewQuestion(id: string, type: QuestionType, prompt: string, order: string, points: string, options: OptionRow[], left: MatchRow[], right: MatchRow[], items: MatchRow[]): AssessmentQuestion {
   const base = { id: `admin-preview-${id}`, prompt: prompt || 'Nội dung câu hỏi', order_index: Number(order), points: Number(points) }
@@ -25,7 +28,7 @@ function previewQuestion(id: string, type: QuestionType, prompt: string, order: 
 
 function QuestionPreview({ question, dirty = false }: { question: AssessmentQuestion; dirty?: boolean }) {
   const [answer, setAnswer] = useState<DraftAnswer>()
-  return <aside className="admin-editor-preview"><h3>Xem trước cho học sinh {dirty ? '· Chưa lưu' : ''}</h3><div className="admin-question-preview"><p>{question.points || '—'} điểm · Thử tương tác</p><QuestionRenderer language="vi" question={question} draft={answer} onChange={setAnswer}/><p className="admin-preview-hint">Thao tác tại đây không lưu kết quả học tập.</p></div></aside>
+  return <aside className="admin-editor-preview"><h3>Xem trước cho học sinh {dirty ? '· Chưa lưu' : ''}</h3><div className="admin-question-preview"><p>{question.points || '—'} điểm · Thử tương tác</p><QuestionMedia question={question}/><QuestionRenderer question={question} draft={answer} onChange={setAnswer}/><p className="admin-preview-hint">Thao tác tại đây không lưu kết quả học tập.</p></div></aside>
 }
 
 const types: QuestionType[] = ['multiple_choice', 'fill_blank', 'matching', 'reorder_sentence', 'translate_vi_zh', 'translate_zh_vi', 'sentence_writing']
@@ -43,7 +46,12 @@ function configRows(question: Question | null, key: 'left_items' | 'right_items'
   const config = question?.config
   if (config && key in config) {
     const value = config[key]
-    if (Array.isArray(value)) return value.map((item) => ({ id: item.id, text: item.text }))
+    if (Array.isArray(value)) {
+      const rows = value.map((item) => ({ id: item.id, text: item.text }))
+      // The editor lists fragments in answer-key order, not their shuffled play order.
+      if (key === 'items' && 'correct_order' in config) return config.correct_order.map(id => rows.find(item => item.id === id)).filter((item): item is MatchRow => item !== undefined)
+      return rows
+    }
   }
   return []
 }
@@ -56,6 +64,8 @@ function QuestionForm({ assessmentId, question, onClose, onPendingChange, removi
   const [points, setPoints] = useState(String(question?.points ?? 1))
   const [referenceAnswer, setReferenceAnswer] = useState(question?.reference_answer ?? '')
   const [rubric, setRubric] = useState(question?.rubric ?? '')
+  const [usePresentation, setUsePresentation] = useState(!!question?.config?.presentation)
+  const [presentation, setPresentation] = useState<Presentation>(question?.config?.presentation ?? { skill: 'vocabulary', focus: 'vocabulary', difficulty: 'easy', review: false })
   const [acceptedAnswers, setAcceptedAnswers] = useState((question?.config && 'accepted_answers' in question.config ? question.config.accepted_answers : []).join('\n'))
   const [options, setOptions] = useState<OptionRow[]>(question?.options.length ? question.options.map((item) => ({ text: item.option_text, correct: item.is_correct })) : [{ text: '', correct: true }, { text: '', correct: false }])
   const [left, setLeft] = useState(() => configRows(question, 'left_items'))
@@ -69,7 +79,7 @@ function QuestionForm({ assessmentId, question, onClose, onPendingChange, removi
   const [error, setError] = useState('')
   const [mobilePane, setMobilePane] = useState<'edit' | 'preview'>('edit')
   const [cancelOpen, setCancelOpen] = useState(false)
-  const snapshot = JSON.stringify({ type, prompt, order, points, referenceAnswer, rubric, acceptedAnswers, options, left, right, items, pairs })
+  const snapshot = JSON.stringify({ type, prompt, order, points, referenceAnswer, rubric, acceptedAnswers, options, left, right, items, pairs, usePresentation, presentation })
   const [baseline] = useState(snapshot)
   const dirty = snapshot !== baseline
 
@@ -113,19 +123,22 @@ function QuestionForm({ assessmentId, question, onClose, onPendingChange, removi
         : { ...(referenceAnswer.trim() ? { reference_answer: referenceAnswer.trim() } : {}), ...(rubric.trim() ? { rubric: rubric.trim() } : {}) }
       payload = { type, prompt: prompt.trim(), order_index, points: numericPoints, ...freeFormFields }
     }
+    if (usePresentation) payload.config = { ...payload.config, presentation } as QuestionCreate['config']
+    if (!['translate_vi_zh', 'translate_zh_vi', 'sentence_writing'].includes(type) && (question || rubric.trim())) payload.rubric = rubric.trim() || null
     if (question) {
       const { type: _immutableType, ...body } = payload
       update.mutate(body)
     } else create.mutate(payload)
   }
   const pending = create.isPending || update.isPending
-  useAuthoringDirty(`question-${question?.id ?? 'new'}`, dirty || pending || removing)
+  useAuthoringDirty(`question-${assessmentId}-${question?.id ?? 'new'}`, dirty || pending || removing)
   useEffect(() => { onPendingChange?.(pending); return () => onPendingChange?.(false) }, [onPendingChange, pending])
   const apiError = create.error ?? update.error
   const addRow = (setter: (fn: (rows: MatchRow[]) => MatchRow[]) => void) => setter((rows) => [...rows, { id: opaqueId(), text: '' }])
   const moveItem = (index: number, offset: number) => setItems((rows) => { const target = index + offset; if (target < 0 || target >= rows.length) return rows; const next = [...rows]; [next[index], next[target]] = [next[target], next[index]]; return next })
 
   const preview = previewQuestion(question?.id ?? 'new', type, prompt, order, points, options, left, right, items)
+  if (usePresentation) preview.config.presentation = presentation
   return <><div className="admin-content-mobile-switch" role="group" aria-label="Chế độ biên soạn"><button type="button" aria-pressed={mobilePane === 'edit'} onClick={() => setMobilePane('edit')}>Biên soạn</button><button type="button" aria-pressed={mobilePane === 'preview'} onClick={() => setMobilePane('preview')}>Xem trước</button></div>
     <div className="admin-content-edit-preview" data-mobile-pane={mobilePane}><div className="admin-question-edit-pane"><form className="learning-card admin-question-form admin-assessment-question-form" onSubmit={submit}>
     <fieldset className="admin-studio-fieldset" disabled={pending || removing}>
@@ -135,10 +148,21 @@ function QuestionForm({ assessmentId, question, onClose, onPendingChange, removi
         ? <input readOnly value={typeLabels[question.type]} />
         : <select value={type} onChange={(event) => setType(event.target.value as QuestionType)}>{types.map((value) => <option key={value} value={value}>{typeLabels[value]}</option>)}</select>}
       </label>
-      <label className="admin-assessment-question-prompt-field">Nội dung câu hỏi<textarea required value={prompt} onChange={(event) => setPrompt(event.target.value)} /></label>
+      <label className="admin-assessment-question-prompt-field">Nội dung câu hỏi<textarea aria-label="Nội dung câu hỏi" required value={prompt} onChange={(event) => setPrompt(event.target.value)} /></label>
       <label className="admin-assessment-question-order-field">Thứ tự<input required type="number" min="1" value={order} onChange={(event) => setOrder(event.target.value)} /></label>
       <label className="admin-assessment-question-points-field">Số điểm<input required type="number" min="0.01" step="any" value={points} onChange={(event) => setPoints(event.target.value)} /></label>
     </div>
+    <label><input type="checkbox" checked={usePresentation} onChange={event => setUsePresentation(event.target.checked)}/> Phân loại kỹ năng và nội dung nghe / hình / bài đọc</label>
+    {usePresentation && <fieldset><legend>Nội dung và mức độ</legend>
+      <label>Kỹ năng<select value={presentation.skill} onChange={event => setPresentation({...presentation, skill: event.target.value as Presentation['skill']})}>{Object.entries(skillLabels).map(([key,label]) => <option key={key} value={key}>{label}</option>)}</select></label>
+      <label>Trọng tâm<select value={presentation.focus} onChange={event => setPresentation({...presentation, focus: event.target.value as Presentation['focus']})}><option value="vocabulary">Từ vựng</option><option value="grammar">Ngữ pháp</option><option value="communication">Giao tiếp</option></select></label>
+      <label>Mức độ<select value={presentation.difficulty} onChange={event => setPresentation({...presentation, difficulty: event.target.value as Presentation['difficulty']})}>{Object.entries(difficultyLabels).map(([key,label]) => <option key={key} value={key}>{label}</option>)}</select></label>
+      <label><input type="checkbox" checked={presentation.review ?? false} onChange={event => setPresentation({...presentation, review:event.target.checked})}/> Ôn kiến thức bài trước</label>
+      <label>Chữ Hán để phát âm<textarea value={presentation.audio_text ?? ''} onChange={event => setPresentation({...presentation,audio_text:event.target.value || null})}/></label>
+      <label>Từ cần minh họa<input value={presentation.image_hanzi ?? ''} onChange={event => setPresentation({...presentation,image_hanzi:event.target.value || null})}/></label>
+      <label>Đoạn đọc / hội thoại<textarea value={presentation.reading_text ?? ''} onChange={event => setPresentation({...presentation,reading_text:event.target.value || null})}/></label>
+    </fieldset>}
+    {!['translate_vi_zh', 'translate_zh_vi', 'sentence_writing'].includes(type) && <label>Giải thích đáp án<textarea value={rubric} onChange={event => setRubric(event.target.value)}/></label>}
     {type === 'multiple_choice' && <fieldset><legend>Các lựa chọn</legend>{options.map((option, index) => <div className="admin-option-row" key={index}>
       <label>Lựa chọn {index + 1}<input value={option.text} onChange={(event) => setOptions((rows) => rows.map((row, rowIndex) => rowIndex === index ? { ...row, text: event.target.value } : row))} /></label>
       <label><input type="radio" name={`correct-option-${question?.id ?? 'new'}`} checked={option.correct} onChange={() => setOptions((rows) => rows.map((row, rowIndex) => ({ ...row, correct: rowIndex === index })))} /> Đáp án đúng</label>
@@ -180,6 +204,7 @@ function QuestionRow({ question, assessmentId, editable }: { question: Question;
     onError: async (error) => { if (error instanceof Error && 'status' in error && error.status === 409) await invalidateAssessmentQuestions(client, assessmentId) },
   })
   const preview = previewQuestion(question.id, question.type, question.prompt, String(question.order_index), String(question.points), question.options.map((option) => ({ text: option.option_text, correct: option.is_correct })), configRows(question, 'left_items'), configRows(question, 'right_items'), configRows(question, 'items'))
+  if (question.config?.presentation) preview.config.presentation = question.config.presentation
   return <article className="admin-assessment-question-row">
     {editing && editable ? <QuestionForm assessmentId={assessmentId} question={question} onClose={() => setEditing(false)} onPendingChange={setSaving} removing={remove.isPending} /> : <>
     <h3 className="admin-assessment-question-prompt">{question.order_index}. {question.prompt}</h3><p className="admin-assessment-question-meta">{typeLabels[question.type]} · {question.points} điểm</p>

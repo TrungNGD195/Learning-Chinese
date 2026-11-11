@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import { sandhiGroups } from './sandhiData'
 
-export type PronunciationCode = 'INITIALS' | 'FINALS' | 'TONES'
-export type Sound = { symbol: string; hanzi: string; pinyin: string }
+export type PronunciationCode = 'INITIALS' | 'FINALS' | 'TONES' | 'SANDHI'
+export type Sound = { symbol: string; hanzi: string; pinyin: string; spoken?: string; meaning?: string; explanation?: string; note?: string }
 
 // Source: local HSK1 3.0 Hanu 24.6.26.pdf, PDF4–7,17–18,27–29.
 // Ordered groups retain the server-owned21/36/5 progression contract.
@@ -90,6 +91,11 @@ export const pronunciationContent: Record<PronunciationCode, { intro: string; gr
     groups: tones,
     notes: ['Dấu thanh đặt trên nguyên âm chính: ưu tiên a, rồi o/e; với iu và ui, dấu đặt trên nguyên âm cuối. Khi i mang dấu, bỏ chấm trên i.', 'Hai thanh 3 đứng cạnh nhau: âm đầu thường được đọc gần thanh 2, nhưng cách viết vẫn giữ nguyên dấu thanh 3, ví dụ nǐ hǎo.', 'Trước thanh 1, 2, 4 hoặc thanh nhẹ, thanh 3 thường chỉ đọc phần hạ giọng (nửa thanh 3), không nâng lên đầy đủ như khi đọc riêng.', 'Âm 不 thường đọc bú trước thanh 4, ví dụ bú shì; hãy luyện biến điệu trong ngữ cảnh.', 'Thanh nhẹ không có dấu thanh và có độ cao phụ thuộc thanh điệu của âm tiết đứng trước; luyện với māma, nǐmen và bàba.'],
   },
+  SANDHI: {
+    intro: 'Khi nói liền, một số thanh thay đổi theo ngữ cảnh. So sánh thanh gốc với cách đọc, nghe cả cụm và tự đọc lại.',
+    groups: sandhiGroups,
+    notes: ['Biến điệu thay đổi cách phát âm; không đổi chữ Hán.', 'Thanh 3 vẫn giữ dấu gốc trong pinyin. Với 一 và 不, giáo trình có thể ghi dấu theo cách đọc để hỗ trợ học. Dòng “Thanh gốc” phân tích từng âm, không phải luôn là cách viết pinyin của cả từ.', 'Nửa thanh 3 là phần giọng hạ thấp, khác với thanh 2 đi lên.', 'Thanh nhẹ không mang dấu thanh. Nhịp nói và cách nhóm từ ảnh hưởng biến điệu; không biến mọi thanh 3 trong chuỗi thành thanh 2.'],
+  },
 }
 
 function isMandarinVoice(voice: SpeechSynthesisVoice) {
@@ -98,6 +104,9 @@ function isMandarinVoice(voice: SpeechSynthesisVoice) {
 
 export function useMandarinSpeech() {
   const [voice, setVoice] = useState<SpeechSynthesisVoice | null>(null)
+  const [isSpeaking, setIsSpeaking] = useState(false)
+  const [speechError, setSpeechError] = useState<string | null>(null)
+  const active = useRef<SpeechSynthesisUtterance | null>(null)
   useEffect(() => {
     if (typeof window === 'undefined' || !('speechSynthesis' in window)) return
     const synth = window.speechSynthesis
@@ -107,18 +116,44 @@ export function useMandarinSpeech() {
     }
     updateVoice()
     synth.addEventListener('voiceschanged', updateVoice)
-    return () => synth.removeEventListener('voiceschanged', updateVoice)
+    return () => {
+      synth.removeEventListener('voiceschanged', updateVoice)
+      if (active.current) {
+        active.current = null
+        synth.cancel()
+      }
+    }
   }, [])
 
-  const speak = (sound: Sound) => {
+  const speak = (sound: Pick<Sound, 'hanzi'>) => {
     if (!voice || typeof SpeechSynthesisUtterance === 'undefined') return
     const utterance = new SpeechSynthesisUtterance(sound.hanzi)
     utterance.voice = voice
     utterance.lang = voice.lang
     utterance.rate = 0.8
-    window.speechSynthesis.cancel()
-    window.speechSynthesis.speak(utterance)
+    active.current = utterance
+    setSpeechError(null)
+    setIsSpeaking(true)
+    utterance.onend = () => {
+      if (active.current !== utterance) return
+      active.current = null
+      setIsSpeaking(false)
+    }
+    utterance.onerror = event => {
+      if (active.current !== utterance) return
+      active.current = null
+      setIsSpeaking(false)
+      if (!['canceled', 'interrupted'].includes(event.error)) setSpeechError('Chưa thể phát âm thanh. Bạn hãy bấm nghe lại.')
+    }
+    try {
+      window.speechSynthesis.cancel()
+      window.speechSynthesis.speak(utterance)
+    } catch {
+      active.current = null
+      setIsSpeaking(false)
+      setSpeechError('Chưa thể phát âm thanh. Bạn hãy bấm nghe lại.')
+    }
   }
 
-  return { voiceAvailable: voice !== null, speak }
+  return { voiceAvailable: voice !== null && typeof SpeechSynthesisUtterance !== 'undefined', speak, isSpeaking, speechError }
 }

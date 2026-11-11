@@ -1,0 +1,1038 @@
+{
+  "lesson_number": 1,
+  "version": "practice-v3-2026-11-08",
+  "pass_threshold": 80,
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu nghe 1).",
+      "options": [
+        {
+          "option_text": "năm (số 5)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Tôi, tao, tớ, mình (chỉ người nói)",
+          "is_correct": false
+        },
+        {
+          "option_text": "bạn, cậu; anh, chị (người đang được nói chuyện cùng)",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Bạn nghe thấy 你 (nǐ), nghĩa là bạn, cậu; anh, chị (người đang được nói chuyện cùng). 你 dùng để nói với một người. Khi nói với nhiều người, dùng 你们.",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "你"
+        }
+      },
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu nghe 2).",
+      "options": [
+        {
+          "option_text": "năm (số 5)",
+          "is_correct": true
+        },
+        {
+          "option_text": "to; lớn",
+          "is_correct": false
+        },
+        {
+          "option_text": "tám",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Bạn nghe thấy 五 (wǔ), nghĩa là năm (số 5). ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "五"
+        }
+      },
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu nghe 3).",
+      "options": [
+        {
+          "option_text": "tám",
+          "is_correct": false
+        },
+        {
+          "option_text": "to; lớn",
+          "is_correct": false
+        },
+        {
+          "option_text": "trắng",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Bạn nghe thấy 白 (bái), nghĩa là trắng. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "白"
+        }
+      },
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu nghe 4).",
+      "options": [
+        {
+          "option_text": "to; lớn",
+          "is_correct": false
+        },
+        {
+          "option_text": "ngựa",
+          "is_correct": true
+        },
+        {
+          "option_text": "không; chẳng",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Bạn nghe thấy 马 (mǎ), nghĩa là ngựa. Khi đếm ngựa, dùng lượng từ 匹: 一匹马 (một con ngựa).",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "马"
+        }
+      },
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nhìn hình và gợi ý “ngựa”, chọn từ tiếng Trung phù hợp.",
+      "options": [
+        {
+          "option_text": "好",
+          "is_correct": false
+        },
+        {
+          "option_text": "马",
+          "is_correct": true
+        },
+        {
+          "option_text": "你",
+          "is_correct": false
+        }
+      ],
+      "rubric": "马 (mǎ) nghĩa là ngựa. Khi đếm ngựa, dùng lượng từ 匹: 一匹马 (một con ngựa).",
+      "config": {
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "image_hanzi": "马"
+        }
+      },
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nhìn hình và gợi ý “nữ; phụ nữ”, chọn từ tiếng Trung phù hợp.",
+      "options": [
+        {
+          "option_text": "你",
+          "is_correct": false
+        },
+        {
+          "option_text": "女",
+          "is_correct": true
+        },
+        {
+          "option_text": "好",
+          "is_correct": false
+        }
+      ],
+      "rubric": "女 (nǚ) nghĩa là nữ; phụ nữ. 女 thường đứng trước danh từ để chỉ giới tính nữ, như 女同学 (bạn học nữ), 女老师 (giáo viên nữ).",
+      "config": {
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "image_hanzi": "女"
+        }
+      },
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nhìn hình và gợi ý “trắng”, chọn từ tiếng Trung phù hợp.",
+      "options": [
+        {
+          "option_text": "你",
+          "is_correct": false
+        },
+        {
+          "option_text": "白",
+          "is_correct": true
+        },
+        {
+          "option_text": "好",
+          "is_correct": false
+        }
+      ],
+      "rubric": "白 (bái) nghĩa là trắng. ",
+      "config": {
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "image_hanzi": "白"
+        }
+      },
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nhìn hình và gợi ý “xin chào”, chọn từ tiếng Trung phù hợp.",
+      "options": [
+        {
+          "option_text": "好",
+          "is_correct": false
+        },
+        {
+          "option_text": "你",
+          "is_correct": false
+        },
+        {
+          "option_text": "你好",
+          "is_correct": true
+        }
+      ],
+      "rubric": "你好 (nǐ hǎo) nghĩa là xin chào. 你好 dùng để chào một người. Khi chào một nhóm người, dùng 大家好; khi cần thể hiện sự kính trọng, có thể dùng 您好.",
+      "config": {
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "image_hanzi": "你好"
+        }
+      },
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Bạn gặp một người bạn. Chọn lời chào đã học.",
+      "options": [
+        {
+          "option_text": "大口",
+          "is_correct": false
+        },
+        {
+          "option_text": "你好",
+          "is_correct": true
+        },
+        {
+          "option_text": "白马",
+          "is_correct": false
+        }
+      ],
+      "rubric": "你好 là lời chào; 你 là bạn, 好 nghĩa là tốt nhưng trong cụm này tạo lời chào.",
+      "config": {
+        "presentation": {
+          "skill": "communication",
+          "focus": "communication",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn cụm có nghĩa “không tốt”.",
+      "options": [
+        {
+          "option_text": "好不",
+          "is_correct": false
+        },
+        {
+          "option_text": "不好",
+          "is_correct": true
+        },
+        {
+          "option_text": "白好",
+          "is_correct": false
+        }
+      ],
+      "rubric": "不 đặt trước 好 để phủ định, tạo thành 不好.",
+      "config": {
+        "presentation": {
+          "skill": "communication",
+          "focus": "communication",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn cụm chỉ con ngựa có màu trắng.",
+      "options": [
+        {
+          "option_text": "大口",
+          "is_correct": false
+        },
+        {
+          "option_text": "马白",
+          "is_correct": false
+        },
+        {
+          "option_text": "白马",
+          "is_correct": true
+        }
+      ],
+      "rubric": "白 chỉ màu trắng và đứng trước 马 để bổ nghĩa: 白马.",
+      "config": {
+        "presentation": {
+          "skill": "communication",
+          "focus": "communication",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ dùng khi nói về bản thân.",
+      "options": [
+        {
+          "option_text": "你",
+          "is_correct": false
+        },
+        {
+          "option_text": "我",
+          "is_correct": true
+        },
+        {
+          "option_text": "女",
+          "is_correct": false
+        }
+      ],
+      "rubric": "我 nghĩa là tôi; 你 chỉ người nghe, 女 chỉ nữ giới.",
+      "config": {
+        "presentation": {
+          "skill": "communication",
+          "focus": "communication",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối từng từ với nghĩa phù hợp (nhóm 1). Mỗi cặp đúng được tính một phần điểm.",
+      "rubric": "你 = bạn, cậu; anh, chị (người đang được nói chuyện cùng); 好 = tốt; đẹp; hay; khỏe; 我 = Tôi, tao, tớ, mình (chỉ người nói); 五 = năm (số 5); 八 = tám.",
+      "config": {
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        },
+        "left_items": [
+          {
+            "id": "2a78eeb2-d037-5348-b067-b0a565c23323",
+            "text": "你"
+          },
+          {
+            "id": "c3df491f-4ea9-51d1-8197-4e1c42c1bacd",
+            "text": "好"
+          },
+          {
+            "id": "7d642819-8ae0-5cb6-b14c-ef75d49013b5",
+            "text": "我"
+          },
+          {
+            "id": "cec8fcbf-79d5-586c-9839-40ff339ab1c4",
+            "text": "五"
+          },
+          {
+            "id": "b7e1c7b4-e974-5aa4-97e7-ba17157e7c3a",
+            "text": "八"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "02ee80a5-a0a4-56cb-9955-11ddd44153ed",
+            "text": "tám"
+          },
+          {
+            "id": "4cb82b0b-77c2-594e-8ca4-327113eb87fb",
+            "text": "năm (số 5)"
+          },
+          {
+            "id": "d569ee67-1e2e-5f6f-9a7d-342aacd4a762",
+            "text": "bạn, cậu; anh, chị (người đang được nói chuyện cùng)"
+          },
+          {
+            "id": "b6baf7a4-55d0-5b1d-847e-428e0ff326c1",
+            "text": "Tôi, tao, tớ, mình (chỉ người nói)"
+          },
+          {
+            "id": "7cd74dd9-5bb5-5386-b45d-0d671378fa94",
+            "text": "tốt; đẹp; hay; khỏe"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "2a78eeb2-d037-5348-b067-b0a565c23323",
+            "right_id": "d569ee67-1e2e-5f6f-9a7d-342aacd4a762"
+          },
+          {
+            "left_id": "c3df491f-4ea9-51d1-8197-4e1c42c1bacd",
+            "right_id": "7cd74dd9-5bb5-5386-b45d-0d671378fa94"
+          },
+          {
+            "left_id": "7d642819-8ae0-5cb6-b14c-ef75d49013b5",
+            "right_id": "b6baf7a4-55d0-5b1d-847e-428e0ff326c1"
+          },
+          {
+            "left_id": "cec8fcbf-79d5-586c-9839-40ff339ab1c4",
+            "right_id": "4cb82b0b-77c2-594e-8ca4-327113eb87fb"
+          },
+          {
+            "left_id": "b7e1c7b4-e974-5aa4-97e7-ba17157e7c3a",
+            "right_id": "02ee80a5-a0a4-56cb-9955-11ddd44153ed"
+          }
+        ]
+      },
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối từng từ với nghĩa phù hợp (nhóm 2). Mỗi cặp đúng được tính một phần điểm.",
+      "rubric": "大 = to; lớn; 不 = không; chẳng; 口 = miệng; khẩu (đơn vị đếm trong một số ngữ cảnh); 白 = trắng; 女 = nữ; phụ nữ.",
+      "config": {
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        },
+        "left_items": [
+          {
+            "id": "930f9db0-73f0-547b-b696-61d6964f7adb",
+            "text": "大"
+          },
+          {
+            "id": "865a74e6-f56e-5a58-9963-0bd47617b330",
+            "text": "不"
+          },
+          {
+            "id": "29fe5cb6-93d6-5b98-9b3b-5ee37e8970d0",
+            "text": "口"
+          },
+          {
+            "id": "3f31074d-66e4-5394-bf20-c610f4860c59",
+            "text": "白"
+          },
+          {
+            "id": "202194fd-4948-5faa-8444-587e9cf2d97f",
+            "text": "女"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "919a1cd8-729f-5d27-8c13-001a47104dc4",
+            "text": "to; lớn"
+          },
+          {
+            "id": "cb29e546-f2b2-5d3d-978f-f13175d36a9c",
+            "text": "không; chẳng"
+          },
+          {
+            "id": "2998de0f-de04-5ec1-bd3b-674df43f244a",
+            "text": "nữ; phụ nữ"
+          },
+          {
+            "id": "971aed2b-4947-5bee-aeb0-53b138eddeec",
+            "text": "miệng; khẩu (đơn vị đếm trong một số ngữ cảnh)"
+          },
+          {
+            "id": "049d7aa5-fee7-5552-b6ce-0444b8e502f6",
+            "text": "trắng"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "930f9db0-73f0-547b-b696-61d6964f7adb",
+            "right_id": "919a1cd8-729f-5d27-8c13-001a47104dc4"
+          },
+          {
+            "left_id": "865a74e6-f56e-5a58-9963-0bd47617b330",
+            "right_id": "cb29e546-f2b2-5d3d-978f-f13175d36a9c"
+          },
+          {
+            "left_id": "29fe5cb6-93d6-5b98-9b3b-5ee37e8970d0",
+            "right_id": "971aed2b-4947-5bee-aeb0-53b138eddeec"
+          },
+          {
+            "left_id": "3f31074d-66e4-5394-bf20-c610f4860c59",
+            "right_id": "049d7aa5-fee7-5552-b6ce-0444b8e502f6"
+          },
+          {
+            "left_id": "202194fd-4948-5faa-8444-587e9cf2d97f",
+            "right_id": "2998de0f-de04-5ec1-bd3b-674df43f244a"
+          }
+        ]
+      },
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối từng từ với nghĩa phù hợp (nhóm 3). Mỗi cặp đúng được tính một phần điểm.",
+      "rubric": "马 = ngựa; 你好 = xin chào; 一 = một; 你 = bạn, cậu; anh, chị (người đang được nói chuyện cùng); 好 = tốt; đẹp; hay; khỏe.",
+      "config": {
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        },
+        "left_items": [
+          {
+            "id": "70c42c2a-8a8a-5d8e-9d0b-93dc97b4ba4e",
+            "text": "马"
+          },
+          {
+            "id": "09dc40fb-81db-5cd3-96eb-7086c069da40",
+            "text": "你好"
+          },
+          {
+            "id": "d5d6b1d7-97da-5479-9c7a-68dc3d2b4d34",
+            "text": "一"
+          },
+          {
+            "id": "3eccda30-3d6e-58a2-afda-2a86dbc1106c",
+            "text": "你"
+          },
+          {
+            "id": "15147c7b-8e39-5019-9627-3b6fa3ef58c9",
+            "text": "好"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "8f088f62-e887-56e3-becc-ad03922c67f8",
+            "text": "ngựa"
+          },
+          {
+            "id": "1d2557f3-868e-5555-9544-2f481f16eba3",
+            "text": "một"
+          },
+          {
+            "id": "9169047f-1ad0-5e9e-a96c-556cdcbf2b76",
+            "text": "xin chào"
+          },
+          {
+            "id": "dcdedd6e-5142-5746-a970-83eeb1f12ce1",
+            "text": "tốt; đẹp; hay; khỏe"
+          },
+          {
+            "id": "26134891-d272-5231-afaf-cb24e222e445",
+            "text": "bạn, cậu; anh, chị (người đang được nói chuyện cùng)"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "70c42c2a-8a8a-5d8e-9d0b-93dc97b4ba4e",
+            "right_id": "8f088f62-e887-56e3-becc-ad03922c67f8"
+          },
+          {
+            "left_id": "09dc40fb-81db-5cd3-96eb-7086c069da40",
+            "right_id": "9169047f-1ad0-5e9e-a96c-556cdcbf2b76"
+          },
+          {
+            "left_id": "d5d6b1d7-97da-5479-9c7a-68dc3d2b4d34",
+            "right_id": "1d2557f3-868e-5555-9544-2f481f16eba3"
+          },
+          {
+            "left_id": "3eccda30-3d6e-58a2-afda-2a86dbc1106c",
+            "right_id": "26134891-d272-5231-afaf-cb24e222e445"
+          },
+          {
+            "left_id": "15147c7b-8e39-5019-9627-3b6fa3ef58c9",
+            "right_id": "dcdedd6e-5142-5746-a970-83eeb1f12ce1"
+          }
+        ]
+      },
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối từng từ với nghĩa phù hợp (nhóm 4). Mỗi cặp đúng được tính một phần điểm.",
+      "rubric": "白 = trắng; 女 = nữ; phụ nữ; 马 = ngựa; 你好 = xin chào; 一 = một.",
+      "config": {
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        },
+        "left_items": [
+          {
+            "id": "428f1bd7-cb69-57d1-9057-715734f8c4a8",
+            "text": "白"
+          },
+          {
+            "id": "212e8e99-90ee-5a5d-a35e-f9bf349b97f8",
+            "text": "女"
+          },
+          {
+            "id": "37b130fa-9b45-5901-927a-836e8bfc3850",
+            "text": "马"
+          },
+          {
+            "id": "616dd46a-fdb8-5c42-a465-40d0cb3979bf",
+            "text": "你好"
+          },
+          {
+            "id": "6eb95c8f-5b9e-5e33-a58b-aeb8dc0c5e9f",
+            "text": "一"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "3e2d5c16-687a-5436-a9cb-d9adc1e8a414",
+            "text": "nữ; phụ nữ"
+          },
+          {
+            "id": "cff8526e-4139-5dc0-8ea2-6b3052005fe5",
+            "text": "xin chào"
+          },
+          {
+            "id": "e1d57cf2-e523-5ace-b649-17eeb4736035",
+            "text": "trắng"
+          },
+          {
+            "id": "1dc1bcc2-af24-550e-b7f5-1e1567b6accc",
+            "text": "ngựa"
+          },
+          {
+            "id": "46645482-cee7-540d-92e7-c39d40db0ed5",
+            "text": "một"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "428f1bd7-cb69-57d1-9057-715734f8c4a8",
+            "right_id": "e1d57cf2-e523-5ace-b649-17eeb4736035"
+          },
+          {
+            "left_id": "212e8e99-90ee-5a5d-a35e-f9bf349b97f8",
+            "right_id": "3e2d5c16-687a-5436-a9cb-d9adc1e8a414"
+          },
+          {
+            "left_id": "37b130fa-9b45-5901-927a-836e8bfc3850",
+            "right_id": "1dc1bcc2-af24-550e-b7f5-1e1567b6accc"
+          },
+          {
+            "left_id": "616dd46a-fdb8-5c42-a465-40d0cb3979bf",
+            "right_id": "cff8526e-4139-5dc0-8ea2-6b3052005fe5"
+          },
+          {
+            "left_id": "6eb95c8f-5b9e-5e33-a58b-aeb8dc0c5e9f",
+            "right_id": "46645482-cee7-540d-92e7-c39d40db0ed5"
+          }
+        ]
+      },
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Điền một chữ Hán để hoàn thành lời chào: 你__！",
+      "reference_answer": "好",
+      "config": {
+        "accepted_answers": [
+          "好"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "rubric": "你好 là lời chào: chữ còn thiếu sau 你 là 好.",
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Điền một chữ Hán để tạo nghĩa ‘không tốt’: __好。",
+      "reference_answer": "不",
+      "config": {
+        "accepted_answers": [
+          "不"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "rubric": "不 đứng trước 好 để nói không tốt: 不好.",
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán có nghĩa là ‘một’.",
+      "reference_answer": "一",
+      "config": {
+        "accepted_answers": [
+          "一"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "rubric": "一 là chữ Hán chỉ số một.",
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán chỉ số 5.",
+      "reference_answer": "五",
+      "config": {
+        "accepted_answers": [
+          "五"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "rubric": "五 là chữ Hán chỉ số năm.",
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Điền chữ còn thiếu trong cụm ‘ngựa trắng’: 白__。",
+      "reference_answer": "马",
+      "config": {
+        "accepted_answers": [
+          "马"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "rubric": "白马 nghĩa là ngựa trắng: 白 chỉ màu, 马 chỉ con vật.",
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán có nghĩa là ‘miệng’.",
+      "reference_answer": "口",
+      "config": {
+        "accepted_answers": [
+          "口"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "rubric": "口 là chữ Hán nghĩa là miệng.",
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp hai chữ thành lời chào ‘Xin chào’.",
+      "rubric": "Trật tự đúng: 你好。 你好 là lời chào, giữ nguyên thứ tự 你 rồi 好.",
+      "config": {
+        "presentation": {
+          "skill": "communication",
+          "focus": "communication",
+          "difficulty": "medium",
+          "review": false
+        },
+        "items": [
+          {
+            "id": "772f29b5-7aae-5330-9990-47c2a8d25f84",
+            "text": "好"
+          },
+          {
+            "id": "d5067726-d8e4-5e14-8b97-e79ef8deb8da",
+            "text": "你"
+          }
+        ],
+        "correct_order": [
+          "d5067726-d8e4-5e14-8b97-e79ef8deb8da",
+          "772f29b5-7aae-5330-9990-47c2a8d25f84"
+        ]
+      },
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành cụm ‘ngựa trắng’.",
+      "rubric": "Trật tự đúng: 白马。 Giữ các từ trong cụm theo đúng nghĩa đã học; từ chỉ thời gian có thể đặt ở đầu câu khi đề yêu cầu.",
+      "config": {
+        "presentation": {
+          "skill": "communication",
+          "focus": "communication",
+          "difficulty": "medium",
+          "review": false
+        },
+        "items": [
+          {
+            "id": "26c9d70c-58e6-53d0-b1e5-ab64eef541d3",
+            "text": "马"
+          },
+          {
+            "id": "af50a3ba-8a02-542e-96f7-297cd2989ad9",
+            "text": "白"
+          }
+        ],
+        "correct_order": [
+          "af50a3ba-8a02-542e-96f7-297cd2989ad9",
+          "26c9d70c-58e6-53d0-b1e5-ab64eef541d3"
+        ]
+      },
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành cụm ‘không tốt’.",
+      "rubric": "Trật tự đúng: 不好。 Giữ các từ trong cụm theo đúng nghĩa đã học; từ chỉ thời gian có thể đặt ở đầu câu khi đề yêu cầu.",
+      "config": {
+        "presentation": {
+          "skill": "communication",
+          "focus": "communication",
+          "difficulty": "challenge",
+          "review": false
+        },
+        "items": [
+          {
+            "id": "ed58a6b3-7010-553a-afc7-14e51b08d6ee",
+            "text": "好"
+          },
+          {
+            "id": "2a1634a8-d8be-56a0-9868-2f18ee1182a2",
+            "text": "不"
+          }
+        ],
+        "correct_order": [
+          "2a1634a8-d8be-56a0-9868-2f18ee1182a2",
+          "ed58a6b3-7010-553a-afc7-14e51b08d6ee"
+        ]
+      },
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành cụm ‘ngựa to’.",
+      "rubric": "Trật tự đúng: 大马。 Giữ các từ trong cụm theo đúng nghĩa đã học; từ chỉ thời gian có thể đặt ở đầu câu khi đề yêu cầu.",
+      "config": {
+        "presentation": {
+          "skill": "communication",
+          "focus": "communication",
+          "difficulty": "challenge",
+          "review": false
+        },
+        "items": [
+          {
+            "id": "557e2a00-8b47-55cb-bd87-24e243df3e8f",
+            "text": "马"
+          },
+          {
+            "id": "afd267a0-4a78-5e59-b39f-ebe3583a6a98",
+            "text": "大"
+          }
+        ],
+        "correct_order": [
+          "afd267a0-4a78-5e59-b39f-ebe3583a6a98",
+          "557e2a00-8b47-55cb-bd87-24e243df3e8f"
+        ]
+      },
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "A đang làm gì?",
+      "options": [
+        {
+          "option_text": "Nói về màu sắc",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chào B",
+          "is_correct": true
+        },
+        {
+          "option_text": "Nói số lượng",
+          "is_correct": false
+        }
+      ],
+      "rubric": "你好 là lời chào; cả A và B đều dùng lời chào này.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "communication",
+          "difficulty": "challenge",
+          "review": false,
+          "reading_text": "A：你好！\nB：你好！"
+        }
+      },
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "B đáp lại bằng lời nào?",
+      "options": [
+        {
+          "option_text": "不好",
+          "is_correct": false
+        },
+        {
+          "option_text": "白马",
+          "is_correct": false
+        },
+        {
+          "option_text": "你好",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Trong đoạn, B nói 你好 để đáp lại lời chào của A.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "communication",
+          "difficulty": "challenge",
+          "review": false,
+          "reading_text": "A：你好！\nB：你好！"
+        }
+      },
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "白马 mô tả điều gì?",
+      "options": [
+        {
+          "option_text": "Con ngựa trắng",
+          "is_correct": true
+        },
+        {
+          "option_text": "Cái miệng",
+          "is_correct": false
+        },
+        {
+          "option_text": "Con ngựa lớn",
+          "is_correct": false
+        }
+      ],
+      "rubric": "白 bổ nghĩa màu trắng cho 马. 大马 mới chỉ con ngựa lớn.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "communication",
+          "difficulty": "challenge",
+          "review": false,
+          "reading_text": "白马、大马"
+        }
+      },
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Từ nào mô tả kích thước?",
+      "options": [
+        {
+          "option_text": "白",
+          "is_correct": false
+        },
+        {
+          "option_text": "大",
+          "is_correct": true
+        },
+        {
+          "option_text": "马",
+          "is_correct": false
+        }
+      ],
+      "rubric": "大 nghĩa là to/lớn; 白 chỉ màu sắc, 马 là tên con vật.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "communication",
+          "difficulty": "challenge",
+          "review": false,
+          "reading_text": "白马、大马"
+        }
+      },
+      "order_index": 30,
+      "points": 1
+    }
+  ],
+  "description": "30 câu: nghe, hình ảnh, ngữ cảnh, nối cặp, điền từ, sắp xếp câu và đọc hiểu. Tăng dần từ cơ bản đến thử thách; kết quả có đáp án và giải thích. Đạt từ 80%."
+}

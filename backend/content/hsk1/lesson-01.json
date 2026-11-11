@@ -132,6 +132,16 @@
       "illustration": "hsk1:5"
     }
   ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Chào hỏi · 你好",
+      "content": "A：你好！\nB：你好！",
+      "pinyin": "A: Nǐ hǎo!\nB: Nǐ hǎo!",
+      "vietnamese_translation": "A: Xin chào!\nB: Xin chào!",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu 24.6.26, bài 1, trang in 1 (trang PDF 3)."
+    }
+  ],
   "grammar": [],
   "assessment": {
     "title": "Bài 1 · Ôn tập lời chào và từ mới",
@@ -544,6 +554,230 @@
         ]
       },
       "reference_answer": "大马"
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn pinyin đúng của chữ 女.",
+      "options": [
+        {
+          "option_text": "nǐ",
+          "is_correct": false
+        },
+        {
+          "option_text": "nǚ",
+          "is_correct": true
+        },
+        {
+          "option_text": "mǎ",
+          "is_correct": false
+        },
+        {
+          "option_text": "kǒu",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chữ nào có cách đọc là dà?",
+      "options": [
+        {
+          "option_text": "八",
+          "is_correct": false
+        },
+        {
+          "option_text": "白",
+          "is_correct": false
+        },
+        {
+          "option_text": "大",
+          "is_correct": true
+        },
+        {
+          "option_text": "马",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong cụm 不好, chữ 不 bổ sung ý nghĩa nào?",
+      "options": [
+        {
+          "option_text": "không",
+          "is_correct": true
+        },
+        {
+          "option_text": "rất",
+          "is_correct": false
+        },
+        {
+          "option_text": "một",
+          "is_correct": false
+        },
+        {
+          "option_text": "tốt",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Từ nào trong bài chỉ màu sắc?",
+      "options": [
+        {
+          "option_text": "口",
+          "is_correct": false
+        },
+        {
+          "option_text": "女",
+          "is_correct": false
+        },
+        {
+          "option_text": "白",
+          "is_correct": true
+        },
+        {
+          "option_text": "马",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán ứng với pinyin bā: __.",
+      "reference_answer": "八",
+      "config": {
+        "accepted_answers": [
+          "八"
+        ]
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán ứng với pinyin wǔ: __.",
+      "reference_answer": "五",
+      "config": {
+        "accepted_answers": [
+          "五"
+        ]
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán ứng với pinyin nǚ: __.",
+      "reference_answer": "女",
+      "config": {
+        "accepted_answers": [
+          "女"
+        ]
+      }
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán ứng với pinyin nǐ: __.",
+      "reference_answer": "你",
+      "config": {
+        "accepted_answers": [
+          "你"
+        ]
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối mỗi chữ với pinyin tương ứng: 大, 白, 马.",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "大"
+          },
+          {
+            "id": "l1",
+            "text": "白"
+          },
+          {
+            "id": "l2",
+            "text": "马"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r2",
+            "text": "mǎ"
+          },
+          {
+            "id": "r1",
+            "text": "bái"
+          },
+          {
+            "id": "r0",
+            "text": "dà"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          }
+        ]
+      }
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối các từ 口, 女, 不 với nghĩa tiếng Việt phù hợp.",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "口"
+          },
+          {
+            "id": "l1",
+            "text": "女"
+          },
+          {
+            "id": "l2",
+            "text": "不"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r2",
+            "text": "không"
+          },
+          {
+            "id": "r1",
+            "text": "nữ, phụ nữ"
+          },
+          {
+            "id": "r0",
+            "text": "miệng"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          }
+        ]
+      }
     }
   ]
 }

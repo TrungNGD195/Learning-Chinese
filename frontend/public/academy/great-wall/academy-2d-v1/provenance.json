@@ -1,0 +1,41 @@
+{
+  "generator": "built-in image_gen.imagegen",
+  "purpose": "Isolated academy preview: 2D reinterpretation of existing local Great Wall style",
+  "style_reference": "../painted-v2/bend-desktop.webp",
+  "assets": {
+    "ascent-map.png": {
+      "source": "exec-b7f62f57-e4d6-4322-a85d-0a2c2dea15eb.png",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "landing_centers_bottom_to_top_percent": [
+        [
+          47,
+          80
+        ],
+        [
+          70,
+          60
+        ],
+        [
+          50,
+          43
+        ],
+        [
+          28,
+          26
+        ],
+        [
+          50,
+          13
+        ]
+      ]
+    },
+    "watchtower.png": {
+      "source": "exec-76da7009-28c4-4d08-bc0f-feefaeabe6ed.png",
+      "transparent": true
+    }
+  },
+  "postprocessing": "None; copied PNG originals, alpha preserved."
+}

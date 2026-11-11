@@ -1,0 +1,1058 @@
+{
+  "lesson_number": 2,
+  "version": "practice-v3-2026-11-08",
+  "pass_threshold": 80,
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu nghe 1).",
+      "options": [
+        {
+          "option_text": "tên",
+          "is_correct": false
+        },
+        {
+          "option_text": "hậu tố chỉ số nhiều cho người",
+          "is_correct": false
+        },
+        {
+          "option_text": "mọi người",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Bạn nghe thấy 大家 (dàjiā), nghĩa là mọi người. 大家 đã mang nghĩa số nhiều, không thêm 们 phía sau.",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "大家"
+        }
+      },
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu nghe 2).",
+      "options": [
+        {
+          "option_text": "tên",
+          "is_correct": false
+        },
+        {
+          "option_text": "cảm ơn",
+          "is_correct": true
+        },
+        {
+          "option_text": "tên là; gọi",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Bạn nghe thấy 谢谢 (xièxie), nghĩa là cảm ơn. Đáp lại lời cảm ơn thường dùng 不客气; không dùng 没关系 như một đáp án mặc định.",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "谢谢"
+        }
+      },
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe câu và chọn ý nghĩa phù hợp.",
+      "options": [
+        {
+          "option_text": "Tôi rất vui.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Tôi tên là Tiểu Lệ.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Cảm ơn bạn.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "叫 nối chủ ngữ với tên: 我叫小丽, tôi tên là Tiểu Lệ.",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false,
+          "audio_text": "我叫小丽。"
+        }
+      },
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ôn bài trước: Nghe và chọn nghĩa phù hợp (câu nghe 4).",
+      "options": [
+        {
+          "option_text": "bạn học",
+          "is_correct": false
+        },
+        {
+          "option_text": "cảm ơn",
+          "is_correct": false
+        },
+        {
+          "option_text": "tốt; đẹp; hay; khỏe",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Bạn nghe thấy 好 (hǎo), nghĩa là tốt; đẹp; hay; khỏe. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true,
+          "audio_text": "好"
+        }
+      },
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Một nhóm bạn đang chào nhau. Chọn từ chỉ “mọi người”.",
+      "options": [
+        {
+          "option_text": "您",
+          "is_correct": false
+        },
+        {
+          "option_text": "大家",
+          "is_correct": true
+        },
+        {
+          "option_text": "们",
+          "is_correct": false
+        }
+      ],
+      "rubric": "大家 (dàjiā) nghĩa là mọi người. 大家 đã mang nghĩa số nhiều, không thêm 们 phía sau.",
+      "config": {
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "image_hanzi": "大家"
+        }
+      },
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nhân vật bày tỏ lòng biết ơn. Chọn lời cảm ơn.",
+      "options": [
+        {
+          "option_text": "您",
+          "is_correct": false
+        },
+        {
+          "option_text": "谢谢",
+          "is_correct": true
+        },
+        {
+          "option_text": "们",
+          "is_correct": false
+        }
+      ],
+      "rubric": "谢谢 (xièxie) nghĩa là cảm ơn. Đáp lại lời cảm ơn thường dùng 不客气; không dùng 没关系 như một đáp án mặc định.",
+      "config": {
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "image_hanzi": "谢谢"
+        }
+      },
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Các bạn cùng học trong một lớp. Chọn từ phù hợp.",
+      "options": [
+        {
+          "option_text": "们",
+          "is_correct": false
+        },
+        {
+          "option_text": "同学",
+          "is_correct": true
+        },
+        {
+          "option_text": "您",
+          "is_correct": false
+        }
+      ],
+      "rubric": "同学 (tóngxué) nghĩa là bạn học. Có thể thêm 们 để gọi một nhóm bạn học: 同学们.",
+      "config": {
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "image_hanzi": "同学"
+        }
+      },
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ôn bài trước: Chọn chữ chỉ con vật trong hình.",
+      "options": [
+        {
+          "option_text": "您",
+          "is_correct": false
+        },
+        {
+          "option_text": "马",
+          "is_correct": true
+        },
+        {
+          "option_text": "们",
+          "is_correct": false
+        }
+      ],
+      "rubric": "马 (mǎ) nghĩa là ngựa. Khi đếm ngựa, dùng lượng từ 匹: 一匹马 (một con ngựa).",
+      "config": {
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true,
+          "image_hanzi": "马"
+        }
+      },
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn câu giới thiệu tên đúng.",
+      "options": [
+        {
+          "option_text": "我叫小丽。",
+          "is_correct": true
+        },
+        {
+          "option_text": "我也小丽。",
+          "is_correct": false
+        },
+        {
+          "option_text": "我很小丽。",
+          "is_correct": false
+        }
+      ],
+      "rubric": "叫 nối người nói với tên của mình: 我 + 叫 + tên. 很 chỉ mức độ; 也 nghĩa là cũng.",
+      "config": {
+        "presentation": {
+          "skill": "grammar",
+          "focus": "grammar",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn vị trí đúng của 也.",
+      "options": [
+        {
+          "option_text": "也我很高兴。",
+          "is_correct": false
+        },
+        {
+          "option_text": "我也很高兴。",
+          "is_correct": true
+        },
+        {
+          "option_text": "我很高兴也。",
+          "is_correct": false
+        }
+      ],
+      "rubric": "也 đặt sau chủ ngữ và trước vị ngữ: 我 + 也 + 很高兴.",
+      "config": {
+        "presentation": {
+          "skill": "grammar",
+          "focus": "grammar",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Cách dùng số nhiều nào phù hợp?",
+      "options": [
+        {
+          "option_text": "大家们",
+          "is_correct": false
+        },
+        {
+          "option_text": "同学们",
+          "is_correct": true
+        },
+        {
+          "option_text": "三个人们",
+          "is_correct": false
+        }
+      ],
+      "rubric": "同学们 là cách gọi một nhóm học sinh. 大家 đã có nghĩa số nhiều; không thêm 们 sau cụm số lượng cụ thể.",
+      "config": {
+        "presentation": {
+          "skill": "grammar",
+          "focus": "grammar",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ôn bài 1: Chọn cụm nghĩa là “không tốt”.",
+      "options": [
+        {
+          "option_text": "好不",
+          "is_correct": false
+        },
+        {
+          "option_text": "不好",
+          "is_correct": true
+        },
+        {
+          "option_text": "白好",
+          "is_correct": false
+        }
+      ],
+      "rubric": "不 đứng trước từ cần phủ định: 不好.",
+      "config": {
+        "presentation": {
+          "skill": "grammar",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối từng từ với nghĩa phù hợp (nhóm 1). Mỗi cặp đúng được tính một phần điểm.",
+      "rubric": "大家 = mọi người; 您 = ngài; ông, bà, anh, chị (kính ngữ); 们 = hậu tố chỉ số nhiều cho người; 名字 = tên; 叫 = tên là; gọi.",
+      "config": {
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        },
+        "left_items": [
+          {
+            "id": "1a2302de-bc5f-5c0e-a681-c74df2441b33",
+            "text": "大家"
+          },
+          {
+            "id": "e5ab24a2-457c-549b-873a-7b42c9f95c4e",
+            "text": "您"
+          },
+          {
+            "id": "f858348a-3744-5ae4-b5a3-cb58d2aa4ddd",
+            "text": "们"
+          },
+          {
+            "id": "88ba2e2e-7463-5c42-ad19-29e8f231a96e",
+            "text": "名字"
+          },
+          {
+            "id": "9f8ec80b-983e-5a22-96c2-516e3abd33b2",
+            "text": "叫"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "e61d50f5-5402-59e2-997c-6153a45309c2",
+            "text": "tên"
+          },
+          {
+            "id": "9c1c19aa-1189-579b-beec-ed89cfe2ba9e",
+            "text": "ngài; ông, bà, anh, chị (kính ngữ)"
+          },
+          {
+            "id": "8ce626c6-3a81-5c89-8c2c-83adcddbb11f",
+            "text": "tên là; gọi"
+          },
+          {
+            "id": "66f5e3c8-00cd-516e-88e7-e4bd2084d2af",
+            "text": "hậu tố chỉ số nhiều cho người"
+          },
+          {
+            "id": "12f463b1-fc49-5831-8d51-858d4aaabdff",
+            "text": "mọi người"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "1a2302de-bc5f-5c0e-a681-c74df2441b33",
+            "right_id": "12f463b1-fc49-5831-8d51-858d4aaabdff"
+          },
+          {
+            "left_id": "e5ab24a2-457c-549b-873a-7b42c9f95c4e",
+            "right_id": "9c1c19aa-1189-579b-beec-ed89cfe2ba9e"
+          },
+          {
+            "left_id": "f858348a-3744-5ae4-b5a3-cb58d2aa4ddd",
+            "right_id": "66f5e3c8-00cd-516e-88e7-e4bd2084d2af"
+          },
+          {
+            "left_id": "88ba2e2e-7463-5c42-ad19-29e8f231a96e",
+            "right_id": "e61d50f5-5402-59e2-997c-6153a45309c2"
+          },
+          {
+            "left_id": "9f8ec80b-983e-5a22-96c2-516e3abd33b2",
+            "right_id": "8ce626c6-3a81-5c89-8c2c-83adcddbb11f"
+          }
+        ]
+      },
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối từng từ với nghĩa phù hợp (nhóm 2). Mỗi cặp đúng được tính một phần điểm.",
+      "rubric": "同学 = bạn học; 谢谢 = cảm ơn; 不客气 = không có gì (đáp lời cảm ơn); 对不起 = xin lỗi; 没关系 = không sao; không có gì đáng ngại.",
+      "config": {
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        },
+        "left_items": [
+          {
+            "id": "121d42d0-fd4c-512c-b55a-c590e2e98670",
+            "text": "同学"
+          },
+          {
+            "id": "46400157-ca7c-5528-9b3d-0097a8fbaa89",
+            "text": "谢谢"
+          },
+          {
+            "id": "753f345c-1113-5e83-b232-c491e8dca68c",
+            "text": "不客气"
+          },
+          {
+            "id": "d82ace84-c8fb-5c09-b083-6195ef132729",
+            "text": "对不起"
+          },
+          {
+            "id": "23c5ca9d-0d19-5f35-bfd4-d5d922ee5ad3",
+            "text": "没关系"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "77859db3-4c90-5192-8964-4b6543d526bb",
+            "text": "xin lỗi"
+          },
+          {
+            "id": "d4a1d7cb-aef5-5c68-b5e2-de7407624398",
+            "text": "bạn học"
+          },
+          {
+            "id": "6342b5a5-6e1e-52e5-9d57-fa119d72f962",
+            "text": "cảm ơn"
+          },
+          {
+            "id": "eef1fc2d-2173-5225-885a-e87a7133597e",
+            "text": "không sao; không có gì đáng ngại"
+          },
+          {
+            "id": "ea67d81d-ed87-5e85-b886-eaec15568ce8",
+            "text": "không có gì (đáp lời cảm ơn)"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "121d42d0-fd4c-512c-b55a-c590e2e98670",
+            "right_id": "d4a1d7cb-aef5-5c68-b5e2-de7407624398"
+          },
+          {
+            "left_id": "46400157-ca7c-5528-9b3d-0097a8fbaa89",
+            "right_id": "6342b5a5-6e1e-52e5-9d57-fa119d72f962"
+          },
+          {
+            "left_id": "753f345c-1113-5e83-b232-c491e8dca68c",
+            "right_id": "ea67d81d-ed87-5e85-b886-eaec15568ce8"
+          },
+          {
+            "left_id": "d82ace84-c8fb-5c09-b083-6195ef132729",
+            "right_id": "77859db3-4c90-5192-8964-4b6543d526bb"
+          },
+          {
+            "left_id": "23c5ca9d-0d19-5f35-bfd4-d5d922ee5ad3",
+            "right_id": "eef1fc2d-2173-5225-885a-e87a7133597e"
+          }
+        ]
+      },
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối từng từ với nghĩa phù hợp (nhóm 3). Mỗi cặp đúng được tính một phần điểm.",
+      "rubric": "没事 = không sao; không có việc gì; 很 = rất; từ nối thường dùng trước tính từ; 高兴 = vui; vui vẻ; 认识 = quen biết; biết (người); 也 = cũng.",
+      "config": {
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        },
+        "left_items": [
+          {
+            "id": "3c0baca3-d08f-5536-b753-180b4a616a46",
+            "text": "没事"
+          },
+          {
+            "id": "6db386c7-3968-5be5-94f5-64c2392e7bf3",
+            "text": "很"
+          },
+          {
+            "id": "2d9fb4dc-74e5-5b9a-83f3-49541dc145fd",
+            "text": "高兴"
+          },
+          {
+            "id": "5fd9c66c-dcbb-5e9c-ac40-aba3aec63fe3",
+            "text": "认识"
+          },
+          {
+            "id": "f566fef1-29bd-5dc0-8535-b828ab95c9a7",
+            "text": "也"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "8a43f7d9-fabb-57f9-8d0e-764e5e3fd469",
+            "text": "vui; vui vẻ"
+          },
+          {
+            "id": "1e1fed20-4a54-54ed-aede-fde1d93e6c25",
+            "text": "không sao; không có việc gì"
+          },
+          {
+            "id": "99ef913a-0f01-5c27-a551-20705b33f69b",
+            "text": "rất; từ nối thường dùng trước tính từ"
+          },
+          {
+            "id": "9161d8c3-f57c-5127-92a5-f5cb06649844",
+            "text": "cũng"
+          },
+          {
+            "id": "352f0198-e1b4-5ebc-af02-3a7e16bae689",
+            "text": "quen biết; biết (người)"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "3c0baca3-d08f-5536-b753-180b4a616a46",
+            "right_id": "1e1fed20-4a54-54ed-aede-fde1d93e6c25"
+          },
+          {
+            "left_id": "6db386c7-3968-5be5-94f5-64c2392e7bf3",
+            "right_id": "99ef913a-0f01-5c27-a551-20705b33f69b"
+          },
+          {
+            "left_id": "2d9fb4dc-74e5-5b9a-83f3-49541dc145fd",
+            "right_id": "8a43f7d9-fabb-57f9-8d0e-764e5e3fd469"
+          },
+          {
+            "left_id": "5fd9c66c-dcbb-5e9c-ac40-aba3aec63fe3",
+            "right_id": "352f0198-e1b4-5ebc-af02-3a7e16bae689"
+          },
+          {
+            "left_id": "f566fef1-29bd-5dc0-8535-b828ab95c9a7",
+            "right_id": "9161d8c3-f57c-5127-92a5-f5cb06649844"
+          }
+        ]
+      },
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Ôn bài trước: Nối từng từ với nghĩa phù hợp (nhóm 4). Mỗi cặp đúng được tính một phần điểm.",
+      "rubric": "你 = bạn, cậu; anh, chị (người đang được nói chuyện cùng); 好 = tốt; đẹp; hay; khỏe; 我 = Tôi, tao, tớ, mình (chỉ người nói); 五 = năm (số 5); 八 = tám.",
+      "config": {
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        },
+        "left_items": [
+          {
+            "id": "05c863be-f89d-5bb3-b229-48f9ada243a1",
+            "text": "你"
+          },
+          {
+            "id": "a3221af8-b474-5046-91ce-a3d22c057f84",
+            "text": "好"
+          },
+          {
+            "id": "168a7753-7699-534a-ad44-7815d01d084c",
+            "text": "我"
+          },
+          {
+            "id": "9ecdf9c5-b990-5dd5-ab5a-2b4de67878ee",
+            "text": "五"
+          },
+          {
+            "id": "9fefc929-44a3-5fc4-9ded-38f03b3d7517",
+            "text": "八"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "c977d369-2945-5cb8-adfe-354dcf02c3c2",
+            "text": "Tôi, tao, tớ, mình (chỉ người nói)"
+          },
+          {
+            "id": "ed2e8c17-2490-5735-bdcc-d2db3d55b417",
+            "text": "bạn, cậu; anh, chị (người đang được nói chuyện cùng)"
+          },
+          {
+            "id": "e51c4bcb-46f7-5bc7-b62c-ab47589bc3a0",
+            "text": "năm (số 5)"
+          },
+          {
+            "id": "1975fb4f-5b7e-55aa-9155-fa3e670959ad",
+            "text": "tốt; đẹp; hay; khỏe"
+          },
+          {
+            "id": "645e808c-c758-5dca-a630-7a94c796def3",
+            "text": "tám"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "05c863be-f89d-5bb3-b229-48f9ada243a1",
+            "right_id": "ed2e8c17-2490-5735-bdcc-d2db3d55b417"
+          },
+          {
+            "left_id": "a3221af8-b474-5046-91ce-a3d22c057f84",
+            "right_id": "1975fb4f-5b7e-55aa-9155-fa3e670959ad"
+          },
+          {
+            "left_id": "168a7753-7699-534a-ad44-7815d01d084c",
+            "right_id": "c977d369-2945-5cb8-adfe-354dcf02c3c2"
+          },
+          {
+            "left_id": "9ecdf9c5-b990-5dd5-ab5a-2b4de67878ee",
+            "right_id": "e51c4bcb-46f7-5bc7-b62c-ab47589bc3a0"
+          },
+          {
+            "left_id": "9fefc929-44a3-5fc4-9ded-38f03b3d7517",
+            "right_id": "645e808c-c758-5dca-a630-7a94c796def3"
+          }
+        ]
+      },
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Điền một từ: 我___小丽。(Tôi tên là Tiểu Lệ。)",
+      "reference_answer": "叫",
+      "config": {
+        "accepted_answers": [
+          "叫"
+        ],
+        "presentation": {
+          "skill": "grammar",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "rubric": "叫 nối chủ ngữ với tên: 我叫小丽.",
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Điền một từ: ___好！(Chào mọi người!)",
+      "reference_answer": "大家",
+      "config": {
+        "accepted_answers": [
+          "大家"
+        ],
+        "presentation": {
+          "skill": "grammar",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "rubric": "大家 chỉ mọi người; 大家好 dùng chào cả nhóm.",
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Điền hậu tố số nhiều: 我___。(chúng tôi)",
+      "reference_answer": "们",
+      "config": {
+        "accepted_answers": [
+          "们"
+        ],
+        "presentation": {
+          "skill": "grammar",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "rubric": "们 gắn sau 我 tạo 我们, nghĩa là chúng tôi/chúng ta.",
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết từ tiếng Trung nghĩa là “tên” (hai chữ): ___。",
+      "reference_answer": "名字",
+      "config": {
+        "accepted_answers": [
+          "名字"
+        ],
+        "presentation": {
+          "skill": "grammar",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "rubric": "名字 nghĩa là tên, gồm hai chữ 名 và 字.",
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Điền từ “rất”: 我___高兴。",
+      "reference_answer": "很",
+      "config": {
+        "accepted_answers": [
+          "很"
+        ],
+        "presentation": {
+          "skill": "grammar",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "rubric": "很 đứng trước tính từ 高兴 trong 我很高兴.",
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Ôn bài 1: Điền từ nghĩa là “tôi”: ___。",
+      "reference_answer": "我",
+      "config": {
+        "accepted_answers": [
+          "我"
+        ],
+        "presentation": {
+          "skill": "grammar",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "rubric": "不 đứng trước 好 để phủ định: 不好.",
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu: Tôi tên là Tiểu Lệ。",
+      "rubric": "Trật tự đúng: 我叫小丽。 Giới thiệu tên theo thứ tự người nói + 叫 + tên.",
+      "config": {
+        "presentation": {
+          "skill": "grammar",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        },
+        "items": [
+          {
+            "id": "10be5996-e9b0-581e-a65a-eb4c1e9f51e8",
+            "text": "叫"
+          },
+          {
+            "id": "3ad46993-4aac-58c7-b233-495af9a76f63",
+            "text": "小丽"
+          },
+          {
+            "id": "a1642d65-fedd-5370-adc7-05358b8e1e70",
+            "text": "我"
+          }
+        ],
+        "correct_order": [
+          "a1642d65-fedd-5370-adc7-05358b8e1e70",
+          "10be5996-e9b0-581e-a65a-eb4c1e9f51e8",
+          "3ad46993-4aac-58c7-b233-495af9a76f63"
+        ]
+      },
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu: Tôi rất vui。",
+      "rubric": "Trật tự đúng: 我很高兴。 很 đứng trước tính từ; chủ ngữ đứng trước cụm 很 + tính từ.",
+      "config": {
+        "presentation": {
+          "skill": "grammar",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        },
+        "items": [
+          {
+            "id": "3cd4f891-f6ef-53f5-b762-159a528067e9",
+            "text": "很"
+          },
+          {
+            "id": "bd458fbf-bfba-5ce8-87c1-5bff6b2f5b82",
+            "text": "我"
+          },
+          {
+            "id": "2696f017-c28c-597a-b50f-9e1a334a6d56",
+            "text": "高兴"
+          }
+        ],
+        "correct_order": [
+          "bd458fbf-bfba-5ce8-87c1-5bff6b2f5b82",
+          "3cd4f891-f6ef-53f5-b762-159a528067e9",
+          "2696f017-c28c-597a-b50f-9e1a334a6d56"
+        ]
+      },
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu: Tôi cũng biết bạn。",
+      "rubric": "Trật tự đúng: 我也认识你。 也 đặt sau chủ ngữ, trước vị ngữ để diễn tả “cũng”.",
+      "config": {
+        "presentation": {
+          "skill": "grammar",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        },
+        "items": [
+          {
+            "id": "db9f705e-abbc-5c02-b2d5-4bd09a515fd1",
+            "text": "也"
+          },
+          {
+            "id": "8d3c1c77-b3b9-58c9-b71b-0b4bac4b5d3d",
+            "text": "我"
+          },
+          {
+            "id": "49e72e3b-375b-5671-8831-343f5fc6bc1e",
+            "text": "认识"
+          },
+          {
+            "id": "5edfa874-74c6-5a6a-a5a2-794a42833c9d",
+            "text": "你"
+          }
+        ],
+        "correct_order": [
+          "8d3c1c77-b3b9-58c9-b71b-0b4bac4b5d3d",
+          "db9f705e-abbc-5c02-b2d5-4bd09a515fd1",
+          "49e72e3b-375b-5671-8831-343f5fc6bc1e",
+          "5edfa874-74c6-5a6a-a5a2-794a42833c9d"
+        ]
+      },
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu: Ôn bài 1: Xin chào!",
+      "rubric": "Trật tự đúng: 你好。 你好 là lời chào, giữ nguyên thứ tự 你 rồi 好.",
+      "config": {
+        "presentation": {
+          "skill": "grammar",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": true
+        },
+        "items": [
+          {
+            "id": "72883719-a593-5175-b19d-05ee422f3c72",
+            "text": "好"
+          },
+          {
+            "id": "e21879ae-9dbf-5e72-a286-5db32281d18d",
+            "text": "你"
+          }
+        ],
+        "correct_order": [
+          "e21879ae-9dbf-5e72-a286-5db32281d18d",
+          "72883719-a593-5175-b19d-05ee422f3c72"
+        ]
+      },
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Người nói tên là gì?",
+      "options": [
+        {
+          "option_text": "小刚",
+          "is_correct": false
+        },
+        {
+          "option_text": "小丽",
+          "is_correct": true
+        },
+        {
+          "option_text": "李文",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Thông tin nằm ở 我叫小丽: tôi tên là Tiểu Lệ.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "communication",
+          "difficulty": "challenge",
+          "review": false,
+          "reading_text": "大家好！我叫小丽。认识你们，我很高兴。"
+        }
+      },
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Người nói cảm thấy thế nào khi làm quen?",
+      "options": [
+        {
+          "option_text": "不客气",
+          "is_correct": false
+        },
+        {
+          "option_text": "对不起",
+          "is_correct": false
+        },
+        {
+          "option_text": "高兴",
+          "is_correct": true
+        }
+      ],
+      "rubric": "很高兴 diễn tả rất vui; 对不起 là xin lỗi, 不客气 dùng đáp lời cảm ơn.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "communication",
+          "difficulty": "challenge",
+          "review": false,
+          "reading_text": "大家好！我叫小丽。认识你们，我很高兴。"
+        }
+      },
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "A đang nói với thái độ nào?",
+      "options": [
+        {
+          "option_text": "Ra lệnh",
+          "is_correct": false
+        },
+        {
+          "option_text": "Kính trọng",
+          "is_correct": true
+        },
+        {
+          "option_text": "Xin lỗi",
+          "is_correct": false
+        }
+      ],
+      "rubric": "您 là cách xưng hô kính trọng; 谢谢您 nghĩa là cảm ơn bác/ông/bà/anh/chị.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "communication",
+          "difficulty": "challenge",
+          "review": false,
+          "reading_text": "A：谢谢您！\nB：不客气！"
+        }
+      },
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Vì sao B nói 不客气?",
+      "options": [
+        {
+          "option_text": "Đáp lời cảm ơn",
+          "is_correct": true
+        },
+        {
+          "option_text": "Chào cả lớp",
+          "is_correct": false
+        },
+        {
+          "option_text": "Giới thiệu tên",
+          "is_correct": false
+        }
+      ],
+      "rubric": "不客气 nghĩa là không có gì, dùng để đáp lại 谢谢.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "communication",
+          "difficulty": "challenge",
+          "review": false,
+          "reading_text": "A：谢谢您！\nB：不客气！"
+        }
+      },
+      "order_index": 30,
+      "points": 1
+    }
+  ],
+  "description": "30 câu: nghe, hình ảnh, ngữ cảnh, nối cặp, điền từ, sắp xếp câu và đọc hiểu. Tăng dần từ cơ bản đến thử thách; kết quả có đáp án và giải thích. Đạt từ 80%."
+}

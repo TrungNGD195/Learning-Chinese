@@ -33,7 +33,7 @@ Authentication answers who the User is. Business ownership authorization answers
 - Normalize email once at every account lookup/write boundary.
 - Give registration one role only: `LEARNER`.
 - Use Argon2id defaults for passwords and keep the same 8–128 character policy across register, reset, and password change.
-- Use HS256 through PyJWT for short-lived Access Tokens with only `sub`, `role`, `iat`, and `exp` claims.
+- Use HS256 through PyJWT for short-lived Access Tokens with `sub`, `role`, `iat`, `exp` and `session_version` claims. Legacy cookies without a version mean version zero.
 - Generate Refresh and Reset credentials from 32 random bytes and persist only SHA-256 hex hashes.
 - Rotate Refresh Tokens under a row lock; consume Reset Tokens under a row lock.
 - Store browser credentials in host-only HttpOnly cookies with fixed paths and configured Secure/SameSite flags.
@@ -69,7 +69,7 @@ Reset issuance locks the User before invalidating earlier unused Reset Tokens an
 
 ## Key Design Decisions
 
-- Access Tokens are stateless and are not blacklisted. Browser logout and password changes clear cookies and revoke server-side Refresh Tokens.
+- Individual browser logout clears cookies and revokes its server-side Refresh Token. Account-wide logout, password change and password reset also increment the User's `session_version`; authentication rejects copied Access Tokens from earlier versions immediately. New login/refresh tokens carry the current version.
 - Refresh and Reset tokens are opaque, never JWTs, and raw values never reach persistent storage or logs.
 - Disabled users cannot log in, refresh, or continue authenticated requests.
 - Admin access is checked against the current database role on every request.

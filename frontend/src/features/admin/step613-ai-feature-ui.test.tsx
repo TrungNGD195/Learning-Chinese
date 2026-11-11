@@ -1,4 +1,5 @@
 import { fireEvent, render, screen, waitFor } from '@testing-library/react'
+import { useState } from 'react'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { createMemoryRouter, RouterProvider } from 'react-router'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
@@ -6,7 +7,14 @@ import type { components } from '../../types/api.generated'
 import { queryKeys } from '../../app/query/keys'
 import { ApiError } from '../../lib/api/errors'
 import * as adminApi from './api'
-import { AdminAssessmentEditorPage, AdminAssessmentsPage } from './AdminAssessmentsPage'
+import { AdminAssessmentEditorPage } from './AdminAssessmentsPage'
+import { AssessmentGenerationForm } from './AssessmentGenerationForm'
+import { AdminLessonEditorPage } from './AdminLessonEditorPage'
+
+vi.mock('./readingApi', async (importOriginal) => ({
+  ...await importOriginal<typeof import('./readingApi')>(),
+  listLessonReadings: vi.fn().mockResolvedValue([]),
+}))
 
 type Lesson = components['schemas']['LessonAdminResponse']
 type LessonVocabulary = components['schemas']['LessonContentAdminResponse']
@@ -49,11 +57,17 @@ function deferred<T>() {
   return { promise, resolve }
 }
 
+function GenerationWidgetHarness() {
+  const [open, setOpen] = useState(false)
+  return <><button onClick={() => setOpen((value) => !value)}>{open ? 'Đóng tạo bản nháp bằng AI' : 'Tạo bản nháp bằng AI'}</button>{open && <AssessmentGenerationForm/>}</>
+}
+
 function renderAdmin() {
   const queryClient = new QueryClient({ defaultOptions: { queries: { retry: false }, mutations: { retry: false } } })
   const router = createMemoryRouter([
-    { path: '/admin/assessments', element: <AdminAssessmentsPage /> },
+    { path: '/admin/assessments', element: <GenerationWidgetHarness /> },
     { path: '/admin/assessments/:assessmentId', element: <AdminAssessmentEditorPage /> },
+    { path: '/admin/lessons/:lessonId', element: <AdminLessonEditorPage /> },
   ], { initialEntries: ['/admin/assessments'] })
   render(<QueryClientProvider client={queryClient}><RouterProvider router={router} /></QueryClientProvider>)
   return { queryClient, router }
@@ -62,6 +76,7 @@ function renderAdmin() {
 async function openGenerationForm() {
   fireEvent.click(await screen.findByRole('button', { name: "Tạo bản nháp bằng AI" }))
   expect(await screen.findByRole('heading', { name: "Tạo bản nháp bằng AI" })).toBeInTheDocument()
+  await screen.findByRole('option', { name: 'HSK 1 · Bài 1 · Greetings' })
 }
 
 async function fillCommonFields() {
@@ -90,12 +105,13 @@ describe('Step 6.13 AI feature UI integration', () => {
     await fillCommonFields()
     fireEvent.change(screen.getByLabelText("Bài học", { selector: 'select' }), { target: { value: 'lesson-a' } })
     fireEvent.change(screen.getByLabelText("Tiêu đề (không bắt buộc)"), { target: { value: '  Practice  ' } })
-    fireEvent.change(screen.getByLabelText("Số câu hỏi"), { target: { value: '3' } })
+    expect(screen.getByLabelText('Số câu hỏi')).toHaveValue(30)
+    expect(screen.getByLabelText('Số câu hỏi')).toHaveAttribute('readonly')
     await waitFor(() => expect(screen.getByRole('button', { name: "Tạo bản nháp" })).toBeEnabled())
     fireEvent.click(screen.getByRole('button', { name: "Tạo bản nháp" }))
     await waitFor(() => expect(adminApi.generateAssessmentDraft).toHaveBeenCalledWith({
       type: 'LESSON_EXERCISE', lesson_id: 'lesson-a', title: 'Practice', pass_threshold: 80,
-      question_count: 3, allowed_types: ['multiple_choice'], difficulty: 'MEDIUM',
+      question_count: 30, allowed_types: ['multiple_choice', 'fill_blank', 'matching', 'reorder_sentence'], difficulty: 'MEDIUM',
     }))
     expect(adminApi.listLessonVocabulary).not.toHaveBeenCalled()
     expect(adminApi.listLessonGrammar).not.toHaveBeenCalled()
@@ -137,7 +153,25 @@ describe('Step 6.13 AI feature UI integration', () => {
     })))
   })
 
-  it('requires at least one allowed question type', async () => {
+  it('opens a generated lesson exercise in the unified lesson editor', async () => {
+    const result = generatedResult()
+    result.assessment = { ...result.assessment, type: 'LESSON_EXERCISE', lesson_id: 'lesson-a', pass_threshold: 80 }
+    vi.mocked(adminApi.generateAssessmentDraft).mockResolvedValue(result)
+    vi.mocked(adminApi.getAdminAssessment).mockResolvedValue(result.assessment)
+    // The list refetch includes the newly created draft when returning to its lesson.
+    vi.mocked(adminApi.listAdminAssessments).mockImplementation(async (filters) => ({ items: filters?.lesson_id ? [result.assessment] : [], page: 1, page_size: 100, total: filters?.lesson_id ? 1 : 0 }))
+    const { router } = renderAdmin()
+    await openGenerationForm()
+    await fillCommonFields()
+    fireEvent.change(screen.getByLabelText('Bài học', { selector: 'select' }), { target: { value: 'lesson-a' } })
+    fireEvent.click(screen.getByRole('button', { name: 'Tạo bản nháp' }))
+    await waitFor(() => expect(router.state.location.pathname).toBe('/admin/lessons/lesson-a'))
+    expect(router.state.location.search).toBe('?section=exercises&exercise=generated-assessment')
+    expect(await screen.findByRole('heading', { name: result.assessment.title })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Luyện tập' })).toHaveAttribute('aria-pressed', 'true')
+  })
+
+  it('requires at least three question types for a full lesson exercise', async () => {
     renderAdmin()
     await openGenerationForm()
     await fillCommonFields()
@@ -146,6 +180,8 @@ describe('Step 6.13 AI feature UI integration', () => {
     expect(onlySelectedType).toBeChecked()
     fireEvent.click(onlySelectedType)
     expect(onlySelectedType).not.toBeChecked()
+    expect(screen.getByRole('button', { name: 'Tạo bản nháp' })).toBeEnabled()
+    fireEvent.click(screen.getByLabelText('Điền vào chỗ trống'))
     expect(screen.getByRole('button', { name: "Tạo bản nháp" })).toBeDisabled()
     expect(adminApi.generateAssessmentDraft).not.toHaveBeenCalled()
   })
@@ -316,9 +352,9 @@ describe('Step 6.13 AI feature UI integration', () => {
     await openGenerationForm()
     await fillCommonFields()
     fireEvent.change(screen.getByLabelText("Bài học", { selector: 'select' }), { target: { value: 'lesson-a' } })
-    fireEvent.change(screen.getByLabelText("Số câu hỏi"), { target: { value: '11' } })
+    fireEvent.change(screen.getByLabelText("Số câu hỏi"), { target: { value: '29' } })
     expect(screen.getByRole('button', { name: "Tạo bản nháp" })).toBeDisabled()
-    fireEvent.change(screen.getByLabelText("Số câu hỏi"), { target: { value: '1' } })
+    fireEvent.change(screen.getByLabelText("Số câu hỏi"), { target: { value: '30' } })
     await waitFor(() => expect(screen.getByRole('button', { name: "Tạo bản nháp" })).toBeEnabled())
     fireEvent.click(screen.getByRole('button', { name: "Tạo bản nháp" }))
     expect(await screen.findByRole('button', { name: "Đang tạo bản nháp…" })).toBeDisabled()

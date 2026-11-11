@@ -4,6 +4,7 @@ from typing import Protocol
 from app.ai.reranking.schemas import RerankerProviderIdentity
 from app.ai.reranking.transformers_provider import TransformersRerankerProvider
 from app.core.config import get_settings
+from app.core.features import require_knowledge_ai
 
 
 class RerankerProvider(Protocol):
@@ -21,6 +22,7 @@ class RerankerProvider(Protocol):
 @lru_cache(maxsize=1)
 def get_reranker_provider() -> RerankerProvider:
     settings = get_settings()
+    require_knowledge_ai(settings)
     if settings.reranker_provider == "modal":
         from app.ai.reranking.modal_provider import ModalRerankerProvider
 

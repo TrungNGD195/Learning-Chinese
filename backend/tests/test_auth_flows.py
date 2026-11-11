@@ -389,9 +389,9 @@ def test_change_password_revokes_sessions_and_requires_login_again():
         assert changed.status_code == 204
         assert any("access_token=" in item and "path=/;" in item.lower() for item in changed.headers.get_list("set-cookie"))
         assert any("refresh_token=" in item and "path=/api/v1/auth" in item.lower() for item in changed.headers.get_list("set-cookie"))
-        # A copied short-lived Access Token is deliberately not blacklisted.
+        # Account-wide session version revokes copied access cookies too.
         client.cookies.set("access_token", access_before_change, domain="testserver.local", path="/")
-        assert client.get("/api/v1/auth/me").status_code == 200
+        assert client.get("/api/v1/auth/me").status_code == 401
         assert client.post("/api/v1/auth/login", json={"email": email, "password": old_password}).status_code == 401
         assert client.post("/api/v1/auth/login", json={"email": email, "password": "new password"}).status_code == 200
     async def cleanup():

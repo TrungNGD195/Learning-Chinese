@@ -4,6 +4,7 @@ from typing import Protocol
 from app.ai.embeddings.schemas import EmbeddingProviderIdentity
 from app.ai.embeddings.sentence_transformer_provider import SentenceTransformerEmbeddingProvider
 from app.core.config import get_settings
+from app.core.features import require_knowledge_ai
 
 
 class EmbeddingProvider(Protocol):
@@ -18,6 +19,7 @@ class EmbeddingProvider(Protocol):
 @lru_cache(maxsize=1)
 def get_embedding_provider() -> EmbeddingProvider:
     settings = get_settings()
+    require_knowledge_ai(settings)
     if settings.embedding_provider == "modal":
         from app.ai.embeddings.modal_provider import ModalEmbeddingProvider
 

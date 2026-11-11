@@ -4,11 +4,12 @@ from app.admin import repository as admin_repository, service as admin_service
 from app.curriculum import repository as curriculum_repository, service as curriculum_service
 from app.exercise import repository as exercise_repository, service as exercise_service
 from app.progress import repository as progress_repository, service as progress_service
+from app.readings import repository as reading_repository, service as reading_service
 from app.admin import service as admin_service
 
 
 def test_business_services_delegate_persistence_to_repositories():
-    for module in (admin_service,curriculum_service,exercise_service,progress_service):
+    for module in (admin_service,curriculum_service,exercise_service,progress_service,reading_service):
         source=inspect.getsource(module)
         assert "session.execute(" not in source
         assert "session.add(" not in source
@@ -16,7 +17,7 @@ def test_business_services_delegate_persistence_to_repositories():
 
 
 def test_repositories_never_commit_transactions():
-    for module in (admin_repository,curriculum_repository,exercise_repository,progress_repository):
+    for module in (admin_repository,curriculum_repository,exercise_repository,progress_repository,reading_repository):
         assert ".commit(" not in inspect.getsource(module)
 
 

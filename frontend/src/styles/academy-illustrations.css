@@ -1,4 +1,4 @@
-.academy-scene-illustration { display: block; width: 144px; aspect-ratio: 1; flex-shrink: 0; background: url('/academy/learning-scenes-v1.webp') 0 0 / 300% 200% no-repeat; }
+.academy-scene-illustration { display: block; width: 144px; aspect-ratio: 1; flex-shrink: 0; background: url('/academy/panda-learning-scenes-v3.png') 0 0 / 300% 200% no-repeat; }
 .academy-header-art { position: relative; width: 180px; height: 144px; justify-self: end; flex-shrink: 0; pointer-events: none; }
 .academy-header-art > .academy-scene-illustration { width: 150px; position: absolute; left: 0; bottom: 0; }
 .academy-header-art > .academy-companion { width: 76px; height: 76px; position: absolute; right: -4px; bottom: -4px; }

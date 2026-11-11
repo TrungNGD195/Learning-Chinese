@@ -15,6 +15,7 @@ from app.database.models.curriculum import (
     LessonVocabulary,
     Grammar,
     LessonGrammar,
+    LessonReading,
 )
 from app.database.models.assessment import (
     Assessment,
@@ -31,6 +32,7 @@ from app.database.models.progress import (
     LearnerHSKProgress,
     LearnerVocabularyProgress,
     LearnerGrammarProgress,
+    LearnerReadingProgress,
 )
 from app.database.models.conversation import Conversation, Message, MessageCitation
 from app.database.models.document import Document

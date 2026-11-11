@@ -1,4 +1,4 @@
-import { render, screen, within } from '@testing-library/react'
+import { fireEvent, render, screen, within } from '@testing-library/react'
 import { createMemoryRouter, RouterProvider } from 'react-router'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { describe, expect, it } from 'vitest'
@@ -16,24 +16,33 @@ function renderAt(path: string) {
 
 describe('production route tree', () => {
   it.each([
-    ['/login', 'Login', 'public'],
-    ['/register', 'Create an account', 'public'],
-    ['/forgot-password', 'Forgot password', 'public'],
-    ['/reset-password', 'Reset password', 'public'],
-    ['/dashboard', 'Dashboard', 'learner'],
-    ['/pronunciation', 'Hành trình học', 'learner'],
+    ['/login', "Đăng nhập", 'public'],
+    ['/register', "Tạo tài khoản", 'public'],
+    ['/forgot-password', "Quên mật khẩu", 'public'],
+    ['/reset-password', "Đặt lại mật khẩu", 'public'],
+    ['/pronunciation', "Giáo trình của bạn", 'learner'],
+    ['/pronunciation', 'Giáo trình của bạn', 'learner'],
     ['/pronunciation/lesson', 'Bài học phát âm', 'learner'],
-    ['/hsk/1', 'HSK 1 Curriculum', 'learner'],
-    ['/lessons/lesson-1', 'Lesson', 'learner'],
-    ['/assessments/assessment-1', 'Assessment', 'learner'],
-    ['/assessment-attempts/attempt-1/result', 'Assessment Result', 'learner'],
-    ['/history', 'History', 'learner'],
-    ['/profile', 'Profile', 'learner'],
+    ['/pronunciation/lesson/thanh-mau', 'Thanh mẫu', 'learner'],
+    ['/pronunciation/lesson/van-mau', 'Vận mẫu', 'learner'],
+    ['/pronunciation/lesson/thanh-dieu', 'Thanh điệu', 'learner'],
+    ['/pronunciation/lesson/bien-dieu', 'Biến điệu', 'learner'],
+    ['/hsk/1', "Giáo trình của bạn", 'learner'],
+    ['/lessons/lesson-1', "Bài học", 'learner'],
+    ['/lessons/lesson-1/vocabulary/word-1', 'Bài học', 'learner'],
+    ['/lessons/lesson-1/vocabulary', 'Bài học', 'learner'],
+    ['/lessons/lesson-1/grammar', 'Bài học', 'learner'],
+    ['/lessons/lesson-1/readings', 'Bài học', 'learner'],
+    ['/lessons/lesson-1/practice', 'Bài học', 'learner'],
+    ['/assessments/assessment-1', "Luyện tập", 'learner'],
+    ['/assessment-attempts/attempt-1/result', "Kết quả luyện tập", 'learner'],
+    ['/measure-words', 'Lượng từ', 'learner'],
+    ['/profile', "Hồ sơ", 'learner'],
     ['/admin', 'Quản trị học liệu', 'admin'],
-    ['/admin/curriculum', 'Lộ trình HSK', 'admin'],
+    ['/admin/lessons?view=curriculum', 'Sắp xếp HSK', 'admin'],
     ['/admin/lessons', 'Bài học', 'admin'],
     ['/admin/lessons/lesson-1', 'Biên soạn bài học', 'admin'],
-    ['/admin/assessments', 'Luyện tập', 'admin'],
+    ['/admin/assessments', 'Kiểm tra định kỳ', 'admin'],
     ['/admin/assessments/assessment-1', 'Biên soạn bài luyện tập', 'admin'],
     ['/admin/documents', 'Thư viện tài liệu', 'admin'],
     ['/admin/documents/document-1', 'Thông tin tài liệu', 'admin'],
@@ -45,7 +54,7 @@ describe('production route tree', () => {
 
   it('redirects / to /login when no session is present', async () => {
     renderAt('/')
-    expect(await screen.findByRole('heading', { name: 'Login' })).toBeInTheDocument()
+    expect(await screen.findByRole('heading', { name: "Đăng nhập" })).toBeInTheDocument()
   })
 
   it.each(['/unknown', '/learn', '/chat', '/design-lab', '/design-lab/preview', '/journey-test.html'])('%s renders NotFoundPage outside product layouts', (path) => {
@@ -55,64 +64,91 @@ describe('production route tree', () => {
   })
 
   it('maps Learn to /pronunciation and keeps top navigation minimal', () => {
-    renderAt('/dashboard')
-    const nav = screen.getByRole('navigation', { name: 'Learner navigation' })
-    expect(within(nav).getByRole('link', { name: 'Hành trình' })).toHaveAttribute('href', '/pronunciation')
+    renderAt('/pronunciation')
+    const nav = screen.getByRole('navigation', { name: "Điều hướng học viên" })
+    expect(within(nav).getByRole('link', { name: 'Giáo trình' })).toHaveAttribute('href', '/pronunciation')
     expect(within(nav).getAllByRole('link').map((link) => link.textContent)).toEqual([
-      'Góc học tập', 'Hành trình', 'Lịch sử', 'Hồ sơ',
+      'Giáo trình', 'Hồ sơ',
     ])
     expect(within(nav).getAllByRole('link').map((link) => link.getAttribute('href'))).toEqual([
-      '/dashboard', '/pronunciation', '/history', '/profile',
+      '/pronunciation', '/profile',
     ])
-    expect(within(nav).getByRole('link', { name: 'Góc học tập' })).toHaveAttribute('aria-current', 'page')
-    expect(screen.getByRole('link', { name: 'Skip to content' })).toHaveAttribute('href', '#main-content')
+    expect(within(nav).getByRole('link', { name: 'Giáo trình' })).toHaveAttribute('aria-current', 'page')
+    expect(screen.getByRole('link', { name: "Chuyển đến nội dung" })).toHaveAttribute('href', '#main-content')
     expect(document.querySelector('#main-content[data-layout="learner"]')).toBeInTheDocument()
   })
 
   it('redirects the old Progress URL to the combined learning page', async () => {
     const { unmount } = renderAt('/progress')
-    expect(await screen.findByRole('heading', { name: 'Hành trình học' })).toBeInTheDocument()
+    expect(await screen.findByRole('heading', { name: 'Giáo trình của bạn' })).toBeInTheDocument()
     unmount()
+  })
+  it('opens the real journey from the earlier prototype URL', async () => {
+    renderAt('/preview/great-wall')
+    expect(await screen.findByRole('heading', { name: 'Giáo trình của bạn' })).toBeInTheDocument()
+    expect(screen.queryByText(/Bản thử giao diện/)).not.toBeInTheDocument()
   })
   it('keeps detailed Admin Stats on its own screen', async () => {
     renderAt('/admin/stats')
     expect(await screen.findByRole('heading', { name: 'Thống kê' })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: '← Quản trị học liệu' })).toHaveAttribute('href','/admin')
   })
-  it('keeps History as a distinct screen', () => {
+  it('redirects the retired History URL to the learning journey', async () => {
     renderAt('/history')
-    expect(screen.getByRole('heading', { name: 'History', level: 1 })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: 'History is not available yet', level: 2 })).toBeInTheDocument()
-    expect(screen.getByText('Historical assessment attempts and results will be shown here.')).toBeInTheDocument()
-    expect(screen.queryByRole('table')).not.toBeInTheDocument()
+    expect(await screen.findByRole('heading', { name: 'Giáo trình của bạn' })).toBeInTheDocument()
+    expect(screen.queryByRole('link', { name: 'Lịch sử' })).not.toBeInTheDocument()
+  })
+
+  it('collapses and expands student navigation while retaining accessible links and logout', () => {
+    renderAt('/pronunciation')
+    const toggle = screen.getByRole('button', { name: 'Thu gọn thanh bên' })
+    expect(toggle).toHaveAttribute('aria-expanded', 'true')
+    fireEvent.click(toggle)
+    expect(screen.getByRole('button', { name: 'Mở rộng thanh bên' })).toHaveAttribute('aria-expanded', 'false')
+    expect(document.querySelector('.bo-shell')).toHaveAttribute('data-sidebar-collapsed', 'true')
+    expect(screen.getByRole('button', { name: 'Đăng xuất' })).toBeInTheDocument()
+    const nav = screen.getByRole('navigation', { name: 'Điều hướng học viên' })
+    expect(within(nav).getAllByRole('link')).toHaveLength(2)
+    expect(within(nav).getByRole('link', { name: 'Giáo trình' })).toHaveAttribute('href', '/pronunciation')
+    fireEvent.click(screen.getByRole('button', { name: 'Mở rộng thanh bên' }))
+    expect(toggle).toHaveAttribute('aria-expanded', 'true')
+    expect(document.querySelector('.bo-shell')).toHaveAttribute('data-sidebar-collapsed', 'false')
   })
 
   it('keeps Assessment and Assessment Result as distinct routes', () => {
     const { unmount } = renderAt('/assessments/assessment-1')
-    expect(screen.getByRole('heading', { name: 'Assessment' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: "Luyện tập" })).toBeInTheDocument()
     unmount()
 
     renderAt('/assessment-attempts/attempt-1/result')
-    expect(screen.getByRole('heading', { name: 'Assessment Result' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: "Kết quả luyện tập" })).toBeInTheDocument()
   })
 
   it('adds the Curriculum navigation entry and keeps /admin a small dashboard', () => {
     renderAt('/admin')
     const nav = screen.getByRole('navigation', { name: 'Điều hướng quản trị' })
-    expect(within(nav).getAllByRole('link').map((link) => link.textContent)).toEqual(['Tổng quan', 'Lộ trình', 'Bài học', 'Luyện tập', 'Tài liệu'])
+    expect(within(nav).getAllByRole('link').map((link) => link.textContent)).toEqual(['Tổng quan', 'Bài học', 'Kiểm tra định kỳ', 'Tài liệu', 'Hồ sơ'])
     expect(within(nav).getAllByRole('link').map((link) => link.getAttribute('href'))).toEqual([
-      '/admin', '/admin/curriculum', '/admin/lessons', '/admin/assessments', '/admin/documents',
+      '/admin', '/admin/lessons', '/admin/assessments', '/admin/documents', '/admin/profile',
     ])
-    expect(within(nav).getByRole('link', { name: 'Lộ trình' })).toHaveAttribute('href', '/admin/curriculum')
-    expect(screen.getByRole('link', { name: 'Quản lý lộ trình' })).toHaveAttribute('href', '/admin/curriculum')
+    expect(within(nav).queryByRole('link', { name: 'Lộ trình' })).not.toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Sắp xếp bài học' })).toHaveAttribute('href', '/admin/lessons?view=curriculum')
     expect(nav.closest('.admin-sidebar')).toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'Chuyển đến nội dung' })).toHaveAttribute('href', '#main-content')
     expect(document.querySelector('#main-content[data-layout="admin"]')).toBeInTheDocument()
   })
 
+  it('keeps old curriculum links working under lesson management', async () => {
+    renderAt('/admin/curriculum')
+    expect(await screen.findByRole('heading', { name: 'Sắp xếp HSK' })).toBeInTheDocument()
+    const nav = screen.getByRole('navigation', { name: 'Điều hướng quản trị' })
+    expect(within(nav).getByRole('link', { name: 'Bài học' })).toHaveAttribute('aria-current', 'page')
+    expect(within(nav).queryByRole('link', { name: 'Lộ trình' })).not.toBeInTheDocument()
+  })
+
   it('keeps the public shell skip link and main content target', () => {
     renderAt('/login')
-    expect(screen.getByRole('link', { name: 'Skip to content' })).toHaveAttribute('href', '#main-content')
+    expect(screen.getByRole('link', { name: "Chuyển đến nội dung" })).toHaveAttribute('href', '#main-content')
     expect(document.querySelector('#main-content[data-layout="public"]')).toBeInTheDocument()
   })
 })

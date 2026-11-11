@@ -27,6 +27,15 @@ async def add_user(session: AsyncSession, user: User) -> None:
 
 async def update_password_hash(session: AsyncSession, user: User, password_hash: str) -> None:
     user.password_hash = password_hash
+    user.session_version += 1
+
+
+async def update_profile_name(session: AsyncSession, user: User, full_name: str) -> None:
+    user.full_name = full_name
+
+
+async def invalidate_access_sessions(session: AsyncSession, user: User) -> None:
+    user.session_version += 1
 
 
 async def get_refresh_user_id_by_hash(session: AsyncSession, value: str) -> UUID | None:

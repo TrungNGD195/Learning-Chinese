@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import { queryKeys } from '../../app/query/keys'
 import { Alert } from '../../components/ui/Alert'
@@ -44,7 +45,7 @@ function HskMetadataEditor({ hsk }: { hsk: HskLevel }) {
     },
   })
   const changed = title !== (hsk.title ?? '') || description !== (hsk.description ?? '')
-  return <Surface as="section" className="admin-editor-section admin-editor-card" aria-labelledby="hsk-metadata-title">
+  return <Surface as="section" className="admin-editor-section admin-editor-card admin-hsk-metadata" aria-labelledby="hsk-metadata-title">
     <div className="admin-page-header"><div><h2 id="hsk-metadata-title">Thông tin HSK {hsk.level_number}</h2><p>Số cấp độ và thứ tự trong danh mục được cố định.</p></div>{changed && <StatusBadge tone="warning">Thông tin chưa được lưu</StatusBadge>}</div>
     <form className="admin-form-grid" onSubmit={(event) => { event.preventDefault(); if (!mutation.isPending && changed) mutation.mutate() }}>
       <label>Tiêu đề<input value={title} disabled={mutation.isPending} onChange={(event) => { setTitle(event.target.value); setDirty(true) }} /></label>
@@ -175,10 +176,10 @@ function CurriculumOrderEditor({ hskId }: { hskId: string }) {
 
 export function AdminCurriculumPage() {
   const { levels, selected, setSelected, hsk } = useHskRecord()
-  if (levels.isPending && !levels.data) return <section className="screen admin-screen admin-curriculum-page"><PageHeader title="Lộ trình HSK" titleId="page-title" description="Quản lý cấp độ HSK, nội dung và thứ tự học." /><LoadingState>Đang tải cấp độ HSK…</LoadingState></section>
-  if (levels.isError && !levels.data) return <section className="screen admin-screen admin-curriculum-page"><PageHeader title="Lộ trình HSK" titleId="page-title" description="Quản lý cấp độ HSK, nội dung và thứ tự học." /><Alert role="alert" tone="error" action={<Button onClick={() => void levels.refetch()}>Thử lại</Button>}>{adminErrorText(levels.error, "Không thể tải cấp độ HSK.")}</Alert></section>
+  if (levels.isPending && !levels.data) return <section className="screen admin-screen admin-curriculum-page"><PageHeader title="Sắp xếp HSK" titleId="page-title" description="Quản lý cấp độ HSK, nội dung và thứ tự học." /><LoadingState>Đang tải cấp độ HSK…</LoadingState></section>
+  if (levels.isError && !levels.data) return <section className="screen admin-screen admin-curriculum-page"><PageHeader title="Sắp xếp HSK" titleId="page-title" description="Quản lý cấp độ HSK, nội dung và thứ tự học." /><Alert role="alert" tone="error" action={<Button onClick={() => void levels.refetch()}>Thử lại</Button>}>{adminErrorText(levels.error, "Không thể tải cấp độ HSK.")}</Alert></section>
   return <section className="screen admin-screen admin-curriculum-page" aria-labelledby="page-title">
-    <PageHeader title="Lộ trình HSK" titleId="page-title" description="Quản lý cấp độ HSK, nội dung và thứ tự học." />
+    <PageHeader title="Sắp xếp HSK" titleId="page-title" back={<Link to="/admin/lessons">Quay lại bài học</Link>} description="Sắp xếp bài học và bài kiểm tra trong từng cấp độ HSK." />
     {levels.isError && <Alert tone="warning">Chưa cập nhật được cấp độ HSK.</Alert>}
     <Surface as="section" aria-label="Chọn cấp độ HSK"><label>Chọn HSK<select value={selected} onChange={(event) => setSelected(event.target.value)}>
       {(levels.data ?? []).map((item) => <option key={item.id} value={item.id}>HSK {item.level_number}{item.title ? ` — ${item.title}` : ''}</option>)}

@@ -20,6 +20,8 @@
 !.env.example
 !.env.*.example
 **/node_modules/
+**/.vercel/
+**/.railway/
 **/dist/
 **/playwright-report/
 **/test-results/
@@ -52,6 +54,9 @@
 # Local runtime data: uploaded source files, parsed/transformed artifacts,
 # embeddings, caches, and test-generated evaluation storage.
 /backend/storage/
+
+# Reproducible, licensed character data is generated from the pinned npm package.
+/frontend/public/hanzi-data/
 
 # Account-specific billing snapshots are local operational evidence.
 /docs/ai/evidence/modal-bge-validation/stage-b-*/billing-*.json

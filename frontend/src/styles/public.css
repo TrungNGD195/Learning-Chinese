@@ -91,7 +91,10 @@
 .public-login-page .auth-field input { min-height: 3.15rem; padding: .75rem .9rem; border-color: #e3eae7; border-radius: .625rem; background: #ffffff; color: #213641; transition: border-color .16s ease, box-shadow .16s ease; }
 .public-login-page .auth-field input:hover { border-color: #087f86; }
 .public-login-page .auth-field input:focus-visible { border-color: #087f86; outline: 2px solid #087f86; outline-offset: 2px; }
-.public-login-help-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem; margin-top: -.3rem; color: #49616d; font-size: .875rem; }
+.public-login-help-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: .5rem; min-height: 44px; margin-top: -.3rem; color: #49616d; font-size: .875rem; }
+.public-login-help-row a { display: inline-flex; align-items: center; min-height: 44px; padding: 0; border: 0; background: transparent; text-decoration: underline; }
+.public-login-password-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.public-login-password-heading .public-login-help-row { flex-direction: row; align-items: center; margin-top: 0; }
 .public-login-help-row a, .public-login-register a { color: #087f86; font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .public-login-help-row a:hover, .public-login-register a:hover { color: #213641; }
 .public-login-page .public-auth-form > .ui-button--primary { width: 100%; min-height: 3.15rem; justify-self: stretch; border-color: #b73c34; border-radius: .625rem; background: #b73c34; color: #ffffff; box-shadow: 0 .35rem .8rem rgb(183 60 52 / 14%); font-weight: 700; }

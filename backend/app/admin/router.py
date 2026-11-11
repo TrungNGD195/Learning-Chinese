@@ -149,6 +149,16 @@ async def patch_lesson(lesson_id:UUID,payload:LessonPatchRequest,session:AsyncSe
 async def publish_lesson(lesson_id:UUID,session:AsyncSession=Depends(get_db_session)): return await service.lesson_transition(session,lesson_id,"publish")
 
 
+@router.post("/lessons/{lesson_id}/unpublish", response_model=LessonAdminResponse)
+async def unpublish_lesson(lesson_id: UUID, session: AsyncSession = Depends(get_db_session)):
+    return await service.lesson_transition(session, lesson_id, "unpublish")
+
+
+@router.post("/lessons/{lesson_id}/publish-package", response_model=LessonAdminResponse)
+async def publish_lesson_package(lesson_id: UUID, session: AsyncSession = Depends(get_db_session)):
+    return await service.publish_lesson_package(session, lesson_id)
+
+
 @router.post("/lessons/{lesson_id}/knowledge/retry")
 async def retry_lesson_knowledge(lesson_id: UUID, session: AsyncSession = Depends(get_db_session)):
     settings = get_settings()
@@ -173,6 +183,29 @@ def _lesson_item_routes(kind: str):
 
 _lesson_item_routes("vocabulary")
 _lesson_item_routes("grammar")
+
+from app.readings import service as reading_service
+from app.readings.schemas import ReadingCreateRequest, ReadingResponse
+
+
+@router.get('/lessons/{lesson_id}/readings', response_model=list[ReadingResponse])
+async def lesson_readings(lesson_id: UUID, session: AsyncSession = Depends(get_db_session)):
+    return await reading_service.admin_list(session, lesson_id)
+
+
+@router.post('/lessons/{lesson_id}/readings', status_code=201, response_model=ReadingResponse)
+async def create_reading(lesson_id: UUID, payload: ReadingCreateRequest, session: AsyncSession = Depends(get_db_session)):
+    return await reading_service.save_reading(session, lesson_id, payload.model_dump())
+
+
+@router.put('/lessons/{lesson_id}/readings/{reading_id}', response_model=ReadingResponse)
+async def update_reading(lesson_id: UUID, reading_id: UUID, payload: ReadingCreateRequest, session: AsyncSession = Depends(get_db_session)):
+    return await reading_service.save_reading(session, lesson_id, payload.model_dump(), reading_id)
+
+
+@router.delete('/lessons/{lesson_id}/readings/{reading_id}')
+async def delete_reading(lesson_id: UUID, reading_id: UUID, session: AsyncSession = Depends(get_db_session)):
+    return await reading_service.delete_reading(session, lesson_id, reading_id)
 
 @router.get("/assessments",response_model=AssessmentAdminPageResponse)
 async def assessments(status:str|None=None,assessment_type:str|None=None,

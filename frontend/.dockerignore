@@ -1,4 +1,5 @@
 node_modules
+public/hanzi-data
 dist
 coverage
 playwright-report

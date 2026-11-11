@@ -5,11 +5,12 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.errors import ApplicationError
 from app.database.models import Assessment
+from app.readings import repository as reading_repository
 from app.curriculum import repository as curriculum_repository
 from app.exercise import repository as exercise_repository
 from app.progress import repository
 
-PRONUNCIATION_STEPS = (("INITIALS", 21), ("FINALS", 36), ("TONES", 5))
+PRONUNCIATION_STEPS = (("INITIALS", 21), ("FINALS", 36), ("TONES", 5), ("SANDHI", 12))
 
 
 def _pronunciation_rows_by_code(rows):
@@ -21,7 +22,7 @@ def _pronunciation_rows_by_code(rows):
 
 def _first_unfinished_section(by_code):
     return next((index for index, (code, _) in enumerate(PRONUNCIATION_STEPS)
-                 if by_code[code][1] is None or by_code[code][1].completed_at is None), 3)
+                 if by_code[code][1] is None or by_code[code][1].completed_at is None), len(PRONUNCIATION_STEPS))
 
 
 def _pronunciation_lesson_payload(by_code, lesson):
@@ -31,11 +32,11 @@ def _pronunciation_lesson_payload(by_code, lesson):
         "sections": [{"id": by_code[code][0].id, "code": code,
                       "completed_at": by_code[code][1].completed_at if by_code[code][1] else None,
                       "total_steps": total} for code, total in PRONUNCIATION_STEPS],
-        "current_section": PRONUNCIATION_STEPS[index][0] if index < 3 else None,
+        "current_section": PRONUNCIATION_STEPS[index][0] if index < len(PRONUNCIATION_STEPS) else None,
         "step_index": steps,
-        "total_steps": PRONUNCIATION_STEPS[index][1] if index < 3 else 0,
+        "total_steps": PRONUNCIATION_STEPS[index][1] if index < len(PRONUNCIATION_STEPS) else 0,
         "completed_at": lesson.completed_at if lesson is not None else None,
-        "can_finish": index == 3 and (lesson is None or lesson.completed_at is None),
+        "can_finish": index == len(PRONUNCIATION_STEPS) and (lesson is None or lesson.completed_at is None),
     }
 
 
@@ -59,7 +60,9 @@ async def progression_snapshot(session: AsyncSession, user_id: UUID):
     lesson_progress = await repository.get_pronunciation_lesson(session, user_id)
     all_sections_complete = bool(lesson_progress and lesson_progress.completed_at) and all(
         code in required and required[code] is not None and required[code].completed_at is not None
-        for code, _ in PRONUNCIATION_STEPS
+        # Existing graduates keep their valid completion. New completions can
+        # only be recorded by finish_pronunciation after all four sections.
+        for code, _ in PRONUNCIATION_STEPS[:3]
     )
     per_hsk: dict[UUID, list[dict]] = {level.id: [] for level in levels}
     for unit, lesson, assessment in raw_units:
@@ -77,11 +80,11 @@ async def progression_snapshot(session: AsyncSession, user_id: UUID):
             "state": "COMPLETED" if complete else "LOCKED",
         })
 
-    previous_hsk_complete = True
     for level in levels:
         entries = per_hsk.get(level.id, [])
-        active_entries = [entry for entry in entries if entry["active"]]
-        hsk_gate = all_sections_complete if level.level_number == 1 else previous_hsk_complete
+        # Experienced learners may enter HSK2+ directly. The pronunciation
+        # foundation gates HSK1 only; units remain ordered within each level.
+        hsk_gate = level.level_number > 1 or all_sections_complete
         prior_complete = True
         for entry in entries:
             if entry["complete"]:
@@ -94,7 +97,6 @@ async def progression_snapshot(session: AsyncSession, user_id: UUID):
                 entry["state"] = "LOCKED"
             if entry["active"] and not entry["complete"]:
                 prior_complete = False
-        previous_hsk_complete = bool(active_entries) and all(entry["complete"] for entry in active_entries)
 
     current_level = next(
         (level for level in levels if not (bool([entry for entry in per_hsk.get(level.id, []) if entry["active"]]) and all(entry["complete"] for entry in per_hsk[level.id] if entry["active"]))),
@@ -109,7 +111,9 @@ def learner_hsk_states(levels, states) -> list[dict]:
         entries=states.get(level.id,[])
         active=[entry for entry in entries if entry["active"]]
         complete=bool(active) and all(entry["complete"] for entry in active)
-        state="COMPLETED" if complete else next((entry["state"] for entry in active if not entry["complete"]),"LOCKED")
+        # An empty advanced catalog is browsable, not a learner prerequisite.
+        empty_state = "AVAILABLE" if level.level_number > 1 else "LOCKED"
+        state="COMPLETED" if complete else next((entry["state"] for entry in active if not entry["complete"]),empty_state)
         result.append({"id":level.id,"level_number":level.level_number,"title":level.title,"description":level.description,"state":state})
     return result
 
@@ -175,12 +179,12 @@ async def complete_pronunciation(session: AsyncSession, user_id: UUID, section_i
         if existing is not None and existing.completed_at is not None:
             return {"section_id": section_id, "completed_at": existing.completed_at}
         index = lesson.section_index
-        if index >= 3 or PRONUNCIATION_STEPS[index][0] != section.code or lesson.step_index != PRONUNCIATION_STEPS[index][1]:
+        if index >= len(PRONUNCIATION_STEPS) or PRONUNCIATION_STEPS[index][0] != section.code or lesson.step_index != PRONUNCIATION_STEPS[index][1]:
             raise ApplicationError("PRONUNCIATION_INCOMPLETE", "Complete each sound in order first", status_code=409)
         completed_at = await repository.complete_pronunciation(session, user_id, section_id)
         lesson.section_index = index + 1
         lesson.step_index = 0
-        while lesson.section_index < 3:
+        while lesson.section_index < len(PRONUNCIATION_STEPS):
             next_progress = by_code[PRONUNCIATION_STEPS[lesson.section_index][0]][1]
             if next_progress is None or next_progress.completed_at is None:
                 break
@@ -194,7 +198,7 @@ async def advance_pronunciation(session: AsyncSession, user_id: UUID, section_co
         by_code = _pronunciation_rows_by_code(await curriculum_repository.pronunciation_rows(session, user_id))
         lesson = await repository.lock_pronunciation_lesson(session, user_id, _first_unfinished_section(by_code))
         index = lesson.section_index
-        if lesson.completed_at is not None or index >= 3 or PRONUNCIATION_STEPS[index][0] != section_code:
+        if index >= len(PRONUNCIATION_STEPS) or PRONUNCIATION_STEPS[index][0] != section_code:
             raise ApplicationError("PRONUNCIATION_OUT_OF_ORDER", "Continue with the current section", status_code=409)
         if lesson.step_index != step_index or step_index >= PRONUNCIATION_STEPS[index][1]:
             raise ApplicationError("PRONUNCIATION_STEP_CONFLICT", "Refresh your current lesson step", status_code=409)
@@ -209,8 +213,8 @@ async def finish_pronunciation(session: AsyncSession, user_id: UUID) -> dict:
     async with session.begin_nested():
         by_code = _pronunciation_rows_by_code(await curriculum_repository.pronunciation_rows(session, user_id))
         lesson = await repository.lock_pronunciation_lesson(session, user_id, _first_unfinished_section(by_code))
-        if lesson.section_index != 3 or _first_unfinished_section(by_code) != 3:
-            raise ApplicationError("PRONUNCIATION_INCOMPLETE", "Complete all three sections first", status_code=409)
+        if lesson.completed_at is None and (lesson.section_index != len(PRONUNCIATION_STEPS) or _first_unfinished_section(by_code) != len(PRONUNCIATION_STEPS)):
+            raise ApplicationError("PRONUNCIATION_INCOMPLETE", "Complete all four sections first", status_code=409)
         if lesson.completed_at is None:
             lesson.completed_at = datetime.now(UTC)
             levels, _ = await curriculum_repository.catalog_snapshot(session)
@@ -284,11 +288,32 @@ async def lesson_progress(session: AsyncSession, user_id: UUID, lesson_id: UUID)
     vocabulary_ids,grammar_ids=await curriculum_repository.lesson_theory_ids(session,lesson_id)
     viewed_vocabulary = await repository.viewed_vocabulary_ids(session,user_id,vocabulary_ids)
     viewed_grammar = await repository.viewed_grammar_ids(session,user_id,grammar_ids)
+    readings = await repository.reading_progress(session, user_id, lesson_id)
+    theory_completed_at = progress.theory_completed_at if progress and all(row['completed'] for row in readings) else None
     return {"lesson_id": lesson_id, "started_at": progress.started_at if progress else None,
-            "theory_completed_at": progress.theory_completed_at if progress else None,
+            "theory_completed_at": theory_completed_at,
             "completed_at": progress.completed_at if progress else None,
             "vocabulary": [{"id": item, "viewed": item in viewed_vocabulary} for item in vocabulary_ids],
-            "grammar": [{"id": item, "viewed": item in viewed_grammar} for item in grammar_ids]}
+            "grammar": [{"id": item, "viewed": item in viewed_grammar} for item in grammar_ids], "readings": readings}
+
+
+async def complete_reading(session: AsyncSession, user_id: UUID, lesson_id: UUID, reading_id: UUID, version: int):
+    async with session.begin_nested():
+        await require_lesson_access(session, user_id, lesson_id)
+        locked_lesson = await reading_repository.get_lesson(session, lesson_id, for_update=True)
+        if locked_lesson is None or locked_lesson.status != 'PUBLISHED':
+            raise ApplicationError('NOT_FOUND', 'Lesson was not found', status_code=404)
+        reading = await reading_repository.get_reading(session, lesson_id, reading_id, for_update=True)
+        if reading is None:
+            raise ApplicationError('NOT_FOUND', 'Reading was not found in this lesson', status_code=404)
+        if reading.version != version:
+            raise ApplicationError('READING_VERSION_CHANGED', 'Reading changed; reload before completing it', status_code=409)
+        completed_at = await repository.mark_reading_complete(session, user_id, reading)
+        vocabulary_ids, grammar_ids = await curriculum_repository.lesson_theory_ids(session, lesson_id)
+        progress = await _converge_theory_completion(session, user_id, lesson_id, vocabulary_ids, grammar_ids)
+        result = {'completed_at': completed_at, 'theory_completed_at': progress.theory_completed_at}
+    await session.commit()
+    return result
 
 
 async def progress_overview(session: AsyncSession, user_id: UUID) -> dict:

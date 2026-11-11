@@ -94,7 +94,7 @@ def main() -> None:
         raise SystemExit(1) from None
     print("RESET=PASS")
     print("DATABASE=localhost:5432/chinese_learning_test")
-    print("SEEDED=3 required HSK levels; 3 required pronunciation sections")
+    print("SEEDED=3 required HSK levels; 4 required pronunciation sections")
 
 
 if __name__ == "__main__":

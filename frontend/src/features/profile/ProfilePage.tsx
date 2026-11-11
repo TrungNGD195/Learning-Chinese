@@ -7,6 +7,8 @@ import { ApiError } from '../../lib/api/errors'
 import { authApi } from '../auth/api'
 import { useSession } from '../auth/session'
 import { getProgressOverview } from '../progress/api'
+import {CompanionGuide} from './CompanionGuide'
+import '../../styles/student-companions.css'
 import { Alert, Button, PageHeader, Surface } from '../../components/ui'
 
 export function ProfilePage() {
@@ -32,48 +34,49 @@ export function ProfilePage() {
   const submit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     setFormError(null); setCurrentPasswordError(null); setNewPasswordError(null)
-    if (!currentPassword || !newPassword || !confirmation) { setFormError('Complete all password fields.'); return }
-    if (newPassword !== confirmation) { setNewPasswordError('Passwords do not match.'); return }
-    if (newPassword.length < 8 || newPassword.length > 128) { setNewPasswordError('Password must be between 8 and 128 characters.'); return }
+    if (!currentPassword || !newPassword || !confirmation) { setFormError("Vui lòng điền đầy đủ các trường mật khẩu."); return }
+    if (newPassword !== confirmation) { setNewPasswordError("Mật khẩu xác nhận chưa khớp."); return }
+    if (newPassword.length < 8 || newPassword.length > 128) { setNewPasswordError("Mật khẩu cần có từ 8 đến 128 ký tự."); return }
     try { await mutation.mutateAsync({ current_password: currentPassword, new_password: newPassword }) }
     catch (error) {
-      if (error instanceof ApiError && error.code === 'INVALID_CURRENT_PASSWORD') setCurrentPasswordError('Current password is incorrect.')
-      else if (error instanceof ApiError && error.code === 'INVALID_PASSWORD') setNewPasswordError('Password does not meet the required policy.')
-      else if (error instanceof ApiError && (error.code === 'NETWORK_ERROR' || (error.status !== null && error.status >= 500))) setFormError("We couldn't confirm the password change. Please try again.")
-      else setFormError('Could not change the password. Please try again.')
+      if (error instanceof ApiError && error.code === 'INVALID_CURRENT_PASSWORD') setCurrentPasswordError("Mật khẩu hiện tại chưa chính xác.")
+      else if (error instanceof ApiError && error.code === 'INVALID_PASSWORD') setNewPasswordError("Mật khẩu chưa đáp ứng yêu cầu bảo mật.")
+      else if (error instanceof ApiError && (error.code === 'NETWORK_ERROR' || (error.status !== null && error.status >= 500))) setFormError("Chưa thể xác nhận việc đổi mật khẩu. Vui lòng thử lại.")
+      else setFormError("Không thể đổi mật khẩu. Vui lòng thử lại.")
     }
   }
 
   const user = session.user
   return <section className="screen profile-page" aria-labelledby="page-title">
-    <PageHeader title="Profile" titleId="page-title" eyebrow="学习档案 · LEARNER PROFILE" description="Manage your account details and password." />
+    <PageHeader title="Hồ sơ" titleId="page-title" description="Quản lý thông tin tài khoản và mật khẩu của bạn." />
     <div className="profile-sections">
       <Surface as="section" className="profile-surface" aria-labelledby="identity-title">
-        <p className="profile-eyebrow">Account</p><h2 id="identity-title">Account details</h2>
-        <dl className="profile-details"><dt>Full name</dt><dd>{user?.full_name}</dd><dt>Email</dt><dd>{user?.email}</dd></dl>
+        <h2 id="identity-title">Thông tin tài khoản</h2>
+        <dl className="profile-details"><dt>Họ và tên</dt><dd>{user?.full_name}</dd><dt>Email</dt><dd>{user?.email}</dd></dl>
       </Surface>
       <Surface as="section" className="profile-surface" aria-labelledby="progress-title">
-        <p className="profile-eyebrow">Learning context</p><h2 id="progress-title">Learning progress</h2>
-        {progressQuery.isPending && <p role="status">Loading progress…</p>}
-        {progressQuery.isError && !progressQuery.data && <><Alert role="alert" tone="error">Could not load your progress summary.</Alert><Button className="secondary-action" onClick={() => void progressQuery.refetch()}>Retry</Button></>}
+        <h2 id="progress-title">Tiến độ học tập</h2>
+        {progressQuery.isPending && <p role="status">Đang tải tiến độ…</p>}
+        {progressQuery.isError && !progressQuery.data && <><Alert role="alert" tone="error">Không thể tải tổng quan tiến độ của bạn.</Alert><Button className="secondary-action" onClick={() => void progressQuery.refetch()}>Thử lại</Button></>}
         {progressQuery.data && <>
-          {progressQuery.isFetching && <p className="profile-refresh" role="status">Refreshing progress…</p>}
-          {progressQuery.isError && <Alert role="status" tone="warning">Could not refresh progress. Showing the last loaded summary.</Alert>}
-          <div className="profile-learning-facts"><p>Current HSK: {progressQuery.data.current_hsk === null ? 'Not started yet' : `HSK ${progressQuery.data.current_hsk}`}</p><p>Overall progress: {progressQuery.data.progress_percentage}%</p></div>
+          {progressQuery.isFetching && <p className="profile-refresh" role="status">Đang cập nhật tiến độ…</p>}
+          {progressQuery.isError && <Alert role="status" tone="warning">Chưa cập nhật được tiến độ. Đang hiển thị tổng quan đã tải.</Alert>}
+          <div className="profile-learning-facts"><p>HSK hiện tại: {progressQuery.data.current_hsk === null ? "Chưa bắt đầu" : `HSK ${progressQuery.data.current_hsk}`}</p><p>Tiến độ tổng quan: {progressQuery.data.progress_percentage}%</p></div>
         </>}
       </Surface>
       <Surface as="section" className="profile-surface profile-security" aria-labelledby="password-title">
-        <p className="profile-eyebrow">Security</p><h2 id="password-title">Change password</h2>
+        <h2 id="password-title">Đổi mật khẩu</h2>
         <form className="profile-password-form" onSubmit={submit} noValidate>
-          <label className="profile-field">Current password<input type="password" name="current_password" autoComplete="current-password" value={currentPassword} onChange={(event) => setCurrentPassword(event.target.value)} required /></label>
+          <label className="profile-field">Mật khẩu hiện tại<input type="password" name="current_password" autoComplete="current-password" value={currentPassword} onChange={(event) => setCurrentPassword(event.target.value)} required /></label>
           {currentPasswordError && <Alert role="alert" tone="error">{currentPasswordError}</Alert>}
-          <label className="profile-field">New password<input type="password" name="new_password" autoComplete="new-password" value={newPassword} onChange={(event) => setNewPassword(event.target.value)} required /></label>
+          <label className="profile-field">Mật khẩu mới<input type="password" name="new_password" autoComplete="new-password" value={newPassword} onChange={(event) => setNewPassword(event.target.value)} required /></label>
           {newPasswordError && <Alert role="alert" tone="error">{newPasswordError}</Alert>}
-          <label className="profile-field">Confirm new password<input type="password" name="confirm_password" autoComplete="new-password" value={confirmation} onChange={(event) => setConfirmation(event.target.value)} required /></label>
+          <label className="profile-field">Xác nhận mật khẩu mới<input type="password" name="confirm_password" autoComplete="new-password" value={confirmation} onChange={(event) => setConfirmation(event.target.value)} required /></label>
           {formError && <Alert role="alert" tone="error">{formError}</Alert>}
-          <Button variant="primary" type="submit" disabled={mutation.isPending}>{mutation.isPending ? 'Changing password…' : 'Change password'}</Button>
+          <Button variant="primary" type="submit" disabled={mutation.isPending}>{mutation.isPending ? "Đang đổi mật khẩu…" : "Đổi mật khẩu"}</Button>
         </form>
       </Surface>
     </div>
+    <CompanionGuide/>
   </section>
 }

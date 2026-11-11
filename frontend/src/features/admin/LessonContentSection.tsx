@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from 'react'
-import { VocabularyIllustration } from '../../components/academy/Companion'
+import { VocabularyStudyCard } from '../lesson/VocabularyStudyCard'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import { queryKeys } from '../../app/query/keys'
 import { adminErrorText } from './AdminPrimitives'
@@ -21,10 +21,10 @@ function toDraft(item?: ContentItem): ContentDraft {
 
 function WordPreview({ draft, kind, dirty }: { draft: ContentDraft; kind: Kind; dirty: boolean }) {
   return <aside className="admin-editor-preview" aria-label="Xem trước nội dung bài học"><h3>Xem trước cho học sinh {dirty ? '· Chưa lưu' : ''}</h3>
-    <article className="admin-student-word">
-      {kind === 'vocabulary' ? <><VocabularyIllustration hanzi={draft.hanzi}/><h4 lang="zh-Hans">{draft.hanzi || '汉字'}</h4><p className="admin-word-pinyin">{draft.pinyin || 'Phiên âm'}</p><p className="admin-word-meaning">{draft.meaning || 'Nghĩa tiếng Việt'}{draft.pos && <><br/><small>{draft.pos}</small></>}</p></> : <><h4 style={{ fontSize: 30 }}>{draft.name || 'Tên cấu trúc'}</h4>{draft.structure && <p lang="zh-Hans">{draft.structure}</p>}<p>{draft.explanation}</p>{draft.usage && <section><h5>Cách dùng</h5><p>{draft.usage}</p></section>}</>}
+    {kind === 'vocabulary' ? <VocabularyStudyCard word={{ hanzi: draft.hanzi || '汉字', pinyin: draft.pinyin || 'Phiên âm', vietnamese_meaning: draft.meaning || 'Nghĩa tiếng Việt', part_of_speech: draft.pos }} example={draft.example} note={draft.note}/> : <article className="admin-student-word">
+      <h4 style={{ fontSize: 30 }}>{draft.name || 'Tên cấu trúc'}</h4>{draft.structure && <p lang="zh-Hans">{draft.structure}</p>}<p>{draft.explanation}</p>{draft.usage && <section><h5>Cách dùng</h5><p>{draft.usage}</p></section>}
       {draft.example && <section><h5>Ví dụ</h5><p>{draft.example}</p></section>}{draft.note && <section><h5>Lưu ý</h5><p>{draft.note}</p></section>}
-    </article>
+    </article>}
   </aside>
 }
 

@@ -6,7 +6,7 @@ type TableContainerProps = HTMLAttributes<HTMLDivElement> & {
 
 export function TableContainer({ children, className = '', ...props }: TableContainerProps) {
   return <div {...props} className={['ui-table-container', className].filter(Boolean).join(' ')}>
-    <span className="ui-table-container__hint">Scroll horizontally to view all columns <span aria-hidden="true">→</span></span>
+    <span className="ui-table-container__hint">Cuộn ngang để xem đầy đủ các cột <span aria-hidden="true">→</span></span>
     {children}
   </div>
 }

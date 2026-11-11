@@ -1,0 +1,98 @@
+import assert from 'node:assert/strict'
+import {mkdir,writeFile} from 'node:fs/promises'
+import {fileURLToPath} from 'node:url'
+import {chromium} from 'playwright'
+import {installJourneyFixture} from './journey-fixture.mjs'
+
+const origin=process.argv[2]??'http://127.0.0.1:5173'
+const folder=fileURLToPath(new URL('../../tmp/academy-curriculum/',import.meta.url))
+await mkdir(folder,{recursive:true})
+const browser=await chromium.launch(),errors=[],writes=[],unexpected=[],checks=[]
+async function capture(page,name){
+ await page.evaluate(()=>document.fonts.ready)
+ await page.locator('.lc-painted-cover,.academy-companion').evaluateAll(async elements=>{
+  const urls=[...new Set(elements.map(element=>getComputedStyle(element).backgroundImage).filter(value=>value.startsWith('url(')).map(value=>value.slice(5,-2)))]
+  await Promise.all(urls.map(async url=>{const image=new Image();image.src=url;await image.decode()}))
+ })
+ await page.evaluate(()=>Promise.all([...document.images].map(image=>image.decode().catch(()=>{}))))
+ assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),name+' document overflow')
+ await page.screenshot({path:folder+name+'.png',animations:'disabled'})
+}
+try{
+ for(const width of [1440,390]){
+  const context=await browser.newContext({viewport:{width,height:1000},reducedMotion:'reduce'})
+  const state=await installJourneyFixture(context,{writes,unexpected,lessonTitles:['你好 · Xin chào','我叫小丽 · Tôi tên là Tiểu Lệ','我是越南人 · Tôi là người Việt Nam','我有两个孩子 · Tôi có hai đứa con','今天几月几号？ · Hôm nay là ngày mấy tháng mấy?']})
+  const page=await context.newPage()
+  page.on('pageerror',error=>errors.push(error.message))
+  await page.goto(origin+'/dashboard')
+  await page.waitForURL('**/pronunciation')
+  await page.locator('.academy-nav a').first().waitFor({state:'attached'})
+  assert.equal(await page.locator('.academy-nav a').count(),2)
+  await page.goto(origin+'/hsk/1')
+  await page.locator('.lc-lesson-grid').waitFor()
+  assert.equal(await page.locator('.lc-lesson-grid > li').count(),15)
+  assert.equal(await page.locator('.lc-lesson-cover .lc-painted-cover').count(),15)
+  assert.equal(await page.locator('a.lc-lesson-card[href="/lessons/lesson-1-7"]').count(),1)
+  assert.equal(await page.locator('a[href="/lessons/lesson-1-8"]').count(),0)
+  assert.equal(await page.locator('.lc-foundation-card').count(),2)
+  await capture(page,'header-'+width)
+  await page.locator('.lc-lesson-grid').scrollIntoViewIfNeeded()
+  await capture(page,'list-'+width)
+  await page.locator('.lc-lesson-card[data-locked=true]').first().click()
+  assert((await page.locator('.lc-notice').innerText()).includes('80%'))
+  await page.getByRole('searchbox').fill('not-a-real-topic')
+  await page.locator('.lc-empty').waitFor()
+  await page.locator('.lc-empty button').click()
+  await page.waitForFunction(()=>document.querySelectorAll('.lc-lesson-grid > li').length===15)
+  assert.equal(await page.locator('.lc-view-switch,.lc-map-node,canvas').count(),0)
+  await page.locator('a.lc-lesson-card[href="/lessons/lesson-1-7"]').click()
+  await page.waitForURL('**/lessons/lesson-1-7')
+  await page.goBack()
+  await page.locator('.lc-lesson-grid').waitFor()
+  await page.locator('.lc-level-tabs a').nth(1).click()
+  await page.waitForFunction(()=>document.querySelectorAll('.lc-lesson-grid > li').length===10)
+  await page.locator('.lc-level-tabs a').nth(2).click()
+  await page.waitForFunction(()=>document.querySelectorAll('.lc-lesson-grid > li').length===15)
+  state.partial=true;state.foundation=false
+  await page.goto(origin+'/hsk/1')
+  await page.locator('.lc-lesson-grid').waitFor()
+  assert.equal(await page.locator('a.lc-lesson-card').count(),0)
+  assert.equal(await page.locator('.lc-lesson-grid > li').count(),15)
+  await page.locator('.lc-lesson-card').first().click()
+  assert((await page.locator('.lc-notice').innerText()).includes('phát âm'))
+  await page.goto(origin+'/hsk/2?view=map')
+  await page.waitForFunction(()=>document.querySelectorAll('.lc-lesson-grid > li').length===10)
+  assert.equal(await page.locator('.lc-foundation').count(),0)
+  await page.goto(origin+'/hsk/1')
+  await page.locator('a[href="/measure-words"]').click()
+  await page.waitForURL('**/measure-words')
+  await page.locator('.mw-outline button').first().waitFor()
+  assert.equal(await page.locator('.mw-outline button').count(),10)
+  assert.equal(await page.locator('.mw-pagination button').first().isDisabled(),true)
+  await page.locator('.mw-pagination button').last().click()
+  await page.waitForURL('**/measure-words?word=2')
+  await page.waitForFunction(()=>document.querySelector('.mw-word h2')?.textContent==='本')
+  await page.locator('.mw-outline button').last().click()
+  await page.waitForFunction(()=>document.querySelector('.mw-pagination button:last-child')?.disabled)
+  await page.evaluate(()=>window.scrollTo(0,0))
+  await capture(page,'measure-words-'+width)
+  await page.reload()
+  await page.locator('.mw-word').waitFor()
+  assert.equal(await page.locator('.mw-word h2').innerText(),'口')
+  await page.goto(origin+'/companions')
+  await page.waitForURL('**/profile#companions')
+  await page.locator('.profile-companions').waitFor()
+  assert(await page.locator('.profile-companions').evaluate(e=>e.open))
+  await page.locator('.profile-companions').scrollIntoViewIfNeeded()
+  await capture(page,'profile-companions-'+width)
+  checks.push({width,verified:['real lesson links','locked lesson protection','15/10/15','all covers','search reset','list only','no map controls','foundation gate','partial curriculum','no 3D canvas','no document overflow','two foundation subjects','measure-word navigation and reload']})
+  await context.close()
+ }
+ assert.deepEqual(errors,[])
+ assert.deepEqual(writes,[])
+ assert.deepEqual(unexpected,[])
+}finally{
+ await browser.close()
+ await writeFile(folder+'verification.json',JSON.stringify({origin,checks,errors,writes,unexpected},null,2))
+}
+console.log('PASS: production curriculum desktop/mobile, real IDs and access rules, list-only curriculum, covers, foundation subjects and zero learning writes.')

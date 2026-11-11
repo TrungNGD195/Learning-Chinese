@@ -22,7 +22,7 @@ async def _assessment_access(session: AsyncSession, user_id: UUID, assessment: A
     if assessment.type == "LESSON_EXERCISE":
         await progress.require_lesson_access(session, user_id, assessment.lesson_id)
         lesson_progress = await progress_repository.get_lesson_progress(session, user_id, assessment.lesson_id)
-        if lesson_progress is None or lesson_progress.theory_completed_at is None:
+        if lesson_progress is None or lesson_progress.theory_completed_at is None or not await progress_repository.readings_complete(session, user_id, assessment.lesson_id):
             raise _error("THEORY_INCOMPLETE", "View all required lesson theory before opening the exercise", 403)
         return
     _, states, _, _, _ = await progress.progression_snapshot(session, user_id)
@@ -55,6 +55,8 @@ async def assessment_payload(session: AsyncSession, user_id: UUID, assessment_id
             config = {key: config[key] for key in ("items", "correct_order") if reveal or key != "correct_order"}
         else:
             config = {}
+        if (q.config or {}).get("presentation"):
+            config["presentation"] = q.config["presentation"]
         options = await repository.list_question_options(session,q.id) if q.type == "multiple_choice" else []
         row = {"id": q.id, "type": q.type, "prompt": q.prompt, "order_index": q.order_index, "points": float(q.points), "config": config}
         if q.type == "multiple_choice":
@@ -233,12 +235,22 @@ async def attempt_detail(session: AsyncSession, user_id: UUID, attempt_id: UUID)
     attempt,assessment,answers=await repository.attempt_detail_rows(session,attempt_id,user_id)
     if attempt is None: raise _error("NOT_FOUND", "Assessment attempt was not found", 404)
     submitted = attempt.status in {"GRADED", "GRADING_FAILED"}
+    option_details = {}
+    if submitted:
+        for answer, question in answers:
+            if question.type == "multiple_choice":
+                options = await repository.list_question_options(session, question.id)
+                option_details[question.id] = {
+                    "selected_option_text": next((o.option_text for o in options if str(o.id) == str((answer.user_answer or {}).get("option_id"))), None),
+                    "reference_answer": next((o.option_text for o in options if o.is_correct), None),
+                }
     return {"id": attempt.id, "assessment_id": assessment.id, "attempt_number": attempt.attempt_number, "status": attempt.status,
             "score": float(attempt.score) if attempt.score is not None else None, "passed": attempt.passed, "submitted_at": attempt.submitted_at,
             "answers": [{"question_id": q.id, "type": q.type, "prompt": q.prompt, "answer": a.user_answer,
                          "grading_status": a.grading_status, "score": float(a.score) if a.score is not None else None,
                          "is_correct": a.is_correct, "feedback": a.feedback,
-                         **({"reference_answer": q.reference_answer, "rubric": q.rubric, "config": q.config} if submitted else {})} for a, q in answers]}
+                         **({"reference_answer": q.reference_answer, "rubric": q.rubric, "config": q.config} if submitted else {}),
+                         **option_details.get(q.id, {})} for a, q in answers]}
 
 
 # Admin use cases for assessment and question lifecycle and validation.
@@ -326,6 +338,20 @@ async def admin_questions(session, assessment_id):
     return result
 
 
+async def stage_lesson_exercise_publication(session, lesson_id, published_at):
+    """Caller owns the lesson lock and transaction; never partially publish."""
+    assessments = await exercise_repository.admin_lesson_exercises_for_update(session, lesson_id)
+    if not assessments:
+        fail("LESSON_PRACTICE_REQUIRED", "Lesson requires an active practice assessment", 409)
+    for assessment in assessments:
+        rows = await exercise_repository.admin_questions(session, assessment.id)
+        if len(rows) != 30 or len({question.type for question, _ in rows}) < 3:
+            fail("LESSON_PRACTICE_NOT_READY", "Each lesson exercise requires 30 questions and at least 3 question types", 409)
+    for assessment in assessments:
+        if assessment.status in {"DRAFT", "REVIEW"}:
+            await exercise_repository.admin_transition_assessment(session, assessment, "PUBLISHED", published_at)
+
+
 def admin_validate_question(body, partial=False):
     keys={"type","prompt","order_index","reference_answer","rubric","config","points","options"}
     required={"type","prompt","order_index"}
@@ -336,12 +362,17 @@ def admin_validate_question(body, partial=False):
         opts=body["options"]
         if (kind not in {None,"multiple_choice"}) or not isinstance(opts,list) or len(opts)<2 or any(not isinstance(o,dict) or set(o)!={"option_text","is_correct"} or not isinstance(o["option_text"],str) or not isinstance(o["is_correct"],bool) for o in opts) or sum(bool(o["is_correct"]) for o in opts)!=1: fail("INVALID_QUESTION","Multiple-choice options are invalid",422)
     cfg=body.get("config")
-    if kind=="multiple_choice" and cfg not in (None,{}): fail("INVALID_QUESTION","Multiple-choice answers are stored in question options",422)
+    if isinstance(cfg, dict) and "presentation" in cfg:
+        from app.exercise.schemas import PracticePresentation
+        from pydantic import ValidationError
+        try: PracticePresentation.model_validate(cfg["presentation"])
+        except ValidationError: fail("INVALID_QUESTION", "Practice presentation is invalid", 422)
+    if kind=="multiple_choice" and cfg is not None and (not isinstance(cfg, dict) or set(cfg)-{"presentation"}): fail("INVALID_QUESTION","Multiple-choice answers are stored in question options",422)
     if kind=="multiple_choice" and not partial and "options" not in body: fail("INVALID_QUESTION","Multiple-choice questions require options",422)
     if kind=="fill_blank" and not partial and not isinstance(body.get("reference_answer"),str): fail("INVALID_QUESTION","Fill-blank questions require a reference answer",422)
     if kind=="fill_blank" and cfg is not None and (not isinstance(cfg,dict) or ("accepted_answers" in cfg and (not isinstance(cfg["accepted_answers"],list) or not all(isinstance(x,str) for x in cfg["accepted_answers"])))): fail("INVALID_QUESTION","Fill-blank config is invalid",422)
     if kind=="matching" and not partial and cfg is None: fail("INVALID_QUESTION","Matching questions require configuration",422)
-    if kind=="matching" and cfg is not None and set(cfg)!={"left_items","right_items","correct_pairs"}: fail("INVALID_QUESTION","Matching config fields are invalid",422)
+    if kind=="matching" and cfg is not None and set(cfg)-{"presentation"}!={"left_items","right_items","correct_pairs"}: fail("INVALID_QUESTION","Matching config fields are invalid",422)
     if kind=="matching" and cfg is not None:
         if not isinstance(cfg,dict) or not all(k in cfg for k in ("left_items","right_items","correct_pairs")): fail("INVALID_QUESTION","Matching config is invalid",422)
         left,right,pairs=cfg["left_items"],cfg["right_items"],cfg["correct_pairs"]
@@ -350,7 +381,7 @@ def admin_validate_question(body, partial=False):
         lids={x["id"] for x in left}; rids={x["id"] for x in right}
         if len(lids)!=len(left) or len(rids)!=len(right) or len(pairs)!=len(left) or any(not isinstance(p,dict) or set(p)!={"left_id","right_id"} or p["left_id"] not in lids or p["right_id"] not in rids for p in pairs) or len({p["left_id"] for p in pairs})!=len(pairs) or len({p["right_id"] for p in pairs})!=len(pairs): fail("INVALID_QUESTION","Matching config is invalid",422)
     if kind=="reorder_sentence" and not partial and cfg is None: fail("INVALID_QUESTION","Reorder questions require configuration",422)
-    if kind=="reorder_sentence" and cfg is not None and set(cfg)!={"items","correct_order"}: fail("INVALID_QUESTION","Reorder config fields are invalid",422)
+    if kind=="reorder_sentence" and cfg is not None and set(cfg)-{"presentation"}!={"items","correct_order"}: fail("INVALID_QUESTION","Reorder config fields are invalid",422)
     if kind=="reorder_sentence" and cfg is not None:
         if not isinstance(cfg,dict) or not all(k in cfg for k in ("items","correct_order")) or not isinstance(cfg["items"],list) or not isinstance(cfg["correct_order"],list): fail("INVALID_QUESTION","Reorder config is invalid",422)
         items,order=cfg["items"],cfg["correct_order"]

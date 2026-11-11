@@ -4,12 +4,28 @@
 @import './styles/layouts.css';
 @import './styles/learner.css';
 @import './styles/admin.css';
-@import './styles/chat.css';
 @import './styles/public.css';
 @import './styles/academy.css';
 @import './styles/admin-dashboard.css';
 @import './styles/admin-library-studio.css';
 @import './styles/academy-illustrations.css';
+@import './styles/learner-navigation.css';
+@import './styles/lesson-readings.css';
+@import './styles/hanzi-strokes.css';
+@import './styles/student-study-blocks.css';
+@import './styles/vocabulary-pages.css';
+@import './styles/great-wall-preview.css';
+@import './styles/great-wall-journey.css';
+@import './styles/forward-great-wall.css';
+@import './styles/study-advice.css';
+@import './styles/lesson-parts.css';
+@import './styles/admin-lesson-review.css';
+@import './styles/lesson-vocabulary-art.css';
+@import './styles/lesson-study-workspace.css';
+@import './styles/pronunciation-study-workspace.css';
+@import './styles/navigation-actions.css';
+@import './styles/admin-profile.css';
+@import './styles/practice-workspace.css';
 
 a { color: #066970; }
 a:hover { color: #075b62; }

@@ -5,8 +5,8 @@ const requiredPaths = [
   '/api/v1/auth/login',
   '/api/v1/me/dashboard',
   '/api/v1/assessments/{assessment_id}',
-  '/api/v1/conversations',
-  '/api/v1/conversations/{conversation_id}/messages',
+  '/api/v1/pronunciation/lesson',
+  '/api/v1/lessons/{lesson_id}',
   '/api/v1/admin/lessons',
   '/api/v1/admin/assessments/{assessment_id}/questions',
 ] as const satisfies readonly (keyof paths)[]

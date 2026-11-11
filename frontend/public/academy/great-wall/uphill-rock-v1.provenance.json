@@ -1,0 +1,21 @@
+{
+  "tool": "built-in image_gen",
+  "generated_original": "C:/Users/Diep_PC/.codex/generated_images/01a1be76-b2f0-77a0-8896-c9560df6aa4e/exec-97641b20-1656-4f1b-96bc-8d4e70642982.png",
+  "prompt_file": "uphill-rock-v1.prompt.txt",
+  "references": [
+    "frontend/public/academy/great-wall/forward-mountains-v1.webp",
+    ".impeccable/proposals/uphill-bo-v1/uphill-bo-v1.png"
+  ],
+  "purpose": "Opaque albedo texture for actual native 3D rocky ridge beneath the uphill Great Wall; world lighting and perspective supplied by geometry.",
+  "transform": "Resize entire generated image to 1024 square with Lanczos; RGB WebP quality 90, method 6. No crop, recoloring or seam synthesis.",
+  "alpha": false,
+  "tiling": "Prompt requested seamless tiling; final scene inspection should check repetition. No mathematical seam guarantee.",
+  "status": "reviewed_in_local_3d_scene",
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "bytes": 267800,
+  "sha256": "be2dde236facc8329da9aafd8bd49bc7d19cf85bb62f3c124896672679763e14",
+  "metadata": "Exact prompt embedded in WebP XMP dc:description; Impeccable CLI additionally wrote its supported sidecar fallback."
+}

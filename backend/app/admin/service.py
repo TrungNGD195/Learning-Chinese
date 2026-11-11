@@ -36,8 +36,7 @@ async def patch_lesson(session, ident, body): return await curriculum_service.ad
 async def lesson_transition(session, ident, action):
     # The curriculum use case commits PUBLISHED before this post-commit pipeline starts.
     result = await curriculum_service.admin_lesson_transition(session, ident, action)
-    if action == "publish":
-        from app.core.config import get_settings
+    if action == "publish" and get_settings().knowledge_ai_enabled:
         from app.ingestion.orchestrator import process_published_lesson
         from app.ingestion.storage import LocalFileStorage
         settings = get_settings()
@@ -45,6 +44,18 @@ async def lesson_transition(session, ident, action):
             session, ident, LocalFileStorage(settings.document_storage_root)
         )
     return result
+
+
+async def publish_lesson_package(session, ident):
+    result = await curriculum_service.admin_publish_lesson_package(session, ident)
+    if not get_settings().knowledge_ai_enabled:
+        return result
+    from app.ingestion.orchestrator import process_published_lesson
+    from app.ingestion.storage import LocalFileStorage
+    settings = get_settings()
+    await process_published_lesson(session, ident, LocalFileStorage(settings.document_storage_root))
+    return result
+
 async def lesson_items(session, lesson_id, kind): return await curriculum_service.admin_lesson_items(session,lesson_id,kind)
 async def attach_item(session, lesson_id, kind, body): return await curriculum_service.admin_attach_item(session,lesson_id,kind,body)
 async def patch_item(session, lesson_id, link_id, kind, body): return await curriculum_service.admin_patch_item(session,lesson_id,link_id,kind,body)

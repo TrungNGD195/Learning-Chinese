@@ -21,9 +21,9 @@ describe('shared presentation primitives', () => {
   })
 
   it('keeps Alert semantics caller-controlled and renders its action', () => {
-    const { rerender } = render(<Alert tone="success" action={<button>Retry</button>}>Saved</Alert>)
+    const { rerender } = render(<Alert tone="success" action={<button>Thử lại</button>}>Saved</Alert>)
     expect(screen.getByText('Saved').closest('[role]')).toBeNull()
-    expect(screen.getByRole('button', { name: 'Retry' })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: "Thử lại" })).toBeInTheDocument()
     rerender(<Alert role="alert" tone="error">Failed</Alert>)
     expect(screen.getByRole('alert')).toHaveTextContent('Failed')
   })
@@ -68,7 +68,7 @@ function ControlledDecisionDialog({ onLeave }: { onLeave: () => void }) {
   const [open, setOpen] = useState(false)
   return <>
     <button onClick={() => setOpen(true)}>Open dialog</button>
-    <Dialog open={open} title="Unsaved answers" cancelLabel="Stay" confirmLabel="Leave"
+    <Dialog open={open} title="Unsaved answers" cancelLabel="Ở lại" confirmLabel="Rời trang"
       onCancel={() => setOpen(false)} onConfirm={() => { onLeave(); setOpen(false) }}>
       You have unsaved answers.
     </Dialog>
@@ -86,7 +86,7 @@ describe('Dialog', () => {
     render(<ControlledDialog onCancel={onCancel} />)
     fireEvent.click(screen.getByRole('button', { name: 'Open dialog' }))
     const dialog = screen.getByRole('dialog', { name: 'Confirm action' })
-    fireEvent.click(screen.getByRole('button', { name: 'Cancel' }))
+    fireEvent.click(screen.getByRole('button', { name: "Hủy" }))
     expect(onCancel).toHaveBeenCalledTimes(1)
     expect(dialog).not.toHaveAttribute('open')
   })
@@ -103,20 +103,20 @@ describe('Dialog', () => {
   it('invokes Confirm once and disables it while busy', () => {
     const onConfirm = vi.fn()
     const { rerender } = render(<Dialog open title="Confirm action" onConfirm={onConfirm} busy>Body</Dialog>)
-    const confirm = screen.getByRole('button', { name: 'Confirm' })
+    const confirm = screen.getByRole('button', { name: "Xác nhận" })
     expect(confirm).toBeDisabled()
     fireEvent.click(confirm)
     expect(onConfirm).not.toHaveBeenCalled()
     rerender(<Dialog open title="Confirm action" onConfirm={onConfirm}>Body</Dialog>)
-    fireEvent.click(screen.getByRole('button', { name: 'Confirm' }))
+    fireEvent.click(screen.getByRole('button', { name: "Xác nhận" }))
     expect(onConfirm).toHaveBeenCalledTimes(1)
   })
 
   it('keeps the primary confirm presentation by default and supports danger confirmation', () => {
     const { rerender } = render(<Dialog open title="Confirm action" onConfirm={() => undefined}>Body</Dialog>)
-    expect(screen.getByRole('button', { name: 'Confirm' })).toHaveClass('ui-button--primary')
+    expect(screen.getByRole('button', { name: "Xác nhận" })).toHaveClass('ui-button--primary')
     rerender(<Dialog open title="Confirm action" onConfirm={() => undefined} confirmVariant="danger">Body</Dialog>)
-    expect(screen.getByRole('button', { name: 'Confirm' })).toHaveClass('ui-button--danger')
+    expect(screen.getByRole('button', { name: "Xác nhận" })).toHaveClass('ui-button--danger')
   })
 
   it('restores focus to the trigger when the controlled dialog closes', async () => {
@@ -125,7 +125,7 @@ describe('Dialog', () => {
     const trigger = screen.getByRole('button', { name: 'Open dialog' })
     trigger.focus()
     fireEvent.click(trigger)
-    fireEvent.click(screen.getByRole('button', { name: 'Cancel' }))
+    fireEvent.click(screen.getByRole('button', { name: "Hủy" }))
     await waitFor(() => expect(trigger).toHaveFocus())
   })
 
@@ -133,7 +133,7 @@ describe('Dialog', () => {
     render(<ControlledDecisionDialog onLeave={() => undefined} />)
     fireEvent.click(screen.getByRole('button', { name: 'Open dialog' }))
     const dialog = screen.getByRole('dialog', { name: 'Unsaved answers' })
-    const stay = screen.getByRole('button', { name: 'Stay' })
+    const stay = screen.getByRole('button', { name: "Ở lại" })
     expect(dialog).toHaveFocus()
 
     const tab = new KeyboardEvent('keydown', { key: 'Tab', bubbles: true, cancelable: true })
@@ -146,8 +146,8 @@ describe('Dialog', () => {
     render(<ControlledDecisionDialog onLeave={() => undefined} />)
     fireEvent.click(screen.getByRole('button', { name: 'Open dialog' }))
     const dialog = screen.getByRole('dialog', { name: 'Unsaved answers' })
-    const stay = screen.getByRole('button', { name: 'Stay' })
-    const leave = screen.getByRole('button', { name: 'Leave' })
+    const stay = screen.getByRole('button', { name: "Ở lại" })
+    const leave = screen.getByRole('button', { name: "Rời trang" })
     expect(dialog).toHaveFocus()
 
     const initialTab = new KeyboardEvent('keydown', { key: 'Tab', bubbles: true, cancelable: true })
@@ -167,8 +167,8 @@ describe('Dialog', () => {
   it('wraps Shift+Tab from the first enabled control to the final control', () => {
     render(<ControlledDecisionDialog onLeave={() => undefined} />)
     fireEvent.click(screen.getByRole('button', { name: 'Open dialog' }))
-    const stay = screen.getByRole('button', { name: 'Stay' })
-    const leave = screen.getByRole('button', { name: 'Leave' })
+    const stay = screen.getByRole('button', { name: "Ở lại" })
+    const leave = screen.getByRole('button', { name: "Rời trang" })
     const reverseTab = new KeyboardEvent('keydown', { key: 'Tab', shiftKey: true, bubbles: true, cancelable: true })
     fireEvent(stay, reverseTab)
     expect(reverseTab.defaultPrevented).toBe(true)
@@ -179,7 +179,7 @@ describe('Dialog', () => {
     render(<ControlledDecisionDialog onLeave={() => undefined} />)
     fireEvent.click(screen.getByRole('button', { name: 'Open dialog' }))
     const dialog = screen.getByRole('dialog', { name: 'Unsaved answers' })
-    const leave = screen.getByRole('button', { name: 'Leave' })
+    const leave = screen.getByRole('button', { name: "Rời trang" })
     const reverseTab = new KeyboardEvent('keydown', { key: 'Tab', shiftKey: true, bubbles: true, cancelable: true })
     fireEvent(dialog, reverseTab)
     expect(reverseTab.defaultPrevented).toBe(true)
@@ -190,8 +190,8 @@ describe('Dialog', () => {
     render(<ControlledDecisionDialog onLeave={() => undefined} />)
     fireEvent.click(screen.getByRole('button', { name: 'Open dialog' }))
     const dialog = screen.getByRole('dialog', { name: 'Unsaved answers' })
-    const stay = screen.getByRole('button', { name: 'Stay' })
-    const leave = screen.getByRole('button', { name: 'Leave' })
+    const stay = screen.getByRole('button', { name: "Ở lại" })
+    const leave = screen.getByRole('button', { name: "Rời trang" })
     stay.setAttribute('disabled', '')
     const tab = new KeyboardEvent('keydown', { key: 'Tab', bubbles: true, cancelable: true })
     fireEvent(dialog, tab)
@@ -206,7 +206,7 @@ describe('Dialog', () => {
   it('keeps focus on the only enabled control when Tab would wrap', () => {
     render(<Dialog open title="One control" onCancel={() => undefined}>Body</Dialog>)
     const dialog = screen.getByRole('dialog', { name: 'One control' })
-    const cancel = screen.getByRole('button', { name: 'Cancel' })
+    const cancel = screen.getByRole('button', { name: "Hủy" })
     cancel.focus()
     const tab = new KeyboardEvent('keydown', { key: 'Tab', bubbles: true, cancelable: true })
     fireEvent(cancel, tab)
@@ -223,8 +223,8 @@ describe('Dialog', () => {
     render(<ControlledDecisionDialog onLeave={() => undefined} />)
     fireEvent.click(screen.getByRole('button', { name: 'Open dialog' }))
     const dialog = screen.getByRole('dialog', { name: 'Unsaved answers' })
-    screen.getByRole('button', { name: 'Stay' }).setAttribute('disabled', '')
-    screen.getByRole('button', { name: 'Leave' }).setAttribute('disabled', '')
+    screen.getByRole('button', { name: "Ở lại" }).setAttribute('disabled', '')
+    screen.getByRole('button', { name: "Rời trang" }).setAttribute('disabled', '')
     expect(dialog).toHaveFocus()
     const tab = new KeyboardEvent('keydown', { key: 'Tab', bubbles: true, cancelable: true })
     fireEvent(dialog, tab)
@@ -254,7 +254,7 @@ describe('Dialog', () => {
     trigger.focus()
     fireEvent.click(trigger)
     const dialog = screen.getByRole('dialog', { name: 'Unsaved answers' })
-    fireEvent.click(screen.getByRole('button', { name: 'Stay' }))
+    fireEvent.click(screen.getByRole('button', { name: "Ở lại" }))
     expect(dialog).not.toHaveAttribute('open')
     await waitFor(() => expect(trigger).toHaveFocus())
   })
@@ -264,7 +264,7 @@ describe('Dialog', () => {
     render(<ControlledDecisionDialog onLeave={onLeave} />)
     fireEvent.click(screen.getByRole('button', { name: 'Open dialog' }))
     const dialog = screen.getByRole('dialog', { name: 'Unsaved answers' })
-    fireEvent.click(screen.getByRole('button', { name: 'Leave' }))
+    fireEvent.click(screen.getByRole('button', { name: "Rời trang" }))
     expect(onLeave).toHaveBeenCalledOnce()
     await waitFor(() => expect(dialog).not.toHaveAttribute('open'))
   })
@@ -274,7 +274,7 @@ describe('Dialog', () => {
     const trigger = screen.getByRole('button', { name: 'Open dialog' })
     fireEvent.click(trigger)
     const dialog = screen.getByRole('dialog', { name: 'Unsaved answers' })
-    fireEvent.click(screen.getByRole('button', { name: 'Stay' }))
+    fireEvent.click(screen.getByRole('button', { name: "Ở lại" }))
     trigger.focus()
     const afterClose = new KeyboardEvent('keydown', { key: 'Tab', bubbles: true, cancelable: true })
     fireEvent(dialog, afterClose)

@@ -85,7 +85,7 @@ def test_postgres_learner_lesson_and_attempt_flow(monkeypatch):
             hsk_progress_before=client.get(f"/api/v1/me/progress/hsk/{hsk_id}")
             assert hsk_progress_before.status_code==200 and hsk_progress_before.json()["progress_percentage"]==0
             sections = client.get("/api/v1/pronunciation").json()
-            for code, count in (("INITIALS", 21), ("FINALS", 36), ("TONES", 5)):
+            for code, count in (("INITIALS", 21), ("FINALS", 36), ("TONES", 5), ("SANDHI", 12)):
                 section = next(item for item in sections if item["code"] == code)
                 for index in range(count):
                     assert client.post("/api/v1/pronunciation/lesson/advance", json={"section_code": code, "step_index": index}).status_code == 200

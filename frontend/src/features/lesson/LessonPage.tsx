@@ -1,25 +1,27 @@
 import { useRef, useState } from 'react'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
-import { useParams } from 'react-router'
+import { Link, Navigate, useLocation, useParams } from 'react-router'
 import { queryKeys } from '../../app/query/keys'
 import { getHskLevels } from '../curriculum/api'
 import { getLessonProgress } from '../progress/api'
-import { markGrammarViewed, markVocabularyViewed, getLesson } from './api'
+import { markGrammarViewed, getLesson } from './api'
 import { ExerciseSection } from './ExerciseSection'
 import { LessonHeader } from './LessonHeader'
-import { GrammarSection, VocabularySection } from './TheorySections'
-import { LessonChatRegion } from '../conversation/LessonChatRegion'
-import { Alert, Button, LoadingState, PageHeader } from '../../components/ui'
+import { GrammarSection } from './TheorySections'
+import { ReadingSection } from './ReadingSection'
+import { Alert, Button, EmptyState, LoadingState, PageHeader } from '../../components/ui'
+import { VocabularyStudy } from './VocabularyStudy'
+import { vocabularyPath } from './vocabularyRoutes'
+import { legacyLessonParts, lessonPartPath, type LessonPart } from './lessonRoutes'
+import { useLessonStudyPosition } from './useLessonStudyPosition'
 
-export function LessonPage() {
-  const { lessonId } = useParams()
+export function LessonPage({ part = 'vocabulary' }: { part?: LessonPart }) {
+  const { lessonId, vocabularyId } = useParams()
+  const { hash } = useLocation()
   const queryClient = useQueryClient()
-  const [vocabularyExpanded, setVocabularyExpanded] = useState<Record<string, boolean>>({})
   const [grammarExpanded, setGrammarExpanded] = useState<Record<string, boolean>>({})
   const [actionErrors, setActionErrors] = useState<Record<string, string | undefined>>({})
-  const vocabularyPendingIds = useRef(new Set<string>())
   const grammarPendingIds = useRef(new Set<string>())
-  const [vocabularyPending, setVocabularyPending] = useState<Record<string, boolean>>({})
   const [grammarPending, setGrammarPending] = useState<Record<string, boolean>>({})
   const lessonQuery = useQuery({ queryKey: queryKeys.lesson(lessonId ?? ''), queryFn: () => getLesson(lessonId!), enabled: !!lessonId })
   const progressQuery = useQuery({ queryKey: queryKeys.lessonProgress(lessonId ?? ''), queryFn: () => getLessonProgress(lessonId!), enabled: !!lessonQuery.data })
@@ -28,22 +30,18 @@ export function LessonPage() {
   const progress = progressQuery.data
   const hskLevel = levelsQuery.data?.find((item) => item.id === lesson?.hsk_level_id)
   const hskLabel = hskLevel ? hskLevel.title ?? `HSK ${hskLevel.level_number}` : null
-  const vocabularyViewed = Object.fromEntries(progress?.vocabulary.map((row) => [row.id, row.viewed]) ?? [])
   const grammarViewed = Object.fromEntries(progress?.grammar.map((row) => [row.id, row.viewed]) ?? [])
+  const words = [...(lesson?.vocabulary ?? [])].sort((a, b) => a.order_index - b.order_index)
+  const wordIndex = vocabularyId ? words.findIndex(word => word.id === vocabularyId) : 0
+  const theoryReady = Boolean(progress?.theory_completed_at) && (lesson?.readings ?? []).every(reading => (progress?.readings ?? []).some(row => row.id === reading.id && row.completed))
+  const root = useLessonStudyPosition(Boolean(lesson?.id && progress?.lesson_id), `${lessonId}:${part}:${vocabularyId ?? ''}`)
+  const sectionCounts = {
+    vocabulary: `${progress?.vocabulary.filter(row => row.viewed).length ?? 0}/${words.length}`,
+    grammar: `${progress?.grammar.filter(row => row.viewed).length ?? 0}/${lesson?.grammar.length ?? 0}`,
+    readings: `${progress?.readings?.filter(row => row.completed).length ?? 0}/${lesson?.readings?.length ?? 0}`,
+    practice: progress?.completed_at ? 'Đã đạt' : theoryReady ? 'Đã mở' : 'Chưa mở',
+  }
 
-  const vocabularyMutation = useMutation({
-    mutationFn: (linkId: string) => markVocabularyViewed(lessonId!, linkId),
-    onSuccess: async () => Promise.all([
-      queryClient.invalidateQueries({ queryKey: queryKeys.lessonProgress(lessonId ?? '') }),
-      queryClient.invalidateQueries({ queryKey: queryKeys.dashboard }),
-      queryClient.invalidateQueries({ queryKey: queryKeys.progressOverview }),
-      queryClient.invalidateQueries({ queryKey: queryKeys.curriculumLevels }),
-      queryClient.invalidateQueries({ queryKey: queryKeys.curriculumHsk(lesson?.hsk_level_id ?? '') }),
-      queryClient.invalidateQueries({ queryKey: queryKeys.curriculumHskRoot }),
-      queryClient.invalidateQueries({ queryKey: queryKeys.progressHsk(lesson?.hsk_level_id ?? '') }),
-      queryClient.invalidateQueries({ queryKey: queryKeys.progressHskRoot }),
-    ]),
-  })
   const grammarMutation = useMutation({
     mutationFn: (linkId: string) => markGrammarViewed(lessonId!, linkId),
     onSuccess: async () => Promise.all([
@@ -58,19 +56,6 @@ export function LessonPage() {
     ]),
   })
 
-  const onVocabularyToggle = (linkId: string, wasOpen: boolean) => {
-    setVocabularyExpanded((current) => ({ ...current, [linkId]: !wasOpen }))
-    if (wasOpen || vocabularyViewed[linkId] || vocabularyPendingIds.current.has(linkId) || !lessonId) return
-    vocabularyPendingIds.current.add(linkId)
-    setVocabularyPending((current) => ({ ...current, [linkId]: true }))
-    setActionErrors((current) => ({ ...current, [`v:${linkId}`]: undefined }))
-    void vocabularyMutation.mutateAsync(linkId)
-      .catch(() => setActionErrors((current) => ({ ...current, [`v:${linkId}`]: 'Could not save viewed state or refresh progress. Close and open the item to try again.' })))
-      .finally(() => {
-        vocabularyPendingIds.current.delete(linkId)
-        setVocabularyPending((current) => { const { [linkId]: _, ...remaining } = current; return remaining })
-      })
-  }
   const onGrammarToggle = (linkId: string, wasOpen: boolean) => {
     setGrammarExpanded((current) => ({ ...current, [linkId]: !wasOpen }))
     if (wasOpen || grammarViewed[linkId] || grammarPendingIds.current.has(linkId) || !lessonId) return
@@ -78,38 +63,34 @@ export function LessonPage() {
     setGrammarPending((current) => ({ ...current, [linkId]: true }))
     setActionErrors((current) => ({ ...current, [`g:${linkId}`]: undefined }))
     void grammarMutation.mutateAsync(linkId)
-      .catch(() => setActionErrors((current) => ({ ...current, [`g:${linkId}`]: 'Could not save viewed state or refresh progress. Close and open the item to try again.' })))
+      .catch(() => setActionErrors((current) => ({ ...current, [`g:${linkId}`]: "Không thể lưu trạng thái đã xem hoặc cập nhật tiến độ. Hãy đóng rồi mở lại nội dung để thử lại." })))
       .finally(() => {
         grammarPendingIds.current.delete(linkId)
         setGrammarPending((current) => { const { [linkId]: _, ...remaining } = current; return remaining })
       })
   }
 
-  if (!lessonId) return <section className="learner-page lesson-page lesson-manuscript screen" aria-labelledby="page-title"><PageHeader title="Lesson" titleId="page-title" /><Alert role="alert" tone="error">Lesson was not found.</Alert></section>
-  if (lessonQuery.isPending || (lesson && progressQuery.isPending)) return <section className="learner-page lesson-page lesson-manuscript screen" aria-labelledby="page-title"><PageHeader title="Lesson" titleId="page-title" /><LoadingState>Loading lesson…</LoadingState></section>
-  if ((lessonQuery.isError && !lesson) || (progressQuery.isError && !progress) || !lesson || !progress) return <section className="learner-page lesson-page lesson-manuscript screen" aria-labelledby="page-title"><PageHeader title="Lesson" titleId="page-title" />
-    <Alert role="alert" tone="error" action={<Button variant="secondary" onClick={() => void (lessonQuery.isError ? lessonQuery.refetch() : progressQuery.refetch())}>Retry</Button>}>Could not load lesson content.</Alert></section>
+  if (!lessonId) return <section className="learner-page lesson-page lesson-manuscript screen" aria-labelledby="page-title"><PageHeader title="Bài học" titleId="page-title" /><Alert role="alert" tone="error">Không tìm thấy bài học.</Alert></section>
+  if (legacyLessonParts[hash]) return <Navigate replace to={lessonPartPath(lessonId, legacyLessonParts[hash])}/>
+  if (lessonQuery.isPending || (lesson && progressQuery.isPending)) return <section className="learner-page lesson-page lesson-manuscript screen" aria-labelledby="page-title"><PageHeader title="Bài học" titleId="page-title" /><LoadingState>Đang tải bài học…</LoadingState></section>
+  if ((lessonQuery.isError && !lesson) || (progressQuery.isError && !progress) || !lesson || !progress) return <section className="learner-page lesson-page lesson-manuscript screen" aria-labelledby="page-title"><PageHeader title="Bài học" titleId="page-title" />
+    <Alert role="alert" tone="error" action={<Button variant="secondary" onClick={() => void (lessonQuery.isError ? lessonQuery.refetch() : progressQuery.refetch())}>Thử lại</Button>}>Không thể tải nội dung bài học.</Alert></section>
 
-  return <section className="learner-page lesson-page lesson-manuscript screen" aria-labelledby="page-title">
-    {(lessonQuery.isFetching || progressQuery.isFetching) && <LoadingState>Refreshing lesson…</LoadingState>}
-    {(lessonQuery.isError || progressQuery.isError) && <Alert role="status" tone="warning">Could not refresh lesson information. Showing the last loaded information.</Alert>}
-    <LessonHeader lesson={lesson} progress={progress} hskLabel={hskLabel} />
+  return <section ref={root} className="learner-page lesson-page lesson-manuscript lesson-part-page screen lesson-study-workspace" data-lesson-part={part} aria-labelledby="page-title">
+    {(lessonQuery.isError || progressQuery.isError) && <Alert role="status" tone="warning">Chưa cập nhật được bài học. Đang hiển thị thông tin đã tải.</Alert>}
+    <LessonHeader lesson={lesson} progress={progress} hskLabel={hskLabel} refreshing={lessonQuery.isFetching || progressQuery.isFetching} />
     <div className="lesson-manuscript__body">
-      <nav className="lesson-sequence-nav lesson-manuscript__index" aria-label="Lesson sections">
-        <a href="#vocabulary"><span lang="zh-Hans">生词</span><span>Vocabulary</span></a>
-        <a href="#grammar"><span lang="zh-Hans">语法</span><span>Grammar</span></a>
-        <a href="#exercise"><span lang="zh-Hans">练习</span><span>Practice</span></a>
+      <nav className="lesson-sequence-nav lesson-manuscript__index" aria-label="Các phần của bài học">
+        {([['vocabulary', '生词', 'Từ vựng'], ['grammar', '语法', 'Ngữ pháp'], ['readings', '课文', 'Bài khóa'], ['practice', '练习', 'Luyện tập']] as const).map(([key, hanzi, label]) => <Link key={key} to={lessonPartPath(lesson.id, key)} aria-label={label} aria-current={part === key ? 'page' : undefined}><span lang="zh-Hans" aria-hidden="true">{hanzi}</span><span>{label}<small>{sectionCounts[key]}</small></span></Link>)}
       </nav>
-      <div className="lesson-manuscript__chapters">
-        <VocabularySection items={lesson.vocabulary} viewed={vocabularyViewed} expanded={vocabularyExpanded}
-          pending={vocabularyPending}
-          errors={Object.fromEntries(lesson.vocabulary.map((item) => [item.id, actionErrors[`v:${item.id}`]]))} onToggle={onVocabularyToggle} />
-        <GrammarSection items={lesson.grammar} viewed={grammarViewed} expanded={grammarExpanded}
+      <div id="lesson-study-content" className="lesson-manuscript__chapters">
+        {part === 'vocabulary' && (vocabularyId && wordIndex < 0 ? <Alert role="alert" tone="error">Không tìm thấy từ vựng này trong bài học. Hãy chọn Từ vựng để học lại từ đầu.</Alert> : words.length ? <VocabularyStudy key={`${lesson.id}:${words[wordIndex].id}`} lesson={lesson} progress={progress} words={words} index={wordIndex}/> : <section className="lesson-section"><h2>Từ vựng</h2><EmptyState title="Chưa có từ vựng">Bài học này chưa có từ vựng.</EmptyState><Link className="learner-link-action" to={lessonPartPath(lesson.id, 'grammar')}>Tiếp: Ngữ pháp</Link></section>)}
+        {part === 'grammar' && <><GrammarSection items={lesson.grammar} viewed={grammarViewed} expanded={grammarExpanded}
           pending={grammarPending}
-          errors={Object.fromEntries(lesson.grammar.map((item) => [item.id, actionErrors[`g:${item.id}`]]))} onToggle={onGrammarToggle} />
-        <ExerciseSection assessmentIds={lesson.assessment_ids} theoryCompleted={Boolean(progress.theory_completed_at)} />
+          errors={Object.fromEntries(lesson.grammar.map((item) => [item.id, actionErrors[`g:${item.id}`]]))} onToggle={onGrammarToggle} /><nav className="lesson-part-navigation" aria-label="Chuyển phần học"><Link to={words.length ? vocabularyPath(lesson.id, words.at(-1)!.id) : lessonPartPath(lesson.id, 'vocabulary')}>← Từ vựng</Link><Link className="learner-link-action" to={lessonPartPath(lesson.id, 'readings')}>Tiếp: Bài khóa</Link></nav></>}
+        {part === 'readings' && <><ReadingSection key={lesson.id} lessonId={lesson.id} readings={lesson.readings ?? []} completedIds={new Set((progress.readings ?? []).filter(row => row.completed).map(row => row.id))}/><nav className="lesson-part-navigation" aria-label="Chuyển phần học"><Link to={lessonPartPath(lesson.id, 'grammar')}>← Ngữ pháp</Link><Link className="learner-link-action" to={lessonPartPath(lesson.id, 'practice')}>Đến luyện tập</Link></nav></>}
+        {part === 'practice' && <ExerciseSection assessmentIds={lesson.assessment_ids} theoryCompleted={theoryReady} />}
       </div>
     </div>
-    <LessonChatRegion lessonId={lesson.id} lessonNumber={lesson.lesson_number} hskLabel={hskLabel} />
   </section>
 }

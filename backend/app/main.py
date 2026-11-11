@@ -27,7 +27,8 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     )
     register_application_error_handler(application)
     application.include_router(auth_router, prefix=settings.api_v1_prefix)
-    application.include_router(conversation_router, prefix=settings.api_v1_prefix)
+    if settings.knowledge_ai_enabled:
+        application.include_router(conversation_router, prefix=settings.api_v1_prefix)
     application.include_router(progress_router, prefix=settings.api_v1_prefix)
     application.include_router(curriculum_router, prefix=settings.api_v1_prefix)
     application.include_router(exercise_router, prefix=settings.api_v1_prefix)

@@ -85,7 +85,7 @@ async def register(
             ),
         )
         await _commit_auth_operation(session)
-        return IssuedSession(user, create_access_token(user.id, user.role, settings), raw_refresh)
+        return IssuedSession(user, create_access_token(user.id, user.role, settings, session_version=user.session_version), raw_refresh)
     except IntegrityError as exc:
         await session.rollback()
         if getattr(getattr(exc.orig, "diag", None), "constraint_name", None) in {"uq_users_email", "users_email_key"}:
@@ -142,7 +142,7 @@ async def login(
         ),
     )
     await _commit_auth_operation(session)
-    return IssuedSession(current, create_access_token(current.id, current.role, settings), raw_refresh)
+    return IssuedSession(current, create_access_token(current.id, current.role, settings, session_version=current.session_version), raw_refresh)
 
 
 async def refresh(
@@ -184,7 +184,7 @@ async def refresh(
         ),
     )
     await _commit_auth_operation(session)
-    return IssuedSession(user, create_access_token(user.id, user.role, settings), raw_new)
+    return IssuedSession(user, create_access_token(user.id, user.role, settings, session_version=user.session_version), raw_new)
 
 
 async def logout(session: AsyncSession, raw_refresh: str | None) -> None:
@@ -201,9 +201,20 @@ async def logout(session: AsyncSession, raw_refresh: str | None) -> None:
 
 
 async def logout_all(session: AsyncSession, user_id: UUID) -> None:
-    await repository.lock_user_by_id(session, user_id)
+    user = await repository.lock_user_by_id(session, user_id)
+    if user is not None:
+        await repository.invalidate_access_sessions(session, user)
     await repository.revoke_all_refresh_tokens(session, user_id)
     await _commit_auth_operation(session)
+
+
+async def update_profile(session: AsyncSession, user_id: UUID, full_name: str) -> User:
+    user = await repository.lock_user_by_id(session, user_id)
+    if user is None or not user.is_active:
+        raise ApplicationError('AUTHENTICATION_REQUIRED', 'Authentication is required', status_code=401)
+    await repository.update_profile_name(session, user, full_name)
+    await _commit_auth_operation(session)
+    return user
 
 
 async def change_password(
@@ -218,6 +229,9 @@ async def change_password(
         logger.info("Password change verification failed")
         await session.rollback()
         raise ApplicationError("INVALID_CURRENT_PASSWORD", "Current password is incorrect", status_code=400)
+
+    if current_password == new_password:
+        raise ApplicationError('PASSWORD_UNCHANGED', 'New password must differ from current password', status_code=422)
 
     digest = hash_password(new_password)
     user_id = user.id

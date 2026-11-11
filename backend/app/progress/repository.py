@@ -12,6 +12,8 @@ from app.database.models import (
     LearnerVocabularyProgress,
     PronunciationProgress,
     PronunciationLessonProgress,
+    LessonReading,
+    LearnerReadingProgress,
 )
 
 
@@ -113,10 +115,42 @@ async def mark_theory_complete_if_ready(session: AsyncSession, user_id: UUID, le
         LearnerGrammarProgress.user_id == user_id,
         LearnerGrammarProgress.lesson_grammar_id.in_(grammar_ids) if grammar_ids else False,
     ))).scalars()) if grammar_ids else set()
-    if progress.theory_completed_at is None and vocab_ids == viewed_vocab and grammar_ids == viewed_grammar:
+    readings_ready = await readings_complete(session, user_id, lesson_id)
+    ready = vocab_ids == viewed_vocab and grammar_ids == viewed_grammar and readings_ready
+    if progress.theory_completed_at is None and ready:
         progress.theory_completed_at = datetime.now(UTC)
         await session.flush()
+    elif progress.theory_completed_at is not None and not readings_ready:
+        progress.theory_completed_at = None
+        await session.flush()
     return progress
+
+
+async def reading_progress(session: AsyncSession, user_id: UUID, lesson_id: UUID):
+    rows = (await session.execute(select(LessonReading, LearnerReadingProgress).outerjoin(
+        LearnerReadingProgress,
+        (LearnerReadingProgress.lesson_reading_id == LessonReading.id) &
+        (LearnerReadingProgress.user_id == user_id) &
+        (LearnerReadingProgress.reading_version == LessonReading.version),
+    ).where(LessonReading.lesson_id == lesson_id).order_by(LessonReading.order_index, LessonReading.id))).all()
+    return [{'id': row.id, 'completed': progress is not None,
+             'completed_at': progress.completed_at if progress else None} for row, progress in rows]
+
+
+async def readings_complete(session: AsyncSession, user_id: UUID, lesson_id: UUID) -> bool:
+    return all(row['completed'] for row in await reading_progress(session, user_id, lesson_id))
+
+
+async def mark_reading_complete(session: AsyncSession, user_id: UUID, reading: LessonReading):
+    await session.execute(insert(LearnerReadingProgress).values(
+        user_id=user_id, lesson_reading_id=reading.id, reading_version=reading.version, completed_at=datetime.now(UTC),
+    ).on_conflict_do_update(
+        index_elements=['user_id', 'lesson_reading_id'],
+        set_={'reading_version': reading.version, 'completed_at': datetime.now(UTC)},
+        where=LearnerReadingProgress.reading_version != reading.version,
+    ))
+    return await session.scalar(select(LearnerReadingProgress.completed_at).where(
+        LearnerReadingProgress.user_id == user_id, LearnerReadingProgress.lesson_reading_id == reading.id))
 
 
 async def ensure_hsk_started(session: AsyncSession, user_id: UUID, hsk_id: UUID) -> None:
@@ -175,7 +209,7 @@ async def update_lesson_completion(session: AsyncSession, user_id: UUID, lesson_
     progress = await get_lesson_progress(session, user_id, lesson_id)
     if progress is None or progress.theory_completed_at is None or progress.completed_at is not None:
         return False
-    if has_passing_exercise:
+    if has_passing_exercise and await readings_complete(session, user_id, lesson_id):
         progress.completed_at = datetime.now(UTC)
         await session.flush()
         return True

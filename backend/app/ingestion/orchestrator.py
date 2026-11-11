@@ -11,6 +11,7 @@ from sqlalchemy.exc import IntegrityError
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.errors import ApplicationError
+from app.core.features import require_knowledge_ai
 from app.database.models import (
     Document, KnowledgeSource, KnowledgeVersion, Lesson, TransformationRun,
 )
@@ -288,6 +289,7 @@ class IngestionOrchestrator:
         self.storage = storage
 
     async def process_document(self, document_id: UUID) -> dict:
+        require_knowledge_ai()
         raw_started = perf_counter()
         await self.session.rollback()
         async with self.session.begin():
@@ -395,6 +397,7 @@ class IngestionOrchestrator:
         return ref
 
     async def approve_document(self, document_id: UUID, admin_id: UUID) -> dict:
+        require_knowledge_ai()
         review_started = perf_counter()
         await self.session.rollback()
         async with self.session.begin():
@@ -462,6 +465,7 @@ class IngestionOrchestrator:
         return {"id": document_id, "review_status": "APPROVED" if restored else "REJECTED"}
 
     async def retry_document_knowledge(self, document_id: UUID) -> dict:
+        require_knowledge_ai()
         artifact = await self._approved_artifact(document_id)
         if artifact is None:
             raise _error("INVALID_SOURCE_STATE", "Only an approved Document can be rebuilt.")
@@ -484,6 +488,7 @@ class IngestionOrchestrator:
         return {"id": document_id, "review_status": "APPROVED", "knowledge_version_id": version_id}
 
     async def process_published_lesson(self, lesson_id: UUID) -> dict:
+        require_knowledge_ai()
         try:
             version_id = await _allocate_lesson_version(self.session, lesson_id)
         except ApplicationError:
@@ -542,6 +547,7 @@ class IngestionOrchestrator:
             ) from exc
 
     async def retry_lesson_knowledge(self, lesson_id: UUID) -> dict:
+        require_knowledge_ai()
         return await self.process_published_lesson(lesson_id)
 
 

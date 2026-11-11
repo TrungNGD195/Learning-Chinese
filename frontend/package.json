@@ -7,7 +7,9 @@
     "node": ">=22.12"
   },
   "scripts": {
+    "predev": "node scripts/prepare-hanzi-data.mjs",
     "dev": "vite",
+    "prebuild": "node scripts/prepare-hanzi-data.mjs",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview",
@@ -20,8 +22,8 @@
     "@tanstack/react-query": "^5.104.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
-    "react-markdown": "^10.1.0",
-    "react-router": "^7.18.4"
+    "react-router": "^7.18.4",
+    "three": "^0.187.0"
   },
   "devDependencies": {
     "@playwright/test": "^1.64.0",
@@ -31,7 +33,9 @@
     "@types/node": "^24.13.3",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.7",
+    "@types/three": "^0.187.0",
     "@vitejs/plugin-react": "^6.1.1",
+    "hanzi-writer-data": "2.0.1",
     "jsdom": "^29.1.1",
     "openapi-typescript": "^7.13.0",
     "oxlint": "^1.81.0",

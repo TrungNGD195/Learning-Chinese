@@ -33,6 +33,10 @@ export function getMe() {
   return apiClient<ResponseBodyOf<typeof mePath, 'get'>>({ method: 'GET', path: '/auth/me' })
 }
 
+export function updateProfile(body: RequestBodyOf<typeof mePath, 'patch'>) {
+  return apiClient<ResponseBodyOf<typeof mePath, 'patch'>, RequestBodyOf<typeof mePath, 'patch'>>({ method: 'PATCH', path: '/auth/me', body })
+}
+
 export async function refresh(): Promise<void> {
   await apiClient<ResponseBodyOf<typeof refreshPath, 'post'>>({ method: 'POST', path: '/auth/refresh' })
 }
@@ -67,6 +71,7 @@ export const authApi = {
   register,
   login,
   getMe,
+  updateProfile,
   refresh,
   logout,
   logoutAll,

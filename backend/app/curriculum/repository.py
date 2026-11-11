@@ -130,6 +130,15 @@ async def admin_generation_lesson(session:AsyncSession, lesson_id:UUID):
     return lesson, await lesson_vocabulary(session, lesson_id), await lesson_grammar(session, lesson_id)
 
 
+async def admin_generation_prior_lessons(session: AsyncSession, lesson: Lesson):
+    """Earlier lessons in the same level, including drafts visible to the editor."""
+    return (await session.scalars(select(Lesson).where(
+        Lesson.hsk_level_id == lesson.hsk_level_id,
+        Lesson.lesson_number < lesson.lesson_number,
+        Lesson.status != "ARCHIVED",
+    ).order_by(Lesson.lesson_number, Lesson.id))).all()
+
+
 async def admin_generation_periodic_scope(session:AsyncSession, lesson_ids:list[UUID], vocabulary_ids:list[UUID], grammar_ids:list[UUID]):
     lessons = (await session.execute(
         select(Lesson).where(Lesson.id.in_(lesson_ids)).order_by(Lesson.lesson_number, Lesson.id)

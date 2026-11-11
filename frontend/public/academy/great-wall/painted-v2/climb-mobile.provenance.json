@@ -1,0 +1,37 @@
+{
+  "tool": "built-in image_gen",
+  "intent": "responsive portrait production variant of measured painted-scene region",
+  "prompt_file": "climb-mobile.prompt.txt",
+  "reference": ".impeccable/build/crops/painted-scene.png",
+  "approved_reference": ".impeccable/proposals/uphill-bo-v1/uphill-bo-v1.png",
+  "original": "C:/Users/Diep_PC/.codex/generated_images/01a1bed5-5bc8-7352-a543-4e33c35d5cdd/exec-14f15306-74ce-429b-960c-2268f867d5a8.png",
+  "source_png": "assets/plates/painted-climb-mobile.png",
+  "dimensions": [
+    941,
+    1672
+  ],
+  "transform": "Full original retained, RGB WebP quality92; no crop, resize, recolor, keying, or scene alteration.",
+  "alpha": false,
+  "status": "needs_parent_review",
+  "landmarks_normalized": {
+    "gate_floor_anchor": [
+      0.51,
+      0.465
+    ],
+    "open_landing_box": [
+      0.3,
+      0.415,
+      0.4,
+      0.055
+    ],
+    "bo_foreground_foot_region": [
+      0.32,
+      0.72,
+      0.35,
+      0.17
+    ]
+  },
+  "landmark_measurement": "Visual estimation from rendered original; parent must align overlay in final viewport.",
+  "sha256": "775b778a780e238658d814e24a031d1a4162f390b37fd2403e62592e2d52e8c5",
+  "bytes": 596436
+}

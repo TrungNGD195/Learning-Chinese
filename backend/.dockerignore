@@ -11,4 +11,5 @@ storage
 tests
 scripts/*
 !scripts/create_hsk1_lesson1_draft.py
+!scripts/add_hsk1_lesson1_readings.py
 codex-tasks

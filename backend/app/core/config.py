@@ -45,6 +45,7 @@ class Settings(BaseSettings):
     cookie_samesite: Literal["lax", "strict"] = "lax"
     document_max_upload_mb: int = Field(default=20, gt=0)
     document_storage_root: Path = Path("storage/documents")
+    knowledge_ai_enabled: bool = True
     embedding_provider: Literal["local", "modal"] = "local"
     embedding_model_name: Literal["BAAI/bge-m3"] = "BAAI/bge-m3"
     embedding_model_revision: Literal["5617a9f61b028005a4858fdac845db406aefb181"] = "5617a9f61b028005a4858fdac845db406aefb181"
@@ -218,7 +219,7 @@ class Settings(BaseSettings):
                 raise ValueError("COOKIE_SECURE must be enabled in production")
             if len(self.secret_key.get_secret_value()) < 32:
                 raise ValueError("SECRET_KEY must contain at least 32 characters in production")
-            if self.embedding_provider != "modal" or self.reranker_provider != "modal":
+            if self.knowledge_ai_enabled and (self.embedding_provider != "modal" or self.reranker_provider != "modal"):
                 raise ValueError("Production must use Modal for embedding and reranking providers")
 
         modal_selected = self.embedding_provider == "modal" or self.reranker_provider == "modal"

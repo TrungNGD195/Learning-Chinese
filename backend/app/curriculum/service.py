@@ -45,6 +45,8 @@ async def get_lesson(session: AsyncSession,user_id: UUID,lesson_id: UUID):
     vocab=await repository.lesson_vocabulary(session,lesson_id)
     grammar=await repository.lesson_grammar(session,lesson_id)
     assessments=await repository.lesson_assessments(session,lesson_id)
+    from app.readings.service import list_readings
+    readings = await list_readings(session, lesson_id)
     return {
         "id":lesson.id,"hsk_level_id":lesson.hsk_level_id,"lesson_number":lesson.lesson_number,
         "title":lesson.title,"description":lesson.description,
@@ -56,7 +58,7 @@ async def get_lesson(session: AsyncSession,user_id: UUID,lesson_id: UUID):
             "item":{"id":item.id,"name":item.name,"structure":item.structure,
                 "explanation":item.explanation,"usage":item.usage}}
             for link,item in grammar],
-        "assessment_ids":assessments,
+        "assessment_ids":assessments, "readings": readings,
     }
 
 
@@ -90,12 +92,39 @@ async def materialize_generation_scope(session, request):
                     "name": item.name, "structure": item.structure, "explanation": item.explanation,
                     "usage": item.usage, "note": link.note, "example": link.example,
                     "order_index": link.order_index} for link, item in grammar_rows]
+        prior_lessons = await curriculum_repository.admin_generation_prior_lessons(session, lesson)
+        review_lessons = []
+        vocabulary_ids = [item.id for _, item in vocab_rows]
+        grammar_ids = [item.id for _, item in grammar_rows]
+        for prior in prior_lessons:
+            prior_data = {"id": str(prior.id), "title": prior.title, "description": prior.description,
+                          "lesson_number": prior.lesson_number, "hsk_level_id": str(prior.hsk_level_id)}
+            review_lessons.append(prior_data)
+            for link, item in await curriculum_repository.lesson_vocabulary(session, prior.id):
+                if item.id in vocabulary_ids:
+                    continue
+                vocabulary_ids.append(item.id)
+                vocabulary.append({"source_ref": f"vocab:{item.id}", "lesson": prior_data,
+                                   "hanzi": item.hanzi, "pinyin": item.pinyin,
+                                   "vietnamese_meaning": item.vietnamese_meaning,
+                                   "part_of_speech": item.part_of_speech, "note": link.note,
+                                   "example": link.example, "order_index": link.order_index})
+            for link, item in await curriculum_repository.lesson_grammar(session, prior.id):
+                if item.id in grammar_ids:
+                    continue
+                grammar_ids.append(item.id)
+                grammar.append({"source_ref": f"grammar:{item.id}", "lesson": prior_data,
+                                "name": item.name, "structure": item.structure,
+                                "explanation": item.explanation, "usage": item.usage,
+                                "note": link.note, "example": link.example, "order_index": link.order_index})
         return {
-            "assessment_type": request.type, "lesson_id": request.lesson_id, "lesson_ids": (request.lesson_id,),
-            "vocabulary_ids": tuple(item.id for _, item in vocab_rows), "grammar_ids": tuple(item.id for _, item in grammar_rows),
+            "assessment_type": request.type, "lesson_id": request.lesson_id,
+            "lesson_ids": (request.lesson_id, *(prior.id for prior in prior_lessons)),
+            "vocabulary_ids": tuple(vocabulary_ids), "grammar_ids": tuple(grammar_ids),
             "title": request.title or f"AI Draft — {lesson.title}", "description": request.description,
             "pass_threshold": request.pass_threshold,
-            "payload": {"scope": {"lesson": lesson_data}, "vocabulary": vocabulary, "grammar": grammar},
+            "payload": {"scope": {"lesson": lesson_data, "review_lessons": review_lessons},
+                        "vocabulary": vocabulary, "grammar": grammar},
             "allowed_source_refs": frozenset(item["source_ref"] for item in vocabulary + grammar),
         }
 
@@ -218,10 +247,28 @@ async def admin_lesson_transition(session, ident, action):
     async with session.begin_nested():
         row = await curriculum_repository.admin_get_lesson(session,ident,for_update=True)
         if row is None:fail("NOT_FOUND","Lesson was not found")
-        expected, target = (("DRAFT", "PUBLISHED") if action == "publish" else ("PUBLISHED", "ARCHIVED"))
+        expected, target = {"publish": ("DRAFT", "PUBLISHED"), "unpublish": ("PUBLISHED", "DRAFT"), "archive": ("PUBLISHED", "ARCHIVED")}[action]
         if row.status != expected: fail("INVALID_LIFECYCLE_TRANSITION", "Lesson lifecycle transition is invalid", 409)
         row=await curriculum_repository.admin_transition_lesson(session,row,target,datetime.now(UTC) if action=="publish" else None)
     await session.commit(); return _dump(row, ("id", "hsk_level_id", "lesson_number", "title", "description", "status", "published_at"))
+
+
+async def admin_publish_lesson_package(session, ident):
+    """Publish theory and every active lesson exercise in one transaction."""
+    from app.exercise.service import stage_lesson_exercise_publication
+
+    async with session.begin_nested():
+        lesson = await curriculum_repository.admin_get_lesson(session, ident, for_update=True)
+        if lesson is None:
+            fail("NOT_FOUND", "Lesson was not found")
+        if lesson.status not in {"DRAFT", "PUBLISHED"}:
+            fail("INVALID_LIFECYCLE_TRANSITION", "Archived lessons cannot be published", 409)
+        now = datetime.now(UTC)
+        await stage_lesson_exercise_publication(session, ident, now)
+        if lesson.status == "DRAFT":
+            await curriculum_repository.admin_transition_lesson(session, lesson, "PUBLISHED", now)
+    await session.commit()
+    return _dump(lesson, ("id", "hsk_level_id", "lesson_number", "title", "description", "status", "published_at"))
 
 
 async def admin_lesson_items(session, lesson_id, kind):

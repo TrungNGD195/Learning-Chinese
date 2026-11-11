@@ -60,6 +60,14 @@ class DeterministicGrader:
             correct = {(p["left_id"], p["right_id"]) for p in pairs} == {
                 (p["left_id"], p["right_id"]) for p in expected if isinstance(p, dict)
             }
+            expected_pairs = {(p["left_id"], p["right_id"]) for p in expected if isinstance(p, dict)}
+            if not expected_pairs:
+                raise ValueError("Matching question has no expected pairs")
+            hits = len({(p["left_id"], p["right_id"]) for p in pairs} & expected_pairs)
+            feedback = question.get("rubric") or None
+            if not correct:
+                feedback = f"Bạn nối đúng {hits}/{len(expected_pairs)} cặp; điểm được tính theo số cặp đúng. " + (feedback or "")
+            return GradeResult("GRADED", round(points * hits / len(expected_pairs), 4), correct, feedback)
         elif kind == "reorder_sentence":
             items = config.get("items"); expected = config.get("correct_order")
             if not isinstance(items, list) or not isinstance(expected, list):
@@ -72,4 +80,4 @@ class DeterministicGrader:
             correct = answer["item_ids"] == expected
         else:
             raise ValueError("Unsupported deterministic question type")
-        return GradeResult("GRADED", points if correct else 0.0, correct)
+        return GradeResult("GRADED", points if correct else 0.0, correct, question.get("rubric") or None)

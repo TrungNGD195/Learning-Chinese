@@ -8,11 +8,10 @@ export type DraftAnswer =
   | { kind: 'matching'; pairs: { left_id: string; right_id: string }[] }
   | { kind: 'reorder_sentence'; item_ids: string[] }
 
-export function QuestionRenderer({ question, draft, onChange, language = 'en' }: {
+export function QuestionRenderer({ question, draft, onChange }: {
   question: AssessmentQuestion
   draft: DraftAnswer | undefined
   onChange: (answer: DraftAnswer) => void
-  language?: 'en' | 'vi'
 }) {
   switch (question.type) {
     case 'multiple_choice':
@@ -27,7 +26,8 @@ export function QuestionRenderer({ question, draft, onChange, language = 'en' }:
       </fieldset>
     case 'fill_blank':
       return <label className="question-prompt">{question.prompt}
-        <input type="text" value={draft?.kind === 'text' ? draft.text : ''}
+        <small id={`${question.id}-input-hint`} className="practice-input-hint">Nhập chữ Hán bằng bàn phím tiếng Trung (pinyin).</small>
+        <input type="text" aria-label={question.prompt} aria-describedby={`${question.id}-input-hint`} value={draft?.kind === 'text' ? draft.text : ''}
           onChange={(event) => onChange({ kind: 'text', text: event.currentTarget.value })} />
       </label>
     case 'matching':
@@ -37,12 +37,12 @@ export function QuestionRenderer({ question, draft, onChange, language = 'en' }:
           const selected = draft?.kind === 'matching' ? draft.pairs.find((pair) => pair.left_id === item.id)?.right_id ?? '' : ''
           return <label className="matching-row" key={item.id}>
             <span>{item.text}</span>
-            <select aria-label={language === 'vi' ? `Ghép với ${item.text}` : `Match ${item.text}`} value={selected} onChange={(event) => {
+            <select aria-label={`Ghép với ${item.text}`} value={selected} onChange={(event) => {
               const pairs = draft?.kind === 'matching' ? draft.pairs.filter((pair) => pair.left_id !== item.id) : []
               if (event.currentTarget.value) pairs.push({ left_id: item.id, right_id: event.currentTarget.value })
               onChange({ kind: 'matching', pairs })
             }}>
-              <option value="">{language === 'vi' ? 'Chọn mục ghép' : 'Choose a match'}</option>
+              <option value="">Chọn mục ghép</option>
               {question.config.right_items.map((right) => <option key={right.id} value={right.id}>{right.text}</option>)}
             </select>
           </label>
@@ -55,12 +55,12 @@ export function QuestionRenderer({ question, draft, onChange, language = 'en' }:
         <legend>{question.prompt}</legend>
         <ol className="reorder-list">{rows.map((item, index) => <li key={item.id}>
           <span>{item.text}</span>
-          <button type="button" className="icon-action" aria-label={language === 'vi' ? `Đưa ${item.text} lên` : `Move ${item.text} up`} disabled={index === 0}
-            onClick={() => { const next = [...ids]; [next[index - 1], next[index]] = [next[index], next[index - 1]]; onChange({ kind: 'reorder_sentence', item_ids: next }) }}>↑</button>
-          <button type="button" className="icon-action" aria-label={language === 'vi' ? `Đưa ${item.text} xuống` : `Move ${item.text} down`} disabled={index === rows.length - 1}
-            onClick={() => { const next = [...ids]; [next[index + 1], next[index]] = [next[index], next[index + 1]]; onChange({ kind: 'reorder_sentence', item_ids: next }) }}>↓</button>
+          <button type="button" className="icon-action" aria-label={`Đưa ${item.text} lên`} disabled={index === 0}
+            onClick={() => { const next = [...ids]; [next[index - 1], next[index]] = [next[index], next[index - 1]]; onChange({ kind: 'reorder_sentence', item_ids: next }) }}><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="m6 14 6-6 6 6"/></svg></button>
+          <button type="button" className="icon-action" aria-label={`Đưa ${item.text} xuống`} disabled={index === rows.length - 1}
+            onClick={() => { const next = [...ids]; [next[index + 1], next[index]] = [next[index], next[index + 1]]; onChange({ kind: 'reorder_sentence', item_ids: next }) }}><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="m6 10 6 6 6-6"/></svg></button>
         </li>)}</ol>
-        <button type="button" className="secondary-action" onClick={() => onChange({ kind: 'reorder_sentence', item_ids: [...ids] })}>{language === 'vi' ? 'Dùng thứ tự này' : 'Use this order'}</button>
+        <button type="button" className="secondary-action" onClick={() => onChange({ kind: 'reorder_sentence', item_ids: [...ids] })}>Dùng thứ tự này</button>
       </fieldset>
     }
     case 'translate_vi_zh':

@@ -9,7 +9,7 @@ import { listAdminAssessments, listAdminDocuments, listAdminLessons, listHskLeve
 import { AdminStatsSummary } from './AdminStatsSummary'
 
 const draftFilters = { status: 'DRAFT', page: 1, page_size: 3 }
-const exerciseFilters = { assessment_type: 'LESSON_EXERCISE', page: 1, page_size: 2 }
+const exerciseFilters = { assessment_type: 'PERIODIC_TEST', page: 1, page_size: 2 }
 const documentFilters = { page: 1, page_size: 1 }
 const statuses:Record<string,string> = { DRAFT:'Bản nháp', REVIEW:'Chờ duyệt', PUBLISHED:'Đã xuất bản', ARCHIVED:'Đã lưu trữ' }
 
@@ -30,25 +30,25 @@ export function AdminDashboardPage() {
 
     <div className="admin-workbench-primary">
       <section className="admin-workbench-panel admin-workbench-lessons" aria-labelledby="workspace-lessons-title">
-        <header className="admin-workbench-panel-heading"><div><h2 id="workspace-lessons-title">Bài học</h2><p>Hoàn thiện từ vựng, ngữ pháp và hình minh họa từ bản nháp của bạn.</p></div><Companion pose="guide" decorative/></header>
+        <header className="admin-workbench-panel-heading"><div><h2 id="workspace-lessons-title">Bài học</h2><p>Biên soạn và duyệt từ vựng, ngữ pháp, bài khóa và luyện tập cùng một nơi.</p></div><Companion pose="guide" decorative/></header>
         <LoadFeedback pending={drafts.isPending} error={drafts.isError} hasData={!!drafts.data} label="bản nháp bài học" onRetry={()=>void drafts.refetch()}/>
         {drafts.data&&<>{drafts.data.items.length===0?<div className="admin-workbench-empty"><h3>Bắt đầu bản nháp mới?</h3><p>Các bài đang soạn sẽ xuất hiện ở đây để bạn mở lại nhanh.</p><Link to="/admin/lessons?create=1">Tạo một bản nháp<AcademyIcon name="arrow" size={18}/></Link></div>:<ul className="admin-workbench-drafts" aria-label="Bản nháp bài học">{drafts.data.items.map(lesson=><li key={lesson.id}><div><h3>{lesson.title}</h3><p>{levelNumber(lesson.hsk_level_id)?`HSK ${levelNumber(lesson.hsk_level_id)} · `:''}Bài {lesson.lesson_number}<span>· Bản nháp</span></p></div><Link to={'/admin/lessons/'+lesson.id} aria-label={'Tiếp tục chỉnh sửa: '+lesson.title}>Tiếp tục chỉnh sửa<AcademyIcon name="arrow" size={18}/></Link></li>)}</ul>}</>}
         <footer className="admin-workbench-panel-footer"><Link to="/admin/lessons">Quản lý tất cả bài học<AcademyIcon name="arrow" size={18}/></Link>{drafts.data&&<span>{drafts.data.total} bản nháp</span>}</footer>
       </section>
 
       <section className="admin-workbench-panel admin-workbench-exercises" aria-labelledby="workspace-exercises-title">
-        <header className="admin-workbench-panel-heading"><SceneIllustration scene="practice"/><div><h2 id="workspace-exercises-title">Luyện tập</h2><p>Duyệt câu hỏi, đáp án và ngưỡng đạt trước khi xuất bản.</p></div></header>
-        <LoadFeedback pending={exercises.isPending} error={exercises.isError} hasData={!!exercises.data} label="bài luyện tập" onRetry={()=>void exercises.refetch()}/>
-        {exercises.data&&<>{exercises.data.items.length===0?<p className="admin-workbench-empty">Chưa có bài luyện tập. Bắt đầu từ nội dung của một bài học để tạo đề ôn tập.</p>:<ul className="admin-workbench-exercise-list" aria-label="Bài luyện tập">{exercises.data.items.map(exercise=><li key={exercise.id}><Link to={'/admin/assessments/'+exercise.id}>{exercise.title}<AcademyIcon name="arrow" size={17}/></Link><div><StatusBadge tone={exercise.status==='PUBLISHED'?'success':exercise.status==='REVIEW'?'warning':'neutral'}>{statuses[exercise.status]??exercise.status}</StatusBadge><span>Đạt từ {exercise.pass_threshold}%</span></div></li>)}</ul>}</>}
-        <footer className="admin-workbench-panel-footer"><Link to="/admin/assessments?generate=1">Tạo đề bằng AI<AcademyIcon name="arrow" size={18}/></Link><Link to="/admin/assessments">Quản lý đề</Link></footer>
+        <header className="admin-workbench-panel-heading"><SceneIllustration scene="practice"/><div><h2 id="workspace-exercises-title">Kiểm tra định kỳ</h2><p>Quản lý bài kiểm tra tổng hợp kiến thức của nhiều bài học.</p></div></header>
+        <LoadFeedback pending={exercises.isPending} error={exercises.isError} hasData={!!exercises.data} label="bài kiểm tra" onRetry={()=>void exercises.refetch()}/>
+        {exercises.data&&<>{exercises.data.items.length===0?<p className="admin-workbench-empty">Chưa có bài kiểm tra định kỳ. Tạo đề tổng hợp để bổ sung vào lộ trình HSK.</p>:<ul className="admin-workbench-exercise-list" aria-label="Bài kiểm tra định kỳ">{exercises.data.items.map(exercise=><li key={exercise.id}><Link to={'/admin/assessments/'+exercise.id}>{exercise.title}<AcademyIcon name="arrow" size={17}/></Link><div><StatusBadge tone={exercise.status==='PUBLISHED'?'success':exercise.status==='REVIEW'?'warning':'neutral'}>{statuses[exercise.status]??exercise.status}</StatusBadge><span>Đạt từ {exercise.pass_threshold}%</span></div></li>)}</ul>}</>}
+        <footer className="admin-workbench-panel-footer"><Link to="/admin/assessments?generate=1">Tạo đề bằng AI<AcademyIcon name="arrow" size={18}/></Link><Link to="/admin/assessments">Quản lý bài kiểm tra</Link></footer>
       </section>
     </div>
 
     <div className="admin-workbench-secondary">
-      <section className="admin-workbench-panel" aria-labelledby="workspace-curriculum-title"><SceneIllustration scene="path"/><header className="admin-workbench-secondary-heading"><AcademyIcon name="path" size={26}/><h2 id="workspace-curriculum-title">Lộ trình HSK</h2></header><p>Sắp xếp bài học, bài kiểm tra và thứ tự mở khóa trong từng cấp độ.</p>
+      <section className="admin-workbench-panel" aria-labelledby="workspace-curriculum-title"><SceneIllustration scene="path"/><header className="admin-workbench-secondary-heading"><AcademyIcon name="path" size={26}/><h2 id="workspace-curriculum-title">Sắp xếp HSK</h2></header><p>Sắp xếp bài học, bài kiểm tra và thứ tự mở khóa trong từng cấp độ.</p>
         <LoadFeedback pending={levels.isPending} error={levels.isError} hasData={!!levels.data} label="cấp độ HSK" onRetry={()=>void levels.refetch()}/>
         {levels.data&&<p className="admin-workbench-context">{levels.data.length?levels.data.map(level=>'HSK '+level.level_number).join(' · '):'Chưa có cấp độ HSK.'}</p>}
-        <Link className="admin-workbench-section-link" to="/admin/curriculum">Quản lý lộ trình<AcademyIcon name="arrow" size={18}/></Link>
+        <Link className="admin-workbench-section-link" to="/admin/lessons?view=curriculum">Sắp xếp bài học<AcademyIcon name="arrow" size={18}/></Link>
       </section>
       <section className="admin-workbench-panel" aria-labelledby="workspace-documents-title"><SceneIllustration scene="library"/><header className="admin-workbench-secondary-heading"><AcademyIcon name="book" size={26}/><h2 id="workspace-documents-title">Tài liệu nguồn</h2></header><p>Quản lý giáo trình, kiểm tra nội dung đã xử lý và duyệt nguồn kiến thức.</p>
         <LoadFeedback pending={documents.isPending} error={documents.isError} hasData={!!documents.data} label="tài liệu nguồn" onRetry={()=>void documents.refetch()}/>

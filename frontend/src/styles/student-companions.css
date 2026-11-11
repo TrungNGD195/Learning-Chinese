@@ -1,0 +1,26 @@
+.bo-shell .profile-page { position:relative;isolation:isolate; }
+.bo-shell .profile-page::before { content:'';position:absolute;z-index:-1;inset:0 0 auto;height:240px;background:url('/academy/landscape.png') right top/650px auto no-repeat;opacity:.14;pointer-events:none; }
+.profile-companions { margin-top:24px;padding:0 24px;border:1px solid #d5dfcb;border-radius:13px;background:#fffef8;scroll-margin-top:24px; }
+.profile-companions summary { display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:72px;color:#234d3a;font-size:20px;font-weight:650;cursor:pointer; }
+.profile-companions summary::after { content:'+';font-size:25px;font-weight:400; }
+.profile-companions[open] summary::after { content:'−'; }
+.profile-companions summary span { margin-left:auto;font-size:13px;font-weight:400;color:#506b4b; }
+.profile-companions-intro { margin:0 0 18px;color:#53694c;font-size:15px; }
+.profile-companion-row { display:flex;align-items:center;gap:20px;padding:20px 0;border-top:1px solid #dce5d4; }
+.profile-companion-row > .academy-companion { flex:0 0 88px;width:88px; }
+.profile-companion-row h3 { margin:0 0 8px;font-size:19px;color:#244e3b; }
+.profile-companion-row p { margin:0;max-width:65ch;font-size:15px;line-height:1.8;color:#4b6448; }
+.profile-bo-poses { display:flex;flex-wrap:wrap;gap:7px;margin-top:13px; }
+.profile-bo-poses button { min-height:36px;padding:6px 10px;border:1px solid #c6d4ba;border-radius:6px;background:#fffef9;color:#375c40;cursor:pointer;font-size:12px; }
+.profile-bo-poses button[aria-pressed=true] { background:#e5edd8;border-color:#789861; }
+.bo-shell .assessment-result-summary > .result-bo-celebrate { width:78px;float:right;margin:0 0 12px 18px; }
+.bo-shell .academy-mobile-nav { grid-template-columns:repeat(2,minmax(0,1fr)); }
+@media(max-width:560px) {
+ .profile-companions { padding:0 16px; }
+ .profile-companions summary { flex-wrap:wrap;gap:8px;font-size:18px; }
+ .profile-companions summary span { font-size:11px; }
+ .profile-companion-row { gap:13px;align-items:flex-start; }
+ .profile-companion-row > .academy-companion { flex-basis:56px;width:56px; }
+ .profile-companion-row h3 { font-size:17px; }
+ .profile-companion-row p { font-size:14px; }
+}

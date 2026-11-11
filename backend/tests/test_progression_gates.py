@@ -11,7 +11,7 @@ from app.database.session import SessionFactory
 from app.main import app
 
 
-def test_empty_theory_historical_pass_converges_and_unlocks_periodic_and_next_hsk():
+def test_empty_theory_pass_unlocks_next_unit_but_hsk_levels_are_independent():
     user_id,lesson1_id,lesson2_id,exercise_id,periodic_id=uuid4(),uuid4(),uuid4(),uuid4(),uuid4()
     async def setup():
         async with SessionFactory.begin() as session:
@@ -44,13 +44,22 @@ def test_empty_theory_historical_pass_converges_and_unlocks_periodic_and_next_hs
     app.dependency_overrides[get_current_user]=current_user
     try:
         with TestClient(app) as client:
+            # Advanced learners enter HSK2 before pronunciation or HSK1.
+            assert client.get(f"/api/v1/lessons/{lesson2_id}").status_code == 200
+            assert client.get(f"/api/v1/lessons/{lesson1_id}").status_code == 403
+            levels = client.get("/api/v1/hsk-levels").json()
+            assert next(row for row in levels if row['level_number'] == 2)['state'] == 'AVAILABLE'
+            assert next(row for row in levels if row['level_number'] == 3)['state'] == 'AVAILABLE'
             sections = client.get("/api/v1/pronunciation").json()
-            for code, count in (("INITIALS", 21), ("FINALS", 36), ("TONES", 5)):
+            for code, count in (("INITIALS", 21), ("FINALS", 36), ("TONES", 5), ("SANDHI", 12)):
                 section = next(item for item in sections if item["code"] == code)
                 for index in range(count):
                     assert client.post("/api/v1/pronunciation/lesson/advance", json={"section_code": code, "step_index": index}).status_code == 200
                 assert client.post(f"/api/v1/pronunciation/{section['id']}/complete").status_code == 200
             assert client.post("/api/v1/pronunciation/lesson/complete").status_code == 200
+            # The next HSK starts independently before any HSK1 theory or score.
+            assert client.get(f"/api/v1/lessons/{lesson2_id}").status_code == 200
+            assert client.get(f"/api/v1/hsk-levels/{hsk1_id}/curriculum").json()['units'][1]['state'] == 'LOCKED'
             assert client.post(f"/api/v1/assessments/{exercise_id}/attempts").status_code==403
             before_start=client.get(f"/api/v1/me/progress/lessons/{lesson1_id}").json()
             assert before_start["theory_completed_at"] is None and before_start["completed_at"] is None
@@ -65,12 +74,12 @@ def test_empty_theory_historical_pass_converges_and_unlocks_periodic_and_next_hs
             assert after_start["theory_completed_at"] is not None and after_start["completed_at"] is not None
             state=client.get(f"/api/v1/hsk-levels/{hsk1_id}/curriculum").json()["units"]
             assert state[0]["state"]=="COMPLETED" and state[1]["state"]=="AVAILABLE"
-            assert client.get(f"/api/v1/hsk-levels/{hsk2_id}/curriculum").json()["units"][0]["state"]=="LOCKED"
+            assert client.get(f"/api/v1/hsk-levels/{hsk2_id}/curriculum").json()["units"][0]["state"]=="AVAILABLE"
 
             first=client.post(f"/api/v1/assessments/{periodic_id}/attempts").json()
             failed=client.post(f"/api/v1/assessment-attempts/{first['id']}/submit",json={"answers":[{"question_id":str(perq_id),"answer":{"option_id":str(perbad_id)}}]})
             assert failed.status_code==200 and failed.json()["passed"] is False
-            assert client.get(f"/api/v1/hsk-levels/{hsk2_id}/curriculum").json()["units"][0]["state"]=="LOCKED"
+            assert client.get(f"/api/v1/hsk-levels/{hsk2_id}/curriculum").json()["units"][0]["state"]=="AVAILABLE"
 
             retry=client.post(f"/api/v1/assessments/{periodic_id}/attempts").json()
             assert retry["attempt_number"]==2

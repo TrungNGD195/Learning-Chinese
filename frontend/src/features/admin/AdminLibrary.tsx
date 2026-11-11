@@ -29,20 +29,26 @@ export function AdminLibrary({ records, label, total, kind, preview }: {
     </div>
     <div className="admin-library-layout">
       <div className="admin-library-results">
-        {view === 'cards' ? <div className="admin-library-grid">{records.map((item, index) => <article className={`admin-library-card ${selected?.id === item.id ? 'is-selected' : ''}`} key={item.id}>
-          <div className={`admin-book-cover admin-book-cover--${index % 3}`} aria-hidden="true"><SceneIllustration scene={kind === 'lessons' ? sceneForTitle(item.title) : kind === 'assessments' ? 'practice' : 'library'}/></div>
-          <div className="admin-library-card-copy"><p className="admin-record-context">{item.context}</p><h2><button type="button" aria-pressed={selected?.id === item.id} aria-controls={previewId} onClick={() => setSelectedId(item.id)}>{item.title}</button></h2>
-            <div className="admin-record-status">{item.status}</div>{item.detail && <div className="admin-record-detail">{item.detail}</div>}
-            <Link className="admin-link-action" to={item.href}>{item.action}<span aria-hidden="true"> →</span></Link>
-          </div>
-        </article>)}</div> : <div className="admin-library-table" role="region" aria-label={`Bảng ${label}`} tabIndex={0}><table><thead><tr><th scope="col">Nội dung</th><th scope="col">Trạng thái</th><th scope="col">Thao tác</th></tr></thead><tbody>{records.map((item) => <tr key={item.id} className={selected?.id === item.id ? 'is-selected' : ''}><td><button type="button" aria-pressed={selected?.id === item.id} aria-controls={previewId} onClick={() => setSelectedId(item.id)}>{item.title}</button><p>{item.context}</p>{item.detail}</td><td>{item.status}</td><td><Link to={item.href}>{item.action}</Link></td></tr>)}</tbody></table></div>}
+        {view === 'cards' ? <div className="admin-library-grid">{records.map((item, index) => {
+          const content = <>
+            <div className={`admin-book-cover admin-book-cover--${index % 3}`} aria-hidden="true"><SceneIllustration scene={kind === 'lessons' ? sceneForTitle(item.title) : kind === 'assessments' ? 'practice' : 'library'}/></div>
+            <div className="admin-library-card-copy"><p className="admin-record-context">{item.context}</p><h2>{kind === 'lessons' ? item.title : <button type="button" aria-pressed={selected?.id === item.id} aria-controls={previewId} onClick={() => setSelectedId(item.id)}>{item.title}</button>}</h2>
+              <div className="admin-record-status">{item.status}</div>{item.detail && <div className="admin-record-detail">{item.detail}</div>}
+              {kind !== 'lessons' && <Link className="admin-link-action" to={item.href}>{item.action}<span aria-hidden="true"> →</span></Link>}
+            </div>
+          </>
+          const className = `admin-library-card ${selected?.id === item.id ? 'is-selected' : ''}`
+          return kind === 'lessons'
+            ? <Link key={item.id} className={`${className} admin-library-card--link`} to={item.href} aria-label={`Biên soạn bài học: ${item.title}`} onMouseEnter={() => setSelectedId(item.id)} onFocus={() => setSelectedId(item.id)}>{content}</Link>
+            : <article key={item.id} className={className}>{content}</article>
+        })}</div> : <div className="admin-library-table" role="region" aria-label={`Bảng ${label}`} tabIndex={0}><table><thead><tr><th scope="col">Nội dung</th><th scope="col">Trạng thái</th>{kind !== 'lessons' && <th scope="col">Thao tác</th>}</tr></thead><tbody>{records.map((item) => <tr key={item.id} className={selected?.id === item.id ? 'is-selected' : ''}><td>{kind === 'lessons' ? <Link to={item.href}>{item.title}</Link> : <button type="button" aria-pressed={selected?.id === item.id} aria-controls={previewId} onClick={() => setSelectedId(item.id)}>{item.title}</button>}<p>{item.context}</p>{item.detail}</td><td>{item.status}</td>{kind !== 'lessons' && <td><Link to={item.href}>{item.action}</Link></td>}</tr>)}</tbody></table></div>}
       </div>
       {selected && <aside className="admin-quick-preview" id={previewId} aria-label="Xem nhanh nội dung">
         <div className="admin-preview-heading"><h2>Xem nhanh</h2><Companion pose={kind === 'documents' ? 'truc' : 'but'} className="admin-library-companion" decorative /></div>
         <p className="admin-record-context">{selected.context}</p><h3>{selected.title}</h3><div className="admin-record-status">{selected.status}</div>
         {selected.detail && <details className="admin-preview-description"><summary>Thông tin chi tiết</summary>{selected.detail}</details>}
         {preview?.(selected.id)}
-        <Link className="admin-preview-open" to={selected.href}>{selected.action}<span aria-hidden="true"> →</span></Link>
+        <Link className="admin-preview-open" to={selected.href}>{kind === 'lessons' ? 'Đi đến bài học' : selected.action}<span aria-hidden="true"> →</span></Link>
       </aside>}
     </div>
   </div>

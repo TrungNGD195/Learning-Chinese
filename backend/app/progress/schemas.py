@@ -3,6 +3,7 @@ from typing import Annotated, Literal, Union
 from uuid import UUID
 
 from pydantic import BaseModel, Field
+from app.readings.schemas import ReadingProgressResponse, ReadingResponse
 
 
 UnitState = Literal["LOCKED", "AVAILABLE", "COMPLETED"]
@@ -52,14 +53,14 @@ class PronunciationSectionResponse(BaseModel):
 
 class PronunciationLessonSection(BaseModel):
     id: UUID
-    code: Literal["INITIALS", "FINALS", "TONES"]
+    code: Literal["INITIALS", "FINALS", "TONES", "SANDHI"]
     completed_at: datetime | None
     total_steps: int
 
 
 class PronunciationLessonResponse(BaseModel):
     sections: list[PronunciationLessonSection]
-    current_section: Literal["INITIALS", "FINALS", "TONES"] | None
+    current_section: Literal["INITIALS", "FINALS", "TONES", "SANDHI"] | None
     step_index: int
     total_steps: int
     completed_at: datetime | None
@@ -67,7 +68,7 @@ class PronunciationLessonResponse(BaseModel):
 
 
 class PronunciationAdvanceRequest(BaseModel):
-    section_code: Literal["INITIALS", "FINALS", "TONES"]
+    section_code: Literal["INITIALS", "FINALS", "TONES", "SANDHI"]
     step_index: int = Field(ge=0)
 
 
@@ -179,6 +180,7 @@ class LessonResponse(BaseModel):
     description: str | None
     vocabulary: list[VocabularyLessonItem]
     grammar: list[GrammarLessonItem]
+    readings: list[ReadingResponse] = Field(default_factory=list)
     assessment_ids: list[UUID]
 
 
@@ -189,6 +191,7 @@ class LessonProgressResponse(BaseModel):
     completed_at: datetime | None
     vocabulary: list[TheoryContentProgressResponse]
     grammar: list[TheoryContentProgressResponse]
+    readings: list[ReadingProgressResponse] = Field(default_factory=list)
 
 
 class ProgressOverviewResponse(BaseModel):

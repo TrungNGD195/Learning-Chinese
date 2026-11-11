@@ -14,10 +14,11 @@ from sqlalchemy import select, func
 
 from app.admin.schemas import QuestionCreateRequest, VocabularyAttachRequest
 from app.database.models import (
-    Assessment, CurriculumUnit, HSKLevel, Lesson, LessonVocabulary,
+    Assessment, CurriculumUnit, HSKLevel, Lesson, LessonVocabulary, LessonReading,
     Question, QuestionOption, Vocabulary,
 )
 from app.database.session import SessionFactory
+from app.readings.schemas import ReadingCreateRequest
 
 NAMESPACE = UUID("23c010fb-f291-4d79-af36-983a116bf02a")
 DEFINITION_PATH = Path(__file__).resolve().parents[1] / "content/hsk1/lesson-01.json"
@@ -35,9 +36,11 @@ def load_definition():
     questions = [QuestionCreateRequest.model_validate({
         **question, "order_index": index, "points": 1,
     }) for index, question in enumerate(definition["questions"], 1)]
-    assert len(questions) == 20 and sum(q.points for q in questions) == 20
+    assert len(questions) == 30 and sum(q.points for q in questions) == 30
     assert {q.type for q in questions} == {"multiple_choice", "fill_blank", "matching", "reorder_sentence"}
     assert definition["assessment"]["pass_threshold"] == 80
+    for reading in definition.get('readings', []):
+        ReadingCreateRequest.model_validate(reading)
     return definition, questions
 
 
@@ -63,6 +66,8 @@ async def create_draft(session, definition, questions):
                     title=definition["lesson"]["title"], description=definition["lesson"]["description"], status="DRAFT")
     session.add(lesson)
     await session.flush()
+    for reading in definition.get('readings', []):
+        session.add(LessonReading(id=uuid5(NAMESPACE, definition['key'] + ':reading:' + str(reading['order_index'])), lesson_id=lesson.id, **reading))
     for index, item in enumerate(definition["vocabulary"], 1):
         vocab = Vocabulary(id=uuid5(NAMESPACE, definition["key"] + ":vocabulary:" + item["hanzi"]),
                            **{key: item[key] for key in ("hanzi", "pinyin", "vietnamese_meaning", "part_of_speech")})

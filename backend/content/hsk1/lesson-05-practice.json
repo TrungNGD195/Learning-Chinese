@@ -1,0 +1,1073 @@
+{
+  "lesson_number": 5,
+  "version": "practice-v3-2026-11-08",
+  "pass_threshold": 80,
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu nghe 1).",
+      "options": [
+        {
+          "option_text": "hôm qua",
+          "is_correct": true
+        },
+        {
+          "option_text": "năm ngoái",
+          "is_correct": false
+        },
+        {
+          "option_text": "năm",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Bạn nghe thấy 昨天 (zuótiān), nghĩa là hôm qua. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "昨天"
+        }
+      },
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu nghe 2).",
+      "options": [
+        {
+          "option_text": "năm nay",
+          "is_correct": false
+        },
+        {
+          "option_text": "năm ngoái",
+          "is_correct": false
+        },
+        {
+          "option_text": "nước cola",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Bạn nghe thấy 可乐 (kělè), nghĩa là nước cola. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "可乐"
+        }
+      },
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe câu và chọn ý nghĩa phù hợp.",
+      "options": [
+        {
+          "option_text": "Tôi thích nấu món ăn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Tôi biết nấu món ăn.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Tôi muốn uống trà.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "会 chỉ kỹ năng biết làm; khác với 喜欢 chỉ sở thích và 想 chỉ mong muốn.",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false,
+          "audio_text": "我会做菜。"
+        }
+      },
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ôn bài trước: Nghe và chọn nghĩa phù hợp (câu nghe 4).",
+      "options": [
+        {
+          "option_text": "biết; có khả năng do học được",
+          "is_correct": false
+        },
+        {
+          "option_text": "năm sau",
+          "is_correct": false
+        },
+        {
+          "option_text": "bạn; bạn bè",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Bạn nghe thấy 朋友 (péngyou), nghĩa là bạn; bạn bè. 朋友 không xác định giới tính hay quan hệ yêu đương; 男朋友 và 女朋友 thường chỉ bạn trai, bạn gái.",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true,
+          "audio_text": "朋友"
+        }
+      },
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nhìn hình và gợi ý “sủi cảo”, chọn từ tiếng Trung phù hợp.",
+      "options": [
+        {
+          "option_text": "天",
+          "is_correct": false
+        },
+        {
+          "option_text": "昨天",
+          "is_correct": false
+        },
+        {
+          "option_text": "饺子",
+          "is_correct": true
+        }
+      ],
+      "rubric": "饺子 (jiǎozi) nghĩa là sủi cảo. ",
+      "config": {
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "image_hanzi": "饺子"
+        }
+      },
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nhìn hình và gợi ý “màn thầu; bánh bao không nhân”, chọn từ tiếng Trung phù hợp.",
+      "options": [
+        {
+          "option_text": "天",
+          "is_correct": false
+        },
+        {
+          "option_text": "昨天",
+          "is_correct": false
+        },
+        {
+          "option_text": "馒头",
+          "is_correct": true
+        }
+      ],
+      "rubric": "馒头 (mántou) nghĩa là màn thầu; bánh bao không nhân. 馒头 thường không có nhân, khác với 包子 là bánh bao có nhân.",
+      "config": {
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "image_hanzi": "馒头"
+        }
+      },
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nhìn hình và gợi ý “cà phê”, chọn từ tiếng Trung phù hợp.",
+      "options": [
+        {
+          "option_text": "天",
+          "is_correct": false
+        },
+        {
+          "option_text": "咖啡",
+          "is_correct": true
+        },
+        {
+          "option_text": "昨天",
+          "is_correct": false
+        }
+      ],
+      "rubric": "咖啡 (kāfēi) nghĩa là cà phê. ",
+      "config": {
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "image_hanzi": "咖啡"
+        }
+      },
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ôn bài trước: Nhìn hình và gợi ý “bố; ba”, chọn từ tiếng Trung phù hợp.",
+      "options": [
+        {
+          "option_text": "昨天",
+          "is_correct": false
+        },
+        {
+          "option_text": "天",
+          "is_correct": false
+        },
+        {
+          "option_text": "爸爸",
+          "is_correct": true
+        }
+      ],
+      "rubric": "爸爸 (bàba) nghĩa là bố; ba. ",
+      "config": {
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true,
+          "image_hanzi": "爸爸"
+        }
+      },
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn câu diễn tả một kỹ năng đã biết.",
+      "options": [
+        {
+          "option_text": "我喜欢做菜。",
+          "is_correct": false
+        },
+        {
+          "option_text": "我会做菜。",
+          "is_correct": true
+        },
+        {
+          "option_text": "我想做菜。",
+          "is_correct": false
+        }
+      ],
+      "rubric": "会 + động từ diễn tả biết làm; 喜欢 nói sở thích, 想 nói mong muốn, không tự khẳng định đã có kỹ năng.",
+      "config": {
+        "presentation": {
+          "skill": "grammar",
+          "focus": "grammar",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn câu nói “Tôi muốn uống nước”.",
+      "options": [
+        {
+          "option_text": "我喝想水。",
+          "is_correct": false
+        },
+        {
+          "option_text": "我想喝水。",
+          "is_correct": true
+        },
+        {
+          "option_text": "我想吃水。",
+          "is_correct": false
+        }
+      ],
+      "rubric": "想 đứng trước động từ; nước là đồ uống nên dùng 喝水, không dùng 吃水.",
+      "config": {
+        "presentation": {
+          "skill": "grammar",
+          "focus": "grammar",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn cách ghi ngày 5 tháng 6 trong khẩu ngữ.",
+      "options": [
+        {
+          "option_text": "六月五号",
+          "is_correct": true
+        },
+        {
+          "option_text": "五号六月",
+          "is_correct": false
+        },
+        {
+          "option_text": "五月六号",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Tiếng Trung ghi tháng trước, ngày sau: 六月 + 五号. 五月六号 là ngày 6 tháng 5.",
+      "config": {
+        "presentation": {
+          "skill": "grammar",
+          "focus": "grammar",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ôn bài 4: Chọn câu nói “Tôi không có em trai”.",
+      "options": [
+        {
+          "option_text": "我没有弟弟。",
+          "is_correct": true
+        },
+        {
+          "option_text": "我有不弟弟。",
+          "is_correct": false
+        },
+        {
+          "option_text": "我不有弟弟。",
+          "is_correct": false
+        }
+      ],
+      "rubric": "没有 là dạng phủ định của 有: 我 + 没有 + 弟弟.",
+      "config": {
+        "presentation": {
+          "skill": "grammar",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối từng từ với nghĩa phù hợp (nhóm 1). Mỗi cặp đúng được tính một phần điểm.",
+      "rubric": "天 = ngày; trời; 昨天 = hôm qua; 年 = năm; 去年 = năm ngoái; 今年 = năm nay.",
+      "config": {
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        },
+        "left_items": [
+          {
+            "id": "ec0cefdc-cb44-5498-9c36-3b9957ffb5d5",
+            "text": "天"
+          },
+          {
+            "id": "3ca5a176-c031-5b07-a87b-1efba0bbfe6c",
+            "text": "昨天"
+          },
+          {
+            "id": "9eb3537d-6d01-50cf-abed-11c213e44a12",
+            "text": "年"
+          },
+          {
+            "id": "5d06d892-0d32-5e0d-bdc2-65329511c894",
+            "text": "去年"
+          },
+          {
+            "id": "b2156254-275e-5ec1-9b56-edac3e54a598",
+            "text": "今年"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "d089820b-5227-5b44-ab7c-c6e99dc84e2d",
+            "text": "năm ngoái"
+          },
+          {
+            "id": "2bdfb292-ad22-565a-9454-ae8970877192",
+            "text": "ngày; trời"
+          },
+          {
+            "id": "ec8edf2e-3273-5c3a-a9a5-ceff06b913bb",
+            "text": "hôm qua"
+          },
+          {
+            "id": "369a0175-1e35-5e0d-bdc7-10a2c5efd3a6",
+            "text": "năm nay"
+          },
+          {
+            "id": "9adfbbfc-3bb5-51ad-8092-84948b52e2f5",
+            "text": "năm"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "ec0cefdc-cb44-5498-9c36-3b9957ffb5d5",
+            "right_id": "2bdfb292-ad22-565a-9454-ae8970877192"
+          },
+          {
+            "left_id": "3ca5a176-c031-5b07-a87b-1efba0bbfe6c",
+            "right_id": "ec8edf2e-3273-5c3a-a9a5-ceff06b913bb"
+          },
+          {
+            "left_id": "9eb3537d-6d01-50cf-abed-11c213e44a12",
+            "right_id": "9adfbbfc-3bb5-51ad-8092-84948b52e2f5"
+          },
+          {
+            "left_id": "5d06d892-0d32-5e0d-bdc2-65329511c894",
+            "right_id": "d089820b-5227-5b44-ab7c-c6e99dc84e2d"
+          },
+          {
+            "left_id": "b2156254-275e-5ec1-9b56-edac3e54a598",
+            "right_id": "369a0175-1e35-5e0d-bdc7-10a2c5efd3a6"
+          }
+        ]
+      },
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối từng từ với nghĩa phù hợp (nhóm 2). Mỗi cặp đúng được tính một phần điểm.",
+      "rubric": "明年 = năm sau; 会 = biết; có khả năng do học được; 喜欢 = thích; 做 = làm; 星期 = tuần; thứ.",
+      "config": {
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        },
+        "left_items": [
+          {
+            "id": "653793c3-5adc-57f2-b2a0-5078cc536390",
+            "text": "明年"
+          },
+          {
+            "id": "ac662ec9-459d-531d-8b2c-fe1b72350e95",
+            "text": "会"
+          },
+          {
+            "id": "961b4445-1039-5d6c-ac00-d62e5594ef70",
+            "text": "喜欢"
+          },
+          {
+            "id": "440ab8a6-6224-5b97-8532-a658d316c22b",
+            "text": "做"
+          },
+          {
+            "id": "0b16ea1c-0097-539b-86fd-c20dc86578c5",
+            "text": "星期"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "78b8d267-5564-5e6f-b0b5-e79692ff9f8d",
+            "text": "tuần; thứ"
+          },
+          {
+            "id": "89b6ffcf-6320-57e9-bc62-4aecafa7ca22",
+            "text": "năm sau"
+          },
+          {
+            "id": "297e4e61-aa00-5467-920f-e8047c042020",
+            "text": "thích"
+          },
+          {
+            "id": "28e149b4-0807-5e4d-aa4e-956ad489df1d",
+            "text": "biết; có khả năng do học được"
+          },
+          {
+            "id": "7959a807-0134-5dfc-88bb-eaf21918b177",
+            "text": "làm"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "653793c3-5adc-57f2-b2a0-5078cc536390",
+            "right_id": "89b6ffcf-6320-57e9-bc62-4aecafa7ca22"
+          },
+          {
+            "left_id": "ac662ec9-459d-531d-8b2c-fe1b72350e95",
+            "right_id": "28e149b4-0807-5e4d-aa4e-956ad489df1d"
+          },
+          {
+            "left_id": "961b4445-1039-5d6c-ac00-d62e5594ef70",
+            "right_id": "297e4e61-aa00-5467-920f-e8047c042020"
+          },
+          {
+            "left_id": "440ab8a6-6224-5b97-8532-a658d316c22b",
+            "right_id": "7959a807-0134-5dfc-88bb-eaf21918b177"
+          },
+          {
+            "left_id": "0b16ea1c-0097-539b-86fd-c20dc86578c5",
+            "right_id": "78b8d267-5564-5e6f-b0b5-e79692ff9f8d"
+          }
+        ]
+      },
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối từng từ với nghĩa phù hợp (nhóm 3). Mỗi cặp đúng được tính một phần điểm.",
+      "rubric": "周末 = cuối tuần; 休息 = nghỉ; nghỉ ngơi; 日 = ngày (cách ghi trang trọng); 号 = ngày (trong tháng); 月 = tháng.",
+      "config": {
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        },
+        "left_items": [
+          {
+            "id": "7eb4d4c2-901b-5865-a6cf-67fc84013c9c",
+            "text": "周末"
+          },
+          {
+            "id": "696d9cc1-a8a8-5d31-b963-3e84de5f817e",
+            "text": "休息"
+          },
+          {
+            "id": "771900fc-49f3-5493-ae8c-d1cb16b4bc2b",
+            "text": "日"
+          },
+          {
+            "id": "040c64ef-ca3f-5726-89e7-bf51a6641860",
+            "text": "号"
+          },
+          {
+            "id": "38e5c086-7d14-52eb-bdff-1ffc3f6140d1",
+            "text": "月"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "91ee53e9-1474-5e11-af52-f00b79cbbb45",
+            "text": "ngày (trong tháng)"
+          },
+          {
+            "id": "c431cfc5-f3fc-5b1a-bd30-52e7896f2546",
+            "text": "nghỉ; nghỉ ngơi"
+          },
+          {
+            "id": "fc73bdd0-8c8a-5464-bdd1-8f76b1089252",
+            "text": "ngày (cách ghi trang trọng)"
+          },
+          {
+            "id": "cee3fe0e-697d-5e7d-a217-712005bdf8eb",
+            "text": "tháng"
+          },
+          {
+            "id": "7fceb3cd-9ba3-5d2a-ae5f-9a92b31e970e",
+            "text": "cuối tuần"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "7eb4d4c2-901b-5865-a6cf-67fc84013c9c",
+            "right_id": "7fceb3cd-9ba3-5d2a-ae5f-9a92b31e970e"
+          },
+          {
+            "left_id": "696d9cc1-a8a8-5d31-b963-3e84de5f817e",
+            "right_id": "c431cfc5-f3fc-5b1a-bd30-52e7896f2546"
+          },
+          {
+            "left_id": "771900fc-49f3-5493-ae8c-d1cb16b4bc2b",
+            "right_id": "fc73bdd0-8c8a-5464-bdd1-8f76b1089252"
+          },
+          {
+            "left_id": "040c64ef-ca3f-5726-89e7-bf51a6641860",
+            "right_id": "91ee53e9-1474-5e11-af52-f00b79cbbb45"
+          },
+          {
+            "left_id": "38e5c086-7d14-52eb-bdff-1ffc3f6140d1",
+            "right_id": "cee3fe0e-697d-5e7d-a217-712005bdf8eb"
+          }
+        ]
+      },
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Ôn bài trước: Nối từng từ với nghĩa phù hợp (nhóm 4). Mỗi cặp đúng được tính một phần điểm.",
+      "rubric": "有 = có; 没有 = không có; 多 = nhiều; 少 = ít; 多少 = bao nhiêu.",
+      "config": {
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        },
+        "left_items": [
+          {
+            "id": "80e5066f-ad81-5979-bb38-8f891088f2d7",
+            "text": "有"
+          },
+          {
+            "id": "dbbecfef-92a3-5756-86e2-acbc5a317a87",
+            "text": "没有"
+          },
+          {
+            "id": "53816579-cea6-5495-8276-30e3c94ade6c",
+            "text": "多"
+          },
+          {
+            "id": "85805c64-e066-5e55-bc3c-fb1c14b90b80",
+            "text": "少"
+          },
+          {
+            "id": "2f9a49ac-19dd-530d-89b7-df1bb27319b5",
+            "text": "多少"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "79a3ef6f-490e-5c19-b4d0-dbb95b5d82a2",
+            "text": "bao nhiêu"
+          },
+          {
+            "id": "481bf926-91ab-5896-b0ea-d6fa258826de",
+            "text": "nhiều"
+          },
+          {
+            "id": "2ce83cd1-b00e-5f25-a03b-9c96de83d1ab",
+            "text": "có"
+          },
+          {
+            "id": "2c2b34d7-6843-5437-80a8-fb16bd8a64b6",
+            "text": "không có"
+          },
+          {
+            "id": "bc78bf0e-0cf2-54dd-aa25-d1c2a8f46952",
+            "text": "ít"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "80e5066f-ad81-5979-bb38-8f891088f2d7",
+            "right_id": "2ce83cd1-b00e-5f25-a03b-9c96de83d1ab"
+          },
+          {
+            "left_id": "dbbecfef-92a3-5756-86e2-acbc5a317a87",
+            "right_id": "2c2b34d7-6843-5437-80a8-fb16bd8a64b6"
+          },
+          {
+            "left_id": "53816579-cea6-5495-8276-30e3c94ade6c",
+            "right_id": "481bf926-91ab-5896-b0ea-d6fa258826de"
+          },
+          {
+            "left_id": "85805c64-e066-5e55-bc3c-fb1c14b90b80",
+            "right_id": "bc78bf0e-0cf2-54dd-aa25-d1c2a8f46952"
+          },
+          {
+            "left_id": "2f9a49ac-19dd-530d-89b7-df1bb27319b5",
+            "right_id": "79a3ef6f-490e-5c19-b4d0-dbb95b5d82a2"
+          }
+        ]
+      },
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Điền “uống”: 我___水。",
+      "reference_answer": "喝",
+      "config": {
+        "accepted_answers": [
+          "喝"
+        ],
+        "presentation": {
+          "skill": "grammar",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "rubric": "喝 đi với đồ uống, như 水: 喝水.",
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Điền “ăn”: 我___米饭。",
+      "reference_answer": "吃",
+      "config": {
+        "accepted_answers": [
+          "吃"
+        ],
+        "presentation": {
+          "skill": "grammar",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "rubric": "吃 đi với đồ ăn, như 米饭: 吃米饭.",
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Điền “biết” (kỹ năng): 她___做菜。",
+      "reference_answer": "会",
+      "config": {
+        "accepted_answers": [
+          "会"
+        ],
+        "presentation": {
+          "skill": "grammar",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "rubric": "会 + động từ chỉ kỹ năng biết làm: 会做菜.",
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Điền “thích”: 我___喝咖啡。",
+      "reference_answer": "喜欢",
+      "config": {
+        "accepted_answers": [
+          "喜欢"
+        ],
+        "presentation": {
+          "skill": "grammar",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "rubric": "喜欢 + cụm động từ chỉ sở thích: 喜欢喝咖啡.",
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Điền đơn vị tháng: 五月 (wǔ yuè) = 五___。",
+      "reference_answer": "月",
+      "config": {
+        "accepted_answers": [
+          "月"
+        ],
+        "presentation": {
+          "skill": "grammar",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "rubric": "月 là đơn vị tháng; 五月 là tháng năm.",
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Ôn bài 3: Điền “muốn”: 我___喝茶。",
+      "reference_answer": "想",
+      "config": {
+        "accepted_answers": [
+          "想"
+        ],
+        "presentation": {
+          "skill": "grammar",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "rubric": "没有 là cách phủ định 有: 我没有弟弟.",
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu: Cuối tuần chúng tôi nghỉ (đặt thời gian ở đầu câu).",
+      "rubric": "Trật tự đúng: 周末我们休息。 Giữ các từ trong cụm theo đúng nghĩa đã học; từ chỉ thời gian có thể đặt ở đầu câu khi đề yêu cầu.",
+      "config": {
+        "presentation": {
+          "skill": "grammar",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        },
+        "items": [
+          {
+            "id": "3ca81d9a-5542-57a2-8305-646482b4ddca",
+            "text": "休息"
+          },
+          {
+            "id": "c45b55f2-1f4f-5ff5-a2bb-6ae6a6b825cb",
+            "text": "周末"
+          },
+          {
+            "id": "a9e012e4-2b13-532b-8ea5-3f6fb636d948",
+            "text": "我们"
+          }
+        ],
+        "correct_order": [
+          "c45b55f2-1f4f-5ff5-a2bb-6ae6a6b825cb",
+          "a9e012e4-2b13-532b-8ea5-3f6fb636d948",
+          "3ca81d9a-5542-57a2-8305-646482b4ddca"
+        ]
+      },
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu: Tôi thích ăn sủi cảo。",
+      "rubric": "Trật tự đúng: 我喜欢吃饺子。 喜欢 đứng trước cụm động từ chỉ hoạt động yêu thích.",
+      "config": {
+        "presentation": {
+          "skill": "grammar",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        },
+        "items": [
+          {
+            "id": "f1ce95be-e0af-563f-aa88-6e603fafe598",
+            "text": "吃"
+          },
+          {
+            "id": "082dbac2-364d-5ab9-a53b-06ba422d6f60",
+            "text": "饺子"
+          },
+          {
+            "id": "e2a6bb96-8c92-5e87-92a2-00baa7e49fd3",
+            "text": "我"
+          },
+          {
+            "id": "bab309d0-8b79-592f-828a-49215be0cb7e",
+            "text": "喜欢"
+          }
+        ],
+        "correct_order": [
+          "e2a6bb96-8c92-5e87-92a2-00baa7e49fd3",
+          "bab309d0-8b79-592f-828a-49215be0cb7e",
+          "f1ce95be-e0af-563f-aa88-6e603fafe598",
+          "082dbac2-364d-5ab9-a53b-06ba422d6f60"
+        ]
+      },
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu: Tôi muốn uống trà。",
+      "rubric": "Trật tự đúng: 我想喝茶。 想 đứng trước động từ để nói muốn làm việc gì.",
+      "config": {
+        "presentation": {
+          "skill": "grammar",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        },
+        "items": [
+          {
+            "id": "91fbb751-ac6a-50a1-b920-c2cf4d4f8ed4",
+            "text": "想"
+          },
+          {
+            "id": "bc752406-73d1-5be3-98fd-88d104230667",
+            "text": "茶"
+          },
+          {
+            "id": "f0da4039-97dd-549a-8b1d-9b9f619f10b2",
+            "text": "我"
+          },
+          {
+            "id": "175e89ea-63a4-54ec-97c4-15b03ff894ea",
+            "text": "喝"
+          }
+        ],
+        "correct_order": [
+          "f0da4039-97dd-549a-8b1d-9b9f619f10b2",
+          "91fbb751-ac6a-50a1-b920-c2cf4d4f8ed4",
+          "175e89ea-63a4-54ec-97c4-15b03ff894ea",
+          "bc752406-73d1-5be3-98fd-88d104230667"
+        ]
+      },
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu: Ôn bài 4: Nhà tôi có bốn người。",
+      "rubric": "Trật tự đúng: 我家有四口人。 Chủ ngữ + 有 + số lượng + danh từ; lượng từ đi sau số và trước danh từ.",
+      "config": {
+        "presentation": {
+          "skill": "grammar",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": true
+        },
+        "items": [
+          {
+            "id": "48353c07-d7df-5773-a658-d87d1c61ae3d",
+            "text": "有"
+          },
+          {
+            "id": "06e2e3f2-7b28-5f19-a213-e2b82baf11d9",
+            "text": "我家"
+          },
+          {
+            "id": "2b0693c6-a24b-59de-9fd3-42bda9236ee0",
+            "text": "人"
+          },
+          {
+            "id": "53a62011-15e2-5375-8be2-24f0dc440449",
+            "text": "四口"
+          }
+        ],
+        "correct_order": [
+          "06e2e3f2-7b28-5f19-a213-e2b82baf11d9",
+          "48353c07-d7df-5773-a658-d87d1c61ae3d",
+          "53a62011-15e2-5375-8be2-24f0dc440449",
+          "2b0693c6-a24b-59de-9fd3-42bda9236ee0"
+        ]
+      },
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Hôm qua là thứ mấy?",
+      "options": [
+        {
+          "option_text": "星期日",
+          "is_correct": false
+        },
+        {
+          "option_text": "星期六",
+          "is_correct": false
+        },
+        {
+          "option_text": "星期五",
+          "is_correct": true
+        }
+      ],
+      "rubric": "昨天 gắn với 星期五; 今天 là 星期六, 明天 là 星期日.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "communication",
+          "difficulty": "challenge",
+          "review": false,
+          "reading_text": "昨天星期五，今天星期六，明天星期日。周末我们休息。"
+        }
+      },
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Họ làm gì vào cuối tuần?",
+      "options": [
+        {
+          "option_text": "休息",
+          "is_correct": true
+        },
+        {
+          "option_text": "结婚",
+          "is_correct": false
+        },
+        {
+          "option_text": "工作",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Câu 周末我们休息 nói cuối tuần chúng tôi nghỉ.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "communication",
+          "difficulty": "challenge",
+          "review": false,
+          "reading_text": "昨天星期五，今天星期六，明天星期日。周末我们休息。"
+        }
+      },
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ai muốn uống cola?",
+      "options": [
+        {
+          "option_text": "爸爸",
+          "is_correct": false
+        },
+        {
+          "option_text": "我",
+          "is_correct": false
+        },
+        {
+          "option_text": "妹妹",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Chủ ngữ của 想喝可乐 là 妹妹, em gái.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "communication",
+          "difficulty": "challenge",
+          "review": false,
+          "reading_text": "爸爸会做面条。我喜欢吃饺子，妹妹想喝可乐。"
+        }
+      },
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Thông tin nào nói về kỹ năng?",
+      "options": [
+        {
+          "option_text": "我喜欢吃饺子。",
+          "is_correct": false
+        },
+        {
+          "option_text": "爸爸会做面条。",
+          "is_correct": true
+        },
+        {
+          "option_text": "妹妹想喝可乐。",
+          "is_correct": false
+        }
+      ],
+      "rubric": "会做面条 là biết làm mì; hai câu còn lại nói sở thích và mong muốn.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "communication",
+          "difficulty": "challenge",
+          "review": false,
+          "reading_text": "爸爸会做面条。我喜欢吃饺子，妹妹想喝可乐。"
+        }
+      },
+      "order_index": 30,
+      "points": 1
+    }
+  ],
+  "description": "30 câu: nghe, hình ảnh, ngữ cảnh, nối cặp, điền từ, sắp xếp câu và đọc hiểu. Tăng dần từ cơ bản đến thử thách; kết quả có đáp án và giải thích. Đạt từ 80%."
+}

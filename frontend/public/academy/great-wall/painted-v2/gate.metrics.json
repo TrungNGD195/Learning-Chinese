@@ -1,0 +1,60 @@
+{
+  "size": [
+    1615,
+    974
+  ],
+  "alpha_bounds_raw": [
+    0,
+    14,
+    1611,
+    974
+  ],
+  "alpha_bounds_over_16": [
+    69,
+    16,
+    1540,
+    949
+  ],
+  "normalized_visible_bounds": {
+    "x": 0.042724,
+    "y": 0.016427,
+    "w": 0.910836,
+    "h": 0.957906
+  },
+  "plaque_safe_inner_pixels": [
+    508,
+    270,
+    1108,
+    399
+  ],
+  "plaque_safe_inner": {
+    "x": 0.314551,
+    "y": 0.277207,
+    "w": 0.371517,
+    "h": 0.132444
+  },
+  "plaque_center": [
+    0.50031,
+    0.343429
+  ],
+  "foot_baseline_pixels": 947,
+  "foot_baseline": 0.972279,
+  "opening_safe_pixels": [
+    490,
+    455,
+    1120,
+    940
+  ],
+  "opening_safe": {
+    "x": 0.303406,
+    "y": 0.467146,
+    "w": 0.390093,
+    "h": 0.497947
+  },
+  "opening_alpha_range": [
+    0,
+    1
+  ],
+  "transparent_pixel_fraction": 0.586325,
+  "note": "Safe text rectangle is deliberately inset from the ornamental plaque border. Use one native HTML line; full lesson title/status belong in the HUD. Native alpha preserved without keying, masking or halo removal."
+}

@@ -1,0 +1,28 @@
+Generated 2026-11-08 with the built-in image_gen tool. Three portrait 1024×1536
+map panels; PNG originals retained in Codex generated_images and project assets
+encoded as WebP quality 90. No character/lesson text baked into the paintings.
+
+Shared art direction: polished painted storybook Great Wall of China aerial
+map, majestic lush mountains, sage/jade vegetation, ivory-gold paving, natural
+mist, pine trees and limestone ridges. Very wide constant-width empty walkway
+between two crenellated parapets, gently meandering from bottom to top. Top-down
+oblique composition, no horizon perspective shrinking the pathway. No people,
+buttons, labels, logos or text. Central paved stretches reserved for actual UI.
+
+Foothills: warm morning light, forest, bamboo, waterfalls, emerald valleys.
+Ridges: elevated jade cliffs, blue-green distant peaks, stately pine trees.
+Summit: high plateau, sea of clouds and distant dramatic mountains, golden light.
+
+Source files under C:/Users/Diep_PC/.codex/generated_images/
+01a1a03e-2162-7cc0-9074-e7108fea7321/:
+foothills: exec-7051ce14-b834-4542-b03a-b4df0594fb1d.png
+ridges: exec-557f8af1-2659-41e4-b987-349507b279d0.png
+summit: exec-5067955d-8e1c-4c01-9a5a-e1d39c4ad3f4.png
+mist: exec-90b36230-9911-416b-8261-eb9280997357.png
+
+Mist overlay: wide horizontal natural painterly ivory/sage mountain fog,
+transparent background, irregular wispy contours above/below, mostly opaque
+middle, no hard lines or objects. Native alpha retained in mountain-mist-v1.webp.
+
+The requested centerline was a guide; final rendered art was inspected and its
+actual walkway coordinates are measured in src/features/journey/wallGeometry.ts.

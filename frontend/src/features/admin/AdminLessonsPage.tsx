@@ -1,7 +1,7 @@
 import { adminLabel } from './labels'
 import { useState } from 'react'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
-import { useNavigate, useSearchParams } from 'react-router'
+import { Link, useNavigate, useSearchParams } from 'react-router'
 import { queryKeys } from '../../app/query/keys'
 import { Alert } from '../../components/ui/Alert'
 import { Button } from '../../components/ui/Button'
@@ -13,12 +13,18 @@ import { AdminLibrary, LessonLibraryPreview } from './AdminLibrary'
 import { adminErrorText } from './AdminPrimitives'
 import { createAdminLesson, listAdminLessons, listHskLevels } from './api'
 import { invalidateLessonList } from './invalidation'
+import { AdminCurriculumPage } from './AdminCurriculumPage'
 
 function lessonTone(status: string) {
   return status === 'PUBLISHED' ? 'success' as const : 'neutral' as const
 }
 
 export function AdminLessonsPage() {
+  const [params] = useSearchParams()
+  return params.get('view') === 'curriculum' ? <AdminCurriculumPage /> : <LessonLibraryPage />
+}
+
+function LessonLibraryPage() {
   const [searchParams] = useSearchParams()
   const queryClient = useQueryClient()
   const navigate = useNavigate()
@@ -45,7 +51,7 @@ export function AdminLessonsPage() {
   })
   return <section className="screen admin-screen admin-lessons-page" aria-labelledby="page-title">
     <PageHeader title="Bài học" titleId="page-title" description="Biên soạn, cập nhật và xuất bản nội dung bài học."
-      actions={<Button variant="primary" className="admin-primary-action" aria-expanded={showCreate} onClick={() => setShowCreate((shown) => !shown)}>{showCreate ? "Đóng tạo bài học" : "Tạo bài học"}</Button>} />
+      actions={<div className="admin-action-bar"><Button variant="primary" className="admin-primary-action" aria-expanded={showCreate} onClick={() => setShowCreate((shown) => !shown)}>{showCreate ? "Đóng tạo bài học" : "Tạo bài học"}</Button><Link className="ui-button ui-button--secondary" to="/admin/lessons?view=curriculum">Sắp xếp HSK</Link></div>} />
     {showCreate && <Surface as="section" className="admin-editor-section">
       <h2>Tạo bài học</h2>
       <form className="admin-form-grid" onSubmit={(event) => { event.preventDefault(); create.mutate() }}>

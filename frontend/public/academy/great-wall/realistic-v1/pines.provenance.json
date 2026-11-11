@@ -1,0 +1,13 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-11-10",
+  "source": "assets\\great-wall\\realistic-v1\\pines-source.png",
+  "source_sha256": "70de91c694504c1754a7eeb7526788bb6a6b43c1fcde48d2374a42d8be7cdfe6",
+  "size": [
+    2172,
+    724
+  ],
+  "mode": "RGBA",
+  "usage": "Three realistic mature Chinese mountain pines in equal atlas cells, photographic neutral daylight and muted greens, complete roots and fine-needle alpha, transparent background, 3:1 atlas.",
+  "conversion": "PNG to WebP; alpha preserved, no compositing or repainting"
+}

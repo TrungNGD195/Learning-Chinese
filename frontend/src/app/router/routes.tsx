@@ -10,21 +10,20 @@ import {
   RegisterPage,
   ResetPasswordPage,
 } from '../../features/auth/PublicPages'
-import { DashboardPage } from '../../features/dashboard/DashboardPage'
 import { PronunciationPage } from '../../features/pronunciation/PronunciationPage'
-import { PronunciationLessonPage } from '../../features/pronunciation/PronunciationLessonPage'
+import { PronunciationLessonPage, PronunciationSectionPage } from '../../features/pronunciation/PronunciationLessonPage'
+import {MeasureWordsPage} from '../../features/curriculum/MeasureWordsPage'
 import { HskCurriculumPage } from '../../features/curriculum/HskCurriculumPage'
 import { LessonPage } from '../../features/lesson/LessonPage'
+import { VocabularyPage } from '../../features/lesson/VocabularyPage'
 import { AssessmentPage } from '../../features/assessment/AssessmentPage'
 import { AssessmentResultPage } from '../../features/assessment/AssessmentResultPage'
-import { HistoryPage } from '../../features/history/HistoryPage'
 import { ProfilePage } from '../../features/profile/ProfilePage'
-import { CompanionsPage } from '../../features/profile/CompanionsPage'
 import { AdminDocumentsPage } from '../../features/admin/documents/AdminDocumentsPage'
 import { AdminDocumentDetailPage } from '../../features/admin/documents/AdminDocumentDetailPage'
 import { AdminDashboardPage } from '../../features/admin/AdminDashboardPage'
 import { AdminStatsPage } from '../../features/admin/AdminStatsPage'
-import { AdminCurriculumPage } from '../../features/admin/AdminCurriculumPage'
+import { AdminProfilePage } from '../../features/admin/AdminProfilePage'
 import { AdminLessonsPage } from '../../features/admin/AdminLessonsPage'
 import { AdminLessonEditorPage } from '../../features/admin/AdminLessonEditorPage'
 import { AdminAssessmentsPage, AdminAssessmentEditorPage } from '../../features/admin/AdminAssessmentsPage'
@@ -50,20 +49,28 @@ export function createAppRoutes(): RouteObject[] {
       element: <ProtectedRoute />,
       children: [
         { element: <LearnerLayout />, children: [
-        { path: '/dashboard', element: <DashboardPage /> },
+        { path: '/dashboard', loader: () => redirect('/pronunciation') },
         { path: '/pronunciation', element: <PronunciationPage /> },
         { path: '/pronunciation/lesson', element: <PronunciationLessonPage /> },
+        { path: '/pronunciation/lesson/:sectionSlug', element: <PronunciationSectionPage /> },
         { path: '/hsk/:hskLevel', element: <HskCurriculumPage /> },
+        { path: '/measure-words', element: <MeasureWordsPage /> },
+        { path: '/preview/great-wall/*', loader: () => redirect('/pronunciation') },
         { path: '/lessons/:lessonId', element: <LessonPage /> },
+        { path: '/lessons/:lessonId/vocabulary', element: <LessonPage /> },
+        { path: '/lessons/:lessonId/vocabulary/:vocabularyId', element: <VocabularyPage /> },
+        { path: '/lessons/:lessonId/grammar', element: <LessonPage part="grammar"/> },
+        { path: '/lessons/:lessonId/readings', element: <LessonPage part="readings"/> },
+        { path: '/lessons/:lessonId/practice', element: <LessonPage part="practice"/> },
         { path: '/assessments/:assessmentId', element: <AssessmentPage /> },
         {
           path: '/assessment-attempts/:attemptId/result',
           element: <AssessmentResultPage />,
         },
         { path: '/progress', loader: () => redirect('/pronunciation') },
-        { path: '/history', element: <HistoryPage /> },
+        { path: '/history', loader: () => redirect('/pronunciation') },
         { path: '/profile', element: <ProfilePage /> },
-        { path: '/companions', element: <CompanionsPage /> },
+        { path: '/companions', loader: () => redirect('/profile#companions') },
         ] },
       ],
     },
@@ -72,7 +79,7 @@ export function createAppRoutes(): RouteObject[] {
       children: [
         { path: '/admin', element: <AdminLayout />, children: [
         { index: true, element: <AdminDashboardPage /> },
-        { path: 'curriculum', element: <AdminCurriculumPage /> },
+        { path: 'curriculum', loader: () => redirect('/admin/lessons?view=curriculum') },
         { path: 'lessons', element: <AdminLessonsPage /> },
         { path: 'lessons/:lessonId', element: <AdminLessonEditorPage /> },
         { path: 'assessments', element: <AdminAssessmentsPage /> },
@@ -83,6 +90,7 @@ export function createAppRoutes(): RouteObject[] {
         { path: 'documents', element: <AdminDocumentsPage /> },
         { path: 'documents/:documentId', element: <AdminDocumentDetailPage /> },
         { path: 'stats', element: <AdminStatsPage /> },
+        { path: 'profile', element: <AdminProfilePage /> },
         ] },
       ],
     },

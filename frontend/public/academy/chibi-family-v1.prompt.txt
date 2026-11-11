@@ -1,0 +1,20 @@
+Generated with the built-in imagegen tool on 2026-11-08.
+User-approved exception: family-member vocabulary may use chibi humans.
+
+One square 4x4 atlas, equal cells, warm ivory background, no labels or borders.
+Softly painted storybook chibi East Asian humans, expressive eyes, rounded faces,
+gentle dimensional shading, sage/jade, terracotta, ochre and dusky blue outfits.
+Fully clothed contemporary family, consistent recurring character designs.
+
+Cells by row, left to right:
+1. Father, mother, parents together, parents with two children.
+2. Older teenage brother, older teenage sister, young brother, young sister.
+3. Young son, young daughter, both young children together, married couple.
+4. Paternal grandfather (glasses, moustache, jade vest), paternal grandmother
+   (silver bun, ochre cardigan), maternal grandfather (no glasses/moustache,
+   terracotta cardigan), maternal grandmother (short silver hair, glasses, blue blouse).
+
+Character appearance alone does not establish paternal/maternal relationships;
+the vocabulary, usage notes and accessible image labels explain those meanings.
+Asset: chibi-family-v1.png. The original generated file remains in Codex's
+generated_images directory; this project owns a copied version of the output.

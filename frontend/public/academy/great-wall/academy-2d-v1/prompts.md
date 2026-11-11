@@ -1,0 +1,13 @@
+# Generated artwork
+
+Method: built-in `image_gen.imagegen`; original PNGs copied into this directory. The existing local `painted-v2/bend-desktop.webp` was the style reference for the map. No production route uses these assets.
+
+## ascent-map.png — final prompt
+
+Create a production game-map BACKGROUND PLATE, portrait 2:3 aspect ratio. Reference supplied image is STYLE ONLY: match its gorgeous polished painted fantasy Great Wall, golden sandstone masonry, jade pine mountains, blue atmospheric valleys, soft ivory clouds, warm afternoon light. Change camera to FIXED BIRD'S-EYE THREE-QUARTER ISOMETRIC 2D mobile adventure map, looking DOWN at the wall climbing a mountain. Essential layout for clickable lesson gates added later: ONE single uninterrupted Great Wall walkway, no branches, both edges crenellated. Road enters canvas BOTTOM CENTER (50%,100%), ascends through screen points (50%,88%), (70%,70%), (50%,52%), (30%,34%), (50%,16%), exits TOP CENTER (50%,0%). Smooth S curve with clearly visible broad landing at each of these five points and short stair flights connecting them. Front-facing landings for placing five freestanding red-roof gates in code later; DO NOT draw any gates, people, dragon, icons, numbers, lettering or UI. Keep walkway width around 18% of canvas at landings; consistent scale throughout, no horizon or perspective vanishing point. Both ends must have same road width to allow stacking this artwork vertically. Mountain cliffs, rich detailed pine trees and mist frame LEFT/RIGHT edges; clouds never obscure the five landings. At top and bottom edges quieter misty scenery to blend vertically. Natural intricate masonry, vivid but tasteful, professionally painted high-quality commercial learning game art. NOT an infographic, not flat vectors, not frontal first-person stairs, not a screenshot of app. Full bleed illustration only, NO text.
+
+The output's actual landing coordinates were measured; code follows those coordinates rather than the requested estimates.
+
+## watchtower.png — final prompt
+
+Single isolated ancient Great Wall watchtower game map sprite on genuine transparent background. Rich polished hand-painted fantasy illustration matching warm golden sandstone Great Wall, softly weathered detailed brickwork, jade-green subtle patina, dark arched entrance, crenellated upper parapet and small traditional dark tiled roof. Camera bird's-eye three-quarter isometric, see roof and front doorway, like an elevated 2D learning game world map. Tower base connects to a short broad stone stair approach pointing bottom-center. No background landscape, no text, no numbers, no people, no UI, no dramatic cast shadow beyond base. Center tower occupies most frame, complete silhouette, friendly premium mature art direction.

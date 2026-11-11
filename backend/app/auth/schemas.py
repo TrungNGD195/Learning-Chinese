@@ -45,6 +45,18 @@ class UserProfileResponse(BaseModel):
     role: str
 
 
+class ProfileUpdateRequest(AuthInput):
+    full_name: str
+
+    @field_validator('full_name')
+    @classmethod
+    def validate_name(cls, value: str) -> str:
+        value = value.strip()
+        if not value or len(value) > 120:
+            raise ValueError('Họ tên cần có từ 1 đến 120 ký tự')
+        return value
+
+
 class ChangePasswordRequest(AuthInput):
     current_password: str
     new_password: str

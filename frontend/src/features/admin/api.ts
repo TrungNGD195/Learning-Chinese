@@ -13,6 +13,8 @@ const lessonsPath = '/api/v1/admin/lessons'
 const lessonPath = '/api/v1/admin/lessons/{lesson_id}'
 const publishLessonPath = '/api/v1/admin/lessons/{lesson_id}/publish'
 const archiveLessonPath = '/api/v1/admin/lessons/{lesson_id}/archive'
+const unpublishLessonPath = '/api/v1/admin/lessons/{lesson_id}/unpublish'
+const publishLessonPackagePath = '/api/v1/admin/lessons/{lesson_id}/publish-package'
 const vocabularyPath = '/api/v1/admin/lessons/{lesson_id}/vocabulary'
 const vocabularyItemPath = '/api/v1/admin/lessons/{lesson_id}/vocabulary/{item_id}'
 const grammarPath = '/api/v1/admin/lessons/{lesson_id}/grammar'
@@ -119,6 +121,9 @@ export function archiveAdminLesson(lessonId: string) {
     method: 'POST', path: `/admin/lessons/${id(lessonId)}/archive`,
   })
 }
+
+export const unpublishAdminLesson = (lessonId: string) => apiClient<ResponseBodyOf<typeof unpublishLessonPath, 'post'>>({ method: 'POST', path: `/admin/lessons/${id(lessonId)}/unpublish` })
+export const publishAdminLessonPackage = (lessonId: string) => apiClient<ResponseBodyOf<typeof publishLessonPackagePath, 'post'>>({ method: 'POST', path: `/admin/lessons/${id(lessonId)}/publish-package` })
 
 export function listLessonVocabulary(lessonId: string) {
   return apiClient<ResponseBodyOf<typeof vocabularyPath, 'get'>>({

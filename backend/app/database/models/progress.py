@@ -1,4 +1,4 @@
-from sqlalchemy import CheckConstraint, DateTime, ForeignKey, Index, Uuid, UniqueConstraint, func
+from sqlalchemy import CheckConstraint, DateTime, ForeignKey, Index, Integer, Uuid, UniqueConstraint, func
 
 from app.database.models._factory import model
 from app.database.models.curriculum import created, id_col, updated
@@ -7,3 +7,10 @@ LearnerLessonProgress = model("LearnerLessonProgress", "learner_lesson_progress"
 LearnerHSKProgress = model("LearnerHSKProgress", "learner_hsk_progress", [id_col(), ("user_id", Uuid(as_uuid=True), {"nullable": False, "foreign_key": "users.id"}), ("hsk_level_id", Uuid(as_uuid=True), {"nullable": False, "foreign_key": "hsk_levels.id"}), ("started_at", DateTime(timezone=True)), ("completed_at", DateTime(timezone=True)), created(), updated()], UniqueConstraint("user_id", "hsk_level_id"))
 LearnerVocabularyProgress = model("LearnerVocabularyProgress", "learner_vocabulary_progress", [id_col(), ("user_id", Uuid(as_uuid=True), {"nullable": False, "foreign_key": "users.id"}), ("lesson_vocabulary_id", Uuid(as_uuid=True), {"nullable": False, "foreign_key": "lesson_vocabulary.id"}), ("viewed_at", DateTime(timezone=True), {"nullable": False})], UniqueConstraint("user_id", "lesson_vocabulary_id"))
 LearnerGrammarProgress = model("LearnerGrammarProgress", "learner_grammar_progress", [id_col(), ("user_id", Uuid(as_uuid=True), {"nullable": False, "foreign_key": "users.id"}), ("lesson_grammar_id", Uuid(as_uuid=True), {"nullable": False, "foreign_key": "lesson_grammar.id"}), ("viewed_at", DateTime(timezone=True), {"nullable": False})], UniqueConstraint("user_id", "lesson_grammar_id"))
+
+LearnerReadingProgress = model("LearnerReadingProgress", "learner_reading_progress", [
+    id_col(), ("user_id", Uuid(as_uuid=True), {"nullable": False, "foreign_key": "users.id"}),
+    ("lesson_reading_id", Uuid(as_uuid=True), {"nullable": False, "foreign_key": "lesson_readings.id"}),
+    ("reading_version", Integer, {"nullable": False}),
+    ("completed_at", DateTime(timezone=True), {"nullable": False}),
+], UniqueConstraint("user_id", "lesson_reading_id"))

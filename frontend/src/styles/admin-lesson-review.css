@@ -1,0 +1,40 @@
+.admin-lesson-exercises,
+.admin-embedded-assessment { display: grid; min-width: 0; gap: var(--space-4); }
+.admin-lesson-exercises { padding: 0; }
+.admin-shell.admin-academy-workspace .admin-lesson-exercises { border: 0; background: transparent; box-shadow: none; }
+.admin-embedded-assessment { width: 100%; margin: 0; }
+.admin-shell.admin-academy-workspace .admin-curriculum-page { grid-template-columns: minmax(0, 1fr); }
+.admin-shell.admin-academy-workspace .admin-curriculum-page > .admin-hsk-metadata { grid-column: 1 / -1; width: 100%; box-sizing: border-box; }
+.admin-shell.admin-academy-workspace .admin-hsk-metadata .admin-form-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); }
+.admin-shell.admin-academy-workspace .admin-curriculum-page .admin-save-bar:not(.admin-save-bar--dirty) { position: static; }
+.admin-lesson-exercises > .admin-page-header { align-items: start; }
+.admin-lesson-exercises > .admin-page-header h2 { margin: 0 0 .5rem; }
+.admin-lesson-exercises > .admin-page-header p { max-width: 70ch; margin: 0; color: var(--color-text-muted); }
+.admin-embedded-assessment-heading { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; padding-block: 1rem; border-block: 1px solid var(--color-border); }
+.admin-embedded-assessment-heading h3 { flex: 1 1 20rem; margin: 0; color: var(--color-text-strong); font-size: 1.15rem; }
+.admin-embedded-assessment-heading p { flex-basis: 100%; margin: 0; color: var(--color-text-muted); }
+.admin-lesson-review { display: grid; gap: var(--space-4); }
+.admin-lesson-review h2,
+.admin-lesson-review h3,
+.admin-lesson-review h4,
+.admin-lesson-review p { margin: 0; }
+.admin-lesson-review > p { max-width: 70ch; color: var(--color-text-muted); }
+.admin-lesson-review-theory { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-4); padding-block: var(--space-4); border-block: 1px solid var(--color-border); }
+.admin-lesson-review-theory > div { display: flex; flex-direction: column; align-items: start; gap: .5rem; min-width: 0; }
+.admin-lesson-review-theory strong { color: var(--color-text-strong); font-size: 1.3rem; }
+.admin-lesson-review-theory .ui-button { padding-inline: 0; text-align: start; }
+.admin-lesson-review-practice { display: grid; gap: var(--space-3); }
+.admin-lesson-review-practice > p { color: var(--color-text-muted); }
+.admin-lesson-review-exercise { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-3); padding-block: var(--space-3); border-block-end: 1px solid var(--color-border); }
+.admin-lesson-review-exercise > div { flex: 1 1 18rem; min-width: 0; }
+.admin-lesson-review-exercise h4 { font-size: 1rem; }
+.admin-lesson-review-exercise p { margin-top: .5rem; color: var(--color-text-muted); }
+.admin-lesson-review-confirm { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-4); padding-top: var(--space-4); border-top: 1px solid var(--color-border); }
+.admin-lesson-review-confirm p { flex: 1 1 24rem; max-width: 65ch; }
+@media (max-width: 640px) {
+  .admin-shell.admin-academy-workspace .admin-hsk-metadata .admin-form-grid { grid-template-columns: minmax(0, 1fr); }
+  .admin-lesson-review-theory { grid-template-columns: 1fr; gap: var(--space-3); }
+  .admin-lesson-review-theory > div { display: grid; grid-template-columns: 1fr auto; align-items: center; }
+  .admin-lesson-review-theory .ui-button { grid-column: 1 / -1; justify-self: start; }
+  .admin-lesson-review-confirm > .ui-button { width: 100%; }
+}

@@ -39,20 +39,28 @@ def dummy_password_verify(password: str) -> None:
     verify_password(_DUMMY_HASH, password)
 
 
-def create_access_token(user_id: UUID, role: str, settings: Settings | None = None) -> str:
+def create_access_token(user_id: UUID, role: str, settings: Settings | None = None, *, session_version: int = 0) -> str:
     settings = settings or get_settings()
     now = datetime.now(UTC)
     return jwt.encode(
-        {"sub": str(user_id), "role": role, "iat": now, "exp": now + timedelta(minutes=settings.access_token_expire_minutes)},
+        {"sub": str(user_id), "role": role, 'session_version': session_version, "iat": now, "exp": now + timedelta(minutes=settings.access_token_expire_minutes)},
         settings.secret_key.get_secret_value(), algorithm="HS256",
     )
 
 
 def decode_access_token(token: str, settings: Settings | None = None) -> tuple[UUID, str]:
+    user_id, role, _ = decode_session_token(token, settings)
+    return user_id, role
+
+
+def decode_session_token(token: str, settings: Settings | None = None) -> tuple[UUID, str, int]:
     settings = settings or get_settings()
     try:
         claims = jwt.decode(token, settings.secret_key.get_secret_value(), algorithms=["HS256"], options={"require": ["sub", "role", "iat", "exp"]})
-        return UUID(claims["sub"]), claims["role"]
+        version = claims.get('session_version', 0)
+        if type(version) is not int or version < 0:
+            raise ValueError('Invalid session version')
+        return UUID(claims["sub"]), claims["role"], version
     except (jwt.PyJWTError, ValueError, TypeError, KeyError):
         raise ApplicationError("AUTHENTICATION_REQUIRED", "Authentication is required", status_code=401) from None
 

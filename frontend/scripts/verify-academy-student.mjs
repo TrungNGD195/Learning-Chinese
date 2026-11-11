@@ -75,7 +75,7 @@ try {
   await visit(page,'/lessons/'+id.lesson);await page.locator('.lesson-theory-card').first().waitFor();await capture(page,'lesson',width)
   await visit(page,'/assessments/'+id.assessment);await page.locator('.assessment-screen').waitFor();await capture(page,'assessment',width)
   await visit(page,'/assessment-attempts/'+id.attempt+'/result');await page.locator('.assessment-result-summary').waitFor();await capture(page,'result',width)
-  await visit(page,'/profile');await page.getByRole('heading',{name:'Profile',exact:true}).waitFor();await capture(page,'profile',width)
+  await visit(page,'/profile');await page.getByRole('heading',{name:'Hồ sơ',exact:true}).waitFor();await capture(page,'profile',width)
   await visit(page,'/history');await page.locator('.history-unavailable').waitFor();await capture(page,'history-empty',width)
   await visit(page,'/companions');await page.locator('.academy-cast-main').waitFor();await capture(page,'companions',width)
   assert.equal(state.posts.length,0,'Visual inspection must not mutate even fixture learner progress')

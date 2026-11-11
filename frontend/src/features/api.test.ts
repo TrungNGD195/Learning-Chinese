@@ -3,7 +3,6 @@ import { authApi, changePassword, login } from './auth/api'
 import { getDashboard } from './dashboard/api'
 import { completeSection } from './pronunciation/api'
 import { getAttempts } from './assessment/api'
-import { listConversations, getMessages, renameConversation } from './conversation/api'
 import { listAdminLessons, updateHskLevel, listLessonVocabulary } from './admin/api'
 import * as adminApiExports from './admin/api'
 
@@ -28,7 +27,7 @@ describe('feature API wrappers', () => {
     await login({ email: 'learner@example.test', password: 'test-only-password' })
 
     expect(Object.keys(authApi)).toEqual([
-      'register', 'login', 'getMe', 'refresh', 'logout', 'logoutAll',
+      'register', 'login', 'getMe', 'updateProfile', 'refresh', 'logout', 'logoutAll',
       'changePassword', 'requestPasswordReset', 'confirmPasswordReset',
     ])
     expect(fetchMock.mock.calls[0][0]).toBe('http://localhost:8000/api/v1/auth/login')
@@ -74,30 +73,6 @@ describe('feature API wrappers', () => {
     expect(fetchMock.mock.calls[0][0]).toBe(
       '/api/v1/me/assessment-attempts?page=2&page_size=10&assessment_id=11111111-1111-1111-1111-111111111111&lesson_id=22222222-2222-2222-2222-222222222222&assessment_type=PERIODIC_TEST',
     )
-  })
-
-  it('preserves Conversation list and message pagination/filter semantics', async () => {
-    vi.stubEnv('VITE_API_BASE_URL', '/api/v1')
-    const fetchMock = mockFetch({ items: [], page: 1, page_size: 20, total: 0 })
-
-    await listConversations({ page: 3, page_size: 12, lesson_id: 'lesson-id', scope: 'LESSON' })
-    await getMessages('conversation-id', { page: 2, page_size: 25 })
-
-    expect(fetchMock.mock.calls.map(([url]) => url)).toEqual([
-      '/api/v1/me/conversations?page=3&page_size=12&lesson_id=lesson-id&scope=LESSON',
-      '/api/v1/conversations/conversation-id/messages?page=2&page_size=25',
-    ])
-  })
-
-  it('maps Conversation rename as a JSON mutation', async () => {
-    vi.stubEnv('VITE_API_BASE_URL', '/api/v1')
-    const fetchMock = mockFetch({ id: 'conversation-id', title: 'New title' })
-
-    await renameConversation('conversation-id', { title: 'New title' })
-
-    expect(fetchMock.mock.calls[0][0]).toBe('/api/v1/conversations/conversation-id')
-    expect((fetchMock.mock.calls[0][1] as RequestInit).method).toBe('PATCH')
-    expect((fetchMock.mock.calls[0][1] as RequestInit).body).toBe('{"title":"New title"}')
   })
 
   it('maps Admin list, mutation, and lesson-content operations', async () => {

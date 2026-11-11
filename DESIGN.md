@@ -29,6 +29,11 @@ colors:
   info: "#066970"
   info-soft: "#e7f7f1"
 typography:
+  journey-plaque:
+    fontFamily: "Noto Serif, serif"
+    fontSize: "25px"
+    fontWeight: 700
+    lineHeight: 1
   headline:
     fontFamily: "Noto Sans, sans-serif"
     fontSize: "32px"
@@ -263,13 +268,31 @@ Student-style previews read the current draft and identify unsaved changes. Voca
 
 ### Navigation
 
+The learner now lands directly in Giáo trình (`/pronunciation`); the sidebar/mobile bar contain Giáo trình and Hồ sơ. Legacy `/dashboard` redirects to the curriculum and `/companions` to the profile's `#companions` section. Keep the real resume action at the curriculum heading and preserve logout/account access. The cast introduction is a compact, collapsed native details section inside Profile rather than a standalone destination. Reuse landscape artwork only in whitespace; study and password surfaces stay opaque and readable.
+
 The learner rail uses outlined SVG icons and text, with a pale selected row against pine. Hover lightens text and adds a muted green ground. Preserve an accessible label when the rail collapses to icons; mobile navigation keeps both icons and text. The account and logout controls remain separate from course progress.
+
+### Student curriculum and illustrated ascent
+
+**Current direction (11 November 2026):** the user removed the 2D Great Wall. The main curriculum is list-only; omit map selectors, map artwork and walking controls. Earlier map details below describe the retired version. Existing `?view=map` links open the ordinary lesson list. Retain the illustrated foundation subjects and content-specific lesson covers.
+
+Use the same cloud cover/hold/reveal for entering study as for returning. `LessonEntryLink` preserves native modified/new-tab clicks, guards repeat clicks and follows the shared provider's reduced-motion and Escape behavior. Place Bo in the curriculum introduction (guide), empty search (think), measure-word usage notes (think), practice preparation (encourage), passed results (celebrate) and retry guidance (encourage); never float Bo over reading content. Native dashboard/sidebar appearances remain.
+
+The approved academy prototype now governs the main local curriculum at `/pronunciation` and `/hsk/:hskLevel`. The default list uses individual illustrated lesson blocks, three columns on wide screens, two on medium screens and one on phones. Keep real titles and learning states legible below the image. Choose supported cover artwork from meaningful title topics; use a neutral book for unmatched, unpublished, planned and assessment entries. Do not infer artwork topics from lesson ordinal numbers.
+
+The optional `?view=map` view uses the painted bird's-eye 2D Great Wall, with gates aligned to measured stone landings, Bo at the current unit and a watchtower leading to the next HSK. Progress ascends from bottom to top. Keep HSK/view selectors, locate and state legend; omit the list summary and scenic introductory banner in map mode. Use ordinary vertical scrolling, direct gate links and reduced-motion support, without the former 3D camera or walking controls. Retain the native pine sidebar and account actions.
+
+The real curriculum and progress APIs determine all states and destinations. Keep pronunciation accessible and required for HSK 1 only; HSK 2 and HSK 3 remain independently selectable. Preserve periodic assessments in backend order. Unpublished, locked and planned entries cannot open content; they explain their state. Planned counts of 15/10/15 describe intended lesson slots, never published content or completed progress. Generated map and tower asset provenance remains alongside `academy-2d-v1` artwork; production code does not import prototype learning records or storage.
+
+The list header uses two illustrated subject blocks for pronunciation and measure words, followed by HSK/view selectors, compact progress and search. Avoid the former large green progress panel. Full-scene covers from `curriculum-v2/covers.png` give the five current lesson subjects distinct imagery; preserve the 3:2 tile ratio and match by title topic rather than sequence. Unknown, unpublished and assessment content uses neutral study artwork. The measure-word subject is supplementary reading, freely accessible from every HSK: ten entries, clear Hanzi/pinyin, usage, phrases, example sentences, notes and phrase audio. Use “Mục n/10” for position without implying completion or changing HSK progress.
 
 ### Pronunciation study stage
 
 The current sound and example occupy two columns in a pale inset stage. Tones use a geometric pitch diagram rather than a decorative image. Articulation guidance, the source disclosure and device-voice availability stay adjacent to the learning material. Three section states show initials, finals and tones; completion and the final finish action reflect API state. The frontend must preserve ordered section completion and the server-controlled HSK1 gate.
 
 ### Academy cast and vocabulary art
+
+Current cast allocation: Bo leads/resumes and celebrates passed results; Trúc explains technical material including pronunciation, vocabulary, grammar and measure words; Bút handles practice preparation, active-question advice and retry feedback, with its happy pose for successful-review advice. Avoid replacing every helper with Bo or repeating mascots across the same reading area.
 
 Bo has six expressions: welcome, guide, think, encourage, celebrate and rest. Trúc supports explanations; Bút supports practice, with a happy practice pose. Decorative appearances are hidden from assistive technology; meaningful appearances have contextual text alternatives. Keep lesson content and action labels understandable without the image.
 

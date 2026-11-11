@@ -1,0 +1,64 @@
+/* Text actions share a real button surface; navigation keeps native hrefs. */
+.app-shell :is(
+  .ui-page-header__context a,
+  a.lesson-header__back,
+  button.pronunciation-session__review-link,
+  a.academy-text-link,
+  .academy-study-context > a,
+  .progress-hsk__identity h3 a,
+  .lesson-part-navigation > a:not(.learner-link-action),
+  .public-login-register a,
+  .public-auth-links a,
+  .admin-table a,
+  a.admin-link-action,
+  .admin-library-table td a,
+  a.admin-preview-open,
+  .admin-workbench-panel-footer a,
+  a.admin-workbench-section-link,
+  .admin-workbench-stats > a,
+  .admin-stats-detail-heading > a,
+  .admin-workbench-exercise-list li > a,
+  .admin-assessments-page > p a,
+  .admin-documents-page .ui-alert a
+) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  max-width: 100%;
+  padding: 9px 14px;
+  border: 1px solid #b9cbb0;
+  border-radius: 9px;
+  background: #fffef7;
+  color: #28563d;
+  font-family: var(--font-product-ui, 'Noto Sans', sans-serif);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+  transition: background-color 140ms ease-out, border-color 140ms ease-out;
+
+  &:hover { border-color: #7e9d70; background: #e8efdd; color: #173f34; text-decoration: none; }
+  &:active { background: #dce8d1; }
+  &:focus-visible { outline: 3px solid #9a6221; outline-offset: 3px; text-decoration: none; }
+  & > svg { flex-shrink: 0; }
+}
+
+/* Back controls stay compact enough for the lesson's sticky header. */
+.app-shell .lesson-header__back { font-size: 14px; }
+.app-shell .lesson-header__back:hover { text-decoration: none; }
+.app-shell .admin-workbench-exercise-list li > a { width: 100%; justify-content: space-between; text-align: start; }
+.app-shell a.admin-preview-open { margin-top: 18px; }
+.app-shell .skip-link { text-decoration: none; }
+.app-shell :is(.public-login-register,.public-auth-links) { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 12px; }
+@media (max-width: 800px) {
+  .app-shell .lesson-study-workspace .lesson-header { padding-block: 5px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .app-shell :is(a.lesson-header__back,a.academy-text-link,.ui-page-header__context a) { transition: none; }
+}

@@ -9,7 +9,7 @@ type StateProps = {
   className?: string
 }
 
-export function LoadingState({ children = 'Loading…', className = '' }: Pick<StateProps, 'children' | 'className'>) {
+export function LoadingState({ children = "Đang tải…", className = '' }: Pick<StateProps, 'children' | 'className'>) {
   return <div className={['ui-page-state', className].filter(Boolean).join(' ')} role="status">{children}</div>
 }
 

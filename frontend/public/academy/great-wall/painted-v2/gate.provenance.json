@@ -1,0 +1,22 @@
+{
+  "tool": "built-in image_gen",
+  "transparent_background": true,
+  "original": "C:/Users/Diep_PC/.codex/generated_images/01a1bed5-90f3-7240-bc27-3cc6f7eb4340/exec-852771f0-6df7-4611-a2d7-0d4b564408b5.png",
+  "references": [
+    ".impeccable/build/crops/painted-gate.png",
+    ".impeccable/proposals/uphill-bo-v1/uphill-bo-v1.png"
+  ],
+  "measured_spec": ".impeccable/build/spec.json",
+  "region": "painted-gate",
+  "prompt_file": "gate.prompt.txt",
+  "source_plate": "assets/plates/painted-gate.png",
+  "shipping_asset": "gate.webp",
+  "transforms": "Native RGBA PNG copied unchanged to source plate; converted full size to lossless WebP. Exact prompt embedded in PNG text, WebP XMP and supported CLI sidecar. No color keying, crop, redrawing, alpha editing or resizing.",
+  "quality_status": "unscored; needs_parent_review",
+  "sha256": "964b4e84346997fba75a231d4c1494bae4cef20d8c0d8fb17e5c28fb28069625",
+  "bytes": 993152,
+  "size": [
+    1615,
+    974
+  ]
+}

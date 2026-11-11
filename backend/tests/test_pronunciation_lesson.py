@@ -51,8 +51,11 @@ def test_pronunciation_steps_and_final_gate_are_server_owned():
                 assert (await client.post('/api/v1/pronunciation/lesson/complete')).status_code == 409
                 assert (await client.post('/api/v1/pronunciation/lesson/advance', json={'section_code': 'FINALS', 'step_index': 0})).status_code == 409
 
-                for code, count in [('INITIALS', 21), ('FINALS', 36), ('TONES', 5)]:
+                for code, count in [('INITIALS', 21), ('FINALS', 36), ('TONES', 5), ('SANDHI', 12)]:
                     current = await state()
+                    if code == 'SANDHI':
+                        assert await hsk_state() == 'LOCKED'
+                        assert (await client.post('/api/v1/pronunciation/lesson/complete')).status_code == 409
                     assert current['current_section'] == code and current['total_steps'] == count
                     for index in range(count):
                         response = await client.post('/api/v1/pronunciation/lesson/advance', json={'section_code': code, 'step_index': index})

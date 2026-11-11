@@ -142,6 +142,13 @@ async def admin_transition_assessment(session:AsyncSession,row:Assessment,status
     await session.flush();return row
 
 
+async def admin_lesson_exercises_for_update(session: AsyncSession, lesson_id: UUID):
+    return (await session.execute(select(Assessment).where(
+        Assessment.lesson_id == lesson_id, Assessment.type == "LESSON_EXERCISE",
+        Assessment.status != "ARCHIVED",
+    ).order_by(Assessment.id).with_for_update())).scalars().all()
+
+
 async def admin_replace_assessment_scope(session:AsyncSession,assessment_id:UUID,scope:dict):
     for key,table,model,column in (("lesson_ids",AssessmentLesson,Lesson,"lesson_id"),
         ("vocabulary_ids",AssessmentVocabulary,Vocabulary,"vocabulary_id"),

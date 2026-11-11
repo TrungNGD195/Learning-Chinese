@@ -11,6 +11,27 @@ type ApiRequestOptions<Body = never> = {
 
 const apiPrefix = '/api/v1'
 
+/** Static landscape data does not participate in authenticated API sessions. */
+export async function loadJourneyTerrainAsset():Promise<unknown> {
+  const response=await fetch('/academy/great-wall/spatial-v1/terrain-dem.json',{
+    credentials:'omit',mode:'same-origin',redirect:'error',signal:AbortSignal.timeout(10000),
+  })
+  if(!response.ok)throw new Error('Terrain unavailable')
+  return response.json()
+}
+
+// Static, public character assets share the central browser transport boundary.
+// They deliberately bypass authenticated API/session refresh behavior.
+export async function loadHanziStrokeAsset(codepoint: string): Promise<unknown> {
+  if (!/^[a-f0-9]{4,6}$/.test(codepoint)) throw new Error('UNSUPPORTED_CHARACTER')
+  const response = await fetch('/hanzi-data/' + codepoint + '.json', {
+    credentials: 'omit', mode: 'same-origin', redirect: 'error', signal: AbortSignal.timeout(10000),
+  })
+  if (response.status === 404) throw new Error('UNSUPPORTED_CHARACTER')
+  if (!response.ok) throw new Error('STROKE_DATA_UNAVAILABLE')
+  return response.json()
+}
+
 export function normalizeApiBaseUrl(value: string | undefined): string {
   const configured = value?.trim()
   if (!configured) {

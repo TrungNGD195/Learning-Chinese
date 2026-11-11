@@ -1,0 +1,16 @@
+.lesson-part-heading { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 20px; }
+.bo-shell .lesson-part-heading h2 { margin: 0; font-size: 26px; }
+.lesson-part-page .lesson-manuscript__chapters { min-width: 0; }
+.bo-shell .lesson-part-page .lesson-manuscript__index a { padding: 12px; border-radius: 10px; text-decoration: none; }
+.bo-shell .lesson-part-page .lesson-manuscript__index a[aria-current="page"] { color: #fff9e8; background: #244b3b; }
+.bo-shell .lesson-part-page .lesson-manuscript__index a[aria-current="page"] span { color: inherit; }
+.lesson-part-page .lesson-manuscript__index a:focus-visible { outline: 3px solid #9a6221; outline-offset: 3px; }
+.lesson-part-navigation { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-top: 24px; }
+.lesson-part-navigation > a { min-height: 44px; display: inline-flex; align-items: center; }
+.lesson-part-page #page-title[tabindex="-1"]:focus { outline: none; }
+.lesson-part-page .vocabulary-study-card__summary > .academy-word-illustration,
+.lesson-part-page .vocabulary-study-card__summary > .academy-numeral-illustration { max-width: none; }
+@media (max-width: 800px) {
+  .bo-shell .lesson-part-page .lesson-manuscript__index { display: flex; flex-wrap: nowrap; overflow-x: auto; gap: 8px; padding: 4px; scrollbar-width: thin; }
+  .bo-shell .lesson-part-page .lesson-manuscript__index a { flex: 0 0 auto; }
+}

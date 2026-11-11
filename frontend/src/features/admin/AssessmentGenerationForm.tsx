@@ -49,17 +49,17 @@ function lessonLabel(lesson: LessonChoice, levelNumber?: number) {
   return `HSK ${levelNumber ?? '—'} · Bài ${lesson.lesson_number} · ${lesson.title}`
 }
 
-export function AssessmentGenerationForm() {
+export function AssessmentGenerationForm({ fixedLessonId, periodicOnly = false, onCreated }: { fixedLessonId?: string; periodicOnly?: boolean; onCreated?: (id: string) => void }) {
   const client = useQueryClient()
   const navigate = useNavigate()
-  const [generationKind, setGenerationKind] = useState<GenerationKind>('LESSON_EXERCISE')
+  const [generationKind, setGenerationKind] = useState<GenerationKind>(periodicOnly ? 'PERIODIC_TEST' : 'LESSON_EXERCISE')
   const [title, setTitle] = useState('')
   const [description, setDescription] = useState('')
-  const [passThreshold, setPassThreshold] = useState('80')
-  const [questionCount, setQuestionCount] = useState('1')
+  const [passThreshold, setPassThreshold] = useState(periodicOnly ? '90' : '80')
+  const [questionCount, setQuestionCount] = useState(periodicOnly ? '1' : '30')
   const [difficulty, setDifficulty] = useState<Difficulty | ''>('')
-  const [allowedTypes, setAllowedTypes] = useState<QuestionType[]>(['multiple_choice'])
-  const [lessonId, setLessonId] = useState('')
+  const [allowedTypes, setAllowedTypes] = useState<QuestionType[]>(periodicOnly ? ['multiple_choice'] : ['multiple_choice', 'fill_blank', 'matching', 'reorder_sentence'])
+  const [lessonId, setLessonId] = useState(fixedLessonId ?? '')
   const [selectedLessonIds, setSelectedLessonIds] = useState<string[]>([])
   const [selectedLessons, setSelectedLessons] = useState<Record<string, LessonChoice>>({})
   const [selectedVocabularyIds, setSelectedVocabularyIds] = useState<string[]>([])
@@ -72,6 +72,7 @@ export function AssessmentGenerationForm() {
   const lessonsQuery = useQuery({
     queryKey: queryKeys.adminLessons(lessonFilters),
     queryFn: () => listAdminLessons(lessonFilters),
+    enabled: !fixedLessonId,
   })
   const discoveryLessonIds = useMemo(
     () => generationKind === 'PERIODIC_TEST' ? selectedLessonIds : [],
@@ -120,19 +121,21 @@ export function AssessmentGenerationForm() {
   const thresholdValue = Number(passThreshold)
   const countValue = Number(questionCount)
   const validCommon = Number.isInteger(thresholdValue) && thresholdValue >= 0 && thresholdValue <= 100
-    && Number.isInteger(countValue) && countValue >= 1 && countValue <= 10
-    && difficulty !== '' && allowedTypes.length > 0
+    && Number.isInteger(countValue) && (generationKind === 'LESSON_EXERCISE' ? countValue === 30 : countValue >= 1 && countValue <= 10)
+    && difficulty !== '' && allowedTypes.length >= (generationKind === 'LESSON_EXERCISE' ? 3 : 1)
   const mutation = useMutation({
     mutationFn: (request: AssessmentGenerationRequest) => generateAssessmentDraft(request),
     retry: false,
     onSuccess: async (result) => {
       await invalidateAssessmentList(client)
-      await navigate(`/admin/assessments/${encodeURIComponent(result.assessment.id)}`)
+      const item = result.assessment
+      if (onCreated) { onCreated(item.id); return }
+      await navigate(item.lesson_id ? `/admin/lessons/${encodeURIComponent(item.lesson_id)}?section=exercises&exercise=${encodeURIComponent(item.id)}` : `/admin/assessments/${encodeURIComponent(item.id)}`)
     },
   })
   const validScope = generationKind === 'LESSON_EXERCISE'
-    ? Boolean(!lessonsQuery.isPending && !lessonsQuery.isError && lessonId
-      && lessonsQuery.data?.items.some((lesson) => lesson.id === lessonId && lesson.status !== 'ARCHIVED'))
+    ? Boolean(fixedLessonId || (!lessonsQuery.isPending && !lessonsQuery.isError && lessonId
+      && lessonsQuery.data?.items.some((lesson) => lesson.id === lessonId && lesson.status !== 'ARCHIVED')))
     : selectedLessonIds.length > 0 && !lessonsQuery.isPending && !lessonsQuery.isError
       && !discoveryLoading && !discoveryFailed
       && (selectedVocabularyIds.some((id) => discoveredVocabulary.has(id))
@@ -199,13 +202,13 @@ export function AssessmentGenerationForm() {
     <form className="admin-ai-generation-form" onSubmit={submit} aria-labelledby="generate-assessment-title">
     <header className="admin-ai-generation-header"><div><h2 id="generate-assessment-title">Tạo bản nháp bằng AI</h2></div><p>Đề do AI tạo được lưu dưới dạng nháp. Quản trị viên cần duyệt và xuất bản trước khi học viên sử dụng.</p></header>
     <div className="admin-ai-generation-fields">
-      <section className="admin-ai-generation-group" aria-labelledby="generation-type-heading"><h3 id="generation-type-heading">1. Loại bài luyện tập</h3>
-      <label>Loại bài luyện tập<select value={generationKind} disabled={mutation.isPending} onChange={(event) => { setGenerationKind(event.target.value as GenerationKind); setPassThreshold(event.target.value === 'LESSON_EXERCISE' ? '80' : '90') }}>
+      {!fixedLessonId && !periodicOnly && <section className="admin-ai-generation-group" aria-labelledby="generation-type-heading"><h3 id="generation-type-heading">1. Loại bài luyện tập</h3>
+      <label>Loại bài luyện tập<select value={generationKind} disabled={mutation.isPending} onChange={(event) => { setGenerationKind(event.target.value as GenerationKind); setPassThreshold(event.target.value === 'LESSON_EXERCISE' ? '80' : '90'); setQuestionCount(event.target.value === 'LESSON_EXERCISE' ? '30' : '1'); setAllowedTypes(event.target.value === 'LESSON_EXERCISE' ? ['multiple_choice', 'fill_blank', 'matching', 'reorder_sentence'] : ['multiple_choice']) }}>
         <option value="LESSON_EXERCISE">Luyện tập bài học</option><option value="PERIODIC_TEST">Kiểm tra định kỳ</option>
       </select></label>
-      </section>
+      </section>}
 
-      {generationKind === 'LESSON_EXERCISE' ? <section className="admin-ai-generation-group" aria-label="Phạm vi tạo luyện tập bài học">
+      {fixedLessonId ? <section className="admin-ai-generation-group"><h3>Phạm vi tạo câu hỏi</h3><p>30 câu hỏi trọng tâm bài hiện tại, kết hợp ôn từ vựng và ngữ pháp các bài trước trong cùng cấp HSK. Bản nháp được mở ngay tại đây để chỉnh sửa và duyệt.</p></section> : generationKind === 'LESSON_EXERCISE' ? <section className="admin-ai-generation-group" aria-label="Phạm vi tạo luyện tập bài học">
         <h3>2. Phạm vi · Luyện tập bài học</h3>
         <label>Lọc bài học theo HSK<select value={hskFilter} disabled={mutation.isPending} onChange={(event) => { setHskFilter(event.target.value); setLessonPage(1) }}>
           <option value="">Tất cả cấp độ HSK</option>{(hskQuery.data ?? []).map((level) => <option key={level.id} value={level.id}>HSK {level.level_number}{level.title ? ` · ${level.title}` : ''}</option>)}
@@ -265,23 +268,24 @@ export function AssessmentGenerationForm() {
         </dl>
         {discoveryLoading && <p role="status">Đang tải nội dung bài học đã chọn…</p>}
       </section>}
-      <section className="admin-ai-generation-group" aria-labelledby="generation-config-heading"><h3 id="generation-config-heading">3. Thiết lập tạo đề</h3>
+      <section className="admin-ai-generation-group" aria-labelledby="generation-config-heading"><h3 id="generation-config-heading">Thiết lập tạo đề</h3>
         <div className="admin-ai-generation-config">
           <label>Tiêu đề (không bắt buộc)<input value={title} disabled={mutation.isPending} onChange={(event) => setTitle(event.target.value)} /></label>
           <label>Mô tả (không bắt buộc)<textarea value={description} disabled={mutation.isPending} onChange={(event) => setDescription(event.target.value)} /></label>
           <label>Điểm đạt (%)<input type="number" min="0" max="100" step="1" value={passThreshold} disabled={mutation.isPending} onChange={(event) => setPassThreshold(event.target.value)} /></label>
-          <label>Số câu hỏi<input type="number" min="1" max="10" step="1" value={questionCount} disabled={mutation.isPending} onChange={(event) => setQuestionCount(event.target.value)} /></label>
+          <label>Số câu hỏi<input type="number" min={generationKind === 'LESSON_EXERCISE' ? '30' : '1'} max={generationKind === 'LESSON_EXERCISE' ? '30' : '10'} step="1" value={questionCount} readOnly={generationKind === 'LESSON_EXERCISE'} disabled={mutation.isPending} onChange={(event) => setQuestionCount(event.target.value)} /></label>
+          {generationKind === 'LESSON_EXERCISE' && <p>Bài luyện tập gồm 30 câu. Chọn ít nhất 3 dạng bài để ôn tập đa dạng.</p>}
           <label>Độ khó<select required value={difficulty} disabled={mutation.isPending} onChange={(event) => setDifficulty(event.target.value as Difficulty | '')}>
             <option value="">Chọn độ khó</option><option value="EASY">Dễ</option><option value="MEDIUM">Trung bình</option><option value="HARD">Khó</option>
           </select></label>
         </div>
       </section>
       <fieldset className="admin-ai-generation-group admin-ai-generation-question-types" disabled={mutation.isPending}>
-        <legend>4. Dạng câu hỏi</legend>
+        <legend>Dạng câu hỏi</legend>
         {questionTypeOptions.map(([value, label]) => <label key={value}><input type="checkbox" checked={allowedTypes.includes(value)} onChange={() => toggleQuestionType(value)} />{label}</label>)}
       </fieldset>
       {mutation.isError && <Alert role="alert" tone="error">{generationErrorText(mutation.error)}</Alert>}
-      <div className="admin-ai-generation-submit"><p>5. Tạo bản nháp để quản trị viên duyệt.</p><Button variant="primary" type="submit" disabled={!canGenerate || mutation.isPending}>{mutation.isPending ? "Đang tạo bản nháp…" : "Tạo bản nháp"}</Button></div>
+      <div className="admin-ai-generation-submit"><p>Tạo bản nháp để quản trị viên duyệt.</p><Button variant="primary" type="submit" disabled={!canGenerate || mutation.isPending}>{mutation.isPending ? "Đang tạo bản nháp…" : "Tạo bản nháp"}</Button></div>
     </div>
     </form>
   </Surface>

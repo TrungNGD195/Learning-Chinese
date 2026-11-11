@@ -7,7 +7,7 @@ from app.auth.cookies import clear_auth_cookies, set_auth_cookies
 from app.auth.current_user import get_current_user
 from app.auth.email import EmailService, get_email_service
 from app.auth.schemas import (ChangePasswordRequest, LoginRequest, PasswordResetConfirmRequest,
-    PasswordResetRequest, RegisterRequest, UserProfileResponse)
+    PasswordResetRequest, RegisterRequest, UserProfileResponse, ProfileUpdateRequest)
 from app.core.config import get_settings
 from app.core.errors import ApplicationError
 from app.database.models import User
@@ -33,6 +33,11 @@ async def login(payload: LoginRequest, response: Response, session: AsyncSession
 @router.get("/me", response_model=UserProfileResponse)
 async def me(current_user: User = Depends(get_current_user)):
     return current_user
+
+
+@router.patch('/me', response_model=UserProfileResponse)
+async def update_profile(payload: ProfileUpdateRequest, current_user: User = Depends(get_current_user), session: AsyncSession = Depends(get_db_session)):
+    return await service.update_profile(session, current_user.id, payload.full_name)
 
 
 @router.post("/refresh", status_code=204)

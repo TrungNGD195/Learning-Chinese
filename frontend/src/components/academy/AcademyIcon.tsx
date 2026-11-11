@@ -1,5 +1,8 @@
 import type { ReactNode } from 'react'
 export function AcademyIcon({name,size=20}:{name:string;size?:number}){
   const paths:Record<string,ReactNode>={structure:<><rect x="3" y="4" width="7" height="6" rx="1"/><rect x="14" y="14" width="7" height="6" rx="1"/><path d="M10 7h7v7M3 18h7M6.5 14.5v7"/></>,exercise:<><rect x="4" y="3" width="16" height="18" rx="2"/><path d="m8 12 3 3 5-6M8 6h8"/></>,library:<><path d="M3 3v18h18M7 4v12M12 4v12M17 4l3 12M4 17h17"/></>,home:<><path d="m3 10 9-7 9 7v10H3Z"/><path d="M9 20v-7h6v7"/></>,path:<><circle cx="6" cy="5" r="2"/><circle cx="18" cy="19" r="2"/><path d="M6 7v3c0 5 12-1 12 4v3"/></>,history:<><path d="M4 10a8 8 0 1 1 1 8M4 3v7h7"/><path d="M12 8v5l3 2"/></>,profile:<><circle cx="12" cy="8" r="4"/><path d="M4 22v-3a8 8 0 0 1 16 0v3"/></>,friends:<><circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3M16 5a3 3 0 0 1 0 6m2 3a5 5 0 0 1 3 5v2"/></>,leaf:<><path d="M20 3c0 12-5 18-11 16S2 7 20 3Z"/><path d="m5 20 8-10"/></>,book:<><path d="M3 4h5a5 5 0 0 1 4 2 5 5 0 0 1 4-2h5v15h-5a5 5 0 0 0-4 2 5 5 0 0 0-4-2H3Z"/><path d="M12 6v15"/></>,arrow:<path d="M4 12h15m-6-6 6 6-6 6"/>,check:<path d="m5 12 4 4L19 6"/>,sound:<><path d="m10 4-5 4H2v8h3l5 4Zm4 4a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></>}
+  paths['sidebar-close'] = <><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 4v16m8-12-4 4 4 4"/></>
+  paths['sidebar-open'] = <><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 4v16m4-12 4 4-4 4"/></>
+  paths.logout = <><path d="M9 4H4v16h5m5-12 4 4-4 4m-6-4h14"/></>
   return <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{paths[name]??paths.book}</svg>
 }

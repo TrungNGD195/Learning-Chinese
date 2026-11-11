@@ -1,0 +1,31 @@
+{
+  "tool": "built-in image_gen",
+  "transparent_background": false,
+  "original": "C:/Users/Diep_PC/.codex/generated_images/01a1bed5-90f3-7240-bc27-3cc6f7eb4340/exec-2868d13b-3c66-441b-bb10-827da95972cc.png",
+  "reference_image": "frontend/public/academy/great-wall/painted-v2/landing-desktop.webp",
+  "architectural_reference": {
+    "url": "https://www.dpm.org.cn/lemmas/245264.html",
+    "title": "华表 — 故宫博物院",
+    "use": "Verified circular shaft with cloud carvings and ascending coiled dragon. No museum image pixels copied."
+  },
+  "prompt_file": "pillar-relief.prompt.txt",
+  "source_plate": "assets/plates/spatial-pillar-relief.png",
+  "source_size": [
+    1254,
+    1254
+  ],
+  "shipping_size": [
+    1024,
+    1024
+  ],
+  "format": "Opaque RGB WebP albedo",
+  "transform": "Entire native generated square resized with Lanczos to1024; RGB WebPquality91. No recoloring, cropping, seam synthesis or animal redrawing.",
+  "uv_notes": {
+    "u": "Map0..1 once around circumference; left/right wrap requested and inspected in2x repeat preview. Model-generated edge continuity is not a mathematical periodicity guarantee; place join toward rear.",
+    "v": "Map0..1 once along shaft for one ascending dragon; repeatT>1 duplicates the head. A3m circumference/4.5m shaft gives1.5x vertical stretch from square source.",
+    "lighting": "Soft tiny carved-recess shading only; actual cylinder geometry and renderer supply volumetric lighting."
+  },
+  "quality_status": "unscored; needs_parent_review",
+  "bytes": 323944,
+  "sha256": "dfdf4f90292d12bc60ab71249a0da26048155fc4d32b6fb48619ebb324b9c48b"
+}

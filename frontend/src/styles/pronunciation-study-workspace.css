@@ -1,0 +1,45 @@
+/* Match the lesson workspace: small headings, generous room for the sound. */
+.bo-shell .pronunciation-study-workspace .pronunciation-session__card { min-width: 0; padding: 24px; gap: 16px; justify-items: stretch; border-color: #d4dfc9; border-radius: 14px; background: #fffef8; }
+.bo-shell .pronunciation-study-workspace .pronunciation-session__heading { gap: 8px 16px; }
+.bo-shell .pronunciation-study-workspace .pronunciation-session__heading h2 { margin: 0; font-size: 20px; line-height: 1.4; }
+.bo-shell .pronunciation-study-workspace .pronunciation-session__heading > span { font-size: 14px; line-height: 1.5; }
+.bo-shell .pronunciation-study-workspace .pronunciation-session__card > progress { height: 4px; margin: 0; }
+.bo-shell .pronunciation-study-workspace .pronunciation-session__sound.academy-sound-stage { padding: 20px; gap: 20px; }
+.bo-shell .pronunciation-study-workspace .pronunciation-study-intro { margin: 0; }
+.bo-shell .pronunciation-study-workspace .academy-articulation-note { margin: 0; padding: 18px; }
+.bo-shell .pronunciation-study-workspace .academy-articulation-note h3 { margin: 0 0 8px; font-size: 20px; }
+.bo-shell .pronunciation-study-workspace .academy-articulation-note p { margin: 0; }
+.pronunciation-study-workspace .academy-pronunciation-layout { min-width: 0; gap: 20px; }
+.bo-shell .pronunciation-study-workspace .pronunciation-session__card > p[role="status"] { font-size: 16px; line-height: 1.6; }
+.bo-shell .pronunciation-study-workspace .pronunciation-section-locked { display: grid; grid-template-columns: 30px minmax(0,1fr); gap: 9px; min-height: 64px; padding: 10px; border: 1px solid transparent; border-radius: 9px; color: #61715a; }
+.pronunciation-section-locked > span:first-child { font-size: 17px; }
+.pronunciation-section-locked > span:last-child { display: flex; flex-direction: column; gap: 3px; font-size: 18px; line-height: 1.35; }
+.bo-shell .pronunciation-study-workspace .pronunciation-sections-nav a > span:first-child { color: inherit; }
+.pronunciation-study-position { text-align: center; color: #294d39; font-size: 16px; line-height: 1.4; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.pronunciation-study-position > small { display: block; color: #4d6846; font-size: 12px; }
+.pronunciation-study-workspace .pronunciation-session__navigation .ui-button { min-width: 0; white-space: normal; }
+.pronunciation-study-overview #lesson-study-content { display: grid; gap: 20px; }
+.pronunciation-study-overview .pronunciation-section-grid { grid-template-columns: repeat(4,minmax(0,1fr)); gap: 16px; }
+.pronunciation-study-overview .pronunciation-section-block { padding: 18px; gap: 12px; }
+.bo-shell .pronunciation-study-overview .pronunciation-section-block h2 { font-size: 20px; }
+.pronunciation-study-overview .pronunciation-section-block__preview { font-size: 23px; }
+.pronunciation-study-overview .pronunciation-section-block__action { padding-top: 12px; font-size: 15px; }
+@media (max-width: 1100px) {
+  .pronunciation-study-overview .pronunciation-section-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media (max-width: 800px) {
+  .bo-shell .pronunciation-study-workspace .pronunciation-sections-nav > :is(a,.pronunciation-section-locked) { flex: 0 0 112px; white-space: nowrap; }
+  .bo-shell .pronunciation-study-workspace .pronunciation-section-locked { flex: 1 0 88px; display: block; min-height: 50px; padding: 8px 10px; text-align: center; }
+  .pronunciation-section-locked > span:first-child { display: none; }
+  .pronunciation-section-locked > span:last-child { font-size: 16px; }
+  .bo-shell .pronunciation-study-workspace .pronunciation-session__card { padding: 18px; gap: 14px; }
+  .bo-shell .pronunciation-study-workspace .pronunciation-session__sound.academy-sound-stage { padding: 18px 10px; gap: 12px; }
+  .bo-shell .pronunciation-study-workspace .pronunciation-session__navigation .ui-button { font-size: 16px; min-height: 46px; padding: 10px 12px; }
+  .pronunciation-study-position { font-size: 14px; }
+  .pronunciation-study-workspace .pronunciation-session__navigation { width: auto; }
+  .pronunciation-study-workspace .pronunciation-session__navigation[data-completion="true"] { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); }
+  .pronunciation-study-workspace .pronunciation-session__navigation[data-completion="true"] > .pronunciation-study-position { grid-column: 1 / -1; grid-row: 1; }
+}
+@media (max-width: 500px) {
+  .pronunciation-study-overview .pronunciation-section-grid { grid-template-columns: minmax(0,1fr); }
+}

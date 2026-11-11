@@ -26,7 +26,7 @@ The user approved the illustrated academy prototype for production on 2026-11-03
 
 ## Brand Commitments
 
-The user requested an academic, trustworthy character with room for creativity. Existing product naming appears as Chinese Learning and Trung Chinese Learning; the final public name is undecided.
+The user chose Hanfolio as the public product name on 2026-11-11. Preserve an academic, trustworthy character with room for creativity, with Bo, Trúc and Bút as contextual learning companions.
 
 ## Evidence on Hand
 

@@ -13,9 +13,9 @@ const api = 'http://127.0.0.1:8000/api/v1'
 async function login(page: Page, email: string) {
   await page.goto('/login')
   await page.getByLabel('Email').fill(email)
-  await page.getByLabel('Password').fill(password!)
-  await page.getByRole('button', { name: 'Sign in', exact: true }).click()
-  await expect(page).toHaveURL(email === adminEmail ? /\/admin$/ : /\/dashboard$/)
+  await page.getByLabel("Mật khẩu").fill(password!)
+  await page.getByRole('button', { name: "Đăng nhập", exact: true }).click()
+  await expect(page).toHaveURL(email === adminEmail ? /\/admin$/ : /\/pronunciation$/)
 }
 
 async function noOverflow(page: Page) {
@@ -42,18 +42,35 @@ async function createLesson(page: Page, number: string, title: string) {
   return new URL(page.url()).pathname.split('/').at(-1)!
 }
 
+async function createPractice(page: Page, lessonId: string) {
+  const created = await page.request.post(`${api}/admin/assessments`, { data: { type: 'LESSON_EXERCISE', lesson_id: lessonId, title: 'Luyện tập duyệt chung', pass_threshold: 80 } })
+  expect(created.ok()).toBe(true)
+  const assessment = await created.json()
+  for (let index = 0; index < 30; index++) {
+    const response = await page.request.post(`${api}/admin/assessments/${assessment.id}/questions`, { data: { type: ['fill_blank', 'translate_zh_vi', 'sentence_writing'][index % 3], prompt: `Câu hỏi ${index + 1}`, reference_answer: '你好', order_index: index + 1, points: 1 } })
+    expect(response.ok()).toBe(true)
+  }
+  return assessment.id
+}
+
 test('B1 every pronunciation step and explicit finish are required; theory gates practice', async ({ page }) => {
   test.setTimeout(180_000)
   await page.goto('/register')
-  await page.getByLabel('Full name').fill('New Academy Learner')
+  await page.getByLabel("Họ và tên").fill('New Academy Learner')
   await page.getByLabel('Email').fill(`step81-new-${Date.now()}@example.invalid`)
-  await page.getByLabel('Password', { exact: true }).fill(password!)
-  await page.getByLabel('Confirm password').fill(password!)
-  await page.getByRole('button', { name: 'Create account' }).click()
-  await expect(page).toHaveURL(/\/dashboard$/)
+  await page.getByLabel("Mật khẩu", { exact: true }).fill(password!)
+  await page.getByLabel("Xác nhận mật khẩu").fill(password!)
+  await page.getByRole('button', { name: "Tạo tài khoản" }).click()
+  await expect(page).toHaveURL(/\/pronunciation$/)
   expect((await page.request.get(`${api}/lessons/${lessonA}`)).status()).toBe(403)
   await page.goto('/pronunciation/lesson')
-  for (const [name, count] of [['thanh mẫu', 21], ['vận mẫu', 36], ['thanh điệu', 5]] as const) {
+  await expect(page.locator('.pronunciation-section-grid').getByRole('link')).toHaveCount(1)
+  await page.goto('/pronunciation/lesson/van-mau')
+  await expect(page.getByRole('heading', { name: 'Phần học này chưa mở', exact: true })).toBeVisible()
+  await page.getByRole('link', { name: 'Chọn phần đang học', exact: true }).click()
+  for (const [name, count, slug] of [['thanh mẫu', 21, 'thanh-mau'], ['vận mẫu', 36, 'van-mau'], ['thanh điệu', 5, 'thanh-dieu'], ['biến điệu', 12, 'bien-dieu']] as const) {
+    await page.getByRole('link', { name: `Học ${name}`, exact: true }).click()
+    await expect(page).toHaveURL(new RegExp(`/pronunciation/lesson/${slug}$`))
     await expect(page.locator('#pronunciation-step-title')).toHaveText(name)
     await expect(page.getByRole('button', { name: `Hoàn thành ${name}`, exact: true })).toHaveCount(0)
     for (let index = 0; index < count; index++) {
@@ -63,22 +80,29 @@ test('B1 every pronunciation step and explicit finish are required; theory gates
       await expect(page.getByRole('progressbar', { name: `Tiến độ ${name}`, exact: true })).toHaveAttribute('value', String(index + 1))
     }
     await page.getByRole('button', { name: `Hoàn thành ${name}`, exact: true }).click()
+    await expect(page).toHaveURL(/\/pronunciation\/lesson$/)
   }
-  await expect(page.getByRole('heading', { name: 'Đã hoàn thành ba phần' })).toBeVisible()
+  await expect(page.getByRole('heading', { name: 'Đã hoàn thành bốn phần' })).toBeVisible()
   expect((await get(page, '/pronunciation/lesson')).completed_at).toBeNull()
   expect((await page.request.get(`${api}/lessons/${lessonA}`)).status()).toBe(403)
   await page.getByRole('button', { name: 'Hoàn thành bài học', exact: true }).click()
   await expect(page).toHaveURL(/\/pronunciation$/)
   expect((await get(page, '/pronunciation/lesson')).completed_at).toBeTruthy()
   await page.goto(`/lessons/${lessonA}`)
-  await expect(page.getByRole('button', { name: 'Open Exercise 1', exact: true })).toBeDisabled()
-  await page.getByRole('button', { name: 'Show details', exact: true }).first().click()
+  await expect(page.getByRole('heading', { name: '你好', exact: true })).toBeVisible()
+  await expect(page.getByRole('button', { name: 'Tiếp theo', exact: true })).toBeEnabled()
+  await page.getByRole('link', { name: 'Luyện tập', exact: true }).click()
+  await expect(page.getByRole('button', { name: "Mở luyện tập 1", exact: true })).toBeDisabled()
+  await page.getByRole('link', { name: 'Từ vựng', exact: true }).click()
+  await expect(page.getByRole('heading', { name: '你好', exact: true })).toBeVisible()
+  await page.getByRole('button', { name: 'Tiếp theo', exact: true }).click()
   expect((await get(page, `/me/progress/lessons/${lessonA}`)).theory_completed_at).toBeNull()
-  await page.getByRole('button', { name: 'Show details', exact: true }).click()
+  await page.getByRole('button', { name: "Xem chi tiết", exact: true }).click()
   await expect.poll(async () => (await get(page, `/me/progress/lessons/${lessonA}`)).theory_completed_at).toBeTruthy()
-  await expect(page.getByRole('link', { name: 'Open Exercise 1', exact: true })).toBeVisible()
+  await page.getByRole('link', { name: 'Luyện tập', exact: true }).click()
+  await expect(page.getByRole('link', { name: "Mở luyện tập 1", exact: true })).toBeVisible()
   await page.reload()
-  await expect(page.getByRole('link', { name: 'Open Exercise 1', exact: true })).toBeVisible()
+  await expect(page.getByRole('link', { name: "Mở luyện tập 1", exact: true })).toBeVisible()
 })
 
 test('D-120 forbidden routes preserve separate learner and administrator sessions', async ({ page, browser }) => {
@@ -88,61 +112,64 @@ test('D-120 forbidden routes preserve separate learner and administrator session
   await page.goto('/admin')
   await expect(page.getByTestId('admin-forbidden')).toBeVisible()
   await page.getByRole('link', { name: 'Quay lại góc học tập' }).click()
-  await expect(page).toHaveURL(/\/dashboard$/)
+  await expect(page).toHaveURL(/\/pronunciation$/)
   const context = await browser.newContext()
   try {
     const admin = await context.newPage()
     await login(admin, adminEmail)
     await admin.goto('/dashboard')
     await expect(admin.getByTestId('learner-forbidden')).toBeVisible()
-    await admin.getByRole('link', { name: 'Go to Admin Dashboard' }).click()
+    await admin.getByRole('link', { name: "Về trang quản trị" }).click()
     await expect(admin.getByRole('heading', { name: 'Quản trị học liệu', exact: true })).toBeVisible()
   } finally { await context.close() }
 })
 
-test('B3 lesson chat is lesson scoped and persists across refresh', async ({ page }) => {
+test('B3 student lesson pages expose no AI assistant or conversation requests', async ({ page }) => {
   await login(page, learnerEmail)
-  await page.goto(`/lessons/${lessonA}`)
-  await page.getByRole('button', { name: 'Open AI chat' }).click()
-  await page.getByRole('button', { name: 'Start a conversation' }).click()
-  await page.getByRole('textbox', { name: 'Message', exact: true }).fill('What does 你好 mean?')
-  await page.getByRole('button', { name: 'Send', exact: true }).click()
-  await expect(page.getByText('Hiện tại mình chưa có đủ nguồn đáng tin cậy để trả lời câu hỏi này.')).toBeVisible()
-  await page.reload()
-  await page.getByRole('button', { name: 'Open AI chat' }).click()
-  await expect(page.getByText('What does 你好 mean?')).toBeVisible()
-  await expect(page.getByText('Hiện tại mình chưa có đủ nguồn đáng tin cậy để trả lời câu hỏi này.')).toBeVisible()
+  const assistantRequests: string[] = []
+  page.on('request', request => { if (/\/conversations(?:[/?]|$)|\/messages\/[^/]+\/retry/.test(request.url())) assistantRequests.push(request.url()) })
+  for (const part of ['', '/vocabulary', '/grammar', '/readings', '/practice']) {
+    await page.goto(`/lessons/${lessonA}${part}`)
+    await expect(page.getByRole('heading', { name: 'Bài học 1: Step 8.1 Lesson A', exact: true })).toBeVisible()
+    await expect(page.getByRole('button', { name: 'Mở trợ lý AI' })).toHaveCount(0)
+    await expect(page.locator('.lesson-chat-entry, .chat-panel')).toHaveCount(0)
+  }
+  expect(assistantRequests).toEqual([])
 })
 
-test('B2 failed periodic attempt stays gated; retry passes and both results persist', async ({ page }) => {
+test('B2 HSK levels stay independently open; periodic retry and both results persist', async ({ page }) => {
   await login(page, learnerEmail)
   await page.goto(`/assessments/${periodic}`)
-  await page.getByRole('button', { name: 'Start / Resume Assessment' }).click()
+  await page.getByRole('button', { name: "Bắt đầu / Tiếp tục luyện tập" }).click()
   await page.getByLabel('你好', { exact: true }).check()
-  await page.getByRole('button', { name: 'Submit Assessment' }).click()
-  await expect(page.getByText('Not passed', { exact: true })).toBeVisible()
+  await page.getByRole('button', { name: "Nộp bài" }).click()
+  await expect(page.getByText("Chưa đạt", { exact: true })).toBeVisible()
   const failedPath = new URL(page.url()).pathname
   await page.goto('/hsk/2')
-  await expect(page.getByLabel('Lesson locked')).toBeVisible()
+  await expect(page.locator('.wall-stop[data-progress-state="AVAILABLE"]')).toBeVisible()
+  await expect(page.locator('.wall-stop[data-progress-state="AVAILABLE"] a')).toHaveCount(1)
   await page.goto(failedPath)
-  await page.getByRole('link', { name: 'Retry', exact: true }).click()
-  await page.getByRole('button', { name: 'Start / Resume Assessment' }).click()
+  await page.getByRole('link', { name: "Thử lại", exact: true }).click()
+  await page.getByRole('button', { name: "Bắt đầu / Tiếp tục luyện tập" }).click()
   await page.getByLabel('再见', { exact: true }).check()
-  await page.getByRole('button', { name: 'Submit Assessment' }).click()
-  await expect(page.getByText('Passed', { exact: true })).toBeVisible()
+  await page.getByRole('button', { name: "Nộp bài" }).click()
+  await expect(page.getByText("Đạt", { exact: true })).toBeVisible()
   const passedPath = new URL(page.url()).pathname
   expect(passedPath).not.toBe(failedPath)
   await page.goto('/hsk/2')
-  await expect(page.getByText('AVAILABLE', { exact: true })).toBeVisible()
+  await expect(page.locator('.wall-stop[data-state="current"]')).toBeVisible()
+  await expect(page.locator('.wall-stop[data-progress-state="AVAILABLE"]')).toBeVisible()
   await page.goto(failedPath)
-  await expect(page.getByText('Not passed', { exact: true })).toBeVisible()
+  await expect(page.getByText("Chưa đạt", { exact: true })).toBeVisible()
   await page.goto(passedPath)
-  await expect(page.getByText('Passed', { exact: true })).toBeVisible()
+  await expect(page.getByText("Đạt", { exact: true })).toBeVisible()
 })
 
 test('B4 draft visibility, publication and curriculum membership stay explicit', async ({ page, browser }) => {
   await login(page, adminEmail)
   const lesson = await createLesson(page, '840001', 'Lifecycle lesson')
+  await createPractice(page, lesson)
+  await page.reload()
   await expect(page.getByText('Trạng thái: Bản nháp', { exact: true })).toBeVisible()
   const context = await browser.newContext()
   try {
@@ -150,10 +177,19 @@ test('B4 draft visibility, publication and curriculum membership stay explicit',
     await login(learner, learnerEmail)
     expect((await learner.request.get(`${api}/lessons/${lesson}`)).status()).toBe(404)
     await page.getByRole('button', { name: 'Thông tin bài học', exact: true }).click()
-    await page.getByLabel('Tiêu đề', { exact: true }).fill('Published lifecycle lesson')
-    await expect(page.getByRole('button', { name: 'Xuất bản bài học', exact: true })).toBeDisabled()
+    await page.locator('.admin-lesson-metadata-form').getByLabel('Tiêu đề', { exact: true }).fill('Published lifecycle lesson')
+    await page.getByRole('button', { name: 'Duyệt xuất bản', exact: true }).click()
+    await expect(page.getByRole('button', { name: 'Xác nhận xuất bản toàn bộ', exact: true })).toBeDisabled()
+    await page.getByRole('button', { name: 'Thông tin bài học', exact: true }).click()
     await page.getByRole('button', { name: 'Lưu thông tin', exact: true }).click()
-    await page.getByRole('button', { name: 'Xuất bản bài học', exact: true }).click()
+    await page.getByRole('button', { name: 'Duyệt xuất bản', exact: true }).click()
+    await page.getByRole('button', { name: 'Xác nhận xuất bản toàn bộ', exact: true }).click()
+    await expect(page.getByText('Trạng thái: Đã xuất bản', { exact: true })).toBeVisible()
+    await page.getByRole('button', { name: 'Hủy xuất bản', exact: true }).click()
+    await page.getByRole('dialog').getByRole('button', { name: 'Hủy xuất bản', exact: true }).click()
+    await expect(page.getByText('Trạng thái: Bản nháp', { exact: true })).toBeVisible()
+    expect((await learner.request.get(`${api}/lessons/${lesson}`)).status()).toBe(404)
+    await page.getByRole('button', { name: 'Xác nhận xuất bản toàn bộ', exact: true }).click()
     await expect(page.getByText('Trạng thái: Đã xuất bản', { exact: true })).toBeVisible()
     await learner.goto('/hsk/1')
     await expect(learner.getByText(/Published lifecycle lesson/)).toHaveCount(0)
@@ -171,24 +207,38 @@ test('B4 draft visibility, publication and curriculum membership stay explicit',
   } finally { await context.close() }
 })
 
-test('B5 AI draft defaults to 80 percent and needs review before publishing', async ({ page, browser }) => {
+test('B5 AI draft has 30 varied questions at 80 percent and needs review before publishing', async ({ page, browser }) => {
   await login(page, adminEmail)
-  await page.goto('/admin/assessments?generate=1')
-  await page.getByRole('combobox', { name: 'Bài học', exact: true }).selectOption(lessonA)
+  await page.goto(`/admin/lessons/${lessonA}?section=exercises`)
+  await page.getByRole('button', { name: 'Tạo bản nháp bằng AI', exact: true }).click()
   await page.getByRole('combobox', { name: 'Độ khó', exact: true }).selectOption('EASY')
   await expect(page.getByLabel('Điểm đạt (%)', { exact: true })).toHaveValue('80')
+  await expect(page.getByLabel('Số câu hỏi', { exact: true })).toHaveValue('30')
+  const generation = page.waitForResponse(response => response.url().endsWith('/admin/assessments/generate-draft') && response.request().method() === 'POST')
   await page.getByRole('button', { name: 'Tạo bản nháp', exact: true }).click()
-  await expect(page.getByText('Trạng thái: Bản nháp', { exact: true })).toBeVisible()
-  const assessmentId = new URL(page.url()).pathname.split('/').at(-1)!
+  await expect(page).toHaveURL(new RegExp(`/admin/lessons/${lessonA}\\?section=exercises$`))
+  const generated = (await (await generation).json()).assessment
+  const assessmentId = generated.id
+  await expect(page.locator('.admin-embedded-assessment-heading')).toContainText('Bản nháp')
+  const questions = await get(page, `/admin/assessments/${assessmentId}/questions`)
+  expect(questions).toHaveLength(30)
+  expect(new Set(questions.map(question => question.type)).size).toBe(4)
   const context = await browser.newContext()
   try {
     const learner = await context.newPage()
     await login(learner, learnerEmail)
     expect((await learner.request.get(`${api}/assessments/${assessmentId}`)).status()).toBe(404)
-    await page.getByRole('button', { name: 'Gửi duyệt', exact: true }).click()
-    await expect(page.getByText('Trạng thái: Chờ duyệt', { exact: true })).toBeVisible()
-    await page.getByRole('button', { name: 'Xuất bản bài luyện tập', exact: true }).click()
+    // The baseline one-question fixture predates the 30-question policy.
+    // Archive it explicitly; the new draft is the lesson's active exercise.
+    const existing = await get(page, `/admin/assessments?lesson_id=${lessonA}`)
+    for (const item of existing.items.filter(item => item.id !== assessmentId && item.status === 'PUBLISHED')) {
+      expect((await page.request.post(`${api}/admin/assessments/${item.id}/archive`)).ok()).toBe(true)
+    }
+    await page.goto(`/admin/lessons/${lessonA}?section=exercises&exercise=${assessmentId}`)
+    await page.getByRole('button', { name: 'Duyệt xuất bản', exact: true }).click()
+    await page.getByRole('button', { name: 'Xác nhận xuất bản toàn bộ', exact: true }).click()
     await expect(page.getByText('Trạng thái: Đã xuất bản', { exact: true })).toBeVisible()
+    await page.getByRole('button', { name: 'Luyện tập', exact: true }).click()
     await expect(page.getByRole('button', { name: 'Lưu câu hỏi', exact: true })).toHaveCount(0)
     await learner.goto(`/assessments/${assessmentId}`)
     await expect(learner.getByRole('heading', { name: 'AI Draft — Step 8.1 Lesson A', exact: true })).toBeVisible()
@@ -228,11 +278,11 @@ for (const width of [390, 768, 1440]) {
     page.on('response', response => { if (response.status() >= 400 && ['image', 'font'].includes(response.request().resourceType())) brokenAssets.push(response.url()) })
     await login(page, adminEmail)
     const nav = page.getByRole('navigation', { name: 'Điều hướng quản trị', exact: true })
-    await expect(nav.getByRole('link')).toHaveText(['Tổng quan', 'Lộ trình', 'Bài học', 'Luyện tập', 'Tài liệu'])
+    await expect(nav.getByRole('link')).toHaveText(['Tổng quan', 'Lộ trình', 'Bài học', 'Kiểm tra định kỳ', 'Tài liệu'])
     for (const link of await nav.getByRole('link').all()) { await link.focus(); await expect(link).toBeFocused() }
     for (const [path, title] of [
-      ['/admin', 'Quản trị học liệu'], ['/admin/curriculum', 'Lộ trình HSK'],
-      ['/admin/lessons', 'Bài học'], ['/admin/assessments', 'Luyện tập'],
+      ['/admin', 'Quản trị học liệu'], ['/admin/curriculum', 'Sắp xếp HSK'],
+      ['/admin/lessons', 'Bài học'], ['/admin/assessments', 'Kiểm tra định kỳ'],
       ['/admin/documents', 'Thư viện tài liệu'], ['/admin/stats', 'Thống kê'],
       [`/admin/lessons/${lessonA}`, 'Bài 1 · Step 8.1 Lesson A'],
     ]) {
@@ -261,10 +311,10 @@ for (const width of [390, 768, 1440]) {
     await page.setViewportSize({ width, height: 1000 })
     await login(page, learnerEmail)
     for (const [path, title] of [
-      ['/dashboard', 'Dashboard'], ['/pronunciation', 'Hành trình học'],
-      ['/pronunciation/lesson', 'Bài học phát âm'], ['/hsk/1', 'HSK 1 Curriculum'],
-      [`/lessons/${lessonA}`, 'Lesson 1: Step 8.1 Lesson A'], ['/history', 'History'],
-      ['/profile', 'Profile'], ['/companions', 'Bo và những người bạn'],
+      ['/dashboard', 'Giáo trình của bạn'], ['/pronunciation', 'Giáo trình của bạn'],
+      ['/pronunciation/lesson', 'Bài học phát âm'], ['/hsk/1', 'Giáo trình của bạn'],
+      [`/lessons/${lessonA}`, "Bài học 1: Step 8.1 Lesson A"],
+      ['/profile', "Hồ sơ"], ['/companions', 'Hồ sơ'],
       [`/assessments/${periodic}`, 'Step 8.1 Periodic Test'],
     ]) {
       await page.goto(path)
@@ -272,19 +322,14 @@ for (const width of [390, 768, 1440]) {
       await noOverflow(page)
     }
     await page.goto(`/lessons/${lessonA}`)
-    const opener = page.getByRole('button', { name: 'Open AI chat', exact: true })
-    await opener.click()
-    const dialog = page.getByRole('dialog', { name: 'AI Tutor Chat' })
-    await expect(dialog.getByRole('button', { name: 'Close chat', exact: true })).toBeFocused()
+    await expect(page.locator('.lesson-chat-entry, .chat-panel')).toHaveCount(0)
+    await expect(page.getByRole('button', { name: /AI/ })).toHaveCount(0)
     await noOverflow(page)
-    await page.keyboard.press('Escape')
-    await expect(dialog).toHaveCount(0)
-    await expect(opener).toBeFocused()
   })
 
   test(`public auth forms remain keyboard accessible at ${width}px`, async ({ page }) => {
     await page.setViewportSize({ width, height: 1000 })
-    for (const [path, title] of [['/login', 'Login'], ['/register', 'Create an account'], ['/forgot-password', 'Forgot password']]) {
+    for (const [path, title] of [['/login', "Đăng nhập"], ['/register', "Tạo tài khoản"], ['/forgot-password', "Quên mật khẩu"]]) {
       await page.goto(path)
       await expect(page.getByRole('heading', { name: title, level: 1, exact: true })).toBeVisible()
       await page.getByLabel('Email', { exact: true }).focus()
@@ -338,11 +383,11 @@ for (const role of ['admin', 'student'] as const) {
   test(`${role} logout failure preserves session and explicit retry signs out`, async ({ page }) => {
     await login(page, role === 'admin' ? adminEmail : learnerEmail)
     await page.route('**/api/v1/auth/logout', route => route.fulfill({ status: 503, json: { error: { code: 'TEMPORARY', message: 'Fixture failure', details: null } } }))
-    await page.getByRole('button', { name: role === 'admin' ? 'Đăng xuất' : 'Logout', exact: true }).click()
+    await page.getByRole('button', { name: role === 'admin' ? 'Đăng xuất' : "Đăng xuất", exact: true }).click()
     await expect(page.getByRole('alert')).toBeVisible()
     await expect(page.locator(`main[data-layout="${role === 'admin' ? 'admin' : 'learner'}"]`)).toBeVisible()
     await page.unrouteAll()
-    await page.getByRole('button', { name: role === 'admin' ? 'Thử đăng xuất lại' : 'Retry logout', exact: true }).click()
+    await page.getByRole('button', { name: role === 'admin' ? 'Thử đăng xuất lại' : "Thử đăng xuất lại", exact: true }).click()
     await expect(page).toHaveURL(/\/login$/)
     await page.goto(role === 'admin' ? '/admin' : '/dashboard')
     await expect(page).toHaveURL(/\/login$/)
@@ -367,7 +412,10 @@ test('draft vocabulary and grammar can be managed; archival makes the editor rea
   await page.getByLabel('Giải thích', { exact: true }).fill('A greeting example')
   await page.getByRole('button', { name: 'Tạo và thêm ngữ pháp', exact: true }).click()
   await expect(page.getByRole('button', { name: 'Gỡ ngữ pháp', exact: true })).toBeVisible()
-  await page.getByRole('button', { name: 'Xuất bản bài học', exact: true }).click()
+  const lessonId = new URL(page.url()).pathname.split('/').at(-1)!
+  expect((await page.request.post(`${api}/admin/lessons/${lessonId}/publish`)).ok()).toBe(true)
+  await page.reload()
+  await page.getByRole('button', { name: 'Ngữ pháp', exact: true }).click()
   await page.getByRole('button', { name: 'Lưu trữ bài học', exact: true }).click()
   await page.getByRole('dialog').getByRole('button', { name: 'Lưu trữ bài học', exact: true }).click()
   await expect(page.getByText('Trạng thái: Đã lưu trữ', { exact: true })).toBeVisible()
@@ -377,14 +425,13 @@ test('draft vocabulary and grammar can be managed; archival makes the editor rea
 
 test('seven question types have learner previews and saved questions can be deleted explicitly', async ({ page }) => {
   await login(page, adminEmail)
-  await page.goto('/admin/assessments')
-  await page.getByRole('button', { name: 'Tạo bài luyện tập', exact: true }).click()
-  const create = page.locator('form.admin-form-grid')
-  await create.getByRole('combobox', { name: 'Bài học', exact: true }).selectOption(lessonA)
-  await create.getByLabel('Tiêu đề', { exact: true }).fill('Question workshop')
+  await page.goto(`/admin/lessons/${lessonA}?section=exercises`)
+  await page.getByRole('button', { name: 'Thêm bài luyện tập', exact: true }).click()
+  const create = page.getByRole('form', { name: 'Thêm bài luyện tập', exact: true })
+  await create.getByLabel('Tiêu đề bài luyện tập', { exact: true }).fill("Câu hỏi workshop")
   await expect(create.getByLabel('Điểm đạt (%)', { exact: true })).toHaveValue('80')
   await create.getByRole('button', { name: 'Tạo bài luyện tập', exact: true }).click()
-  await expect(page.getByRole('heading', { name: 'Question workshop', exact: true })).toBeVisible()
+  await expect(page.getByRole('heading', { name: "Câu hỏi workshop", exact: true })).toBeVisible()
   await page.getByRole('button', { name: 'Thêm câu hỏi', exact: true }).click()
   const form = page.locator('.admin-assessment-question-form:visible')
   const preview = page.locator('.admin-editor-preview:visible')
@@ -394,7 +441,7 @@ test('seven question types have learner previews and saved questions can be dele
     await form.getByRole('combobox', { name: 'Dạng câu hỏi', exact: true }).selectOption(type)
     await expect(preview).toContainText('Chọn lời chào')
     await expect(preview.getByText('Đáp án đúng', { exact: true })).toHaveCount(0)
-    await expect(page.getByRole('button', { name: 'Gửi duyệt', exact: true })).toBeDisabled()
+    await expect(page.getByRole('button', { name: 'Gửi duyệt', exact: true })).toHaveCount(0)
   }
   await form.getByRole('combobox', { name: 'Dạng câu hỏi', exact: true }).selectOption('reorder_sentence')
   await form.getByRole('button', { name: 'Thêm mảnh câu', exact: true }).click()
@@ -406,14 +453,16 @@ test('seven question types have learner previews and saved questions can be dele
   await form.getByLabel('Mảnh câu 3', { exact: true }).fill('吗')
   for (const word of ['你', '好', '吗']) await expect(preview.getByText(word, { exact: true })).toBeVisible()
   await form.getByRole('button', { name: 'Lưu câu hỏi', exact: true }).click()
-  await expect(page.getByRole('button', { name: 'Gửi duyệt', exact: true })).toBeEnabled()
+  await page.getByRole('button', { name: 'Duyệt xuất bản', exact: true }).click()
+  await expect(page.getByRole('button', { name: 'Xác nhận xuất bản toàn bộ', exact: true })).toBeDisabled()
+  await page.getByRole('button', { name: 'Luyện tập', exact: true }).click()
   await page.getByRole('button', { name: 'Xóa câu hỏi', exact: true }).click()
   await page.getByRole('dialog', { name: 'Xóa câu hỏi?' }).getByRole('button', { name: 'Xóa câu hỏi', exact: true }).click()
   await expect(page.getByText('Chưa có câu hỏi nào.', { exact: true })).toBeVisible()
-  await expect(page.getByRole('button', { name: 'Gửi duyệt', exact: true })).toBeDisabled()
+  await expect(page.getByRole('button', { name: 'Gửi duyệt', exact: true })).toHaveCount(0)
 })
 
-test('dashboard puts authoring first; reading preferences persist with accessible skip links', async ({ page }) => {
+test('dashboard puts authoring first; student reading uses one large size with accessible skip links', async ({ page }) => {
   await login(page, adminEmail)
   await expect(page.getByRole('link', { name: 'Tạo bài học', exact: true })).toBeVisible()
   const primary = await page.locator('.admin-workbench-primary').boundingBox()
@@ -425,12 +474,10 @@ test('dashboard puts authoring first; reading preferences persist with accessibl
   await page.getByRole('button', { name: 'Đăng xuất', exact: true }).click()
   await expect(page).toHaveURL(/\/login$/)
   await login(page, learnerEmail)
-  await page.locator('.academy-reading-settings summary').click()
-  await page.getByRole('button', { name: 'Rất lớn', exact: true }).click()
-  await page.getByLabel('Hiện pinyin trong từ vựng').uncheck()
+  await expect(page.locator('.academy-topbar, .academy-reading-settings')).toHaveCount(0)
+  expect(await page.locator('.bo-shell').evaluate(element => getComputedStyle(element).getPropertyValue('--reader-font-size').trim())).toBe('21px')
   await page.reload()
-  await expect(page.locator('html')).toHaveAttribute('data-show-vocabulary-pinyin', 'false')
-  expect(await page.locator('html').evaluate(element => element.style.getPropertyValue('--reader-font-size'))).toBe('23px')
+  expect(await page.locator('.bo-shell').evaluate(element => getComputedStyle(element).getPropertyValue('--reader-font-size').trim())).toBe('21px')
   await noOverflow(page)
 })
 
@@ -439,4 +486,133 @@ test('retired design prototypes stay outside the production application', async 
     await page.goto(path)
     await expect(page.getByTestId('not-found')).toBeVisible()
   }
+})
+
+test('Great Wall journey opens real lessons and student logout stays in the sidebar', async ({ page }) => {
+  await login(page, learnerEmail)
+  await page.goto('/pronunciation')
+  await expect(page.locator('.learning-hub__unit-details')).toHaveCount(0)
+  await page.getByRole('link', { name: /^HSK 1/ }).click()
+  await expect(page).toHaveURL(/\/hsk\/1$/)
+  const units = page.getByRole('list', { name: 'Các bài trong cấp độ HSK' })
+  await expect(units).toBeVisible()
+  await units.getByRole('link', { name: /(?:Học|Ôn) Bài học 1: Step 8.1 Lesson A/ }).click()
+  await expect(page).toHaveURL(new RegExp(`/lessons/${lessonA}$`))
+  for (const width of [1440, 768, 390]) {
+    await page.setViewportSize({ width, height: 900 })
+    const opener = page.getByRole('button', { name: 'Mở menu học viên', exact: true })
+    if (width <= 800) {
+      await opener.click()
+      await expect(page.getByRole('dialog', { name: 'Khu vực học viên' })).toBeVisible()
+      await expect(page.getByRole('button', { name: 'Đóng menu', exact: true })).toBeFocused()
+    }
+    await expect(page.locator('.academy-sidebar').getByRole('button', { name: "Đăng xuất", exact: true })).toBeVisible()
+    await expect(page.locator('.academy-topbar .logout-action')).toHaveCount(0)
+    await noOverflow(page)
+    if (width <= 800) {
+      await page.keyboard.press('Escape')
+      await expect(opener).toBeFocused()
+      await expect(page.locator('.academy-sidebar')).not.toBeVisible()
+    }
+  }
+})
+
+test('textbook readings require explicit completion before practice; admin edits invalidate the old completion', async ({ page, browser }) => {
+  test.setTimeout(120_000)
+  await login(page, adminEmail)
+  await page.goto(`/admin/lessons/${lessonA}`)
+  await page.getByRole('button', { name: 'Bài khóa', exact: true }).click()
+  await page.getByRole('button', { name: 'Thêm bài khóa', exact: true }).click()
+  await page.getByLabel('Tiêu đề bài khóa', { exact: true }).fill('Chào hỏi từ giáo trình')
+  await page.getByLabel('Nội dung tiếng Trung', { exact: true }).fill('A：你好！\nB：你好！')
+  await page.getByLabel('Phiên âm (không bắt buộc)', { exact: true }).fill('A: Nǐ hǎo!\nB: Nǐ hǎo!')
+  await page.getByLabel('Nghĩa tiếng Việt (không bắt buộc)', { exact: true }).fill('A: Xin chào!\nB: Xin chào!')
+  await page.getByRole('button', { name: 'Lưu bài khóa', exact: true }).click()
+  await expect(page.getByRole('button', { name: '1. Chào hỏi từ giáo trình', exact: true })).toBeVisible()
+  const readings = await get(page, `/admin/lessons/${lessonA}/readings`)
+  const exercise = (await get(page, `/admin/assessments?lesson_id=${lessonA}`)).items.find(item => item.lesson_id === lessonA && item.type === 'LESSON_EXERCISE' && item.status === 'PUBLISHED')
+  expect(readings).toHaveLength(1)
+  expect(exercise).toBeTruthy()
+  const learnerContext = await browser.newContext()
+  try {
+    const student = await learnerContext.newPage()
+    await login(student, learnerEmail)
+    await student.goto(`/lessons/${lessonA}`)
+    await expect(student.getByRole('heading', { name: '你好', exact: true })).toBeVisible()
+    await student.getByRole('button', { name: 'Tiếp theo', exact: true }).click()
+    await expect(student.getByRole('heading', { name: 'Bài học 1: Step 8.1 Lesson A', exact: true })).toBeVisible()
+    await expect(student.getByRole('heading', { name: 'Ngữ pháp', exact: true })).toBeVisible()
+    while (await student.getByRole('button', { name: 'Xem chi tiết', exact: true }).count()) await student.getByRole('button', { name: 'Xem chi tiết', exact: true }).first().click()
+    await student.getByRole('link', { name: 'Luyện tập', exact: true }).click()
+    await expect(student.getByRole('button', { name: 'Mở luyện tập 1', exact: true })).toBeDisabled()
+    expect((await student.request.get(`${api}/assessments/${exercise.id}`)).status()).toBe(403)
+    await student.reload()
+    await student.getByRole('link', { name: 'Bài khóa', exact: true }).click()
+    await expect(student.getByRole('button', { name: 'Hoàn thành bài khóa: Chào hỏi từ giáo trình', exact: true })).toBeEnabled()
+    await student.getByRole('button', { name: 'Hoàn thành bài khóa: Chào hỏi từ giáo trình', exact: true }).click()
+    await student.getByRole('link', { name: 'Luyện tập', exact: true }).click()
+    await expect(student.getByRole('link', { name: 'Mở luyện tập 1', exact: true })).toBeVisible()
+    await student.reload()
+    await student.getByRole('link', { name: 'Bài khóa', exact: true }).click()
+    await expect(student.getByRole('button', { name: 'Đã hoàn thành bài khóa: Chào hỏi từ giáo trình', exact: true })).toBeDisabled()
+    await page.getByRole('textbox', { name: 'Nội dung tiếng Trung', exact: true }).fill('A：你好！\nB：你好吗？')
+    await page.getByRole('button', { name: 'Lưu bài khóa', exact: true }).click()
+    await expect(page.getByText('Đã lưu bài khóa.', { exact: true })).toBeVisible()
+    expect((await student.request.post(`${api}/lessons/${lessonA}/theory/readings/${readings[0].id}/complete`, { data: { version: 1 } })).status()).toBe(409)
+    await student.reload()
+    await student.getByRole('link', { name: 'Luyện tập', exact: true }).click()
+    await expect(student.getByRole('button', { name: 'Mở luyện tập 1', exact: true })).toBeDisabled()
+    await student.setViewportSize({ width: 390, height: 900 })
+    await student.getByRole('link', { name: 'Bài khóa', exact: true }).click()
+    await student.getByRole('button', { name: 'Hoàn thành bài khóa: Chào hỏi từ giáo trình', exact: true }).click()
+    await student.getByRole('link', { name: 'Luyện tập', exact: true }).click()
+    await expect(student.getByRole('link', { name: 'Mở luyện tập 1', exact: true })).toBeVisible()
+    await noOverflow(student)
+  } finally { await learnerContext.close() }
+})
+
+test('real stroke data supports each character and earlier graduates can complete supplementary sandhi', async ({ page }) => {
+  test.setTimeout(90_000)
+  await login(page, learnerEmail)
+  const before = await get(page, '/pronunciation/lesson')
+  expect(before.completed_at).toBeTruthy()
+  expect(before.current_section).toBe('SANDHI')
+  await page.goto(`/lessons/${lessonA}`)
+  const writer = page.locator('[data-character="你"]').first()
+  await writer.scrollIntoViewIfNeeded()
+  await expect(writer).toHaveAttribute('data-total-strokes', '7')
+  await writer.getByRole('button', { name: 'Tạm dừng chữ 你', exact: true }).click()
+  await writer.getByRole('button', { name: 'Bắt đầu lại chữ 你', exact: true }).click()
+  await writer.getByRole('button', { name: 'Tạm dừng chữ 你', exact: true }).click()
+  await writer.getByRole('button', { name: 'Nét tiếp theo của chữ 你' }).click()
+  await expect(writer).toHaveAttribute('data-written-strokes', '1')
+  await page.getByRole('button', { name: 'Chữ 好, vị trí 2', exact: true }).click()
+  await expect(page.locator('[data-character="好"]')).toHaveAttribute('data-total-strokes', '6')
+  await page.goto('/pronunciation/lesson')
+  await page.getByRole('link', { name: 'Ôn thanh mẫu', exact: true }).click({ position: { x: 16, y: 16 } })
+  await expect(page).toHaveURL(/\/pronunciation\/lesson\/thanh-mau$/)
+  await expect(page.locator('.pronunciation-session__symbol')).toHaveText('b')
+  await page.getByRole('button', { name: 'Tiếp theo', exact: true }).click()
+  await expect(page.locator('.pronunciation-session__symbol')).toHaveText('p')
+  expect((await get(page, '/pronunciation/lesson')).step_index).toBe(before.step_index)
+  await page.goBack()
+  await page.getByRole('link', { name: 'Học biến điệu', exact: true }).click()
+  await expect(page).toHaveURL(/\/pronunciation\/lesson\/bien-dieu$/)
+  await expect(page.getByText(/quyền học HSK được giữ nguyên/)).toHaveCount(0)
+  await expect(page.getByText('ní hǎo', { exact: true })).toBeVisible()
+  await page.getByRole('button', { name: 'Tiếp theo', exact: true }).click()
+  await expect(page.getByRole('progressbar', { name: 'Tiến độ biến điệu' })).toHaveAttribute('value', '1')
+  await page.reload()
+  await expect(page.getByRole('progressbar', { name: 'Tiến độ biến điệu' })).toHaveAttribute('value', '1')
+  for (let index = 1; index < 12; index++) {
+    await page.getByRole('button', { name: 'Tiếp theo', exact: true }).click()
+    await expect(page.getByRole('progressbar', { name: 'Tiến độ biến điệu' })).toHaveAttribute('value', String(index + 1))
+  }
+  await page.getByRole('button', { name: 'Hoàn thành biến điệu', exact: true }).click()
+  await expect(page.getByRole('heading', { name: 'Bài học đã hoàn thành', exact: true })).toBeVisible()
+  const after = await get(page, '/pronunciation/lesson')
+  expect(after.current_section).toBeNull()
+  expect(after.completed_at).toBe(before.completed_at)
+  expect(after.sections.every(section => section.completed_at)).toBe(true)
+  expect((await page.request.get(`${api}/lessons/${lessonA}`)).status()).toBe(200)
 })

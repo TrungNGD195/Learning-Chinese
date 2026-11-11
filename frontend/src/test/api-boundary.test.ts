@@ -8,6 +8,7 @@ const sourceModules = import.meta.glob<string>('../**/*.{ts,tsx}', {
 
 function applicationSources() {
   return Object.entries(sourceModules).filter(([path]) =>
+    !path.startsWith('../preview/') &&
     !path.endsWith('.test.ts') &&
     !path.endsWith('.test.tsx') &&
     !path.endsWith('/types/api.generated.ts'),
@@ -25,11 +26,24 @@ describe('frontend API security and transport boundary', () => {
   it('contains no Bearer token, token storage, or manual JWT decoding', async () => {
     const combined = applicationSources().map(([, contents]) => contents).join('\n')
     expect(combined).not.toMatch(/Authorization\s*[:=].{0,40}Bearer/i)
-    const withoutReadingPreferences=applicationSources().filter(([path])=>!path.endsWith('/lib/readingPreferences.ts')).map(([,contents])=>contents).join('\n')
-    expect(withoutReadingPreferences).not.toMatch(/localStorage|sessionStorage/i)
-    const preferences=applicationSources().find(([path])=>path.endsWith('/lib/readingPreferences.ts'))?.[1]??''
-    expect(preferences).toContain("const key='chinese-learning.reading.v1'")
-    expect(preferences).not.toMatch(/token|password|authorization|lesson|score|progress|sessionStorage/i)
+    expect(combined).not.toMatch(/localStorage/i)
+    const tabMarkerPath = '../features/auth/tabSession.ts'
+    // These reviewed modules retain only tab-local visual route positions;
+    // credentials remain HttpOnly cookies and never enter browser storage.
+    const visualPositionPaths=new Set([
+      '../features/journey/GreatWallMap.tsx',
+      '../features/journey/ForwardWallJourney.tsx',
+      '../features/journey/ReferenceWallJourney.tsx',
+    ])
+    for (const [path, contents] of applicationSources()) {
+      if(visualPositionPaths.has(path)){
+        expect(contents,path).not.toMatch(/access_token|refresh_token|password|Authorization|Bearer/i)
+        expect(contents,path).toContain('bo-')
+      } else if (path !== tabMarkerPath) expect(contents, path).not.toMatch(/sessionStorage/)
+    }
+    const tabMarker = sourceModules[tabMarkerPath]
+    expect(tabMarker).toContain("tab.setItem(tabSessionMarker, 'ready')")
+    expect(tabMarker).not.toMatch(/setItem\([^\n]*(?:access_token|refresh_token|password|JSON\.stringify)/)
     expect(combined).not.toMatch(/\batob\s*\(|jwtDecode|decodeJwt|jwt-decode/i)
   })
 
@@ -45,24 +59,20 @@ describe('frontend API security and transport boundary', () => {
   })
 
   it('uses TanStack Query for server state without adding another state library', async () => {
-    const combined = applicationSources().filter(([path])=>!path.endsWith('/lib/readingPreferences.ts')).map(([, contents]) => contents).join('\n')
+    const combined = applicationSources().map(([, contents]) => contents).join('\n')
     expect(combined).toMatch(/@tanstack\/react-query/)
     expect(combined).toMatch(/\buseQuery\s*\(/)
     expect(combined).not.toMatch(/from\s+['"]redux['"]|from\s+['"]zustand['"]|@tanstack\/react-query-devtools/)
-    expect(combined).not.toMatch(/markTheoryComplete|localStorage|sessionStorage/)
+    expect(combined).not.toMatch(/markTheoryComplete|localStorage/)
     expect(combined).not.toMatch(/calculateScore|calculatePass|calculateCorrectness/)
   })
 
-  it('keeps Conversation UI on existing wrappers with bounded Query pagination and no streaming additions', () => {
+  it('does not expose the retired student assistant or its API wrappers', () => {
     const conversationSources = Object.entries(sourceModules).filter(([path]) =>
       path.includes('/features/conversation/') && !path.endsWith('.test.ts') && !path.endsWith('.test.tsx'),
     )
-    const combined = conversationSources.map(([, contents]) => contents).join('\n')
-    expect(combined).toMatch(/createConversation/)
-    expect(combined).toMatch(/listConversations/)
-    expect(combined).toMatch(/getMessages/)
-    expect(combined).toMatch(/retryAssistantMessage/)
-    expect(combined).not.toMatch(/\bfetch\s*\(|VITE_[A-Z_]*(?:AI|LLM|OPENAI)|OpenAI|Anthropic|EventSource|WebSocket|setInterval|ReadableStream/)
-    expect(combined).not.toMatch(/rehype-raw|remark-gfm|@mdx-js|rehype|remark-/)
+    expect(conversationSources).toEqual([])
+    const lesson = sourceModules['../features/lesson/LessonPage.tsx']
+    expect(lesson).not.toMatch(/LessonChatRegion|ChatPanel/)
   })
 })

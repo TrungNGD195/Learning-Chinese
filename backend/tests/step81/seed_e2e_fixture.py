@@ -55,7 +55,7 @@ async def seed() -> None:
         hsk1 = (await session.execute(select(HSKLevel).where(HSKLevel.level_number == 1))).scalar_one()
         hsk2 = (await session.execute(select(HSKLevel).where(HSKLevel.level_number == 2))).scalar_one()
         sections = list((await session.execute(select(PronunciationSection).order_by(PronunciationSection.order_index))).scalars())
-        if len(sections) != 3:
+        if {section.code for section in sections} != {'INITIALS', 'FINALS', 'TONES', 'SANDHI'}:
             raise RuntimeError("Required pronunciation seed is incomplete")
 
         admin_id = fixture_id("admin")
@@ -102,7 +102,8 @@ async def seed() -> None:
             QuestionOption(question_id=question_ids[0], option_text="再见", order_index=2, is_correct=False),
             QuestionOption(question_id=question_ids[1], option_text="再见", order_index=1, is_correct=True),
             QuestionOption(question_id=question_ids[1], option_text="你好", order_index=2, is_correct=False),
-            *(PronunciationProgress(user_id=learner_id, pronunciation_section_id=item.id, completed_at=datetime.now(timezone.utc)) for item in sections),
+            # Earlier graduates retain HSK access while SANDHI is supplementary.
+            *(PronunciationProgress(user_id=learner_id, pronunciation_section_id=item.id, completed_at=datetime.now(timezone.utc)) for item in sections if item.code != 'SANDHI'),
         ])
         await session.execute(AssessmentLesson.insert().values([
             {"assessment_id": periodic_id, "lesson_id": lesson_a_id},

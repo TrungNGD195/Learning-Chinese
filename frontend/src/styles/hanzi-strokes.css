@@ -1,0 +1,50 @@
+.hanzi-stroke-word { width: 100%; max-width: 300px; min-width: 0; }
+.hanzi-character-tabs { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 12px; }
+.hanzi-character-tabs button { min-width: 44px; min-height: 44px; border: 1px solid #c6d3c5; border-radius: 6px; color: #24382c; background: #fffef9; font-family: var(--font-product-cjk); font-size: 23px; cursor: pointer; }
+.hanzi-character-tabs button[aria-pressed=true] { background: #e6efd9; border-color: #356f40; }
+.hanzi-writing-square { display: block; width: 100%; max-width: 260px; aspect-ratio: 1; border: 1px solid #cdd5c8; border-radius: 4px; background: #fffefa; }
+.hanzi-writing-guides { fill: none; stroke: #cbd0c7; stroke-dasharray: 7 7; stroke-width: 1; }
+.hanzi-writing-guides path { vector-effect: non-scaling-stroke; }
+.hanzi-stroke-outline { fill: #e7e9e1; }
+.hanzi-stroke-ink { fill: #252b25; }
+.hanzi-stroke-active { fill: #287c35; }
+.hanzi-writing-fallback { font-family: var(--font-product-cjk); font-size: 760px; fill: #252b25; }
+.hanzi-stroke-status { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; margin: 10px 0; color: #49604b; font-size: 12px; line-height: 1.7; }
+.hanzi-stroke-status label { display: flex; align-items: center; gap: 5px; }
+.hanzi-stroke-status select { font: inherit; color: #294b30; padding: 4px; max-width: 80px; border: 1px solid #b8c9b4; border-radius: 4px; background: #fffefa; }
+.hanzi-stroke-controls { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 44px; gap: 6px; align-items: stretch; }
+.hanzi-stroke-controls button, .hanzi-stroke-hint button { display: flex; align-items: center; justify-content: center; gap: 5px; min-height: 44px; padding: 7px 9px; border: 1px solid #b7c9b4; border-radius: 6px; color: #285132; background: #fffefa; font: inherit; font-size: 12px; cursor: pointer; }
+.hanzi-stroke-controls .hanzi-stroke-play { grid-column: 1 / -1; background: #e9f0dd; border-color: #8aa77b; font-weight: 600; }
+.hanzi-stroke-controls button:hover:not(:disabled) { background: #dce9ce; }
+.hanzi-stroke-controls button:disabled { opacity: .45; cursor: default; }
+.hanzi-stroke-controls button:focus-visible, .hanzi-character-tabs button:focus-visible, .hanzi-stroke-status select:focus-visible { outline: 3px solid #a56c26; outline-offset: 3px; }
+.hanzi-stroke-hint button { display: inline-flex; }
+.bo-shell .lesson-page .lesson-theory-card:has(.hanzi-stroke-word) { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: start; gap: 20px; }
+.bo-shell .lesson-page .lesson-theory-card:has(.hanzi-stroke-word) > .academy-vocabulary-identity, .bo-shell .lesson-page .lesson-theory-card:has(.hanzi-stroke-word) > .lesson-theory-card__details { grid-column: 1 / -1; }
+.bo-shell .lesson-page .lesson-theory-card:has(.hanzi-stroke-word) > .ui-status-badge { justify-self: start; }
+.bo-shell .academy-vocabulary-identity:has(.hanzi-stroke-word) { display: grid; grid-template-columns: minmax(0, 270px) minmax(0, 1fr); align-items: start; gap: clamp(20px, 3vw, 40px); }
+.academy-word-summary { grid-column: 2; grid-row: 1; display: flex; flex-direction: column; align-items: flex-start; gap: 20px; }
+.bo-shell .academy-word-summary .lesson-theory-card__hanzi { font-size: 30px; line-height: 1.5; }
+.academy-word-summary > .academy-word-illustration, .academy-word-summary > .academy-numeral-illustration { width: 128px; flex: 0 0 auto; }
+.bo-shell .lesson-theory-card__writing { grid-column: 1; grid-row: 1; display: flex; align-items: flex-start; gap: 16px; }
+.bo-shell .lesson-theory-card__writing .hanzi-stroke-word { max-width: 270px; }
+.admin-student-word .hanzi-stroke-word { margin: 20px auto; text-align: left; }
+.sandhi-example { padding: clamp(20px, 3vw, 30px); background: #f8f6ec; border-radius: 12px; }
+.sandhi-example .sandhi-example__rule { margin: 0 0 16px; color: #2c633c; font-size: 22px; font-weight: 650; }
+.bo-shell .sandhi-example .sandhi-example__hanzi { font-family: var(--font-product-cjk); font-size: clamp(38px, 5vw, 58px); color: #253f2c; margin: 0 0 8px; line-height: 1.6; }
+.sandhi-example__meaning { margin: 0; color: #496147; }
+.sandhi-example__comparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin: 24px 0; padding-block: 20px; border-block: 1px solid #d1dcc8; }
+.sandhi-example__comparison dt { font-size: 13px; color: #53684d; margin-bottom: 8px; }
+.sandhi-example__comparison dd { margin: 0; font-size: 23px; line-height: 1.6; overflow-wrap: anywhere; color: #27452f; }
+.sandhi-example__comparison > div:last-child dd { color: #276d34; font-weight: 600; }
+.sandhi-example > p { line-height: 1.9; }
+.sandhi-example__note { color: #4c6247; padding-top: 12px; }
+.sandhi-example small { display: block; margin-top: 12px; color: #53684d; line-height: 1.8; }
+@media (max-width: 600px) {
+  .sandhi-example__comparison { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .bo-shell .lesson-theory-card__writing { display: block; }
+  .bo-shell .academy-vocabulary-identity:has(.hanzi-stroke-word) { display: flex; flex-direction: column; align-items: stretch; }
+  .academy-word-summary { flex-direction: row; align-items: center; justify-content: space-between; }
+  .academy-word-summary > .academy-word-illustration, .academy-word-summary > .academy-numeral-illustration { width: 88px; }
+  .bo-shell .lesson-theory-card__writing .hanzi-stroke-word { margin-inline: auto; }
+}

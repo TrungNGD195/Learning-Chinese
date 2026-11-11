@@ -1,0 +1,4 @@
+.academy-country-illustration { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .7rem; padding: 1rem; background: #fff8e8; box-sizing: border-box; }
+.academy-country-illustration svg { display: block; width: 100%; max-width: 180px; aspect-ratio: 3 / 2; border-radius: 4px; }
+.academy-country-illustration figcaption { color: #244b3c; font-size: 1rem; font-weight: 650; text-align: center; }
+.academy-numeral-illustration > strong { display: block; color: #244b3c; font-size: clamp(1.6rem, 3vw, 2.3rem); font-variant-numeric: tabular-nums; }

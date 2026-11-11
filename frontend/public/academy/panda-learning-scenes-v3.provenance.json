@@ -1,0 +1,11 @@
+{
+  "tool": "built-in image_gen",
+  "userDirection": "Cartoon giant pandas matching Bo, Truc and But; male and female with vocabulary-specific poses; no human figures.",
+  "sourceFile": "C:/Users/Diep_PC/.codex/generated_images/01a1a03e-2162-7cc0-9074-e7108fea7321/exec-a4011cf9-f233-4595-b606-acf4017faebc.png",
+  "promptFile": "panda-learning-scenes-v3.prompt.txt",
+  "styleReference": "companions.png",
+  "characterReference": "panda-hsk1-extra-v3.png",
+  "finalRefinementPromptFile": "panda-learning-scenes-v3.alpha.prompt.txt",
+  "originalGenerationSource": "C:/Users/Diep_PC/.codex/generated_images/01a1a03e-2162-7cc0-9074-e7108fea7321/exec-617b1ffa-fdb2-4592-b4c6-4ee4c6c672cd.png",
+  "transparentBackground": true
+}
