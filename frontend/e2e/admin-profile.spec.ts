@@ -1,19 +1,20 @@
 import { expect, test } from '@playwright/test'
 
 const api = 'http://127.0.0.1:8000/api/v1'
+const email = 'step81-profile-admin@example.invalid'
 const password = process.env.STEP81_TEST_PASSWORD
 if (!password) throw new Error('Guarded E2E setup must supply a test password')
 
 test('admin profile saves identity and revokes other sessions on password change and logout-all', async ({ page, browser }) => {
   test.setTimeout(120_000)
   await page.goto('/login')
-  await page.getByLabel('Email').fill('step81-admin@example.invalid')
+  await page.getByLabel('Email').fill(email)
   await page.getByLabel('Mật khẩu', { exact: true }).fill(password!)
   await page.getByRole('button', { name: 'Đăng nhập', exact: true }).click()
   await expect(page).toHaveURL(/\/admin$/)
   const other = await browser.newContext()
   try {
-    const secondLogin = await other.request.post(api + '/auth/login', { data: { email: 'step81-admin@example.invalid', password } })
+    const secondLogin = await other.request.post(api + '/auth/login', { data: { email, password } })
     expect(secondLogin.ok()).toBe(true)
     await page.getByRole('navigation', { name: 'Điều hướng quản trị' }).getByRole('link', { name: 'Hồ sơ', exact: true }).click()
     await expect(page).toHaveURL(/\/admin\/profile$/)
@@ -34,12 +35,12 @@ test('admin profile saves identity and revokes other sessions on password change
     await expect(page).toHaveURL(/\/login$/)
     expect((await other.request.get(api + '/auth/me')).status()).toBe(401)
     expect((await other.request.post(api + '/auth/refresh')).status()).toBe(401)
-    expect((await other.request.post(api + '/auth/login', { data: { email: 'step81-admin@example.invalid', password } })).status()).toBe(401)
-    await page.getByLabel('Email').fill('step81-admin@example.invalid')
+    expect((await other.request.post(api + '/auth/login', { data: { email, password } })).status()).toBe(401)
+    await page.getByLabel('Email').fill(email)
     await page.getByLabel('Mật khẩu', { exact: true }).fill(newPassword)
     await page.getByRole('button', { name: 'Đăng nhập', exact: true }).click()
     await expect(page).toHaveURL(/\/admin$/)
-    expect((await other.request.post(api + '/auth/login', { data: { email: 'step81-admin@example.invalid', password: newPassword } })).ok()).toBe(true)
+    expect((await other.request.post(api + '/auth/login', { data: { email, password: newPassword } })).ok()).toBe(true)
     await page.goto('/admin/profile')
     await page.getByRole('button', { name: 'Đăng xuất tất cả thiết bị', exact: true }).click()
     await page.getByRole('button', { name: 'Hủy', exact: true }).click()

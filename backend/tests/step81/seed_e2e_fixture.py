@@ -69,6 +69,7 @@ async def seed() -> None:
         lesson_vocab_id, lesson_grammar_id = fixture_id("lesson-vocabulary"), fixture_id("lesson-grammar")
 
         await session.execute(insert(User).values([
+            {"id": fixture_id("profile-admin"), "email": "step81-profile-admin@example.invalid", "password_hash": hash_password(test_password), "full_name": "Profile Test Admin", "role": "ADMIN"},
             {"id": admin_id, "email": ADMIN_EMAIL, "password_hash": hash_password(test_password), "full_name": "Step 8.1 Admin", "role": "ADMIN"},
             {"id": learner_id, "email": LEARNER_EMAIL, "password_hash": hash_password(test_password), "full_name": "Step 8.1 Learner", "role": "LEARNER"},
         ]).on_conflict_do_nothing(index_elements=["email"]))

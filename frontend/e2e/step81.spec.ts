@@ -146,8 +146,8 @@ test('B2 HSK levels stay independently open; periodic retry and both results per
   await expect(page.getByText("Chưa đạt", { exact: true })).toBeVisible()
   const failedPath = new URL(page.url()).pathname
   await page.goto('/hsk/2')
-  await expect(page.locator('.wall-stop[data-progress-state="AVAILABLE"]')).toBeVisible()
-  await expect(page.locator('.wall-stop[data-progress-state="AVAILABLE"] a')).toHaveCount(1)
+  await expect(page.locator('.lc-lesson-grid')).toBeVisible()
+  await expect(page.locator('.lc-lesson-grid a.lc-lesson-card')).toHaveCount(1)
   await page.goto(failedPath)
   await page.getByRole('link', { name: "Thử lại", exact: true }).click()
   await page.getByRole('button', { name: "Bắt đầu / Tiếp tục luyện tập" }).click()
@@ -157,8 +157,8 @@ test('B2 HSK levels stay independently open; periodic retry and both results per
   const passedPath = new URL(page.url()).pathname
   expect(passedPath).not.toBe(failedPath)
   await page.goto('/hsk/2')
-  await expect(page.locator('.wall-stop[data-state="current"]')).toBeVisible()
-  await expect(page.locator('.wall-stop[data-progress-state="AVAILABLE"]')).toBeVisible()
+  await expect(page.locator('.lc-lesson-grid > li[data-state="current"]')).toBeVisible()
+  await expect(page.locator('.lc-lesson-grid a.lc-lesson-card')).toHaveCount(1)
   await page.goto(failedPath)
   await expect(page.getByText("Chưa đạt", { exact: true })).toBeVisible()
   await page.goto(passedPath)
@@ -278,22 +278,22 @@ for (const width of [390, 768, 1440]) {
     page.on('response', response => { if (response.status() >= 400 && ['image', 'font'].includes(response.request().resourceType())) brokenAssets.push(response.url()) })
     await login(page, adminEmail)
     const nav = page.getByRole('navigation', { name: 'Điều hướng quản trị', exact: true })
-    await expect(nav.getByRole('link')).toHaveText(['Tổng quan', 'Lộ trình', 'Bài học', 'Kiểm tra định kỳ', 'Tài liệu'])
+    await expect(nav.getByRole('link')).toHaveText(['Tổng quan', 'Bài học', 'Kiểm tra định kỳ', 'Tài liệu', 'Hồ sơ'])
     for (const link of await nav.getByRole('link').all()) { await link.focus(); await expect(link).toBeFocused() }
     for (const [path, title] of [
-      ['/admin', 'Quản trị học liệu'], ['/admin/curriculum', 'Sắp xếp HSK'],
+      ['/admin', 'Quản trị học liệu'], ['/admin/curriculum', 'Bài học'],
       ['/admin/lessons', 'Bài học'], ['/admin/assessments', 'Kiểm tra định kỳ'],
       ['/admin/documents', 'Thư viện tài liệu'], ['/admin/stats', 'Thống kê'],
       [`/admin/lessons/${lessonA}`, 'Bài 1 · Step 8.1 Lesson A'],
     ]) {
       await page.goto(path)
       await expect(page.getByRole('heading', { name: title, level: 1, exact: true })).toBeVisible()
-      if (path !== '/admin/stats') await expect(page.locator('.academy-header-art')).toBeVisible()
+      if (path === '/admin') await expect(page.locator('.academy-header-art')).toBeVisible()
       await noOverflow(page)
       await expect(page.getByRole('button', { name: 'Đăng xuất', exact: true })).toBeVisible()
     }
     await page.goto('/admin/lessons')
-    await expect(page.getByRole('complementary', { name: 'Xem nhanh nội dung' })).toBeVisible()
+    await expect(page.locator('.admin-library-card').first()).toBeVisible()
     await page.getByRole('button', { name: 'Bảng', exact: true }).click()
     await expect(page.getByRole('region', { name: 'Bảng bài học', exact: true }).getByRole('table')).toBeVisible()
     await noOverflow(page)
@@ -497,7 +497,7 @@ test('Great Wall journey opens real lessons and student logout stays in the side
   const units = page.getByRole('list', { name: 'Các bài trong cấp độ HSK' })
   await expect(units).toBeVisible()
   await units.getByRole('link', { name: /(?:Học|Ôn) Bài học 1: Step 8.1 Lesson A/ }).click()
-  await expect(page).toHaveURL(new RegExp(`/lessons/${lessonA}$`))
+  await expect(page).toHaveURL(new RegExp(`/lessons/${lessonA}/vocabulary/[^/]+$`))
   for (const width of [1440, 768, 390]) {
     await page.setViewportSize({ width, height: 900 })
     const opener = page.getByRole('button', { name: 'Mở menu học viên', exact: true })
@@ -609,7 +609,8 @@ test('real stroke data supports each character and earlier graduates can complet
     await expect(page.getByRole('progressbar', { name: 'Tiến độ biến điệu' })).toHaveAttribute('value', String(index + 1))
   }
   await page.getByRole('button', { name: 'Hoàn thành biến điệu', exact: true }).click()
-  await expect(page.getByRole('heading', { name: 'Bài học đã hoàn thành', exact: true })).toBeVisible()
+  await expect(page).toHaveURL(/\/pronunciation\/lesson$/)
+  await expect(page.getByRole('link', { name: 'Ôn biến điệu', exact: true })).toBeVisible()
   const after = await get(page, '/pronunciation/lesson')
   expect(after.current_section).toBeNull()
   expect(after.completed_at).toBe(before.completed_at)
