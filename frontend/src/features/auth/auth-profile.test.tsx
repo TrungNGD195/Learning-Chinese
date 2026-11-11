@@ -36,6 +36,10 @@ function apiError(status: number | null, code: string) {
   return new ApiError({ status, code, message: 'safe test error', details: null })
 }
 
+async function endServerSession() {
+  vi.mocked(authApi.getMe).mockRejectedValue(apiError(401, 'AUTHENTICATION_REQUIRED'))
+}
+
 function renderApp(path: string, currentUser?: typeof learner) {
   queryClient.setQueryDefaults(queryKeys.authMe, { retry: false })
   if (currentUser) {
@@ -50,13 +54,14 @@ beforeEach(() => {
   queryClient.clear()
   queryClient.setQueryDefaults(queryKeys.authMe, { retry: false })
   vi.clearAllMocks()
+  for (const method of Object.values(authApi)) vi.mocked(method).mockReset()
   vi.mocked(authApi.getMe).mockRejectedValue(apiError(401, 'AUTHENTICATION_REQUIRED'))
   vi.mocked(authApi.login).mockResolvedValue(learner)
   vi.mocked(authApi.register).mockResolvedValue(learner)
-  vi.mocked(authApi.logout).mockResolvedValue(undefined)
-  vi.mocked(authApi.changePassword).mockResolvedValue(undefined)
+  vi.mocked(authApi.logout).mockImplementation(endServerSession)
+  vi.mocked(authApi.changePassword).mockImplementation(endServerSession)
   vi.mocked(authApi.requestPasswordReset).mockResolvedValue(undefined)
-  vi.mocked(authApi.confirmPasswordReset).mockResolvedValue(undefined)
+  vi.mocked(authApi.confirmPasswordReset).mockImplementation(endServerSession)
   vi.mocked(getDashboard).mockResolvedValue(dashboard)
   vi.mocked(getProgressOverview).mockResolvedValue(progress)
 })
@@ -324,7 +329,7 @@ describe('Logout, Profile, and change password', () => {
   })
 
   it('keeps the session/cache after technical Logout failure and retries only on learner action', async () => {
-    vi.mocked(authApi.logout).mockRejectedValueOnce(apiError(503, 'HTTP_ERROR')).mockResolvedValueOnce(undefined)
+    vi.mocked(authApi.logout).mockRejectedValueOnce(apiError(503, 'HTTP_ERROR')).mockImplementationOnce(endServerSession)
     queryClient.setQueryData(queryKeys.dashboard, dashboard)
     renderApp('/pronunciation', learner)
     await screen.findByRole('heading', {name:'Giáo trình của bạn'})
