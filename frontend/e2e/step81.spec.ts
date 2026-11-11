@@ -281,7 +281,7 @@ for (const width of [390, 768, 1440]) {
     await expect(nav.getByRole('link')).toHaveText(['Tổng quan', 'Bài học', 'Kiểm tra định kỳ', 'Tài liệu', 'Hồ sơ'])
     for (const link of await nav.getByRole('link').all()) { await link.focus(); await expect(link).toBeFocused() }
     for (const [path, title] of [
-      ['/admin', 'Quản trị học liệu'], ['/admin/curriculum', 'Bài học'],
+      ['/admin', 'Quản trị học liệu'], ['/admin/curriculum', 'Sắp xếp HSK'],
       ['/admin/lessons', 'Bài học'], ['/admin/assessments', 'Kiểm tra định kỳ'],
       ['/admin/documents', 'Thư viện tài liệu'], ['/admin/stats', 'Thống kê'],
       [`/admin/lessons/${lessonA}`, 'Bài 1 · Step 8.1 Lesson A'],
