@@ -4,7 +4,7 @@ import { Link, useLocation, useNavigate, useSearchParams } from 'react-router'
 import { clearAuthenticatedSessionCache, prepareAuthenticatedSessionCache } from '../../app/query/queryClient'
 import { ApiError } from '../../lib/api/errors'
 import { authApi } from './api'
-import { authMeQueryOptions } from './session'
+import { queryKeys } from '../../app/query/keys'
 import { Alert, Button, PageHeader, Surface } from '../../components/ui'
 import { AcademyIcon } from '../../components/academy/AcademyIcon'
 
@@ -22,8 +22,11 @@ function safeFormError(error: unknown) {
 
 async function restoreAuthoritativeSession(queryClient: ReturnType<typeof useQueryClient>) {
   await prepareAuthenticatedSessionCache()
-  const user = await queryClient.fetchQuery(authMeQueryOptions())
+  // Keep the public form mounted while verifying the new cookie session. An
+  // unobserved request failure must not replace it with the route guard.
+  const user = await authApi.getMe()
   if (!user) throw new ApiError({ status: null, code: 'INVALID_RESPONSE', message: "Không thể xác thực phiên đăng nhập", details: null })
+  queryClient.setQueryData(queryKeys.authMe, user)
   return user
 }
 

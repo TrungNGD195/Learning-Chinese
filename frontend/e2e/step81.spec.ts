@@ -219,7 +219,7 @@ test('B5 AI draft has 30 varied questions at 80 percent and needs review before 
   await expect(page).toHaveURL(new RegExp(`/admin/lessons/${lessonA}\\?section=exercises$`))
   const generated = (await (await generation).json()).assessment
   const assessmentId = generated.id
-  await expect(page.locator('.admin-embedded-assessment-heading')).toContainText('Bản nháp')
+  await expect(page.locator('.admin-embedded-assessment-heading:visible')).toContainText('Bản nháp')
   const questions = await get(page, `/admin/assessments/${assessmentId}/questions`)
   expect(questions).toHaveLength(30)
   expect(new Set(questions.map(question => question.type)).size).toBe(4)

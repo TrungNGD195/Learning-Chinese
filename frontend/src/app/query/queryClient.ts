@@ -27,16 +27,7 @@ export async function prepareAuthenticatedSessionCache() {
   await new Promise<void>((resolve) => globalThis.setTimeout(resolve, 0))
   queryClient.removeQueries({ predicate: (query) => query.queryKey[0] !== 'auth' })
   await queryClient.cancelQueries({ queryKey: queryKeys.authMe, exact: true })
-  queryClient.getQueryCache().find({ queryKey: queryKeys.authMe, exact: true })?.setState({
-    data: undefined,
-    error: null,
-    status: 'pending',
-    fetchStatus: 'idle',
-    dataUpdatedAt: 0,
-    errorUpdatedAt: 0,
-    fetchFailureCount: 0,
-    fetchFailureReason: null,
-  })
+  queryClient.setQueryData(queryKeys.authMe, null)
 }
 
 subscribeToSessionInvalidation(() => { void clearAuthenticatedSessionCache() })
