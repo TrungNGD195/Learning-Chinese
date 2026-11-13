@@ -1,6 +1,6 @@
 # Hanfolio
 
-A Vietnamese-first Chinese learning web app with a structured curriculum and a lesson-aware AI assistant. The backend is a modular monolith; the frontend is a separate React client. AI providers are called through backend interfaces.
+A Vietnamese-first Chinese learning web app with pronunciation, structured lessons and practice. The backend is a modular monolith; the frontend is a separate React client. Document AI is disabled in the deployed learning-only configuration.
 
 ## Project map
 
@@ -9,7 +9,7 @@ A Vietnamese-first Chinese learning web app with a structured curriculum and a l
 | `backend/` | FastAPI application, database migrations, tests, and AI integrations |
 | `frontend/` | React, TypeScript, Vite client and browser tests |
 | `evaluation/` | Versioned evaluation cases, fixtures, validators, and evaluation assets |
-| `docs/` | Implementation notes, run reports, and learning/evaluation documentation |
+| `docs/` | Current operational guides, learning policies, sources and attribution; see [the index](docs/README.md) |
 | `Spec-CURRENT/` | Current product specifications, PM decisions, and execution protocol |
 | `infra/` | Local PostgreSQL initialization assets |
 | `compose.yaml` | Local pgvector PostgreSQL service |
@@ -67,6 +67,14 @@ set the shell variable `API_PROXY_TARGET` if your backend uses another port.
 The app Compose configuration sets the internal backend target automatically.
 This keeps session cookies on the frontend hostname whether you open
 `localhost:5173` or `127.0.0.1:5173`.
+
+## Verification
+
+From `frontend/`, run `npm run lint`, `npm run test -- --run`, and `npm run build`.
+With the test API running at port 8000, run `npm run api:check`.
+`npm run test:e2e` starts its servers and resets/seeds only the dedicated
+`chinese_learning_test` database. Never point it at learner or production data.
+The authoritative CI sequence is [.github/workflows/ci.yml](.github/workflows/ci.yml).
 
 ## Current pause point
 

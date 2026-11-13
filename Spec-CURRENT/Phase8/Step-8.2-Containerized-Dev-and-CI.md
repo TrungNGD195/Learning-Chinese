@@ -31,7 +31,7 @@ Provide reproducible local database startup and deterministic CI gates from comm
 - Local backend: 1,152 passed, 1 skipped, 0 failed.
 - Local frontend: `npm ci`, lint, 326 Vitest tests, production build, and live `api:check` passed.
 - Local deterministic Playwright Chromium: 6/6 passed with one worker.
-- Non-blocking warnings and the dependency advisory are recorded in the [Step 8.2 run report](../../docs/devops/step-8.2-run-report.md).
+- Historical run reports were removed in the documentation cleanup. The figures above remain historical evidence; current reproducible checks are defined in the [CI workflow](../../.github/workflows/ci.yml).
 - Implementation and verification criteria are satisfied; PM final Step acceptance is pending documentation review. Step 8.3 has not been opened.
 
 ## In Scope
@@ -96,9 +96,9 @@ Step 8.2 CI does not execute or claim PASS for:
 
 ## Documentation
 
-- [Setup guide](../../docs/devops/step-8.2-container-ci.md)
-- [Run report](../../docs/devops/step-8.2-run-report.md)
-- [Step Note](../../docs/devops/step-8.2-step-note.md)
+- [Current setup and verification](../../README.md)
+- [Current CI workflow](../../.github/workflows/ci.yml)
+- [Production deployment](../../docs/deployment-railway-vercel.md)
 
 ## Open Questions
 
