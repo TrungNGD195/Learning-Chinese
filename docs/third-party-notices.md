@@ -1,14 +1,6 @@
-# Hanzi stroke data
+# Third-party notices
 
-## Spatial learning-world reference terrain
-
-SRTM data courtesy of the U.S. Geological Survey. The reference Terrarium tile
-is served by Mapzen/Tilezen Terrain Tiles on AWS Open Data. Source, hash, credit
-and transformations are preserved in `assets/terrain/README.md` and the local
-`academy/great-wall/spatial-v1/terrain-dem.json` metadata. Elevations are rescaled
-and blended with an invented learning path; no geographic/navigation accuracy
-or USGS endorsement is claimed. See
-[provider attribution notes](https://github.com/tilezen/joerd/blob/master/docs/attribution.md).
+## Hanzi stroke data
 
 The frontend uses **hanzi-writer-data 2.0.1**, originating from
 [Make Me a Hanzi](https://github.com/skishore/makemeahanzi) and distributed by
@@ -34,9 +26,33 @@ The stroke renderer is application code; the Hanzi Writer JavaScript library
 is not used. Unsupported characters remain visible as text with an explanatory
 message; their stroke order is never synthesized from a font.
 
-The illustrated journey's dynamic gate plaques use self-hosted **Noto Serif
-Bold**, obtained from Google Fonts (Noto Serif v33). The font is distributed
-under the SIL Open Font License 1.1, included at
-`frontend/public/academy/fonts/NotoSerif-OFL.txt`. The font file is
-`noto-serif-bold.ttf` in the same directory. Native interface text retains
-the existing Noto Sans family.
+## Mandarin recordings
+
+Seven special-i recordings in special-i-native-v7 derive from
+[davinfifield/mp3-chinese-pinyin-sound](https://github.com/davinfifield/mp3-chinese-pinyin-sound),
+commit aa25ecce7b7fb02757b2c2b8e3c01aa975812edc. The repository declares the
+Unlicense. Original MP3s and the exact LICENSE remain in v6/originals.
+Speaker identity is not named upstream. Noise cleanup does not replace the
+speaker or phonemes, or change pitch/speed. Manifests record transformations
+and source/output hashes.
+
+Isolated ai/eng/er use [cmguo/PinYinSound](https://github.com/cmguo/PinYinSound),
+commit 62453b2a5ca6873eac1f4293b6e9794715d0fc8a. No upstream license or
+speaker identity is declared. Originals and processing remain in v1.
+The active ong variants use the SReading-labeled recording mirrored by
+[zispace/hanyu-pinyin-audio](https://github.com/zispace/hanyu-pinyin-audio),
+commit 2b4e7e6ba31d6cc79ebca6c910729767d9168a7e,
+sreading.org/pinyin/ong.mp3. Original/prepared take: v2; duration variants: v4.
+No verified upstream redistribution license or speaker identity is inferred.
+
+On 2026-11-13 the product owner confirmed holding redistribution rights for
+these isolated-final recordings and requested retaining them in deployment.
+See /academy/audio/distribution-rights.json. This attestation does not change
+upstream declarations or establish expert phonetic approval. Listening QA
+remains PENDING_QA. Ordinary words/sentences use device Mandarin speech.
+Retired Edge/Azure experiments and rejected older takes are not distributed.
+
+## Fonts
+
+Retained Noto fonts include their SIL Open Font License notices under
+frontend/public/academy/fonts/. Preserve those notices with font distribution.

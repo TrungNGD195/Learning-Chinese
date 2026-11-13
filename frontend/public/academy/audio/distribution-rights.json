@@ -1,0 +1,8 @@
+{
+  "recorded_on": "2026-11-13",
+  "status": "OWNER_ATTESTED_REDISTRIBUTION_RIGHTS",
+  "scope": ["isolated-finals-v1", "isolated-finals-v2", "isolated-finals-v4"],
+  "statement": "The product owner confirmed in this session that they hold redistribution rights and requested retaining these recordings in the deployment.",
+  "verification": "Owner attestation only; no independent rights documentation was supplied. Upstream license and speaker identity remain as recorded in each source manifest.",
+  "phonetic_qa": "This confirmation does not constitute expert pronunciation approval. Retain PENDING_QA."
+}

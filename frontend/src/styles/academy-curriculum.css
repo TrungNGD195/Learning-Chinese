@@ -171,6 +171,32 @@
  .mw-note > .academy-companion { flex-basis:48px;width:48px; }
 }
 .lc-heading-actions { display:flex;align-items:center;gap:16px; }
+.lc-learning-flow { margin-bottom:22px;padding:20px 0;border-block:1px solid #bdcdb8; }
+.learning-curriculum .lc-learning-flow h2 { margin-bottom:18px;font-size:20px; }
+.lc-learning-flow ol { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin:0;padding:0;list-style:none; }
+.lc-learning-flow li { display:flex;align-items:flex-start;gap:12px; }
+.lc-flow-number { display:flex;align-items:center;justify-content:center;flex:0 0 34px;width:34px;height:34px;border:1px solid #789881;border-radius:9px;background:#e8efde;color:#234f3b;font-size:17px;font-weight:700; }
+.lc-learning-flow li:first-child .lc-flow-number { background:#255e43;color:#fffdf5;border-color:#255e43; }
+.lc-learning-flow h3 { font-size:16px;line-height:1.5; }
+.lc-learning-flow li p { margin-top:5px;font-size:14px;line-height:1.7;color:#52664d; }
+.learning-curriculum .lc-flow-note { margin-top:16px;font-size:13px;line-height:1.6;color:#52664d; }
+.lc-foundation-grid { grid-template-columns:1.2fr 1fr; }
+.learning-curriculum .lc-foundation-card--pronunciation { border-color:#346c4f;background:#f3f7eb; }
+.lc-foundation-card--pronunciation .lc-foundation-copy > div { font-weight:700;font-size:13px; }
+@media(max-width:1050px) {
+ .lc-foundation-grid { grid-template-columns:1fr; }
+ .lc-learning-flow ol { gap:18px; }
+}
+@media(max-width:700px) {
+ .lc-learning-flow ol { grid-template-columns:1fr;gap:12px; }
+ .lc-learning-flow { padding:16px 0; }
+ .learning-curriculum .lc-learning-flow h2 { margin-bottom:14px;font-size:18px; }
+ .lc-learning-flow li { gap:10px; }
+ .lc-flow-number { flex-basis:28px;width:28px;height:28px;font-size:15px;border-radius:7px; }
+ .lc-learning-flow h3 { font-size:15px; }
+ .lc-learning-flow li p { margin-top:3px;font-size:13px;line-height:1.6; }
+ .learning-curriculum .lc-flow-note { margin-top:12px;font-size:12px; }
+}
 .lc-heading-actions > .academy-companion { flex:0 0 88px;width:88px; }
 .learning-curriculum .lc-resume { background:#255e43;color:#fffdf5;border-color:#255e43;font-size:14px;min-height:45px; }
 .learning-curriculum { background-image:url('/academy/landscape.png');background-position:right bottom;background-repeat:no-repeat;background-size:700px auto; }

@@ -76,3 +76,23 @@ were checked against the supplied HSK1 textbook and PolyU's BEPTH pages:
 and [tone sandhi](https://www.polyu.edu.hk/bepth/introduction-to-phonetics/tones/tone-sandhi/).
 These are editorial verification references; source annotations are omitted from
 the learning interface at the user's request. Existing source metadata is retained.
+
+## Vietnamese/English pronunciation associations (2026-11-13)
+
+`pronunciationComparisons.ts` provides approximate learning cues for all 21
+initials and 36 finals, as the second paragraph inside the Trúc reminder. The
+first paragraph describes mouth/tongue position. There is no separate tips
+section. Both the 21 initial and 36 final associations now use the PO's supplied
+wording from 2026-11-13. General repeated
+introductory paragraphs are omitted on those two study screens. No audio source,
+voice, lesson step count, completion rule or API contract changes with these cues.
+
+Mandarin articulation reference: the PolyU initial/simple/compound-final resources
+above. Vietnamese vowel distinctions were cross-checked against James Kirby's
+[Vietnamese (Hanoi Vietnamese)](https://hcmussh.edu.vn/static/document/13269.pdf?displayName=Vietnamese+%28Hanoi+Vietnamese%29o%2F5.Vietnamese---Hanoi-Vietnamese.pdf)
+and the [Michigan State Vietnamese vowel-cluster guide](https://openbooks.lib.msu.edu/vietnamese/chapter/section-4-combined-vowels-diphthongs-1/).
+The supplied cross-language reading captions are learning aids, not exact
+equivalences validated by those sources. Regional accents vary. Listening and
+Mandarin articulation remain primary. Special i cases are separated into the
+z/c/s and zh/ch/sh/r groups, with native recordings including ri; ordinary i
+and mi retain browser playback. No teacher listening approval is inferred.

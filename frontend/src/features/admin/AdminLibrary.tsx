@@ -1,4 +1,5 @@
 import { SceneIllustration, sceneForTitle } from '../../components/academy/AcademyArtwork'
+import { AcademyIcon } from '../../components/academy/AcademyIcon'
 import { useId, useState, type ReactNode } from 'react'
 import { Link } from 'react-router'
 import { Companion, VocabularyIllustration } from '../../components/academy/Companion'
@@ -35,6 +36,7 @@ export function AdminLibrary({ records, label, total, kind, preview }: {
             <div className="admin-library-card-copy"><p className="admin-record-context">{item.context}</p><h2>{kind === 'lessons' ? item.title : <button type="button" aria-pressed={selected?.id === item.id} aria-controls={previewId} onClick={() => setSelectedId(item.id)}>{item.title}</button>}</h2>
               <div className="admin-record-status">{item.status}</div>{item.detail && <div className="admin-record-detail">{item.detail}</div>}
               {kind !== 'lessons' && <Link className="admin-link-action" to={item.href}>{item.action}<span aria-hidden="true"> →</span></Link>}
+              {kind === 'lessons' && <span className="admin-library-card-action" aria-hidden="true">Biên soạn bài học<AcademyIcon name="arrow" size={18}/></span>}
             </div>
           </>
           const className = `admin-library-card ${selected?.id === item.id ? 'is-selected' : ''}`

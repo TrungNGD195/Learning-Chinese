@@ -1,0 +1,133 @@
+/* Shared interaction hierarchy: a resting control must already look usable. */
+:root {
+  --action-border: #789881;
+  --action-surface: #f0f5e9;
+  --action-hover: #e4eedb;
+  --action-focus: #a56c26;
+  --action-shadow: 0 3px 7px rgb(23 63 54 / 12%);
+}
+
+/* Reading panels stay flat; only actionable surfaces lift on interaction. */
+.app-shell :is(.ui-surface,.learning-card,.theory-card,.structural-card,.mw-content,.admin-workbench-panel,.admin-editor-section,.admin-profile-section) {
+  border-color: #bdcdb8;
+}
+.bo-shell .lesson-study-workspace .pronunciation-session__card,
+.admin-shell.admin-academy-workspace :is(.admin-workbench-panel,.admin-editor-section,.admin-profile-panel,.admin-quick-preview) { border-color: #bdcdb8; }
+.app-shell :is(.ui-button,.primary-action,.secondary-action,.icon-action,.learner-link-action,.lc-inline-button,.admin-workbench-create) {
+  font-weight: 650;
+  transition: background-color 160ms ease-out, border-color 160ms ease-out, box-shadow 160ms ease-out, transform 160ms ease-out;
+}
+.app-shell :is(.ui-button--secondary,.secondary-action,.lc-inline-button,.icon-action,a.admin-link-action,a.admin-preview-open,.admin-workbench-panel-footer a,a.admin-workbench-section-link,.admin-workbench-stats > a,a.lesson-header__back,a.academy-text-link) {
+  border-color: var(--action-border);
+  background: var(--action-surface);
+  color: #214f39;
+  box-shadow: 0 2px 4px rgb(23 63 54 / 8%);
+}
+.app-shell :is(.ui-button--primary,.primary-action,.admin-workbench-create,.lc-resume) {
+  border-color: #1e5338;
+  background: #245e42;
+  color: #fffef8;
+  box-shadow: 0 3px 6px rgb(23 63 54 / 18%);
+}
+.app-shell a.lc-resume { border-color: #1e5338; background: #245e42; color: #fffef8; }
+.bo-shell .learning-curriculum a.lc-foundation-card--pronunciation { border-color: #346c4f; background: #f3f7eb; }
+.app-shell .ui-button--danger { box-shadow: 0 2px 4px rgb(157 52 52 / 15%); }
+.app-shell :is(.ui-button--ghost,.learner-link-action) { border-color: var(--action-border); }
+.app-shell :is(.ui-button,.primary-action,.secondary-action,.icon-action,.learner-link-action,.lc-inline-button,.admin-workbench-create):focus-visible {
+  outline: 3px solid var(--action-focus);
+  outline-offset: 4px;
+}
+.app-shell :is(.ui-button,.lc-inline-button):disabled,
+.app-shell [aria-disabled="true"] {
+  box-shadow: none;
+  transform: none;
+  cursor: not-allowed;
+}
+.app-shell :is(.ui-button,.lc-inline-button):disabled { border-color: #c7d1c1; background: #edf0e8; color: #61735c; opacity: .7; }
+
+/* Whole-card links have a stronger edge and an explicit opening cue. */
+.bo-shell :is(a.lc-foundation-card,a.pronunciation-section-block),
+.admin-shell.admin-academy-workspace a.admin-library-card--link {
+  border: 2px solid var(--action-border);
+  background: #fffef8;
+  box-shadow: var(--action-shadow);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 160ms ease-out, border-color 160ms ease-out, box-shadow 160ms ease-out, transform 160ms ease-out;
+}
+.bo-shell .lc-lesson-grid > li:has(> a.lc-lesson-card) {
+  border: 2px solid var(--action-border);
+  box-shadow: var(--action-shadow);
+  transition: border-color 160ms ease-out, box-shadow 160ms ease-out, transform 160ms ease-out;
+}
+.bo-shell .lc-lesson-grid > li[data-state="current"]:has(> a) { border-color: #296747; background: #eff6e7; }
+.bo-shell .lc-lesson-grid > li:has(> button[data-locked="true"]) { border-color: #d2dacb; background: #f5f6f0; box-shadow: none; }
+.bo-shell .lc-lesson-card[data-locked="true"] { cursor: help; }
+.bo-shell .lc-lesson-card[data-locked="true"]:hover { background: #f5f6f0; }
+.bo-shell a.lc-lesson-card .lc-lesson-footer {
+  margin: 12px -19px -19px;
+  padding: 12px 19px;
+  background: #e9f1df;
+  border-top-color: #b7cba9;
+  color: #255437;
+  font-size: 14px;
+  font-weight: 650;
+}
+.bo-shell :is(.lc-foundation-copy > div,.pronunciation-section-block__action) { color: #255437; font-weight: 650; }
+.bo-shell :is(a.lc-lesson-card .lc-lesson-footer,a.lc-foundation-card .lc-foundation-copy > div,a.pronunciation-section-block .pronunciation-section-block__action) > svg {
+  flex: 0 0 auto;
+  box-sizing: content-box;
+  padding: 7px;
+  border-radius: 9px;
+  background: #296747;
+  color: #fffef8;
+}
+.bo-shell :is(a.lc-foundation-card,a.pronunciation-section-block):focus-visible,
+.admin-shell.admin-academy-workspace a.admin-library-card--link:focus-visible,
+.bo-shell .lc-lesson-grid > li:has(> a:focus-visible) {
+  outline: 3px solid var(--action-focus);
+  outline-offset: 4px;
+}
+.bo-shell .lc-lesson-card:focus-visible { outline: none; }
+.admin-library-card-action { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: auto; padding-top: 12px; border-top: 1px solid #b7cba9; color: #245b3e; font-size: 14px; font-weight: 650; }
+.admin-library-card-action svg { flex: 0 0 auto; box-sizing: content-box; padding: 7px; border-radius: 8px; background: #296747; color: #fffef8; }
+
+/* Tabs and section navigation remain recognisable controls even at rest. */
+.bo-shell :is(.lesson-manuscript__index a,.pronunciation-sections-nav > a,.mw-outline nav button),
+.admin-shell :is(.admin-studio-nav button,.admin-view-switch button) {
+  border: 1px solid #9bb091;
+  background: #fffef8;
+  border-radius: 9px;
+  color: #2d573e;
+}
+.bo-shell :is(.lesson-manuscript__index a,.pronunciation-sections-nav > a)[aria-current="page"],
+.bo-shell .mw-outline nav button[aria-pressed="true"],
+.admin-shell :is(.admin-studio-nav,.admin-view-switch) button[aria-pressed="true"] {
+  border-color: #24583e;
+  background: #24583e;
+  color: #fffef8;
+}
+.bo-shell :is(.lesson-manuscript__index a,.pronunciation-sections-nav > a)[aria-current="page"] span { color: inherit; }
+.bo-shell .lc-level-tabs > a { border-color: var(--action-border); box-shadow: 0 2px 4px rgb(23 63 54 / 7%); }
+.bo-shell .lc-level-tabs > a[aria-current="page"] { border-color: #24583e; background: #24583e; color: #fffef8; }
+.bo-shell .practice-workspace .answer-option { border-color: #8fa685; background: #fffef8; }
+.bo-shell .practice-workspace .answer-option:has(input:checked) { border-color: #296747; background: #e2edd6; box-shadow: inset 0 0 0 1px #296747; }
+.app-shell .ui-button[aria-pressed="true"]:not(:disabled) { border-color: #24583e; background: #24583e; color: #fffef8; }
+
+@media (hover: hover) {
+  .app-shell :is(.ui-button--secondary,.secondary-action,.lc-inline-button,.icon-action):not(:disabled):not([aria-disabled="true"]):hover { border-color: #296747; background: var(--action-hover); box-shadow: var(--action-shadow); }
+  .app-shell :is(.ui-button--primary,.primary-action,.admin-workbench-create,.lc-resume):not(:disabled):hover { background: #1b4a33; color: #fffef8; box-shadow: 0 4px 8px rgb(23 63 54 / 20%); }
+  .bo-shell :is(a.lc-foundation-card,a.pronunciation-section-block):hover,
+  .admin-shell.admin-academy-workspace a.admin-library-card--link:hover { border-color: #296747; background: #f4f8ec; transform: translateY(-2px); box-shadow: 0 5px 10px rgb(23 63 54 / 14%); }
+  .bo-shell .lc-lesson-grid > li:has(> a.lc-lesson-card:hover) { border-color: #296747; transform: translateY(-2px); box-shadow: 0 5px 10px rgb(23 63 54 / 14%); }
+}
+.app-shell :is(.ui-button,.lc-inline-button):not(:disabled):active { transform: translateY(1px); box-shadow: none; }
+@media (prefers-reduced-motion: reduce) {
+  .app-shell :is(.ui-button,.primary-action,.secondary-action,.icon-action,.learner-link-action,.lc-inline-button,.admin-workbench-create),
+  .bo-shell :is(a.lc-foundation-card,a.pronunciation-section-block,.lc-lesson-grid > li),
+  .admin-shell a.admin-library-card--link { transition: none; transform: none; }
+  .bo-shell :is(a.lc-foundation-card,a.pronunciation-section-block):hover,
+  .admin-shell.admin-academy-workspace a.admin-library-card--link:hover,
+  .bo-shell .lc-lesson-grid > li:has(> a.lc-lesson-card:hover),
+  .app-shell :is(.ui-button,.lc-inline-button):not(:disabled):active { transform: none; }
+}

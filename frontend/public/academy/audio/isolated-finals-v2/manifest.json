@@ -1,0 +1,26 @@
+{
+  "symbol": "ong",
+  "file": "ong.wav",
+  "local_path": "/academy/audio/isolated-finals-v2/ong.wav",
+  "source_url": "https://raw.githubusercontent.com/zispace/hanyu-pinyin-audio/2b4e7e6ba31d6cc79ebca6c910729767d9168a7e/sreading.org/pinyin/ong.mp3",
+  "source_file": "originals/ong.mp3",
+  "source_sha256": "7e179709f6c07a69379de9a9ff25ee6388c4fb49292972515a658a8a83db3aab",
+  "source_attribution": "SReading pinyin collection as labeled by zispace/hanyu-pinyin-audio mirror; speaker not named",
+  "source_page": "https://www.sreading.org/zh-hans/pinyin-pathway",
+  "license_status": "NOT_CLEARED_FOR_REDISTRIBUTION_LOCAL_REVIEW_ONLY",
+  "sample_rate": 44100,
+  "source_channels": 2,
+  "output_channels": 1,
+  "source_duration_seconds": 2.06367,
+  "source_window_seconds": [
+    0.44306,
+    1.85195
+  ],
+  "duration_seconds": 1.50889,
+  "gain_db": 0.048,
+  "peak": 0.626434,
+  "sha256": "68270617bf20e3751e1c1f1ea736ad83e9d82a512ad7b5b1b94b62d01c50769d",
+  "processing": "Different complete ong take. Trim only low-level outside silence, 70 Hz zero-phase rumble filter, constant gain, 5 ms quiet edges, 100 ms quiet release. No speed/pitch edit, phoneme splice, repeated samples or consonant removal.",
+  "qa": "PENDING_QA",
+  "distribution_authorization": "../distribution-rights.json"
+}

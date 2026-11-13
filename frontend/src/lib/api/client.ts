@@ -11,13 +11,12 @@ type ApiRequestOptions<Body = never> = {
 
 const apiPrefix = '/api/v1'
 
-/** Static landscape data does not participate in authenticated API sessions. */
-export async function loadJourneyTerrainAsset():Promise<unknown> {
-  const response=await fetch('/academy/great-wall/spatial-v1/terrain-dem.json',{
-    credentials:'omit',mode:'same-origin',redirect:'error',signal:AbortSignal.timeout(10000),
-  })
-  if(!response.ok)throw new Error('Terrain unavailable')
-  return response.json()
+/** Public pronunciation files never participate in API session refresh. */
+export async function loadPronunciationRecording(path: string, signal: AbortSignal): Promise<ArrayBuffer> {
+  if (!/^\/academy\/audio\/[a-z0-9-]+\/[a-z0-9-]+\.wav$/.test(path)) throw new Error('Invalid recording path')
+  const response = await fetch(path, { signal, credentials: 'omit', mode: 'same-origin', redirect: 'error' })
+  if (!response.ok) throw new Error('Recording unavailable')
+  return response.arrayBuffer()
 }
 
 // Static, public character assets share the central browser transport boundary.

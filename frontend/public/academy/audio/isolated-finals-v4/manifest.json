@@ -1,0 +1,225 @@
+{
+  "source_file": "../isolated-finals-v2/originals/ong.mp3",
+  "source_url": "https://raw.githubusercontent.com/zispace/hanyu-pinyin-audio/2b4e7e6ba31d6cc79ebca6c910729767d9168a7e/sreading.org/pinyin/ong.mp3",
+  "source_sha256": "7e179709f6c07a69379de9a9ff25ee6388c4fb49292972515a658a8a83db3aab",
+  "prepared_input_file": "../isolated-finals-v2/ong.wav",
+  "prepared_input_sha256": "68270617bf20e3751e1c1f1ea736ad83e9d82a512ad7b5b1b94b62d01c50769d",
+  "license_status": "NOT_CLEARED_FOR_REDISTRIBUTION_LOCAL_REVIEW_ONLY",
+  "sample_rate": 44100,
+  "default_milliseconds": 550,
+  "selection": "Nearest 50 ms to completed device-TTS zhong duration for the same voice; 250\u20131250 ms; otherwise default 550 ms. Reference is in-memory only.",
+  "processing": "Praat overlap-add duration resynthesis with unchanged pitch tier; full articulation/release compressed, 60 ms trailing silence. No browser playback-rate shift, new voice or end-cut timer.",
+  "clips": [
+    {
+      "milliseconds": 250,
+      "file": "ong-250.wav",
+      "local_path": "/academy/audio/isolated-finals-v4/ong-250.wav",
+      "duration_seconds": 0.25,
+      "duration_ratio": 0.13485804416403785,
+      "median_pitch_change_semitones": 0.0011,
+      "sha256": "f19293d86988d8933ab1f2f90e01609d00ab2dd63f9ea9a78aa2ca3d9ed814db",
+      "qa": "PENDING_QA"
+    },
+    {
+      "milliseconds": 300,
+      "file": "ong-300.wav",
+      "local_path": "/academy/audio/isolated-finals-v4/ong-300.wav",
+      "duration_seconds": 0.3,
+      "duration_ratio": 0.17034700315457413,
+      "median_pitch_change_semitones": 0.0044,
+      "sha256": "5a38317572d15505ab259cd6499e7150306aaced7b6ea66bae4ddfeddf2b3c78",
+      "qa": "PENDING_QA"
+    },
+    {
+      "milliseconds": 350,
+      "file": "ong-350.wav",
+      "local_path": "/academy/audio/isolated-finals-v4/ong-350.wav",
+      "duration_seconds": 0.35,
+      "duration_ratio": 0.2058359621451104,
+      "median_pitch_change_semitones": 3e-05,
+      "sha256": "c586186cb4917a2752f8f249dfb4a5e460a4285784bc7ac976ba8919d13e8de0",
+      "qa": "PENDING_QA"
+    },
+    {
+      "milliseconds": 400,
+      "file": "ong-400.wav",
+      "local_path": "/academy/audio/isolated-finals-v4/ong-400.wav",
+      "duration_seconds": 0.4,
+      "duration_ratio": 0.2413249211356467,
+      "median_pitch_change_semitones": 0.00404,
+      "sha256": "1b041a05909d9d820d2e01767ad2ca520b5b9889cf16df662b0b3373682875f0",
+      "qa": "PENDING_QA"
+    },
+    {
+      "milliseconds": 450,
+      "file": "ong-450.wav",
+      "local_path": "/academy/audio/isolated-finals-v4/ong-450.wav",
+      "duration_seconds": 0.45,
+      "duration_ratio": 0.27681388012618297,
+      "median_pitch_change_semitones": -0.00489,
+      "sha256": "131b4f11eee7570962a5cb5063083412c4ec6f6fd583f7ad35c074c00abfd1b5",
+      "qa": "PENDING_QA"
+    },
+    {
+      "milliseconds": 500,
+      "file": "ong-500.wav",
+      "local_path": "/academy/audio/isolated-finals-v4/ong-500.wav",
+      "duration_seconds": 0.5,
+      "duration_ratio": 0.31230283911671924,
+      "median_pitch_change_semitones": -0.00104,
+      "sha256": "e8246b3bf0e69aa46b53c63cd06508d3881df645ff487db8d92bbfcee1ab7d95",
+      "qa": "PENDING_QA"
+    },
+    {
+      "milliseconds": 550,
+      "file": "ong-550.wav",
+      "local_path": "/academy/audio/isolated-finals-v4/ong-550.wav",
+      "duration_seconds": 0.55,
+      "duration_ratio": 0.3477917981072556,
+      "median_pitch_change_semitones": -0.01111,
+      "sha256": "29dff6362437ae790f8b2e53766607f5cb12ccf13de0e1cf574455f7b853ad1a",
+      "qa": "PENDING_QA"
+    },
+    {
+      "milliseconds": 600,
+      "file": "ong-600.wav",
+      "local_path": "/academy/audio/isolated-finals-v4/ong-600.wav",
+      "duration_seconds": 0.6,
+      "duration_ratio": 0.38328075709779186,
+      "median_pitch_change_semitones": -0.00152,
+      "sha256": "da516236d83b19dd87ecfb0b9494c71cd00518129ea2a02f09f5cf59ada4d127",
+      "qa": "PENDING_QA"
+    },
+    {
+      "milliseconds": 650,
+      "file": "ong-650.wav",
+      "local_path": "/academy/audio/isolated-finals-v4/ong-650.wav",
+      "duration_seconds": 0.65,
+      "duration_ratio": 0.41876971608832814,
+      "median_pitch_change_semitones": -0.00645,
+      "sha256": "9808087b81ea278744d3847d2ea51b5bcf8bd7a89a3416777e0278aeb4eedc83",
+      "qa": "PENDING_QA"
+    },
+    {
+      "milliseconds": 700,
+      "file": "ong-700.wav",
+      "local_path": "/academy/audio/isolated-finals-v4/ong-700.wav",
+      "duration_seconds": 0.7,
+      "duration_ratio": 0.4542586750788643,
+      "median_pitch_change_semitones": -0.0093,
+      "sha256": "d49f72028b2f1dfa7215e5d5168dab361399331b69b88074a821f044f249ba8e",
+      "qa": "PENDING_QA"
+    },
+    {
+      "milliseconds": 750,
+      "file": "ong-750.wav",
+      "local_path": "/academy/audio/isolated-finals-v4/ong-750.wav",
+      "duration_seconds": 0.75,
+      "duration_ratio": 0.4897476340694006,
+      "median_pitch_change_semitones": -0.00226,
+      "sha256": "cb9b4cf4a8615efac0bc9c1f0c999ed9bf589f836428d60743639a2a476fb3e5",
+      "qa": "PENDING_QA"
+    },
+    {
+      "milliseconds": 800,
+      "file": "ong-800.wav",
+      "local_path": "/academy/audio/isolated-finals-v4/ong-800.wav",
+      "duration_seconds": 0.8,
+      "duration_ratio": 0.5252365930599369,
+      "median_pitch_change_semitones": -0.01607,
+      "sha256": "b449d7e41d52acafae797b737cd0a1407397f66e85b22be6b2c3c6280d0313c7",
+      "qa": "PENDING_QA"
+    },
+    {
+      "milliseconds": 850,
+      "file": "ong-850.wav",
+      "local_path": "/academy/audio/isolated-finals-v4/ong-850.wav",
+      "duration_seconds": 0.85,
+      "duration_ratio": 0.5607255520504733,
+      "median_pitch_change_semitones": -0.00397,
+      "sha256": "184450c06ee71ab67f71242cdeaca2fe6eed4952d976ff00cdfcbc940423de27",
+      "qa": "PENDING_QA"
+    },
+    {
+      "milliseconds": 900,
+      "file": "ong-900.wav",
+      "local_path": "/academy/audio/isolated-finals-v4/ong-900.wav",
+      "duration_seconds": 0.9,
+      "duration_ratio": 0.5962145110410095,
+      "median_pitch_change_semitones": -0.0092,
+      "sha256": "54fad04d37d4bb8df34014983ad8a2010982fe50c4ce0d1cb5b7cd7d608fc16a",
+      "qa": "PENDING_QA"
+    },
+    {
+      "milliseconds": 950,
+      "file": "ong-950.wav",
+      "local_path": "/academy/audio/isolated-finals-v4/ong-950.wav",
+      "duration_seconds": 0.95,
+      "duration_ratio": 0.6317034700315457,
+      "median_pitch_change_semitones": -0.0049,
+      "sha256": "abc52433cd002fb04d35bcf29840fe0b38ee967e5596616075adda74fe1164d8",
+      "qa": "PENDING_QA"
+    },
+    {
+      "milliseconds": 1000,
+      "file": "ong-1000.wav",
+      "local_path": "/academy/audio/isolated-finals-v4/ong-1000.wav",
+      "duration_seconds": 1.0,
+      "duration_ratio": 0.667192429022082,
+      "median_pitch_change_semitones": -0.01012,
+      "sha256": "59897297f9203cbaedf1556e603fc009688ec48c21a648e3d7a65e86dac42d8a",
+      "qa": "PENDING_QA"
+    },
+    {
+      "milliseconds": 1050,
+      "file": "ong-1050.wav",
+      "local_path": "/academy/audio/isolated-finals-v4/ong-1050.wav",
+      "duration_seconds": 1.05,
+      "duration_ratio": 0.7026813880126183,
+      "median_pitch_change_semitones": -0.01136,
+      "sha256": "d7a0fde7d71c44774fef852f08522243e1e5afff4b10ed28f3db1ca939388bee",
+      "qa": "PENDING_QA"
+    },
+    {
+      "milliseconds": 1100,
+      "file": "ong-1100.wav",
+      "local_path": "/academy/audio/isolated-finals-v4/ong-1100.wav",
+      "duration_seconds": 1.1,
+      "duration_ratio": 0.7381703470031546,
+      "median_pitch_change_semitones": 0.00106,
+      "sha256": "ef225e0b80130212a8c82c5e3a4a6532cb8d860571504570974ff9e859adebac",
+      "qa": "PENDING_QA"
+    },
+    {
+      "milliseconds": 1150,
+      "file": "ong-1150.wav",
+      "local_path": "/academy/audio/isolated-finals-v4/ong-1150.wav",
+      "duration_seconds": 1.15,
+      "duration_ratio": 0.7736593059936908,
+      "median_pitch_change_semitones": -0.00824,
+      "sha256": "4b9bdbfa89648afa68522571b1b5385b391ba6b21f13c06e256cb47f6c85645a",
+      "qa": "PENDING_QA"
+    },
+    {
+      "milliseconds": 1200,
+      "file": "ong-1200.wav",
+      "local_path": "/academy/audio/isolated-finals-v4/ong-1200.wav",
+      "duration_seconds": 1.2,
+      "duration_ratio": 0.8091482649842271,
+      "median_pitch_change_semitones": -0.00096,
+      "sha256": "23e60c7c2f794a57368d6923559f3df12d4f8b2de37e0fa51ee1ea20a9ea8f56",
+      "qa": "PENDING_QA"
+    },
+    {
+      "milliseconds": 1250,
+      "file": "ong-1250.wav",
+      "local_path": "/academy/audio/isolated-finals-v4/ong-1250.wav",
+      "duration_seconds": 1.25,
+      "duration_ratio": 0.8446372239747634,
+      "median_pitch_change_semitones": -0.00742,
+      "sha256": "9e456e81a8d6b138a995beb8db38bd256a989dcc7cd02c0c4b0442537bf58f61",
+      "qa": "PENDING_QA"
+    }
+  ],
+  "distribution_authorization": "../distribution-rights.json"
+}

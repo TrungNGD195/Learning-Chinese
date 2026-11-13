@@ -1,3 +1,4 @@
+@import './styles/journey-cloud-transition.css';
 @import './styles/tokens.css';
 @import './styles/base.css';
 @import './styles/components.css';
@@ -14,9 +15,6 @@
 @import './styles/hanzi-strokes.css';
 @import './styles/student-study-blocks.css';
 @import './styles/vocabulary-pages.css';
-@import './styles/great-wall-preview.css';
-@import './styles/great-wall-journey.css';
-@import './styles/forward-great-wall.css';
 @import './styles/study-advice.css';
 @import './styles/lesson-parts.css';
 @import './styles/admin-lesson-review.css';
@@ -26,6 +24,7 @@
 @import './styles/navigation-actions.css';
 @import './styles/admin-profile.css';
 @import './styles/practice-workspace.css';
+@import './styles/action-affordances.css';
 
 a { color: #066970; }
 a:hover { color: #075b62; }

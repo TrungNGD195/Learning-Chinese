@@ -47,6 +47,31 @@ beforeEach(() => {
 })
 
 describe('server-owned pronunciation lesson', () => {
+  it('lets learners preview any sound without skipping saved progress', async () => {
+    setup('/pronunciation/lesson/thanh-mau')
+    fireEvent.click(await screen.findByRole('button', { name: 'Chọn s' }))
+    expect(screen.getByText('s', { selector: '.pronunciation-session__symbol' })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Chọn s' })).toHaveAttribute('aria-current', 'true')
+    expect(api.advancePronunciation).not.toHaveBeenCalled()
+    expect(api.completeSection).not.toHaveBeenCalled()
+    fireEvent.click(screen.getByRole('button', { name: 'Tiếp tục học' }))
+    expect(screen.getByText('b', { selector: '.pronunciation-session__symbol' })).toBeInTheDocument()
+    expect(api.advancePronunciation).not.toHaveBeenCalled()
+  })
+
+  it.each([
+    ['INITIALS', 'thanh-mau', 21], ['FINALS', 'van-mau', 36], ['TONES', 'thanh-dieu', 5], ['SANDHI', 'bien-dieu', 12],
+  ] as const)('offers direct selection for all %s items', async (code, slug, count) => {
+    vi.mocked(api.getPronunciationLesson).mockResolvedValue({ ...initial, current_section: code, total_steps: count })
+    setup(`/pronunciation/lesson/${slug}`)
+    const list = await screen.findByRole('complementary', { name: 'Chọn nội dung phát âm' })
+    expect(list.querySelectorAll('button')).toHaveLength(count)
+    fireEvent.click(list.querySelectorAll('button')[count - 1])
+    expect(list.querySelectorAll('button')[count - 1]).toHaveAttribute('aria-current', 'true')
+    expect(screen.queryByRole('button', { name: /^Hoàn thành/ })).not.toBeInTheDocument()
+    expect(api.advancePronunciation).not.toHaveBeenCalled()
+  })
+
   it('navigates between the current and completed sections from the compact index without saving review steps', async () => {
     vi.mocked(api.getPronunciationLesson).mockResolvedValue({ ...initial, current_section: 'FINALS', total_steps: 36, sections: initial.sections.map(section => section.code === 'INITIALS' ? { ...section, completed_at: '2026-11-07T00:00:00Z' } : section) })
     const { router } = setup('/pronunciation/lesson/van-mau')
@@ -121,7 +146,7 @@ describe('server-owned pronunciation lesson', () => {
     expect(screen.getByText('ní hǎo')).toBeInTheDocument()
     fireEvent.click(screen.getByRole('button', { name: 'Tiếp theo' }))
     await waitFor(() => expect(api.advancePronunciation).toHaveBeenCalledWith('SANDHI', 0))
-    expect(await screen.findByText('老师')).toBeInTheDocument()
+    expect(await screen.findByText('老师', { selector: '.sandhi-example__hanzi' })).toBeInTheDocument()
   })
   it('shows one pronunciation block and a locked HSK 1 without a self-complete action', async () => {
     setup()

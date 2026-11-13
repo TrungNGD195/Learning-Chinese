@@ -1,3 +1,5 @@
+import { useEffect, useRef } from 'react'
+import { pronunciationContent } from './pronunciationData'
 import { Link } from 'react-router'
 import type { PronunciationLessonState } from './api'
 import type { PronunciationCode } from './pronunciationData'
@@ -17,7 +19,7 @@ export function PronunciationStudyHeader({ state, code }: { state?: Pronunciatio
 }
 
 export function PronunciationSectionNav({ state, active }: { state: PronunciationLessonState; active: PronunciationCode }) {
-  return <nav className="lesson-sequence-nav lesson-manuscript__index pronunciation-sections-nav" aria-label="Các phần phát âm">
+  return <nav className="lesson-sequence-nav pronunciation-sections-nav" aria-label="Các phần phát âm">
     {state.sections.map((section, index) => {
       const available = Boolean(section.completed_at) || state.current_section === section.code
       const label = `${section.completed_at ? 'Ôn' : 'Học'} ${pronunciationSections[section.code].title.toLocaleLowerCase('vi')}`
@@ -26,4 +28,37 @@ export function PronunciationSectionNav({ state, active }: { state: Pronunciatio
         : <span className="pronunciation-section-locked" key={section.code} aria-disabled="true">{content}</span>
     })}
   </nav>
+}
+
+
+export function PronunciationSoundList({ code, step, pending, onSelect }: {
+  code: PronunciationCode; step: number; pending: boolean; onSelect: (step: number) => void
+}) {
+  const list = useRef<HTMLDivElement>(null)
+  const groups = pronunciationContent[code].groups
+  useEffect(() => {
+    const container = list.current
+    const selected = container?.querySelector<HTMLElement>('[aria-current="true"]')
+    if (!container || !selected) return
+    const top = selected.getBoundingClientRect().top - container.getBoundingClientRect().top + container.scrollTop
+    if (top < container.scrollTop || top + selected.offsetHeight > container.scrollTop + container.clientHeight) {
+      container.scrollTop = top - container.clientHeight / 2 + selected.offsetHeight / 2
+    }
+  }, [step])
+  return <aside className="pronunciation-sound-index" data-section={code} aria-label="Chọn nội dung phát âm">
+    <div className="pronunciation-sound-index__heading"><h2>{pronunciationSections[code].title}</h2><span>{groups.reduce((total, group) => total + group.sounds.length, 0)} {code === 'SANDHI' ? 'ví dụ' : 'âm'}</span></div>
+    <p>Chọn để học hoặc nghe lại</p>
+    <div className="pronunciation-sound-index__list" ref={list}>
+      {groups.map((group, groupIndex) => {
+        const start = groups.slice(0, groupIndex).reduce((total, previous) => total + previous.sounds.length, 0)
+        return <section key={group.title}><h3>{group.title}</h3><ul>{group.sounds.map((sound, index) => {
+          const position = start + index
+          return <li key={sound.symbol}><button type="button" disabled={pending} aria-current={step === position ? 'true' : undefined}
+            aria-controls="lesson-study-content" aria-label={`Chọn ${sound.symbol}`} onClick={() => onSelect(position)}>
+            <span>{code === 'SANDHI' ? sound.hanzi : sound.symbol}</span>
+          </button></li>
+        })}</ul></section>
+      })}
+    </div>
+  </aside>
 }

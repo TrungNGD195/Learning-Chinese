@@ -3,10 +3,10 @@ import ts from 'typescript'
 
 export const openApiUrl = 'http://localhost:8000/openapi.json'
 
-export async function generateContract() {
+export async function generateContract(schemaUrl = process.env.OPENAPI_URL || openApiUrl) {
   let response
   try {
-    response = await fetch(openApiUrl, { headers: { Accept: 'application/json' } })
+    response = await fetch(schemaUrl, { headers: { Accept: 'application/json' } })
   } catch {
     throw new Error(`Could not reach the accepted FastAPI OpenAPI endpoint: ${openApiUrl}`)
   }

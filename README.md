@@ -79,5 +79,7 @@ Do not commit `.env` files, credentials, PostgreSQL data, uploaded documents, mo
 Installed agent skills (`.agents/`), machine-specific hooks (`.codex/`), generated
 design previews, screenshots, and local textbook PDFs also stay outside Git.
 The textbook filenames and checksums are recorded in [the source inventory](docs/learning-sources.md).
-Committed design review notes describe past checks; regenerate their screenshots
-with the verification scripts in `frontend/scripts/` when needed.
+Retired journey prototypes, voice auditions and generated review outputs are
+removed. Active pronunciation recordings retain their originals, processing
+scripts, hashes and attribution; see [Mandarin audio](docs/mandarin-audio.md).
+Run the verification scripts in `frontend/scripts/` to regenerate checks.

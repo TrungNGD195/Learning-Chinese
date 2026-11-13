@@ -1,3 +1,4 @@
+import { useMandarinAudio } from '../../lib/audio/mandarinAudio'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import { useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router'
@@ -5,16 +6,18 @@ import { Alert, Button, LoadingState, PageHeader, StatusBadge, Surface } from '.
 import { queryKeys } from '../../app/query/keys'
 import { advancePronunciation, completeSection, finishPronunciationLesson, getPronunciationLesson } from './api'
 import { invalidatePronunciationCompletion } from './invalidation'
-import { pronunciationContent, useMandarinSpeech, type PronunciationCode } from './pronunciationData'
+import { pronunciationContent, type PronunciationCode } from './pronunciationData'
 import { pronunciationCodeForSlug, pronunciationSectionPath, pronunciationSections } from './sectionRoutes'
 import { Companion } from '../../components/academy/Companion'
-import { StudyAdvice } from '../../components/academy/StudyAdvice'
+import { PinyinStructure } from './PinyinStructure'
+import { FinalAudio } from './FinalAudio'
 import { AcademyIcon } from '../../components/academy/AcademyIcon'
 import { pronunciationTip } from './pronunciationTips'
+import { pronunciationComparison } from './pronunciationComparisons'
 import { ToneDiagram } from './ToneDiagram'
 import { SandhiExample } from './SandhiExample'
 import { useLessonStudyPosition } from '../lesson/useLessonStudyPosition'
-import { PronunciationSectionNav, PronunciationStudyHeader } from './PronunciationStudyLayout'
+import { PronunciationSectionNav, PronunciationSoundList, PronunciationStudyHeader } from './PronunciationStudyLayout'
 
 const sectionNames: Record<PronunciationCode, string> = { INITIALS: 'thanh mẫu', FINALS: 'vận mẫu', TONES: 'thanh điệu', SANDHI: 'biến điệu' }
 
@@ -36,7 +39,7 @@ export function PronunciationLessonPage() {
     {lesson.isError && !state && <Alert role="alert" tone="error" action={<Button onClick={() => void lesson.refetch()}>Thử lại</Button>}>Không thể tải bài học phát âm.</Alert>}
     {finish.isError && <Alert role="alert" tone="error">Không thể lưu kết quả hoàn thành. Vui lòng thử lại.</Alert>}
     {state && <>
-      <div id="lesson-study-content"><ol className="pronunciation-section-grid" aria-label="Các phần của bài học">{state.sections.map((section, index) => {
+      <div id="lesson-study-content"><PinyinStructure/><ol className="pronunciation-section-grid" aria-label="Các phần của bài học">{state.sections.map((section, index) => {
         const meta = pronunciationSections[section.code]
         const completed = Boolean(section.completed_at)
         const current = state.current_section === section.code
@@ -53,7 +56,7 @@ export function PronunciationLessonPage() {
         <div><h2>Đã hoàn thành bốn phần</h2><p>Hoàn thành bài học để lưu kết quả và mở HSK 1.</p></div>
         <Button variant="primary" disabled={finish.isPending} onClick={() => finish.mutate()}>{finish.isPending ? 'Đang lưu…' : 'Hoàn thành bài học'}</Button>
       </Surface>}
-      <StudyAdvice topic="pronunciation"/></div>
+      </div>
     </>}
   </section>
 }
@@ -71,7 +74,7 @@ function PronunciationSectionSession({ code }: { code: PronunciationCode }) {
   const [viewedStep, setViewedStep] = useState<number | null>(null)
   const client = useQueryClient()
   const navigate = useNavigate()
-  const { voiceAvailable, speak } = useMandarinSpeech()
+  const { voiceAvailable, speak } = useMandarinAudio()
   const lesson = useQuery({ queryKey: queryKeys.pronunciationLesson, queryFn: getPronunciationLesson })
   const refresh = () => client.invalidateQueries({ queryKey: queryKeys.pronunciationLesson })
   const advance = useMutation({
@@ -90,15 +93,17 @@ function PronunciationSectionSession({ code }: { code: PronunciationCode }) {
   const section = state?.sections.find(row => row.code === code)
   const reviewing = Boolean(section?.completed_at)
   const available = reviewing || state?.current_section === code
-  const step = reviewing ? viewedStep ?? 0 : Math.min(viewedStep ?? state?.step_index ?? 0, state?.step_index ?? 0)
+  const step = reviewing ? viewedStep ?? 0 : viewedStep ?? state?.step_index ?? 0
   const pending = advance.isPending || complete.isPending
   const root = useLessonStudyPosition(Boolean(state), `pronunciation:${code}:${step}`)
   return <section ref={root} className="learner-page pronunciation-page pronunciation-session lesson-study-workspace pronunciation-study-workspace screen" aria-labelledby="page-title">
     <PronunciationStudyHeader state={state} code={code}/>
     {lesson.isPending && <LoadingState>Đang tải phần phát âm…</LoadingState>}
     {lesson.isError && !state && <Alert role="alert" tone="error" action={<Button onClick={() => void lesson.refetch()}>Thử lại</Button>}>Không thể tải bài học phát âm.</Alert>}
-    {state && <div className="lesson-manuscript__body">
+    {state && <>
       <PronunciationSectionNav state={state} active={code}/>
+      <div className="lesson-manuscript__body pronunciation-study-body">
+      {available && section && <PronunciationSoundList code={code} step={step} pending={pending} onSelect={setViewedStep}/>}
       <div id="lesson-study-content" className="lesson-manuscript__chapters">
       {(advance.isError || complete.isError) && <Alert role="alert" tone="error">Không thể lưu bước học. Tiến độ mới nhất đang được tải lại; vui lòng thử lại.</Alert>}
       {available && section ? <>
@@ -107,13 +112,14 @@ function PronunciationSectionSession({ code }: { code: PronunciationCode }) {
           sectionId={section.id} pending={pending} voiceAvailable={voiceAvailable} speak={speak}
           onBack={(_, value) => setViewedStep(Math.max(0, value - 1))}
           onNext={(_, value) => {
-            if (reviewing || value < state.step_index) setViewedStep(value + 1)
+            if (!reviewing && value > state.step_index) setViewedStep(null)
+            else if (reviewing || value < state.step_index) setViewedStep(value + 1)
             else { setViewedStep(null); advance.mutate({ code, step: value }) }
           }}
           onComplete={id => { if (reviewing) void navigate('/pronunciation/lesson'); else complete.mutate(id) }}/>
       </> : <Surface><h2>Phần học này chưa mở</h2><p>Hoàn thành các phần trước theo thứ tự để mở {sectionNames[code]}.</p><Link className="learner-link-action" to="/pronunciation/lesson">Chọn phần đang học</Link></Surface>}
       </div>
-    </div>}
+    </div></>}
   </section>
 }
 
@@ -121,7 +127,7 @@ function PronunciationStep({ code, step, savedStep, total, sectionId, pending, v
   code: PronunciationCode; step: number; total: number; sectionId: string | undefined; pending: boolean
   savedStep?: number
   completionLabel?: string
-  voiceAvailable: boolean; speak: ReturnType<typeof useMandarinSpeech>['speak']
+  voiceAvailable: boolean; speak: ReturnType<typeof useMandarinAudio>['speak']
   onBack: (code: PronunciationCode, step: number) => void
   onNext: (code: PronunciationCode, step: number) => void; onComplete: (id: string) => void
 }) {
@@ -129,6 +135,7 @@ function PronunciationStep({ code, step, savedStep, total, sectionId, pending, v
   const sounds = lesson.groups.flatMap((group) => group.sounds.map((sound) => ({ sound, group })))
   if (sounds.length !== total || step > total || !sectionId) return <Alert role="alert" tone="error">Nội dung bài học chưa đồng bộ với máy chủ. Vui lòng thử lại sau.</Alert>
   const current = sounds[step]
+  const comparison = current && pronunciationComparison(code, current.sound.symbol)
   return <div className="academy-pronunciation-layout"><Surface as="section" className="pronunciation-session__card" aria-labelledby="pronunciation-step-title">
     <div className="pronunciation-session__heading"><div><h2 id="pronunciation-step-title">{sectionNames[code]}</h2></div>
       {current && <span>{current.group.title}</span>}</div>
@@ -139,11 +146,15 @@ function PronunciationStep({ code, step, savedStep, total, sectionId, pending, v
         <strong className="pronunciation-session__symbol">{current.sound.symbol}</strong>
         <span className="academy-sound-label">{code==='TONES'?'Đường đi của giọng':'Âm đang học'}</span>
         {code==='TONES'&&<ToneDiagram tone={step}/>}
-        </div><div className="academy-sound-example"><span className="academy-sound-hanzi" lang="zh-Hans">{current.sound.hanzi}</span><span className="academy-sound-pinyin">{current.sound.pinyin}</span><Button variant="secondary" disabled={!voiceAvailable} onClick={() => speak(current.sound)}><AcademyIcon name="sound" size={19}/>Nghe phát âm</Button><small>Giọng đọc của thiết bị</small></div>
+        </div>{code==='FINALS'?<FinalAudio key={current.sound.symbol} sound={current.sound}/>:<div className="academy-sound-example">
+          <span className="academy-sound-hanzi" lang="zh-Hans">{current.sound.hanzi}</span>
+          <span className="academy-sound-pinyin">{current.sound.pinyin}</span>
+          <Button variant="secondary" disabled={!voiceAvailable||current.sound.audioUnavailable} aria-label={`Nghe ${code==='INITIALS'?'âm ghép ':''}${current.sound.pinyin}`} onClick={() => speak(current.sound)}><AcademyIcon name="sound" size={19}/>{code==='INITIALS'?'Nghe âm ghép':'Nghe phát âm'}</Button>
+          {current.sound.note&&<small>{current.sound.note}</small>}
+        </div>}
       </div>}
-      <p className="pronunciation-study-intro">{lesson.intro}</p>
-      <div className="academy-articulation-note"><Companion pose="truc" decorative/><div><h3>Trúc nhắc nhỏ</h3><p>{pronunciationTip(code, current.sound)}</p></div></div>
-      {!voiceAvailable && <p role="status">Thiết bị chưa có giọng đọc tiếng Trung phù hợp. Bạn vẫn có thể xem chữ và Pinyin.</p>}
+      {code!=='INITIALS'&&code!=='FINALS'&&<p className="pronunciation-study-intro">{lesson.intro}</p>}
+      <div className="academy-articulation-note"><Companion pose="truc" decorative/><div><h3>Trúc nhắc nhỏ</h3><p>{pronunciationTip(code, current.sound)}</p>{comparison&&<p className="pronunciation-articulation-comparison">{comparison}</p>}</div></div>
     </> : <>
       <h3>Đã xem hết {sectionNames[code]}</h3>
       <ul>{lesson.notes.map((note) => <li key={note}>{note}</li>)}</ul>
@@ -151,8 +162,8 @@ function PronunciationStep({ code, step, savedStep, total, sectionId, pending, v
     <div className="pronunciation-session__navigation lesson-part-navigation" data-completion={!current}>
       <Button variant="secondary" disabled={pending || step === 0} onClick={() => onBack(code, step)}>Quay lại</Button>
       <span className="pronunciation-study-position">{current ? `${code === 'SANDHI' ? 'Ví dụ' : 'Âm'} ${step + 1} / ${total}` : `${total} / ${total}`}<small>{completionLabel ? 'Ôn tập' : pending ? 'Đang lưu…' : 'Đang học'}</small></span>
-      {current ? <Button variant="primary" disabled={pending} onClick={() => onNext(code, step)}>{pending ? 'Đang lưu…' : 'Tiếp theo'}</Button>
+      {current ? <Button variant="primary" disabled={pending} onClick={() => onNext(code, step)}>{pending ? 'Đang lưu…' : savedStep !== undefined && step > savedStep ? 'Tiếp tục học' : 'Tiếp theo'}</Button>
         : <Button variant="primary" disabled={pending} onClick={() => onComplete(sectionId)}>{pending ? 'Đang lưu…' : completionLabel ?? `Hoàn thành ${sectionNames[code]}`}</Button>}
     </div>
-  </Surface><StudyAdvice topic={code}/></div>
+  </Surface></div>
 }

@@ -1,0 +1,70 @@
+import type { PronunciationCode } from './pronunciationData'
+
+// Approximate sound associations, not transliterations. Both sections use the
+// PO's supplied copy (2026-11-13); retain the separate articulation line.
+const initials: Record<string, string> = {
+  b: 'Gần âm “p” trong tiếng Việt.',
+  p: 'Gần âm “p” đầu từ “pin” (tiếng Anh).',
+  m: 'Gần âm “m” trong tiếng Việt.',
+  f: 'Gần âm “f” trong tiếng Anh.',
+  d: 'Gần âm “t” trong tiếng Việt.',
+  t: 'Gần âm “th” trong tiếng Việt.',
+  n: 'Gần âm “n” trong tiếng Việt.',
+  l: 'Gần âm “l” trong tiếng Việt.',
+  g: 'Gần “c” trong “cá” (tiếng Việt) hoặc “k” trong “ski” (tiếng Anh).',
+  k: 'Gần k đầu từ “kite” (tiếng Anh), bật hơi rõ hơn k trong “ski”.',
+  h: 'Gần âm “kh” trong tiếng Việt.',
+  j: 'Gần âm “ch” trong tiếng Việt.',
+  q: 'Gần âm “ch” trong tiếng Việt nhưng bật hơi mạnh hơn.',
+  x: 'Gần âm “x” trong tiếng Việt.',
+  zh: 'Gần âm “tr” trong tiếng Việt.',
+  ch: 'Gần âm “tr” trong tiếng Việt nhưng bật hơi mạnh hơn.',
+  sh: 'Gần âm “sh” trong tiếng Anh.',
+  r: 'Gần âm “r” trong tiếng Việt.',
+  z: 'Gần cụm ts cuối “cats” (tiếng Anh).',
+  c: 'Gần âm “t” trong tiếng Anh.',
+  s: 'Gần âm “x” trong tiếng Việt.',
+}
+
+const finals: Record<string, string> = {
+  a: 'Đọc “a” như trong tiếng Việt.',
+  o: 'Đọc là “uô” khi đi với thanh mẫu; “ô” khi đứng một mình.',
+  e: 'Đọc là “ưa” khi đi với thanh mẫu; “ơ” khi đứng một mình.',
+  i: 'Đọc là i.',
+  u: 'Đọc là u.',
+  ü: 'Đọc như “u” nhưng không lùi lưỡi về phía sau.',
+  ai: 'Đọc là “ai”.',
+  ei: 'Đọc lướt “êi”.',
+  ao: 'Đọc là “ao”.',
+  ou: 'Đọc lướt “o-u”.',
+  ia: 'Đọc lướt “i-a”.',
+  ie: 'Đọc lướt “i-e”.',
+  iao: 'Đọc lướt “i-ao”.',
+  iu: 'Đọc lướt “i-ou”.',
+  ua: 'Đọc lướt “u-a”.',
+  uo: 'Đọc lướt “u-ô”.',
+  uai: 'Đọc lướt “u-ai”.',
+  ui: 'Đọc lướt “u-ei”.',
+  üe: 'Đọc lướt “ü-ê”.',
+  an: 'Đọc là “an”.',
+  en: 'Đọc là “ân”.',
+  ang: 'Đọc là “ang”.',
+  eng: 'Đọc là “âng”.',
+  ong: 'Đọc là “ôông”.',
+  ian: 'Đọc là “iên”.',
+  in: 'Đọc là “in”.',
+  iang: 'Đọc lướt “i-ang”.',
+  ing: 'Đọc là “ing”.',
+  iong: 'Đọc lướt “i-ôông”.',
+  uan: 'Đọc là “oan”.',
+  un: 'Đọc là “uân”.',
+  uang: 'Đọc lướt “u-ang”.',
+  ueng: 'Đọc lướt “u-âng”.',
+  üan: 'Đọc lướt “ü-an”.',
+  ün: 'Đọc lướt “ü-n”.',
+  er: 'Đọc lướt “ơ-r”.',
+}
+
+export function pronunciationComparison(code: PronunciationCode, symbol: string): string | undefined {
+  return code === 'INITIALS' ? initials[symbol] : code === 'FINALS' ? finals[symbol] : undefined
+}

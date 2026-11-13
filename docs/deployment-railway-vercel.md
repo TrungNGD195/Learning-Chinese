@@ -115,3 +115,20 @@ address is `hanfolio-mcbo1.vercel.app`, selected by the user because
 Legacy production origins remain allowed and the new origin is added explicitly.
 Deployment uses the existing database and migrations; local database records are
 not restored over production. AI document processing remains disabled.
+
+## Pronunciation and workspace release — 2026-11-13
+
+The release retains the current curriculum, learner pronunciation navigation,
+shared browser Mandarin player and selected fixed recordings. Source originals,
+hashes, notices and owner-attested distribution authorization are retained.
+See `docs/mandarin-audio.md` and the audio distribution-rights manifest.
+
+Retired 2D/3D journey implementations, image prototypes, voice auditions and
+unused TTS endpoint experiments are removed. Lesson cloud transitions remain.
+The frontend no longer depends on Three.js. Build/test outputs and temporary
+review files stay excluded from Git; database backups are preserved outside
+the checkout. No lesson data, user records, migrations or API DTOs change.
+
+Only the Vercel frontend requires a new production build. Railway application
+source matches its deployed runtime; retain the existing backend/database and
+verify readiness rather than restarting them for a frontend-only release.

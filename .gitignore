@@ -28,6 +28,8 @@
 
 # Local temporary artifacts
 /tmp/
+**/tmp/
+**/.impeccable/review/
 /frontend/coverage/
 /backend/coverage/
 **/.coverage

@@ -1,8 +1,8 @@
-import { useEffect, useRef, useState } from 'react'
 import { sandhiGroups } from './sandhiData'
+import { ongClipForDuration } from './ongDuration'
 
 export type PronunciationCode = 'INITIALS' | 'FINALS' | 'TONES' | 'SANDHI'
-export type Sound = { symbol: string; hanzi: string; pinyin: string; spoken?: string; meaning?: string; explanation?: string; note?: string }
+export type Sound = { symbol: string; hanzi: string; pinyin: string; spoken?: string; meaning?: string; explanation?: string; note?: string; audioUnavailable?: boolean; clip?: string }
 
 // Source: local HSK1 3.0 Hanu 24.6.26.pdf, PDF4–7,17–18,27–29.
 // Ordered groups retain the server-owned21/36/5 progression contract.
@@ -10,58 +10,58 @@ type SoundGroup = { title: string; tip: string; sounds: Sound[] }
 
 const initials: SoundGroup[] = [
   { title: 'Âm môi', tip: 'Khép hoặc đưa môi gần nhau. p bật hơi rõ hơn b.', sounds: [
-    { symbol: 'b', hanzi: '八', pinyin: 'bā' }, { symbol: 'p', hanzi: '怕', pinyin: 'pà' },
-    { symbol: 'm', hanzi: '妈', pinyin: 'mā' }, { symbol: 'f', hanzi: '发', pinyin: 'fā' },
+    { symbol: 'b', hanzi: '八', pinyin: 'ba' }, { symbol: 'p', hanzi: '趴', pinyin: 'pa' },
+    { symbol: 'm', hanzi: '妈', pinyin: 'ma' }, { symbol: 'f', hanzi: '发', pinyin: 'fa' },
   ] },
   { title: 'Đầu lưỡi', tip: 'Đặt đầu lưỡi gần lợi trên; t bật hơi rõ hơn d.', sounds: [
-    { symbol: 'd', hanzi: '大', pinyin: 'dà' }, { symbol: 't', hanzi: '他', pinyin: 'tā' },
-    { symbol: 'n', hanzi: '你', pinyin: 'nǐ' }, { symbol: 'l', hanzi: '六', pinyin: 'liù' },
+    { symbol: 'd', hanzi: '搭', pinyin: 'da' }, { symbol: 't', hanzi: '他', pinyin: 'ta' },
+    { symbol: 'n', hanzi: '妮', pinyin: 'ni' }, { symbol: 'l', hanzi: '拉', pinyin: 'la' },
   ] },
   { title: 'Gốc lưỡi', tip: 'Phần sau của lưỡi hướng lên vòm mềm; k bật hơi rõ hơn g.', sounds: [
-    { symbol: 'g', hanzi: '哥', pinyin: 'gē' }, { symbol: 'k', hanzi: '可', pinyin: 'kě' },
-    { symbol: 'h', hanzi: '喝', pinyin: 'hē' },
+    { symbol: 'g', hanzi: '哥', pinyin: 'ge' }, { symbol: 'k', hanzi: '科', pinyin: 'ke' },
+    { symbol: 'h', hanzi: '喝', pinyin: 'he' },
   ] },
   { title: 'Mặt lưỡi', tip: 'Giữ lưỡi phía trước và môi hơi mở. q bật hơi mạnh hơn j.', sounds: [
-    { symbol: 'j', hanzi: '鸡', pinyin: 'jī' }, { symbol: 'q', hanzi: '七', pinyin: 'qī' },
-    { symbol: 'x', hanzi: '西', pinyin: 'xī' },
+    { symbol: 'j', hanzi: '鸡', pinyin: 'ji' }, { symbol: 'q', hanzi: '七', pinyin: 'qi' },
+    { symbol: 'x', hanzi: '西', pinyin: 'xi' },
   ] },
   { title: 'Uốn lưỡi', tip: 'Đưa đầu lưỡi hơi cong về phía vòm miệng. Chú ý phân biệt zh/ch/sh với z/c/s.', sounds: [
-    { symbol: 'zh', hanzi: '知', pinyin: 'zhī' }, { symbol: 'ch', hanzi: '吃', pinyin: 'chī' },
-    { symbol: 'sh', hanzi: '是', pinyin: 'shì' }, { symbol: 'r', hanzi: '日', pinyin: 'rì' },
+    { symbol: 'zh', hanzi: '渣', pinyin: 'zha' }, { symbol: 'ch', hanzi: '插', pinyin: 'cha' },
+    { symbol: 'sh', hanzi: '沙', pinyin: 'sha' }, { symbol: 'r', hanzi: '扔', pinyin: 'reng' },
   ] },
   { title: 'Đầu lưỡi trước', tip: 'Đầu lưỡi ở gần mặt sau răng trên; c bật hơi rõ hơn z.', sounds: [
-    { symbol: 'z', hanzi: '字', pinyin: 'zì' }, { symbol: 'c', hanzi: '次', pinyin: 'cì' },
-    { symbol: 's', hanzi: '四', pinyin: 'sì' },
+    { symbol: 'z', hanzi: '匝', pinyin: 'za' }, { symbol: 'c', hanzi: '擦', pinyin: 'ca' },
+    { symbol: 's', hanzi: '仨', pinyin: 'sa' },
   ] },
 ]
 
 const finals: SoundGroup[] = [
   { title: 'Vận mẫu đơn', tip: 'Luyện từng khẩu hình. Với ü, giữ môi tròn trong khi lưỡi ở vị trí gần như khi đọc i.', sounds: [
-    { symbol: 'a', hanzi: '妈', pinyin: 'mā' }, { symbol: 'o', hanzi: '波', pinyin: 'bō' },
-    { symbol: 'e', hanzi: '鹅', pinyin: 'é' }, { symbol: 'i', hanzi: '衣', pinyin: 'yī' },
-    { symbol: 'u', hanzi: '乌', pinyin: 'wū' }, { symbol: 'ü', hanzi: '鱼', pinyin: 'yú' },
+    { symbol: 'a', hanzi: '阿', pinyin: 'a' }, { symbol: 'o', hanzi: '噢', pinyin: 'o' },
+    { symbol: 'e', hanzi: '婀', pinyin: 'e' }, { symbol: 'i', hanzi: '衣', pinyin: 'i', note: 'Mẫu này là i thông thường. Sau z, c, s và zh, ch, sh, r, chữ i được đọc với vị trí lưỡi khác; không phải âm i trong yi và không phải vận mẫu ü. Các âm ghép đặc biệt này được học tại phần ghi nhớ vận mẫu.' },
+    { symbol: 'u', hanzi: '乌', pinyin: 'u' }, { symbol: 'ü', hanzi: '迂', pinyin: 'ü' },
   ] },
   { title: 'Vận mẫu ghép', tip: 'Chuyển khẩu hình liền mạch trong một âm tiết, không tách thành hai tiếng.', sounds: [
-    { symbol: 'ai', hanzi: '爱', pinyin: 'ài' }, { symbol: 'ei', hanzi: '杯', pinyin: 'bēi' },
-    { symbol: 'ao', hanzi: '奥', pinyin: 'ào' }, { symbol: 'ou', hanzi: '欧', pinyin: 'ōu' },
-    { symbol: 'ia', hanzi: '家', pinyin: 'jiā' }, { symbol: 'ie', hanzi: '叶', pinyin: 'yè' },
-    { symbol: 'iao', hanzi: '腰', pinyin: 'yāo' }, { symbol: 'iu', hanzi: '六', pinyin: 'liù' },
-    { symbol: 'ua', hanzi: '瓜', pinyin: 'guā' }, { symbol: 'uo', hanzi: '我', pinyin: 'wǒ' },
-    { symbol: 'uai', hanzi: '快', pinyin: 'kuài' }, { symbol: 'ui', hanzi: '水', pinyin: 'shuǐ' },
-    { symbol: 'üe', hanzi: '月', pinyin: 'yuè' },
+    { symbol: 'ai', hanzi: '', pinyin: 'ai', clip: '/academy/audio/isolated-finals-v1/ai.wav' }, { symbol: 'ei', hanzi: '诶', pinyin: 'ei' },
+    { symbol: 'ao', hanzi: '凹', pinyin: 'ao' }, { symbol: 'ou', hanzi: '欧', pinyin: 'ou' },
+    { symbol: 'ia', hanzi: '鸭', pinyin: 'ia' }, { symbol: 'ie', hanzi: '椰', pinyin: 'ie' },
+    { symbol: 'iao', hanzi: '腰', pinyin: 'iao' }, { symbol: 'iu', hanzi: '优', pinyin: 'iu' },
+    { symbol: 'ua', hanzi: '蛙', pinyin: 'ua' }, { symbol: 'uo', hanzi: '窝', pinyin: 'uo' },
+    { symbol: 'uai', hanzi: '歪', pinyin: 'uai' }, { symbol: 'ui', hanzi: '威', pinyin: 'ui' },
+    { symbol: 'üe', hanzi: '约', pinyin: 'üe' },
   ] },
   { title: 'Vận mẫu có âm mũi', tip: 'Phân biệt đuôi -n ở phía trước với -ng ở phía sau; nghe và luyện theo từng cặp.', sounds: [
-    { symbol: 'an', hanzi: '安', pinyin: 'ān' }, { symbol: 'en', hanzi: '恩', pinyin: 'ēn' },
-    { symbol: 'ang', hanzi: '昂', pinyin: 'áng' }, { symbol: 'eng', hanzi: '风', pinyin: 'fēng' },
-    { symbol: 'ong', hanzi: '中', pinyin: 'zhōng' }, { symbol: 'ian', hanzi: '烟', pinyin: 'yān' },
-    { symbol: 'in', hanzi: '因', pinyin: 'yīn' }, { symbol: 'iang', hanzi: '羊', pinyin: 'yáng' },
-    { symbol: 'ing', hanzi: '英', pinyin: 'yīng' }, { symbol: 'iong', hanzi: '用', pinyin: 'yòng' },
-    { symbol: 'uan', hanzi: '万', pinyin: 'wàn' }, { symbol: 'un', hanzi: '问', pinyin: 'wèn' },
-    { symbol: 'uang', hanzi: '王', pinyin: 'wáng' }, { symbol: 'ueng', hanzi: '翁', pinyin: 'wēng' },
-    { symbol: 'üan', hanzi: '元', pinyin: 'yuán' }, { symbol: 'ün', hanzi: '云', pinyin: 'yún' },
+    { symbol: 'an', hanzi: '安', pinyin: 'an' }, { symbol: 'en', hanzi: '恩', pinyin: 'en' },
+    { symbol: 'ang', hanzi: '肮', pinyin: 'ang' }, { symbol: 'eng', hanzi: '', pinyin: 'eng', clip: '/academy/audio/isolated-finals-v1/eng.wav' },
+    { symbol: 'ong', hanzi: '', pinyin: 'ong', clip: ongClipForDuration() }, { symbol: 'ian', hanzi: '烟', pinyin: 'ian' },
+    { symbol: 'in', hanzi: '因', pinyin: 'in' }, { symbol: 'iang', hanzi: '央', pinyin: 'iang' },
+    { symbol: 'ing', hanzi: '英', pinyin: 'ing' }, { symbol: 'iong', hanzi: '拥', pinyin: 'iong' },
+    { symbol: 'uan', hanzi: '弯', pinyin: 'uan' }, { symbol: 'un', hanzi: '温', pinyin: 'un' },
+    { symbol: 'uang', hanzi: '汪', pinyin: 'uang' }, { symbol: 'ueng', hanzi: '翁', pinyin: 'ueng' },
+    { symbol: 'üan', hanzi: '冤', pinyin: 'üan' }, { symbol: 'ün', hanzi: '晕', pinyin: 'ün' },
   ] },
   { title: 'Vận mẫu cuốn lưỡi', tip: 'er có thể là một âm tiết độc lập và cũng xuất hiện trong hiện tượng nhi hóa.', sounds: [
-    { symbol: 'er', hanzi: '儿', pinyin: 'ér' },
+    { symbol: 'er', hanzi: '', pinyin: 'er', clip: '/academy/audio/isolated-finals-v1/er.wav', note: 'Âm mẫu đọc riêng vận mẫu er, không ghép thanh mẫu.' },
   ] },
 ]
 
@@ -77,14 +77,14 @@ const tones: SoundGroup[] = [{
 
 export const pronunciationContent: Record<PronunciationCode, { intro: string; groups: SoundGroup[]; notes: string[] }> = {
   INITIALS: {
-    intro: 'Thanh mẫu là phụ âm đứng đầu âm tiết. Hãy nghe âm tiết mẫu, quan sát khẩu hình và thử đọc lại.',
+    intro: 'Nghe thanh mẫu trong một âm tiết ghép đơn giản, quan sát khẩu hình và đọc lại. Âm mẫu đọc cao, ngang; pinyin ở đây không ghi dấu thanh.',
     groups: initials,
     notes: ['Bộ 21 thanh mẫu thường được học theo các nhóm ở trên. y và w chủ yếu là quy ước viết âm tiết không có thanh mẫu, không được tính vào 21 âm này.', 'Mẹo phân biệt b/p, d/t và g/k: đặt một mẩu giấy trước miệng; âm bật hơi làm giấy chuyển động rõ hơn.'],
   },
   FINALS: {
-    intro: 'Vận mẫu là phần vần của âm tiết. Các ví dụ cho thấy cách viết vận mẫu khi đứng một mình hoặc kết hợp với thanh mẫu.',
+    intro: 'Nghe vần riêng ở ô bên trái, rồi so sánh với vần ghép thanh mẫu ở ô bên phải. Âm ghép đọc cao, ngang; pinyin không ghi dấu thanh.',
     groups: finals,
-    notes: ['Khi i, u, ü đứng đầu âm tiết, cách viết thường dùng y hoặc w: yi, wu, yu. Đây là cách viết Pinyin, không phải thêm phụ âm mới.', 'Sau j, q, x và y, hai chấm của ü thường được lược trong chữ viết: ju, qu, xu, yu. Các dạng iu, ui, un là cách viết rút gọn trong một số âm tiết.', 'Chữ i trong zi, ci, si, zhi, chi, shi, ri không phát âm giống i trong yi; hãy nghe mẫu thay vì áp dụng một khẩu hình cho mọi trường hợp.'],
+    notes: ['Khi i, u, ü đứng đầu âm tiết, cách viết thường dùng y hoặc w: yi, wu, yu. Đây là cách viết Pinyin, không phải thêm phụ âm mới.', 'Sau j, q, x và y, hai chấm của ü thường được lược trong chữ viết: ju, qu, xu, yu. Khi nghe riêng, iu, ui, un được đọc theo dạng đầy đủ iou, uei, uen.', 'Chữ i trong zi, ci, si, zhi, chi, shi, ri không phát âm giống i trong yi. Đây là cách đọc đặc biệt của i sau các nhóm thanh mẫu này; không đọc như chữ i của tiếng Việt và cũng không thay bằng vận mẫu ü.'],
   },
   TONES: {
     intro: 'Thanh điệu thay đổi độ cao của giọng và có thể làm đổi nghĩa. Hãy nghe và đọc rõ từng âm mẫu.',
@@ -96,64 +96,4 @@ export const pronunciationContent: Record<PronunciationCode, { intro: string; gr
     groups: sandhiGroups,
     notes: ['Biến điệu thay đổi cách phát âm; không đổi chữ Hán.', 'Thanh 3 vẫn giữ dấu gốc trong pinyin. Với 一 và 不, giáo trình có thể ghi dấu theo cách đọc để hỗ trợ học. Dòng “Thanh gốc” phân tích từng âm, không phải luôn là cách viết pinyin của cả từ.', 'Nửa thanh 3 là phần giọng hạ thấp, khác với thanh 2 đi lên.', 'Thanh nhẹ không mang dấu thanh. Nhịp nói và cách nhóm từ ảnh hưởng biến điệu; không biến mọi thanh 3 trong chuỗi thành thanh 2.'],
   },
-}
-
-function isMandarinVoice(voice: SpeechSynthesisVoice) {
-  return /^(cmn|zh-(cn|sg|tw|hans))(?:-|$)/i.test(voice.lang)
-}
-
-export function useMandarinSpeech() {
-  const [voice, setVoice] = useState<SpeechSynthesisVoice | null>(null)
-  const [isSpeaking, setIsSpeaking] = useState(false)
-  const [speechError, setSpeechError] = useState<string | null>(null)
-  const active = useRef<SpeechSynthesisUtterance | null>(null)
-  useEffect(() => {
-    if (typeof window === 'undefined' || !('speechSynthesis' in window)) return
-    const synth = window.speechSynthesis
-    const updateVoice = () => {
-      const voices = synth.getVoices().filter(isMandarinVoice)
-      setVoice(voices.find((candidate) => candidate.localService) ?? voices[0] ?? null)
-    }
-    updateVoice()
-    synth.addEventListener('voiceschanged', updateVoice)
-    return () => {
-      synth.removeEventListener('voiceschanged', updateVoice)
-      if (active.current) {
-        active.current = null
-        synth.cancel()
-      }
-    }
-  }, [])
-
-  const speak = (sound: Pick<Sound, 'hanzi'>) => {
-    if (!voice || typeof SpeechSynthesisUtterance === 'undefined') return
-    const utterance = new SpeechSynthesisUtterance(sound.hanzi)
-    utterance.voice = voice
-    utterance.lang = voice.lang
-    utterance.rate = 0.8
-    active.current = utterance
-    setSpeechError(null)
-    setIsSpeaking(true)
-    utterance.onend = () => {
-      if (active.current !== utterance) return
-      active.current = null
-      setIsSpeaking(false)
-    }
-    utterance.onerror = event => {
-      if (active.current !== utterance) return
-      active.current = null
-      setIsSpeaking(false)
-      if (!['canceled', 'interrupted'].includes(event.error)) setSpeechError('Chưa thể phát âm thanh. Bạn hãy bấm nghe lại.')
-    }
-    try {
-      window.speechSynthesis.cancel()
-      window.speechSynthesis.speak(utterance)
-    } catch {
-      active.current = null
-      setIsSpeaking(false)
-      setSpeechError('Chưa thể phát âm thanh. Bạn hãy bấm nghe lại.')
-    }
-  }
-
-  return { voiceAvailable: voice !== null && typeof SpeechSynthesisUtterance !== 'undefined', speak, isSpeaking, speechError }
 }

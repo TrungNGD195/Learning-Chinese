@@ -10,6 +10,6 @@ export function SandhiExample({ sound, voiceAvailable, onListen }: { sound: Soun
     <dl className="sandhi-example__comparison"><div><dt>Thanh gốc</dt><dd>{sound.pinyin}</dd></div><div><dt>Cách đọc</dt><dd>{sound.spoken}</dd></div></dl>
     <p>{sound.explanation}</p>{sound.note && <p className="sandhi-example__note">{sound.note}</p>}
     <Button variant="secondary" disabled={!voiceAvailable} onClick={onListen}><AcademyIcon name="sound" size={19}/>Nghe cả cụm</Button>
-    <small>Giọng đọc của thiết bị để tham khảo; hãy đọc lại theo quy tắc ở trên.</small>
+    <small>Nghe cả cụm, rồi đọc lại theo quy tắc ở trên.</small>
   </div>
 }

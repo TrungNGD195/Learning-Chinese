@@ -496,6 +496,7 @@ test('Great Wall journey opens real lessons and student logout stays in the side
   await expect(page).toHaveURL(/\/hsk\/1$/)
   const units = page.getByRole('list', { name: 'Các bài trong cấp độ HSK' })
   await expect(units).toBeVisible()
+  await expect(page.locator('.journey-cloud-transition')).toHaveAttribute('data-phase', 'idle')
   await units.getByRole('link', { name: /(?:Học|Ôn) Bài học 1: Step 8.1 Lesson A/ }).click()
   await expect(page).toHaveURL(new RegExp(`/lessons/${lessonA}$`))
   for (const width of [1440, 768, 390]) {
