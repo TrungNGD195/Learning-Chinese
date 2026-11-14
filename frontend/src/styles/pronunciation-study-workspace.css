@@ -118,33 +118,10 @@
 .bo-shell .pronunciation-study-workspace .pronunciation-sections-nav > .pronunciation-section-locked { background: #edf0e7; color: #596b51; border-color: #d5dfcc; }
 .pronunciation-sections-nav a:hover:not([aria-current]) { background: #e8efdd; }
 .bo-shell .pronunciation-study-workspace .pronunciation-study-body { grid-template-columns: 216px minmax(0,1fr); gap: 24px; }
-.pronunciation-sound-index { position: sticky; top: calc(var(--lesson-header-height) + 100px); min-width: 0; border: 1px solid #cbd8bf; border-radius: 14px; padding: 16px 8px 8px; background: #fffef8; }
-.pronunciation-sound-index__heading { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 0 8px; }
-.bo-shell .pronunciation-sound-index h2 { margin: 0; font-size: 18px; }
-.pronunciation-sound-index__heading > span { font-size: 12px; color: #526b4b; white-space: nowrap; }
-.bo-shell .pronunciation-sound-index > p { margin: 4px 8px 12px; font-size: 12px; color: #526b4b; }
-.pronunciation-sound-index__list { max-height: min(540px,calc(100dvh - var(--lesson-header-height) - 210px)); overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: #9caf90 #f2f5eb; padding: 0 4px 4px; }
-.bo-shell .pronunciation-sound-index h3 { margin: 14px 4px 8px; color: #526b4b; font-size: 12px; line-height: 1.5; }
-.pronunciation-sound-index ul { display: grid; gap: 4px; list-style: none; margin: 0; padding: 0; }
-.pronunciation-sound-index button { display: flex; align-items: center; justify-content: space-between; gap: 8px; width: 100%; min-height: 46px; padding: 8px 10px; border: 1px solid transparent; border-radius: 8px; background: transparent; color: #244c3b; font: inherit; text-align: left; cursor: pointer; }
-.pronunciation-sound-index button > span { font-size: 21px; font-weight: 650; }
-.pronunciation-sound-index button > small { font-size: 12px; color: #526b4b; }
-.pronunciation-sound-index button:hover { background: #edf2e3; border-color: #bacbb0; }
-.pronunciation-sound-index button[aria-current="true"] { background: #244b3b; color: #fffbed; }
-.pronunciation-sound-index button[aria-current="true"] small { color: #e8f0da; }
-.pronunciation-sound-index button:disabled { cursor: wait; opacity: .65; }
-.pronunciation-sound-index button:focus-visible,.pronunciation-sections-nav a:focus-visible { outline: 3px solid #ac742b; outline-offset: -3px; }
 @media(max-width:800px) {
   .bo-shell .pronunciation-study-workspace .pronunciation-sections-nav { position: static; gap: 6px; }
   .bo-shell .pronunciation-study-workspace .pronunciation-sections-nav > :is(a,.pronunciation-section-locked) { display: flex; justify-content: center; padding: 8px 4px; min-height: 58px; white-space: normal; text-align: center; }
   .pronunciation-sections-nav > :is(a,.pronunciation-section-locked) > span:first-child { display: none; }
   .pronunciation-sections-nav > a > span:last-child,.pronunciation-section-locked > span:last-child { font-size: 14px; }
   .bo-shell .pronunciation-study-workspace .pronunciation-study-body { grid-template-columns: minmax(0,1fr); gap: 16px; }
-  .pronunciation-sound-index { position: static; padding-top: 12px; }
-  .pronunciation-sound-index__list { max-height: 174px; }
-  .pronunciation-sound-index ul { grid-template-columns: repeat(2,minmax(0,1fr)); }
-  .pronunciation-sound-index button > span { font-size: 19px; }
-  .pronunciation-sound-index button > small { font-size: 11px; }
-  .pronunciation-sound-index[data-section="SANDHI"] ul { grid-template-columns: minmax(0,1fr); }
-  .pronunciation-sound-index[data-section="SANDHI"] button > span { white-space: nowrap; }
 }

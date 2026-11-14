@@ -1,0 +1,42 @@
+/* Shared reading index: numbered entries, Hanzi and a quiet pinyin line. */
+.bo-shell .lesson-study-workspace .lesson-sections-horizontal { position:sticky; top:var(--lesson-header-height); z-index:15; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:8px; padding:8px 0; background:#f6f8ef; }
+.bo-shell .lesson-study-workspace .lesson-sections-horizontal > a { display:flex; align-items:center; gap:12px; min-height:64px; padding:10px 16px; border:1px solid #bacbb0; border-radius:12px; background:#fffef8; text-decoration:none; color:#244c3b; }
+.lesson-sections-horizontal > a > span:last-child { display:flex; flex-direction:column; font-size:18px; font-weight:650; line-height:1.4; }
+.lesson-sections-horizontal small { color:#526b4b; font-size:12px; }
+.bo-shell .lesson-study-workspace .lesson-sections-horizontal a[aria-current] { background:#244b3b; color:#fffbed; border-color:#244b3b; }
+.lesson-sections-horizontal a[aria-current] small { color:#e8f0da; }
+.bo-shell .lesson-study-workspace .lesson-sections-horizontal a:hover:not([aria-current]) { background:#e8efdd; }
+.bo-shell .lesson-study-workspace .lesson-manuscript__body[data-has-word-index="true"] { grid-template-columns:224px minmax(0,1fr); }
+.bo-shell .lesson-study-workspace .lesson-manuscript__body[data-has-word-index="false"] { grid-template-columns:minmax(0,1fr); }
+.bo-shell .pronunciation-study-workspace .pronunciation-study-body { grid-template-columns:224px minmax(0,1fr); }
+.study-item-index { position:sticky; top:calc(var(--lesson-header-height) + 100px); min-width:0; align-self:start; border:1px solid #cbd8bf; border-radius:14px; padding:16px 8px 8px; background:#fffef8; }
+.study-item-index__heading { display:flex; align-items:center; justify-content:space-between; gap:8px; padding:0 8px 12px; border-bottom:1px solid #e0e7d6; }
+.bo-shell .study-item-index__heading h2 { margin:0; font-size:17px; line-height:1.5; }
+.study-item-index__heading > span { color:#526b4b; font-size:12px; white-space:nowrap; }
+.study-item-index__list { max-height:min(540px,calc(100dvh - var(--lesson-header-height) - 210px)); overflow-y:auto; overscroll-behavior:contain; scrollbar-width:thin; scrollbar-color:#9caf90 #f2f5eb; padding:8px 4px 4px; }
+.bo-shell .study-item-index h3 { margin:12px 4px 8px; color:#526b4b; font-size:12px; line-height:1.5; }
+.study-item-index ol { display:grid; gap:6px; list-style:none; margin:0; padding:0; }
+.study-item-index :is(button,a) { display:flex; align-items:center; gap:12px; width:100%; min-height:66px; padding:10px 12px; border:1px solid #d4dfc9; border-radius:10px; background:#fafcf4; color:#244c3b; font:inherit; text-align:left; text-decoration:none; cursor:pointer; }
+.study-item-index__number { flex:0 0 22px; color:#586d50; font-size:13px; font-variant-numeric:tabular-nums; }
+.study-item-index__word { display:flex; flex-direction:column; gap:2px; min-width:0; }
+.study-item-index__word strong { font-family:'Noto Sans SC','Noto Sans',sans-serif; font-size:24px; line-height:1.35; font-weight:600; overflow-wrap:anywhere; }
+.study-item-index__word small { color:#526b4b; font-size:14px; line-height:1.45; overflow-wrap:anywhere; }
+.study-item-index :is(button,a):hover { border-color:#7e9c6b; background:#edf2e3; }
+.study-item-index :is(button,a)[aria-current] { background:#244b3b; border-color:#244b3b; color:#fffbed; }
+.study-item-index [aria-current] :is(.study-item-index__number,small) { color:#e8f0da; }
+.study-item-index button:disabled { cursor:wait; opacity:.65; }
+.study-item-index :is(button,a):focus-visible,.lesson-sections-horizontal a:focus-visible { outline:3px solid #ac742b; outline-offset:-3px; }
+@media(max-width:800px) {
+  .bo-shell .lesson-study-workspace .lesson-sections-horizontal { position:static; gap:6px; }
+  .bo-shell .lesson-study-workspace .lesson-sections-horizontal > a { justify-content:center; min-width:0; min-height:58px; padding:8px 4px; text-align:center; }
+  .lesson-sections-horizontal > a > span:first-child { display:none; }
+  .lesson-sections-horizontal > a > span:last-child { font-size:14px; }
+  .bo-shell .lesson-study-workspace .lesson-manuscript__body[data-has-word-index], .bo-shell .pronunciation-study-workspace .pronunciation-study-body { display:grid; grid-template-columns:minmax(0,1fr); gap:16px; }
+  .study-item-index { position:static; padding-top:12px; }
+  .study-item-index__list { max-height:196px; }
+  .study-item-index ol { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .study-item-index :is(button,a) { gap:8px; padding:8px; }
+  .study-item-index__number { flex-basis:18px; }
+  .study-item-index__word strong { font-size:22px; }
+  .study-item-index__word small { font-size:13px; }
+}

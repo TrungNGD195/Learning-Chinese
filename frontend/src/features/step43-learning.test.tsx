@@ -129,6 +129,23 @@ beforeEach(() => {
 })
 
 describe('Step 4.3 lesson and theory behavior', () => {
+  it('selects a numbered word directly and records only the words actually opened', async () => {
+    const lesson = lessonFixture()
+    lesson.vocabulary.push(...['second-word', 'third-word'].map((id, index) => ({ ...lesson.vocabulary[0], id, order_index: index + 2,
+      item: { ...lesson.vocabulary[0].item, hanzi: index === 0 ? '我' : '他', pinyin: index === 0 ? 'wǒ' : 'tā' } })))
+    vi.mocked(getLesson).mockResolvedValue(lesson)
+    const progress = lessonProgressFixture()
+    progress.vocabulary = lesson.vocabulary.map(word => ({ id: word.id, viewed: false }))
+    vi.mocked(getLessonProgress).mockResolvedValue(progress)
+    renderAt('/lessons/lesson-1')
+    const link = await screen.findByRole('link', { name: 'Chọn từ 3: 他' })
+    expect(link).toHaveTextContent('3他tā')
+    fireEvent.click(link)
+    expect(await screen.findByRole('heading', { name: '他' })).toBeInTheDocument()
+    await waitFor(() => expect(markVocabularyViewed).toHaveBeenCalledWith('lesson-1', 'third-word'))
+    expect(markVocabularyViewed).not.toHaveBeenCalledWith('lesson-1', 'second-word')
+    expect(screen.getByRole('link', { name: 'Chọn từ 3: 他' })).toHaveAttribute('aria-current', 'page')
+  })
   it('does not record an unknown word URL or reveal a word from another lesson', async () => {
     renderAt('/lessons/lesson-1/vocabulary/unknown-link')
     expect(await screen.findByRole('alert')).toHaveTextContent('Không tìm thấy từ vựng này trong bài học')

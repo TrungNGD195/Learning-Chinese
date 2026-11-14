@@ -3,7 +3,7 @@ import { mkdir, writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { chromium } from 'playwright'
 
-const origin = 'http://127.0.0.1:5173'
+const origin = process.env.BO_FRONTEND_ORIGIN || 'http://127.0.0.1:5173'
 const baseline = process.env.BO_CAPTURE_BASELINE === '1'
 const folder = resolve('../.impeccable/review/pronunciation-workspace')
 const codes = ['INITIALS', 'FINALS', 'TONES', 'SANDHI'], totals = [21, 36, 5, 12]

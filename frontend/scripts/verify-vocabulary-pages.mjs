@@ -56,6 +56,7 @@ async function capture(page, name, width) {
   })
   const metrics = await page.evaluate(() => ({ scroll: document.documentElement.scrollWidth, viewport: innerWidth }))
   assert(metrics.scroll <= metrics.viewport + 1, `${name} overflow at ${width}`)
+  await page.evaluate(() => window.scrollTo(0, 0))
   await page.screenshot({ path: `${folder}/${name}-${width}.png`, fullPage: true, animations: 'allow' })
   captures.push({ name, width, ...metrics })
 }
@@ -81,7 +82,9 @@ try {
     await page.waitForFunction(() => ![...document.querySelectorAll('.vocabulary-page__navigation button')].at(-1).disabled)
     assert.equal(new URL(page.url()).pathname, '/lessons/lesson')
     assert.equal(await page.locator('.vocabulary-index').count(), 0)
-    assert.equal(await page.locator('.lesson-manuscript__index a[aria-current="page"]').getAttribute('href'), '/lessons/lesson/vocabulary')
+    assert.equal(await page.locator('.lesson-sections-horizontal a[aria-current="page"]').getAttribute('href'), '/lessons/lesson/vocabulary')
+    assert.equal(await page.locator('.lesson-word-index a').count(), words.length)
+    assert.equal(await page.locator('.lesson-word-index a[aria-current="page"]').getAttribute('href'), '/lessons/lesson/vocabulary/greeting')
     assert.equal(await page.locator('#grammar, #readings, #exercise').count(), 0)
     assert.equal(await page.locator('.vocabulary-study-card').count(), 1)
     assert.equal(await page.getByRole('button', { name: 'Xem chi tiết', exact: true }).count(), 0)

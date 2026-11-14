@@ -14,6 +14,7 @@ import { VocabularyStudy } from './VocabularyStudy'
 import { vocabularyPath } from './vocabularyRoutes'
 import { legacyLessonParts, lessonPartPath, type LessonPart } from './lessonRoutes'
 import { useLessonStudyPosition } from './useLessonStudyPosition'
+import { StudyItemIndex } from '../../components/academy/StudyItemIndex'
 
 export function LessonPage({ part = 'vocabulary' }: { part?: LessonPart }) {
   const { lessonId, vocabularyId } = useParams()
@@ -79,10 +80,15 @@ export function LessonPage({ part = 'vocabulary' }: { part?: LessonPart }) {
   return <section ref={root} className="learner-page lesson-page lesson-manuscript lesson-part-page screen lesson-study-workspace" data-lesson-part={part} aria-labelledby="page-title">
     {(lessonQuery.isError || progressQuery.isError) && <Alert role="status" tone="warning">Chưa cập nhật được bài học. Đang hiển thị thông tin đã tải.</Alert>}
     <LessonHeader lesson={lesson} progress={progress} hskLabel={hskLabel} refreshing={lessonQuery.isFetching || progressQuery.isFetching} />
-    <div className="lesson-manuscript__body">
-      <nav className="lesson-sequence-nav lesson-manuscript__index" aria-label="Các phần của bài học">
+      <nav className="lesson-sequence-nav lesson-sections-horizontal" aria-label="Các phần của bài học">
         {([['vocabulary', '生词', 'Từ vựng'], ['grammar', '语法', 'Ngữ pháp'], ['readings', '课文', 'Bài khóa'], ['practice', '练习', 'Luyện tập']] as const).map(([key, hanzi, label]) => <Link key={key} to={lessonPartPath(lesson.id, key)} aria-label={label} aria-current={part === key ? 'page' : undefined}><span lang="zh-Hans" aria-hidden="true">{hanzi}</span><span>{label}<small>{sectionCounts[key]}</small></span></Link>)}
       </nav>
+    <div className="lesson-manuscript__body" data-has-word-index={words.length > 0}>
+      {words.length > 0 && <StudyItemIndex title="Danh sách từ" count={`${words.length} từ`} className="lesson-word-index" groups={[{ items: words.map((word, index) => ({
+        id: word.id, number: index + 1, text: word.item.hanzi, pinyin: word.item.pinyin,
+        active: part === 'vocabulary' && index === wordIndex, label: `Chọn từ ${index + 1}: ${word.item.hanzi}`,
+        to: vocabularyPath(lesson.id, word.id),
+      })) }]}/>}
       <div id="lesson-study-content" className="lesson-manuscript__chapters">
         {part === 'vocabulary' && (vocabularyId && wordIndex < 0 ? <Alert role="alert" tone="error">Không tìm thấy từ vựng này trong bài học. Hãy chọn Từ vựng để học lại từ đầu.</Alert> : words.length ? <VocabularyStudy key={`${lesson.id}:${words[wordIndex].id}`} lesson={lesson} progress={progress} words={words} index={wordIndex}/> : <section className="lesson-section"><h2>Từ vựng</h2><EmptyState title="Chưa có từ vựng">Bài học này chưa có từ vựng.</EmptyState><Link className="learner-link-action" to={lessonPartPath(lesson.id, 'grammar')}>Tiếp: Ngữ pháp</Link></section>)}
         {part === 'grammar' && <><GrammarSection items={lesson.grammar} viewed={grammarViewed} expanded={grammarExpanded}

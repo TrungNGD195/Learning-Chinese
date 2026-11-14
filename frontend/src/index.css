@@ -26,6 +26,7 @@
 @import './styles/admin-users.css';
 @import './styles/practice-workspace.css';
 @import './styles/action-affordances.css';
+@import './styles/study-item-index.css';
 
 a { color: #066970; }
 a:hover { color: #075b62; }

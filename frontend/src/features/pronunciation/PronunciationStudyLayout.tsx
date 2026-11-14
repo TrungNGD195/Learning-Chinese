@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { StudyItemIndex } from '../../components/academy/StudyItemIndex'
 import { pronunciationContent } from './pronunciationData'
 import { Link } from 'react-router'
 import type { PronunciationLessonState } from './api'
@@ -34,31 +34,13 @@ export function PronunciationSectionNav({ state, active }: { state: Pronunciatio
 export function PronunciationSoundList({ code, step, pending, onSelect }: {
   code: PronunciationCode; step: number; pending: boolean; onSelect: (step: number) => void
 }) {
-  const list = useRef<HTMLDivElement>(null)
   const groups = pronunciationContent[code].groups
-  useEffect(() => {
-    const container = list.current
-    const selected = container?.querySelector<HTMLElement>('[aria-current="true"]')
-    if (!container || !selected) return
-    const top = selected.getBoundingClientRect().top - container.getBoundingClientRect().top + container.scrollTop
-    if (top < container.scrollTop || top + selected.offsetHeight > container.scrollTop + container.clientHeight) {
-      container.scrollTop = top - container.clientHeight / 2 + selected.offsetHeight / 2
-    }
-  }, [step])
-  return <aside className="pronunciation-sound-index" data-section={code} aria-label="Chọn nội dung phát âm">
-    <div className="pronunciation-sound-index__heading"><h2>{pronunciationSections[code].title}</h2><span>{groups.reduce((total, group) => total + group.sounds.length, 0)} {code === 'SANDHI' ? 'ví dụ' : 'âm'}</span></div>
-    <p>Chọn để học hoặc nghe lại</p>
-    <div className="pronunciation-sound-index__list" ref={list}>
-      {groups.map((group, groupIndex) => {
-        const start = groups.slice(0, groupIndex).reduce((total, previous) => total + previous.sounds.length, 0)
-        return <section key={group.title}><h3>{group.title}</h3><ul>{group.sounds.map((sound, index) => {
-          const position = start + index
-          return <li key={sound.symbol}><button type="button" disabled={pending} aria-current={step === position ? 'true' : undefined}
-            aria-controls="lesson-study-content" aria-label={`Chọn ${sound.symbol}`} onClick={() => onSelect(position)}>
-            <span>{code === 'SANDHI' ? sound.hanzi : sound.symbol}</span>
-          </button></li>
-        })}</ul></section>
-      })}
-    </div>
-  </aside>
+  return <StudyItemIndex title="Nội dung phát âm" className="pronunciation-sound-index"
+    count={`${groups.reduce((total, group) => total + group.sounds.length, 0)} ${code === 'SANDHI' ? 'ví dụ' : 'âm'}`}
+    groups={groups.map((group, groupIndex) => {
+      const start = groups.slice(0, groupIndex).reduce((total, previous) => total + previous.sounds.length, 0)
+      return { title: group.title, items: group.sounds.map((sound, index) => ({ id: sound.symbol, number: start + index + 1,
+        text: sound.hanzi || sound.symbol, pinyin: sound.pinyin, active: step === start + index,
+        label: `Chọn ${sound.symbol}`, disabled: pending, onSelect: () => onSelect(start + index) })) }
+    })}/>
 }

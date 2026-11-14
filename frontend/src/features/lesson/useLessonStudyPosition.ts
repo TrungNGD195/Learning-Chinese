@@ -25,7 +25,7 @@ export function useLessonStudyPosition(ready: boolean, routeIdentity: string) {
     const position = () => {
       if (!study) return
       const headerHeight = header?.getBoundingClientRect().height ?? 0
-      const navHeight = compact() || index?.classList.contains('pronunciation-sections-nav') ? index?.getBoundingClientRect().height ?? 0 : 0
+      const navHeight = compact() || index?.classList.contains('pronunciation-sections-nav') || index?.classList.contains('lesson-sections-horizontal') ? index?.getBoundingClientRect().height ?? 0 : 0
       const top = Math.max(0, window.scrollY + study.getBoundingClientRect().top - headerHeight - navHeight - 20)
       if (Math.abs(window.scrollY - top) > 1) window.scrollTo({ top, behavior: 'instant' })
       const heading = study.querySelector<HTMLElement>('.vocabulary-study-card__identity h2') ?? study.querySelector<HTMLElement>('h2')
