@@ -132,3 +132,18 @@ the checkout. No lesson data, user records, migrations or API DTOs change.
 Only the Vercel frontend requires a new production build. Railway application
 source matches its deployed runtime; retain the existing backend/database and
 verify readiness rather than restarting them for a frontend-only release.
+
+## Read-only account directory — 2026-11-14
+
+Admin navigation adds `/admin/users` and `/admin/users/:userId`. The backend
+provides admin-only GET list/detail endpoints with bounded pagination, literal
+case-insensitive name/email search, role filtering and newest-first ordering.
+Explicit response projections exclude password hashes and session versions.
+Details include existing lesson activity, pronunciation completion and graded
+attempt summaries. Account status is the stored active flag, not online status.
+
+This release has no database migration, account mutation endpoint or seed/data
+transfer operation. Deploy the backend first, confirm readiness and protection,
+then deploy the frontend. Preserve existing database/storage volumes. Directory
+requests execute only SELECT queries; do not invoke learner progress endpoints
+to derive admin activity, since those can materialize progress records.

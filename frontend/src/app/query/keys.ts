@@ -27,6 +27,8 @@ export const queryKeys = {
   adminAssessment: (assessmentId: string) => ['admin', 'assessment', assessmentId] as const,
   adminQuestions: (assessmentId: string) => ['admin', 'assessment', assessmentId, 'questions'] as const,
   adminStats: ['admin', 'stats'] as const,
+  adminUsers: (filters: Record<string, string | number>) => ['admin', 'users', filters] as const,
+  adminUser: (id: string) => ['admin', 'user', id] as const,
   adminDocumentsRoot: ['admin', 'documents'] as const,
   adminDocuments: (filters: Record<string, string | number>) => ['admin', 'documents', filters] as const,
   adminDocument: (documentId: string) => ['admin', 'document', documentId] as const,

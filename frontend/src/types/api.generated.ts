@@ -1139,6 +1139,40 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/v1/admin/users": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** List Accounts */
+        get: operations["list_accounts_api_v1_admin_users_get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/admin/users/{user_id}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Account Detail */
+        get: operations["account_detail_api_v1_admin_users__user_id__get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/health": {
         parameters: {
             query?: never;
@@ -1183,6 +1217,77 @@ export interface paths {
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
+        /** AccountDetail */
+        AccountDetail: {
+            /**
+             * Id
+             * Format: uuid
+             */
+            id: string;
+            /** Full Name */
+            full_name: string;
+            /** Email */
+            email: string;
+            /**
+             * Role
+             * @enum {string}
+             */
+            role: "ADMIN" | "LEARNER";
+            /** Is Active */
+            is_active: boolean;
+            /**
+             * Created At
+             * Format: date-time
+             */
+            created_at: string;
+            /** Completed Lessons */
+            completed_lessons: number;
+            /** Pronunciation Completed */
+            pronunciation_completed: boolean;
+            /** Graded Attempts */
+            graded_attempts: number;
+            /** Average Score */
+            average_score: number | null;
+            /** Lesson Activity */
+            lesson_activity: components["schemas"]["LessonActivity"][];
+        };
+        /** AccountPage */
+        AccountPage: {
+            /** Items */
+            items: components["schemas"]["AccountSummary"][];
+            /** Total */
+            total: number;
+            /** Page */
+            page: number;
+            /** Page Size */
+            page_size: number;
+        };
+        /** AccountSummary */
+        AccountSummary: {
+            /**
+             * Id
+             * Format: uuid
+             */
+            id: string;
+            /** Full Name */
+            full_name: string;
+            /** Email */
+            email: string;
+            /**
+             * Role
+             * @enum {string}
+             */
+            role: "ADMIN" | "LEARNER";
+            /** Is Active */
+            is_active: boolean;
+            /**
+             * Created At
+             * Format: date-time
+             */
+            created_at: string;
+            /** Completed Lessons */
+            completed_lessons: number;
+        };
         /** AdminCurriculumUnitResponse */
         AdminCurriculumUnitResponse: {
             /**
@@ -2182,6 +2287,26 @@ export interface components {
              */
             type: "sentence_writing" | "translate_vi_zh" | "translate_zh_vi";
             config: components["schemas"]["AnswerKeyFreeConfig"];
+        };
+        /** LessonActivity */
+        LessonActivity: {
+            /**
+             * Lesson Id
+             * Format: uuid
+             */
+            lesson_id: string;
+            /** Title */
+            title: string;
+            /** Lesson Number */
+            lesson_number: number;
+            /** Hsk Level */
+            hsk_level: number;
+            /** Started At */
+            started_at: string | null;
+            /** Theory Completed At */
+            theory_completed_at: string | null;
+            /** Completed At */
+            completed_at: string | null;
         };
         /** LessonAdminPageResponse */
         LessonAdminPageResponse: {
@@ -6211,6 +6336,75 @@ export interface operations {
                 };
                 content: {
                     "application/json": components["schemas"]["AdminStatsResponse"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    list_accounts_api_v1_admin_users_get: {
+        parameters: {
+            query?: {
+                page?: number;
+                page_size?: number;
+                search?: string;
+                role?: ("ADMIN" | "LEARNER") | null;
+            };
+            header?: never;
+            path?: never;
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["AccountPage"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    account_detail_api_v1_admin_users__user_id__get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                user_id: string;
+            };
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["AccountDetail"];
                 };
             };
             /** @description Validation Error */

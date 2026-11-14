@@ -127,9 +127,9 @@ describe('production route tree', () => {
   it('adds the Curriculum navigation entry and keeps /admin a small dashboard', () => {
     renderAt('/admin')
     const nav = screen.getByRole('navigation', { name: 'Điều hướng quản trị' })
-    expect(within(nav).getAllByRole('link').map((link) => link.textContent)).toEqual(['Tổng quan', 'Bài học', 'Kiểm tra định kỳ', 'Tài liệu', 'Hồ sơ'])
+    expect(within(nav).getAllByRole('link').map((link) => link.textContent)).toEqual(['Tổng quan', 'Bài học', 'Kiểm tra định kỳ', 'Tài liệu', 'Người dùng', 'Hồ sơ'])
     expect(within(nav).getAllByRole('link').map((link) => link.getAttribute('href'))).toEqual([
-      '/admin', '/admin/lessons', '/admin/assessments', '/admin/documents', '/admin/profile',
+      '/admin', '/admin/lessons', '/admin/assessments', '/admin/documents', '/admin/users', '/admin/profile',
     ])
     expect(within(nav).queryByRole('link', { name: 'Lộ trình' })).not.toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'Sắp xếp bài học' })).toHaveAttribute('href', '/admin/lessons?view=curriculum')

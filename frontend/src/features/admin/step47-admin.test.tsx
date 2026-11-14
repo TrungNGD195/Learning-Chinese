@@ -118,7 +118,7 @@ describe('Step 4.7 Admin routes and authorization', () => {
   it('puts content management first and retains all administrator destinations', async () => {
     renderAt('/admin')
     const nav = screen.getByRole('navigation', { name: "Điều hướng quản trị" })
-    expect(within(nav).getAllByRole('link').map((link) => link.textContent)).toEqual(["Tổng quan", "Bài học", "Kiểm tra định kỳ", "Tài liệu", "Hồ sơ"])
+    expect(within(nav).getAllByRole('link').map((link) => link.textContent)).toEqual(["Tổng quan", "Bài học", "Kiểm tra định kỳ", "Tài liệu", "Người dùng", "Hồ sơ"])
     const destinations = within(document.querySelector('.admin-workbench')!)
     for (const [name, href] of [['Sắp xếp bài học', '/admin/lessons?view=curriculum'], ['Quản lý tất cả bài học', '/admin/lessons'], ['Quản lý bài kiểm tra', '/admin/assessments'], ['Mở kho tài liệu', '/admin/documents']]) {
       expect(destinations.getByRole('link', { name })).toHaveAttribute('href', href)

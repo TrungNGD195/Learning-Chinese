@@ -28,6 +28,15 @@ const reviewPath = '/api/v1/admin/assessments/{assessment_id}/submit-review'
 const publishAssessmentPath = '/api/v1/admin/assessments/{assessment_id}/publish'
 const archiveAssessmentPath = '/api/v1/admin/assessments/{assessment_id}/archive'
 const statsPath = '/api/v1/admin/stats'
+const usersPath = '/api/v1/admin/users'
+const userPath = '/api/v1/admin/users/{user_id}'
+export type AdminUserFilters = QueryParametersOf<typeof usersPath, 'get'>
+export function listAdminUsers(filters: AdminUserFilters) {
+  return apiClient<ResponseBodyOf<typeof usersPath, 'get'>>({ method: 'GET', path: '/admin/users', query: filters })
+}
+export function getAdminUser(id: string) {
+  return apiClient<ResponseBodyOf<typeof userPath, 'get'>>({ method: 'GET', path: `/admin/users/${encodeURIComponent(id)}` })
+}
 const documentsPath = '/api/v1/admin/documents'
 const documentPath = '/api/v1/admin/documents/{document_id}'
 const documentProcessPath = '/api/v1/admin/documents/{document_id}/process'

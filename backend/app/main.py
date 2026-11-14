@@ -7,6 +7,7 @@ from app.database.readiness import check_database_readiness
 from app.progress.router import router as progress_router
 from app.exercise.router import router as exercise_router
 from app.admin.router import router as admin_router
+from app.admin.users import router as admin_users_router
 from app.curriculum.router import router as curriculum_router
 from app.auth.router import router as auth_router
 from app.conversation.router import router as conversation_router
@@ -33,6 +34,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     application.include_router(curriculum_router, prefix=settings.api_v1_prefix)
     application.include_router(exercise_router, prefix=settings.api_v1_prefix)
     application.include_router(admin_router, prefix=settings.api_v1_prefix)
+    application.include_router(admin_users_router, prefix=settings.api_v1_prefix)
 
     @application.get("/health")
     def health() -> dict[str, str]:

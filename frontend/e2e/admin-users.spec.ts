@@ -1,0 +1,42 @@
+import { expect, test } from '@playwright/test'
+
+test('admin can search existing accounts and read progress without changing them', async ({ page, browser }) => {
+  await page.goto('/login')
+  await page.getByLabel('Email', { exact: true }).fill('step81-admin@example.invalid')
+  await page.getByLabel('Mật khẩu', { exact: true }).fill(process.env.STEP81_TEST_PASSWORD!)
+  await page.getByRole('button', { name: 'Đăng nhập', exact: true }).click()
+  await expect(page).toHaveURL(/\/admin$/)
+  await page.getByRole('link', { name: 'Người dùng', exact: true }).click()
+  await page.getByRole('searchbox').fill('step81-learner@example.invalid')
+  await page.getByRole('button', { name: 'Tìm kiếm', exact: true }).click()
+  await expect(page.getByText('step81-learner@example.invalid', { exact: true })).toBeVisible()
+  const link = page.getByRole('link', { name: 'Xem Step 8.1 Learner', exact: true })
+  const href = await link.getAttribute('href')
+  const id = href!.split('/').at(-1)
+  const before = await page.request.get(`http://127.0.0.1:8000/api/v1/admin/users/${id}`)
+  const snapshot = await before.json()
+  expect(snapshot).not.toHaveProperty('password_hash')
+  expect(snapshot).not.toHaveProperty('session_version')
+  await link.click()
+  await expect(page.getByRole('heading', { name: 'Thông tin tài khoản', exact: true })).toBeVisible()
+  await expect(page.getByRole('heading', { name: 'Tiến độ học tập', exact: true })).toBeVisible()
+  for (const width of [1440, 390]) {
+    await page.setViewportSize({ width, height: 900 })
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true)
+  }
+  await page.reload()
+  await expect(page.getByText('step81-learner@example.invalid', { exact: true })).toBeVisible()
+  const after = await page.request.get(`http://127.0.0.1:8000/api/v1/admin/users/${id}`)
+  expect(await after.json()).toEqual(snapshot)
+  const learnerContext = await browser.newContext()
+  try {
+    const student = await learnerContext.newPage()
+    await student.goto('/login')
+    await student.getByLabel('Email', { exact: true }).fill('step81-learner@example.invalid')
+    await student.getByLabel('Mật khẩu', { exact: true }).fill(process.env.STEP81_TEST_PASSWORD!)
+    await student.getByRole('button', { name: 'Đăng nhập', exact: true }).click()
+    await expect(student).toHaveURL(/\/pronunciation$/)
+    expect((await student.request.get('http://127.0.0.1:8000/api/v1/admin/users')).status()).toBe(403)
+    expect((await student.request.get(`http://127.0.0.1:8000/api/v1/admin/users/${id}`)).status()).toBe(403)
+  } finally { await learnerContext.close() }
+})

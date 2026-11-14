@@ -29,6 +29,7 @@ import { AdminLessonEditorPage } from '../../features/admin/AdminLessonEditorPag
 import { AdminAssessmentsPage, AdminAssessmentEditorPage } from '../../features/admin/AdminAssessmentsPage'
 import { AdminRoute, ProtectedRoute, PublicAuthRoute } from './RouteGuards'
 import { RouteErrorBoundary } from '../RouteErrorBoundary'
+import { AdminUsersPage, AdminUserDetailPage } from '../../features/admin/AdminUsersPage'
 
 export function createAppRoutes(): RouteObject[] {
   return [
@@ -91,6 +92,8 @@ export function createAppRoutes(): RouteObject[] {
         { path: 'documents/:documentId', element: <AdminDocumentDetailPage /> },
         { path: 'stats', element: <AdminStatsPage /> },
         { path: 'profile', element: <AdminProfilePage /> },
+        { path: 'users', element: <AdminUsersPage /> },
+        { path: 'users/:userId', element: <AdminUserDetailPage /> },
         ] },
       ],
     },
