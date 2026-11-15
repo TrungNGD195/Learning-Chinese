@@ -12,17 +12,17 @@ Vietnamese-speaking learners of Chinese, and administrators managing curriculum 
 
 ## Product Purpose
 
-Support structured Chinese study and reference reading through pronunciation lessons, an HSK curriculum, lesson content, exercises, assessments, progress/history, and a lesson-aware AI assistant.
+Support structured Chinese study and reference reading through pronunciation lessons, HSK curricula, vocabulary, grammar, readings, exercises, assessments and saved progress. Current architecture and invariants are documented in [docs/architecture.md](docs/architecture.md).
 
 ## Operating Context
 
-Learners resume their current learning step, study pronunciation and HSK lessons, work through vocabulary, grammar and exercises, ask lesson-related questions, and review assessment results. Administrators manage curriculum, lessons, assessments, and source documents.
+Learners choose an HSK level, study its lessons, work through vocabulary, grammar and readings, complete exercises and review results. Administrators manage lessons, assessments, users and source documents. The HSK selection flow is currently a local change awaiting an explicitly requested deployment.
 
 ## Capabilities and Constraints
 
-The existing React/TypeScript/Vite frontend and FastAPI backend provide the implementation context. Preserve actual curriculum progression rules, account roles, learning records, source citations, and assessment states. AI chat already displays lesson/document/external citations; a visual redesign must keep these distinctions understandable.
+The existing React/TypeScript/Vite frontend and FastAPI backend provide the implementation context. Preserve server-owned progression rules, account roles, learning records and assessment states. The student AI assistant and journey maps have been removed. Backend AI/evaluation modules remain, with document AI disabled on the deployed learning-only configuration. Teacher/classroom functionality remains a future proposal, not an active role.
 
-The user approved the illustrated academy prototype for production on 2026-11-03, with more readable fonts and larger text, and named the dragon Bo. Adopt the approved layout in the main application. Teach initials, finals and tones from the local HSK1 textbook as an ordered prerequisite; completing all three sections and explicitly finishing the pronunciation lesson unlocks HSK1. Server records govern progress and access. No new search, bookmarking, scheduling, or analytics capability is confirmed.
+The user approved the illustrated academy direction, readable fonts and larger text, and named the dragon Bo. Pronunciation covers initials, finals, tones and tone sandhi; completion unlocks HSK1, while HSK2/3 are independently selectable. Existing pronunciation graduates retain their valid completion. Server records govern progress and access. Lesson exercises pass at 80% by default; existing explicit thresholds remain authoritative. Do not add bookmarking, scheduling or analytics without a separate product request.
 
 ## Brand Commitments
 
@@ -30,11 +30,11 @@ The user chose Hanfolio as the public product name on 2026-11-11. Preserve an ac
 
 ## Evidence on Hand
 
-README.md describes the Vietnamese-first product. frontend/src/app/router/routes.tsx lists public authentication, learner, and administrator routes. The approved academy assets and locally served Noto Sans / Noto Sans SC fonts live under frontend/public/academy. Bo has six expressions, Trúc supports explanations, and Bút supports practice. docs/HSK1 3.0 Hanu 24.6.26.pdf supplies the pronunciation content; page references remain visible in lessons. The source PDF is not redistributed as a public asset.
+README.md describes the Vietnamese-first product. frontend/src/app/router/routes.tsx lists public authentication, learner and administrator routes. Approved academy assets and self-hosted fonts are in frontend/public/academy. Bo guides learners, Trúc supports explanations and Bút supports practice. Textbook sources and checksums are documented in docs/learning-sources.md; local PDFs are not redistributed as public assets. Source notices remain documented without requiring source blocks in every lesson UI.
 
 ## Product Principles
 
 - Balance daily self-study with clear access to learning material.
 - Make curriculum position, available actions, and completion state understandable.
-- Keep source evidence and AI feedback distinguishable from authoritative lesson content.
+- Keep reviewed lesson content and optional machine-generated material distinguishable; never auto-publish AI drafts.
 - Give administrators efficient tools consistent with the learner-facing identity.

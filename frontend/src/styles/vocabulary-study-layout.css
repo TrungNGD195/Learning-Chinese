@@ -1,0 +1,46 @@
+/* Writing stays separate; the image and optional discovery share the right rail. */
+.vocabulary-study-card,.lesson-study-workspace .vocabulary-study-card{grid-template-columns:minmax(170px,220px) minmax(0,1fr) 320px;grid-template-areas:'writing summary artwork' 'writing example discovery' 'writing note note';gap:22px 24px;padding:24px}
+.vocabulary-study-card__summary{display:block}
+.vocabulary-study-card__media{display:contents}
+.vocabulary-study-card__artwork{grid-area:artwork;display:grid;place-items:center;width:100%;max-width:320px;aspect-ratio:1;overflow:hidden;border-radius:12px;background:#faf4e6;align-self:start;justify-self:center}
+.vocabulary-study-card__details,.lesson-study-workspace .vocabulary-study-card__details{display:contents}
+.vocabulary-study-card__example{grid-area:example;min-width:0}
+.vocabulary-study-card__note{grid-area:note;min-width:0}
+.vocabulary-study-card__pos{font-weight:600}
+.vocabulary-study-card .vocabulary-study-card__identity>.vocabulary-study-card__pos{margin-bottom:9px}
+.vocabulary-study-card[data-has-discovery=true] .vocabulary-study-card__note h3{min-height:0;padding-right:0}
+.vocabulary-study-card__media>.vocabulary-discovery-entry{grid-area:discovery;align-self:start;margin-top:18px}
+@container(min-width:841px) and (max-width:1000px){.vocabulary-study-card,.lesson-study-workspace .vocabulary-study-card{grid-template-columns:190px minmax(0,1fr) 280px;gap:22px 20px}}
+@container(max-width:840px){
+ .vocabulary-study-card,.lesson-study-workspace .vocabulary-study-card{grid-template-columns:minmax(0,1fr) 260px;grid-template-areas:'summary artwork' 'example discovery' 'note note' 'writing writing';gap:20px}
+ .vocabulary-study-card__writing{width:100%;max-width:280px;margin-inline:auto}
+}
+@container(max-width:540px){
+ .vocabulary-study-card,.lesson-study-workspace .vocabulary-study-card{grid-template-columns:minmax(0,1fr) 164px;grid-template-areas:'summary artwork' 'discovery discovery' 'example example' 'note note' 'writing writing';gap:18px 14px;padding:18px}
+ .vocabulary-study-card__media>.vocabulary-discovery-entry{margin-top:0;max-width:100%}
+ .vocabulary-study-card .vocabulary-study-card__identity h2,.lesson-study-workspace .vocabulary-study-card .vocabulary-study-card__identity h2{font-size:44px}
+ .vocabulary-study-card .vocabulary-study-card__meaning{font-size:20px}
+ .vocabulary-discovery-entry{grid-template-columns:36px minmax(0,1fr);gap:7px;padding:10px}
+ .vocabulary-discovery-entry>.academy-companion{width:36px;height:42px}
+ .vocabulary-discovery-entry__teaser{font-size:12px;line-height:1.6}
+ .vocabulary-discovery-entry__action{font-size:12px;gap:4px}
+ .vocabulary-discovery-entry__action svg{width:14px;flex:none}
+}
+@container(max-width:340px){
+ .vocabulary-study-card,.lesson-study-workspace .vocabulary-study-card{grid-template-columns:minmax(0,1fr);grid-template-areas:'summary' 'artwork' 'discovery' 'example' 'note' 'writing'}
+ .vocabulary-study-card__media{display:contents}
+ .vocabulary-study-card__artwork{width:min(260px,100%)}
+}
+
+@container(max-width:340px){.vocabulary-study-card__media>.vocabulary-discovery-entry{width:min(260px,100%)}}
+
+.vocabulary-study-card__artwork>.academy-word-illustration,.vocabulary-study-card__artwork>.academy-numeral-illustration{width:100%;max-width:none;height:100%;margin:0;box-sizing:border-box;border-radius:0;aspect-ratio:1}
+.vocabulary-study-card__artwork:has(>.academy-word-illustration)>.vocabulary-study-card__artwork-placeholder,.vocabulary-study-card__artwork:has(>.academy-numeral-illustration)>.vocabulary-study-card__artwork-placeholder{display:none}
+.vocabulary-study-card__artwork-placeholder{padding:24px;text-align:center;color:#596f54;font-size:15px;line-height:1.7}
+.vocabulary-study-card__artwork>.academy-country-illustration svg{max-width:none}
+.vocabulary-study-card__identity{overflow-wrap:anywhere}
+.vocabulary-study-card .vocabulary-study-card__summary{min-height:320px}
+@container(min-width:841px) and (max-width:1000px){.vocabulary-study-card .vocabulary-study-card__summary{min-height:280px}}
+@container(max-width:840px){.vocabulary-study-card .vocabulary-study-card__summary{min-height:260px}}
+@container(max-width:540px){.vocabulary-study-card .vocabulary-study-card__summary{min-height:164px}}
+@container(max-width:340px){.vocabulary-study-card .vocabulary-study-card__summary{min-height:0}}

@@ -49,10 +49,10 @@ export function GreatWallJourneyPage({ requestedLevel }: { requestedLevel?: stri
   const retry = () => { if (levels.isError) void levels.refetch(); if (pronunciation.isError) void pronunciation.refetch(); if (level && curriculum.isError) void curriculum.refetch() }
 
   return <section className="learning-curriculum screen" aria-labelledby="page-title">
+    <div className="lc-controls"><Link className="lc-inline-button lc-back-to-levels" to="/pronunciation">← Chọn cấp độ HSK</Link></div>
     <header className="lc-heading"><div><h1 id="page-title">Giáo trình của bạn</h1><p>Học cùng Bo, vững vàng từng bước.</p></div><div className="lc-heading-actions">{foundationRequired&&pronunciation.data&&!foundationDone?<LessonEntryLink className="lc-inline-button lc-resume" to="/pronunciation/lesson">Học phát âm nền tảng<AcademyIcon name="arrow" size={17}/></LessonEntryLink>:target&&<ResumeLearningLink target={target}/>}<Companion pose="guide" decorative/></div></header>
-    <LearningFlow completed={foundationDone} loading={pronunciation.isPending}/>
-    <FoundationCards completed={foundationDone} loading={pronunciation.isPending} unavailable={pronunciation.isError&&!pronunciation.data}/>
-    {allLevels.length>0&&<div className="lc-controls"><nav className="lc-level-tabs" aria-label="Chặng HSK">{allLevels.map(item=><Link key={item.id} to={`/hsk/${item.level_number}`} aria-current={item.id===level?.id?'page':undefined}>HSK {item.level_number}<small>{plannedLessonCounts[item.level_number]??0} bài</small></Link>)}</nav></div>}
+    {foundationRequired&&<LearningFlow completed={foundationDone} loading={pronunciation.isPending}/>}
+    {foundationRequired&&<FoundationCards completed={foundationDone} loading={pronunciation.isPending} unavailable={pronunciation.isError&&!pronunciation.data}/>}
     {notice&&<p className="lc-notice" role="status">{notice}</p>}
     {failed?<Alert tone="error" role="alert" action={<Button onClick={retry}>Thử lại</Button>}>Không thể tải giáo trình học này. Vui lòng thử lại.</Alert>:!ready&&<LoadingState>Đang tải giáo trình học…</LoadingState>}
     {stale&&<Alert tone="warning" role="status" action={<Button onClick={retry}>Thử lại</Button>}>Chưa cập nhật được giáo trình. Đang hiển thị thông tin đã tải.</Alert>}

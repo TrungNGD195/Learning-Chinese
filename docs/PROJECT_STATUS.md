@@ -2,7 +2,8 @@
 
 Last verified deployed application release: 2026-11-13, commit 501e157.
 This is an orientation note, not PM acceptance of an implementation Step.
-Authoritative specifications and decisions remain in Spec-CURRENT.
+Current architecture and invariants are summarized in [architecture.md](architecture.md).
+Historical decisions and unresolved cost gates are retained in [architecture-decisions.md](architecture-decisions.md).
 
 ## Application
 
@@ -26,7 +27,7 @@ No completed cache population, T4 parity/benchmark validation, production
 embedding profile or production re-embedding is claimed. Paid overage,
 adding a payment method and changing GPU tier are outside the authorized
 boundary. Do not resume those operations without the user's instruction.
-See the [PM Decision Log](../Spec-CURRENT/PM-Control/04-Decision-Log-and-Open-Gates.md).
+See the [PM Decision Log](architecture-decisions.md).
 
 ## Development and operations
 

@@ -27,6 +27,7 @@
 @import './styles/practice-workspace.css';
 @import './styles/action-affordances.css';
 @import './styles/study-item-index.css';
+@import './styles/vocabulary-study-layout.css';
 
 a { color: #066970; }
 a:hover { color: #075b62; }

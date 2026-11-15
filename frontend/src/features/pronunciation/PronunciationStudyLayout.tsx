@@ -9,7 +9,7 @@ export function PronunciationStudyHeader({ state, code }: { state?: Pronunciatio
   const completed = state?.sections.filter(section => section.completed_at).length ?? 0
   return <header className="lesson-header pronunciation-study-header">
     <div className="lesson-header__identity">
-      <Link className="lesson-header__back" to={code ? '/pronunciation/lesson' : '/pronunciation'}>{code ? '← Các phần phát âm' : '← Về giáo trình'}</Link>
+      <Link className="lesson-header__back" to={code ? '/pronunciation/lesson' : '/hsk/1'}>{code ? '← Các phần phát âm' : '← Về giáo trình'}</Link>
       <h1 id="page-title">{code ? pronunciationSections[code].title : 'Bài học phát âm'}</h1>
     </div>
     <div className="lesson-header__progress"><p>{state?.completed_at ? 'Đã hoàn thành' : 'Nền tảng phát âm'}</p><div>

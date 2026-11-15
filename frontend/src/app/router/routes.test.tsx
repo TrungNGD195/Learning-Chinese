@@ -36,7 +36,7 @@ describe('production route tree', () => {
     ['/lessons/lesson-1/practice', 'Bài học', 'learner'],
     ['/assessments/assessment-1', "Luyện tập", 'learner'],
     ['/assessment-attempts/attempt-1/result', "Kết quả luyện tập", 'learner'],
-    ['/measure-words', 'Lượng từ', 'learner'],
+    ['/measure-words', 'Giáo trình của bạn', 'learner'],
     ['/profile', "Hồ sơ", 'learner'],
     ['/admin', 'Quản trị học liệu', 'admin'],
     ['/admin/lessons?view=curriculum', 'Sắp xếp HSK', 'admin'],

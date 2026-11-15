@@ -205,3 +205,27 @@
  .lc-heading-actions { width:100%;justify-content:space-between; }
  .lc-heading-actions > .academy-companion { flex-basis:60px;width:60px; }
 }
+.lc-hsk-grid { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:28px; }
+.lc-hsk-card { display:flex;flex-direction:column;overflow:hidden;border-radius:16px;background:#fffef9;box-shadow:0 6px 24px #173f3612;transition:transform .2s ease-out,box-shadow .2s ease-out; }
+.lc-hsk-card:hover { transform:translateY(-4px);box-shadow:0 12px 28px #173f3624; }
+.lc-hsk-art { position:relative;overflow:hidden;background:#e4eddb; }
+.lc-hsk-art .lc-painted-cover { aspect-ratio:1.35; }
+.lc-hsk-art > span:last-child { position:absolute;bottom:18px;left:20px;padding:8px 14px;border-radius:10px;background:#173f36;color:#fffef9;font-size:26px;font-weight:750; }
+.lc-hsk-copy { display:flex;flex:1;flex-direction:column;gap:14px;padding:24px; }
+.lc-hsk-copy h2 { font-size:23px;line-height:1.35;text-wrap:balance; }
+.lc-hsk-copy p { color:#53675d;font-size:16px;line-height:1.7; }
+.lc-hsk-action { display:flex;flex-direction:column;gap:18px;margin-top:auto;padding-top:12px; }
+.lc-hsk-action > span { color:#53675d;font-size:14px; }
+.lc-hsk-action strong { display:flex;justify-content:space-between;align-items:center;gap:12px;border-radius:9px;padding:12px 14px;background:#e8efdf;font-size:16px; }
+.lc-selection > .lc-heading > .academy-companion { width:110px; }
+.lc-foundation-grid:has(> :only-child) { grid-template-columns:1fr; }
+@media(max-width:1000px) { .lc-hsk-grid { gap:16px; } .lc-hsk-copy { padding:18px; } .lc-hsk-copy h2 { font-size:21px; } }
+@media(max-width:700px) { .lc-hsk-grid { grid-template-columns:1fr; } .lc-hsk-art .lc-painted-cover { aspect-ratio:1.8; } }
+@media(prefers-reduced-motion:reduce) { .lc-hsk-card { transition:none; } .lc-hsk-card:hover { transform:none; } }
+.learning-curriculum .lc-back-to-levels { min-height:56px;padding:14px 22px;border:1px solid #245c47;border-radius:12px;background:#245c47;color:#fffef9;font-size:18px;font-weight:700;line-height:1.4;gap:12px; }
+.learning-curriculum .lc-back-to-levels:hover { background:#173f36;border-color:#173f36; }
+@media(max-width:560px) { .learning-curriculum .lc-back-to-levels { width:100%; } }
+.lc-heading.lc-heading--bo-left{justify-content:flex-start;flex-wrap:nowrap;gap:18px}
+.lc-heading--bo-left>div{min-width:0}
+.lc-selection>.lc-heading--bo-left>.academy-companion{flex:0 0 100px;width:100px;height:112px}
+@media(max-width:560px){.lc-heading.lc-heading--bo-left{gap:12px}.lc-selection>.lc-heading--bo-left>.academy-companion{flex-basis:65px;width:65px;height:78px}.lc-heading--bo-left h1{font-size:25px}}

@@ -10,7 +10,6 @@ A Vietnamese-first Chinese learning web app with pronunciation, structured lesso
 | `frontend/` | React, TypeScript, Vite client and browser tests |
 | `evaluation/` | Versioned evaluation cases, fixtures, validators, and evaluation assets |
 | `docs/` | Current operational guides, learning policies, sources and attribution; see [the index](docs/README.md) |
-| `Spec-CURRENT/` | Current product specifications, PM decisions, and execution protocol |
 | `infra/` | Local PostgreSQL initialization assets |
 | `compose.yaml` | Local pgvector PostgreSQL service |
 | `compose.app.yaml` | Development containers for the backend and frontend |
@@ -78,11 +77,11 @@ The authoritative CI sequence is [.github/workflows/ci.yml](.github/workflows/ci
 
 ## Current pause point
 
-Step 8.3 Stage B T4 validation is paused. Modal required a payment method to continue, and adding one or incurring paid usage is outside the approved cost boundary. No model cache was populated, no validation runtime was deployed, no T4 was allocated, and no production GPU profile or production re-embedding was performed. See [Project status and resume notes](docs/PROJECT_STATUS.md) and the current [PM Decision Log](Spec-CURRENT/PM-Control/04-Decision-Log-and-Open-Gates.md) before resuming work.
+Step 8.3 Stage B T4 validation is paused. Modal required a payment method to continue, and adding one or incurring paid usage is outside the approved cost boundary. No model cache was populated, no validation runtime was deployed, no T4 was allocated, and no production GPU profile or production re-embedding was performed. See [Project status and resume notes](docs/PROJECT_STATUS.md) and the retained [PM Decision Log](docs/architecture-decisions.md) before resuming work.
 
 ## Safety and local-only files
 
-Do not commit `.env` files, credentials, PostgreSQL data, uploaded documents, model weights, Python/Node environments, caches, or test-generated files. These are excluded by `.gitignore`. Keep `Spec-CURRENT/` and `docs/` as the in-repository project context. Codex execution task packets are maintained outside this checkout.
+Do not commit `.env` files, credentials, PostgreSQL data, uploaded documents, model weights, Python/Node environments, caches, or test-generated files. These are excluded by `.gitignore`. Current architecture, development rules and operating requirements live in `docs/`; superseded Phase specifications can be recovered from Git history. Codex execution task packets are maintained outside this checkout.
 
 Installed agent skills (`.agents/`), machine-specific hooks (`.codex/`), generated
 design previews, screenshots, and local textbook PDFs also stay outside Git.

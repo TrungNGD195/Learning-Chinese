@@ -1,5 +1,5 @@
 import type { RouteObject } from 'react-router'
-import { Outlet, redirect } from 'react-router'
+import { Navigate, Outlet, redirect } from 'react-router'
 import { AdminLayout } from '../layouts/AdminLayout'
 import { LearnerLayout } from '../layouts/LearnerLayout'
 import { PublicLayout } from '../layouts/PublicLayout'
@@ -12,7 +12,7 @@ import {
 } from '../../features/auth/PublicPages'
 import { PronunciationPage } from '../../features/pronunciation/PronunciationPage'
 import { PronunciationLessonPage, PronunciationSectionPage } from '../../features/pronunciation/PronunciationLessonPage'
-import {MeasureWordsPage} from '../../features/curriculum/MeasureWordsPage'
+
 import { HskCurriculumPage } from '../../features/curriculum/HskCurriculumPage'
 import { LessonPage } from '../../features/lesson/LessonPage'
 import { VocabularyPage } from '../../features/lesson/VocabularyPage'
@@ -55,7 +55,7 @@ export function createAppRoutes(): RouteObject[] {
         { path: '/pronunciation/lesson', element: <PronunciationLessonPage /> },
         { path: '/pronunciation/lesson/:sectionSlug', element: <PronunciationSectionPage /> },
         { path: '/hsk/:hskLevel', element: <HskCurriculumPage /> },
-        { path: '/measure-words', element: <MeasureWordsPage /> },
+        { path: '/measure-words', element: <Navigate to="/pronunciation" replace /> },
         { path: '/preview/great-wall/*', loader: () => redirect('/pronunciation') },
         { path: '/lessons/:lessonId', element: <LessonPage /> },
         { path: '/lessons/:lessonId/vocabulary', element: <LessonPage /> },

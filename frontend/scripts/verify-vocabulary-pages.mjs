@@ -96,7 +96,7 @@ try {
     await page.getByRole('button', { name: 'Nghe phát âm 你好', exact: true }).click()
     assert.deepEqual(await page.evaluate(() => window.__vocabularySpeech), [{ text: '你好', lang: 'zh-CN', rate: 0.8 }])
     await page.evaluate(() => window.__vocabularyUtterance.onend({}))
-    const artWidth = await page.locator('.vocabulary-study-card__summary .academy-word-illustration').evaluate(element => element.getBoundingClientRect().width)
+    const artWidth = await page.locator('.vocabulary-study-card__media .academy-word-illustration').evaluate(element => element.getBoundingClientRect().width)
     assert(artWidth >= 128)
     await capture(page, 'first-word-always-visible-theory', width)
     await page.getByRole('button', { name: 'Tiếp theo', exact: true }).click()

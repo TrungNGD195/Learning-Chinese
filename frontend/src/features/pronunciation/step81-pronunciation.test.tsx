@@ -25,7 +25,7 @@ const initial: api.PronunciationLessonState = {
   current_section: 'INITIALS', step_index: 0, total_steps: 21, completed_at: null, can_finish: false,
 }
 
-function setup(path = '/pronunciation') {
+function setup(path = '/hsk/1') {
   const client = new QueryClient({ defaultOptions: { queries: { retry: false }, mutations: { retry: false } } })
   const router = createMemoryRouter([
     { path: '/pronunciation', element: <PronunciationPage /> },
@@ -47,6 +47,20 @@ beforeEach(() => {
 })
 
 describe('server-owned pronunciation lesson', () => {
+  it('shows illustrated HSK choices before loading lessons or pronunciation', async () => {
+    vi.mocked(getHskLevels).mockResolvedValue([1,2,3].map(number => ({id:`hsk-${number}`,level_number:number,title:`HSK ${number}`,description:null,state:'LOCKED'})))
+    const {container,router}=setup('/pronunciation')
+    expect(await screen.findByRole('link',{name:'HSK 1'})).toHaveAttribute('href','/hsk/1')
+    expect(screen.getByRole('link',{name:'HSK 2'})).toHaveAttribute('href','/hsk/2')
+    expect(container.querySelectorAll('.lc-hsk-art .lc-painted-cover')).toHaveLength(3)
+    expect(container.querySelector('.lc-lesson-grid')).toBeNull()
+    expect(screen.queryByRole('link',{name:'Học lượng từ'})).not.toBeInTheDocument()
+    expect(getCurriculum).not.toHaveBeenCalled()
+    expect(api.getPronunciationLesson).not.toHaveBeenCalled()
+    fireEvent.click(screen.getByRole('link',{name:'HSK 1'}))
+    await waitFor(()=>expect(router.state.location.pathname).toBe('/hsk/1'))
+    expect(await screen.findByRole('link',{name:'Học phát âm nền tảng'})).toBeInTheDocument()
+  })
   it('lets learners preview any sound without skipping saved progress', async () => {
     setup('/pronunciation/lesson/thanh-mau')
     fireEvent.click(await screen.findByRole('button', { name: 'Chọn s' }))
@@ -94,9 +108,9 @@ describe('server-owned pronunciation lesson', () => {
     vi.mocked(getCurriculum).mockResolvedValue({ hsk: { id: `hsk-${number}`, level_number: number, title: `HSK ${number}` }, units: [{ id: 'advanced-unit', order_index: 1, unit_type: 'LESSON', state: 'AVAILABLE', lesson: { id: 'advanced-lesson', lesson_number: 1, title: 'Bài nâng cao', status: 'PUBLISHED' }, assessment: null }] })
     setup(`/hsk/${number}`)
     expect(await screen.findByRole('link', { name: 'Học Bài học 1: Bài nâng cao' })).toHaveAttribute('href', '/lessons/advanced-lesson')
-    expect(screen.getByRole('link', { name: new RegExp(`^HSK ${number}`) })).toHaveAttribute('aria-current', 'page')
+    expect(screen.queryByRole('navigation', { name: 'Chặng HSK' })).not.toBeInTheDocument()
     expect(screen.queryByRole('button', { name: `Điều kiện mở HSK ${number}` })).not.toBeInTheDocument()
-    expect(screen.getByRole('link', { name: 'Học phát âm nền tảng' })).toHaveAttribute('href', '/pronunciation/lesson')
+    expect(screen.queryByRole('link', { name: 'Học phát âm nền tảng' })).not.toBeInTheDocument()
     expect(api.advancePronunciation).not.toHaveBeenCalled()
   })
 
@@ -107,8 +121,8 @@ describe('server-owned pronunciation lesson', () => {
     setup('/hsk/3')
     expect(await screen.findByRole('list', { name: 'Các bài trong cấp độ HSK' })).toBeInTheDocument()
     expect(screen.getAllByRole('button', { name: /Sắp có nội dung/ })).toHaveLength(15)
-    expect(screen.getByRole('link', { name: /^HSK 2/ })).toHaveAttribute('href', '/hsk/2')
-    expect(screen.getByRole('link', { name: /^HSK 3/ })).toHaveAttribute('aria-current', 'page')
+    expect(screen.getByRole('link', { name: /Chọn cấp độ HSK/ })).toHaveAttribute('href', '/pronunciation')
+    expect(screen.queryByRole('link', { name: /^HSK 3/ })).not.toBeInTheDocument()
     expect(screen.queryByRole('alert')).not.toBeInTheDocument()
   })
 
@@ -193,7 +207,7 @@ describe('server-owned pronunciation lesson', () => {
     vi.mocked(api.getPronunciationLesson).mockResolvedValue({ ...initial, current_section: null, step_index: 0, total_steps: 0, completed_at: '2026-11-03T00:00:00Z', can_finish: false })
     vi.mocked(getHskLevels).mockResolvedValue([{ id: 'hsk-1', level_number: 1, title: 'HSK 1', description: null, state: 'AVAILABLE' }])
     setup()
-    expect(await screen.findByRole('link', { name: /^HSK 1/ })).toHaveAttribute('href', '/hsk/1')
+    expect(await screen.findByRole('link', { name: /Chọn cấp độ HSK/ })).toHaveAttribute('href', '/pronunciation')
     expect(await screen.findByRole('link', { name: 'Ôn phát âm nền tảng' })).toBeInTheDocument()
   })
 

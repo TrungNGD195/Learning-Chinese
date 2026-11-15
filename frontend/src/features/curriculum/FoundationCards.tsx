@@ -8,9 +8,6 @@ export function FoundationCards({completed,loading,unavailable}:{completed:boole
    <div className="lc-foundation-art" aria-hidden="true"><CurriculumCover topic="pronunciation"/></div>
    <div className="lc-foundation-copy"><h2>Phát âm nền tảng</h2><p>Thanh mẫu, vận mẫu, thanh điệu và biến điệu.</p><div><span>{loading?'Đang tải tiến độ…':unavailable?'Mở bài phát âm':completed?'Đã hoàn thành · Ôn lại':'Bắt đầu học · Mở khóa HSK 1'}</span><AcademyIcon name="arrow" size={18}/></div></div>
   </LessonEntryLink>
-  <LessonEntryLink className="lc-foundation-card lc-foundation-card--supplement" to="/measure-words" aria-label="Học lượng từ">
-   <div className="lc-foundation-art" aria-hidden="true"><CurriculumCover topic="measure-words"/></div>
-   <div className="lc-foundation-copy"><h2>Lượng từ</h2><p>Chuyên đề bổ trợ. Học bất cứ lúc nào.</p><div><span>Học 10 lượng từ thông dụng</span><AcademyIcon name="arrow" size={18}/></div></div>
-  </LessonEntryLink>
+
  </div>
 }
