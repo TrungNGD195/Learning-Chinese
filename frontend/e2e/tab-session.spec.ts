@@ -23,8 +23,14 @@ for (const [role, email, landing] of [
     await page.getByRole('link', { name: role === 'student' ? 'Hồ sơ' : 'Bài học', exact: true }).first().click()
     await expect(page).toHaveURL(new RegExp(role === 'student' ? '/profile$' : '/admin/lessons$'))
     await expect(page.locator(`[data-layout="${protectedLayout}"]`)).toBeVisible()
+    // SPA navigation keeps the layout mounted. Wait for the profile's new
+    // progress request before deleting cookies: otherwise it can start a
+    // refresh that reload aborts after the server has rotated its token.
+    if (role === 'student') await expect(page.locator('.profile-learning-facts')).toBeVisible()
     await context.clearCookies({ name: 'access_token' })
+    const refreshed = page.waitForResponse(response => new URL(response.url()).pathname.endsWith('/auth/refresh') && response.request().method() === 'POST')
     await page.reload()
+    expect((await refreshed).status()).toBe(204)
     await expect(page.locator(`[data-layout="${protectedLayout}"]`)).toBeVisible()
     expect(logouts).toBe(0)
     expect((await context.cookies()).some(cookie => cookie.name === 'refresh_token')).toBe(true)
