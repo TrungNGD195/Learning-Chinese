@@ -23,10 +23,11 @@ for (const [role, email, landing] of [
     await page.getByRole('link', { name: role === 'student' ? 'Hồ sơ' : 'Bài học', exact: true }).first().click()
     await expect(page).toHaveURL(new RegExp(role === 'student' ? '/profile$' : '/admin/lessons$'))
     await expect(page.locator(`[data-layout="${protectedLayout}"]`)).toBeVisible()
-    // SPA navigation keeps the layout mounted. Wait for the profile's new
-    // progress request before deleting cookies: otherwise it can start a
-    // refresh that reload aborts after the server has rotated its token.
+    // SPA navigation keeps the layout mounted. Drain the destination's reads
+    // for either role before artificially expiring the cookie. Otherwise an
+    // in-flight read can start refresh, and reload can abort its rotated cookie.
     if (role === 'student') await expect(page.locator('.profile-learning-facts')).toBeVisible()
+    await page.waitForLoadState('networkidle')
     await context.clearCookies({ name: 'access_token' })
     const refreshed = page.waitForResponse(response => new URL(response.url()).pathname.endsWith('/auth/refresh') && response.request().method() === 'POST')
     await page.reload()
