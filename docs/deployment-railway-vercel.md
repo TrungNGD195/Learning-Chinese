@@ -147,3 +147,34 @@ transfer operation. Deploy the backend first, confirm readiness and protection,
 then deploy the frontend. Preserve existing database/storage volumes. Directory
 requests execute only SELECT queries; do not invoke learner progress endpoints
 to derive admin activity, since those can materialize progress records.
+
+## Curriculum and cover release — 2026-11-21
+
+The reviewed collection contains 40 lessons: HSK1 1–15, HSK2 1–10 and HSK3
+1–15. HSK3 comes from the supplied DOCX; its source audit records merged lesson
+3 parts, contextual pronunciation corrections and exact duplicate omissions.
+Each lesson has 30 objective questions, explanations and an 80% pass threshold.
+The frontend has a distinct subject cover for every lesson in both roles, an
+admin library with 10 lessons per page, and completed-lesson vocabulary cards.
+
+This release requires the new backend route before the frontend. It introduces
+no schema migration or AI-provider change. Production Docker includes only the
+reviewed curriculum manifests and explicitly named release/import scripts.
+
+Database content is updated separately from the application deployment; never
+restore a local database into production. Before the explicit content release,
+make a PostgreSQL custom-format dump, verify its table of contents, download it
+to ignored operational storage and compare SHA-256. Keep the dump and its
+receipt outside Git. The production release command is
+`python -m scripts.release_curriculum --inspect`, followed by `--apply` with the
+returned `--expected-fingerprint`, a `--backup-receipt` path and matching
+`--backup-sha256`. This command only permits the existing named Railway project,
+its production environment and learning-only mode. Import/publication share an
+outer transaction; a failure rolls back the whole batch. Account, pronunciation
+and learner-history fingerprints must remain identical before/after. Existing
+assessment attempts and old questions remain attached to archived assessments.
+
+After release, verify 15/10/15 published lessons, 40 published lesson exercises,
+1,200 active practice questions, 1,097 attached vocabulary senses, 119 grammar
+points and 144 readings. Confirm protected account/history counts and real
+student/admin access, vocabulary review, cover assets and deep-link reload.

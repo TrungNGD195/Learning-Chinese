@@ -1,0 +1,1990 @@
+{
+  "key": "hsk3-lesson-03-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 3,
+    "lesson_number": 3,
+    "title": "北京一点也不热 · Bắc Kinh không nóng chút nào",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "各",
+      "pinyin": "gè",
+      "vietnamese_meaning": "mỗi, từng; các",
+      "part_of_speech": "đại từ",
+      "source_key": "3:3:各",
+      "note": "各 nhấn mạnh từng đối tượng có nét riêng, có thể đi thẳng trước danh từ như 各国. 每 nhấn mạnh từng đối tượng trong toàn thể, thường đi với lượng từ hoặc danh từ đơn vị như 每个人、每天.",
+      "order_index": 1,
+      "example": "各位同学，来说说你们去年的暑假是怎么过的？\ngè wèi tóng xué ， lái shuō shuō nǐ men qù nián de shǔ jià shì zěn me guò de ？\nCác em hãy kể về kỳ nghỉ hè năm ngoái nhé."
+    },
+    {
+      "hanzi": "夏天",
+      "pinyin": "xiàtiān",
+      "vietnamese_meaning": "mùa hè",
+      "part_of_speech": "danh từ",
+      "source_key": "3:3:夏天",
+      "note": null,
+      "order_index": 2,
+      "example": "你觉得北京的夏天怎么样？\nnǐ jué de běi jīng de xià tiān zěn me yàng ？\nEm thấy mùa hè Bắc Kinh thế nào?"
+    },
+    {
+      "hanzi": "以前",
+      "pinyin": "yǐqián",
+      "vietnamese_meaning": "trước đây; trước khi",
+      "part_of_speech": "danh từ chỉ thời gian",
+      "source_key": "3:3:以前",
+      "note": null,
+      "order_index": 3,
+      "example": "来中国以前，听说夏天太阳很大，但我觉得北京一点儿也不热。\nlái zhōng guó yǐ qián ， tīng shuō xià tiān tài yáng hěn dà ， dàn wǒ jué de běi jīng yì diǎn ér yě bù rè 。\nTrước khi đến Trung Quốc, em nghe nói mùa hè nắng rất gắt, nhưng em thấy Bắc Kinh không nóng chút nào."
+    },
+    {
+      "hanzi": "一样",
+      "pinyin": "yīyàng",
+      "vietnamese_meaning": "giống nhau, như nhau",
+      "part_of_speech": "tính từ",
+      "source_key": "3:3:一样",
+      "note": null,
+      "order_index": 4,
+      "example": "新疆的风景跟画儿一样美。\nxīn jiāng de fēng jǐng gēn huà ér yī yàng měi 。\nPhong cảnh Tân Cương đẹp như tranh."
+    },
+    {
+      "hanzi": "国家",
+      "pinyin": "guójiā",
+      "vietnamese_meaning": "quốc gia, đất nước",
+      "part_of_speech": "danh từ",
+      "source_key": "3:3:国家",
+      "note": null,
+      "order_index": 5,
+      "example": "不一样，我们国家的夏天非常热。\nbù yí yàng ， wǒ men guó jiā de xià tiān fēi cháng rè 。\nKhông giống, mùa hè nước em rất nóng."
+    },
+    {
+      "hanzi": "团",
+      "pinyin": "tuán",
+      "vietnamese_meaning": "đoàn, nhóm",
+      "part_of_speech": "danh từ, lượng từ",
+      "source_key": "3:3:团",
+      "note": null,
+      "order_index": 6,
+      "example": "老师，我去年暑假给旅游团当了翻译。\nlǎo shī ， wǒ qù nián shǔ jià gěi lǚ yóu tuán dāng le fān yì 。\nThưa thầy, hè năm ngoái em làm phiên dịch cho đoàn du lịch."
+    },
+    {
+      "hanzi": "当",
+      "pinyin": "dāng",
+      "vietnamese_meaning": "làm, đảm nhiệm (nghề hoặc chức vụ)",
+      "part_of_speech": "động từ",
+      "source_key": "3:3:当",
+      "note": null,
+      "order_index": 7,
+      "example": "你觉得当翻译累不累？\nnǐ jué de dāng fān yì lèi bù lèi ？\nEm thấy làm phiên dịch có mệt không?"
+    },
+    {
+      "hanzi": "翻译",
+      "pinyin": "fānyì",
+      "vietnamese_meaning": "phiên dịch, biên dịch; người phiên dịch",
+      "part_of_speech": "động từ, danh từ",
+      "source_key": "3:3:翻译",
+      "note": null,
+      "order_index": 8,
+      "example": "你觉得当翻译累不累？\nnǐ jué de dāng fān yì lèi bù lèi ？\nEm thấy làm phiên dịch có mệt không?"
+    },
+    {
+      "hanzi": "成",
+      "pinyin": "chéng",
+      "vietnamese_meaning": "thành, sang (kết quả biến đổi)",
+      "part_of_speech": "bổ ngữ kết quả",
+      "source_key": "3:3:成",
+      "note": "Trong 翻译成越南语, 成 chỉ kết quả chuyển sang ngôn ngữ khác; không phải động từ làm nghề như 当翻译.",
+      "order_index": 9,
+      "example": "请把这个字翻译成越南语。\nqǐng bǎ zhè ge zì fān yì chéng yuè nán yǔ 。\nHãy dịch chữ này sang tiếng Việt."
+    },
+    {
+      "hanzi": "颐和园",
+      "pinyin": "yíhéyuán",
+      "vietnamese_meaning": "Di Hòa Viên",
+      "part_of_speech": "tên riêng",
+      "source_key": "3:3:颐和园",
+      "note": null,
+      "order_index": 10,
+      "example": "我们去了故宫、颐和园、天坛等等。\nwǒ men qù le gù gōng 、 yí hé yuán 、 tiān tán děng děng 。\nChúng em đến Cố Cung, Di Hòa Viên, Thiên Đàn và những nơi khác."
+    },
+    {
+      "hanzi": "天坛",
+      "pinyin": "tiāntán",
+      "vietnamese_meaning": "Thiên Đàn",
+      "part_of_speech": "tên riêng",
+      "source_key": "3:3:天坛",
+      "note": null,
+      "order_index": 11,
+      "example": "我们去了故宫、颐和园、天坛等等。\nwǒ men qù le gù gōng 、 yí hé yuán 、 tiān tán děng děng 。\nChúng em đến Cố Cung, Di Hòa Viên, Thiên Đàn và những nơi khác."
+    },
+    {
+      "hanzi": "参观",
+      "pinyin": "cānguān",
+      "vietnamese_meaning": "tham quan",
+      "part_of_speech": "động từ",
+      "source_key": "3:3:参观",
+      "note": null,
+      "order_index": 12,
+      "example": "我跟家人一起去北京参观。\nwǒ gēn jiā rén yì qǐ qù běi jīng cān guān 。\nMình cùng gia đình đến Bắc Kinh tham quan."
+    },
+    {
+      "hanzi": "羡慕",
+      "pinyin": "xiànmù",
+      "vietnamese_meaning": "ngưỡng mộ, ao ước được như ai",
+      "part_of_speech": "động từ",
+      "source_key": "3:3:羡慕",
+      "note": null,
+      "order_index": 13,
+      "example": "真羡慕你，你们去了哪些旅游景点？\nzhēn xiàn mù nǐ ， nǐ men qù le nǎ xiē lǚ yóu jǐng diǎn ？\nNgưỡng mộ bạn thật, các bạn đến những điểm tham quan nào?"
+    },
+    {
+      "hanzi": "景点",
+      "pinyin": "jǐngdiǎn",
+      "vietnamese_meaning": "địa điểm tham quan",
+      "part_of_speech": "danh từ",
+      "source_key": "3:3:景点",
+      "note": null,
+      "order_index": 14,
+      "example": "真羡慕你，你们去了哪些旅游景点？\nzhēn xiàn mù nǐ ， nǐ men qù le nǎ xiē lǚ yóu jǐng diǎn ？\nNgưỡng mộ bạn thật, các bạn đến những điểm tham quan nào?"
+    },
+    {
+      "hanzi": "除了",
+      "pinyin": "chúle",
+      "vietnamese_meaning": "ngoài, ngoại trừ",
+      "part_of_speech": "giới từ",
+      "source_key": "3:3:除了",
+      "note": "除了…还/也… thường là ngoài…còn…; 除了…都… có thể là ngoại trừ…đều…. Chú ý vế sau.",
+      "order_index": 15,
+      "example": "除了北京以外，我还去了上海和南京。\nchú le běi jīng yǐ wài ， wǒ hái qù le shàng hǎi hé nán jīng 。\nNgoài Bắc Kinh, mình còn đến Thượng Hải và Nam Kinh."
+    },
+    {
+      "hanzi": "胡同",
+      "pinyin": "hútòng",
+      "vietnamese_meaning": "ngõ, hẻm truyền thống ở Bắc Kinh",
+      "part_of_speech": "danh từ",
+      "source_key": "3:3:胡同",
+      "note": null,
+      "order_index": 16,
+      "example": "除了故宫、颐和园以外，我们也参观了天坛和北京胡同。\nchú le gù gōng 、 yí hé yuán yǐ wài ， wǒ men yě cān guān le tiān tán hé běi jīng hú tòng 。\nNgoài Cố Cung và Di Hòa Viên, chúng mình còn tham quan Thiên Đàn và các ngõ truyền thống Bắc Kinh."
+    },
+    {
+      "hanzi": "地铁",
+      "pinyin": "dìtiě",
+      "vietnamese_meaning": "tàu điện ngầm",
+      "part_of_speech": "danh từ",
+      "source_key": "3:3:地铁",
+      "note": null,
+      "order_index": 17,
+      "example": "在北京我们一般坐地铁，有时候坐出租车。\nzài běi jīng wǒ men yì bān zuò dì tiě ， yǒu shí hòu zuò chū zū chē 。\nỞ Bắc Kinh, chúng mình thường đi tàu điện ngầm, đôi khi đi taxi."
+    },
+    {
+      "hanzi": "南京",
+      "pinyin": "nánjīng",
+      "vietnamese_meaning": "Nam Kinh",
+      "part_of_speech": "tên riêng",
+      "source_key": "3:3:南京",
+      "note": null,
+      "order_index": 18,
+      "example": "我觉得北京的风景跟南京的一样美。\nwǒ jué de běi jīng de fēng jǐng gēn nán jīng de yī yàng měi 。\nMình thấy phong cảnh Bắc Kinh đẹp như Nam Kinh."
+    },
+    {
+      "hanzi": "城市",
+      "pinyin": "chéngshì",
+      "vietnamese_meaning": "thành phố",
+      "part_of_speech": "danh từ",
+      "source_key": "3:3:城市",
+      "note": null,
+      "order_index": 19,
+      "example": "你觉得这三个城市怎么样？\nnǐ jué de zhè sān gè chéng shì zěn me yàng ？\nBạn thấy ba thành phố này thế nào?"
+    },
+    {
+      "hanzi": "风景",
+      "pinyin": "fēngjǐng",
+      "vietnamese_meaning": "phong cảnh",
+      "part_of_speech": "danh từ",
+      "source_key": "3:3:风景",
+      "note": null,
+      "order_index": 20,
+      "example": "新疆的风景跟画儿一样美。\nxīn jiāng de fēng jǐng gēn huà ér yī yàng měi 。\nPhong cảnh Tân Cương đẹp như tranh."
+    },
+    {
+      "hanzi": "迪士尼乐园",
+      "pinyin": "díshìnílèyuán",
+      "vietnamese_meaning": "công viên Disneyland",
+      "part_of_speech": "tên riêng",
+      "source_key": "3:3:迪士尼乐园",
+      "note": null,
+      "order_index": 21,
+      "example": "除了上海迪士尼乐园以外，别的地方我都不去，所以我觉得有点儿无聊。\nchú le shàng hǎi dí shì ní lè yuán yǐ wài ， bié de dì fāng wǒ dōu bù qù ， suǒ yǐ wǒ jué de yǒu diǎn ér wú liáo 。\nNgoài Disneyland Thượng Hải, mình không đi nơi nào khác nên thấy hơi chán."
+    },
+    {
+      "hanzi": "无聊",
+      "pinyin": "wúliáo",
+      "vietnamese_meaning": "buồn chán, tẻ nhạt",
+      "part_of_speech": "tính từ",
+      "source_key": "3:3:无聊",
+      "note": null,
+      "order_index": 22,
+      "example": "虽然只有五天，但我一点儿都不觉得无聊。\nsuī rán zhǐ yǒu wǔ tiān ， dàn wǒ yì diǎn ér dōu bù jué de wú liáo 。\nDù chỉ có năm ngày, tôi không thấy buồn chán chút nào."
+    },
+    {
+      "hanzi": "草原",
+      "pinyin": "cǎoyuán",
+      "vietnamese_meaning": "thảo nguyên",
+      "part_of_speech": "danh từ",
+      "source_key": "3:3:草原",
+      "note": null,
+      "order_index": 23,
+      "example": "今年秋天，我和家人一起去了新疆的草原旅游。\njīn nián qiū tiān ， wǒ hé jiā rén yì qǐ qù le xīn jiāng de cǎo yuán lǚ yóu 。\nMùa thu năm nay, tôi cùng gia đình đến thảo nguyên Tân Cương du lịch."
+    },
+    {
+      "hanzi": "海边",
+      "pinyin": "hǎibiān",
+      "vietnamese_meaning": "bờ biển, ven biển",
+      "part_of_speech": "danh từ",
+      "source_key": "3:3:海边",
+      "note": null,
+      "order_index": 24,
+      "example": "那我们这个假期一起去海边旅游吧。\nnà wǒ men zhè ge jià qī yì qǐ qù hǎi biān lǚ yóu ba 。\nVậy kỳ nghỉ này mình cùng đi biển nhé."
+    },
+    {
+      "hanzi": "羊",
+      "pinyin": "yáng",
+      "vietnamese_meaning": "dê, cừu",
+      "part_of_speech": "danh từ",
+      "source_key": "3:3:羊",
+      "note": null,
+      "order_index": 25,
+      "example": "到了晚上，我们全家人一起吃羊肉、喝热茶。\ndào le wǎn shàng ， wǒ men quán jiā rén yì qǐ chī yáng ròu 、 hē rè chá 。\nBuổi tối, cả gia đình cùng ăn thịt cừu, uống trà nóng."
+    },
+    {
+      "hanzi": "牛",
+      "pinyin": "niú",
+      "vietnamese_meaning": "bò",
+      "part_of_speech": "danh từ",
+      "source_key": "3:3:牛",
+      "note": null,
+      "order_index": 26,
+      "example": "在草原上，除了羊和牛以外，我们还体验了骑马。\nzài cǎo yuán shàng ， chú le yáng hé niú yǐ wài ， wǒ men hái tǐ yàn le qí mǎ 。\nTrên thảo nguyên, ngoài xem cừu và bò, chúng tôi còn trải nghiệm cưỡi ngựa."
+    },
+    {
+      "hanzi": "海鲜",
+      "pinyin": "hǎixiān",
+      "vietnamese_meaning": "hải sản",
+      "part_of_speech": "danh từ",
+      "source_key": "3:3:海鲜",
+      "note": null,
+      "order_index": 27,
+      "example": "我们也好久没吃海鲜了。\nwǒ men yě hǎo jiǔ méi chī hǎi xiān le 。\nCũng lâu rồi nhà mình chưa ăn hải sản."
+    },
+    {
+      "hanzi": "虾",
+      "pinyin": "xiā",
+      "vietnamese_meaning": "tôm",
+      "part_of_speech": "danh từ",
+      "source_key": "3:3:虾",
+      "note": null,
+      "order_index": 28,
+      "example": "我喜欢吃虾。\nwǒ xǐ huān chī xiā 。\nTôi thích ăn tôm."
+    },
+    {
+      "hanzi": "鱿鱼",
+      "pinyin": "yóuyú",
+      "vietnamese_meaning": "mực ống",
+      "part_of_speech": "danh từ",
+      "source_key": "3:3:鱿鱼",
+      "note": null,
+      "order_index": 29,
+      "example": "我们想吃一点儿鱿鱼。\nwǒ men xiǎng chī yì diǎn ér yóu yú 。\nChúng tôi muốn ăn một ít mực ống."
+    },
+    {
+      "hanzi": "螃蟹",
+      "pinyin": "pángxiè",
+      "vietnamese_meaning": "cua",
+      "part_of_speech": "danh từ",
+      "source_key": "3:3:螃蟹",
+      "note": null,
+      "order_index": 30,
+      "example": "这家饭店的螃蟹很好吃。\nzhè jiā fàn diàn de páng xiè hěn hǎo chī 。\nCua của nhà hàng này rất ngon."
+    },
+    {
+      "hanzi": "章鱼",
+      "pinyin": "zhāngyú",
+      "vietnamese_meaning": "bạch tuộc",
+      "part_of_speech": "danh từ",
+      "source_key": "3:3:章鱼",
+      "note": null,
+      "order_index": 31,
+      "example": "你喜欢吃章鱼吗？\nnǐ xǐ huān chī zhāng yú ma ？\nBạn có thích ăn bạch tuộc không?"
+    },
+    {
+      "hanzi": "假期",
+      "pinyin": "jiàqī",
+      "vietnamese_meaning": "kỳ nghỉ",
+      "part_of_speech": "danh từ",
+      "source_key": "3:3:假期",
+      "note": null,
+      "order_index": 32,
+      "example": "那我们这个假期一起去海边旅游吧。\nnà wǒ men zhè ge jià qī yì qǐ qù hǎi biān lǚ yóu ba 。\nVậy kỳ nghỉ này mình cùng đi biển nhé."
+    },
+    {
+      "hanzi": "酒店",
+      "pinyin": "jiǔdiàn",
+      "vietnamese_meaning": "khách sạn",
+      "part_of_speech": "danh từ",
+      "source_key": "3:3:酒店",
+      "note": null,
+      "order_index": 33,
+      "example": "还有那个酒店？\nhái yǒu nà ge jiǔ diàn ？\nCòn khách sạn kia?"
+    },
+    {
+      "hanzi": "接送",
+      "pinyin": "jiēsòng",
+      "vietnamese_meaning": "đưa đón",
+      "part_of_speech": "động từ",
+      "source_key": "3:3:接送",
+      "note": null,
+      "order_index": 34,
+      "example": "这个酒店更便宜。他们还有接送服务。\nzhè ge jiǔ diàn gèng pián yi 。 tā men hái yǒu jiē sòng fú wù 。\nChỗ này rẻ hơn, còn có dịch vụ đưa đón."
+    },
+    {
+      "hanzi": "服务",
+      "pinyin": "fúwù",
+      "vietnamese_meaning": "phục vụ; dịch vụ",
+      "part_of_speech": "động từ, danh từ",
+      "source_key": "3:3:服务",
+      "note": null,
+      "order_index": 35,
+      "example": "这个酒店更便宜。他们还有接送服务。\nzhè ge jiǔ diàn gèng pián yi 。 tā men hái yǒu jiē sòng fú wù 。\nChỗ này rẻ hơn, còn có dịch vụ đưa đón."
+    },
+    {
+      "hanzi": "订",
+      "pinyin": "dìng",
+      "vietnamese_meaning": "đặt trước",
+      "part_of_speech": "động từ",
+      "source_key": "3:3:订",
+      "note": null,
+      "order_index": 36,
+      "example": "很好，那晚上我先跟你爸爸聊一聊，然后我们先订酒店和机票。\nhěn hǎo ， nà wǎn shàng wǒ xiān gēn nǐ bà bà liáo yī liáo ， rán hòu wǒ men xiān dìng jiǔ diàn hé jī piào 。\nTốt, tối mẹ nói chuyện với bố rồi mình đặt khách sạn và vé máy bay trước."
+    },
+    {
+      "hanzi": "季节",
+      "pinyin": "jìjié",
+      "vietnamese_meaning": "mùa",
+      "part_of_speech": "danh từ",
+      "source_key": "3:3:季节",
+      "note": null,
+      "order_index": 37,
+      "example": "你最喜欢哪个季节？\nnǐ zuì xǐ huān nǎ ge jì jié ？\nBạn thích mùa nào nhất?"
+    },
+    {
+      "hanzi": "春天",
+      "pinyin": "chūntiān",
+      "vietnamese_meaning": "mùa xuân",
+      "part_of_speech": "danh từ",
+      "source_key": "3:3:春天",
+      "note": null,
+      "order_index": 38,
+      "example": "北京的春天很漂亮。\nběi jīng de chūn tiān hěn piào liàng 。\nMùa xuân ở Bắc Kinh rất đẹp."
+    },
+    {
+      "hanzi": "秋天",
+      "pinyin": "qiūtiān",
+      "vietnamese_meaning": "mùa thu",
+      "part_of_speech": "danh từ",
+      "source_key": "3:3:秋天",
+      "note": null,
+      "order_index": 39,
+      "example": "新疆的秋天真的很特别，新疆人非常热情。\nxīn jiāng de qiū tiān zhēn de hěn tè bié ， xīn jiāng rén fēi cháng rè qíng 。\nMùa thu Tân Cương thật đặc biệt, người dân rất nhiệt tình."
+    },
+    {
+      "hanzi": "冬天",
+      "pinyin": "dōngtiān",
+      "vietnamese_meaning": "mùa đông",
+      "part_of_speech": "danh từ",
+      "source_key": "3:3:冬天",
+      "note": null,
+      "order_index": 40,
+      "example": "这里的冬天很冷。\nzhè lǐ de dōng tiān hěn lěng 。\nMùa đông ở đây rất lạnh."
+    },
+    {
+      "hanzi": "北方",
+      "pinyin": "běifāng",
+      "vietnamese_meaning": "miền Bắc, phương Bắc",
+      "part_of_speech": "danh từ",
+      "source_key": "3:3:北方",
+      "note": null,
+      "order_index": 41,
+      "example": "我想去北方旅行。\nwǒ xiǎng qù běi fāng lǚ xíng 。\nTôi muốn đi du lịch miền Bắc."
+    },
+    {
+      "hanzi": "南方",
+      "pinyin": "nánfāng",
+      "vietnamese_meaning": "miền Nam, phương Nam",
+      "part_of_speech": "danh từ",
+      "source_key": "3:3:南方",
+      "note": null,
+      "order_index": 42,
+      "example": "我的家人在南方。\nwǒ de jiā rén zài nán fāng 。\nGia đình tôi ở miền Nam."
+    },
+    {
+      "hanzi": "雨季",
+      "pinyin": "yǔjì",
+      "vietnamese_meaning": "mùa mưa",
+      "part_of_speech": "danh từ",
+      "source_key": "3:3:雨季",
+      "note": null,
+      "order_index": 43,
+      "example": "雨季的时候常常下雨。\nyǔ jì de shí hòu cháng cháng xià yǔ 。\nVào mùa mưa trời thường có mưa."
+    },
+    {
+      "hanzi": "旱季",
+      "pinyin": "hànjì",
+      "vietnamese_meaning": "mùa khô",
+      "part_of_speech": "danh từ",
+      "source_key": "3:3:旱季",
+      "note": null,
+      "order_index": 44,
+      "example": "旱季的时候很少下雨。\nhàn jì de shí hòu hěn shǎo xià yǔ 。\nVào mùa khô trời ít mưa."
+    },
+    {
+      "hanzi": "新疆",
+      "pinyin": "xīnjiāng",
+      "vietnamese_meaning": "Tân Cương",
+      "part_of_speech": "tên riêng",
+      "source_key": "3:3:新疆",
+      "note": null,
+      "order_index": 45,
+      "example": "新疆的风景跟画儿一样美。\nxīn jiāng de fēng jǐng gēn huà ér yī yàng měi 。\nPhong cảnh Tân Cương đẹp như tranh."
+    },
+    {
+      "hanzi": "极了",
+      "pinyin": "jí le",
+      "vietnamese_meaning": "cực kỳ, vô cùng (sau tính từ)",
+      "part_of_speech": "bổ ngữ mức độ",
+      "source_key": "3:3:极了",
+      "note": null,
+      "order_index": 46,
+      "example": "以前我听说秋天的草原会很冷，但是到新疆以后，我觉得一点儿也不冷，天气舒服极了。\nyǐ qián wǒ tīng shuō qiū tiān de cǎo yuán huì hěn lěng ， dàn shì dào xīn jiāng yǐ hòu ， wǒ jué de yì diǎn ér yě bù lěng ， tiān qì shū fú jí le 。\nTrước đây tôi nghe nói mùa thu trên thảo nguyên rất lạnh, nhưng đến nơi lại thấy không lạnh chút nào, thời tiết cực kỳ dễ chịu."
+    },
+    {
+      "hanzi": "体验",
+      "pinyin": "tǐyàn",
+      "vietnamese_meaning": "trải nghiệm",
+      "part_of_speech": "động từ",
+      "source_key": "3:3:体验",
+      "note": null,
+      "order_index": 47,
+      "example": "在草原上，除了羊和牛以外，我们还体验了骑马。\nzài cǎo yuán shàng ， chú le yáng hé niú yǐ wài ， wǒ men hái tǐ yàn le qí mǎ 。\nTrên thảo nguyên, ngoài xem cừu và bò, chúng tôi còn trải nghiệm cưỡi ngựa."
+    },
+    {
+      "hanzi": "一般",
+      "pinyin": "yìbān",
+      "vietnamese_meaning": "bình thường, ở mức trung bình; nói chung",
+      "part_of_speech": "tính từ, phó từ",
+      "source_key": "3:3:一般",
+      "note": null,
+      "order_index": 48,
+      "example": "我爸爸骑得很好，但我骑得一般。\nwǒ bà bà qí de hěn hǎo ， dàn wǒ qí de yì bān 。\nBố tôi cưỡi rất giỏi, còn tôi ở mức bình thường."
+    },
+    {
+      "hanzi": "全家",
+      "pinyin": "quánjiā",
+      "vietnamese_meaning": "cả gia đình",
+      "part_of_speech": "danh từ",
+      "source_key": "3:3:全家",
+      "note": null,
+      "order_index": 49,
+      "example": "到了晚上，我们全家人一起吃羊肉、喝热茶。\ndào le wǎn shàng ， wǒ men quán jiā rén yì qǐ chī yáng ròu 、 hē rè chá 。\nBuổi tối, cả gia đình cùng ăn thịt cừu, uống trà nóng."
+    },
+    {
+      "hanzi": "全部",
+      "pinyin": "quánbù",
+      "vietnamese_meaning": "toàn bộ, tất cả",
+      "part_of_speech": "danh từ, phó từ",
+      "source_key": "3:3:全部",
+      "note": null,
+      "order_index": 50,
+      "example": "这些作业我全部做完了。\nzhè xiē zuò yè wǒ quán bù zuò wán le 。\nTôi đã làm xong toàn bộ những bài tập này."
+    }
+  ],
+  "grammar": [
+    {
+      "name": "Phủ định hoàn toàn",
+      "structure": "一 + lượng từ + 也/都 + 不/没 + động từ / 一点儿 + 也/都 + 不 + tính từ",
+      "explanation": "Nhấn mạnh không có một đối tượng nào hoặc không có chút mức độ nào.",
+      "usage": "Dùng 没 với hành động chưa xảy ra, 不 với tính chất hoặc sự phủ định thông thường theo ngữ cảnh.",
+      "example": "北京一点儿也不热。\nběi jīng yì diǎn ér yě bù rè 。\nBắc Kinh không nóng chút nào.",
+      "note": "Dùng 没 với hành động chưa xảy ra, 不 với tính chất hoặc sự phủ định thông thường theo ngữ cảnh.",
+      "order_index": 1
+    },
+    {
+      "name": "So sánh giống nhau",
+      "structure": "A + 跟 + B + 一样 + tính từ",
+      "explanation": "Nêu hai đối tượng giống nhau ở một tính chất.",
+      "usage": "Phủ định thường dùng 不一样; khi đã nêu cả hai đối tượng làm chủ ngữ, không cần lặp 跟.",
+      "example": "这两个房间一样漂亮。\nzhè liǎng gè fáng jiān yī yàng piào liàng 。\nHai căn phòng này đẹp như nhau.",
+      "note": "Phủ định thường dùng 不一样; khi đã nêu cả hai đối tượng làm chủ ngữ, không cần lặp 跟.",
+      "order_index": 2
+    },
+    {
+      "name": "Ngoài…ra với 除了",
+      "structure": "除了 + A +（以外），还/也 + B",
+      "explanation": "Bổ sung một đối tượng hoặc tình huống bên cạnh A.",
+      "usage": "除了…都… có thể biểu thị ngoại trừ; cần nhìn từ đi kèm để hiểu là bổ sung hay loại trừ.",
+      "example": "除了北京以外，我还去了上海。\nchú le běi jīng yǐ wài ， wǒ hái qù le shàng hǎi 。\nNgoài Bắc Kinh ra, tôi còn đến Thượng Hải.",
+      "note": "除了…都… có thể biểu thị ngoại trừ; cần nhìn từ đi kèm để hiểu là bổ sung hay loại trừ.",
+      "order_index": 3
+    },
+    {
+      "name": "Mức độ rất cao với 极了",
+      "structure": "Tính từ + 极了",
+      "explanation": "Nhấn mạnh tính chất ở mức độ rất cao.",
+      "usage": "Không thêm 很 ngay trước tính từ trong mẫu này.",
+      "example": "天气舒服极了。\ntiān qì shū fú jí le 。\nThời tiết cực kỳ dễ chịu.",
+      "note": "Không thêm 很 ngay trước tính từ trong mẫu này.",
+      "order_index": 4
+    },
+    {
+      "name": "Toàn bộ với 全",
+      "structure": "全 + danh từ / chủ ngữ + 全 + động từ",
+      "explanation": "Nêu toàn thể một nhóm hoặc phạm vi.",
+      "usage": "全家 là cả gia đình; 全部 nhấn mạnh toàn bộ, không thay thế máy móc trong mọi vị trí.",
+      "example": "我们全家一起去旅行。\nwǒ men quán jiā yì qǐ qù lǚ xíng 。\nCả gia đình chúng tôi cùng đi du lịch.",
+      "note": "全家 là cả gia đình; 全部 nhấn mạnh toàn bộ, không thay thế máy móc trong mọi vị trí.",
+      "order_index": 5
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Kể về kỳ nghỉ hè",
+      "content": "老师：各位同学，来说说你们去年的暑假是怎么过的？\n刘明：老师，我去年暑假跟家人一起去北京旅游。我们去了故宫、颐和园、天坛等等。\n老师：你觉得北京的夏天怎么样？\n刘明：来中国以前，听说夏天太阳很大，但我觉得北京一点儿也不热。\n老师：你觉得北京的天气跟你国家的一样吗？\n刘明：不一样，我们国家的夏天非常热。\n老师：谢谢刘明。安娜呢？\n安娜：老师，我去年暑假给旅游团当了翻译。\n老师：很不错。你觉得当翻译累不累？\n安娜：因为我很喜欢当翻译，所以我一点儿都不累。",
+      "pinyin": "lǎo shī ： gè wèi tóng xué ， lái shuō shuō nǐ men qù nián de shǔ jià shì zěn me guò de ？\nliú míng ： lǎo shī ， wǒ qù nián shǔ jià gēn jiā rén yì qǐ qù běi jīng lǚ yóu 。 wǒ men qù le gù gōng 、 yí hé yuán 、 tiān tán děng děng 。\nlǎo shī ： nǐ jué de běi jīng de xià tiān zěn me yàng ？\nliú míng ： lái zhōng guó yǐ qián ， tīng shuō xià tiān tài yáng hěn dà ， dàn wǒ jué de běi jīng yì diǎn ér yě bù rè 。\nlǎo shī ： nǐ jué de běi jīng de tiān qì gēn nǐ guó jiā de yī yàng ma ？\nliú míng ： bù yí yàng ， wǒ men guó jiā de xià tiān fēi cháng rè 。\nlǎo shī ： xiè xiè liú míng 。 ān nà ne ？\nān nà ： lǎo shī ， wǒ qù nián shǔ jià gěi lǚ yóu tuán dāng le fān yì 。\nlǎo shī ： hěn bú cuò 。 nǐ jué de dāng fān yì lèi bù lèi ？\nān nà ： yīn wèi wǒ hěn xǐ huān dāng fān yì ， suǒ yǐ wǒ yì diǎn ér dōu bù lèi 。",
+      "vietnamese_translation": "Thầy giáo: Các em hãy kể về kỳ nghỉ hè năm ngoái nhé.\nLưu Minh: Thưa thầy, hè năm ngoái em cùng gia đình đến Bắc Kinh du lịch. Chúng em đến Cố Cung, Di Hòa Viên, Thiên Đàn và những nơi khác.\nThầy giáo: Em thấy mùa hè Bắc Kinh thế nào?\nLưu Minh: Trước khi đến Trung Quốc, em nghe nói mùa hè nắng rất gắt, nhưng em thấy Bắc Kinh không nóng chút nào.\nThầy giáo: Thời tiết Bắc Kinh có giống nước em không?\nLưu Minh: Không giống, mùa hè nước em rất nóng.\nThầy giáo: Cảm ơn Lưu Minh. Còn Anna?\nAnna: Thưa thầy, hè năm ngoái em làm phiên dịch cho đoàn du lịch.\nThầy giáo: Tốt lắm. Em thấy làm phiên dịch có mệt không?\nAnna: Vì rất thích công việc phiên dịch nên em không mệt chút nào.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 3, bài khóa 1."
+    },
+    {
+      "order_index": 2,
+      "title": "Tham quan các thành phố",
+      "content": "小刚：小李，这次旅游你去哪儿了？\n小李：我跟家人一起去北京参观。\n小刚：真羡慕你，你们去了哪些旅游景点？\n小李：除了故宫、颐和园以外，我们也参观了天坛和北京胡同。\n小刚：你们是怎么去的？\n小李：在北京我们一般坐地铁，有时候坐出租车。\n小刚：你和家人只在北京玩儿吗？\n小李：除了北京以外，我还去了上海和南京。\n小刚：你觉得这三个城市怎么样？\n小李：我觉得北京的风景跟南京的一样美。我觉得上海不太好玩儿。\n小刚：为什么呢？\n小李：除了上海迪士尼乐园以外，别的地方我都不去，所以我觉得有点儿无聊。",
+      "pinyin": "xiǎo gāng ： xiǎo lǐ ， zhè cì lǚ yóu nǐ qù nǎ ér le ？\nxiǎo lǐ ： wǒ gēn jiā rén yì qǐ qù běi jīng cān guān 。\nxiǎo gāng ： zhēn xiàn mù nǐ ， nǐ men qù le nǎ xiē lǚ yóu jǐng diǎn ？\nxiǎo lǐ ： chú le gù gōng 、 yí hé yuán yǐ wài ， wǒ men yě cān guān le tiān tán hé běi jīng hú tòng 。\nxiǎo gāng ： nǐ men shì zěn me qù de ？\nxiǎo lǐ ： zài běi jīng wǒ men yì bān zuò dì tiě ， yǒu shí hòu zuò chū zū chē 。\nxiǎo gāng ： nǐ hé jiā rén zhǐ zài běi jīng wán ér ma ？\nxiǎo lǐ ： chú le běi jīng yǐ wài ， wǒ hái qù le shàng hǎi hé nán jīng 。\nxiǎo gāng ： nǐ jué de zhè sān gè chéng shì zěn me yàng ？\nxiǎo lǐ ： wǒ jué de běi jīng de fēng jǐng gēn nán jīng de yī yàng měi 。 wǒ jué de shàng hǎi bù tài hǎo wán ér 。\nxiǎo gāng ： wèi shén me ne ？\nxiǎo lǐ ： chú le shàng hǎi dí shì ní lè yuán yǐ wài ， bié de dì fāng wǒ dōu bù qù ， suǒ yǐ wǒ jué de yǒu diǎn ér wú liáo 。",
+      "vietnamese_translation": "Tiểu Cương: Tiểu Lý, chuyến du lịch này bạn đi đâu?\nTiểu Lý: Mình cùng gia đình đến Bắc Kinh tham quan.\nTiểu Cương: Ngưỡng mộ bạn thật, các bạn đến những điểm tham quan nào?\nTiểu Lý: Ngoài Cố Cung và Di Hòa Viên, chúng mình còn tham quan Thiên Đàn và các ngõ truyền thống Bắc Kinh.\nTiểu Cương: Các bạn đi bằng phương tiện gì?\nTiểu Lý: Ở Bắc Kinh, chúng mình thường đi tàu điện ngầm, đôi khi đi taxi.\nTiểu Cương: Bạn và gia đình chỉ chơi ở Bắc Kinh thôi à?\nTiểu Lý: Ngoài Bắc Kinh, mình còn đến Thượng Hải và Nam Kinh.\nTiểu Cương: Bạn thấy ba thành phố này thế nào?\nTiểu Lý: Mình thấy phong cảnh Bắc Kinh đẹp như Nam Kinh. Mình thấy Thượng Hải không thú vị lắm.\nTiểu Cương: Vì sao?\nTiểu Lý: Ngoài Disneyland Thượng Hải, mình không đi nơi nào khác nên thấy hơi chán.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 3, bài khóa 2."
+    },
+    {
+      "order_index": 3,
+      "title": "Chọn điểm đến cho kỳ nghỉ",
+      "content": "小明：妈妈，快放假了。我们去哪儿旅行呢？\n妈妈：你想去哪儿旅行？去年我们已经去北京和上海了，今年你想去草原还是海边？\n小明：我都想去。去草原可以看羊和牛，还可以骑马。去海边可以游泳，也可以吃海鲜。\n妈妈：那我们这个假期一起去海边旅游吧。我们也好久没吃海鲜了。\n小明：太好了！那我先看看机票和酒店吧。妈妈你看，这个酒店怎么样？还有那个酒店？\n妈妈：这个酒店的房间跟那个酒店的一样漂亮，哪个更便宜？\n小明：这个酒店更便宜。他们还有接送服务。\n妈妈：很好，那晚上我先跟你爸爸聊一聊，然后我们先订酒店和机票。",
+      "pinyin": "xiǎo míng ： mā mā ， kuài fàng jià le 。 wǒ men qù nǎ ér lǚ xíng ne ？\nmā mā ： nǐ xiǎng qù nǎ ér lǚ xíng ？ qù nián wǒ men yǐ jīng qù běi jīng hé shàng hǎi le ， jīn nián nǐ xiǎng qù cǎo yuán hái shì hǎi biān ？\nxiǎo míng ： wǒ dōu xiǎng qù 。 qù cǎo yuán kě yǐ kàn yáng hé niú ， hái kě yǐ qí mǎ 。 qù hǎi biān kě yǐ yóu yǒng ， yě kě yǐ chī hǎi xiān 。\nmā mā ： nà wǒ men zhè ge jià qī yì qǐ qù hǎi biān lǚ yóu ba 。 wǒ men yě hǎo jiǔ méi chī hǎi xiān le 。\nxiǎo míng ： tài hǎo le ！ nà wǒ xiān kàn kàn jī piào hé jiǔ diàn ba 。 mā mā nǐ kàn ， zhè ge jiǔ diàn zěn me yàng ？ hái yǒu nà ge jiǔ diàn ？\nmā mā ： zhè ge jiǔ diàn de fáng jiān gēn nà ge jiǔ diàn de yī yàng piào liàng ， nǎ ge gèng pián yi ？\nxiǎo míng ： zhè ge jiǔ diàn gèng pián yi 。 tā men hái yǒu jiē sòng fú wù 。\nmā mā ： hěn hǎo ， nà wǎn shàng wǒ xiān gēn nǐ bà bà liáo yī liáo ， rán hòu wǒ men xiān dìng jiǔ diàn hé jī piào 。",
+      "vietnamese_translation": "Tiểu Minh: Mẹ ơi, sắp nghỉ rồi. Mình đi du lịch đâu nhỉ?\nMẹ: Con muốn đi đâu? Năm ngoái mình đã đi Bắc Kinh và Thượng Hải, năm nay con muốn đến thảo nguyên hay bờ biển?\nTiểu Minh: Con muốn đi cả hai. Đến thảo nguyên có thể xem cừu, bò và cưỡi ngựa; đến biển có thể bơi và ăn hải sản.\nMẹ: Vậy kỳ nghỉ này mình cùng đi biển nhé. Cũng lâu rồi nhà mình chưa ăn hải sản.\nTiểu Minh: Tuyệt quá! Vậy con xem vé máy bay và khách sạn trước. Mẹ xem khách sạn này thế nào? Còn khách sạn kia?\nMẹ: Phòng khách sạn này đẹp như khách sạn kia, chỗ nào rẻ hơn?\nTiểu Minh: Chỗ này rẻ hơn, còn có dịch vụ đưa đón.\nMẹ: Tốt, tối mẹ nói chuyện với bố rồi mình đặt khách sạn và vé máy bay trước.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 3, bài khóa 3."
+    },
+    {
+      "order_index": 4,
+      "title": "Trải nghiệm thảo nguyên Tân Cương",
+      "content": "今年秋天，我和家人一起去了新疆的草原旅游。新疆的风景跟画儿一样美。以前我听说秋天的草原会很冷，但是到新疆以后，我觉得一点儿也不冷，天气舒服极了。在草原上，除了羊和牛以外，我们还体验了骑马。我爸爸骑得很好，但我骑得一般。到了晚上，我们全家人一起吃羊肉、喝热茶。新疆的秋天真的很特别，新疆人非常热情。虽然只有五天，但我一点儿都不觉得无聊。如果明年有时间，我还想再去一次。",
+      "pinyin": "jīn nián qiū tiān ， wǒ hé jiā rén yì qǐ qù le xīn jiāng de cǎo yuán lǚ yóu 。 xīn jiāng de fēng jǐng gēn huà ér yī yàng měi 。 yǐ qián wǒ tīng shuō qiū tiān de cǎo yuán huì hěn lěng ， dàn shì dào xīn jiāng yǐ hòu ， wǒ jué de yì diǎn ér yě bù lěng ， tiān qì shū fú jí le 。 zài cǎo yuán shàng ， chú le yáng hé niú yǐ wài ， wǒ men hái tǐ yàn le qí mǎ 。 wǒ bà bà qí de hěn hǎo ， dàn wǒ qí de yì bān 。 dào le wǎn shàng ， wǒ men quán jiā rén yì qǐ chī yáng ròu 、 hē rè chá 。 xīn jiāng de qiū tiān zhēn de hěn tè bié ， xīn jiāng rén fēi cháng rè qíng 。 suī rán zhǐ yǒu wǔ tiān ， dàn wǒ yì diǎn ér dōu bù jué de wú liáo 。 rú guǒ míng nián yǒu shí jiān ， wǒ hái xiǎng zài qù yī cì 。",
+      "vietnamese_translation": "Mùa thu năm nay, tôi cùng gia đình đến thảo nguyên Tân Cương du lịch. Phong cảnh Tân Cương đẹp như tranh. Trước đây tôi nghe nói mùa thu trên thảo nguyên rất lạnh, nhưng đến nơi lại thấy không lạnh chút nào, thời tiết cực kỳ dễ chịu. Trên thảo nguyên, ngoài xem cừu và bò, chúng tôi còn trải nghiệm cưỡi ngựa. Bố tôi cưỡi rất giỏi, còn tôi ở mức bình thường. Buổi tối, cả gia đình cùng ăn thịt cừu, uống trà nóng. Mùa thu Tân Cương thật đặc biệt, người dân rất nhiệt tình. Dù chỉ có năm ngày, tôi không thấy buồn chán chút nào. Nếu năm sau có thời gian, tôi còn muốn đến lần nữa.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 3, bài khóa 4."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 3 · Bài 3 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp của bài này và các bài trước; đạt từ 80%, được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "source_documents": {
+    "vocabulary": "DOCX",
+    "theory": "DOCX"
+  },
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 1).",
+      "options": [
+        {
+          "option_text": "nửa cân",
+          "is_correct": false
+        },
+        {
+          "option_text": "ngày (cách ghi trang trọng)",
+          "is_correct": false
+        },
+        {
+          "option_text": "địa điểm tham quan",
+          "is_correct": true
+        },
+        {
+          "option_text": "rảnh, có thời gian rảnh",
+          "is_correct": false
+        }
+      ],
+      "rubric": "景点 (jǐngdiǎn) — địa điểm tham quan. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "景点"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 3
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “冬天” (dōngtiān) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "thực đơn",
+          "is_correct": false
+        },
+        {
+          "option_text": "đi; rời đi",
+          "is_correct": false
+        },
+        {
+          "option_text": "có ngoại hình ...",
+          "is_correct": false
+        },
+        {
+          "option_text": "mùa đông",
+          "is_correct": true
+        }
+      ],
+      "rubric": "冬天 (dōngtiān) — mùa đông. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 3
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “xīnjiāng” — Tân Cương.",
+      "options": [
+        {
+          "option_text": "上",
+          "is_correct": false
+        },
+        {
+          "option_text": "讲解",
+          "is_correct": false
+        },
+        {
+          "option_text": "新疆",
+          "is_correct": true
+        },
+        {
+          "option_text": "游泳",
+          "is_correct": false
+        }
+      ],
+      "rubric": "新疆 (xīnjiāng) — Tân Cương. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 3
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “羊” (yáng) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "chậm",
+          "is_correct": false
+        },
+        {
+          "option_text": "đi bộ",
+          "is_correct": false
+        },
+        {
+          "option_text": "cua",
+          "is_correct": false
+        },
+        {
+          "option_text": "dê, cừu",
+          "is_correct": true
+        }
+      ],
+      "rubric": "羊 (yáng) — dê, cừu. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 3
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “极了” (jí le) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "cực kỳ, vô cùng (sau tính từ)",
+          "is_correct": true
+        },
+        {
+          "option_text": "chó",
+          "is_correct": false
+        },
+        {
+          "option_text": "thì sao, còn ... (hỏi tiếp); trợ từ cuối câu",
+          "is_correct": false
+        },
+        {
+          "option_text": "chơi",
+          "is_correct": false
+        }
+      ],
+      "rubric": "极了 (jí le) — cực kỳ, vô cùng (sau tính từ). ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 3
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “hǎibiān” — bờ biển, ven biển.",
+      "options": [
+        {
+          "option_text": "下午",
+          "is_correct": false
+        },
+        {
+          "option_text": "几",
+          "is_correct": false
+        },
+        {
+          "option_text": "还",
+          "is_correct": false
+        },
+        {
+          "option_text": "海边",
+          "is_correct": true
+        }
+      ],
+      "rubric": "海边 (hǎibiān) — bờ biển, ven biển. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 3
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 7).",
+      "options": [
+        {
+          "option_text": "con cái",
+          "is_correct": false
+        },
+        {
+          "option_text": "những… nào",
+          "is_correct": false
+        },
+        {
+          "option_text": "ngõ, hẻm truyền thống ở Bắc Kinh",
+          "is_correct": true
+        },
+        {
+          "option_text": "màu xanh lam",
+          "is_correct": false
+        }
+      ],
+      "rubric": "胡同 (hútòng) — ngõ, hẻm truyền thống ở Bắc Kinh. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "胡同"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 3
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “夏天” (xiàtiān) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "tuổi",
+          "is_correct": false
+        },
+        {
+          "option_text": "người",
+          "is_correct": false
+        },
+        {
+          "option_text": "đăng ký (tham gia)",
+          "is_correct": false
+        },
+        {
+          "option_text": "mùa hè",
+          "is_correct": true
+        }
+      ],
+      "rubric": "夏天 (xiàtiān) — mùa hè. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 3
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “xiā” — tôm.",
+      "options": [
+        {
+          "option_text": "过",
+          "is_correct": false
+        },
+        {
+          "option_text": "虾",
+          "is_correct": true
+        },
+        {
+          "option_text": "全家",
+          "is_correct": false
+        },
+        {
+          "option_text": "远",
+          "is_correct": false
+        }
+      ],
+      "rubric": "虾 (xiā) — tôm. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 3
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "con (lượng từ cho một số động vật)",
+          "is_correct": false
+        },
+        {
+          "option_text": "hai (số 2)",
+          "is_correct": false
+        },
+        {
+          "option_text": "khách sạn",
+          "is_correct": true
+        },
+        {
+          "option_text": "khá, tương đối; so sánh",
+          "is_correct": false
+        }
+      ],
+      "rubric": "酒店 (jiǔdiàn) — khách sạn. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "酒店"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 3
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “螃蟹” (pángxiè) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "không ... lắm",
+          "is_correct": false
+        },
+        {
+          "option_text": "công viên Disneyland",
+          "is_correct": false
+        },
+        {
+          "option_text": "cua",
+          "is_correct": true
+        },
+        {
+          "option_text": "xe buýt",
+          "is_correct": false
+        }
+      ],
+      "rubric": "螃蟹 (pángxiè) — cua. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 3
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “cānguān” — tham quan.",
+      "options": [
+        {
+          "option_text": "觉得",
+          "is_correct": false
+        },
+        {
+          "option_text": "脚",
+          "is_correct": false
+        },
+        {
+          "option_text": "参观",
+          "is_correct": true
+        },
+        {
+          "option_text": "全家",
+          "is_correct": false
+        }
+      ],
+      "rubric": "参观 (cānguān) — tham quan. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 3
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “mực ống” (pinyin: yóuyú).",
+      "reference_answer": "鱿鱼",
+      "rubric": "Đáp án: 鱿鱼 (yóuyú). ",
+      "config": {
+        "accepted_answers": [
+          "鱿鱼"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 3
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “ngưỡng mộ, ao ước được như ai” (pinyin: xiànmù).",
+      "reference_answer": "羡慕",
+      "rubric": "Đáp án: 羡慕 (xiànmù). ",
+      "config": {
+        "accepted_answers": [
+          "羡慕"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 3
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “cả gia đình” (pinyin: quánjiā).",
+      "reference_answer": "全家",
+      "rubric": "Đáp án: 全家 (quánjiā). ",
+      "config": {
+        "accepted_answers": [
+          "全家"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 3
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “phong cảnh” (pinyin: fēngjǐng).",
+      "reference_answer": "风景",
+      "rubric": "Đáp án: 风景 (fēngjǐng). ",
+      "config": {
+        "accepted_answers": [
+          "风景"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 3
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối các từ với nghĩa đã học (nhóm 1).",
+      "rubric": "左: trái, bên trái ; 北方: miền Bắc, phương Bắc ; 国家: quốc gia, đất nước ; 冬天: mùa đông",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "左"
+          },
+          {
+            "id": "l1",
+            "text": "北方"
+          },
+          {
+            "id": "l2",
+            "text": "国家"
+          },
+          {
+            "id": "l3",
+            "text": "冬天"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r2",
+            "text": "quốc gia, đất nước"
+          },
+          {
+            "id": "r0",
+            "text": "trái, bên trái"
+          },
+          {
+            "id": "r3",
+            "text": "mùa đông"
+          },
+          {
+            "id": "r1",
+            "text": "miền Bắc, phương Bắc"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        },
+        {
+          "hsk": 3,
+          "lesson": 3
+        },
+        {
+          "hsk": 3,
+          "lesson": 3
+        },
+        {
+          "hsk": 3,
+          "lesson": 3
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối các từ với nghĩa đã học (nhóm 2).",
+      "rubric": "各: mỗi, từng; các ; 旱季: mùa khô ; 无聊: buồn chán, tẻ nhạt ; 全家: cả gia đình",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "各"
+          },
+          {
+            "id": "l1",
+            "text": "旱季"
+          },
+          {
+            "id": "l2",
+            "text": "无聊"
+          },
+          {
+            "id": "l3",
+            "text": "全家"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r2",
+            "text": "buồn chán, tẻ nhạt"
+          },
+          {
+            "id": "r3",
+            "text": "cả gia đình"
+          },
+          {
+            "id": "r1",
+            "text": "mùa khô"
+          },
+          {
+            "id": "r0",
+            "text": "mỗi, từng; các"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 3
+        },
+        {
+          "hsk": 3,
+          "lesson": 3
+        },
+        {
+          "hsk": 3,
+          "lesson": 3
+        },
+        {
+          "hsk": 3,
+          "lesson": 3
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "北京一点儿也___热。",
+      "options": [
+        {
+          "option_text": "是",
+          "is_correct": false
+        },
+        {
+          "option_text": "没",
+          "is_correct": false
+        },
+        {
+          "option_text": "在",
+          "is_correct": false
+        },
+        {
+          "option_text": "不",
+          "is_correct": true
+        }
+      ],
+      "rubric": "一点儿也不 + tính từ phủ định hoàn toàn mức độ.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 3
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "这两个房间___漂亮。",
+      "options": [
+        {
+          "option_text": "一直",
+          "is_correct": false
+        },
+        {
+          "option_text": "一共",
+          "is_correct": false
+        },
+        {
+          "option_text": "已经",
+          "is_correct": false
+        },
+        {
+          "option_text": "一样",
+          "is_correct": true
+        }
+      ],
+      "rubric": "一样 + tính từ diễn tả hai đối tượng giống nhau về tính chất.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 3
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "除了北京以外，我___去了上海。",
+      "options": [
+        {
+          "option_text": "是",
+          "is_correct": false
+        },
+        {
+          "option_text": "在",
+          "is_correct": false
+        },
+        {
+          "option_text": "还",
+          "is_correct": true
+        },
+        {
+          "option_text": "的",
+          "is_correct": false
+        }
+      ],
+      "rubric": "除了…还… bổ sung một địa điểm bên cạnh địa điểm đã nêu.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 3
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Phủ định hoàn toàn”, cách hiểu nào đúng (mục 1)?",
+      "options": [
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nhấn mạnh không có một đối tượng nào hoặc không có chút mức độ nào.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Nhấn mạnh không có một đối tượng nào hoặc không có chút mức độ nào. Dùng 没 với hành động chưa xảy ra, 不 với tính chất hoặc sự phủ định thông thường theo ngữ cảnh.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 3
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “So sánh giống nhau”, cách hiểu nào đúng (mục 2)?",
+      "options": [
+        {
+          "option_text": "Nêu hai đối tượng giống nhau ở một tính chất.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Nêu hai đối tượng giống nhau ở một tính chất. Phủ định thường dùng 不一样; khi đã nêu cả hai đối tượng làm chủ ngữ, không cần lặp 跟.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 3
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Ngoài…ra với 除了”, cách hiểu nào đúng (mục 3)?",
+      "options": [
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Bổ sung một đối tượng hoặc tình huống bên cạnh A.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Bổ sung một đối tượng hoặc tình huống bên cạnh A. 除了…都… có thể biểu thị ngoại trừ; cần nhìn từ đi kèm để hiểu là bổ sung hay loại trừ.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 3
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Bắc Kinh không nóng chút nào. (câu 1).",
+      "reference_answer": "北京一点儿也不热。",
+      "rubric": "Câu đúng: 北京一点儿也不热。 — Bắc Kinh không nóng chút nào. Dùng 没 với hành động chưa xảy ra, 不 với tính chất hoặc sự phủ định thông thường theo ngữ cảnh.",
+      "config": {
+        "items": [
+          {
+            "id": "t4",
+            "text": "热"
+          },
+          {
+            "id": "t5",
+            "text": "。"
+          },
+          {
+            "id": "t2",
+            "text": "也"
+          },
+          {
+            "id": "t1",
+            "text": "一点儿"
+          },
+          {
+            "id": "t3",
+            "text": "不"
+          },
+          {
+            "id": "t0",
+            "text": "北京"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 3
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Hai căn phòng này đẹp như nhau. (câu 2).",
+      "reference_answer": "这两个房间一样漂亮。",
+      "rubric": "Câu đúng: 这两个房间一样漂亮。 — Hai căn phòng này đẹp như nhau. Phủ định thường dùng 不一样; khi đã nêu cả hai đối tượng làm chủ ngữ, không cần lặp 跟.",
+      "config": {
+        "items": [
+          {
+            "id": "t3",
+            "text": "房间"
+          },
+          {
+            "id": "t6",
+            "text": "。"
+          },
+          {
+            "id": "t1",
+            "text": "两"
+          },
+          {
+            "id": "t4",
+            "text": "一样"
+          },
+          {
+            "id": "t0",
+            "text": "这"
+          },
+          {
+            "id": "t2",
+            "text": "个"
+          },
+          {
+            "id": "t5",
+            "text": "漂亮"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 3
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Ngoài Bắc Kinh ra, tôi còn đến Thượng Hải. (câu 3).",
+      "reference_answer": "除了北京以外，我还去了上海。",
+      "rubric": "Câu đúng: 除了北京以外，我还去了上海。 — Ngoài Bắc Kinh ra, tôi còn đến Thượng Hải. 除了…都… có thể biểu thị ngoại trừ; cần nhìn từ đi kèm để hiểu là bổ sung hay loại trừ.",
+      "config": {
+        "items": [
+          {
+            "id": "t6",
+            "text": "还"
+          },
+          {
+            "id": "t8",
+            "text": "了"
+          },
+          {
+            "id": "t7",
+            "text": "去"
+          },
+          {
+            "id": "t10",
+            "text": "海"
+          },
+          {
+            "id": "t5",
+            "text": "我"
+          },
+          {
+            "id": "t11",
+            "text": "。"
+          },
+          {
+            "id": "t1",
+            "text": "北京"
+          },
+          {
+            "id": "t4",
+            "text": "，"
+          },
+          {
+            "id": "t3",
+            "text": "外"
+          },
+          {
+            "id": "t2",
+            "text": "以"
+          },
+          {
+            "id": "t9",
+            "text": "上"
+          },
+          {
+            "id": "t0",
+            "text": "除了"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 3
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Thời tiết cực kỳ dễ chịu. (câu 4).",
+      "reference_answer": "天气舒服极了。",
+      "rubric": "Câu đúng: 天气舒服极了。 — Thời tiết cực kỳ dễ chịu. Không thêm 很 ngay trước tính từ trong mẫu này.",
+      "config": {
+        "items": [
+          {
+            "id": "t1",
+            "text": "舒服"
+          },
+          {
+            "id": "t2",
+            "text": "极了"
+          },
+          {
+            "id": "t3",
+            "text": "。"
+          },
+          {
+            "id": "t0",
+            "text": "天气"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 3
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Cả gia đình chúng tôi cùng đi du lịch. (câu 5).",
+      "reference_answer": "我们全家一起去旅行。",
+      "rubric": "Câu đúng: 我们全家一起去旅行。 — Cả gia đình chúng tôi cùng đi du lịch. 全家 là cả gia đình; 全部 nhấn mạnh toàn bộ, không thay thế máy móc trong mọi vị trí.",
+      "config": {
+        "items": [
+          {
+            "id": "t0",
+            "text": "我"
+          },
+          {
+            "id": "t1",
+            "text": "们"
+          },
+          {
+            "id": "t5",
+            "text": "旅行"
+          },
+          {
+            "id": "t2",
+            "text": "全家"
+          },
+          {
+            "id": "t6",
+            "text": "。"
+          },
+          {
+            "id": "t3",
+            "text": "一起"
+          },
+          {
+            "id": "t4",
+            "text": "去"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 3
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Các em hãy kể về kỳ nghỉ hè năm ngoái nhé. (câu 6).",
+      "reference_answer": "各位同学，来说说你们去年的暑假是怎么过的？",
+      "rubric": "Câu đúng: 各位同学，来说说你们去年的暑假是怎么过的？ — Các em hãy kể về kỳ nghỉ hè năm ngoái nhé. Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t11",
+            "text": "暑假"
+          },
+          {
+            "id": "t6",
+            "text": "说"
+          },
+          {
+            "id": "t16",
+            "text": "？"
+          },
+          {
+            "id": "t9",
+            "text": "去年"
+          },
+          {
+            "id": "t12",
+            "text": "是"
+          },
+          {
+            "id": "t4",
+            "text": "来"
+          },
+          {
+            "id": "t3",
+            "text": "，"
+          },
+          {
+            "id": "t1",
+            "text": "位"
+          },
+          {
+            "id": "t5",
+            "text": "说"
+          },
+          {
+            "id": "t10",
+            "text": "的"
+          },
+          {
+            "id": "t0",
+            "text": "各"
+          },
+          {
+            "id": "t14",
+            "text": "过"
+          },
+          {
+            "id": "t2",
+            "text": "同学"
+          },
+          {
+            "id": "t13",
+            "text": "怎么"
+          },
+          {
+            "id": "t7",
+            "text": "你"
+          },
+          {
+            "id": "t15",
+            "text": "的"
+          },
+          {
+            "id": "t8",
+            "text": "们"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12",
+          "t13",
+          "t14",
+          "t15",
+          "t16"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 3
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ]
+}

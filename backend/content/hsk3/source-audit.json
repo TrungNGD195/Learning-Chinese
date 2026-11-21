@@ -1,0 +1,386 @@
+{
+  "removed_duplicates": [
+    {
+      "lesson": 2,
+      "hanzi": "初中",
+      "pinyin": "chū zhōng",
+      "meaning": "trung học cơ sở",
+      "first_seen": {
+        "hsk": 1,
+        "lesson": 11
+      }
+    },
+    {
+      "lesson": 2,
+      "hanzi": "花",
+      "pinyin": "huā",
+      "meaning": "hoa; tiêu, tốn (tiền, thời gian)",
+      "first_seen": {
+        "hsk": 2,
+        "lesson": 6
+      }
+    },
+    {
+      "lesson": 4,
+      "hanzi": "晴天",
+      "pinyin": "qíng tiān",
+      "meaning": "ngày trời quang, có nắng",
+      "first_seen": {
+        "hsk": 1,
+        "lesson": 12
+      }
+    },
+    {
+      "lesson": 6,
+      "hanzi": "售货员",
+      "pinyin": "shòuhuòyuán",
+      "meaning": "nhân viên bán hàng",
+      "first_seen": {
+        "hsk": 1,
+        "lesson": 10
+      }
+    },
+    {
+      "lesson": 6,
+      "hanzi": "一共",
+      "pinyin": "yī gòng",
+      "meaning": "tổng cộng",
+      "first_seen": {
+        "hsk": 1,
+        "lesson": 10
+      }
+    },
+    {
+      "lesson": 7,
+      "hanzi": "检查",
+      "pinyin": "jiǎn chá",
+      "meaning": "kiểm tra, khám",
+      "first_seen": {
+        "hsk": 2,
+        "lesson": 8
+      }
+    },
+    {
+      "lesson": 9,
+      "hanzi": "作业",
+      "pinyin": "zuò yè",
+      "meaning": "bài tập về nhà",
+      "first_seen": {
+        "hsk": 2,
+        "lesson": 10
+      }
+    },
+    {
+      "lesson": 12,
+      "hanzi": "纸",
+      "pinyin": "zhǐ",
+      "meaning": "giấy",
+      "first_seen": {
+        "hsk": 3,
+        "lesson": 2
+      }
+    }
+  ],
+  "corrections": [
+    {
+      "lesson": 1,
+      "reading": 2,
+      "correction": "Rejoined and reordered displaced waiter lines, preserving the source meaning."
+    },
+    {
+      "lesson": 3,
+      "reading": 2,
+      "before": "真美慕",
+      "after": "真羡慕"
+    },
+    {
+      "lesson": 3,
+      "reading": 2,
+      "before": "小季：",
+      "after": "小李："
+    },
+    {
+      "lesson": 3,
+      "reading": 3,
+      "before": "这个假期去一起去",
+      "after": "这个假期一起去"
+    },
+    {
+      "lesson": 3,
+      "reading": 3,
+      "before": "海鲜了民",
+      "after": "海鲜了。"
+    },
+    {
+      "lesson": 4,
+      "reading": 4,
+      "before": "我已经发到你的那封邮件了",
+      "after": "我已经把照片发到你的邮箱了"
+    },
+    {
+      "lesson": 6,
+      "reading": 1,
+      "before": "那不售货员",
+      "after": "那个售货员"
+    },
+    {
+      "lesson": 6,
+      "reading": 4,
+      "before": "非常漂亮裙子",
+      "after": "非常漂亮的裙子"
+    },
+    {
+      "lesson": 6,
+      "reading": 4,
+      "before": "黃色",
+      "after": "黄色"
+    },
+    {
+      "lesson": 9,
+      "reading": 3,
+      "before": "后而还有",
+      "after": "后面还有"
+    },
+    {
+      "lesson": 10,
+      "reading": 1,
+      "before": "英邊",
+      "after": "英语"
+    },
+    {
+      "lesson": 10,
+      "reading": 2,
+      "before": "按排",
+      "after": "安排"
+    },
+    {
+      "lesson": 10,
+      "reading": 4,
+      "before": "水果和莱",
+      "after": "水果和菜"
+    },
+    {
+      "lesson": 11,
+      "reading": 3,
+      "before": "小季：",
+      "after": "小李："
+    },
+    {
+      "lesson": 13,
+      "reading": 2,
+      "before": "者得很差",
+      "after": "考得很差"
+    },
+    {
+      "lesson": 13,
+      "reading": 2,
+      "before": "我有，点",
+      "after": "我有点"
+    },
+    {
+      "lesson": 13,
+      "reading": 2,
+      "before": "题戒也",
+      "after": "题我也"
+    },
+    {
+      "lesson": 13,
+      "reading": 2,
+      "before": "犯錯",
+      "after": "犯错"
+    },
+    {
+      "lesson": 13,
+      "reading": 2,
+      "before": "我••我",
+      "after": "我……我"
+    },
+    {
+      "lesson": 13,
+      "reading": 4,
+      "before": "无法见面日子里",
+      "after": "无法见面的日子里"
+    },
+    {
+      "lesson": 14,
+      "reading": 4,
+      "before": "这里是全国最大的动物园",
+      "after": "这里的动物园很大"
+    },
+    {
+      "lesson": 15,
+      "reading": 2,
+      "before": "又好吃又张阿姨漂亮",
+      "after": "又好吃又漂亮"
+    }
+  ],
+  "lesson_3": "Merged the two complementary parts; retained four distinct readings.",
+  "source_file": "HSK3.0 H1-3 Từ mới tổng hợp.docx",
+  "source_sha256": "fb0daf3b29c4279b6acd501c2b0bc487c15bb47a8561c5bdbcd2af6a6a6240bd",
+  "lessons": 15,
+  "vocabulary": 448,
+  "grammar": 47,
+  "readings": 60,
+  "questions": 450,
+  "policy": "Only supplied DOCX concepts. Added Vietnamese explanations/translations, pinyin, contextual examples and deterministic exercises; no external syllabus or live model calls.",
+  "summaries": [
+    {
+      "lesson": 1,
+      "vocabulary": 29,
+      "grammar": 3,
+      "readings": 4,
+      "questions": 30
+    },
+    {
+      "lesson": 2,
+      "vocabulary": 24,
+      "grammar": 3,
+      "readings": 4,
+      "questions": 30
+    },
+    {
+      "lesson": 3,
+      "vocabulary": 50,
+      "grammar": 5,
+      "readings": 4,
+      "questions": 30
+    },
+    {
+      "lesson": 4,
+      "vocabulary": 30,
+      "grammar": 3,
+      "readings": 4,
+      "questions": 30
+    },
+    {
+      "lesson": 5,
+      "vocabulary": 34,
+      "grammar": 4,
+      "readings": 4,
+      "questions": 30
+    },
+    {
+      "lesson": 6,
+      "vocabulary": 25,
+      "grammar": 3,
+      "readings": 4,
+      "questions": 30
+    },
+    {
+      "lesson": 7,
+      "vocabulary": 29,
+      "grammar": 3,
+      "readings": 4,
+      "questions": 30
+    },
+    {
+      "lesson": 8,
+      "vocabulary": 24,
+      "grammar": 2,
+      "readings": 4,
+      "questions": 30
+    },
+    {
+      "lesson": 9,
+      "vocabulary": 24,
+      "grammar": 2,
+      "readings": 4,
+      "questions": 30
+    },
+    {
+      "lesson": 10,
+      "vocabulary": 35,
+      "grammar": 3,
+      "readings": 4,
+      "questions": 30
+    },
+    {
+      "lesson": 11,
+      "vocabulary": 25,
+      "grammar": 4,
+      "readings": 4,
+      "questions": 30
+    },
+    {
+      "lesson": 12,
+      "vocabulary": 27,
+      "grammar": 2,
+      "readings": 4,
+      "questions": 30
+    },
+    {
+      "lesson": 13,
+      "vocabulary": 36,
+      "grammar": 4,
+      "readings": 4,
+      "questions": 30
+    },
+    {
+      "lesson": 14,
+      "vocabulary": 30,
+      "grammar": 3,
+      "readings": 4,
+      "questions": 30
+    },
+    {
+      "lesson": 15,
+      "vocabulary": 26,
+      "grammar": 3,
+      "readings": 4,
+      "questions": 30
+    }
+  ],
+  "lexical_corrections": [
+    {
+      "term": "空调",
+      "source": "kòngtiáo",
+      "corrected": "kōngtiáo"
+    },
+    {
+      "term": "照相机",
+      "source": "zhàojiāngjī",
+      "corrected": "zhàoxiàngjī"
+    },
+    {
+      "term": "封",
+      "source": "fèng",
+      "corrected": "fēng"
+    },
+    {
+      "term": "受到",
+      "source": "shōudào",
+      "corrected": "shòudào"
+    },
+    {
+      "term": "活泼",
+      "source": "活波 huóbō",
+      "corrected": "活泼 huópō"
+    },
+    {
+      "term": "逛",
+      "source": "guāng",
+      "corrected": "guàng"
+    },
+    {
+      "term": "拖后腿",
+      "source": "拖…后退",
+      "corrected": "拖后腿"
+    }
+  ],
+  "grammar_clarifications": [
+    "不比 phủ nhận A hơn B, không tự khẳng định bằng nhau.",
+    "Phủ định câu 把 không cấm mọi cách dùng 不把; phân biệt phủ định sự việc đã xảy ra với phủ định ý định.",
+    "Giữ ví dụ so sánh 早一个小时关门 thay vì áp dụng một trật tự từ cố định cho mọi kiểu so sánh.",
+    "每 có thể kết hợp trực tiếp với đơn vị thời gian như 每天、每年."
+  ],
+  "pinyin_context_review": [
+    "慢慢还: 还 đọc huán trong ngữ cảnh trả tiền.",
+    "雪地上: 地 đọc dì chỉ nơi chốn, không phải trợ từ de.",
+    "来得了/来不了: 了 đọc liǎo, không phải trợ từ le.",
+    "睡着: 着 đọc zháo chỉ kết quả; 站着 đọc zhe chỉ trạng thái."
+  ],
+  "added_examples": {
+    "authored_example_dictionary_entries": 84,
+    "purpose": "Fill missing examples and shorten overly long passages while retaining DOCX concepts."
+  }
+}

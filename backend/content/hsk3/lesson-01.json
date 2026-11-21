@@ -1,0 +1,1917 @@
+{
+  "key": "hsk3-lesson-01-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 3,
+    "lesson_number": 1,
+    "title": "你想吃什么就点什么 · Bạn muốn ăn gì thì gọi món đó",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "饿",
+      "pinyin": "è",
+      "vietnamese_meaning": "đói",
+      "part_of_speech": "tính từ",
+      "source_key": "3:1:饿",
+      "note": null,
+      "order_index": 1,
+      "example": "爸，妈，你们饿了吧？\nbà ， mā ， nǐ men è le ba ？\nBố mẹ đói rồi nhỉ?"
+    },
+    {
+      "hanzi": "点",
+      "pinyin": "diǎn",
+      "vietnamese_meaning": "gọi, chọn (món ăn)",
+      "part_of_speech": "động từ",
+      "source_key": "3:1:点",
+      "note": "点菜 là gọi/chọn món; khác 点 chỉ giờ hoặc dấu chấm. Trong 想喝点儿什么, 点儿 lại chỉ một chút. Nhắc lại HSK 1 bài 7: 点 (diǎn) — giờ (đơn vị chỉ thời điểm). Trong ngữ cảnh bài này: gọi, chọn (món ăn).",
+      "order_index": 2,
+      "example": "您点吧！\nnín diǎn ba ！\nMẹ gọi món đi!"
+    },
+    {
+      "hanzi": "点菜",
+      "pinyin": "diǎncài",
+      "vietnamese_meaning": "gọi món",
+      "part_of_speech": "động từ",
+      "source_key": "3:1:点菜",
+      "note": null,
+      "order_index": 3,
+      "example": "我们先看菜单，再点菜。\nwǒ men xiān kàn cài dān ， zài diǎn cài 。\nChúng ta xem thực đơn trước rồi gọi món."
+    },
+    {
+      "hanzi": "请客",
+      "pinyin": "qǐngkè",
+      "vietnamese_meaning": "mời, đãi khách",
+      "part_of_speech": "động từ",
+      "source_key": "3:1:请客",
+      "note": null,
+      "order_index": 4,
+      "example": "今天是妈妈的生日，你们想吃什么就点什么，我请客。\njīn tiān shì mā mā de shēng rì ， nǐ men xiǎng chī shén me jiù diǎn shén me ， wǒ qǐng kè 。\nHôm nay là sinh nhật mẹ, bố mẹ muốn ăn gì thì gọi món đó, con mời."
+    },
+    {
+      "hanzi": "担心",
+      "pinyin": "dānxīn",
+      "vietnamese_meaning": "lo lắng",
+      "part_of_speech": "động từ",
+      "source_key": "3:1:担心",
+      "note": null,
+      "order_index": 5,
+      "example": "您别担心，这家饭馆是我朋友开的，菜又便宜又好吃。\nnín bié dān xīn ， zhè jiā fàn guǎn shì wǒ péng yǒu kāi de ， cài yòu pián yi yòu hǎo chī 。\nMẹ đừng lo, nhà hàng này do bạn con mở, món ăn vừa rẻ vừa ngon."
+    },
+    {
+      "hanzi": "菜单",
+      "pinyin": "càidān",
+      "vietnamese_meaning": "thực đơn",
+      "part_of_speech": "danh từ",
+      "source_key": "3:1:菜单",
+      "note": null,
+      "order_index": 6,
+      "example": "您看，菜单上有很多菜。\nnín kàn ， cài dān shàng yǒu hěn duō cài 。\nMẹ xem, thực đơn có nhiều món lắm."
+    },
+    {
+      "hanzi": "饮料",
+      "pinyin": "yǐnliào",
+      "vietnamese_meaning": "đồ uống",
+      "part_of_speech": "danh từ",
+      "source_key": "3:1:饮料",
+      "note": null,
+      "order_index": 7,
+      "example": "你想喝什么饮料？\nnǐ xiǎng hē shén me yǐn liào ？\nBạn muốn uống đồ uống gì?"
+    },
+    {
+      "hanzi": "四川烤鱼",
+      "pinyin": "sìchuānkǎoyú",
+      "vietnamese_meaning": "cá nướng Tứ Xuyên",
+      "part_of_speech": "danh từ",
+      "source_key": "3:1:四川烤鱼",
+      "note": null,
+      "order_index": 8,
+      "example": "那我们点四川烤鱼和饺子吧。\nnà wǒ men diǎn sì chuān kǎo yú hé jiǎo zi ba 。\nVậy gọi cá nướng Tứ Xuyên và sủi cảo nhé."
+    },
+    {
+      "hanzi": "渴",
+      "pinyin": "kě",
+      "vietnamese_meaning": "khát",
+      "part_of_speech": "tính từ",
+      "source_key": "3:1:渴",
+      "note": null,
+      "order_index": 9,
+      "example": "你们渴了吗？\nnǐ men kě le ma ？\nBố mẹ khát chưa?"
+    },
+    {
+      "hanzi": "绿茶",
+      "pinyin": "lǜchá",
+      "vietnamese_meaning": "trà xanh",
+      "part_of_speech": "danh từ",
+      "source_key": "3:1:绿茶",
+      "note": null,
+      "order_index": 10,
+      "example": "喝杯绿茶吧！\nhē bēi lǜ chá ba ！\nUống một cốc trà xanh nhé!"
+    },
+    {
+      "hanzi": "碗",
+      "pinyin": "wǎn",
+      "vietnamese_meaning": "bát; lượng từ chỉ bát thức ăn",
+      "part_of_speech": "danh từ, lượng từ",
+      "source_key": "3:1:碗",
+      "note": null,
+      "order_index": 11,
+      "example": "好，那我喝一碗鸡汤。\nhǎo ， nà wǒ hē yī wǎn jī tāng 。\nVâng, vậy con uống một bát canh gà."
+    },
+    {
+      "hanzi": "尝",
+      "pinyin": "cháng",
+      "vietnamese_meaning": "nếm, ăn thử",
+      "part_of_speech": "động từ",
+      "source_key": "3:1:尝",
+      "note": null,
+      "order_index": 12,
+      "example": "最好吃的是鱼肉，你们尝尝，看喜欢不喜欢。\nzuì hǎo chī de shì yú ròu ， nǐ men cháng cháng ， kàn xǐ huān bù xǐ huān 。\nNgon nhất là cá, các bạn ăn thử xem có thích không."
+    },
+    {
+      "hanzi": "醋鱼",
+      "pinyin": "cùyú",
+      "vietnamese_meaning": "cá sốt giấm",
+      "part_of_speech": "danh từ",
+      "source_key": "3:1:醋鱼",
+      "note": null,
+      "order_index": 13,
+      "example": "好，那给我一份醋鱼，一份饺子、一碗鸡汤和一瓶啤酒。\nhǎo ， nà gěi wǒ yī fèn cù yú ， yī fèn jiǎo zi 、 yī wǎn jī tāng hé yī píng pí jiǔ 。\nVậy cho tôi một suất cá sốt giấm, một suất sủi cảo, một bát canh gà và một chai bia."
+    },
+    {
+      "hanzi": "瓶",
+      "pinyin": "píng",
+      "vietnamese_meaning": "chai, lọ; lượng từ cho đồ đựng trong chai",
+      "part_of_speech": "lượng từ",
+      "source_key": "3:1:瓶",
+      "note": null,
+      "order_index": 14,
+      "example": "记住再点两瓶啤酒！\njì zhù zài diǎn liǎng píng pí jiǔ ！\nNhớ đặt thêm hai chai bia nhé!"
+    },
+    {
+      "hanzi": "勺子",
+      "pinyin": "sháozi",
+      "vietnamese_meaning": "thìa, muỗng",
+      "part_of_speech": "danh từ",
+      "source_key": "3:1:勺子",
+      "note": null,
+      "order_index": 15,
+      "example": "您的勺子。\nnín de sháo zi 。\nThìa của quý khách đây."
+    },
+    {
+      "hanzi": "筷子",
+      "pinyin": "kuàizi",
+      "vietnamese_meaning": "đũa",
+      "part_of_speech": "danh từ",
+      "source_key": "3:1:筷子",
+      "note": null,
+      "order_index": 16,
+      "example": "啊，再给我拿一个勺子，我不会用筷子。\na ， zài gěi wǒ ná yí gè sháo zi ， wǒ bú huì yòng kuài zi 。\nÀ, lấy thêm cho tôi một chiếc thìa, tôi không biết dùng đũa."
+    },
+    {
+      "hanzi": "死",
+      "pinyin": "sǐ",
+      "vietnamese_meaning": "chết; chỉ mức độ rất cao sau tính từ",
+      "part_of_speech": "động từ, bổ ngữ",
+      "source_key": "3:1:死",
+      "note": "Trong 累死了, 死 nhấn mạnh mệt quá mức theo lối nói cường điệu, không diễn tả một cái chết thật.",
+      "order_index": 17,
+      "example": "老公，今天我累死了，晚饭我们点外卖吧。\nlǎo gōng ， jīn tiān wǒ lèi sǐ le ， wǎn fàn wǒ men diǎn wài mài ba 。\nAnh ơi, hôm nay em mệt quá, bữa tối mình đặt đồ ăn nhé."
+    },
+    {
+      "hanzi": "外卖",
+      "pinyin": "wàimài",
+      "vietnamese_meaning": "đồ ăn giao tận nơi",
+      "part_of_speech": "danh từ",
+      "source_key": "3:1:外卖",
+      "note": null,
+      "order_index": 18,
+      "example": "老公，今天我累死了，晚饭我们点外卖吧。\nlǎo gōng ， jīn tiān wǒ lèi sǐ le ， wǎn fàn wǒ men diǎn wài mài ba 。\nAnh ơi, hôm nay em mệt quá, bữa tối mình đặt đồ ăn nhé."
+    },
+    {
+      "hanzi": "点外卖",
+      "pinyin": "diǎnwàimài",
+      "vietnamese_meaning": "đặt đồ ăn giao tận nơi",
+      "part_of_speech": "động từ",
+      "source_key": "3:1:点外卖",
+      "note": null,
+      "order_index": 19,
+      "example": "老公，今天我累死了，晚饭我们点外卖吧。\nlǎo gōng ， jīn tiān wǒ lèi sǐ le ， wǎn fàn wǒ men diǎn wài mài ba 。\nAnh ơi, hôm nay em mệt quá, bữa tối mình đặt đồ ăn nhé."
+    },
+    {
+      "hanzi": "服务员",
+      "pinyin": "fúwùyuán",
+      "vietnamese_meaning": "nhân viên phục vụ",
+      "part_of_speech": "danh từ",
+      "source_key": "3:1:服务员",
+      "note": null,
+      "order_index": 20,
+      "example": "那儿的服务员很热情，但是我觉得不太好吃。\nnà ér de fú wù yuán hěn rè qíng ， dàn shì wǒ jué de bù tài hǎo chī 。\nNhân viên rất nhiệt tình nhưng em thấy không ngon lắm."
+    },
+    {
+      "hanzi": "海南",
+      "pinyin": "hǎinán",
+      "vietnamese_meaning": "Hải Nam",
+      "part_of_speech": "tên riêng",
+      "source_key": "3:1:海南",
+      "note": null,
+      "order_index": 21,
+      "example": "你想吃海南鸡饭吗？\nnǐ xiǎng chī hǎi nán jī fàn ma ？\nAnh muốn ăn cơm gà Hải Nam không?"
+    },
+    {
+      "hanzi": "记住",
+      "pinyin": "jìzhù",
+      "vietnamese_meaning": "nhớ kỹ, ghi nhớ",
+      "part_of_speech": "động từ",
+      "source_key": "3:1:记住",
+      "note": null,
+      "order_index": 22,
+      "example": "记住再点两瓶啤酒！\njì zhù zài diǎn liǎng píng pí jiǔ ！\nNhớ đặt thêm hai chai bia nhé!"
+    },
+    {
+      "hanzi": "下单",
+      "pinyin": "xiàdān",
+      "vietnamese_meaning": "đặt đơn hàng",
+      "part_of_speech": "động từ",
+      "source_key": "3:1:下单",
+      "note": null,
+      "order_index": 23,
+      "example": "好，我马上下单。\nhǎo ， wǒ mǎ shàng xià dān 。\nVâng, em đặt ngay đây."
+    },
+    {
+      "hanzi": "香菜",
+      "pinyin": "xiāngcài",
+      "vietnamese_meaning": "rau mùi, ngò rí",
+      "part_of_speech": "danh từ",
+      "source_key": "3:1:香菜",
+      "note": null,
+      "order_index": 24,
+      "example": "对了，你不是不吃香菜吗？\nduì le ， nǐ bú shì bù chī xiāng cài ma ？\nÀ, chẳng phải em không ăn rau mùi sao?"
+    },
+    {
+      "hanzi": "选",
+      "pinyin": "xuǎn",
+      "vietnamese_meaning": "chọn",
+      "part_of_speech": "động từ",
+      "source_key": "3:1:选",
+      "note": null,
+      "order_index": 25,
+      "example": "你来选吧。\nnǐ lái xuǎn ba 。\nEm chọn đi."
+    },
+    {
+      "hanzi": "别的",
+      "pinyin": "biéde",
+      "vietnamese_meaning": "khác, những cái khác",
+      "part_of_speech": "đại từ",
+      "source_key": "3:1:别的",
+      "note": "别的 thường đi trước danh từ: 别的地方, hoặc thay cho đồ/vật khác đã biết trong ngữ cảnh.",
+      "order_index": 26,
+      "example": "我们选别的吧。\nwǒ men xuǎn bié de ba 。\nMình chọn món khác nhé."
+    },
+    {
+      "hanzi": "备注",
+      "pinyin": "bèizhù",
+      "vietnamese_meaning": "ghi chú",
+      "part_of_speech": "danh từ, động từ",
+      "source_key": "3:1:备注",
+      "note": null,
+      "order_index": 27,
+      "example": "不用，我在这儿写一下备注就行，很方便！\nbù yòng ， wǒ zài zhè ér xiě yī xià bèi zhù jiù xíng ， hěn fāng biàn ！\nKhông cần đâu, em ghi chú ở đây là được, rất tiện!"
+    },
+    {
+      "hanzi": "简单",
+      "pinyin": "jiǎndān",
+      "vietnamese_meaning": "đơn giản",
+      "part_of_speech": "tính từ",
+      "source_key": "3:1:简单",
+      "note": null,
+      "order_index": 28,
+      "example": "我希望以后工作不这么忙，有时间跟妈妈一起做饭，然后一边吃饭一边聊天儿，又简单又开心。\nwǒ xī wàng yǐ hòu gōng zuò bù zhè me máng ， yǒu shí jiān gēn mā mā yì qǐ zuò fàn ， rán hòu yī biān chī fàn yī biān liáo tiān ér ， yòu jiǎn dān yòu kāi xīn 。\nTôi mong sau này công việc bớt bận, có thời gian cùng mẹ nấu ăn, rồi vừa ăn vừa trò chuyện, vừa đơn giản vừa vui."
+    },
+    {
+      "hanzi": "复杂",
+      "pinyin": "fùzá",
+      "vietnamese_meaning": "phức tạp",
+      "part_of_speech": "tính từ",
+      "source_key": "3:1:复杂",
+      "note": null,
+      "order_index": 29,
+      "example": "这个问题不太复杂。\nzhè ge wèn tí bù tài fù zá 。\nVấn đề này không phức tạp lắm."
+    }
+  ],
+  "grammar": [
+    {
+      "name": "Vừa…vừa… với 又…又…",
+      "structure": "Chủ ngữ + 又 + tính chất 1 + 又 + tính chất 2",
+      "explanation": "Nêu hai tính chất cùng có ở một người hoặc sự vật.",
+      "usage": "Hai thành phần cần song song; không dùng để diễn tả hai hành động luân phiên.",
+      "example": "菜又便宜又好吃。\ncài yòu pián yi yòu hǎo chī 。\nMón ăn vừa rẻ vừa ngon.",
+      "note": "Hai thành phần cần song song; không dùng để diễn tả hai hành động luân phiên.",
+      "order_index": 1
+    },
+    {
+      "name": "Đại từ nghi vấn trong câu trần thuật",
+      "structure": "想…什么，就…什么 / 什么…都…",
+      "explanation": "什么, 谁, 哪儿 có thể biểu thị lựa chọn tùy ý hoặc bao quát, tùy cấu trúc.",
+      "usage": "Đây không phải câu hỏi; trong dạng lặp, hai đại từ chỉ cùng một đối tượng.",
+      "example": "你想吃什么就点什么。\nnǐ xiǎng chī shén me jiù diǎn shén me 。\nBạn muốn ăn gì thì gọi món đó.",
+      "note": "Đây không phải câu hỏi; trong dạng lặp, hai đại từ chỉ cùng một đối tượng.",
+      "order_index": 2
+    },
+    {
+      "name": "Hỏi xác nhận với 吧",
+      "structure": "Mệnh đề phỏng đoán + 吧？",
+      "explanation": "Người nói đã có phỏng đoán và muốn xác nhận.",
+      "usage": "Phân biệt với 吧 trong lời đề nghị: 我们吃鱼吧 là lời rủ cùng ăn cá.",
+      "example": "你们饿了吧？\nnǐ men è le ba ？\nMọi người đói rồi nhỉ?",
+      "note": "Phân biệt với 吧 trong lời đề nghị: 我们吃鱼吧 là lời rủ cùng ăn cá.",
+      "order_index": 3
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Gọi món cùng bố mẹ",
+      "content": "小丽：爸，妈，你们饿了吧？今天是妈妈的生日，你们想吃什么就点什么，我请客。\n妈妈：在家吃就可以了，在饭馆吃太贵了！\n小丽：您别担心，这家饭馆是我朋友开的，菜又便宜又好吃。您看，菜单上有很多菜。您点吧！\n妈妈：我们吃鱼吧，你和你爸都喜欢吃鱼，我们也好久没吃鱼了。\n小丽：那我们点四川烤鱼和饺子吧。你们渴了吗？你们想喝点儿什么吗？\n妈妈：喝杯绿茶吧！\n小丽：好，那我喝一碗鸡汤。",
+      "pinyin": "xiǎo lì ： bà ， mā ， nǐ men è le ba ？ jīn tiān shì mā mā de shēng rì ， nǐ men xiǎng chī shén me jiù diǎn shén me ， wǒ qǐng kè 。\nmā mā ： zài jiā chī jiù kě yǐ le ， zài fàn guǎn chī tài guì le ！\nxiǎo lì ： nín bié dān xīn ， zhè jiā fàn guǎn shì wǒ péng yǒu kāi de ， cài yòu pián yi yòu hǎo chī 。 nín kàn ， cài dān shàng yǒu hěn duō cài 。 nín diǎn ba ！\nmā mā ： wǒ men chī yú ba ， nǐ hé nǐ bà dōu xǐ huān chī yú ， wǒ men yě hǎo jiǔ méi chī yú le 。\nxiǎo lì ： nà wǒ men diǎn sì chuān kǎo yú hé jiǎo zi ba 。 nǐ men kě le ma ？ nǐ men xiǎng hē diǎn ér shén me ma ？\nmā mā ： hē bēi lǜ chá ba ！\nxiǎo lì ： hǎo ， nà wǒ hē yī wǎn jī tāng 。",
+      "vietnamese_translation": "Tiểu Lệ: Bố mẹ đói rồi nhỉ? Hôm nay là sinh nhật mẹ, bố mẹ muốn ăn gì thì gọi món đó, con mời.\nMẹ: Ăn ở nhà là được rồi, ăn ở nhà hàng đắt quá!\nTiểu Lệ: Mẹ đừng lo, nhà hàng này do bạn con mở, món ăn vừa rẻ vừa ngon. Mẹ xem, thực đơn có nhiều món lắm. Mẹ gọi món đi!\nMẹ: Chúng ta ăn cá nhé, con và bố đều thích cá, cũng lâu rồi nhà mình chưa ăn cá.\nTiểu Lệ: Vậy gọi cá nướng Tứ Xuyên và sủi cảo nhé. Bố mẹ khát chưa? Có muốn uống chút gì không?\nMẹ: Uống một cốc trà xanh nhé!\nTiểu Lệ: Vâng, vậy con uống một bát canh gà.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 1, bài khóa 1."
+    },
+    {
+      "order_index": 2,
+      "title": "Chọn món ở nhà hàng",
+      "content": "麦克：小丽，你想吃什么？\n小丽：你想吃什么就点什么，我吃什么都可以。\n麦克：你们饭店有什么好吃的菜吗？\n服务员：我们饭店哪个菜都很好吃。最好吃的是鱼肉，你们尝尝，看喜欢不喜欢。\n麦克：好，那给我一份醋鱼，一份饺子、一碗鸡汤和一瓶啤酒。\n服务员：好的。\n麦克：啊，再给我拿一个勺子，我不会用筷子。\n服务员：您的勺子。请慢用！",
+      "pinyin": "mài kè ： xiǎo lì ， nǐ xiǎng chī shén me ？\nxiǎo lì ： nǐ xiǎng chī shén me jiù diǎn shén me ， wǒ chī shén me dōu kě yǐ 。\nmài kè ： nǐ men fàn diàn yǒu shén me hǎo chī de cài ma ？\nfú wù yuán ： wǒ men fàn diàn nǎ ge cài dōu hěn hǎo chī 。 zuì hǎo chī de shì yú ròu ， nǐ men cháng cháng ， kàn xǐ huān bù xǐ huān 。\nmài kè ： hǎo ， nà gěi wǒ yī fèn cù yú ， yī fèn jiǎo zi 、 yī wǎn jī tāng hé yī píng pí jiǔ 。\nfú wù yuán ： hǎo de 。\nmài kè ： a ， zài gěi wǒ ná yí gè sháo zi ， wǒ bú huì yòng kuài zi 。\nfú wù yuán ： nín de sháo zi 。 qǐng màn yòng ！",
+      "vietnamese_translation": "Mike: Tiểu Lệ, bạn muốn ăn gì?\nTiểu Lệ: Bạn muốn ăn gì thì gọi món đó, mình ăn gì cũng được.\nMike: Nhà hàng có món nào ngon không?\nNhân viên phục vụ: Món nào của nhà hàng cũng ngon. Ngon nhất là cá, các bạn ăn thử xem có thích không.\nMike: Vậy cho tôi một suất cá sốt giấm, một suất sủi cảo, một bát canh gà và một chai bia.\nNhân viên phục vụ: Vâng.\nMike: À, lấy thêm cho tôi một chiếc thìa, tôi không biết dùng đũa.\nNhân viên phục vụ: Thìa của quý khách đây. Mời quý khách dùng bữa!",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 1, bài khóa 2."
+    },
+    {
+      "order_index": 3,
+      "title": "Đặt đồ ăn tại nhà",
+      "content": "小丽：老公，今天我累死了，晚饭我们点外卖吧。\n小刚：好啊，你想吃什么？你来选吧。\n小丽：我看看，这家我吃过了。那儿的服务员很热情，但是我觉得不太好吃。你想吃海南鸡饭吗？\n小刚：好啊，我们一边吃鸡饭，一边喝啤酒。记住再点两瓶啤酒！\n小丽：好，我马上下单。\n小刚：对了，你不是不吃香菜吗？我们选别的吧。\n小丽：不用，我在这儿写一下备注就行，很方便！",
+      "pinyin": "xiǎo lì ： lǎo gōng ， jīn tiān wǒ lèi sǐ le ， wǎn fàn wǒ men diǎn wài mài ba 。\nxiǎo gāng ： hǎo a ， nǐ xiǎng chī shén me ？ nǐ lái xuǎn ba 。\nxiǎo lì ： wǒ kàn kàn ， zhè jiā wǒ chī guò le 。 nà ér de fú wù yuán hěn rè qíng ， dàn shì wǒ jué de bù tài hǎo chī 。 nǐ xiǎng chī hǎi nán jī fàn ma ？\nxiǎo gāng ： hǎo a ， wǒ men yī biān chī jī fàn ， yī biān hē pí jiǔ 。 jì zhù zài diǎn liǎng píng pí jiǔ ！\nxiǎo lì ： hǎo ， wǒ mǎ shàng xià dān 。\nxiǎo gāng ： duì le ， nǐ bú shì bù chī xiāng cài ma ？ wǒ men xuǎn bié de ba 。\nxiǎo lì ： bù yòng ， wǒ zài zhè ér xiě yī xià bèi zhù jiù xíng ， hěn fāng biàn ！",
+      "vietnamese_translation": "Tiểu Lệ: Anh ơi, hôm nay em mệt quá, bữa tối mình đặt đồ ăn nhé.\nTiểu Cương: Được, em muốn ăn gì? Em chọn đi.\nTiểu Lệ: Để em xem, quán này em ăn rồi. Nhân viên rất nhiệt tình nhưng em thấy không ngon lắm. Anh muốn ăn cơm gà Hải Nam không?\nTiểu Cương: Được, mình vừa ăn cơm gà vừa uống bia. Nhớ đặt thêm hai chai bia nhé!\nTiểu Lệ: Vâng, em đặt ngay đây.\nTiểu Cương: À, chẳng phải em không ăn rau mùi sao? Mình chọn món khác nhé.\nTiểu Lệ: Không cần đâu, em ghi chú ở đây là được, rất tiện!",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 1, bài khóa 3."
+    },
+    {
+      "order_index": 4,
+      "title": "Bữa tối sau giờ làm",
+      "content": "我的工作很忙，每天晚上7点才下班，所以没有时间做饭。医生说晚上不用吃太多，所以我的晚饭也很简单，家里有什么就吃什么，一块蛋糕或者一碗方便面，没有了就点外卖。\n现在点外卖很方便，在手机上什么菜都有，想吃什么就点什么，他们就送给我们。我在很多饭馆吃过很多好吃的菜，但是我最想吃的是妈妈做的菜。我希望以后工作不这么忙，有时间跟妈妈一起做饭，然后一边吃饭一边聊天儿，又简单又开心。",
+      "pinyin": "wǒ de gōng zuò hěn máng ， měi tiān wǎn shàng 7 diǎn cái xià bān ， suǒ yǐ méi yǒu shí jiān zuò fàn 。 yī shēng shuō wǎn shàng bù yòng chī tài duō ， suǒ yǐ wǒ de wǎn fàn yě hěn jiǎn dān ， jiā lǐ yǒu shén me jiù chī shén me ， yī kuài dàn gāo huò zhě yī wǎn fāng biàn miàn ， méi yǒu le jiù diǎn wài mài 。\nxiàn zài diǎn wài mài hěn fāng biàn ， zài shǒu jī shàng shén me cài dōu yǒu ， xiǎng chī shén me jiù diǎn shén me ， tā men jiù sòng gěi wǒ men 。 wǒ zài hěn duō fàn guǎn chī guò hěn duō hǎo chī de cài ， dàn shì wǒ zuì xiǎng chī de shì mā mā zuò de cài 。 wǒ xī wàng yǐ hòu gōng zuò bù zhè me máng ， yǒu shí jiān gēn mā mā yì qǐ zuò fàn ， rán hòu yī biān chī fàn yī biān liáo tiān ér ， yòu jiǎn dān yòu kāi xīn 。",
+      "vietnamese_translation": "Công việc của tôi rất bận, mỗi tối bảy giờ mới tan làm nên không có thời gian nấu ăn. Bác sĩ nói buổi tối không cần ăn quá nhiều, vì vậy bữa tối của tôi cũng đơn giản: ở nhà có gì thì ăn đó, một miếng bánh kem hoặc một bát mì ăn liền; hết đồ ăn thì đặt giao tận nơi.\nBây giờ đặt đồ ăn rất tiện, trên điện thoại có đủ món, muốn ăn gì thì đặt món đó và người ta giao đến. Tôi đã ăn nhiều món ngon ở nhiều nhà hàng, nhưng món tôi muốn ăn nhất vẫn là món mẹ nấu. Tôi mong sau này công việc bớt bận, có thời gian cùng mẹ nấu ăn, rồi vừa ăn vừa trò chuyện, vừa đơn giản vừa vui.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 1, bài khóa 4."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 3 · Bài 1 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp của bài này và các bài trước; đạt từ 80%, được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "source_documents": {
+    "vocabulary": "DOCX",
+    "theory": "DOCX"
+  },
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 1).",
+      "options": [
+        {
+          "option_text": "vượt quá",
+          "is_correct": true
+        },
+        {
+          "option_text": "họ (nữ)",
+          "is_correct": false
+        },
+        {
+          "option_text": "lên mạng",
+          "is_correct": false
+        },
+        {
+          "option_text": "nhanh lên, nhanh một chút",
+          "is_correct": false
+        }
+      ],
+      "rubric": "超过 (chāoguò) — vượt quá. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true,
+          "audio_text": "超过"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 10
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “复杂” (fùzá) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "hoan nghênh, chào đón",
+          "is_correct": false
+        },
+        {
+          "option_text": "giúp, giúp đỡ",
+          "is_correct": false
+        },
+        {
+          "option_text": "phức tạp",
+          "is_correct": true
+        },
+        {
+          "option_text": "chiếc (lượng từ cho đồng hồ); miếng",
+          "is_correct": false
+        }
+      ],
+      "rubric": "复杂 (fùzá) — phức tạp. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 1
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “dānxīn” — lo lắng.",
+      "options": [
+        {
+          "option_text": "担心",
+          "is_correct": true
+        },
+        {
+          "option_text": "健康",
+          "is_correct": false
+        },
+        {
+          "option_text": "蛋糕",
+          "is_correct": false
+        },
+        {
+          "option_text": "机场",
+          "is_correct": false
+        }
+      ],
+      "rubric": "担心 (dānxīn) — lo lắng. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 1
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “千” (qiān) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "sữa bò",
+          "is_correct": false
+        },
+        {
+          "option_text": "nghìn",
+          "is_correct": true
+        },
+        {
+          "option_text": "không/chưa",
+          "is_correct": false
+        },
+        {
+          "option_text": "số điện thoại di động",
+          "is_correct": false
+        }
+      ],
+      "rubric": "千 (qiān) — nghìn. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 1
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “饮料” (yǐnliào) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "thủ đô",
+          "is_correct": false
+        },
+        {
+          "option_text": "bạn trai",
+          "is_correct": false
+        },
+        {
+          "option_text": "đồ uống",
+          "is_correct": true
+        },
+        {
+          "option_text": "quá, lắm",
+          "is_correct": false
+        }
+      ],
+      "rubric": "饮料 (yǐnliào) — đồ uống. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 1
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “bàng” — giỏi, tuyệt vời.",
+      "options": [
+        {
+          "option_text": "一会儿",
+          "is_correct": false
+        },
+        {
+          "option_text": "复杂",
+          "is_correct": false
+        },
+        {
+          "option_text": "棒",
+          "is_correct": true
+        },
+        {
+          "option_text": "懂",
+          "is_correct": false
+        }
+      ],
+      "rubric": "棒 (bàng) — giỏi, tuyệt vời. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 5
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 7).",
+      "options": [
+        {
+          "option_text": "gọi món",
+          "is_correct": true
+        },
+        {
+          "option_text": "chúng (đồ vật/động vật)",
+          "is_correct": false
+        },
+        {
+          "option_text": "bài tập, câu hỏi",
+          "is_correct": false
+        },
+        {
+          "option_text": "con gái",
+          "is_correct": false
+        }
+      ],
+      "rubric": "点菜 (diǎncài) — gọi món. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "点菜"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 1
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “瓶” (píng) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "xe máy",
+          "is_correct": false
+        },
+        {
+          "option_text": "tự mình",
+          "is_correct": false
+        },
+        {
+          "option_text": "lại, thêm; rồi, tiếp theo (hành động chưa thực hiện)",
+          "is_correct": false
+        },
+        {
+          "option_text": "chai, lọ; lượng từ cho đồ đựng trong chai",
+          "is_correct": true
+        }
+      ],
+      "rubric": "瓶 (píng) — chai, lọ; lượng từ cho đồ đựng trong chai. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 1
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “xiāngcài” — rau mùi, ngò rí.",
+      "options": [
+        {
+          "option_text": "香菜",
+          "is_correct": true
+        },
+        {
+          "option_text": "睡觉",
+          "is_correct": false
+        },
+        {
+          "option_text": "行李",
+          "is_correct": false
+        },
+        {
+          "option_text": "慢",
+          "is_correct": false
+        }
+      ],
+      "rubric": "香菜 (xiāngcài) — rau mùi, ngò rí. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 1
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "đặt đồ ăn giao tận nơi",
+          "is_correct": true
+        },
+        {
+          "option_text": "mấy",
+          "is_correct": false
+        },
+        {
+          "option_text": "đến",
+          "is_correct": false
+        },
+        {
+          "option_text": "sau đó, rồi",
+          "is_correct": false
+        }
+      ],
+      "rubric": "点外卖 (diǎnwàimài) — đặt đồ ăn giao tận nơi. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "点外卖"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 1
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “饿” (è) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "luyện, tập",
+          "is_correct": false
+        },
+        {
+          "option_text": "Vương Nhất Tuyết (tên người)",
+          "is_correct": false
+        },
+        {
+          "option_text": "đói",
+          "is_correct": true
+        },
+        {
+          "option_text": "năm nay",
+          "is_correct": false
+        }
+      ],
+      "rubric": "饿 (è) — đói. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 1
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “qiánbian” — phía trước.",
+      "options": [
+        {
+          "option_text": "筷子",
+          "is_correct": false
+        },
+        {
+          "option_text": "前边",
+          "is_correct": true
+        },
+        {
+          "option_text": "西瓜",
+          "is_correct": false
+        },
+        {
+          "option_text": "妈妈",
+          "is_correct": false
+        }
+      ],
+      "rubric": "前边 (qiánbian) — phía trước. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “cá sốt giấm” (pinyin: cùyú).",
+      "reference_answer": "醋鱼",
+      "rubric": "Đáp án: 醋鱼 (cùyú). ",
+      "config": {
+        "accepted_answers": [
+          "醋鱼"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 1
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “nếm, ăn thử” (pinyin: cháng).",
+      "reference_answer": "尝",
+      "rubric": "Đáp án: 尝 (cháng). ",
+      "config": {
+        "accepted_answers": [
+          "尝"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 1
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “nhân viên phục vụ” (pinyin: fúwùyuán).",
+      "reference_answer": "服务员",
+      "rubric": "Đáp án: 服务员 (fúwùyuán). ",
+      "config": {
+        "accepted_answers": [
+          "服务员"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 1
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “đón, mừng (sinh nhật, lễ tết)” (pinyin: guò).",
+      "reference_answer": "过",
+      "rubric": "Đáp án: 过 (guò). 过生日 là đón/mừng sinh nhật, 过 đọc guò và là động từ; khác trợ từ trải nghiệm 过 guo sau động từ đã gặp. Nhắc lại HSK2 bài 3: 过 (guo) nghĩa là đã từng (trải nghiệm trong quá khứ). Trong bài này: đón, mừng (sinh nhật, lễ tết).",
+      "config": {
+        "accepted_answers": [
+          "过"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 4
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối các từ với nghĩa đã học (nhóm 1).",
+      "rubric": "过: đón, mừng (sinh nhật, lễ tết) ; 结束: kết thúc ; 菜单: thực đơn ; 筷子: đũa",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "过"
+          },
+          {
+            "id": "l1",
+            "text": "结束"
+          },
+          {
+            "id": "l2",
+            "text": "菜单"
+          },
+          {
+            "id": "l3",
+            "text": "筷子"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r2",
+            "text": "thực đơn"
+          },
+          {
+            "id": "r0",
+            "text": "đón, mừng (sinh nhật, lễ tết)"
+          },
+          {
+            "id": "r1",
+            "text": "kết thúc"
+          },
+          {
+            "id": "r3",
+            "text": "đũa"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 4
+        },
+        {
+          "hsk": 2,
+          "lesson": 7
+        },
+        {
+          "hsk": 3,
+          "lesson": 1
+        },
+        {
+          "hsk": 3,
+          "lesson": 1
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối các từ với nghĩa đã học (nhóm 2).",
+      "rubric": "过: đón, mừng (sinh nhật, lễ tết) ; 结束: kết thúc ; 请客: mời, đãi khách ; 尝: nếm, ăn thử",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "过"
+          },
+          {
+            "id": "l1",
+            "text": "结束"
+          },
+          {
+            "id": "l2",
+            "text": "请客"
+          },
+          {
+            "id": "l3",
+            "text": "尝"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r0",
+            "text": "đón, mừng (sinh nhật, lễ tết)"
+          },
+          {
+            "id": "r3",
+            "text": "nếm, ăn thử"
+          },
+          {
+            "id": "r1",
+            "text": "kết thúc"
+          },
+          {
+            "id": "r2",
+            "text": "mời, đãi khách"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 4
+        },
+        {
+          "hsk": 2,
+          "lesson": 7
+        },
+        {
+          "hsk": 3,
+          "lesson": 1
+        },
+        {
+          "hsk": 3,
+          "lesson": 1
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Theo mẫu 又…又…, chọn từ: 菜又便宜___好吃。",
+      "options": [
+        {
+          "option_text": "又",
+          "is_correct": true
+        },
+        {
+          "option_text": "的",
+          "is_correct": false
+        },
+        {
+          "option_text": "在",
+          "is_correct": false
+        },
+        {
+          "option_text": "很",
+          "is_correct": false
+        }
+      ],
+      "rubric": "又…又… nối hai tính chất cùng có ở món ăn.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 1
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "你想吃什么___点什么。",
+      "options": [
+        {
+          "option_text": "是",
+          "is_correct": false
+        },
+        {
+          "option_text": "的",
+          "is_correct": false
+        },
+        {
+          "option_text": "就",
+          "is_correct": true
+        },
+        {
+          "option_text": "在",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Đại từ nghi vấn lặp lại kết hợp 就 diễn tả muốn gì thì làm theo lựa chọn đó.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 1
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn trợ từ hỏi xác nhận phỏng đoán: 你们饿了___？",
+      "options": [
+        {
+          "option_text": "吧",
+          "is_correct": true
+        },
+        {
+          "option_text": "地",
+          "is_correct": false
+        },
+        {
+          "option_text": "得",
+          "is_correct": false
+        },
+        {
+          "option_text": "的",
+          "is_correct": false
+        }
+      ],
+      "rubric": "吧 cuối câu dùng hỏi xác nhận điều người nói đã phỏng đoán.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 1
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Vừa…vừa… với 又…又…”, cách hiểu nào đúng (mục 1)?",
+      "options": [
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nêu hai tính chất cùng có ở một người hoặc sự vật.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Nêu hai tính chất cùng có ở một người hoặc sự vật. Hai thành phần cần song song; không dùng để diễn tả hai hành động luân phiên.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 1
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Đại từ nghi vấn trong câu trần thuật”, cách hiểu nào đúng (mục 2)?",
+      "options": [
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        },
+        {
+          "option_text": "什么, 谁, 哪儿 có thể biểu thị lựa chọn tùy ý hoặc bao quát, tùy cấu trúc.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "什么, 谁, 哪儿 có thể biểu thị lựa chọn tùy ý hoặc bao quát, tùy cấu trúc. Đây không phải câu hỏi; trong dạng lặp, hai đại từ chỉ cùng một đối tượng.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 1
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Hỏi xác nhận với 吧”, cách hiểu nào đúng (mục 3)?",
+      "options": [
+        {
+          "option_text": "Người nói đã có phỏng đoán và muốn xác nhận.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Người nói đã có phỏng đoán và muốn xác nhận. Phân biệt với 吧 trong lời đề nghị: 我们吃鱼吧 là lời rủ cùng ăn cá.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 1
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Món ăn vừa rẻ vừa ngon. (câu 1).",
+      "reference_answer": "菜又便宜又好吃。",
+      "rubric": "Câu đúng: 菜又便宜又好吃。 — Món ăn vừa rẻ vừa ngon. Hai thành phần cần song song; không dùng để diễn tả hai hành động luân phiên.",
+      "config": {
+        "items": [
+          {
+            "id": "t3",
+            "text": "又"
+          },
+          {
+            "id": "t0",
+            "text": "菜"
+          },
+          {
+            "id": "t1",
+            "text": "又"
+          },
+          {
+            "id": "t2",
+            "text": "便宜"
+          },
+          {
+            "id": "t4",
+            "text": "好"
+          },
+          {
+            "id": "t6",
+            "text": "。"
+          },
+          {
+            "id": "t5",
+            "text": "吃"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 1
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Bạn muốn ăn gì thì gọi món đó. (câu 2).",
+      "reference_answer": "你想吃什么就点什么。",
+      "rubric": "Câu đúng: 你想吃什么就点什么。 — Bạn muốn ăn gì thì gọi món đó. Đây không phải câu hỏi; trong dạng lặp, hai đại từ chỉ cùng một đối tượng.",
+      "config": {
+        "items": [
+          {
+            "id": "t7",
+            "text": "。"
+          },
+          {
+            "id": "t3",
+            "text": "什么"
+          },
+          {
+            "id": "t5",
+            "text": "点"
+          },
+          {
+            "id": "t0",
+            "text": "你"
+          },
+          {
+            "id": "t4",
+            "text": "就"
+          },
+          {
+            "id": "t6",
+            "text": "什么"
+          },
+          {
+            "id": "t1",
+            "text": "想"
+          },
+          {
+            "id": "t2",
+            "text": "吃"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 1
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Mọi người đói rồi nhỉ? (câu 3).",
+      "reference_answer": "你们饿了吧？",
+      "rubric": "Câu đúng: 你们饿了吧？ — Mọi người đói rồi nhỉ? Phân biệt với 吧 trong lời đề nghị: 我们吃鱼吧 là lời rủ cùng ăn cá.",
+      "config": {
+        "items": [
+          {
+            "id": "t4",
+            "text": "吧"
+          },
+          {
+            "id": "t1",
+            "text": "们"
+          },
+          {
+            "id": "t3",
+            "text": "了"
+          },
+          {
+            "id": "t0",
+            "text": "你"
+          },
+          {
+            "id": "t2",
+            "text": "饿"
+          },
+          {
+            "id": "t5",
+            "text": "？"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 1
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Ăn ở nhà là được rồi, ăn ở nhà hàng đắt quá! (câu 4).",
+      "reference_answer": "在家吃就可以了，在饭馆吃太贵了！",
+      "rubric": "Câu đúng: 在家吃就可以了，在饭馆吃太贵了！ — Ăn ở nhà là được rồi, ăn ở nhà hàng đắt quá! Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t4",
+            "text": "可以"
+          },
+          {
+            "id": "t10",
+            "text": "太"
+          },
+          {
+            "id": "t2",
+            "text": "吃"
+          },
+          {
+            "id": "t9",
+            "text": "吃"
+          },
+          {
+            "id": "t3",
+            "text": "就"
+          },
+          {
+            "id": "t5",
+            "text": "了"
+          },
+          {
+            "id": "t8",
+            "text": "饭馆"
+          },
+          {
+            "id": "t11",
+            "text": "贵"
+          },
+          {
+            "id": "t1",
+            "text": "家"
+          },
+          {
+            "id": "t13",
+            "text": "！"
+          },
+          {
+            "id": "t6",
+            "text": "，"
+          },
+          {
+            "id": "t7",
+            "text": "在"
+          },
+          {
+            "id": "t0",
+            "text": "在"
+          },
+          {
+            "id": "t12",
+            "text": "了"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12",
+          "t13"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 1
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Chúng ta ăn cá nhé, con và bố đều thích cá, cũng lâu rồi nhà mình chưa ăn cá. (câu 5).",
+      "reference_answer": "我们吃鱼吧，你和你爸都喜欢吃鱼，我们也好久没吃鱼了。",
+      "rubric": "Câu đúng: 我们吃鱼吧，你和你爸都喜欢吃鱼，我们也好久没吃鱼了。 — Chúng ta ăn cá nhé, con và bố đều thích cá, cũng lâu rồi nhà mình chưa ăn cá. Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t10",
+            "text": "都"
+          },
+          {
+            "id": "t14",
+            "text": "，"
+          },
+          {
+            "id": "t21",
+            "text": "吃"
+          },
+          {
+            "id": "t24",
+            "text": "。"
+          },
+          {
+            "id": "t15",
+            "text": "我"
+          },
+          {
+            "id": "t23",
+            "text": "了"
+          },
+          {
+            "id": "t3",
+            "text": "鱼"
+          },
+          {
+            "id": "t5",
+            "text": "，"
+          },
+          {
+            "id": "t6",
+            "text": "你"
+          },
+          {
+            "id": "t17",
+            "text": "也"
+          },
+          {
+            "id": "t19",
+            "text": "久"
+          },
+          {
+            "id": "t1",
+            "text": "们"
+          },
+          {
+            "id": "t20",
+            "text": "没"
+          },
+          {
+            "id": "t8",
+            "text": "你"
+          },
+          {
+            "id": "t11",
+            "text": "喜欢"
+          },
+          {
+            "id": "t2",
+            "text": "吃"
+          },
+          {
+            "id": "t12",
+            "text": "吃"
+          },
+          {
+            "id": "t9",
+            "text": "爸"
+          },
+          {
+            "id": "t16",
+            "text": "们"
+          },
+          {
+            "id": "t22",
+            "text": "鱼"
+          },
+          {
+            "id": "t4",
+            "text": "吧"
+          },
+          {
+            "id": "t7",
+            "text": "和"
+          },
+          {
+            "id": "t18",
+            "text": "好"
+          },
+          {
+            "id": "t13",
+            "text": "鱼"
+          },
+          {
+            "id": "t0",
+            "text": "我"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12",
+          "t13",
+          "t14",
+          "t15",
+          "t16",
+          "t17",
+          "t18",
+          "t19",
+          "t20",
+          "t21",
+          "t22",
+          "t23",
+          "t24"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 1
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Vậy gọi cá nướng Tứ Xuyên và sủi cảo nhé. Bố mẹ khát chưa? Có muốn uống chút gì không? (câu 6).",
+      "reference_answer": "那我们点四川烤鱼和饺子吧。你们渴了吗？你们想喝点儿什么吗？",
+      "rubric": "Câu đúng: 那我们点四川烤鱼和饺子吧。你们渴了吗？你们想喝点儿什么吗？ — Vậy gọi cá nướng Tứ Xuyên và sủi cảo nhé. Bố mẹ khát chưa? Có muốn uống chút gì không? Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t22",
+            "text": "吗"
+          },
+          {
+            "id": "t5",
+            "text": "和"
+          },
+          {
+            "id": "t19",
+            "text": "点"
+          },
+          {
+            "id": "t2",
+            "text": "们"
+          },
+          {
+            "id": "t3",
+            "text": "点"
+          },
+          {
+            "id": "t20",
+            "text": "儿"
+          },
+          {
+            "id": "t17",
+            "text": "想"
+          },
+          {
+            "id": "t23",
+            "text": "？"
+          },
+          {
+            "id": "t4",
+            "text": "四川烤鱼"
+          },
+          {
+            "id": "t14",
+            "text": "？"
+          },
+          {
+            "id": "t18",
+            "text": "喝"
+          },
+          {
+            "id": "t12",
+            "text": "了"
+          },
+          {
+            "id": "t13",
+            "text": "吗"
+          },
+          {
+            "id": "t11",
+            "text": "渴"
+          },
+          {
+            "id": "t16",
+            "text": "们"
+          },
+          {
+            "id": "t7",
+            "text": "吧"
+          },
+          {
+            "id": "t9",
+            "text": "你"
+          },
+          {
+            "id": "t8",
+            "text": "。"
+          },
+          {
+            "id": "t1",
+            "text": "我"
+          },
+          {
+            "id": "t21",
+            "text": "什么"
+          },
+          {
+            "id": "t0",
+            "text": "那"
+          },
+          {
+            "id": "t10",
+            "text": "们"
+          },
+          {
+            "id": "t6",
+            "text": "饺子"
+          },
+          {
+            "id": "t15",
+            "text": "你"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12",
+          "t13",
+          "t14",
+          "t15",
+          "t16",
+          "t17",
+          "t18",
+          "t19",
+          "t20",
+          "t21",
+          "t22",
+          "t23"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 1
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ]
+}

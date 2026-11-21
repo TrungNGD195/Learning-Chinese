@@ -23,6 +23,7 @@ COPY content ./content
 COPY scripts/create_hsk1_lesson1_draft.py ./scripts/create_hsk1_lesson1_draft.py
 COPY scripts/add_hsk1_lesson1_readings.py ./scripts/add_hsk1_lesson1_readings.py
 COPY scripts/import_curriculum_refresh.py ./scripts/import_curriculum_refresh.py
+COPY scripts/import_hsk3_curriculum.py ./scripts/import_hsk3_curriculum.py
 COPY migrations ./migrations
 COPY alembic.ini ./alembic.ini
 

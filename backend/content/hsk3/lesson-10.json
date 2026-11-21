@@ -1,0 +1,1947 @@
+{
+  "key": "hsk3-lesson-10-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 3,
+    "lesson_number": 10,
+    "title": "我把资料打印出来了 · Tôi đã in tài liệu ra rồi",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "开会",
+      "pinyin": "kāihuì",
+      "vietnamese_meaning": "họp, mở cuộc họp",
+      "part_of_speech": "động từ",
+      "source_key": "3:10:开会",
+      "note": null,
+      "order_index": 1,
+      "example": "琳达，快要开会了。\nlín dá ， kuài yào kāi huì le 。\nLinda, sắp họp rồi."
+    },
+    {
+      "hanzi": "会议",
+      "pinyin": "huìyì",
+      "vietnamese_meaning": "cuộc họp, hội nghị",
+      "part_of_speech": "danh từ",
+      "source_key": "3:10:会议",
+      "note": null,
+      "order_index": 2,
+      "example": "我先去看一下会议室。\nwǒ xiān qù kàn yī xià huì yì shì 。\nTôi đến xem phòng họp trước."
+    },
+    {
+      "hanzi": "会议室",
+      "pinyin": "huìyìshì",
+      "vietnamese_meaning": "phòng họp",
+      "part_of_speech": "danh từ",
+      "source_key": "3:10:会议室",
+      "note": null,
+      "order_index": 3,
+      "example": "我先去看一下会议室。\nwǒ xiān qù kàn yī xià huì yì shì 。\nTôi đến xem phòng họp trước."
+    },
+    {
+      "hanzi": "资料",
+      "pinyin": "zīliào",
+      "vietnamese_meaning": "tài liệu",
+      "part_of_speech": "danh từ",
+      "source_key": "3:10:资料",
+      "note": null,
+      "order_index": 4,
+      "example": "资料你准备得怎么样了？\nzī liào nǐ zhǔn bèi de zěn me yàng le ？\nCô chuẩn bị tài liệu thế nào?"
+    },
+    {
+      "hanzi": "整理",
+      "pinyin": "zhěnglǐ",
+      "vietnamese_meaning": "sắp xếp, chỉnh lý",
+      "part_of_speech": "động từ",
+      "source_key": "3:10:整理",
+      "note": null,
+      "order_index": 5,
+      "example": "我已经把资料整理好了。我也把资料放在您的桌子上。\nwǒ yǐ jīng bǎ zī liào zhěng lǐ hǎo le 。 wǒ yě bǎ zī liào fàng zài nín de zhuō zi shàng 。\nTôi đã sắp xếp xong tài liệu, cũng đặt lên bàn của ông rồi."
+    },
+    {
+      "hanzi": "秘书",
+      "pinyin": "mìshū",
+      "vietnamese_meaning": "thư ký",
+      "part_of_speech": "danh từ",
+      "source_key": "3:10:秘书",
+      "note": null,
+      "order_index": 6,
+      "example": "一会儿你让李秘书准备些饮料吧，茶或者咖啡都可以。\nyī huì er nǐ ràng lǐ mì shū zhǔn bèi xiē yǐn liào ba ， chá huò zhě kā fēi dōu kě yǐ 。\nLát nữa cô nhờ thư ký Lý chuẩn bị đồ uống, trà hoặc cà phê đều được."
+    },
+    {
+      "hanzi": "或者",
+      "pinyin": "huòzhě",
+      "vietnamese_meaning": "hoặc (trong câu trần thuật)",
+      "part_of_speech": "liên từ",
+      "source_key": "3:10:或者",
+      "note": "或者 thường nêu lựa chọn trong câu trần thuật; 还是 thường dùng trong câu hỏi buộc chọn một phương án.",
+      "order_index": 7,
+      "example": "一会儿你让李秘书准备些饮料吧，茶或者咖啡都可以。\nyī huì er nǐ ràng lǐ mì shū zhǔn bèi xiē yǐn liào ba ， chá huò zhě kā fēi dōu kě yǐ 。\nLát nữa cô nhờ thư ký Lý chuẩn bị đồ uống, trà hoặc cà phê đều được."
+    },
+    {
+      "hanzi": "笔记本电脑",
+      "pinyin": "bǐjìběndiànnǎo",
+      "vietnamese_meaning": "máy tính xách tay",
+      "part_of_speech": "danh từ",
+      "source_key": "3:10:笔记本电脑",
+      "note": null,
+      "order_index": 8,
+      "example": "我用笔记本电脑。\nwǒ yòng bǐ jì běn diàn nǎo 。\nTôi dùng máy tính xách tay."
+    },
+    {
+      "hanzi": "周到",
+      "pinyin": "zhōudào",
+      "vietnamese_meaning": "chu đáo",
+      "part_of_speech": "tính từ",
+      "source_key": "3:10:周到",
+      "note": null,
+      "order_index": 9,
+      "example": "您公司准备得太周到了。\nnín gōng sī zhǔn bèi de tài zhōu dào le 。\nCông ty ông chuẩn bị rất chu đáo."
+    },
+    {
+      "hanzi": "提",
+      "pinyin": "tí",
+      "vietnamese_meaning": "nêu ra; xách",
+      "part_of_speech": "động từ",
+      "source_key": "3:10:提",
+      "note": null,
+      "order_index": 10,
+      "example": "今天我们要把困难提出来。资料我们已经放在桌子上了。请您看一下。\njīn tiān wǒ men yào bǎ kùn nán tí chū lái 。 zī liào wǒ men yǐ jīng fàng zài zhuō zi shàng le 。 qǐng nín kàn yī xià 。\nHôm nay chúng ta cần nêu ra các khó khăn. Tài liệu đã đặt trên bàn, mời ông xem."
+    },
+    {
+      "hanzi": "解决",
+      "pinyin": "jiějué",
+      "vietnamese_meaning": "giải quyết",
+      "part_of_speech": "động từ",
+      "source_key": "3:10:解决",
+      "note": null,
+      "order_index": 11,
+      "example": "对我们来说，这些问题都很难解决。\nduì wǒ men lái shuō ， zhè xiē wèn tí dōu hěn nán jiě jué 。\nVới chúng tôi, những vấn đề này đều khó giải quyết."
+    },
+    {
+      "hanzi": "认为",
+      "pinyin": "rènwéi",
+      "vietnamese_meaning": "cho rằng",
+      "part_of_speech": "động từ",
+      "source_key": "3:10:认为",
+      "note": "认为 diễn tả ý kiến/đánh giá; 以为 thường nhấn mạnh điều đã tưởng, có thể trái với thực tế.",
+      "order_index": 12,
+      "example": "我们也这么认为。\nwǒ men yě zhè me rèn wéi 。\nChúng tôi cũng nghĩ vậy."
+    },
+    {
+      "hanzi": "双方",
+      "pinyin": "shuāngfāng",
+      "vietnamese_meaning": "hai bên",
+      "part_of_speech": "danh từ",
+      "source_key": "3:10:双方",
+      "note": null,
+      "order_index": 13,
+      "example": "想把这些问题解决好，双方要一起想办法。\nxiǎng bǎ zhè xiē wèn tí jiě jué hǎo ， shuāng fāng yào yì qǐ xiǎng bàn fǎ 。\nMuốn giải quyết tốt, hai bên phải cùng nghĩ cách."
+    },
+    {
+      "hanzi": "打印",
+      "pinyin": "dǎyìn",
+      "vietnamese_meaning": "in (tài liệu)",
+      "part_of_speech": "động từ",
+      "source_key": "3:10:打印",
+      "note": null,
+      "order_index": 14,
+      "example": "我先把合同打印出来，我们继续谈谈合同里的问题，可以吧？\nwǒ xiān bǎ hé tóng dǎ yìn chū lái ， wǒ men jì xù tán tán hé tóng lǐ de wèn tí ， kě yǐ ba ？\nTôi in hợp đồng ra trước, rồi mình bàn tiếp những vấn đề trong hợp đồng, được không?"
+    },
+    {
+      "hanzi": "谈",
+      "pinyin": "tán",
+      "vietnamese_meaning": "nói chuyện, bàn bạc",
+      "part_of_speech": "động từ",
+      "source_key": "3:10:谈",
+      "note": null,
+      "order_index": 15,
+      "example": "我先把合同打印出来，我们继续谈谈合同里的问题，可以吧？\nwǒ xiān bǎ hé tóng dǎ yìn chū lái ， wǒ men jì xù tán tán hé tóng lǐ de wèn tí ， kě yǐ ba ？\nTôi in hợp đồng ra trước, rồi mình bàn tiếp những vấn đề trong hợp đồng, được không?"
+    },
+    {
+      "hanzi": "合同",
+      "pinyin": "hétong",
+      "vietnamese_meaning": "hợp đồng",
+      "part_of_speech": "danh từ",
+      "source_key": "3:10:合同",
+      "note": null,
+      "order_index": 16,
+      "example": "我们过几天就可以签合同了。\nwǒ men guò jǐ tiān jiù kě yǐ qiān hé tóng le 。\nVài hôm nữa có thể ký hợp đồng rồi."
+    },
+    {
+      "hanzi": "处理",
+      "pinyin": "chǔlǐ",
+      "vietnamese_meaning": "xử lý",
+      "part_of_speech": "động từ",
+      "source_key": "3:10:处理",
+      "note": null,
+      "order_index": 17,
+      "example": "当然可以了，来都来了，一定要把问题处理完。\ndāng rán kě yǐ le ， lái dōu lái le ， yí dìng yào bǎ wèn tí chǔ lǐ wán 。\nTất nhiên, đã đến đây thì nhất định phải xử lý xong vấn đề."
+    },
+    {
+      "hanzi": "成功",
+      "pinyin": "chénggōng",
+      "vietnamese_meaning": "thành công",
+      "part_of_speech": "động từ, tính từ",
+      "source_key": "3:10:成功",
+      "note": null,
+      "order_index": 18,
+      "example": "今天的会议非常成功。\njīn tiān de huì yì fēi cháng chéng gōng 。\nCuộc họp hôm nay rất thành công."
+    },
+    {
+      "hanzi": "支持",
+      "pinyin": "zhīchí",
+      "vietnamese_meaning": "ủng hộ, hỗ trợ",
+      "part_of_speech": "động từ",
+      "source_key": "3:10:支持",
+      "note": null,
+      "order_index": 19,
+      "example": "感谢张经理的支持和帮助。\ngǎn xiè zhāng jīng lǐ de zhī chí hé bāng zhù 。\nCảm ơn sự ủng hộ và giúp đỡ của giám đốc Trương."
+    },
+    {
+      "hanzi": "过奖",
+      "pinyin": "guòjiǎng",
+      "vietnamese_meaning": "quá khen",
+      "part_of_speech": "động từ",
+      "source_key": "3:10:过奖",
+      "note": null,
+      "order_index": 20,
+      "example": "您过奖了，这次会议还要感谢您呢。\nnín guò jiǎng le ， zhè cì huì yì hái yào gǎn xiè nín ne 。\nÔng quá khen, cuộc họp này còn phải cảm ơn ông."
+    },
+    {
+      "hanzi": "看来",
+      "pinyin": "kànlái",
+      "vietnamese_meaning": "xem ra, có vẻ",
+      "part_of_speech": "động từ",
+      "source_key": "3:10:看来",
+      "note": null,
+      "order_index": 21,
+      "example": "看来今天王经理非常高兴。\nkàn lái jīn tiān wáng jīng lǐ fēi cháng gāo xìng 。\nXem ra hôm nay giám đốc Vương rất vui."
+    },
+    {
+      "hanzi": "签",
+      "pinyin": "qiān",
+      "vietnamese_meaning": "ký (tên, hợp đồng)",
+      "part_of_speech": "động từ",
+      "source_key": "3:10:签",
+      "note": null,
+      "order_index": 22,
+      "example": "我们过几天就可以签合同了。\nwǒ men guò jǐ tiān jiù kě yǐ qiān hé tóng le 。\nVài hôm nữa có thể ký hợp đồng rồi."
+    },
+    {
+      "hanzi": "合作",
+      "pinyin": "hézuò",
+      "vietnamese_meaning": "hợp tác",
+      "part_of_speech": "động từ",
+      "source_key": "3:10:合作",
+      "note": null,
+      "order_index": 23,
+      "example": "希望以后可以多跟张经理合作。\nxī wàng yǐ hòu kě yǐ duō gēn zhāng jīng lǐ hé zuò 。\nMong sau này được hợp tác nhiều với ông."
+    },
+    {
+      "hanzi": "敬",
+      "pinyin": "jìng",
+      "vietnamese_meaning": "kính, mời (rượu)",
+      "part_of_speech": "động từ",
+      "source_key": "3:10:敬",
+      "note": null,
+      "order_index": 24,
+      "example": "我敬您一杯！\nwǒ jìng nín yī bēi ！\nTôi kính ông một ly!"
+    },
+    {
+      "hanzi": "干杯",
+      "pinyin": "gānbēi",
+      "vietnamese_meaning": "nâng cốc, cạn ly",
+      "part_of_speech": "động từ",
+      "source_key": "3:10:干杯",
+      "note": null,
+      "order_index": 25,
+      "example": "我们一起干杯吧！\nwǒ men yì qǐ gān bēi ba ！\nChúng ta cùng nâng cốc nhé!"
+    },
+    {
+      "hanzi": "出差",
+      "pinyin": "chūchāi",
+      "vietnamese_meaning": "đi công tác",
+      "part_of_speech": "động từ",
+      "source_key": "3:10:出差",
+      "note": null,
+      "order_index": 26,
+      "example": "我们公司上个月比较忙，每个星期都有人出差，所以上个周末，公司决定举行一次野营，让大家都放松放松。\nwǒ men gōng sī shàng gè yuè bǐ jiào máng ， měi gè xīng qī dōu yǒu rén chū chāi ， suǒ yǐ shàng gè zhōu mò ， gōng sī jué dìng jǔ xíng yī cì yě yíng ， ràng dà jiā dōu fàng sōng fàng sōng 。\nTháng trước công ty chúng tôi khá bận, tuần nào cũng có người đi công tác, nên cuối tuần vừa rồi công ty quyết định tổ chức cắm trại để mọi người thư giãn."
+    },
+    {
+      "hanzi": "野营",
+      "pinyin": "yěyíng",
+      "vietnamese_meaning": "cắm trại",
+      "part_of_speech": "động từ",
+      "source_key": "3:10:野营",
+      "note": null,
+      "order_index": 27,
+      "example": "虽然大家都很累，但是每个人都觉得这次野营很有意义。\nsuī rán dà jiā dōu hěn lèi ， dàn shì měi gè rén dōu jué de zhè cì yě yíng hěn yǒu yì yì 。\nDù rất mệt, ai cũng thấy buổi cắm trại có ý nghĩa."
+    },
+    {
+      "hanzi": "郊区",
+      "pinyin": "jiāoqū",
+      "vietnamese_meaning": "ngoại ô",
+      "part_of_speech": "danh từ",
+      "source_key": "3:10:郊区",
+      "note": null,
+      "order_index": 28,
+      "example": "到了郊区，我们要决定晚餐吃什么，我们要吃火锅还是吃烧烤，最后大家决定吃烧烤。\ndào le jiāo qū ， wǒ men yào jué dìng wǎn cān chī shén me ， wǒ men yào chī huǒ guō hái shì chī shāo kǎo ， zuì hòu dà jiā jué dìng chī shāo kǎo 。\nĐến ngoại ô, mọi người bàn tối ăn lẩu hay đồ nướng, cuối cùng chọn đồ nướng."
+    },
+    {
+      "hanzi": "火锅",
+      "pinyin": "huǒguō",
+      "vietnamese_meaning": "lẩu",
+      "part_of_speech": "danh từ",
+      "source_key": "3:10:火锅",
+      "note": null,
+      "order_index": 29,
+      "example": "到了郊区，我们要决定晚餐吃什么，我们要吃火锅还是吃烧烤，最后大家决定吃烧烤。\ndào le jiāo qū ， wǒ men yào jué dìng wǎn cān chī shén me ， wǒ men yào chī huǒ guō hái shì chī shāo kǎo ， zuì hòu dà jiā jué dìng chī shāo kǎo 。\nĐến ngoại ô, mọi người bàn tối ăn lẩu hay đồ nướng, cuối cùng chọn đồ nướng."
+    },
+    {
+      "hanzi": "烧烤",
+      "pinyin": "shāokǎo",
+      "vietnamese_meaning": "đồ nướng; nướng",
+      "part_of_speech": "danh từ, động từ",
+      "source_key": "3:10:烧烤",
+      "note": null,
+      "order_index": 30,
+      "example": "到了郊区，我们要决定晚餐吃什么，我们要吃火锅还是吃烧烤，最后大家决定吃烧烤。\ndào le jiāo qū ， wǒ men yào jué dìng wǎn cān chī shén me ， wǒ men yào chī huǒ guō hái shì chī shāo kǎo ， zuì hòu dà jiā jué dìng chī shāo kǎo 。\nĐến ngoại ô, mọi người bàn tối ăn lẩu hay đồ nướng, cuối cùng chọn đồ nướng."
+    },
+    {
+      "hanzi": "点火",
+      "pinyin": "diǎnhuǒ",
+      "vietnamese_meaning": "nhóm lửa, châm lửa",
+      "part_of_speech": "động từ",
+      "source_key": "3:10:点火",
+      "note": null,
+      "order_index": 31,
+      "example": "男同事们忙着点火，女生们把洗好的水果和菜放在桌子上。\nnán tóng shì men máng zhe diǎn huǒ ， nǚ shēng men bǎ xǐ hǎo de shuǐ guǒ hé cài fàng zài zhuō zi shàng 。\nCác đồng nghiệp nam nhóm lửa, các bạn nữ đặt trái cây và rau đã rửa lên bàn."
+    },
+    {
+      "hanzi": "干活儿",
+      "pinyin": "gànhuóér",
+      "vietnamese_meaning": "làm việc",
+      "part_of_speech": "động từ",
+      "source_key": "3:10:干活儿",
+      "note": null,
+      "order_index": 32,
+      "example": "大家一边干活儿一边聊天儿，还可以选择喝咖啡或者喝茶，非常舒服。\ndà jiā yī biān gàn huó ér yī biān liáo tiān ér ， hái kě yǐ xuǎn zé hē kā fēi huò zhě hē chá ， fēi cháng shū fú 。\nMọi người vừa làm vừa trò chuyện, còn có thể chọn cà phê hoặc trà, rất dễ chịu."
+    },
+    {
+      "hanzi": "火堆",
+      "pinyin": "huǒduī",
+      "vietnamese_meaning": "đống lửa",
+      "part_of_speech": "danh từ",
+      "source_key": "3:10:火堆",
+      "note": null,
+      "order_index": 33,
+      "example": "晚上，大家坐在火堆旁边唱歌。\nwǎn shàng ， dà jiā zuò zài huǒ duī páng biān chàng gē 。\nBuổi tối, mọi người ngồi bên đống lửa ca hát."
+    },
+    {
+      "hanzi": "拉近",
+      "pinyin": "lājìn",
+      "vietnamese_meaning": "kéo gần, làm gần gũi hơn",
+      "part_of_speech": "động từ",
+      "source_key": "3:10:拉近",
+      "note": null,
+      "order_index": 34,
+      "example": "在经理看来，这次活动把大家的关系拉近了很多。\nzài jīng lǐ kàn lái ， zhè cì huó dòng bǎ dà jiā de guān xì lā jìn le hěn duō 。\nTheo giám đốc, hoạt động này giúp quan hệ giữa mọi người gần gũi hơn."
+    },
+    {
+      "hanzi": "意义",
+      "pinyin": "yìyì",
+      "vietnamese_meaning": "ý nghĩa",
+      "part_of_speech": "danh từ",
+      "source_key": "3:10:意义",
+      "note": null,
+      "order_index": 35,
+      "example": "虽然大家都很累，但是每个人都觉得这次野营很有意义。\nsuī rán dà jiā dōu hěn lèi ， dàn shì měi gè rén dōu jué de zhè cì yě yíng hěn yǒu yì yì 。\nDù rất mệt, ai cũng thấy buổi cắm trại có ý nghĩa."
+    }
+  ],
+  "grammar": [
+    {
+      "name": "Câu 把 với kết quả",
+      "structure": "Chủ ngữ + 把 + đối tượng + động từ + bổ ngữ kết quả",
+      "explanation": "Nhấn mạnh đối tượng đã được xử lý đạt kết quả nào.",
+      "usage": "Động từ trong câu 把 thường cần thành phần kết quả hoặc thành phần khác, không chỉ đứng một mình.",
+      "example": "我把资料整理好了。\nwǒ bǎ zī liào zhěng lǐ hǎo le 。\nTôi đã sắp xếp xong tài liệu rồi.",
+      "note": "Động từ trong câu 把 thường cần thành phần kết quả hoặc thành phần khác, không chỉ đứng một mình.",
+      "order_index": 1
+    },
+    {
+      "name": "Câu 把 với xu hướng",
+      "structure": "Chủ ngữ + 把 + đối tượng + động từ + bổ ngữ xu hướng",
+      "explanation": "Nêu hướng di chuyển hoặc kết quả được đưa ra của đối tượng.",
+      "usage": "出来 trong 打印出来 chỉ kết quả thể hiện ra, không nhất thiết là người di chuyển ra ngoài.",
+      "example": "我把资料打印出来了。\nwǒ bǎ zī liào dǎ yìn chū lái le 。\nTôi đã in tài liệu ra rồi.",
+      "note": "出来 trong 打印出来 chỉ kết quả thể hiện ra, không nhất thiết là người di chuyển ra ngoài.",
+      "order_index": 2
+    },
+    {
+      "name": "Nêu góc nhìn",
+      "structure": "对 + người + 来说 / 在 + người + 看来",
+      "explanation": "Giới hạn đánh giá theo người hoặc góc nhìn được nêu.",
+      "usage": "对…来说 nêu đối tượng xét đến; 在…看来 nêu cách người đó nhìn nhận, không phải khẳng định tuyệt đối.",
+      "example": "对我们来说，这些问题很难。\nduì wǒ men lái shuō ， zhè xiē wèn tí hěn nán 。\nĐối với chúng tôi, những vấn đề này rất khó.",
+      "note": "对…来说 nêu đối tượng xét đến; 在…看来 nêu cách người đó nhìn nhận, không phải khẳng định tuyệt đối.",
+      "order_index": 3
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Chuẩn bị cuộc họp",
+      "content": "王经理：琳达，快要开会了。资料你准备得怎么样了？\n琳达：我已经把资料整理好了。我也把资料放在您的桌子上。\n王经理：不错。一会儿你让李秘书准备些饮料吧，茶或者咖啡都可以。\n琳达：好的经理。请问今天的会议是用汉语还是英语的？\n王经理：用汉语，张经理会来参加会议。\n琳达：好的。我先去看一下会议室。他们说已经把会议室打扫干净了。\n王经理：对了，开会的时候，你用会议室的电脑还是笔记本电脑？\n琳达：我用笔记本电脑。\n王经理：好，你先去会议室看看吧。",
+      "pinyin": "wáng jīng lǐ ： lín dá ， kuài yào kāi huì le 。 zī liào nǐ zhǔn bèi de zěn me yàng le ？\nlín dá ： wǒ yǐ jīng bǎ zī liào zhěng lǐ hǎo le 。 wǒ yě bǎ zī liào fàng zài nín de zhuō zi shàng 。\nwáng jīng lǐ ： bù cuò 。 yī huì er nǐ ràng lǐ mì shū zhǔn bèi xiē yǐn liào ba ， chá huò zhě kā fēi dōu kě yǐ 。\nlín dá ： hǎo de jīng lǐ 。 qǐng wèn jīn tiān de huì yì shì yòng hàn yǔ hái shì yīng yǔ de ？\nwáng jīng lǐ ： yòng hàn yǔ ， zhāng jīng lǐ huì lái cān jiā huì yì 。\nlín dá ： hǎo de 。 wǒ xiān qù kàn yī xià huì yì shì 。 tā men shuō yǐ jīng bǎ huì yì shì dǎ sǎo gān jìng le 。\nwáng jīng lǐ ： duì le ， kāi huì de shí hòu ， nǐ yòng huì yì shì de diàn nǎo hái shì bǐ jì běn diàn nǎo ？\nlín dá ： wǒ yòng bǐ jì běn diàn nǎo 。\nwáng jīng lǐ ： hǎo ， nǐ xiān qù huì yì shì kàn kàn ba 。",
+      "vietnamese_translation": "Giám đốc Vương: Linda, sắp họp rồi. Cô chuẩn bị tài liệu thế nào?\nLinda: Tôi đã sắp xếp xong tài liệu, cũng đặt lên bàn của ông rồi.\nGiám đốc Vương: Tốt. Lát nữa cô nhờ thư ký Lý chuẩn bị đồ uống, trà hoặc cà phê đều được.\nLinda: Vâng, xin hỏi cuộc họp hôm nay dùng tiếng Trung hay tiếng Anh?\nGiám đốc Vương: Tiếng Trung, giám đốc Trương sẽ tham gia.\nLinda: Vâng. Tôi đến xem phòng họp trước. Họ nói đã dọn phòng sạch rồi.\nGiám đốc Vương: À, khi họp cô dùng máy tính phòng họp hay máy tính xách tay?\nLinda: Tôi dùng máy tính xách tay.\nGiám đốc Vương: Được, cô đến phòng họp xem trước nhé.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 10, bài khóa 1."
+    },
+    {
+      "order_index": 2,
+      "title": "Bàn cách giải quyết khó khăn",
+      "content": "王经理：张经理，欢迎您来我们公司。\n张经理：王经理，您客气了。您把会议安排得太周到了。\n王经理：今天我们要把困难提出来。资料我们已经放在桌子上了。请您看一下。\n（看资料中）\n张经理：对我们来说，这些问题都很难解决。您觉得呢？\n王经理：我们也这么认为。想把这些问题解决好，双方要一起想办法。\n张经理：您说得对。看来解决这些问题我们都要多努力了。\n王经理：我先把合同打印出来，我们继续谈谈合同里的问题，可以吧？\n张经理：当然可以了，来都来了，一定要把问题处理完。",
+      "pinyin": "wáng jīng lǐ ： zhāng jīng lǐ ， huān yíng nín lái wǒ men gōng sī 。\nzhāng jīng lǐ ： wáng jīng lǐ ， nín kè qì le 。 nín bǎ huì yì ān pái de tài zhōu dào le 。\nwáng jīng lǐ ： jīn tiān wǒ men yào bǎ kùn nán tí chū lái 。 zī liào wǒ men yǐ jīng fàng zài zhuō zi shàng le 。 qǐng nín kàn yī xià 。\n（ kàn zī liào zhōng ）\nzhāng jīng lǐ ： duì wǒ men lái shuō ， zhè xiē wèn tí dōu hěn nán jiě jué 。 nín jué de ne ？\nwáng jīng lǐ ： wǒ men yě zhè me rèn wéi 。 xiǎng bǎ zhè xiē wèn tí jiě jué hǎo ， shuāng fāng yào yì qǐ xiǎng bàn fǎ 。\nzhāng jīng lǐ ： nín shuō de duì 。 kàn lái jiě jué zhè xiē wèn tí wǒ men dōu yào duō nǔ lì le 。\nwáng jīng lǐ ： wǒ xiān bǎ hé tóng dǎ yìn chū lái ， wǒ men jì xù tán tán hé tóng lǐ de wèn tí ， kě yǐ ba ？\nzhāng jīng lǐ ： dāng rán kě yǐ le ， lái dōu lái le ， yí dìng yào bǎ wèn tí chǔ lǐ wán 。",
+      "vietnamese_translation": "Giám đốc Vương: Giám đốc Trương, chào mừng ông đến công ty chúng tôi.\nGiám đốc Trương: Ông khách sáo quá, cuộc họp được sắp xếp rất chu đáo.\nGiám đốc Vương: Hôm nay chúng ta cần nêu ra các khó khăn. Tài liệu đã đặt trên bàn, mời ông xem.\n(Đang xem tài liệu)\nGiám đốc Trương: Với chúng tôi, những vấn đề này đều khó giải quyết. Ông thấy sao?\nGiám đốc Vương: Chúng tôi cũng nghĩ vậy. Muốn giải quyết tốt, hai bên phải cùng nghĩ cách.\nGiám đốc Trương: Ông nói đúng, xem ra cả hai đều cần cố gắng nhiều.\nGiám đốc Vương: Tôi in hợp đồng ra trước, rồi mình bàn tiếp những vấn đề trong hợp đồng, được không?\nGiám đốc Trương: Tất nhiên, đã đến đây thì nhất định phải xử lý xong vấn đề.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 10, bài khóa 2."
+    },
+    {
+      "order_index": 3,
+      "title": "Chúc mừng cuộc họp thành công",
+      "content": "王经理：今天的会议非常成功。感谢张经理的支持和帮助。\n张经理：您过奖了，这次会议还要感谢您呢。您公司准备得太周到了。\n王经理：哪里哪里。（对服务员说）你把饮料拿上来吧，我们再买两瓶。\n张经理：看来今天王经理非常高兴。\n王经理：当然了，今天我们已经把困难解决好了。我们过几天就可以签合同了。\n张经理：在我看来，我们还有很多合作的机会。\n王经理：希望以后可以多跟张经理合作。我敬您一杯！\n张经理：干杯！",
+      "pinyin": "wáng jīng lǐ ： jīn tiān de huì yì fēi cháng chéng gōng 。 gǎn xiè zhāng jīng lǐ de zhī chí hé bāng zhù 。\nzhāng jīng lǐ ： nín guò jiǎng le ， zhè cì huì yì hái yào gǎn xiè nín ne 。 nín gōng sī zhǔn bèi de tài zhōu dào le 。\nwáng jīng lǐ ： nǎ lǐ nǎ lǐ 。 （ duì fú wù yuán shuō ） nǐ bǎ yǐn liào ná shàng lái ba ， wǒ men zài mǎi liǎng píng 。\nzhāng jīng lǐ ： kàn lái jīn tiān wáng jīng lǐ fēi cháng gāo xìng 。\nwáng jīng lǐ ： dāng rán le ， jīn tiān wǒ men yǐ jīng bǎ kùn nán jiě jué hǎo le 。 wǒ men guò jǐ tiān jiù kě yǐ qiān hé tóng le 。\nzhāng jīng lǐ ： zài wǒ kàn lái ， wǒ men hái yǒu hěn duō hé zuò de jī huì 。\nwáng jīng lǐ ： xī wàng yǐ hòu kě yǐ duō gēn zhāng jīng lǐ hé zuò 。 wǒ jìng nín yī bēi ！\nzhāng jīng lǐ ： gān bēi ！",
+      "vietnamese_translation": "Giám đốc Vương: Cuộc họp hôm nay rất thành công. Cảm ơn sự ủng hộ và giúp đỡ của giám đốc Trương.\nGiám đốc Trương: Ông quá khen, cuộc họp này còn phải cảm ơn ông. Công ty ông chuẩn bị rất chu đáo.\nGiám đốc Vương: Không dám. (Nói với nhân viên phục vụ) Mang đồ uống lên nhé, chúng tôi mua thêm hai chai.\nGiám đốc Trương: Xem ra hôm nay giám đốc Vương rất vui.\nGiám đốc Vương: Tất nhiên, hôm nay chúng ta đã giải quyết xong khó khăn. Vài hôm nữa có thể ký hợp đồng rồi.\nGiám đốc Trương: Theo tôi, chúng ta còn nhiều cơ hội hợp tác.\nGiám đốc Vương: Mong sau này được hợp tác nhiều với ông. Tôi kính ông một ly!\nGiám đốc Trương: Cạn ly!",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 10, bài khóa 3."
+    },
+    {
+      "order_index": 4,
+      "title": "Buổi cắm trại của công ty",
+      "content": "我们公司上个月比较忙，每个星期都有人出差，所以上个周末，公司决定举行一次野营，让大家都放松放松。\n出发前，经理要求大家把需要的东西都准备好。到了郊区，我们要决定晚餐吃什么，我们要吃火锅还是吃烧烤，最后大家决定吃烧烤。男同事们忙着点火，女生们把洗好的水果和菜放在桌子上。大家一边干活儿一边聊天儿，还可以选择喝咖啡或者喝茶，非常舒服。\n晚上，大家坐在火堆旁边唱歌。在经理看来，这次活动把大家的关系拉近了很多。虽然大家都很累，但是每个人都觉得这次野营很有意义。",
+      "pinyin": "wǒ men gōng sī shàng gè yuè bǐ jiào máng ， měi gè xīng qī dōu yǒu rén chū chāi ， suǒ yǐ shàng gè zhōu mò ， gōng sī jué dìng jǔ xíng yī cì yě yíng ， ràng dà jiā dōu fàng sōng fàng sōng 。\nchū fā qián ， jīng lǐ yāo qiú dà jiā bǎ xū yào de dōng xī dōu zhǔn bèi hǎo 。 dào le jiāo qū ， wǒ men yào jué dìng wǎn cān chī shén me ， wǒ men yào chī huǒ guō hái shì chī shāo kǎo ， zuì hòu dà jiā jué dìng chī shāo kǎo 。 nán tóng shì men máng zhe diǎn huǒ ， nǚ shēng men bǎ xǐ hǎo de shuǐ guǒ hé cài fàng zài zhuō zi shàng 。 dà jiā yī biān gàn huó ér yī biān liáo tiān ér ， hái kě yǐ xuǎn zé hē kā fēi huò zhě hē chá ， fēi cháng shū fú 。\nwǎn shàng ， dà jiā zuò zài huǒ duī páng biān chàng gē 。 zài jīng lǐ kàn lái ， zhè cì huó dòng bǎ dà jiā de guān xì lā jìn le hěn duō 。 suī rán dà jiā dōu hěn lèi ， dàn shì měi gè rén dōu jué de zhè cì yě yíng hěn yǒu yì yì 。",
+      "vietnamese_translation": "Tháng trước công ty chúng tôi khá bận, tuần nào cũng có người đi công tác, nên cuối tuần vừa rồi công ty quyết định tổ chức cắm trại để mọi người thư giãn.\nTrước khi đi, giám đốc yêu cầu chuẩn bị đầy đủ đồ cần thiết. Đến ngoại ô, mọi người bàn tối ăn lẩu hay đồ nướng, cuối cùng chọn đồ nướng. Các đồng nghiệp nam nhóm lửa, các bạn nữ đặt trái cây và rau đã rửa lên bàn. Mọi người vừa làm vừa trò chuyện, còn có thể chọn cà phê hoặc trà, rất dễ chịu.\nBuổi tối, mọi người ngồi bên đống lửa ca hát. Theo giám đốc, hoạt động này giúp quan hệ giữa mọi người gần gũi hơn. Dù rất mệt, ai cũng thấy buổi cắm trại có ý nghĩa.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 10, bài khóa 4."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 3 · Bài 10 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp của bài này và các bài trước; đạt từ 80%, được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "source_documents": {
+    "vocabulary": "DOCX",
+    "theory": "DOCX"
+  },
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “敬” (jìng) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "đề thi, bài tập",
+          "is_correct": false
+        },
+        {
+          "option_text": "khó",
+          "is_correct": false
+        },
+        {
+          "option_text": "ngài, ông, bà",
+          "is_correct": false
+        },
+        {
+          "option_text": "kính, mời (rượu)",
+          "is_correct": true
+        }
+      ],
+      "rubric": "敬 (jìng) — kính, mời (rượu). ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 10
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “谈” (tán) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "kiểm tra vé",
+          "is_correct": false
+        },
+        {
+          "option_text": "kia",
+          "is_correct": false
+        },
+        {
+          "option_text": "chơi",
+          "is_correct": false
+        },
+        {
+          "option_text": "nói chuyện, bàn bạc",
+          "is_correct": true
+        }
+      ],
+      "rubric": "谈 (tán) — nói chuyện, bàn bạc. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 10
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “zhōudào” — chu đáo.",
+      "options": [
+        {
+          "option_text": "了",
+          "is_correct": false
+        },
+        {
+          "option_text": "周到",
+          "is_correct": true
+        },
+        {
+          "option_text": "选",
+          "is_correct": false
+        },
+        {
+          "option_text": "对",
+          "is_correct": false
+        }
+      ],
+      "rubric": "周到 (zhōudào) — chu đáo. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 10
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 4).",
+      "options": [
+        {
+          "option_text": "không ... lắm",
+          "is_correct": false
+        },
+        {
+          "option_text": "anh, chị, bạn, ông, bà,...",
+          "is_correct": false
+        },
+        {
+          "option_text": "xử lý",
+          "is_correct": true
+        },
+        {
+          "option_text": "công cụ, dụng cụ",
+          "is_correct": false
+        }
+      ],
+      "rubric": "处理 (chǔlǐ) — xử lý. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "处理"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 10
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “会议室” (huìyìshì) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "ngân hàng",
+          "is_correct": false
+        },
+        {
+          "option_text": "phòng họp",
+          "is_correct": true
+        },
+        {
+          "option_text": "đưa tân ngữ lên trước động từ trong câu xử trí",
+          "is_correct": false
+        },
+        {
+          "option_text": "vui; vui vẻ",
+          "is_correct": false
+        }
+      ],
+      "rubric": "会议室 (huìyìshì) — phòng họp. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 10
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “gànhuóér” — làm việc.",
+      "options": [
+        {
+          "option_text": "上去",
+          "is_correct": false
+        },
+        {
+          "option_text": "全家",
+          "is_correct": false
+        },
+        {
+          "option_text": "笔记本电脑",
+          "is_correct": false
+        },
+        {
+          "option_text": "干活儿",
+          "is_correct": true
+        }
+      ],
+      "rubric": "干活儿 (gànhuóér) — làm việc. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 10
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 7).",
+      "options": [
+        {
+          "option_text": "hợp đồng",
+          "is_correct": true
+        },
+        {
+          "option_text": "nước cola",
+          "is_correct": false
+        },
+        {
+          "option_text": "bài tập, câu hỏi",
+          "is_correct": false
+        },
+        {
+          "option_text": "ha ha, tiếng cười",
+          "is_correct": false
+        }
+      ],
+      "rubric": "合同 (hétong) — hợp đồng. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "合同"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 10
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “打印” (dǎyìn) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "thảo nguyên",
+          "is_correct": false
+        },
+        {
+          "option_text": "bao nhiêu tuổi; lớn cỡ nào",
+          "is_correct": false
+        },
+        {
+          "option_text": "in (tài liệu)",
+          "is_correct": true
+        },
+        {
+          "option_text": "nơi nào, chỗ nào",
+          "is_correct": false
+        }
+      ],
+      "rubric": "打印 (dǎyìn) — in (tài liệu). ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 10
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “chūchāi” — đi công tác.",
+      "options": [
+        {
+          "option_text": "汉语",
+          "is_correct": false
+        },
+        {
+          "option_text": "出差",
+          "is_correct": true
+        },
+        {
+          "option_text": "绿茶",
+          "is_correct": false
+        },
+        {
+          "option_text": "小时",
+          "is_correct": false
+        }
+      ],
+      "rubric": "出差 (chūchāi) — đi công tác. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 10
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "hợp tác",
+          "is_correct": false
+        },
+        {
+          "option_text": "đắt",
+          "is_correct": false
+        },
+        {
+          "option_text": "ý nghĩa",
+          "is_correct": true
+        },
+        {
+          "option_text": "nhưng (dạng ngắn của 但是)",
+          "is_correct": false
+        }
+      ],
+      "rubric": "意义 (yìyì) — ý nghĩa. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "意义"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 10
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “开会” (kāihuì) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "mì sợi",
+          "is_correct": false
+        },
+        {
+          "option_text": "tập chơi bóng",
+          "is_correct": false
+        },
+        {
+          "option_text": "họp, mở cuộc họp",
+          "is_correct": true
+        },
+        {
+          "option_text": "bài tập, câu hỏi",
+          "is_correct": false
+        }
+      ],
+      "rubric": "开会 (kāihuì) — họp, mở cuộc họp. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 10
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “shāokǎo” — đồ nướng; nướng.",
+      "options": [
+        {
+          "option_text": "颐和园",
+          "is_correct": false
+        },
+        {
+          "option_text": "家人",
+          "is_correct": false
+        },
+        {
+          "option_text": "烧烤",
+          "is_correct": true
+        },
+        {
+          "option_text": "周几",
+          "is_correct": false
+        }
+      ],
+      "rubric": "烧烤 (shāokǎo) — đồ nướng; nướng. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 10
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “cuộc họp, hội nghị” (pinyin: huìyì).",
+      "reference_answer": "会议",
+      "rubric": "Đáp án: 会议 (huìyì). ",
+      "config": {
+        "accepted_answers": [
+          "会议"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 10
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “máy tính xách tay” (pinyin: bǐjìběndiànnǎo).",
+      "reference_answer": "笔记本电脑",
+      "rubric": "Đáp án: 笔记本电脑 (bǐjìběndiànnǎo). ",
+      "config": {
+        "accepted_answers": [
+          "笔记本电脑"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 10
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “lẩu” (pinyin: huǒguō).",
+      "reference_answer": "火锅",
+      "rubric": "Đáp án: 火锅 (huǒguō). ",
+      "config": {
+        "accepted_answers": [
+          "火锅"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 10
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “thành công” (pinyin: chénggōng).",
+      "reference_answer": "成功",
+      "rubric": "Đáp án: 成功 (chénggōng). ",
+      "config": {
+        "accepted_answers": [
+          "成功"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 10
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối các từ với nghĩa đã học (nhóm 1).",
+      "rubric": "整理: sắp xếp, chỉnh lý ; 干杯: nâng cốc, cạn ly ; 处理: xử lý ; 售货员: nhân viên bán hàng",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "整理"
+          },
+          {
+            "id": "l1",
+            "text": "干杯"
+          },
+          {
+            "id": "l2",
+            "text": "处理"
+          },
+          {
+            "id": "l3",
+            "text": "售货员"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r1",
+            "text": "nâng cốc, cạn ly"
+          },
+          {
+            "id": "r2",
+            "text": "xử lý"
+          },
+          {
+            "id": "r0",
+            "text": "sắp xếp, chỉnh lý"
+          },
+          {
+            "id": "r3",
+            "text": "nhân viên bán hàng"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 10
+        },
+        {
+          "hsk": 3,
+          "lesson": 10
+        },
+        {
+          "hsk": 3,
+          "lesson": 10
+        },
+        {
+          "hsk": 1,
+          "lesson": 10
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối các từ với nghĩa đã học (nhóm 2).",
+      "rubric": "出差: đi công tác ; 意义: ý nghĩa ; 双方: hai bên ; 售货员: nhân viên bán hàng",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "出差"
+          },
+          {
+            "id": "l1",
+            "text": "意义"
+          },
+          {
+            "id": "l2",
+            "text": "双方"
+          },
+          {
+            "id": "l3",
+            "text": "售货员"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r3",
+            "text": "nhân viên bán hàng"
+          },
+          {
+            "id": "r2",
+            "text": "hai bên"
+          },
+          {
+            "id": "r1",
+            "text": "ý nghĩa"
+          },
+          {
+            "id": "r0",
+            "text": "đi công tác"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 10
+        },
+        {
+          "hsk": 3,
+          "lesson": 10
+        },
+        {
+          "hsk": 3,
+          "lesson": 10
+        },
+        {
+          "hsk": 1,
+          "lesson": 10
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "我把资料整理___了。",
+      "options": [
+        {
+          "option_text": "是",
+          "is_correct": false
+        },
+        {
+          "option_text": "在",
+          "is_correct": false
+        },
+        {
+          "option_text": "好",
+          "is_correct": true
+        },
+        {
+          "option_text": "的",
+          "is_correct": false
+        }
+      ],
+      "rubric": "整理好 chỉ đã sắp xếp đạt kết quả mong muốn.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 10
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "我把资料打印___了。",
+      "options": [
+        {
+          "option_text": "进去",
+          "is_correct": false
+        },
+        {
+          "option_text": "回去",
+          "is_correct": false
+        },
+        {
+          "option_text": "出来",
+          "is_correct": true
+        },
+        {
+          "option_text": "下去",
+          "is_correct": false
+        }
+      ],
+      "rubric": "打印出来 biểu thị in tài liệu ra, khác các hướng đi vào hoặc trở lại.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 10
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "___我们来说，这些问题很难。",
+      "options": [
+        {
+          "option_text": "从",
+          "is_correct": false
+        },
+        {
+          "option_text": "对",
+          "is_correct": true
+        },
+        {
+          "option_text": "把",
+          "is_correct": false
+        },
+        {
+          "option_text": "在",
+          "is_correct": false
+        }
+      ],
+      "rubric": "对…来说 giới hạn đánh giá theo đối tượng được nêu.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 10
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Câu 把 với kết quả”, cách hiểu nào đúng (mục 1)?",
+      "options": [
+        {
+          "option_text": "Nhấn mạnh đối tượng đã được xử lý đạt kết quả nào.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Nhấn mạnh đối tượng đã được xử lý đạt kết quả nào. Động từ trong câu 把 thường cần thành phần kết quả hoặc thành phần khác, không chỉ đứng một mình.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 10
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Câu 把 với xu hướng”, cách hiểu nào đúng (mục 2)?",
+      "options": [
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nêu hướng di chuyển hoặc kết quả được đưa ra của đối tượng.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Nêu hướng di chuyển hoặc kết quả được đưa ra của đối tượng. 出来 trong 打印出来 chỉ kết quả thể hiện ra, không nhất thiết là người di chuyển ra ngoài.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 10
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Nêu góc nhìn”, cách hiểu nào đúng (mục 3)?",
+      "options": [
+        {
+          "option_text": "Giới hạn đánh giá theo người hoặc góc nhìn được nêu.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Giới hạn đánh giá theo người hoặc góc nhìn được nêu. 对…来说 nêu đối tượng xét đến; 在…看来 nêu cách người đó nhìn nhận, không phải khẳng định tuyệt đối.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 10
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Tôi đã sắp xếp xong tài liệu rồi. (câu 1).",
+      "reference_answer": "我把资料整理好了。",
+      "rubric": "Câu đúng: 我把资料整理好了。 — Tôi đã sắp xếp xong tài liệu rồi. Động từ trong câu 把 thường cần thành phần kết quả hoặc thành phần khác, không chỉ đứng một mình.",
+      "config": {
+        "items": [
+          {
+            "id": "t4",
+            "text": "好"
+          },
+          {
+            "id": "t1",
+            "text": "把"
+          },
+          {
+            "id": "t3",
+            "text": "整理"
+          },
+          {
+            "id": "t5",
+            "text": "了"
+          },
+          {
+            "id": "t6",
+            "text": "。"
+          },
+          {
+            "id": "t0",
+            "text": "我"
+          },
+          {
+            "id": "t2",
+            "text": "资料"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 10
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Tôi đã in tài liệu ra rồi. (câu 2).",
+      "reference_answer": "我把资料打印出来了。",
+      "rubric": "Câu đúng: 我把资料打印出来了。 — Tôi đã in tài liệu ra rồi. 出来 trong 打印出来 chỉ kết quả thể hiện ra, không nhất thiết là người di chuyển ra ngoài.",
+      "config": {
+        "items": [
+          {
+            "id": "t0",
+            "text": "我"
+          },
+          {
+            "id": "t1",
+            "text": "把"
+          },
+          {
+            "id": "t5",
+            "text": "来"
+          },
+          {
+            "id": "t4",
+            "text": "出"
+          },
+          {
+            "id": "t3",
+            "text": "打印"
+          },
+          {
+            "id": "t6",
+            "text": "了"
+          },
+          {
+            "id": "t7",
+            "text": "。"
+          },
+          {
+            "id": "t2",
+            "text": "资料"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 10
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Đối với chúng tôi, những vấn đề này rất khó. (câu 3).",
+      "reference_answer": "对我们来说，这些问题很难。",
+      "rubric": "Câu đúng: 对我们来说，这些问题很难。 — Đối với chúng tôi, những vấn đề này rất khó. 对…来说 nêu đối tượng xét đến; 在…看来 nêu cách người đó nhìn nhận, không phải khẳng định tuyệt đối.",
+      "config": {
+        "items": [
+          {
+            "id": "t0",
+            "text": "对"
+          },
+          {
+            "id": "t10",
+            "text": "。"
+          },
+          {
+            "id": "t3",
+            "text": "来"
+          },
+          {
+            "id": "t2",
+            "text": "们"
+          },
+          {
+            "id": "t7",
+            "text": "问题"
+          },
+          {
+            "id": "t1",
+            "text": "我"
+          },
+          {
+            "id": "t9",
+            "text": "难"
+          },
+          {
+            "id": "t5",
+            "text": "，"
+          },
+          {
+            "id": "t8",
+            "text": "很"
+          },
+          {
+            "id": "t6",
+            "text": "这些"
+          },
+          {
+            "id": "t4",
+            "text": "说"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 10
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Linda, sắp họp rồi. Cô chuẩn bị tài liệu thế nào? (câu 4).",
+      "reference_answer": "琳达，快要开会了。资料你准备得怎么样了？",
+      "rubric": "Câu đúng: 琳达，快要开会了。资料你准备得怎么样了？ — Linda, sắp họp rồi. Cô chuẩn bị tài liệu thế nào? Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t1",
+            "text": "达"
+          },
+          {
+            "id": "t8",
+            "text": "资料"
+          },
+          {
+            "id": "t6",
+            "text": "了"
+          },
+          {
+            "id": "t11",
+            "text": "得"
+          },
+          {
+            "id": "t2",
+            "text": "，"
+          },
+          {
+            "id": "t9",
+            "text": "你"
+          },
+          {
+            "id": "t4",
+            "text": "要"
+          },
+          {
+            "id": "t10",
+            "text": "准备"
+          },
+          {
+            "id": "t3",
+            "text": "快"
+          },
+          {
+            "id": "t5",
+            "text": "开会"
+          },
+          {
+            "id": "t13",
+            "text": "了"
+          },
+          {
+            "id": "t7",
+            "text": "。"
+          },
+          {
+            "id": "t0",
+            "text": "琳"
+          },
+          {
+            "id": "t14",
+            "text": "？"
+          },
+          {
+            "id": "t12",
+            "text": "怎么样"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12",
+          "t13",
+          "t14"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 10
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Tôi đã sắp xếp xong tài liệu, cũng đặt lên bàn của ông rồi. (câu 5).",
+      "reference_answer": "我已经把资料整理好了。我也把资料放在您的桌子上。",
+      "rubric": "Câu đúng: 我已经把资料整理好了。我也把资料放在您的桌子上。 — Tôi đã sắp xếp xong tài liệu, cũng đặt lên bàn của ông rồi. Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t6",
+            "text": "了"
+          },
+          {
+            "id": "t0",
+            "text": "我"
+          },
+          {
+            "id": "t9",
+            "text": "也"
+          },
+          {
+            "id": "t5",
+            "text": "好"
+          },
+          {
+            "id": "t8",
+            "text": "我"
+          },
+          {
+            "id": "t7",
+            "text": "。"
+          },
+          {
+            "id": "t13",
+            "text": "在"
+          },
+          {
+            "id": "t2",
+            "text": "把"
+          },
+          {
+            "id": "t10",
+            "text": "把"
+          },
+          {
+            "id": "t4",
+            "text": "整理"
+          },
+          {
+            "id": "t14",
+            "text": "您"
+          },
+          {
+            "id": "t3",
+            "text": "资料"
+          },
+          {
+            "id": "t18",
+            "text": "。"
+          },
+          {
+            "id": "t16",
+            "text": "桌子"
+          },
+          {
+            "id": "t15",
+            "text": "的"
+          },
+          {
+            "id": "t12",
+            "text": "放"
+          },
+          {
+            "id": "t17",
+            "text": "上"
+          },
+          {
+            "id": "t1",
+            "text": "已经"
+          },
+          {
+            "id": "t11",
+            "text": "资料"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12",
+          "t13",
+          "t14",
+          "t15",
+          "t16",
+          "t17",
+          "t18"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 10
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Tốt. Lát nữa cô nhờ thư ký Lý chuẩn bị đồ uống, trà hoặc cà phê đều được. (câu 6).",
+      "reference_answer": "不错。一会儿你让李秘书准备些饮料吧，茶或者咖啡都可以。",
+      "rubric": "Câu đúng: 不错。一会儿你让李秘书准备些饮料吧，茶或者咖啡都可以。 — Tốt. Lát nữa cô nhờ thư ký Lý chuẩn bị đồ uống, trà hoặc cà phê đều được. Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t9",
+            "text": "饮料"
+          },
+          {
+            "id": "t5",
+            "text": "李"
+          },
+          {
+            "id": "t8",
+            "text": "些"
+          },
+          {
+            "id": "t6",
+            "text": "秘书"
+          },
+          {
+            "id": "t3",
+            "text": "你"
+          },
+          {
+            "id": "t0",
+            "text": "不错"
+          },
+          {
+            "id": "t2",
+            "text": "一会儿"
+          },
+          {
+            "id": "t14",
+            "text": "咖啡"
+          },
+          {
+            "id": "t10",
+            "text": "吧"
+          },
+          {
+            "id": "t13",
+            "text": "或者"
+          },
+          {
+            "id": "t17",
+            "text": "。"
+          },
+          {
+            "id": "t7",
+            "text": "准备"
+          },
+          {
+            "id": "t4",
+            "text": "让"
+          },
+          {
+            "id": "t11",
+            "text": "，"
+          },
+          {
+            "id": "t16",
+            "text": "可以"
+          },
+          {
+            "id": "t12",
+            "text": "茶"
+          },
+          {
+            "id": "t15",
+            "text": "都"
+          },
+          {
+            "id": "t1",
+            "text": "。"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12",
+          "t13",
+          "t14",
+          "t15",
+          "t16",
+          "t17"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 10
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ]
+}

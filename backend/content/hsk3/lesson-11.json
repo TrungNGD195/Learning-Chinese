@@ -1,0 +1,1817 @@
+{
+  "key": "hsk3-lesson-11-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 3,
+    "lesson_number": 11,
+    "title": "怎么突然就刮起风来了 · Sao đột nhiên nổi gió rồi?",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "街道",
+      "pinyin": "jiēdào",
+      "vietnamese_meaning": "đường phố",
+      "part_of_speech": "danh từ",
+      "source_key": "3:11:街道",
+      "note": null,
+      "order_index": 1,
+      "example": "今天在回家的路上我看到街道两边的树都开花了。\njīn tiān zài huí jiā de lù shàng wǒ kàn dào jiē dào liǎng biān de shù dōu kāi huā le 。\nHôm nay trên đường về nhà mình thấy cây hai bên phố đều nở hoa."
+    },
+    {
+      "hanzi": "开花",
+      "pinyin": "kāihuā",
+      "vietnamese_meaning": "nở hoa",
+      "part_of_speech": "động từ",
+      "source_key": "3:11:开花",
+      "note": null,
+      "order_index": 2,
+      "example": "今天在回家的路上我看到街道两边的树都开花了。\njīn tiān zài huí jiā de lù shàng wǒ kàn dào jiē dào liǎng biān de shù dōu kāi huā le 。\nHôm nay trên đường về nhà mình thấy cây hai bên phố đều nở hoa."
+    },
+    {
+      "hanzi": "船",
+      "pinyin": "chuán",
+      "vietnamese_meaning": "thuyền, tàu",
+      "part_of_speech": "danh từ",
+      "source_key": "3:11:船",
+      "note": null,
+      "order_index": 3,
+      "example": "那下午我想去公园一边坐船一边看花。\nnà xià wǔ wǒ xiǎng qù gōng yuán yī biān zuò chuán yī biān kàn huā 。\nChiều mình muốn đến công viên vừa ngồi thuyền vừa ngắm hoa."
+    },
+    {
+      "hanzi": "工作日",
+      "pinyin": "gōngzuòrì",
+      "vietnamese_meaning": "ngày làm việc",
+      "part_of_speech": "danh từ",
+      "source_key": "3:11:工作日",
+      "note": null,
+      "order_index": 4,
+      "example": "不过今天不是工作日，人应该很多。\nbù guò jīn tiān bú shì gōng zuò rì ， rén yīng gāi hěn duō 。\nNhưng hôm nay không phải ngày làm việc, chắc đông người."
+    },
+    {
+      "hanzi": "改天",
+      "pinyin": "gǎitiān",
+      "vietnamese_meaning": "hôm khác",
+      "part_of_speech": "danh từ chỉ thời gian",
+      "source_key": "3:11:改天",
+      "note": null,
+      "order_index": 5,
+      "example": "我们改天去，怎么样？\nwǒ men gǎi tiān qù ， zěn me yàng ？\nMình đi hôm khác nhé?"
+    },
+    {
+      "hanzi": "后天",
+      "pinyin": "hòutiān",
+      "vietnamese_meaning": "ngày kia",
+      "part_of_speech": "danh từ chỉ thời gian",
+      "source_key": "3:11:后天",
+      "note": null,
+      "order_index": 6,
+      "example": "行。或者明天去，或者后天去，我等你的电话。\nxíng 。 huò zhě míng tiān qù ， huò zhě hòu tiān qù ， wǒ děng nǐ de diàn huà 。\nĐược, ngày mai hoặc ngày kia đều được, mình đợi điện thoại bạn."
+    },
+    {
+      "hanzi": "同意",
+      "pinyin": "tóngyì",
+      "vietnamese_meaning": "đồng ý",
+      "part_of_speech": "động từ",
+      "source_key": "3:11:同意",
+      "note": null,
+      "order_index": 7,
+      "example": "我同意明天去公园。\nwǒ tóng yì míng tiān qù gōng yuán 。\nTôi đồng ý ngày mai đi công viên."
+    },
+    {
+      "hanzi": "突然",
+      "pinyin": "tūrán",
+      "vietnamese_meaning": "đột nhiên",
+      "part_of_speech": "tính từ, phó từ",
+      "source_key": "3:11:突然",
+      "note": null,
+      "order_index": 8,
+      "example": "你看，刚才还是大晴天，现在怎么突然刮起风来了？\nnǐ kàn ， gāng cái hái shì dà qíng tiān ， xiàn zài zěn me tū rán guā qǐ fēng lái le ？\nEm xem, vừa nãy còn nắng đẹp, sao giờ đột nhiên nổi gió?"
+    },
+    {
+      "hanzi": "刮风",
+      "pinyin": "guāfēng",
+      "vietnamese_meaning": "có gió, gió thổi",
+      "part_of_speech": "động từ",
+      "source_key": "3:11:刮风",
+      "note": null,
+      "order_index": 9,
+      "example": "冬天天气很冷，还常常刮风下雪。\ndōng tiān tiān qì hěn lěng ， hái cháng cháng guā fēng xià xuě 。\nMùa đông rất lạnh, thường có gió và tuyết."
+    },
+    {
+      "hanzi": "新闻",
+      "pinyin": "xīnwén",
+      "vietnamese_meaning": "tin tức",
+      "part_of_speech": "danh từ",
+      "source_key": "3:11:新闻",
+      "note": null,
+      "order_index": 10,
+      "example": "昨晚的新闻也说今天会下雨。\nzuó wǎn de xīn wén yě shuō jīn tiān huì xià yǔ 。\nTin tức tối qua cũng nói hôm nay mưa."
+    },
+    {
+      "hanzi": "雨伞",
+      "pinyin": "yǔsǎn",
+      "vietnamese_meaning": "ô, dù che mưa",
+      "part_of_speech": "danh từ",
+      "source_key": "3:11:雨伞",
+      "note": null,
+      "order_index": 11,
+      "example": "你出门的时候带雨伞了吗？\nnǐ chū mén de shí hòu dài yǔ sǎn le ma ？\nLúc ra ngoài bạn có mang ô không?"
+    },
+    {
+      "hanzi": "雨衣",
+      "pinyin": "yǔyī",
+      "vietnamese_meaning": "áo mưa",
+      "part_of_speech": "danh từ",
+      "source_key": "3:11:雨衣",
+      "note": null,
+      "order_index": 12,
+      "example": "我们家的雨衣已经借给小林了。\nwǒ men jiā de yǔ yī yǐ jīng jiè gěi xiǎo lín le 。\nÁo mưa nhà mình đã cho Tiểu Lâm mượn rồi."
+    },
+    {
+      "hanzi": "变",
+      "pinyin": "biàn",
+      "vietnamese_meaning": "biến, trở nên",
+      "part_of_speech": "động từ",
+      "source_key": "3:11:变",
+      "note": "变 nhấn mạnh trở nên/thay đổi thành trạng thái nào; 变化 nói sự thay đổi hoặc việc có thay đổi.",
+      "order_index": 13,
+      "example": "这个季节天气变化太快了。\nzhè ge jì jié tiān qì biàn huà tài kuài le 。\nMùa này thời tiết thay đổi nhanh quá."
+    },
+    {
+      "hanzi": "打雪仗",
+      "pinyin": "dǎxuězhàng",
+      "vietnamese_meaning": "chơi ném tuyết",
+      "part_of_speech": "động từ",
+      "source_key": "3:11:打雪仗",
+      "note": null,
+      "order_index": 14,
+      "example": "我还喜欢在雪地上打雪仗。\nwǒ hái xǐ huān zài xuě dì shàng dǎ xuě zhàng 。\nMình còn thích chơi ném tuyết."
+    },
+    {
+      "hanzi": "关注",
+      "pinyin": "guānzhù",
+      "vietnamese_meaning": "chú ý, quan tâm theo dõi",
+      "part_of_speech": "động từ",
+      "source_key": "3:11:关注",
+      "note": null,
+      "order_index": 15,
+      "example": "我不太关注天气预报。\nwǒ bù tài guān zhù tiān qì yù bào 。\nMình không theo dõi dự báo thời tiết nhiều."
+    },
+    {
+      "hanzi": "天气预报",
+      "pinyin": "tiānqìyùbào",
+      "vietnamese_meaning": "dự báo thời tiết",
+      "part_of_speech": "danh từ",
+      "source_key": "3:11:天气预报",
+      "note": null,
+      "order_index": 16,
+      "example": "我不太关注天气预报。\nwǒ bù tài guān zhù tiān qì yù bào 。\nMình không theo dõi dự báo thời tiết nhiều."
+    },
+    {
+      "hanzi": "习惯",
+      "pinyin": "xíguàn",
+      "vietnamese_meaning": "quen; thói quen",
+      "part_of_speech": "động từ, danh từ",
+      "source_key": "3:11:习惯",
+      "note": null,
+      "order_index": 17,
+      "example": "我已经习惯这里的天气了。\nwǒ yǐ jīng xí guàn zhè lǐ de tiān qì le 。\nTôi đã quen thời tiết ở đây rồi."
+    },
+    {
+      "hanzi": "家乡",
+      "pinyin": "jiāxiāng",
+      "vietnamese_meaning": "quê hương",
+      "part_of_speech": "danh từ",
+      "source_key": "3:11:家乡",
+      "note": null,
+      "order_index": 18,
+      "example": "你的家乡四季怎么样？\nnǐ de jiā xiāng sì jì zěn me yàng ？\nBốn mùa ở quê bạn thế nào?"
+    },
+    {
+      "hanzi": "感受",
+      "pinyin": "gǎnshòu",
+      "vietnamese_meaning": "cảm nhận; cảm xúc",
+      "part_of_speech": "động từ, danh từ",
+      "source_key": "3:11:感受",
+      "note": null,
+      "order_index": 19,
+      "example": "从小到大在这里生活，我能感受到北京四季各有各的美。\ncóng xiǎo dào dà zài zhè lǐ shēng huó ， wǒ néng gǎn shòu dào běi jīng sì jì gè yǒu gè de měi 。\nSống ở đây từ nhỏ, tôi cảm nhận được vẻ đẹp riêng của bốn mùa."
+    },
+    {
+      "hanzi": "避暑",
+      "pinyin": "bìshǔ",
+      "vietnamese_meaning": "tránh nóng",
+      "part_of_speech": "động từ",
+      "source_key": "3:11:避暑",
+      "note": null,
+      "order_index": 20,
+      "example": "夏天虽然很热，但是山里很凉快，去避暑的人特别多。\nxià tiān suī rán hěn rè ， dàn shì shān lǐ hěn liáng kuài ， qù bì shǔ de rén tè bié duō 。\nMùa hè tuy nóng nhưng trên núi mát, rất nhiều người đến tránh nóng."
+    },
+    {
+      "hanzi": "叶子",
+      "pinyin": "yèzi",
+      "vietnamese_meaning": "lá cây",
+      "part_of_speech": "danh từ",
+      "source_key": "3:11:叶子",
+      "note": null,
+      "order_index": 21,
+      "example": "秋天树上的一片片叶子都变成了红色、黄色，非常漂亮。\nqiū tiān shù shàng de yī piàn piàn yè zi dōu biàn chéng le hóng sè 、 huáng sè ， fēi cháng piào liàng 。\nMùa thu, từng chiếc lá trên cây chuyển sang đỏ, vàng, rất đẹp."
+    },
+    {
+      "hanzi": "变成",
+      "pinyin": "biànchéng",
+      "vietnamese_meaning": "biến thành, trở thành",
+      "part_of_speech": "động từ",
+      "source_key": "3:11:变成",
+      "note": null,
+      "order_index": 22,
+      "example": "秋天树上的一片片叶子都变成了红色、黄色，非常漂亮。\nqiū tiān shù shàng de yī piàn piàn yè zi dōu biàn chéng le hóng sè 、 huáng sè ， fēi cháng piào liàng 。\nMùa thu, từng chiếc lá trên cây chuyển sang đỏ, vàng, rất đẹp."
+    },
+    {
+      "hanzi": "滑雪",
+      "pinyin": "huáxuě",
+      "vietnamese_meaning": "trượt tuyết",
+      "part_of_speech": "động từ",
+      "source_key": "3:11:滑雪",
+      "note": null,
+      "order_index": 23,
+      "example": "我最喜欢冬天，因为我可以去滑雪。\nwǒ zuì xǐ huān dōng tiān ， yīn wèi wǒ kě yǐ qù huá xuě 。\nTôi thích mùa đông nhất vì có thể đi trượt tuyết."
+    },
+    {
+      "hanzi": "词典",
+      "pinyin": "cídiǎn",
+      "vietnamese_meaning": "từ điển",
+      "part_of_speech": "danh từ",
+      "source_key": "3:11:词典",
+      "note": null,
+      "order_index": 24,
+      "example": "这本词典是我的。\nzhè běn cí diǎn shì wǒ de 。\nQuyển từ điển này là của tôi."
+    },
+    {
+      "hanzi": "美丽",
+      "pinyin": "měilì",
+      "vietnamese_meaning": "đẹp, xinh đẹp",
+      "part_of_speech": "tính từ",
+      "source_key": "3:11:美丽",
+      "note": null,
+      "order_index": 25,
+      "example": "我的家乡很美丽。\nwǒ de jiā xiāng hěn měi lì 。\nQuê hương tôi rất đẹp."
+    }
+  ],
+  "grammar": [
+    {
+      "name": "Các lựa chọn với 或者",
+      "structure": "或者 + khả năng 1，或者 + khả năng 2",
+      "explanation": "Liệt kê những khả năng có thể chọn trong câu trần thuật.",
+      "usage": "Câu hỏi yêu cầu chọn A hay B thường dùng 还是; không đổi máy móc sang 或者.",
+      "example": "或者明天去，或者后天去，都可以。\nhuò zhě míng tiān qù ， huò zhě hòu tiān qù ， dōu kě yǐ 。\nĐi ngày mai hoặc ngày kia đều được.",
+      "note": "Câu hỏi yêu cầu chọn A hay B thường dùng 还是; không đổi máy móc sang 或者.",
+      "order_index": 1
+    },
+    {
+      "name": "Bắt đầu với 起来",
+      "structure": "Động từ/tính từ + 起来",
+      "explanation": "Biểu thị bắt đầu hành động hoặc chuyển vào trạng thái mới.",
+      "usage": "Khi có tân ngữ, có thể đặt tân ngữ giữa 起 và 来 như 下起雨来.",
+      "example": "外边下起雨来了。\nwài biān xià qǐ yǔ lái le 。\nNgoài trời bắt đầu mưa rồi.",
+      "note": "Khi có tân ngữ, có thể đặt tân ngữ giữa 起 và 来 như 下起雨来.",
+      "order_index": 2
+    },
+    {
+      "name": "Duy trì đến hiện tại với 下来",
+      "structure": "Động từ + 下来",
+      "explanation": "Nhìn lại sự tiếp tục hoặc duy trì từ trước đến thời điểm nói.",
+      "usage": "So với 下去 hướng đến việc tiếp tục từ hiện tại về sau, 下来 thường nhìn lại quá trình đã duy trì.",
+      "example": "虽然很难，我还是坚持下来了。\nsuī rán hěn nán ， wǒ hái shì jiān chí xià lái le 。\nDù khó, tôi vẫn kiên trì được đến giờ.",
+      "note": "So với 下去 hướng đến việc tiếp tục từ hiện tại về sau, 下来 thường nhìn lại quá trình đã duy trì.",
+      "order_index": 3
+    },
+    {
+      "name": "Giới hạn phạm vi với 就",
+      "structure": "Chủ ngữ + 就 + thành phần được giới hạn",
+      "explanation": "Nhấn mạnh chỉ có, chỉ làm hoặc chỉ còn một số lượng/phạm vi.",
+      "usage": "Không phải mọi 就 đều có nghĩa chỉ; 就 còn có các cách dùng về thời gian hoặc quan hệ điều kiện đã gặp.",
+      "example": "我就买了一杯奶茶。\nwǒ jiù mǎi le yī bēi nǎi chá 。\nTôi chỉ mua một cốc trà sữa.",
+      "note": "Không phải mọi 就 đều có nghĩa chỉ; 就 còn có các cách dùng về thời gian hoặc quan hệ điều kiện đã gặp.",
+      "order_index": 4
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Hẹn ngày đi công viên",
+      "content": "小林：今天在回家的路上我看到街道两边的树都开花了。\n小李：我们学校附近的公园里花也开得非常漂亮。\n小林：是吗？那下午我想去公园一边坐船一边看花。你跟我一起去吗？\n小李：当然了。不过今天不是工作日，人应该很多。我们改天去，怎么样？\n小林：行。或者明天去，或者后天去，我等你的电话。",
+      "pinyin": "xiǎo lín ： jīn tiān zài huí jiā de lù shàng wǒ kàn dào jiē dào liǎng biān de shù dōu kāi huā le 。\nxiǎo lǐ ： wǒ men xué xiào fù jìn de gōng yuán lǐ huā yě kāi de fēi cháng piào liàng 。\nxiǎo lín ： shì ma ？ nà xià wǔ wǒ xiǎng qù gōng yuán yī biān zuò chuán yī biān kàn huā 。 nǐ gēn wǒ yì qǐ qù ma ？\nxiǎo lǐ ： dāng rán le 。 bù guò jīn tiān bú shì gōng zuò rì ， rén yīng gāi hěn duō 。 wǒ men gǎi tiān qù ， zěn me yàng ？\nxiǎo lín ： xíng 。 huò zhě míng tiān qù ， huò zhě hòu tiān qù ， wǒ děng nǐ de diàn huà 。",
+      "vietnamese_translation": "Tiểu Lâm: Hôm nay trên đường về nhà mình thấy cây hai bên phố đều nở hoa.\nTiểu Lý: Hoa ở công viên gần trường mình cũng nở rất đẹp.\nTiểu Lâm: Thế à? Chiều mình muốn đến công viên vừa ngồi thuyền vừa ngắm hoa. Bạn đi cùng không?\nTiểu Lý: Tất nhiên. Nhưng hôm nay không phải ngày làm việc, chắc đông người. Mình đi hôm khác nhé?\nTiểu Lâm: Được, ngày mai hoặc ngày kia đều được, mình đợi điện thoại bạn.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 11, bài khóa 1."
+    },
+    {
+      "order_index": 2,
+      "title": "Trời đột nhiên nổi gió",
+      "content": "小刚：这个季节天气变化太快了。你看，刚才还是大晴天，现在怎么突然刮起风来了？\n小丽：昨晚的新闻也说今天会下雨。你帮我拿把伞吧，我要出去买菜。\n小刚：外边雨已经下起来了，你还是穿上雨衣吧。\n小丽：你忘了吗？我们家的雨衣已经借给小林了。\n小刚：那你在家等我吧，我帮你去买。",
+      "pinyin": "xiǎo gāng ： zhè ge jì jié tiān qì biàn huà tài kuài le 。 nǐ kàn ， gāng cái hái shì dà qíng tiān ， xiàn zài zěn me tū rán guā qǐ fēng lái le ？\nxiǎo lì ： zuó wǎn de xīn wén yě shuō jīn tiān huì xià yǔ 。 nǐ bāng wǒ ná bǎ sǎn ba ， wǒ yào chū qù mǎi cài 。\nxiǎo gāng ： wài biān yǔ yǐ jīng xià qǐ lái le ， nǐ hái shì chuān shàng yǔ yī ba 。\nxiǎo lì ： nǐ wàng le ma ？ wǒ men jiā de yǔ yī yǐ jīng jiè gěi xiǎo lín le 。\nxiǎo gāng ： nà nǐ zài jiā děng wǒ ba ， wǒ bāng nǐ qù mǎi 。",
+      "vietnamese_translation": "Tiểu Cương: Mùa này thời tiết thay đổi nhanh quá. Em xem, vừa nãy còn nắng đẹp, sao giờ đột nhiên nổi gió?\nTiểu Lệ: Tin tức tối qua cũng nói hôm nay mưa. Anh lấy giúp em cái ô nhé, em ra ngoài mua rau.\nTiểu Cương: Ngoài trời bắt đầu mưa rồi, em mặc áo mưa đi.\nTiểu Lệ: Anh quên à? Áo mưa nhà mình đã cho Tiểu Lâm mượn rồi.\nTiểu Cương: Vậy em ở nhà đợi, anh đi mua giúp.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 11, bài khóa 2."
+    },
+    {
+      "order_index": 3,
+      "title": "Mùa đông ở Bắc Kinh",
+      "content": "小丽：小李，你喜欢北京的哪个季节？\n小李：在北京住下来的这一年多，我看到北京四季各有各的美。不过我还是最喜欢冬天。\n小丽：冬天？北京的冬天很冷，还常常下雪。你很喜欢看雪吧？\n小李：是的，冬天虽然冷，但下雪时什么地方都很漂亮。我还喜欢在雪地上打雪仗。\n小丽：我也喜欢，不过听说今年北京就下了一次雪，太少了。\n小李：是吗？我不太关注天气预报。",
+      "pinyin": "xiǎo lì ： xiǎo lǐ ， nǐ xǐ huān běi jīng de nǎ ge jì jié ？\nxiǎo lǐ ： zài běi jīng zhù xià lái de zhè yī nián duō ， wǒ kàn dào běi jīng sì jì gè yǒu gè de měi 。 bù guò wǒ hái shì zuì xǐ huān dōng tiān 。\nxiǎo lì ： dōng tiān ？ běi jīng de dōng tiān hěn lěng ， hái cháng cháng xià xuě 。 nǐ hěn xǐ huān kàn xuě ba ？\nxiǎo lǐ ： shì de ， dōng tiān suī rán lěng ， dàn xià xuě shí shén me dì fāng dōu hěn piào liàng 。 wǒ hái xǐ huān zài xuě dì shàng dǎ xuě zhàng 。\nxiǎo lì ： wǒ yě xǐ huān ， bù guò tīng shuō jīn nián běi jīng jiù xià le yī cì xuě ， tài shǎo le 。\nxiǎo lǐ ： shì ma ？ wǒ bù tài guān zhù tiān qì yù bào 。",
+      "vietnamese_translation": "Tiểu Lệ: Tiểu Lý, bạn thích mùa nào ở Bắc Kinh?\nTiểu Lý: Sống ở Bắc Kinh hơn một năm, mình thấy bốn mùa đều có vẻ đẹp riêng. Nhưng mình vẫn thích mùa đông nhất.\nTiểu Lệ: Mùa đông à? Mùa đông Bắc Kinh rất lạnh, còn thường có tuyết. Bạn thích ngắm tuyết lắm nhỉ?\nTiểu Lý: Đúng, tuy lạnh nhưng lúc có tuyết nơi nào cũng đẹp. Mình còn thích chơi ném tuyết.\nTiểu Lệ: Mình cũng thích, nhưng nghe nói năm nay Bắc Kinh chỉ có tuyết một lần, ít quá.\nTiểu Lý: Thế à? Mình không theo dõi dự báo thời tiết nhiều.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 11, bài khóa 3."
+    },
+    {
+      "order_index": 4,
+      "title": "Bốn mùa ở quê tôi",
+      "content": "北京是我的家乡，这里有山有水，是有名的旅游城市。从小到大在这里生活，我能感受到北京四季各有各的美。春天天气最舒服，不冷不热。夏天虽然很热，但是山里很凉快，去避暑的人特别多。秋天树上的一片片叶子都变成了红色、黄色，非常漂亮。冬天天气很冷，还常常刮风下雪。我最喜欢冬天，因为我可以去滑雪。你呢？你的家乡四季怎么样？",
+      "pinyin": "běi jīng shì wǒ de jiā xiāng ， zhè lǐ yǒu shān yǒu shuǐ ， shì yǒu míng de lǚ yóu chéng shì 。 cóng xiǎo dào dà zài zhè lǐ shēng huó ， wǒ néng gǎn shòu dào běi jīng sì jì gè yǒu gè de měi 。 chūn tiān tiān qì zuì shū fú ， bù lěng bù rè 。 xià tiān suī rán hěn rè ， dàn shì shān lǐ hěn liáng kuài ， qù bì shǔ de rén tè bié duō 。 qiū tiān shù shàng de yī piàn piàn yè zi dōu biàn chéng le hóng sè 、 huáng sè ， fēi cháng piào liàng 。 dōng tiān tiān qì hěn lěng ， hái cháng cháng guā fēng xià xuě 。 wǒ zuì xǐ huān dōng tiān ， yīn wèi wǒ kě yǐ qù huá xuě 。 nǐ ne ？ nǐ de jiā xiāng sì jì zěn me yàng ？",
+      "vietnamese_translation": "Bắc Kinh là quê tôi, nơi có núi có nước, là thành phố du lịch nổi tiếng. Sống ở đây từ nhỏ, tôi cảm nhận được vẻ đẹp riêng của bốn mùa. Mùa xuân dễ chịu nhất, không lạnh không nóng. Mùa hè tuy nóng nhưng trên núi mát, rất nhiều người đến tránh nóng. Mùa thu, từng chiếc lá trên cây chuyển sang đỏ, vàng, rất đẹp. Mùa đông rất lạnh, thường có gió và tuyết. Tôi thích mùa đông nhất vì có thể đi trượt tuyết. Còn bạn? Bốn mùa ở quê bạn thế nào?",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 11, bài khóa 4."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 3 · Bài 11 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp của bài này và các bài trước; đạt từ 80%, được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "source_documents": {
+    "vocabulary": "DOCX",
+    "theory": "DOCX"
+  },
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 1).",
+      "options": [
+        {
+          "option_text": "ưng ý, chọn vì thấy phù hợp",
+          "is_correct": true
+        },
+        {
+          "option_text": "phút",
+          "is_correct": false
+        },
+        {
+          "option_text": "ngoài",
+          "is_correct": false
+        },
+        {
+          "option_text": "bữa tối",
+          "is_correct": false
+        }
+      ],
+      "rubric": "看中 (kànzhòng) — ưng ý, chọn vì thấy phù hợp. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true,
+          "audio_text": "看中"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 6
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “词典” (cídiǎn) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "bên ngoài",
+          "is_correct": false
+        },
+        {
+          "option_text": "nói chuyện, bàn bạc",
+          "is_correct": false
+        },
+        {
+          "option_text": "căn cứ vào, dựa theo",
+          "is_correct": false
+        },
+        {
+          "option_text": "từ điển",
+          "is_correct": true
+        }
+      ],
+      "rubric": "词典 (cídiǎn) — từ điển. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 11
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “biàn” — biến, trở nên.",
+      "options": [
+        {
+          "option_text": "变",
+          "is_correct": true
+        },
+        {
+          "option_text": "小学",
+          "is_correct": false
+        },
+        {
+          "option_text": "你好",
+          "is_correct": false
+        },
+        {
+          "option_text": "摩托车",
+          "is_correct": false
+        }
+      ],
+      "rubric": "变 (biàn) — biến, trở nên. 变 nhấn mạnh trở nên/thay đổi thành trạng thái nào; 变化 nói sự thay đổi hoặc việc có thay đổi.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 11
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 4).",
+      "options": [
+        {
+          "option_text": "Hoa Kỳ, Mỹ",
+          "is_correct": false
+        },
+        {
+          "option_text": "gió",
+          "is_correct": false
+        },
+        {
+          "option_text": "biến thành, trở thành",
+          "is_correct": true
+        },
+        {
+          "option_text": "tám",
+          "is_correct": false
+        }
+      ],
+      "rubric": "变成 (biànchéng) — biến thành, trở thành. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "变成"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 11
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “拿” (ná) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "thể thao, vận động",
+          "is_correct": false
+        },
+        {
+          "option_text": "từ",
+          "is_correct": false
+        },
+        {
+          "option_text": "đơn giản",
+          "is_correct": false
+        },
+        {
+          "option_text": "cầm, nắm",
+          "is_correct": true
+        }
+      ],
+      "rubric": "拿 (ná) — cầm, nắm. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 2
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “jiēdào” — đường phố.",
+      "options": [
+        {
+          "option_text": "觉得",
+          "is_correct": false
+        },
+        {
+          "option_text": "怎么了",
+          "is_correct": false
+        },
+        {
+          "option_text": "哪个",
+          "is_correct": false
+        },
+        {
+          "option_text": "街道",
+          "is_correct": true
+        }
+      ],
+      "rubric": "街道 (jiēdào) — đường phố. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 11
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 7).",
+      "options": [
+        {
+          "option_text": "không sao; không có việc gì",
+          "is_correct": false
+        },
+        {
+          "option_text": "đồng ý",
+          "is_correct": true
+        },
+        {
+          "option_text": "thời tiết",
+          "is_correct": false
+        },
+        {
+          "option_text": "miền Bắc, phương Bắc",
+          "is_correct": false
+        }
+      ],
+      "rubric": "同意 (tóngyì) — đồng ý. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "同意"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 11
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “美丽” (měilì) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "đẹp, xinh đẹp",
+          "is_correct": true
+        },
+        {
+          "option_text": "ít",
+          "is_correct": false
+        },
+        {
+          "option_text": "chợ, thị trường",
+          "is_correct": false
+        },
+        {
+          "option_text": "cơ thể; sức khỏe",
+          "is_correct": false
+        }
+      ],
+      "rubric": "美丽 (měilì) — đẹp, xinh đẹp. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 11
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “huáxuě” — trượt tuyết.",
+      "options": [
+        {
+          "option_text": "后边",
+          "is_correct": false
+        },
+        {
+          "option_text": "别的",
+          "is_correct": false
+        },
+        {
+          "option_text": "滑雪",
+          "is_correct": true
+        },
+        {
+          "option_text": "很",
+          "is_correct": false
+        }
+      ],
+      "rubric": "滑雪 (huáxuě) — trượt tuyết. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 11
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "anh, chị, bạn, ông, bà,...",
+          "is_correct": false
+        },
+        {
+          "option_text": "việc, chuyện",
+          "is_correct": false
+        },
+        {
+          "option_text": "áo mưa",
+          "is_correct": true
+        },
+        {
+          "option_text": "cả gia đình",
+          "is_correct": false
+        }
+      ],
+      "rubric": "雨衣 (yǔyī) — áo mưa. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "雨衣"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 11
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “后天” (hòutiān) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "phía trước",
+          "is_correct": false
+        },
+        {
+          "option_text": "ngày kia",
+          "is_correct": true
+        },
+        {
+          "option_text": "thể thao, vận động",
+          "is_correct": false
+        },
+        {
+          "option_text": "tự học",
+          "is_correct": false
+        }
+      ],
+      "rubric": "后天 (hòutiān) — ngày kia. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 11
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “gǎnshòu” — cảm nhận; cảm xúc.",
+      "options": [
+        {
+          "option_text": "睡觉",
+          "is_correct": false
+        },
+        {
+          "option_text": "感受",
+          "is_correct": true
+        },
+        {
+          "option_text": "出差",
+          "is_correct": false
+        },
+        {
+          "option_text": "曾经",
+          "is_correct": false
+        }
+      ],
+      "rubric": "感受 (gǎnshòu) — cảm nhận; cảm xúc. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 11
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “chú ý, quan tâm theo dõi” (pinyin: guānzhù).",
+      "reference_answer": "关注",
+      "rubric": "Đáp án: 关注 (guānzhù). ",
+      "config": {
+        "accepted_answers": [
+          "关注"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 11
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “tránh nóng” (pinyin: bìshǔ).",
+      "reference_answer": "避暑",
+      "rubric": "Đáp án: 避暑 (bìshǔ). ",
+      "config": {
+        "accepted_answers": [
+          "避暑"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 11
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “quen; thói quen” (pinyin: xíguàn).",
+      "reference_answer": "习惯",
+      "rubric": "Đáp án: 习惯 (xíguàn). ",
+      "config": {
+        "accepted_answers": [
+          "习惯"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 11
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “thuyền, tàu” (pinyin: chuán).",
+      "reference_answer": "船",
+      "rubric": "Đáp án: 船 (chuán). ",
+      "config": {
+        "accepted_answers": [
+          "船"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 11
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối các từ với nghĩa đã học (nhóm 1).",
+      "rubric": "感受: cảm nhận; cảm xúc ; 叶子: lá cây ; 块: tệ ; 打雪仗: chơi ném tuyết",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "感受"
+          },
+          {
+            "id": "l1",
+            "text": "叶子"
+          },
+          {
+            "id": "l2",
+            "text": "块"
+          },
+          {
+            "id": "l3",
+            "text": "打雪仗"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r0",
+            "text": "cảm nhận; cảm xúc"
+          },
+          {
+            "id": "r2",
+            "text": "tệ"
+          },
+          {
+            "id": "r3",
+            "text": "chơi ném tuyết"
+          },
+          {
+            "id": "r1",
+            "text": "lá cây"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 11
+        },
+        {
+          "hsk": 3,
+          "lesson": 11
+        },
+        {
+          "hsk": 1,
+          "lesson": 10
+        },
+        {
+          "hsk": 3,
+          "lesson": 11
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối các từ với nghĩa đã học (nhóm 2).",
+      "rubric": "滑雪: trượt tuyết ; 北方: miền Bắc, phương Bắc ; 雨衣: áo mưa ; 同意: đồng ý",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "滑雪"
+          },
+          {
+            "id": "l1",
+            "text": "北方"
+          },
+          {
+            "id": "l2",
+            "text": "雨衣"
+          },
+          {
+            "id": "l3",
+            "text": "同意"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r3",
+            "text": "đồng ý"
+          },
+          {
+            "id": "r1",
+            "text": "miền Bắc, phương Bắc"
+          },
+          {
+            "id": "r0",
+            "text": "trượt tuyết"
+          },
+          {
+            "id": "r2",
+            "text": "áo mưa"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 11
+        },
+        {
+          "hsk": 3,
+          "lesson": 3
+        },
+        {
+          "hsk": 3,
+          "lesson": 11
+        },
+        {
+          "hsk": 3,
+          "lesson": 11
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nêu hai lựa chọn trong câu trần thuật: ___明天去，或者后天去，都可以。",
+      "options": [
+        {
+          "option_text": "或者",
+          "is_correct": true
+        },
+        {
+          "option_text": "虽然",
+          "is_correct": false
+        },
+        {
+          "option_text": "因为",
+          "is_correct": false
+        },
+        {
+          "option_text": "但是",
+          "is_correct": false
+        }
+      ],
+      "rubric": "或者…或者… liệt kê các khả năng có thể chọn.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 11
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Biểu thị mưa bắt đầu: 外边下___雨来了。",
+      "options": [
+        {
+          "option_text": "过",
+          "is_correct": false
+        },
+        {
+          "option_text": "完",
+          "is_correct": false
+        },
+        {
+          "option_text": "到",
+          "is_correct": false
+        },
+        {
+          "option_text": "起",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Trong 下起雨来, tân ngữ 雨 đứng giữa 起 và 来.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 11
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Theo nghĩa chỉ mua một cốc: 我___买了一杯奶茶。",
+      "options": [
+        {
+          "option_text": "也",
+          "is_correct": false
+        },
+        {
+          "option_text": "还",
+          "is_correct": false
+        },
+        {
+          "option_text": "就",
+          "is_correct": true
+        },
+        {
+          "option_text": "又",
+          "is_correct": false
+        }
+      ],
+      "rubric": "就 trong ngữ cảnh giới hạn số lượng có nghĩa chỉ.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 11
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Các lựa chọn với 或者”, cách hiểu nào đúng (mục 1)?",
+      "options": [
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Liệt kê những khả năng có thể chọn trong câu trần thuật.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Liệt kê những khả năng có thể chọn trong câu trần thuật. Câu hỏi yêu cầu chọn A hay B thường dùng 还是; không đổi máy móc sang 或者.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 11
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Bắt đầu với 起来”, cách hiểu nào đúng (mục 2)?",
+      "options": [
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Biểu thị bắt đầu hành động hoặc chuyển vào trạng thái mới.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Biểu thị bắt đầu hành động hoặc chuyển vào trạng thái mới. Khi có tân ngữ, có thể đặt tân ngữ giữa 起 và 来 như 下起雨来.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 11
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Duy trì đến hiện tại với 下来”, cách hiểu nào đúng (mục 3)?",
+      "options": [
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nhìn lại sự tiếp tục hoặc duy trì từ trước đến thời điểm nói.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Nhìn lại sự tiếp tục hoặc duy trì từ trước đến thời điểm nói. So với 下去 hướng đến việc tiếp tục từ hiện tại về sau, 下来 thường nhìn lại quá trình đã duy trì.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 11
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Đi ngày mai hoặc ngày kia đều được. (câu 1).",
+      "reference_answer": "或者明天去，或者后天去，都可以。",
+      "rubric": "Câu đúng: 或者明天去，或者后天去，都可以。 — Đi ngày mai hoặc ngày kia đều được. Câu hỏi yêu cầu chọn A hay B thường dùng 还是; không đổi máy móc sang 或者.",
+      "config": {
+        "items": [
+          {
+            "id": "t1",
+            "text": "明天"
+          },
+          {
+            "id": "t9",
+            "text": "可以"
+          },
+          {
+            "id": "t3",
+            "text": "，"
+          },
+          {
+            "id": "t5",
+            "text": "后天"
+          },
+          {
+            "id": "t4",
+            "text": "或者"
+          },
+          {
+            "id": "t10",
+            "text": "。"
+          },
+          {
+            "id": "t0",
+            "text": "或者"
+          },
+          {
+            "id": "t2",
+            "text": "去"
+          },
+          {
+            "id": "t8",
+            "text": "都"
+          },
+          {
+            "id": "t6",
+            "text": "去"
+          },
+          {
+            "id": "t7",
+            "text": "，"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 11
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Ngoài trời bắt đầu mưa rồi. (câu 2).",
+      "reference_answer": "外边下起雨来了。",
+      "rubric": "Câu đúng: 外边下起雨来了。 — Ngoài trời bắt đầu mưa rồi. Khi có tân ngữ, có thể đặt tân ngữ giữa 起 và 来 như 下起雨来.",
+      "config": {
+        "items": [
+          {
+            "id": "t5",
+            "text": "了"
+          },
+          {
+            "id": "t3",
+            "text": "雨"
+          },
+          {
+            "id": "t1",
+            "text": "下"
+          },
+          {
+            "id": "t6",
+            "text": "。"
+          },
+          {
+            "id": "t0",
+            "text": "外边"
+          },
+          {
+            "id": "t2",
+            "text": "起"
+          },
+          {
+            "id": "t4",
+            "text": "来"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 11
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Dù khó, tôi vẫn kiên trì được đến giờ. (câu 3).",
+      "reference_answer": "虽然很难，我还是坚持下来了。",
+      "rubric": "Câu đúng: 虽然很难，我还是坚持下来了。 — Dù khó, tôi vẫn kiên trì được đến giờ. So với 下去 hướng đến việc tiếp tục từ hiện tại về sau, 下来 thường nhìn lại quá trình đã duy trì.",
+      "config": {
+        "items": [
+          {
+            "id": "t3",
+            "text": "，"
+          },
+          {
+            "id": "t5",
+            "text": "还是"
+          },
+          {
+            "id": "t7",
+            "text": "下"
+          },
+          {
+            "id": "t4",
+            "text": "我"
+          },
+          {
+            "id": "t1",
+            "text": "很"
+          },
+          {
+            "id": "t2",
+            "text": "难"
+          },
+          {
+            "id": "t6",
+            "text": "坚持"
+          },
+          {
+            "id": "t9",
+            "text": "了"
+          },
+          {
+            "id": "t0",
+            "text": "虽然"
+          },
+          {
+            "id": "t10",
+            "text": "。"
+          },
+          {
+            "id": "t8",
+            "text": "来"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 11
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Tôi chỉ mua một cốc trà sữa. (câu 4).",
+      "reference_answer": "我就买了一杯奶茶。",
+      "rubric": "Câu đúng: 我就买了一杯奶茶。 — Tôi chỉ mua một cốc trà sữa. Không phải mọi 就 đều có nghĩa chỉ; 就 còn có các cách dùng về thời gian hoặc quan hệ điều kiện đã gặp.",
+      "config": {
+        "items": [
+          {
+            "id": "t3",
+            "text": "了"
+          },
+          {
+            "id": "t7",
+            "text": "。"
+          },
+          {
+            "id": "t1",
+            "text": "就"
+          },
+          {
+            "id": "t6",
+            "text": "奶茶"
+          },
+          {
+            "id": "t5",
+            "text": "杯"
+          },
+          {
+            "id": "t4",
+            "text": "一"
+          },
+          {
+            "id": "t0",
+            "text": "我"
+          },
+          {
+            "id": "t2",
+            "text": "买"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 11
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Hôm nay trên đường về nhà mình thấy cây hai bên phố đều nở hoa. (câu 5).",
+      "reference_answer": "今天在回家的路上我看到街道两边的树都开花了。",
+      "rubric": "Câu đúng: 今天在回家的路上我看到街道两边的树都开花了。 — Hôm nay trên đường về nhà mình thấy cây hai bên phố đều nở hoa. Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t9",
+            "text": "街道"
+          },
+          {
+            "id": "t2",
+            "text": "回"
+          },
+          {
+            "id": "t6",
+            "text": "我"
+          },
+          {
+            "id": "t5",
+            "text": "路上"
+          },
+          {
+            "id": "t15",
+            "text": "开花"
+          },
+          {
+            "id": "t16",
+            "text": "了"
+          },
+          {
+            "id": "t4",
+            "text": "的"
+          },
+          {
+            "id": "t12",
+            "text": "的"
+          },
+          {
+            "id": "t7",
+            "text": "看"
+          },
+          {
+            "id": "t3",
+            "text": "家"
+          },
+          {
+            "id": "t8",
+            "text": "到"
+          },
+          {
+            "id": "t11",
+            "text": "边"
+          },
+          {
+            "id": "t13",
+            "text": "树"
+          },
+          {
+            "id": "t1",
+            "text": "在"
+          },
+          {
+            "id": "t17",
+            "text": "。"
+          },
+          {
+            "id": "t14",
+            "text": "都"
+          },
+          {
+            "id": "t10",
+            "text": "两"
+          },
+          {
+            "id": "t0",
+            "text": "今天"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12",
+          "t13",
+          "t14",
+          "t15",
+          "t16",
+          "t17"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 11
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Hoa ở công viên gần trường mình cũng nở rất đẹp. (câu 6).",
+      "reference_answer": "我们学校附近的公园里花也开得非常漂亮。",
+      "rubric": "Câu đúng: 我们学校附近的公园里花也开得非常漂亮。 — Hoa ở công viên gần trường mình cũng nở rất đẹp. Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t7",
+            "text": "里"
+          },
+          {
+            "id": "t0",
+            "text": "我"
+          },
+          {
+            "id": "t11",
+            "text": "得"
+          },
+          {
+            "id": "t5",
+            "text": "公"
+          },
+          {
+            "id": "t8",
+            "text": "花"
+          },
+          {
+            "id": "t13",
+            "text": "漂亮"
+          },
+          {
+            "id": "t4",
+            "text": "的"
+          },
+          {
+            "id": "t1",
+            "text": "们"
+          },
+          {
+            "id": "t3",
+            "text": "附近"
+          },
+          {
+            "id": "t6",
+            "text": "园"
+          },
+          {
+            "id": "t10",
+            "text": "开"
+          },
+          {
+            "id": "t12",
+            "text": "非常"
+          },
+          {
+            "id": "t9",
+            "text": "也"
+          },
+          {
+            "id": "t14",
+            "text": "。"
+          },
+          {
+            "id": "t2",
+            "text": "学校"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12",
+          "t13",
+          "t14"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 11
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ]
+}

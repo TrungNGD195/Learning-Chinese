@@ -1,0 +1,1926 @@
+{
+  "key": "hsk3-lesson-05-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 3,
+    "lesson_number": 5,
+    "title": "坐高铁比坐飞机更方便 · Đi tàu cao tốc tiện hơn đi máy bay",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "学期",
+      "pinyin": "xuéqī",
+      "vietnamese_meaning": "học kỳ",
+      "part_of_speech": "danh từ",
+      "source_key": "3:5:学期",
+      "note": null,
+      "order_index": 1,
+      "example": "这个学期快结束了，咱们该买票回上海了。\nzhè ge xué qī kuài jié shù le ， zán men gāi mǎi piào huí shàng hǎi le 。\nHọc kỳ sắp kết thúc, đến lúc mua vé về Thượng Hải rồi."
+    },
+    {
+      "hanzi": "打算",
+      "pinyin": "dǎsuàn",
+      "vietnamese_meaning": "dự định; kế hoạch",
+      "part_of_speech": "động từ, danh từ",
+      "source_key": "3:5:打算",
+      "note": null,
+      "order_index": 2,
+      "example": "你打算什么时候走？\nnǐ dǎ suàn shén me shí hòu zǒu ？\nEm định khi nào đi?"
+    },
+    {
+      "hanzi": "高铁",
+      "pinyin": "gāotiě",
+      "vietnamese_meaning": "tàu cao tốc",
+      "part_of_speech": "danh từ",
+      "source_key": "3:5:高铁",
+      "note": null,
+      "order_index": 3,
+      "example": "我还没坐过高铁，想试一试。\nwǒ hái méi zuò guò gāo tiě ， xiǎng shì yī shì 。\nEm chưa đi tàu cao tốc bao giờ, muốn thử một lần."
+    },
+    {
+      "hanzi": "奇怪",
+      "pinyin": "qíguài",
+      "vietnamese_meaning": "kỳ lạ",
+      "part_of_speech": "tính từ",
+      "source_key": "3:5:奇怪",
+      "note": null,
+      "order_index": 4,
+      "example": "我也觉得有点儿奇怪。\nwǒ yě jué de yǒu diǎn ér qí guài 。\nAnh cũng thấy hơi lạ."
+    },
+    {
+      "hanzi": "路口",
+      "pinyin": "lùkǒu",
+      "vietnamese_meaning": "ngã đường, giao lộ",
+      "part_of_speech": "danh từ",
+      "source_key": "3:5:路口",
+      "note": null,
+      "order_index": 5,
+      "example": "先过这个路口看看吧。\nxiān guò zhè ge lù kǒu kàn kàn ba 。\nQua giao lộ này xem sao."
+    },
+    {
+      "hanzi": "小心",
+      "pinyin": "xiǎoxīn",
+      "vietnamese_meaning": "cẩn thận",
+      "part_of_speech": "tính từ, động từ",
+      "source_key": "3:5:小心",
+      "note": null,
+      "order_index": 6,
+      "example": "好，不过你走路小心一点儿。\nhǎo ， bù guò nǐ zǒu lù xiǎo xīn yì diǎn ér 。\nVâng, nhưng anh đi cẩn thận nhé."
+    },
+    {
+      "hanzi": "红绿灯",
+      "pinyin": "hónglǜdēng",
+      "vietnamese_meaning": "đèn giao thông",
+      "part_of_speech": "danh từ",
+      "source_key": "3:5:红绿灯",
+      "note": null,
+      "order_index": 7,
+      "example": "这里车很多，还有红绿灯。\nzhè lǐ chē hěn duō ， hái yǒu hóng lǜ dēng 。\nỞ đây nhiều xe, còn có đèn giao thông."
+    },
+    {
+      "hanzi": "迟到",
+      "pinyin": "chídào",
+      "vietnamese_meaning": "đến muộn",
+      "part_of_speech": "động từ",
+      "source_key": "3:5:迟到",
+      "note": null,
+      "order_index": 8,
+      "example": "但是如果找不到路，就可能会迟到。\ndàn shì rú guǒ zhǎo bú dào lù ， jiù kě néng huì chí dào 。\nNhưng nếu không tìm được đường thì có thể muộn."
+    },
+    {
+      "hanzi": "急",
+      "pinyin": "jí",
+      "vietnamese_meaning": "vội, sốt ruột",
+      "part_of_speech": "tính từ",
+      "source_key": "3:5:急",
+      "note": null,
+      "order_index": 9,
+      "example": "别急，我们可以问一下路人，就能快一点儿找到高铁站。\nbié jí ， wǒ men kě yǐ wèn yī xià lù rén ， jiù néng kuài yì diǎn ér zhǎo dào gāo tiě zhàn 。\nĐừng vội, mình có thể hỏi người đi đường để tìm ga tàu nhanh hơn."
+    },
+    {
+      "hanzi": "后来",
+      "pinyin": "hòulái",
+      "vietnamese_meaning": "sau đó, về sau",
+      "part_of_speech": "danh từ chỉ thời gian",
+      "source_key": "3:5:后来",
+      "note": null,
+      "order_index": 10,
+      "example": "我来过这附近，不过后来很少去了，所以有点儿不太熟。\nwǒ lái guò zhè fù jìn ， bù guò hòu lái hěn shǎo qù le ， suǒ yǐ yǒu diǎn ér bù tài shú 。\nAnh từng đến gần đây nhưng về sau ít đến nên hơi không quen đường."
+    },
+    {
+      "hanzi": "熟",
+      "pinyin": "shú",
+      "vietnamese_meaning": "quen, thông thạo",
+      "part_of_speech": "tính từ",
+      "source_key": "3:5:熟",
+      "note": null,
+      "order_index": 11,
+      "example": "我来过这附近，不过后来很少去了，所以有点儿不太熟。\nwǒ lái guò zhè fù jìn ， bù guò hòu lái hěn shǎo qù le ， suǒ yǐ yǒu diǎn ér bù tài shú 。\nAnh từng đến gần đây nhưng về sau ít đến nên hơi không quen đường."
+    },
+    {
+      "hanzi": "检票",
+      "pinyin": "jiǎnpiào",
+      "vietnamese_meaning": "kiểm tra vé",
+      "part_of_speech": "động từ",
+      "source_key": "3:5:检票",
+      "note": null,
+      "order_index": 12,
+      "example": "前面就是检票口。\nqián miàn jiù shì jiǎn piào kǒu 。\nPhía trước là cửa kiểm soát vé."
+    },
+    {
+      "hanzi": "刷",
+      "pinyin": "shuā",
+      "vietnamese_meaning": "quẹt, quét (vé hoặc thẻ); chải",
+      "part_of_speech": "động từ",
+      "source_key": "3:5:刷",
+      "note": null,
+      "order_index": 13,
+      "example": "一会儿要刷票进站。\nyī huì er yào shuā piào jìn zhàn 。\nLát nữa phải quét vé vào ga."
+    },
+    {
+      "hanzi": "站",
+      "pinyin": "zhàn",
+      "vietnamese_meaning": "trạm, ga, bến",
+      "part_of_speech": "danh từ",
+      "source_key": "3:5:站",
+      "note": "站 là ga/trạm trong 高铁站, khác 站 chỉ động tác đứng. Xác định từ loại qua ngữ cảnh. Nhắc lại HSK 2 bài 8: 站 (zhàn) — đứng. Trong ngữ cảnh bài này: trạm, ga, bến.",
+      "order_index": 14,
+      "example": "一会儿要刷票进站。\nyī huì er yào shuā piào jìn zhàn 。\nLát nữa phải quét vé vào ga."
+    },
+    {
+      "hanzi": "耳机",
+      "pinyin": "ěrjī",
+      "vietnamese_meaning": "tai nghe",
+      "part_of_speech": "danh từ",
+      "source_key": "3:5:耳机",
+      "note": null,
+      "order_index": 15,
+      "example": "准备好了，不过先检查一下耳机和充电宝，都带了吗？\nzhǔn bèi hǎo le ， bù guò xiān jiǎn chá yī xià ěr jī hé chōng diàn bǎo ， dōu dài le ma ？\nXong rồi, nhưng kiểm tra tai nghe và sạc dự phòng trước, mang đủ chưa?"
+    },
+    {
+      "hanzi": "充电宝",
+      "pinyin": "chōngdiànbǎo",
+      "vietnamese_meaning": "sạc dự phòng",
+      "part_of_speech": "danh từ",
+      "source_key": "3:5:充电宝",
+      "note": null,
+      "order_index": 16,
+      "example": "准备好了，不过先检查一下耳机和充电宝，都带了吗？\nzhǔn bèi hǎo le ， bù guò xiān jiǎn chá yī xià ěr jī hé chōng diàn bǎo ， dōu dài le ma ？\nXong rồi, nhưng kiểm tra tai nghe và sạc dự phòng trước, mang đủ chưa?"
+    },
+    {
+      "hanzi": "分开",
+      "pinyin": "fēnkāi",
+      "vietnamese_meaning": "tách ra, chia ra",
+      "part_of_speech": "động từ",
+      "source_key": "3:5:分开",
+      "note": null,
+      "order_index": 17,
+      "example": "那就好，我们别分开，一起走比较安全。\nnà jiù hǎo ， wǒ men bié fēn kāi ， yì qǐ zǒu bǐ jiào ān quán 。\nVậy được, mình đừng tách nhau, đi cùng sẽ an toàn hơn."
+    },
+    {
+      "hanzi": "安全",
+      "pinyin": "ānquán",
+      "vietnamese_meaning": "an toàn",
+      "part_of_speech": "tính từ",
+      "source_key": "3:5:安全",
+      "note": null,
+      "order_index": 18,
+      "example": "那就好，我们别分开，一起走比较安全。\nnà jiù hǎo ， wǒ men bié fēn kāi ， yì qǐ zǒu bǐ jiào ān quán 。\nVậy được, mình đừng tách nhau, đi cùng sẽ an toàn hơn."
+    },
+    {
+      "hanzi": "对方",
+      "pinyin": "duìfāng",
+      "vietnamese_meaning": "đối phương, người bên kia",
+      "part_of_speech": "danh từ",
+      "source_key": "3:5:对方",
+      "note": null,
+      "order_index": 19,
+      "example": "对，人这么多，如果分开，就很难找到对方了。\nduì ， rén zhè me duō ， rú guǒ fēn kāi ， jiù hěn nán zhǎo dào duì fāng le 。\nĐúng, đông thế này, nếu tách ra sẽ khó tìm được nhau."
+    },
+    {
+      "hanzi": "电梯",
+      "pinyin": "diàntī",
+      "vietnamese_meaning": "thang máy",
+      "part_of_speech": "danh từ",
+      "source_key": "3:5:电梯",
+      "note": null,
+      "order_index": 20,
+      "example": "好，进去以后我们坐电梯上去吧，人太多了。\nhǎo ， jìn qù yǐ hòu wǒ men zuò diàn tī shàng qù ba ， rén tài duō le 。\nVâng, vào rồi mình đi thang máy lên nhé, đông quá."
+    },
+    {
+      "hanzi": "选择",
+      "pinyin": "xuǎnzé",
+      "vietnamese_meaning": "lựa chọn",
+      "part_of_speech": "động từ, danh từ",
+      "source_key": "3:5:选择",
+      "note": null,
+      "order_index": 21,
+      "example": "这个月放假了，我选择坐高铁去上海。\nzhè ge yuè fàng jià le ， wǒ xuǎn zé zuò gāo tiě qù shàng hǎi 。\nTháng này được nghỉ, tôi chọn đi tàu cao tốc đến Thượng Hải."
+    },
+    {
+      "hanzi": "紧张",
+      "pinyin": "jǐnzhāng",
+      "vietnamese_meaning": "căng thẳng, hồi hộp",
+      "part_of_speech": "tính từ",
+      "source_key": "3:5:紧张",
+      "note": null,
+      "order_index": 22,
+      "example": "这是我第一次坐高铁，所以一开始有一点儿紧张。\nzhè shì wǒ dì yī cì zuò gāo tiě ， suǒ yǐ yī kāi shǐ yǒu yì diǎn ér jǐn zhāng 。\nĐây là lần đầu tôi đi tàu cao tốc nên ban đầu hơi hồi hộp."
+    },
+    {
+      "hanzi": "必须",
+      "pinyin": "bìxū",
+      "vietnamese_meaning": "nhất thiết phải",
+      "part_of_speech": "phó từ",
+      "source_key": "3:5:必须",
+      "note": null,
+      "order_index": 23,
+      "example": "上车以前，我们必须先检查车票，然后才能进站。\nshàng chē yǐ qián ， wǒ men bì xū xiān jiǎn chá chē piào ， rán hòu cái néng jìn zhàn 。\nTrước khi lên tàu phải kiểm tra vé rồi mới được vào ga."
+    },
+    {
+      "hanzi": "座位",
+      "pinyin": "zuòwèi",
+      "vietnamese_meaning": "chỗ ngồi",
+      "part_of_speech": "danh từ",
+      "source_key": "3:5:座位",
+      "note": null,
+      "order_index": 24,
+      "example": "上车以后，我坐在座位上休息，感觉就像坐在沙发上一样，非常舒服。\nshàng chē yǐ hòu ， wǒ zuò zài zuò wèi shàng xiū xī ， gǎn jué jiù xiàng zuò zài shā fā shàng yī yàng ， fēi cháng shū fú 。\nLên tàu, tôi ngồi nghỉ ở chỗ của mình, cảm giác rất thoải mái như ngồi sofa."
+    },
+    {
+      "hanzi": "沙发",
+      "pinyin": "shāfā",
+      "vietnamese_meaning": "ghế sofa",
+      "part_of_speech": "danh từ",
+      "source_key": "3:5:沙发",
+      "note": null,
+      "order_index": 25,
+      "example": "上车以后，我坐在座位上休息，感觉就像坐在沙发上一样，非常舒服。\nshàng chē yǐ hòu ， wǒ zuò zài zuò wèi shàng xiū xī ， gǎn jué jiù xiàng zuò zài shā fā shàng yī yàng ， fēi cháng shū fú 。\nLên tàu, tôi ngồi nghỉ ở chỗ của mình, cảm giác rất thoải mái như ngồi sofa."
+    },
+    {
+      "hanzi": "速度",
+      "pinyin": "sùdù",
+      "vietnamese_meaning": "tốc độ",
+      "part_of_speech": "danh từ",
+      "source_key": "3:5:速度",
+      "note": null,
+      "order_index": 26,
+      "example": "后来我发现，高铁的速度很快，外面的风景也变化得很快。\nhòu lái wǒ fā xiàn ， gāo tiě de sù dù hěn kuài ， wài miàn de fēng jǐng yě biàn huà de hěn kuài 。\nSau đó tôi nhận ra tàu chạy rất nhanh, phong cảnh ngoài cửa sổ cũng thay đổi rất nhanh."
+    },
+    {
+      "hanzi": "变化",
+      "pinyin": "biànhuà",
+      "vietnamese_meaning": "thay đổi; sự thay đổi",
+      "part_of_speech": "động từ, danh từ",
+      "source_key": "3:5:变化",
+      "note": null,
+      "order_index": 27,
+      "example": "后来我发现，高铁的速度很快，外面的风景也变化得很快。\nhòu lái wǒ fā xiàn ， gāo tiě de sù dù hěn kuài ， wài miàn de fēng jǐng yě biàn huà de hěn kuài 。\nSau đó tôi nhận ra tàu chạy rất nhanh, phong cảnh ngoài cửa sổ cũng thay đổi rất nhanh."
+    },
+    {
+      "hanzi": "过得",
+      "pinyin": "guò de",
+      "vietnamese_meaning": "trôi qua, sống như thế nào (kèm bổ ngữ)",
+      "part_of_speech": "cụm động từ",
+      "source_key": "3:5:过得",
+      "note": "得 đọc nhẹ de, dẫn phần đánh giá như 时间过得很快. Không đọc dé như 得到/得分.",
+      "order_index": 28,
+      "example": "一路上我听音乐、休息，时间过得越来越快，我也越来越喜欢这种出行方式了。\nyī lù shàng wǒ tīng yīn yuè 、 xiū xī ， shí jiān guò de yuè lái yuè kuài ， wǒ yě yuè lái yuè xǐ huān zhè zhǒng chū xíng fāng shì le 。\nDọc đường tôi nghe nhạc, nghỉ ngơi, thời gian trôi ngày càng nhanh và tôi càng thích cách đi lại này."
+    },
+    {
+      "hanzi": "出行",
+      "pinyin": "chūxíng",
+      "vietnamese_meaning": "đi lại, lên đường",
+      "part_of_speech": "động từ",
+      "source_key": "3:5:出行",
+      "note": null,
+      "order_index": 29,
+      "example": "以后如果有机会，我还会选择坐高铁出行。\nyǐ hòu rú guǒ yǒu jī huì ， wǒ hái huì xuǎn zé zuò gāo tiě chū xíng 。\nSau này có cơ hội, tôi vẫn sẽ chọn đi tàu cao tốc."
+    },
+    {
+      "hanzi": "方式",
+      "pinyin": "fāngshì",
+      "vietnamese_meaning": "cách thức, phương thức",
+      "part_of_speech": "danh từ",
+      "source_key": "3:5:方式",
+      "note": null,
+      "order_index": 30,
+      "example": "一路上我听音乐、休息，时间过得越来越快，我也越来越喜欢这种出行方式了。\nyī lù shàng wǒ tīng yīn yuè 、 xiū xī ， shí jiān guò de yuè lái yuè kuài ， wǒ yě yuè lái yuè xǐ huān zhè zhǒng chū xíng fāng shì le 。\nDọc đường tôi nghe nhạc, nghỉ ngơi, thời gian trôi ngày càng nhanh và tôi càng thích cách đi lại này."
+    },
+    {
+      "hanzi": "交通",
+      "pinyin": "jiāotōng",
+      "vietnamese_meaning": "giao thông",
+      "part_of_speech": "danh từ",
+      "source_key": "3:5:交通",
+      "note": null,
+      "order_index": 31,
+      "example": "我觉得坐高铁又方便又舒服，比别的交通工具更好。\nwǒ jué de zuò gāo tiě yòu fāng biàn yòu shū fú ， bǐ bié de jiāo tōng gōng jù gèng hǎo 。\nTôi thấy tàu cao tốc vừa tiện vừa thoải mái, tốt hơn những phương tiện khác."
+    },
+    {
+      "hanzi": "工具",
+      "pinyin": "gōngjù",
+      "vietnamese_meaning": "công cụ, dụng cụ",
+      "part_of_speech": "danh từ",
+      "source_key": "3:5:工具",
+      "note": null,
+      "order_index": 32,
+      "example": "我觉得坐高铁又方便又舒服，比别的交通工具更好。\nwǒ jué de zuò gāo tiě yòu fāng biàn yòu shū fú ， bǐ bié de jiāo tōng gōng jù gèng hǎo 。\nTôi thấy tàu cao tốc vừa tiện vừa thoải mái, tốt hơn những phương tiện khác."
+    },
+    {
+      "hanzi": "交通工具",
+      "pinyin": "jiāotōnggōngjù",
+      "vietnamese_meaning": "phương tiện giao thông",
+      "part_of_speech": "danh từ",
+      "source_key": "3:5:交通工具",
+      "note": null,
+      "order_index": 33,
+      "example": "我觉得坐高铁又方便又舒服，比别的交通工具更好。\nwǒ jué de zuò gāo tiě yòu fāng biàn yòu shū fú ， bǐ bié de jiāo tōng gōng jù gèng hǎo 。\nTôi thấy tàu cao tốc vừa tiện vừa thoải mái, tốt hơn những phương tiện khác."
+    },
+    {
+      "hanzi": "机会",
+      "pinyin": "jīhuì",
+      "vietnamese_meaning": "cơ hội",
+      "part_of_speech": "danh từ",
+      "source_key": "3:5:机会",
+      "note": null,
+      "order_index": 34,
+      "example": "以后如果有机会，我还会选择坐高铁出行。\nyǐ hòu rú guǒ yǒu jī huì ， wǒ hái huì xuǎn zé zuò gāo tiě chū xíng 。\nSau này có cơ hội, tôi vẫn sẽ chọn đi tàu cao tốc."
+    }
+  ],
+  "grammar": [
+    {
+      "name": "Đã đến lúc với 该…了",
+      "structure": "该 + động từ + 了",
+      "explanation": "Nêu việc đã đến lúc hoặc nên thực hiện.",
+      "usage": "了 đánh dấu tình huống đã đến, không tự mang nghĩa quá khứ.",
+      "example": "咱们该买票了。\nzán men gāi mǎi piào le 。\nĐến lúc chúng ta mua vé rồi.",
+      "note": "了 đánh dấu tình huống đã đến, không tự mang nghĩa quá khứ.",
+      "order_index": 1
+    },
+    {
+      "name": "Giả thiết với 如果",
+      "structure": "如果 + điều kiện +（的话），就 + kết quả",
+      "explanation": "Nêu kết quả có thể xảy ra nếu điều kiện được đáp ứng.",
+      "usage": "的话 có thể lược bỏ; không thêm 的话 vào mọi vị trí trong câu.",
+      "example": "如果找不到路，就可能迟到。\nrú guǒ zhǎo bú dào lù ， jiù kě néng chí dào 。\nNếu không tìm được đường thì có thể đến muộn.",
+      "note": "的话 có thể lược bỏ; không thêm 的话 vào mọi vị trí trong câu.",
+      "order_index": 2
+    },
+    {
+      "name": "Càng…càng…",
+      "structure": "越 + điều kiện hoặc mức độ 1，越 + mức độ 2",
+      "explanation": "Hai mức độ thay đổi phụ thuộc nhau.",
+      "usage": "Khác 越来越 + tính từ diễn tả sự thay đổi theo thời gian mà không nêu hai mức độ phụ thuộc.",
+      "example": "越练习，就越熟。\nyuè liàn xí ， jiù yuè shú 。\nCàng luyện tập thì càng thành thạo.",
+      "note": "Khác 越来越 + tính từ diễn tả sự thay đổi theo thời gian mà không nêu hai mức độ phụ thuộc.",
+      "order_index": 3
+    },
+    {
+      "name": "Ngày càng với 越来越",
+      "structure": "Chủ ngữ + 越来越 + tính từ/động từ tâm lý",
+      "explanation": "Biểu thị mức độ thay đổi dần theo thời gian.",
+      "usage": "Không thêm 很 ngay sau 越来越.",
+      "example": "人越来越多了。\nrén yuè lái yuè duō le 。\nNgười ngày càng đông.",
+      "note": "Không thêm 很 ngay sau 越来越.",
+      "order_index": 4
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Mua vé tàu cao tốc",
+      "content": "小刚：这个学期快结束了，咱们该买票回上海了。你打算什么时候走？\n小丽：我打算下个星期回上海。我还没坐过高铁，想试一试。\n小刚：好啊，从北京到上海的高铁很多，又快又方便。\n小丽：听你这么说，我更想坐高铁了。那我们怎么买票呢？\n小刚：现在用手机就可以买到票，很简单，我可以帮你买。\n小丽：行，那太好了！\n小刚：你把护照给我，我一起买好了。\n小丽：好啊，谢谢你！终于可以坐上高铁回上海了。",
+      "pinyin": "xiǎo gāng ： zhè ge xué qī kuài jié shù le ， zán men gāi mǎi piào huí shàng hǎi le 。 nǐ dǎ suàn shén me shí hòu zǒu ？\nxiǎo lì ： wǒ dǎ suàn xià gè xīng qī huí shàng hǎi 。 wǒ hái méi zuò guò gāo tiě ， xiǎng shì yī shì 。\nxiǎo gāng ： hǎo a ， cóng běi jīng dào shàng hǎi de gāo tiě hěn duō ， yòu kuài yòu fāng biàn 。\nxiǎo lì ： tīng nǐ zhè me shuō ， wǒ gèng xiǎng zuò gāo tiě le 。 nà wǒ men zěn me mǎi piào ne ？\nxiǎo gāng ： xiàn zài yòng shǒu jī jiù kě yǐ mǎi dào piào ， hěn jiǎn dān ， wǒ kě yǐ bāng nǐ mǎi 。\nxiǎo lì ： xíng ， nà tài hǎo le ！\nxiǎo gāng ： nǐ bǎ hù zhào gěi wǒ ， wǒ yì qǐ mǎi hǎo le 。\nxiǎo lì ： hǎo a ， xiè xiè nǐ ！ zhōng yú kě yǐ zuò shàng gāo tiě huí shàng hǎi le 。",
+      "vietnamese_translation": "Tiểu Cương: Học kỳ sắp kết thúc, đến lúc mua vé về Thượng Hải rồi. Em định khi nào đi?\nTiểu Lệ: Em định tuần sau về. Em chưa đi tàu cao tốc bao giờ, muốn thử một lần.\nTiểu Cương: Được, từ Bắc Kinh đến Thượng Hải có nhiều chuyến tàu cao tốc, vừa nhanh vừa tiện.\nTiểu Lệ: Nghe anh nói, em càng muốn đi. Vậy mình mua vé thế nào?\nTiểu Cương: Bây giờ dùng điện thoại là mua được vé, đơn giản lắm, anh có thể mua giúp.\nTiểu Lệ: Vâng, tốt quá!\nTiểu Cương: Em đưa hộ chiếu cho anh, anh mua cùng luôn.\nTiểu Lệ: Vâng, cảm ơn anh! Cuối cùng cũng được đi tàu cao tốc về Thượng Hải rồi.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 5, bài khóa 1."
+    },
+    {
+      "order_index": 2,
+      "title": "Hỏi đường đến ga",
+      "content": "小丽：我们是不是走错路了？我看前面的路有点儿不一样。\n小刚：我也觉得有点儿奇怪。先过这个路口看看吧。\n小丽：好，不过你走路小心一点儿。这里车很多，还有红绿灯。\n小刚：我知道了。但是如果找不到路，就可能会迟到。\n小丽：别急，我们可以问一下路人，就能快一点儿找到高铁站。\n小刚：如果没走错路，我们半个小时以前就到了。\n小丽：那边有一个卖水果的，我们去问问吧。\n小刚：好！我来过这附近，不过后来很少去了，所以有点儿不太熟。",
+      "pinyin": "xiǎo lì ： wǒ men shì bú shì zǒu cuò lù le ？ wǒ kàn qián miàn de lù yǒu diǎn ér bù yí yàng 。\nxiǎo gāng ： wǒ yě jué de yǒu diǎn ér qí guài 。 xiān guò zhè ge lù kǒu kàn kàn ba 。\nxiǎo lì ： hǎo ， bù guò nǐ zǒu lù xiǎo xīn yì diǎn ér 。 zhè lǐ chē hěn duō ， hái yǒu hóng lǜ dēng 。\nxiǎo gāng ： wǒ zhī dào le 。 dàn shì rú guǒ zhǎo bú dào lù ， jiù kě néng huì chí dào 。\nxiǎo lì ： bié jí ， wǒ men kě yǐ wèn yī xià lù rén ， jiù néng kuài yì diǎn ér zhǎo dào gāo tiě zhàn 。\nxiǎo gāng ： rú guǒ méi zǒu cuò lù ， wǒ men bàn gè xiǎo shí yǐ qián jiù dào le 。\nxiǎo lì ： nà biān yǒu yí gè mài shuǐ guǒ de ， wǒ men qù wèn wèn ba 。\nxiǎo gāng ： hǎo ！ wǒ lái guò zhè fù jìn ， bù guò hòu lái hěn shǎo qù le ， suǒ yǐ yǒu diǎn ér bù tài shú 。",
+      "vietnamese_translation": "Tiểu Lệ: Có phải mình đi nhầm đường không? Em thấy con đường phía trước hơi khác.\nTiểu Cương: Anh cũng thấy hơi lạ. Qua giao lộ này xem sao.\nTiểu Lệ: Vâng, nhưng anh đi cẩn thận nhé. Ở đây nhiều xe, còn có đèn giao thông.\nTiểu Cương: Anh biết rồi. Nhưng nếu không tìm được đường thì có thể muộn.\nTiểu Lệ: Đừng vội, mình có thể hỏi người đi đường để tìm ga tàu nhanh hơn.\nTiểu Cương: Nếu không đi nhầm thì nửa giờ trước mình đã đến rồi.\nTiểu Lệ: Bên kia có người bán trái cây, mình đến hỏi nhé.\nTiểu Cương: Được! Anh từng đến gần đây nhưng về sau ít đến nên hơi không quen đường.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 5, bài khóa 2."
+    },
+    {
+      "order_index": 3,
+      "title": "Kiểm tra vé vào ga",
+      "content": "小刚：终于到高铁站了，人越来越多，我们快去检票吧。\n小丽：好，你的票准备好了吗？一会儿要刷票进站。\n小刚：准备好了，不过先检查一下耳机和充电宝，都带了吗？\n小丽：都带了，这些都是我常用的东西。\n小刚：那就好，我们别分开，一起走比较安全。\n小丽：对，人这么多，如果分开，就很难找到对方了。\n小刚：前面就是检票口。我们用手机刷一下就可以进去。\n小丽：好，进去以后我们坐电梯上去吧，人太多了。",
+      "pinyin": "xiǎo gāng ： zhōng yú dào gāo tiě zhàn le ， rén yuè lái yuè duō ， wǒ men kuài qù jiǎn piào ba 。\nxiǎo lì ： hǎo ， nǐ de piào zhǔn bèi hǎo le ma ？ yī huì er yào shuā piào jìn zhàn 。\nxiǎo gāng ： zhǔn bèi hǎo le ， bù guò xiān jiǎn chá yī xià ěr jī hé chōng diàn bǎo ， dōu dài le ma ？\nxiǎo lì ： dōu dài le ， zhè xiē dōu shì wǒ cháng yòng de dōng xī 。\nxiǎo gāng ： nà jiù hǎo ， wǒ men bié fēn kāi ， yì qǐ zǒu bǐ jiào ān quán 。\nxiǎo lì ： duì ， rén zhè me duō ， rú guǒ fēn kāi ， jiù hěn nán zhǎo dào duì fāng le 。\nxiǎo gāng ： qián miàn jiù shì jiǎn piào kǒu 。 wǒ men yòng shǒu jī shuā yī xià jiù kě yǐ jìn qù 。\nxiǎo lì ： hǎo ， jìn qù yǐ hòu wǒ men zuò diàn tī shàng qù ba ， rén tài duō le 。",
+      "vietnamese_translation": "Tiểu Cương: Cuối cùng đến ga tàu rồi, người ngày càng đông, mình đi kiểm tra vé nhanh lên.\nTiểu Lệ: Vâng, vé của anh chuẩn bị xong chưa? Lát nữa phải quét vé vào ga.\nTiểu Cương: Xong rồi, nhưng kiểm tra tai nghe và sạc dự phòng trước, mang đủ chưa?\nTiểu Lệ: Mang đủ rồi, đều là đồ em thường dùng.\nTiểu Cương: Vậy được, mình đừng tách nhau, đi cùng sẽ an toàn hơn.\nTiểu Lệ: Đúng, đông thế này, nếu tách ra sẽ khó tìm được nhau.\nTiểu Cương: Phía trước là cửa kiểm soát vé. Mình quét điện thoại là vào được.\nTiểu Lệ: Vâng, vào rồi mình đi thang máy lên nhé, đông quá.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 5, bài khóa 3."
+    },
+    {
+      "order_index": 4,
+      "title": "Lần đầu đi tàu cao tốc",
+      "content": "这个月放假了，我选择坐高铁去上海。这是我第一次坐高铁，所以一开始有一点儿紧张。到了北京南站以后，我发现这里很大，人也很多，不过环境很安静。上车以前，我们必须先检查车票，然后才能进站。上车以后，我坐在座位上休息，感觉就像坐在沙发上一样，非常舒服。车上很干净，服务也很好，让人感觉很放松。后来我发现，高铁的速度很快，外面的风景也变化得很快。一路上我听音乐、休息，时间过得越来越快，我也越来越喜欢这种出行方式了。我觉得坐高铁又方便又舒服，比别的交通工具更好。这次旅行让我觉得很开心。以后如果有机会，我还会选择坐高铁出行。",
+      "pinyin": "zhè ge yuè fàng jià le ， wǒ xuǎn zé zuò gāo tiě qù shàng hǎi 。 zhè shì wǒ dì yī cì zuò gāo tiě ， suǒ yǐ yī kāi shǐ yǒu yì diǎn ér jǐn zhāng 。 dào le běi jīng nán zhàn yǐ hòu ， wǒ fā xiàn zhè lǐ hěn dà ， rén yě hěn duō ， bù guò huán jìng hěn ān jìng 。 shàng chē yǐ qián ， wǒ men bì xū xiān jiǎn chá chē piào ， rán hòu cái néng jìn zhàn 。 shàng chē yǐ hòu ， wǒ zuò zài zuò wèi shàng xiū xī ， gǎn jué jiù xiàng zuò zài shā fā shàng yī yàng ， fēi cháng shū fú 。 chē shàng hěn gān jìng ， fú wù yě hěn hǎo ， ràng rén gǎn jué hěn fàng sōng 。 hòu lái wǒ fā xiàn ， gāo tiě de sù dù hěn kuài ， wài miàn de fēng jǐng yě biàn huà de hěn kuài 。 yī lù shàng wǒ tīng yīn yuè 、 xiū xī ， shí jiān guò de yuè lái yuè kuài ， wǒ yě yuè lái yuè xǐ huān zhè zhǒng chū xíng fāng shì le 。 wǒ jué de zuò gāo tiě yòu fāng biàn yòu shū fú ， bǐ bié de jiāo tōng gōng jù gèng hǎo 。 zhè cì lǚ xíng ràng wǒ jué de hěn kāi xīn 。 yǐ hòu rú guǒ yǒu jī huì ， wǒ hái huì xuǎn zé zuò gāo tiě chū xíng 。",
+      "vietnamese_translation": "Tháng này được nghỉ, tôi chọn đi tàu cao tốc đến Thượng Hải. Đây là lần đầu tôi đi tàu cao tốc nên ban đầu hơi hồi hộp. Đến ga Bắc Kinh Nam, tôi thấy nơi này rất rộng, đông người nhưng khá yên tĩnh. Trước khi lên tàu phải kiểm tra vé rồi mới được vào ga. Lên tàu, tôi ngồi nghỉ ở chỗ của mình, cảm giác rất thoải mái như ngồi sofa. Trên tàu sạch sẽ, phục vụ tốt, khiến người ta thấy thư giãn. Sau đó tôi nhận ra tàu chạy rất nhanh, phong cảnh ngoài cửa sổ cũng thay đổi rất nhanh. Dọc đường tôi nghe nhạc, nghỉ ngơi, thời gian trôi ngày càng nhanh và tôi càng thích cách đi lại này. Tôi thấy tàu cao tốc vừa tiện vừa thoải mái, tốt hơn những phương tiện khác. Chuyến đi này làm tôi rất vui. Sau này có cơ hội, tôi vẫn sẽ chọn đi tàu cao tốc.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 5, bài khóa 4."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 3 · Bài 5 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp của bài này và các bài trước; đạt từ 80%, được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "source_documents": {
+    "vocabulary": "DOCX",
+    "theory": "DOCX"
+  },
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 1).",
+      "options": [
+        {
+          "option_text": "Pháp",
+          "is_correct": false
+        },
+        {
+          "option_text": "xe",
+          "is_correct": false
+        },
+        {
+          "option_text": "phát âm; cách phát âm",
+          "is_correct": false
+        },
+        {
+          "option_text": "tốc độ",
+          "is_correct": true
+        }
+      ],
+      "rubric": "速度 (sùdù) — tốc độ. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "速度"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 5
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “后来” (hòulái) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "bao lâu",
+          "is_correct": false
+        },
+        {
+          "option_text": "đang, trạng thái còn duy trì (sau động từ)",
+          "is_correct": false
+        },
+        {
+          "option_text": "sau đó, về sau",
+          "is_correct": true
+        },
+        {
+          "option_text": "ngày mai",
+          "is_correct": false
+        }
+      ],
+      "rubric": "后来 (hòulái) — sau đó, về sau. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 5
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “jiāotōnggōngjù” — phương tiện giao thông.",
+      "options": [
+        {
+          "option_text": "兵马俑",
+          "is_correct": false
+        },
+        {
+          "option_text": "买",
+          "is_correct": false
+        },
+        {
+          "option_text": "交通工具",
+          "is_correct": true
+        },
+        {
+          "option_text": "生词",
+          "is_correct": false
+        }
+      ],
+      "rubric": "交通工具 (jiāotōnggōngjù) — phương tiện giao thông. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 5
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “站” (zhàn) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "chạy bộ",
+          "is_correct": false
+        },
+        {
+          "option_text": "học sinh tiểu học",
+          "is_correct": false
+        },
+        {
+          "option_text": "Cố cung",
+          "is_correct": false
+        },
+        {
+          "option_text": "trạm, ga, bến",
+          "is_correct": true
+        }
+      ],
+      "rubric": "站 (zhàn) — trạm, ga, bến. 站 là ga/trạm trong 高铁站, khác 站 chỉ động tác đứng. Xác định từ loại qua ngữ cảnh. Nhắc lại HSK 2 bài 8: 站 (zhàn) — đứng. Trong ngữ cảnh bài này: trạm, ga, bến.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 5
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “好好儿” (hǎo hǎo ér) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "cho tốt, cẩn thận, đàng hoàng",
+          "is_correct": true
+        },
+        {
+          "option_text": "trình độ, mức độ",
+          "is_correct": false
+        },
+        {
+          "option_text": "giao thông",
+          "is_correct": false
+        },
+        {
+          "option_text": "uống thuốc",
+          "is_correct": false
+        }
+      ],
+      "rubric": "好好儿 (hǎo hǎo ér) — cho tốt, cẩn thận, đàng hoàng. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 8
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “hónglǜdēng” — đèn giao thông.",
+      "options": [
+        {
+          "option_text": "差不多",
+          "is_correct": false
+        },
+        {
+          "option_text": "方便",
+          "is_correct": false
+        },
+        {
+          "option_text": "运动鞋",
+          "is_correct": false
+        },
+        {
+          "option_text": "红绿灯",
+          "is_correct": true
+        }
+      ],
+      "rubric": "红绿灯 (hónglǜdēng) — đèn giao thông. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 5
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 7).",
+      "options": [
+        {
+          "option_text": "cẩn thận",
+          "is_correct": true
+        },
+        {
+          "option_text": "nhé, đi (gợi ý hoặc đề nghị)",
+          "is_correct": false
+        },
+        {
+          "option_text": "mời",
+          "is_correct": false
+        },
+        {
+          "option_text": "hòm, va-li",
+          "is_correct": false
+        }
+      ],
+      "rubric": "小心 (xiǎoxīn) — cẩn thận. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "小心"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 5
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “分开” (fēnkāi) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "sinh ra, chào đời",
+          "is_correct": false
+        },
+        {
+          "option_text": "nghỉ lễ",
+          "is_correct": false
+        },
+        {
+          "option_text": "tan học",
+          "is_correct": false
+        },
+        {
+          "option_text": "tách ra, chia ra",
+          "is_correct": true
+        }
+      ],
+      "rubric": "分开 (fēnkāi) — tách ra, chia ra. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 5
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “xuǎnzé” — lựa chọn.",
+      "options": [
+        {
+          "option_text": "还是",
+          "is_correct": false
+        },
+        {
+          "option_text": "谢谢",
+          "is_correct": false
+        },
+        {
+          "option_text": "姓",
+          "is_correct": false
+        },
+        {
+          "option_text": "选择",
+          "is_correct": true
+        }
+      ],
+      "rubric": "选择 (xuǎnzé) — lựa chọn. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 5
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "bảy (số 7)",
+          "is_correct": false
+        },
+        {
+          "option_text": "mỗi, hàng (ngày)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Tây An",
+          "is_correct": false
+        },
+        {
+          "option_text": "tàu cao tốc",
+          "is_correct": true
+        }
+      ],
+      "rubric": "高铁 (gāotiě) — tàu cao tốc. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "高铁"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 5
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “沙发” (shāfā) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "ghế sofa",
+          "is_correct": true
+        },
+        {
+          "option_text": "công việc",
+          "is_correct": false
+        },
+        {
+          "option_text": "đơn giản",
+          "is_correct": false
+        },
+        {
+          "option_text": "ban ngày",
+          "is_correct": false
+        }
+      ],
+      "rubric": "沙发 (shāfā) — ghế sofa. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 5
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “liàng” — chiếc (lượng từ cho xe).",
+      "options": [
+        {
+          "option_text": "压力",
+          "is_correct": false
+        },
+        {
+          "option_text": "三",
+          "is_correct": false
+        },
+        {
+          "option_text": "辆",
+          "is_correct": true
+        },
+        {
+          "option_text": "男生",
+          "is_correct": false
+        }
+      ],
+      "rubric": "辆 (liàng) — chiếc (lượng từ cho xe). ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “kỳ lạ” (pinyin: qíguài).",
+      "reference_answer": "奇怪",
+      "rubric": "Đáp án: 奇怪 (qíguài). ",
+      "config": {
+        "accepted_answers": [
+          "奇怪"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 5
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “an toàn” (pinyin: ānquán).",
+      "reference_answer": "安全",
+      "rubric": "Đáp án: 安全 (ānquán). ",
+      "config": {
+        "accepted_answers": [
+          "安全"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 5
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “trôi qua, sống như thế nào (kèm bổ ngữ)” (pinyin: guò de).",
+      "reference_answer": "过得",
+      "rubric": "Đáp án: 过得 (guò de). 得 đọc nhẹ de, dẫn phần đánh giá như 时间过得很快. Không đọc dé như 得到/得分.",
+      "config": {
+        "accepted_answers": [
+          "过得"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 5
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “công cụ, dụng cụ” (pinyin: gōngjù).",
+      "reference_answer": "工具",
+      "rubric": "Đáp án: 工具 (gōngjù). ",
+      "config": {
+        "accepted_answers": [
+          "工具"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 5
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối các từ với nghĩa đã học (nhóm 1).",
+      "rubric": "出行: đi lại, lên đường ; 迟到: đến muộn ; 对方: đối phương, người bên kia ; 打算: dự định; kế hoạch",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "出行"
+          },
+          {
+            "id": "l1",
+            "text": "迟到"
+          },
+          {
+            "id": "l2",
+            "text": "对方"
+          },
+          {
+            "id": "l3",
+            "text": "打算"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r2",
+            "text": "đối phương, người bên kia"
+          },
+          {
+            "id": "r1",
+            "text": "đến muộn"
+          },
+          {
+            "id": "r0",
+            "text": "đi lại, lên đường"
+          },
+          {
+            "id": "r3",
+            "text": "dự định; kế hoạch"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 5
+        },
+        {
+          "hsk": 3,
+          "lesson": 5
+        },
+        {
+          "hsk": 3,
+          "lesson": 5
+        },
+        {
+          "hsk": 3,
+          "lesson": 5
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối các từ với nghĩa đã học (nhóm 2).",
+      "rubric": "必须: nhất thiết phải ; 耳机: tai nghe ; 高铁: tàu cao tốc ; 工具: công cụ, dụng cụ",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "必须"
+          },
+          {
+            "id": "l1",
+            "text": "耳机"
+          },
+          {
+            "id": "l2",
+            "text": "高铁"
+          },
+          {
+            "id": "l3",
+            "text": "工具"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r2",
+            "text": "tàu cao tốc"
+          },
+          {
+            "id": "r3",
+            "text": "công cụ, dụng cụ"
+          },
+          {
+            "id": "r0",
+            "text": "nhất thiết phải"
+          },
+          {
+            "id": "r1",
+            "text": "tai nghe"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 5
+        },
+        {
+          "hsk": 3,
+          "lesson": 5
+        },
+        {
+          "hsk": 3,
+          "lesson": 5
+        },
+        {
+          "hsk": 3,
+          "lesson": 5
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Theo mẫu 该…了: 咱们___买票了。",
+      "options": [
+        {
+          "option_text": "该",
+          "is_correct": true
+        },
+        {
+          "option_text": "在",
+          "is_correct": false
+        },
+        {
+          "option_text": "的",
+          "is_correct": false
+        },
+        {
+          "option_text": "把",
+          "is_correct": false
+        }
+      ],
+      "rubric": "该…了 biểu thị đã đến lúc cần thực hiện việc mua vé.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 5
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "如果找不到路，___可能迟到。",
+      "options": [
+        {
+          "option_text": "地",
+          "is_correct": false
+        },
+        {
+          "option_text": "就",
+          "is_correct": true
+        },
+        {
+          "option_text": "的",
+          "is_correct": false
+        },
+        {
+          "option_text": "把",
+          "is_correct": false
+        }
+      ],
+      "rubric": "如果…就… nêu điều kiện và kết quả có thể xảy ra.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 5
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Theo mẫu 越…越…: 越练习，___熟。",
+      "options": [
+        {
+          "option_text": "一直",
+          "is_correct": false
+        },
+        {
+          "option_text": "一共",
+          "is_correct": false
+        },
+        {
+          "option_text": "越",
+          "is_correct": true
+        },
+        {
+          "option_text": "只",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Hai mức độ phụ thuộc: càng luyện tập càng thành thạo.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 5
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Đã đến lúc với 该…了”, cách hiểu nào đúng (mục 1)?",
+      "options": [
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nêu việc đã đến lúc hoặc nên thực hiện.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Nêu việc đã đến lúc hoặc nên thực hiện. 了 đánh dấu tình huống đã đến, không tự mang nghĩa quá khứ.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 5
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Giả thiết với 如果”, cách hiểu nào đúng (mục 2)?",
+      "options": [
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nêu kết quả có thể xảy ra nếu điều kiện được đáp ứng.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Nêu kết quả có thể xảy ra nếu điều kiện được đáp ứng. 的话 có thể lược bỏ; không thêm 的话 vào mọi vị trí trong câu.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 5
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Càng…càng…”, cách hiểu nào đúng (mục 3)?",
+      "options": [
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Hai mức độ thay đổi phụ thuộc nhau.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Hai mức độ thay đổi phụ thuộc nhau. Khác 越来越 + tính từ diễn tả sự thay đổi theo thời gian mà không nêu hai mức độ phụ thuộc.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 5
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Đến lúc chúng ta mua vé rồi. (câu 1).",
+      "reference_answer": "咱们该买票了。",
+      "rubric": "Câu đúng: 咱们该买票了。 — Đến lúc chúng ta mua vé rồi. 了 đánh dấu tình huống đã đến, không tự mang nghĩa quá khứ.",
+      "config": {
+        "items": [
+          {
+            "id": "t1",
+            "text": "该"
+          },
+          {
+            "id": "t5",
+            "text": "。"
+          },
+          {
+            "id": "t2",
+            "text": "买"
+          },
+          {
+            "id": "t3",
+            "text": "票"
+          },
+          {
+            "id": "t0",
+            "text": "咱们"
+          },
+          {
+            "id": "t4",
+            "text": "了"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 5
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Nếu không tìm được đường thì có thể đến muộn. (câu 2).",
+      "reference_answer": "如果找不到路，就可能迟到。",
+      "rubric": "Câu đúng: 如果找不到路，就可能迟到。 — Nếu không tìm được đường thì có thể đến muộn. 的话 có thể lược bỏ; không thêm 的话 vào mọi vị trí trong câu.",
+      "config": {
+        "items": [
+          {
+            "id": "t1",
+            "text": "果"
+          },
+          {
+            "id": "t7",
+            "text": "就"
+          },
+          {
+            "id": "t10",
+            "text": "。"
+          },
+          {
+            "id": "t0",
+            "text": "如"
+          },
+          {
+            "id": "t2",
+            "text": "找"
+          },
+          {
+            "id": "t5",
+            "text": "路"
+          },
+          {
+            "id": "t3",
+            "text": "不"
+          },
+          {
+            "id": "t6",
+            "text": "，"
+          },
+          {
+            "id": "t9",
+            "text": "迟到"
+          },
+          {
+            "id": "t8",
+            "text": "可能"
+          },
+          {
+            "id": "t4",
+            "text": "到"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 5
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Càng luyện tập thì càng thành thạo. (câu 3).",
+      "reference_answer": "越练习，就越熟。",
+      "rubric": "Câu đúng: 越练习，就越熟。 — Càng luyện tập thì càng thành thạo. Khác 越来越 + tính từ diễn tả sự thay đổi theo thời gian mà không nêu hai mức độ phụ thuộc.",
+      "config": {
+        "items": [
+          {
+            "id": "t1",
+            "text": "练"
+          },
+          {
+            "id": "t2",
+            "text": "习"
+          },
+          {
+            "id": "t5",
+            "text": "越"
+          },
+          {
+            "id": "t0",
+            "text": "越"
+          },
+          {
+            "id": "t3",
+            "text": "，"
+          },
+          {
+            "id": "t6",
+            "text": "熟"
+          },
+          {
+            "id": "t7",
+            "text": "。"
+          },
+          {
+            "id": "t4",
+            "text": "就"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 5
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Người ngày càng đông. (câu 4).",
+      "reference_answer": "人越来越多了。",
+      "rubric": "Câu đúng: 人越来越多了。 — Người ngày càng đông. Không thêm 很 ngay sau 越来越.",
+      "config": {
+        "items": [
+          {
+            "id": "t1",
+            "text": "越"
+          },
+          {
+            "id": "t6",
+            "text": "。"
+          },
+          {
+            "id": "t0",
+            "text": "人"
+          },
+          {
+            "id": "t5",
+            "text": "了"
+          },
+          {
+            "id": "t2",
+            "text": "来"
+          },
+          {
+            "id": "t3",
+            "text": "越"
+          },
+          {
+            "id": "t4",
+            "text": "多"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 5
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Học kỳ sắp kết thúc, đến lúc mua vé về Thượng Hải rồi. Em định khi nào đi? (câu 5).",
+      "reference_answer": "这个学期快结束了，咱们该买票回上海了。你打算什么时候走？",
+      "rubric": "Câu đúng: 这个学期快结束了，咱们该买票回上海了。你打算什么时候走？ — Học kỳ sắp kết thúc, đến lúc mua vé về Thượng Hải rồi. Em định khi nào đi? Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t8",
+            "text": "该"
+          },
+          {
+            "id": "t5",
+            "text": "了"
+          },
+          {
+            "id": "t14",
+            "text": "了"
+          },
+          {
+            "id": "t19",
+            "text": "走"
+          },
+          {
+            "id": "t9",
+            "text": "买"
+          },
+          {
+            "id": "t1",
+            "text": "个"
+          },
+          {
+            "id": "t11",
+            "text": "回"
+          },
+          {
+            "id": "t4",
+            "text": "结束"
+          },
+          {
+            "id": "t6",
+            "text": "，"
+          },
+          {
+            "id": "t16",
+            "text": "你"
+          },
+          {
+            "id": "t15",
+            "text": "。"
+          },
+          {
+            "id": "t18",
+            "text": "什么时候"
+          },
+          {
+            "id": "t2",
+            "text": "学期"
+          },
+          {
+            "id": "t7",
+            "text": "咱们"
+          },
+          {
+            "id": "t0",
+            "text": "这"
+          },
+          {
+            "id": "t10",
+            "text": "票"
+          },
+          {
+            "id": "t13",
+            "text": "海"
+          },
+          {
+            "id": "t12",
+            "text": "上"
+          },
+          {
+            "id": "t20",
+            "text": "？"
+          },
+          {
+            "id": "t3",
+            "text": "快"
+          },
+          {
+            "id": "t17",
+            "text": "打算"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12",
+          "t13",
+          "t14",
+          "t15",
+          "t16",
+          "t17",
+          "t18",
+          "t19",
+          "t20"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 5
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Em định tuần sau về. Em chưa đi tàu cao tốc bao giờ, muốn thử một lần. (câu 6).",
+      "reference_answer": "我打算下个星期回上海。我还没坐过高铁，想试一试。",
+      "rubric": "Câu đúng: 我打算下个星期回上海。我还没坐过高铁，想试一试。 — Em định tuần sau về. Em chưa đi tàu cao tốc bao giờ, muốn thử một lần. Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t19",
+            "text": "试"
+          },
+          {
+            "id": "t0",
+            "text": "我"
+          },
+          {
+            "id": "t17",
+            "text": "试"
+          },
+          {
+            "id": "t5",
+            "text": "回"
+          },
+          {
+            "id": "t6",
+            "text": "上"
+          },
+          {
+            "id": "t14",
+            "text": "高铁"
+          },
+          {
+            "id": "t15",
+            "text": "，"
+          },
+          {
+            "id": "t13",
+            "text": "过"
+          },
+          {
+            "id": "t20",
+            "text": "。"
+          },
+          {
+            "id": "t8",
+            "text": "。"
+          },
+          {
+            "id": "t4",
+            "text": "星期"
+          },
+          {
+            "id": "t7",
+            "text": "海"
+          },
+          {
+            "id": "t2",
+            "text": "下"
+          },
+          {
+            "id": "t10",
+            "text": "还"
+          },
+          {
+            "id": "t11",
+            "text": "没"
+          },
+          {
+            "id": "t16",
+            "text": "想"
+          },
+          {
+            "id": "t3",
+            "text": "个"
+          },
+          {
+            "id": "t18",
+            "text": "一"
+          },
+          {
+            "id": "t12",
+            "text": "坐"
+          },
+          {
+            "id": "t9",
+            "text": "我"
+          },
+          {
+            "id": "t1",
+            "text": "打算"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12",
+          "t13",
+          "t14",
+          "t15",
+          "t16",
+          "t17",
+          "t18",
+          "t19",
+          "t20"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 5
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ]
+}

@@ -14,6 +14,7 @@ import { adminErrorText } from './AdminPrimitives'
 import { createAdminLesson, listAdminLessons, listHskLevels } from './api'
 import { invalidateLessonList } from './invalidation'
 import { AdminCurriculumPage } from './AdminCurriculumPage'
+import { curriculumCoverTopic } from '../curriculum/curriculumCoverData'
 
 function lessonTone(status: string) {
   return status === 'PUBLISHED' ? 'success' as const : 'neutral' as const
@@ -79,6 +80,7 @@ function LessonLibraryPage() {
       {list.isError && <Alert tone="warning">Chưa cập nhật được danh sách bài học. Đang hiển thị kết quả đã tải.</Alert>}
       {list.data.items.length === 0 ? <EmptyState title="Không có bài học phù hợp">Không có bài học phù hợp với bộ lọc.</EmptyState> : <AdminLibrary label="bài học" kind="lessons" total={list.data.total} records={list.data.items.map((lesson) => ({
         id: lesson.id, title: lesson.title,
+        coverTopic: curriculumCoverTopic(lesson.title, false, { hskLevel: hskQuery.data?.find((level) => level.id === lesson.hsk_level_id)?.level_number ?? 0, lessonNumber: lesson.lesson_number }),
         context: `HSK ${hskQuery.data?.find((level) => level.id === lesson.hsk_level_id)?.level_number ?? '—'} · Bài ${lesson.lesson_number}`,
         status: <StatusBadge tone={lessonTone(lesson.status)}>{adminLabel(lesson.status)}</StatusBadge>,
         detail: lesson.description, href: `/admin/lessons/${lesson.id}`, action: "Mở biên soạn",

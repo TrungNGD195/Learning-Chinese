@@ -13,4 +13,6 @@ scripts/*
 !scripts/create_hsk1_lesson1_draft.py
 !scripts/add_hsk1_lesson1_readings.py
 !scripts/import_curriculum_refresh.py
+!scripts/import_hsk3_curriculum.py
+!scripts/release_curriculum.py
 codex-tasks

@@ -1,0 +1,9 @@
+# HSK 3 — 15 bài từ DOCX người dùng cung cấp
+
+Nguồn duy nhất cho phạm vi kiến thức: phần “新HSK3.0 第三本” trong `HSK3.0 H1-3 Từ mới tổng hợp.docx`. Không nhập thêm giáo trình hoặc chủ điểm từ bên ngoài. Các mục từ có ví dụ ba dòng, pinyin, nghĩa, loại từ và lưu ý khi cần; ngữ pháp có cấu trúc, ý nghĩa, ví dụ, lưu ý; bài khóa có chữ Hán, pinyin và bản dịch. Các phần diễn giải, ví dụ còn thiếu, bản dịch và bài tập được biên tập bổ sung quanh các kiến thức có trong file.
+
+448 mục từ/nghĩa, 47 điểm ngữ pháp, 60 bài khóa, 450 câu luyện tập. Bài 3 trong DOCX gồm hai phần bổ sung nhau; gộp thành một lesson với bốn bài khóa khác nhau. Tám lượt từ trùng hoàn toàn với từ đã có được bỏ sau khi chuẩn hóa cách ghi cùng nghĩa; các nghĩa/cách đọc khác được giữ và có lưu ý nhắc lại. Ví dụ 应该 ở bài 14 mang nghĩa phỏng đoán “chắc là”, khác nghĩa “nên” đã học. Chi tiết hiệu chỉnh, hash nguồn và số lượng từng bài ở `source-audit.json`.
+
+Giữ cơ chế học hiện tại: xem đủ từ vựng, ngữ pháp và hoàn thành bài khóa mới làm luyện tập; mỗi bài 30 câu, đạt từ 80%; được làm lại và lưu từng lần. Bài tập có từ vựng/ngữ pháp, nghe, chọn đáp án, điền chữ, nối và sắp xếp câu; chỉ dùng bài hiện tại và bài trước. Đáp án được chấm bằng cơ chế xác định hiện có, không phát sinh gọi mô hình hoặc chấm AI. Từ vựng tự xuất hiện trong khu flashcard sau khi người học hoàn thành lesson đã xuất bản.
+
+Kiểm tra offline: `python -m scripts.import_hsk3_curriculum`. Đọc fingerprint local: thêm `--inspect`. Chỉ nhập khi có backup `pg_dump` và fingerprint khớp: `--apply --backup <file> --expected-fingerprint <hash>`. Thêm `--publish` khi đã được phép xuất bản. Nhập và xuất bản được bao trong một transaction ngoài; lỗi ở bất kỳ bài nào sẽ rollback cả lô. Lệnh không nhắm đến HSK 1–2, không thay tài khoản, phát âm, tiến độ hoặc lịch sử làm bài cũ.

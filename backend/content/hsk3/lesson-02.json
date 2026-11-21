@@ -1,0 +1,1782 @@
+{
+  "key": "hsk3-lesson-02-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 3,
+    "lesson_number": 2,
+    "title": "我们搬家了 · Chúng tôi chuyển nhà rồi",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "换",
+      "pinyin": "huàn",
+      "vietnamese_meaning": "đổi, thay",
+      "part_of_speech": "động từ",
+      "source_key": "3:2:换",
+      "note": null,
+      "order_index": 1,
+      "example": "我在想要不要换个房子？\nwǒ zài xiǎng yào bú yào huàn gè fáng zi ？\nEm đang nghĩ có nên đổi nhà không."
+    },
+    {
+      "hanzi": "到",
+      "pinyin": "dào",
+      "vietnamese_meaning": "đạt được kết quả (sau động từ)",
+      "part_of_speech": "bổ ngữ kết quả",
+      "source_key": "3:2:到",
+      "note": "Sau động từ, 到 chỉ đạt được kết quả: 找到 là tìm được. Khác 到 + địa điểm là đến nơi đó; so với 看见/听见 nhấn mạnh nhận thấy bằng giác quan. Nhắc lại HSK 1 bài 8: 到 (dào) — đến. Trong ngữ cảnh bài này: đạt được kết quả (sau động từ).",
+      "order_index": 2,
+      "example": "搬到哪儿？\nbān dào nǎ ér ？\nChuyển đến đâu?"
+    },
+    {
+      "hanzi": "小区",
+      "pinyin": "xiǎoqū",
+      "vietnamese_meaning": "khu dân cư",
+      "part_of_speech": "danh từ",
+      "source_key": "3:2:小区",
+      "note": null,
+      "order_index": 3,
+      "example": "孩子初中对面的小区。\nhái zi chū zhōng duì miàn de xiǎo qū 。\nKhu dân cư đối diện trường trung học cơ sở của con."
+    },
+    {
+      "hanzi": "花园",
+      "pinyin": "huāyuán",
+      "vietnamese_meaning": "vườn hoa",
+      "part_of_speech": "danh từ",
+      "source_key": "3:2:花园",
+      "note": null,
+      "order_index": 4,
+      "example": "我们可以在花园散步。\nwǒ men kě yǐ zài huā yuán sàn bù 。\nMình có thể đi dạo trong vườn."
+    },
+    {
+      "hanzi": "空调",
+      "pinyin": "kōngtiáo",
+      "vietnamese_meaning": "máy điều hòa",
+      "part_of_speech": "danh từ",
+      "source_key": "3:2:空调",
+      "note": null,
+      "order_index": 5,
+      "example": "你看，房子里已经有空调和洗衣机了。\nnǐ kàn ， fáng zi lǐ yǐ jīng yǒu kòng tiáo hé xǐ yī jī le 。\nAnh xem, bên trong đã có điều hòa và máy giặt rồi."
+    },
+    {
+      "hanzi": "洗衣机",
+      "pinyin": "xǐyījī",
+      "vietnamese_meaning": "máy giặt",
+      "part_of_speech": "danh từ",
+      "source_key": "3:2:洗衣机",
+      "note": null,
+      "order_index": 6,
+      "example": "你看，房子里已经有空调和洗衣机了。\nnǐ kàn ， fáng zi lǐ yǐ jīng yǒu kòng tiáo hé xǐ yī jī le 。\nAnh xem, bên trong đã có điều hòa và máy giặt rồi."
+    },
+    {
+      "hanzi": "套",
+      "pinyin": "tào",
+      "vietnamese_meaning": "bộ, căn (lượng từ cho nhà ở)",
+      "part_of_speech": "lượng từ",
+      "source_key": "3:2:套",
+      "note": null,
+      "order_index": 7,
+      "example": "那太方便了，这套房子在几层？\nnà tài fāng biàn le ， zhè tào fáng zi zài jǐ céng ？\nTiện quá, căn này ở tầng mấy?"
+    },
+    {
+      "hanzi": "层",
+      "pinyin": "céng",
+      "vietnamese_meaning": "tầng; lớp",
+      "part_of_speech": "danh từ, lượng từ",
+      "source_key": "3:2:层",
+      "note": "有几层 hỏi tổng số tầng; 在几楼 hỏi đang ở tầng mấy. Không nhầm số lượng tầng với vị trí tầng.",
+      "order_index": 8,
+      "example": "在五层。\nzài wǔ céng 。\nTầng năm."
+    },
+    {
+      "hanzi": "楼",
+      "pinyin": "lóu",
+      "vietnamese_meaning": "tầng lầu; tòa nhà",
+      "part_of_speech": "danh từ",
+      "source_key": "3:2:楼",
+      "note": "几楼 thường hỏi vị trí tầng; 几层 thường hỏi số tầng trong 有几层. Có thể dùng 在五层 để nói vị trí tùy ngữ cảnh. Nhắc lại HSK 2 bài 3: 楼 (lóu) — tầng; tòa nhà. Trong ngữ cảnh bài này: tầng lầu; tòa nhà.",
+      "order_index": 9,
+      "example": "这套房子在五楼。\nzhè tào fáng zi zài wǔ lóu 。\nCăn nhà này ở tầng năm."
+    },
+    {
+      "hanzi": "搬",
+      "pinyin": "bān",
+      "vietnamese_meaning": "chuyển, dọn, khuân",
+      "part_of_speech": "động từ",
+      "source_key": "3:2:搬",
+      "note": null,
+      "order_index": 10,
+      "example": "搬到哪儿？\nbān dào nǎ ér ？\nChuyển đến đâu?"
+    },
+    {
+      "hanzi": "坏",
+      "pinyin": "huài",
+      "vietnamese_meaning": "hỏng, xấu",
+      "part_of_speech": "tính từ",
+      "source_key": "3:2:坏",
+      "note": null,
+      "order_index": 11,
+      "example": "帮啊，他最近也累坏了。\nbāng a ， tā zuì jìn yě lèi huài le 。\nCó chứ, gần đây anh ấy cũng mệt lắm."
+    },
+    {
+      "hanzi": "对面",
+      "pinyin": "duìmiàn",
+      "vietnamese_meaning": "đối diện",
+      "part_of_speech": "danh từ chỉ phương vị",
+      "source_key": "3:2:对面",
+      "note": null,
+      "order_index": 12,
+      "example": "孩子初中对面的小区。\nhái zi chū zhōng duì miàn de xiǎo qū 。\nKhu dân cư đối diện trường trung học cơ sở của con."
+    },
+    {
+      "hanzi": "冰箱",
+      "pinyin": "bīngxiāng",
+      "vietnamese_meaning": "tủ lạnh",
+      "part_of_speech": "danh từ",
+      "source_key": "3:2:冰箱",
+      "note": null,
+      "order_index": 13,
+      "example": "还没呢。冰箱还没搬过去，卫生间也没打扫好。\nhái méi ne 。 bīng xiāng hái méi bān guò qù ， wèi shēng jiān yě méi dǎ sǎo hǎo 。\nChưa, tủ lạnh chưa chuyển sang, nhà vệ sinh cũng chưa dọn xong."
+    },
+    {
+      "hanzi": "卫生间",
+      "pinyin": "wèishēngjiān",
+      "vietnamese_meaning": "nhà vệ sinh",
+      "part_of_speech": "danh từ",
+      "source_key": "3:2:卫生间",
+      "note": null,
+      "order_index": 14,
+      "example": "还没呢。冰箱还没搬过去，卫生间也没打扫好。\nhái méi ne 。 bīng xiāng hái méi bān guò qù ， wèi shēng jiān yě méi dǎ sǎo hǎo 。\nChưa, tủ lạnh chưa chuyển sang, nhà vệ sinh cũng chưa dọn xong."
+    },
+    {
+      "hanzi": "打扫",
+      "pinyin": "dǎsǎo",
+      "vietnamese_meaning": "quét dọn",
+      "part_of_speech": "động từ",
+      "source_key": "3:2:打扫",
+      "note": null,
+      "order_index": 15,
+      "example": "还没呢。冰箱还没搬过去，卫生间也没打扫好。\nhái méi ne 。 bīng xiāng hái méi bān guò qù ， wèi shēng jiān yě méi dǎ sǎo hǎo 。\nChưa, tủ lạnh chưa chuyển sang, nhà vệ sinh cũng chưa dọn xong."
+    },
+    {
+      "hanzi": "关灯",
+      "pinyin": "guāndēng",
+      "vietnamese_meaning": "tắt đèn",
+      "part_of_speech": "động từ",
+      "source_key": "3:2:关灯",
+      "note": null,
+      "order_index": 16,
+      "example": "有时候还没关灯就睡着了。\nyǒu shí hòu hái méi guān dēng jiù shuì zháo le 。\nCó hôm chưa tắt đèn đã ngủ thiếp đi rồi."
+    },
+    {
+      "hanzi": "着",
+      "pinyin": "zháo",
+      "vietnamese_meaning": "đạt được kết quả, chuyển sang trạng thái (đọc zháo)",
+      "part_of_speech": "bổ ngữ kết quả",
+      "source_key": "3:2:着",
+      "note": "Ở đây 着 đọc zháo trong 睡着, chỉ đạt kết quả ngủ được. Khác zhe trong 站着/拿着 chỉ trạng thái duy trì. Nhắc lại HSK 2 bài 8: 着 ((trợ từ)) — đang, trạng thái còn duy trì (sau động từ). Trong ngữ cảnh bài này: đạt được kết quả, chuyển sang trạng thái (đọc zháo).",
+      "order_index": 17,
+      "example": "有时候还没关灯就睡着了。\nyǒu shí hòu hái méi guān dēng jiù shuì zháo le 。\nCó hôm chưa tắt đèn đã ngủ thiếp đi rồi."
+    },
+    {
+      "hanzi": "银行",
+      "pinyin": "yínháng",
+      "vietnamese_meaning": "ngân hàng",
+      "part_of_speech": "danh từ",
+      "source_key": "3:2:银行",
+      "note": null,
+      "order_index": 18,
+      "example": "我去银行办信用卡。\nwǒ qù yín háng bàn xìn yòng kǎ 。\nTôi đến ngân hàng làm thẻ tín dụng."
+    },
+    {
+      "hanzi": "办",
+      "pinyin": "bàn",
+      "vietnamese_meaning": "làm, giải quyết (thủ tục)",
+      "part_of_speech": "động từ",
+      "source_key": "3:2:办",
+      "note": null,
+      "order_index": 19,
+      "example": "我去银行办信用卡。\nwǒ qù yín háng bàn xìn yòng kǎ 。\nTôi đến ngân hàng làm thẻ tín dụng."
+    },
+    {
+      "hanzi": "信用卡",
+      "pinyin": "xìnyòngkǎ",
+      "vietnamese_meaning": "thẻ tín dụng",
+      "part_of_speech": "danh từ",
+      "source_key": "3:2:信用卡",
+      "note": null,
+      "order_index": 20,
+      "example": "我去银行办信用卡。\nwǒ qù yín háng bàn xìn yòng kǎ 。\nTôi đến ngân hàng làm thẻ tín dụng."
+    },
+    {
+      "hanzi": "还",
+      "pinyin": "huán",
+      "vietnamese_meaning": "trả, hoàn lại",
+      "part_of_speech": "động từ",
+      "source_key": "3:2:还",
+      "note": "Đọc huán khi nghĩa trả lại như 还钱、还书; đọc hái khi nghĩa còn/vẫn. Xác định cách đọc theo ngữ cảnh. Nhắc lại HSK 1 bài 3: 还 (hái) — còn, vẫn. Trong ngữ cảnh bài này: trả, hoàn lại.",
+      "order_index": 21,
+      "example": "那还挺近的。\nnà hái tǐng jìn de 。\nVậy khá gần."
+    },
+    {
+      "hanzi": "借",
+      "pinyin": "jiè",
+      "vietnamese_meaning": "vay, mượn; cho vay, cho mượn",
+      "part_of_speech": "động từ",
+      "source_key": "3:2:借",
+      "note": null,
+      "order_index": 22,
+      "example": "你可以借给我一张纸吗？\nnǐ kě yǐ jiè gěi wǒ yī zhāng zhǐ ma ？\nBạn có thể cho tôi mượn một tờ giấy không?"
+    },
+    {
+      "hanzi": "纸",
+      "pinyin": "zhǐ",
+      "vietnamese_meaning": "giấy",
+      "part_of_speech": "danh từ",
+      "source_key": "3:2:纸",
+      "note": null,
+      "order_index": 23,
+      "example": "有的人打扫房子，有的人搬纸箱，很快就搬完了。\nyǒu de rén dǎ sǎo fáng zi ， yǒu de rén bān zhǐ xiāng ， hěn kuài jiù bān wán le 。\nNgười quét dọn, người khuân thùng giấy, chẳng mấy chốc đã chuyển xong."
+    },
+    {
+      "hanzi": "需要",
+      "pinyin": "xūyào",
+      "vietnamese_meaning": "cần, cần phải",
+      "part_of_speech": "động từ",
+      "source_key": "3:2:需要",
+      "note": null,
+      "order_index": 24,
+      "example": "他觉得现在的房子太小了，需要换一个大一点的房子。\ntā jué de xiàn zài de fáng zi tài xiǎo le ， xū yào huàn yí gè dà yī diǎn de fáng zi 。\nAnh thấy nhà hiện tại quá nhỏ, cần đổi sang căn rộng hơn một chút."
+    }
+  ],
+  "grammar": [
+    {
+      "name": "Bổ ngữ kết quả 到",
+      "structure": "Động từ + 到 + đối tượng",
+      "explanation": "Biểu thị hành động đạt được mục tiêu hoặc kết quả.",
+      "usage": "到 nhấn mạnh đạt được mục tiêu; 见 trong 看见/听见 nhấn mạnh nhận thấy bằng giác quan.",
+      "example": "我找到一套房子了。\nwǒ zhǎo dào yī tào fáng zi le 。\nTôi tìm được một căn nhà rồi.",
+      "note": "到 nhấn mạnh đạt được mục tiêu; 见 trong 看见/听见 nhấn mạnh nhận thấy bằng giác quan.",
+      "order_index": 1
+    },
+    {
+      "name": "Mức độ cao với 坏了",
+      "structure": "Tính từ chỉ cảm giác + 坏了",
+      "explanation": "Nhấn mạnh mức độ rất cao trong những kết hợp thường dùng.",
+      "usage": "累坏了/忙坏了 không có nghĩa đồ vật hỏng; không ghép 坏了 tùy ý với mọi tính từ.",
+      "example": "我这几天忙坏了。\nwǒ zhè jǐ tiān máng huài le 。\nMấy hôm nay tôi bận quá sức.",
+      "note": "累坏了/忙坏了 không có nghĩa đồ vật hỏng; không ghép 坏了 tùy ý với mọi tính từ.",
+      "order_index": 2
+    },
+    {
+      "name": "Hỏi tầng với 层 và 楼",
+      "structure": "有几层？ / 在几楼？",
+      "explanation": "层 thường dùng đếm số tầng; 几楼 thường hỏi vị trí tầng.",
+      "usage": "这栋楼有几层 hỏi tổng số tầng, khác với hỏi căn nhà nằm ở tầng nào.",
+      "example": "这套房子在几楼？\nzhè tào fáng zi zài jǐ lóu ？\nCăn nhà này ở tầng mấy?",
+      "note": "这栋楼有几层 hỏi tổng số tầng, khác với hỏi căn nhà nằm ở tầng nào.",
+      "order_index": 3
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Tìm căn nhà mới",
+      "content": "小丽：小刚，咱们现在住的房子太旧了。我在想要不要换个房子？\n小刚：我也这么想。我们上网找找吧。\n小丽：我找到这个小区，你觉得怎么样？\n小刚：这个小区的环境挺好的，里面还有一个花园。我们可以在花园散步。\n小丽：对啊！房子也挺新的。你看，房子里已经有空调和洗衣机了。\n小刚：那太方便了，这套房子在几层？\n小丽：在五层。咱们星期六一起去看看吧。",
+      "pinyin": "xiǎo lì ： xiǎo gāng ， zán men xiàn zài zhù de fáng zi tài jiù le 。 wǒ zài xiǎng yào bú yào huàn gè fáng zi ？\nxiǎo gāng ： wǒ yě zhè me xiǎng 。 wǒ men shàng wǎng zhǎo zhǎo ba 。\nxiǎo lì ： wǒ zhǎo dào zhè ge xiǎo qū ， nǐ jué de zěn me yàng ？\nxiǎo gāng ： zhè ge xiǎo qū de huán jìng tǐng hǎo de ， lǐ miàn hái yǒu yí gè huā yuán 。 wǒ men kě yǐ zài huā yuán sàn bù 。\nxiǎo lì ： duì a ！ fáng zi yě tǐng xīn de 。 nǐ kàn ， fáng zi lǐ yǐ jīng yǒu kòng tiáo hé xǐ yī jī le 。\nxiǎo gāng ： nà tài fāng biàn le ， zhè tào fáng zi zài jǐ céng ？\nxiǎo lì ： zài wǔ céng 。 zán men xīng qī liù yī qǐ qù kàn kàn ba 。",
+      "vietnamese_translation": "Tiểu Lệ: Tiểu Cương, nhà mình đang ở cũ quá. Em đang nghĩ có nên đổi nhà không.\nTiểu Cương: Anh cũng nghĩ vậy. Mình lên mạng tìm thử nhé.\nTiểu Lệ: Em tìm được khu dân cư này, anh thấy thế nào?\nTiểu Cương: Môi trường ở đây khá tốt, bên trong còn có vườn hoa. Mình có thể đi dạo trong vườn.\nTiểu Lệ: Đúng vậy! Nhà cũng khá mới. Anh xem, bên trong đã có điều hòa và máy giặt rồi.\nTiểu Cương: Tiện quá, căn này ở tầng mấy?\nTiểu Lệ: Tầng năm. Thứ Bảy mình cùng đi xem nhé.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 2, bài khóa 1."
+    },
+    {
+      "order_index": 2,
+      "title": "Bận rộn chuyển nhà",
+      "content": "同事：小丽，你最近怎么这么累？\n小丽：我这几天在搬家，真的忙坏了！\n同事：搬到哪儿？\n小丽：孩子初中对面的小区。\n同事：那还挺近的。现在搬完了吗？\n小丽：还没呢。冰箱还没搬过去，卫生间也没打扫好。\n同事：那小刚呢？他不帮你吗？\n小丽：帮啊，他最近也累坏了。有时候还没关灯就睡着了。",
+      "pinyin": "tóng shì ： xiǎo lì ， nǐ zuì jìn zěn me zhè me lèi ？\nxiǎo lì ： wǒ zhè jǐ tiān zài bān jiā ， zhēn de máng huài le ！\ntóng shì ： bān dào nǎ ér ？\nxiǎo lì ： hái zi chū zhōng duì miàn de xiǎo qū 。\ntóng shì ： nà hái tǐng jìn de 。 xiàn zài bān wán le ma ？\nxiǎo lì ： hái méi ne 。 bīng xiāng hái méi bān guò qù ， wèi shēng jiān yě méi dǎ sǎo hǎo 。\ntóng shì ： nà xiǎo gāng ne ？ tā bù bāng nǐ ma ？\nxiǎo lì ： bāng a ， tā zuì jìn yě lèi huài le 。 yǒu shí hòu hái méi guān dēng jiù shuì zháo le 。",
+      "vietnamese_translation": "Đồng nghiệp: Tiểu Lệ, gần đây sao chị mệt thế?\nTiểu Lệ: Mấy hôm nay tôi chuyển nhà, bận quá sức!\nĐồng nghiệp: Chuyển đến đâu?\nTiểu Lệ: Khu dân cư đối diện trường trung học cơ sở của con.\nĐồng nghiệp: Vậy khá gần. Chuyển xong chưa?\nTiểu Lệ: Chưa, tủ lạnh chưa chuyển sang, nhà vệ sinh cũng chưa dọn xong.\nĐồng nghiệp: Còn Tiểu Cương? Anh ấy không giúp chị à?\nTiểu Lệ: Có chứ, gần đây anh ấy cũng mệt lắm. Có hôm chưa tắt đèn đã ngủ thiếp đi rồi.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 2, bài khóa 2."
+    },
+    {
+      "order_index": 3,
+      "title": "Làm thẻ tín dụng",
+      "content": "同事：小刚，你上午去哪儿？\n小刚：我去银行办信用卡。今天银行人太多了，我等了很久才办好。\n同事：为什么要办信用卡呢？\n小刚：我和小丽最近刚搬家，要买的东西很多，办了信用卡可以先花钱，再慢慢还。\n同事：也对。我听说用信用卡买东西还能便宜，是吗？\n小刚：是的，有时候可以便宜一点。",
+      "pinyin": "tóng shì ： xiǎo gāng ， nǐ shàng wǔ qù nǎ ér ？\nxiǎo gāng ： wǒ qù yín háng bàn xìn yòng kǎ 。 jīn tiān yín háng rén tài duō le ， wǒ děng le hěn jiǔ cái bàn hǎo 。\ntóng shì ： wèi shén me yào bàn xìn yòng kǎ ne ？\nxiǎo gāng ： wǒ hé xiǎo lì zuì jìn gāng bān jiā ， yào mǎi de dōng xī hěn duō ， bàn le xìn yòng kǎ kě yǐ xiān huā qián ， zài màn màn huán 。\ntóng shì ： yě duì 。 wǒ tīng shuō yòng xìn yòng kǎ mǎi dōng xī hái néng pián yi ， shì ma ？\nxiǎo gāng ： shì de ， yǒu shí hòu kě yǐ pián yi yì diǎn 。",
+      "vietnamese_translation": "Đồng nghiệp: Tiểu Cương, sáng nay anh đi đâu?\nTiểu Cương: Tôi đến ngân hàng làm thẻ tín dụng. Hôm nay ngân hàng đông quá, tôi đợi rất lâu mới làm xong.\nĐồng nghiệp: Sao anh muốn làm thẻ tín dụng?\nTiểu Cương: Tôi và Tiểu Lệ vừa chuyển nhà, có nhiều thứ cần mua. Có thẻ tín dụng thì có thể tiêu trước rồi trả dần.\nĐồng nghiệp: Cũng đúng. Tôi nghe nói dùng thẻ tín dụng mua đồ còn được rẻ hơn, có phải không?\nTiểu Cương: Đúng, có lúc rẻ hơn một chút.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 2, bài khóa 3."
+    },
+    {
+      "order_index": 4,
+      "title": "Bạn bè giúp chuyển nhà",
+      "content": "小林要搬家。他觉得现在的房子太小了，需要换一个大一点的房子。他在网上找了很久才找到一套大房子。搬家那天，很多朋友都来帮忙。有的人打扫房子，有的人搬纸箱，很快就搬完了。到晚上，小林请朋友们去饭店吃饭。大家坐在一起，一边吃饭一边聊天儿。虽然忙了一天，但是大家都觉得很高兴。",
+      "pinyin": "xiǎo lín yào bān jiā 。 tā jué de xiàn zài de fáng zi tài xiǎo le ， xū yào huàn yí gè dà yī diǎn de fáng zi 。 tā zài wǎng shàng zhǎo le hěn jiǔ cái zhǎo dào yī tào dà fáng zi 。 bān jiā nà tiān ， hěn duō péng yǒu dōu lái bāng máng 。 yǒu de rén dǎ sǎo fáng zi ， yǒu de rén bān zhǐ xiāng ， hěn kuài jiù bān wán le 。 dào wǎn shàng ， xiǎo lín qǐng péng yǒu men qù fàn diàn chī fàn 。 dà jiā zuò zài yì qǐ ， yī biān chī fàn yī biān liáo tiān ér 。 suī rán máng le yī tiān ， dàn shì dà jiā dōu jué de hěn gāo xìng 。",
+      "vietnamese_translation": "Tiểu Lâm muốn chuyển nhà. Anh thấy nhà hiện tại quá nhỏ, cần đổi sang căn rộng hơn một chút. Anh tìm rất lâu trên mạng mới tìm được một căn nhà lớn. Ngày chuyển nhà, nhiều bạn bè đến giúp. Người quét dọn, người khuân thùng giấy, chẳng mấy chốc đã chuyển xong. Đến tối, Tiểu Lâm mời bạn bè đi nhà hàng ăn cơm. Mọi người ngồi cùng nhau, vừa ăn vừa trò chuyện. Dù bận cả ngày, ai cũng thấy vui.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 2, bài khóa 4."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 3 · Bài 2 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp của bài này và các bài trước; đạt từ 80%, được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "source_documents": {
+    "vocabulary": "DOCX",
+    "theory": "DOCX"
+  },
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 1).",
+      "options": [
+        {
+          "option_text": "quét dọn",
+          "is_correct": true
+        },
+        {
+          "option_text": "của; trợ từ nối quan hệ bổ nghĩa",
+          "is_correct": false
+        },
+        {
+          "option_text": "đi, bắt đầu (học, làm)",
+          "is_correct": false
+        },
+        {
+          "option_text": "đồ; đồ vật",
+          "is_correct": false
+        }
+      ],
+      "rubric": "打扫 (dǎsǎo) — quét dọn. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "打扫"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 2
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “卫生间” (wèishēngjiān) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "sữa bò",
+          "is_correct": false
+        },
+        {
+          "option_text": "máy tính",
+          "is_correct": false
+        },
+        {
+          "option_text": "chuyến bay",
+          "is_correct": false
+        },
+        {
+          "option_text": "nhà vệ sinh",
+          "is_correct": true
+        }
+      ],
+      "rubric": "卫生间 (wèishēngjiān) — nhà vệ sinh. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 2
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “bàn” — làm, giải quyết (thủ tục).",
+      "options": [
+        {
+          "option_text": "手",
+          "is_correct": false
+        },
+        {
+          "option_text": "洗",
+          "is_correct": false
+        },
+        {
+          "option_text": "办",
+          "is_correct": true
+        },
+        {
+          "option_text": "旅行",
+          "is_correct": false
+        }
+      ],
+      "rubric": "办 (bàn) — làm, giải quyết (thủ tục). ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 2
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 4).",
+      "options": [
+        {
+          "option_text": "cần, cần phải",
+          "is_correct": true
+        },
+        {
+          "option_text": "sinh ra, chào đời",
+          "is_correct": false
+        },
+        {
+          "option_text": "sân tập",
+          "is_correct": false
+        },
+        {
+          "option_text": "nhưng",
+          "is_correct": false
+        }
+      ],
+      "rubric": "需要 (xūyào) — cần, cần phải. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "需要"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 2
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “小区” (xiǎoqū) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "cần, phải, muốn",
+          "is_correct": false
+        },
+        {
+          "option_text": "phim",
+          "is_correct": false
+        },
+        {
+          "option_text": "khu dân cư",
+          "is_correct": true
+        },
+        {
+          "option_text": "ai",
+          "is_correct": false
+        }
+      ],
+      "rubric": "小区 (xiǎoqū) — khu dân cư. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 2
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “duìmiàn” — đối diện.",
+      "options": [
+        {
+          "option_text": "对面",
+          "is_correct": true
+        },
+        {
+          "option_text": "喜欢",
+          "is_correct": false
+        },
+        {
+          "option_text": "办法",
+          "is_correct": false
+        },
+        {
+          "option_text": "塔",
+          "is_correct": false
+        }
+      ],
+      "rubric": "对面 (duìmiàn) — đối diện. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 2
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “借” (jiè) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "vay, mượn; cho vay, cho mượn",
+          "is_correct": true
+        },
+        {
+          "option_text": "nghe",
+          "is_correct": false
+        },
+        {
+          "option_text": "tháp",
+          "is_correct": false
+        },
+        {
+          "option_text": "sân tập",
+          "is_correct": false
+        }
+      ],
+      "rubric": "借 (jiè) — vay, mượn; cho vay, cho mượn. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 2
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “搬” (bān) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "viên, miếng, lát",
+          "is_correct": false
+        },
+        {
+          "option_text": "bánh bao có nhân",
+          "is_correct": false
+        },
+        {
+          "option_text": "cuối tuần",
+          "is_correct": false
+        },
+        {
+          "option_text": "chuyển, dọn, khuân",
+          "is_correct": true
+        }
+      ],
+      "rubric": "搬 (bān) — chuyển, dọn, khuân. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 2
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “liǎn sè” — sắc mặt.",
+      "options": [
+        {
+          "option_text": "脸色",
+          "is_correct": true
+        },
+        {
+          "option_text": "讲解",
+          "is_correct": false
+        },
+        {
+          "option_text": "老婆",
+          "is_correct": false
+        },
+        {
+          "option_text": "到",
+          "is_correct": false
+        }
+      ],
+      "rubric": "脸色 (liǎn sè) — sắc mặt. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 8
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "thẻ tín dụng",
+          "is_correct": true
+        },
+        {
+          "option_text": "ngủ",
+          "is_correct": false
+        },
+        {
+          "option_text": "yên tâm",
+          "is_correct": false
+        },
+        {
+          "option_text": "nhưng, thế nhưng",
+          "is_correct": false
+        }
+      ],
+      "rubric": "信用卡 (xìnyòngkǎ) — thẻ tín dụng. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "信用卡"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 2
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “还是” (háishi) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "vị, người (lượng từ trang trọng cho người)",
+          "is_correct": false
+        },
+        {
+          "option_text": "gần đây, vùng lân cận (vị trí)",
+          "is_correct": false
+        },
+        {
+          "option_text": "thuận lợi, suôn sẻ",
+          "is_correct": false
+        },
+        {
+          "option_text": "hay, hoặc (câu hỏi lựa chọn)",
+          "is_correct": true
+        }
+      ],
+      "rubric": "还是 (háishi) — hay, hoặc (câu hỏi lựa chọn). 还是 trong câu hỏi A 还是 B nghĩa là hay (chọn một phương án); trong câu trần thuật có thể nghĩa vẫn. Không thêm 吗 vào câu hỏi lựa chọn thông thường. Nhắc lại HSK2 bài 5: 还是 (háishi) nghĩa là vẫn (sau khi đã cân nhắc hoặc có sự thay đổi). Trong bài này: hay, hoặc (câu hỏi lựa chọn).",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 7
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “xǐyījī” — máy giặt.",
+      "options": [
+        {
+          "option_text": "打扫",
+          "is_correct": false
+        },
+        {
+          "option_text": "只",
+          "is_correct": false
+        },
+        {
+          "option_text": "苦",
+          "is_correct": false
+        },
+        {
+          "option_text": "洗衣机",
+          "is_correct": true
+        }
+      ],
+      "rubric": "洗衣机 (xǐyījī) — máy giặt. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 2
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “tắt đèn” (pinyin: guāndēng).",
+      "reference_answer": "关灯",
+      "rubric": "Đáp án: 关灯 (guāndēng). ",
+      "config": {
+        "accepted_answers": [
+          "关灯"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 2
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “tầng lầu; tòa nhà” (pinyin: lóu).",
+      "reference_answer": "楼",
+      "rubric": "Đáp án: 楼 (lóu). 几楼 thường hỏi vị trí tầng; 几层 thường hỏi số tầng trong 有几层. Có thể dùng 在五层 để nói vị trí tùy ngữ cảnh. Nhắc lại HSK 2 bài 3: 楼 (lóu) — tầng; tòa nhà. Trong ngữ cảnh bài này: tầng lầu; tòa nhà.",
+      "config": {
+        "accepted_answers": [
+          "楼"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 2
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “giấy” (pinyin: zhǐ).",
+      "reference_answer": "纸",
+      "rubric": "Đáp án: 纸 (zhǐ). ",
+      "config": {
+        "accepted_answers": [
+          "纸"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 2
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “vui vẻ, hạnh phúc” (pinyin: kuài lè).",
+      "reference_answer": "快乐",
+      "rubric": "Đáp án: 快乐 (kuài lè). ",
+      "config": {
+        "accepted_answers": [
+          "快乐"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 4
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối các từ với nghĩa đã học (nhóm 1).",
+      "rubric": "花园: vườn hoa ; 套: bộ, căn (lượng từ cho nhà ở) ; 打扫: quét dọn ; 走: đi; rời đi",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "花园"
+          },
+          {
+            "id": "l1",
+            "text": "套"
+          },
+          {
+            "id": "l2",
+            "text": "打扫"
+          },
+          {
+            "id": "l3",
+            "text": "走"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r1",
+            "text": "bộ, căn (lượng từ cho nhà ở)"
+          },
+          {
+            "id": "r0",
+            "text": "vườn hoa"
+          },
+          {
+            "id": "r3",
+            "text": "đi; rời đi"
+          },
+          {
+            "id": "r2",
+            "text": "quét dọn"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 2
+        },
+        {
+          "hsk": 3,
+          "lesson": 2
+        },
+        {
+          "hsk": 3,
+          "lesson": 2
+        },
+        {
+          "hsk": 2,
+          "lesson": 1
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối các từ với nghĩa đã học (nhóm 2).",
+      "rubric": "洗衣机: máy giặt ; 到: đạt được kết quả (sau động từ) ; 脸色: sắc mặt ; 还: trả, hoàn lại",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "洗衣机"
+          },
+          {
+            "id": "l1",
+            "text": "到"
+          },
+          {
+            "id": "l2",
+            "text": "脸色"
+          },
+          {
+            "id": "l3",
+            "text": "还"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r2",
+            "text": "sắc mặt"
+          },
+          {
+            "id": "r3",
+            "text": "trả, hoàn lại"
+          },
+          {
+            "id": "r0",
+            "text": "máy giặt"
+          },
+          {
+            "id": "r1",
+            "text": "đạt được kết quả (sau động từ)"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 2
+        },
+        {
+          "hsk": 3,
+          "lesson": 2
+        },
+        {
+          "hsk": 2,
+          "lesson": 8
+        },
+        {
+          "hsk": 3,
+          "lesson": 2
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "我找___一套房子了。",
+      "options": [
+        {
+          "option_text": "是",
+          "is_correct": false
+        },
+        {
+          "option_text": "的",
+          "is_correct": false
+        },
+        {
+          "option_text": "在",
+          "is_correct": false
+        },
+        {
+          "option_text": "到",
+          "is_correct": true
+        }
+      ],
+      "rubric": "找到 chỉ việc tìm đã đạt được kết quả, khác 找 chỉ hành động tìm.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 2
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Theo bổ ngữ mức độ đã học: 这几天我忙___了。",
+      "options": [
+        {
+          "option_text": "在",
+          "is_correct": false
+        },
+        {
+          "option_text": "的",
+          "is_correct": false
+        },
+        {
+          "option_text": "坏",
+          "is_correct": true
+        },
+        {
+          "option_text": "着",
+          "is_correct": false
+        }
+      ],
+      "rubric": "忙坏了 nhấn mạnh rất bận; 坏 không mang nghĩa đồ vật hỏng ở đây.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 2
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Hỏi tổng số tầng của tòa nhà: 这栋楼一共有五___。",
+      "options": [
+        {
+          "option_text": "张",
+          "is_correct": false
+        },
+        {
+          "option_text": "个",
+          "is_correct": false
+        },
+        {
+          "option_text": "层",
+          "is_correct": true
+        },
+        {
+          "option_text": "杯",
+          "is_correct": false
+        }
+      ],
+      "rubric": "层 dùng đếm số tầng; 几楼 thường hỏi vị trí tầng.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 2
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Bổ ngữ kết quả 到”, cách hiểu nào đúng (mục 1)?",
+      "options": [
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Biểu thị hành động đạt được mục tiêu hoặc kết quả.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Biểu thị hành động đạt được mục tiêu hoặc kết quả. 到 nhấn mạnh đạt được mục tiêu; 见 trong 看见/听见 nhấn mạnh nhận thấy bằng giác quan.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 2
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Mức độ cao với 坏了”, cách hiểu nào đúng (mục 2)?",
+      "options": [
+        {
+          "option_text": "Nhấn mạnh mức độ rất cao trong những kết hợp thường dùng.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Nhấn mạnh mức độ rất cao trong những kết hợp thường dùng. 累坏了/忙坏了 không có nghĩa đồ vật hỏng; không ghép 坏了 tùy ý với mọi tính từ.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 2
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Hỏi tầng với 层 và 楼”, cách hiểu nào đúng (mục 3)?",
+      "options": [
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        },
+        {
+          "option_text": "层 thường dùng đếm số tầng; 几楼 thường hỏi vị trí tầng.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "层 thường dùng đếm số tầng; 几楼 thường hỏi vị trí tầng. 这栋楼有几层 hỏi tổng số tầng, khác với hỏi căn nhà nằm ở tầng nào.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 2
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Tôi tìm được một căn nhà rồi. (câu 1).",
+      "reference_answer": "我找到一套房子了。",
+      "rubric": "Câu đúng: 我找到一套房子了。 — Tôi tìm được một căn nhà rồi. 到 nhấn mạnh đạt được mục tiêu; 见 trong 看见/听见 nhấn mạnh nhận thấy bằng giác quan.",
+      "config": {
+        "items": [
+          {
+            "id": "t0",
+            "text": "我"
+          },
+          {
+            "id": "t7",
+            "text": "。"
+          },
+          {
+            "id": "t1",
+            "text": "找"
+          },
+          {
+            "id": "t3",
+            "text": "一"
+          },
+          {
+            "id": "t4",
+            "text": "套"
+          },
+          {
+            "id": "t2",
+            "text": "到"
+          },
+          {
+            "id": "t5",
+            "text": "房子"
+          },
+          {
+            "id": "t6",
+            "text": "了"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 2
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Mấy hôm nay tôi bận quá sức. (câu 2).",
+      "reference_answer": "我这几天忙坏了。",
+      "rubric": "Câu đúng: 我这几天忙坏了。 — Mấy hôm nay tôi bận quá sức. 累坏了/忙坏了 không có nghĩa đồ vật hỏng; không ghép 坏了 tùy ý với mọi tính từ.",
+      "config": {
+        "items": [
+          {
+            "id": "t3",
+            "text": "天"
+          },
+          {
+            "id": "t0",
+            "text": "我"
+          },
+          {
+            "id": "t7",
+            "text": "。"
+          },
+          {
+            "id": "t5",
+            "text": "坏"
+          },
+          {
+            "id": "t1",
+            "text": "这"
+          },
+          {
+            "id": "t2",
+            "text": "几"
+          },
+          {
+            "id": "t4",
+            "text": "忙"
+          },
+          {
+            "id": "t6",
+            "text": "了"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 2
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Căn nhà này ở tầng mấy? (câu 3).",
+      "reference_answer": "这套房子在几楼？",
+      "rubric": "Câu đúng: 这套房子在几楼？ — Căn nhà này ở tầng mấy? 这栋楼有几层 hỏi tổng số tầng, khác với hỏi căn nhà nằm ở tầng nào.",
+      "config": {
+        "items": [
+          {
+            "id": "t1",
+            "text": "套"
+          },
+          {
+            "id": "t3",
+            "text": "在"
+          },
+          {
+            "id": "t5",
+            "text": "楼"
+          },
+          {
+            "id": "t0",
+            "text": "这"
+          },
+          {
+            "id": "t6",
+            "text": "？"
+          },
+          {
+            "id": "t4",
+            "text": "几"
+          },
+          {
+            "id": "t2",
+            "text": "房子"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 2
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Tiểu Cương, nhà mình đang ở cũ quá. Em đang nghĩ có nên đổi nhà không. (câu 4).",
+      "reference_answer": "小刚，咱们现在住的房子太旧了。我在想要不要换个房子？",
+      "rubric": "Câu đúng: 小刚，咱们现在住的房子太旧了。我在想要不要换个房子？ — Tiểu Cương, nhà mình đang ở cũ quá. Em đang nghĩ có nên đổi nhà không. Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t12",
+            "text": "我"
+          },
+          {
+            "id": "t4",
+            "text": "现在"
+          },
+          {
+            "id": "t15",
+            "text": "要"
+          },
+          {
+            "id": "t5",
+            "text": "住"
+          },
+          {
+            "id": "t13",
+            "text": "在"
+          },
+          {
+            "id": "t0",
+            "text": "小"
+          },
+          {
+            "id": "t3",
+            "text": "咱们"
+          },
+          {
+            "id": "t2",
+            "text": "，"
+          },
+          {
+            "id": "t9",
+            "text": "旧"
+          },
+          {
+            "id": "t14",
+            "text": "想"
+          },
+          {
+            "id": "t20",
+            "text": "？"
+          },
+          {
+            "id": "t16",
+            "text": "不要"
+          },
+          {
+            "id": "t10",
+            "text": "了"
+          },
+          {
+            "id": "t1",
+            "text": "刚"
+          },
+          {
+            "id": "t18",
+            "text": "个"
+          },
+          {
+            "id": "t8",
+            "text": "太"
+          },
+          {
+            "id": "t19",
+            "text": "房子"
+          },
+          {
+            "id": "t6",
+            "text": "的"
+          },
+          {
+            "id": "t17",
+            "text": "换"
+          },
+          {
+            "id": "t11",
+            "text": "。"
+          },
+          {
+            "id": "t7",
+            "text": "房子"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12",
+          "t13",
+          "t14",
+          "t15",
+          "t16",
+          "t17",
+          "t18",
+          "t19",
+          "t20"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 2
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Anh cũng nghĩ vậy. Mình lên mạng tìm thử nhé. (câu 5).",
+      "reference_answer": "我也这么想。我们上网找找吧。",
+      "rubric": "Câu đúng: 我也这么想。我们上网找找吧。 — Anh cũng nghĩ vậy. Mình lên mạng tìm thử nhé. Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t8",
+            "text": "找"
+          },
+          {
+            "id": "t3",
+            "text": "想"
+          },
+          {
+            "id": "t4",
+            "text": "。"
+          },
+          {
+            "id": "t7",
+            "text": "上网"
+          },
+          {
+            "id": "t11",
+            "text": "。"
+          },
+          {
+            "id": "t2",
+            "text": "这么"
+          },
+          {
+            "id": "t5",
+            "text": "我"
+          },
+          {
+            "id": "t9",
+            "text": "找"
+          },
+          {
+            "id": "t6",
+            "text": "们"
+          },
+          {
+            "id": "t10",
+            "text": "吧"
+          },
+          {
+            "id": "t1",
+            "text": "也"
+          },
+          {
+            "id": "t0",
+            "text": "我"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 2
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Em tìm được khu dân cư này, anh thấy thế nào? (câu 6).",
+      "reference_answer": "我找到这个小区，你觉得怎么样？",
+      "rubric": "Câu đúng: 我找到这个小区，你觉得怎么样？ — Em tìm được khu dân cư này, anh thấy thế nào? Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t7",
+            "text": "你"
+          },
+          {
+            "id": "t1",
+            "text": "找"
+          },
+          {
+            "id": "t2",
+            "text": "到"
+          },
+          {
+            "id": "t6",
+            "text": "，"
+          },
+          {
+            "id": "t0",
+            "text": "我"
+          },
+          {
+            "id": "t10",
+            "text": "？"
+          },
+          {
+            "id": "t5",
+            "text": "小区"
+          },
+          {
+            "id": "t4",
+            "text": "个"
+          },
+          {
+            "id": "t3",
+            "text": "这"
+          },
+          {
+            "id": "t8",
+            "text": "觉得"
+          },
+          {
+            "id": "t9",
+            "text": "怎么样"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 2
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ]
+}

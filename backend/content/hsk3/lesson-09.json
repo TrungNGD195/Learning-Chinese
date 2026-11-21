@@ -1,0 +1,1807 @@
+{
+  "key": "hsk3-lesson-09-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 3,
+    "lesson_number": 9,
+    "title": "我要把作业交给老师 · Tôi phải nộp bài tập cho giáo viên",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "数学",
+      "pinyin": "shùxué",
+      "vietnamese_meaning": "toán học",
+      "part_of_speech": "danh từ",
+      "source_key": "3:9:数学",
+      "note": null,
+      "order_index": 1,
+      "example": "这样数学成绩才能提高。\nzhè yàng shù xué chéng jì cái néng tí gāo 。\nNhư vậy kết quả môn toán mới tốt lên."
+    },
+    {
+      "hanzi": "清楚",
+      "pinyin": "qīngchǔ",
+      "vietnamese_meaning": "rõ ràng; hiểu rõ",
+      "part_of_speech": "tính từ, động từ",
+      "source_key": "3:9:清楚",
+      "note": null,
+      "order_index": 2,
+      "example": "第三题我不太清楚，不知道怎么做。\ndì sān tí wǒ bù tài qīng chǔ ， bù zhī dào zěn me zuò 。\nCâu ba mình chưa rõ, không biết làm thế nào."
+    },
+    {
+      "hanzi": "讲",
+      "pinyin": "jiǎng",
+      "vietnamese_meaning": "giảng, nói, kể",
+      "part_of_speech": "động từ",
+      "source_key": "3:9:讲",
+      "note": null,
+      "order_index": 3,
+      "example": "没关系，我给你讲讲。\nméi guān xì ， wǒ gěi nǐ jiǎng jiǎng 。\nKhông sao, mình giảng cho bạn."
+    },
+    {
+      "hanzi": "黑板",
+      "pinyin": "hēibǎn",
+      "vietnamese_meaning": "bảng đen",
+      "part_of_speech": "danh từ",
+      "source_key": "3:9:黑板",
+      "note": null,
+      "order_index": 4,
+      "example": "昨天老师已经把这道题写在黑板上了，还讲了一遍。\nzuó tiān lǎo shī yǐ jīng bǎ zhè dào tí xiě zài hēi bǎn shàng le ， hái jiǎng le yī biàn 。\nHôm qua thầy đã viết câu này lên bảng, còn giảng một lượt."
+    },
+    {
+      "hanzi": "认真",
+      "pinyin": "rènzhēn",
+      "vietnamese_meaning": "nghiêm túc, chăm chú",
+      "part_of_speech": "tính từ",
+      "source_key": "3:9:认真",
+      "note": null,
+      "order_index": 5,
+      "example": "是啊，你要认真听课，认真做笔记。\nshì a ， nǐ yào rèn zhēn tīng kè ， rèn zhēn zuò bǐ jì 。\nĐúng, bạn cần nghe giảng và ghi chép chăm chú."
+    },
+    {
+      "hanzi": "笔记",
+      "pinyin": "bǐjì",
+      "vietnamese_meaning": "ghi chép, vở ghi",
+      "part_of_speech": "danh từ",
+      "source_key": "3:9:笔记",
+      "note": null,
+      "order_index": 6,
+      "example": "是啊，你要认真听课，认真做笔记。\nshì a ， nǐ yào rèn zhēn tīng kè ， rèn zhēn zuò bǐ jì 。\nĐúng, bạn cần nghe giảng và ghi chép chăm chú."
+    },
+    {
+      "hanzi": "道",
+      "pinyin": "dào",
+      "vietnamese_meaning": "câu, bài (lượng từ cho câu hỏi, bài tập)",
+      "part_of_speech": "lượng từ",
+      "source_key": "3:9:道",
+      "note": null,
+      "order_index": 7,
+      "example": "第三题我不太清楚，不知道怎么做。\ndì sān tí wǒ bù tài qīng chǔ ， bù zhī dào zěn me zuò 。\nCâu ba mình chưa rõ, không biết làm thế nào."
+    },
+    {
+      "hanzi": "把",
+      "pinyin": "bǎ",
+      "vietnamese_meaning": "đưa đối tượng bị tác động lên trước động từ",
+      "part_of_speech": "giới từ",
+      "source_key": "3:9:把",
+      "note": "把 dẫn đối tượng xác định trước động từ và thường cần phần chỉ kết quả, vị trí hoặc hướng. Khác lượng từ 把 trong 一把椅子. Nhắc lại HSK 2 bài 10: 把 (bǎ) — đưa tân ngữ lên trước động từ trong câu xử trí. Trong ngữ cảnh bài này: đưa đối tượng bị tác động lên trước động từ.",
+      "order_index": 8,
+      "example": "昨天老师已经把这道题写在黑板上了，还讲了一遍。\nzuó tiān lǎo shī yǐ jīng bǎ zhè dào tí xiě zài hēi bǎn shàng le ， hái jiǎng le yī biàn 。\nHôm qua thầy đã viết câu này lên bảng, còn giảng một lượt."
+    },
+    {
+      "hanzi": "遇到",
+      "pinyin": "yùdào",
+      "vietnamese_meaning": "gặp, gặp phải",
+      "part_of_speech": "động từ",
+      "source_key": "3:9:遇到",
+      "note": null,
+      "order_index": 9,
+      "example": "小明，遇到什么事了吗？\nxiǎo míng ， yù dào shén me shì le ma ？\nTiểu Minh, con gặp chuyện gì à?"
+    },
+    {
+      "hanzi": "困难",
+      "pinyin": "kùnnán",
+      "vietnamese_meaning": "khó khăn",
+      "part_of_speech": "danh từ, tính từ",
+      "source_key": "3:9:困难",
+      "note": null,
+      "order_index": 10,
+      "example": "学习上遇到困难，可以问老师。\nxué xí shàng yù dào kùn nán ， kě yǐ wèn lǎo shī 。\nGặp khó khăn trong học tập thì có thể hỏi thầy cô."
+    },
+    {
+      "hanzi": "要求",
+      "pinyin": "yāoqiú",
+      "vietnamese_meaning": "yêu cầu",
+      "part_of_speech": "động từ, danh từ",
+      "source_key": "3:9:要求",
+      "note": null,
+      "order_index": 11,
+      "example": "我复习了，但是今天有几道题我没看懂要求。\nwǒ fù xí le ， dàn shì jīn tiān yǒu jǐ dào tí wǒ méi kàn dǒng yāo qiú 。\nCon ôn rồi, nhưng hôm nay có mấy câu con không hiểu yêu cầu."
+    },
+    {
+      "hanzi": "历史",
+      "pinyin": "lìshǐ",
+      "vietnamese_meaning": "lịch sử",
+      "part_of_speech": "danh từ",
+      "source_key": "3:9:历史",
+      "note": null,
+      "order_index": 12,
+      "example": "没事没事，别难过了，明天还要考历史呢。\nméi shì méi shì ， bié nán guò le ， míng tiān hái yào kǎo lì shǐ ne 。\nKhông sao, đừng buồn, mai còn thi lịch sử nữa."
+    },
+    {
+      "hanzi": "差",
+      "pinyin": "chà",
+      "vietnamese_meaning": "kém, tệ (đọc chà)",
+      "part_of_speech": "tính từ",
+      "source_key": "3:9:差",
+      "note": "Đọc chà khi nói kết quả kém: 考得差. Không suy từ một cách đọc sang mọi từ ghép chứa 差.",
+      "order_index": 13,
+      "example": "妈妈，我这次考得这么差，你不生气吗？\nmā mā ， wǒ zhè cì kǎo de zhè me chà ， nǐ bù shēng qì ma ？\nMẹ ơi, lần này con thi kém vậy, mẹ không giận à?"
+    },
+    {
+      "hanzi": "生气",
+      "pinyin": "shēngqì",
+      "vietnamese_meaning": "tức giận",
+      "part_of_speech": "động từ",
+      "source_key": "3:9:生气",
+      "note": null,
+      "order_index": 14,
+      "example": "如果你不好好学习，我当然会生气。\nrú guǒ nǐ bù hǎo hào xué xí ， wǒ dāng rán huì shēng qì 。\nNếu con không chịu học thì tất nhiên mẹ giận."
+    },
+    {
+      "hanzi": "页",
+      "pinyin": "yè",
+      "vietnamese_meaning": "trang",
+      "part_of_speech": "lượng từ",
+      "source_key": "3:9:页",
+      "note": null,
+      "order_index": 15,
+      "example": "第三十六页的对话太难了，很多句子我都没看懂。\ndì sān shí liù yè de duì huà tài nán le ， hěn duō jù zi wǒ dōu méi kàn dǒng 。\nHội thoại trang ba mươi sáu khó quá, nhiều câu mình không hiểu."
+    },
+    {
+      "hanzi": "对话",
+      "pinyin": "duìhuà",
+      "vietnamese_meaning": "hội thoại, đối thoại",
+      "part_of_speech": "danh từ, động từ",
+      "source_key": "3:9:对话",
+      "note": null,
+      "order_index": 16,
+      "example": "第三十六页的对话太难了，很多句子我都没看懂。\ndì sān shí liù yè de duì huà tài nán le ， hěn duō jù zi wǒ dōu méi kàn dǒng 。\nHội thoại trang ba mươi sáu khó quá, nhiều câu mình không hiểu."
+    },
+    {
+      "hanzi": "作业本",
+      "pinyin": "zuòyèběn",
+      "vietnamese_meaning": "vở bài tập",
+      "part_of_speech": "danh từ",
+      "source_key": "3:9:作业本",
+      "note": null,
+      "order_index": 17,
+      "example": "后面还有几个练习题，你们做完以后，明天把作业本交给我就可以了。\nhòu miàn hái yǒu jǐ gè liàn xí tí ， nǐ men zuò wán yǐ hòu ， míng tiān bǎ zuò yè běn jiāo gěi wǒ jiù kě yǐ le 。\nPhía sau còn vài bài luyện tập, làm xong thì ngày mai nộp vở cho thầy là được."
+    },
+    {
+      "hanzi": "年级",
+      "pinyin": "niánjí",
+      "vietnamese_meaning": "khối, năm học (trong trường)",
+      "part_of_speech": "danh từ",
+      "source_key": "3:9:年级",
+      "note": null,
+      "order_index": 18,
+      "example": "小明现在是大学二年级的学生。\nxiǎo míng xiàn zài shì dà xué èr nián jí de xué shēng 。\nTiểu Minh hiện là sinh viên năm hai đại học."
+    },
+    {
+      "hanzi": "节",
+      "pinyin": "jié",
+      "vietnamese_meaning": "tiết (lượng từ cho tiết học)",
+      "part_of_speech": "lượng từ",
+      "source_key": "3:9:节",
+      "note": null,
+      "order_index": 19,
+      "example": "上午他有两节汉语课。\nshàng wǔ tā yǒu liǎng jié hàn yǔ kè 。\nBuổi sáng cậu có hai tiết tiếng Trung."
+    },
+    {
+      "hanzi": "自习",
+      "pinyin": "zìxí",
+      "vietnamese_meaning": "tự học",
+      "part_of_speech": "động từ",
+      "source_key": "3:9:自习",
+      "note": null,
+      "order_index": 20,
+      "example": "下午没有课的时候，他一般在教室自习或者做作业，有时候也和同学们一起练口语。\nxià wǔ méi yǒu kè de shí hòu ， tā yì bān zài jiào shì zì xí huò zhě zuò zuò yè ， yǒu shí hòu yě hé tóng xué men yì qǐ liàn kǒu yǔ 。\nBuổi chiều không có tiết, cậu thường tự học hoặc làm bài tập ở lớp, đôi khi cùng bạn luyện nói."
+    },
+    {
+      "hanzi": "内容",
+      "pinyin": "nèiróng",
+      "vietnamese_meaning": "nội dung",
+      "part_of_speech": "danh từ",
+      "source_key": "3:9:内容",
+      "note": null,
+      "order_index": 21,
+      "example": "晚上回家以后，他还会看书，复习今天学的内容。\nwǎn shàng huí jiā yǐ hòu ， tā hái huì kàn shū ， fù xí jīn tiān xué de nèi róng 。\nBuổi tối về nhà, cậu còn đọc sách, ôn nội dung đã học trong ngày."
+    },
+    {
+      "hanzi": "后年",
+      "pinyin": "hòunián",
+      "vietnamese_meaning": "năm sau nữa",
+      "part_of_speech": "danh từ chỉ thời gian",
+      "source_key": "3:9:后年",
+      "note": "后年 là năm sau nữa; 前年 là năm trước nữa. Không dùng 后年 để nói về quá khứ.",
+      "order_index": 22,
+      "example": "为了后年可以去中国学习，他现在每天都很努力地学汉语。\nwèi le hòu nián kě yǐ qù zhōng guó xué xí ， tā xiàn zài měi tiān dōu hěn nǔ lì de xué hàn yǔ 。\nĐể năm sau nữa có thể sang Trung Quốc học, bây giờ ngày nào cậu cũng rất chăm chỉ."
+    },
+    {
+      "hanzi": "正确",
+      "pinyin": "zhèngquè",
+      "vietnamese_meaning": "đúng, chính xác",
+      "part_of_speech": "tính từ",
+      "source_key": "3:9:正确",
+      "note": null,
+      "order_index": 23,
+      "example": "这个答案是正确的。\nzhè ge dá àn shì zhèng què de 。\nĐáp án này là đúng."
+    },
+    {
+      "hanzi": "答案",
+      "pinyin": "dáàn",
+      "vietnamese_meaning": "đáp án, câu trả lời",
+      "part_of_speech": "danh từ",
+      "source_key": "3:9:答案",
+      "note": null,
+      "order_index": 24,
+      "example": "请把答案写在作业本上。\nqǐng bǎ dá àn xiě zài zuò yè běn shàng 。\nHãy viết đáp án vào vở bài tập."
+    }
+  ],
+  "grammar": [
+    {
+      "name": "Câu 把 với vị trí đích",
+      "structure": "Chủ ngữ + 把 + đối tượng xác định + động từ + 在/到 + nơi chốn",
+      "explanation": "Nhấn mạnh xử lý hoặc di chuyển đối tượng đến một vị trí.",
+      "usage": "Phủ định sự việc đã xảy ra dùng 没/没有 trước 把; lời ngăn cản dùng 别. Không coi mọi cách dùng 不把 đều sai.",
+      "example": "你把作业本放到桌子上吧。\nnǐ bǎ zuò yè běn fàng dào zhuō zi shàng ba 。\nBạn đặt vở bài tập lên bàn nhé.",
+      "note": "Phủ định sự việc đã xảy ra dùng 没/没有 trước 把; lời ngăn cản dùng 别. Không coi mọi cách dùng 不把 đều sai.",
+      "order_index": 1
+    },
+    {
+      "name": "Trong phạm vi, quá trình hoặc điều kiện",
+      "structure": "在 + danh từ/cụm từ + 上/中/下",
+      "explanation": "上 nêu phương diện, 中 nêu quá trình/phạm vi, 下 nêu điều kiện.",
+      "usage": "Không chỉ mang nghĩa vị trí vật lý; chọn 上、中、下 theo kết hợp và ý nghĩa.",
+      "example": "在大家的帮助下，我的成绩提高了。\nzài dà jiā de bāng zhù xià ， wǒ de chéng jì tí gāo le 。\nNhờ sự giúp đỡ của mọi người, kết quả học tập của tôi đã tốt hơn.",
+      "note": "Không chỉ mang nghĩa vị trí vật lý; chọn 上、中、下 theo kết hợp và ý nghĩa.",
+      "order_index": 2
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Cùng làm bài tập toán",
+      "content": "小明：小林，你的数学作业做完了吗？\n小林：还没做完。第三题我不太清楚，不知道怎么做。\n小明：第三题？昨天老师已经讲过了啊。\n小林：是吗？我怎么一点儿也不记得。\n小明：昨天老师已经把这道题写在黑板上了，还讲了一遍。\n小林：那可能是我没认真听讲，也没做笔记。\n小明：没关系，我给你讲讲。\n小林：太好了！谢谢。下次我会认真做笔记的。\n小明：是啊，你要认真听课，认真做笔记。这样数学成绩才能提高。",
+      "pinyin": "xiǎo míng ： xiǎo lín ， nǐ de shù xué zuò yè zuò wán le ma ？\nxiǎo lín ： hái méi zuò wán 。 dì sān tí wǒ bù tài qīng chǔ ， bù zhī dào zěn me zuò 。\nxiǎo míng ： dì sān tí ？ zuó tiān lǎo shī yǐ jīng jiǎng guò le a 。\nxiǎo lín ： shì ma ？ wǒ zěn me yì diǎn ér yě bú jì de 。\nxiǎo míng ： zuó tiān lǎo shī yǐ jīng bǎ zhè dào tí xiě zài hēi bǎn shàng le ， hái jiǎng le yī biàn 。\nxiǎo lín ： nà kě néng shì wǒ méi rèn zhēn tīng jiǎng ， yě méi zuò bǐ jì 。\nxiǎo míng ： méi guān xì ， wǒ gěi nǐ jiǎng jiǎng 。\nxiǎo lín ： tài hǎo le ！ xiè xiè 。 xià cì wǒ huì rèn zhēn zuò bǐ jì de 。\nxiǎo míng ： shì a ， nǐ yào rèn zhēn tīng kè ， rèn zhēn zuò bǐ jì 。 zhè yàng shù xué chéng jì cái néng tí gāo 。",
+      "vietnamese_translation": "Tiểu Minh: Tiểu Lâm, bài tập toán của bạn làm xong chưa?\nTiểu Lâm: Chưa xong. Câu ba mình chưa rõ, không biết làm thế nào.\nTiểu Minh: Câu ba à? Hôm qua thầy đã giảng rồi mà.\nTiểu Lâm: Thế à? Sao mình chẳng nhớ chút nào.\nTiểu Minh: Hôm qua thầy đã viết câu này lên bảng, còn giảng một lượt.\nTiểu Lâm: Có lẽ mình không chăm chú nghe, cũng không ghi chép.\nTiểu Minh: Không sao, mình giảng cho bạn.\nTiểu Lâm: Tốt quá, cảm ơn! Lần sau mình sẽ ghi chép cẩn thận.\nTiểu Minh: Đúng, bạn cần nghe giảng và ghi chép chăm chú. Như vậy kết quả môn toán mới tốt lên.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 9, bài khóa 1."
+    },
+    {
+      "order_index": 2,
+      "title": "Động viên sau kỳ thi",
+      "content": "妈妈：小明，遇到什么事了吗？怎么这么难过？\n小明：妈妈，我今天考试考得不太好，外语太难了。\n妈妈：昨天没复习好吗？\n小明：我复习了，但是今天有几道题我没看懂要求。\n妈妈：没事没事，别难过了，明天还要考历史呢。\n小明：妈妈，我这次考得这么差，你不生气吗？\n妈妈：如果你不好好学习，我当然会生气。但是妈妈知道你在学习上已经很努力了。\n小明：谢谢你。我以后会更努力的。",
+      "pinyin": "mā mā ： xiǎo míng ， yù dào shén me shì le ma ？ zěn me zhè me nán guò ？\nxiǎo míng ： mā mā ， wǒ jīn tiān kǎo shì kǎo de bù tài hǎo ， wài yǔ tài nán le 。\nmā mā ： zuó tiān méi fù xí hǎo ma ？\nxiǎo míng ： wǒ fù xí le ， dàn shì jīn tiān yǒu jǐ dào tí wǒ méi kàn dǒng yāo qiú 。\nmā mā ： méi shì méi shì ， bié nán guò le ， míng tiān hái yào kǎo lì shǐ ne 。\nxiǎo míng ： mā mā ， wǒ zhè cì kǎo de zhè me chà ， nǐ bù shēng qì ma ？\nmā mā ： rú guǒ nǐ bù hǎo hào xué xí ， wǒ dāng rán huì shēng qì 。 dàn shì mā mā zhī dào nǐ zài xué xí shàng yǐ jīng hěn nǔ lì le 。\nxiǎo míng ： xiè xiè nǐ 。 wǒ yǐ hòu huì gèng nǔ lì de 。",
+      "vietnamese_translation": "Mẹ: Tiểu Minh, con gặp chuyện gì à? Sao buồn thế?\nTiểu Minh: Mẹ ơi, hôm nay con thi không tốt lắm, ngoại ngữ khó quá.\nMẹ: Hôm qua chưa ôn kỹ à?\nTiểu Minh: Con ôn rồi, nhưng hôm nay có mấy câu con không hiểu yêu cầu.\nMẹ: Không sao, đừng buồn, mai còn thi lịch sử nữa.\nTiểu Minh: Mẹ ơi, lần này con thi kém vậy, mẹ không giận à?\nMẹ: Nếu con không chịu học thì tất nhiên mẹ giận. Nhưng mẹ biết con đã rất cố gắng trong học tập.\nTiểu Minh: Cảm ơn mẹ, sau này con sẽ cố gắng hơn.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 9, bài khóa 2."
+    },
+    {
+      "order_index": 3,
+      "title": "Hỏi thầy về bài tập",
+      "content": "小李：小明，外语作业你写完了吗？\n小明：还没呢，有几句话我不太明白。你已经做完了？\n小李：我也没做完。第三十六页的对话太难了，很多句子我都没看懂。\n小明：对对，我也是。特别是那几个长句。\n小李：我们一起去办公室问老师吧。\n（在办公室，老师给小李和小明讲题）\n小明：谢谢老师，我终于明白了。\n小李：我也懂了。谢谢您！\n老师：明白了就好。后面还有几个练习题，你们做完以后，明天把作业本交给我就可以了。",
+      "pinyin": "xiǎo lǐ ： xiǎo míng ， wài yǔ zuò yè nǐ xiě wán le ma ？\nxiǎo míng ： hái méi ne ， yǒu jǐ jù huà wǒ bù tài míng bái 。 nǐ yǐ jīng zuò wán le ？\nxiǎo lǐ ： wǒ yě méi zuò wán 。 dì sān shí liù yè de duì huà tài nán le ， hěn duō jù zi wǒ dōu méi kàn dǒng 。\nxiǎo míng ： duì duì ， wǒ yě shì 。 tè bié shì nà jǐ gè cháng jù 。\nxiǎo lǐ ： wǒ men yì qǐ qù bàn gōng shì wèn lǎo shī ba 。\n（ zài bàn gōng shì ， lǎo shī gěi xiǎo lǐ hé xiǎo míng jiǎng tí ）\nxiǎo míng ： xiè xiè lǎo shī ， wǒ zhōng yú míng bái le 。\nxiǎo lǐ ： wǒ yě dǒng le 。 xiè xiè nín ！\nlǎo shī ： míng bái le jiù hǎo 。 hòu miàn hái yǒu jǐ gè liàn xí tí ， nǐ men zuò wán yǐ hòu ， míng tiān bǎ zuò yè běn jiāo gěi wǒ jiù kě yǐ le 。",
+      "vietnamese_translation": "Tiểu Lý: Tiểu Minh, bạn viết xong bài tập ngoại ngữ chưa?\nTiểu Minh: Chưa, có mấy câu mình chưa hiểu. Bạn làm xong rồi à?\nTiểu Lý: Mình cũng chưa. Hội thoại trang ba mươi sáu khó quá, nhiều câu mình không hiểu.\nTiểu Minh: Đúng, mình cũng vậy, nhất là những câu dài.\nTiểu Lý: Mình cùng đến văn phòng hỏi thầy nhé.\n(Trong văn phòng, thầy giảng bài cho Tiểu Lý và Tiểu Minh)\nTiểu Minh: Cảm ơn thầy, cuối cùng em hiểu rồi.\nTiểu Lý: Em cũng hiểu rồi, cảm ơn thầy!\nThầy giáo: Hiểu là tốt. Phía sau còn vài bài luyện tập, làm xong thì ngày mai nộp vở cho thầy là được.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 9, bài khóa 3."
+    },
+    {
+      "order_index": 4,
+      "title": "Một ngày học tiếng Trung",
+      "content": "小明现在是大学二年级的学生。他很喜欢学习汉语，也觉得汉语很有意思。为了后年可以去中国学习，他现在每天都很努力地学汉语。\n小明一般早上七点起床，吃完早饭以后就去上课。上午他有两节汉语课。上课时，他总是认真地听老师讲课，遇到不明白的问题就马上问。下午没有课的时候，他一般在教室自习或者做作业，有时候也和同学们一起练口语。\n晚上回家以后，他还会看书，复习今天学的内容。虽然有时会觉得有点儿难，但是他还是很喜欢学习汉语。",
+      "pinyin": "xiǎo míng xiàn zài shì dà xué èr nián jí de xué shēng 。 tā hěn xǐ huān xué xí hàn yǔ ， yě jué de hàn yǔ hěn yǒu yì si 。 wèi le hòu nián kě yǐ qù zhōng guó xué xí ， tā xiàn zài měi tiān dōu hěn nǔ lì de xué hàn yǔ 。\nxiǎo míng yì bān zǎo shàng qī diǎn qǐ chuáng ， chī wán zǎo fàn yǐ hòu jiù qù shàng kè 。 shàng wǔ tā yǒu liǎng jié hàn yǔ kè 。 shàng kè shí ， tā zǒng shì rèn zhēn de tīng lǎo shī jiǎng kè ， yù dào bù míng bái de wèn tí jiù mǎ shàng wèn 。 xià wǔ méi yǒu kè de shí hòu ， tā yì bān zài jiào shì zì xí huò zhě zuò zuò yè ， yǒu shí hòu yě hé tóng xué men yì qǐ liàn kǒu yǔ 。\nwǎn shàng huí jiā yǐ hòu ， tā hái huì kàn shū ， fù xí jīn tiān xué de nèi róng 。 suī rán yǒu shí huì jué de yǒu diǎn ér nán ， dàn shì tā hái shì hěn xǐ huān xué xí hàn yǔ 。",
+      "vietnamese_translation": "Tiểu Minh hiện là sinh viên năm hai đại học. Cậu thích học tiếng Trung và thấy tiếng Trung rất thú vị. Để năm sau nữa có thể sang Trung Quốc học, bây giờ ngày nào cậu cũng rất chăm chỉ.\nTiểu Minh thường dậy lúc bảy giờ, ăn sáng xong đi học. Buổi sáng cậu có hai tiết tiếng Trung. Khi học, cậu luôn chăm chú nghe giảng, có câu hỏi chưa hiểu thì hỏi ngay. Buổi chiều không có tiết, cậu thường tự học hoặc làm bài tập ở lớp, đôi khi cùng bạn luyện nói.\nBuổi tối về nhà, cậu còn đọc sách, ôn nội dung đã học trong ngày. Dù đôi lúc thấy hơi khó, cậu vẫn rất thích học tiếng Trung.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 9, bài khóa 4."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 3 · Bài 9 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp của bài này và các bài trước; đạt từ 80%, được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "source_documents": {
+    "vocabulary": "DOCX",
+    "theory": "DOCX"
+  },
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 1).",
+      "options": [
+        {
+          "option_text": "trung học cơ sở",
+          "is_correct": true
+        },
+        {
+          "option_text": "tuần",
+          "is_correct": false
+        },
+        {
+          "option_text": "đây, này",
+          "is_correct": false
+        },
+        {
+          "option_text": "màn thầu; bánh bao không nhân",
+          "is_correct": false
+        }
+      ],
+      "rubric": "初中 (chū zhōng) — trung học cơ sở. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true,
+          "audio_text": "初中"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 11
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “认真” (rènzhēn) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "nuôi, dưỡng, chăm sóc để hồi phục",
+          "is_correct": false
+        },
+        {
+          "option_text": "thành phố",
+          "is_correct": false
+        },
+        {
+          "option_text": "nghiêm túc, chăm chú",
+          "is_correct": true
+        },
+        {
+          "option_text": "bạn gái",
+          "is_correct": false
+        }
+      ],
+      "rubric": "认真 (rènzhēn) — nghiêm túc, chăm chú. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 9
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “zuòyèběn” — vở bài tập.",
+      "options": [
+        {
+          "option_text": "矮",
+          "is_correct": false
+        },
+        {
+          "option_text": "作业本",
+          "is_correct": true
+        },
+        {
+          "option_text": "中学",
+          "is_correct": false
+        },
+        {
+          "option_text": "镜头",
+          "is_correct": false
+        }
+      ],
+      "rubric": "作业本 (zuòyèběn) — vở bài tập. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 9
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 4).",
+      "options": [
+        {
+          "option_text": "chó",
+          "is_correct": false
+        },
+        {
+          "option_text": "vì, bởi vì",
+          "is_correct": false
+        },
+        {
+          "option_text": "đã từng (trải nghiệm trong quá khứ)",
+          "is_correct": false
+        },
+        {
+          "option_text": "năm sau nữa",
+          "is_correct": true
+        }
+      ],
+      "rubric": "后年 (hòunián) — năm sau nữa. 后年 là năm sau nữa; 前年 là năm trước nữa. Không dùng 后年 để nói về quá khứ.",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "后年"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 9
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “里边” (lǐ biān) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "bên trong",
+          "is_correct": true
+        },
+        {
+          "option_text": "rượu; đồ uống có cồn",
+          "is_correct": false
+        },
+        {
+          "option_text": "nói",
+          "is_correct": false
+        },
+        {
+          "option_text": "điện",
+          "is_correct": false
+        }
+      ],
+      "rubric": "里边 (lǐ biān) — bên trong. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “jiǎng” — giảng, nói, kể.",
+      "options": [
+        {
+          "option_text": "了",
+          "is_correct": false
+        },
+        {
+          "option_text": "讲",
+          "is_correct": true
+        },
+        {
+          "option_text": "明年",
+          "is_correct": false
+        },
+        {
+          "option_text": "高中",
+          "is_correct": false
+        }
+      ],
+      "rubric": "讲 (jiǎng) — giảng, nói, kể. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 9
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “差” (chà) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "khu dân cư",
+          "is_correct": false
+        },
+        {
+          "option_text": "cuộc sống; sống, sinh hoạt",
+          "is_correct": false
+        },
+        {
+          "option_text": "có chuyện gì vậy, làm sao vậy",
+          "is_correct": false
+        },
+        {
+          "option_text": "kém, tệ (đọc chà)",
+          "is_correct": true
+        }
+      ],
+      "rubric": "差 (chà) — kém, tệ (đọc chà). Đọc chà khi nói kết quả kém: 考得差. Không suy từ một cách đọc sang mọi từ ghép chứa 差.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 9
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “正确” (zhèngquè) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "đúng, chính xác",
+          "is_correct": true
+        },
+        {
+          "option_text": "cái bàn",
+          "is_correct": false
+        },
+        {
+          "option_text": "rất",
+          "is_correct": false
+        },
+        {
+          "option_text": "kém, tệ (đọc chà)",
+          "is_correct": false
+        }
+      ],
+      "rubric": "正确 (zhèngquè) — đúng, chính xác. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 9
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “nǐ” — anh, chị, bạn, ông, bà,....",
+      "options": [
+        {
+          "option_text": "明天",
+          "is_correct": false
+        },
+        {
+          "option_text": "题",
+          "is_correct": false
+        },
+        {
+          "option_text": "你",
+          "is_correct": true
+        },
+        {
+          "option_text": "刷",
+          "is_correct": false
+        }
+      ],
+      "rubric": "你 (nǐ) — anh, chị, bạn, ông, bà,.... ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “节” (jié) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "điện",
+          "is_correct": false
+        },
+        {
+          "option_text": "độc thân",
+          "is_correct": false
+        },
+        {
+          "option_text": "cơm",
+          "is_correct": false
+        },
+        {
+          "option_text": "tiết (lượng từ cho tiết học)",
+          "is_correct": true
+        }
+      ],
+      "rubric": "节 (jié) — tiết (lượng từ cho tiết học). ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 9
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “历史” (lìshǐ) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "sữa bò",
+          "is_correct": false
+        },
+        {
+          "option_text": "màu xanh lam",
+          "is_correct": false
+        },
+        {
+          "option_text": "bên ngoài",
+          "is_correct": false
+        },
+        {
+          "option_text": "lịch sử",
+          "is_correct": true
+        }
+      ],
+      "rubric": "历史 (lìshǐ) — lịch sử. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 9
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “kùnnán” — khó khăn.",
+      "options": [
+        {
+          "option_text": "的时候",
+          "is_correct": false
+        },
+        {
+          "option_text": "困难",
+          "is_correct": true
+        },
+        {
+          "option_text": "回去",
+          "is_correct": false
+        },
+        {
+          "option_text": "年",
+          "is_correct": false
+        }
+      ],
+      "rubric": "困难 (kùnnán) — khó khăn. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 9
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “tự học” (pinyin: zìxí).",
+      "reference_answer": "自习",
+      "rubric": "Đáp án: 自习 (zìxí). ",
+      "config": {
+        "accepted_answers": [
+          "自习"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 9
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “trang” (pinyin: yè).",
+      "reference_answer": "页",
+      "rubric": "Đáp án: 页 (yè). ",
+      "config": {
+        "accepted_answers": [
+          "页"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 9
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “yêu cầu” (pinyin: yāoqiú).",
+      "reference_answer": "要求",
+      "rubric": "Đáp án: 要求 (yāoqiú). ",
+      "config": {
+        "accepted_answers": [
+          "要求"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 9
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “bảng đen” (pinyin: hēibǎn).",
+      "reference_answer": "黑板",
+      "rubric": "Đáp án: 黑板 (hēibǎn). ",
+      "config": {
+        "accepted_answers": [
+          "黑板"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 9
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối các từ với nghĩa đã học (nhóm 1).",
+      "rubric": "生气: tức giận ; 笔记: ghi chép, vở ghi ; 差: kém, tệ (đọc chà) ; 清楚: rõ ràng; hiểu rõ",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "生气"
+          },
+          {
+            "id": "l1",
+            "text": "笔记"
+          },
+          {
+            "id": "l2",
+            "text": "差"
+          },
+          {
+            "id": "l3",
+            "text": "清楚"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r1",
+            "text": "ghi chép, vở ghi"
+          },
+          {
+            "id": "r3",
+            "text": "rõ ràng; hiểu rõ"
+          },
+          {
+            "id": "r0",
+            "text": "tức giận"
+          },
+          {
+            "id": "r2",
+            "text": "kém, tệ (đọc chà)"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 9
+        },
+        {
+          "hsk": 3,
+          "lesson": 9
+        },
+        {
+          "hsk": 3,
+          "lesson": 9
+        },
+        {
+          "hsk": 3,
+          "lesson": 9
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối các từ với nghĩa đã học (nhóm 2).",
+      "rubric": "工作: công việc ; 自习: tự học ; 数学: toán học ; 内容: nội dung",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "工作"
+          },
+          {
+            "id": "l1",
+            "text": "自习"
+          },
+          {
+            "id": "l2",
+            "text": "数学"
+          },
+          {
+            "id": "l3",
+            "text": "内容"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r0",
+            "text": "công việc"
+          },
+          {
+            "id": "r2",
+            "text": "toán học"
+          },
+          {
+            "id": "r1",
+            "text": "tự học"
+          },
+          {
+            "id": "r3",
+            "text": "nội dung"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 3
+        },
+        {
+          "hsk": 3,
+          "lesson": 9
+        },
+        {
+          "hsk": 3,
+          "lesson": 9
+        },
+        {
+          "hsk": 3,
+          "lesson": 9
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "我没___名字写在本子里。",
+      "options": [
+        {
+          "option_text": "在",
+          "is_correct": false
+        },
+        {
+          "option_text": "是",
+          "is_correct": false
+        },
+        {
+          "option_text": "把",
+          "is_correct": true
+        },
+        {
+          "option_text": "有",
+          "is_correct": false
+        }
+      ],
+      "rubric": "把 dẫn đối tượng trước động từ; 没 đặt trước 把 khi phủ định hành động đã xảy ra.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 9
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn từ chỉ phương diện: 在学习___，他很努力。",
+      "options": [
+        {
+          "option_text": "上",
+          "is_correct": true
+        },
+        {
+          "option_text": "里边",
+          "is_correct": false
+        },
+        {
+          "option_text": "后面",
+          "is_correct": false
+        },
+        {
+          "option_text": "外边",
+          "is_correct": false
+        }
+      ],
+      "rubric": "在…上 ở đây chỉ phương diện học tập, không phải một vị trí vật lý.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 9
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nhờ sự giúp đỡ của mọi người: 在大家的帮助___，成绩提高了。",
+      "options": [
+        {
+          "option_text": "外",
+          "is_correct": false
+        },
+        {
+          "option_text": "下",
+          "is_correct": true
+        },
+        {
+          "option_text": "后",
+          "is_correct": false
+        },
+        {
+          "option_text": "前",
+          "is_correct": false
+        }
+      ],
+      "rubric": "在…下 dẫn điều kiện hoặc sự hỗ trợ mà hành động dựa vào.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 9
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Câu 把 với vị trí đích”, cách hiểu nào đúng (mục 1)?",
+      "options": [
+        {
+          "option_text": "Nhấn mạnh xử lý hoặc di chuyển đối tượng đến một vị trí.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Nhấn mạnh xử lý hoặc di chuyển đối tượng đến một vị trí. Phủ định sự việc đã xảy ra dùng 没/没有 trước 把; lời ngăn cản dùng 别. Không coi mọi cách dùng 不把 đều sai.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 9
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Trong phạm vi, quá trình hoặc điều kiện”, cách hiểu nào đúng (mục 2)?",
+      "options": [
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        },
+        {
+          "option_text": "上 nêu phương diện, 中 nêu quá trình/phạm vi, 下 nêu điều kiện.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "上 nêu phương diện, 中 nêu quá trình/phạm vi, 下 nêu điều kiện. Không chỉ mang nghĩa vị trí vật lý; chọn 上、中、下 theo kết hợp và ý nghĩa.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 9
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Câu 把 với vị trí đích”, cách hiểu nào đúng (mục 3)?",
+      "options": [
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nhấn mạnh xử lý hoặc di chuyển đối tượng đến một vị trí.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Nhấn mạnh xử lý hoặc di chuyển đối tượng đến một vị trí. Phủ định sự việc đã xảy ra dùng 没/没有 trước 把; lời ngăn cản dùng 别. Không coi mọi cách dùng 不把 đều sai.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 9
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Bạn đặt vở bài tập lên bàn nhé. (câu 1).",
+      "reference_answer": "你把作业本放到桌子上吧。",
+      "rubric": "Câu đúng: 你把作业本放到桌子上吧。 — Bạn đặt vở bài tập lên bàn nhé. Phủ định sự việc đã xảy ra dùng 没/没有 trước 把; lời ngăn cản dùng 别. Không coi mọi cách dùng 不把 đều sai.",
+      "config": {
+        "items": [
+          {
+            "id": "t0",
+            "text": "你"
+          },
+          {
+            "id": "t4",
+            "text": "到"
+          },
+          {
+            "id": "t7",
+            "text": "吧"
+          },
+          {
+            "id": "t1",
+            "text": "把"
+          },
+          {
+            "id": "t6",
+            "text": "上"
+          },
+          {
+            "id": "t5",
+            "text": "桌子"
+          },
+          {
+            "id": "t3",
+            "text": "放"
+          },
+          {
+            "id": "t8",
+            "text": "。"
+          },
+          {
+            "id": "t2",
+            "text": "作业本"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 9
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Nhờ sự giúp đỡ của mọi người, kết quả học tập của tôi đã tốt hơn. (câu 2).",
+      "reference_answer": "在大家的帮助下，我的成绩提高了。",
+      "rubric": "Câu đúng: 在大家的帮助下，我的成绩提高了。 — Nhờ sự giúp đỡ của mọi người, kết quả học tập của tôi đã tốt hơn. Không chỉ mang nghĩa vị trí vật lý; chọn 上、中、下 theo kết hợp và ý nghĩa.",
+      "config": {
+        "items": [
+          {
+            "id": "t8",
+            "text": "成绩"
+          },
+          {
+            "id": "t1",
+            "text": "大家"
+          },
+          {
+            "id": "t7",
+            "text": "的"
+          },
+          {
+            "id": "t2",
+            "text": "的"
+          },
+          {
+            "id": "t6",
+            "text": "我"
+          },
+          {
+            "id": "t11",
+            "text": "。"
+          },
+          {
+            "id": "t4",
+            "text": "下"
+          },
+          {
+            "id": "t9",
+            "text": "提高"
+          },
+          {
+            "id": "t5",
+            "text": "，"
+          },
+          {
+            "id": "t3",
+            "text": "帮助"
+          },
+          {
+            "id": "t0",
+            "text": "在"
+          },
+          {
+            "id": "t10",
+            "text": "了"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 9
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Tiểu Lâm, bài tập toán của bạn làm xong chưa? (câu 3).",
+      "reference_answer": "小林，你的数学作业做完了吗？",
+      "rubric": "Câu đúng: 小林，你的数学作业做完了吗？ — Tiểu Lâm, bài tập toán của bạn làm xong chưa? Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t11",
+            "text": "？"
+          },
+          {
+            "id": "t10",
+            "text": "吗"
+          },
+          {
+            "id": "t5",
+            "text": "数学"
+          },
+          {
+            "id": "t4",
+            "text": "的"
+          },
+          {
+            "id": "t7",
+            "text": "做"
+          },
+          {
+            "id": "t1",
+            "text": "林"
+          },
+          {
+            "id": "t0",
+            "text": "小"
+          },
+          {
+            "id": "t2",
+            "text": "，"
+          },
+          {
+            "id": "t6",
+            "text": "作业"
+          },
+          {
+            "id": "t8",
+            "text": "完"
+          },
+          {
+            "id": "t9",
+            "text": "了"
+          },
+          {
+            "id": "t3",
+            "text": "你"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 9
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Chưa xong. Câu ba mình chưa rõ, không biết làm thế nào. (câu 4).",
+      "reference_answer": "还没做完。第三题我不太清楚，不知道怎么做。",
+      "rubric": "Câu đúng: 还没做完。第三题我不太清楚，不知道怎么做。 — Chưa xong. Câu ba mình chưa rõ, không biết làm thế nào. Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t0",
+            "text": "还"
+          },
+          {
+            "id": "t2",
+            "text": "做"
+          },
+          {
+            "id": "t10",
+            "text": "清楚"
+          },
+          {
+            "id": "t6",
+            "text": "三"
+          },
+          {
+            "id": "t8",
+            "text": "我"
+          },
+          {
+            "id": "t4",
+            "text": "。"
+          },
+          {
+            "id": "t1",
+            "text": "没"
+          },
+          {
+            "id": "t11",
+            "text": "，"
+          },
+          {
+            "id": "t7",
+            "text": "题"
+          },
+          {
+            "id": "t3",
+            "text": "完"
+          },
+          {
+            "id": "t12",
+            "text": "不"
+          },
+          {
+            "id": "t15",
+            "text": "做"
+          },
+          {
+            "id": "t13",
+            "text": "知道"
+          },
+          {
+            "id": "t14",
+            "text": "怎么"
+          },
+          {
+            "id": "t9",
+            "text": "不太"
+          },
+          {
+            "id": "t5",
+            "text": "第"
+          },
+          {
+            "id": "t16",
+            "text": "。"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12",
+          "t13",
+          "t14",
+          "t15",
+          "t16"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 9
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Câu ba à? Hôm qua thầy đã giảng rồi mà. (câu 5).",
+      "reference_answer": "第三题？昨天老师已经讲过了啊。",
+      "rubric": "Câu đúng: 第三题？昨天老师已经讲过了啊。 — Câu ba à? Hôm qua thầy đã giảng rồi mà. Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t2",
+            "text": "题"
+          },
+          {
+            "id": "t7",
+            "text": "已经"
+          },
+          {
+            "id": "t8",
+            "text": "讲"
+          },
+          {
+            "id": "t5",
+            "text": "老"
+          },
+          {
+            "id": "t3",
+            "text": "？"
+          },
+          {
+            "id": "t11",
+            "text": "啊"
+          },
+          {
+            "id": "t10",
+            "text": "了"
+          },
+          {
+            "id": "t4",
+            "text": "昨天"
+          },
+          {
+            "id": "t12",
+            "text": "。"
+          },
+          {
+            "id": "t0",
+            "text": "第"
+          },
+          {
+            "id": "t1",
+            "text": "三"
+          },
+          {
+            "id": "t9",
+            "text": "过"
+          },
+          {
+            "id": "t6",
+            "text": "师"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 9
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Thế à? Sao mình chẳng nhớ chút nào. (câu 6).",
+      "reference_answer": "是吗？我怎么一点儿也不记得。",
+      "rubric": "Câu đúng: 是吗？我怎么一点儿也不记得。 — Thế à? Sao mình chẳng nhớ chút nào. Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t1",
+            "text": "吗"
+          },
+          {
+            "id": "t4",
+            "text": "怎么"
+          },
+          {
+            "id": "t6",
+            "text": "也"
+          },
+          {
+            "id": "t2",
+            "text": "？"
+          },
+          {
+            "id": "t7",
+            "text": "不"
+          },
+          {
+            "id": "t8",
+            "text": "记"
+          },
+          {
+            "id": "t5",
+            "text": "一点儿"
+          },
+          {
+            "id": "t3",
+            "text": "我"
+          },
+          {
+            "id": "t0",
+            "text": "是"
+          },
+          {
+            "id": "t10",
+            "text": "。"
+          },
+          {
+            "id": "t9",
+            "text": "得"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 9
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ]
+}

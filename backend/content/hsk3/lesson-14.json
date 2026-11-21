@@ -1,0 +1,1857 @@
+{
+  "key": "hsk3-lesson-14-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 3,
+    "lesson_number": 14,
+    "title": "大熊猫是中国的国宝 · Gấu trúc là bảo vật quốc gia của Trung Quốc",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "毛球",
+      "pinyin": "máoqiú",
+      "vietnamese_meaning": "cục lông, quả cầu lông",
+      "part_of_speech": "danh từ",
+      "source_key": "3:14:毛球",
+      "note": null,
+      "order_index": 1,
+      "example": "刚出生的时候，它小小的，像个小毛球。\ngāng chū shēng de shí hòu ， tā xiǎo xiǎo de ， xiàng gè xiǎo máo qiú 。\nLúc mới sinh nó nhỏ xíu, như cục lông."
+    },
+    {
+      "hanzi": "活泼",
+      "pinyin": "huópō",
+      "vietnamese_meaning": "hoạt bát",
+      "part_of_speech": "tính từ",
+      "source_key": "3:14:活泼",
+      "note": null,
+      "order_index": 2,
+      "example": "哇，它真活泼！\nwa ， tā zhēn huó pō ！\nÔi, nó hoạt bát thật!"
+    },
+    {
+      "hanzi": "聪明",
+      "pinyin": "cōngmíng",
+      "vietnamese_meaning": "thông minh",
+      "part_of_speech": "tính từ",
+      "source_key": "3:14:聪明",
+      "note": null,
+      "order_index": 3,
+      "example": "是啊，特别聪明，还很粘人。\nshì a ， tè bié cōng míng ， hái hěn zhān rén 。\nĐúng, rất thông minh, còn quấn người."
+    },
+    {
+      "hanzi": "粘人",
+      "pinyin": "niánrén",
+      "vietnamese_meaning": "quấn người",
+      "part_of_speech": "tính từ",
+      "source_key": "3:14:粘人",
+      "note": null,
+      "order_index": 4,
+      "example": "是啊，特别聪明，还很粘人。\nshì a ， tè bié cōng míng ， hái hěn zhān rén 。\nĐúng, rất thông minh, còn quấn người."
+    },
+    {
+      "hanzi": "怀里",
+      "pinyin": "huáilǐ",
+      "vietnamese_meaning": "trong lòng, trong vòng tay",
+      "part_of_speech": "cụm phương vị",
+      "source_key": "3:14:怀里",
+      "note": null,
+      "order_index": 5,
+      "example": "一会儿在我脚边睡，一会儿爬到我怀里。\nyī huì er zài wǒ jiǎo biān shuì ， yī huì er pá dào wǒ huái lǐ 。\nLúc ngủ bên chân, lúc lại trèo vào lòng mình."
+    },
+    {
+      "hanzi": "成员",
+      "pinyin": "chéngyuán",
+      "vietnamese_meaning": "thành viên",
+      "part_of_speech": "danh từ",
+      "source_key": "3:14:成员",
+      "note": null,
+      "order_index": 6,
+      "example": "它就像我妈妈的儿子，是我家的成员了。\ntā jiù xiàng wǒ mā mā de ér zi ， shì wǒ jiā de chéng yuán le 。\nNó như con trai mẹ mình, là thành viên trong nhà rồi."
+    },
+    {
+      "hanzi": "养",
+      "pinyin": "yǎng",
+      "vietnamese_meaning": "nuôi, chăm sóc (người hoặc động vật)",
+      "part_of_speech": "động từ",
+      "source_key": "3:14:养",
+      "note": "Trong ngữ cảnh chấn thương, 养好 là dưỡng cho hồi phục; trong 养小狗 là nuôi chó. Không dịch mọi kết hợp thành nuôi. Nhắc lại HSK 3 bài 7: 养 (yǎng) — nuôi, dưỡng, chăm sóc để hồi phục. Trong ngữ cảnh bài này: nuôi, chăm sóc (người hoặc động vật).",
+      "order_index": 7,
+      "example": "妈妈，我们家也养一只小狗吧！\nmā mā ， wǒ men jiā yě yǎng yī zhī xiǎo gǒu ba ！\nMẹ ơi, nhà mình cũng nuôi một chú chó nhé!"
+    },
+    {
+      "hanzi": "照顾",
+      "pinyin": "zhàogù",
+      "vietnamese_meaning": "chăm sóc",
+      "part_of_speech": "động từ",
+      "source_key": "3:14:照顾",
+      "note": null,
+      "order_index": 8,
+      "example": "不行，你最近没好好照顾自己，天天晚睡晚起，怎么能照顾好它呢？\nbù xíng ， nǐ zuì jìn méi hǎo hǎo zhào gù zì jǐ ， tiān tiān wǎn shuì wǎn qǐ ， zěn me néng zhào gù hǎo tā ne ？\nKhông được, gần đây con còn chưa chăm sóc tốt bản thân, ngày nào cũng ngủ muộn dậy muộn thì sao chăm sóc nó tốt được?"
+    },
+    {
+      "hanzi": "晚睡晚起",
+      "pinyin": "wǎnshuìwǎnqǐ",
+      "vietnamese_meaning": "ngủ muộn dậy muộn",
+      "part_of_speech": "cụm động từ",
+      "source_key": "3:14:晚睡晚起",
+      "note": null,
+      "order_index": 9,
+      "example": "不行，你最近没好好照顾自己，天天晚睡晚起，怎么能照顾好它呢？\nbù xíng ， nǐ zuì jìn méi hǎo hǎo zhào gù zì jǐ ， tiān tiān wǎn shuì wǎn qǐ ， zěn me néng zhào gù hǎo tā ne ？\nKhông được, gần đây con còn chưa chăm sóc tốt bản thân, ngày nào cũng ngủ muộn dậy muộn thì sao chăm sóc nó tốt được?"
+    },
+    {
+      "hanzi": "竹子",
+      "pinyin": "zhúzi",
+      "vietnamese_meaning": "tre, trúc",
+      "part_of_speech": "danh từ",
+      "source_key": "3:14:竹子",
+      "note": null,
+      "order_index": 10,
+      "example": "它们不喜欢吃肉，就喜欢吃竹子。\ntā men bù xǐ huān chī ròu ， jiù xǐ huān chī zhú zi 。\nChúng không thích thịt, chỉ thích ăn tre."
+    },
+    {
+      "hanzi": "熊猫",
+      "pinyin": "xióngmāo",
+      "vietnamese_meaning": "gấu trúc",
+      "part_of_speech": "danh từ",
+      "source_key": "3:14:熊猫",
+      "note": null,
+      "order_index": 11,
+      "example": "爸爸，那边就是大熊猫吗？\nbà bà ， nà biān jiù shì dà xióng māo ma ？\nBố ơi, bên kia là gấu trúc à?"
+    },
+    {
+      "hanzi": "国宝",
+      "pinyin": "guóbǎo",
+      "vietnamese_meaning": "bảo vật quốc gia",
+      "part_of_speech": "danh từ",
+      "source_key": "3:14:国宝",
+      "note": null,
+      "order_index": 12,
+      "example": "我老师说大熊猫是中国的国宝，那其他国家有吗？\nwǒ lǎo shī shuō dà xióng māo shì zhōng guó de guó bǎo ， nà qí tā guó jiā yǒu ma ？\nThầy con nói gấu trúc là bảo vật quốc gia của Trung Quốc, các nước khác có không?"
+    },
+    {
+      "hanzi": "其他",
+      "pinyin": "qítā",
+      "vietnamese_meaning": "khác, những cái khác",
+      "part_of_speech": "đại từ",
+      "source_key": "3:14:其他",
+      "note": null,
+      "order_index": 13,
+      "example": "我老师说大熊猫是中国的国宝，那其他国家有吗？\nwǒ lǎo shī shuō dà xióng māo shì zhōng guó de guó bǎo ， nà qí tā guó jiā yǒu ma ？\nThầy con nói gấu trúc là bảo vật quốc gia của Trung Quốc, các nước khác có không?"
+    },
+    {
+      "hanzi": "野生",
+      "pinyin": "yěshēng",
+      "vietnamese_meaning": "hoang dã, sống ngoài tự nhiên",
+      "part_of_speech": "tính từ",
+      "source_key": "3:14:野生",
+      "note": null,
+      "order_index": 14,
+      "example": "中国是野生大熊猫的家乡，别的国家没有。\nzhōng guó shì yě shēng dà xióng māo de jiā xiāng ， bié de guó jiā méi yǒu 。\nTrung Quốc là quê hương của gấu trúc hoang dã, nước khác không có gấu trúc hoang dã."
+    },
+    {
+      "hanzi": "动物",
+      "pinyin": "dòngwù",
+      "vietnamese_meaning": "động vật",
+      "part_of_speech": "danh từ",
+      "source_key": "3:14:动物",
+      "note": null,
+      "order_index": 15,
+      "example": "小米从小就对动物特别感兴趣，所以我们一家人决定去北京动物园。\nxiǎo mǐ cóng xiǎo jiù duì dòng wù tè bié gǎn xìng qù ， suǒ yǐ wǒ men yī jiā rén jué dìng qù běi jīng dòng wù yuán 。\nTiểu Mễ thích động vật từ nhỏ nên cả nhà quyết định đến vườn thú Bắc Kinh."
+    },
+    {
+      "hanzi": "动物园",
+      "pinyin": "dòngwùyuán",
+      "vietnamese_meaning": "vườn thú",
+      "part_of_speech": "danh từ",
+      "source_key": "3:14:动物园",
+      "note": null,
+      "order_index": 16,
+      "example": "小米从小就对动物特别感兴趣，所以我们一家人决定去北京动物园。\nxiǎo mǐ cóng xiǎo jiù duì dòng wù tè bié gǎn xìng qù ， suǒ yǐ wǒ men yī jiā rén jué dìng qù běi jīng dòng wù yuán 。\nTiểu Mễ thích động vật từ nhỏ nên cả nhà quyết định đến vườn thú Bắc Kinh."
+    },
+    {
+      "hanzi": "抖音",
+      "pinyin": "dǒuyīn",
+      "vietnamese_meaning": "Douyin (ứng dụng video ngắn)",
+      "part_of_speech": "tên riêng",
+      "source_key": "3:14:抖音",
+      "note": null,
+      "order_index": 17,
+      "example": "那为什么我看抖音的时候还看到在韩国的大熊猫呢？\nnà wèi shén me wǒ kàn dǒu yīn de shí hòu hái kàn dào zài hán guó de dà xióng māo ne ？\nVậy sao lúc xem Douyin con còn thấy gấu trúc ở Hàn Quốc?"
+    },
+    {
+      "hanzi": "关于",
+      "pinyin": "guānyú",
+      "vietnamese_meaning": "về, liên quan đến (chủ đề)",
+      "part_of_speech": "giới từ",
+      "source_key": "3:14:关于",
+      "note": null,
+      "order_index": 18,
+      "example": "关于这个问题，下周一我带你去动物园的时候，你可以问动物园的爷爷，他会给你讲。\nguān yú zhè ge wèn tí ， xià zhōu yī wǒ dài nǐ qù dòng wù yuán de shí hòu ， nǐ kě yǐ wèn dòng wù yuán de yé yé ， tā huì gěi nǐ jiǎng 。\nVề câu hỏi này, thứ Hai tuần sau bố đưa con đến vườn thú, con có thể hỏi ông ở đó, ông sẽ giải thích."
+    },
+    {
+      "hanzi": "停",
+      "pinyin": "tíng",
+      "vietnamese_meaning": "dừng",
+      "part_of_speech": "động từ",
+      "source_key": "3:14:停",
+      "note": null,
+      "order_index": 19,
+      "example": "你这个小嘴怎么问个不停。\nnǐ zhè ge xiǎo zuǐ zěn me wèn gè bù tíng 。\nCái miệng nhỏ của con sao cứ hỏi mãi không thôi."
+    },
+    {
+      "hanzi": "饱",
+      "pinyin": "bǎo",
+      "vietnamese_meaning": "no",
+      "part_of_speech": "tính từ",
+      "source_key": "3:14:饱",
+      "note": null,
+      "order_index": 20,
+      "example": "它好像还没吃饱，正张着嘴，找竹子吃呢。\ntā hǎo xiàng hái méi chī bǎo ， zhèng zhāng zhe zuǐ ， zhǎo zhú zi chī ne 。\nHình như nó chưa no, đang há miệng tìm tre ăn."
+    },
+    {
+      "hanzi": "张嘴",
+      "pinyin": "zhāngzuǐ",
+      "vietnamese_meaning": "há miệng",
+      "part_of_speech": "động từ",
+      "source_key": "3:14:张嘴",
+      "note": null,
+      "order_index": 21,
+      "example": "它正张嘴找竹子吃。\ntā zhèng zhāng zuǐ zhǎo zhú zi chī 。\nNó đang há miệng tìm tre ăn."
+    },
+    {
+      "hanzi": "应该",
+      "pinyin": "yīnggāi",
+      "vietnamese_meaning": "chắc là, có lẽ (phỏng đoán)",
+      "part_of_speech": "động từ năng nguyện",
+      "source_key": "3:14:应该",
+      "note": "Ở đây 应该 diễn tả phỏng đoán: 应该是睡着了吧 là chắc nó đang ngủ. Khác 应该 + hành động mang nghĩa nên/phải làm. Nhắc lại HSK 2 bài 7: 应该 (yīnggāi) — nên. Trong ngữ cảnh bài này: chắc là, có lẽ (phỏng đoán).",
+      "order_index": 22,
+      "example": "应该是睡着了吧。\nyīng gāi shì shuì zháo le ba 。\nChắc đang ngủ rồi."
+    },
+    {
+      "hanzi": "一动不动",
+      "pinyin": "yīdòngbùdòng",
+      "vietnamese_meaning": "không nhúc nhích",
+      "part_of_speech": "cụm từ",
+      "source_key": "3:14:一动不动",
+      "note": null,
+      "order_index": 23,
+      "example": "那旁边那只怎么一动不动？\nnà páng biān nà zhǐ zěn me yī dòng bù dòng ？\nVậy sao con bên cạnh không nhúc nhích?"
+    },
+    {
+      "hanzi": "声音",
+      "pinyin": "shēngyīn",
+      "vietnamese_meaning": "âm thanh, tiếng",
+      "part_of_speech": "danh từ",
+      "source_key": "3:14:声音",
+      "note": null,
+      "order_index": 24,
+      "example": "你说话的声音小一点儿。\nnǐ shuō huà de shēng yīn xiǎo yì diǎn ér 。\nBạn nói nhỏ tiếng hơn một chút."
+    },
+    {
+      "hanzi": "比个耶",
+      "pinyin": "bǐ ge yē",
+      "vietnamese_meaning": "làm dấu chữ V khi chụp ảnh",
+      "part_of_speech": "cụm động từ",
+      "source_key": "3:14:比个耶",
+      "note": null,
+      "order_index": 25,
+      "example": "快过来，比个耶，我给你和它们拍一张合照。\nkuài guò lái ， bǐ gè yé ， wǒ gěi nǐ hé tā men pāi yī zhāng hé zhào 。\nLại đây, làm dấu chữ V, bố chụp con với chúng một tấm."
+    },
+    {
+      "hanzi": "合照",
+      "pinyin": "hézhào",
+      "vietnamese_meaning": "ảnh chụp chung; chụp ảnh chung",
+      "part_of_speech": "danh từ, động từ",
+      "source_key": "3:14:合照",
+      "note": null,
+      "order_index": 26,
+      "example": "快过来，比个耶，我给你和它们拍一张合照。\nkuài guò lái ， bǐ gè yé ， wǒ gěi nǐ hé tā men pāi yī zhāng hé zhào 。\nLại đây, làm dấu chữ V, bố chụp con với chúng một tấm."
+    },
+    {
+      "hanzi": "各种各样",
+      "pinyin": "gèzhǒnggèyàng",
+      "vietnamese_meaning": "đủ mọi loại, đủ kiểu",
+      "part_of_speech": "cụm từ",
+      "source_key": "3:14:各种各样",
+      "note": null,
+      "order_index": 27,
+      "example": "这里的动物园很大，园里有各种各样的动物，但最受大家喜爱的还是大熊猫，每天都有很多游客来到熊猫馆。\nzhè lǐ de dòng wù yuán hěn dà ， yuán lǐ yǒu gè zhǒng gè yàng de dòng wù ， dàn zuì shòu dà jiā xǐ ài de hái shì dà xióng māo ， měi tiān dōu yǒu hěn duō yóu kè lái dào xióng māo guǎn 。\nVườn thú rất rộng, có nhiều loại động vật, nhưng được yêu thích nhất vẫn là gấu trúc; ngày nào cũng có nhiều khách đến khu gấu trúc."
+    },
+    {
+      "hanzi": "游客",
+      "pinyin": "yóukè",
+      "vietnamese_meaning": "khách tham quan, du khách",
+      "part_of_speech": "danh từ",
+      "source_key": "3:14:游客",
+      "note": null,
+      "order_index": 28,
+      "example": "这里的动物园很大，园里有各种各样的动物，但最受大家喜爱的还是大熊猫，每天都有很多游客来到熊猫馆。\nzhè lǐ de dòng wù yuán hěn dà ， yuán lǐ yǒu gè zhǒng gè yàng de dòng wù ， dàn zuì shòu dà jiā xǐ ài de hái shì dà xióng māo ， měi tiān dōu yǒu hěn duō yóu kè lái dào xióng māo guǎn 。\nVườn thú rất rộng, có nhiều loại động vật, nhưng được yêu thích nhất vẫn là gấu trúc; ngày nào cũng có nhiều khách đến khu gấu trúc."
+    },
+    {
+      "hanzi": "入园",
+      "pinyin": "rùyuán",
+      "vietnamese_meaning": "vào công viên, vườn thú",
+      "part_of_speech": "động từ",
+      "source_key": "3:14:入园",
+      "note": null,
+      "order_index": 29,
+      "example": "这里早上七点半开门，夏天晚上七点关门，六点就不能入园了。\nzhè lǐ zǎo shàng qī diǎn bàn kāi mén ， xià tiān wǎn shàng qī diǎn guān mén ， liù diǎn jiù bù néng rù yuán le 。\nTrong bài đọc này, vườn thú mở cửa lúc bảy giờ rưỡi sáng; mùa hè đóng lúc bảy giờ tối, sáu giờ ngừng nhận khách."
+    },
+    {
+      "hanzi": "逛",
+      "pinyin": "guàng",
+      "vietnamese_meaning": "dạo, đi chơi, đi xem",
+      "part_of_speech": "động từ",
+      "source_key": "3:14:逛",
+      "note": null,
+      "order_index": 30,
+      "example": "在我看来，来北京旅游，除了吃烤鸭以外，带家人逛逛动物园也是个很不错的选择。\nzài wǒ kàn lái ， lái běi jīng lǚ yóu ， chú le chī kǎo yā yǐ wài ， dài jiā rén guàng guàng dòng wù yuán yě shì gè hěn bú cuò de xuǎn zé 。\nTheo tôi, đến Bắc Kinh du lịch, ngoài ăn vịt quay, đưa gia đình dạo vườn thú cũng là lựa chọn rất tốt."
+    }
+  ],
+  "grammar": [
+    {
+      "name": "Các hành động/trạng thái luân phiên",
+      "structure": "一会儿 + hành động/trạng thái 1，一会儿 + hành động/trạng thái 2",
+      "explanation": "Hai trạng thái hoặc hành động thay nhau xuất hiện trong thời gian ngắn.",
+      "usage": "Khác 一边…一边… thường diễn tả hai hành động đồng thời.",
+      "example": "它一会儿跑来，一会儿跑去。\ntā yī huì er pǎo lái ， yī huì er pǎo qù 。\nNó lúc chạy lại, lúc chạy đi.",
+      "note": "Khác 一边…一边… thường diễn tả hai hành động đồng thời.",
+      "order_index": 1
+    },
+    {
+      "name": "Giới từ 关于",
+      "structure": "关于 + chủ đề + lời trình bày",
+      "explanation": "Dẫn chủ đề hoặc nội dung liên quan.",
+      "usage": "关于 nêu chủ đề; không thay tùy ý cho 对 trong mọi cấu trúc hướng đến một đối tượng.",
+      "example": "关于这个问题，我还不太清楚。\nguān yú zhè ge wèn tí ， wǒ hái bù tài qīng chǔ 。\nVề vấn đề này, tôi vẫn chưa rõ lắm.",
+      "note": "关于 nêu chủ đề; không thay tùy ý cho 对 trong mọi cấu trúc hướng đến một đối tượng.",
+      "order_index": 2
+    },
+    {
+      "name": "So sánh chênh lệch số lượng",
+      "structure": "A + 比 + B + 多/少/早/晚 + động từ + số lượng",
+      "explanation": "Nêu mức chênh lệch cụ thể của lượng thực hiện hoặc thời điểm.",
+      "usage": "Câu về giờ đóng cửa có thể đặt 早 + khoảng thời gian + 关门 như ví dụ; không áp dụng một trật tự cứng cho mọi kiểu so sánh.",
+      "example": "冬天比夏天早一个小时关门。\ndōng tiān bǐ xià tiān zǎo yí gè xiǎo shí guān mén 。\nMùa đông đóng cửa sớm hơn mùa hè một giờ.",
+      "note": "Câu về giờ đóng cửa có thể đặt 早 + khoảng thời gian + 关门 như ví dụ; không áp dụng một trật tự cứng cho mọi kiểu so sánh.",
+      "order_index": 3
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Chú chó của gia đình",
+      "content": "小丽：小刚，这只小狗好可爱呀！它叫什么名字？\n小刚：它叫可乐。\n小丽：可乐几岁啦？\n小刚：它一岁多了。刚出生的时候，它小小的，像个小毛球。\n小丽：哇，它真活泼！\n小刚：是啊，特别聪明，还很粘人。一会儿在我脚边睡，一会儿爬到我怀里。\n小丽：看来你们真的很爱它。\n小刚：它就像我妈妈的儿子，是我家的成员了。\n小丽：妈妈，我们家也养一只小狗吧！\n妈妈：不行，你最近没好好照顾自己，天天晚睡晚起，怎么能照顾好它呢？",
+      "pinyin": "xiǎo lì ： xiǎo gāng ， zhè zhǐ xiǎo gǒu hǎo kě ài ya ！ tā jiào shén me míng zì ？\nxiǎo gāng ： tā jiào kě lè 。\nxiǎo lì ： kě lè jǐ suì la ？\nxiǎo gāng ： tā yī suì duō le 。 gāng chū shēng de shí hòu ， tā xiǎo xiǎo de ， xiàng gè xiǎo máo qiú 。\nxiǎo lì ： wa ， tā zhēn huó pō ！\nxiǎo gāng ： shì a ， tè bié cōng míng ， hái hěn zhān rén 。 yī huì er zài wǒ jiǎo biān shuì ， yī huì er pá dào wǒ huái lǐ 。\nxiǎo lì ： kàn lái nǐ men zhēn de hěn ài tā 。\nxiǎo gāng ： tā jiù xiàng wǒ mā mā de ér zi ， shì wǒ jiā de chéng yuán le 。\nxiǎo lì ： mā mā ， wǒ men jiā yě yǎng yī zhī xiǎo gǒu ba ！\nmā mā ： bù xíng ， nǐ zuì jìn méi hǎo hǎo zhào gù zì jǐ ， tiān tiān wǎn shuì wǎn qǐ ， zěn me néng zhào gù hǎo tā ne ？",
+      "vietnamese_translation": "Tiểu Lệ: Tiểu Cương, chú chó này đáng yêu quá! Nó tên gì?\nTiểu Cương: Nó tên Cola.\nTiểu Lệ: Cola mấy tuổi rồi?\nTiểu Cương: Hơn một tuổi. Lúc mới sinh nó nhỏ xíu, như cục lông.\nTiểu Lệ: Ôi, nó hoạt bát thật!\nTiểu Cương: Đúng, rất thông minh, còn quấn người. Lúc ngủ bên chân, lúc lại trèo vào lòng mình.\nTiểu Lệ: Xem ra cả nhà rất yêu nó.\nTiểu Cương: Nó như con trai mẹ mình, là thành viên trong nhà rồi.\nTiểu Lệ: Mẹ ơi, nhà mình cũng nuôi một chú chó nhé!\nMẹ: Không được, gần đây con còn chưa chăm sóc tốt bản thân, ngày nào cũng ngủ muộn dậy muộn thì sao chăm sóc nó tốt được?",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 14, bài khóa 1."
+    },
+    {
+      "order_index": 2,
+      "title": "Hỏi về gấu trúc",
+      "content": "爸爸：它们不喜欢吃肉，就喜欢吃竹子。\n小米：我老师说大熊猫是中国的国宝，那其他国家有吗？\n爸爸：中国是野生大熊猫的家乡，别的国家没有。\n小米：那为什么我看抖音的时候还看到在韩国的大熊猫呢？它出国留学吗？\n爸爸：关于这个问题，下周一我带你去动物园的时候，你可以问动物园的爷爷，他会给你讲。\n妈妈：你这个小嘴怎么问个不停。",
+      "pinyin": "bà bà ： tā men bù xǐ huān chī ròu ， jiù xǐ huān chī zhú zi 。\nxiǎo mǐ ： wǒ lǎo shī shuō dà xióng māo shì zhōng guó de guó bǎo ， nà qí tā guó jiā yǒu ma ？\nbà bà ： zhōng guó shì yě shēng dà xióng māo de jiā xiāng ， bié de guó jiā méi yǒu 。\nxiǎo mǐ ： nà wèi shén me wǒ kàn dǒu yīn de shí hòu hái kàn dào zài hán guó de dà xióng māo ne ？ tā chū guó liú xué ma ？\nbà bà ： guān yú zhè ge wèn tí ， xià zhōu yī wǒ dài nǐ qù dòng wù yuán de shí hòu ， nǐ kě yǐ wèn dòng wù yuán de yé yé ， tā huì gěi nǐ jiǎng 。\nmā mā ： nǐ zhè ge xiǎo zuǐ zěn me wèn gè bù tíng 。",
+      "vietnamese_translation": "Bố: Chúng không thích thịt, chỉ thích ăn tre.\nTiểu Mễ: Thầy con nói gấu trúc là bảo vật quốc gia của Trung Quốc, các nước khác có không?\nBố: Trung Quốc là quê hương của gấu trúc hoang dã, nước khác không có gấu trúc hoang dã.\nTiểu Mễ: Vậy sao lúc xem Douyin con còn thấy gấu trúc ở Hàn Quốc? Nó đi du học à?\nBố: Về câu hỏi này, thứ Hai tuần sau bố đưa con đến vườn thú, con có thể hỏi ông ở đó, ông sẽ giải thích.\nMẹ: Cái miệng nhỏ của con sao cứ hỏi mãi không thôi.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 14, bài khóa 2."
+    },
+    {
+      "order_index": 3,
+      "title": "Quan sát gấu trúc trong vườn thú",
+      "content": "小米：爸爸，那边就是大熊猫吗？\n爸爸：是的。\n小米：你看它一会儿跑来，一会儿跑去，是不是在找什么东西呀？\n爸爸：它好像还没吃饱，正张着嘴，找竹子吃呢。\n小米：那旁边那只怎么一动不动？它是不是在想，午饭要吃什么？\n爸爸：应该是睡着了吧。\n小米：它们除了吃东西的时间，几乎都在睡觉吗？\n爸爸：没错。一般来说，它们最喜欢爬上树睡觉。\n小米：哇！我也想跟它们一样，过这么舒服的生活。\n爸爸：小声点，别让你妈妈听见。快过来，比个耶，我给你和它们拍一张合照。",
+      "pinyin": "xiǎo mǐ ： bà bà ， nà biān jiù shì dà xióng māo ma ？\nbà bà ： shì de 。\nxiǎo mǐ ： nǐ kàn tā yī huì er pǎo lái ， yī huì er pǎo qù ， shì bú shì zài zhǎo shén me dōng xī ya ？\nbà bà ： tā hǎo xiàng hái méi chī bǎo ， zhèng zhāng zhe zuǐ ， zhǎo zhú zi chī ne 。\nxiǎo mǐ ： nà páng biān nà zhǐ zěn me yī dòng bù dòng ？ tā shì bú shì zài xiǎng ， wǔ fàn yào chī shén me ？\nbà bà ： yīng gāi shì shuì zháo le ba 。\nxiǎo mǐ ： tā men chú le chī dōng xī de shí jiān ， jī hū dōu zài shuì jiào ma ？\nbà bà ： méi cuò 。 yì bān lái shuō ， tā men zuì xǐ huān pá shàng shù shuì jiào 。\nxiǎo mǐ ： wa ！ wǒ yě xiǎng gēn tā men yī yàng ， guò zhè me shū fú de shēng huó 。\nbà bà ： xiǎo shēng diǎn ， bié ràng nǐ mā mā tīng jiàn 。 kuài guò lái ， bǐ gè yé ， wǒ gěi nǐ hé tā men pāi yī zhāng hé zhào 。",
+      "vietnamese_translation": "Tiểu Mễ: Bố ơi, bên kia là gấu trúc à?\nBố: Đúng.\nTiểu Mễ: Bố xem nó lúc chạy lại lúc chạy đi, có phải tìm thứ gì không?\nBố: Hình như nó chưa no, đang há miệng tìm tre ăn.\nTiểu Mễ: Vậy sao con bên cạnh không nhúc nhích? Có phải đang nghĩ trưa ăn gì không?\nBố: Chắc đang ngủ rồi.\nTiểu Mễ: Ngoài thời gian ăn, hầu như chúng đều ngủ à?\nBố: Đúng, nói chung chúng thích trèo lên cây ngủ nhất.\nTiểu Mễ: Ôi, con cũng muốn sống thoải mái như chúng.\nBố: Nói nhỏ thôi, đừng để mẹ nghe. Lại đây, làm dấu chữ V, bố chụp con với chúng một tấm.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 14, bài khóa 3."
+    },
+    {
+      "order_index": 4,
+      "title": "Cùng gia đình đi vườn thú",
+      "content": "我的大儿子小刚在北京读书。今天放假，我和妻子、小女儿小米来北京看他。小米从小就对动物特别感兴趣，所以我们一家人决定去北京动物园。这里的动物园很大，园里有各种各样的动物，但最受大家喜爱的还是大熊猫，每天都有很多游客来到熊猫馆。这里早上七点半开门，夏天晚上七点关门，六点就不能入园了。冬天比夏天早一个小时关门，所以大家最好早点儿出发。在我看来，来北京旅游，除了吃烤鸭以外，带家人逛逛动物园也是个很不错的选择。",
+      "pinyin": "wǒ de dà ér zi xiǎo gāng zài běi jīng dú shū 。 jīn tiān fàng jià ， wǒ hé qī zǐ 、 xiǎo nǚ ér xiǎo mǐ lái běi jīng kàn tā 。 xiǎo mǐ cóng xiǎo jiù duì dòng wù tè bié gǎn xìng qù ， suǒ yǐ wǒ men yī jiā rén jué dìng qù běi jīng dòng wù yuán 。 zhè lǐ de dòng wù yuán hěn dà ， yuán lǐ yǒu gè zhǒng gè yàng de dòng wù ， dàn zuì shòu dà jiā xǐ ài de hái shì dà xióng māo ， měi tiān dōu yǒu hěn duō yóu kè lái dào xióng māo guǎn 。 zhè lǐ zǎo shàng qī diǎn bàn kāi mén ， xià tiān wǎn shàng qī diǎn guān mén ， liù diǎn jiù bù néng rù yuán le 。 dōng tiān bǐ xià tiān zǎo yí gè xiǎo shí guān mén ， suǒ yǐ dà jiā zuì hǎo zǎo diǎn ér chū fā 。 zài wǒ kàn lái ， lái běi jīng lǚ yóu ， chú le chī kǎo yā yǐ wài ， dài jiā rén guàng guàng dòng wù yuán yě shì gè hěn bú cuò de xuǎn zé 。",
+      "vietnamese_translation": "Con trai lớn Tiểu Cương của tôi đang học ở Bắc Kinh. Hôm nay được nghỉ, tôi cùng vợ và con gái út Tiểu Mễ đến thăm con. Tiểu Mễ thích động vật từ nhỏ nên cả nhà quyết định đến vườn thú Bắc Kinh. Vườn thú rất rộng, có nhiều loại động vật, nhưng được yêu thích nhất vẫn là gấu trúc; ngày nào cũng có nhiều khách đến khu gấu trúc. Trong bài đọc này, vườn thú mở cửa lúc bảy giờ rưỡi sáng; mùa hè đóng lúc bảy giờ tối, sáu giờ ngừng nhận khách. Mùa đông đóng sớm hơn mùa hè một giờ, vì vậy mọi người nên đi sớm. Theo tôi, đến Bắc Kinh du lịch, ngoài ăn vịt quay, đưa gia đình dạo vườn thú cũng là lựa chọn rất tốt.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 14, bài khóa 4."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 3 · Bài 14 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp của bài này và các bài trước; đạt từ 80%, được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "source_documents": {
+    "vocabulary": "DOCX",
+    "theory": "DOCX"
+  },
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 1).",
+      "options": [
+        {
+          "option_text": "bố",
+          "is_correct": false
+        },
+        {
+          "option_text": "phía sau",
+          "is_correct": false
+        },
+        {
+          "option_text": "đến",
+          "is_correct": false
+        },
+        {
+          "option_text": "thông minh",
+          "is_correct": true
+        }
+      ],
+      "rubric": "聪明 (cōngmíng) — thông minh. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "聪明"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 14
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “声音” (shēngyīn) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "giày thể thao",
+          "is_correct": false
+        },
+        {
+          "option_text": "phút",
+          "is_correct": false
+        },
+        {
+          "option_text": "dễ, dễ dàng",
+          "is_correct": false
+        },
+        {
+          "option_text": "âm thanh, tiếng",
+          "is_correct": true
+        }
+      ],
+      "rubric": "声音 (shēngyīn) — âm thanh, tiếng. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 14
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “yīdòngbùdòng” — không nhúc nhích.",
+      "options": [
+        {
+          "option_text": "就",
+          "is_correct": false
+        },
+        {
+          "option_text": "车",
+          "is_correct": false
+        },
+        {
+          "option_text": "无聊",
+          "is_correct": false
+        },
+        {
+          "option_text": "一动不动",
+          "is_correct": true
+        }
+      ],
+      "rubric": "一动不动 (yīdòngbùdòng) — không nhúc nhích. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 14
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “饱” (bǎo) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "no",
+          "is_correct": true
+        },
+        {
+          "option_text": "trạm, ga, bến",
+          "is_correct": false
+        },
+        {
+          "option_text": "xin lỗi",
+          "is_correct": false
+        },
+        {
+          "option_text": "biết đâu, có thể",
+          "is_correct": false
+        }
+      ],
+      "rubric": "饱 (bǎo) — no. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 14
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “动物园” (dòngwùyuán) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "vườn thú",
+          "is_correct": true
+        },
+        {
+          "option_text": "vừa ... vừa ... (一边……一边……)",
+          "is_correct": false
+        },
+        {
+          "option_text": "sạc dự phòng",
+          "is_correct": false
+        },
+        {
+          "option_text": "từ mới",
+          "is_correct": false
+        }
+      ],
+      "rubric": "动物园 (dòngwùyuán) — vườn thú. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 14
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “qítā” — khác, những cái khác.",
+      "options": [
+        {
+          "option_text": "顺利",
+          "is_correct": false
+        },
+        {
+          "option_text": "东西",
+          "is_correct": false
+        },
+        {
+          "option_text": "其他",
+          "is_correct": true
+        },
+        {
+          "option_text": "贵姓",
+          "is_correct": false
+        }
+      ],
+      "rubric": "其他 (qítā) — khác, những cái khác. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 14
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 7).",
+      "options": [
+        {
+          "option_text": "tham gia",
+          "is_correct": false
+        },
+        {
+          "option_text": "chết; chỉ mức độ rất cao sau tính từ",
+          "is_correct": false
+        },
+        {
+          "option_text": "ít",
+          "is_correct": false
+        },
+        {
+          "option_text": "về, liên quan đến (chủ đề)",
+          "is_correct": true
+        }
+      ],
+      "rubric": "关于 (guānyú) — về, liên quan đến (chủ đề). ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "关于"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 14
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “应该” (yīnggāi) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "tầng; lớp",
+          "is_correct": false
+        },
+        {
+          "option_text": "hội thao",
+          "is_correct": false
+        },
+        {
+          "option_text": "chắc là, có lẽ (phỏng đoán)",
+          "is_correct": true
+        },
+        {
+          "option_text": "tan học",
+          "is_correct": false
+        }
+      ],
+      "rubric": "应该 (yīnggāi) — chắc là, có lẽ (phỏng đoán). Ở đây 应该 diễn tả phỏng đoán: 应该是睡着了吧 là chắc nó đang ngủ. Khác 应该 + hành động mang nghĩa nên/phải làm. Nhắc lại HSK 2 bài 7: 应该 (yīnggāi) — nên. Trong ngữ cảnh bài này: chắc là, có lẽ (phỏng đoán).",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 14
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “hóng sè” — màu đỏ.",
+      "options": [
+        {
+          "option_text": "对象",
+          "is_correct": false
+        },
+        {
+          "option_text": "太",
+          "is_correct": false
+        },
+        {
+          "option_text": "红色",
+          "is_correct": true
+        },
+        {
+          "option_text": "自习室",
+          "is_correct": false
+        }
+      ],
+      "rubric": "红色 (hóng sè) — màu đỏ. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 9
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "Douyin (ứng dụng video ngắn)",
+          "is_correct": true
+        },
+        {
+          "option_text": "tiết mục, chương trình",
+          "is_correct": false
+        },
+        {
+          "option_text": "du học sinh",
+          "is_correct": false
+        },
+        {
+          "option_text": "ghế",
+          "is_correct": false
+        }
+      ],
+      "rubric": "抖音 (dǒuyīn) — Douyin (ứng dụng video ngắn). ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "抖音"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 14
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “漂亮” (piàoliang) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "cuối cùng (sau chờ đợi hoặc nỗ lực)",
+          "is_correct": false
+        },
+        {
+          "option_text": "vậy thì, thế thì",
+          "is_correct": false
+        },
+        {
+          "option_text": "có thể; được phép",
+          "is_correct": false
+        },
+        {
+          "option_text": "xinh đẹp",
+          "is_correct": true
+        }
+      ],
+      "rubric": "漂亮 (piàoliang) — xinh đẹp. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 8
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “zhúzi” — tre, trúc.",
+      "options": [
+        {
+          "option_text": "锻炼",
+          "is_correct": false
+        },
+        {
+          "option_text": "竹子",
+          "is_correct": true
+        },
+        {
+          "option_text": "甜",
+          "is_correct": false
+        },
+        {
+          "option_text": "一些",
+          "is_correct": false
+        }
+      ],
+      "rubric": "竹子 (zhúzi) — tre, trúc. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 14
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “xử lý” (pinyin: chǔlǐ).",
+      "reference_answer": "处理",
+      "rubric": "Đáp án: 处理 (chǔlǐ). ",
+      "config": {
+        "accepted_answers": [
+          "处理"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 10
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “khách tham quan, du khách” (pinyin: yóukè).",
+      "reference_answer": "游客",
+      "rubric": "Đáp án: 游客 (yóukè). ",
+      "config": {
+        "accepted_answers": [
+          "游客"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 14
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “nhưng” (pinyin: dàn shì).",
+      "reference_answer": "但是",
+      "rubric": "Đáp án: 但是 (dàn shì). 但是 và 但 đều mang nghĩa nhưng; 但 gọn và thường gặp trong văn viết. Không dùng 所以 thay cho quan hệ tương phản.",
+      "config": {
+        "accepted_answers": [
+          "但是"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 13
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “gấu trúc” (pinyin: xióngmāo).",
+      "reference_answer": "熊猫",
+      "rubric": "Đáp án: 熊猫 (xióngmāo). ",
+      "config": {
+        "accepted_answers": [
+          "熊猫"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 14
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối các từ với nghĩa đã học (nhóm 1).",
+      "rubric": "国宝: bảo vật quốc gia ; 成员: thành viên ; 粘人: quấn người ; 野生: hoang dã, sống ngoài tự nhiên",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "国宝"
+          },
+          {
+            "id": "l1",
+            "text": "成员"
+          },
+          {
+            "id": "l2",
+            "text": "粘人"
+          },
+          {
+            "id": "l3",
+            "text": "野生"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r1",
+            "text": "thành viên"
+          },
+          {
+            "id": "r2",
+            "text": "quấn người"
+          },
+          {
+            "id": "r3",
+            "text": "hoang dã, sống ngoài tự nhiên"
+          },
+          {
+            "id": "r0",
+            "text": "bảo vật quốc gia"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 14
+        },
+        {
+          "hsk": 3,
+          "lesson": 14
+        },
+        {
+          "hsk": 3,
+          "lesson": 14
+        },
+        {
+          "hsk": 3,
+          "lesson": 14
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối các từ với nghĩa đã học (nhóm 2).",
+      "rubric": "各种各样: đủ mọi loại, đủ kiểu ; 漂亮: xinh đẹp ; 口: miệng, nhân khẩu ; 应该: chắc là, có lẽ (phỏng đoán)",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "各种各样"
+          },
+          {
+            "id": "l1",
+            "text": "漂亮"
+          },
+          {
+            "id": "l2",
+            "text": "口"
+          },
+          {
+            "id": "l3",
+            "text": "应该"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r2",
+            "text": "miệng, nhân khẩu"
+          },
+          {
+            "id": "r1",
+            "text": "xinh đẹp"
+          },
+          {
+            "id": "r3",
+            "text": "chắc là, có lẽ (phỏng đoán)"
+          },
+          {
+            "id": "r0",
+            "text": "đủ mọi loại, đủ kiểu"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 14
+        },
+        {
+          "hsk": 1,
+          "lesson": 8
+        },
+        {
+          "hsk": 1,
+          "lesson": 1
+        },
+        {
+          "hsk": 3,
+          "lesson": 14
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Diễn tả hành động luân phiên: 它一会儿跑来，___跑去。",
+      "options": [
+        {
+          "option_text": "所以",
+          "is_correct": false
+        },
+        {
+          "option_text": "一边",
+          "is_correct": false
+        },
+        {
+          "option_text": "一会儿",
+          "is_correct": true
+        },
+        {
+          "option_text": "因为",
+          "is_correct": false
+        }
+      ],
+      "rubric": "一会儿…一会儿… nêu các hành động hoặc trạng thái luân phiên.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 14
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Dẫn chủ đề: ___这个问题，我还不太清楚。",
+      "options": [
+        {
+          "option_text": "把",
+          "is_correct": false
+        },
+        {
+          "option_text": "被",
+          "is_correct": false
+        },
+        {
+          "option_text": "关于",
+          "is_correct": true
+        },
+        {
+          "option_text": "从",
+          "is_correct": false
+        }
+      ],
+      "rubric": "关于 dẫn chủ đề liên quan của lời trình bày.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 14
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "冬天比夏天___一个小时关门。",
+      "options": [
+        {
+          "option_text": "少",
+          "is_correct": false
+        },
+        {
+          "option_text": "高",
+          "is_correct": false
+        },
+        {
+          "option_text": "早",
+          "is_correct": true
+        },
+        {
+          "option_text": "多",
+          "is_correct": false
+        }
+      ],
+      "rubric": "早一个小时关门 biểu thị đóng cửa sớm hơn một giờ.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 14
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Các hành động/trạng thái luân phiên”, cách hiểu nào đúng (mục 1)?",
+      "options": [
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Hai trạng thái hoặc hành động thay nhau xuất hiện trong thời gian ngắn.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Hai trạng thái hoặc hành động thay nhau xuất hiện trong thời gian ngắn. Khác 一边…一边… thường diễn tả hai hành động đồng thời.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 14
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Giới từ 关于”, cách hiểu nào đúng (mục 2)?",
+      "options": [
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Dẫn chủ đề hoặc nội dung liên quan.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Dẫn chủ đề hoặc nội dung liên quan. 关于 nêu chủ đề; không thay tùy ý cho 对 trong mọi cấu trúc hướng đến một đối tượng.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 14
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “So sánh chênh lệch số lượng”, cách hiểu nào đúng (mục 3)?",
+      "options": [
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nêu mức chênh lệch cụ thể của lượng thực hiện hoặc thời điểm.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Nêu mức chênh lệch cụ thể của lượng thực hiện hoặc thời điểm. Câu về giờ đóng cửa có thể đặt 早 + khoảng thời gian + 关门 như ví dụ; không áp dụng một trật tự cứng cho mọi kiểu so sánh.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 14
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Nó lúc chạy lại, lúc chạy đi. (câu 1).",
+      "reference_answer": "它一会儿跑来，一会儿跑去。",
+      "rubric": "Câu đúng: 它一会儿跑来，一会儿跑去。 — Nó lúc chạy lại, lúc chạy đi. Khác 一边…一边… thường diễn tả hai hành động đồng thời.",
+      "config": {
+        "items": [
+          {
+            "id": "t7",
+            "text": "去"
+          },
+          {
+            "id": "t0",
+            "text": "它"
+          },
+          {
+            "id": "t6",
+            "text": "跑"
+          },
+          {
+            "id": "t2",
+            "text": "跑"
+          },
+          {
+            "id": "t3",
+            "text": "来"
+          },
+          {
+            "id": "t4",
+            "text": "，"
+          },
+          {
+            "id": "t5",
+            "text": "一会儿"
+          },
+          {
+            "id": "t1",
+            "text": "一会儿"
+          },
+          {
+            "id": "t8",
+            "text": "。"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 14
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Về vấn đề này, tôi vẫn chưa rõ lắm. (câu 2).",
+      "reference_answer": "关于这个问题，我还不太清楚。",
+      "rubric": "Câu đúng: 关于这个问题，我还不太清楚。 — Về vấn đề này, tôi vẫn chưa rõ lắm. 关于 nêu chủ đề; không thay tùy ý cho 对 trong mọi cấu trúc hướng đến một đối tượng.",
+      "config": {
+        "items": [
+          {
+            "id": "t5",
+            "text": "我"
+          },
+          {
+            "id": "t0",
+            "text": "关于"
+          },
+          {
+            "id": "t9",
+            "text": "。"
+          },
+          {
+            "id": "t4",
+            "text": "，"
+          },
+          {
+            "id": "t1",
+            "text": "这"
+          },
+          {
+            "id": "t3",
+            "text": "问题"
+          },
+          {
+            "id": "t8",
+            "text": "清楚"
+          },
+          {
+            "id": "t7",
+            "text": "不太"
+          },
+          {
+            "id": "t6",
+            "text": "还"
+          },
+          {
+            "id": "t2",
+            "text": "个"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 14
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Mùa đông đóng cửa sớm hơn mùa hè một giờ. (câu 3).",
+      "reference_answer": "冬天比夏天早一个小时关门。",
+      "rubric": "Câu đúng: 冬天比夏天早一个小时关门。 — Mùa đông đóng cửa sớm hơn mùa hè một giờ. Câu về giờ đóng cửa có thể đặt 早 + khoảng thời gian + 关门 như ví dụ; không áp dụng một trật tự cứng cho mọi kiểu so sánh.",
+      "config": {
+        "items": [
+          {
+            "id": "t6",
+            "text": "小时"
+          },
+          {
+            "id": "t5",
+            "text": "个"
+          },
+          {
+            "id": "t7",
+            "text": "关"
+          },
+          {
+            "id": "t8",
+            "text": "门"
+          },
+          {
+            "id": "t3",
+            "text": "早"
+          },
+          {
+            "id": "t4",
+            "text": "一"
+          },
+          {
+            "id": "t2",
+            "text": "夏天"
+          },
+          {
+            "id": "t0",
+            "text": "冬天"
+          },
+          {
+            "id": "t9",
+            "text": "。"
+          },
+          {
+            "id": "t1",
+            "text": "比"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 14
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Tiểu Cương, chú chó này đáng yêu quá! Nó tên gì? (câu 4).",
+      "reference_answer": "小刚，这只小狗好可爱呀！它叫什么名字？",
+      "rubric": "Câu đúng: 小刚，这只小狗好可爱呀！它叫什么名字？ — Tiểu Cương, chú chó này đáng yêu quá! Nó tên gì? Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t2",
+            "text": "，"
+          },
+          {
+            "id": "t6",
+            "text": "狗"
+          },
+          {
+            "id": "t10",
+            "text": "呀"
+          },
+          {
+            "id": "t15",
+            "text": "名字"
+          },
+          {
+            "id": "t14",
+            "text": "什么"
+          },
+          {
+            "id": "t16",
+            "text": "？"
+          },
+          {
+            "id": "t8",
+            "text": "可"
+          },
+          {
+            "id": "t3",
+            "text": "这"
+          },
+          {
+            "id": "t12",
+            "text": "它"
+          },
+          {
+            "id": "t11",
+            "text": "！"
+          },
+          {
+            "id": "t7",
+            "text": "好"
+          },
+          {
+            "id": "t9",
+            "text": "爱"
+          },
+          {
+            "id": "t4",
+            "text": "只"
+          },
+          {
+            "id": "t13",
+            "text": "叫"
+          },
+          {
+            "id": "t0",
+            "text": "小"
+          },
+          {
+            "id": "t1",
+            "text": "刚"
+          },
+          {
+            "id": "t5",
+            "text": "小"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12",
+          "t13",
+          "t14",
+          "t15",
+          "t16"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 14
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Cola mấy tuổi rồi? (câu 5).",
+      "reference_answer": "可乐几岁啦？",
+      "rubric": "Câu đúng: 可乐几岁啦？ — Cola mấy tuổi rồi? Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t2",
+            "text": "啦"
+          },
+          {
+            "id": "t1",
+            "text": "几岁"
+          },
+          {
+            "id": "t0",
+            "text": "可乐"
+          },
+          {
+            "id": "t3",
+            "text": "？"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 14
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Hơn một tuổi. Lúc mới sinh nó nhỏ xíu, như cục lông. (câu 6).",
+      "reference_answer": "它一岁多了。刚出生的时候，它小小的，像个小毛球。",
+      "rubric": "Câu đúng: 它一岁多了。刚出生的时候，它小小的，像个小毛球。 — Hơn một tuổi. Lúc mới sinh nó nhỏ xíu, như cục lông. Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t6",
+            "text": "刚"
+          },
+          {
+            "id": "t1",
+            "text": "一"
+          },
+          {
+            "id": "t8",
+            "text": "的时候"
+          },
+          {
+            "id": "t10",
+            "text": "它"
+          },
+          {
+            "id": "t7",
+            "text": "出生"
+          },
+          {
+            "id": "t17",
+            "text": "小"
+          },
+          {
+            "id": "t14",
+            "text": "，"
+          },
+          {
+            "id": "t18",
+            "text": "毛球"
+          },
+          {
+            "id": "t0",
+            "text": "它"
+          },
+          {
+            "id": "t4",
+            "text": "了"
+          },
+          {
+            "id": "t9",
+            "text": "，"
+          },
+          {
+            "id": "t12",
+            "text": "小"
+          },
+          {
+            "id": "t3",
+            "text": "多"
+          },
+          {
+            "id": "t2",
+            "text": "岁"
+          },
+          {
+            "id": "t5",
+            "text": "。"
+          },
+          {
+            "id": "t16",
+            "text": "个"
+          },
+          {
+            "id": "t19",
+            "text": "。"
+          },
+          {
+            "id": "t15",
+            "text": "像"
+          },
+          {
+            "id": "t13",
+            "text": "的"
+          },
+          {
+            "id": "t11",
+            "text": "小"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12",
+          "t13",
+          "t14",
+          "t15",
+          "t16",
+          "t17",
+          "t18",
+          "t19"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 14
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ]
+}

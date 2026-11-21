@@ -1,0 +1,1882 @@
+{
+  "key": "hsk3-lesson-13-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 3,
+    "lesson_number": 13,
+    "title": "我相信我们都能解决这个难题 · Tôi tin rằng chúng ta đều có thể giải quyết được vấn đề khó này",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "明明",
+      "pinyin": "míngmíng",
+      "vietnamese_meaning": "rõ ràng là",
+      "part_of_speech": "phó từ",
+      "source_key": "3:13:明明",
+      "note": null,
+      "order_index": 1,
+      "example": "咦？我刚才明明看见你进了学校东门外的咖啡店，还以为你在那儿学习，怎么又在自习室遇到你呢？\nyí ？ wǒ gāng cái míng míng kàn jiàn nǐ jìn le xué xiào dōng mén wài de kā fēi diàn ， hái yǐ wéi nǐ zài nà ér xué xí ， zěn me yòu zài zì xí shì yù dào nǐ ne ？\nƠ, vừa nãy rõ ràng mình thấy bạn vào quán cà phê ngoài cổng đông trường, tưởng bạn học ở đó, sao lại gặp trong phòng tự học?"
+    },
+    {
+      "hanzi": "东门",
+      "pinyin": "dōngmén",
+      "vietnamese_meaning": "cổng phía đông",
+      "part_of_speech": "danh từ",
+      "source_key": "3:13:东门",
+      "note": null,
+      "order_index": 2,
+      "example": "咦？我刚才明明看见你进了学校东门外的咖啡店，还以为你在那儿学习，怎么又在自习室遇到你呢？\nyí ？ wǒ gāng cái míng míng kàn jiàn nǐ jìn le xué xiào dōng mén wài de kā fēi diàn ， hái yǐ wéi nǐ zài nà ér xué xí ， zěn me yòu zài zì xí shì yù dào nǐ ne ？\nƠ, vừa nãy rõ ràng mình thấy bạn vào quán cà phê ngoài cổng đông trường, tưởng bạn học ở đó, sao lại gặp trong phòng tự học?"
+    },
+    {
+      "hanzi": "自习室",
+      "pinyin": "zìxíshì",
+      "vietnamese_meaning": "phòng tự học",
+      "part_of_speech": "danh từ",
+      "source_key": "3:13:自习室",
+      "note": null,
+      "order_index": 3,
+      "example": "我想在咖啡店学习的，但今天那儿不太安静，不能学下去，所以就来自习室了。\nwǒ xiǎng zài kā fēi diàn xué xí de ， dàn jīn tiān nà ér bù tài ān jìng ， bù néng xué xià qù ， suǒ yǐ jiù lái zì xí shì le 。\nMình định học ở quán cà phê nhưng hôm nay ở đó không yên tĩnh nên không học tiếp được, bèn đến phòng tự học."
+    },
+    {
+      "hanzi": "考研",
+      "pinyin": "kǎoyán",
+      "vietnamese_meaning": "thi tuyển sinh sau đại học",
+      "part_of_speech": "động từ",
+      "source_key": "3:13:考研",
+      "note": null,
+      "order_index": 4,
+      "example": "我最近也在为考研这件事头疼。\nwǒ zuì jìn yě zài wèi kǎo yán zhè jiàn shì tóu téng 。\nGần đây mình cũng đau đầu vì chuyện thi cao học."
+    },
+    {
+      "hanzi": "专业",
+      "pinyin": "zhuānyè",
+      "vietnamese_meaning": "chuyên ngành",
+      "part_of_speech": "danh từ",
+      "source_key": "3:13:专业",
+      "note": null,
+      "order_index": 5,
+      "example": "你为什么突然关心起这个专业来了？\nnǐ wèi shén me tū rán guān xīn qǐ zhè ge zhuān yè lái le ？\nSao đột nhiên bạn quan tâm ngành này?"
+    },
+    {
+      "hanzi": "国际关系",
+      "pinyin": "guójìguānxì",
+      "vietnamese_meaning": "quan hệ quốc tế",
+      "part_of_speech": "danh từ",
+      "source_key": "3:13:国际关系",
+      "note": null,
+      "order_index": 6,
+      "example": "我最近每天都在准备考研，想考国际关系专业。\nwǒ zuì jìn měi tiān dōu zài zhǔn bèi kǎo yán ， xiǎng kǎo guó jì guān xì zhuān yè 。\nGần đây ngày nào mình cũng chuẩn bị thi cao học, muốn thi ngành quan hệ quốc tế."
+    },
+    {
+      "hanzi": "全球化",
+      "pinyin": "quánqiúhuà",
+      "vietnamese_meaning": "toàn cầu hóa",
+      "part_of_speech": "danh từ",
+      "source_key": "3:13:全球化",
+      "note": null,
+      "order_index": 7,
+      "example": "现在全球化发展这么快，各国交流越来越多，我想以后从事这方面的工作。\nxiàn zài quán qiú huà fā zhǎn zhè me kuài ， gè guó jiāo liú yuè lái yuè duō ， wǒ xiǎng yǐ hòu cóng shì zhè fāng miàn de gōng zuò 。\nToàn cầu hóa phát triển nhanh, các nước giao lưu ngày càng nhiều, mình muốn sau này làm trong lĩnh vực này."
+    },
+    {
+      "hanzi": "发展",
+      "pinyin": "fāzhǎn",
+      "vietnamese_meaning": "phát triển",
+      "part_of_speech": "động từ, danh từ",
+      "source_key": "3:13:发展",
+      "note": null,
+      "order_index": 8,
+      "example": "现在全球化发展这么快，各国交流越来越多，我想以后从事这方面的工作。\nxiàn zài quán qiú huà fā zhǎn zhè me kuài ， gè guó jiāo liú yuè lái yuè duō ， wǒ xiǎng yǐ hòu cóng shì zhè fāng miàn de gōng zuò 。\nToàn cầu hóa phát triển nhanh, các nước giao lưu ngày càng nhiều, mình muốn sau này làm trong lĩnh vực này."
+    },
+    {
+      "hanzi": "交流",
+      "pinyin": "jiāoliú",
+      "vietnamese_meaning": "giao lưu, trao đổi",
+      "part_of_speech": "động từ",
+      "source_key": "3:13:交流",
+      "note": null,
+      "order_index": 9,
+      "example": "现在全球化发展这么快，各国交流越来越多，我想以后从事这方面的工作。\nxiàn zài quán qiú huà fā zhǎn zhè me kuài ， gè guó jiāo liú yuè lái yuè duō ， wǒ xiǎng yǐ hòu cóng shì zhè fāng miàn de gōng zuò 。\nToàn cầu hóa phát triển nhanh, các nước giao lưu ngày càng nhiều, mình muốn sau này làm trong lĩnh vực này."
+    },
+    {
+      "hanzi": "从事",
+      "pinyin": "cóngshì",
+      "vietnamese_meaning": "làm, hoạt động trong (lĩnh vực)",
+      "part_of_speech": "động từ",
+      "source_key": "3:13:从事",
+      "note": null,
+      "order_index": 10,
+      "example": "现在全球化发展这么快，各国交流越来越多，我想以后从事这方面的工作。\nxiàn zài quán qiú huà fā zhǎn zhè me kuài ， gè guó jiāo liú yuè lái yuè duō ， wǒ xiǎng yǐ hòu cóng shì zhè fāng miàn de gōng zuò 。\nToàn cầu hóa phát triển nhanh, các nước giao lưu ngày càng nhiều, mình muốn sau này làm trong lĩnh vực này."
+    },
+    {
+      "hanzi": "方面",
+      "pinyin": "fāngmiàn",
+      "vietnamese_meaning": "phương diện, mặt",
+      "part_of_speech": "danh từ",
+      "source_key": "3:13:方面",
+      "note": null,
+      "order_index": 11,
+      "example": "现在全球化发展这么快，各国交流越来越多，我想以后从事这方面的工作。\nxiàn zài quán qiú huà fā zhǎn zhè me kuài ， gè guó jiāo liú yuè lái yuè duō ， wǒ xiǎng yǐ hòu cóng shì zhè fāng miàn de gōng zuò 。\nToàn cầu hóa phát triển nhanh, các nước giao lưu ngày càng nhiều, mình muốn sau này làm trong lĩnh vực này."
+    },
+    {
+      "hanzi": "实现",
+      "pinyin": "shíxiàn",
+      "vietnamese_meaning": "thực hiện được (ước mơ, mục tiêu)",
+      "part_of_speech": "động từ",
+      "source_key": "3:13:实现",
+      "note": null,
+      "order_index": 12,
+      "example": "我相信只要我们努力学习，就一定能实现自己的梦想。\nwǒ xiāng xìn zhǐ yào wǒ men nǔ lì xué xí ， jiù yí dìng néng shí xiàn zì jǐ de mèng xiǎng 。\nMình tin chỉ cần chăm chỉ học thì nhất định thực hiện được ước mơ."
+    },
+    {
+      "hanzi": "梦想",
+      "pinyin": "mèngxiǎng",
+      "vietnamese_meaning": "ước mơ",
+      "part_of_speech": "danh từ",
+      "source_key": "3:13:梦想",
+      "note": null,
+      "order_index": 13,
+      "example": "我相信只要我们努力学习，就一定能实现自己的梦想。\nwǒ xiāng xìn zhǐ yào wǒ men nǔ lì xué xí ， jiù yí dìng néng shí xiàn zì jǐ de mèng xiǎng 。\nMình tin chỉ cần chăm chỉ học thì nhất định thực hiện được ước mơ."
+    },
+    {
+      "hanzi": "班主任",
+      "pinyin": "bānzhǔrèn",
+      "vietnamese_meaning": "giáo viên chủ nhiệm",
+      "part_of_speech": "danh từ",
+      "source_key": "3:13:班主任",
+      "note": null,
+      "order_index": 14,
+      "example": "我有点怕见班主任。\nwǒ yǒu diǎn pà jiàn bān zhǔ rèn 。\nMình hơi sợ gặp giáo viên chủ nhiệm."
+    },
+    {
+      "hanzi": "敲门",
+      "pinyin": "qiāomén",
+      "vietnamese_meaning": "gõ cửa",
+      "part_of_speech": "động từ",
+      "source_key": "3:13:敲门",
+      "note": null,
+      "order_index": 15,
+      "example": "进老师的办公室前要先敲门。\njìn lǎo shī de bàn gōng shì qián yào xiān qiāo mén 。\nTrước khi vào văn phòng thầy cô cần gõ cửa."
+    },
+    {
+      "hanzi": "没什么大不了",
+      "pinyin": "méishénmedàbùliǎo",
+      "vietnamese_meaning": "không có gì nghiêm trọng, không có gì ghê gớm",
+      "part_of_speech": "cụm từ",
+      "source_key": "3:13:没什么大不了",
+      "note": null,
+      "order_index": 16,
+      "example": "别担心，一次没考好没什么大不了的。\nbié dān xīn ， yī cì méi kǎo hǎo méi shén me dà bù liǎo de 。\nĐừng lo, một lần thi chưa tốt không có gì ghê gớm."
+    },
+    {
+      "hanzi": "犯错",
+      "pinyin": "fàncuò",
+      "vietnamese_meaning": "mắc lỗi",
+      "part_of_speech": "động từ",
+      "source_key": "3:13:犯错",
+      "note": null,
+      "order_index": 17,
+      "example": "而且，我们还在学习，犯错是很正常的事，学习的意义就是给我们成长的机会啊。\nér qiě ， wǒ men hái zài xué xí ， fàn cuò shì hěn zhèng cháng de shì ， xué xí de yì yì jiù shì gěi wǒ men chéng zhǎng de jī huì a 。\nHơn nữa mình còn đang học, mắc lỗi là bình thường; ý nghĩa của việc học là cho mình cơ hội trưởng thành."
+    },
+    {
+      "hanzi": "正常",
+      "pinyin": "zhèngcháng",
+      "vietnamese_meaning": "bình thường",
+      "part_of_speech": "tính từ",
+      "source_key": "3:13:正常",
+      "note": null,
+      "order_index": 18,
+      "example": "而且，我们还在学习，犯错是很正常的事，学习的意义就是给我们成长的机会啊。\nér qiě ， wǒ men hái zài xué xí ， fàn cuò shì hěn zhèng cháng de shì ， xué xí de yì yì jiù shì gěi wǒ men chéng zhǎng de jī huì a 。\nHơn nữa mình còn đang học, mắc lỗi là bình thường; ý nghĩa của việc học là cho mình cơ hội trưởng thành."
+    },
+    {
+      "hanzi": "成长",
+      "pinyin": "chéngzhǎng",
+      "vietnamese_meaning": "trưởng thành, lớn lên",
+      "part_of_speech": "động từ",
+      "source_key": "3:13:成长",
+      "note": null,
+      "order_index": 19,
+      "example": "而且，我们还在学习，犯错是很正常的事，学习的意义就是给我们成长的机会啊。\nér qiě ， wǒ men hái zài xué xí ， fàn cuò shì hěn zhèng cháng de shì ， xué xí de yì yì jiù shì gěi wǒ men chéng zhǎng de jī huì a 。\nHơn nữa mình còn đang học, mắc lỗi là bình thường; ý nghĩa của việc học là cho mình cơ hội trưởng thành."
+    },
+    {
+      "hanzi": "向",
+      "pinyin": "xiàng",
+      "vietnamese_meaning": "hướng về; với, từ (trong cấu trúc cụ thể)",
+      "part_of_speech": "giới từ",
+      "source_key": "3:13:向",
+      "note": null,
+      "order_index": 20,
+      "example": "你说得太对了，以后我一定要多向你学习。\nnǐ shuō de tài duì le ， yǐ hòu wǒ yí dìng yào duō xiàng nǐ xué xí 。\nBạn nói đúng quá, sau này mình nhất định học hỏi bạn nhiều hơn."
+    },
+    {
+      "hanzi": "关机",
+      "pinyin": "guānjī",
+      "vietnamese_meaning": "tắt máy",
+      "part_of_speech": "động từ",
+      "source_key": "3:13:关机",
+      "note": null,
+      "order_index": 21,
+      "example": "回到学校时，手机也关机了，所以一直没看消息。\nhuí dào xué xiào shí ， shǒu jī yě guān jī le ， suǒ yǐ yì zhí méi kàn xiāo xī 。\nVề trường thì máy hết pin, tắt rồi nên mình chưa xem tin nhắn."
+    },
+    {
+      "hanzi": "消息",
+      "pinyin": "xiāoxī",
+      "vietnamese_meaning": "tin tức, tin nhắn",
+      "part_of_speech": "danh từ",
+      "source_key": "3:13:消息",
+      "note": null,
+      "order_index": 22,
+      "example": "回到学校时，手机也关机了，所以一直没看消息。\nhuí dào xué xiào shí ， shǒu jī yě guān jī le ， suǒ yǐ yì zhí méi kàn xiāo xī 。\nVề trường thì máy hết pin, tắt rồi nên mình chưa xem tin nhắn."
+    },
+    {
+      "hanzi": "回",
+      "pinyin": "huí",
+      "vietnamese_meaning": "trả lời, đáp lại",
+      "part_of_speech": "động từ",
+      "source_key": "3:13:回",
+      "note": "Nhắc lại HSK 3 bài 8: 回 (huí) — lần (lượng từ cho sự việc). Trong ngữ cảnh bài này: trả lời, đáp lại.",
+      "order_index": 23,
+      "example": "我一直给你打电话，你也不接，微信也不回。\nwǒ yì zhí gěi nǐ dǎ diàn huà ， nǐ yě bù jiē ， wēi xìn yě bù huí 。\nMình gọi mãi bạn không nghe, WeChat cũng không trả lời."
+    },
+    {
+      "hanzi": "回复",
+      "pinyin": "huífù",
+      "vietnamese_meaning": "trả lời, hồi đáp",
+      "part_of_speech": "động từ",
+      "source_key": "3:13:回复",
+      "note": null,
+      "order_index": 24,
+      "example": "我还没回复你的消息。\nwǒ hái méi huí fù nǐ de xiāo xī 。\nTôi vẫn chưa trả lời tin nhắn của bạn."
+    },
+    {
+      "hanzi": "有道理",
+      "pinyin": "yǒudàolǐ",
+      "vietnamese_meaning": "có lý",
+      "part_of_speech": "cụm tính từ",
+      "source_key": "3:13:有道理",
+      "note": null,
+      "order_index": 25,
+      "example": "你说得有道理，太谢谢你了，我回去好好了解一下这些城市的学校。\nnǐ shuō de yǒu dào lǐ ， tài xiè xiè nǐ le ， wǒ huí qù hǎo hǎo liǎo jiě yī xià zhè xiē chéng shì de xué xiào 。\nBạn nói có lý, cảm ơn nhiều, về mình tìm hiểu kỹ các trường ở những thành phố này."
+    },
+    {
+      "hanzi": "了解",
+      "pinyin": "liǎojiě",
+      "vietnamese_meaning": "tìm hiểu, hiểu rõ",
+      "part_of_speech": "động từ",
+      "source_key": "3:13:了解",
+      "note": null,
+      "order_index": 26,
+      "example": "你说得有道理，太谢谢你了，我回去好好了解一下这些城市的学校。\nnǐ shuō de yǒu dào lǐ ， tài xiè xiè nǐ le ， wǒ huí qù hǎo hǎo liǎo jiě yī xià zhè xiē chéng shì de xué xiào 。\nBạn nói có lý, cảm ơn nhiều, về mình tìm hiểu kỹ các trường ở những thành phố này."
+    },
+    {
+      "hanzi": "离开",
+      "pinyin": "líkāi",
+      "vietnamese_meaning": "rời khỏi",
+      "part_of_speech": "động từ",
+      "source_key": "3:13:离开",
+      "note": null,
+      "order_index": 27,
+      "example": "我快要离开学校了。\nwǒ kuài yào lí kāi xué xiào le 。\nTôi sắp rời trường rồi."
+    },
+    {
+      "hanzi": "母校",
+      "pinyin": "mǔxiào",
+      "vietnamese_meaning": "trường cũ (nơi từng theo học)",
+      "part_of_speech": "danh từ",
+      "source_key": "3:13:母校",
+      "note": null,
+      "order_index": 28,
+      "example": "毕业以后，我很想念母校。\nbì yè yǐ hòu ， wǒ hěn xiǎng niàn mǔ xiào 。\nSau khi tốt nghiệp, tôi rất nhớ trường cũ."
+    },
+    {
+      "hanzi": "面对",
+      "pinyin": "miànduì",
+      "vietnamese_meaning": "đối mặt, đối diện",
+      "part_of_speech": "động từ",
+      "source_key": "3:13:面对",
+      "note": null,
+      "order_index": 29,
+      "example": "我们要大胆面对未来。\nwǒ men yào dà dǎn miàn duì wèi lái 。\nChúng ta cần mạnh dạn đối mặt tương lai."
+    },
+    {
+      "hanzi": "毕业",
+      "pinyin": "bìyè",
+      "vietnamese_meaning": "tốt nghiệp",
+      "part_of_speech": "động từ",
+      "source_key": "3:13:毕业",
+      "note": null,
+      "order_index": 30,
+      "example": "我们下个月就要毕业了。\nwǒ men xià gè yuè jiù yào bì yè le 。\nTháng sau chúng tôi sẽ tốt nghiệp."
+    },
+    {
+      "hanzi": "不同",
+      "pinyin": "bùtóng",
+      "vietnamese_meaning": "khác nhau",
+      "part_of_speech": "tính từ",
+      "source_key": "3:13:不同",
+      "note": null,
+      "order_index": 31,
+      "example": "每个人都有不同的打算。\nměi gè rén dōu yǒu bù tóng de dǎ suàn 。\nMỗi người đều có dự định khác nhau."
+    },
+    {
+      "hanzi": "大胆",
+      "pinyin": "dàdǎn",
+      "vietnamese_meaning": "mạnh dạn, táo bạo",
+      "part_of_speech": "tính từ",
+      "source_key": "3:13:大胆",
+      "note": null,
+      "order_index": 32,
+      "example": "请大胆说出你的想法。\nqǐng dà dǎn shuō chū nǐ de xiǎng fǎ 。\nHãy mạnh dạn nói ra suy nghĩ của bạn."
+    },
+    {
+      "hanzi": "未来",
+      "pinyin": "wèilái",
+      "vietnamese_meaning": "tương lai",
+      "part_of_speech": "danh từ",
+      "source_key": "3:13:未来",
+      "note": null,
+      "order_index": 33,
+      "example": "我相信未来会更好。\nwǒ xiāng xìn wèi lái huì gèng hǎo 。\nTôi tin tương lai sẽ tốt đẹp hơn."
+    },
+    {
+      "hanzi": "真正",
+      "pinyin": "zhēnzhèng",
+      "vietnamese_meaning": "thật sự, đích thực",
+      "part_of_speech": "tính từ, phó từ",
+      "source_key": "3:13:真正",
+      "note": null,
+      "order_index": 34,
+      "example": "我们要真正了解这个问题。\nwǒ men yào zhēn zhèng liǎo jiě zhè ge wèn tí 。\nChúng ta cần thật sự hiểu vấn đề này."
+    },
+    {
+      "hanzi": "方向",
+      "pinyin": "fāngxiàng",
+      "vietnamese_meaning": "phương hướng",
+      "part_of_speech": "danh từ",
+      "source_key": "3:13:方向",
+      "note": null,
+      "order_index": 35,
+      "example": "我还在找自己的方向。\nwǒ hái zài zhǎo zì jǐ de fāng xiàng 。\nTôi vẫn đang tìm phương hướng của mình."
+    },
+    {
+      "hanzi": "无论",
+      "pinyin": "wúlùn",
+      "vietnamese_meaning": "bất kể, dù cho",
+      "part_of_speech": "liên từ",
+      "source_key": "3:13:无论",
+      "note": null,
+      "order_index": 36,
+      "example": "无论去哪儿，我都会努力。\nwú lùn qù nǎ ér ， wǒ dōu huì nǔ lì 。\nDù đi đâu tôi cũng sẽ cố gắng."
+    }
+  ],
+  "grammar": [
+    {
+      "name": "Câu hỏi tu từ 不是…吗",
+      "structure": "不是 + sự việc đã biết + 吗？",
+      "explanation": "Nhắc lại điều người nói cho là đúng, biểu thị ngạc nhiên, nghi vấn hoặc nhấn mạnh.",
+      "usage": "Không chỉ hiểu như câu hỏi có/không; người nói thường đã có căn cứ hoặc kỳ vọng.",
+      "example": "你不是想考研吗？\nnǐ bú shì xiǎng kǎo yán ma ？\nChẳng phải bạn muốn thi cao học sao?",
+      "note": "Không chỉ hiểu như câu hỏi có/không; người nói thường đã có căn cứ hoặc kỳ vọng.",
+      "order_index": 1
+    },
+    {
+      "name": "Giới từ 向",
+      "structure": "向 + người/hướng + động từ",
+      "explanation": "Nêu hướng hoặc đối tượng mà hành động hướng đến.",
+      "usage": "向你学习 là học hỏi từ bạn; không có nghĩa dạy cho bạn.",
+      "example": "我要向你学习。\nwǒ yào xiàng nǐ xué xí 。\nTôi muốn học hỏi bạn.",
+      "note": "向你学习 là học hỏi từ bạn; không có nghĩa dạy cho bạn.",
+      "order_index": 2
+    },
+    {
+      "name": "Mức độ cao hơn với 更",
+      "structure": "更 + tính từ/động từ tâm lý",
+      "explanation": "Nêu mức độ cao hơn trong một so sánh hoặc trên cơ sở đã biết.",
+      "usage": "Khác 最 nêu mức cao nhất trong phạm vi; không thêm 很 ngay sau 更.",
+      "example": "我以后会更努力。\nwǒ yǐ hòu huì gèng nǔ lì 。\nSau này tôi sẽ cố gắng hơn.",
+      "note": "Khác 最 nêu mức cao nhất trong phạm vi; không thêm 很 ngay sau 更.",
+      "order_index": 3
+    },
+    {
+      "name": "Điều kiện cần 只有…才…",
+      "structure": "只有 + điều kiện，才 + kết quả",
+      "explanation": "Nhấn mạnh điều kiện cần để có kết quả.",
+      "usage": "Phân biệt 只要…就… nêu điều kiện đủ, không đổi hai cấu trúc tùy ý.",
+      "example": "只有努力，才能实现梦想。\nzhǐ yǒu nǔ lì ， cái néng shí xiàn mèng xiǎng 。\nChỉ có nỗ lực mới có thể thực hiện ước mơ.",
+      "note": "Phân biệt 只要…就… nêu điều kiện đủ, không đổi hai cấu trúc tùy ý.",
+      "order_index": 4
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Dự định thi cao học",
+      "content": "小丽：咦？我刚才明明看见你进了学校东门外的咖啡店，还以为你在那儿学习，怎么又在自习室遇到你呢？\n小刚：你没看错，就是我。我想在咖啡店学习的，但今天那儿不太安静，不能学下去，所以就来自习室了。\n小丽：原来是这样。同学们都在忙着找工作，你有什么打算？\n小刚：我最近每天都在准备考研，想考国际关系专业。\n小丽：你为什么突然关心起这个专业来了？\n小刚：现在全球化发展这么快，各国交流越来越多，我想以后从事这方面的工作。家人也很支持我。\n小丽：这个选择真不错。我最近也在为考研这件事头疼。\n小刚：我相信只要我们努力学习，就一定能实现自己的梦想。",
+      "pinyin": "xiǎo lì ： yí ？ wǒ gāng cái míng míng kàn jiàn nǐ jìn le xué xiào dōng mén wài de kā fēi diàn ， hái yǐ wéi nǐ zài nà ér xué xí ， zěn me yòu zài zì xí shì yù dào nǐ ne ？\nxiǎo gāng ： nǐ méi kàn cuò ， jiù shì wǒ 。 wǒ xiǎng zài kā fēi diàn xué xí de ， dàn jīn tiān nà ér bù tài ān jìng ， bù néng xué xià qù ， suǒ yǐ jiù lái zì xí shì le 。\nxiǎo lì ： yuán lái shì zhè yàng 。 tóng xué men dōu zài máng zhe zhǎo gōng zuò ， nǐ yǒu shén me dǎ suàn ？\nxiǎo gāng ： wǒ zuì jìn měi tiān dōu zài zhǔn bèi kǎo yán ， xiǎng kǎo guó jì guān xì zhuān yè 。\nxiǎo lì ： nǐ wèi shén me tū rán guān xīn qǐ zhè ge zhuān yè lái le ？\nxiǎo gāng ： xiàn zài quán qiú huà fā zhǎn zhè me kuài ， gè guó jiāo liú yuè lái yuè duō ， wǒ xiǎng yǐ hòu cóng shì zhè fāng miàn de gōng zuò 。 jiā rén yě hěn zhī chí wǒ 。\nxiǎo lì ： zhè ge xuǎn zé zhēn bù cuò 。 wǒ zuì jìn yě zài wèi kǎo yán zhè jiàn shì tóu téng 。\nxiǎo gāng ： wǒ xiāng xìn zhǐ yào wǒ men nǔ lì xué xí ， jiù yí dìng néng shí xiàn zì jǐ de mèng xiǎng 。",
+      "vietnamese_translation": "Tiểu Lệ: Ơ, vừa nãy rõ ràng mình thấy bạn vào quán cà phê ngoài cổng đông trường, tưởng bạn học ở đó, sao lại gặp trong phòng tự học?\nTiểu Cương: Bạn không nhìn nhầm, là mình. Mình định học ở quán cà phê nhưng hôm nay ở đó không yên tĩnh nên không học tiếp được, bèn đến phòng tự học.\nTiểu Lệ: Hóa ra vậy. Các bạn đều đang bận tìm việc, bạn có dự định gì?\nTiểu Cương: Gần đây ngày nào mình cũng chuẩn bị thi cao học, muốn thi ngành quan hệ quốc tế.\nTiểu Lệ: Sao đột nhiên bạn quan tâm ngành này?\nTiểu Cương: Toàn cầu hóa phát triển nhanh, các nước giao lưu ngày càng nhiều, mình muốn sau này làm trong lĩnh vực này. Gia đình cũng ủng hộ.\nTiểu Lệ: Lựa chọn rất tốt. Gần đây mình cũng đau đầu vì chuyện thi cao học.\nTiểu Cương: Mình tin chỉ cần chăm chỉ học thì nhất định thực hiện được ước mơ.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 13, bài khóa 1."
+    },
+    {
+      "order_index": 2,
+      "title": "Mạnh dạn gặp giáo viên chủ nhiệm",
+      "content": "小丽：班主任的办公室就在前面，你还想去哪儿？快来帮我敲个门。\n小刚：我……我还是在这儿等你吧。\n小丽：怎么了？你的脸色怎么这么难看？\n小刚：最近考试成绩不太好，特别是数学，考得很差。我有点怕见班主任。\n小丽：别担心，一次没考好没什么大不了的。\n小刚：可是简单的题我也做错了，老师肯定觉得我不认真学习。\n小丽：你知道问题在哪儿，以后多注意就行了。而且，我们还在学习，犯错是很正常的事，学习的意义就是给我们成长的机会啊。\n小刚：你说得太对了，以后我一定要多向你学习。",
+      "pinyin": "xiǎo lì ： bān zhǔ rèn de bàn gōng shì jiù zài qián miàn ， nǐ hái xiǎng qù nǎ ér ？ kuài lái bāng wǒ qiāo gè mén 。\nxiǎo gāng ： wǒ … … wǒ hái shì zài zhè ér děng nǐ ba 。\nxiǎo lì ： zěn me le ？ nǐ de liǎn sè zěn me zhè me nán kàn ？\nxiǎo gāng ： zuì jìn kǎo shì chéng jì bù tài hǎo ， tè bié shì shù xué ， kǎo de hěn chà 。 wǒ yǒu diǎn pà jiàn bān zhǔ rèn 。\nxiǎo lì ： bié dān xīn ， yī cì méi kǎo hǎo méi shén me dà bù liǎo de 。\nxiǎo gāng ： kě shì jiǎn dān de tí wǒ yě zuò cuò le ， lǎo shī kěn dìng jué de wǒ bù rèn zhēn xué xí 。\nxiǎo lì ： nǐ zhī dào wèn tí zài nǎ ér ， yǐ hòu duō zhù yì jiù xíng le 。 ér qiě ， wǒ men hái zài xué xí ， fàn cuò shì hěn zhèng cháng de shì ， xué xí de yì yì jiù shì gěi wǒ men chéng zhǎng de jī huì a 。\nxiǎo gāng ： nǐ shuō de tài duì le ， yǐ hòu wǒ yí dìng yào duō xiàng nǐ xué xí 。",
+      "vietnamese_translation": "Tiểu Lệ: Phòng giáo viên chủ nhiệm ở ngay phía trước, bạn còn muốn đi đâu? Lại đây giúp mình gõ cửa.\nTiểu Cương: Mình… mình đợi bạn ở đây thì hơn.\nTiểu Lệ: Sao thế? Sao sắc mặt bạn khó coi vậy?\nTiểu Cương: Gần đây kết quả thi không tốt, nhất là toán rất kém. Mình hơi sợ gặp giáo viên chủ nhiệm.\nTiểu Lệ: Đừng lo, một lần thi chưa tốt không có gì ghê gớm.\nTiểu Cương: Nhưng câu đơn giản mình cũng làm sai, chắc thầy nghĩ mình không nghiêm túc học.\nTiểu Lệ: Biết vấn đề ở đâu thì sau này chú ý hơn là được. Hơn nữa mình còn đang học, mắc lỗi là bình thường; ý nghĩa của việc học là cho mình cơ hội trưởng thành.\nTiểu Cương: Bạn nói đúng quá, sau này mình nhất định học hỏi bạn nhiều hơn.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 13, bài khóa 2."
+    },
+    {
+      "order_index": 3,
+      "title": "Tìm hiểu trường và thành phố",
+      "content": "小李：小刚，这半天你去哪儿了？我一直给你打电话，你也不接，微信也不回。\n小刚：真不好意思，我早上把手机忘在出租车上了，忙到下午才去拿回来。回到学校时，手机也关机了，所以一直没看消息。\n小李：原来是这样。对了，我听说你打算读研，是真的吗？\n小刚：是啊，我已经想好要学什么专业了，可是还没想好去哪个城市，更没想好去哪个学校。\n小李：那你可以去北京、上海这样的大城市啊。那里的大学多，学习环境好，机会也更多。有什么问题还可以问我姐姐，让她帮你查一查。\n小刚：你说得有道理，太谢谢你了，我回去好好了解一下这些城市的学校。",
+      "pinyin": "xiǎo lǐ ： xiǎo gāng ， zhè bàn tiān nǐ qù nǎ ér le ？ wǒ yì zhí gěi nǐ dǎ diàn huà ， nǐ yě bù jiē ， wēi xìn yě bù huí 。\nxiǎo gāng ： zhēn bù hǎo yì sī ， wǒ zǎo shàng bǎ shǒu jī wàng zài chū zū chē shàng le ， máng dào xià wǔ cái qù ná huí lái 。 huí dào xué xiào shí ， shǒu jī yě guān jī le ， suǒ yǐ yì zhí méi kàn xiāo xī 。\nxiǎo lǐ ： yuán lái shì zhè yàng 。 duì le ， wǒ tīng shuō nǐ dǎ suàn dú yán ， shì zhēn de ma ？\nxiǎo gāng ： shì a ， wǒ yǐ jīng xiǎng hǎo yào xué shén me zhuān yè le ， kě shì hái méi xiǎng hǎo qù nǎ ge chéng shì ， gèng méi xiǎng hǎo qù nǎ ge xué xiào 。\nxiǎo lǐ ： nà nǐ kě yǐ qù běi jīng 、 shàng hǎi zhè yàng de dà chéng shì a 。 nà lǐ de dà xué duō ， xué xí huán jìng hǎo ， jī huì yě gèng duō 。 yǒu shén me wèn tí hái kě yǐ wèn wǒ jiě jiě ， ràng tā bāng nǐ chá yī chá 。\nxiǎo gāng ： nǐ shuō de yǒu dào lǐ ， tài xiè xiè nǐ le ， wǒ huí qù hǎo hǎo liǎo jiě yī xià zhè xiē chéng shì de xué xiào 。",
+      "vietnamese_translation": "Tiểu Lý: Tiểu Cương, cả nửa ngày nay bạn đi đâu? Mình gọi mãi bạn không nghe, WeChat cũng không trả lời.\nTiểu Cương: Ngại quá, sáng mình để quên điện thoại trên taxi, bận đến chiều mới lấy lại. Về trường thì máy hết pin, tắt rồi nên mình chưa xem tin nhắn.\nTiểu Lý: Hóa ra vậy. Mình nghe nói bạn định học cao học, thật không?\nTiểu Cương: Đúng, mình đã chọn chuyên ngành nhưng chưa biết đến thành phố nào, càng chưa chọn được trường.\nTiểu Lý: Bạn có thể đến thành phố lớn như Bắc Kinh hoặc Thượng Hải. Ở đó nhiều đại học, môi trường học tốt, cơ hội cũng nhiều. Có vấn đề gì thì hỏi chị mình, nhờ chị tìm giúp.\nTiểu Cương: Bạn nói có lý, cảm ơn nhiều, về mình tìm hiểu kỹ các trường ở những thành phố này.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 13, bài khóa 3."
+    },
+    {
+      "order_index": 4,
+      "title": "Đối mặt tương lai sau tốt nghiệp",
+      "content": "我快要离开母校了。除了想念母校、老师和朋友，还有一件事我一直放不下，就是面对毕业后的生活。我问了身边的同学，大家都有不同的打算。有的在城市找工作，有的回老家陪父母，有的继续学习，有的下个月结婚，还有人说，想先出去走走，等旅行回来再慢慢想。而我也还在找自己的答案。但我慢慢明白，只有大胆面对未来，才能让我们真正找到自己的方向。无论最后走到哪里，我相信我们都能解决这个难题。亲爱的同学们！在无法见面的日子里，你们一直都在我心里。",
+      "pinyin": "wǒ kuài yào lí kāi mǔ xiào le 。 chú le xiǎng niàn mǔ xiào 、 lǎo shī hé péng yǒu ， hái yǒu yī jiàn shì wǒ yì zhí fàng bù xià ， jiù shì miàn duì bì yè hòu de shēng huó 。 wǒ wèn le shēn biān de tóng xué ， dà jiā dōu yǒu bù tóng de dǎ suàn 。 yǒu de zài chéng shì zhǎo gōng zuò ， yǒu de huí lǎo jiā péi fù mǔ ， yǒu de jì xù xué xí ， yǒu de xià gè yuè jié hūn ， hái yǒu rén shuō ， xiǎng xiān chū qù zǒu zǒu ， děng lǚ xíng huí lái zài màn màn xiǎng 。 ér wǒ yě hái zài zhǎo zì jǐ de dá àn 。 dàn wǒ màn màn míng bái ， zhǐ yǒu dà dǎn miàn duì wèi lái ， cái néng ràng wǒ men zhēn zhèng zhǎo dào zì jǐ de fāng xiàng 。 wú lùn zuì hòu zǒu dào nǎ lǐ ， wǒ xiāng xìn wǒ men dōu néng jiě jué zhè ge nán tí 。 qīn ài de tóng xué men ！ zài wú fǎ jiàn miàn de rì zi lǐ ， nǐ men yì zhí dōu zài wǒ xīn lǐ 。",
+      "vietnamese_translation": "Tôi sắp rời trường cũ. Ngoài nhớ trường, thầy cô và bạn bè, còn một việc tôi luôn chưa yên lòng: đối mặt cuộc sống sau tốt nghiệp. Tôi hỏi các bạn xung quanh, ai cũng có dự định khác nhau. Người tìm việc trong thành phố, người về quê bên bố mẹ, người học tiếp, người tháng sau kết hôn; có người muốn đi đây đó trước, du lịch về rồi từ từ nghĩ. Tôi cũng còn đang tìm câu trả lời. Nhưng dần dần tôi hiểu, chỉ khi mạnh dạn đối mặt tương lai mới thật sự tìm được hướng đi. Bất kể cuối cùng đến đâu, tôi tin chúng ta đều giải quyết được vấn đề này. Các bạn thân mến, trong những ngày không thể gặp, các bạn vẫn luôn ở trong tim tôi.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 13, bài khóa 4."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 3 · Bài 13 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp của bài này và các bài trước; đạt từ 80%, được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "source_documents": {
+    "vocabulary": "DOCX",
+    "theory": "DOCX"
+  },
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 1).",
+      "options": [
+        {
+          "option_text": "lựa chọn",
+          "is_correct": false
+        },
+        {
+          "option_text": "một ít, một số",
+          "is_correct": false
+        },
+        {
+          "option_text": "bất kể, dù cho",
+          "is_correct": true
+        },
+        {
+          "option_text": "tự học",
+          "is_correct": false
+        }
+      ],
+      "rubric": "无论 (wúlùn) — bất kể, dù cho. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "无论"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 13
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “洗衣机” (xǐyījī) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "phương diện, mặt",
+          "is_correct": false
+        },
+        {
+          "option_text": "ngày trời quang, có nắng",
+          "is_correct": false
+        },
+        {
+          "option_text": "máy giặt",
+          "is_correct": true
+        },
+        {
+          "option_text": "đi, bắt đầu (học, làm)",
+          "is_correct": false
+        }
+      ],
+      "rubric": "洗衣机 (xǐyījī) — máy giặt. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 2
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “zhèngcháng” — bình thường.",
+      "options": [
+        {
+          "option_text": "手",
+          "is_correct": false
+        },
+        {
+          "option_text": "周到",
+          "is_correct": false
+        },
+        {
+          "option_text": "正常",
+          "is_correct": true
+        },
+        {
+          "option_text": "黑色",
+          "is_correct": false
+        }
+      ],
+      "rubric": "正常 (zhèngcháng) — bình thường. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 13
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 4).",
+      "options": [
+        {
+          "option_text": "đây",
+          "is_correct": false
+        },
+        {
+          "option_text": "mạnh dạn, táo bạo",
+          "is_correct": false
+        },
+        {
+          "option_text": "tháp",
+          "is_correct": false
+        },
+        {
+          "option_text": "tốt nghiệp",
+          "is_correct": true
+        }
+      ],
+      "rubric": "毕业 (bìyè) — tốt nghiệp. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "毕业"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 13
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “母校” (mǔxiào) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "phía trên/trên",
+          "is_correct": false
+        },
+        {
+          "option_text": "vòng (đếm vòng chạy)",
+          "is_correct": false
+        },
+        {
+          "option_text": "ha ha, tiếng cười",
+          "is_correct": false
+        },
+        {
+          "option_text": "trường cũ (nơi từng theo học)",
+          "is_correct": true
+        }
+      ],
+      "rubric": "母校 (mǔxiào) — trường cũ (nơi từng theo học). ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 13
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “fāngxiàng” — phương hướng.",
+      "options": [
+        {
+          "option_text": "方向",
+          "is_correct": true
+        },
+        {
+          "option_text": "签证",
+          "is_correct": false
+        },
+        {
+          "option_text": "签",
+          "is_correct": false
+        },
+        {
+          "option_text": "旁边",
+          "is_correct": false
+        }
+      ],
+      "rubric": "方向 (fāngxiàng) — phương hướng. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 13
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 7).",
+      "options": [
+        {
+          "option_text": "khỏe mạnh; sức khỏe",
+          "is_correct": false
+        },
+        {
+          "option_text": "chuyến bay",
+          "is_correct": false
+        },
+        {
+          "option_text": "mẹ",
+          "is_correct": false
+        },
+        {
+          "option_text": "phương diện, mặt",
+          "is_correct": true
+        }
+      ],
+      "rubric": "方面 (fāngmiàn) — phương diện, mặt. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "方面"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 13
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “敲门” (qiāomén) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "gõ cửa",
+          "is_correct": true
+        },
+        {
+          "option_text": "tốc độ",
+          "is_correct": false
+        },
+        {
+          "option_text": "hợp tác",
+          "is_correct": false
+        },
+        {
+          "option_text": "khác nhau",
+          "is_correct": false
+        }
+      ],
+      "rubric": "敲门 (qiāomén) — gõ cửa. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 13
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “dàdǎn” — mạnh dạn, táo bạo.",
+      "options": [
+        {
+          "option_text": "合同",
+          "is_correct": false
+        },
+        {
+          "option_text": "大胆",
+          "is_correct": true
+        },
+        {
+          "option_text": "小时",
+          "is_correct": false
+        },
+        {
+          "option_text": "没有",
+          "is_correct": false
+        }
+      ],
+      "rubric": "大胆 (dàdǎn) — mạnh dạn, táo bạo. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 13
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "gầy, ốm",
+          "is_correct": false
+        },
+        {
+          "option_text": "không có gì nghiêm trọng, không có gì ghê gớm",
+          "is_correct": true
+        },
+        {
+          "option_text": "áo khoác dài",
+          "is_correct": false
+        },
+        {
+          "option_text": "căng thẳng, hồi hộp",
+          "is_correct": false
+        }
+      ],
+      "rubric": "没什么大不了 (méishénmedàbùliǎo) — không có gì nghiêm trọng, không có gì ghê gớm. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "没什么大不了"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 13
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “离开” (líkāi) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "rời khỏi",
+          "is_correct": true
+        },
+        {
+          "option_text": "trưởng thành, lớn lên",
+          "is_correct": false
+        },
+        {
+          "option_text": "nếu không thì",
+          "is_correct": false
+        },
+        {
+          "option_text": "kiên nhẫn",
+          "is_correct": false
+        }
+      ],
+      "rubric": "离开 (líkāi) — rời khỏi. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 13
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “zhàn” — đứng.",
+      "options": [
+        {
+          "option_text": "站",
+          "is_correct": true
+        },
+        {
+          "option_text": "又",
+          "is_correct": false
+        },
+        {
+          "option_text": "错",
+          "is_correct": false
+        },
+        {
+          "option_text": "要",
+          "is_correct": false
+        }
+      ],
+      "rubric": "站 (zhàn) — đứng. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 8
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “tin, tin tưởng” (pinyin: xiāngxìn).",
+      "reference_answer": "相信",
+      "rubric": "Đáp án: 相信 (xiāngxìn). ",
+      "config": {
+        "accepted_answers": [
+          "相信"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 12
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “quan hệ quốc tế” (pinyin: guójìguānxì).",
+      "reference_answer": "国际关系",
+      "rubric": "Đáp án: 国际关系 (guójìguānxì). ",
+      "config": {
+        "accepted_answers": [
+          "国际关系"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 13
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “tương lai” (pinyin: wèilái).",
+      "reference_answer": "未来",
+      "rubric": "Đáp án: 未来 (wèilái). ",
+      "config": {
+        "accepted_answers": [
+          "未来"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 13
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “có lý” (pinyin: yǒudàolǐ).",
+      "reference_answer": "有道理",
+      "rubric": "Đáp án: 有道理 (yǒudàolǐ). ",
+      "config": {
+        "accepted_answers": [
+          "有道理"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 13
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối các từ với nghĩa đã học (nhóm 1).",
+      "rubric": "站: đứng ; 犯错: mắc lỗi ; 洗衣机: máy giặt ; 方向: phương hướng",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "站"
+          },
+          {
+            "id": "l1",
+            "text": "犯错"
+          },
+          {
+            "id": "l2",
+            "text": "洗衣机"
+          },
+          {
+            "id": "l3",
+            "text": "方向"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r2",
+            "text": "máy giặt"
+          },
+          {
+            "id": "r1",
+            "text": "mắc lỗi"
+          },
+          {
+            "id": "r3",
+            "text": "phương hướng"
+          },
+          {
+            "id": "r0",
+            "text": "đứng"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 8
+        },
+        {
+          "hsk": 3,
+          "lesson": 13
+        },
+        {
+          "hsk": 3,
+          "lesson": 2
+        },
+        {
+          "hsk": 3,
+          "lesson": 13
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối các từ với nghĩa đã học (nhóm 2).",
+      "rubric": "实现: thực hiện được (ước mơ, mục tiêu) ; 考研: thi tuyển sinh sau đại học ; 犯错: mắc lỗi ; 向: hướng về; với, từ (trong cấu trúc cụ thể)",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "实现"
+          },
+          {
+            "id": "l1",
+            "text": "考研"
+          },
+          {
+            "id": "l2",
+            "text": "犯错"
+          },
+          {
+            "id": "l3",
+            "text": "向"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r2",
+            "text": "mắc lỗi"
+          },
+          {
+            "id": "r0",
+            "text": "thực hiện được (ước mơ, mục tiêu)"
+          },
+          {
+            "id": "r1",
+            "text": "thi tuyển sinh sau đại học"
+          },
+          {
+            "id": "r3",
+            "text": "hướng về; với, từ (trong cấu trúc cụ thể)"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 13
+        },
+        {
+          "hsk": 3,
+          "lesson": 13
+        },
+        {
+          "hsk": 3,
+          "lesson": 13
+        },
+        {
+          "hsk": 3,
+          "lesson": 13
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nhắc lại điều người nói đã biết: 你___想考研吗？",
+      "options": [
+        {
+          "option_text": "没有",
+          "is_correct": false
+        },
+        {
+          "option_text": "不要",
+          "is_correct": false
+        },
+        {
+          "option_text": "不是",
+          "is_correct": true
+        },
+        {
+          "option_text": "不能",
+          "is_correct": false
+        }
+      ],
+      "rubric": "不是…吗 thường là câu hỏi tu từ, mang kỳ vọng hoặc sự ngạc nhiên.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 13
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "我以后要___你学习。",
+      "options": [
+        {
+          "option_text": "向",
+          "is_correct": true
+        },
+        {
+          "option_text": "把",
+          "is_correct": false
+        },
+        {
+          "option_text": "在",
+          "is_correct": false
+        },
+        {
+          "option_text": "被",
+          "is_correct": false
+        }
+      ],
+      "rubric": "向你学习 là học hỏi từ bạn, 向 dẫn đối tượng hướng đến.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 13
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Theo mẫu điều kiện cần: 只有努力，___能实现梦想。",
+      "options": [
+        {
+          "option_text": "又",
+          "is_correct": false
+        },
+        {
+          "option_text": "就",
+          "is_correct": false
+        },
+        {
+          "option_text": "也",
+          "is_correct": false
+        },
+        {
+          "option_text": "才",
+          "is_correct": true
+        }
+      ],
+      "rubric": "只有…才… nhấn mạnh điều kiện cần; khác điều kiện đủ của 只要…就….",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 13
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Câu hỏi tu từ 不是…吗”, cách hiểu nào đúng (mục 1)?",
+      "options": [
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nhắc lại điều người nói cho là đúng, biểu thị ngạc nhiên, nghi vấn hoặc nhấn mạnh.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Nhắc lại điều người nói cho là đúng, biểu thị ngạc nhiên, nghi vấn hoặc nhấn mạnh. Không chỉ hiểu như câu hỏi có/không; người nói thường đã có căn cứ hoặc kỳ vọng.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 13
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Giới từ 向”, cách hiểu nào đúng (mục 2)?",
+      "options": [
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nêu hướng hoặc đối tượng mà hành động hướng đến.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Nêu hướng hoặc đối tượng mà hành động hướng đến. 向你学习 là học hỏi từ bạn; không có nghĩa dạy cho bạn.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 13
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Mức độ cao hơn với 更”, cách hiểu nào đúng (mục 3)?",
+      "options": [
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nêu mức độ cao hơn trong một so sánh hoặc trên cơ sở đã biết.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Nêu mức độ cao hơn trong một so sánh hoặc trên cơ sở đã biết. Khác 最 nêu mức cao nhất trong phạm vi; không thêm 很 ngay sau 更.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 13
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Chẳng phải bạn muốn thi cao học sao? (câu 1).",
+      "reference_answer": "你不是想考研吗？",
+      "rubric": "Câu đúng: 你不是想考研吗？ — Chẳng phải bạn muốn thi cao học sao? Không chỉ hiểu như câu hỏi có/không; người nói thường đã có căn cứ hoặc kỳ vọng.",
+      "config": {
+        "items": [
+          {
+            "id": "t1",
+            "text": "不"
+          },
+          {
+            "id": "t3",
+            "text": "想"
+          },
+          {
+            "id": "t0",
+            "text": "你"
+          },
+          {
+            "id": "t4",
+            "text": "考研"
+          },
+          {
+            "id": "t2",
+            "text": "是"
+          },
+          {
+            "id": "t5",
+            "text": "吗"
+          },
+          {
+            "id": "t6",
+            "text": "？"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 13
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Tôi muốn học hỏi bạn. (câu 2).",
+      "reference_answer": "我要向你学习。",
+      "rubric": "Câu đúng: 我要向你学习。 — Tôi muốn học hỏi bạn. 向你学习 là học hỏi từ bạn; không có nghĩa dạy cho bạn.",
+      "config": {
+        "items": [
+          {
+            "id": "t3",
+            "text": "你"
+          },
+          {
+            "id": "t1",
+            "text": "要"
+          },
+          {
+            "id": "t2",
+            "text": "向"
+          },
+          {
+            "id": "t0",
+            "text": "我"
+          },
+          {
+            "id": "t4",
+            "text": "学习"
+          },
+          {
+            "id": "t5",
+            "text": "。"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 13
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Sau này tôi sẽ cố gắng hơn. (câu 3).",
+      "reference_answer": "我以后会更努力。",
+      "rubric": "Câu đúng: 我以后会更努力。 — Sau này tôi sẽ cố gắng hơn. Khác 最 nêu mức cao nhất trong phạm vi; không thêm 很 ngay sau 更.",
+      "config": {
+        "items": [
+          {
+            "id": "t1",
+            "text": "以"
+          },
+          {
+            "id": "t2",
+            "text": "后"
+          },
+          {
+            "id": "t6",
+            "text": "。"
+          },
+          {
+            "id": "t5",
+            "text": "努力"
+          },
+          {
+            "id": "t0",
+            "text": "我"
+          },
+          {
+            "id": "t4",
+            "text": "更"
+          },
+          {
+            "id": "t3",
+            "text": "会"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 13
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Chỉ có nỗ lực mới có thể thực hiện ước mơ. (câu 4).",
+      "reference_answer": "只有努力，才能实现梦想。",
+      "rubric": "Câu đúng: 只有努力，才能实现梦想。 — Chỉ có nỗ lực mới có thể thực hiện ước mơ. Phân biệt 只要…就… nêu điều kiện đủ, không đổi hai cấu trúc tùy ý.",
+      "config": {
+        "items": [
+          {
+            "id": "t5",
+            "text": "能"
+          },
+          {
+            "id": "t8",
+            "text": "。"
+          },
+          {
+            "id": "t6",
+            "text": "实现"
+          },
+          {
+            "id": "t1",
+            "text": "有"
+          },
+          {
+            "id": "t3",
+            "text": "，"
+          },
+          {
+            "id": "t0",
+            "text": "只"
+          },
+          {
+            "id": "t7",
+            "text": "梦想"
+          },
+          {
+            "id": "t2",
+            "text": "努力"
+          },
+          {
+            "id": "t4",
+            "text": "才"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 13
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Hóa ra vậy. Các bạn đều đang bận tìm việc, bạn có dự định gì? (câu 5).",
+      "reference_answer": "原来是这样。同学们都在忙着找工作，你有什么打算？",
+      "rubric": "Câu đúng: 原来是这样。同学们都在忙着找工作，你有什么打算？ — Hóa ra vậy. Các bạn đều đang bận tìm việc, bạn có dự định gì? Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t16",
+            "text": "打算"
+          },
+          {
+            "id": "t2",
+            "text": "这样"
+          },
+          {
+            "id": "t15",
+            "text": "什么"
+          },
+          {
+            "id": "t1",
+            "text": "是"
+          },
+          {
+            "id": "t7",
+            "text": "在"
+          },
+          {
+            "id": "t11",
+            "text": "工作"
+          },
+          {
+            "id": "t10",
+            "text": "找"
+          },
+          {
+            "id": "t4",
+            "text": "同学"
+          },
+          {
+            "id": "t8",
+            "text": "忙"
+          },
+          {
+            "id": "t6",
+            "text": "都"
+          },
+          {
+            "id": "t5",
+            "text": "们"
+          },
+          {
+            "id": "t0",
+            "text": "原来"
+          },
+          {
+            "id": "t13",
+            "text": "你"
+          },
+          {
+            "id": "t9",
+            "text": "着"
+          },
+          {
+            "id": "t17",
+            "text": "？"
+          },
+          {
+            "id": "t14",
+            "text": "有"
+          },
+          {
+            "id": "t12",
+            "text": "，"
+          },
+          {
+            "id": "t3",
+            "text": "。"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12",
+          "t13",
+          "t14",
+          "t15",
+          "t16",
+          "t17"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 13
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Gần đây ngày nào mình cũng chuẩn bị thi cao học, muốn thi ngành quan hệ quốc tế. (câu 6).",
+      "reference_answer": "我最近每天都在准备考研，想考国际关系专业。",
+      "rubric": "Câu đúng: 我最近每天都在准备考研，想考国际关系专业。 — Gần đây ngày nào mình cũng chuẩn bị thi cao học, muốn thi ngành quan hệ quốc tế. Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t10",
+            "text": "考"
+          },
+          {
+            "id": "t7",
+            "text": "考研"
+          },
+          {
+            "id": "t9",
+            "text": "想"
+          },
+          {
+            "id": "t12",
+            "text": "专业"
+          },
+          {
+            "id": "t13",
+            "text": "。"
+          },
+          {
+            "id": "t4",
+            "text": "都"
+          },
+          {
+            "id": "t8",
+            "text": "，"
+          },
+          {
+            "id": "t0",
+            "text": "我"
+          },
+          {
+            "id": "t5",
+            "text": "在"
+          },
+          {
+            "id": "t3",
+            "text": "天"
+          },
+          {
+            "id": "t11",
+            "text": "国际关系"
+          },
+          {
+            "id": "t6",
+            "text": "准备"
+          },
+          {
+            "id": "t1",
+            "text": "最近"
+          },
+          {
+            "id": "t2",
+            "text": "每"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12",
+          "t13"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 13
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ]
+}

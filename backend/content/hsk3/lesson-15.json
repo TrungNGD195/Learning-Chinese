@@ -1,0 +1,1873 @@
+{
+  "key": "hsk3-lesson-15-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 3,
+    "lesson_number": 15,
+    "title": "春节是中国最重要的节日 · Tết âm lịch là ngày lễ quan trọng nhất của Trung Quốc",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "节日",
+      "pinyin": "jiérì",
+      "vietnamese_meaning": "ngày lễ",
+      "part_of_speech": "danh từ",
+      "source_key": "3:15:节日",
+      "note": null,
+      "order_index": 1,
+      "example": "对。春节是中国最重要的节日。你们国家也过春节吗？\nduì 。 chūn jié shì zhōng guó zuì zhòng yào de jié rì 。 nǐ men guó jiā yě guò chūn jié ma ？\nĐúng, Tết Nguyên đán là ngày lễ quan trọng nhất của Trung Quốc. Nước bạn cũng đón Tết không?"
+    },
+    {
+      "hanzi": "传统",
+      "pinyin": "chuántǒng",
+      "vietnamese_meaning": "truyền thống",
+      "part_of_speech": "danh từ, tính từ",
+      "source_key": "3:15:传统",
+      "note": null,
+      "order_index": 2,
+      "example": "春节是中国的传统节日。\nchūn jié shì zhōng guó de chuán tǒng jié rì 。\nTết Nguyên đán là ngày lễ truyền thống của Trung Quốc."
+    },
+    {
+      "hanzi": "春节",
+      "pinyin": "chūnjié",
+      "vietnamese_meaning": "Tết Nguyên đán",
+      "part_of_speech": "tên ngày lễ",
+      "source_key": "3:15:春节",
+      "note": null,
+      "order_index": 3,
+      "example": "春节时你们会做什么？\nchūn jié shí nǐ men huì zuò shén me ？\nNgày Tết các bạn làm gì?"
+    },
+    {
+      "hanzi": "元旦节",
+      "pinyin": "yuándànjié",
+      "vietnamese_meaning": "Tết Dương lịch",
+      "part_of_speech": "tên ngày lễ",
+      "source_key": "3:15:元旦节",
+      "note": null,
+      "order_index": 4,
+      "example": "元旦节的时候，我们一起吃饭。\nyuán dàn jié de shí hòu ， wǒ men yì qǐ chī fàn 。\nVào Tết Dương lịch, chúng tôi cùng ăn cơm."
+    },
+    {
+      "hanzi": "国庆节",
+      "pinyin": "guóqìngjié",
+      "vietnamese_meaning": "Quốc khánh",
+      "part_of_speech": "tên ngày lễ",
+      "source_key": "3:15:国庆节",
+      "note": null,
+      "order_index": 5,
+      "example": "国庆节的时候，你有什么安排？\nguó qìng jié de shí hòu ， nǐ yǒu shén me ān pái ？\nVào Quốc khánh, bạn có kế hoạch gì?"
+    },
+    {
+      "hanzi": "教师节",
+      "pinyin": "jiàoshījié",
+      "vietnamese_meaning": "Ngày Nhà giáo",
+      "part_of_speech": "tên ngày lễ",
+      "source_key": "3:15:教师节",
+      "note": null,
+      "order_index": 6,
+      "example": "教师节的时候，我们给老师写了一封信。\njiào shī jié de shí hòu ， wǒ men gěi lǎo shī xiě le yī fēng xìn 。\nVào Ngày Nhà giáo, chúng tôi viết một bức thư cho thầy cô."
+    },
+    {
+      "hanzi": "年货",
+      "pinyin": "niánhuò",
+      "vietnamese_meaning": "đồ sắm Tết",
+      "part_of_speech": "danh từ",
+      "source_key": "3:15:年货",
+      "note": null,
+      "order_index": 7,
+      "example": "春节前大家都去买年货、打扫房子，还包了很多饺子。\nchūn jié qián dà jiā dōu qù mǎi nián huò 、 dǎ sǎo fáng zi ， hái bāo le hěn duō jiǎo zi 。\nTrước Tết mọi người mua sắm đồ Tết, dọn nhà, còn làm nhiều sủi cảo."
+    },
+    {
+      "hanzi": "包",
+      "pinyin": "bāo",
+      "vietnamese_meaning": "gói, làm (bánh, sủi cảo)",
+      "part_of_speech": "động từ",
+      "source_key": "3:15:包",
+      "note": "包 ở đây là động từ gói/làm sủi cảo trong 包饺子; khác 包 là túi hoặc lượng từ cho gói đồ. Nhắc lại HSK 2 bài 2: 包 (bāo) — túi, cặp; gói. Trong ngữ cảnh bài này: gói, làm (bánh, sủi cảo).",
+      "order_index": 8,
+      "example": "这是给你们的红包，新年快乐！\nzhè shì gěi nǐ men de hóng bāo ， xīn nián kuài lè ！\nLì xì cho các cháu đây, chúc mừng năm mới!"
+    },
+    {
+      "hanzi": "春晚",
+      "pinyin": "chūnwǎn",
+      "vietnamese_meaning": "chương trình văn nghệ đêm giao thừa",
+      "part_of_speech": "danh từ",
+      "source_key": "3:15:春晚",
+      "note": null,
+      "order_index": 9,
+      "example": "到时候我们可以一边看春晚一边聊天儿。\ndào shí hòu wǒ men kě yǐ yī biān kàn chūn wǎn yī biān liáo tiān ér 。\nLúc ấy mình vừa xem văn nghệ giao thừa vừa trò chuyện."
+    },
+    {
+      "hanzi": "联欢会",
+      "pinyin": "liánhuānhuì",
+      "vietnamese_meaning": "buổi liên hoan văn nghệ",
+      "part_of_speech": "danh từ",
+      "source_key": "3:15:联欢会",
+      "note": null,
+      "order_index": 10,
+      "example": "我们一起参加新年联欢会。\nwǒ men yì qǐ cān jiā xīn nián lián huān huì 。\nChúng tôi cùng tham gia buổi liên hoan văn nghệ năm mới."
+    },
+    {
+      "hanzi": "阿姨",
+      "pinyin": "āyí",
+      "vietnamese_meaning": "cô, dì; cách gọi phụ nữ thuộc thế hệ của mẹ",
+      "part_of_speech": "danh từ",
+      "source_key": "3:15:阿姨",
+      "note": null,
+      "order_index": 11,
+      "example": "谢谢叔叔阿姨！\nxiè xiè shū shū ā yí ！\nCảm ơn cô chú!"
+    },
+    {
+      "hanzi": "叔叔",
+      "pinyin": "shūshū",
+      "vietnamese_meaning": "chú, bác; cách gọi nam giới thuộc thế hệ của bố",
+      "part_of_speech": "danh từ",
+      "source_key": "3:15:叔叔",
+      "note": null,
+      "order_index": 12,
+      "example": "谢谢叔叔！\nxiè xiè shū shū ！\nCảm ơn chú!"
+    },
+    {
+      "hanzi": "见面",
+      "pinyin": "jiànmiàn",
+      "vietnamese_meaning": "gặp mặt",
+      "part_of_speech": "động từ",
+      "source_key": "3:15:见面",
+      "note": null,
+      "order_index": 13,
+      "example": "总听小李说起你，今天终于有机会见面了。\nzǒng tīng xiǎo lǐ shuō qǐ nǐ ， jīn tiān zhōng yú yǒu jī huì jiàn miàn le 。\nCô thường nghe Tiểu Lý kể về cháu, hôm nay cuối cùng có dịp gặp."
+    },
+    {
+      "hanzi": "红包",
+      "pinyin": "hóngbāo",
+      "vietnamese_meaning": "lì xì, phong bao đỏ",
+      "part_of_speech": "danh từ",
+      "source_key": "3:15:红包",
+      "note": null,
+      "order_index": 14,
+      "example": "这是给你们的红包，新年快乐！\nzhè shì gěi nǐ men de hóng bāo ， xīn nián kuài lè ！\nLì xì cho các cháu đây, chúc mừng năm mới!"
+    },
+    {
+      "hanzi": "收下",
+      "pinyin": "shōuxià",
+      "vietnamese_meaning": "nhận, nhận lấy",
+      "part_of_speech": "động từ",
+      "source_key": "3:15:收下",
+      "note": null,
+      "order_index": 15,
+      "example": "叔叔阿姨，我们带了一点儿新年礼物，请您收下。\nshū shū ā yí ， wǒ men dài le yì diǎn ér xīn nián lǐ wù ， qǐng nín shōu xià 。\nCô chú ơi, chúng cháu mang chút quà năm mới, xin cô chú nhận."
+    },
+    {
+      "hanzi": "刚刚",
+      "pinyin": "gānggāng",
+      "vietnamese_meaning": "vừa mới",
+      "part_of_speech": "phó từ",
+      "source_key": "3:15:刚刚",
+      "note": "刚刚 là phó từ vừa mới, thường trước động từ. 刚才 là thời điểm vừa nãy và có thể đứng đầu câu.",
+      "order_index": 16,
+      "example": "我刚刚回到家。\nwǒ gāng gāng huí dào jiā 。\nTôi vừa mới về đến nhà."
+    },
+    {
+      "hanzi": "发生",
+      "pinyin": "fāshēng",
+      "vietnamese_meaning": "xảy ra",
+      "part_of_speech": "động từ",
+      "source_key": "3:15:发生",
+      "note": null,
+      "order_index": 17,
+      "example": "刚才发生了什么事？\ngāng cái fā shēng le shén me shì ？\nVừa nãy đã xảy ra chuyện gì?"
+    },
+    {
+      "hanzi": "过去",
+      "pinyin": "guòqù",
+      "vietnamese_meaning": "quá khứ, trước đây",
+      "part_of_speech": "danh từ chỉ thời gian",
+      "source_key": "3:15:过去",
+      "note": null,
+      "order_index": 18,
+      "example": "小陈在一个小城市出生。过去他的生活很简单，但他一直有一个梦想，就是去大城市发展。小陈懂得“只有坚持努力，才能完成自己的目标”。所以，从三年前起，他每天学习新知识，练习工作技能。\nxiǎo chén zài yí gè xiǎo chéng shì chū shēng 。 guò qù tā de shēng huó hěn jiǎn dān ， dàn tā yì zhí yǒu yí gè mèng xiǎng ， jiù shì qù dà chéng shì fā zhǎn 。 xiǎo chén dǒng de “ zhǐ yǒu jiān chí nǔ lì ， cái néng wán chéng zì jǐ de mù biāo ” 。 suǒ yǐ ， cóng sān nián qián qǐ ， tā měi tiān xué xí xīn zhī shí ， liàn xí gōng zuò jì néng 。\nTiểu Trần sinh ở một thành phố nhỏ. Trước đây cuộc sống của anh đơn giản nhưng anh luôn có ước mơ đến thành phố lớn phát triển. Anh hiểu “chỉ khi kiên trì nỗ lực mới hoàn thành được mục tiêu”, nên từ ba năm trước, ngày nào anh cũng học kiến thức mới và luyện kỹ năng làm việc."
+    },
+    {
+      "hanzi": "懂得",
+      "pinyin": "dǒngde",
+      "vietnamese_meaning": "hiểu, biết rõ",
+      "part_of_speech": "động từ",
+      "source_key": "3:15:懂得",
+      "note": null,
+      "order_index": 19,
+      "example": "小陈在一个小城市出生。过去他的生活很简单，但他一直有一个梦想，就是去大城市发展。小陈懂得“只有坚持努力，才能完成自己的目标”。所以，从三年前起，他每天学习新知识，练习工作技能。\nxiǎo chén zài yí gè xiǎo chéng shì chū shēng 。 guò qù tā de shēng huó hěn jiǎn dān ， dàn tā yì zhí yǒu yí gè mèng xiǎng ， jiù shì qù dà chéng shì fā zhǎn 。 xiǎo chén dǒng de “ zhǐ yǒu jiān chí nǔ lì ， cái néng wán chéng zì jǐ de mù biāo ” 。 suǒ yǐ ， cóng sān nián qián qǐ ， tā měi tiān xué xí xīn zhī shí ， liàn xí gōng zuò jì néng 。\nTiểu Trần sinh ở một thành phố nhỏ. Trước đây cuộc sống của anh đơn giản nhưng anh luôn có ước mơ đến thành phố lớn phát triển. Anh hiểu “chỉ khi kiên trì nỗ lực mới hoàn thành được mục tiêu”, nên từ ba năm trước, ngày nào anh cũng học kiến thức mới và luyện kỹ năng làm việc."
+    },
+    {
+      "hanzi": "目标",
+      "pinyin": "mùbiāo",
+      "vietnamese_meaning": "mục tiêu",
+      "part_of_speech": "danh từ",
+      "source_key": "3:15:目标",
+      "note": null,
+      "order_index": 20,
+      "example": "小陈在一个小城市出生。过去他的生活很简单，但他一直有一个梦想，就是去大城市发展。小陈懂得“只有坚持努力，才能完成自己的目标”。所以，从三年前起，他每天学习新知识，练习工作技能。\nxiǎo chén zài yí gè xiǎo chéng shì chū shēng 。 guò qù tā de shēng huó hěn jiǎn dān ， dàn tā yì zhí yǒu yí gè mèng xiǎng ， jiù shì qù dà chéng shì fā zhǎn 。 xiǎo chén dǒng de “ zhǐ yǒu jiān chí nǔ lì ， cái néng wán chéng zì jǐ de mù biāo ” 。 suǒ yǐ ， cóng sān nián qián qǐ ， tā měi tiān xué xí xīn zhī shí ， liàn xí gōng zuò jì néng 。\nTiểu Trần sinh ở một thành phố nhỏ. Trước đây cuộc sống của anh đơn giản nhưng anh luôn có ước mơ đến thành phố lớn phát triển. Anh hiểu “chỉ khi kiên trì nỗ lực mới hoàn thành được mục tiêu”, nên từ ba năm trước, ngày nào anh cũng học kiến thức mới và luyện kỹ năng làm việc."
+    },
+    {
+      "hanzi": "知识",
+      "pinyin": "zhīshí",
+      "vietnamese_meaning": "kiến thức",
+      "part_of_speech": "danh từ",
+      "source_key": "3:15:知识",
+      "note": null,
+      "order_index": 21,
+      "example": "小陈在一个小城市出生。过去他的生活很简单，但他一直有一个梦想，就是去大城市发展。小陈懂得“只有坚持努力，才能完成自己的目标”。所以，从三年前起，他每天学习新知识，练习工作技能。\nxiǎo chén zài yí gè xiǎo chéng shì chū shēng 。 guò qù tā de shēng huó hěn jiǎn dān ， dàn tā yì zhí yǒu yí gè mèng xiǎng ， jiù shì qù dà chéng shì fā zhǎn 。 xiǎo chén dǒng de “ zhǐ yǒu jiān chí nǔ lì ， cái néng wán chéng zì jǐ de mù biāo ” 。 suǒ yǐ ， cóng sān nián qián qǐ ， tā měi tiān xué xí xīn zhī shí ， liàn xí gōng zuò jì néng 。\nTiểu Trần sinh ở một thành phố nhỏ. Trước đây cuộc sống của anh đơn giản nhưng anh luôn có ước mơ đến thành phố lớn phát triển. Anh hiểu “chỉ khi kiên trì nỗ lực mới hoàn thành được mục tiêu”, nên từ ba năm trước, ngày nào anh cũng học kiến thức mới và luyện kỹ năng làm việc."
+    },
+    {
+      "hanzi": "辛苦",
+      "pinyin": "xīnkǔ",
+      "vietnamese_meaning": "vất vả",
+      "part_of_speech": "tính từ",
+      "source_key": "3:15:辛苦",
+      "note": null,
+      "order_index": 22,
+      "example": "刚开始的时候很辛苦，但他没有放弃。\ngāng kāi shǐ de shí hòu hěn xīn kǔ ， dàn tā méi yǒu fàng qì 。\nBan đầu rất vất vả nhưng anh không từ bỏ."
+    },
+    {
+      "hanzi": "放弃",
+      "pinyin": "fàngqì",
+      "vietnamese_meaning": "từ bỏ",
+      "part_of_speech": "động từ",
+      "source_key": "3:15:放弃",
+      "note": null,
+      "order_index": 23,
+      "example": "刚开始的时候很辛苦，但他没有放弃。\ngāng kāi shǐ de shí hòu hěn xīn kǔ ， dàn tā méi yǒu fàng qì 。\nBan đầu rất vất vả nhưng anh không từ bỏ."
+    },
+    {
+      "hanzi": "强",
+      "pinyin": "qiáng",
+      "vietnamese_meaning": "mạnh, giỏi",
+      "part_of_speech": "tính từ",
+      "source_key": "3:15:强",
+      "note": null,
+      "order_index": 24,
+      "example": "后来，他的能力越来越强。\nhòu lái ， tā de néng lì yuè lái yuè qiáng 。\nVề sau năng lực ngày càng tốt hơn."
+    },
+    {
+      "hanzi": "完成",
+      "pinyin": "wánchéng",
+      "vietnamese_meaning": "hoàn thành",
+      "part_of_speech": "động từ",
+      "source_key": "3:15:完成",
+      "note": null,
+      "order_index": 25,
+      "example": "小陈在一个小城市出生。过去他的生活很简单，但他一直有一个梦想，就是去大城市发展。小陈懂得“只有坚持努力，才能完成自己的目标”。所以，从三年前起，他每天学习新知识，练习工作技能。\nxiǎo chén zài yí gè xiǎo chéng shì chū shēng 。 guò qù tā de shēng huó hěn jiǎn dān ， dàn tā yì zhí yǒu yí gè mèng xiǎng ， jiù shì qù dà chéng shì fā zhǎn 。 xiǎo chén dǒng de “ zhǐ yǒu jiān chí nǔ lì ， cái néng wán chéng zì jǐ de mù biāo ” 。 suǒ yǐ ， cóng sān nián qián qǐ ， tā měi tiān xué xí xīn zhī shí ， liàn xí gōng zuò jì néng 。\nTiểu Trần sinh ở một thành phố nhỏ. Trước đây cuộc sống của anh đơn giản nhưng anh luôn có ước mơ đến thành phố lớn phát triển. Anh hiểu “chỉ khi kiên trì nỗ lực mới hoàn thành được mục tiêu”, nên từ ba năm trước, ngày nào anh cũng học kiến thức mới và luyện kỹ năng làm việc."
+    },
+    {
+      "hanzi": "从……起",
+      "pinyin": "cóng … qǐ",
+      "vietnamese_meaning": "từ…trở đi, bắt đầu từ…",
+      "part_of_speech": "cấu trúc giới từ",
+      "source_key": "3:15:从……起",
+      "note": "Đặt mốc thời gian giữa 从 và 起: 从三年前起. Không đọc các dấu chấm như một phần của lời nói.",
+      "order_index": 26,
+      "example": "从三年前起，他每天都学习新知识。\ncóng sān nián qián qǐ ， tā měi tiān dōu xué xí xīn zhī shí 。\nTừ ba năm trước, ngày nào anh ấy cũng học kiến thức mới."
+    }
+  ],
+  "grammar": [
+    {
+      "name": "Số lượng ước chừng",
+      "structure": "大概/大约 + số lượng / số liền kề / số + 几",
+      "explanation": "Nêu số lượng gần đúng hoặc không xác định chính xác.",
+      "usage": "三四天 là ba bốn ngày; 十几天 là hơn mười, dưới hai mươi ngày. Không ghép tùy tiện những số không liền kề.",
+      "example": "我们大概等了十分钟。\nwǒ men dà gài děng le shí fēn zhōng 。\nChúng tôi đợi khoảng mười phút.",
+      "note": "三四天 là ba bốn ngày; 十几天 là hơn mười, dưới hai mươi ngày. Không ghép tùy tiện những số không liền kề.",
+      "order_index": 1
+    },
+    {
+      "name": "Phân biệt 刚才 và 刚刚",
+      "structure": "刚才 + mệnh đề / chủ ngữ + 刚刚 + động từ",
+      "explanation": "刚才 là thời điểm vừa nãy; 刚刚 nhấn mạnh hành động vừa mới xảy ra.",
+      "usage": "刚才 có thể làm thành phần thời gian; 刚刚 thường đặt trước động từ như một phó từ.",
+      "example": "刚才你去哪儿了？我刚刚回来。\ngāng cái nǐ qù nǎ ér le ？ wǒ gāng gāng huí lái 。\nVừa nãy bạn đi đâu? Tôi vừa mới về.",
+      "note": "刚才 có thể làm thành phần thời gian; 刚刚 thường đặt trước động từ như một phó từ.",
+      "order_index": 2
+    },
+    {
+      "name": "Điều kiện đủ 只要…就…",
+      "structure": "只要 + điều kiện，就 + kết quả",
+      "explanation": "Nêu chỉ cần điều kiện được đáp ứng thì có thể có kết quả.",
+      "usage": "Phân biệt 只有…才… nêu điều kiện cần; không hiểu hai cấu trúc là hoàn toàn giống nhau.",
+      "example": "只要好好准备，就没问题。\nzhǐ yào hǎo hǎo zhǔn bèi ， jiù méi wèn tí 。\nChỉ cần chuẩn bị kỹ thì không có vấn đề gì.",
+      "note": "Phân biệt 只有…才… nêu điều kiện cần; không hiểu hai cấu trúc là hoàn toàn giống nhau.",
+      "order_index": 3
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Tìm hiểu ngày Tết",
+      "content": "小陈：小李，中国的春节快到了，是吧？\n小李：对。春节是中国最重要的节日。你们国家也过春节吗？\n小陈：是的，但我很想了解中国的春节。中国人大概放多少天假？\n小李：大概七天到十五天，放几天假要看每年的安排。\n小陈：这么多啊！春节时你们会做什么？\n小李：春节前大家都去买年货、打扫房子，还包了很多饺子。\n安妮：听起来很有意思。\n小李：你要不要来我家过节？到时候我们可以一边看春晚一边聊天儿。\n安妮：好啊，谢谢！",
+      "pinyin": "xiǎo chén ： xiǎo lǐ ， zhōng guó de chūn jié kuài dào le ， shì ba ？\nxiǎo lǐ ： duì 。 chūn jié shì zhōng guó zuì zhòng yào de jié rì 。 nǐ men guó jiā yě guò chūn jié ma ？\nxiǎo chén ： shì de ， dàn wǒ hěn xiǎng liǎo jiě zhōng guó de chūn jié 。 zhōng guó rén dà gài fàng duō shǎo tiān jiǎ ？\nxiǎo lǐ ： dà gài qī tiān dào shí wǔ tiān ， fàng jǐ tiān jiǎ yào kàn měi nián de ān pái 。\nxiǎo chén ： zhè me duō a ！ chūn jié shí nǐ men huì zuò shén me ？\nxiǎo lǐ ： chūn jié qián dà jiā dōu qù mǎi nián huò 、 dǎ sǎo fáng zi ， hái bāo le hěn duō jiǎo zi 。\nān nī ： tīng qǐ lái hěn yǒu yì si 。\nxiǎo lǐ ： nǐ yào bù yào lái wǒ jiā guò jié ？ dào shí hòu wǒ men kě yǐ yī biān kàn chūn wǎn yī biān liáo tiān ér 。\nān nī ： hǎo a ， xiè xiè ！",
+      "vietnamese_translation": "Tiểu Trần: Tiểu Lý, Tết Nguyên đán Trung Quốc sắp đến rồi nhỉ?\nTiểu Lý: Đúng, Tết Nguyên đán là ngày lễ quan trọng nhất của Trung Quốc. Nước bạn cũng đón Tết không?\nTiểu Trần: Có, nhưng mình rất muốn tìm hiểu Tết ở Trung Quốc. Mọi người nghỉ khoảng bao nhiêu ngày?\nTiểu Lý: Khoảng bảy đến mười lăm ngày; nghỉ mấy ngày còn tùy sắp xếp từng năm.\nTiểu Trần: Nhiều vậy! Ngày Tết các bạn làm gì?\nTiểu Lý: Trước Tết mọi người mua sắm đồ Tết, dọn nhà, còn làm nhiều sủi cảo.\nAnnie: Nghe thú vị thật.\nTiểu Lý: Bạn có muốn đến nhà mình đón Tết không? Lúc ấy mình vừa xem văn nghệ giao thừa vừa trò chuyện.\nAnnie: Được, cảm ơn!",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 15, bài khóa 1."
+    },
+    {
+      "order_index": 2,
+      "title": "Đến thăm nhà và chúc Tết",
+      "content": "小陈：张阿姨好！王叔叔好！新年快乐！\n张阿姨：小陈，你好！总听小李说起你，今天终于有机会见面了。\n王叔叔：是啊，快进来吧，别客气。这是给你们的红包，新年快乐！\n小李、小陈：谢谢叔叔、阿姨！\n张阿姨：快坐吧。小李，刚才我们还在说到你父母，他们最近怎么样了？\n小李：都很好。叔叔阿姨，我们带了一点儿新年礼物，请您收下。\n王叔叔：你们太客气了。快来尝一尝我们过年包的饺子。\n小陈：谢谢叔叔！刚才在路上，小李说阿姨包的饺子又好吃又漂亮。\n张阿姨：是吗？那下次来，我们一起包，如果不会包，阿姨可以教你们。\n小李：好，那我们就不客气了！谢谢叔叔阿姨！",
+      "pinyin": "xiǎo chén ： zhāng ā yí hǎo ！ wáng shū shū hǎo ！ xīn nián kuài lè ！\nzhāng ā yí ： xiǎo chén ， nǐ hǎo ！ zǒng tīng xiǎo lǐ shuō qǐ nǐ ， jīn tiān zhōng yú yǒu jī huì jiàn miàn le 。\nwáng shū shū ： shì a ， kuài jìn lái ba ， bié kè qì 。 zhè shì gěi nǐ men de hóng bāo ， xīn nián kuài lè ！\nxiǎo lǐ 、 xiǎo chén ： xiè xiè shū shū 、 ā yí ！\nzhāng ā yí ： kuài zuò ba 。 xiǎo lǐ ， gāng cái wǒ men hái zài shuō dào nǐ fù mǔ ， tā men zuì jìn zěn me yàng le ？\nxiǎo lǐ ： dōu hěn hǎo 。 shū shū ā yí ， wǒ men dài le yì diǎn ér xīn nián lǐ wù ， qǐng nín shōu xià 。\nwáng shū shū ： nǐ men tài kè qì le 。 kuài lái cháng yī cháng wǒ men guò nián bāo de jiǎo zi 。\nxiǎo chén ： xiè xiè shū shū ！ gāng cái zài lù shàng ， xiǎo lǐ shuō ā yí bāo de jiǎo zi yòu hǎo chī yòu piào liàng 。\nzhāng ā yí ： shì ma ？ nà xià cì lái ， wǒ men yì qǐ bāo ， rú guǒ bú huì bāo ， ā yí kě yǐ jiāo nǐ men 。\nxiǎo lǐ ： hǎo ， nà wǒ men jiù bú kè qì le ！ xiè xiè shū shū ā yí ！",
+      "vietnamese_translation": "Tiểu Trần: Cháu chào cô Trương, chú Vương! Chúc mừng năm mới!\nCô Trương: Tiểu Trần, chào cháu! Cô thường nghe Tiểu Lý kể về cháu, hôm nay cuối cùng có dịp gặp.\nChú Vương: Đúng, vào đi, đừng khách sáo. Lì xì cho các cháu đây, chúc mừng năm mới!\nTiểu Lý, Tiểu Trần: Chúng cháu cảm ơn cô chú!\nCô Trương: Ngồi đi. Tiểu Lý, vừa nãy cô chú còn nhắc đến bố mẹ cháu, gần đây họ thế nào?\nTiểu Lý: Đều khỏe. Cô chú ơi, chúng cháu mang chút quà năm mới, xin cô chú nhận.\nChú Vương: Các cháu khách sáo quá. Lại đây nếm sủi cảo cô chú làm đón Tết.\nTiểu Trần: Cảm ơn chú! Vừa nãy trên đường Tiểu Lý nói sủi cảo cô làm vừa ngon vừa đẹp.\nCô Trương: Vậy à? Lần sau đến mình cùng làm, nếu chưa biết thì cô dạy.\nTiểu Lý: Vâng, vậy chúng cháu không khách sáo nữa. Cảm ơn cô chú!",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 15, bài khóa 2."
+    },
+    {
+      "order_index": 3,
+      "title": "Cùng chuẩn bị kỳ thi",
+      "content": "小王：这个学期快结束了，我们不久就要毕业了。\n小张：是啊，时间过得真快。你还记得上个月的那场考试吗？\n小王：当然记得。那次没考好，我有点担心。\n小张：别想太多了。只要这次好好准备，就没问题。\n小王：你说得对。那我们一起加油吧！\n小张：好！明天我们可以去图书馆复习语法，做做练习。你觉得怎么样？\n小王：可以啊。我还想看看以前学过的内容。\n小张：好主意。我的笔记也可以借给你看。\n小王：太好了，谢谢你！\n小张：别客气。考完试我们就能轻松了。",
+      "pinyin": "xiǎo wáng ： zhè ge xué qī kuài jié shù le ， wǒ men bù jiǔ jiù yào bì yè le 。\nxiǎo zhāng ： shì a ， shí jiān guò de zhēn kuài 。 nǐ hái jì de shàng gè yuè de nà chǎng kǎo shì ma ？\nxiǎo wáng ： dāng rán jì de 。 nà cì méi kǎo hǎo ， wǒ yǒu diǎn dān xīn 。\nxiǎo zhāng ： bié xiǎng tài duō le 。 zhǐ yào zhè cì hǎo hǎo zhǔn bèi ， jiù méi wèn tí 。\nxiǎo wáng ： nǐ shuō de duì 。 nà wǒ men yì qǐ jiā yóu ba ！\nxiǎo zhāng ： hǎo ！ míng tiān wǒ men kě yǐ qù tú shū guǎn fù xí yǔ fǎ ， zuò zuò liàn xí 。 nǐ jué de zěn me yàng ？\nxiǎo wáng ： kě yǐ a 。 wǒ hái xiǎng kàn kàn yǐ qián xué guò de nèi róng 。\nxiǎo zhāng ： hǎo zhǔ yì 。 wǒ de bǐ jì yě kě yǐ jiè gěi nǐ kàn 。\nxiǎo wáng ： tài hǎo le ， xiè xiè nǐ ！\nxiǎo zhāng ： bié kè qì 。 kǎo wán shì wǒ men jiù néng qīng sōng le 。",
+      "vietnamese_translation": "Tiểu Vương: Học kỳ sắp kết thúc, chẳng bao lâu mình tốt nghiệp rồi.\nTiểu Trương: Đúng, thời gian trôi nhanh thật. Bạn còn nhớ kỳ thi tháng trước không?\nTiểu Vương: Tất nhiên. Lần đó thi không tốt, mình hơi lo.\nTiểu Trương: Đừng nghĩ nhiều. Chỉ cần lần này chuẩn bị kỹ là không có vấn đề.\nTiểu Vương: Bạn nói đúng, mình cùng cố gắng nhé!\nTiểu Trương: Được! Mai đến thư viện ôn ngữ pháp và làm bài tập nhé, bạn thấy sao?\nTiểu Vương: Được. Mình còn muốn xem lại kiến thức đã học.\nTiểu Trương: Ý hay, bạn có thể mượn vở ghi của mình.\nTiểu Vương: Tốt quá, cảm ơn!\nTiểu Trương: Không có gì, thi xong mình sẽ nhẹ nhõm.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 15, bài khóa 3."
+    },
+    {
+      "order_index": 4,
+      "title": "Kiên trì thực hiện ước mơ",
+      "content": "小陈在一个小城市出生。过去他的生活很简单，但他一直有一个梦想，就是去大城市发展。小陈懂得“只有坚持努力，才能完成自己的目标”。所以，从三年前起，他每天学习新知识，练习工作技能。\n刚开始的时候很辛苦，但他没有放弃。他坚持每天早起，晚上也很晚才睡觉。后来，他的能力越来越强。现在，小陈已经在大城市找到了一份好工作。他相信，只要继续努力，未来一定会更好。",
+      "pinyin": "xiǎo chén zài yí gè xiǎo chéng shì chū shēng 。 guò qù tā de shēng huó hěn jiǎn dān ， dàn tā yì zhí yǒu yí gè mèng xiǎng ， jiù shì qù dà chéng shì fā zhǎn 。 xiǎo chén dǒng de “ zhǐ yǒu jiān chí nǔ lì ， cái néng wán chéng zì jǐ de mù biāo ” 。 suǒ yǐ ， cóng sān nián qián qǐ ， tā měi tiān xué xí xīn zhī shí ， liàn xí gōng zuò jì néng 。\ngāng kāi shǐ de shí hòu hěn xīn kǔ ， dàn tā méi yǒu fàng qì 。 tā jiān chí měi tiān zǎo qǐ ， wǎn shàng yě hěn wǎn cái shuì jiào 。 hòu lái ， tā de néng lì yuè lái yuè qiáng 。 xiàn zài ， xiǎo chén yǐ jīng zài dà chéng shì zhǎo dào le yī fèn hǎo gōng zuò 。 tā xiāng xìn ， zhǐ yào jì xù nǔ lì ， wèi lái yí dìng huì gèng hǎo 。",
+      "vietnamese_translation": "Tiểu Trần sinh ở một thành phố nhỏ. Trước đây cuộc sống của anh đơn giản nhưng anh luôn có ước mơ đến thành phố lớn phát triển. Anh hiểu “chỉ khi kiên trì nỗ lực mới hoàn thành được mục tiêu”, nên từ ba năm trước, ngày nào anh cũng học kiến thức mới và luyện kỹ năng làm việc.\nBan đầu rất vất vả nhưng anh không từ bỏ. Anh kiên trì dậy sớm mỗi ngày, tối cũng ngủ rất muộn. Về sau năng lực ngày càng tốt hơn. Bây giờ anh đã tìm được công việc tốt ở thành phố lớn. Anh tin chỉ cần tiếp tục cố gắng, tương lai nhất định tốt đẹp hơn.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 15, bài khóa 4."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 3 · Bài 15 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp của bài này và các bài trước; đạt từ 80%, được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "source_documents": {
+    "vocabulary": "DOCX",
+    "theory": "DOCX"
+  },
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 1).",
+      "options": [
+        {
+          "option_text": "cô, dì; cách gọi phụ nữ thuộc thế hệ của mẹ",
+          "is_correct": true
+        },
+        {
+          "option_text": "thuận lợi, suôn sẻ",
+          "is_correct": false
+        },
+        {
+          "option_text": "mùa xuân",
+          "is_correct": false
+        },
+        {
+          "option_text": "thể dục, thể thao",
+          "is_correct": false
+        }
+      ],
+      "rubric": "阿姨 (āyí) — cô, dì; cách gọi phụ nữ thuộc thế hệ của mẹ. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "阿姨"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 15
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “足球” (zúqiú) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "năm sau",
+          "is_correct": false
+        },
+        {
+          "option_text": "giống, giống như",
+          "is_correct": false
+        },
+        {
+          "option_text": "bóng đá",
+          "is_correct": true
+        },
+        {
+          "option_text": "màu đỏ",
+          "is_correct": false
+        }
+      ],
+      "rubric": "足球 (zúqiú) — bóng đá. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 7
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “hóngbāo” — lì xì, phong bao đỏ.",
+      "options": [
+        {
+          "option_text": "陪",
+          "is_correct": false
+        },
+        {
+          "option_text": "朋友",
+          "is_correct": false
+        },
+        {
+          "option_text": "忘记",
+          "is_correct": false
+        },
+        {
+          "option_text": "红包",
+          "is_correct": true
+        }
+      ],
+      "rubric": "红包 (hóngbāo) — lì xì, phong bao đỏ. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 15
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 4).",
+      "options": [
+        {
+          "option_text": "tưởng rằng (thường khác thực tế)",
+          "is_correct": false
+        },
+        {
+          "option_text": "thanh toán",
+          "is_correct": false
+        },
+        {
+          "option_text": "Quốc khánh",
+          "is_correct": false
+        },
+        {
+          "option_text": "chú, bác; cách gọi nam giới thuộc thế hệ của bố",
+          "is_correct": true
+        }
+      ],
+      "rubric": "叔叔 (shūshū) — chú, bác; cách gọi nam giới thuộc thế hệ của bố. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "叔叔"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 15
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “而且” (érqiě) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "mà còn, hơn nữa",
+          "is_correct": true
+        },
+        {
+          "option_text": "vì, cho (đối tượng được cổ vũ, phục vụ)",
+          "is_correct": false
+        },
+        {
+          "option_text": "cẩn thận",
+          "is_correct": false
+        },
+        {
+          "option_text": "trải nghiệm",
+          "is_correct": false
+        }
+      ],
+      "rubric": "而且 (érqiě) — mà còn, hơn nữa. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 6
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “cóng … qǐ” — từ…trở đi, bắt đầu từ….",
+      "options": [
+        {
+          "option_text": "车",
+          "is_correct": false
+        },
+        {
+          "option_text": "烤鸭",
+          "is_correct": false
+        },
+        {
+          "option_text": "从……起",
+          "is_correct": true
+        },
+        {
+          "option_text": "网",
+          "is_correct": false
+        }
+      ],
+      "rubric": "从……起 (cóng … qǐ) — từ…trở đi, bắt đầu từ…. Đặt mốc thời gian giữa 从 và 起: 从三年前起. Không đọc các dấu chấm như một phần của lời nói.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 15
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 7).",
+      "options": [
+        {
+          "option_text": "rõ ràng là",
+          "is_correct": false
+        },
+        {
+          "option_text": "du học",
+          "is_correct": false
+        },
+        {
+          "option_text": "về, liên quan đến (chủ đề)",
+          "is_correct": false
+        },
+        {
+          "option_text": "quá khứ, trước đây",
+          "is_correct": true
+        }
+      ],
+      "rubric": "过去 (guòqù) — quá khứ, trước đây. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "过去"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 15
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “包” (bāo) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "như vậy, đến thế (chỉ mức độ)",
+          "is_correct": false
+        },
+        {
+          "option_text": "cảm ơn, biết ơn",
+          "is_correct": false
+        },
+        {
+          "option_text": "gói, làm (bánh, sủi cảo)",
+          "is_correct": true
+        },
+        {
+          "option_text": "rạp chiếu phim",
+          "is_correct": false
+        }
+      ],
+      "rubric": "包 (bāo) — gói, làm (bánh, sủi cảo). 包 ở đây là động từ gói/làm sủi cảo trong 包饺子; khác 包 là túi hoặc lượng từ cho gói đồ. Nhắc lại HSK 2 bài 2: 包 (bāo) — túi, cặp; gói. Trong ngữ cảnh bài này: gói, làm (bánh, sủi cảo).",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 15
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “fàngqì” — từ bỏ.",
+      "options": [
+        {
+          "option_text": "有名",
+          "is_correct": false
+        },
+        {
+          "option_text": "成绩",
+          "is_correct": false
+        },
+        {
+          "option_text": "火锅",
+          "is_correct": false
+        },
+        {
+          "option_text": "放弃",
+          "is_correct": true
+        }
+      ],
+      "rubric": "放弃 (fàngqì) — từ bỏ. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 15
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "nỗ lực, cố gắng",
+          "is_correct": false
+        },
+        {
+          "option_text": "Thiên Đàn",
+          "is_correct": false
+        },
+        {
+          "option_text": "luyện, tập",
+          "is_correct": false
+        },
+        {
+          "option_text": "Lưu Minh (tên người)",
+          "is_correct": true
+        }
+      ],
+      "rubric": "刘明 (liú míng) — Lưu Minh (tên người). ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true,
+          "audio_text": "刘明"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “收下” (shōuxià) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "túi, cặp; gói",
+          "is_correct": false
+        },
+        {
+          "option_text": "nhận, nhận lấy",
+          "is_correct": true
+        },
+        {
+          "option_text": "hòm, va-li",
+          "is_correct": false
+        },
+        {
+          "option_text": "của; trợ từ nối quan hệ bổ nghĩa",
+          "is_correct": false
+        }
+      ],
+      "rubric": "收下 (shōuxià) — nhận, nhận lấy. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 15
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “chuántǒng” — truyền thống.",
+      "options": [
+        {
+          "option_text": "晚上",
+          "is_correct": false
+        },
+        {
+          "option_text": "传统",
+          "is_correct": true
+        },
+        {
+          "option_text": "介绍",
+          "is_correct": false
+        },
+        {
+          "option_text": "水",
+          "is_correct": false
+        }
+      ],
+      "rubric": "传统 (chuántǒng) — truyền thống. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 15
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “hiểu, biết rõ” (pinyin: dǒngde).",
+      "reference_answer": "懂得",
+      "rubric": "Đáp án: 懂得 (dǒngde). ",
+      "config": {
+        "accepted_answers": [
+          "懂得"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 15
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “vừa mới” (pinyin: gānggāng).",
+      "reference_answer": "刚刚",
+      "rubric": "Đáp án: 刚刚 (gānggāng). 刚刚 là phó từ vừa mới, thường trước động từ. 刚才 là thời điểm vừa nãy và có thể đứng đầu câu.",
+      "config": {
+        "accepted_answers": [
+          "刚刚"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 15
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “gặp mặt” (pinyin: jiànmiàn).",
+      "reference_answer": "见面",
+      "rubric": "Đáp án: 见面 (jiànmiàn). ",
+      "config": {
+        "accepted_answers": [
+          "见面"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 15
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “buổi liên hoan văn nghệ” (pinyin: liánhuānhuì).",
+      "reference_answer": "联欢会",
+      "rubric": "Đáp án: 联欢会 (liánhuānhuì). ",
+      "config": {
+        "accepted_answers": [
+          "联欢会"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 15
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối các từ với nghĩa đã học (nhóm 1).",
+      "rubric": "叔叔: chú, bác; cách gọi nam giới thuộc thế hệ của bố ; 元旦节: Tết Dương lịch ; 搬: chuyển, dọn, khuân ; 刚刚: vừa mới",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "叔叔"
+          },
+          {
+            "id": "l1",
+            "text": "元旦节"
+          },
+          {
+            "id": "l2",
+            "text": "搬"
+          },
+          {
+            "id": "l3",
+            "text": "刚刚"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r1",
+            "text": "Tết Dương lịch"
+          },
+          {
+            "id": "r0",
+            "text": "chú, bác; cách gọi nam giới thuộc thế hệ của bố"
+          },
+          {
+            "id": "r3",
+            "text": "vừa mới"
+          },
+          {
+            "id": "r2",
+            "text": "chuyển, dọn, khuân"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 15
+        },
+        {
+          "hsk": 3,
+          "lesson": 15
+        },
+        {
+          "hsk": 3,
+          "lesson": 2
+        },
+        {
+          "hsk": 3,
+          "lesson": 15
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối các từ với nghĩa đã học (nhóm 2).",
+      "rubric": "吗: không, à ; 放弃: từ bỏ ; 年货: đồ sắm Tết ; 阿姨: cô, dì; cách gọi phụ nữ thuộc thế hệ của mẹ",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "吗"
+          },
+          {
+            "id": "l1",
+            "text": "放弃"
+          },
+          {
+            "id": "l2",
+            "text": "年货"
+          },
+          {
+            "id": "l3",
+            "text": "阿姨"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r0",
+            "text": "không, à"
+          },
+          {
+            "id": "r1",
+            "text": "từ bỏ"
+          },
+          {
+            "id": "r3",
+            "text": "cô, dì; cách gọi phụ nữ thuộc thế hệ của mẹ"
+          },
+          {
+            "id": "r2",
+            "text": "đồ sắm Tết"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 2
+        },
+        {
+          "hsk": 3,
+          "lesson": 15
+        },
+        {
+          "hsk": 3,
+          "lesson": 15
+        },
+        {
+          "hsk": 3,
+          "lesson": 15
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong 三四天, số lượng được hiểu thế nào?",
+      "options": [
+        {
+          "option_text": "Đúng ba ngày không hơn kém",
+          "is_correct": false
+        },
+        {
+          "option_text": "Ba mươi bốn ngày",
+          "is_correct": false
+        },
+        {
+          "option_text": "Ba nhân bốn ngày",
+          "is_correct": false
+        },
+        {
+          "option_text": "Khoảng ba đến bốn ngày",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Hai số liền kề có thể diễn tả số lượng ước chừng, không đọc như số 34.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 15
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong 我刚刚回来, 刚刚 chủ yếu bổ sung ý nghĩa gì?",
+      "options": [
+        {
+          "option_text": "Người thực hiện hành động",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nơi thực hiện hành động",
+          "is_correct": false
+        },
+        {
+          "option_text": "Hành động sẽ xảy ra năm sau",
+          "is_correct": false
+        },
+        {
+          "option_text": "Hành động vừa mới xảy ra",
+          "is_correct": true
+        }
+      ],
+      "rubric": "刚刚 là phó từ nhấn mạnh hành động vừa mới xảy ra, đặt trước động từ.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 15
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Theo mẫu điều kiện đủ: 只要好好准备，___没问题。",
+      "options": [
+        {
+          "option_text": "就",
+          "is_correct": true
+        },
+        {
+          "option_text": "才",
+          "is_correct": false
+        },
+        {
+          "option_text": "又",
+          "is_correct": false
+        },
+        {
+          "option_text": "还",
+          "is_correct": false
+        }
+      ],
+      "rubric": "只要…就… nêu chỉ cần đáp ứng điều kiện thì có kết quả.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 15
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Số lượng ước chừng”, cách hiểu nào đúng (mục 1)?",
+      "options": [
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nêu số lượng gần đúng hoặc không xác định chính xác.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Nêu số lượng gần đúng hoặc không xác định chính xác. 三四天 là ba bốn ngày; 十几天 là hơn mười, dưới hai mươi ngày. Không ghép tùy tiện những số không liền kề.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 15
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Phân biệt 刚才 và 刚刚”, cách hiểu nào đúng (mục 2)?",
+      "options": [
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        },
+        {
+          "option_text": "刚才 là thời điểm vừa nãy; 刚刚 nhấn mạnh hành động vừa mới xảy ra.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "刚才 là thời điểm vừa nãy; 刚刚 nhấn mạnh hành động vừa mới xảy ra. 刚才 có thể làm thành phần thời gian; 刚刚 thường đặt trước động từ như một phó từ.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 15
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Điều kiện đủ 只要…就…”, cách hiểu nào đúng (mục 3)?",
+      "options": [
+        {
+          "option_text": "Nêu chỉ cần điều kiện được đáp ứng thì có thể có kết quả.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Nêu chỉ cần điều kiện được đáp ứng thì có thể có kết quả. Phân biệt 只有…才… nêu điều kiện cần; không hiểu hai cấu trúc là hoàn toàn giống nhau.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 15
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Chúng tôi đợi khoảng mười phút. (câu 1).",
+      "reference_answer": "我们大概等了十分钟。",
+      "rubric": "Câu đúng: 我们大概等了十分钟。 — Chúng tôi đợi khoảng mười phút. 三四天 là ba bốn ngày; 十几天 là hơn mười, dưới hai mươi ngày. Không ghép tùy tiện những số không liền kề.",
+      "config": {
+        "items": [
+          {
+            "id": "t7",
+            "text": "分钟"
+          },
+          {
+            "id": "t3",
+            "text": "概"
+          },
+          {
+            "id": "t6",
+            "text": "十"
+          },
+          {
+            "id": "t1",
+            "text": "们"
+          },
+          {
+            "id": "t4",
+            "text": "等"
+          },
+          {
+            "id": "t0",
+            "text": "我"
+          },
+          {
+            "id": "t2",
+            "text": "大"
+          },
+          {
+            "id": "t8",
+            "text": "。"
+          },
+          {
+            "id": "t5",
+            "text": "了"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 15
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Vừa nãy bạn đi đâu? Tôi vừa mới về. (câu 2).",
+      "reference_answer": "刚才你去哪儿了？我刚刚回来。",
+      "rubric": "Câu đúng: 刚才你去哪儿了？我刚刚回来。 — Vừa nãy bạn đi đâu? Tôi vừa mới về. 刚才 có thể làm thành phần thời gian; 刚刚 thường đặt trước động từ như một phó từ.",
+      "config": {
+        "items": [
+          {
+            "id": "t7",
+            "text": "刚刚"
+          },
+          {
+            "id": "t9",
+            "text": "。"
+          },
+          {
+            "id": "t5",
+            "text": "？"
+          },
+          {
+            "id": "t4",
+            "text": "了"
+          },
+          {
+            "id": "t2",
+            "text": "去"
+          },
+          {
+            "id": "t1",
+            "text": "你"
+          },
+          {
+            "id": "t3",
+            "text": "哪儿"
+          },
+          {
+            "id": "t8",
+            "text": "回来"
+          },
+          {
+            "id": "t0",
+            "text": "刚才"
+          },
+          {
+            "id": "t6",
+            "text": "我"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 15
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Chỉ cần chuẩn bị kỹ thì không có vấn đề gì. (câu 3).",
+      "reference_answer": "只要好好准备，就没问题。",
+      "rubric": "Câu đúng: 只要好好准备，就没问题。 — Chỉ cần chuẩn bị kỹ thì không có vấn đề gì. Phân biệt 只有…才… nêu điều kiện cần; không hiểu hai cấu trúc là hoàn toàn giống nhau.",
+      "config": {
+        "items": [
+          {
+            "id": "t1",
+            "text": "要"
+          },
+          {
+            "id": "t0",
+            "text": "只"
+          },
+          {
+            "id": "t6",
+            "text": "就"
+          },
+          {
+            "id": "t5",
+            "text": "，"
+          },
+          {
+            "id": "t9",
+            "text": "。"
+          },
+          {
+            "id": "t2",
+            "text": "好"
+          },
+          {
+            "id": "t7",
+            "text": "没"
+          },
+          {
+            "id": "t4",
+            "text": "准备"
+          },
+          {
+            "id": "t3",
+            "text": "好"
+          },
+          {
+            "id": "t8",
+            "text": "问题"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 15
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Tiểu Lý, Tết Nguyên đán Trung Quốc sắp đến rồi nhỉ? (câu 4).",
+      "reference_answer": "小李，中国的春节快到了，是吧？",
+      "rubric": "Câu đúng: 小李，中国的春节快到了，是吧？ — Tiểu Lý, Tết Nguyên đán Trung Quốc sắp đến rồi nhỉ? Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t0",
+            "text": "小"
+          },
+          {
+            "id": "t6",
+            "text": "快"
+          },
+          {
+            "id": "t3",
+            "text": "中国"
+          },
+          {
+            "id": "t5",
+            "text": "春节"
+          },
+          {
+            "id": "t2",
+            "text": "，"
+          },
+          {
+            "id": "t9",
+            "text": "，"
+          },
+          {
+            "id": "t10",
+            "text": "是"
+          },
+          {
+            "id": "t11",
+            "text": "吧"
+          },
+          {
+            "id": "t4",
+            "text": "的"
+          },
+          {
+            "id": "t7",
+            "text": "到"
+          },
+          {
+            "id": "t8",
+            "text": "了"
+          },
+          {
+            "id": "t12",
+            "text": "？"
+          },
+          {
+            "id": "t1",
+            "text": "李"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 15
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Đúng, Tết Nguyên đán là ngày lễ quan trọng nhất của Trung Quốc. Nước bạn cũng đón Tết không? (câu 5).",
+      "reference_answer": "对。春节是中国最重要的节日。你们国家也过春节吗？",
+      "rubric": "Câu đúng: 对。春节是中国最重要的节日。你们国家也过春节吗？ — Đúng, Tết Nguyên đán là ngày lễ quan trọng nhất của Trung Quốc. Nước bạn cũng đón Tết không? Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t12",
+            "text": "国家"
+          },
+          {
+            "id": "t8",
+            "text": "节日"
+          },
+          {
+            "id": "t11",
+            "text": "们"
+          },
+          {
+            "id": "t5",
+            "text": "最"
+          },
+          {
+            "id": "t7",
+            "text": "的"
+          },
+          {
+            "id": "t15",
+            "text": "春节"
+          },
+          {
+            "id": "t9",
+            "text": "。"
+          },
+          {
+            "id": "t2",
+            "text": "春节"
+          },
+          {
+            "id": "t3",
+            "text": "是"
+          },
+          {
+            "id": "t6",
+            "text": "重要"
+          },
+          {
+            "id": "t13",
+            "text": "也"
+          },
+          {
+            "id": "t10",
+            "text": "你"
+          },
+          {
+            "id": "t16",
+            "text": "吗"
+          },
+          {
+            "id": "t14",
+            "text": "过"
+          },
+          {
+            "id": "t1",
+            "text": "。"
+          },
+          {
+            "id": "t17",
+            "text": "？"
+          },
+          {
+            "id": "t4",
+            "text": "中国"
+          },
+          {
+            "id": "t0",
+            "text": "对"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12",
+          "t13",
+          "t14",
+          "t15",
+          "t16",
+          "t17"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 15
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Có, nhưng mình rất muốn tìm hiểu Tết ở Trung Quốc. Mọi người nghỉ khoảng bao nhiêu ngày? (câu 6).",
+      "reference_answer": "是的，但我很想了解中国的春节。中国人大概放多少天假？",
+      "rubric": "Câu đúng: 是的，但我很想了解中国的春节。中国人大概放多少天假？ — Có, nhưng mình rất muốn tìm hiểu Tết ở Trung Quốc. Mọi người nghỉ khoảng bao nhiêu ngày? Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t15",
+            "text": "概"
+          },
+          {
+            "id": "t6",
+            "text": "想"
+          },
+          {
+            "id": "t16",
+            "text": "放"
+          },
+          {
+            "id": "t0",
+            "text": "是"
+          },
+          {
+            "id": "t14",
+            "text": "大"
+          },
+          {
+            "id": "t19",
+            "text": "假"
+          },
+          {
+            "id": "t18",
+            "text": "天"
+          },
+          {
+            "id": "t17",
+            "text": "多少"
+          },
+          {
+            "id": "t1",
+            "text": "的"
+          },
+          {
+            "id": "t13",
+            "text": "人"
+          },
+          {
+            "id": "t5",
+            "text": "很"
+          },
+          {
+            "id": "t7",
+            "text": "了解"
+          },
+          {
+            "id": "t10",
+            "text": "春节"
+          },
+          {
+            "id": "t3",
+            "text": "但"
+          },
+          {
+            "id": "t20",
+            "text": "？"
+          },
+          {
+            "id": "t2",
+            "text": "，"
+          },
+          {
+            "id": "t4",
+            "text": "我"
+          },
+          {
+            "id": "t12",
+            "text": "中国"
+          },
+          {
+            "id": "t9",
+            "text": "的"
+          },
+          {
+            "id": "t8",
+            "text": "中国"
+          },
+          {
+            "id": "t11",
+            "text": "。"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12",
+          "t13",
+          "t14",
+          "t15",
+          "t16",
+          "t17",
+          "t18",
+          "t19",
+          "t20"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 15
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ]
+}

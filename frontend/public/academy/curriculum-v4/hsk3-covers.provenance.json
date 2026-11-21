@@ -1,0 +1,35 @@
+{
+  "asset": "hsk3-covers.webp",
+  "generator": "built-in image_gen",
+  "generated_on": "2026-11-21",
+  "reference": "curriculum-v3/lesson-covers.webp",
+  "prompt_file": "hsk3-covers.prompt.txt",
+  "grid": {
+    "columns": 3,
+    "rows": 5
+  },
+  "dimensions": [
+    971,
+    1619
+  ],
+  "sha256": "656b0df0c25902daf3c667eb0d91c0217cbbca2ea9857a11b30348addba0927d",
+  "subjects": [
+    "restaurant",
+    "moving-house",
+    "grassland",
+    "photography",
+    "high-speed-train",
+    "wedding-clothes",
+    "recovery",
+    "tennis",
+    "homework",
+    "office-documents",
+    "wind-and-rain",
+    "library",
+    "graduation",
+    "panda-zoo",
+    "spring-festival"
+  ],
+  "processing": "WebP format conversion only; artwork unmodified. CSS frames use center crops to preserve character proportions.",
+  "qa": "15 distinct scenes inspected, no blank cells."
+}

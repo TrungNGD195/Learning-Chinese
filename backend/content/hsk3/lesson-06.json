@@ -1,0 +1,1848 @@
+{
+  "key": "hsk3-lesson-06-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 3,
+    "lesson_number": 6,
+    "title": "我不但想买裙子，而且还想买鞋子 · Tôi không những muốn mua váy mà còn muốn mua giày",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "矮",
+      "pinyin": "ǎi",
+      "vietnamese_meaning": "thấp (chiều cao)",
+      "part_of_speech": "tính từ",
+      "source_key": "3:6:矮",
+      "note": null,
+      "order_index": 1,
+      "example": "不过这辆有点儿矮吧？\nbù guò zhè liàng yǒu diǎn ér ǎi ba ？\nNhưng chiếc này hơi thấp nhỉ?"
+    },
+    {
+      "hanzi": "一直",
+      "pinyin": "yìzhí",
+      "vietnamese_meaning": "suốt, liên tục; luôn",
+      "part_of_speech": "phó từ",
+      "source_key": "3:6:一直",
+      "note": null,
+      "order_index": 2,
+      "example": "小刚，那个售货员为什么一直站着看我们？\nxiǎo gāng ， nà ge shòu huò yuán wèi shén me yì zhí zhàn zhe kàn wǒ men ？\nTiểu Cương, sao nhân viên bán hàng kia cứ đứng nhìn mình?"
+    },
+    {
+      "hanzi": "付",
+      "pinyin": "fù",
+      "vietnamese_meaning": "trả, thanh toán",
+      "part_of_speech": "động từ",
+      "source_key": "3:6:付",
+      "note": null,
+      "order_index": 3,
+      "example": "因为他正等着你付钱呢！\nyīn wèi tā zhèng děng zhe nǐ fù qián ne ！\nVì anh ấy đang chờ em trả tiền đấy!"
+    },
+    {
+      "hanzi": "付钱",
+      "pinyin": "fùqián",
+      "vietnamese_meaning": "trả tiền",
+      "part_of_speech": "động từ",
+      "source_key": "3:6:付钱",
+      "note": null,
+      "order_index": 4,
+      "example": "因为他正等着你付钱呢！\nyīn wèi tā zhèng děng zhe nǐ fù qián ne ！\nVì anh ấy đang chờ em trả tiền đấy!"
+    },
+    {
+      "hanzi": "付款",
+      "pinyin": "fùkuǎn",
+      "vietnamese_meaning": "thanh toán",
+      "part_of_speech": "động từ",
+      "source_key": "3:6:付款",
+      "note": "付款 dùng chung cho thanh toán; 买单 thường dùng khi trả hóa đơn ở nhà hàng. 付钱 nhấn mạnh trả tiền.",
+      "order_index": 5,
+      "example": "我用手机付款。\nwǒ yòng shǒu jī fù kuǎn 。\nTôi dùng điện thoại để thanh toán."
+    },
+    {
+      "hanzi": "买单",
+      "pinyin": "mǎidān",
+      "vietnamese_meaning": "thanh toán hóa đơn (ở nhà hàng)",
+      "part_of_speech": "động từ",
+      "source_key": "3:6:买单",
+      "note": "Thường dùng ở nhà hàng khi thanh toán hóa đơn; 付款 có phạm vi sử dụng rộng hơn.",
+      "order_index": 6,
+      "example": "服务员，请帮我们买单。\nfú wù yuán ， qǐng bāng wǒ men mǎi dān 。\nAnh/chị phục vụ, vui lòng tính tiền giúp chúng tôi."
+    },
+    {
+      "hanzi": "现金",
+      "pinyin": "xiànjīn",
+      "vietnamese_meaning": "tiền mặt",
+      "part_of_speech": "danh từ",
+      "source_key": "3:6:现金",
+      "note": null,
+      "order_index": 7,
+      "example": "我今天没带现金。\nwǒ jīn tiān méi dài xiàn jīn 。\nHôm nay tôi không mang tiền mặt."
+    },
+    {
+      "hanzi": "转账",
+      "pinyin": "zhuǎnzhàng",
+      "vietnamese_meaning": "chuyển khoản",
+      "part_of_speech": "động từ",
+      "source_key": "3:6:转账",
+      "note": null,
+      "order_index": 8,
+      "example": "我可以给你转账吗？\nwǒ kě yǐ gěi nǐ zhuǎn zhàng ma ？\nTôi có thể chuyển khoản cho bạn không?"
+    },
+    {
+      "hanzi": "账号",
+      "pinyin": "zhànghào",
+      "vietnamese_meaning": "số tài khoản, tài khoản",
+      "part_of_speech": "danh từ",
+      "source_key": "3:6:账号",
+      "note": null,
+      "order_index": 9,
+      "example": "请告诉我你的账号。\nqǐng gào sù wǒ nǐ de zhàng hào 。\nVui lòng cho tôi biết số tài khoản của bạn."
+    },
+    {
+      "hanzi": "扫码",
+      "pinyin": "sǎomǎ",
+      "vietnamese_meaning": "quét mã",
+      "part_of_speech": "động từ",
+      "source_key": "3:6:扫码",
+      "note": null,
+      "order_index": 10,
+      "example": "我可以扫码付款吗？\nwǒ kě yǐ sǎo mǎ fù kuǎn ma ？\nTôi có thể quét mã thanh toán không?"
+    },
+    {
+      "hanzi": "二维码",
+      "pinyin": "èrwéimǎ",
+      "vietnamese_meaning": "mã QR",
+      "part_of_speech": "danh từ",
+      "source_key": "3:6:二维码",
+      "note": null,
+      "order_index": 11,
+      "example": "请给我看一下二维码。\nqǐng gěi wǒ kàn yī xià èr wéi mǎ 。\nVui lòng cho tôi xem mã QR."
+    },
+    {
+      "hanzi": "双十一",
+      "pinyin": "shuāngshíyī",
+      "vietnamese_meaning": "ngày mua sắm 11 tháng 11",
+      "part_of_speech": "tên gọi",
+      "source_key": "3:6:双十一",
+      "note": null,
+      "order_index": 12,
+      "example": "双十一到了，你看这条黄色的裙子好不好看！\nshuāng shí yī dào le ， nǐ kàn zhè tiáo huáng sè de qún zi hǎo bù hǎo kàn ！\nĐến ngày mua sắm 11 tháng 11 rồi, anh xem chiếc váy màu vàng này đẹp không!"
+    },
+    {
+      "hanzi": "黄色",
+      "pinyin": "huángsè",
+      "vietnamese_meaning": "màu vàng",
+      "part_of_speech": "danh từ",
+      "source_key": "3:6:黄色",
+      "note": null,
+      "order_index": 13,
+      "example": "双十一到了，你看这条黄色的裙子好不好看！\nshuāng shí yī dào le ， nǐ kàn zhè tiáo huáng sè de qún zi hǎo bù hǎo kàn ！\nĐến ngày mua sắm 11 tháng 11 rồi, anh xem chiếc váy màu vàng này đẹp không!"
+    },
+    {
+      "hanzi": "短裙",
+      "pinyin": "duǎnqún",
+      "vietnamese_meaning": "váy ngắn",
+      "part_of_speech": "danh từ",
+      "source_key": "3:6:短裙",
+      "note": null,
+      "order_index": 14,
+      "example": "这条短裙的大小很合适。\nzhè tiáo duǎn qún de dà xiǎo hěn hé shì 。\nKích cỡ chiếc váy ngắn này rất vừa."
+    },
+    {
+      "hanzi": "大小",
+      "pinyin": "dàxiǎo",
+      "vietnamese_meaning": "kích thước, độ lớn nhỏ",
+      "part_of_speech": "danh từ",
+      "source_key": "3:6:大小",
+      "note": null,
+      "order_index": 15,
+      "example": "这条短裤也不错，大小很合适。\nzhè tiáo duǎn kù yě bù cuò ， dà xiǎo hěn hé shì 。\nChiếc quần soóc này cũng đẹp, kích cỡ rất vừa."
+    },
+    {
+      "hanzi": "合适",
+      "pinyin": "héshì",
+      "vietnamese_meaning": "vừa vặn, phù hợp",
+      "part_of_speech": "tính từ",
+      "source_key": "3:6:合适",
+      "note": null,
+      "order_index": 16,
+      "example": "这条短裤也不错，大小很合适。\nzhè tiáo duǎn kù yě bù cuò ， dà xiǎo hěn hé shì 。\nChiếc quần soóc này cũng đẹp, kích cỡ rất vừa."
+    },
+    {
+      "hanzi": "决定",
+      "pinyin": "juédìng",
+      "vietnamese_meaning": "quyết định",
+      "part_of_speech": "động từ, danh từ",
+      "source_key": "3:6:决定",
+      "note": null,
+      "order_index": 17,
+      "example": "那你决定买哪一个？\nnà nǐ jué dìng mǎi nǎ yí gè ？\nVậy em quyết định mua cái nào?"
+    },
+    {
+      "hanzi": "新鲜",
+      "pinyin": "xīnxiān",
+      "vietnamese_meaning": "tươi, tươi mới",
+      "part_of_speech": "tính từ",
+      "source_key": "3:6:新鲜",
+      "note": null,
+      "order_index": 18,
+      "example": "你看，这些西瓜真新鲜。\nnǐ kàn ， zhè xiē xī guā zhēn xīn xiān 。\nEm xem, những quả dưa hấu này tươi thật."
+    },
+    {
+      "hanzi": "甜",
+      "pinyin": "tián",
+      "vietnamese_meaning": "ngọt",
+      "part_of_speech": "tính từ",
+      "source_key": "3:6:甜",
+      "note": null,
+      "order_index": 19,
+      "example": "一斤三块钱，这种西瓜最甜。\nyī jīn sān kuài qián ， zhè zhǒng xī guā zuì tián 。\nBa tệ một cân, loại dưa này ngọt nhất."
+    },
+    {
+      "hanzi": "香蕉",
+      "pinyin": "xiāngjiāo",
+      "vietnamese_meaning": "chuối",
+      "part_of_speech": "danh từ",
+      "source_key": "3:6:香蕉",
+      "note": null,
+      "order_index": 20,
+      "example": "再买一些香蕉吧，多少钱一斤？\nzài mǎi yī xiē xiāng jiāo ba ， duō shǎo qián yī jīn ？\nMua thêm chuối nhé, bao nhiêu một cân?"
+    },
+    {
+      "hanzi": "为了",
+      "pinyin": "wèile",
+      "vietnamese_meaning": "để, nhằm",
+      "part_of_speech": "giới từ",
+      "source_key": "3:6:为了",
+      "note": null,
+      "order_index": 21,
+      "example": "为了参加婚礼，她想买一条裙子。\nwèi le cān jiā hūn lǐ ， tā xiǎng mǎi yī tiáo qún zi 。\nĐể tham dự lễ cưới, cô ấy muốn mua một chiếc váy."
+    },
+    {
+      "hanzi": "婚礼",
+      "pinyin": "hūnlǐ",
+      "vietnamese_meaning": "lễ cưới",
+      "part_of_speech": "danh từ",
+      "source_key": "3:6:婚礼",
+      "note": null,
+      "order_index": 22,
+      "example": "我想参加朋友的婚礼。\nwǒ xiǎng cān jiā péng yǒu de hūn lǐ 。\nTôi muốn tham dự lễ cưới của bạn."
+    },
+    {
+      "hanzi": "不但",
+      "pinyin": "bùdàn",
+      "vietnamese_meaning": "không những",
+      "part_of_speech": "liên từ",
+      "source_key": "3:6:不但",
+      "note": null,
+      "order_index": 23,
+      "example": "我不但想买裙子，而且还想买鞋子。\nwǒ bù dàn xiǎng mǎi qún zi ， ér qiě hái xiǎng mǎi xié zi 。\nTôi không những muốn mua váy mà còn muốn mua giày."
+    },
+    {
+      "hanzi": "而且",
+      "pinyin": "érqiě",
+      "vietnamese_meaning": "mà còn, hơn nữa",
+      "part_of_speech": "liên từ",
+      "source_key": "3:6:而且",
+      "note": null,
+      "order_index": 24,
+      "example": "这件衣服不但好看，而且很舒服。\nzhè jiàn yī fú bù dàn hǎo kàn ， ér qiě hěn shū fú 。\nBộ quần áo này không những đẹp mà còn rất thoải mái."
+    },
+    {
+      "hanzi": "看中",
+      "pinyin": "kànzhòng",
+      "vietnamese_meaning": "ưng ý, chọn vì thấy phù hợp",
+      "part_of_speech": "động từ",
+      "source_key": "3:6:看中",
+      "note": null,
+      "order_index": 25,
+      "example": "小丽看中了一条红色的裙子。\nxiǎo lì kàn zhòng le yī tiáo hóng sè de qún zi 。\nTiểu Lệ đã ưng một chiếc váy đỏ."
+    }
+  ],
+  "grammar": [
+    {
+      "name": "Liên động với 着",
+      "structure": "Chủ ngữ + động từ 1 + 着 +（tân ngữ 1）+ động từ 2",
+      "explanation": "Hành động hoặc trạng thái thứ nhất là cách thực hiện, trạng thái kèm theo hành động thứ hai.",
+      "usage": "着 đọc nhẹ zhe trong mẫu này; khác zháo trong 睡着 chỉ kết quả ngủ được.",
+      "example": "他站着看我们。\ntā zhàn zhe kàn wǒ men 。\nAnh ấy đứng nhìn chúng tôi.",
+      "note": "着 đọc nhẹ zhe trong mẫu này; khác zháo trong 睡着 chỉ kết quả ngủ được.",
+      "order_index": 1
+    },
+    {
+      "name": "Phủ nhận so sánh với 不比",
+      "structure": "A + 不比 + B + tính từ",
+      "explanation": "Phủ nhận ý kiến A hơn B về một tính chất.",
+      "usage": "不比 không khẳng định hai bên bằng nhau; có thể ngang hoặc kém. 没有 nhấn mạnh không bằng.",
+      "example": "这条裙子不比那条贵。\nzhè tiáo qún zi bù bǐ nà tiáo guì 。\nChiếc váy này không đắt hơn chiếc kia.",
+      "note": "不比 không khẳng định hai bên bằng nhau; có thể ngang hoặc kém. 没有 nhấn mạnh không bằng.",
+      "order_index": 2
+    },
+    {
+      "name": "Không những…mà còn…",
+      "structure": "不但 + vế 1，而且 + vế 2",
+      "explanation": "Vế sau bổ sung hoặc nâng mức ý nghĩa của vế trước.",
+      "usage": "Nếu hai vế khác chủ ngữ, thường đặt 不但 trước chủ ngữ thứ nhất.",
+      "example": "我不但想买裙子，而且还想买鞋子。\nwǒ bù dàn xiǎng mǎi qún zi ， ér qiě hái xiǎng mǎi xié zi 。\nTôi không những muốn mua váy mà còn muốn mua giày.",
+      "note": "Nếu hai vế khác chủ ngữ, thường đặt 不但 trước chủ ngữ thứ nhất.",
+      "order_index": 3
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Chọn mua xe đạp",
+      "content": "小丽：你看，那辆自行车真漂亮！我的自行车太旧了，骑着不舒服。我想再买一辆。\n小刚：你每天骑车去学校，需要一辆舒服的。你要不要试一下？\n小丽：好啊。挺好看的！不过这辆有点儿矮吧？\n小刚：是矮了点儿，你再看看那辆吧。\n小丽：感觉不错！小刚，那个售货员为什么一直站着看我们？\n小刚：因为他正等着你付钱呢！",
+      "pinyin": "xiǎo lì ： nǐ kàn ， nà liàng zì xíng chē zhēn piào liàng ！ wǒ de zì xíng chē tài jiù le ， qí zhe bù shū fú 。 wǒ xiǎng zài mǎi yī liàng 。\nxiǎo gāng ： nǐ měi tiān qí chē qù xué xiào ， xū yào yī liàng shū fú de 。 nǐ yào bù yào shì yī xià ？\nxiǎo lì ： hǎo a 。 tǐng hǎo kàn de ！ bù guò zhè liàng yǒu diǎn ér ǎi ba ？\nxiǎo gāng ： shì ǎi le diǎn ér ， nǐ zài kàn kàn nà liàng ba 。\nxiǎo lì ： gǎn jué bù cuò ！ xiǎo gāng ， nà ge shòu huò yuán wèi shén me yì zhí zhàn zhe kàn wǒ men ？\nxiǎo gāng ： yīn wèi tā zhèng děng zhe nǐ fù qián ne ！",
+      "vietnamese_translation": "Tiểu Lệ: Anh xem, chiếc xe đạp kia đẹp quá! Xe của em cũ quá, đi không thoải mái, em muốn mua chiếc khác.\nTiểu Cương: Ngày nào em cũng đạp xe đi học, cần một chiếc thoải mái. Em có muốn thử không?\nTiểu Lệ: Vâng. Khá đẹp! Nhưng chiếc này hơi thấp nhỉ?\nTiểu Cương: Đúng là hơi thấp, em xem chiếc kia nhé.\nTiểu Lệ: Cảm giác tốt đấy! Tiểu Cương, sao nhân viên bán hàng kia cứ đứng nhìn mình?\nTiểu Cương: Vì anh ấy đang chờ em trả tiền đấy!",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 6, bài khóa 1."
+    },
+    {
+      "order_index": 2,
+      "title": "Chọn váy và quần soóc",
+      "content": "小丽：双十一到了，你看这条黄色的裙子好不好看！\n小刚：很好看，这条裙子不比那条贵多少。\n小丽：我觉得这条更漂亮，你觉得大小合适吗？\n小刚：我觉得有点儿大，这条短裤不比那条小。\n小丽：这条短裤也不错，大小很合适。\n小刚：那你决定买哪一个？\n小丽：两条我都喜欢，还是都买吧。",
+      "pinyin": "xiǎo lì ： shuāng shí yī dào le ， nǐ kàn zhè tiáo huáng sè de qún zi hǎo bù hǎo kàn ！\nxiǎo gāng ： hěn hǎo kàn ， zhè tiáo qún zi bù bǐ nà tiáo guì duō shǎo 。\nxiǎo lì ： wǒ jué de zhè tiáo gèng piào liàng ， nǐ jué de dà xiǎo hé shì ma ？\nxiǎo gāng ： wǒ jué de yǒu diǎn ér dà ， zhè tiáo duǎn kù bù bǐ nà tiáo xiǎo 。\nxiǎo lì ： zhè tiáo duǎn kù yě bù cuò ， dà xiǎo hěn hé shì 。\nxiǎo gāng ： nà nǐ jué dìng mǎi nǎ yí gè ？\nxiǎo lì ： liǎng tiáo wǒ dōu xǐ huān ， hái shì dōu mǎi ba 。",
+      "vietnamese_translation": "Tiểu Lệ: Đến ngày mua sắm 11 tháng 11 rồi, anh xem chiếc váy màu vàng này đẹp không!\nTiểu Cương: Đẹp, chiếc váy này không đắt hơn chiếc kia bao nhiêu.\nTiểu Lệ: Em thấy chiếc này đẹp hơn, anh thấy kích cỡ có vừa không?\nTiểu Cương: Anh thấy hơi rộng, chiếc quần soóc này cũng không nhỏ hơn chiếc kia.\nTiểu Lệ: Chiếc quần soóc này cũng đẹp, kích cỡ rất vừa.\nTiểu Cương: Vậy em quyết định mua cái nào?\nTiểu Lệ: Em thích cả hai, mua cả hai vậy.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 6, bài khóa 2."
+    },
+    {
+      "order_index": 3,
+      "title": "Mua trái cây",
+      "content": "小丽：小刚，我们刚看完衣服，去超市买点儿水果吧。\n小刚：好啊，我也想吃点儿冰水果。\n（在商场的超市）\n小刚：你看，这些西瓜真新鲜。\n小丽：您好，这个西瓜多少钱一斤？\n售货员：一斤三块钱，这种西瓜最甜。\n小刚 ：那我们买两斤吧，一共多少钱？\n售货员：一共六块钱。\n小刚：再买一些香蕉吧，多少钱一斤？\n售货员：一斤三块五毛。\n小丽：今天天气热极了，我们买一点儿冰水果吧。\n小刚：好啊，天气这么热，吃起来一定很舒服。",
+      "pinyin": "xiǎo lì ： xiǎo gāng ， wǒ men gāng kàn wán yī fú ， qù chāo shì mǎi diǎn ér shuǐ guǒ ba 。\nxiǎo gāng ： hǎo a ， wǒ yě xiǎng chī diǎn ér bīng shuǐ guǒ 。\n（ zài shāng chǎng de chāo shì ）\nxiǎo gāng ： nǐ kàn ， zhè xiē xī guā zhēn xīn xiān 。\nxiǎo lì ： nín hǎo ， zhè ge xī guā duō shǎo qián yī jīn ？\nshòu huò yuán ： yī jīn sān kuài qián ， zhè zhǒng xī guā zuì tián 。\nxiǎo gāng   ： nà wǒ men mǎi liǎng jīn ba ， yī gòng duō shǎo qián ？\nshòu huò yuán ： yī gòng liù kuài qián 。\nxiǎo gāng ： zài mǎi yī xiē xiāng jiāo ba ， duō shǎo qián yī jīn ？\nshòu huò yuán ： yī jīn sān kuài wǔ máo 。\nxiǎo lì ： jīn tiān tiān qì rè jí le ， wǒ men mǎi yì diǎn ér bīng shuǐ guǒ ba 。\nxiǎo gāng ： hǎo a ， tiān qì zhè me rè ， chī qǐ lái yí dìng hěn shū fú 。",
+      "vietnamese_translation": "Tiểu Lệ: Tiểu Cương, mình vừa xem quần áo xong, đến siêu thị mua chút trái cây nhé.\nTiểu Cương: Được, anh cũng muốn ăn trái cây ướp lạnh.\n(Tại siêu thị trong trung tâm thương mại)\nTiểu Cương: Em xem, những quả dưa hấu này tươi thật.\nTiểu Lệ: Xin hỏi, dưa hấu này bao nhiêu tiền một cân?\nNhân viên bán hàng: Ba tệ một cân, loại dưa này ngọt nhất.\nTiểu Cương: Vậy lấy hai cân, tổng cộng bao nhiêu tiền?\nNhân viên bán hàng: Tổng cộng sáu tệ.\nTiểu Cương: Mua thêm chuối nhé, bao nhiêu một cân?\nNhân viên bán hàng: Ba tệ rưỡi một cân.\nTiểu Lệ: Hôm nay nóng quá, mình mua chút trái cây ướp lạnh nhé.\nTiểu Cương: Được, trời nóng thế này, ăn chắc sẽ dễ chịu lắm.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 6, bài khóa 3."
+    },
+    {
+      "order_index": 4,
+      "title": "Trang phục dự lễ cưới",
+      "content": "小丽的好朋友下个月要结婚。为了准备参加她的婚礼，小丽决定今天下午跟小刚一起去商店买衣服。小丽不但想买裙子，而且还想买鞋子。到了商店，小丽看中了两条非常漂亮的裙子：一条红色的和一条黄色的。小刚看了看说：“我觉得黄色的裙子不比红色的好看，那双黑色的鞋子也挺漂亮，你可以试穿一下。”小丽试了试，觉得大小很合适，就决定买那条红色的裙子和黑色的鞋子。她高兴地说：“谢谢你陪我，到时候我会穿着裙子和鞋子去参加婚礼。”",
+      "pinyin": "xiǎo lì de hǎo péng yǒu xià gè yuè yào jié hūn 。 wèi le zhǔn bèi cān jiā tā de hūn lǐ ， xiǎo lì jué dìng jīn tiān xià wǔ gēn xiǎo gāng yì qǐ qù shāng diàn mǎi yī fú 。 xiǎo lì bù dàn xiǎng mǎi qún zi ， ér qiě hái xiǎng mǎi xié zi 。 dào le shāng diàn ， xiǎo lì kàn zhòng le liǎng tiáo fēi cháng piào liàng de qún zi ： yī tiáo hóng sè de hé yī tiáo huáng sè de 。 xiǎo gāng kàn le kàn shuō ： “ wǒ jué de huáng sè de qún zi bù bǐ hóng sè de hǎo kàn ， nà shuāng hēi sè de xié zi yě tǐng piào liàng ， nǐ kě yǐ shì chuān yī xià 。 ” xiǎo lì shì le shì ， jué de dà xiǎo hěn hé shì ， jiù jué dìng mǎi nà tiáo hóng sè de qún zi hé hēi sè de xié zi 。 tā gāo xìng de shuō ： “ xiè xiè nǐ péi wǒ ， dào shí hòu wǒ huì chuān zhe qún zi hé xié zi qù cān jiā hūn lǐ 。 ”",
+      "vietnamese_translation": "Bạn thân của Tiểu Lệ tháng sau sẽ kết hôn. Để chuẩn bị dự lễ cưới, Tiểu Lệ quyết định chiều nay cùng Tiểu Cương đến cửa hàng mua quần áo. Cô không những muốn mua váy mà còn muốn mua giày. Đến nơi, Tiểu Lệ ưng hai chiếc váy rất đẹp: một chiếc đỏ, một chiếc vàng. Tiểu Cương xem rồi nói: “Anh thấy váy vàng không đẹp hơn váy đỏ. Đôi giày đen kia cũng đẹp, em thử xem.” Tiểu Lệ thử và thấy rất vừa, bèn quyết định mua váy đỏ và giày đen. Cô vui vẻ nói: “Cảm ơn anh đi cùng, đến hôm đó em sẽ mặc váy và đi đôi giày này dự lễ cưới.”",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 6, bài khóa 4."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 3 · Bài 6 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp của bài này và các bài trước; đạt từ 80%, được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "source_documents": {
+    "vocabulary": "DOCX",
+    "theory": "DOCX"
+  },
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 1).",
+      "options": [
+        {
+          "option_text": "chuyển khoản",
+          "is_correct": true
+        },
+        {
+          "option_text": "thẻ tín dụng",
+          "is_correct": false
+        },
+        {
+          "option_text": "chị gái",
+          "is_correct": false
+        },
+        {
+          "option_text": "ngày mua sắm 11 tháng 11",
+          "is_correct": false
+        }
+      ],
+      "rubric": "转账 (zhuǎnzhàng) — chuyển khoản. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "转账"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 6
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “丈夫” (zhàngfu) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "hiểu",
+          "is_correct": false
+        },
+        {
+          "option_text": "mùa thu",
+          "is_correct": false
+        },
+        {
+          "option_text": "chồng",
+          "is_correct": true
+        },
+        {
+          "option_text": "Trần Thiên Trung (tên người)",
+          "is_correct": false
+        }
+      ],
+      "rubric": "丈夫 (zhàngfu) — chồng. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 6
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “tián” — ngọt.",
+      "options": [
+        {
+          "option_text": "那",
+          "is_correct": false
+        },
+        {
+          "option_text": "甜",
+          "is_correct": true
+        },
+        {
+          "option_text": "下面",
+          "is_correct": false
+        },
+        {
+          "option_text": "外公",
+          "is_correct": false
+        }
+      ],
+      "rubric": "甜 (tián) — ngọt. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 6
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 4).",
+      "options": [
+        {
+          "option_text": "bắt đầu",
+          "is_correct": false
+        },
+        {
+          "option_text": "căn phòng",
+          "is_correct": false
+        },
+        {
+          "option_text": "làm, đảm nhiệm (nghề hoặc chức vụ)",
+          "is_correct": false
+        },
+        {
+          "option_text": "thanh toán hóa đơn (ở nhà hàng)",
+          "is_correct": true
+        }
+      ],
+      "rubric": "买单 (mǎidān) — thanh toán hóa đơn (ở nhà hàng). Thường dùng ở nhà hàng khi thanh toán hóa đơn; 付款 có phạm vi sử dụng rộng hơn.",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "买单"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 6
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “决定” (juédìng) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "quyết định",
+          "is_correct": true
+        },
+        {
+          "option_text": "học",
+          "is_correct": false
+        },
+        {
+          "option_text": "kia",
+          "is_correct": false
+        },
+        {
+          "option_text": "chuyển, dọn, khuân",
+          "is_correct": false
+        }
+      ],
+      "rubric": "决定 (juédìng) — quyết định. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 6
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “bùdàn” — không những.",
+      "options": [
+        {
+          "option_text": "不但",
+          "is_correct": true
+        },
+        {
+          "option_text": "办法",
+          "is_correct": false
+        },
+        {
+          "option_text": "因为",
+          "is_correct": false
+        },
+        {
+          "option_text": "沙发",
+          "is_correct": false
+        }
+      ],
+      "rubric": "不但 (bùdàn) — không những. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 6
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 7).",
+      "options": [
+        {
+          "option_text": "đặc biệt; rất, vô cùng",
+          "is_correct": false
+        },
+        {
+          "option_text": "an toàn",
+          "is_correct": false
+        },
+        {
+          "option_text": "vừa ... vừa ... (一边……一边……)",
+          "is_correct": false
+        },
+        {
+          "option_text": "quét mã",
+          "is_correct": true
+        }
+      ],
+      "rubric": "扫码 (sǎomǎ) — quét mã. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "扫码"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 6
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “二维码” (èrwéimǎ) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "trước, trước tiên",
+          "is_correct": false
+        },
+        {
+          "option_text": "mã QR",
+          "is_correct": true
+        },
+        {
+          "option_text": "đi; rời đi",
+          "is_correct": false
+        },
+        {
+          "option_text": "học sinh trung học",
+          "is_correct": false
+        }
+      ],
+      "rubric": "二维码 (èrwéimǎ) — mã QR. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 6
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “dàxiǎo” — kích thước, độ lớn nhỏ.",
+      "options": [
+        {
+          "option_text": "但",
+          "is_correct": false
+        },
+        {
+          "option_text": "变得",
+          "is_correct": false
+        },
+        {
+          "option_text": "大小",
+          "is_correct": true
+        },
+        {
+          "option_text": "雨季",
+          "is_correct": false
+        }
+      ],
+      "rubric": "大小 (dàxiǎo) — kích thước, độ lớn nhỏ. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 6
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "bút vẽ",
+          "is_correct": false
+        },
+        {
+          "option_text": "vừa vặn, phù hợp",
+          "is_correct": true
+        },
+        {
+          "option_text": "máy giặt",
+          "is_correct": false
+        },
+        {
+          "option_text": "phút",
+          "is_correct": false
+        }
+      ],
+      "rubric": "合适 (héshì) — vừa vặn, phù hợp. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "合适"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 6
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “矮” (ǎi) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "giấy",
+          "is_correct": false
+        },
+        {
+          "option_text": "hát",
+          "is_correct": false
+        },
+        {
+          "option_text": "thấp (chiều cao)",
+          "is_correct": true
+        },
+        {
+          "option_text": "vịt quay",
+          "is_correct": false
+        }
+      ],
+      "rubric": "矮 (ǎi) — thấp (chiều cao). ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 6
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “zhōngwǔ” — buổi trưa.",
+      "options": [
+        {
+          "option_text": "中午",
+          "is_correct": true
+        },
+        {
+          "option_text": "张",
+          "is_correct": false
+        },
+        {
+          "option_text": "虽然",
+          "is_correct": false
+        },
+        {
+          "option_text": "脚",
+          "is_correct": false
+        }
+      ],
+      "rubric": "中午 (zhōngwǔ) — buổi trưa. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 7
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “trả tiền” (pinyin: fùqián).",
+      "reference_answer": "付钱",
+      "rubric": "Đáp án: 付钱 (fùqián). ",
+      "config": {
+        "accepted_answers": [
+          "付钱"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 6
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “mặc” (pinyin: chuān).",
+      "reference_answer": "穿",
+      "rubric": "Đáp án: 穿 (chuān). ",
+      "config": {
+        "accepted_answers": [
+          "穿"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 10
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “thanh toán” (pinyin: fùkuǎn).",
+      "reference_answer": "付款",
+      "rubric": "Đáp án: 付款 (fùkuǎn). 付款 dùng chung cho thanh toán; 买单 thường dùng khi trả hóa đơn ở nhà hàng. 付钱 nhấn mạnh trả tiền.",
+      "config": {
+        "accepted_answers": [
+          "付款"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 6
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “số tài khoản, tài khoản” (pinyin: zhànghào).",
+      "reference_answer": "账号",
+      "rubric": "Đáp án: 账号 (zhànghào). ",
+      "config": {
+        "accepted_answers": [
+          "账号"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 6
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối các từ với nghĩa đã học (nhóm 1).",
+      "rubric": "甜: ngọt ; 现金: tiền mặt ; 扫码: quét mã ; 矮: thấp (chiều cao)",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "甜"
+          },
+          {
+            "id": "l1",
+            "text": "现金"
+          },
+          {
+            "id": "l2",
+            "text": "扫码"
+          },
+          {
+            "id": "l3",
+            "text": "矮"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r1",
+            "text": "tiền mặt"
+          },
+          {
+            "id": "r3",
+            "text": "thấp (chiều cao)"
+          },
+          {
+            "id": "r0",
+            "text": "ngọt"
+          },
+          {
+            "id": "r2",
+            "text": "quét mã"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 6
+        },
+        {
+          "hsk": 3,
+          "lesson": 6
+        },
+        {
+          "hsk": 3,
+          "lesson": 6
+        },
+        {
+          "hsk": 3,
+          "lesson": 6
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối các từ với nghĩa đã học (nhóm 2).",
+      "rubric": "而且: mà còn, hơn nữa ; 买单: thanh toán hóa đơn (ở nhà hàng) ; 付钱: trả tiền ; 决定: quyết định",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "而且"
+          },
+          {
+            "id": "l1",
+            "text": "买单"
+          },
+          {
+            "id": "l2",
+            "text": "付钱"
+          },
+          {
+            "id": "l3",
+            "text": "决定"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r2",
+            "text": "trả tiền"
+          },
+          {
+            "id": "r0",
+            "text": "mà còn, hơn nữa"
+          },
+          {
+            "id": "r1",
+            "text": "thanh toán hóa đơn (ở nhà hàng)"
+          },
+          {
+            "id": "r3",
+            "text": "quyết định"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 6
+        },
+        {
+          "hsk": 3,
+          "lesson": 6
+        },
+        {
+          "hsk": 3,
+          "lesson": 6
+        },
+        {
+          "hsk": 3,
+          "lesson": 6
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Biểu thị đứng trong khi nhìn: 他站___看我们。",
+      "options": [
+        {
+          "option_text": "在",
+          "is_correct": false
+        },
+        {
+          "option_text": "到",
+          "is_correct": false
+        },
+        {
+          "option_text": "着",
+          "is_correct": true
+        },
+        {
+          "option_text": "的",
+          "is_correct": false
+        }
+      ],
+      "rubric": "着 sau động từ thứ nhất chỉ trạng thái kèm theo hành động thứ hai.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 6
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Theo mẫu 不但…而且…: 我不但想买裙子，___还想买鞋子。",
+      "options": [
+        {
+          "option_text": "因为",
+          "is_correct": false
+        },
+        {
+          "option_text": "而且",
+          "is_correct": true
+        },
+        {
+          "option_text": "所以",
+          "is_correct": false
+        },
+        {
+          "option_text": "但是",
+          "is_correct": false
+        }
+      ],
+      "rubric": "而且 nối vế bổ sung theo quan hệ tăng tiến với 不但.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 6
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Phủ nhận nhận định chiếc váy này đắt hơn: 这条裙子___那条贵。",
+      "options": [
+        {
+          "option_text": "不比",
+          "is_correct": true
+        },
+        {
+          "option_text": "不在",
+          "is_correct": false
+        },
+        {
+          "option_text": "不把",
+          "is_correct": false
+        },
+        {
+          "option_text": "不是",
+          "is_correct": false
+        }
+      ],
+      "rubric": "不比 phủ nhận A hơn B, không buộc khẳng định hai bên bằng nhau.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 6
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Liên động với 着”, cách hiểu nào đúng (mục 1)?",
+      "options": [
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Hành động hoặc trạng thái thứ nhất là cách thực hiện, trạng thái kèm theo hành động thứ hai.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Hành động hoặc trạng thái thứ nhất là cách thực hiện, trạng thái kèm theo hành động thứ hai. 着 đọc nhẹ zhe trong mẫu này; khác zháo trong 睡着 chỉ kết quả ngủ được.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 6
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Phủ nhận so sánh với 不比”, cách hiểu nào đúng (mục 2)?",
+      "options": [
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Phủ nhận ý kiến A hơn B về một tính chất.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Phủ nhận ý kiến A hơn B về một tính chất. 不比 không khẳng định hai bên bằng nhau; có thể ngang hoặc kém. 没有 nhấn mạnh không bằng.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 6
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Không những…mà còn…”, cách hiểu nào đúng (mục 3)?",
+      "options": [
+        {
+          "option_text": "Vế sau bổ sung hoặc nâng mức ý nghĩa của vế trước.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Vế sau bổ sung hoặc nâng mức ý nghĩa của vế trước. Nếu hai vế khác chủ ngữ, thường đặt 不但 trước chủ ngữ thứ nhất.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 6
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Anh ấy đứng nhìn chúng tôi. (câu 1).",
+      "reference_answer": "他站着看我们。",
+      "rubric": "Câu đúng: 他站着看我们。 — Anh ấy đứng nhìn chúng tôi. 着 đọc nhẹ zhe trong mẫu này; khác zháo trong 睡着 chỉ kết quả ngủ được.",
+      "config": {
+        "items": [
+          {
+            "id": "t5",
+            "text": "们"
+          },
+          {
+            "id": "t3",
+            "text": "看"
+          },
+          {
+            "id": "t6",
+            "text": "。"
+          },
+          {
+            "id": "t4",
+            "text": "我"
+          },
+          {
+            "id": "t2",
+            "text": "着"
+          },
+          {
+            "id": "t0",
+            "text": "他"
+          },
+          {
+            "id": "t1",
+            "text": "站"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 6
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Chiếc váy này không đắt hơn chiếc kia. (câu 2).",
+      "reference_answer": "这条裙子不比那条贵。",
+      "rubric": "Câu đúng: 这条裙子不比那条贵。 — Chiếc váy này không đắt hơn chiếc kia. 不比 không khẳng định hai bên bằng nhau; có thể ngang hoặc kém. 没有 nhấn mạnh không bằng.",
+      "config": {
+        "items": [
+          {
+            "id": "t5",
+            "text": "那"
+          },
+          {
+            "id": "t8",
+            "text": "。"
+          },
+          {
+            "id": "t6",
+            "text": "条"
+          },
+          {
+            "id": "t1",
+            "text": "条"
+          },
+          {
+            "id": "t4",
+            "text": "比"
+          },
+          {
+            "id": "t2",
+            "text": "裙子"
+          },
+          {
+            "id": "t3",
+            "text": "不"
+          },
+          {
+            "id": "t7",
+            "text": "贵"
+          },
+          {
+            "id": "t0",
+            "text": "这"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 6
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Tôi không những muốn mua váy mà còn muốn mua giày. (câu 3).",
+      "reference_answer": "我不但想买裙子，而且还想买鞋子。",
+      "rubric": "Câu đúng: 我不但想买裙子，而且还想买鞋子。 — Tôi không những muốn mua váy mà còn muốn mua giày. Nếu hai vế khác chủ ngữ, thường đặt 不但 trước chủ ngữ thứ nhất.",
+      "config": {
+        "items": [
+          {
+            "id": "t5",
+            "text": "，"
+          },
+          {
+            "id": "t3",
+            "text": "买"
+          },
+          {
+            "id": "t8",
+            "text": "想"
+          },
+          {
+            "id": "t11",
+            "text": "子"
+          },
+          {
+            "id": "t2",
+            "text": "想"
+          },
+          {
+            "id": "t12",
+            "text": "。"
+          },
+          {
+            "id": "t10",
+            "text": "鞋"
+          },
+          {
+            "id": "t4",
+            "text": "裙子"
+          },
+          {
+            "id": "t9",
+            "text": "买"
+          },
+          {
+            "id": "t0",
+            "text": "我"
+          },
+          {
+            "id": "t7",
+            "text": "还"
+          },
+          {
+            "id": "t6",
+            "text": "而且"
+          },
+          {
+            "id": "t1",
+            "text": "不但"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 6
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Ngày nào em cũng đạp xe đi học, cần một chiếc thoải mái. Em có muốn thử không? (câu 4).",
+      "reference_answer": "你每天骑车去学校，需要一辆舒服的。你要不要试一下？",
+      "rubric": "Câu đúng: 你每天骑车去学校，需要一辆舒服的。你要不要试一下？ — Ngày nào em cũng đạp xe đi học, cần một chiếc thoải mái. Em có muốn thử không? Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t0",
+            "text": "你"
+          },
+          {
+            "id": "t11",
+            "text": "舒服"
+          },
+          {
+            "id": "t16",
+            "text": "要"
+          },
+          {
+            "id": "t9",
+            "text": "一"
+          },
+          {
+            "id": "t7",
+            "text": "，"
+          },
+          {
+            "id": "t4",
+            "text": "车"
+          },
+          {
+            "id": "t2",
+            "text": "天"
+          },
+          {
+            "id": "t5",
+            "text": "去"
+          },
+          {
+            "id": "t13",
+            "text": "。"
+          },
+          {
+            "id": "t8",
+            "text": "需要"
+          },
+          {
+            "id": "t15",
+            "text": "要不"
+          },
+          {
+            "id": "t3",
+            "text": "骑"
+          },
+          {
+            "id": "t6",
+            "text": "学校"
+          },
+          {
+            "id": "t14",
+            "text": "你"
+          },
+          {
+            "id": "t12",
+            "text": "的"
+          },
+          {
+            "id": "t19",
+            "text": "？"
+          },
+          {
+            "id": "t18",
+            "text": "一下"
+          },
+          {
+            "id": "t1",
+            "text": "每"
+          },
+          {
+            "id": "t10",
+            "text": "辆"
+          },
+          {
+            "id": "t17",
+            "text": "试"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12",
+          "t13",
+          "t14",
+          "t15",
+          "t16",
+          "t17",
+          "t18",
+          "t19"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 6
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Vâng. Khá đẹp! Nhưng chiếc này hơi thấp nhỉ? (câu 5).",
+      "reference_answer": "好啊。挺好看的！不过这辆有点儿矮吧？",
+      "rubric": "Câu đúng: 好啊。挺好看的！不过这辆有点儿矮吧？ — Vâng. Khá đẹp! Nhưng chiếc này hơi thấp nhỉ? Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t12",
+            "text": "矮"
+          },
+          {
+            "id": "t10",
+            "text": "辆"
+          },
+          {
+            "id": "t3",
+            "text": "挺"
+          },
+          {
+            "id": "t8",
+            "text": "不过"
+          },
+          {
+            "id": "t6",
+            "text": "的"
+          },
+          {
+            "id": "t2",
+            "text": "。"
+          },
+          {
+            "id": "t4",
+            "text": "好"
+          },
+          {
+            "id": "t11",
+            "text": "有点儿"
+          },
+          {
+            "id": "t1",
+            "text": "啊"
+          },
+          {
+            "id": "t13",
+            "text": "吧"
+          },
+          {
+            "id": "t7",
+            "text": "！"
+          },
+          {
+            "id": "t5",
+            "text": "看"
+          },
+          {
+            "id": "t0",
+            "text": "好"
+          },
+          {
+            "id": "t14",
+            "text": "？"
+          },
+          {
+            "id": "t9",
+            "text": "这"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12",
+          "t13",
+          "t14"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 6
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Đúng là hơi thấp, em xem chiếc kia nhé. (câu 6).",
+      "reference_answer": "是矮了点儿，你再看看那辆吧。",
+      "rubric": "Câu đúng: 是矮了点儿，你再看看那辆吧。 — Đúng là hơi thấp, em xem chiếc kia nhé. Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t12",
+            "text": "吧"
+          },
+          {
+            "id": "t13",
+            "text": "。"
+          },
+          {
+            "id": "t3",
+            "text": "点"
+          },
+          {
+            "id": "t0",
+            "text": "是"
+          },
+          {
+            "id": "t10",
+            "text": "那"
+          },
+          {
+            "id": "t2",
+            "text": "了"
+          },
+          {
+            "id": "t7",
+            "text": "再"
+          },
+          {
+            "id": "t4",
+            "text": "儿"
+          },
+          {
+            "id": "t8",
+            "text": "看"
+          },
+          {
+            "id": "t1",
+            "text": "矮"
+          },
+          {
+            "id": "t9",
+            "text": "看"
+          },
+          {
+            "id": "t5",
+            "text": "，"
+          },
+          {
+            "id": "t6",
+            "text": "你"
+          },
+          {
+            "id": "t11",
+            "text": "辆"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12",
+          "t13"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 6
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ]
+}

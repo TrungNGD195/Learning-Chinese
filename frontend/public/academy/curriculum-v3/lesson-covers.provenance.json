@@ -1,0 +1,39 @@
+{
+  "asset": "lesson-covers.webp",
+  "generator": "built-in image_gen",
+  "generated_on": "2026-11-21",
+  "reference": "curriculum-v2/covers.png",
+  "grid": {
+    "columns": 4,
+    "rows": 5
+  },
+  "dimensions": [
+    1402,
+    1122
+  ],
+  "sha256": "bfb2548a953444246a847c68f959118855fdfef553e8b940d9dda66077251766",
+  "subjects": [
+    "phone",
+    "daily-schedule",
+    "workplace",
+    "weekend",
+    "market",
+    "university",
+    "winter",
+    "cafe",
+    "train",
+    "chinese-food",
+    "beijing",
+    "xian",
+    "visiting",
+    "birthday",
+    "sports",
+    "watches",
+    "exam",
+    "health",
+    "friends",
+    "airport"
+  ],
+  "processing": "Format conversion to WebP only. Illustrations remain unmodified.",
+  "qa": "20 distinct scenes inspected; no blank cells, matching panda art direction."
+}

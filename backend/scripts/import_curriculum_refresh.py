@@ -43,9 +43,13 @@ def word_key(word):
 def load_definitions():
     definitions = [json.loads(path.read_text(encoding='utf-8')) for path in sorted(CONTENT.glob('hsk*-lesson-*.json'))]
     expected = {(1, n) for n in range(1, 16)} | {(2, n) for n in range(1, 11)}
-    if {(d['lesson']['hsk_level'], d['lesson']['lesson_number']) for d in definitions} != expected or len(definitions) != 25:
-        raise ValueError('Expected exactly HSK1 1–15 and HSK2 1–10.')
-    seen = set()
+    return validate_definitions(definitions, expected)
+
+
+def validate_definitions(definitions, expected, existing_words=()):
+    if {(d['lesson']['hsk_level'], d['lesson']['lesson_number']) for d in definitions} != expected or len(definitions) != len(expected):
+        raise ValueError('Lesson manifests do not exactly match the requested curriculum scope.')
+    seen = {word_key(word) for word in existing_words}
     for d in definitions:
         current = (d['lesson']['hsk_level'], d['lesson']['lesson_number'])
         for index, word in enumerate(d['vocabulary'], 1):

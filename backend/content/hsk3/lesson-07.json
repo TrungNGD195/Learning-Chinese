@@ -1,0 +1,1853 @@
+{
+  "key": "hsk3-lesson-07-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 3,
+    "lesson_number": 7,
+    "title": "医生的话我比谁都清楚 · Lời bác sĩ nói tôi rõ hơn bất cứ ai",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "圈",
+      "pinyin": "quān",
+      "vietnamese_meaning": "vòng (đếm vòng chạy)",
+      "part_of_speech": "lượng từ",
+      "source_key": "3:7:圈",
+      "note": "Trong 跑三圈, 圈 đọc quān và đếm vòng chạy; không dùng như lượng từ của quả bóng.",
+      "order_index": 1,
+      "example": "是啊，我现在每天早上都来这儿跑三圈，已经坚持快两个月了。\nshì a ， wǒ xiàn zài měi tiān zǎo shàng dōu lái zhè ér pǎo sān quān ， yǐ jīng jiān chí kuài liǎng gè yuè le 。\nĐúng, bây giờ mỗi sáng mình đến chạy ba vòng, kiên trì gần hai tháng rồi."
+    },
+    {
+      "hanzi": "坚持",
+      "pinyin": "jiānchí",
+      "vietnamese_meaning": "kiên trì, duy trì",
+      "part_of_speech": "động từ",
+      "source_key": "3:7:坚持",
+      "note": null,
+      "order_index": 2,
+      "example": "是啊，我现在每天早上都来这儿跑三圈，已经坚持快两个月了。\nshì a ， wǒ xiàn zài měi tiān zǎo shàng dōu lái zhè ér pǎo sān quān ， yǐ jīng jiān chí kuài liǎng gè yuè le 。\nĐúng, bây giờ mỗi sáng mình đến chạy ba vòng, kiên trì gần hai tháng rồi."
+    },
+    {
+      "hanzi": "体检",
+      "pinyin": "tǐjiǎn",
+      "vietnamese_meaning": "khám sức khỏe tổng quát",
+      "part_of_speech": "động từ, danh từ",
+      "source_key": "3:7:体检",
+      "note": null,
+      "order_index": 3,
+      "example": "做体检的时候，医生说我身体不太好，让我多锻炼，不能再胖下去了。\nzuò tǐ jiǎn de shí hòu ， yī shēng shuō wǒ shēn tǐ bù tài hǎo ， ràng wǒ duō duàn liàn ， bù néng zài pàng xià qù le 。\nKhi khám sức khỏe, bác sĩ nói sức khỏe mình không tốt lắm, bảo tập nhiều hơn, không thể tiếp tục béo lên nữa."
+    },
+    {
+      "hanzi": "胖",
+      "pinyin": "pàng",
+      "vietnamese_meaning": "béo, mập",
+      "part_of_speech": "tính từ",
+      "source_key": "3:7:胖",
+      "note": null,
+      "order_index": 4,
+      "example": "做体检的时候，医生说我身体不太好，让我多锻炼，不能再胖下去了。\nzuò tǐ jiǎn de shí hòu ， yī shēng shuō wǒ shēn tǐ bù tài hǎo ， ràng wǒ duō duàn liàn ， bù néng zài pàng xià qù le 。\nKhi khám sức khỏe, bác sĩ nói sức khỏe mình không tốt lắm, bảo tập nhiều hơn, không thể tiếp tục béo lên nữa."
+    },
+    {
+      "hanzi": "瘦",
+      "pinyin": "shòu",
+      "vietnamese_meaning": "gầy, ốm",
+      "part_of_speech": "tính từ",
+      "source_key": "3:7:瘦",
+      "note": null,
+      "order_index": 5,
+      "example": "他比以前瘦了一点儿。\ntā bǐ yǐ qián shòu le yì diǎn ér 。\nAnh ấy gầy hơn trước một chút."
+    },
+    {
+      "hanzi": "原来",
+      "pinyin": "yuánlái",
+      "vietnamese_meaning": "hóa ra; vốn dĩ, ban đầu",
+      "part_of_speech": "phó từ, tính từ",
+      "source_key": "3:7:原来",
+      "note": null,
+      "order_index": 6,
+      "example": "原来是这样！\nyuán lái shì zhè yàng ！\nHóa ra vậy!"
+    },
+    {
+      "hanzi": "足球",
+      "pinyin": "zúqiú",
+      "vietnamese_meaning": "bóng đá",
+      "part_of_speech": "danh từ",
+      "source_key": "3:7:足球",
+      "note": null,
+      "order_index": 7,
+      "example": "我下午常和同学踢足球，你要不要一起来玩？\nwǒ xià wǔ cháng hé tóng xué tī zú qiú ， nǐ yào bù yào yì qǐ lái wán ？\nBuổi chiều mình thường đá bóng với bạn học, bạn có muốn cùng chơi không?"
+    },
+    {
+      "hanzi": "踢",
+      "pinyin": "tī",
+      "vietnamese_meaning": "đá (bằng chân)",
+      "part_of_speech": "động từ",
+      "source_key": "3:7:踢",
+      "note": null,
+      "order_index": 8,
+      "example": "我下午常和同学踢足球，你要不要一起来玩？\nwǒ xià wǔ cháng hé tóng xué tī zú qiú ， nǐ yào bù yào yì qǐ lái wán ？\nBuổi chiều mình thường đá bóng với bạn học, bạn có muốn cùng chơi không?"
+    },
+    {
+      "hanzi": "从来",
+      "pinyin": "cónglái",
+      "vietnamese_meaning": "từ trước đến nay",
+      "part_of_speech": "phó từ",
+      "source_key": "3:7:从来",
+      "note": "Thường kết hợp phủ định để nói chưa bao giờ hoặc từ trước đến nay không: 从来没…、从来不….",
+      "order_index": 9,
+      "example": "我身体一直挺好的啊，从来没住过院。\nwǒ shēn tǐ yì zhí tǐng hǎo de a ， cóng lái méi zhù guò yuàn 。\nSức khỏe mình vốn khá tốt, chưa nằm viện bao giờ."
+    },
+    {
+      "hanzi": "怕",
+      "pinyin": "pà",
+      "vietnamese_meaning": "sợ",
+      "part_of_speech": "động từ",
+      "source_key": "3:7:怕",
+      "note": null,
+      "order_index": 10,
+      "example": "我也想试试，就是我从来没踢过，肯定踢得不怎么样，怕拖你后腿。\nwǒ yě xiǎng shì shì ， jiù shì wǒ cóng lái méi tī guò ， kěn dìng tī de bù zěn me yàng ， pà tuō nǐ hòu tuǐ 。\nMình cũng muốn thử, nhưng chưa đá bao giờ, chắc đá không tốt, sợ làm ảnh hưởng đội bạn."
+    },
+    {
+      "hanzi": "拖后腿",
+      "pinyin": "tuōhòutuǐ",
+      "vietnamese_meaning": "làm cản trở, kéo lùi người khác",
+      "part_of_speech": "cụm động từ",
+      "source_key": "3:7:拖后腿",
+      "note": null,
+      "order_index": 11,
+      "example": "我怕自己会拖后腿。\nwǒ pà zì jǐ huì tuō hòu tuǐ 。\nTôi sợ mình sẽ làm ảnh hưởng đến mọi người."
+    },
+    {
+      "hanzi": "眼睛",
+      "pinyin": "yǎnjīng",
+      "vietnamese_meaning": "mắt",
+      "part_of_speech": "danh từ",
+      "source_key": "3:7:眼睛",
+      "note": "Nhắc lại HSK 2 bài 9: 眼睛 (yǎnjing) — mắt. Trong ngữ cảnh bài này: mắt.",
+      "order_index": 12,
+      "example": "看起来特别不舒服，眼睛也红红的。\nkàn qǐ lái tè bié bù shū fú ， yǎn jīng yě hóng hóng de 。\nTrông rất mệt, mắt cũng đỏ."
+    },
+    {
+      "hanzi": "难受",
+      "pinyin": "nánshòu",
+      "vietnamese_meaning": "khó chịu, không khỏe",
+      "part_of_speech": "tính từ",
+      "source_key": "3:7:难受",
+      "note": null,
+      "order_index": 13,
+      "example": "现在还是很难受，好像还发低烧了。\nxiàn zài hái shì hěn nán shòu ， hǎo xiàng hái fā dī shāo le 。\nVẫn rất khó chịu, hình như còn hơi sốt."
+    },
+    {
+      "hanzi": "好像",
+      "pinyin": "hǎoxiàng",
+      "vietnamese_meaning": "hình như, dường như; giống như",
+      "part_of_speech": "động từ, phó từ",
+      "source_key": "3:7:好像",
+      "note": null,
+      "order_index": 14,
+      "example": "现在还是很难受，好像还发低烧了。\nxiàn zài hái shì hěn nán shòu ， hǎo xiàng hái fā dī shāo le 。\nVẫn rất khó chịu, hình như còn hơi sốt."
+    },
+    {
+      "hanzi": "低",
+      "pinyin": "dī",
+      "vietnamese_meaning": "thấp (mức độ, vị trí)",
+      "part_of_speech": "tính từ",
+      "source_key": "3:7:低",
+      "note": null,
+      "order_index": 15,
+      "example": "现在还是很难受，好像还发低烧了。\nxiàn zài hái shì hěn nán shòu ， hǎo xiàng hái fā dī shāo le 。\nVẫn rất khó chịu, hình như còn hơi sốt."
+    },
+    {
+      "hanzi": "关心",
+      "pinyin": "guānxīn",
+      "vietnamese_meaning": "quan tâm",
+      "part_of_speech": "động từ",
+      "source_key": "3:7:关心",
+      "note": null,
+      "order_index": 16,
+      "example": "好的，谢谢你这么关心我。\nhǎo de ， xiè xiè nǐ zhè me guān xīn wǒ 。\nĐược, cảm ơn bạn quan tâm mình."
+    },
+    {
+      "hanzi": "以为",
+      "pinyin": "yǐwéi",
+      "vietnamese_meaning": "tưởng rằng (thường khác thực tế)",
+      "part_of_speech": "động từ",
+      "source_key": "3:7:以为",
+      "note": "Thường nói về điều mình từng tưởng nhưng thực tế có thể khác; 认为 thiên về đưa ra quan điểm.",
+      "order_index": 17,
+      "example": "我还以为你腿早就好了呢，怎么又来医院了？\nwǒ hái yǐ wéi nǐ tuǐ zǎo jiù hǎo le ne ， zěn me yòu lái yī yuàn le ？\nMình tưởng chân bạn khỏi lâu rồi, sao lại đến bệnh viện?"
+    },
+    {
+      "hanzi": "又",
+      "pinyin": "yòu",
+      "vietnamese_meaning": "lại (việc lặp lại đã xảy ra)",
+      "part_of_speech": "phó từ",
+      "source_key": "3:7:又",
+      "note": null,
+      "order_index": 18,
+      "example": "我还以为你腿早就好了呢，怎么又来医院了？\nwǒ hái yǐ wéi nǐ tuǐ zǎo jiù hǎo le ne ， zěn me yòu lái yī yuàn le ？\nMình tưởng chân bạn khỏi lâu rồi, sao lại đến bệnh viện?"
+    },
+    {
+      "hanzi": "段",
+      "pinyin": "duàn",
+      "vietnamese_meaning": "đoạn, quãng (lượng từ cho thời gian, văn bản)",
+      "part_of_speech": "lượng từ",
+      "source_key": "3:7:段",
+      "note": null,
+      "order_index": 19,
+      "example": "我以为过一段时间就好了，结果腿一直很疼，一个月了都没好起来，所以来医院检查一下。\nwǒ yǐ wéi guò yī duàn shí jiān jiù hǎo le ， jié guǒ tuǐ yì zhí hěn téng ， yí gè yuè le dōu méi hǎo qǐ lái ， suǒ yǐ lái yī yuàn jiǎn chá yī xià 。\nMình tưởng một thời gian sẽ khỏi, kết quả chân vẫn đau, một tháng chưa lành nên đến khám."
+    },
+    {
+      "hanzi": "结果",
+      "pinyin": "jiéguǒ",
+      "vietnamese_meaning": "kết quả; rốt cuộc",
+      "part_of_speech": "danh từ, liên từ",
+      "source_key": "3:7:结果",
+      "note": null,
+      "order_index": 20,
+      "example": "医生也这么猜，不过要等检查结果出来才知道。\nyī shēng yě zhè me cāi ， bù guò yào děng jiǎn chá jié guǒ chū lái cái zhī dào 。\nBác sĩ cũng đoán vậy, nhưng phải đợi kết quả kiểm tra mới biết."
+    },
+    {
+      "hanzi": "养",
+      "pinyin": "yǎng",
+      "vietnamese_meaning": "nuôi, dưỡng, chăm sóc để hồi phục",
+      "part_of_speech": "động từ",
+      "source_key": "3:7:养",
+      "note": "Trong ngữ cảnh chấn thương, 养好 là dưỡng cho hồi phục; trong 养小狗 là nuôi chó. Không dịch mọi kết hợp thành nuôi.",
+      "order_index": 21,
+      "example": "你平时又爱跑步又爱游泳，会不会是上次爬山的伤没养好，又运动太多了？\nnǐ píng shí yòu ài pǎo bù yòu ài yóu yǒng ， huì bú huì shì shàng cì pá shān de shāng méi yǎng hǎo ， yòu yùn dòng tài duō le ？\nBạn thường thích chạy, thích bơi, có phải vết thương lần leo núi trước chưa lành mà lại vận động quá nhiều không?"
+    },
+    {
+      "hanzi": "猜",
+      "pinyin": "cāi",
+      "vietnamese_meaning": "đoán",
+      "part_of_speech": "động từ",
+      "source_key": "3:7:猜",
+      "note": null,
+      "order_index": 22,
+      "example": "医生也这么猜，不过要等检查结果出来才知道。\nyī shēng yě zhè me cāi ， bù guò yào děng jiǎn chá jié guǒ chū lái cái zhī dào 。\nBác sĩ cũng đoán vậy, nhưng phải đợi kết quả kiểm tra mới biết."
+    },
+    {
+      "hanzi": "根据",
+      "pinyin": "gēnjù",
+      "vietnamese_meaning": "căn cứ vào, dựa theo",
+      "part_of_speech": "giới từ",
+      "source_key": "3:7:根据",
+      "note": null,
+      "order_index": 23,
+      "example": "我们要根据自己的情况选择。\nwǒ men yào gēn jù zì jǐ de qíng kuàng xuǎn zé 。\nChúng ta cần lựa chọn dựa theo tình trạng của mình."
+    },
+    {
+      "hanzi": "情况",
+      "pinyin": "qíngkuàng",
+      "vietnamese_meaning": "tình hình, tình trạng",
+      "part_of_speech": "danh từ",
+      "source_key": "3:7:情况",
+      "note": null,
+      "order_index": 24,
+      "example": "你现在的身体情况怎么样？\nnǐ xiàn zài de shēn tǐ qíng kuàng zěn me yàng ？\nTình trạng sức khỏe của bạn bây giờ thế nào?"
+    },
+    {
+      "hanzi": "受伤",
+      "pinyin": "shòushāng",
+      "vietnamese_meaning": "bị thương",
+      "part_of_speech": "động từ",
+      "source_key": "3:7:受伤",
+      "note": null,
+      "order_index": 25,
+      "example": "爬山的时候，他受伤了。\npá shān de shí hòu ， tā shòu shāng le 。\nLúc leo núi anh ấy bị thương."
+    },
+    {
+      "hanzi": "继续",
+      "pinyin": "jìxù",
+      "vietnamese_meaning": "tiếp tục",
+      "part_of_speech": "động từ",
+      "source_key": "3:7:继续",
+      "note": null,
+      "order_index": 26,
+      "example": "我们休息一下，再继续学习。\nwǒ men xiū xī yī xià ， zài jì xù xué xí 。\nChúng ta nghỉ một lát rồi tiếp tục học."
+    },
+    {
+      "hanzi": "不然",
+      "pinyin": "bùrán",
+      "vietnamese_meaning": "nếu không thì",
+      "part_of_speech": "liên từ",
+      "source_key": "3:7:不然",
+      "note": null,
+      "order_index": 27,
+      "example": "你早点儿走，不然会迟到。\nnǐ zǎo diǎn ér zǒu ， bù rán huì chí dào 。\nBạn đi sớm một chút, nếu không sẽ đến muộn."
+    },
+    {
+      "hanzi": "影响",
+      "pinyin": "yǐngxiǎng",
+      "vietnamese_meaning": "ảnh hưởng",
+      "part_of_speech": "động từ, danh từ",
+      "source_key": "3:7:影响",
+      "note": null,
+      "order_index": 28,
+      "example": "这个问题会影响我们的学习。\nzhè ge wèn tí huì yǐng xiǎng wǒ men de xué xí 。\nVấn đề này sẽ ảnh hưởng đến việc học của chúng ta."
+    },
+    {
+      "hanzi": "药效",
+      "pinyin": "yàoxiào",
+      "vietnamese_meaning": "tác dụng của thuốc",
+      "part_of_speech": "danh từ",
+      "source_key": "3:7:药效",
+      "note": null,
+      "order_index": 29,
+      "example": "医生给我讲了药效。\nyī shēng gěi wǒ jiǎng le yào xiào 。\nBác sĩ đã giải thích tác dụng của thuốc cho tôi."
+    }
+  ],
+  "grammar": [
+    {
+      "name": "Tiếp diễn với 下去",
+      "structure": "Động từ/tính từ + 下去",
+      "explanation": "Biểu thị tiếp tục hành động hoặc trạng thái từ hiện tại về sau.",
+      "usage": "Khác nghĩa di chuyển xuống phía xa người nói của 下去; xét nghĩa của động từ đứng trước.",
+      "example": "不能再胖下去了。\nbù néng zài pàng xià qù le 。\nKhông thể tiếp tục béo lên nữa.",
+      "note": "Khác nghĩa di chuyển xuống phía xa người nói của 下去; xét nghĩa của động từ đứng trước.",
+      "order_index": 1
+    },
+    {
+      "name": "Động từ ly hợp",
+      "structure": "Thành phần động từ + thành phần danh từ",
+      "explanation": "Một số kết hợp có thể tách ra khi thêm số lượng, thời gian hoặc thành phần khác.",
+      "usage": "Không đặt tùy ý tân ngữ trực tiếp sau cả cụm ly hợp; phải xét kết hợp cụ thể như 帮忙、见面、睡觉.",
+      "example": "我从来没住过院。\nwǒ cóng lái méi zhù guò yuàn 。\nTôi chưa từng nằm viện.",
+      "note": "Không đặt tùy ý tân ngữ trực tiếp sau cả cụm ly hợp; phải xét kết hợp cụ thể như 帮忙、见面、睡觉.",
+      "order_index": 2
+    },
+    {
+      "name": "Bổ ngữ thời lượng",
+      "structure": "Động từ + khoảng thời gian / động từ + 了 + khoảng thời gian",
+      "explanation": "Nêu hành động hoặc trạng thái kéo dài bao lâu.",
+      "usage": "Phân biệt thời điểm và thời lượng; 快两个月 là gần hai tháng, không phải vào tháng Hai.",
+      "example": "我已经坚持快两个月了。\nwǒ yǐ jīng jiān chí kuài liǎng gè yuè le 。\nTôi đã kiên trì được gần hai tháng rồi.",
+      "note": "Phân biệt thời điểm và thời lượng; 快两个月 là gần hai tháng, không phải vào tháng Hai.",
+      "order_index": 3
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Bắt đầu tập thể dục",
+      "content": "小李：小刚，早啊！最近天天在操场看见你呢。\n小刚：是啊，我现在每天早上都来这儿跑三圈，已经坚持快两个月了。\n小李：真厉害！你为什么开始运动了？\n小刚：做体检的时候，医生说我身体不太好，让我多锻炼，不能再胖下去了。\n小李：原来是这样！我下午常和同学踢足球，你要不要一起来玩？\n小刚：我也想试试，就是我从来没踢过，肯定踢得不怎么样，怕拖你后腿。\n小李：没关系！我可以教你，很简单的。",
+      "pinyin": "xiǎo lǐ ： xiǎo gāng ， zǎo a ！ zuì jìn tiān tiān zài cāo chǎng kàn jiàn nǐ ne 。\nxiǎo gāng ： shì a ， wǒ xiàn zài měi tiān zǎo shàng dōu lái zhè ér pǎo sān quān ， yǐ jīng jiān chí kuài liǎng gè yuè le 。\nxiǎo lǐ ： zhēn lì hài ！ nǐ wèi shén me kāi shǐ yùn dòng le ？\nxiǎo gāng ： zuò tǐ jiǎn de shí hòu ， yī shēng shuō wǒ shēn tǐ bù tài hǎo ， ràng wǒ duō duàn liàn ， bù néng zài pàng xià qù le 。\nxiǎo lǐ ： yuán lái shì zhè yàng ！ wǒ xià wǔ cháng hé tóng xué tī zú qiú ， nǐ yào bù yào yì qǐ lái wán ？\nxiǎo gāng ： wǒ yě xiǎng shì shì ， jiù shì wǒ cóng lái méi tī guò ， kěn dìng tī de bù zěn me yàng ， pà tuō nǐ hòu tuǐ 。\nxiǎo lǐ ： méi guān xì ！ wǒ kě yǐ jiāo nǐ ， hěn jiǎn dān de 。",
+      "vietnamese_translation": "Tiểu Lý: Tiểu Cương, chào buổi sáng! Gần đây ngày nào cũng thấy bạn ở sân vận động.\nTiểu Cương: Đúng, bây giờ mỗi sáng mình đến chạy ba vòng, kiên trì gần hai tháng rồi.\nTiểu Lý: Giỏi thật! Sao bạn bắt đầu tập thể dục?\nTiểu Cương: Khi khám sức khỏe, bác sĩ nói sức khỏe mình không tốt lắm, bảo tập nhiều hơn, không thể tiếp tục béo lên nữa.\nTiểu Lý: Hóa ra vậy! Buổi chiều mình thường đá bóng với bạn học, bạn có muốn cùng chơi không?\nTiểu Cương: Mình cũng muốn thử, nhưng chưa đá bao giờ, chắc đá không tốt, sợ làm ảnh hưởng đội bạn.\nTiểu Lý: Không sao! Mình có thể dạy bạn, đơn giản lắm.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 7, bài khóa 1."
+    },
+    {
+      "order_index": 2,
+      "title": "Hỏi thăm bạn không khỏe",
+      "content": "小丽：你怎么了？看起来特别不舒服，眼睛也红红的。\n小刚：昨天和朋友去爬山，回来的时候腿疼，肚子也疼，晚上一直睡不着觉。\n小丽：那你现在感觉怎么样？\n小刚：现在还是很难受，好像还发低烧了。\n小丽：是不是感冒了？我陪你去医院让医生检查一下吧。\n小刚：不用了，我先回座位休息一会儿，可能慢慢就好了。\n小丽：那你好好休息，如果一会儿还疼，一定要告诉我，我们去看医生。\n小刚：好的，谢谢你这么关心我。",
+      "pinyin": "xiǎo lì ： nǐ zěn me le ？ kàn qǐ lái tè bié bù shū fú ， yǎn jīng yě hóng hóng de 。\nxiǎo gāng ： zuó tiān hé péng yǒu qù pá shān ， huí lái de shí hòu tuǐ téng ， dǔ zi yě téng ， wǎn shàng yì zhí shuì bù zháo jué 。\nxiǎo lì ： nà nǐ xiàn zài gǎn jué zěn me yàng ？\nxiǎo gāng ： xiàn zài hái shì hěn nán shòu ， hǎo xiàng hái fā dī shāo le 。\nxiǎo lì ： shì bú shì gǎn mào le ？ wǒ péi nǐ qù yī yuàn ràng yī shēng jiǎn chá yī xià ba 。\nxiǎo gāng ： bù yòng le ， wǒ xiān huí zuò wèi xiū xī yī huì er ， kě néng màn màn jiù hǎo le 。\nxiǎo lì ： nà nǐ hǎo hǎo xiū xī ， rú guǒ yī huì er hái téng ， yí dìng yào gào sù wǒ ， wǒ men qù kàn yī shēng 。\nxiǎo gāng ： hǎo de ， xiè xiè nǐ zhè me guān xīn wǒ 。",
+      "vietnamese_translation": "Tiểu Lệ: Bạn sao thế? Trông rất mệt, mắt cũng đỏ.\nTiểu Cương: Hôm qua mình đi leo núi với bạn, lúc về đau chân, đau bụng, tối không ngủ được.\nTiểu Lệ: Bây giờ bạn thấy thế nào?\nTiểu Cương: Vẫn rất khó chịu, hình như còn hơi sốt.\nTiểu Lệ: Có phải cảm rồi không? Mình đưa bạn đến bệnh viện để bác sĩ khám nhé.\nTiểu Cương: Không cần đâu, mình về chỗ ngồi nghỉ một lát, có lẽ sẽ đỡ dần.\nTiểu Lệ: Vậy bạn nghỉ cho tốt. Nếu lát nữa vẫn đau thì nhất định báo mình để đi khám.\nTiểu Cương: Được, cảm ơn bạn quan tâm mình.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 7, bài khóa 2."
+    },
+    {
+      "order_index": 3,
+      "title": "Gặp bạn ở bệnh viện",
+      "content": "小丽：小刚？你怎么也在这儿呢？我还以为你腿早就好了呢，怎么又来医院了？\n小刚：我以为过一段时间就好了，结果腿一直很疼，一个月了都没好起来，所以来医院检查一下。\n小丽：不过你看起来还不错，不像生病的样子。\n小刚：我身体一直挺好的啊，从来没住过院。\n小丽：你平时又爱跑步又爱游泳，会不会是上次爬山的伤没养好，又运动太多了？\n小刚：医生也这么猜，不过要等检查结果出来才知道。\n小丽：好好儿听医生的话，肯定很快就能出院的！\n小刚：谢谢你！到时候还要借你的本子呢。",
+      "pinyin": "xiǎo lì ： xiǎo gāng ？ nǐ zěn me yě zài zhè ér ne ？ wǒ hái yǐ wéi nǐ tuǐ zǎo jiù hǎo le ne ， zěn me yòu lái yī yuàn le ？\nxiǎo gāng ： wǒ yǐ wéi guò yī duàn shí jiān jiù hǎo le ， jié guǒ tuǐ yì zhí hěn téng ， yí gè yuè le dōu méi hǎo qǐ lái ， suǒ yǐ lái yī yuàn jiǎn chá yī xià 。\nxiǎo lì ： bù guò nǐ kàn qǐ lái hái bú cuò ， bù xiàng shēng bìng de yàng zi 。\nxiǎo gāng ： wǒ shēn tǐ yì zhí tǐng hǎo de a ， cóng lái méi zhù guò yuàn 。\nxiǎo lì ： nǐ píng shí yòu ài pǎo bù yòu ài yóu yǒng ， huì bú huì shì shàng cì pá shān de shāng méi yǎng hǎo ， yòu yùn dòng tài duō le ？\nxiǎo gāng ： yī shēng yě zhè me cāi ， bù guò yào děng jiǎn chá jié guǒ chū lái cái zhī dào 。\nxiǎo lì ： hǎo hǎo ér tīng yī shēng de huà ， kěn dìng hěn kuài jiù néng chū yuàn de ！\nxiǎo gāng ： xiè xiè nǐ ！ dào shí hòu hái yào jiè nǐ de běn zi ne 。",
+      "vietnamese_translation": "Tiểu Lệ: Tiểu Cương? Sao bạn cũng ở đây? Mình tưởng chân bạn khỏi lâu rồi, sao lại đến bệnh viện?\nTiểu Cương: Mình tưởng một thời gian sẽ khỏi, kết quả chân vẫn đau, một tháng chưa lành nên đến khám.\nTiểu Lệ: Nhưng trông bạn khá ổn, không giống đang ốm.\nTiểu Cương: Sức khỏe mình vốn khá tốt, chưa nằm viện bao giờ.\nTiểu Lệ: Bạn thường thích chạy, thích bơi, có phải vết thương lần leo núi trước chưa lành mà lại vận động quá nhiều không?\nTiểu Cương: Bác sĩ cũng đoán vậy, nhưng phải đợi kết quả kiểm tra mới biết.\nTiểu Lệ: Nghe lời bác sĩ nhé, chắc sớm được ra viện thôi!\nTiểu Cương: Cảm ơn bạn! Đến lúc ấy mình còn phải mượn vở bạn nữa.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 7, bài khóa 3."
+    },
+    {
+      "order_index": 4,
+      "title": "Lời dặn trước khi ra viện",
+      "content": "今天我的腿已经好多了，终于可以回家了。出院前，医生跟我说，以后要根据自己的健康情况运动，不能再受伤了，等腿完全好了几个月后，才能继续爬山。这次的药有好几种，吃法也不一样，有一种是饭前吃一次，其他每天吃三次，都要在饭后吃。医生还说吃药时不能喝冰水，不然会影响药效。医生说的话我比谁都清楚，回家后我会按时吃药、好好休息，希望能早点儿和同学们一起上课。",
+      "pinyin": "jīn tiān wǒ de tuǐ yǐ jīng hǎo duō le ， zhōng yú kě yǐ huí jiā le 。 chū yuàn qián ， yī shēng gēn wǒ shuō ， yǐ hòu yào gēn jù zì jǐ de jiàn kāng qíng kuàng yùn dòng ， bù néng zài shòu shāng le ， děng tuǐ wán quán hǎo le jǐ gè yuè hòu ， cái néng jì xù pá shān 。 zhè cì de yào yǒu hǎo jǐ zhǒng ， chī fǎ yě bù yí yàng ， yǒu yī zhǒng shì fàn qián chī yī cì ， qí tā měi tiān chī sān cì ， dōu yào zài fàn hòu chī 。 yī shēng hái shuō chī yào shí bù néng hē bīng shuǐ ， bù rán huì yǐng xiǎng yào xiào 。 yī shēng shuō de huà wǒ bǐ shéi dōu qīng chǔ ， huí jiā hòu wǒ huì àn shí chī yào 、 hǎo hǎo xiū xī ， xī wàng néng zǎo diǎn ér hé tóng xué men yì qǐ shàng kè 。",
+      "vietnamese_translation": "Hôm nay chân tôi đã đỡ nhiều, cuối cùng có thể về nhà. Trước khi ra viện, bác sĩ nói sau này cần vận động dựa theo tình trạng sức khỏe, không để bị thương nữa; phải đợi chân khỏi hoàn toàn vài tháng mới tiếp tục leo núi. Lần này có nhiều loại thuốc, cách dùng cũng khác nhau: có một loại uống một lần trước bữa ăn, những loại khác uống ba lần mỗi ngày, đều sau bữa ăn. Bác sĩ còn nói lúc uống thuốc không được uống nước đá, nếu không sẽ ảnh hưởng tác dụng thuốc. Lời bác sĩ nói tôi hiểu rõ hơn ai hết. Về nhà tôi sẽ uống thuốc đúng giờ, nghỉ ngơi tốt, mong sớm được đi học cùng các bạn.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 7, bài khóa 4."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 3 · Bài 7 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp của bài này và các bài trước; đạt từ 80%, được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "source_documents": {
+    "vocabulary": "DOCX",
+    "theory": "DOCX"
+  },
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 1).",
+      "options": [
+        {
+          "option_text": "văn phòng",
+          "is_correct": false
+        },
+        {
+          "option_text": "công viên Disneyland",
+          "is_correct": false
+        },
+        {
+          "option_text": "ghét; đáng ghét",
+          "is_correct": false
+        },
+        {
+          "option_text": "tưởng rằng (thường khác thực tế)",
+          "is_correct": true
+        }
+      ],
+      "rubric": "以为 (yǐwéi) — tưởng rằng (thường khác thực tế). Thường nói về điều mình từng tưởng nhưng thực tế có thể khác; 认为 thiên về đưa ra quan điểm.",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "以为"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 7
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “小学” (xiǎo xué) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "không/chưa",
+          "is_correct": false
+        },
+        {
+          "option_text": "trường tiểu học; bậc tiểu học",
+          "is_correct": true
+        },
+        {
+          "option_text": "mỗi, hàng (ngày)",
+          "is_correct": false
+        },
+        {
+          "option_text": "nhất định, chắc chắn",
+          "is_correct": false
+        }
+      ],
+      "rubric": "小学 (xiǎo xué) — trường tiểu học; bậc tiểu học. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 11
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “yuánlái” — hóa ra; vốn dĩ, ban đầu.",
+      "options": [
+        {
+          "option_text": "块",
+          "is_correct": false
+        },
+        {
+          "option_text": "胖",
+          "is_correct": false
+        },
+        {
+          "option_text": "西安",
+          "is_correct": false
+        },
+        {
+          "option_text": "原来",
+          "is_correct": true
+        }
+      ],
+      "rubric": "原来 (yuánlái) — hóa ra; vốn dĩ, ban đầu. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 7
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 4).",
+      "options": [
+        {
+          "option_text": "khu dân cư",
+          "is_correct": false
+        },
+        {
+          "option_text": "lên lớp, đi học",
+          "is_correct": false
+        },
+        {
+          "option_text": "bị thương",
+          "is_correct": true
+        },
+        {
+          "option_text": "nhất thiết phải",
+          "is_correct": false
+        }
+      ],
+      "rubric": "受伤 (shòushāng) — bị thương. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "受伤"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 7
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “继续” (jìxù) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "tầng lầu; tòa nhà",
+          "is_correct": false
+        },
+        {
+          "option_text": "vừa vặn, phù hợp",
+          "is_correct": false
+        },
+        {
+          "option_text": "tiếp tục",
+          "is_correct": true
+        },
+        {
+          "option_text": "địa điểm tham quan",
+          "is_correct": false
+        }
+      ],
+      "rubric": "继续 (jìxù) — tiếp tục. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 7
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “tī” — đá (bằng chân).",
+      "options": [
+        {
+          "option_text": "关心",
+          "is_correct": false
+        },
+        {
+          "option_text": "啊",
+          "is_correct": false
+        },
+        {
+          "option_text": "售货员",
+          "is_correct": false
+        },
+        {
+          "option_text": "踢",
+          "is_correct": true
+        }
+      ],
+      "rubric": "踢 (tī) — đá (bằng chân). ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 7
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 7).",
+      "options": [
+        {
+          "option_text": "số, mã số",
+          "is_correct": false
+        },
+        {
+          "option_text": "cả gia đình",
+          "is_correct": false
+        },
+        {
+          "option_text": "vui, chơi vui",
+          "is_correct": false
+        },
+        {
+          "option_text": "kết quả; rốt cuộc",
+          "is_correct": true
+        }
+      ],
+      "rubric": "结果 (jiéguǒ) — kết quả; rốt cuộc. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "结果"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 7
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “大学生” (dàxuéshēng) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "sinh viên",
+          "is_correct": true
+        },
+        {
+          "option_text": "lên mạng",
+          "is_correct": false
+        },
+        {
+          "option_text": "thức dậy",
+          "is_correct": false
+        },
+        {
+          "option_text": "thứ mấy",
+          "is_correct": false
+        }
+      ],
+      "rubric": "大学生 (dàxuéshēng) — sinh viên. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 11
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “dǎsuàn” — dự định; kế hoạch.",
+      "options": [
+        {
+          "option_text": "外面",
+          "is_correct": false
+        },
+        {
+          "option_text": "韩国",
+          "is_correct": false
+        },
+        {
+          "option_text": "打算",
+          "is_correct": true
+        },
+        {
+          "option_text": "举行",
+          "is_correct": false
+        }
+      ],
+      "rubric": "打算 (dǎsuàn) — dự định; kế hoạch. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 5
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "ngày",
+          "is_correct": false
+        },
+        {
+          "option_text": "căn cứ vào, dựa theo",
+          "is_correct": true
+        },
+        {
+          "option_text": "không sao; không có việc gì",
+          "is_correct": false
+        },
+        {
+          "option_text": "công cụ, dụng cụ",
+          "is_correct": false
+        }
+      ],
+      "rubric": "根据 (gēnjù) — căn cứ vào, dựa theo. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "根据"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 7
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “体检” (tǐjiǎn) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "khám sức khỏe tổng quát",
+          "is_correct": true
+        },
+        {
+          "option_text": "mắt",
+          "is_correct": false
+        },
+        {
+          "option_text": "vậy thì, thế thì",
+          "is_correct": false
+        },
+        {
+          "option_text": "giao cho, nộp cho",
+          "is_correct": false
+        }
+      ],
+      "rubric": "体检 (tǐjiǎn) — khám sức khỏe tổng quát. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 7
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “hǎoxiàng” — hình như, dường như; giống như.",
+      "options": [
+        {
+          "option_text": "电影院",
+          "is_correct": false
+        },
+        {
+          "option_text": "好像",
+          "is_correct": true
+        },
+        {
+          "option_text": "黄色",
+          "is_correct": false
+        },
+        {
+          "option_text": "套",
+          "is_correct": false
+        }
+      ],
+      "rubric": "好像 (hǎoxiàng) — hình như, dường như; giống như. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 7
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “từ trước đến nay” (pinyin: cónglái).",
+      "reference_answer": "从来",
+      "rubric": "Đáp án: 从来 (cónglái). Thường kết hợp phủ định để nói chưa bao giờ hoặc từ trước đến nay không: 从来没…、从来不….",
+      "config": {
+        "accepted_answers": [
+          "从来"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 7
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “tình hình, tình trạng” (pinyin: qíngkuàng).",
+      "reference_answer": "情况",
+      "rubric": "Đáp án: 情况 (qíngkuàng). ",
+      "config": {
+        "accepted_answers": [
+          "情况"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 7
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “quan tâm” (pinyin: guānxīn).",
+      "reference_answer": "关心",
+      "rubric": "Đáp án: 关心 (guānxīn). ",
+      "config": {
+        "accepted_answers": [
+          "关心"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 7
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “làm cản trở, kéo lùi người khác” (pinyin: tuōhòutuǐ).",
+      "reference_answer": "拖后腿",
+      "rubric": "Đáp án: 拖后腿 (tuōhòutuǐ). ",
+      "config": {
+        "accepted_answers": [
+          "拖后腿"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 7
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối các từ với nghĩa đã học (nhóm 1).",
+      "rubric": "根据: căn cứ vào, dựa theo ; 结果: kết quả; rốt cuộc ; 以为: tưởng rằng (thường khác thực tế) ; 翻译: phiên dịch, biên dịch; người phiên dịch",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "根据"
+          },
+          {
+            "id": "l1",
+            "text": "结果"
+          },
+          {
+            "id": "l2",
+            "text": "以为"
+          },
+          {
+            "id": "l3",
+            "text": "翻译"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r3",
+            "text": "phiên dịch, biên dịch; người phiên dịch"
+          },
+          {
+            "id": "r0",
+            "text": "căn cứ vào, dựa theo"
+          },
+          {
+            "id": "r1",
+            "text": "kết quả; rốt cuộc"
+          },
+          {
+            "id": "r2",
+            "text": "tưởng rằng (thường khác thực tế)"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 7
+        },
+        {
+          "hsk": 3,
+          "lesson": 7
+        },
+        {
+          "hsk": 3,
+          "lesson": 7
+        },
+        {
+          "hsk": 3,
+          "lesson": 3
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối các từ với nghĩa đã học (nhóm 2).",
+      "rubric": "段: đoạn, quãng (lượng từ cho thời gian, văn bản) ; 怕: sợ ; 足球: bóng đá ; 受伤: bị thương",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "段"
+          },
+          {
+            "id": "l1",
+            "text": "怕"
+          },
+          {
+            "id": "l2",
+            "text": "足球"
+          },
+          {
+            "id": "l3",
+            "text": "受伤"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r0",
+            "text": "đoạn, quãng (lượng từ cho thời gian, văn bản)"
+          },
+          {
+            "id": "r2",
+            "text": "bóng đá"
+          },
+          {
+            "id": "r1",
+            "text": "sợ"
+          },
+          {
+            "id": "r3",
+            "text": "bị thương"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 7
+        },
+        {
+          "hsk": 3,
+          "lesson": 7
+        },
+        {
+          "hsk": 3,
+          "lesson": 7
+        },
+        {
+          "hsk": 3,
+          "lesson": 7
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Biểu thị tiếp tục về sau: 不能再胖___了。",
+      "options": [
+        {
+          "option_text": "下去",
+          "is_correct": true
+        },
+        {
+          "option_text": "在的",
+          "is_correct": false
+        },
+        {
+          "option_text": "是的",
+          "is_correct": false
+        },
+        {
+          "option_text": "的很",
+          "is_correct": false
+        }
+      ],
+      "rubric": "下去 sau tính từ nói trạng thái tiếp tục phát triển từ hiện tại.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 7
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "我从来___住过院。",
+      "options": [
+        {
+          "option_text": "不",
+          "is_correct": false
+        },
+        {
+          "option_text": "没",
+          "is_correct": true
+        },
+        {
+          "option_text": "别",
+          "is_correct": false
+        },
+        {
+          "option_text": "再",
+          "is_correct": false
+        }
+      ],
+      "rubric": "从来没…过 nói từ trước đến nay chưa từng có trải nghiệm đó.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 7
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong 我坚持了两个月, 两个月 cho biết gì?",
+      "options": [
+        {
+          "option_text": "Thời điểm tháng Hai",
+          "is_correct": false
+        },
+        {
+          "option_text": "Địa điểm chạy bộ",
+          "is_correct": false
+        },
+        {
+          "option_text": "Số người tham gia",
+          "is_correct": false
+        },
+        {
+          "option_text": "Thời lượng duy trì",
+          "is_correct": true
+        }
+      ],
+      "rubric": "两个月 là khoảng thời gian kéo dài, không phải một mốc lịch.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 7
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Tiếp diễn với 下去”, cách hiểu nào đúng (mục 1)?",
+      "options": [
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Biểu thị tiếp tục hành động hoặc trạng thái từ hiện tại về sau.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Biểu thị tiếp tục hành động hoặc trạng thái từ hiện tại về sau. Khác nghĩa di chuyển xuống phía xa người nói của 下去; xét nghĩa của động từ đứng trước.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 7
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Động từ ly hợp”, cách hiểu nào đúng (mục 2)?",
+      "options": [
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Một số kết hợp có thể tách ra khi thêm số lượng, thời gian hoặc thành phần khác.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Một số kết hợp có thể tách ra khi thêm số lượng, thời gian hoặc thành phần khác. Không đặt tùy ý tân ngữ trực tiếp sau cả cụm ly hợp; phải xét kết hợp cụ thể như 帮忙、见面、睡觉.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 7
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Bổ ngữ thời lượng”, cách hiểu nào đúng (mục 3)?",
+      "options": [
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nêu hành động hoặc trạng thái kéo dài bao lâu.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Nêu hành động hoặc trạng thái kéo dài bao lâu. Phân biệt thời điểm và thời lượng; 快两个月 là gần hai tháng, không phải vào tháng Hai.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 7
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Không thể tiếp tục béo lên nữa. (câu 1).",
+      "reference_answer": "不能再胖下去了。",
+      "rubric": "Câu đúng: 不能再胖下去了。 — Không thể tiếp tục béo lên nữa. Khác nghĩa di chuyển xuống phía xa người nói của 下去; xét nghĩa của động từ đứng trước.",
+      "config": {
+        "items": [
+          {
+            "id": "t1",
+            "text": "能"
+          },
+          {
+            "id": "t2",
+            "text": "再"
+          },
+          {
+            "id": "t3",
+            "text": "胖"
+          },
+          {
+            "id": "t4",
+            "text": "下"
+          },
+          {
+            "id": "t5",
+            "text": "去"
+          },
+          {
+            "id": "t7",
+            "text": "。"
+          },
+          {
+            "id": "t6",
+            "text": "了"
+          },
+          {
+            "id": "t0",
+            "text": "不"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 7
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Tôi chưa từng nằm viện. (câu 2).",
+      "reference_answer": "我从来没住过院。",
+      "rubric": "Câu đúng: 我从来没住过院。 — Tôi chưa từng nằm viện. Không đặt tùy ý tân ngữ trực tiếp sau cả cụm ly hợp; phải xét kết hợp cụ thể như 帮忙、见面、睡觉.",
+      "config": {
+        "items": [
+          {
+            "id": "t5",
+            "text": "院"
+          },
+          {
+            "id": "t1",
+            "text": "从来"
+          },
+          {
+            "id": "t2",
+            "text": "没"
+          },
+          {
+            "id": "t4",
+            "text": "过"
+          },
+          {
+            "id": "t0",
+            "text": "我"
+          },
+          {
+            "id": "t6",
+            "text": "。"
+          },
+          {
+            "id": "t3",
+            "text": "住"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 7
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Tôi đã kiên trì được gần hai tháng rồi. (câu 3).",
+      "reference_answer": "我已经坚持快两个月了。",
+      "rubric": "Câu đúng: 我已经坚持快两个月了。 — Tôi đã kiên trì được gần hai tháng rồi. Phân biệt thời điểm và thời lượng; 快两个月 là gần hai tháng, không phải vào tháng Hai.",
+      "config": {
+        "items": [
+          {
+            "id": "t5",
+            "text": "个"
+          },
+          {
+            "id": "t4",
+            "text": "两"
+          },
+          {
+            "id": "t1",
+            "text": "已经"
+          },
+          {
+            "id": "t8",
+            "text": "。"
+          },
+          {
+            "id": "t7",
+            "text": "了"
+          },
+          {
+            "id": "t2",
+            "text": "坚持"
+          },
+          {
+            "id": "t3",
+            "text": "快"
+          },
+          {
+            "id": "t0",
+            "text": "我"
+          },
+          {
+            "id": "t6",
+            "text": "月"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 7
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Tiểu Cương, chào buổi sáng! Gần đây ngày nào cũng thấy bạn ở sân vận động. (câu 4).",
+      "reference_answer": "小刚，早啊！最近天天在操场看见你呢。",
+      "rubric": "Câu đúng: 小刚，早啊！最近天天在操场看见你呢。 — Tiểu Cương, chào buổi sáng! Gần đây ngày nào cũng thấy bạn ở sân vận động. Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t14",
+            "text": "。"
+          },
+          {
+            "id": "t11",
+            "text": "看见"
+          },
+          {
+            "id": "t12",
+            "text": "你"
+          },
+          {
+            "id": "t4",
+            "text": "啊"
+          },
+          {
+            "id": "t7",
+            "text": "天"
+          },
+          {
+            "id": "t9",
+            "text": "在"
+          },
+          {
+            "id": "t2",
+            "text": "，"
+          },
+          {
+            "id": "t1",
+            "text": "刚"
+          },
+          {
+            "id": "t5",
+            "text": "！"
+          },
+          {
+            "id": "t0",
+            "text": "小"
+          },
+          {
+            "id": "t3",
+            "text": "早"
+          },
+          {
+            "id": "t10",
+            "text": "操场"
+          },
+          {
+            "id": "t6",
+            "text": "最近"
+          },
+          {
+            "id": "t8",
+            "text": "天"
+          },
+          {
+            "id": "t13",
+            "text": "呢"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12",
+          "t13",
+          "t14"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 7
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Đúng, bây giờ mỗi sáng mình đến chạy ba vòng, kiên trì gần hai tháng rồi. (câu 5).",
+      "reference_answer": "是啊，我现在每天早上都来这儿跑三圈，已经坚持快两个月了。",
+      "rubric": "Câu đúng: 是啊，我现在每天早上都来这儿跑三圈，已经坚持快两个月了。 — Đúng, bây giờ mỗi sáng mình đến chạy ba vòng, kiên trì gần hai tháng rồi. Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t19",
+            "text": "个"
+          },
+          {
+            "id": "t10",
+            "text": "这儿"
+          },
+          {
+            "id": "t14",
+            "text": "，"
+          },
+          {
+            "id": "t0",
+            "text": "是"
+          },
+          {
+            "id": "t17",
+            "text": "快"
+          },
+          {
+            "id": "t20",
+            "text": "月"
+          },
+          {
+            "id": "t12",
+            "text": "三"
+          },
+          {
+            "id": "t5",
+            "text": "每"
+          },
+          {
+            "id": "t15",
+            "text": "已经"
+          },
+          {
+            "id": "t3",
+            "text": "我"
+          },
+          {
+            "id": "t22",
+            "text": "。"
+          },
+          {
+            "id": "t16",
+            "text": "坚持"
+          },
+          {
+            "id": "t9",
+            "text": "来"
+          },
+          {
+            "id": "t7",
+            "text": "早上"
+          },
+          {
+            "id": "t1",
+            "text": "啊"
+          },
+          {
+            "id": "t4",
+            "text": "现在"
+          },
+          {
+            "id": "t6",
+            "text": "天"
+          },
+          {
+            "id": "t11",
+            "text": "跑"
+          },
+          {
+            "id": "t2",
+            "text": "，"
+          },
+          {
+            "id": "t8",
+            "text": "都"
+          },
+          {
+            "id": "t18",
+            "text": "两"
+          },
+          {
+            "id": "t13",
+            "text": "圈"
+          },
+          {
+            "id": "t21",
+            "text": "了"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12",
+          "t13",
+          "t14",
+          "t15",
+          "t16",
+          "t17",
+          "t18",
+          "t19",
+          "t20",
+          "t21",
+          "t22"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 7
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Giỏi thật! Sao bạn bắt đầu tập thể dục? (câu 6).",
+      "reference_answer": "真厉害！你为什么开始运动了？",
+      "rubric": "Câu đúng: 真厉害！你为什么开始运动了？ — Giỏi thật! Sao bạn bắt đầu tập thể dục? Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t1",
+            "text": "厉害"
+          },
+          {
+            "id": "t4",
+            "text": "为什么"
+          },
+          {
+            "id": "t7",
+            "text": "了"
+          },
+          {
+            "id": "t0",
+            "text": "真"
+          },
+          {
+            "id": "t5",
+            "text": "开始"
+          },
+          {
+            "id": "t8",
+            "text": "？"
+          },
+          {
+            "id": "t6",
+            "text": "运动"
+          },
+          {
+            "id": "t2",
+            "text": "！"
+          },
+          {
+            "id": "t3",
+            "text": "你"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 7
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ]
+}

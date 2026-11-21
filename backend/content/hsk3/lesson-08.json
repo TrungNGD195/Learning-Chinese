@@ -1,0 +1,1812 @@
+{
+  "key": "hsk3-lesson-08-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 3,
+    "lesson_number": 8,
+    "title": "明天你来得了吗？ · Ngày mai bạn có đến được không?",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "校园",
+      "pinyin": "xiàoyuán",
+      "vietnamese_meaning": "khuôn viên trường",
+      "part_of_speech": "danh từ",
+      "source_key": "3:8:校园",
+      "note": null,
+      "order_index": 1,
+      "example": "小丽，你看到没看到我的校园卡？\nxiǎo lì ， nǐ kàn dào méi kàn dào wǒ de xiào yuán kǎ ？\nTiểu Lệ, bạn có thấy thẻ sinh viên của mình không?"
+    },
+    {
+      "hanzi": "球场",
+      "pinyin": "qiúchǎng",
+      "vietnamese_meaning": "sân bóng",
+      "part_of_speech": "danh từ",
+      "source_key": "3:8:球场",
+      "note": null,
+      "order_index": 2,
+      "example": "你是不是放在球场了？\nnǐ shì bú shì fàng zài qiú chǎng le ？\nCó phải bạn để ở sân bóng không?"
+    },
+    {
+      "hanzi": "刚才",
+      "pinyin": "gāngcái",
+      "vietnamese_meaning": "vừa nãy",
+      "part_of_speech": "danh từ chỉ thời gian",
+      "source_key": "3:8:刚才",
+      "note": null,
+      "order_index": 3,
+      "example": "刚才在球场我给小明了。\ngāng cái zài qiú chǎng wǒ gěi xiǎo míng le 。\nVừa nãy ở sân bóng mình đưa Tiểu Minh."
+    },
+    {
+      "hanzi": "练球",
+      "pinyin": "liànqiú",
+      "vietnamese_meaning": "tập chơi bóng",
+      "part_of_speech": "động từ",
+      "source_key": "3:8:练球",
+      "note": null,
+      "order_index": 4,
+      "example": "这么晚了你们还练球吗？\nzhè me wǎn le nǐ men hái liàn qiú ma ？\nMuộn thế này các bạn còn tập bóng à?"
+    },
+    {
+      "hanzi": "网球",
+      "pinyin": "wǎngqiú",
+      "vietnamese_meaning": "quần vợt, tennis",
+      "part_of_speech": "danh từ",
+      "source_key": "3:8:网球",
+      "note": null,
+      "order_index": 5,
+      "example": "对啊，我想参加网球比赛。\nduì a ， wǒ xiǎng cān jiā wǎng qiú bǐ sài 。\nĐúng, mình muốn thi quần vợt."
+    },
+    {
+      "hanzi": "了",
+      "pinyin": "liǎo",
+      "vietnamese_meaning": "xong, được (đọc liǎo trong bổ ngữ khả năng)",
+      "part_of_speech": "bổ ngữ",
+      "source_key": "3:8:了",
+      "note": "Ở đây 了 đọc liǎo trong 来得了/来不了. Khác trợ từ le trong 来了 hoặc 吃饭了. Nhắc lại HSK 1 bài 4: 了 (le) — rồi (biểu thị hoàn thành hoặc tình huống mới). Trong ngữ cảnh bài này: xong, được (đọc liǎo trong bổ ngữ khả năng).",
+      "order_index": 6,
+      "example": "啊，对了！\na ， duì le ！\nÀ đúng!"
+    },
+    {
+      "hanzi": "几乎",
+      "pinyin": "jīhū",
+      "vietnamese_meaning": "hầu như, gần như",
+      "part_of_speech": "phó từ",
+      "source_key": "3:8:几乎",
+      "note": null,
+      "order_index": 7,
+      "example": "比赛以前我还想今天我们几乎赢不了呢。\nbǐ sài yǐ qián wǒ hái xiǎng jīn tiān wǒ men jī hū yíng bù liǎo ne 。\nTrước trận mình còn nghĩ hôm nay gần như không thể thắng."
+    },
+    {
+      "hanzi": "队",
+      "pinyin": "duì",
+      "vietnamese_meaning": "đội, đoàn",
+      "part_of_speech": "danh từ",
+      "source_key": "3:8:队",
+      "note": null,
+      "order_index": 8,
+      "example": "我们队今天赢了。\nwǒ men duì jīn tiān yíng le 。\nHôm nay đội chúng tôi đã thắng."
+    },
+    {
+      "hanzi": "赢",
+      "pinyin": "yíng",
+      "vietnamese_meaning": "thắng",
+      "part_of_speech": "động từ",
+      "source_key": "3:8:赢",
+      "note": null,
+      "order_index": 9,
+      "example": "比赛以前我还想今天我们几乎赢不了呢。\nbǐ sài yǐ qián wǒ hái xiǎng jīn tiān wǒ men jī hū yíng bù liǎo ne 。\nTrước trận mình còn nghĩ hôm nay gần như không thể thắng."
+    },
+    {
+      "hanzi": "输",
+      "pinyin": "shū",
+      "vietnamese_meaning": "thua",
+      "part_of_speech": "động từ",
+      "source_key": "3:8:输",
+      "note": null,
+      "order_index": 10,
+      "example": "我们今天输了比赛。\nwǒ men jīn tiān shū le bǐ sài 。\nHôm nay chúng tôi thua trận đấu."
+    },
+    {
+      "hanzi": "回",
+      "pinyin": "huí",
+      "vietnamese_meaning": "lần (lượng từ cho sự việc)",
+      "part_of_speech": "lượng từ",
+      "source_key": "3:8:回",
+      "note": null,
+      "order_index": 11,
+      "example": "怎么回事？\nzěn me huí shì ？\nSao vậy?"
+    },
+    {
+      "hanzi": "主要",
+      "pinyin": "zhǔyào",
+      "vietnamese_meaning": "chủ yếu, chính",
+      "part_of_speech": "tính từ",
+      "source_key": "3:8:主要",
+      "note": null,
+      "order_index": 12,
+      "example": "主要的球员今年都不能参加，大家都受到影响了，所以现在我越想越高兴！\nzhǔ yào de qiú yuán jīn nián dōu bù néng cān jiā ， dà jiā dōu shòu dào yǐng xiǎng le ， suǒ yǐ xiàn zài wǒ yuè xiǎng yuè gāo xìng ！\nNăm nay những cầu thủ chính đều không tham gia được, cả đội bị ảnh hưởng, nên bây giờ càng nghĩ mình càng vui!"
+    },
+    {
+      "hanzi": "球员",
+      "pinyin": "qiúyuán",
+      "vietnamese_meaning": "cầu thủ, vận động viên chơi bóng",
+      "part_of_speech": "danh từ",
+      "source_key": "3:8:球员",
+      "note": null,
+      "order_index": 13,
+      "example": "主要的球员今年都不能参加，大家都受到影响了，所以现在我越想越高兴！\nzhǔ yào de qiú yuán jīn nián dōu bù néng cān jiā ， dà jiā dōu shòu dào yǐng xiǎng le ， suǒ yǐ xiàn zài wǒ yuè xiǎng yuè gāo xìng ！\nNăm nay những cầu thủ chính đều không tham gia được, cả đội bị ảnh hưởng, nên bây giờ càng nghĩ mình càng vui!"
+    },
+    {
+      "hanzi": "受到",
+      "pinyin": "shòudào",
+      "vietnamese_meaning": "nhận, chịu (tác động)",
+      "part_of_speech": "động từ",
+      "source_key": "3:8:受到",
+      "note": null,
+      "order_index": 14,
+      "example": "主要的球员今年都不能参加，大家都受到影响了，所以现在我越想越高兴！\nzhǔ yào de qiú yuán jīn nián dōu bù néng cān jiā ， dà jiā dōu shòu dào yǐng xiǎng le ， suǒ yǐ xiàn zài wǒ yuè xiǎng yuè gāo xìng ！\nNăm nay những cầu thủ chính đều không tham gia được, cả đội bị ảnh hưởng, nên bây giờ càng nghĩ mình càng vui!"
+    },
+    {
+      "hanzi": "分",
+      "pinyin": "fēn",
+      "vietnamese_meaning": "điểm (trong thi đấu, học tập)",
+      "part_of_speech": "danh từ",
+      "source_key": "3:8:分",
+      "note": "分 là điểm khi nói 得分、比赛得分; khác 分 chỉ phút trong 十分钟. Nhắc lại HSK 1 bài 7: 分 (fēn) — phút. Trong ngữ cảnh bài này: điểm (trong thi đấu, học tập).",
+      "order_index": 15,
+      "example": "好啊！但是我们先去找王老师吧。我想告诉他我们的得分。\nhǎo a ！ dàn shì wǒ men xiān qù zhǎo wáng lǎo shī ba 。 wǒ xiǎng gào sù tā wǒ men de dé fēn 。\nĐược! Nhưng mình đến gặp thầy Vương trước nhé, mình muốn báo thầy số điểm đội mình."
+    },
+    {
+      "hanzi": "得",
+      "pinyin": "dé",
+      "vietnamese_meaning": "đạt được, giành được (đọc dé)",
+      "part_of_speech": "động từ",
+      "source_key": "3:8:得",
+      "note": "Ở đây 得 đọc dé và có nghĩa đạt được, như 得分. Trong bổ ngữ 看得懂、跑得快, 得 đọc nhẹ de.",
+      "order_index": 16,
+      "example": "明天我参加网球比赛，你来得了吗？\nmíng tiān wǒ cān jiā wǎng qiú bǐ sài ， nǐ lái de liǎo ma ？\nMai mình thi quần vợt, bạn có đến được không?"
+    },
+    {
+      "hanzi": "体育",
+      "pinyin": "tǐyù",
+      "vietnamese_meaning": "thể dục, thể thao",
+      "part_of_speech": "danh từ",
+      "source_key": "3:8:体育",
+      "note": null,
+      "order_index": 17,
+      "example": "我从小就喜欢体育了。\nwǒ cóng xiǎo jiù xǐ huān tǐ yù le 。\nTừ nhỏ tôi đã thích thể thao."
+    },
+    {
+      "hanzi": "奥运会",
+      "pinyin": "àoyùnhuì",
+      "vietnamese_meaning": "Thế vận hội, Olympic",
+      "part_of_speech": "tên gọi",
+      "source_key": "3:8:奥运会",
+      "note": null,
+      "order_index": 18,
+      "example": "我常常看体育比赛，特别是奥运会。\nwǒ cháng cháng kàn tǐ yù bǐ sài ， tè bié shì ào yùn huì 。\nTôi thường xem thi đấu thể thao, đặc biệt là Thế vận hội."
+    },
+    {
+      "hanzi": "世界",
+      "pinyin": "shìjiè",
+      "vietnamese_meaning": "thế giới",
+      "part_of_speech": "danh từ",
+      "source_key": "3:8:世界",
+      "note": null,
+      "order_index": 19,
+      "example": "奥运会是世界上很重要的体育活动，有很多国家的运动员参加。\nào yùn huì shì shì jiè shàng hěn zhòng yào de tǐ yù huó dòng ， yǒu hěn duō guó jiā de yùn dòng yuán cān jiā 。\nĐây là sự kiện thể thao quan trọng trên thế giới, có vận động viên nhiều nước tham gia."
+    },
+    {
+      "hanzi": "重要",
+      "pinyin": "zhòngyào",
+      "vietnamese_meaning": "quan trọng",
+      "part_of_speech": "tính từ",
+      "source_key": "3:8:重要",
+      "note": null,
+      "order_index": 20,
+      "example": "奥运会是世界上很重要的体育活动，有很多国家的运动员参加。\nào yùn huì shì shì jiè shàng hěn zhòng yào de tǐ yù huó dòng ， yǒu hěn duō guó jiā de yùn dòng yuán cān jiā 。\nĐây là sự kiện thể thao quan trọng trên thế giới, có vận động viên nhiều nước tham gia."
+    },
+    {
+      "hanzi": "成绩",
+      "pinyin": "chéngjì",
+      "vietnamese_meaning": "thành tích, kết quả học tập",
+      "part_of_speech": "danh từ",
+      "source_key": "3:8:成绩",
+      "note": null,
+      "order_index": 21,
+      "example": "她很努力，所以成绩也很好。\ntā hěn nǔ lì ， suǒ yǐ chéng jì yě hěn hǎo 。\nCô rất cố gắng nên thành tích cũng tốt."
+    },
+    {
+      "hanzi": "阮氏映园",
+      "pinyin": "Ruǎn Shì Yìngyuán",
+      "vietnamese_meaning": "Nguyễn Thị Ánh Viên",
+      "part_of_speech": "tên riêng",
+      "source_key": "3:8:阮氏映园",
+      "note": null,
+      "order_index": 22,
+      "example": "我最喜欢的运动员是阮氏映园，她是越南很有名的游泳运动员，16岁的时候就参加奥运会了。\nwǒ zuì xǐ huān de yùn dòng yuán shì ruǎn shì yìng yuán ， tā shì yuè nán hěn yǒu míng de yóu yǒng yùn dòng yuán ， 1 6 suì de shí hòu jiù cān jiā ào yùn huì le 。\nVận động viên tôi thích nhất là Nguyễn Thị Ánh Viên, một vận động viên bơi lội nổi tiếng của Việt Nam, tham gia Olympic từ năm mười sáu tuổi."
+    },
+    {
+      "hanzi": "有名",
+      "pinyin": "yǒumíng",
+      "vietnamese_meaning": "nổi tiếng",
+      "part_of_speech": "tính từ",
+      "source_key": "3:8:有名",
+      "note": null,
+      "order_index": 23,
+      "example": "我最喜欢的运动员是阮氏映园，她是越南很有名的游泳运动员，16岁的时候就参加奥运会了。\nwǒ zuì xǐ huān de yùn dòng yuán shì ruǎn shì yìng yuán ， tā shì yuè nán hěn yǒu míng de yóu yǒng yùn dòng yuán ， 1 6 suì de shí hòu jiù cān jiā ào yùn huì le 。\nVận động viên tôi thích nhất là Nguyễn Thị Ánh Viên, một vận động viên bơi lội nổi tiếng của Việt Nam, tham gia Olympic từ năm mười sáu tuổi."
+    },
+    {
+      "hanzi": "难忘",
+      "pinyin": "nánwàng",
+      "vietnamese_meaning": "khó quên",
+      "part_of_speech": "tính từ",
+      "source_key": "3:8:难忘",
+      "note": null,
+      "order_index": 24,
+      "example": "我觉得她很厉害，她为自己的国家努力，也为世界带来很难忘的比赛。\nwǒ jué de tā hěn lì hài ， tā wèi zì jǐ de guó jiā nǔ lì ， yě wèi shì jiè dài lái hěn nán wàng de bǐ sài 。\nTôi thấy cô rất giỏi, nỗ lực vì đất nước và mang đến thế giới những cuộc thi khó quên."
+    }
+  ],
+  "grammar": [
+    {
+      "name": "Bổ ngữ khả năng",
+      "structure": "Động từ + 得/不 + bổ ngữ kết quả hoặc xu hướng",
+      "explanation": "Nói có hoặc không thể đạt kết quả trong điều kiện cụ thể.",
+      "usage": "Phủ định khả năng dùng 不 ở giữa; khác 没看懂 là việc đọc hiểu đã không đạt trong lần đã xảy ra.",
+      "example": "这本书我看得懂。\nzhè běn shū wǒ kàn de dǒng 。\nQuyển sách này tôi đọc hiểu được.",
+      "note": "Phủ định khả năng dùng 不 ở giữa; khác 没看懂 là việc đọc hiểu đã không đạt trong lần đã xảy ra.",
+      "order_index": 1
+    },
+    {
+      "name": "Khả năng với 得了/不了",
+      "structure": "Động từ + 得了/不了",
+      "explanation": "Biểu thị thực hiện được hay không thực hiện được hành động.",
+      "usage": "了 đọc liǎo trong mẫu này; không đọc le như trợ từ cuối câu.",
+      "example": "明天你来得了吗？\nmíng tiān nǐ lái de liǎo ma ？\nNgày mai bạn có đến được không?",
+      "note": "了 đọc liǎo trong mẫu này; không đọc le như trợ từ cuối câu.",
+      "order_index": 2
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Tìm thẻ sinh viên",
+      "content": "小刚：小丽，你看到没看到我的校园卡？\n小丽：没看到。你是不是放在球场了？\n小刚：啊，对了！刚才在球场我给小明了。等一会儿我跑过他那儿去拿。\n小丽：这么晚了你们还练球吗？\n小刚：是啊！为了准备运动会，我们班的男生每天都练。我听老师说你也参加运动会吗？\n小丽：对啊，我想参加网球比赛。去年我也参加过，还拿了第一呢。\n小刚：真的吗？那这次我一定去看你的比赛。",
+      "pinyin": "xiǎo gāng ： xiǎo lì ， nǐ kàn dào méi kàn dào wǒ de xiào yuán kǎ ？\nxiǎo lì ： méi kàn dào 。 nǐ shì bú shì fàng zài qiú chǎng le ？\nxiǎo gāng ： a ， duì le ！ gāng cái zài qiú chǎng wǒ gěi xiǎo míng le 。 děng yī huì er wǒ pǎo guò tā nà ér qù ná 。\nxiǎo lì ： zhè me wǎn le nǐ men hái liàn qiú ma ？\nxiǎo gāng ： shì a ！ wèi le zhǔn bèi yùn dòng huì ， wǒ men bān de nán shēng měi tiān dōu liàn 。 wǒ tīng lǎo shī shuō nǐ yě cān jiā yùn dòng huì ma ？\nxiǎo lì ： duì a ， wǒ xiǎng cān jiā wǎng qiú bǐ sài 。 qù nián wǒ yě cān jiā guò ， hái ná le dì yī ne 。\nxiǎo gāng ： zhēn de ma ？ nà zhè cì wǒ yí dìng qù kàn nǐ de bǐ sài 。",
+      "vietnamese_translation": "Tiểu Cương: Tiểu Lệ, bạn có thấy thẻ sinh viên của mình không?\nTiểu Lệ: Không thấy. Có phải bạn để ở sân bóng không?\nTiểu Cương: À đúng! Vừa nãy ở sân bóng mình đưa Tiểu Minh. Lát nữa mình chạy sang chỗ cậu ấy lấy.\nTiểu Lệ: Muộn thế này các bạn còn tập bóng à?\nTiểu Cương: Đúng, để chuẩn bị hội thao, ngày nào các bạn nam lớp mình cũng tập. Mình nghe thầy nói bạn cũng tham gia à?\nTiểu Lệ: Đúng, mình muốn thi quần vợt. Năm ngoái mình cũng thi, còn giành giải nhất.\nTiểu Cương: Thật à? Vậy lần này nhất định mình đến xem bạn thi đấu.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 8, bài khóa 1."
+    },
+    {
+      "order_index": 2,
+      "title": "Hẹn xem thi quần vợt",
+      "content": "小丽：明天我参加网球比赛，你来得了吗？\n小刚：来啊。明天我一定来。\n小丽：明天会有很多人来看。我怕打不好。\n小刚：你别担心，最近你几乎每天都锻炼，一定会拿第一。\n小丽：谢谢！我只是有点儿紧张。",
+      "pinyin": "xiǎo lì ： míng tiān wǒ cān jiā wǎng qiú bǐ sài ， nǐ lái de liǎo ma ？\nxiǎo gāng ： lái a 。 míng tiān wǒ yí dìng lái 。\nxiǎo lì ： míng tiān huì yǒu hěn duō rén lái kàn 。 wǒ pà dǎ bù hǎo 。\nxiǎo gāng ： nǐ bié dān xīn ， zuì jìn nǐ jī hū měi tiān dōu duàn liàn ， yí dìng huì ná dì yī 。\nxiǎo lì ： xiè xiè ！ wǒ zhǐ shì yǒu diǎn ér jǐn zhāng 。",
+      "vietnamese_translation": "Tiểu Lệ: Mai mình thi quần vợt, bạn có đến được không?\nTiểu Cương: Có, mai nhất định mình đến.\nTiểu Lệ: Mai sẽ có nhiều người xem. Mình sợ đánh không tốt.\nTiểu Cương: Đừng lo, gần đây hầu như ngày nào bạn cũng tập, nhất định giành giải nhất.\nTiểu Lệ: Cảm ơn! Mình chỉ hơi hồi hộp.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 8, bài khóa 2."
+    },
+    {
+      "order_index": 3,
+      "title": "Chiến thắng của đội bóng",
+      "content": "小丽：今天的足球比赛你们踢进了两个球，太厉害了！\n小刚：谢谢！比赛以前我还想今天我们几乎赢不了呢。\n小丽：怎么回事？\n小刚：主要的球员今年都不能参加，大家都受到影响了，所以现在我越想越高兴！\n小丽：好了好了，别说了！走，我请你喝啤酒！\n小刚：好啊！但是我们先去找王老师吧。我想告诉他我们的得分。",
+      "pinyin": "xiǎo lì ： jīn tiān de zú qiú bǐ sài nǐ men tī jìn le liǎng gè qiú ， tài lì hài le ！\nxiǎo gāng ： xiè xiè ！ bǐ sài yǐ qián wǒ hái xiǎng jīn tiān wǒ men jī hū yíng bù liǎo ne 。\nxiǎo lì ： zěn me huí shì ？\nxiǎo gāng ： zhǔ yào de qiú yuán jīn nián dōu bù néng cān jiā ， dà jiā dōu shòu dào yǐng xiǎng le ， suǒ yǐ xiàn zài wǒ yuè xiǎng yuè gāo xìng ！\nxiǎo lì ： hǎo le hǎo le ， bié shuō le ！ zǒu ， wǒ qǐng nǐ hē pí jiǔ ！\nxiǎo gāng ： hǎo a ！ dàn shì wǒ men xiān qù zhǎo wáng lǎo shī ba 。 wǒ xiǎng gào sù tā wǒ men de dé fēn 。",
+      "vietnamese_translation": "Tiểu Lệ: Trận bóng đá hôm nay đội bạn ghi hai bàn, giỏi quá!\nTiểu Cương: Cảm ơn! Trước trận mình còn nghĩ hôm nay gần như không thể thắng.\nTiểu Lệ: Sao vậy?\nTiểu Cương: Năm nay những cầu thủ chính đều không tham gia được, cả đội bị ảnh hưởng, nên bây giờ càng nghĩ mình càng vui!\nTiểu Lệ: Thôi, đừng nói nữa! Đi, mình mời bạn uống bia!\nTiểu Cương: Được! Nhưng mình đến gặp thầy Vương trước nhé, mình muốn báo thầy số điểm đội mình.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 8, bài khóa 3."
+    },
+    {
+      "order_index": 4,
+      "title": "Vận động viên tôi yêu thích",
+      "content": "我从小就喜欢体育了。多运动对身体很好，也可以让我们更健康。我常常看体育比赛，特别是奥运会。奥运会是世界上很重要的体育活动，有很多国家的运动员参加。他们都很努力，为国家得到很多好的成绩。我最喜欢的运动员是阮氏映园，她是越南很有名的游泳运动员，16岁的时候就参加奥运会了。她很努力，所以成绩也很好。我觉得她很厉害，她为自己的国家努力，也为世界带来很难忘的比赛。她对我有很大的影响。我现在每天都练游泳，希望以后也可以参加运动会。",
+      "pinyin": "wǒ cóng xiǎo jiù xǐ huān tǐ yù le 。 duō yùn dòng duì shēn tǐ hěn hǎo ， yě kě yǐ ràng wǒ men gèng jiàn kāng 。 wǒ cháng cháng kàn tǐ yù bǐ sài ， tè bié shì ào yùn huì 。 ào yùn huì shì shì jiè shàng hěn zhòng yào de tǐ yù huó dòng ， yǒu hěn duō guó jiā de yùn dòng yuán cān jiā 。 tā men dōu hěn nǔ lì ， wèi guó jiā dé dào hěn duō hǎo de chéng jì 。 wǒ zuì xǐ huān de yùn dòng yuán shì ruǎn shì yìng yuán ， tā shì yuè nán hěn yǒu míng de yóu yǒng yùn dòng yuán ， 1 6 suì de shí hòu jiù cān jiā ào yùn huì le 。 tā hěn nǔ lì ， suǒ yǐ chéng jì yě hěn hǎo 。 wǒ jué de tā hěn lì hài ， tā wèi zì jǐ de guó jiā nǔ lì ， yě wèi shì jiè dài lái hěn nán wàng de bǐ sài 。 tā duì wǒ yǒu hěn dà de yǐng xiǎng 。 wǒ xiàn zài měi tiān dōu liàn yóu yǒng ， xī wàng yǐ hòu yě kě yǐ cān jiā yùn dòng huì 。",
+      "vietnamese_translation": "Từ nhỏ tôi đã thích thể thao. Vận động nhiều tốt cho cơ thể và giúp chúng ta khỏe mạnh hơn. Tôi thường xem thi đấu thể thao, đặc biệt là Thế vận hội. Đây là sự kiện thể thao quan trọng trên thế giới, có vận động viên nhiều nước tham gia. Họ rất nỗ lực, giành thành tích tốt cho đất nước. Vận động viên tôi thích nhất là Nguyễn Thị Ánh Viên, một vận động viên bơi lội nổi tiếng của Việt Nam, tham gia Olympic từ năm mười sáu tuổi. Cô rất cố gắng nên thành tích cũng tốt. Tôi thấy cô rất giỏi, nỗ lực vì đất nước và mang đến thế giới những cuộc thi khó quên. Cô ảnh hưởng lớn đến tôi. Bây giờ ngày nào tôi cũng tập bơi, mong sau này cũng có thể tham gia hội thao.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 8, bài khóa 4."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 3 · Bài 8 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp của bài này và các bài trước; đạt từ 80%, được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "source_documents": {
+    "vocabulary": "DOCX",
+    "theory": "DOCX"
+  },
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “分” (fēn) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "cà phê",
+          "is_correct": false
+        },
+        {
+          "option_text": "học (theo học một bậc học)",
+          "is_correct": false
+        },
+        {
+          "option_text": "hơi, có chút (thường là điều không như ý)",
+          "is_correct": false
+        },
+        {
+          "option_text": "điểm (trong thi đấu, học tập)",
+          "is_correct": true
+        }
+      ],
+      "rubric": "分 (fēn) — điểm (trong thi đấu, học tập). 分 là điểm khi nói 得分、比赛得分; khác 分 chỉ phút trong 十分钟. Nhắc lại HSK 1 bài 7: 分 (fēn) — phút. Trong ngữ cảnh bài này: điểm (trong thi đấu, học tập).",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 8
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “她们” (tāmen) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "đi bộ",
+          "is_correct": false
+        },
+        {
+          "option_text": "đổi, thay",
+          "is_correct": false
+        },
+        {
+          "option_text": "họ (nữ)",
+          "is_correct": true
+        },
+        {
+          "option_text": "thể thao, vận động",
+          "is_correct": false
+        }
+      ],
+      "rubric": "她们 (tāmen) — họ (nữ). ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 14
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “yǒumíng” — nổi tiếng.",
+      "options": [
+        {
+          "option_text": "账号",
+          "is_correct": false
+        },
+        {
+          "option_text": "有名",
+          "is_correct": true
+        },
+        {
+          "option_text": "题",
+          "is_correct": false
+        },
+        {
+          "option_text": "低",
+          "is_correct": false
+        }
+      ],
+      "rubric": "有名 (yǒumíng) — nổi tiếng. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 8
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “水” (shuǐ) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "mười nghìn, vạn",
+          "is_correct": false
+        },
+        {
+          "option_text": "chồng",
+          "is_correct": false
+        },
+        {
+          "option_text": "nước",
+          "is_correct": true
+        },
+        {
+          "option_text": "thìa, muỗng",
+          "is_correct": false
+        }
+      ],
+      "rubric": "水 (shuǐ) — nước. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “得” (dé) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "trung học cơ sở",
+          "is_correct": false
+        },
+        {
+          "option_text": "hành lý",
+          "is_correct": false
+        },
+        {
+          "option_text": "đi; rời đi",
+          "is_correct": false
+        },
+        {
+          "option_text": "đạt được, giành được (đọc dé)",
+          "is_correct": true
+        }
+      ],
+      "rubric": "得 (dé) — đạt được, giành được (đọc dé). Ở đây 得 đọc dé và có nghĩa đạt được, như 得分. Trong bổ ngữ 看得懂、跑得快, 得 đọc nhẹ de.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 8
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “wǎngqiú” — quần vợt, tennis.",
+      "options": [
+        {
+          "option_text": "网球",
+          "is_correct": true
+        },
+        {
+          "option_text": "收到",
+          "is_correct": false
+        },
+        {
+          "option_text": "微信",
+          "is_correct": false
+        },
+        {
+          "option_text": "公交车",
+          "is_correct": false
+        }
+      ],
+      "rubric": "网球 (wǎngqiú) — quần vợt, tennis. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 8
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 7).",
+      "options": [
+        {
+          "option_text": "quán ăn, nhà hàng; khách sạn (tùy ngữ cảnh)",
+          "is_correct": false
+        },
+        {
+          "option_text": "chủ yếu, chính",
+          "is_correct": true
+        },
+        {
+          "option_text": "hát",
+          "is_correct": false
+        },
+        {
+          "option_text": "làm",
+          "is_correct": false
+        }
+      ],
+      "rubric": "主要 (zhǔyào) — chủ yếu, chính. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "主要"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 8
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “几乎” (jīhū) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "ánh nắng",
+          "is_correct": false
+        },
+        {
+          "option_text": "trên mạng",
+          "is_correct": false
+        },
+        {
+          "option_text": "hầu như, gần như",
+          "is_correct": true
+        },
+        {
+          "option_text": "tàu điện ngầm",
+          "is_correct": false
+        }
+      ],
+      "rubric": "几乎 (jīhū) — hầu như, gần như. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 8
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “Ruǎn Shì Yìngyuán” — Nguyễn Thị Ánh Viên.",
+      "options": [
+        {
+          "option_text": "上网",
+          "is_correct": false
+        },
+        {
+          "option_text": "矮",
+          "is_correct": false
+        },
+        {
+          "option_text": "经常",
+          "is_correct": false
+        },
+        {
+          "option_text": "阮氏映园",
+          "is_correct": true
+        }
+      ],
+      "rubric": "阮氏映园 (Ruǎn Shì Yìngyuán) — Nguyễn Thị Ánh Viên. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 8
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "kê thuốc",
+          "is_correct": false
+        },
+        {
+          "option_text": "nhất",
+          "is_correct": false
+        },
+        {
+          "option_text": "cầu thủ, vận động viên chơi bóng",
+          "is_correct": true
+        },
+        {
+          "option_text": "hỏi",
+          "is_correct": false
+        }
+      ],
+      "rubric": "球员 (qiúyuán) — cầu thủ, vận động viên chơi bóng. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "球员"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 8
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “成绩” (chéngjì) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "thành tích, kết quả học tập",
+          "is_correct": true
+        },
+        {
+          "option_text": "tuyết rơi",
+          "is_correct": false
+        },
+        {
+          "option_text": "đứng",
+          "is_correct": false
+        },
+        {
+          "option_text": "phút",
+          "is_correct": false
+        }
+      ],
+      "rubric": "成绩 (chéngjì) — thành tích, kết quả học tập. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 8
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “liànqiú” — tập chơi bóng.",
+      "options": [
+        {
+          "option_text": "过",
+          "is_correct": false
+        },
+        {
+          "option_text": "回",
+          "is_correct": false
+        },
+        {
+          "option_text": "分",
+          "is_correct": false
+        },
+        {
+          "option_text": "练球",
+          "is_correct": true
+        }
+      ],
+      "rubric": "练球 (liànqiú) — tập chơi bóng. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 8
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “đội, đoàn” (pinyin: duì).",
+      "reference_answer": "队",
+      "rubric": "Đáp án: 队 (duì). ",
+      "config": {
+        "accepted_answers": [
+          "队"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 8
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “khuôn viên trường” (pinyin: xiàoyuán).",
+      "reference_answer": "校园",
+      "rubric": "Đáp án: 校园 (xiàoyuán). ",
+      "config": {
+        "accepted_answers": [
+          "校园"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 8
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “sân bóng” (pinyin: qiúchǎng).",
+      "reference_answer": "球场",
+      "rubric": "Đáp án: 球场 (qiúchǎng). ",
+      "config": {
+        "accepted_answers": [
+          "球场"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 8
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “thanh toán” (pinyin: fùkuǎn).",
+      "reference_answer": "付款",
+      "rubric": "Đáp án: 付款 (fùkuǎn). 付款 dùng chung cho thanh toán; 买单 thường dùng khi trả hóa đơn ở nhà hàng. 付钱 nhấn mạnh trả tiền.",
+      "config": {
+        "accepted_answers": [
+          "付款"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 6
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối các từ với nghĩa đã học (nhóm 1).",
+      "rubric": "奥运会: Thế vận hội, Olympic ; 赢: thắng ; 一下: một chút, một lát (sau động từ) ; 球员: cầu thủ, vận động viên chơi bóng",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "奥运会"
+          },
+          {
+            "id": "l1",
+            "text": "赢"
+          },
+          {
+            "id": "l2",
+            "text": "一下"
+          },
+          {
+            "id": "l3",
+            "text": "球员"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r1",
+            "text": "thắng"
+          },
+          {
+            "id": "r2",
+            "text": "một chút, một lát (sau động từ)"
+          },
+          {
+            "id": "r0",
+            "text": "Thế vận hội, Olympic"
+          },
+          {
+            "id": "r3",
+            "text": "cầu thủ, vận động viên chơi bóng"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 8
+        },
+        {
+          "hsk": 3,
+          "lesson": 8
+        },
+        {
+          "hsk": 1,
+          "lesson": 13
+        },
+        {
+          "hsk": 3,
+          "lesson": 8
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối các từ với nghĩa đã học (nhóm 2).",
+      "rubric": "难忘: khó quên ; 体育: thể dục, thể thao ; 队: đội, đoàn ; 一下: một chút, một lát (sau động từ)",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "难忘"
+          },
+          {
+            "id": "l1",
+            "text": "体育"
+          },
+          {
+            "id": "l2",
+            "text": "队"
+          },
+          {
+            "id": "l3",
+            "text": "一下"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r1",
+            "text": "thể dục, thể thao"
+          },
+          {
+            "id": "r0",
+            "text": "khó quên"
+          },
+          {
+            "id": "r2",
+            "text": "đội, đoàn"
+          },
+          {
+            "id": "r3",
+            "text": "một chút, một lát (sau động từ)"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 8
+        },
+        {
+          "hsk": 3,
+          "lesson": 8
+        },
+        {
+          "hsk": 3,
+          "lesson": 8
+        },
+        {
+          "hsk": 1,
+          "lesson": 13
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Hỏi khả năng đến được: 明天你来___了吗？",
+      "options": [
+        {
+          "option_text": "的",
+          "is_correct": false
+        },
+        {
+          "option_text": "在",
+          "is_correct": false
+        },
+        {
+          "option_text": "得",
+          "is_correct": true
+        },
+        {
+          "option_text": "地",
+          "is_correct": false
+        }
+      ],
+      "rubric": "来得了 là đến được; 得 đọc de và 了 đọc liǎo.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 8
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Phủ định khả năng đọc hiểu: 这本书我看___懂。",
+      "options": [
+        {
+          "option_text": "的",
+          "is_correct": false
+        },
+        {
+          "option_text": "不",
+          "is_correct": true
+        },
+        {
+          "option_text": "没",
+          "is_correct": false
+        },
+        {
+          "option_text": "地",
+          "is_correct": false
+        }
+      ],
+      "rubric": "看不懂 phủ định khả năng hiểu; 没看懂 nói kết quả chưa đạt của một lần đọc.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 8
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong 来不了, 了 đọc thế nào?",
+      "options": [
+        {
+          "option_text": "liǎo",
+          "is_correct": true
+        },
+        {
+          "option_text": "lái",
+          "is_correct": false
+        },
+        {
+          "option_text": "le",
+          "is_correct": false
+        },
+        {
+          "option_text": "liù",
+          "is_correct": false
+        }
+      ],
+      "rubric": "了 đọc liǎo khi thuộc bổ ngữ khả năng, không phải trợ từ le.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 8
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Bổ ngữ khả năng”, cách hiểu nào đúng (mục 1)?",
+      "options": [
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nói có hoặc không thể đạt kết quả trong điều kiện cụ thể.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Nói có hoặc không thể đạt kết quả trong điều kiện cụ thể. Phủ định khả năng dùng 不 ở giữa; khác 没看懂 là việc đọc hiểu đã không đạt trong lần đã xảy ra.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 8
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Khả năng với 得了/不了”, cách hiểu nào đúng (mục 2)?",
+      "options": [
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Biểu thị thực hiện được hay không thực hiện được hành động.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Biểu thị thực hiện được hay không thực hiện được hành động. 了 đọc liǎo trong mẫu này; không đọc le như trợ từ cuối câu.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 8
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Bổ ngữ khả năng”, cách hiểu nào đúng (mục 3)?",
+      "options": [
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nói có hoặc không thể đạt kết quả trong điều kiện cụ thể.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Nói có hoặc không thể đạt kết quả trong điều kiện cụ thể. Phủ định khả năng dùng 不 ở giữa; khác 没看懂 là việc đọc hiểu đã không đạt trong lần đã xảy ra.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 8
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Quyển sách này tôi đọc hiểu được. (câu 1).",
+      "reference_answer": "这本书我看得懂。",
+      "rubric": "Câu đúng: 这本书我看得懂。 — Quyển sách này tôi đọc hiểu được. Phủ định khả năng dùng 不 ở giữa; khác 没看懂 là việc đọc hiểu đã không đạt trong lần đã xảy ra.",
+      "config": {
+        "items": [
+          {
+            "id": "t6",
+            "text": "懂"
+          },
+          {
+            "id": "t7",
+            "text": "。"
+          },
+          {
+            "id": "t5",
+            "text": "得"
+          },
+          {
+            "id": "t2",
+            "text": "书"
+          },
+          {
+            "id": "t1",
+            "text": "本"
+          },
+          {
+            "id": "t3",
+            "text": "我"
+          },
+          {
+            "id": "t0",
+            "text": "这"
+          },
+          {
+            "id": "t4",
+            "text": "看"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 8
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Ngày mai bạn có đến được không? (câu 2).",
+      "reference_answer": "明天你来得了吗？",
+      "rubric": "Câu đúng: 明天你来得了吗？ — Ngày mai bạn có đến được không? 了 đọc liǎo trong mẫu này; không đọc le như trợ từ cuối câu.",
+      "config": {
+        "items": [
+          {
+            "id": "t1",
+            "text": "你"
+          },
+          {
+            "id": "t5",
+            "text": "吗"
+          },
+          {
+            "id": "t3",
+            "text": "得"
+          },
+          {
+            "id": "t4",
+            "text": "了"
+          },
+          {
+            "id": "t2",
+            "text": "来"
+          },
+          {
+            "id": "t0",
+            "text": "明天"
+          },
+          {
+            "id": "t6",
+            "text": "？"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 8
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Tiểu Lệ, bạn có thấy thẻ sinh viên của mình không? (câu 3).",
+      "reference_answer": "小丽，你看到没看到我的校园卡？",
+      "rubric": "Câu đúng: 小丽，你看到没看到我的校园卡？ — Tiểu Lệ, bạn có thấy thẻ sinh viên của mình không? Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t11",
+            "text": "卡"
+          },
+          {
+            "id": "t5",
+            "text": "没"
+          },
+          {
+            "id": "t12",
+            "text": "？"
+          },
+          {
+            "id": "t9",
+            "text": "的"
+          },
+          {
+            "id": "t3",
+            "text": "看"
+          },
+          {
+            "id": "t6",
+            "text": "看"
+          },
+          {
+            "id": "t10",
+            "text": "校园"
+          },
+          {
+            "id": "t1",
+            "text": "，"
+          },
+          {
+            "id": "t0",
+            "text": "小丽"
+          },
+          {
+            "id": "t8",
+            "text": "我"
+          },
+          {
+            "id": "t4",
+            "text": "到"
+          },
+          {
+            "id": "t7",
+            "text": "到"
+          },
+          {
+            "id": "t2",
+            "text": "你"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 8
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Không thấy. Có phải bạn để ở sân bóng không? (câu 4).",
+      "reference_answer": "没看到。你是不是放在球场了？",
+      "rubric": "Câu đúng: 没看到。你是不是放在球场了？ — Không thấy. Có phải bạn để ở sân bóng không? Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t6",
+            "text": "不"
+          },
+          {
+            "id": "t12",
+            "text": "？"
+          },
+          {
+            "id": "t2",
+            "text": "到"
+          },
+          {
+            "id": "t8",
+            "text": "放"
+          },
+          {
+            "id": "t10",
+            "text": "球场"
+          },
+          {
+            "id": "t5",
+            "text": "是"
+          },
+          {
+            "id": "t11",
+            "text": "了"
+          },
+          {
+            "id": "t7",
+            "text": "是"
+          },
+          {
+            "id": "t4",
+            "text": "你"
+          },
+          {
+            "id": "t0",
+            "text": "没"
+          },
+          {
+            "id": "t9",
+            "text": "在"
+          },
+          {
+            "id": "t3",
+            "text": "。"
+          },
+          {
+            "id": "t1",
+            "text": "看"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 8
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: À đúng! Vừa nãy ở sân bóng mình đưa Tiểu Minh. Lát nữa mình chạy sang chỗ cậu ấy lấy. (câu 5).",
+      "reference_answer": "啊，对了！刚才在球场我给小明了。等一会儿我跑过他那儿去拿。",
+      "rubric": "Câu đúng: 啊，对了！刚才在球场我给小明了。等一会儿我跑过他那儿去拿。 — À đúng! Vừa nãy ở sân bóng mình đưa Tiểu Minh. Lát nữa mình chạy sang chỗ cậu ấy lấy. Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t2",
+            "text": "对"
+          },
+          {
+            "id": "t4",
+            "text": "！"
+          },
+          {
+            "id": "t7",
+            "text": "球场"
+          },
+          {
+            "id": "t17",
+            "text": "跑"
+          },
+          {
+            "id": "t13",
+            "text": "。"
+          },
+          {
+            "id": "t22",
+            "text": "去"
+          },
+          {
+            "id": "t20",
+            "text": "那"
+          },
+          {
+            "id": "t14",
+            "text": "等"
+          },
+          {
+            "id": "t3",
+            "text": "了"
+          },
+          {
+            "id": "t10",
+            "text": "小"
+          },
+          {
+            "id": "t11",
+            "text": "明"
+          },
+          {
+            "id": "t5",
+            "text": "刚才"
+          },
+          {
+            "id": "t1",
+            "text": "，"
+          },
+          {
+            "id": "t24",
+            "text": "。"
+          },
+          {
+            "id": "t0",
+            "text": "啊"
+          },
+          {
+            "id": "t18",
+            "text": "过"
+          },
+          {
+            "id": "t23",
+            "text": "拿"
+          },
+          {
+            "id": "t19",
+            "text": "他"
+          },
+          {
+            "id": "t16",
+            "text": "我"
+          },
+          {
+            "id": "t12",
+            "text": "了"
+          },
+          {
+            "id": "t8",
+            "text": "我"
+          },
+          {
+            "id": "t21",
+            "text": "儿"
+          },
+          {
+            "id": "t15",
+            "text": "一会儿"
+          },
+          {
+            "id": "t6",
+            "text": "在"
+          },
+          {
+            "id": "t9",
+            "text": "给"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12",
+          "t13",
+          "t14",
+          "t15",
+          "t16",
+          "t17",
+          "t18",
+          "t19",
+          "t20",
+          "t21",
+          "t22",
+          "t23",
+          "t24"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 8
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Muộn thế này các bạn còn tập bóng à? (câu 6).",
+      "reference_answer": "这么晚了你们还练球吗？",
+      "rubric": "Câu đúng: 这么晚了你们还练球吗？ — Muộn thế này các bạn còn tập bóng à? Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t8",
+            "text": "？"
+          },
+          {
+            "id": "t6",
+            "text": "练球"
+          },
+          {
+            "id": "t7",
+            "text": "吗"
+          },
+          {
+            "id": "t4",
+            "text": "们"
+          },
+          {
+            "id": "t0",
+            "text": "这么"
+          },
+          {
+            "id": "t3",
+            "text": "你"
+          },
+          {
+            "id": "t2",
+            "text": "了"
+          },
+          {
+            "id": "t1",
+            "text": "晚"
+          },
+          {
+            "id": "t5",
+            "text": "还"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 8
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ]
+}

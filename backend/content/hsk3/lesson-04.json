@@ -1,0 +1,1883 @@
+{
+  "key": "hsk3-lesson-04-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 3,
+    "lesson_number": 4,
+    "title": "这些照片张张都非常漂亮 · Những tấm ảnh này tấm nào cũng vô cùng đẹp ",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "终于",
+      "pinyin": "zhōngyú",
+      "vietnamese_meaning": "cuối cùng (sau chờ đợi hoặc nỗ lực)",
+      "part_of_speech": "phó từ",
+      "source_key": "3:4:终于",
+      "note": null,
+      "order_index": 1,
+      "example": "我们等了一周，今天终于是晴天了。\nwǒ men děng le yī zhōu ， jīn tiān zhōng yú shì qíng tiān le 。\nMình đợi cả tuần, cuối cùng hôm nay trời nắng rồi."
+    },
+    {
+      "hanzi": "要不",
+      "pinyin": "yàobù",
+      "vietnamese_meaning": "hay là, nếu không thì",
+      "part_of_speech": "liên từ",
+      "source_key": "3:4:要不",
+      "note": null,
+      "order_index": 2,
+      "example": "对了，要不要叫小林一起去？\nduì le ， yào bù yào jiào xiǎo lín yì qǐ qù ？\nCó gọi Tiểu Lâm đi cùng không?"
+    },
+    {
+      "hanzi": "爬山",
+      "pinyin": "páshān",
+      "vietnamese_meaning": "leo núi",
+      "part_of_speech": "động từ",
+      "source_key": "3:4:爬山",
+      "note": null,
+      "order_index": 3,
+      "example": "他也喜欢爬山。\ntā yě xǐ huān pá shān 。\nCậu ấy cũng thích leo núi."
+    },
+    {
+      "hanzi": "注意",
+      "pinyin": "zhùyì",
+      "vietnamese_meaning": "chú ý",
+      "part_of_speech": "động từ",
+      "source_key": "3:4:注意",
+      "note": null,
+      "order_index": 4,
+      "example": "爬山的时候要注意安全。\npá shān de shí hòu yào zhù yì ān quán 。\nKhi leo núi cần chú ý an toàn."
+    },
+    {
+      "hanzi": "照",
+      "pinyin": "zhào",
+      "vietnamese_meaning": "chụp (ảnh); chiếu",
+      "part_of_speech": "động từ",
+      "source_key": "3:4:照",
+      "note": null,
+      "order_index": 5,
+      "example": "你拍照的水平这么好啊？\nnǐ pāi zhào de shuǐ píng zhè me hǎo a ？\nBạn chụp ảnh giỏi thế!"
+    },
+    {
+      "hanzi": "拍照",
+      "pinyin": "pāizhào",
+      "vietnamese_meaning": "chụp ảnh",
+      "part_of_speech": "động từ",
+      "source_key": "3:4:拍照",
+      "note": null,
+      "order_index": 6,
+      "example": "你拍照的水平这么好啊？\nnǐ pāi zhào de shuǐ píng zhè me hǎo a ？\nBạn chụp ảnh giỏi thế!"
+    },
+    {
+      "hanzi": "照片",
+      "pinyin": "zhàopiān",
+      "vietnamese_meaning": "ảnh, bức ảnh",
+      "part_of_speech": "danh từ",
+      "source_key": "3:4:照片",
+      "note": null,
+      "order_index": 7,
+      "example": "拍出来的照片张张都非常好看。\npāi chū lái de zhào piān zhāng zhāng dōu fēi cháng hǎo kàn 。\nẢnh chụp ra tấm nào cũng rất đẹp."
+    },
+    {
+      "hanzi": "张",
+      "pinyin": "zhāng",
+      "vietnamese_meaning": "tấm, tờ (lượng từ cho ảnh, giấy)",
+      "part_of_speech": "lượng từ",
+      "source_key": "3:4:张",
+      "note": null,
+      "order_index": 8,
+      "example": "拍出来的照片张张都非常好看。\npāi chū lái de zhào piān zhāng zhāng dōu fēi cháng hǎo kàn 。\nẢnh chụp ra tấm nào cũng rất đẹp."
+    },
+    {
+      "hanzi": "运动鞋",
+      "pinyin": "yùndòngxié",
+      "vietnamese_meaning": "giày thể thao",
+      "part_of_speech": "danh từ",
+      "source_key": "3:4:运动鞋",
+      "note": null,
+      "order_index": 9,
+      "example": "好啊，我们穿上新买的运动鞋和大衣再走。\nhǎo a ， wǒ men chuān shàng xīn mǎi de yùn dòng xié hé dà yī zài zǒu 。\nVâng, mình đi giày thể thao và mặc áo khoác mới mua rồi hãy đi."
+    },
+    {
+      "hanzi": "大衣",
+      "pinyin": "dàyī",
+      "vietnamese_meaning": "áo khoác dài",
+      "part_of_speech": "danh từ",
+      "source_key": "3:4:大衣",
+      "note": null,
+      "order_index": 10,
+      "example": "好啊，我们穿上新买的运动鞋和大衣再走。\nhǎo a ， wǒ men chuān shàng xīn mǎi de yùn dòng xié hé dà yī zài zǒu 。\nVâng, mình đi giày thể thao và mặc áo khoác mới mua rồi hãy đi."
+    },
+    {
+      "hanzi": "总是",
+      "pinyin": "zǒngshì",
+      "vietnamese_meaning": "luôn luôn",
+      "part_of_speech": "phó từ",
+      "source_key": "3:4:总是",
+      "note": null,
+      "order_index": 11,
+      "example": "都是小刚教我的，我和他比较，他总是拍得比我好。\ndōu shì xiǎo gāng jiāo wǒ de ， wǒ hé tā bǐ jiào ， tā zǒng shì pāi de bǐ wǒ hǎo 。\nĐều do Tiểu Cương dạy mình. So với mình, anh ấy luôn chụp đẹp hơn."
+    },
+    {
+      "hanzi": "教",
+      "pinyin": "jiāo",
+      "vietnamese_meaning": "dạy (đọc jiāo)",
+      "part_of_speech": "động từ",
+      "source_key": "3:4:教",
+      "note": "Đọc jiāo khi dùng như động từ dạy: 教汉语. Trong 教师、教室, 教 đọc jiào.",
+      "order_index": 12,
+      "example": "都是小刚教我的，我和他比较，他总是拍得比我好。\ndōu shì xiǎo gāng jiāo wǒ de ， wǒ hé tā bǐ jiào ， tā zǒng shì pāi de bǐ wǒ hǎo 。\nĐều do Tiểu Cương dạy mình. So với mình, anh ấy luôn chụp đẹp hơn."
+    },
+    {
+      "hanzi": "感兴趣",
+      "pinyin": "gǎnxìngqù",
+      "vietnamese_meaning": "có hứng thú",
+      "part_of_speech": "động từ",
+      "source_key": "3:4:感兴趣",
+      "note": null,
+      "order_index": 13,
+      "example": "你对拍照这么感兴趣，一定能学好。\nnǐ duì pāi zhào zhè me gǎn xìng qù ， yí dìng néng xué hǎo 。\nBạn hứng thú như vậy thì nhất định học tốt được."
+    },
+    {
+      "hanzi": "一定",
+      "pinyin": "yídìng",
+      "vietnamese_meaning": "nhất định, chắc chắn",
+      "part_of_speech": "phó từ",
+      "source_key": "3:4:一定",
+      "note": null,
+      "order_index": 14,
+      "example": "我一定会努力天天练习。\nwǒ yí dìng huì nǔ lì tiān tiān liàn xí 。\nMình nhất định cố gắng luyện tập hằng ngày."
+    },
+    {
+      "hanzi": "太阳",
+      "pinyin": "tàiyáng",
+      "vietnamese_meaning": "mặt trời",
+      "part_of_speech": "danh từ",
+      "source_key": "3:4:太阳",
+      "note": null,
+      "order_index": 15,
+      "example": "今天太阳暖暖的，我们在这些大树下拍几张照片吧。\njīn tiān tài yáng nuǎn nuǎn de ， wǒ men zài zhè xiē dà shù xià pāi jǐ zhāng zhào piān ba 。\nNắng hôm nay ấm áp, mình chụp vài tấm dưới những cây to này nhé."
+    },
+    {
+      "hanzi": "树",
+      "pinyin": "shù",
+      "vietnamese_meaning": "cây",
+      "part_of_speech": "danh từ",
+      "source_key": "3:4:树",
+      "note": null,
+      "order_index": 16,
+      "example": "树上飞来了几只鸟，我就看它们吧。\nshù shàng fēi lái le jǐ zhī niǎo ， wǒ jiù kàn tā men ba 。\nTrên cây có mấy con chim bay đến, em nhìn chúng nhé."
+    },
+    {
+      "hanzi": "中间",
+      "pinyin": "zhōngjiān",
+      "vietnamese_meaning": "ở giữa",
+      "part_of_speech": "danh từ chỉ phương vị",
+      "source_key": "3:4:中间",
+      "note": null,
+      "order_index": 17,
+      "example": "好，你站在树中间，这样阳光和树叶都能拍进去。\nhǎo ， nǐ zhàn zài shù zhōng jiān ， zhè yàng yáng guāng hé shù yè dōu néng pāi jìn qù 。\nĐược, em đứng giữa các cây, như vậy cả ánh nắng và lá cây đều lọt vào ảnh."
+    },
+    {
+      "hanzi": "阳光",
+      "pinyin": "yángguāng",
+      "vietnamese_meaning": "ánh nắng",
+      "part_of_speech": "danh từ",
+      "source_key": "3:4:阳光",
+      "note": null,
+      "order_index": 18,
+      "example": "好，你站在树中间，这样阳光和树叶都能拍进去。\nhǎo ， nǐ zhàn zài shù zhōng jiān ， zhè yàng yáng guāng hé shù yè dōu néng pāi jìn qù 。\nĐược, em đứng giữa các cây, như vậy cả ánh nắng và lá cây đều lọt vào ảnh."
+    },
+    {
+      "hanzi": "树叶",
+      "pinyin": "shùyè",
+      "vietnamese_meaning": "lá cây",
+      "part_of_speech": "danh từ",
+      "source_key": "3:4:树叶",
+      "note": null,
+      "order_index": 19,
+      "example": "好，你站在树中间，这样阳光和树叶都能拍进去。\nhǎo ， nǐ zhàn zài shù zhōng jiān ， zhè yàng yáng guāng hé shù yè dōu néng pāi jìn qù 。\nĐược, em đứng giữa các cây, như vậy cả ánh nắng và lá cây đều lọt vào ảnh."
+    },
+    {
+      "hanzi": "干",
+      "pinyin": "gàn",
+      "vietnamese_meaning": "làm (việc)",
+      "part_of_speech": "động từ",
+      "source_key": "3:4:干",
+      "note": null,
+      "order_index": 20,
+      "example": "好，我需要干什么吗？\nhǎo ， wǒ xū yào gàn shén me ma ？\nEm cần làm gì không?"
+    },
+    {
+      "hanzi": "镜头",
+      "pinyin": "jìngtóu",
+      "vietnamese_meaning": "ống kính; cảnh quay",
+      "part_of_speech": "danh từ",
+      "source_key": "3:4:镜头",
+      "note": null,
+      "order_index": 21,
+      "example": "你不用看着镜头，想干什么都可以。\nnǐ bù yòng kàn zhe jìng tóu ， xiǎng gàn shén me dōu kě yǐ 。\nEm không cần nhìn vào ống kính, muốn làm gì cũng được."
+    },
+    {
+      "hanzi": "照相机",
+      "pinyin": "zhàoxiàngjī",
+      "vietnamese_meaning": "máy ảnh",
+      "part_of_speech": "danh từ",
+      "source_key": "3:4:照相机",
+      "note": "Pinyin chuẩn là zhàoxiàngjī; phân biệt 照相机 là máy ảnh với 镜头 là ống kính/cảnh quay.",
+      "order_index": 22,
+      "example": "哎呀，我的照相机没电了。\nāi yā ， wǒ de zhào xiàng jī méi diàn le 。\nÔi, máy ảnh của anh hết pin rồi."
+    },
+    {
+      "hanzi": "电",
+      "pinyin": "diàn",
+      "vietnamese_meaning": "điện",
+      "part_of_speech": "danh từ",
+      "source_key": "3:4:电",
+      "note": null,
+      "order_index": 23,
+      "example": "哎呀，我的照相机没电了。\nāi yā ， wǒ de zhào xiàng jī méi diàn le 。\nÔi, máy ảnh của anh hết pin rồi."
+    },
+    {
+      "hanzi": "收到",
+      "pinyin": "shōudào",
+      "vietnamese_meaning": "nhận được",
+      "part_of_speech": "động từ",
+      "source_key": "3:4:收到",
+      "note": null,
+      "order_index": 24,
+      "example": "希望你收到邮件后会喜欢这些照片。\nxī wàng nǐ shōu dào yóu jiàn hòu huì xǐ huān zhè xiē zhào piān 。\nMong bạn nhận được thư sẽ thích những bức ảnh này."
+    },
+    {
+      "hanzi": "邮件",
+      "pinyin": "yóujiàn",
+      "vietnamese_meaning": "thư, thư điện tử",
+      "part_of_speech": "danh từ",
+      "source_key": "3:4:邮件",
+      "note": null,
+      "order_index": 25,
+      "example": "我收到你的邮件了。\nwǒ shōu dào nǐ de yóu jiàn le 。\nTôi nhận được thư điện tử của bạn rồi."
+    },
+    {
+      "hanzi": "封",
+      "pinyin": "fēng",
+      "vietnamese_meaning": "bức (lượng từ cho thư)",
+      "part_of_speech": "lượng từ",
+      "source_key": "3:4:封",
+      "note": "封 đọc fēng khi đếm thư: 一封邮件; 张 thường đếm tờ giấy hoặc bức ảnh.",
+      "order_index": 26,
+      "example": "我给你发了一封邮件。\nwǒ gěi nǐ fā le yī fēng yóu jiàn 。\nTôi đã gửi cho bạn một bức thư điện tử."
+    },
+    {
+      "hanzi": "哈哈",
+      "pinyin": "hāhā",
+      "vietnamese_meaning": "ha ha, tiếng cười",
+      "part_of_speech": "thán từ",
+      "source_key": "3:4:哈哈",
+      "note": null,
+      "order_index": 27,
+      "example": "哈哈，这些照片真漂亮！\nhā hā ， zhè xiē zhào piān zhēn piào liàng ！\nHa ha, những bức ảnh này đẹp thật!"
+    },
+    {
+      "hanzi": "提高",
+      "pinyin": "tígāo",
+      "vietnamese_meaning": "nâng cao",
+      "part_of_speech": "động từ",
+      "source_key": "3:4:提高",
+      "note": null,
+      "order_index": 28,
+      "example": "我想提高拍照水平。\nwǒ xiǎng tí gāo pāi zhào shuǐ píng 。\nTôi muốn nâng cao trình độ chụp ảnh."
+    },
+    {
+      "hanzi": "句",
+      "pinyin": "jù",
+      "vietnamese_meaning": "câu (lượng từ cho lời nói, câu văn)",
+      "part_of_speech": "lượng từ",
+      "source_key": "3:4:句",
+      "note": null,
+      "order_index": 29,
+      "example": "老师说的话句句都很有意思。\nlǎo shī shuō de huà jù jù dōu hěn yǒu yì si 。\nLời thầy nói câu nào cũng thú vị."
+    },
+    {
+      "hanzi": "音乐会",
+      "pinyin": "yīnyuèhuì",
+      "vietnamese_meaning": "buổi hòa nhạc",
+      "part_of_speech": "danh từ",
+      "source_key": "3:4:音乐会",
+      "note": null,
+      "order_index": 30,
+      "example": "我们晚上一起去听音乐会。\nwǒ men wǎn shàng yì qǐ qù tīng yīn yuè huì 。\nTối chúng ta cùng đi nghe hòa nhạc."
+    }
+  ],
+  "grammar": [
+    {
+      "name": "Mức độ cao với 得很",
+      "structure": "Tính từ + 得很",
+      "explanation": "Nhấn mạnh mức độ của tính chất.",
+      "usage": "得 đọc de, khác 的 đứng trước danh từ và 地 đứng trước động từ.",
+      "example": "今天天气好得很。\njīn tiān tiān qì hǎo de hěn 。\nHôm nay thời tiết rất đẹp.",
+      "note": "得 đọc de, khác 的 đứng trước danh từ và 地 đứng trước động từ.",
+      "order_index": 1
+    },
+    {
+      "name": "Lượng từ lặp lại",
+      "structure": "Lượng từ + lượng từ + 都 + vị ngữ",
+      "explanation": "Nhấn mạnh từng thành viên trong phạm vi đều có cùng tính chất.",
+      "usage": "Chọn lượng từ theo danh từ: 张 cho ảnh, 句 cho câu; không đặt số từ ngay trước dạng lặp này.",
+      "example": "这些照片张张都很漂亮。\nzhè xiē zhào piān zhāng zhāng dōu hěn piào liàng 。\nNhững bức ảnh này tấm nào cũng đẹp.",
+      "note": "Chọn lượng từ theo danh từ: 张 cho ảnh, 句 cho câu; không đặt số từ ngay trước dạng lặp này.",
+      "order_index": 2
+    },
+    {
+      "name": "Câu tồn hiện chỉ xuất hiện và biến mất",
+      "structure": "Địa điểm + động từ + bổ ngữ xu hướng + số lượng + danh từ",
+      "explanation": "Giới thiệu người hoặc vật xuất hiện ở hoặc rời khỏi một nơi.",
+      "usage": "Địa điểm đứng đầu, đối tượng thường chưa xác định; cần phân biệt hướng 来 và 去 theo điểm nhìn.",
+      "example": "树上飞来了几只鸟。\nshù shàng fēi lái le jǐ zhī niǎo 。\nTrên cây có mấy con chim bay đến.",
+      "note": "Địa điểm đứng đầu, đối tượng thường chưa xác định; cần phân biệt hướng 来 và 去 theo điểm nhìn.",
+      "order_index": 3
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Rủ nhau leo núi",
+      "content": "小丽：小刚，你看！我们等了一周，今天终于是晴天了。\n小刚：太好了！今天天气好得很，要不我们去爬山？\n小丽：好主意，爬山又能锻炼身体又能照好看的照片。\n小刚：那我先去准备。我们带点儿吃的和喝的，9点出发，怎么样？\n小丽：好啊，我们穿上新买的运动鞋和大衣再走。\n小刚：对了，要不要叫小林一起去？他也喜欢爬山。\n小丽：好啊，我们现在给他打个电话吧。",
+      "pinyin": "xiǎo lì ： xiǎo gāng ， nǐ kàn ！ wǒ men děng le yī zhōu ， jīn tiān zhōng yú shì qíng tiān le 。\nxiǎo gāng ： tài hǎo le ！ jīn tiān tiān qì hǎo de hěn ， yào bù wǒ men qù pá shān ？\nxiǎo lì ： hǎo zhǔ yì ， pá shān yòu néng duàn liàn shēn tǐ yòu néng zhào hǎo kàn de zhào piān 。\nxiǎo gāng ： nà wǒ xiān qù zhǔn bèi 。 wǒ men dài diǎn ér chī de hé hē de ， 9 diǎn chū fā ， zěn me yàng ？\nxiǎo lì ： hǎo a ， wǒ men chuān shàng xīn mǎi de yùn dòng xié hé dà yī zài zǒu 。\nxiǎo gāng ： duì le ， yào bù yào jiào xiǎo lín yì qǐ qù ？ tā yě xǐ huān pá shān 。\nxiǎo lì ： hǎo a ， wǒ men xiàn zài gěi tā dǎ gè diàn huà ba 。",
+      "vietnamese_translation": "Tiểu Lệ: Tiểu Cương, anh xem! Mình đợi cả tuần, cuối cùng hôm nay trời nắng rồi.\nTiểu Cương: Tuyệt quá! Hôm nay thời tiết rất đẹp, hay mình đi leo núi?\nTiểu Lệ: Ý hay, leo núi vừa rèn luyện sức khỏe vừa chụp được ảnh đẹp.\nTiểu Cương: Vậy anh chuẩn bị trước. Mình mang chút đồ ăn, thức uống, chín giờ xuất phát nhé?\nTiểu Lệ: Vâng, mình đi giày thể thao và mặc áo khoác mới mua rồi hãy đi.\nTiểu Cương: Có gọi Tiểu Lâm đi cùng không? Cậu ấy cũng thích leo núi.\nTiểu Lệ: Được, giờ mình gọi điện cho cậu ấy nhé.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 4, bài khóa 1."
+    },
+    {
+      "order_index": 2,
+      "title": "Cùng học chụp ảnh",
+      "content": "小林：你拍照的水平这么好啊？拍出来的照片张张都非常好看。\n小丽：都是小刚教我的，我和他比较，他总是拍得比我好。\n小林：我也喜欢照相，不过我自己水平很一般。你看，拍得多难看，好难过啊。\n小丽：没关系，我和小刚可以帮你。你对拍照这么感兴趣，一定能学好。\n小林：太感谢你们了！我一定会努力天天练习。",
+      "pinyin": "xiǎo lín ： nǐ pāi zhào de shuǐ píng zhè me hǎo a ？ pāi chū lái de zhào piān zhāng zhāng dōu fēi cháng hǎo kàn 。\nxiǎo lì ： dōu shì xiǎo gāng jiāo wǒ de ， wǒ hé tā bǐ jiào ， tā zǒng shì pāi de bǐ wǒ hǎo 。\nxiǎo lín ： wǒ yě xǐ huān zhào xiàng ， bù guò wǒ zì jǐ shuǐ píng hěn yì bān 。 nǐ kàn ， pāi de duō nán kàn ， hǎo nán guò a 。\nxiǎo lì ： méi guān xì ， wǒ hé xiǎo gāng kě yǐ bāng nǐ 。 nǐ duì pāi zhào zhè me gǎn xìng qù ， yí dìng néng xué hǎo 。\nxiǎo lín ： tài gǎn xiè nǐ men le ！ wǒ yí dìng huì nǔ lì tiān tiān liàn xí 。",
+      "vietnamese_translation": "Tiểu Lâm: Bạn chụp ảnh giỏi thế! Ảnh chụp ra tấm nào cũng rất đẹp.\nTiểu Lệ: Đều do Tiểu Cương dạy mình. So với mình, anh ấy luôn chụp đẹp hơn.\nTiểu Lâm: Mình cũng thích chụp ảnh nhưng trình độ bình thường. Bạn xem, chụp xấu quá, buồn thật.\nTiểu Lệ: Không sao, mình và Tiểu Cương có thể giúp bạn. Bạn hứng thú như vậy thì nhất định học tốt được.\nTiểu Lâm: Cảm ơn hai bạn nhiều! Mình nhất định cố gắng luyện tập hằng ngày.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 4, bài khóa 2."
+    },
+    {
+      "order_index": 3,
+      "title": "Chụp ảnh dưới tán cây",
+      "content": "小丽：今天太阳暖暖的，我们在这些大树下拍几张照片吧。\n小刚：好，你站在树中间，这样阳光和树叶都能拍进去。\n小丽：好，我需要干什么吗？\n小刚：你不用看着镜头，想干什么都可以。\n小丽：树上飞来了几只鸟，我就看它们吧。\n小刚：可以。哎呀，我的照相机没电了。",
+      "pinyin": "xiǎo lì ： jīn tiān tài yáng nuǎn nuǎn de ， wǒ men zài zhè xiē dà shù xià pāi jǐ zhāng zhào piān ba 。\nxiǎo gāng ： hǎo ， nǐ zhàn zài shù zhōng jiān ， zhè yàng yáng guāng hé shù yè dōu néng pāi jìn qù 。\nxiǎo lì ： hǎo ， wǒ xū yào gàn shén me ma ？\nxiǎo gāng ： nǐ bù yòng kàn zhe jìng tóu ， xiǎng gàn shén me dōu kě yǐ 。\nxiǎo lì ： shù shàng fēi lái le jǐ zhī niǎo ， wǒ jiù kàn tā men ba 。\nxiǎo gāng ： kě yǐ 。 āi yā ， wǒ de zhào xiàng jī méi diàn le 。",
+      "vietnamese_translation": "Tiểu Lệ: Nắng hôm nay ấm áp, mình chụp vài tấm dưới những cây to này nhé.\nTiểu Cương: Được, em đứng giữa các cây, như vậy cả ánh nắng và lá cây đều lọt vào ảnh.\nTiểu Lệ: Em cần làm gì không?\nTiểu Cương: Em không cần nhìn vào ống kính, muốn làm gì cũng được.\nTiểu Lệ: Trên cây có mấy con chim bay đến, em nhìn chúng nhé.\nTiểu Cương: Được. Ôi, máy ảnh của anh hết pin rồi.",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 4, bài khóa 3."
+    },
+    {
+      "order_index": 4,
+      "title": "Gửi ảnh và hẹn gặp",
+      "content": "小林，今天拍的照片张张都漂亮得很。我已经把照片发到你的邮箱了，希望收到后你会喜欢，哈哈。我也告诉小刚了，说你对照相非常感兴趣，想提高拍照水平。他很高兴，句句都是要好好儿帮助你。不知道你今天晚上有没有空儿，我们找了一家很不错的饭馆，晚上8点你工作结束了我们就一起吃饭，然后去听音乐会。你觉得怎么样？",
+      "pinyin": "xiǎo lín ， jīn tiān pāi de zhào piān zhāng zhāng dōu piào liàng de hěn 。 wǒ yǐ jīng bǎ zhào piān fā dào nǐ de yóu xiāng le ， xī wàng shōu dào hòu nǐ huì xǐ huān ， hā hā 。 wǒ yě gào sù xiǎo gāng le ， shuō nǐ duì zhào xiàng fēi cháng gǎn xìng qù ， xiǎng tí gāo pāi zhào shuǐ píng 。 tā hěn gāo xìng ， jù jù dōu shì yào hǎo hǎo ér bāng zhù nǐ 。 bù zhī dào nǐ jīn tiān wǎn shàng yǒu méi yǒu kòng ér ， wǒ men zhǎo le yī jiā hěn bú cuò de fàn guǎn ， wǎn shàng 8 diǎn nǐ gōng zuò jié shù le wǒ men jiù yì qǐ chī fàn ， rán hòu qù tīng yīn yuè huì 。 nǐ jué de zěn me yàng ？",
+      "vietnamese_translation": "Tiểu Lâm, ảnh chụp hôm nay tấm nào cũng rất đẹp. Mình đã gửi ảnh đến hộp thư của bạn, mong bạn nhận được sẽ thích, ha ha. Mình cũng nói với Tiểu Cương rằng bạn rất thích chụp ảnh và muốn nâng cao trình độ. Anh ấy rất vui, câu nào cũng nói phải giúp bạn thật tốt. Không biết tối nay bạn có rảnh không? Bọn mình tìm được một nhà hàng khá ngon. Tám giờ tối bạn làm xong thì mình cùng ăn cơm, sau đó đi nghe hòa nhạc. Bạn thấy thế nào?",
+      "source_reference": "DOCX HSK3.0 H1-3 Từ mới tổng hợp, HSK3 bài 4, bài khóa 4."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 3 · Bài 4 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp của bài này và các bài trước; đạt từ 80%, được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "source_documents": {
+    "vocabulary": "DOCX",
+    "theory": "DOCX"
+  },
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 1).",
+      "options": [
+        {
+          "option_text": "mạng, lưới",
+          "is_correct": false
+        },
+        {
+          "option_text": "giới thiệu",
+          "is_correct": false
+        },
+        {
+          "option_text": "năm sau",
+          "is_correct": false
+        },
+        {
+          "option_text": "nhất định, chắc chắn",
+          "is_correct": true
+        }
+      ],
+      "rubric": "一定 (yídìng) — nhất định, chắc chắn. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "一定"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 4
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “礼物” (lǐwù) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "quà, món quà",
+          "is_correct": true
+        },
+        {
+          "option_text": "đi bộ",
+          "is_correct": false
+        },
+        {
+          "option_text": "quần",
+          "is_correct": false
+        },
+        {
+          "option_text": "đi làm",
+          "is_correct": false
+        }
+      ],
+      "rubric": "礼物 (lǐwù) — quà, món quà. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 3
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “zhāng” — tấm, tờ (lượng từ cho ảnh, giấy).",
+      "options": [
+        {
+          "option_text": "公斤",
+          "is_correct": false
+        },
+        {
+          "option_text": "中间",
+          "is_correct": false
+        },
+        {
+          "option_text": "张",
+          "is_correct": true
+        },
+        {
+          "option_text": "句",
+          "is_correct": false
+        }
+      ],
+      "rubric": "张 (zhāng) — tấm, tờ (lượng từ cho ảnh, giấy). ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 4
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 4).",
+      "options": [
+        {
+          "option_text": "phim (trong 爱情片, 电影片)",
+          "is_correct": false
+        },
+        {
+          "option_text": "muốn",
+          "is_correct": false
+        },
+        {
+          "option_text": "nâng cao",
+          "is_correct": true
+        },
+        {
+          "option_text": "thuận tiện, tiện lợi",
+          "is_correct": false
+        }
+      ],
+      "rubric": "提高 (tígāo) — nâng cao. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "提高"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 4
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “终于” (zhōngyú) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "cuối cùng (sau chờ đợi hoặc nỗ lực)",
+          "is_correct": true
+        },
+        {
+          "option_text": "gọi, chọn (món ăn)",
+          "is_correct": false
+        },
+        {
+          "option_text": "nghiêm trọng",
+          "is_correct": false
+        },
+        {
+          "option_text": "tổng cộng",
+          "is_correct": false
+        }
+      ],
+      "rubric": "终于 (zhōngyú) — cuối cùng (sau chờ đợi hoặc nỗ lực). ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 4
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “fángjiān” — căn phòng.",
+      "options": [
+        {
+          "option_text": "他们",
+          "is_correct": false
+        },
+        {
+          "option_text": "白天",
+          "is_correct": false
+        },
+        {
+          "option_text": "房间",
+          "is_correct": true
+        },
+        {
+          "option_text": "超过",
+          "is_correct": false
+        }
+      ],
+      "rubric": "房间 (fángjiān) — căn phòng. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 8
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 7).",
+      "options": [
+        {
+          "option_text": "đói",
+          "is_correct": false
+        },
+        {
+          "option_text": "bà nội",
+          "is_correct": false
+        },
+        {
+          "option_text": "luôn luôn",
+          "is_correct": true
+        },
+        {
+          "option_text": "đây, này",
+          "is_correct": false
+        }
+      ],
+      "rubric": "总是 (zǒngshì) — luôn luôn. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "总是"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 4
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “阳光” (yángguāng) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "mì trường thọ",
+          "is_correct": false
+        },
+        {
+          "option_text": "giờ (đơn vị chỉ thời điểm)",
+          "is_correct": false
+        },
+        {
+          "option_text": "bình thường, ở mức trung bình; nói chung",
+          "is_correct": false
+        },
+        {
+          "option_text": "ánh nắng",
+          "is_correct": true
+        }
+      ],
+      "rubric": "阳光 (yángguāng) — ánh nắng. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 4
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “jù” — câu (lượng từ cho lời nói, câu văn).",
+      "options": [
+        {
+          "option_text": "句",
+          "is_correct": true
+        },
+        {
+          "option_text": "四川烤鱼",
+          "is_correct": false
+        },
+        {
+          "option_text": "菜单",
+          "is_correct": false
+        },
+        {
+          "option_text": "半",
+          "is_correct": false
+        }
+      ],
+      "rubric": "句 (jù) — câu (lượng từ cho lời nói, câu văn). ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 4
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe từ/cụm từ rồi chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "em trai",
+          "is_correct": false
+        },
+        {
+          "option_text": "nhất định, chắc chắn",
+          "is_correct": true
+        },
+        {
+          "option_text": "ở, tại",
+          "is_correct": false
+        },
+        {
+          "option_text": "xuất phát, khởi hành",
+          "is_correct": false
+        }
+      ],
+      "rubric": "肯定 (kěndìng) — nhất định, chắc chắn. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true,
+          "audio_text": "肯定"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 5
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong ngữ cảnh đã học, “中间” (zhōngjiān) có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "bị ốm",
+          "is_correct": false
+        },
+        {
+          "option_text": "tan học",
+          "is_correct": false
+        },
+        {
+          "option_text": "ở giữa",
+          "is_correct": true
+        },
+        {
+          "option_text": "giải thích",
+          "is_correct": false
+        }
+      ],
+      "rubric": "中间 (zhōngjiān) — ở giữa. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 4
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán cho “shōudào” — nhận được.",
+      "options": [
+        {
+          "option_text": "块",
+          "is_correct": false
+        },
+        {
+          "option_text": "头疼",
+          "is_correct": false
+        },
+        {
+          "option_text": "收到",
+          "is_correct": true
+        },
+        {
+          "option_text": "叫",
+          "is_correct": false
+        }
+      ],
+      "rubric": "收到 (shōudào) — nhận được. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 4
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “ha ha, tiếng cười” (pinyin: hāhā).",
+      "reference_answer": "哈哈",
+      "rubric": "Đáp án: 哈哈 (hāhā). ",
+      "config": {
+        "accepted_answers": [
+          "哈哈"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 4
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “ăn” (pinyin: chī).",
+      "reference_answer": "吃",
+      "rubric": "Đáp án: 吃 (chī). ",
+      "config": {
+        "accepted_answers": [
+          "吃"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “điện” (pinyin: diàn).",
+      "reference_answer": "电",
+      "rubric": "Đáp án: 电 (diàn). ",
+      "config": {
+        "accepted_answers": [
+          "电"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 4
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho “ống kính; cảnh quay” (pinyin: jìngtóu).",
+      "reference_answer": "镜头",
+      "rubric": "Đáp án: 镜头 (jìngtóu). ",
+      "config": {
+        "accepted_answers": [
+          "镜头"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 4
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối các từ với nghĩa đã học (nhóm 1).",
+      "rubric": "感兴趣: có hứng thú ; 终于: cuối cùng (sau chờ đợi hoặc nỗ lực) ; 要不: hay là, nếu không thì ; 注意: chú ý",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "感兴趣"
+          },
+          {
+            "id": "l1",
+            "text": "终于"
+          },
+          {
+            "id": "l2",
+            "text": "要不"
+          },
+          {
+            "id": "l3",
+            "text": "注意"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r0",
+            "text": "có hứng thú"
+          },
+          {
+            "id": "r1",
+            "text": "cuối cùng (sau chờ đợi hoặc nỗ lực)"
+          },
+          {
+            "id": "r2",
+            "text": "hay là, nếu không thì"
+          },
+          {
+            "id": "r3",
+            "text": "chú ý"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 4
+        },
+        {
+          "hsk": 3,
+          "lesson": 4
+        },
+        {
+          "hsk": 3,
+          "lesson": 4
+        },
+        {
+          "hsk": 3,
+          "lesson": 4
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối các từ với nghĩa đã học (nhóm 2).",
+      "rubric": "爬山: leo núi ; 中间: ở giữa ; 肯定: nhất định, chắc chắn ; 礼物: quà, món quà",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "爬山"
+          },
+          {
+            "id": "l1",
+            "text": "中间"
+          },
+          {
+            "id": "l2",
+            "text": "肯定"
+          },
+          {
+            "id": "l3",
+            "text": "礼物"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r3",
+            "text": "quà, món quà"
+          },
+          {
+            "id": "r1",
+            "text": "ở giữa"
+          },
+          {
+            "id": "r0",
+            "text": "leo núi"
+          },
+          {
+            "id": "r2",
+            "text": "nhất định, chắc chắn"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 4
+        },
+        {
+          "hsk": 3,
+          "lesson": 4
+        },
+        {
+          "hsk": 2,
+          "lesson": 5
+        },
+        {
+          "hsk": 2,
+          "lesson": 3
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nhấn mạnh tấm nào cũng đẹp: 这些照片___都很漂亮。",
+      "options": [
+        {
+          "option_text": "张张",
+          "is_correct": true
+        },
+        {
+          "option_text": "个张",
+          "is_correct": false
+        },
+        {
+          "option_text": "一张张张",
+          "is_correct": false
+        },
+        {
+          "option_text": "张个",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Lượng từ lặp lại như 张张 diễn tả từng tấm trong phạm vi đều như vậy.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 4
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Theo bổ ngữ mức độ 得很: 今天天气好___很。",
+      "options": [
+        {
+          "option_text": "得",
+          "is_correct": true
+        },
+        {
+          "option_text": "的",
+          "is_correct": false
+        },
+        {
+          "option_text": "地",
+          "is_correct": false
+        },
+        {
+          "option_text": "在",
+          "is_correct": false
+        }
+      ],
+      "rubric": "得 đọc de, đứng sau tính từ để dẫn phần bổ sung mức độ.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 4
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Biểu thị chim xuất hiện trên cây: 树上飞___几只鸟。",
+      "options": [
+        {
+          "option_text": "到的",
+          "is_correct": false
+        },
+        {
+          "option_text": "着的",
+          "is_correct": false
+        },
+        {
+          "option_text": "来了",
+          "is_correct": true
+        },
+        {
+          "option_text": "是的",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Câu tồn hiện nêu địa điểm trước, 飞来了 biểu thị chim bay đến.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 4
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Mức độ cao với 得很”, cách hiểu nào đúng (mục 1)?",
+      "options": [
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nhấn mạnh mức độ của tính chất.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Nhấn mạnh mức độ của tính chất. 得 đọc de, khác 的 đứng trước danh từ và 地 đứng trước động từ.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 4
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Lượng từ lặp lại”, cách hiểu nào đúng (mục 2)?",
+      "options": [
+        {
+          "option_text": "Nhấn mạnh từng thành viên trong phạm vi đều có cùng tính chất.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Nhấn mạnh từng thành viên trong phạm vi đều có cùng tính chất. Chọn lượng từ theo danh từ: 张 cho ảnh, 句 cho câu; không đặt số từ ngay trước dạng lặp này.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 4
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Câu tồn hiện chỉ xuất hiện và biến mất”, cách hiểu nào đúng (mục 3)?",
+      "options": [
+        {
+          "option_text": "Mẫu này chỉ dùng để đặt câu hỏi về số lượng đồ vật.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mẫu này chỉ dùng cho một sự việc sẽ xảy ra ở tương lai xa.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Giới thiệu người hoặc vật xuất hiện ở hoặc rời khỏi một nơi.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể bỏ hoặc đổi vị trí mọi thành phần mà ý nghĩa vẫn luôn giữ nguyên.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Giới thiệu người hoặc vật xuất hiện ở hoặc rời khỏi một nơi. Địa điểm đứng đầu, đối tượng thường chưa xác định; cần phân biệt hướng 来 và 去 theo điểm nhìn.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 4
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Hôm nay thời tiết rất đẹp. (câu 1).",
+      "reference_answer": "今天天气好得很。",
+      "rubric": "Câu đúng: 今天天气好得很。 — Hôm nay thời tiết rất đẹp. 得 đọc de, khác 的 đứng trước danh từ và 地 đứng trước động từ.",
+      "config": {
+        "items": [
+          {
+            "id": "t0",
+            "text": "今天"
+          },
+          {
+            "id": "t3",
+            "text": "得"
+          },
+          {
+            "id": "t4",
+            "text": "很"
+          },
+          {
+            "id": "t5",
+            "text": "。"
+          },
+          {
+            "id": "t1",
+            "text": "天气"
+          },
+          {
+            "id": "t2",
+            "text": "好"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 4
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Những bức ảnh này tấm nào cũng đẹp. (câu 2).",
+      "reference_answer": "这些照片张张都很漂亮。",
+      "rubric": "Câu đúng: 这些照片张张都很漂亮。 — Những bức ảnh này tấm nào cũng đẹp. Chọn lượng từ theo danh từ: 张 cho ảnh, 句 cho câu; không đặt số từ ngay trước dạng lặp này.",
+      "config": {
+        "items": [
+          {
+            "id": "t6",
+            "text": "漂亮"
+          },
+          {
+            "id": "t7",
+            "text": "。"
+          },
+          {
+            "id": "t3",
+            "text": "张"
+          },
+          {
+            "id": "t0",
+            "text": "这些"
+          },
+          {
+            "id": "t2",
+            "text": "张"
+          },
+          {
+            "id": "t1",
+            "text": "照片"
+          },
+          {
+            "id": "t5",
+            "text": "很"
+          },
+          {
+            "id": "t4",
+            "text": "都"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 4
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Trên cây có mấy con chim bay đến. (câu 3).",
+      "reference_answer": "树上飞来了几只鸟。",
+      "rubric": "Câu đúng: 树上飞来了几只鸟。 — Trên cây có mấy con chim bay đến. Địa điểm đứng đầu, đối tượng thường chưa xác định; cần phân biệt hướng 来 và 去 theo điểm nhìn.",
+      "config": {
+        "items": [
+          {
+            "id": "t7",
+            "text": "鸟"
+          },
+          {
+            "id": "t3",
+            "text": "来"
+          },
+          {
+            "id": "t6",
+            "text": "只"
+          },
+          {
+            "id": "t8",
+            "text": "。"
+          },
+          {
+            "id": "t2",
+            "text": "飞"
+          },
+          {
+            "id": "t0",
+            "text": "树"
+          },
+          {
+            "id": "t4",
+            "text": "了"
+          },
+          {
+            "id": "t5",
+            "text": "几"
+          },
+          {
+            "id": "t1",
+            "text": "上"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 4
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Tiểu Cương, anh xem! Mình đợi cả tuần, cuối cùng hôm nay trời nắng rồi. (câu 4).",
+      "reference_answer": "小刚，你看！我们等了一周，今天终于是晴天了。",
+      "rubric": "Câu đúng: 小刚，你看！我们等了一周，今天终于是晴天了。 — Tiểu Cương, anh xem! Mình đợi cả tuần, cuối cùng hôm nay trời nắng rồi. Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t5",
+            "text": "！"
+          },
+          {
+            "id": "t1",
+            "text": "刚"
+          },
+          {
+            "id": "t18",
+            "text": "。"
+          },
+          {
+            "id": "t12",
+            "text": "，"
+          },
+          {
+            "id": "t6",
+            "text": "我"
+          },
+          {
+            "id": "t16",
+            "text": "晴天"
+          },
+          {
+            "id": "t15",
+            "text": "是"
+          },
+          {
+            "id": "t17",
+            "text": "了"
+          },
+          {
+            "id": "t3",
+            "text": "你"
+          },
+          {
+            "id": "t2",
+            "text": "，"
+          },
+          {
+            "id": "t9",
+            "text": "了"
+          },
+          {
+            "id": "t13",
+            "text": "今天"
+          },
+          {
+            "id": "t0",
+            "text": "小"
+          },
+          {
+            "id": "t7",
+            "text": "们"
+          },
+          {
+            "id": "t8",
+            "text": "等"
+          },
+          {
+            "id": "t10",
+            "text": "一"
+          },
+          {
+            "id": "t14",
+            "text": "终于"
+          },
+          {
+            "id": "t4",
+            "text": "看"
+          },
+          {
+            "id": "t11",
+            "text": "周"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12",
+          "t13",
+          "t14",
+          "t15",
+          "t16",
+          "t17",
+          "t18"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 4
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Tuyệt quá! Hôm nay thời tiết rất đẹp, hay mình đi leo núi? (câu 5).",
+      "reference_answer": "太好了！今天天气好得很，要不我们去爬山？",
+      "rubric": "Câu đúng: 太好了！今天天气好得很，要不我们去爬山？ — Tuyệt quá! Hôm nay thời tiết rất đẹp, hay mình đi leo núi? Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t8",
+            "text": "很"
+          },
+          {
+            "id": "t5",
+            "text": "天气"
+          },
+          {
+            "id": "t12",
+            "text": "们"
+          },
+          {
+            "id": "t9",
+            "text": "，"
+          },
+          {
+            "id": "t13",
+            "text": "去"
+          },
+          {
+            "id": "t11",
+            "text": "我"
+          },
+          {
+            "id": "t2",
+            "text": "了"
+          },
+          {
+            "id": "t10",
+            "text": "要不"
+          },
+          {
+            "id": "t6",
+            "text": "好"
+          },
+          {
+            "id": "t1",
+            "text": "好"
+          },
+          {
+            "id": "t7",
+            "text": "得"
+          },
+          {
+            "id": "t0",
+            "text": "太"
+          },
+          {
+            "id": "t4",
+            "text": "今天"
+          },
+          {
+            "id": "t3",
+            "text": "！"
+          },
+          {
+            "id": "t14",
+            "text": "爬山"
+          },
+          {
+            "id": "t15",
+            "text": "？"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12",
+          "t13",
+          "t14",
+          "t15"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 4
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu theo nghĩa: Ý hay, leo núi vừa rèn luyện sức khỏe vừa chụp được ảnh đẹp. (câu 6).",
+      "reference_answer": "好主意，爬山又能锻炼身体又能照好看的照片。",
+      "rubric": "Câu đúng: 好主意，爬山又能锻炼身体又能照好看的照片。 — Ý hay, leo núi vừa rèn luyện sức khỏe vừa chụp được ảnh đẹp. Giữ đúng vị trí chủ ngữ, động từ và thành phần bổ sung trong câu đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "t3",
+            "text": "，"
+          },
+          {
+            "id": "t13",
+            "text": "看"
+          },
+          {
+            "id": "t10",
+            "text": "能"
+          },
+          {
+            "id": "t1",
+            "text": "主"
+          },
+          {
+            "id": "t2",
+            "text": "意"
+          },
+          {
+            "id": "t15",
+            "text": "照片"
+          },
+          {
+            "id": "t6",
+            "text": "能"
+          },
+          {
+            "id": "t7",
+            "text": "锻炼"
+          },
+          {
+            "id": "t0",
+            "text": "好"
+          },
+          {
+            "id": "t16",
+            "text": "。"
+          },
+          {
+            "id": "t9",
+            "text": "又"
+          },
+          {
+            "id": "t12",
+            "text": "好"
+          },
+          {
+            "id": "t5",
+            "text": "又"
+          },
+          {
+            "id": "t4",
+            "text": "爬山"
+          },
+          {
+            "id": "t14",
+            "text": "的"
+          },
+          {
+            "id": "t8",
+            "text": "身体"
+          },
+          {
+            "id": "t11",
+            "text": "照"
+          }
+        ],
+        "correct_order": [
+          "t0",
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12",
+          "t13",
+          "t14",
+          "t15",
+          "t16"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 3,
+          "lesson": 4
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ]
+}

@@ -1,4 +1,6 @@
-import { SceneIllustration, sceneForTitle } from '../../components/academy/AcademyArtwork'
+import { SceneIllustration } from '../../components/academy/AcademyArtwork'
+import { CurriculumCover } from '../curriculum/CurriculumCover'
+import { curriculumCoverTopic, type CoverTopic } from '../curriculum/curriculumCoverData'
 import { AcademyIcon } from '../../components/academy/AcademyIcon'
 import { useId, useState, type ReactNode } from 'react'
 import { Link } from 'react-router'
@@ -10,6 +12,7 @@ import { listLessonVocabulary, listLessonGrammar } from './api'
 export type LibraryRecord = {
   id: string; title: string; context: string; status: ReactNode; detail?: ReactNode
   href: string; action: string
+  coverTopic?: CoverTopic
 }
 
 export function AdminLibrary({ records, label, total, kind, preview }: {
@@ -32,7 +35,7 @@ export function AdminLibrary({ records, label, total, kind, preview }: {
       <div className="admin-library-results">
         {view === 'cards' ? <div className="admin-library-grid">{records.map((item, index) => {
           const content = <>
-            <div className={`admin-book-cover admin-book-cover--${index % 3}`} aria-hidden="true"><SceneIllustration scene={kind === 'lessons' ? sceneForTitle(item.title) : kind === 'assessments' ? 'practice' : 'library'}/></div>
+            <div className={`admin-book-cover admin-book-cover--${index % 3}`} aria-hidden="true">{kind === 'lessons' ? <CurriculumCover topic={item.coverTopic ?? curriculumCoverTopic(item.title)}/> : <SceneIllustration scene={kind === 'assessments' ? 'practice' : 'library'}/>}</div>
             <div className="admin-library-card-copy"><p className="admin-record-context">{item.context}</p><h2>{kind === 'lessons' ? item.title : <button type="button" aria-pressed={selected?.id === item.id} aria-controls={previewId} onClick={() => setSelectedId(item.id)}>{item.title}</button>}</h2>
               <div className="admin-record-status">{item.status}</div>{item.detail && <div className="admin-record-detail">{item.detail}</div>}
               {kind !== 'lessons' && <Link className="admin-link-action" to={item.href}>{item.action}<span aria-hidden="true"> →</span></Link>}
