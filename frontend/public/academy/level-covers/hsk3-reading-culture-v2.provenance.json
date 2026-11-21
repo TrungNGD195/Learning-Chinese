@@ -1,0 +1,14 @@
+{
+  "asset": "hsk3-reading-culture-v2.webp",
+  "generator": "built-in image_gen",
+  "generated_on": "2026-11-21",
+  "reference": "curriculum-v2/covers.png, art style of HSK1 greeting and HSK2 everyday-life pandas",
+  "prompt_file": "hsk3-reading-culture-v2.prompt.txt",
+  "purpose": "HSK 3 level-selection card: confident conversation, deeper reading, Chinese culture",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "sha256": "eb4a7e0121c45f7b7442fd08a9dfa4745bc56fc6cc26f54e4f0cbc8ad58deb7d",
+  "processing": "WebP format conversion only; no image content changes."
+}

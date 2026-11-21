@@ -26,7 +26,7 @@ export function HskSelectionPage() {
       const details = descriptions[level.level_number] ?? { title: level.title, description: 'Chọn cấp độ để xem các bài học.', cover: 'study' as CoverTopic }
       return <Link className="lc-hsk-card" key={level.id} to={`/hsk/${level.level_number}`} aria-label={`HSK ${level.level_number}`}>
         <div className="lc-hsk-art" aria-hidden="true">{level.level_number === 3
-          ? <img className="lc-painted-cover lc-hsk-level-image" src="/academy/level-covers/hsk3-great-wall-v1.webp" alt="" width={1536} height={1024} decoding="async"/>
+          ? <img className="lc-painted-cover lc-hsk-level-image" src="/academy/level-covers/hsk3-reading-culture-v2.webp" alt="" width={1536} height={1024} decoding="async"/>
           : <CurriculumCover topic={details.cover}/>}<span>HSK {level.level_number}</span></div>
         <div className="lc-hsk-copy"><h2>{details.title}</h2><p>{details.description}</p><div className="lc-hsk-action"><span>{plannedLessonCounts[level.level_number]} bài học{level.level_number === 1 ? ' · Có phát âm nền tảng' : ''}</span><strong>Xem giáo trình <AcademyIcon name="arrow" size={20}/></strong></div></div>
       </Link>
