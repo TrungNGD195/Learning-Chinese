@@ -1,0 +1,1918 @@
+{
+  "key": "hsk1-lesson-04-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 1,
+    "lesson_number": 4,
+    "title": "你家有几口人？ · Nhà bạn có mấy người?",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "有",
+      "pinyin": "yǒu",
+      "vietnamese_meaning": "có",
+      "part_of_speech": "động từ",
+      "example": "我家有四口人。\nwǒ jiā yǒu sì kǒu rén 。\nGia đình tôi có bốn người.",
+      "order_index": 1,
+      "note": null,
+      "source_key": "1:4:有"
+    },
+    {
+      "hanzi": "没有",
+      "pinyin": "méiyǒu",
+      "vietnamese_meaning": "không có",
+      "part_of_speech": "động từ",
+      "example": "我没有哥哥。\nwǒ méi yǒu gē gē 。\nTôi không có anh trai.",
+      "order_index": 2,
+      "note": null,
+      "source_key": "1:4:没有"
+    },
+    {
+      "hanzi": "多少",
+      "pinyin": "duōshao",
+      "vietnamese_meaning": "bao nhiêu",
+      "part_of_speech": "đại từ",
+      "example": "你有多少个学生？\nnǐ yǒu duō shǎo gè xué shēng ？\nBạn có bao nhiêu học sinh?",
+      "order_index": 3,
+      "note": null,
+      "source_key": "1:4:多少"
+    },
+    {
+      "hanzi": "多",
+      "pinyin": "duō",
+      "vietnamese_meaning": "nhiều",
+      "part_of_speech": "tính từ",
+      "example": "你的学生多吗？\nnǐ de xué shēng duō ma ？\nHọc sinh của bạn có nhiều không?",
+      "order_index": 4,
+      "note": null,
+      "source_key": "1:4:多"
+    },
+    {
+      "hanzi": "少",
+      "pinyin": "shǎo",
+      "vietnamese_meaning": "ít",
+      "part_of_speech": "tính từ",
+      "example": "他的学生很少。\ntā de xué shēng hěn shǎo 。\nHọc sinh của anh ấy rất ít.",
+      "order_index": 5,
+      "note": null,
+      "source_key": "1:4:少"
+    },
+    {
+      "hanzi": "个",
+      "pinyin": "gè",
+      "vietnamese_meaning": "cái, chiếc",
+      "part_of_speech": "lượng từ",
+      "example": "我有一个朋友。\nwǒ yǒu yí gè péng yǒu 。\nTôi có một người bạn.",
+      "order_index": 6,
+      "note": null,
+      "source_key": "1:4:个"
+    },
+    {
+      "hanzi": "学生",
+      "pinyin": "xuésheng",
+      "vietnamese_meaning": "học sinh",
+      "part_of_speech": "danh từ",
+      "example": "他是我的学生。\ntā shì wǒ de xué shēng 。\nAnh ấy là học sinh của tôi.",
+      "order_index": 7,
+      "note": null,
+      "source_key": "1:4:学生"
+    },
+    {
+      "hanzi": "男生",
+      "pinyin": "nán shēng",
+      "vietnamese_meaning": "học sinh nam; nam sinh",
+      "part_of_speech": "danh từ",
+      "example": "他是男生。\ntā shì nán shēng 。\nAnh ấy là học sinh nam.",
+      "order_index": 8,
+      "note": null,
+      "source_key": "1:4:男生"
+    },
+    {
+      "hanzi": "女生",
+      "pinyin": "nǚ shēng",
+      "vietnamese_meaning": "học sinh nữ; nữ sinh",
+      "part_of_speech": "danh từ",
+      "example": "她是女生。\ntā shì nǚ shēng 。\nCô ấy là học sinh nữ.",
+      "order_index": 9,
+      "note": null,
+      "source_key": "1:4:女生"
+    },
+    {
+      "hanzi": "班",
+      "pinyin": "bān",
+      "vietnamese_meaning": "lớp học; ca làm",
+      "part_of_speech": "danh từ; lượng từ",
+      "example": "我们班有十个学生。\nwǒ men bān yǒu shí gè xué shēng 。\nLớp chúng tôi có mười học sinh.",
+      "order_index": 10,
+      "note": null,
+      "source_key": "1:4:班"
+    },
+    {
+      "hanzi": "二",
+      "pinyin": "èr",
+      "vietnamese_meaning": "hai (số 2)",
+      "part_of_speech": "số từ",
+      "example": "我有二个。\nwǒ yǒu èr gè 。\nTôi có hai cái.",
+      "order_index": 11,
+      "note": "二 dùng đọc số và thứ tự; trước lượng từ đếm hai đồ vật thường dùng 两: 两个人, không áp dụng máy móc 二个人.",
+      "source_key": "1:4:二"
+    },
+    {
+      "hanzi": "三",
+      "pinyin": "sān",
+      "vietnamese_meaning": "ba (số 3)",
+      "part_of_speech": "số từ",
+      "example": "我有三个。\nwǒ yǒu sān gè 。\nTôi có ba cái.",
+      "order_index": 12,
+      "note": null,
+      "source_key": "1:4:三"
+    },
+    {
+      "hanzi": "四",
+      "pinyin": "sì",
+      "vietnamese_meaning": "bốn (số 4)",
+      "part_of_speech": "số từ",
+      "example": "我有四个。\nwǒ yǒu sì gè 。\nTôi có bốn cái.",
+      "order_index": 13,
+      "note": null,
+      "source_key": "1:4:四"
+    },
+    {
+      "hanzi": "六",
+      "pinyin": "liù",
+      "vietnamese_meaning": "sáu (số 6)",
+      "part_of_speech": "số từ",
+      "example": "我有六个。\nwǒ yǒu liù gè 。\nTôi có sáu cái.",
+      "order_index": 14,
+      "note": null,
+      "source_key": "1:4:六"
+    },
+    {
+      "hanzi": "七",
+      "pinyin": "qī",
+      "vietnamese_meaning": "bảy (số 7)",
+      "part_of_speech": "số từ",
+      "example": "我有七个。\nwǒ yǒu qī gè 。\nTôi có bảy cái.",
+      "order_index": 15,
+      "note": null,
+      "source_key": "1:4:七"
+    },
+    {
+      "hanzi": "九",
+      "pinyin": "jiǔ",
+      "vietnamese_meaning": "chín (số 9)",
+      "part_of_speech": "số từ",
+      "example": "我有九个。\nwǒ yǒu jiǔ gè 。\nTôi có chín cái.",
+      "order_index": 16,
+      "note": null,
+      "source_key": "1:4:九"
+    },
+    {
+      "hanzi": "十",
+      "pinyin": "shí",
+      "vietnamese_meaning": "mười (số 10)",
+      "part_of_speech": "số từ",
+      "example": "我有十个。\nwǒ yǒu shí gè 。\nTôi có mười cái.",
+      "order_index": 17,
+      "note": null,
+      "source_key": "1:4:十"
+    },
+    {
+      "hanzi": "家",
+      "pinyin": "jiā",
+      "vietnamese_meaning": "nhà, gia đình",
+      "part_of_speech": "danh từ",
+      "example": "我家有四口人。\nwǒ jiā yǒu sì kǒu rén 。\nGia đình tôi có bốn người.",
+      "order_index": 18,
+      "note": null,
+      "source_key": "1:4:家"
+    },
+    {
+      "hanzi": "几",
+      "pinyin": "jǐ",
+      "vietnamese_meaning": "mấy",
+      "part_of_speech": "đại từ",
+      "example": "你家有几口人？\nnǐ jiā yǒu jǐ kǒu rén ？\nNhà bạn có mấy người?",
+      "order_index": 19,
+      "note": null,
+      "source_key": "1:4:几"
+    },
+    {
+      "hanzi": "包括",
+      "pinyin": "bāokuò",
+      "vietnamese_meaning": "bao gồm",
+      "part_of_speech": "động từ",
+      "example": "我家包括爸爸、妈妈和我。\nwǒ jiā bāo kuò bà bà 、 mā mā hé wǒ 。\nGia đình tôi gồm bố, mẹ và tôi.",
+      "order_index": 20,
+      "note": null,
+      "source_key": "1:4:包括"
+    },
+    {
+      "hanzi": "爸爸",
+      "pinyin": "bàba",
+      "vietnamese_meaning": "bố",
+      "part_of_speech": "danh từ",
+      "example": "这是我的爸爸。\nzhè shì wǒ de bà bà 。\nĐây là bố của tôi.",
+      "order_index": 21,
+      "note": null,
+      "source_key": "1:4:爸爸"
+    },
+    {
+      "hanzi": "妈妈",
+      "pinyin": "māma",
+      "vietnamese_meaning": "mẹ",
+      "part_of_speech": "danh từ",
+      "example": "这是我的妈妈。\nzhè shì wǒ de mā mā 。\nĐây là mẹ của tôi.",
+      "order_index": 22,
+      "note": null,
+      "source_key": "1:4:妈妈"
+    },
+    {
+      "hanzi": "父母",
+      "pinyin": "fùmǔ",
+      "vietnamese_meaning": "cha mẹ; bố mẹ",
+      "part_of_speech": "danh từ",
+      "example": "这是我的父母。\nzhè shì wǒ de fù mǔ 。\nĐây là cha mẹ của tôi.",
+      "order_index": 23,
+      "note": null,
+      "source_key": "1:4:父母"
+    },
+    {
+      "hanzi": "哥哥",
+      "pinyin": "gēge",
+      "vietnamese_meaning": "anh trai",
+      "part_of_speech": "danh từ",
+      "example": "这是我的哥哥。\nzhè shì wǒ dī gē gē 。\nĐây là anh trai của tôi.",
+      "order_index": 24,
+      "note": null,
+      "source_key": "1:4:哥哥"
+    },
+    {
+      "hanzi": "弟弟",
+      "pinyin": "dìdi",
+      "vietnamese_meaning": "em trai",
+      "part_of_speech": "danh từ",
+      "example": "这是我的弟弟。\nzhè shì wǒ de dì di 。\nĐây là em trai của tôi.",
+      "order_index": 25,
+      "note": null,
+      "source_key": "1:4:弟弟"
+    },
+    {
+      "hanzi": "妹妹",
+      "pinyin": "mèimei",
+      "vietnamese_meaning": "em gái",
+      "part_of_speech": "danh từ",
+      "example": "这是我的妹妹。\nzhè shì wǒ de mèi mèi 。\nĐây là em gái của tôi.",
+      "order_index": 26,
+      "note": null,
+      "source_key": "1:4:妹妹"
+    },
+    {
+      "hanzi": "和",
+      "pinyin": "hé",
+      "vietnamese_meaning": "và",
+      "part_of_speech": "liên từ",
+      "example": "我家包括爸爸、妈妈和我。\nwǒ jiā bāo kuò bà bà 、 mā mā hé wǒ 。\nGia đình tôi gồm bố, mẹ và tôi.",
+      "order_index": 27,
+      "note": null,
+      "source_key": "1:4:和"
+    },
+    {
+      "hanzi": "呢",
+      "pinyin": "ne",
+      "vietnamese_meaning": "thì sao, còn ... (hỏi tiếp); trợ từ cuối câu",
+      "part_of_speech": "trợ từ ngữ khí",
+      "example": "我很好，你呢？\nwǒ hěn hǎo ， nǐ ne ？\nTôi khỏe, còn bạn thì sao?",
+      "order_index": 28,
+      "note": null,
+      "source_key": "1:4:呢"
+    },
+    {
+      "hanzi": "刘明",
+      "pinyin": "liú míng",
+      "vietnamese_meaning": "Lưu Minh (tên người)",
+      "part_of_speech": "danh từ riêng",
+      "example": "我叫刘明。\nwǒ jiào liú míng 。\nTôi tên là Lưu Minh.",
+      "order_index": 29,
+      "note": null,
+      "source_key": "1:4:刘明"
+    },
+    {
+      "hanzi": "杨同乐",
+      "pinyin": "yáng tóng lè",
+      "vietnamese_meaning": "Dương Đồng Lạc (tên người)",
+      "part_of_speech": "danh từ riêng",
+      "example": "我叫杨同乐。\nwǒ jiào yáng tóng lè 。\nTôi tên là Dương Đồng Lạc.",
+      "order_index": 30,
+      "note": null,
+      "source_key": "1:4:杨同乐"
+    },
+    {
+      "hanzi": "老公",
+      "pinyin": "lǎogōng",
+      "vietnamese_meaning": "chồng (cách gọi thân mật)",
+      "part_of_speech": "danh từ",
+      "example": "这是我的老公。\nzhè shì wǒ de lǎo gōng 。\nĐây là chồng của tôi.",
+      "order_index": 31,
+      "note": null,
+      "source_key": "1:4:老公"
+    },
+    {
+      "hanzi": "老婆",
+      "pinyin": "lǎopo",
+      "vietnamese_meaning": "vợ (cách gọi thân mật)",
+      "part_of_speech": "danh từ",
+      "example": "这是我的老婆。\nzhè shì wǒ de lǎo pó 。\nĐây là vợ của tôi.",
+      "order_index": 32,
+      "note": null,
+      "source_key": "1:4:老婆"
+    },
+    {
+      "hanzi": "孩子",
+      "pinyin": "háizi",
+      "vietnamese_meaning": "con cái",
+      "part_of_speech": "danh từ",
+      "example": "我的孩子今年五岁了。\nwǒ de hái zi jīn nián wǔ suì le 。\nCon tôi năm nay đã năm tuổi rồi.",
+      "order_index": 33,
+      "note": null,
+      "source_key": "1:4:孩子"
+    },
+    {
+      "hanzi": "儿子",
+      "pinyin": "érzi",
+      "vietnamese_meaning": "con trai",
+      "part_of_speech": "danh từ",
+      "example": "这是我的儿子。\nzhè shì wǒ de ér zi 。\nĐây là con trai của tôi.",
+      "order_index": 34,
+      "note": null,
+      "source_key": "1:4:儿子"
+    },
+    {
+      "hanzi": "女儿",
+      "pinyin": "nǚér",
+      "vietnamese_meaning": "con gái",
+      "part_of_speech": "danh từ",
+      "example": "这是我的女儿。\nzhè shì wǒ de nǚ ér 。\nĐây là con gái của tôi.",
+      "order_index": 35,
+      "note": null,
+      "source_key": "1:4:女儿"
+    },
+    {
+      "hanzi": "奶奶",
+      "pinyin": "nǎinai",
+      "vietnamese_meaning": "bà nội",
+      "part_of_speech": "danh từ",
+      "example": "这是我的奶奶。\nzhè shì wǒ de nǎi nǎi 。\nĐây là bà nội của tôi.",
+      "order_index": 36,
+      "note": null,
+      "source_key": "1:4:奶奶"
+    },
+    {
+      "hanzi": "爷爷",
+      "pinyin": "yéye",
+      "vietnamese_meaning": "ông nội",
+      "part_of_speech": "danh từ",
+      "example": "这是我的爷爷。\nzhè shì wǒ de yé yé 。\nĐây là ông nội của tôi.",
+      "order_index": 37,
+      "note": null,
+      "source_key": "1:4:爷爷"
+    },
+    {
+      "hanzi": "外公",
+      "pinyin": "wàigōng",
+      "vietnamese_meaning": "ông ngoại",
+      "part_of_speech": "danh từ",
+      "example": "这是我的外公。\nzhè shì wǒ de wài gōng 。\nĐây là ông ngoại của tôi.",
+      "order_index": 38,
+      "note": null,
+      "source_key": "1:4:外公"
+    },
+    {
+      "hanzi": "外婆",
+      "pinyin": "wàipó",
+      "vietnamese_meaning": "bà ngoại",
+      "part_of_speech": "danh từ",
+      "example": "这是我的外婆。\nzhè shì wǒ de wài pó 。\nĐây là bà ngoại của tôi.",
+      "order_index": 39,
+      "note": null,
+      "source_key": "1:4:外婆"
+    },
+    {
+      "hanzi": "结婚",
+      "pinyin": "jiéhūn",
+      "vietnamese_meaning": "kết hôn",
+      "part_of_speech": "động từ",
+      "example": "我还没有结婚。\nwǒ hái méi yǒu jié hūn 。\nTôi vẫn chưa kết hôn.",
+      "order_index": 40,
+      "note": null,
+      "source_key": "1:4:结婚"
+    },
+    {
+      "hanzi": "单身",
+      "pinyin": "dānshēn",
+      "vietnamese_meaning": "độc thân",
+      "part_of_speech": "tính từ",
+      "example": "我还单身。\nwǒ hái dān shēn 。\nTôi vẫn độc thân.",
+      "order_index": 41,
+      "note": null,
+      "source_key": "1:4:单身"
+    },
+    {
+      "hanzi": "对象",
+      "pinyin": "duìxiàng",
+      "vietnamese_meaning": "người yêu; đối tượng",
+      "part_of_speech": "danh từ",
+      "example": "你有对象吗？\nnǐ yǒu duì xiàng ma ？\nBạn có người yêu chưa?",
+      "order_index": 42,
+      "note": null,
+      "source_key": "1:4:对象"
+    },
+    {
+      "hanzi": "了",
+      "pinyin": "le",
+      "vietnamese_meaning": "rồi (biểu thị hoàn thành hoặc tình huống mới)",
+      "part_of_speech": "trợ từ",
+      "example": "我的孩子今年五岁了。\nwǒ de hái zi jīn nián wǔ suì le 。\nCon tôi năm nay đã năm tuổi rồi.",
+      "order_index": 43,
+      "note": null,
+      "source_key": "1:4:了"
+    },
+    {
+      "hanzi": "年",
+      "pinyin": "nián",
+      "vietnamese_meaning": "năm",
+      "part_of_speech": "danh từ",
+      "example": "他今年五岁。\ntā jīn nián wǔ suì 。\nNăm nay cậu bé năm tuổi.",
+      "order_index": 44,
+      "note": null,
+      "source_key": "1:4:年"
+    },
+    {
+      "hanzi": "今年",
+      "pinyin": "jīnnián",
+      "vietnamese_meaning": "năm nay",
+      "part_of_speech": "danh từ",
+      "example": "他今年五岁。\ntā jīn nián wǔ suì 。\nNăm nay cậu bé năm tuổi.",
+      "order_index": 45,
+      "note": null,
+      "source_key": "1:4:今年"
+    },
+    {
+      "hanzi": "去年",
+      "pinyin": "qùnián",
+      "vietnamese_meaning": "năm ngoái",
+      "part_of_speech": "danh từ",
+      "example": "去年我二十岁。\nqù nián wǒ èr shí suì 。\nNăm ngoái tôi hai mươi tuổi.",
+      "order_index": 46,
+      "note": null,
+      "source_key": "1:4:去年"
+    },
+    {
+      "hanzi": "明年",
+      "pinyin": "míngnián",
+      "vietnamese_meaning": "năm sau",
+      "part_of_speech": "danh từ",
+      "example": "明年我二十二岁。\nmíng nián wǒ èr shí èr suì 。\nNăm sau tôi hai mươi hai tuổi.",
+      "order_index": 47,
+      "note": null,
+      "source_key": "1:4:明年"
+    },
+    {
+      "hanzi": "岁",
+      "pinyin": "suì",
+      "vietnamese_meaning": "tuổi",
+      "part_of_speech": "lượng từ",
+      "example": "他今年五岁。\ntā jīn nián wǔ suì 。\nNăm nay cậu bé năm tuổi.",
+      "order_index": 48,
+      "note": null,
+      "source_key": "1:4:岁"
+    },
+    {
+      "hanzi": "几岁",
+      "pinyin": "jǐ suì",
+      "vietnamese_meaning": "mấy tuổi (thường hỏi trẻ nhỏ)",
+      "part_of_speech": "cụm nghi vấn",
+      "example": "你的孩子几岁？\nnǐ de hái zi jǐ suì ？\nCon của bạn bao nhiêu tuổi?",
+      "order_index": 49,
+      "note": null,
+      "source_key": "1:4:几岁"
+    },
+    {
+      "hanzi": "多大",
+      "pinyin": "duō dà",
+      "vietnamese_meaning": "bao nhiêu tuổi; lớn cỡ nào",
+      "part_of_speech": "cụm nghi vấn",
+      "example": "你的孩子多大？\nnǐ de hái zi duō dà ？\nCon của bạn bao nhiêu tuổi?",
+      "order_index": 50,
+      "note": null,
+      "source_key": "1:4:多大"
+    }
+  ],
+  "grammar": [
+    {
+      "name": "Có và không có",
+      "structure": "Chủ ngữ + 有/没有 + tân ngữ",
+      "explanation": "有 diễn đạt sở hữu; 没有 phủ định sở hữu.",
+      "usage": "Nói 没有, không nói 不有.",
+      "example": "我有两个哥哥。\nwǒ yǒu liǎng gè gē gē 。\nTôi có hai anh trai.",
+      "note": "Nói 没有, không nói 不有.",
+      "order_index": 1
+    },
+    {
+      "name": "Số lượng với lượng từ",
+      "structure": "Số từ + lượng từ + danh từ",
+      "explanation": "Đếm người và vật thông qua lượng từ phù hợp.",
+      "usage": "口 đếm thành viên gia đình; 个 dùng rộng hơn. Trước lượng từ thường dùng 两 thay vì 二.",
+      "example": "我家有四口人。\nwǒ jiā yǒu sì kǒu rén 。\nGia đình tôi có bốn người.",
+      "note": "口 đếm thành viên gia đình; 个 dùng rộng hơn. Trước lượng từ thường dùng 两 thay vì 二.",
+      "order_index": 2
+    },
+    {
+      "name": "Hỏi số lượng với 几 và 多少",
+      "structure": "几 + lượng từ + danh từ / 多少 + danh từ",
+      "explanation": "几 thường hỏi số lượng nhỏ; 多少 không giới hạn số lượng dự kiến.",
+      "usage": "几 cần lượng từ; 多少 có thể có hoặc không có lượng từ tùy danh từ.",
+      "example": "你家有几口人？\nnǐ jiā yǒu jǐ kǒu rén ？\nNhà bạn có mấy người?",
+      "note": "几 cần lượng từ; 多少 có thể có hoặc không có lượng từ tùy danh từ.",
+      "order_index": 3
+    },
+    {
+      "name": "Hỏi tiếp bằng 呢",
+      "structure": "Thông tin đã biết，người/đối tượng khác + 呢？",
+      "explanation": "Dùng 呢 để hỏi lại cùng một chủ đề.",
+      "usage": "呢 cần ngữ cảnh trước đó; không thay cho mọi câu hỏi với 吗.",
+      "example": "我没有哥哥，你呢？\nwǒ méi yǒu gē gē ， nǐ ne ？\nTôi không có anh trai, còn bạn thì sao?",
+      "note": "呢 cần ngữ cảnh trước đó; không thay cho mọi câu hỏi với 吗.",
+      "order_index": 4
+    },
+    {
+      "name": "Hỏi và nói tuổi",
+      "structure": "Chủ ngữ + số tuổi + 岁",
+      "explanation": "Câu vị ngữ danh từ có thể dùng để nói tuổi.",
+      "usage": "Thông thường không cần 是. 几岁 thường dùng với trẻ nhỏ; 多大 dùng rộng hơn.",
+      "example": "他今年五岁。\ntā jīn nián wǔ suì 。\nNăm nay cậu bé năm tuổi.",
+      "note": "Thông thường không cần 是. 几岁 thường dùng với trẻ nhỏ; 多大 dùng rộng hơn.",
+      "order_index": 5
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Số học sinh trong lớp",
+      "content": "刘明:一飞忙吗?\n王一雪:她很忙。\n刘明:她有多少个学生?\n王一雪:她有二十个学生。",
+      "pinyin": "liú míng : yī fēi máng ma ?\nwáng yī xuě : tā hěn máng 。\nliú míng : tā yǒu duō shǎo gè xué shēng ?\nwáng yī xuě : tā yǒu èr shí gè xué shēng 。",
+      "vietnamese_translation": "Lưu Minh: Nhất Phi có bận không?\nVương Nhất Tuyết: Cô ấy rất bận.\nLưu Minh: Cô ấy có bao nhiêu học sinh?\nVương Nhất Tuyết: Cô ấy có hai mươi học sinh.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 4, PDF 33."
+    },
+    {
+      "order_index": 2,
+      "title": "Gia đình có mấy người?",
+      "content": "王一雪:我有两个哥哥,你呢?\n杨同乐:我没有哥哥。\n王一雪:你家有几口人?\n杨同乐:我家有四口人,爸爸、妈妈、妹妹和我。",
+      "pinyin": "wáng yī xuě : wǒ yǒu liǎng gè gē gē , nǐ ne ?\nyáng tóng lè : wǒ méi yǒu gē gē 。\nwáng yī xuě : nǐ jiā yǒu jǐ kǒu rén ?\nyáng tóng lè : wǒ jiā yǒu sì kǒu rén , bà bà 、 mā mā 、 mèi mèi hé wǒ 。",
+      "vietnamese_translation": "Vương Nhất Tuyết: Tôi có 2 anh trai, bạn thì sao?\nDương Đồng Lạc: Tôi không có anh trai.\nVương Nhất Tuyết: Nhà bạn có mấy người?\nDương Đồng Lạc: Nhà tôi có 4 người: bố, mẹ, em gái và tôi.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 4, PDF 35."
+    },
+    {
+      "order_index": 3,
+      "title": "Giới thiệu con và hỏi tuổi",
+      "content": "杨同乐:这是您儿子吗?\n王一雪:是的,我有两个孩子,一个儿子,一个女儿。\n杨同乐:您儿子几岁?\n王一雪:他今年五岁。\n杨同乐:您女儿多大?\n王一雪:她今年十二。",
+      "pinyin": "yáng tóng lè : zhè shì nín ér zi ma ?\nwáng yī xuě : shì de , wǒ yǒu liǎng gè hái zi , yí gè ér zi , yí gè nǚ ér 。\nyáng tóng lè : nín ér zi jǐ suì ?\nwáng yī xuě : tā jīn nián wǔ suì 。\nyáng tóng lè : nín nǚ ér duō dà ?\nwáng yī xuě : tā jīn nián shí èr 。",
+      "vietnamese_translation": "Dương Đồng Lạc: Đây là con trai của chị à?\nVương Nhất Tuyết: Đúng vậy, tôi có hai đứa con, một đứa con trai, một đứa con gái.\nDương Đồng Lạc: Con trai chị mấy tuổi?\nVương Nhất Tuyết: Năm nay nó 5 tuổi.\nDương Đồng Lạc: Con gái chị bao nhiêu tuổi?\nVương Nhất Tuyết: Năm nay nó 12 tuổi.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 4, PDF 37."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 1 · Bài 4 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp; dùng kiến thức của bài này và các bài trước, không dùng bài sau. Đạt từ 80%; được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "review_status": "DRAFT_REQUIRES_EDITOR_REVIEW",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 1).",
+      "options": [
+        {
+          "option_text": "chín (số 9)",
+          "is_correct": true
+        },
+        {
+          "option_text": "còn, vẫn",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nhật Bản",
+          "is_correct": false
+        },
+        {
+          "option_text": "ông ngoại",
+          "is_correct": false
+        }
+      ],
+      "rubric": "九 (jiǔ) nghĩa là chín (số 9). ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "九"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “刘明” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "mấy tuổi (thường hỏi trẻ nhỏ)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Lưu Minh (tên người)",
+          "is_correct": true
+        },
+        {
+          "option_text": "bạn học",
+          "is_correct": false
+        },
+        {
+          "option_text": "ba (số 3)",
+          "is_correct": false
+        }
+      ],
+      "rubric": "刘明 (liú míng) nghĩa là Lưu Minh (tên người). ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “háizi” và nghĩa “con cái”.",
+      "options": [
+        {
+          "option_text": "弟弟",
+          "is_correct": false
+        },
+        {
+          "option_text": "三",
+          "is_correct": false
+        },
+        {
+          "option_text": "岁",
+          "is_correct": false
+        },
+        {
+          "option_text": "孩子",
+          "is_correct": true
+        }
+      ],
+      "rubric": "孩子 (háizi) nghĩa là con cái. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 4).",
+      "options": [
+        {
+          "option_text": "tám",
+          "is_correct": false
+        },
+        {
+          "option_text": "anh trai",
+          "is_correct": false
+        },
+        {
+          "option_text": "năm nay",
+          "is_correct": false
+        },
+        {
+          "option_text": "năm sau",
+          "is_correct": true
+        }
+      ],
+      "rubric": "明年 (míngnián) nghĩa là năm sau. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "明年"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “三” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "ba (số 3)",
+          "is_correct": true
+        },
+        {
+          "option_text": "hai (số 2)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Vương Nhất Tuyết (tên người)",
+          "is_correct": false
+        },
+        {
+          "option_text": "bà nội",
+          "is_correct": false
+        }
+      ],
+      "rubric": "三 (sān) nghĩa là ba (số 3). ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “duō dà” và nghĩa “bao nhiêu tuổi; lớn cỡ nào”.",
+      "options": [
+        {
+          "option_text": "个",
+          "is_correct": false
+        },
+        {
+          "option_text": "杨同乐",
+          "is_correct": false
+        },
+        {
+          "option_text": "多大",
+          "is_correct": true
+        },
+        {
+          "option_text": "法国",
+          "is_correct": false
+        }
+      ],
+      "rubric": "多大 (duō dà) nghĩa là bao nhiêu tuổi; lớn cỡ nào. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 7).",
+      "options": [
+        {
+          "option_text": "và",
+          "is_correct": false
+        },
+        {
+          "option_text": "tôi",
+          "is_correct": false
+        },
+        {
+          "option_text": "nước",
+          "is_correct": false
+        },
+        {
+          "option_text": "độc thân",
+          "is_correct": true
+        }
+      ],
+      "rubric": "单身 (dānshēn) nghĩa là độc thân. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "单身"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “有” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "có",
+          "is_correct": true
+        },
+        {
+          "option_text": "rất",
+          "is_correct": false
+        },
+        {
+          "option_text": "tuổi",
+          "is_correct": false
+        },
+        {
+          "option_text": "rồi (biểu thị hoàn thành hoặc tình huống mới)",
+          "is_correct": false
+        }
+      ],
+      "rubric": "有 (yǒu) nghĩa là có. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “wàipó” và nghĩa “bà ngoại”.",
+      "options": [
+        {
+          "option_text": "妹妹",
+          "is_correct": false
+        },
+        {
+          "option_text": "想",
+          "is_correct": false
+        },
+        {
+          "option_text": "四",
+          "is_correct": false
+        },
+        {
+          "option_text": "外婆",
+          "is_correct": true
+        }
+      ],
+      "rubric": "外婆 (wàipó) nghĩa là bà ngoại. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "người yêu; đối tượng",
+          "is_correct": false
+        },
+        {
+          "option_text": "mẹ",
+          "is_correct": false
+        },
+        {
+          "option_text": "ông nội",
+          "is_correct": true
+        },
+        {
+          "option_text": "xin chào",
+          "is_correct": false
+        }
+      ],
+      "rubric": "爷爷 (yéye) nghĩa là ông nội. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "爷爷"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “结婚” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "Xin hỏi",
+          "is_correct": false
+        },
+        {
+          "option_text": "kết hôn",
+          "is_correct": true
+        },
+        {
+          "option_text": "người",
+          "is_correct": false
+        },
+        {
+          "option_text": "Trần Thiên Trung (tên người)",
+          "is_correct": false
+        }
+      ],
+      "rubric": "结婚 (jiéhūn) nghĩa là kết hôn. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “jǐ suì” và nghĩa “mấy tuổi (thường hỏi trẻ nhỏ)”.",
+      "options": [
+        {
+          "option_text": "女生",
+          "is_correct": false
+        },
+        {
+          "option_text": "去年",
+          "is_correct": false
+        },
+        {
+          "option_text": "它",
+          "is_correct": false
+        },
+        {
+          "option_text": "几岁",
+          "is_correct": true
+        }
+      ],
+      "rubric": "几岁 (jǐ suì) nghĩa là mấy tuổi (thường hỏi trẻ nhỏ). ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “năm nay” (gợi ý pinyin: jīnnián).",
+      "reference_answer": "今年",
+      "rubric": "Đáp án: 今年 (jīnnián). ",
+      "config": {
+        "accepted_answers": [
+          "今年"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “cha mẹ; bố mẹ” (gợi ý pinyin: fùmǔ).",
+      "reference_answer": "父母",
+      "rubric": "Đáp án: 父母 (fùmǔ). ",
+      "config": {
+        "accepted_answers": [
+          "父母"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “chồng (cách gọi thân mật)” (gợi ý pinyin: lǎogōng).",
+      "reference_answer": "老公",
+      "rubric": "Đáp án: 老公 (lǎogōng). ",
+      "config": {
+        "accepted_answers": [
+          "老公"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “bà nội” (gợi ý pinyin: nǎinai).",
+      "reference_answer": "奶奶",
+      "rubric": "Đáp án: 奶奶 (nǎinai). ",
+      "config": {
+        "accepted_answers": [
+          "奶奶"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 1).",
+      "rubric": "大家: mọi người; 几: mấy; 杨同乐: Dương Đồng Lạc (tên người); 多少: bao nhiêu",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "大家"
+          },
+          {
+            "id": "l1",
+            "text": "几"
+          },
+          {
+            "id": "l2",
+            "text": "杨同乐"
+          },
+          {
+            "id": "l3",
+            "text": "多少"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r1",
+            "text": "mấy"
+          },
+          {
+            "id": "r2",
+            "text": "Dương Đồng Lạc (tên người)"
+          },
+          {
+            "id": "r0",
+            "text": "mọi người"
+          },
+          {
+            "id": "r3",
+            "text": "bao nhiêu"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 2
+        },
+        {
+          "hsk": 1,
+          "lesson": 4
+        },
+        {
+          "hsk": 1,
+          "lesson": 4
+        },
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 2).",
+      "rubric": "爷爷: ông nội; 中文: tiếng Trung; 不太: không ... lắm; 女生: học sinh nữ; nữ sinh",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "爷爷"
+          },
+          {
+            "id": "l1",
+            "text": "中文"
+          },
+          {
+            "id": "l2",
+            "text": "不太"
+          },
+          {
+            "id": "l3",
+            "text": "女生"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r1",
+            "text": "tiếng Trung"
+          },
+          {
+            "id": "r2",
+            "text": "không ... lắm"
+          },
+          {
+            "id": "r3",
+            "text": "học sinh nữ; nữ sinh"
+          },
+          {
+            "id": "r0",
+            "text": "ông nội"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        },
+        {
+          "hsk": 1,
+          "lesson": 3
+        },
+        {
+          "hsk": 1,
+          "lesson": 3
+        },
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Có và không có”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "有 diễn đạt sở hữu; 没有 phủ định sở hữu.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ ngữ + 有/没有 + tân ngữ. 有 diễn đạt sở hữu; 没有 phủ định sở hữu. Nói 没有, không nói 不有.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Số lượng với lượng từ”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Đếm người và vật thông qua lượng từ phù hợp.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Số từ + lượng từ + danh từ. Đếm người và vật thông qua lượng từ phù hợp. 口 đếm thành viên gia đình; 个 dùng rộng hơn. Trước lượng từ thường dùng 两 thay vì 二.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Hỏi số lượng với 几 và 多少”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "几 thường hỏi số lượng nhỏ; 多少 không giới hạn số lượng dự kiến.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "几 + lượng từ + danh từ / 多少 + danh từ. 几 thường hỏi số lượng nhỏ; 多少 không giới hạn số lượng dự kiến. 几 cần lượng từ; 多少 có thể có hoặc không có lượng từ tùy danh từ.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Hỏi tiếp bằng 呢”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Dùng 呢 để hỏi lại cùng một chủ đề.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Thông tin đã biết，người/đối tượng khác + 呢？. Dùng 呢 để hỏi lại cùng một chủ đề. 呢 cần ngữ cảnh trước đó; không thay cho mọi câu hỏi với 吗.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Hỏi và nói tuổi”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Câu vị ngữ danh từ có thể dùng để nói tuổi.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ ngữ + số tuổi + 岁. Câu vị ngữ danh từ có thể dùng để nói tuổi. Thông thường không cần 是. 几岁 thường dùng với trẻ nhỏ; 多大 dùng rộng hơn.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Có và không có” (mục 6): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Nói 没有, không nói 不有.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ ngữ + 有/没有 + tân ngữ. 有 diễn đạt sở hữu; 没有 phủ định sở hữu. Nói 没有, không nói 不有.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 1).",
+      "reference_answer": "我有两个哥哥。",
+      "rubric": "Câu đúng: 我有两个哥哥。 Nói 没有, không nói 不有.",
+      "config": {
+        "items": [
+          {
+            "id": "w4",
+            "text": "哥哥"
+          },
+          {
+            "id": "w1",
+            "text": "有"
+          },
+          {
+            "id": "w3",
+            "text": "个"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w5",
+            "text": "。"
+          },
+          {
+            "id": "w2",
+            "text": "两"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 2).",
+      "reference_answer": "我家有四口人。",
+      "rubric": "Câu đúng: 我家有四口人。 口 đếm thành viên gia đình; 个 dùng rộng hơn. Trước lượng từ thường dùng 两 thay vì 二.",
+      "config": {
+        "items": [
+          {
+            "id": "w3",
+            "text": "四"
+          },
+          {
+            "id": "w4",
+            "text": "口"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w1",
+            "text": "家"
+          },
+          {
+            "id": "w2",
+            "text": "有"
+          },
+          {
+            "id": "w6",
+            "text": "。"
+          },
+          {
+            "id": "w5",
+            "text": "人"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 3).",
+      "reference_answer": "你家有几口人？",
+      "rubric": "Câu đúng: 你家有几口人？ 几 cần lượng từ; 多少 có thể có hoặc không có lượng từ tùy danh từ.",
+      "config": {
+        "items": [
+          {
+            "id": "w1",
+            "text": "家"
+          },
+          {
+            "id": "w5",
+            "text": "人"
+          },
+          {
+            "id": "w2",
+            "text": "有"
+          },
+          {
+            "id": "w0",
+            "text": "你"
+          },
+          {
+            "id": "w4",
+            "text": "口"
+          },
+          {
+            "id": "w6",
+            "text": "？"
+          },
+          {
+            "id": "w3",
+            "text": "几"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 4).",
+      "reference_answer": "我没有哥哥，你呢？",
+      "rubric": "Câu đúng: 我没有哥哥，你呢？ 呢 cần ngữ cảnh trước đó; không thay cho mọi câu hỏi với 吗.",
+      "config": {
+        "items": [
+          {
+            "id": "w1",
+            "text": "没有"
+          },
+          {
+            "id": "w5",
+            "text": "呢"
+          },
+          {
+            "id": "w3",
+            "text": "，"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w4",
+            "text": "你"
+          },
+          {
+            "id": "w2",
+            "text": "哥哥"
+          },
+          {
+            "id": "w6",
+            "text": "？"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 5).",
+      "reference_answer": "他今年五岁。",
+      "rubric": "Câu đúng: 他今年五岁。 Thông thường không cần 是. 几岁 thường dùng với trẻ nhỏ; 多大 dùng rộng hơn.",
+      "config": {
+        "items": [
+          {
+            "id": "w3",
+            "text": "岁"
+          },
+          {
+            "id": "w1",
+            "text": "今年"
+          },
+          {
+            "id": "w0",
+            "text": "他"
+          },
+          {
+            "id": "w4",
+            "text": "。"
+          },
+          {
+            "id": "w2",
+            "text": "五"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 6).",
+      "reference_answer": "一飞忙吗?",
+      "rubric": "Câu đúng: 一飞忙吗? Nói 没有, không nói 不有.",
+      "config": {
+        "items": [
+          {
+            "id": "w4",
+            "text": "?"
+          },
+          {
+            "id": "w0",
+            "text": "一"
+          },
+          {
+            "id": "w3",
+            "text": "吗"
+          },
+          {
+            "id": "w1",
+            "text": "飞"
+          },
+          {
+            "id": "w2",
+            "text": "忙"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ],
+  "source_documents": {
+    "vocabulary": "DOCX",
+    "theory": "HSK1 PDF"
+  }
+}

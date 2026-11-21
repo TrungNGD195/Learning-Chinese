@@ -604,25 +604,7 @@ body:has(.public-route-error-page) .public-route-error-page::after { display: no
   }
 }
 
-/* Welcome atmosphere stays outside the opaque Auth surfaces. */
+/* Welcome artwork belongs inside the auth panels, with a quiet canvas around them. */
 .public-shell:has(:is(.public-login-page, .public-register-page, .public-forgot-page, .public-reset-page, .public-session-page, .public-forbidden-page)) {
-  background-color: #fcfaf5;
-  background-image:
-    linear-gradient(180deg, rgb(252 250 245 / 5%) 0%, rgb(246 248 246 / 14%) 28rem, #f6f8f6 58rem),
-    url('../assets/academy-atmosphere-welcome.png');
-  background-size: 100% 58rem, min(100%, 110rem) auto;
-  background-position: center top, center top 2rem;
-  background-repeat: no-repeat;
-}
-@media (max-width: 900px) {
-  .public-shell:has(:is(.public-login-page, .public-register-page, .public-forgot-page, .public-reset-page, .public-session-page, .public-forbidden-page)) {
-    background-size: 100% 38rem, auto 28rem;
-    background-position: center top, left -11rem top 3rem;
-  }
-}
-@media (max-width: 639px) {
-  .public-shell:has(:is(.public-login-page, .public-register-page, .public-forgot-page, .public-reset-page, .public-session-page, .public-forbidden-page)) {
-    background-size: 100% 25rem, auto 18rem;
-    background-position: center top, left -8rem top 4rem;
-  }
+  background: #f5f7f0;
 }

@@ -1,0 +1,1706 @@
+{
+  "key": "hsk1-lesson-14-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 1,
+    "lesson_number": 14,
+    "title": "我看了一个电影 · Hoạt động đã hoàn thành",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "上",
+      "pinyin": "shàng",
+      "vietnamese_meaning": "lên (xe, tàu)",
+      "part_of_speech": "động từ",
+      "example": "我上火车了。\nwǒ shàng huǒ chē le 。\nTôi đã lên tàu hỏa rồi.",
+      "order_index": 1,
+      "note": "上火车 là lên tàu; khác phương vị 上 trong 桌子上 là trên bàn. Nhắc lại HSK1 bài 8: 上 (shang/shàng) nghĩa là phía trên/trên. Trong bài này: lên (xe, tàu).",
+      "source_key": "1:14:上"
+    },
+    {
+      "hanzi": "火车",
+      "pinyin": "huǒ chē",
+      "vietnamese_meaning": "tàu hỏa",
+      "part_of_speech": "danh từ",
+      "example": "我们坐火车去。\nwǒ men zuò huǒ chē qù 。\nChúng tôi đi bằng tàu hỏa.",
+      "order_index": 2,
+      "note": null,
+      "source_key": "1:14:火车"
+    },
+    {
+      "hanzi": "开",
+      "pinyin": "kāi",
+      "vietnamese_meaning": "khởi hành, rời đi (xe cộ)",
+      "part_of_speech": "động từ",
+      "example": "火车开了。\nhuǒ chē kāi le 。\nTàu hỏa khởi hành rồi.",
+      "order_index": 3,
+      "note": "开 ở đây nói xe/tàu khởi hành; khác 开车 là lái xe ở bài trước. Nhắc lại HSK1 bài 11: 开 (kāi) nghĩa là lái (xe ô tô, phương tiện có động cơ). Trong bài này: khởi hành, rời đi (xe cộ).",
+      "source_key": "1:14:开"
+    },
+    {
+      "hanzi": "有些",
+      "pinyin": "yǒuxiē",
+      "vietnamese_meaning": "một vài; một số",
+      "part_of_speech": "đại từ",
+      "example": "有些学生喜欢读书。\nyǒu xiē xué shēng xǐ huān dú shū 。\nMột số học sinh thích đọc sách.",
+      "order_index": 4,
+      "note": null,
+      "source_key": "1:14:有些"
+    },
+    {
+      "hanzi": "有的",
+      "pinyin": "yǒude",
+      "vietnamese_meaning": "một số; có người thì…",
+      "part_of_speech": "đại từ",
+      "example": "有的学生喜欢看书。\nyǒu de xué shēng xǐ huān kàn shū 。\nCó học sinh thích đọc sách.",
+      "order_index": 5,
+      "note": null,
+      "source_key": "1:14:有的"
+    },
+    {
+      "hanzi": "听见",
+      "pinyin": "tīngjiàn",
+      "vietnamese_meaning": "nghe thấy",
+      "part_of_speech": "động từ",
+      "example": "我听见你的声音了。\nwǒ tīng jiàn nǐ de shēng yīn le 。\nTôi nghe thấy tiếng của bạn rồi.",
+      "order_index": 6,
+      "note": null,
+      "source_key": "1:14:听见"
+    },
+    {
+      "hanzi": "不要",
+      "pinyin": "búyào",
+      "vietnamese_meaning": "đừng; không được",
+      "part_of_speech": "phó từ",
+      "example": "不要说话。\nbú yào shuō huà 。\nĐừng nói chuyện.",
+      "order_index": 7,
+      "note": null,
+      "source_key": "1:14:不要"
+    },
+    {
+      "hanzi": "说话",
+      "pinyin": "shuōhuà",
+      "vietnamese_meaning": "nói chuyện; nói",
+      "part_of_speech": "động từ",
+      "example": "他正在说话。\ntā zhèng zài shuō huà 。\nAnh ấy đang nói chuyện.",
+      "order_index": 8,
+      "note": null,
+      "source_key": "1:14:说话"
+    },
+    {
+      "hanzi": "哪些",
+      "pinyin": "nǎxiē",
+      "vietnamese_meaning": "những… nào",
+      "part_of_speech": "đại từ nghi vấn",
+      "example": "你会写哪些字？\nnǐ huì xiě nǎ xiē zì ？\nBạn biết viết những chữ nào?",
+      "order_index": 9,
+      "note": null,
+      "source_key": "1:14:哪些"
+    },
+    {
+      "hanzi": "字",
+      "pinyin": "zì",
+      "vietnamese_meaning": "chữ; ký tự",
+      "part_of_speech": "danh từ",
+      "example": "这个字怎么写？\nzhè ge zì zěn me xiě ？\nChữ này viết thế nào?",
+      "order_index": 10,
+      "note": null,
+      "source_key": "1:14:字"
+    },
+    {
+      "hanzi": "上",
+      "pinyin": "shàng",
+      "vietnamese_meaning": "đi, bắt đầu (học, làm)",
+      "part_of_speech": "động từ",
+      "example": "明年她上中学。\nmíng nián tā shàng zhōng xué 。\nNăm sau cô bé lên trung học.",
+      "order_index": 11,
+      "note": "上中学 là theo học/bắt đầu bậc trung học; so với 上火车 là lên tàu, nghĩa của 上 phụ thuộc tân ngữ. Nhắc lại HSK1 bài 14: 上 (shàng) nghĩa là lên (xe, tàu). Trong bài này: đi, bắt đầu (học, làm).",
+      "source_key": "1:14:上~2"
+    },
+    {
+      "hanzi": "中学",
+      "pinyin": "zhōngxué",
+      "vietnamese_meaning": "trường trung học",
+      "part_of_speech": "danh từ",
+      "example": "明年她上中学。\nmíng nián tā shàng zhōng xué 。\nNăm sau cô bé lên trung học.",
+      "order_index": 12,
+      "note": null,
+      "source_key": "1:14:中学"
+    },
+    {
+      "hanzi": "中学生",
+      "pinyin": "zhōng xué shēng",
+      "vietnamese_meaning": "học sinh trung học",
+      "part_of_speech": "danh từ",
+      "example": "他是中学生。\ntā shì zhōng xué shēng 。\nAnh ấy là học sinh trung học.",
+      "order_index": 13,
+      "note": null,
+      "source_key": "1:14:中学生"
+    },
+    {
+      "hanzi": "小学生",
+      "pinyin": "xiǎo xué shēng",
+      "vietnamese_meaning": "học sinh tiểu học",
+      "part_of_speech": "danh từ",
+      "example": "他是小学生。\ntā shì xiǎo xué shēng 。\nEm ấy là học sinh tiểu học.",
+      "order_index": 14,
+      "note": null,
+      "source_key": "1:14:小学生"
+    },
+    {
+      "hanzi": "上学",
+      "pinyin": "shàngxué",
+      "vietnamese_meaning": "đi học",
+      "part_of_speech": "động từ",
+      "example": "孩子们去上学了。\nhái zi men qù shàng xué le 。\nCác em đã đi học rồi.",
+      "order_index": 15,
+      "note": null,
+      "source_key": "1:14:上学"
+    },
+    {
+      "hanzi": "他们",
+      "pinyin": "tāmen",
+      "vietnamese_meaning": "họ (giống chung/nam)",
+      "part_of_speech": "đại từ",
+      "example": "他们都是学生。\ntā men dōu shì xué shēng 。\nHọ đều là học sinh.",
+      "order_index": 16,
+      "note": null,
+      "source_key": "1:14:他们"
+    },
+    {
+      "hanzi": "她们",
+      "pinyin": "tāmen",
+      "vietnamese_meaning": "họ (nữ)",
+      "part_of_speech": "đại từ",
+      "example": "她们是我的朋友。\ntā men shì wǒ de péng yǒu 。\nHọ là những người bạn nữ của tôi.",
+      "order_index": 17,
+      "note": null,
+      "source_key": "1:14:她们"
+    },
+    {
+      "hanzi": "它们",
+      "pinyin": "tāmen",
+      "vietnamese_meaning": "chúng (đồ vật/động vật)",
+      "part_of_speech": "đại từ",
+      "example": "它们是小猫。\ntā men shì xiǎo māo 。\nChúng là những con mèo con.",
+      "order_index": 18,
+      "note": null,
+      "source_key": "1:14:它们"
+    },
+    {
+      "hanzi": "晚",
+      "pinyin": "wǎn",
+      "vietnamese_meaning": "muộn",
+      "part_of_speech": "tính từ",
+      "example": "我今天来晚了。\nwǒ jīn tiān lái wǎn le 。\nHôm nay tôi đến muộn rồi.",
+      "order_index": 19,
+      "note": null,
+      "source_key": "1:14:晚"
+    }
+  ],
+  "grammar": [
+    {
+      "name": "了 sau động từ",
+      "structure": "Động từ + 了 + tân ngữ",
+      "explanation": "Nhìn hành động như đã hoàn thành trong ngữ cảnh.",
+      "usage": "Phủ định hành động đã xảy ra thường dùng 没（有）+ động từ và bỏ 了 sau động từ.",
+      "example": "我看了一个电影。\nwǒ kàn le yí gè diàn yǐng 。\nTôi đã xem một bộ phim.",
+      "note": "Phủ định hành động đã xảy ra thường dùng 没（有）+ động từ và bỏ 了 sau động từ.",
+      "order_index": 1
+    },
+    {
+      "name": "Học được, thay đổi năng lực",
+      "structure": "会/能 + động từ + 了",
+      "explanation": "Năng lực hoặc điều kiện đã thay đổi so với trước.",
+      "usage": "了 cuối câu đánh dấu thay đổi, không phải chỉ thêm nghĩa quá khứ.",
+      "example": "我会写这些字了。\nwǒ huì xiě zhè xiē zì le 。\nTôi đã biết viết những chữ này rồi.",
+      "note": "了 cuối câu đánh dấu thay đổi, không phải chỉ thêm nghĩa quá khứ.",
+      "order_index": 2
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Xem phim trên chuyến đi",
+      "content": "白家月:你们上火车后看见王老师了吗?\n陈天中:没看见。中午车开后,有些人在看书,有些人睡觉了。\n白家月:你呢?\n陈天中:我看了一个电影。",
+      "pinyin": "bái jiā yuè : nǐ men shàng huǒ chē hòu kàn jiàn wáng lǎo shī le ma ?\nchén tiān zhōng : méi kàn jiàn 。 zhōng wǔ chē kāi hòu , yǒu xiē rén zài kàn shū , yǒu xiē rén shuì jiào le 。\nbái jiā yuè : nǐ ne ?\nchén tiān zhōng : wǒ kàn le yí gè diàn yǐng 。",
+      "vietnamese_translation": "Bạch Gia Nguyệt: Sau khi lên tàu, các bạn có nhìn thấy thầy Vương không?\nTrần Thiên Trung: Không thấy. Sau khi tàu chạy buổi trưa, có người đang đọc sách,\nBạch Gia Nguyệt: Còn bạn thì sao?\nTrần Thiên Trung: Tôi đã xem một bộ phim.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 14, PDF 131."
+    },
+    {
+      "order_index": 2,
+      "title": "Đã biết viết chữ",
+      "content": "王一飞:你们会说汉语了,也会写汉字了吗?\n白家月:我们都会写了。\n陈天中:老师,我听不见。\n王一飞:请大家不要说话!请听老师的问题:你们都会写哪些汉字了?\n陈天中:我会写这些字了,您看!",
+      "pinyin": "wáng yī fēi : nǐ men huì shuō hàn yǔ le , yě huì xiě hàn zì le ma ?\nbái jiā yuè : wǒ men dōu huì xiě le 。\nchén tiān zhōng : lǎo shī , wǒ tīng bú jiàn 。\nwáng yī fēi : qǐng dà jiā bú yào shuō huà ! qǐng tīng lǎo shī de wèn tí : nǐ men dōu huì xiě nǎ xiē hàn zì le ?\nchén tiān zhōng : wǒ huì xiě zhè xiē zì le , nín kàn !",
+      "vietnamese_translation": "Vương Nhất Phi: Các em đã biết nói tiếng Trung rồi, cũng đã biết viết chữ Hán rồi chứ?\nBạch Gia Nguyệt: Chúng em đều biết viết rồi ạ.\nTrần Thiên Trung: Thưa cô, em không nghe thấy.\nVương Nhất Phi: Mời mọi người đừng nói chuyện! Hãy nghe câu hỏi của cô:\nTrần Thiên Trung: Em biết viết những chữ này rồi, cô xem ạ!",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 14, PDF 134, 135."
+    },
+    {
+      "order_index": 3,
+      "title": "Con gái sắp lên trung học",
+      "content": "刘明:明年女儿上中学。\n王一雪:对。儿子也上小学了。\n刘明:我们家有了一个中学生。吗?\n王一雪:还有了一个小学生。\n刘明:上学后,他们都忙了。\n王一雪:是的。太晚了,睡觉吧。",
+      "pinyin": "liú míng : míng nián nǚ ér shàng zhōng xué 。\nwáng yī xuě : duì 。 ér zi yě shàng xiǎo xué le 。\nliú míng : wǒ men jiā yǒu le yí gè zhōng xué shēng 。 ma ?\nwáng yī xuě : hái yǒu le yí gè xiǎo xué shēng 。\nliú míng : shàng xué hòu , tā men dōu máng le 。\nwáng yī xuě : shì de 。 tài wǎn le , shuì jiào ba 。",
+      "vietnamese_translation": "Lưu Minh: Năm sau con gái sẽ lên trung học.\nVương Nhất Tuyết: Đúng vậy. Con trai cũng đã lên tiểu học rồi.\nLưu Minh: Nhà chúng ta đã có một học sinh trung học rồi.\nVương Nhất Tuyết: Còn có thêm một học sinh tiểu học nữa.\nLưu Minh: Sau khi đi học, họ đều bận rồi.\nVương Nhất Tuyết: Đúng vậy. Muộn quá rồi, đi ngủ thôi.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 14, PDF 137, 138."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 1 · Bài 14 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp; dùng kiến thức của bài này và các bài trước, không dùng bài sau. Đạt từ 80%; được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "review_status": "DRAFT_REQUIRES_EDITOR_REVIEW",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 1).",
+      "options": [
+        {
+          "option_text": "phút",
+          "is_correct": false
+        },
+        {
+          "option_text": "ngữ pháp",
+          "is_correct": false
+        },
+        {
+          "option_text": "mệt",
+          "is_correct": false
+        },
+        {
+          "option_text": "họ (giống chung/nam)",
+          "is_correct": true
+        }
+      ],
+      "rubric": "他们 (tāmen) nghĩa là họ (giống chung/nam). ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "他们"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 14
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “斤” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "nửa cân",
+          "is_correct": true
+        },
+        {
+          "option_text": "bố",
+          "is_correct": false
+        },
+        {
+          "option_text": "là",
+          "is_correct": false
+        },
+        {
+          "option_text": "chúng (đồ vật/động vật)",
+          "is_correct": false
+        }
+      ],
+      "rubric": "斤 (jīn) nghĩa là nửa cân. Ở Trung Quốc đại lục, 1 斤 = 500g; 1 公斤 = 1kg. Không nhầm hai 斤 với hai kilôgam.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 10
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “shàng” và nghĩa “lên (xe, tàu)”.",
+      "options": [
+        {
+          "option_text": "多长时间",
+          "is_correct": false
+        },
+        {
+          "option_text": "老婆",
+          "is_correct": false
+        },
+        {
+          "option_text": "上",
+          "is_correct": true
+        },
+        {
+          "option_text": "便宜",
+          "is_correct": false
+        }
+      ],
+      "rubric": "上 (shàng) nghĩa là lên (xe, tàu). 上火车 là lên tàu; khác phương vị 上 trong 桌子上 là trên bàn. Nhắc lại HSK1 bài 8: 上 (shang/shàng) nghĩa là phía trên/trên. Trong bài này: lên (xe, tàu).",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 14
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 4).",
+      "options": [
+        {
+          "option_text": "học tập",
+          "is_correct": false
+        },
+        {
+          "option_text": "đi",
+          "is_correct": false
+        },
+        {
+          "option_text": "nghe thấy",
+          "is_correct": true
+        },
+        {
+          "option_text": "công ty",
+          "is_correct": false
+        }
+      ],
+      "rubric": "听见 (tīngjiàn) nghĩa là nghe thấy. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "听见"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 14
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “有些” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "những cái này",
+          "is_correct": false
+        },
+        {
+          "option_text": "trái, bên trái",
+          "is_correct": false
+        },
+        {
+          "option_text": "một vài; một số",
+          "is_correct": true
+        },
+        {
+          "option_text": "những cái kia",
+          "is_correct": false
+        }
+      ],
+      "rubric": "有些 (yǒuxiē) nghĩa là một vài; một số. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 14
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “shàngxué” và nghĩa “đi học”.",
+      "options": [
+        {
+          "option_text": "上学",
+          "is_correct": true
+        },
+        {
+          "option_text": "茶",
+          "is_correct": false
+        },
+        {
+          "option_text": "车",
+          "is_correct": false
+        },
+        {
+          "option_text": "大学",
+          "is_correct": false
+        }
+      ],
+      "rubric": "上学 (shàngxué) nghĩa là đi học. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 14
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 7).",
+      "options": [
+        {
+          "option_text": "bên dưới",
+          "is_correct": false
+        },
+        {
+          "option_text": "con (lượng từ cho một số động vật)",
+          "is_correct": false
+        },
+        {
+          "option_text": "biết; có thể (biểu thị biết làm gì)",
+          "is_correct": false
+        },
+        {
+          "option_text": "chúng (đồ vật/động vật)",
+          "is_correct": true
+        }
+      ],
+      "rubric": "它们 (tāmen) nghĩa là chúng (đồ vật/động vật). ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "它们"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 14
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “漂亮” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "ở, tại",
+          "is_correct": false
+        },
+        {
+          "option_text": "là",
+          "is_correct": false
+        },
+        {
+          "option_text": "bên dưới",
+          "is_correct": false
+        },
+        {
+          "option_text": "xinh đẹp",
+          "is_correct": true
+        }
+      ],
+      "rubric": "漂亮 (piàoliang) nghĩa là xinh đẹp. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 8
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “nǎxiē” và nghĩa “những… nào”.",
+      "options": [
+        {
+          "option_text": "们",
+          "is_correct": false
+        },
+        {
+          "option_text": "哪些",
+          "is_correct": true
+        },
+        {
+          "option_text": "姐姐",
+          "is_correct": false
+        },
+        {
+          "option_text": "对",
+          "is_correct": false
+        }
+      ],
+      "rubric": "哪些 (nǎxiē) nghĩa là những… nào. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 14
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "học sinh trung học",
+          "is_correct": true
+        },
+        {
+          "option_text": "ông ngoại",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nhật Bản",
+          "is_correct": false
+        },
+        {
+          "option_text": "chữ; ký tự",
+          "is_correct": false
+        }
+      ],
+      "rubric": "中学生 (zhōng xué shēng) nghĩa là học sinh trung học. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "中学生"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 14
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “不要” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "đừng; không được",
+          "is_correct": true
+        },
+        {
+          "option_text": "nước",
+          "is_correct": false
+        },
+        {
+          "option_text": "lâu",
+          "is_correct": false
+        },
+        {
+          "option_text": "màn thầu; bánh bao không nhân",
+          "is_correct": false
+        }
+      ],
+      "rubric": "不要 (búyào) nghĩa là đừng; không được. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 14
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “shuōhuà” và nghĩa “nói chuyện; nói”.",
+      "options": [
+        {
+          "option_text": "晚",
+          "is_correct": false
+        },
+        {
+          "option_text": "结婚",
+          "is_correct": false
+        },
+        {
+          "option_text": "分钟",
+          "is_correct": false
+        },
+        {
+          "option_text": "说话",
+          "is_correct": true
+        }
+      ],
+      "rubric": "说话 (shuōhuà) nghĩa là nói chuyện; nói. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 14
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “học sinh tiểu học” (gợi ý pinyin: xiǎo xué shēng).",
+      "reference_answer": "小学生",
+      "rubric": "Đáp án: 小学生 (xiǎo xué shēng). ",
+      "config": {
+        "accepted_answers": [
+          "小学生"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 14
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “tàu hỏa” (gợi ý pinyin: huǒ chē).",
+      "reference_answer": "火车",
+      "rubric": "Đáp án: 火车 (huǒ chē). ",
+      "config": {
+        "accepted_answers": [
+          "火车"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 14
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “nhưng (dạng ngắn của 但是)” (gợi ý pinyin: dàn).",
+      "reference_answer": "但",
+      "rubric": "Đáp án: 但 (dàn). ",
+      "config": {
+        "accepted_answers": [
+          "但"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 13
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “đi, bắt đầu (học, làm)” (gợi ý pinyin: shàng).",
+      "reference_answer": "上",
+      "rubric": "Đáp án: 上 (shàng). 上中学 là theo học/bắt đầu bậc trung học; so với 上火车 là lên tàu, nghĩa của 上 phụ thuộc tân ngữ. Nhắc lại HSK1 bài 14: 上 (shàng) nghĩa là lên (xe, tàu). Trong bài này: đi, bắt đầu (học, làm).",
+      "config": {
+        "accepted_answers": [
+          "上"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 14
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 1).",
+      "rubric": "包子: bánh bao có nhân; 叫: gọi, tên là; 辆: chiếc (lượng từ cho xe); 听: nghe",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "包子"
+          },
+          {
+            "id": "l1",
+            "text": "叫"
+          },
+          {
+            "id": "l2",
+            "text": "辆"
+          },
+          {
+            "id": "l3",
+            "text": "听"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r0",
+            "text": "bánh bao có nhân"
+          },
+          {
+            "id": "r1",
+            "text": "gọi, tên là"
+          },
+          {
+            "id": "r3",
+            "text": "nghe"
+          },
+          {
+            "id": "r2",
+            "text": "chiếc (lượng từ cho xe)"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        },
+        {
+          "hsk": 1,
+          "lesson": 2
+        },
+        {
+          "hsk": 1,
+          "lesson": 6
+        },
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 2).",
+      "rubric": "为什么: tại sao, vì sao; 忙: bận; 老婆: vợ (cách gọi thân mật); 现在: bây giờ, hiện tại",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "为什么"
+          },
+          {
+            "id": "l1",
+            "text": "忙"
+          },
+          {
+            "id": "l2",
+            "text": "老婆"
+          },
+          {
+            "id": "l3",
+            "text": "现在"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r3",
+            "text": "bây giờ, hiện tại"
+          },
+          {
+            "id": "r1",
+            "text": "bận"
+          },
+          {
+            "id": "r2",
+            "text": "vợ (cách gọi thân mật)"
+          },
+          {
+            "id": "r0",
+            "text": "tại sao, vì sao"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 13
+        },
+        {
+          "hsk": 1,
+          "lesson": 3
+        },
+        {
+          "hsk": 1,
+          "lesson": 4
+        },
+        {
+          "hsk": 1,
+          "lesson": 7
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “了 sau động từ”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Nhìn hành động như đã hoàn thành trong ngữ cảnh.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Động từ + 了 + tân ngữ. Nhìn hành động như đã hoàn thành trong ngữ cảnh. Phủ định hành động đã xảy ra thường dùng 没（有）+ động từ và bỏ 了 sau động từ.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 14
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Học được, thay đổi năng lực”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Năng lực hoặc điều kiện đã thay đổi so với trước.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "会/能 + động từ + 了. Năng lực hoặc điều kiện đã thay đổi so với trước. 了 cuối câu đánh dấu thay đổi, không phải chỉ thêm nghĩa quá khứ.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 14
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “了 sau động từ” (mục 3): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Phủ định hành động đã xảy ra thường dùng 没（有）+ động từ và bỏ 了 sau động từ.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Động từ + 了 + tân ngữ. Nhìn hành động như đã hoàn thành trong ngữ cảnh. Phủ định hành động đã xảy ra thường dùng 没（有）+ động từ và bỏ 了 sau động từ.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 14
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Học được, thay đổi năng lực” (mục 4): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "了 cuối câu đánh dấu thay đổi, không phải chỉ thêm nghĩa quá khứ.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "会/能 + động từ + 了. Năng lực hoặc điều kiện đã thay đổi so với trước. 了 cuối câu đánh dấu thay đổi, không phải chỉ thêm nghĩa quá khứ.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 14
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “了 sau động từ” (mục 5): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Phủ định hành động đã xảy ra thường dùng 没（有）+ động từ và bỏ 了 sau động từ.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Động từ + 了 + tân ngữ. Nhìn hành động như đã hoàn thành trong ngữ cảnh. Phủ định hành động đã xảy ra thường dùng 没（有）+ động từ và bỏ 了 sau động từ.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 14
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Học được, thay đổi năng lực” (mục 6): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "了 cuối câu đánh dấu thay đổi, không phải chỉ thêm nghĩa quá khứ.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "会/能 + động từ + 了. Năng lực hoặc điều kiện đã thay đổi so với trước. 了 cuối câu đánh dấu thay đổi, không phải chỉ thêm nghĩa quá khứ.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 14
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 1).",
+      "reference_answer": "我看了一个电影。",
+      "rubric": "Câu đúng: 我看了一个电影。 Phủ định hành động đã xảy ra thường dùng 没（有）+ động từ và bỏ 了 sau động từ.",
+      "config": {
+        "items": [
+          {
+            "id": "w3",
+            "text": "一"
+          },
+          {
+            "id": "w4",
+            "text": "个"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w2",
+            "text": "了"
+          },
+          {
+            "id": "w6",
+            "text": "。"
+          },
+          {
+            "id": "w5",
+            "text": "电影"
+          },
+          {
+            "id": "w1",
+            "text": "看"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 14
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 2).",
+      "reference_answer": "我会写这些字了。",
+      "rubric": "Câu đúng: 我会写这些字了。 了 cuối câu đánh dấu thay đổi, không phải chỉ thêm nghĩa quá khứ.",
+      "config": {
+        "items": [
+          {
+            "id": "w4",
+            "text": "字"
+          },
+          {
+            "id": "w1",
+            "text": "会"
+          },
+          {
+            "id": "w5",
+            "text": "了"
+          },
+          {
+            "id": "w2",
+            "text": "写"
+          },
+          {
+            "id": "w3",
+            "text": "这些"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w6",
+            "text": "。"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 14
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 3).",
+      "reference_answer": "你们上火车后看见王老师了吗?",
+      "rubric": "Câu đúng: 你们上火车后看见王老师了吗? Phủ định hành động đã xảy ra thường dùng 没（有）+ động từ và bỏ 了 sau động từ.",
+      "config": {
+        "items": [
+          {
+            "id": "w3",
+            "text": "火车"
+          },
+          {
+            "id": "w5",
+            "text": "看见"
+          },
+          {
+            "id": "w2",
+            "text": "上"
+          },
+          {
+            "id": "w10",
+            "text": "吗"
+          },
+          {
+            "id": "w11",
+            "text": "?"
+          },
+          {
+            "id": "w6",
+            "text": "王"
+          },
+          {
+            "id": "w0",
+            "text": "你"
+          },
+          {
+            "id": "w9",
+            "text": "了"
+          },
+          {
+            "id": "w4",
+            "text": "后"
+          },
+          {
+            "id": "w7",
+            "text": "老"
+          },
+          {
+            "id": "w1",
+            "text": "们"
+          },
+          {
+            "id": "w8",
+            "text": "师"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8",
+          "w9",
+          "w10",
+          "w11"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 14
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 4).",
+      "reference_answer": "没看见。中午车开后,有些人在看书,有些人睡觉了。",
+      "rubric": "Câu đúng: 没看见。中午车开后,有些人在看书,有些人睡觉了。 了 cuối câu đánh dấu thay đổi, không phải chỉ thêm nghĩa quá khứ.",
+      "config": {
+        "items": [
+          {
+            "id": "w15",
+            "text": "人"
+          },
+          {
+            "id": "w3",
+            "text": "中午"
+          },
+          {
+            "id": "w18",
+            "text": "。"
+          },
+          {
+            "id": "w17",
+            "text": "了"
+          },
+          {
+            "id": "w8",
+            "text": "有些"
+          },
+          {
+            "id": "w12",
+            "text": "书"
+          },
+          {
+            "id": "w13",
+            "text": ","
+          },
+          {
+            "id": "w4",
+            "text": "车"
+          },
+          {
+            "id": "w6",
+            "text": "后"
+          },
+          {
+            "id": "w11",
+            "text": "看"
+          },
+          {
+            "id": "w2",
+            "text": "。"
+          },
+          {
+            "id": "w5",
+            "text": "开"
+          },
+          {
+            "id": "w16",
+            "text": "睡觉"
+          },
+          {
+            "id": "w10",
+            "text": "在"
+          },
+          {
+            "id": "w1",
+            "text": "看见"
+          },
+          {
+            "id": "w14",
+            "text": "有些"
+          },
+          {
+            "id": "w0",
+            "text": "没"
+          },
+          {
+            "id": "w7",
+            "text": ","
+          },
+          {
+            "id": "w9",
+            "text": "人"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8",
+          "w9",
+          "w10",
+          "w11",
+          "w12",
+          "w13",
+          "w14",
+          "w15",
+          "w16",
+          "w17",
+          "w18"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 14
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 5).",
+      "reference_answer": "你呢?",
+      "rubric": "Câu đúng: 你呢? Phủ định hành động đã xảy ra thường dùng 没（有）+ động từ và bỏ 了 sau động từ.",
+      "config": {
+        "items": [
+          {
+            "id": "w2",
+            "text": "?"
+          },
+          {
+            "id": "w1",
+            "text": "呢"
+          },
+          {
+            "id": "w0",
+            "text": "你"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 14
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 6).",
+      "reference_answer": "你们会说汉语了,也会写汉字了吗?",
+      "rubric": "Câu đúng: 你们会说汉语了,也会写汉字了吗? 了 cuối câu đánh dấu thay đổi, không phải chỉ thêm nghĩa quá khứ.",
+      "config": {
+        "items": [
+          {
+            "id": "w2",
+            "text": "会"
+          },
+          {
+            "id": "w9",
+            "text": "写"
+          },
+          {
+            "id": "w12",
+            "text": "吗"
+          },
+          {
+            "id": "w5",
+            "text": "了"
+          },
+          {
+            "id": "w6",
+            "text": ","
+          },
+          {
+            "id": "w7",
+            "text": "也"
+          },
+          {
+            "id": "w1",
+            "text": "们"
+          },
+          {
+            "id": "w3",
+            "text": "说"
+          },
+          {
+            "id": "w11",
+            "text": "了"
+          },
+          {
+            "id": "w4",
+            "text": "汉语"
+          },
+          {
+            "id": "w8",
+            "text": "会"
+          },
+          {
+            "id": "w10",
+            "text": "汉字"
+          },
+          {
+            "id": "w13",
+            "text": "?"
+          },
+          {
+            "id": "w0",
+            "text": "你"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8",
+          "w9",
+          "w10",
+          "w11",
+          "w12",
+          "w13"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 14
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ],
+  "source_documents": {
+    "vocabulary": "HSK1 PDF",
+    "theory": "HSK1 PDF"
+  }
+}

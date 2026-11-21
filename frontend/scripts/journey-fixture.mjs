@@ -1,10 +1,10 @@
-export async function installJourneyFixture(context,{writes=[],unexpected=[],lessonTitles=[]}={}) {
+export async function installJourneyFixture(context,{writes=[],unexpected=[],lessonTitles=[],headers={}}={}) {
   const total={1:15,2:10,3:15},time='2026-11-08T00:00:00Z'
   const state={foundation:true,partial:false,currentLesson:7}
   await context.route('**/api/v1/**',async route=>{
     const request=route.request(),path=new URL(request.url()).pathname.split('/api/v1')[1]
-    const reply=(json,status=200)=>route.fulfill({json,status})
-    if(request.method()==='OPTIONS'||path==='/auth/logout')return route.fulfill({status:204})
+    const reply=(json,status=200)=>route.fulfill({json,status,headers})
+    if(request.method()==='OPTIONS'||path==='/auth/logout')return route.fulfill({status:204,headers})
     if(request.method()!=='GET')writes.push(path)
     if(path==='/auth/me')return reply({id:'fixture-student',full_name:'Nguyễn An',email:'review@example.invalid',role:'LEARNER'})
     if(path==='/hsk-levels')return reply([1,2,3].map(n=>({id:`hsk-${n}`,level_number:n,title:`HSK ${n}`,description:null,state:n===1&&!state.foundation?'LOCKED':'AVAILABLE'})))

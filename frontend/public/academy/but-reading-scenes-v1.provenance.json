@@ -1,0 +1,18 @@
+{
+  "asset": "but-reading-scenes-v1.webp",
+  "kind": "AI-generated editorial illustration atlas",
+  "reference": "companions.png, Bút red-panda character",
+  "generator": "built-in image_gen",
+  "generated_on": "2026-11-15",
+  "grid": {
+    "columns": 4,
+    "rows": 4
+  },
+  "source_dimensions": [
+    1254,
+    1254
+  ],
+  "sha256": "2e2f4040caa3001669f7e80ab4da5f2405027e8b3711a27338c3b5b517705d56",
+  "scope": "14 reviewed HSK1 reading scenes; last 2 tiles reserved",
+  "qa": "Visual scene and character review completed; illustrations do not replace reading text."
+}

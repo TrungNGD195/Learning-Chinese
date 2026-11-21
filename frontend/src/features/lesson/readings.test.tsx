@@ -9,10 +9,13 @@ import { LessonPage } from './LessonPage'
 import { completeLessonReading, getLesson, markGrammarViewed, markVocabularyViewed } from './api'
 import { getLessonProgress } from '../progress/api'
 import { getHskLevels } from '../curriculum/api'
+import { getAssessment } from '../assessment/api'
 import { ReadingSection } from './ReadingSection'
 import { LessonReadingsSection } from '../admin/LessonReadingsSection'
 import { AuthoringSession, useHasUnsavedDrafts } from '../admin/AuthoringSession'
 import { createLessonReading, listLessonReadings, updateLessonReading, deleteLessonReading } from '../admin/readingApi'
+
+vi.mock('../assessment/api', () => ({ getAssessment: vi.fn() }))
 
 vi.mock('./api', () => ({ getLesson: vi.fn(), completeLessonReading: vi.fn(), markVocabularyViewed: vi.fn(), markGrammarViewed: vi.fn() }))
 vi.mock('../progress/api', () => ({ getLessonProgress: vi.fn() }))
@@ -32,6 +35,7 @@ function mount(element = <LessonPage/>) {
 }
 beforeEach(() => {
   vi.resetAllMocks()
+  vi.mocked(getAssessment).mockResolvedValue({ id: 'practice', type: 'LESSON_EXERCISE', title: 'Luyện tập bài học', description: null, pass_threshold: 80, questions: [] })
   vi.mocked(getLesson).mockResolvedValue(lesson)
   vi.mocked(getLessonProgress).mockResolvedValue(progress)
   vi.mocked(getHskLevels).mockResolvedValue([])
@@ -47,6 +51,7 @@ describe('learner reading completion', () => {
     mount()
     fireEvent.click(await screen.findByRole('link', { name: 'Bài khóa' }))
     expect(await screen.findByRole('heading', { name: 'Chào hỏi', level: 3 })).toBeInTheDocument()
+    expect(screen.getByRole('img', { name: 'Bút và một người bạn vẫy tay chào nhau ở sân trường.' })).toHaveAttribute('data-scene', '0')
     expect(screen.queryByText(/Nguồn:/)).not.toBeInTheDocument()
     expect(screen.queryByText(reading.source_reference)).not.toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'Bài khóa' })).toHaveAttribute('href', '/lessons/lesson-1/readings')
@@ -57,7 +62,8 @@ describe('learner reading completion', () => {
     await waitFor(() => expect(completeLessonReading).toHaveBeenCalledWith('lesson-1', 'reading-1', 1))
     expect(await screen.findByRole('button', { name: 'Đã hoàn thành bài khóa: Chào hỏi' })).toBeDisabled()
     fireEvent.click(screen.getByRole('link', { name: 'Luyện tập' }))
-    expect(await screen.findByRole('link', { name: 'Mở luyện tập 1' })).toHaveAttribute('href', '/assessments/practice')
+    expect(await screen.findByText('Bài luyện tập này chưa có câu hỏi.')).toBeInTheDocument()
+    expect(screen.queryByRole('button', { name: 'Bắt đầu / Tiếp tục luyện tập' })).not.toBeInTheDocument()
   })
 
   it('does not unlock for a stale theory timestamp when a reading is still incomplete', async () => {
@@ -66,6 +72,13 @@ describe('learner reading completion', () => {
     fireEvent.click(await screen.findByRole('link', { name: 'Luyện tập' }))
     expect(await screen.findByRole('button', { name: 'Mở luyện tập 1' })).toBeDisabled()
     expect(screen.queryByRole('link', { name: 'Mở luyện tập 1' })).not.toBeInTheDocument()
+  })
+
+  it('keeps custom reading text without assigning an unrelated Bút scene', () => {
+    mount(<ReadingSection lessonId="lesson-1" readings={[{ ...reading, content: '我喜欢看书。', title: 'Đọc sách' }]} completedIds={new Set()}/> )
+    expect(screen.getByText('我喜欢看书。')).toBeInTheDocument()
+    expect(document.querySelector('.lesson-reading-scene')).not.toBeInTheDocument()
+    expect(completeLessonReading).not.toHaveBeenCalled()
   })
 
   it('preserves the incomplete state on failure and permits retry without duplicate pending requests', async () => {

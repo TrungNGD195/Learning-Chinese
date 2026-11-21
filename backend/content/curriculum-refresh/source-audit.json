@@ -1,0 +1,506 @@
+{
+  "created_on": "2026-11-21",
+  "lesson_count": 25,
+  "word_count": 649,
+  "grammar_count": 72,
+  "reading_count": 84,
+  "question_count": 750,
+  "sources_sha256": {
+    "HSK1 3.0 Hanu 24.6.26.pdf": "aefe72aa1a0dd1710d1b6a5888d63ec5f9561cee0466322c75c2a24349b1fe85",
+    "HSK2 3.0 Hanu 29.6.26.pdf": "8a851d6707b5a37bb0f148e751a1374111d56571916691a6e3ac0dcc4cc5d5a1",
+    "HSK3.0 H1-3 Từ mới tổng hợp.docx": "fb0daf3b29c4279b6acd501c2b0bc487c15bb47a8561c5bdbcd2af6a6a6240bd"
+  },
+  "removed_exact_duplicates": [
+    {
+      "omitted_from": "HSK1 bài 4",
+      "hanzi": "一",
+      "pinyin": "yī",
+      "meaning": "một",
+      "first_seen": "HSK1 bài 1"
+    },
+    {
+      "omitted_from": "HSK1 bài 4",
+      "hanzi": "五",
+      "pinyin": "wǔ",
+      "meaning": "năm",
+      "first_seen": "HSK1 bài 1"
+    },
+    {
+      "omitted_from": "HSK1 bài 4",
+      "hanzi": "八",
+      "pinyin": "bā",
+      "meaning": "tám",
+      "first_seen": "HSK1 bài 1"
+    },
+    {
+      "omitted_from": "HSK1 bài 8",
+      "hanzi": "小",
+      "pinyin": "xiǎo",
+      "meaning": "nhỏ; tiền tố thân mật trước tên người",
+      "first_seen": "HSK1 bài 2"
+    },
+    {
+      "omitted_from": "HSK1 bài 8",
+      "hanzi": "汉语",
+      "pinyin": "Hànyǔ",
+      "meaning": "tiếng Hán; tiếng Trung",
+      "first_seen": "HSK1 bài 3"
+    },
+    {
+      "omitted_from": "HSK1 bài 8",
+      "hanzi": "前",
+      "pinyin": "qián",
+      "meaning": "phía trước",
+      "first_seen": "HSK1 bài 6"
+    },
+    {
+      "omitted_from": "HSK1 bài 12",
+      "hanzi": "医院",
+      "pinyin": "yīyuàn",
+      "meaning": "bệnh viện",
+      "first_seen": "HSK1 bài 7"
+    },
+    {
+      "omitted_from": "HSK1 bài 13",
+      "hanzi": "给",
+      "pinyin": "gěi",
+      "meaning": "cho; đưa cho",
+      "first_seen": "HSK1 bài 10"
+    },
+    {
+      "omitted_from": "HSK1 bài 14",
+      "hanzi": "中午",
+      "pinyin": "zhōngwǔ",
+      "meaning": "buổi trưa",
+      "first_seen": "HSK1 bài 7"
+    },
+    {
+      "omitted_from": "HSK1 bài 14",
+      "hanzi": "了",
+      "pinyin": "le",
+      "meaning": "rồi (biểu thị hoàn thành hoặc tình huống mới)",
+      "first_seen": "HSK1 bài 4"
+    },
+    {
+      "omitted_from": "HSK1 bài 14",
+      "hanzi": "写",
+      "pinyin": "xiě",
+      "meaning": "viết",
+      "first_seen": "HSK1 bài 13"
+    },
+    {
+      "omitted_from": "HSK1 bài 14",
+      "hanzi": "都",
+      "pinyin": "dōu",
+      "meaning": "đều; tất cả",
+      "first_seen": "HSK1 bài 8"
+    },
+    {
+      "omitted_from": "HSK1 bài 14",
+      "hanzi": "听",
+      "pinyin": "tīng",
+      "meaning": "nghe",
+      "first_seen": "HSK1 bài 9"
+    },
+    {
+      "omitted_from": "HSK1 bài 14",
+      "hanzi": "明年",
+      "pinyin": "míngnián",
+      "meaning": "năm sau",
+      "first_seen": "HSK1 bài 4"
+    },
+    {
+      "omitted_from": "HSK1 bài 14",
+      "hanzi": "小学",
+      "pinyin": "xiǎo xué",
+      "meaning": "trường tiểu học; bậc tiểu học",
+      "first_seen": "HSK1 bài 11"
+    },
+    {
+      "omitted_from": "HSK1 bài 15",
+      "hanzi": "去年",
+      "pinyin": "qùnián",
+      "meaning": "năm ngoái",
+      "first_seen": "HSK1 bài 4"
+    },
+    {
+      "omitted_from": "HSK1 bài 15",
+      "hanzi": "今年",
+      "pinyin": "jīnnián",
+      "meaning": "năm nay",
+      "first_seen": "HSK1 bài 4"
+    },
+    {
+      "omitted_from": "HSK1 bài 15",
+      "hanzi": "明年",
+      "pinyin": "míngnián",
+      "meaning": "năm sau",
+      "first_seen": "HSK1 bài 4"
+    },
+    {
+      "omitted_from": "HSK1 bài 15",
+      "hanzi": "男朋友",
+      "pinyin": "nánpéngyou",
+      "meaning": "bạn trai",
+      "first_seen": "HSK1 bài 3"
+    },
+    {
+      "omitted_from": "HSK1 bài 15",
+      "hanzi": "几",
+      "pinyin": "jǐ",
+      "meaning": "mấy",
+      "first_seen": "HSK1 bài 4"
+    },
+    {
+      "omitted_from": "HSK1 bài 15",
+      "hanzi": "年",
+      "pinyin": "nián",
+      "meaning": "năm",
+      "first_seen": "HSK1 bài 4"
+    },
+    {
+      "omitted_from": "HSK1 bài 15",
+      "hanzi": "飞机",
+      "pinyin": "fēijī",
+      "meaning": "máy bay",
+      "first_seen": "HSK1 bài 11"
+    },
+    {
+      "omitted_from": "HSK1 bài 15",
+      "hanzi": "小时",
+      "pinyin": "xiǎoshí",
+      "meaning": "tiếng đồng hồ",
+      "first_seen": "HSK1 bài 7"
+    },
+    {
+      "omitted_from": "HSK1 bài 15",
+      "hanzi": "时间",
+      "pinyin": "shíjiān",
+      "meaning": "thời gian",
+      "first_seen": "HSK1 bài 13"
+    },
+    {
+      "omitted_from": "HSK1 bài 15",
+      "hanzi": "机场",
+      "pinyin": "jīchǎng",
+      "meaning": "sân bay",
+      "first_seen": "HSK1 bài 13"
+    },
+    {
+      "omitted_from": "HSK1 bài 15",
+      "hanzi": "接",
+      "pinyin": "jiē",
+      "meaning": "đón; nhận (điện thoại, vật được đưa)",
+      "first_seen": "HSK1 bài 13"
+    },
+    {
+      "omitted_from": "HSK2 bài 1",
+      "hanzi": "哪儿",
+      "pinyin": "nǎ ér",
+      "meaning": "đâu, nơi nào",
+      "first_seen": "HSK1 bài 6"
+    },
+    {
+      "omitted_from": "HSK2 bài 1",
+      "hanzi": "哪里",
+      "pinyin": "nǎ lǐ",
+      "meaning": "đâu, nơi nào",
+      "first_seen": "HSK1 bài 6"
+    },
+    {
+      "omitted_from": "HSK2 bài 3",
+      "hanzi": "家人",
+      "pinyin": "jiā rén",
+      "meaning": "người nhà, gia đình",
+      "first_seen": "HSK1 bài 15"
+    },
+    {
+      "omitted_from": "HSK2 bài 7",
+      "hanzi": "上学",
+      "pinyin": "shàng xué",
+      "meaning": "đi học",
+      "first_seen": "HSK1 bài 14"
+    },
+    {
+      "omitted_from": "HSK2 bài 8",
+      "hanzi": "严重",
+      "pinyin": "yán zhòng",
+      "meaning": "nghiêm trọng",
+      "first_seen": "HSK1 bài 12"
+    },
+    {
+      "omitted_from": "HSK2 bài 9",
+      "hanzi": "住",
+      "pinyin": "zhù",
+      "meaning": "ở, cư trú",
+      "first_seen": "HSK1 bài 15"
+    },
+    {
+      "omitted_from": "HSK2 bài 10",
+      "hanzi": "公交车",
+      "pinyin": "gōng jiāo chē",
+      "meaning": "xe buýt",
+      "first_seen": "HSK1 bài 11"
+    },
+    {
+      "omitted_from": "HSK2 bài 10",
+      "hanzi": "机场",
+      "pinyin": "jī chǎng",
+      "meaning": "sân bay",
+      "first_seen": "HSK1 bài 13"
+    }
+  ],
+  "reading_corrections": [
+    {
+      "reading": "1.4.1",
+      "before": "刘明:她有二十个学生。",
+      "after": "王一雪:她有二十个学生。",
+      "reason": "PDF extraction/typographical error; cross-checked pinyin and Vietnamese."
+    },
+    {
+      "reading": "1.6.3",
+      "before": "吃完饭",
+      "after": "吃晚饭",
+      "reason": "PDF extraction/typographical error; cross-checked pinyin and Vietnamese."
+    },
+    {
+      "reading": "1.7.1",
+      "before": "安妮:早上八点四十",
+      "after": "安妮:早上八点四十分。",
+      "reason": "PDF extraction/typographical error; cross-checked pinyin and Vietnamese."
+    },
+    {
+      "reading": "1.7.1",
+      "before": "我们下午两天吧",
+      "after": "我们下午两点见吧",
+      "reason": "PDF extraction/typographical error; cross-checked pinyin and Vietnamese."
+    }
+  ],
+  "lessons": [
+    {
+      "hsk": 1,
+      "number": 1,
+      "vocabulary": 13,
+      "grammar": 0,
+      "readings": 1,
+      "questions": 30,
+      "status": "DRAFT"
+    },
+    {
+      "hsk": 1,
+      "number": 2,
+      "vocabulary": 22,
+      "grammar": 3,
+      "readings": 4,
+      "questions": 30,
+      "status": "DRAFT"
+    },
+    {
+      "hsk": 1,
+      "number": 3,
+      "vocabulary": 39,
+      "grammar": 4,
+      "readings": 3,
+      "questions": 30,
+      "status": "DRAFT"
+    },
+    {
+      "hsk": 1,
+      "number": 4,
+      "vocabulary": 50,
+      "grammar": 5,
+      "readings": 3,
+      "questions": 30,
+      "status": "DRAFT"
+    },
+    {
+      "hsk": 1,
+      "number": 5,
+      "vocabulary": 33,
+      "grammar": 3,
+      "readings": 3,
+      "questions": 30,
+      "status": "DRAFT"
+    },
+    {
+      "hsk": 1,
+      "number": 6,
+      "vocabulary": 31,
+      "grammar": 3,
+      "readings": 3,
+      "questions": 30,
+      "status": "DRAFT"
+    },
+    {
+      "hsk": 1,
+      "number": 7,
+      "vocabulary": 24,
+      "grammar": 3,
+      "readings": 3,
+      "questions": 30,
+      "status": "DRAFT"
+    },
+    {
+      "hsk": 1,
+      "number": 8,
+      "vocabulary": 28,
+      "grammar": 3,
+      "readings": 3,
+      "questions": 30,
+      "status": "DRAFT"
+    },
+    {
+      "hsk": 1,
+      "number": 9,
+      "vocabulary": 25,
+      "grammar": 3,
+      "readings": 3,
+      "questions": 30,
+      "status": "DRAFT"
+    },
+    {
+      "hsk": 1,
+      "number": 10,
+      "vocabulary": 22,
+      "grammar": 3,
+      "readings": 3,
+      "questions": 30,
+      "status": "DRAFT"
+    },
+    {
+      "hsk": 1,
+      "number": 11,
+      "vocabulary": 27,
+      "grammar": 3,
+      "readings": 3,
+      "questions": 30,
+      "status": "DRAFT"
+    },
+    {
+      "hsk": 1,
+      "number": 12,
+      "vocabulary": 29,
+      "grammar": 3,
+      "readings": 3,
+      "questions": 30,
+      "status": "DRAFT"
+    },
+    {
+      "hsk": 1,
+      "number": 13,
+      "vocabulary": 23,
+      "grammar": 3,
+      "readings": 3,
+      "questions": 30,
+      "status": "DRAFT"
+    },
+    {
+      "hsk": 1,
+      "number": 14,
+      "vocabulary": 19,
+      "grammar": 2,
+      "readings": 3,
+      "questions": 30,
+      "status": "DRAFT"
+    },
+    {
+      "hsk": 1,
+      "number": 15,
+      "vocabulary": 9,
+      "grammar": 3,
+      "readings": 3,
+      "questions": 30,
+      "status": "DRAFT"
+    },
+    {
+      "hsk": 2,
+      "number": 1,
+      "vocabulary": 29,
+      "grammar": 3,
+      "readings": 4,
+      "questions": 30,
+      "status": "DRAFT"
+    },
+    {
+      "hsk": 2,
+      "number": 2,
+      "vocabulary": 25,
+      "grammar": 3,
+      "readings": 4,
+      "questions": 30,
+      "status": "DRAFT"
+    },
+    {
+      "hsk": 2,
+      "number": 3,
+      "vocabulary": 19,
+      "grammar": 2,
+      "readings": 4,
+      "questions": 30,
+      "status": "DRAFT"
+    },
+    {
+      "hsk": 2,
+      "number": 4,
+      "vocabulary": 23,
+      "grammar": 3,
+      "readings": 4,
+      "questions": 30,
+      "status": "DRAFT"
+    },
+    {
+      "hsk": 2,
+      "number": 5,
+      "vocabulary": 27,
+      "grammar": 2,
+      "readings": 4,
+      "questions": 30,
+      "status": "DRAFT"
+    },
+    {
+      "hsk": 2,
+      "number": 6,
+      "vocabulary": 24,
+      "grammar": 3,
+      "readings": 4,
+      "questions": 30,
+      "status": "DRAFT"
+    },
+    {
+      "hsk": 2,
+      "number": 7,
+      "vocabulary": 28,
+      "grammar": 3,
+      "readings": 4,
+      "questions": 30,
+      "status": "DRAFT"
+    },
+    {
+      "hsk": 2,
+      "number": 8,
+      "vocabulary": 26,
+      "grammar": 2,
+      "readings": 4,
+      "questions": 30,
+      "status": "DRAFT"
+    },
+    {
+      "hsk": 2,
+      "number": 9,
+      "vocabulary": 29,
+      "grammar": 4,
+      "readings": 4,
+      "questions": 30,
+      "status": "DRAFT"
+    },
+    {
+      "hsk": 2,
+      "number": 10,
+      "vocabulary": 25,
+      "grammar": 3,
+      "readings": 4,
+      "questions": 30,
+      "status": "DRAFT"
+    }
+  ]
+}

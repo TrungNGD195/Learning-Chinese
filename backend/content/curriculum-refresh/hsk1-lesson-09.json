@@ -1,0 +1,1755 @@
+{
+  "key": "hsk1-lesson-09-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 1,
+    "lesson_number": 9,
+    "title": "星期六你做什么？ · Kế hoạch cuối tuần",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "边",
+      "pinyin": "bian/biān",
+      "vietnamese_meaning": "phía/bên",
+      "part_of_speech": "danh từ",
+      "example": "学校前边有一家商店。\nxué xiào qián biān yǒu yī jiā shāng diàn 。\nTrước trường có một cửa hàng.",
+      "order_index": 1,
+      "note": null,
+      "source_key": "1:9:边"
+    },
+    {
+      "hanzi": "前边",
+      "pinyin": "qiánbian",
+      "vietnamese_meaning": "phía trước",
+      "part_of_speech": "danh từ",
+      "example": "学校前边有一家商店。\nxué xiào qián biān yǒu yī jiā shāng diàn 。\nTrước trường có một cửa hàng.",
+      "order_index": 2,
+      "note": null,
+      "source_key": "1:9:前边"
+    },
+    {
+      "hanzi": "后边",
+      "pinyin": "hòu biān",
+      "vietnamese_meaning": "phía sau",
+      "part_of_speech": "từ chỉ vị trí",
+      "example": "学校后边有一家商店。\nxué xiào hòu biān yǒu yī jiā shāng diàn 。\nPhía sau trường có một cửa hàng.",
+      "order_index": 3,
+      "note": null,
+      "source_key": "1:9:后边"
+    },
+    {
+      "hanzi": "外边",
+      "pinyin": "wàibian",
+      "vietnamese_meaning": "bên ngoài",
+      "part_of_speech": "danh từ",
+      "example": "我在外边。\nwǒ zài wài biān 。\nTôi ở bên ngoài.",
+      "order_index": 4,
+      "note": null,
+      "source_key": "1:9:外边"
+    },
+    {
+      "hanzi": "里边",
+      "pinyin": "lǐ biān",
+      "vietnamese_meaning": "bên trong",
+      "part_of_speech": "từ chỉ vị trí",
+      "example": "里边有很多人。\nlǐ biān yǒu hěn duō rén 。\nBên trong có nhiều người.",
+      "order_index": 5,
+      "note": null,
+      "source_key": "1:9:里边"
+    },
+    {
+      "hanzi": "左",
+      "pinyin": "zuǒ",
+      "vietnamese_meaning": "trái, bên trái",
+      "part_of_speech": "từ chỉ vị trí",
+      "example": "我看左边的那个。\nwǒ kàn zuǒ biān de nà ge 。\nTôi xem cái ở bên trái.",
+      "order_index": 6,
+      "note": null,
+      "source_key": "1:9:左"
+    },
+    {
+      "hanzi": "右",
+      "pinyin": "yòu",
+      "vietnamese_meaning": "phải, bên phải",
+      "part_of_speech": "từ chỉ vị trí",
+      "example": "我看右边的那个。\nwǒ kàn yòu biān de nà ge 。\nTôi xem cái ở bên phải.",
+      "order_index": 7,
+      "note": null,
+      "source_key": "1:9:右"
+    },
+    {
+      "hanzi": "椅子",
+      "pinyin": "yǐzi",
+      "vietnamese_meaning": "ghế",
+      "part_of_speech": "danh từ",
+      "example": "这是我的椅子。\nzhè shì wǒ de yǐ zi 。\nĐây là ghế của tôi.",
+      "order_index": 8,
+      "note": null,
+      "source_key": "1:9:椅子"
+    },
+    {
+      "hanzi": "把",
+      "pinyin": "bǎ",
+      "vietnamese_meaning": "cái, chiếc (lượng từ cho ghế, vật có tay cầm)",
+      "part_of_speech": "lượng từ",
+      "example": "把作业交给老师吧。\nbǎ zuò yè jiāo gěi lǎo shī ba 。\nHãy nộp bài tập cho thầy cô.",
+      "order_index": 9,
+      "note": "把 làm lượng từ của ghế hoặc vật có tay cầm, như 一把椅子; khác cấu trúc 把 đưa tân ngữ ra trước động từ.",
+      "source_key": "1:9:把"
+    },
+    {
+      "hanzi": "本",
+      "pinyin": "běn",
+      "vietnamese_meaning": "quyển",
+      "part_of_speech": "lượng từ",
+      "example": "这是我的第二本书。\nzhè shì wǒ de dì èr běn shū 。\nĐây là quyển sách thứ hai của tôi.",
+      "order_index": 10,
+      "note": null,
+      "source_key": "1:9:本"
+    },
+    {
+      "hanzi": "第",
+      "pinyin": "dì",
+      "vietnamese_meaning": "thứ (đứng trước số để chỉ thứ tự)",
+      "part_of_speech": "tiền tố",
+      "example": "这是我的第二本书。\nzhè shì wǒ de dì èr běn shū 。\nĐây là quyển sách thứ hai của tôi.",
+      "order_index": 11,
+      "note": null,
+      "source_key": "1:9:第"
+    },
+    {
+      "hanzi": "公司",
+      "pinyin": "gōngsī",
+      "vietnamese_meaning": "công ty",
+      "part_of_speech": "danh từ",
+      "example": "我去公司。\nwǒ qù gōng sī 。\nTôi đến công ty.",
+      "order_index": 12,
+      "note": null,
+      "source_key": "1:9:公司"
+    },
+    {
+      "hanzi": "家",
+      "pinyin": "jiā",
+      "vietnamese_meaning": "nhà, cơ sở (lượng từ cho công ty, cửa hàng)",
+      "part_of_speech": "lượng từ",
+      "example": "我家有四口人。\nwǒ jiā yǒu sì kǒu rén 。\nGia đình tôi có bốn người.",
+      "order_index": 13,
+      "note": "家 từng là nhà/gia đình; trong 一家公司, 家 là lượng từ cho cơ sở, doanh nghiệp. Không dịch là một gia đình công ty. Nhắc lại HSK1 bài 4: 家 (jiā) nghĩa là nhà, gia đình. Trong bài này: nhà, cơ sở (lượng từ cho công ty, cửa hàng).",
+      "source_key": "1:9:家"
+    },
+    {
+      "hanzi": "觉得",
+      "pinyin": "juéde",
+      "vietnamese_meaning": "cảm thấy",
+      "part_of_speech": "động từ",
+      "example": "我觉得很好。\nwǒ jué de hěn hǎo 。\nTôi thấy rất tốt.",
+      "order_index": 14,
+      "note": null,
+      "source_key": "1:9:觉得"
+    },
+    {
+      "hanzi": "难",
+      "pinyin": "nán",
+      "vietnamese_meaning": "khó",
+      "part_of_speech": "tính từ",
+      "example": "这道题很难。\nzhè dào tí hěn nán 。\nCâu hỏi này khó.",
+      "order_index": 15,
+      "note": null,
+      "source_key": "1:9:难"
+    },
+    {
+      "hanzi": "容易",
+      "pinyin": "róng yì",
+      "vietnamese_meaning": "dễ, dễ dàng",
+      "part_of_speech": "tính từ",
+      "example": "这道题很容易。\nzhè dào tí hěn róng yì 。\nCâu hỏi này dễ, dễ dàng.",
+      "order_index": 16,
+      "note": null,
+      "source_key": "1:9:容易"
+    },
+    {
+      "hanzi": "白天",
+      "pinyin": "báitiān",
+      "vietnamese_meaning": "ban ngày",
+      "part_of_speech": "danh từ",
+      "example": "我白天在家。\nwǒ bái tiān zài jiā 。\nBan ngày tôi ở nhà.",
+      "order_index": 17,
+      "note": null,
+      "source_key": "1:9:白天"
+    },
+    {
+      "hanzi": "读书",
+      "pinyin": "dúshū",
+      "vietnamese_meaning": "đọc sách",
+      "part_of_speech": "động từ",
+      "example": "我们一起读书吧。\nwǒ men yì qǐ dú shū ba 。\nChúng ta cùng đọc sách nhé.",
+      "order_index": 18,
+      "note": null,
+      "source_key": "1:9:读书"
+    },
+    {
+      "hanzi": "唱歌",
+      "pinyin": "chàng gē",
+      "vietnamese_meaning": "hát",
+      "part_of_speech": "động từ",
+      "example": "我们一起唱歌吧。\nwǒ men yì qǐ chàng gē ba 。\nChúng ta cùng hát nhé.",
+      "order_index": 19,
+      "note": null,
+      "source_key": "1:9:唱歌"
+    },
+    {
+      "hanzi": "听",
+      "pinyin": "tīng",
+      "vietnamese_meaning": "nghe",
+      "part_of_speech": "động từ",
+      "example": "这个音乐很好听。\nzhè ge yīn yuè hěn hǎo tīng 。\nBản nhạc này nghe rất hay.",
+      "order_index": 20,
+      "note": null,
+      "source_key": "1:9:听"
+    },
+    {
+      "hanzi": "音乐",
+      "pinyin": "yīn yuè",
+      "vietnamese_meaning": "âm nhạc",
+      "part_of_speech": "danh từ",
+      "example": "我喜欢音乐。\nwǒ xǐ huān yīn yuè 。\nTôi thích âm nhạc.",
+      "order_index": 21,
+      "note": null,
+      "source_key": "1:9:音乐"
+    },
+    {
+      "hanzi": "好听",
+      "pinyin": "hǎotīng",
+      "vietnamese_meaning": "nghe hay",
+      "part_of_speech": "tính từ",
+      "example": "这个音乐很好听。\nzhè ge yīn yuè hěn hǎo tīng 。\nBản nhạc này nghe rất hay.",
+      "order_index": 22,
+      "note": null,
+      "source_key": "1:9:好听"
+    },
+    {
+      "hanzi": "电视",
+      "pinyin": "diànshì",
+      "vietnamese_meaning": "TV",
+      "part_of_speech": "danh từ",
+      "example": "我在看电视。\nwǒ zài kàn diàn shì 。\nTôi đang xem tivi.",
+      "order_index": 23,
+      "note": null,
+      "source_key": "1:9:电视"
+    },
+    {
+      "hanzi": "玩儿",
+      "pinyin": "wán ér",
+      "vietnamese_meaning": "chơi",
+      "part_of_speech": "động từ",
+      "example": "我们一起玩儿吧。\nwǒ men yì qǐ wán ér ba 。\nChúng ta cùng chơi nhé.",
+      "order_index": 24,
+      "note": null,
+      "source_key": "1:9:玩儿"
+    },
+    {
+      "hanzi": "游戏",
+      "pinyin": "yóu xì",
+      "vietnamese_meaning": "trò chơi",
+      "part_of_speech": "danh từ",
+      "example": "我喜欢游戏。\nwǒ xǐ huān yóu xì 。\nTôi thích trò chơi.",
+      "order_index": 25,
+      "note": null,
+      "source_key": "1:9:游戏"
+    }
+  ],
+  "grammar": [
+    {
+      "name": "Câu tồn hiện với 有",
+      "structure": "Địa điểm + 有 + cụm danh từ",
+      "explanation": "Nói tại một nơi có người hoặc vật.",
+      "usage": "Phủ định dùng 没有. Phân biệt với 我有一本书 là sở hữu của tôi.",
+      "example": "椅子上有一本中文书。\nyǐ zi shàng yǒu yī běn zhōng wén shū 。\nTrên ghế có một quyển sách tiếng Trung.",
+      "note": "Phủ định dùng 没有. Phân biệt với 我有一本书 là sở hữu của tôi.",
+      "order_index": 1
+    },
+    {
+      "name": "Số thứ tự với 第",
+      "structure": "第 + số từ + lượng từ + danh từ",
+      "explanation": "Đặt 第 trước số từ để biểu thị thứ tự.",
+      "usage": "第二本 chỉ quyển thứ hai; 两本 chỉ hai quyển.",
+      "example": "这是我的第二本中文书。\nzhè shì wǒ de dì èr běn zhōng wén shū 。\nĐây là quyển sách tiếng Trung thứ hai của tôi.",
+      "note": "第二本 chỉ quyển thứ hai; 两本 chỉ hai quyển.",
+      "order_index": 2
+    },
+    {
+      "name": "Nhận xét với 觉得",
+      "structure": "Chủ ngữ + 觉得 + mệnh đề/cụm tính từ",
+      "explanation": "Đưa ra cảm nhận hoặc đánh giá.",
+      "usage": "觉得 là đánh giá chủ quan; 知道 là biết thông tin.",
+      "example": "我觉得汉语很难。\nwǒ jué de hàn yǔ hěn nán 。\nTôi thấy tiếng Trung khó.",
+      "note": "觉得 là đánh giá chủ quan; 知道 là biết thông tin.",
+      "order_index": 3
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Rạp phim trước trường",
+      "content": "李文:学校前边有一家电影院。\n白家月:对。我们晚上去那个电影院看电影吧。\n李文:好!我们七点在电影院外边见,好吗?\n白家月:好的,晚上七点见!",
+      "pinyin": "lǐ wén : xué xiào qián biān yǒu yī jiā diàn yǐng yuàn 。\nbái jiā yuè : duì 。 wǒ men wǎn shàng qù nà ge diàn yǐng yuàn kàn diàn yǐng ba 。\nlǐ wén : hǎo ! wǒ men qī diǎn zài diàn yǐng yuàn wài biān jiàn , hǎo ma ?\nbái jiā yuè : hǎo de , wǎn shàng qī diǎn jiàn !",
+      "vietnamese_translation": "Lý Văn: Phía trước trường có một rạp chiếu phim.\nBạch Gia Nguyệt: Đúng vậy. Tối nay chúng ta đến rạp đó xem phim nhé.\nLý Văn: Được! Bảy giờ tối gặp ở ngoài rạp chiếu phim, được không?\nBạch Gia Nguyệt: Được, bảy giờ tối gặp nhé!",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 9, PDF 84."
+    },
+    {
+      "order_index": 2,
+      "title": "Quyển sách trên ghế",
+      "content": "白家月:椅子上有一本中文书,那是谁的书?\n陈天中:是我的书,谢谢。这是我的第二本中文书。\n白家月:不客气。你明天上午在哪儿?\n陈天中:我明天上午在学校学习。",
+      "pinyin": "bái jiā yuè : yǐ zi shàng yǒu yī běn zhōng wén shū , nà shì shéi de shū ?\nchén tiān zhōng : shì wǒ de shū , xiè xiè 。 zhè shì wǒ de dì èr běn zhōng wén shū 。\nbái jiā yuè : bú kè qì 。 nǐ míng tiān shàng wǔ zài nǎ ér ?\nchén tiān zhōng : wǒ míng tiān shàng wǔ zài xué xiào xué xí 。",
+      "vietnamese_translation": "Bạch Gia Nguyệt: Ở trên ghế có một quyển sách tiếng Trung Quốc, đó là của ai?\nTrần Thiên Trung: Là sách của tôi, cảm ơn. Đây là quyển sách tiếng Trung Quốc thứ hai của tôi.\nBạch Gia Nguyệt: Không cần khách khí. Bạn sáng ngày mai ở đâu?\nLí Văn: Tôi sáng ngày mai học ở trường.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 9, PDF 87."
+    },
+    {
+      "order_index": 3,
+      "title": "Kế hoạch ngày thứ bảy",
+      "content": "王一雪:明天星期六,你做什么?\n杨同乐:我白天在家里读书,晚上和朋友们去外边唱歌。\n王一雪:你唱歌很好听。\n王同乐:谢谢!您星期六做什么?\n王一雪:我在家里做饭、看电视,和孩子们、小狗玩。\n杨同乐:我也有一只小狗。",
+      "pinyin": "wáng yī xuě : míng tiān xīng qī liù , nǐ zuò shén me ?\nyáng tóng lè : wǒ bái tiān zài jiā lǐ dú shū , wǎn shàng hé péng yǒu men qù wài biān chàng gē 。\nwáng yī xuě : nǐ chàng gē hěn hǎo tīng 。\nwáng tóng lè : xiè xiè ! nín xīng qī liù zuò shén me ?\nwáng yī xuě : wǒ zài jiā lǐ zuò fàn 、 kàn diàn shì , hé hái zi men 、 xiǎo gǒu wán 。\nyáng tóng lè : wǒ yě yǒu yī zhī xiǎo gǒu 。",
+      "vietnamese_translation": "Vương Nhất Tuyết: Ngày mai thứ 7, bạn làm gì?\nDương Đồng Lạc: Tôi ban ngày đọc sách ở nhà, tối tôi đi ra ngoài hát cùng với bạn.\nVương Nhất Tuyết : Bạn hát rất hay.\nDương Đồng Lạc: Cảm ơn. Cô thứ 7 làm gì?\nVương Nhất Tuyết : Tôi ở nhà nấu cơm, xem TV và chơi cùng với các con và con chó nhỏ.\nDương Đồng Lạc: Tôi cũng có một con chó nhỏ.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 9, PDF 88, 89."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 1 · Bài 9 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp; dùng kiến thức của bài này và các bài trước, không dùng bài sau. Đạt từ 80%; được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "review_status": "DRAFT_REQUIRES_EDITOR_REVIEW",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 1).",
+      "options": [
+        {
+          "option_text": "năm nay",
+          "is_correct": false
+        },
+        {
+          "option_text": "siêu thị",
+          "is_correct": false
+        },
+        {
+          "option_text": "kia",
+          "is_correct": false
+        },
+        {
+          "option_text": "công ty",
+          "is_correct": true
+        }
+      ],
+      "rubric": "公司 (gōngsī) nghĩa là công ty. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "公司"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “右” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "phải, bên phải",
+          "is_correct": true
+        },
+        {
+          "option_text": "buổi sáng",
+          "is_correct": false
+        },
+        {
+          "option_text": "không có gì (đáp lời cảm ơn)",
+          "is_correct": false
+        },
+        {
+          "option_text": "chơi",
+          "is_correct": false
+        }
+      ],
+      "rubric": "右 (yòu) nghĩa là phải, bên phải. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “diànshì” và nghĩa “TV”.",
+      "options": [
+        {
+          "option_text": "王一飞",
+          "is_correct": false
+        },
+        {
+          "option_text": "喝",
+          "is_correct": false
+        },
+        {
+          "option_text": "好听",
+          "is_correct": false
+        },
+        {
+          "option_text": "电视",
+          "is_correct": true
+        }
+      ],
+      "rubric": "电视 (diànshì) nghĩa là TV. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 4).",
+      "options": [
+        {
+          "option_text": "việc, chuyện",
+          "is_correct": false
+        },
+        {
+          "option_text": "một",
+          "is_correct": false
+        },
+        {
+          "option_text": "bao gồm",
+          "is_correct": false
+        },
+        {
+          "option_text": "số, mã số",
+          "is_correct": true
+        }
+      ],
+      "rubric": "号码 (hào mǎ) nghĩa là số, mã số. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true,
+          "audio_text": "号码"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “好听” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "vui; vui vẻ",
+          "is_correct": false
+        },
+        {
+          "option_text": "không, à",
+          "is_correct": false
+        },
+        {
+          "option_text": "Vương Nhất Tuyết (tên người)",
+          "is_correct": false
+        },
+        {
+          "option_text": "nghe hay",
+          "is_correct": true
+        }
+      ],
+      "rubric": "好听 (hǎotīng) nghĩa là nghe hay. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “yīn yuè” và nghĩa “âm nhạc”.",
+      "options": [
+        {
+          "option_text": "音乐",
+          "is_correct": true
+        },
+        {
+          "option_text": "呢",
+          "is_correct": false
+        },
+        {
+          "option_text": "菜",
+          "is_correct": false
+        },
+        {
+          "option_text": "左",
+          "is_correct": false
+        }
+      ],
+      "rubric": "音乐 (yīn yuè) nghĩa là âm nhạc. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 7).",
+      "options": [
+        {
+          "option_text": "tuổi",
+          "is_correct": false
+        },
+        {
+          "option_text": "nghỉ ngơi",
+          "is_correct": false
+        },
+        {
+          "option_text": "bên trong",
+          "is_correct": true
+        },
+        {
+          "option_text": "ông nội",
+          "is_correct": false
+        }
+      ],
+      "rubric": "里边 (lǐ biān) nghĩa là bên trong. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "里边"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “家” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "nhà, cơ sở (lượng từ cho công ty, cửa hàng)",
+          "is_correct": true
+        },
+        {
+          "option_text": "công việc",
+          "is_correct": false
+        },
+        {
+          "option_text": "cốc; ly",
+          "is_correct": false
+        },
+        {
+          "option_text": "chiếc, bộ (lượng từ cho điện thoại, phim...)",
+          "is_correct": false
+        }
+      ],
+      "rubric": "家 (jiā) nghĩa là nhà, cơ sở (lượng từ cho công ty, cửa hàng). 家 từng là nhà/gia đình; trong 一家公司, 家 là lượng từ cho cơ sở, doanh nghiệp. Không dịch là một gia đình công ty. Nhắc lại HSK1 bài 4: 家 (jiā) nghĩa là nhà, gia đình. Trong bài này: nhà, cơ sở (lượng từ cho công ty, cửa hàng).",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “lǎogōng” và nghĩa “chồng (cách gọi thân mật)”.",
+      "options": [
+        {
+          "option_text": "电话",
+          "is_correct": false
+        },
+        {
+          "option_text": "杯",
+          "is_correct": false
+        },
+        {
+          "option_text": "买",
+          "is_correct": false
+        },
+        {
+          "option_text": "老公",
+          "is_correct": true
+        }
+      ],
+      "rubric": "老公 (lǎogōng) nghĩa là chồng (cách gọi thân mật). ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "không sao; không có gì đáng ngại",
+          "is_correct": false
+        },
+        {
+          "option_text": "phim",
+          "is_correct": false
+        },
+        {
+          "option_text": "đồ; đồ vật",
+          "is_correct": false
+        },
+        {
+          "option_text": "đọc sách",
+          "is_correct": true
+        }
+      ],
+      "rubric": "读书 (dúshū) nghĩa là đọc sách. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "读书"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “边” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "buổi sáng",
+          "is_correct": false
+        },
+        {
+          "option_text": "phía/bên",
+          "is_correct": true
+        },
+        {
+          "option_text": "chín (số 9)",
+          "is_correct": false
+        },
+        {
+          "option_text": "bên trong",
+          "is_correct": false
+        }
+      ],
+      "rubric": "边 (bian/biān) nghĩa là phía/bên. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “shàngbān” và nghĩa “đi làm”.",
+      "options": [
+        {
+          "option_text": "周末",
+          "is_correct": false
+        },
+        {
+          "option_text": "听",
+          "is_correct": false
+        },
+        {
+          "option_text": "上班",
+          "is_correct": true
+        },
+        {
+          "option_text": "怎么",
+          "is_correct": false
+        }
+      ],
+      "rubric": "上班 (shàngbān) nghĩa là đi làm. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 7
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “chơi” (gợi ý pinyin: wán ér).",
+      "reference_answer": "玩儿",
+      "rubric": "Đáp án: 玩儿 (wán ér). ",
+      "config": {
+        "accepted_answers": [
+          "玩儿"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “nghe” (gợi ý pinyin: tīng).",
+      "reference_answer": "听",
+      "rubric": "Đáp án: 听 (tīng). ",
+      "config": {
+        "accepted_answers": [
+          "听"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “phía trước” (gợi ý pinyin: qiánbian).",
+      "reference_answer": "前边",
+      "rubric": "Đáp án: 前边 (qiánbian). ",
+      "config": {
+        "accepted_answers": [
+          "前边"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “thứ (đứng trước số để chỉ thứ tự)” (gợi ý pinyin: dì).",
+      "reference_answer": "第",
+      "rubric": "Đáp án: 第 (dì). ",
+      "config": {
+        "accepted_answers": [
+          "第"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 1).",
+      "rubric": "周几: thứ mấy; 它: nó; 玩儿: chơi; 部: chiếc, bộ (lượng từ cho điện thoại, phim...)",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "周几"
+          },
+          {
+            "id": "l1",
+            "text": "它"
+          },
+          {
+            "id": "l2",
+            "text": "玩儿"
+          },
+          {
+            "id": "l3",
+            "text": "部"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r0",
+            "text": "thứ mấy"
+          },
+          {
+            "id": "r1",
+            "text": "nó"
+          },
+          {
+            "id": "r2",
+            "text": "chơi"
+          },
+          {
+            "id": "r3",
+            "text": "chiếc, bộ (lượng từ cho điện thoại, phim...)"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        },
+        {
+          "hsk": 1,
+          "lesson": 3
+        },
+        {
+          "hsk": 1,
+          "lesson": 9
+        },
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 2).",
+      "rubric": "学习: học tập; 弟弟: em trai; 休息: nghỉ ngơi; 学: học",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "学习"
+          },
+          {
+            "id": "l1",
+            "text": "弟弟"
+          },
+          {
+            "id": "l2",
+            "text": "休息"
+          },
+          {
+            "id": "l3",
+            "text": "学"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r0",
+            "text": "học tập"
+          },
+          {
+            "id": "r3",
+            "text": "học"
+          },
+          {
+            "id": "r2",
+            "text": "nghỉ ngơi"
+          },
+          {
+            "id": "r1",
+            "text": "em trai"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 8
+        },
+        {
+          "hsk": 1,
+          "lesson": 4
+        },
+        {
+          "hsk": 1,
+          "lesson": 5
+        },
+        {
+          "hsk": 1,
+          "lesson": 8
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Câu tồn hiện với 有”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Nói tại một nơi có người hoặc vật.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Địa điểm + 有 + cụm danh từ. Nói tại một nơi có người hoặc vật. Phủ định dùng 没有. Phân biệt với 我有一本书 là sở hữu của tôi.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Số thứ tự với 第”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Đặt 第 trước số từ để biểu thị thứ tự.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "第 + số từ + lượng từ + danh từ. Đặt 第 trước số từ để biểu thị thứ tự. 第二本 chỉ quyển thứ hai; 两本 chỉ hai quyển.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Nhận xét với 觉得”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Đưa ra cảm nhận hoặc đánh giá.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ ngữ + 觉得 + mệnh đề/cụm tính từ. Đưa ra cảm nhận hoặc đánh giá. 觉得 là đánh giá chủ quan; 知道 là biết thông tin.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Câu tồn hiện với 有” (mục 4): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Phủ định dùng 没有. Phân biệt với 我有一本书 là sở hữu của tôi.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Địa điểm + 有 + cụm danh từ. Nói tại một nơi có người hoặc vật. Phủ định dùng 没有. Phân biệt với 我有一本书 là sở hữu của tôi.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Số thứ tự với 第” (mục 5): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "第二本 chỉ quyển thứ hai; 两本 chỉ hai quyển.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "第 + số từ + lượng từ + danh từ. Đặt 第 trước số từ để biểu thị thứ tự. 第二本 chỉ quyển thứ hai; 两本 chỉ hai quyển.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Nhận xét với 觉得” (mục 6): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "觉得 là đánh giá chủ quan; 知道 là biết thông tin.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ ngữ + 觉得 + mệnh đề/cụm tính từ. Đưa ra cảm nhận hoặc đánh giá. 觉得 là đánh giá chủ quan; 知道 là biết thông tin.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 1).",
+      "reference_answer": "椅子上有一本中文书。",
+      "rubric": "Câu đúng: 椅子上有一本中文书。 Phủ định dùng 没有. Phân biệt với 我有一本书 là sở hữu của tôi.",
+      "config": {
+        "items": [
+          {
+            "id": "w0",
+            "text": "椅子"
+          },
+          {
+            "id": "w7",
+            "text": "。"
+          },
+          {
+            "id": "w2",
+            "text": "有"
+          },
+          {
+            "id": "w4",
+            "text": "本"
+          },
+          {
+            "id": "w5",
+            "text": "中文"
+          },
+          {
+            "id": "w6",
+            "text": "书"
+          },
+          {
+            "id": "w1",
+            "text": "上"
+          },
+          {
+            "id": "w3",
+            "text": "一"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 2).",
+      "reference_answer": "这是我的第二本中文书。",
+      "rubric": "Câu đúng: 这是我的第二本中文书。 第二本 chỉ quyển thứ hai; 两本 chỉ hai quyển.",
+      "config": {
+        "items": [
+          {
+            "id": "w2",
+            "text": "我"
+          },
+          {
+            "id": "w6",
+            "text": "本"
+          },
+          {
+            "id": "w4",
+            "text": "第"
+          },
+          {
+            "id": "w3",
+            "text": "的"
+          },
+          {
+            "id": "w5",
+            "text": "二"
+          },
+          {
+            "id": "w1",
+            "text": "是"
+          },
+          {
+            "id": "w8",
+            "text": "书"
+          },
+          {
+            "id": "w9",
+            "text": "。"
+          },
+          {
+            "id": "w7",
+            "text": "中文"
+          },
+          {
+            "id": "w0",
+            "text": "这"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8",
+          "w9"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 3).",
+      "reference_answer": "我觉得汉语很难。",
+      "rubric": "Câu đúng: 我觉得汉语很难。 觉得 là đánh giá chủ quan; 知道 là biết thông tin.",
+      "config": {
+        "items": [
+          {
+            "id": "w3",
+            "text": "很"
+          },
+          {
+            "id": "w5",
+            "text": "。"
+          },
+          {
+            "id": "w4",
+            "text": "难"
+          },
+          {
+            "id": "w1",
+            "text": "觉得"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w2",
+            "text": "汉语"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 4).",
+      "reference_answer": "学校前边有一家电影院。",
+      "rubric": "Câu đúng: 学校前边有一家电影院。 Phủ định dùng 没有. Phân biệt với 我有一本书 là sở hữu của tôi.",
+      "config": {
+        "items": [
+          {
+            "id": "w4",
+            "text": "家"
+          },
+          {
+            "id": "w0",
+            "text": "学校"
+          },
+          {
+            "id": "w5",
+            "text": "电影院"
+          },
+          {
+            "id": "w3",
+            "text": "一"
+          },
+          {
+            "id": "w2",
+            "text": "有"
+          },
+          {
+            "id": "w6",
+            "text": "。"
+          },
+          {
+            "id": "w1",
+            "text": "前边"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 5).",
+      "reference_answer": "对。我们晚上去那个电影院看电影吧。",
+      "rubric": "Câu đúng: 对。我们晚上去那个电影院看电影吧。 第二本 chỉ quyển thứ hai; 两本 chỉ hai quyển.",
+      "config": {
+        "items": [
+          {
+            "id": "w5",
+            "text": "去"
+          },
+          {
+            "id": "w4",
+            "text": "晚上"
+          },
+          {
+            "id": "w10",
+            "text": "电影"
+          },
+          {
+            "id": "w2",
+            "text": "我"
+          },
+          {
+            "id": "w7",
+            "text": "个"
+          },
+          {
+            "id": "w11",
+            "text": "吧"
+          },
+          {
+            "id": "w6",
+            "text": "那"
+          },
+          {
+            "id": "w12",
+            "text": "。"
+          },
+          {
+            "id": "w8",
+            "text": "电影院"
+          },
+          {
+            "id": "w3",
+            "text": "们"
+          },
+          {
+            "id": "w9",
+            "text": "看"
+          },
+          {
+            "id": "w0",
+            "text": "对"
+          },
+          {
+            "id": "w1",
+            "text": "。"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8",
+          "w9",
+          "w10",
+          "w11",
+          "w12"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 6).",
+      "reference_answer": "好!我们七点在电影院外边见,好吗?",
+      "rubric": "Câu đúng: 好!我们七点在电影院外边见,好吗? 觉得 là đánh giá chủ quan; 知道 là biết thông tin.",
+      "config": {
+        "items": [
+          {
+            "id": "w13",
+            "text": "?"
+          },
+          {
+            "id": "w1",
+            "text": "!"
+          },
+          {
+            "id": "w9",
+            "text": "见"
+          },
+          {
+            "id": "w11",
+            "text": "好"
+          },
+          {
+            "id": "w0",
+            "text": "好"
+          },
+          {
+            "id": "w5",
+            "text": "点"
+          },
+          {
+            "id": "w2",
+            "text": "我"
+          },
+          {
+            "id": "w8",
+            "text": "外边"
+          },
+          {
+            "id": "w4",
+            "text": "七"
+          },
+          {
+            "id": "w3",
+            "text": "们"
+          },
+          {
+            "id": "w10",
+            "text": ","
+          },
+          {
+            "id": "w12",
+            "text": "吗"
+          },
+          {
+            "id": "w7",
+            "text": "电影院"
+          },
+          {
+            "id": "w6",
+            "text": "在"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8",
+          "w9",
+          "w10",
+          "w11",
+          "w12",
+          "w13"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ],
+  "source_documents": {
+    "vocabulary": "DOCX",
+    "theory": "HSK1 PDF"
+  }
+}

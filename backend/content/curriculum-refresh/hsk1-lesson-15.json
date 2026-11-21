@@ -1,0 +1,1545 @@
+{
+  "key": "hsk1-lesson-15-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 1,
+    "lesson_number": 15,
+    "title": "我爱吃中国菜 · Sở thích và hẹn gặp",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "爱",
+      "pinyin": "ài",
+      "vietnamese_meaning": "yêu, thích",
+      "part_of_speech": "động từ",
+      "example": "我爱我的家人。\nwǒ ài wǒ de jiā rén 。\nTôi yêu gia đình mình.",
+      "order_index": 1,
+      "note": null,
+      "source_key": "1:15:爱"
+    },
+    {
+      "hanzi": "哪个",
+      "pinyin": "nǎgè",
+      "vietnamese_meaning": "cái nào",
+      "part_of_speech": "đại từ",
+      "example": "你喜欢哪个？\nnǐ xǐ huān nǎ ge ？\nBạn thích cái nào?",
+      "order_index": 2,
+      "note": null,
+      "source_key": "1:15:哪个"
+    },
+    {
+      "hanzi": "好玩儿",
+      "pinyin": "hǎowánr",
+      "vietnamese_meaning": "vui, chơi vui",
+      "part_of_speech": "tính từ",
+      "example": "这里很好玩儿。\nzhè lǐ hěn hǎo wán ér 。\nỞ đây chơi rất vui.",
+      "order_index": 3,
+      "note": null,
+      "source_key": "1:15:好玩儿"
+    },
+    {
+      "hanzi": "要",
+      "pinyin": "yào",
+      "vietnamese_meaning": "cần, phải, muốn",
+      "part_of_speech": "động từ năng nguyện",
+      "example": "我要学汉语。\nwǒ yào xué hàn yǔ 。\nTôi muốn học tiếng Trung.",
+      "order_index": 4,
+      "note": "Nhắc lại HSK1 bài 11: 要 (yào) nghĩa là muốn. Trong bài này: cần, phải, muốn.",
+      "source_key": "1:15:要"
+    },
+    {
+      "hanzi": "家人",
+      "pinyin": "jiārén",
+      "vietnamese_meaning": "người nhà, gia đình",
+      "part_of_speech": "danh từ",
+      "example": "我给家人带了一些特产。\nwǒ gěi jiā rén dài le yī xiē tè chǎn 。\nTôi mang một ít đặc sản cho người nhà.",
+      "order_index": 5,
+      "note": null,
+      "source_key": "1:15:家人"
+    },
+    {
+      "hanzi": "住",
+      "pinyin": "zhù",
+      "vietnamese_meaning": "ở, cư trú",
+      "part_of_speech": "động từ",
+      "example": "我住的房子在学校附近。\nwǒ zhù de fáng zi zài xué xiào fù jìn 。\nCăn nhà tôi ở nằm gần trường.",
+      "order_index": 6,
+      "note": null,
+      "source_key": "1:15:住"
+    },
+    {
+      "hanzi": "早",
+      "pinyin": "zǎo",
+      "vietnamese_meaning": "sớm",
+      "part_of_speech": "tính từ",
+      "example": "你今天来得很早。\nnǐ jīn tiān lái de hěn zǎo 。\nHôm nay bạn đến rất sớm.",
+      "order_index": 7,
+      "note": null,
+      "source_key": "1:15:早"
+    },
+    {
+      "hanzi": "那",
+      "pinyin": "nà",
+      "vietnamese_meaning": "vậy, thế thì",
+      "part_of_speech": "liên từ",
+      "example": "那我们走吧！\nnà wǒ men zǒu ba ！\nVậy chúng ta đi thôi!",
+      "order_index": 8,
+      "note": "Nhắc lại HSK1 bài 3: 那 (nà) nghĩa là kia. Trong bài này: vậy, thế thì.",
+      "source_key": "1:15:那"
+    },
+    {
+      "hanzi": "首都",
+      "pinyin": "shǒudū",
+      "vietnamese_meaning": "thủ đô",
+      "part_of_speech": "danh từ",
+      "example": "北京是中国的首都。\nběi jīng shì zhōng guó de shǒu dū 。\nBắc Kinh là thủ đô của Trung Quốc.",
+      "order_index": 9,
+      "note": null,
+      "source_key": "1:15:首都"
+    }
+  ],
+  "grammar": [
+    {
+      "name": "Câu phức ngang hàng với 也/还",
+      "structure": "Mệnh đề 1，cũng/còn + mệnh đề 2",
+      "explanation": "也 hoặc 还 nối các ý song song, bổ sung cho nhau.",
+      "usage": "也 thường đứng trước vị ngữ; 还 nhấn mạnh ý bổ sung. Không dùng chúng thay 所以 để biểu thị kết quả.",
+      "example": "我喜欢这个，也喜欢那个。\nwǒ xǐ huān zhè ge ， yě xǐ huān nà ge 。\nTôi thích cái này, cũng thích cái kia.",
+      "note": "也 thường đứng trước vị ngữ; 还 nhấn mạnh ý bổ sung. Không dùng chúng thay 所以 để biểu thị kết quả.",
+      "order_index": 1
+    },
+    {
+      "name": "Xin phép và khả năng với 可以",
+      "structure": "Chủ ngữ + 可以 + động từ",
+      "explanation": "可以 diễn đạt sự cho phép hoặc khả năng trong hoàn cảnh cụ thể.",
+      "usage": "Ôn lại 可以 ở bài 13: khác 会 thiên về kỹ năng đã học và 能 thiên về điều kiện, năng lực.",
+      "example": "你们可以住我家。\nnǐ men kě yǐ zhù wǒ jiā 。\nCác bạn có thể ở nhà tôi.",
+      "note": "Ôn lại 可以 ở bài 13: khác 会 thiên về kỹ năng đã học và 能 thiên về điều kiện, năng lực.",
+      "order_index": 2
+    },
+    {
+      "name": "Hẹn gặp lại",
+      "structure": "Thời gian/địa điểm + 见！",
+      "explanation": "Đặt thời gian hoặc địa điểm trước 见 để hẹn gặp.",
+      "usage": "Có thể nói 首都机场见 để hẹn gặp ở Sân bay Thủ đô; không cần thêm 在 trong lời chào hẹn gặp rút gọn này.",
+      "example": "明天见！\nmíng tiān jiàn ！\nHẹn gặp ngày mai!",
+      "note": "Có thể nói 首都机场见 để hẹn gặp ở Sân bay Thủ đô; không cần thêm 在 trong lời chào hẹn gặp rút gọn này.",
+      "order_index": 3
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Món ăn và sở thích",
+      "content": "李文:你们爱吃哪个菜?\n白家月:我喜欢这个,也喜欢那个。\n陈天中:这些菜都好吃,还很好看。\n李文:我爱吃中国菜,也喜欢做。大家多吃点儿。",
+      "pinyin": "lǐ wén : nǐ men ài chī nǎ ge cài ?\nbái jiā yuè : wǒ xǐ huān zhè ge , yě xǐ huān nà ge 。\nchén tiān zhōng : zhè xiē cài dōu hǎo chī , hái hěn hǎo kàn 。\nlǐ wén : wǒ ài chī zhōng guó cài , yě xǐ huān zuò 。 dà jiā duō chī diǎn ér 。",
+      "vietnamese_translation": "Lý Văn: Các bạn thích ăn món nào?\nBạch Gia Nguyệt: Mình thích món này, cũng thích món kia.\nTrần Thiên Trung: Những món này đều ngon, còn rất đẹp mắt nữa.\nLý Văn: Mình thích ăn món Trung Quốc, cũng thích nấu nữa.\nMọi người ăn nhiều thêm một chút nhé.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 15, PDF 143."
+    },
+    {
+      "order_index": 2,
+      "title": "Quê quán",
+      "content": "李文:你们都想去哪儿?\n安妮:去年我和男朋友去了西安,今年我想去北京。\n白家月:前几年我去了西安,非常好玩儿。今年我也想去北京。\n李文:我和王老师都是北京人,北京非常漂亮。",
+      "pinyin": "lǐ wén : nǐ men dōu xiǎng qù nǎ ér ?\nān nī : qù nián wǒ hé nán péng yǒu qù le xī ān , jīn nián wǒ xiǎng qù běi jīng 。\nbái jiā yuè : qián jǐ nián wǒ qù le xī ān , fēi cháng hǎo wán ér 。 jīn nián wǒ yě xiǎng qù běi jīng 。\nlǐ wén : wǒ hé wáng lǎo shī dōu shì běi jīng rén , běi jīng fēi cháng piào liàng 。",
+      "vietnamese_translation": "Lý Văn: Các bạn đều muốn đi đâu?\nAnnie: Năm ngoái tôi và bạn trai đã đi Tây An, năm nay tôi muốn đi Bắc Kinh.\nBạch Gia Nguyệt: Vài năm trước tôi đã đi Tây An, cực kỳ vui. Năm nay tôi cũng muốn đi\nLý Văn: Tôi và thầy Vương đều là người Bắc Kinh, Bắc Kinh cực kỳ đẹp.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 15, PDF 145."
+    },
+    {
+      "order_index": 3,
+      "title": "Hẹn gặp lại",
+      "content": "王一飞:你们的飞机到北京要几个小时?\n白家月:九个小时。\n王一飞:我家人都在北京,星期天我姐姐也有时间,她可以去机场接你们,你们也可以住我家。\n安妮:我们星期日早上八点到首都机场,早不早?\n王一飞:不早。\n白家月:谢谢老师!那我们和您姐姐在首都机场见!",
+      "pinyin": "wáng yī fēi : nǐ men de fēi jī dào běi jīng yào jǐ gè xiǎo shí ?\nbái jiā yuè : jiǔ gè xiǎo shí 。\nwáng yī fēi : wǒ jiā rén dōu zài běi jīng , xīng qī tiān wǒ jiě jiě yě yǒu shí jiān , tā kě yǐ qù jī chǎng jiē nǐ men , nǐ men yě kě yǐ zhù wǒ jiā 。\nān nī : wǒ men xīng qī rì zǎo shàng bā diǎn dào shǒu dū jī chǎng , zǎo bù zǎo ?\nwáng yī fēi : bù zǎo 。\nbái jiā yuè : xiè xiè lǎo shī ! nà wǒ men hé nín jiě jiě zài shǒu dū jī chǎng jiàn !",
+      "vietnamese_translation": "Vương Nhất Phi: Máy bay của các bạn đến Bắc Kinh mất mấy tiếng?\nBạch Gia Nguyệt: Chín tiếng ạ.\nVương Nhất Phi: Gia đình tôi đều ở Bắc Kinh. Chủ nhật chị gái tôi cũng có thời gian,\nAnnie: Chúng em đến Sân bay Thủ đô lúc 8 giờ sáng Chủ nhật, có sớm không ạ?\nVương Nhất Phi: Không sớm.\nBạch Gia Nguyệt: Cảm ơn cô, vậy chúng em sẽ gặp chị của cô ở Sân bay Thủ đô.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 15, PDF 146, 147."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 1 · Bài 15 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp; dùng kiến thức của bài này và các bài trước, không dùng bài sau. Đạt từ 80%; được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "review_status": "DRAFT_REQUIRES_EDITOR_REVIEW",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 1).",
+      "options": [
+        {
+          "option_text": "tuổi",
+          "is_correct": false
+        },
+        {
+          "option_text": "taxi",
+          "is_correct": false
+        },
+        {
+          "option_text": "cần, phải, muốn",
+          "is_correct": true
+        },
+        {
+          "option_text": "bài học; tiết học",
+          "is_correct": false
+        }
+      ],
+      "rubric": "要 (yào) nghĩa là cần, phải, muốn. Nhắc lại HSK1 bài 11: 要 (yào) nghĩa là muốn. Trong bài này: cần, phải, muốn.",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "要"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 15
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “好玩儿” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "kia",
+          "is_correct": false
+        },
+        {
+          "option_text": "buối sáng (trước 12h)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Thái Lan",
+          "is_correct": false
+        },
+        {
+          "option_text": "vui, chơi vui",
+          "is_correct": true
+        }
+      ],
+      "rubric": "好玩儿 (hǎowánr) nghĩa là vui, chơi vui. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 15
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “zǎo” và nghĩa “sớm”.",
+      "options": [
+        {
+          "option_text": "早",
+          "is_correct": true
+        },
+        {
+          "option_text": "苹果",
+          "is_correct": false
+        },
+        {
+          "option_text": "晚",
+          "is_correct": false
+        },
+        {
+          "option_text": "电脑",
+          "is_correct": false
+        }
+      ],
+      "rubric": "早 (zǎo) nghĩa là sớm. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 15
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 4).",
+      "options": [
+        {
+          "option_text": "nhìn thấy",
+          "is_correct": false
+        },
+        {
+          "option_text": "công việc",
+          "is_correct": false
+        },
+        {
+          "option_text": "mây",
+          "is_correct": false
+        },
+        {
+          "option_text": "cái nào",
+          "is_correct": true
+        }
+      ],
+      "rubric": "哪个 (nǎgè) nghĩa là cái nào. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "哪个"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 15
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “下大雨” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "nhà, cơ sở (lượng từ cho công ty, cửa hàng)",
+          "is_correct": false
+        },
+        {
+          "option_text": "mưa to",
+          "is_correct": true
+        },
+        {
+          "option_text": "cà phê",
+          "is_correct": false
+        },
+        {
+          "option_text": "Pháp",
+          "is_correct": false
+        }
+      ],
+      "rubric": "下大雨 (xià dà yǔ) nghĩa là mưa to. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 12
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “dàxuéshēng” và nghĩa “sinh viên”.",
+      "options": [
+        {
+          "option_text": "大学生",
+          "is_correct": true
+        },
+        {
+          "option_text": "左",
+          "is_correct": false
+        },
+        {
+          "option_text": "因为",
+          "is_correct": false
+        },
+        {
+          "option_text": "阿",
+          "is_correct": false
+        }
+      ],
+      "rubric": "大学生 (dàxuéshēng) nghĩa là sinh viên. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 11
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 7).",
+      "options": [
+        {
+          "option_text": "nghe hay",
+          "is_correct": false
+        },
+        {
+          "option_text": "lên (xe, tàu)",
+          "is_correct": false
+        },
+        {
+          "option_text": "yêu, thích",
+          "is_correct": true
+        },
+        {
+          "option_text": "kỹ năng",
+          "is_correct": false
+        }
+      ],
+      "rubric": "爱 (ài) nghĩa là yêu, thích. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "爱"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 15
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “那” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "ngày trời âm u",
+          "is_correct": false
+        },
+        {
+          "option_text": "chúng (đồ vật/động vật)",
+          "is_correct": false
+        },
+        {
+          "option_text": "vậy, thế thì",
+          "is_correct": true
+        },
+        {
+          "option_text": "có thể",
+          "is_correct": false
+        }
+      ],
+      "rubric": "那 (nà) nghĩa là vậy, thế thì. Nhắc lại HSK1 bài 3: 那 (nà) nghĩa là kia. Trong bài này: vậy, thế thì.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 15
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “zhù” và nghĩa “ở, cư trú”.",
+      "options": [
+        {
+          "option_text": "住",
+          "is_correct": true
+        },
+        {
+          "option_text": "咖啡",
+          "is_correct": false
+        },
+        {
+          "option_text": "学习",
+          "is_correct": false
+        },
+        {
+          "option_text": "电话",
+          "is_correct": false
+        }
+      ],
+      "rubric": "住 (zhù) nghĩa là ở, cư trú. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 15
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "con gái",
+          "is_correct": false
+        },
+        {
+          "option_text": "trò chơi",
+          "is_correct": true
+        },
+        {
+          "option_text": "nghe",
+          "is_correct": false
+        },
+        {
+          "option_text": "quá, lắm",
+          "is_correct": false
+        }
+      ],
+      "rubric": "游戏 (yóu xì) nghĩa là trò chơi. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true,
+          "audio_text": "游戏"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “一共” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "hỏi",
+          "is_correct": false
+        },
+        {
+          "option_text": "thời gian",
+          "is_correct": false
+        },
+        {
+          "option_text": "những cái kia",
+          "is_correct": false
+        },
+        {
+          "option_text": "tổng cộng",
+          "is_correct": true
+        }
+      ],
+      "rubric": "一共 (yī gòng) nghĩa là tổng cộng. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 10
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “jiārén” và nghĩa “người nhà, gia đình”.",
+      "options": [
+        {
+          "option_text": "爸爸",
+          "is_correct": false
+        },
+        {
+          "option_text": "椅子",
+          "is_correct": false
+        },
+        {
+          "option_text": "家人",
+          "is_correct": true
+        },
+        {
+          "option_text": "大",
+          "is_correct": false
+        }
+      ],
+      "rubric": "家人 (jiārén) nghĩa là người nhà, gia đình. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 15
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “thủ đô” (gợi ý pinyin: shǒudū).",
+      "reference_answer": "首都",
+      "rubric": "Đáp án: 首都 (shǒudū). ",
+      "config": {
+        "accepted_answers": [
+          "首都"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 15
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “chơi” (gợi ý pinyin: wán ér).",
+      "reference_answer": "玩儿",
+      "rubric": "Đáp án: 玩儿 (wán ér). ",
+      "config": {
+        "accepted_answers": [
+          "玩儿"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “đừng; không được” (gợi ý pinyin: búyào).",
+      "reference_answer": "不要",
+      "rubric": "Đáp án: 不要 (búyào). ",
+      "config": {
+        "accepted_answers": [
+          "不要"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 14
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “cần, phải, muốn” (gợi ý pinyin: yào).",
+      "reference_answer": "要",
+      "rubric": "Đáp án: 要 (yào). Nhắc lại HSK1 bài 11: 要 (yào) nghĩa là muốn. Trong bài này: cần, phải, muốn.",
+      "config": {
+        "accepted_answers": [
+          "要"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 15
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 1).",
+      "rubric": "白天: ban ngày; 几: mấy; 时间: thời gian; 八: tám",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "白天"
+          },
+          {
+            "id": "l1",
+            "text": "几"
+          },
+          {
+            "id": "l2",
+            "text": "时间"
+          },
+          {
+            "id": "l3",
+            "text": "八"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r1",
+            "text": "mấy"
+          },
+          {
+            "id": "r0",
+            "text": "ban ngày"
+          },
+          {
+            "id": "r2",
+            "text": "thời gian"
+          },
+          {
+            "id": "r3",
+            "text": "tám"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        },
+        {
+          "hsk": 1,
+          "lesson": 4
+        },
+        {
+          "hsk": 1,
+          "lesson": 13
+        },
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 2).",
+      "rubric": "接: đón; nhận (điện thoại, vật được đưa); 手机: điện thoại di động; 包子: bánh bao có nhân; 吧: nhé, đi (gợi ý hoặc đề nghị)",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "接"
+          },
+          {
+            "id": "l1",
+            "text": "手机"
+          },
+          {
+            "id": "l2",
+            "text": "包子"
+          },
+          {
+            "id": "l3",
+            "text": "吧"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r1",
+            "text": "điện thoại di động"
+          },
+          {
+            "id": "r3",
+            "text": "nhé, đi (gợi ý hoặc đề nghị)"
+          },
+          {
+            "id": "r2",
+            "text": "bánh bao có nhân"
+          },
+          {
+            "id": "r0",
+            "text": "đón; nhận (điện thoại, vật được đưa)"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 13
+        },
+        {
+          "hsk": 1,
+          "lesson": 6
+        },
+        {
+          "hsk": 1,
+          "lesson": 5
+        },
+        {
+          "hsk": 1,
+          "lesson": 7
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Câu phức ngang hàng với 也/还”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "也 hoặc 还 nối các ý song song, bổ sung cho nhau.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Mệnh đề 1，cũng/còn + mệnh đề 2. 也 hoặc 还 nối các ý song song, bổ sung cho nhau. 也 thường đứng trước vị ngữ; 还 nhấn mạnh ý bổ sung. Không dùng chúng thay 所以 để biểu thị kết quả.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 15
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Xin phép và khả năng với 可以”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "可以 diễn đạt sự cho phép hoặc khả năng trong hoàn cảnh cụ thể.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ ngữ + 可以 + động từ. 可以 diễn đạt sự cho phép hoặc khả năng trong hoàn cảnh cụ thể. Ôn lại 可以 ở bài 13: khác 会 thiên về kỹ năng đã học và 能 thiên về điều kiện, năng lực.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 15
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Hẹn gặp lại”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Đặt thời gian hoặc địa điểm trước 见 để hẹn gặp.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Thời gian/địa điểm + 见！. Đặt thời gian hoặc địa điểm trước 见 để hẹn gặp. Có thể nói 首都机场见 để hẹn gặp ở Sân bay Thủ đô; không cần thêm 在 trong lời chào hẹn gặp rút gọn này.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 15
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Câu phức ngang hàng với 也/还” (mục 4): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "也 thường đứng trước vị ngữ; 还 nhấn mạnh ý bổ sung. Không dùng chúng thay 所以 để biểu thị kết quả.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Mệnh đề 1，cũng/còn + mệnh đề 2. 也 hoặc 还 nối các ý song song, bổ sung cho nhau. 也 thường đứng trước vị ngữ; 还 nhấn mạnh ý bổ sung. Không dùng chúng thay 所以 để biểu thị kết quả.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 15
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Xin phép và khả năng với 可以” (mục 5): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Ôn lại 可以 ở bài 13: khác 会 thiên về kỹ năng đã học và 能 thiên về điều kiện, năng lực.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ ngữ + 可以 + động từ. 可以 diễn đạt sự cho phép hoặc khả năng trong hoàn cảnh cụ thể. Ôn lại 可以 ở bài 13: khác 会 thiên về kỹ năng đã học và 能 thiên về điều kiện, năng lực.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 15
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Hẹn gặp lại” (mục 6): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể nói 首都机场见 để hẹn gặp ở Sân bay Thủ đô; không cần thêm 在 trong lời chào hẹn gặp rút gọn này.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Thời gian/địa điểm + 见！. Đặt thời gian hoặc địa điểm trước 见 để hẹn gặp. Có thể nói 首都机场见 để hẹn gặp ở Sân bay Thủ đô; không cần thêm 在 trong lời chào hẹn gặp rút gọn này.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 15
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 1).",
+      "reference_answer": "我喜欢这个，也喜欢那个。",
+      "rubric": "Câu đúng: 我喜欢这个，也喜欢那个。 也 thường đứng trước vị ngữ; 还 nhấn mạnh ý bổ sung. Không dùng chúng thay 所以 để biểu thị kết quả.",
+      "config": {
+        "items": [
+          {
+            "id": "w7",
+            "text": "那"
+          },
+          {
+            "id": "w3",
+            "text": "个"
+          },
+          {
+            "id": "w8",
+            "text": "个"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w5",
+            "text": "也"
+          },
+          {
+            "id": "w9",
+            "text": "。"
+          },
+          {
+            "id": "w6",
+            "text": "喜欢"
+          },
+          {
+            "id": "w2",
+            "text": "这"
+          },
+          {
+            "id": "w1",
+            "text": "喜欢"
+          },
+          {
+            "id": "w4",
+            "text": "，"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8",
+          "w9"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 15
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 2).",
+      "reference_answer": "你们可以住我家。",
+      "rubric": "Câu đúng: 你们可以住我家。 Ôn lại 可以 ở bài 13: khác 会 thiên về kỹ năng đã học và 能 thiên về điều kiện, năng lực.",
+      "config": {
+        "items": [
+          {
+            "id": "w4",
+            "text": "我"
+          },
+          {
+            "id": "w1",
+            "text": "们"
+          },
+          {
+            "id": "w3",
+            "text": "住"
+          },
+          {
+            "id": "w0",
+            "text": "你"
+          },
+          {
+            "id": "w5",
+            "text": "家"
+          },
+          {
+            "id": "w2",
+            "text": "可以"
+          },
+          {
+            "id": "w6",
+            "text": "。"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 15
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 3).",
+      "reference_answer": "明天见！",
+      "rubric": "Câu đúng: 明天见！ Có thể nói 首都机场见 để hẹn gặp ở Sân bay Thủ đô; không cần thêm 在 trong lời chào hẹn gặp rút gọn này.",
+      "config": {
+        "items": [
+          {
+            "id": "w2",
+            "text": "！"
+          },
+          {
+            "id": "w0",
+            "text": "明天"
+          },
+          {
+            "id": "w1",
+            "text": "见"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 15
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 4).",
+      "reference_answer": "你们爱吃哪个菜?",
+      "rubric": "Câu đúng: 你们爱吃哪个菜? 也 thường đứng trước vị ngữ; 还 nhấn mạnh ý bổ sung. Không dùng chúng thay 所以 để biểu thị kết quả.",
+      "config": {
+        "items": [
+          {
+            "id": "w6",
+            "text": "?"
+          },
+          {
+            "id": "w2",
+            "text": "爱"
+          },
+          {
+            "id": "w0",
+            "text": "你"
+          },
+          {
+            "id": "w1",
+            "text": "们"
+          },
+          {
+            "id": "w3",
+            "text": "吃"
+          },
+          {
+            "id": "w4",
+            "text": "哪个"
+          },
+          {
+            "id": "w5",
+            "text": "菜"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 15
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 5).",
+      "reference_answer": "我喜欢这个,也喜欢那个。",
+      "rubric": "Câu đúng: 我喜欢这个,也喜欢那个。 Ôn lại 可以 ở bài 13: khác 会 thiên về kỹ năng đã học và 能 thiên về điều kiện, năng lực.",
+      "config": {
+        "items": [
+          {
+            "id": "w5",
+            "text": "也"
+          },
+          {
+            "id": "w2",
+            "text": "这"
+          },
+          {
+            "id": "w4",
+            "text": ","
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w9",
+            "text": "。"
+          },
+          {
+            "id": "w6",
+            "text": "喜欢"
+          },
+          {
+            "id": "w3",
+            "text": "个"
+          },
+          {
+            "id": "w7",
+            "text": "那"
+          },
+          {
+            "id": "w1",
+            "text": "喜欢"
+          },
+          {
+            "id": "w8",
+            "text": "个"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8",
+          "w9"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 15
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 6).",
+      "reference_answer": "这些菜都好吃,还很好看。",
+      "rubric": "Câu đúng: 这些菜都好吃,还很好看。 Có thể nói 首都机场见 để hẹn gặp ở Sân bay Thủ đô; không cần thêm 在 trong lời chào hẹn gặp rút gọn này.",
+      "config": {
+        "items": [
+          {
+            "id": "w8",
+            "text": "好"
+          },
+          {
+            "id": "w1",
+            "text": "菜"
+          },
+          {
+            "id": "w6",
+            "text": "还"
+          },
+          {
+            "id": "w9",
+            "text": "看"
+          },
+          {
+            "id": "w10",
+            "text": "。"
+          },
+          {
+            "id": "w2",
+            "text": "都"
+          },
+          {
+            "id": "w5",
+            "text": ","
+          },
+          {
+            "id": "w0",
+            "text": "这些"
+          },
+          {
+            "id": "w3",
+            "text": "好"
+          },
+          {
+            "id": "w7",
+            "text": "很"
+          },
+          {
+            "id": "w4",
+            "text": "吃"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8",
+          "w9",
+          "w10"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 15
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ],
+  "source_documents": {
+    "vocabulary": "HSK1 PDF",
+    "theory": "HSK1 PDF"
+  }
+}

@@ -72,6 +72,7 @@ test('vocabulary pages save only visited words and preserve theory gates across 
     await expect(student).toHaveURL(new RegExp(`/lessons/${lessonId}/grammar$`))
     await expect(student.getByRole('heading', { name: /^Ngữ pháp/ })).toBeInViewport()
     await expect(student.locator('.vocabulary-study-card')).toHaveCount(0)
+    await expect(student.locator('.lesson-word-index')).toHaveCount(0)
     await student.getByRole('link', { name: 'Luyện tập', exact: true }).click()
     await expect(student.getByRole('button', { name: 'Mở luyện tập 1', exact: true })).toBeDisabled()
     expect((await readProgress()).theory_completed_at).toBeNull()
@@ -85,7 +86,12 @@ test('vocabulary pages save only visited words and preserve theory gates across 
       await student.getByRole('button', { name: `Hoàn thành bài khóa: ${reading.title}`, exact: true }).click()
     }
     await student.getByRole('link', { name: 'Luyện tập', exact: true }).click()
-    await expect(student.getByRole('link', { name: 'Mở luyện tập 1', exact: true })).toBeVisible()
+    await expect(student.locator('.practice-layout')).toBeVisible()
+    await expect(student.locator('.lesson-word-index')).toHaveCount(0)
+    await expect(student.locator('.practice-layout')).toBeVisible()
+    await expect(student.locator('.practice-layout')).toBeVisible()
+    await expect(student).toHaveURL(new RegExp(`/lessons/${lessonId}/practice$`))
+    await expect(student.getByRole('link', { name: 'Luyện tập', exact: true })).toHaveAttribute('aria-current', 'page')
     const sizes = await student.evaluate(() => ({ content: document.documentElement.scrollWidth, viewport: innerWidth }))
     expect(sizes.content).toBeLessThanOrEqual(sizes.viewport + 1)
   } finally { await context.close() }

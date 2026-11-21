@@ -39,15 +39,18 @@ function GradingLabel({ answer }: { answer: AnswerResult }) {
   }
 }
 
-export function AssessmentResultPage() {
+export function AssessmentResultPage({ embeddedAttemptId, onRetry }: { embeddedAttemptId?: string; onRetry?: () => void } = {}) {
   const [onlyMistakes, setOnlyMistakes] = useState(false)
-  const { attemptId } = useParams()
+  const { attemptId: routeAttemptId } = useParams()
+  const attemptId = embeddedAttemptId ?? routeAttemptId
+  const embedded = !!embeddedAttemptId
+  const titleId = embedded ? 'practice-result-title' : 'page-title'
   const attemptQuery = useQuery({ queryKey: queryKeys.attempt(attemptId ?? ''), queryFn: () => getAttempt(attemptId!), enabled: !!attemptId })
   const attempt = attemptQuery.data
   const dashboardQuery = useQuery({ queryKey: queryKeys.dashboard, queryFn: getDashboard, enabled: !!attempt && attempt.status === 'GRADED' && attempt.passed === true })
   const continuePath = dashboardQuery.data?.continue_learning ? continueLearningPath(dashboardQuery.data.continue_learning) : null
-  if (attemptQuery.isPending && !attempt) return <section className="learner-page assessment-result-page screen" aria-labelledby="page-title"><PageHeader title="Kết quả luyện tập" titleId="page-title" /><LoadingState>Đang tải kết quả…</LoadingState></section>
-  if ((attemptQuery.isError && !attempt) || !attempt) return <section className="learner-page assessment-result-page screen" aria-labelledby="page-title"><PageHeader title="Kết quả luyện tập" titleId="page-title" />
+  if (attemptQuery.isPending && !attempt) return <section className="learner-page assessment-result-page screen" aria-labelledby={titleId}>{embedded ? <h2 id={titleId}>Kết quả luyện tập</h2> : <PageHeader title="Kết quả luyện tập" titleId={titleId} artwork={false}/>}<LoadingState>Đang tải kết quả…</LoadingState></section>
+  if ((attemptQuery.isError && !attempt) || !attempt) return <section className="learner-page assessment-result-page screen" aria-labelledby={titleId}>{embedded ? <h2 id={titleId}>Kết quả luyện tập</h2> : <PageHeader title="Kết quả luyện tập" titleId={titleId} artwork={false}/>}
     <Alert role="alert" tone="error" action={<Button onClick={() => void attemptQuery.refetch()}>Thử lại</Button>}>Không thể tải kết quả luyện tập.</Alert></section>
 
   const canRetry = attempt.status === 'GRADING_FAILED' || attempt.passed === false
@@ -55,8 +58,8 @@ export function AssessmentResultPage() {
   const isNotPassed = attempt.status === 'GRADED' && attempt.passed === false
   const outcome = isPassed ? "Đạt" : isNotPassed ? "Chưa đạt" : attempt.status === 'GRADING_FAILED' ? "Chưa thể chấm điểm" : "Đang chờ kết quả"
   const outcomeTone = isPassed ? 'success' : isNotPassed ? 'warning' : attempt.status === 'GRADING_FAILED' ? 'danger' : 'neutral'
-  return <section className="learner-page assessment-result-page screen practice-results" aria-labelledby="page-title">
-    <PageHeader title="Kết quả luyện tập" titleId="page-title" artwork={false} />
+  return <section className="learner-page assessment-result-page screen practice-results" aria-labelledby={titleId}>
+    {embedded ? <h2 id={titleId}>Kết quả luyện tập</h2> : <PageHeader title="Kết quả luyện tập" titleId={titleId} artwork={false}/>}
     {attemptQuery.isFetching && <LoadingState>Đang cập nhật kết quả…</LoadingState>}
     {attemptQuery.isError && <Alert role="status" tone="warning">Chưa cập nhật được kết quả. Đang hiển thị kết quả đã tải.</Alert>}
     {dashboardQuery.isError && <Alert role="status" tone="warning" action={<Button onClick={() => void dashboardQuery.refetch()}>Thử lại</Button>}>Chưa thể tải bước học tiếp theo. Vui lòng thử lại.</Alert>}
@@ -69,8 +72,8 @@ export function AssessmentResultPage() {
       {attempt.status === 'GRADING_FAILED' && <p role="status">Câu trả lời đã được lưu, nhưng chưa thể chấm điểm.</p>}
       {attempt.status === 'GRADED' && <><p>Điểm: {attempt.score === null ? "Chưa có thông tin" : `${attempt.score}%`}</p>{attempt.passed === null && <p>Chưa xác định trạng thái đạt</p>}</>}
       {!['GRADED', 'GRADING_FAILED'].includes(attempt.status) && <p>Lần làm bài này chưa có kết quả cuối cùng.</p>}
-      {canRetry && <Link className="learner-link-action learner-link-action--secondary assessment-result-summary__primary" to={`/assessments/${encodeURIComponent(attempt.assessment_id)}`}>Thử lại</Link>}
-      {isPassed && <Link className="learner-link-action learner-link-action--secondary" to={`/assessments/${encodeURIComponent(attempt.assessment_id)}`}>Làm lại để ôn tập</Link>}
+      {canRetry && (onRetry ? <Button onClick={onRetry}>Thử lại</Button> : <Link className="learner-link-action learner-link-action--secondary assessment-result-summary__primary" to={`/assessments/${encodeURIComponent(attempt.assessment_id)}`}>Thử lại</Link>)}
+      {isPassed && (onRetry ? <Button onClick={onRetry}>Làm lại để ôn tập</Button> : <Link className="learner-link-action learner-link-action--secondary" to={`/assessments/${encodeURIComponent(attempt.assessment_id)}`}>Làm lại để ôn tập</Link>)}
       {isPassed && continuePath && <Link className="learner-link-action assessment-result-summary__primary" to={continuePath}>Tiếp tục học</Link>}
       {isPassed && !continuePath && !dashboardQuery.isError && <p>Chưa có nội dung học tiếp theo.</p>}
     </Surface>

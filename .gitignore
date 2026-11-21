@@ -52,6 +52,7 @@
 
 # Local textbook originals are not required to build or run the application.
 /docs/HSK*.pdf
+/docs/HSK*.docx
 
 # Local runtime data: uploaded source files, parsed/transformed artifacts,
 # embeddings, caches, and test-generated evaluation storage.

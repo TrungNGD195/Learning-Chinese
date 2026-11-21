@@ -1,0 +1,1844 @@
+{
+  "key": "hsk2-lesson-05-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 2,
+    "lesson_number": 5,
+    "title": "她打羽毛球打得很厉害 · Thể thao và đánh giá",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "运动",
+      "pinyin": "yùndòng",
+      "vietnamese_meaning": "thể thao, vận động",
+      "part_of_speech": "danh từ/động từ",
+      "example": "我们一起运动吧。\nwǒ men yì qǐ yùn dòng ba 。\nChúng ta cùng thể thao, vận động nhé.",
+      "order_index": 1,
+      "note": null,
+      "source_key": "2:5:运动"
+    },
+    {
+      "hanzi": "当然",
+      "pinyin": "dāng rán",
+      "vietnamese_meaning": "đương nhiên, tất nhiên",
+      "part_of_speech": "phó từ",
+      "example": "我当然想试一试。\nwǒ dāng rán xiǎng shì yī shì 。\nTất nhiên tôi muốn thử một chút.",
+      "order_index": 2,
+      "note": null,
+      "source_key": "2:5:当然"
+    },
+    {
+      "hanzi": "打",
+      "pinyin": "dǎ",
+      "vietnamese_meaning": "đánh, chơi (một số môn thể thao)",
+      "part_of_speech": "động từ",
+      "example": "我每天打羽毛球。\nwǒ měi tiān dǎ yǔ máo qiú 。\nMỗi ngày tôi chơi cầu lông.",
+      "order_index": 3,
+      "note": null,
+      "source_key": "2:5:打"
+    },
+    {
+      "hanzi": "羽毛球",
+      "pinyin": "yǔmáoqiú",
+      "vietnamese_meaning": "cầu lông",
+      "part_of_speech": "danh từ",
+      "example": "我喜欢打羽毛球。\nwǒ xǐ huān dǎ yǔ máo qiú 。\nTôi thích chơi cầu lông.",
+      "order_index": 4,
+      "note": null,
+      "source_key": "2:5:羽毛球"
+    },
+    {
+      "hanzi": "试",
+      "pinyin": "shì",
+      "vietnamese_meaning": "thử",
+      "part_of_speech": "động từ",
+      "example": "我当然想试一试。\nwǒ dāng rán xiǎng shì yī shì 。\nTất nhiên tôi muốn thử một chút.",
+      "order_index": 5,
+      "note": null,
+      "source_key": "2:5:试"
+    },
+    {
+      "hanzi": "散步",
+      "pinyin": "sànbù",
+      "vietnamese_meaning": "đi bộ",
+      "part_of_speech": "động từ",
+      "example": "我们一起散步吧。\nwǒ men yì qǐ sàn bù ba 。\nChúng ta cùng đi bộ nhé.",
+      "order_index": 6,
+      "note": null,
+      "source_key": "2:5:散步"
+    },
+    {
+      "hanzi": "跑步",
+      "pinyin": "pǎo bù",
+      "vietnamese_meaning": "chạy bộ",
+      "part_of_speech": "động từ",
+      "example": "我们一起跑步吧。\nwǒ men yì qǐ pǎo bù ba 。\nChúng ta cùng chạy bộ nhé.",
+      "order_index": 7,
+      "note": null,
+      "source_key": "2:5:跑步"
+    },
+    {
+      "hanzi": "太极拳",
+      "pinyin": "tàijíquán",
+      "vietnamese_meaning": "thái cực quyền",
+      "part_of_speech": "danh từ",
+      "example": "我爷爷每天打太极拳。\nwǒ yé yé měi tiān dǎ tài jí quán 。\nMỗi ngày ông nội tôi tập thái cực quyền.",
+      "order_index": 8,
+      "note": null,
+      "source_key": "2:5:太极拳"
+    },
+    {
+      "hanzi": "游泳",
+      "pinyin": "yóuyǒng",
+      "vietnamese_meaning": "bơi lội",
+      "part_of_speech": "động từ",
+      "example": "我们一起游泳吧。\nwǒ men yì qǐ yóu yǒng ba 。\nChúng ta cùng bơi lội nhé.",
+      "order_index": 9,
+      "note": null,
+      "source_key": "2:5:游泳"
+    },
+    {
+      "hanzi": "虽然",
+      "pinyin": "suī rán",
+      "vietnamese_meaning": "mặc dù, tuy",
+      "part_of_speech": "liên từ",
+      "example": "虽然很累，但是很高兴。\nsuī rán hěn lèi ， dàn shì hěn gāo xìng 。\nTuy mệt nhưng rất vui.",
+      "order_index": 10,
+      "note": null,
+      "source_key": "2:5:虽然"
+    },
+    {
+      "hanzi": "更",
+      "pinyin": "gèng",
+      "vietnamese_meaning": "càng, hơn",
+      "part_of_speech": "phó từ",
+      "example": "我觉得这个更好。\nwǒ jué de zhè ge gèng hǎo 。\nTôi thấy cái này tốt hơn.",
+      "order_index": 11,
+      "note": null,
+      "source_key": "2:5:更"
+    },
+    {
+      "hanzi": "厉害",
+      "pinyin": "lìhai",
+      "vietnamese_meaning": "lợi hại, giỏi",
+      "part_of_speech": "tính từ",
+      "example": "她打羽毛球很厉害。\ntā dǎ yǔ máo qiú hěn lì hài 。\nCô ấy chơi cầu lông rất giỏi.",
+      "order_index": 12,
+      "note": null,
+      "source_key": "2:5:厉害"
+    },
+    {
+      "hanzi": "运动会",
+      "pinyin": "yùndònghuì",
+      "vietnamese_meaning": "hội thao",
+      "part_of_speech": "danh từ",
+      "example": "李文,下个星期学校有运动会,你参加比赛吗?\nlǐ wén , xià gè xīng qī xué xiào yǒu yùn dòng huì , nǐ cān jiā bǐ sài ma ?\nLý Văn, tuần sau trường mình có hội thao, bạn có tham gia thi đấu không?",
+      "order_index": 13,
+      "note": null,
+      "source_key": "2:5:运动会"
+    },
+    {
+      "hanzi": "比赛",
+      "pinyin": "bǐsài",
+      "vietnamese_meaning": "trận đấu, thi đấu",
+      "part_of_speech": "danh từ/động từ",
+      "example": "我报名参加比赛了。\nwǒ bào míng cān jiā bǐ sài le 。\nTôi đã đăng ký tham gia thi đấu.",
+      "order_index": 14,
+      "note": null,
+      "source_key": "2:5:比赛"
+    },
+    {
+      "hanzi": "报名",
+      "pinyin": "bào míng",
+      "vietnamese_meaning": "đăng ký (tham gia)",
+      "part_of_speech": "động từ",
+      "example": "我报名参加比赛了。\nwǒ bào míng cān jiā bǐ sài le 。\nTôi đã đăng ký tham gia thi đấu.",
+      "order_index": 15,
+      "note": null,
+      "source_key": "2:5:报名"
+    },
+    {
+      "hanzi": "棒",
+      "pinyin": "bàng",
+      "vietnamese_meaning": "giỏi, tuyệt vời",
+      "part_of_speech": "tính từ",
+      "example": "你真棒!你觉得怎么样?\nnǐ zhēn bàng ! nǐ jué de zěn me yàng ?\nBạn giỏi thật đấy! Bạn cảm thấy thế nào?",
+      "order_index": 16,
+      "note": null,
+      "source_key": "2:5:棒"
+    },
+    {
+      "hanzi": "刚",
+      "pinyin": "gāng",
+      "vietnamese_meaning": "vừa, vừa mới",
+      "part_of_speech": "phó từ",
+      "example": "比赛刚开始，我们一起加油！\nbǐ sài gāng kāi shǐ ， wǒ men yì qǐ jiā yóu ！\nTrận đấu vừa bắt đầu, chúng ta cùng cổ vũ!",
+      "order_index": 17,
+      "note": null,
+      "source_key": "2:5:刚"
+    },
+    {
+      "hanzi": "开始",
+      "pinyin": "kāi shǐ",
+      "vietnamese_meaning": "bắt đầu",
+      "part_of_speech": "động từ",
+      "example": "比赛刚开始，我们一起加油！\nbǐ sài gāng kāi shǐ ， wǒ men yì qǐ jiā yóu ！\nTrận đấu vừa bắt đầu, chúng ta cùng cổ vũ!",
+      "order_index": 18,
+      "note": null,
+      "source_key": "2:5:开始"
+    },
+    {
+      "hanzi": "加油",
+      "pinyin": "jiāyóu",
+      "vietnamese_meaning": "cố lên",
+      "part_of_speech": "động từ",
+      "example": "比赛刚开始，我们一起加油！\nbǐ sài gāng kāi shǐ ， wǒ men yì qǐ jiā yóu ！\nTrận đấu vừa bắt đầu, chúng ta cùng cổ vũ!",
+      "order_index": 19,
+      "note": null,
+      "source_key": "2:5:加油"
+    },
+    {
+      "hanzi": "操场",
+      "pinyin": "cāochǎng",
+      "vietnamese_meaning": "sân tập",
+      "part_of_speech": "danh từ",
+      "example": "我在操场跑步。\nwǒ zài cāo chǎng pǎo bù 。\nTôi chạy bộ ở sân tập.",
+      "order_index": 20,
+      "note": null,
+      "source_key": "2:5:操场"
+    },
+    {
+      "hanzi": "锻炼",
+      "pinyin": "duànliàn",
+      "vietnamese_meaning": "luyện tập",
+      "part_of_speech": "động từ",
+      "example": "我们一起锻炼吧。\nwǒ men yì qǐ duàn liàn ba 。\nChúng ta cùng luyện tập nhé.",
+      "order_index": 21,
+      "note": null,
+      "source_key": "2:5:锻炼"
+    },
+    {
+      "hanzi": "努力",
+      "pinyin": "nǔ lì",
+      "vietnamese_meaning": "nỗ lực, cố gắng",
+      "part_of_speech": "tính từ, động từ",
+      "example": "他很努力。\ntā hěn nǔ lì 。\nAnh ấy rất cố gắng.",
+      "order_index": 22,
+      "note": null,
+      "source_key": "2:5:努力"
+    },
+    {
+      "hanzi": "放心",
+      "pinyin": "fàng xīn",
+      "vietnamese_meaning": "yên tâm",
+      "part_of_speech": "động từ",
+      "example": "你放心吧。\nnǐ fàng xīn ba 。\nBạn cứ yên tâm nhé.",
+      "order_index": 23,
+      "note": null,
+      "source_key": "2:5:放心"
+    },
+    {
+      "hanzi": "对手",
+      "pinyin": "duìshǒu",
+      "vietnamese_meaning": "đối thủ",
+      "part_of_speech": "danh từ",
+      "example": "他是我的对手。\ntā shì wǒ de duì shǒu 。\nAnh ấy là đối thủ của tôi.",
+      "order_index": 24,
+      "note": null,
+      "source_key": "2:5:对手"
+    },
+    {
+      "hanzi": "肯定",
+      "pinyin": "kěndìng",
+      "vietnamese_meaning": "nhất định, chắc chắn",
+      "part_of_speech": "phó từ",
+      "example": "他肯定会来。\ntā kěn dìng huì lái 。\nChắc chắn anh ấy sẽ đến.",
+      "order_index": 25,
+      "note": null,
+      "source_key": "2:5:肯定"
+    },
+    {
+      "hanzi": "还是",
+      "pinyin": "háishi",
+      "vietnamese_meaning": "vẫn (sau khi đã cân nhắc hoặc có sự thay đổi)",
+      "part_of_speech": "phó từ",
+      "example": "虽然很忙，他还是来了。\nsuī rán hěn máng ， tā hái shì lái le 。\nTuy bận nhưng anh ấy vẫn đến.",
+      "order_index": 26,
+      "note": null,
+      "source_key": "2:5:还是"
+    },
+    {
+      "hanzi": "为",
+      "pinyin": "wèi",
+      "vietnamese_meaning": "vì, cho (đối tượng được cổ vũ, phục vụ)",
+      "part_of_speech": "giới từ",
+      "example": "我们为他加油。\nwǒ men wèi tā jiā yóu 。\nChúng tôi cổ vũ cho anh ấy.",
+      "order_index": 27,
+      "note": null,
+      "source_key": "2:5:为"
+    }
+  ],
+  "grammar": [
+    {
+      "name": "Bổ ngữ trạng thái 得",
+      "structure": "Chủ ngữ + động từ + 得 + cụm tính từ",
+      "explanation": "Đánh giá mức độ, cách thức hoặc kết quả biểu hiện của hành động.",
+      "usage": "Khi động từ có tân ngữ có thể lặp lại động từ trước 得; phân biệt 得 với 的 và 地.",
+      "example": "她打羽毛球打得很好。\ntā dǎ yǔ máo qiú dǎ dé hěn hǎo 。\nCô ấy chơi cầu lông rất giỏi.",
+      "note": "Khi động từ có tân ngữ có thể lặp lại động từ trước 得; phân biệt 得 với 的 và 地.",
+      "order_index": 1
+    },
+    {
+      "name": "Tuy ... nhưng ...",
+      "structure": "虽然 + mệnh đề 1，但是 + mệnh đề 2",
+      "explanation": "Nêu quan hệ chuyển ngoặt giữa hai vế.",
+      "usage": "Không dùng 所以 nối hai vế của quan hệ tương phản này.",
+      "example": "虽然很累，但是我很高兴。\nsuī rán hěn lèi ， dàn shì wǒ hěn gāo xìng 。\nTuy mệt nhưng tôi rất vui.",
+      "note": "Không dùng 所以 nối hai vế của quan hệ tương phản này.",
+      "order_index": 2
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Sở thích thể thao",
+      "content": "李文:小丽,你喜欢运动吗?\n小丽:我当然喜欢啊,我每天都跟安妮打羽毛球。你呢?\n李文:我不太喜欢运动,我觉得运动太累了。\n小丽:运动对身体很好。你可以先试试散步、打太极拳、游泳。\n李文:你打羽毛球打得怎么样?\n小丽:虽然我打得还可以,但是安妮打得更好。\n李文:你们真厉害,我也想学打羽毛球了。",
+      "pinyin": "lǐ wén : xiǎo lì , nǐ xǐ huān yùn dòng ma ?\nxiǎo lì : wǒ dāng rán xǐ huān a , wǒ měi tiān dōu gēn ān nī dǎ yǔ máo qiú 。 nǐ ne ?\nlǐ wén : wǒ bù tài xǐ huān yùn dòng , wǒ jué de yùn dòng tài lèi le 。\nxiǎo lì : yùn dòng duì shēn tǐ hěn hǎo 。 nǐ kě yǐ xiān shì shì sàn bù 、 dǎ tài jí quán 、 yóu yǒng 。\nlǐ wén : nǐ dǎ yǔ máo qiú dǎ de zěn me yàng ?\nxiǎo lì : suī rán wǒ dǎ de hái kě yǐ , dàn shì ān nī dǎ de gèng hǎo 。\nlǐ wén : nǐ men zhēn lì hài , wǒ yě xiǎng xué dǎ yǔ máo qiú le 。",
+      "vietnamese_translation": "Lý Văn: Tiểu Lệ, bạn có thích thể thao không?\nTiểu Lệ: Mình đương nhiên là thích rồi, ngày nào mình cũng đánh cầu lông cùng với Annie. Còn bạn thì sao?\nLý Văn: Mình không thích thể thao lắm, mình cảm thấy thể thao mệt quá.\nTiểu Lệ: Thể thao rất tốt cho cơ thể. Bạn có thể thử đi bộ, tập thái cực quyền hoặc bơi lội trước xem sao.\nLý Văn: Bạn đánh cầu lông thế nào?\nTiểu Lệ: Tuy mình đánh cũng được, nhưng Annie còn đánh tốt hơn.\nLý Văn: Các bạn thật là giỏi quá, mình cũng muốn học đánh cầu lông rồi đấy.",
+      "source_reference": "Giáo trình HSK2 3.0 Hanu, bài 5, PDF 50."
+    },
+    {
+      "order_index": 2,
+      "title": "Đăng ký hội thao",
+      "content": "小丽:李文,下个星期学校有运动会,你参加比赛吗?\n李文:参加。我报了跑步比赛。我现在每天都去运动场跑三十分钟。\n小丽:你真棒!你觉得怎么样?\n李文:刚开始我觉得很累,累得不想吃饭。\n小丽:那现在呢?\n李文:现在我觉得身体很好,好得可以多跑十五分钟。对了!你参加吗?\n小丽:我当然参加了,我报了羽毛球比赛。\n李文:好,我们一起加油!",
+      "pinyin": "xiǎo lì : lǐ wén , xià gè xīng qī xué xiào yǒu yùn dòng huì , nǐ cān jiā bǐ sài ma ?\nlǐ wén : cān jiā 。 wǒ bào le pǎo bù bǐ sài 。 wǒ xiàn zài měi tiān dōu qù yùn dòng chǎng pǎo sān shí fēn zhōng 。\nxiǎo lì : nǐ zhēn bàng ! nǐ jué de zěn me yàng ?\nlǐ wén : gāng kāi shǐ wǒ jué de hěn lèi , lèi de bù xiǎng chī fàn 。\nxiǎo lì : nà xiàn zài ne ?\nlǐ wén : xiàn zài wǒ jué de shēn tǐ hěn hǎo , hǎo de kě yǐ duō pǎo shí wǔ fēn zhōng 。 duì le ! nǐ cān jiā ma ?\nxiǎo lì : wǒ dāng rán cān jiā le , wǒ bào le yǔ máo qiú bǐ sài 。\nlǐ wén : hǎo , wǒ men yì qǐ jiā yóu !",
+      "vietnamese_translation": "Tiểu Lệ: Lý Văn, tuần sau trường mình có hội thao, bạn có tham gia thi đấu không?\nLý Văn: Có chứ. Mình đã đăng ký thi chạy bộ. Bây giờ ngày nào mình cũng ra sân vận động chạy 30 phút.\nTiểu Lệ: Bạn giỏi thật đấy! Bạn cảm thấy thế nào?\nLý Văn: Lúc đầu cảm thấy rất mệt, mệt đến mức không muốn ăn cơm.\nTiểu Lệ: Thế còn bây giờ?\nLý Văn: Bây giờ mình thấy cơ thể rất khỏe, khỏe đến mức có thể chạy thêm 15 phút nữa. Đúng rồi! Bạn có\nthi không?\nTiểu Lệ: Mình đương nhiên là tham gia rồi, mình đăng ký thi cầu lông.\nLý Văn: Được, chúng ta cùng cố gắng nhé!",
+      "source_reference": "Giáo trình HSK2 3.0 Hanu, bài 5, PDF 53, 54."
+    },
+    {
+      "order_index": 3,
+      "title": "Cổ vũ thi đấu",
+      "content": "同学们:李文!李文!加油!加油!\n老师:你们看,她跑得太快了,现在李文是第一名。\n同学们:她每天都去操场锻炼,她当然跑得很快。\n老师:李文很努力。一会儿我们也给小丽加油,她参加羽毛球比赛。\n同学们:老师,您放心!小丽厉害得没有对手。她肯定能拿第一。\n老师:虽然她打得很厉害,但是我们还是要为她加油。",
+      "pinyin": "tóng xué men : lǐ wén ! lǐ wén ! jiā yóu ! jiā yóu !\nlǎo shī : nǐ men kàn , tā pǎo de tài kuài le , xiàn zài lǐ wén shì dì yì míng 。\ntóng xué men : tā měi tiān dōu qù cāo chǎng duàn liàn , tā dāng rán pǎo de hěn kuài 。\nlǎo shī : lǐ wén hěn nǔ lì 。 yī huì er wǒ men yě gěi xiǎo lì jiā yóu , tā cān jiā yǔ máo qiú bǐ sài 。\ntóng xué men : lǎo shī , nín fàng xīn ! xiǎo lì lì hài de méi yǒu duì shǒu 。 tā kěn dìng néng ná dì yī 。\nlǎo shī : suī rán tā dǎ de hěn lì hài , dàn shì wǒ men hái shì yào wèi tā jiā yóu 。",
+      "vietnamese_translation": "Các bạn: Lý Văn! Lý Văn! Cố lên! Cố lên!\nGiáo viên: Các em nhìn kìa, em ấy chạy nhanh quá, hiện giờ Lý Văn đang đứng thứ nhất.\nCác bạn: Ngày nào bạn ấy cũng ra sân tập để tập luyện, đương nhiên là bạn ấy chạy rất nhanh rồi ạ.\nGiáo viên: Lý Văn rất nỗ lực. Một lát nữa chúng ta cũng sẽ cổ vũ cho Tiểu Lệ nhé, em ấy tham gia thi đấu\ncầu lông.\nCác bạn: Cô yên tâm đi ạ! Tiểu Lệ giỏi đến mức không có đối thủ luôn. Bạn ấy chắc chắn sẽ giành giải\nnhất.\nGiáo viên: Mặc dù em ấy đánh rất giỏi, nhưng chúng ta vẫn nên cổ vũ cho em ấy.",
+      "source_reference": "Giáo trình HSK2 3.0 Hanu, bài 5, PDF 56."
+    },
+    {
+      "order_index": 4,
+      "title": "Lợi ích của vận động",
+      "content": "运动对身体很好。虽然平时学习和工作很忙,但是我们应该每天运动一个小时。第一,运动能让你少生病。第二,运动能让人心情愉快,压力大时去跑跑步,你会觉得很轻松。第三,经常运动的人通常睡得很好,身体也变得更健康。虽然运动后会觉得有点儿累,但是你会发现生活更有意思。所以,大家一起运动吧,加油!",
+      "pinyin": "yùn dòng duì shēn tǐ hěn hǎo 。 suī rán píng shí xué xí hé gōng zuò hěn máng , dàn shì wǒ men yīng gāi měi tiān yùn dòng yí gè xiǎo shí 。 dì yī , yùn dòng néng ràng nǐ shǎo shēng bìng 。 dì èr , yùn dòng néng ràng rén xīn qíng yú kuài , yā lì dà shí qù pǎo pǎo bù , nǐ huì jué de hěn qīng sōng 。 dì sān , jīng cháng yùn dòng de rén tōng cháng shuì de hěn hǎo , shēn tǐ yě biàn de gèng jiàn kāng 。 suī rán yùn dòng hòu huì jué de yǒu diǎn ér lèi , dàn shì nǐ huì fā xiàn shēng huó gèng yǒu yì si 。 suǒ yǐ , dà jiā yì qǐ yùn dòng ba , jiā yóu !",
+      "vietnamese_translation": "Vận động rất tốt cho cơ thể. Mặc dù ngày thường việc học tập và công việc rất bận rộn, nhưng chúng ta nên vận động một tiếng mỗi ngày. Thứ nhất, vận động có thể giúp bạn ít bị ốm. Thứ hai, vận động có thể khiến tâm trạng con người vui vẻ, khi áp lực lớn mà đi chạy bộ, bạn sẽ cảm thấy rất nhẹ nhõm. Thứ ba, những người thường xuyên vận động thông thường ngủ rất ngon, cơ thể cũng trở nên khỏe mạnh hơn. Mặc dù sau khi vận động sẽ cảm thấy hơi mệt một chút, nhưng bạn sẽ nhận ra cuộc sống thú vị hơn nhiều. Vì vậy, mọi người hãy cùng nhau vận động nào, cố lên!",
+      "source_reference": "Giáo trình HSK2 3.0 Hanu, bài 5, PDF 57."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 2 · Bài 5 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp; dùng kiến thức của bài này và các bài trước, không dùng bài sau. Đạt từ 80%; được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "review_status": "DRAFT_REQUIRES_EDITOR_REVIEW",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 1).",
+      "options": [
+        {
+          "option_text": "muộn",
+          "is_correct": false
+        },
+        {
+          "option_text": "trường học",
+          "is_correct": false
+        },
+        {
+          "option_text": "cơ thể; sức khỏe",
+          "is_correct": false
+        },
+        {
+          "option_text": "ngay, sắp",
+          "is_correct": true
+        }
+      ],
+      "rubric": "马上 (mǎshàng) nghĩa là ngay, sắp. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true,
+          "audio_text": "马上"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 3
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “放心” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "đón; nhận (điện thoại, vật được đưa)",
+          "is_correct": false
+        },
+        {
+          "option_text": "TV",
+          "is_correct": false
+        },
+        {
+          "option_text": "yên tâm",
+          "is_correct": true
+        },
+        {
+          "option_text": "họ (nữ)",
+          "is_correct": false
+        }
+      ],
+      "rubric": "放心 (fàng xīn) nghĩa là yên tâm. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 5
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “liáo tiān ér” và nghĩa “trò chuyện, tán gẫu”.",
+      "options": [
+        {
+          "option_text": "聊天儿",
+          "is_correct": true
+        },
+        {
+          "option_text": "学习",
+          "is_correct": false
+        },
+        {
+          "option_text": "女朋友",
+          "is_correct": false
+        },
+        {
+          "option_text": "汽车",
+          "is_correct": false
+        }
+      ],
+      "rubric": "聊天儿 (liáo tiān ér) nghĩa là trò chuyện, tán gẫu. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 3
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 4).",
+      "options": [
+        {
+          "option_text": "ôi trời ơi (biểu thị sự ngạc nhiên)",
+          "is_correct": true
+        },
+        {
+          "option_text": "ô tô",
+          "is_correct": false
+        },
+        {
+          "option_text": "đăng ký (tham gia)",
+          "is_correct": false
+        },
+        {
+          "option_text": "xe máy",
+          "is_correct": false
+        }
+      ],
+      "rubric": "哎 (āi) nghĩa là ôi trời ơi (biểu thị sự ngạc nhiên). ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true,
+          "audio_text": "哎"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 3
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “棒” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "giỏi, tuyệt vời",
+          "is_correct": true
+        },
+        {
+          "option_text": "cuộc họp, buổi hội, sự kiện",
+          "is_correct": false
+        },
+        {
+          "option_text": "quà, món quà",
+          "is_correct": false
+        },
+        {
+          "option_text": "có thể; được phép",
+          "is_correct": false
+        }
+      ],
+      "rubric": "棒 (bàng) nghĩa là giỏi, tuyệt vời. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 5
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “cāochǎng” và nghĩa “sân tập”.",
+      "options": [
+        {
+          "option_text": "医生",
+          "is_correct": false
+        },
+        {
+          "option_text": "操场",
+          "is_correct": true
+        },
+        {
+          "option_text": "这儿",
+          "is_correct": false
+        },
+        {
+          "option_text": "次",
+          "is_correct": false
+        }
+      ],
+      "rubric": "操场 (cāochǎng) nghĩa là sân tập. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 5
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 7).",
+      "options": [
+        {
+          "option_text": "đánh, chơi (một số môn thể thao)",
+          "is_correct": true
+        },
+        {
+          "option_text": "lên, đi lên",
+          "is_correct": false
+        },
+        {
+          "option_text": "năm",
+          "is_correct": false
+        },
+        {
+          "option_text": "lại, thêm; rồi, tiếp theo (hành động chưa thực hiện)",
+          "is_correct": false
+        }
+      ],
+      "rubric": "打 (dǎ) nghĩa là đánh, chơi (một số môn thể thao). ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "打"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 5
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “画笔” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "trà",
+          "is_correct": false
+        },
+        {
+          "option_text": "viết",
+          "is_correct": false
+        },
+        {
+          "option_text": "bút vẽ",
+          "is_correct": true
+        },
+        {
+          "option_text": "em trai",
+          "is_correct": false
+        }
+      ],
+      "rubric": "画笔 (huàbǐ) nghĩa là bút vẽ. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 4
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “háishi” và nghĩa “vẫn (sau khi đã cân nhắc hoặc có sự thay đổi)”.",
+      "options": [
+        {
+          "option_text": "还是",
+          "is_correct": true
+        },
+        {
+          "option_text": "周末",
+          "is_correct": false
+        },
+        {
+          "option_text": "上",
+          "is_correct": false
+        },
+        {
+          "option_text": "到",
+          "is_correct": false
+        }
+      ],
+      "rubric": "还是 (háishi) nghĩa là vẫn (sau khi đã cân nhắc hoặc có sự thay đổi). ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 5
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "muốn",
+          "is_correct": false
+        },
+        {
+          "option_text": "nơi, chỗ, địa điểm",
+          "is_correct": false
+        },
+        {
+          "option_text": "bắt đầu",
+          "is_correct": true
+        },
+        {
+          "option_text": "đây, này",
+          "is_correct": false
+        }
+      ],
+      "rubric": "开始 (kāi shǐ) nghĩa là bắt đầu. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "开始"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 5
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “出生” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "sinh ra, chào đời",
+          "is_correct": true
+        },
+        {
+          "option_text": "âm nhạc",
+          "is_correct": false
+        },
+        {
+          "option_text": "nào",
+          "is_correct": false
+        },
+        {
+          "option_text": "cùng nhau",
+          "is_correct": false
+        }
+      ],
+      "rubric": "出生 (chū shēng) nghĩa là sinh ra, chào đời. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 4
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “yùndònghuì” và nghĩa “hội thao”.",
+      "options": [
+        {
+          "option_text": "运动会",
+          "is_correct": true
+        },
+        {
+          "option_text": "介绍",
+          "is_correct": false
+        },
+        {
+          "option_text": "四",
+          "is_correct": false
+        },
+        {
+          "option_text": "口",
+          "is_correct": false
+        }
+      ],
+      "rubric": "运动会 (yùndònghuì) nghĩa là hội thao. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 5
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “đương nhiên, tất nhiên” (gợi ý pinyin: dāng rán).",
+      "reference_answer": "当然",
+      "rubric": "Đáp án: 当然 (dāng rán). ",
+      "config": {
+        "accepted_answers": [
+          "当然"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 5
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “đi bộ” (gợi ý pinyin: sànbù).",
+      "reference_answer": "散步",
+      "rubric": "Đáp án: 散步 (sànbù). ",
+      "config": {
+        "accepted_answers": [
+          "散步"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 5
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “trận đấu, thi đấu” (gợi ý pinyin: bǐsài).",
+      "reference_answer": "比赛",
+      "rubric": "Đáp án: 比赛 (bǐsài). ",
+      "config": {
+        "accepted_answers": [
+          "比赛"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 5
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “bơi lội” (gợi ý pinyin: yóuyǒng).",
+      "reference_answer": "游泳",
+      "rubric": "Đáp án: 游泳 (yóuyǒng). ",
+      "config": {
+        "accepted_answers": [
+          "游泳"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 5
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 1).",
+      "rubric": "晚上: buổi tối; 那么: vậy thì, thế thì; 那: kia; 那些: những cái kia",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "晚上"
+          },
+          {
+            "id": "l1",
+            "text": "那么"
+          },
+          {
+            "id": "l2",
+            "text": "那"
+          },
+          {
+            "id": "l3",
+            "text": "那些"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r1",
+            "text": "vậy thì, thế thì"
+          },
+          {
+            "id": "r3",
+            "text": "những cái kia"
+          },
+          {
+            "id": "r2",
+            "text": "kia"
+          },
+          {
+            "id": "r0",
+            "text": "buổi tối"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 7
+        },
+        {
+          "hsk": 2,
+          "lesson": 1
+        },
+        {
+          "hsk": 1,
+          "lesson": 3
+        },
+        {
+          "hsk": 1,
+          "lesson": 10
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 2).",
+      "rubric": "唱歌: hát; 韩国: Hàn Quốc; 你好: xin chào; 汉字: chữ Hán",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "唱歌"
+          },
+          {
+            "id": "l1",
+            "text": "韩国"
+          },
+          {
+            "id": "l2",
+            "text": "你好"
+          },
+          {
+            "id": "l3",
+            "text": "汉字"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r0",
+            "text": "hát"
+          },
+          {
+            "id": "r3",
+            "text": "chữ Hán"
+          },
+          {
+            "id": "r1",
+            "text": "Hàn Quốc"
+          },
+          {
+            "id": "r2",
+            "text": "xin chào"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        },
+        {
+          "hsk": 1,
+          "lesson": 3
+        },
+        {
+          "hsk": 1,
+          "lesson": 1
+        },
+        {
+          "hsk": 1,
+          "lesson": 13
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Bổ ngữ trạng thái 得”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Đánh giá mức độ, cách thức hoặc kết quả biểu hiện của hành động.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ ngữ + động từ + 得 + cụm tính từ. Đánh giá mức độ, cách thức hoặc kết quả biểu hiện của hành động. Khi động từ có tân ngữ có thể lặp lại động từ trước 得; phân biệt 得 với 的 và 地.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 5
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Tuy ... nhưng ...”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nêu quan hệ chuyển ngoặt giữa hai vế.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "虽然 + mệnh đề 1，但是 + mệnh đề 2. Nêu quan hệ chuyển ngoặt giữa hai vế. Không dùng 所以 nối hai vế của quan hệ tương phản này.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 5
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Bổ ngữ trạng thái 得” (mục 3): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Khi động từ có tân ngữ có thể lặp lại động từ trước 得; phân biệt 得 với 的 và 地.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Chủ ngữ + động từ + 得 + cụm tính từ. Đánh giá mức độ, cách thức hoặc kết quả biểu hiện của hành động. Khi động từ có tân ngữ có thể lặp lại động từ trước 得; phân biệt 得 với 的 và 地.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 5
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Tuy ... nhưng ...” (mục 4): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không dùng 所以 nối hai vế của quan hệ tương phản này.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "虽然 + mệnh đề 1，但是 + mệnh đề 2. Nêu quan hệ chuyển ngoặt giữa hai vế. Không dùng 所以 nối hai vế của quan hệ tương phản này.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 5
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Bổ ngữ trạng thái 得” (mục 5): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Khi động từ có tân ngữ có thể lặp lại động từ trước 得; phân biệt 得 với 的 và 地.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ ngữ + động từ + 得 + cụm tính từ. Đánh giá mức độ, cách thức hoặc kết quả biểu hiện của hành động. Khi động từ có tân ngữ có thể lặp lại động từ trước 得; phân biệt 得 với 的 và 地.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 5
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Tuy ... nhưng ...” (mục 6): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không dùng 所以 nối hai vế của quan hệ tương phản này.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "虽然 + mệnh đề 1，但是 + mệnh đề 2. Nêu quan hệ chuyển ngoặt giữa hai vế. Không dùng 所以 nối hai vế của quan hệ tương phản này.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 5
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 1).",
+      "reference_answer": "她打羽毛球打得很好。",
+      "rubric": "Câu đúng: 她打羽毛球打得很好。 Khi động từ có tân ngữ có thể lặp lại động từ trước 得; phân biệt 得 với 的 và 地.",
+      "config": {
+        "items": [
+          {
+            "id": "w7",
+            "text": "。"
+          },
+          {
+            "id": "w2",
+            "text": "羽毛球"
+          },
+          {
+            "id": "w4",
+            "text": "得"
+          },
+          {
+            "id": "w0",
+            "text": "她"
+          },
+          {
+            "id": "w5",
+            "text": "很"
+          },
+          {
+            "id": "w6",
+            "text": "好"
+          },
+          {
+            "id": "w1",
+            "text": "打"
+          },
+          {
+            "id": "w3",
+            "text": "打"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 5
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 2).",
+      "reference_answer": "虽然很累，但是我很高兴。",
+      "rubric": "Câu đúng: 虽然很累，但是我很高兴。 Không dùng 所以 nối hai vế của quan hệ tương phản này.",
+      "config": {
+        "items": [
+          {
+            "id": "w3",
+            "text": "，"
+          },
+          {
+            "id": "w7",
+            "text": "高兴"
+          },
+          {
+            "id": "w6",
+            "text": "很"
+          },
+          {
+            "id": "w1",
+            "text": "很"
+          },
+          {
+            "id": "w5",
+            "text": "我"
+          },
+          {
+            "id": "w4",
+            "text": "但是"
+          },
+          {
+            "id": "w8",
+            "text": "。"
+          },
+          {
+            "id": "w0",
+            "text": "虽然"
+          },
+          {
+            "id": "w2",
+            "text": "累"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 5
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 3).",
+      "reference_answer": "小丽,你喜欢运动吗?",
+      "rubric": "Câu đúng: 小丽,你喜欢运动吗? Khi động từ có tân ngữ có thể lặp lại động từ trước 得; phân biệt 得 với 的 và 地.",
+      "config": {
+        "items": [
+          {
+            "id": "w4",
+            "text": "运动"
+          },
+          {
+            "id": "w1",
+            "text": ","
+          },
+          {
+            "id": "w2",
+            "text": "你"
+          },
+          {
+            "id": "w0",
+            "text": "小丽"
+          },
+          {
+            "id": "w3",
+            "text": "喜欢"
+          },
+          {
+            "id": "w5",
+            "text": "吗"
+          },
+          {
+            "id": "w6",
+            "text": "?"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 5
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 4).",
+      "reference_answer": "我当然喜欢啊,我每天都跟安妮打羽毛球。你呢?",
+      "rubric": "Câu đúng: 我当然喜欢啊,我每天都跟安妮打羽毛球。你呢? Không dùng 所以 nối hai vế của quan hệ tương phản này.",
+      "config": {
+        "items": [
+          {
+            "id": "w2",
+            "text": "喜欢"
+          },
+          {
+            "id": "w4",
+            "text": ","
+          },
+          {
+            "id": "w16",
+            "text": "呢"
+          },
+          {
+            "id": "w1",
+            "text": "当然"
+          },
+          {
+            "id": "w6",
+            "text": "每"
+          },
+          {
+            "id": "w9",
+            "text": "跟"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w5",
+            "text": "我"
+          },
+          {
+            "id": "w14",
+            "text": "。"
+          },
+          {
+            "id": "w13",
+            "text": "羽毛球"
+          },
+          {
+            "id": "w10",
+            "text": "安"
+          },
+          {
+            "id": "w7",
+            "text": "天"
+          },
+          {
+            "id": "w3",
+            "text": "啊"
+          },
+          {
+            "id": "w15",
+            "text": "你"
+          },
+          {
+            "id": "w11",
+            "text": "妮"
+          },
+          {
+            "id": "w17",
+            "text": "?"
+          },
+          {
+            "id": "w8",
+            "text": "都"
+          },
+          {
+            "id": "w12",
+            "text": "打"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8",
+          "w9",
+          "w10",
+          "w11",
+          "w12",
+          "w13",
+          "w14",
+          "w15",
+          "w16",
+          "w17"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 5
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 5).",
+      "reference_answer": "我不太喜欢运动,我觉得运动太累了。",
+      "rubric": "Câu đúng: 我不太喜欢运动,我觉得运动太累了。 Khi động từ có tân ngữ có thể lặp lại động từ trước 得; phân biệt 得 với 的 và 地.",
+      "config": {
+        "items": [
+          {
+            "id": "w2",
+            "text": "喜欢"
+          },
+          {
+            "id": "w3",
+            "text": "运动"
+          },
+          {
+            "id": "w7",
+            "text": "运动"
+          },
+          {
+            "id": "w1",
+            "text": "不太"
+          },
+          {
+            "id": "w6",
+            "text": "觉得"
+          },
+          {
+            "id": "w5",
+            "text": "我"
+          },
+          {
+            "id": "w8",
+            "text": "太"
+          },
+          {
+            "id": "w10",
+            "text": "了"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w11",
+            "text": "。"
+          },
+          {
+            "id": "w4",
+            "text": ","
+          },
+          {
+            "id": "w9",
+            "text": "累"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8",
+          "w9",
+          "w10",
+          "w11"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 5
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 6).",
+      "reference_answer": "运动对身体很好。你可以先试试散步、打太极拳、游泳。",
+      "rubric": "Câu đúng: 运动对身体很好。你可以先试试散步、打太极拳、游泳。 Không dùng 所以 nối hai vế của quan hệ tương phản này.",
+      "config": {
+        "items": [
+          {
+            "id": "w6",
+            "text": "你"
+          },
+          {
+            "id": "w3",
+            "text": "很"
+          },
+          {
+            "id": "w15",
+            "text": "、"
+          },
+          {
+            "id": "w10",
+            "text": "试"
+          },
+          {
+            "id": "w17",
+            "text": "。"
+          },
+          {
+            "id": "w4",
+            "text": "好"
+          },
+          {
+            "id": "w7",
+            "text": "可以"
+          },
+          {
+            "id": "w5",
+            "text": "。"
+          },
+          {
+            "id": "w2",
+            "text": "身体"
+          },
+          {
+            "id": "w13",
+            "text": "打"
+          },
+          {
+            "id": "w1",
+            "text": "对"
+          },
+          {
+            "id": "w8",
+            "text": "先"
+          },
+          {
+            "id": "w14",
+            "text": "太极拳"
+          },
+          {
+            "id": "w11",
+            "text": "散步"
+          },
+          {
+            "id": "w12",
+            "text": "、"
+          },
+          {
+            "id": "w0",
+            "text": "运动"
+          },
+          {
+            "id": "w16",
+            "text": "游泳"
+          },
+          {
+            "id": "w9",
+            "text": "试"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8",
+          "w9",
+          "w10",
+          "w11",
+          "w12",
+          "w13",
+          "w14",
+          "w15",
+          "w16",
+          "w17"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 5
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ],
+  "source_documents": {
+    "vocabulary": "DOCX",
+    "theory": "HSK2 PDF"
+  }
+}

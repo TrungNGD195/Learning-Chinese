@@ -1,0 +1,1809 @@
+{
+  "key": "hsk1-lesson-03-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 1,
+    "lesson_number": 3,
+    "title": "你是哪国人？ · Bạn là người nước nào?",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "请",
+      "pinyin": "qǐng",
+      "vietnamese_meaning": "mời",
+      "part_of_speech": "động từ",
+      "example": "请问，你叫什么名字？\nqǐng wèn ， nǐ jiào shén me míng zì ？\nXin hỏi, bạn tên là gì?",
+      "order_index": 1,
+      "note": null,
+      "source_key": "1:3:请"
+    },
+    {
+      "hanzi": "问",
+      "pinyin": "wèn",
+      "vietnamese_meaning": "hỏi",
+      "part_of_speech": "động từ",
+      "example": "请问，你叫什么名字？\nqǐng wèn ， nǐ jiào shén me míng zì ？\nXin hỏi, bạn tên là gì?",
+      "order_index": 2,
+      "note": null,
+      "source_key": "1:3:问"
+    },
+    {
+      "hanzi": "请问",
+      "pinyin": "qǐngwèn",
+      "vietnamese_meaning": "Xin hỏi",
+      "part_of_speech": "động từ",
+      "example": "请问，你叫什么名字？\nqǐng wèn ， nǐ jiào shén me míng zì ？\nXin hỏi, bạn tên là gì?",
+      "order_index": 3,
+      "note": null,
+      "source_key": "1:3:请问"
+    },
+    {
+      "hanzi": "是",
+      "pinyin": "shì",
+      "vietnamese_meaning": "là",
+      "part_of_speech": "động từ",
+      "example": "你是哪国人？\nnǐ shì nǎ guó rén ？\nBạn là người nước nào?",
+      "order_index": 4,
+      "note": null,
+      "source_key": "1:3:是"
+    },
+    {
+      "hanzi": "哪",
+      "pinyin": "n",
+      "vietnamese_meaning": "nào",
+      "part_of_speech": "đại từ",
+      "example": "你是哪国人？\nnǐ shì nǎ guó rén ？\nBạn là người nước nào?",
+      "order_index": 5,
+      "note": null,
+      "source_key": "1:3:哪"
+    },
+    {
+      "hanzi": "国",
+      "pinyin": "guó",
+      "vietnamese_meaning": "nước",
+      "part_of_speech": "danh từ",
+      "example": "你是哪国人？\nnǐ shì nǎ guó rén ？\nBạn là người nước nào?",
+      "order_index": 6,
+      "note": null,
+      "source_key": "1:3:国"
+    },
+    {
+      "hanzi": "人",
+      "pinyin": "rén",
+      "vietnamese_meaning": "người",
+      "part_of_speech": "danh từ",
+      "example": "他是中国人。\ntā shì zhōng guó rén 。\nAnh ấy là người Trung Quốc.",
+      "order_index": 7,
+      "note": null,
+      "source_key": "1:3:人"
+    },
+    {
+      "hanzi": "中国",
+      "pinyin": "Zhōngguó",
+      "vietnamese_meaning": "Trung Quốc",
+      "part_of_speech": "tên quốc gia",
+      "example": "我想去中国。\nwǒ xiǎng qù zhōng guó 。\nTôi muốn đến Trung Quốc.",
+      "order_index": 8,
+      "note": null,
+      "source_key": "1:3:中国"
+    },
+    {
+      "hanzi": "越南",
+      "pinyin": "Yuènán",
+      "vietnamese_meaning": "Việt Nam",
+      "part_of_speech": "tên quốc gia",
+      "example": "我想去越南。\nwǒ xiǎng qù yuè nán 。\nTôi muốn đến Việt Nam.",
+      "order_index": 9,
+      "note": null,
+      "source_key": "1:3:越南"
+    },
+    {
+      "hanzi": "韩国",
+      "pinyin": "hán guó",
+      "vietnamese_meaning": "Hàn Quốc",
+      "part_of_speech": "danh từ riêng",
+      "example": "我想去韩国。\nwǒ xiǎng qù hán guó 。\nTôi muốn đến Hàn Quốc.",
+      "order_index": 10,
+      "note": null,
+      "source_key": "1:3:韩国"
+    },
+    {
+      "hanzi": "日本",
+      "pinyin": "rì běn",
+      "vietnamese_meaning": "Nhật Bản",
+      "part_of_speech": "danh từ riêng",
+      "example": "我想去日本。\nwǒ xiǎng qù rì běn 。\nTôi muốn đến Nhật Bản.",
+      "order_index": 11,
+      "note": null,
+      "source_key": "1:3:日本"
+    },
+    {
+      "hanzi": "泰国",
+      "pinyin": "Tàiguó",
+      "vietnamese_meaning": "Thái Lan",
+      "part_of_speech": "tên quốc gia",
+      "example": "我想去泰国。\nwǒ xiǎng qù tài guó 。\nTôi muốn đến Thái Lan.",
+      "order_index": 12,
+      "note": null,
+      "source_key": "1:3:泰国"
+    },
+    {
+      "hanzi": "法国",
+      "pinyin": "Fǎguó",
+      "vietnamese_meaning": "Pháp",
+      "part_of_speech": "tên quốc gia",
+      "example": "我想去法国。\nwǒ xiǎng qù fǎ guó 。\nTôi muốn đến Pháp.",
+      "order_index": 13,
+      "note": null,
+      "source_key": "1:3:法国"
+    },
+    {
+      "hanzi": "美国",
+      "pinyin": "měi guó",
+      "vietnamese_meaning": "Hoa Kỳ, Mỹ",
+      "part_of_speech": "danh từ riêng",
+      "example": "我想去美国。\nwǒ xiǎng qù měi guó 。\nTôi muốn đến Hoa Kỳ, Mỹ.",
+      "order_index": 14,
+      "note": null,
+      "source_key": "1:3:美国"
+    },
+    {
+      "hanzi": "他",
+      "pinyin": "tā",
+      "vietnamese_meaning": "anh ấy",
+      "part_of_speech": "đại từ",
+      "example": "他是学生。\ntā shì xué shēng 。\nAnh ấy là học sinh.",
+      "order_index": 15,
+      "note": null,
+      "source_key": "1:3:他"
+    },
+    {
+      "hanzi": "她",
+      "pinyin": "t",
+      "vietnamese_meaning": "cô ấy",
+      "part_of_speech": "đại từ",
+      "example": "她是学生。\ntā shì xué shēng 。\nCô ấy là học sinh.",
+      "order_index": 16,
+      "note": null,
+      "source_key": "1:3:她"
+    },
+    {
+      "hanzi": "它",
+      "pinyin": "tā",
+      "vietnamese_meaning": "nó",
+      "part_of_speech": "đại từ",
+      "example": "它是一只猫。\ntā shì yī zhī māo 。\nNó là một con mèo.",
+      "order_index": 17,
+      "note": null,
+      "source_key": "1:3:它"
+    },
+    {
+      "hanzi": "陈天中",
+      "pinyin": "chén tiān zhōng",
+      "vietnamese_meaning": "Trần Thiên Trung (tên người)",
+      "part_of_speech": "danh từ riêng",
+      "example": "我叫陈天中。\nwǒ jiào chén tiān zhōng 。\nTôi tên là Trần Thiên Trung.",
+      "order_index": 18,
+      "note": null,
+      "source_key": "1:3:陈天中"
+    },
+    {
+      "hanzi": "这",
+      "pinyin": "zhè",
+      "vietnamese_meaning": "đây, này",
+      "part_of_speech": "đại từ",
+      "example": "这是谁？\nzhè shì shuí ？\nĐây là ai?",
+      "order_index": 19,
+      "note": null,
+      "source_key": "1:3:这"
+    },
+    {
+      "hanzi": "那",
+      "pinyin": "nà",
+      "vietnamese_meaning": "kia",
+      "part_of_speech": "đại từ",
+      "example": "那我们走吧！\nnà wǒ men zǒu ba ！\nVậy chúng ta đi thôi!",
+      "order_index": 20,
+      "note": null,
+      "source_key": "1:3:那"
+    },
+    {
+      "hanzi": "谁",
+      "pinyin": "shéi/shuí",
+      "vietnamese_meaning": "ai",
+      "part_of_speech": "đại từ",
+      "example": "这是谁？\nzhè shì shuí ？\nĐây là ai?",
+      "order_index": 21,
+      "note": null,
+      "source_key": "1:3:谁"
+    },
+    {
+      "hanzi": "中文",
+      "pinyin": "Zhōngwén",
+      "vietnamese_meaning": "tiếng Trung",
+      "part_of_speech": "danh từ",
+      "example": "他是我的中文老师。\ntā shì wǒ de zhōng wén lǎo shī 。\nAnh ấy là giáo viên tiếng Trung của tôi.",
+      "order_index": 22,
+      "note": null,
+      "source_key": "1:3:中文"
+    },
+    {
+      "hanzi": "汉语",
+      "pinyin": "Hànyǔ",
+      "vietnamese_meaning": "tiếng Hán; tiếng Trung",
+      "part_of_speech": "danh từ",
+      "example": "我学汉语。\nwǒ xué hàn yǔ 。\nTôi học tiếng Trung.",
+      "order_index": 23,
+      "note": null,
+      "source_key": "1:3:汉语"
+    },
+    {
+      "hanzi": "的",
+      "pinyin": "de",
+      "vietnamese_meaning": "của; trợ từ nối quan hệ bổ nghĩa",
+      "part_of_speech": "trợ từ kết cấu",
+      "example": "这是我的朋友。\nzhè shì wǒ de péng yǒu 。\nĐây là bạn của tôi.",
+      "order_index": 24,
+      "note": "的 thường nối phần bổ nghĩa với danh từ; 地 thường đứng trước động từ, 得 thường đứng sau động từ/tính từ. Đọc de ở các cách dùng trợ từ này.",
+      "source_key": "1:3:的"
+    },
+    {
+      "hanzi": "朋友",
+      "pinyin": "péngyou",
+      "vietnamese_meaning": "bạn",
+      "part_of_speech": "danh từ",
+      "example": "他是我的朋友。\ntā shì wǒ de péng yǒu 。\nAnh ấy là bạn của tôi.",
+      "order_index": 25,
+      "note": null,
+      "source_key": "1:3:朋友"
+    },
+    {
+      "hanzi": "女朋友",
+      "pinyin": "nǚ péng yǒu",
+      "vietnamese_meaning": "bạn gái",
+      "part_of_speech": "danh từ",
+      "example": "这是我的女朋友。\nzhè shì wǒ de nǚ péng yǒu 。\nĐây là bạn gái của tôi.",
+      "order_index": 26,
+      "note": null,
+      "source_key": "1:3:女朋友"
+    },
+    {
+      "hanzi": "男朋友",
+      "pinyin": "nánpéngyou",
+      "vietnamese_meaning": "bạn trai",
+      "part_of_speech": "danh từ",
+      "example": "这是我的男朋友。\nzhè shì wǒ de nán péng yǒu 。\nĐây là bạn trai của tôi.",
+      "order_index": 27,
+      "note": null,
+      "source_key": "1:3:男朋友"
+    },
+    {
+      "hanzi": "喂",
+      "pinyin": "wèi",
+      "vietnamese_meaning": "alo, này",
+      "part_of_speech": "thán từ",
+      "example": "喂，你好！\nwèi ， nǐ hǎo ！\nA lô, xin chào!",
+      "order_index": 28,
+      "note": null,
+      "source_key": "1:3:喂"
+    },
+    {
+      "hanzi": "姐姐",
+      "pinyin": "jiějie",
+      "vietnamese_meaning": "chị gái",
+      "part_of_speech": "danh từ",
+      "example": "这是我的姐姐。\nzhè shì wǒ de jiě jiě 。\nĐây là chị gái của tôi.",
+      "order_index": 29,
+      "note": null,
+      "source_key": "1:3:姐姐"
+    },
+    {
+      "hanzi": "工作",
+      "pinyin": "gōngzuò",
+      "vietnamese_meaning": "công việc",
+      "part_of_speech": "danh từ",
+      "example": "我的工作很忙。\nwǒ de gōng zuò hěn máng 。\nCông việc của tôi bận lắm.",
+      "order_index": 30,
+      "note": null,
+      "source_key": "1:3:工作"
+    },
+    {
+      "hanzi": "还",
+      "pinyin": "hái",
+      "vietnamese_meaning": "còn, vẫn",
+      "part_of_speech": "phó từ",
+      "example": "我还好，不太忙。\nwǒ hái hǎo ， bù tài máng 。\nTôi vẫn khỏe, không bận lắm.",
+      "order_index": 31,
+      "note": null,
+      "source_key": "1:3:还"
+    },
+    {
+      "hanzi": "忙",
+      "pinyin": "máng",
+      "vietnamese_meaning": "bận",
+      "part_of_speech": "tính từ",
+      "example": "他很忙。\ntā hěn máng 。\nAnh ấy bận.",
+      "order_index": 32,
+      "note": null,
+      "source_key": "1:3:忙"
+    },
+    {
+      "hanzi": "对",
+      "pinyin": "duì",
+      "vietnamese_meaning": "đúng",
+      "part_of_speech": "tính từ",
+      "example": "他对我很好。\ntā duì wǒ hěn hǎo 。\nAnh ấy đối với tôi rất tốt.",
+      "order_index": 33,
+      "note": null,
+      "source_key": "1:3:对"
+    },
+    {
+      "hanzi": "太",
+      "pinyin": "tài",
+      "vietnamese_meaning": "quá, lắm",
+      "part_of_speech": "phó từ",
+      "example": "我还好，不太忙。\nwǒ hái hǎo ， bù tài máng 。\nTôi vẫn khỏe, không bận lắm.",
+      "order_index": 34,
+      "note": null,
+      "source_key": "1:3:太"
+    },
+    {
+      "hanzi": "不太",
+      "pinyin": "bù tài",
+      "vietnamese_meaning": "không ... lắm",
+      "part_of_speech": "cụm phó từ",
+      "example": "我还好，不太忙。\nwǒ hái hǎo ， bù tài máng 。\nTôi vẫn khỏe, không bận lắm.",
+      "order_index": 35,
+      "note": "不太 + tính từ nghĩa không ... lắm, nhẹ hơn 不 + tính từ trong nhiều lời nhận xét.",
+      "source_key": "1:3:不太"
+    },
+    {
+      "hanzi": "想",
+      "pinyin": "xiǎng",
+      "vietnamese_meaning": "nhớ, muốn, nghĩ",
+      "part_of_speech": "động từ",
+      "example": "我想你。\nwǒ xiǎng nǐ 。\nTôi nhớ bạn.",
+      "order_index": 36,
+      "note": "想 + người thường là nhớ; 想 + cụm động từ thường là muốn/dự định. Ví dụ 想你 và 想去中国.",
+      "source_key": "1:3:想"
+    },
+    {
+      "hanzi": "再见",
+      "pinyin": "zàijiàn",
+      "vietnamese_meaning": "tạm biệt",
+      "part_of_speech": "động từ",
+      "example": "姐姐，再见！\njiě jiě ， zài jiàn ！\nTạm biệt chị!",
+      "order_index": 37,
+      "note": null,
+      "source_key": "1:3:再见"
+    },
+    {
+      "hanzi": "王一飞",
+      "pinyin": "wáng yī fēi",
+      "vietnamese_meaning": "Vương Nhất Phi (tên người)",
+      "part_of_speech": "danh từ riêng",
+      "example": "我叫王一飞。\nwǒ jiào wáng yī fēi 。\nTôi tên là Vương Nhất Phi.",
+      "order_index": 38,
+      "note": null,
+      "source_key": "1:3:王一飞"
+    },
+    {
+      "hanzi": "王一雪",
+      "pinyin": "wáng yī xuě",
+      "vietnamese_meaning": "Vương Nhất Tuyết (tên người)",
+      "part_of_speech": "danh từ riêng",
+      "example": "我叫王一雪。\nwǒ jiào wáng yī xuě 。\nTôi tên là Vương Nhất Tuyết.",
+      "order_index": 39,
+      "note": null,
+      "source_key": "1:3:王一雪"
+    }
+  ],
+  "grammar": [
+    {
+      "name": "Câu phán đoán 是",
+      "structure": "A + 是 + B",
+      "explanation": "Giới thiệu thân phận, quốc tịch hoặc quan hệ.",
+      "usage": "Phủ định là 不是; không dùng 是 trước tính từ đơn thuần như 忙.",
+      "example": "我是越南人。\nwǒ shì yuè nán rén 。\nTôi là người Việt Nam.",
+      "note": "Phủ định là 不是; không dùng 是 trước tính từ đơn thuần như 忙.",
+      "order_index": 1
+    },
+    {
+      "name": "Nghi vấn với 吗",
+      "structure": "Câu trần thuật + 吗？",
+      "explanation": "Thêm 吗 vào cuối câu để hỏi có/không.",
+      "usage": "Câu hỏi có 谁、哪、什么 thường không thêm 吗.",
+      "example": "你是中国人吗？\nnǐ shì zhōng guó rén ma ？\nBạn là người Trung Quốc phải không?",
+      "note": "Câu hỏi có 谁、哪、什么 thường không thêm 吗.",
+      "order_index": 2
+    },
+    {
+      "name": "Sở hữu với 的",
+      "structure": "Người sở hữu + 的 + danh từ",
+      "explanation": "的 nối thành phần bổ nghĩa với danh từ trung tâm.",
+      "usage": "Trong quan hệ thân thiết có thể nói 我姐姐; không phải mọi 的 đều có nghĩa sở hữu.",
+      "example": "这是我的朋友。\nzhè shì wǒ de péng yǒu 。\nĐây là bạn của tôi.",
+      "note": "Trong quan hệ thân thiết có thể nói 我姐姐; không phải mọi 的 đều có nghĩa sở hữu.",
+      "order_index": 3
+    },
+    {
+      "name": "Câu vị ngữ tính từ",
+      "structure": "Chủ ngữ + 很/不太 + tính từ",
+      "explanation": "Miêu tả trạng thái hoặc tính chất.",
+      "usage": "很 trong câu này có thể giúp câu tự nhiên, không nhất thiết nhấn mạnh mức độ rất.",
+      "example": "我的工作不太忙。\nwǒ de gōng zuò bù tài máng 。\nCông việc của tôi không bận lắm.",
+      "note": "很 trong câu này có thể giúp câu tự nhiên, không nhất thiết nhấn mạnh mức độ rất.",
+      "order_index": 4
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Hỏi tên và quốc tịch",
+      "content": "李文:请问,你叫什么名字?\n陈天中:我叫陈天中,我是中国人。\n李文:我是越南人,我的中文老师也是中国人。",
+      "pinyin": "lǐ wén : qǐng wèn , nǐ jiào shén me míng zì ?\nchén tiān zhōng : wǒ jiào chén tiān zhōng , wǒ shì zhōng guó rén 。\nlǐ wén : wǒ shì yuè nán rén , wǒ de zhōng wén lǎo shī yě shì zhōng guó rén 。",
+      "vietnamese_translation": "Lý Văn: Xin hỏi, bạn tên là gì?\nTrần Thiên Trung: Tôi tên là Trần Thiên Trung, tôi là\nLý Văn: Tôi là người Việt Nam, giáo viên tiếng Trung\ncủa tôi cũng là người Trung Quốc.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 3, PDF 22."
+    },
+    {
+      "order_index": 2,
+      "title": "Giới thiệu một người",
+      "content": "安妮:这是谁?\n陈天中:这是我女朋友。\n安妮:你女朋友是哪国人?\n陈天中:我是泰国人,她是法国人。",
+      "pinyin": "ān nī : zhè shì shuí ?\nchén tiān zhōng : zhè shì wǒ nǚ péng yǒu 。\nān nī : nǐ nǚ péng yǒu shì nǎ guó rén ?\nchén tiān zhōng : wǒ shì tài guó rén , tā shì fǎ guó rén 。",
+      "vietnamese_translation": "Annie: Đây là ai?\nTrần Thiên Trung: Đây là bạn gái tôi.\nAnnie: Bạn gái bạn là người nước nào?\nTrần Thiên Trung: Tôi là người Thái Lan, cô ấy là người Pháp.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 3, PDF 24."
+    },
+    {
+      "order_index": 3,
+      "title": "Hỏi thăm qua điện thoại",
+      "content": "王一雪:喂,一飞!\n王一飞:姐姐!\n王一雪:你工作还忙吗?\n王一飞:对,还很忙。你也很忙吗?\n王一雪:我不太忙。我们很想你。\n王一飞:我也想你们。\n王一雪:再见!\n王一飞:再见!",
+      "pinyin": "wáng yī xuě : wèi , yī fēi !\nwáng yī fēi : jiě jiě !\nwáng yī xuě : nǐ gōng zuò hái máng ma ?\nwáng yī fēi : duì , hái hěn máng 。 nǐ yě hěn máng ma ?\nwáng yī xuě : wǒ bù tài máng 。 wǒ men hěn xiǎng nǐ 。\nwáng yī fēi : wǒ yě xiǎng nǐ men 。\nwáng yī xuě : zài jiàn !\nwáng yī fēi : zài jiàn !",
+      "vietnamese_translation": "Vương Nhất Tuyết: Alo, Nhất Phi hả!\nVương Nhất Phi  : Chị!\nVương Nhất Tuyết: Công việc của em vẫn bận à?\nVương Nhất Phi  : Vâng ạ, vẫn rất bận. Chị cũng rất bận nhỉ?\nVương Nhất Tuyết: Chị không quá bận. Tụi chị rất nhớ em đó.\nVương Nhất Phi  : Em cũng nhớ mọi người.\nVương Nhất Tuyết: Tạm biệt em!\nVương Nhất Phi  : Tạm biệt chị!",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 3, PDF 25."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 1 · Bài 3 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp; dùng kiến thức của bài này và các bài trước, không dùng bài sau. Đạt từ 80%; được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "review_status": "DRAFT_REQUIRES_EDITOR_REVIEW",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 1).",
+      "options": [
+        {
+          "option_text": "xin chào",
+          "is_correct": false
+        },
+        {
+          "option_text": "một",
+          "is_correct": false
+        },
+        {
+          "option_text": "mời",
+          "is_correct": true
+        },
+        {
+          "option_text": "bạn học",
+          "is_correct": false
+        }
+      ],
+      "rubric": "请 (qǐng) nghĩa là mời. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "请"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “还” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "ngài, ông, bà",
+          "is_correct": false
+        },
+        {
+          "option_text": "Xin hỏi",
+          "is_correct": false
+        },
+        {
+          "option_text": "còn, vẫn",
+          "is_correct": true
+        },
+        {
+          "option_text": "tám",
+          "is_correct": false
+        }
+      ],
+      "rubric": "还 (hái) nghĩa là còn, vẫn. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “chén tiān zhōng” và nghĩa “Trần Thiên Trung (tên người)”.",
+      "options": [
+        {
+          "option_text": "陈天中",
+          "is_correct": true
+        },
+        {
+          "option_text": "好",
+          "is_correct": false
+        },
+        {
+          "option_text": "越南",
+          "is_correct": false
+        },
+        {
+          "option_text": "同学",
+          "is_correct": false
+        }
+      ],
+      "rubric": "陈天中 (chén tiān zhōng) nghĩa là Trần Thiên Trung (tên người). ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 4).",
+      "options": [
+        {
+          "option_text": "cũng",
+          "is_correct": false
+        },
+        {
+          "option_text": "cô ấy",
+          "is_correct": true
+        },
+        {
+          "option_text": "bạn",
+          "is_correct": false
+        },
+        {
+          "option_text": "tốt, đẹp, hay, ngon",
+          "is_correct": false
+        }
+      ],
+      "rubric": "她 (t) nghĩa là cô ấy. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "她"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “汉语” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "Pháp",
+          "is_correct": false
+        },
+        {
+          "option_text": "nó",
+          "is_correct": false
+        },
+        {
+          "option_text": "tiếng Hán; tiếng Trung",
+          "is_correct": true
+        },
+        {
+          "option_text": "ngựa",
+          "is_correct": false
+        }
+      ],
+      "rubric": "汉语 (Hànyǔ) nghĩa là tiếng Hán; tiếng Trung. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “Fǎguó” và nghĩa “Pháp”.",
+      "options": [
+        {
+          "option_text": "李文",
+          "is_correct": false
+        },
+        {
+          "option_text": "喂",
+          "is_correct": false
+        },
+        {
+          "option_text": "白",
+          "is_correct": false
+        },
+        {
+          "option_text": "法国",
+          "is_correct": true
+        }
+      ],
+      "rubric": "法国 (Fǎguó) nghĩa là Pháp. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 7).",
+      "options": [
+        {
+          "option_text": "to, lớn",
+          "is_correct": false
+        },
+        {
+          "option_text": "của; trợ từ nối quan hệ bổ nghĩa",
+          "is_correct": false
+        },
+        {
+          "option_text": "hỏi",
+          "is_correct": false
+        },
+        {
+          "option_text": "tạm biệt",
+          "is_correct": true
+        }
+      ],
+      "rubric": "再见 (zàijiàn) nghĩa là tạm biệt. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "再见"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “日本” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "nào",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nhật Bản",
+          "is_correct": true
+        },
+        {
+          "option_text": "bạn gái",
+          "is_correct": false
+        },
+        {
+          "option_text": "còn, vẫn",
+          "is_correct": false
+        }
+      ],
+      "rubric": "日本 (rì běn) nghĩa là Nhật Bản. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “n” và nghĩa “nào”.",
+      "options": [
+        {
+          "option_text": "国",
+          "is_correct": false
+        },
+        {
+          "option_text": "哪",
+          "is_correct": true
+        },
+        {
+          "option_text": "马",
+          "is_correct": false
+        },
+        {
+          "option_text": "她",
+          "is_correct": false
+        }
+      ],
+      "rubric": "哪 (n) nghĩa là nào. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "nước",
+          "is_correct": false
+        },
+        {
+          "option_text": "không, chẳng",
+          "is_correct": false
+        },
+        {
+          "option_text": "không sao; không có việc gì",
+          "is_correct": false
+        },
+        {
+          "option_text": "ai",
+          "is_correct": true
+        }
+      ],
+      "rubric": "谁 (shéi/shuí) nghĩa là ai. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "谁"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “对” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "của; trợ từ nối quan hệ bổ nghĩa",
+          "is_correct": false
+        },
+        {
+          "option_text": "đúng",
+          "is_correct": true
+        },
+        {
+          "option_text": "tốt, đẹp, hay, ngon",
+          "is_correct": false
+        },
+        {
+          "option_text": "trắng",
+          "is_correct": false
+        }
+      ],
+      "rubric": "对 (duì) nghĩa là đúng. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “bù tài” và nghĩa “không ... lắm”.",
+      "options": [
+        {
+          "option_text": "不太",
+          "is_correct": true
+        },
+        {
+          "option_text": "是",
+          "is_correct": false
+        },
+        {
+          "option_text": "也",
+          "is_correct": false
+        },
+        {
+          "option_text": "这",
+          "is_correct": false
+        }
+      ],
+      "rubric": "不太 (bù tài) nghĩa là không ... lắm. 不太 + tính từ nghĩa không ... lắm, nhẹ hơn 不 + tính từ trong nhiều lời nhận xét.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “nó” (gợi ý pinyin: tā).",
+      "reference_answer": "它",
+      "rubric": "Đáp án: 它 (tā). ",
+      "config": {
+        "accepted_answers": [
+          "它"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “là” (gợi ý pinyin: shì).",
+      "reference_answer": "是",
+      "rubric": "Đáp án: 是 (shì). ",
+      "config": {
+        "accepted_answers": [
+          "是"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “Hàn Quốc” (gợi ý pinyin: hán guó).",
+      "reference_answer": "韩国",
+      "rubric": "Đáp án: 韩国 (hán guó). ",
+      "config": {
+        "accepted_answers": [
+          "韩国"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “quá, lắm” (gợi ý pinyin: tài).",
+      "reference_answer": "太",
+      "rubric": "Đáp án: 太 (tài). ",
+      "config": {
+        "accepted_answers": [
+          "太"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 1).",
+      "rubric": "她: cô ấy; 姐姐: chị gái; 男朋友: bạn trai; 美国: Hoa Kỳ, Mỹ",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "她"
+          },
+          {
+            "id": "l1",
+            "text": "姐姐"
+          },
+          {
+            "id": "l2",
+            "text": "男朋友"
+          },
+          {
+            "id": "l3",
+            "text": "美国"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r0",
+            "text": "cô ấy"
+          },
+          {
+            "id": "r2",
+            "text": "bạn trai"
+          },
+          {
+            "id": "r3",
+            "text": "Hoa Kỳ, Mỹ"
+          },
+          {
+            "id": "r1",
+            "text": "chị gái"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 3
+        },
+        {
+          "hsk": 1,
+          "lesson": 3
+        },
+        {
+          "hsk": 1,
+          "lesson": 3
+        },
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 2).",
+      "rubric": "同学: bạn học; 是: là; 的: của; trợ từ nối quan hệ bổ nghĩa; 吗: không, à",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "同学"
+          },
+          {
+            "id": "l1",
+            "text": "是"
+          },
+          {
+            "id": "l2",
+            "text": "的"
+          },
+          {
+            "id": "l3",
+            "text": "吗"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r3",
+            "text": "không, à"
+          },
+          {
+            "id": "r2",
+            "text": "của; trợ từ nối quan hệ bổ nghĩa"
+          },
+          {
+            "id": "r1",
+            "text": "là"
+          },
+          {
+            "id": "r0",
+            "text": "bạn học"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 2
+        },
+        {
+          "hsk": 1,
+          "lesson": 3
+        },
+        {
+          "hsk": 1,
+          "lesson": 3
+        },
+        {
+          "hsk": 1,
+          "lesson": 2
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Câu phán đoán 是”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Giới thiệu thân phận, quốc tịch hoặc quan hệ.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "A + 是 + B. Giới thiệu thân phận, quốc tịch hoặc quan hệ. Phủ định là 不是; không dùng 是 trước tính từ đơn thuần như 忙.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Nghi vấn với 吗”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Thêm 吗 vào cuối câu để hỏi có/không.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Câu trần thuật + 吗？. Thêm 吗 vào cuối câu để hỏi có/không. Câu hỏi có 谁、哪、什么 thường không thêm 吗.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Sở hữu với 的”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "的 nối thành phần bổ nghĩa với danh từ trung tâm.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Người sở hữu + 的 + danh từ. 的 nối thành phần bổ nghĩa với danh từ trung tâm. Trong quan hệ thân thiết có thể nói 我姐姐; không phải mọi 的 đều có nghĩa sở hữu.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Câu vị ngữ tính từ”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Miêu tả trạng thái hoặc tính chất.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ ngữ + 很/不太 + tính từ. Miêu tả trạng thái hoặc tính chất. 很 trong câu này có thể giúp câu tự nhiên, không nhất thiết nhấn mạnh mức độ rất.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Câu phán đoán 是” (mục 5): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Phủ định là 不是; không dùng 是 trước tính từ đơn thuần như 忙.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "A + 是 + B. Giới thiệu thân phận, quốc tịch hoặc quan hệ. Phủ định là 不是; không dùng 是 trước tính từ đơn thuần như 忙.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Nghi vấn với 吗” (mục 6): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Câu hỏi có 谁、哪、什么 thường không thêm 吗.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Câu trần thuật + 吗？. Thêm 吗 vào cuối câu để hỏi có/không. Câu hỏi có 谁、哪、什么 thường không thêm 吗.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 1).",
+      "reference_answer": "我是越南人。",
+      "rubric": "Câu đúng: 我是越南人。 Phủ định là 不是; không dùng 是 trước tính từ đơn thuần như 忙.",
+      "config": {
+        "items": [
+          {
+            "id": "w4",
+            "text": "。"
+          },
+          {
+            "id": "w3",
+            "text": "人"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w1",
+            "text": "是"
+          },
+          {
+            "id": "w2",
+            "text": "越南"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 2).",
+      "reference_answer": "你是中国人吗？",
+      "rubric": "Câu đúng: 你是中国人吗？ Câu hỏi có 谁、哪、什么 thường không thêm 吗.",
+      "config": {
+        "items": [
+          {
+            "id": "w3",
+            "text": "人"
+          },
+          {
+            "id": "w4",
+            "text": "吗"
+          },
+          {
+            "id": "w0",
+            "text": "你"
+          },
+          {
+            "id": "w1",
+            "text": "是"
+          },
+          {
+            "id": "w2",
+            "text": "中国"
+          },
+          {
+            "id": "w5",
+            "text": "？"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 3).",
+      "reference_answer": "这是我的朋友。",
+      "rubric": "Câu đúng: 这是我的朋友。 Trong quan hệ thân thiết có thể nói 我姐姐; không phải mọi 的 đều có nghĩa sở hữu.",
+      "config": {
+        "items": [
+          {
+            "id": "w0",
+            "text": "这"
+          },
+          {
+            "id": "w5",
+            "text": "。"
+          },
+          {
+            "id": "w4",
+            "text": "朋友"
+          },
+          {
+            "id": "w1",
+            "text": "是"
+          },
+          {
+            "id": "w2",
+            "text": "我"
+          },
+          {
+            "id": "w3",
+            "text": "的"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 4).",
+      "reference_answer": "我的工作不太忙。",
+      "rubric": "Câu đúng: 我的工作不太忙。 很 trong câu này có thể giúp câu tự nhiên, không nhất thiết nhấn mạnh mức độ rất.",
+      "config": {
+        "items": [
+          {
+            "id": "w5",
+            "text": "。"
+          },
+          {
+            "id": "w4",
+            "text": "忙"
+          },
+          {
+            "id": "w1",
+            "text": "的"
+          },
+          {
+            "id": "w3",
+            "text": "不太"
+          },
+          {
+            "id": "w2",
+            "text": "工作"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 5).",
+      "reference_answer": "请问,你叫什么名字?",
+      "rubric": "Câu đúng: 请问,你叫什么名字? Phủ định là 不是; không dùng 是 trước tính từ đơn thuần như 忙.",
+      "config": {
+        "items": [
+          {
+            "id": "w0",
+            "text": "请问"
+          },
+          {
+            "id": "w2",
+            "text": "你"
+          },
+          {
+            "id": "w3",
+            "text": "叫"
+          },
+          {
+            "id": "w4",
+            "text": "什么"
+          },
+          {
+            "id": "w6",
+            "text": "?"
+          },
+          {
+            "id": "w5",
+            "text": "名字"
+          },
+          {
+            "id": "w1",
+            "text": ","
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 6).",
+      "reference_answer": "我叫陈天中,我是中国人。",
+      "rubric": "Câu đúng: 我叫陈天中,我是中国人。 Câu hỏi có 谁、哪、什么 thường không thêm 吗.",
+      "config": {
+        "items": [
+          {
+            "id": "w6",
+            "text": "中国"
+          },
+          {
+            "id": "w5",
+            "text": "是"
+          },
+          {
+            "id": "w2",
+            "text": "陈天中"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w8",
+            "text": "。"
+          },
+          {
+            "id": "w1",
+            "text": "叫"
+          },
+          {
+            "id": "w3",
+            "text": ","
+          },
+          {
+            "id": "w7",
+            "text": "人"
+          },
+          {
+            "id": "w4",
+            "text": "我"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ],
+  "source_documents": {
+    "vocabulary": "DOCX",
+    "theory": "HSK1 PDF"
+  }
+}

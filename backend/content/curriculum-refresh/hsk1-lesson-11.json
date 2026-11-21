@@ -1,0 +1,1745 @@
+{
+  "key": "hsk1-lesson-11-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 1,
+    "lesson_number": 11,
+    "title": "我读大学呢 · Học tập và di chuyển",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "时候",
+      "pinyin": "shíhou",
+      "vietnamese_meaning": "lúc",
+      "part_of_speech": "danh từ",
+      "example": "你什么时候去？\nnǐ shén me shí hòu qù ？\nKhi nào bạn đi?",
+      "order_index": 1,
+      "note": "时候 chỉ thời điểm/lúc; 时间 chỉ thời gian nói chung. Hỏi 什么时候 là khi nào; 多长时间 là bao lâu.",
+      "source_key": "1:11:时候"
+    },
+    {
+      "hanzi": "有时候",
+      "pinyin": "yǒu shí hòu",
+      "vietnamese_meaning": "có lúc, thỉnh thoảng",
+      "part_of_speech": "phó từ",
+      "example": "我有时候走路去学校。\nwǒ yǒu shí hòu zǒu lù qù xué xiào 。\nCó lúc tôi đi bộ đến trường.",
+      "order_index": 2,
+      "note": null,
+      "source_key": "1:11:有时候"
+    },
+    {
+      "hanzi": "什么时候",
+      "pinyin": "shén me shí hòu",
+      "vietnamese_meaning": "khi nào, bao giờ",
+      "part_of_speech": "cụm nghi vấn",
+      "example": "你什么时候去？\nnǐ shén me shí hòu qù ？\nKhi nào bạn đi?",
+      "order_index": 3,
+      "note": null,
+      "source_key": "1:11:什么时候"
+    },
+    {
+      "hanzi": "的时候",
+      "pinyin": "de shí hòu",
+      "vietnamese_meaning": "khi, lúc ...",
+      "part_of_speech": "cụm kết cấu",
+      "example": "我上课的时候很认真。\nwǒ shàng kè de shí hòu hěn rèn zhēn 。\nLúc học tôi rất chăm chú.",
+      "order_index": 4,
+      "note": null,
+      "source_key": "1:11:的时候"
+    },
+    {
+      "hanzi": "知道",
+      "pinyin": "zhīdao",
+      "vietnamese_meaning": "biết",
+      "part_of_speech": "động từ",
+      "example": "我不知道他在哪里。\nwǒ bù zhī dào tā zài nǎ lǐ 。\nTôi không biết anh ấy ở đâu.",
+      "order_index": 5,
+      "note": "知道 là biết thông tin; 认识 là quen biết/nhận ra người hoặc mặt chữ; 会 là biết làm một kỹ năng.",
+      "source_key": "1:11:知道"
+    },
+    {
+      "hanzi": "找",
+      "pinyin": "zhǎo",
+      "vietnamese_meaning": "tìm",
+      "part_of_speech": "động từ",
+      "example": "你找谁？\nnǐ zhǎo shuí ？\nBạn tìm ai?",
+      "order_index": 6,
+      "note": null,
+      "source_key": "1:11:找"
+    },
+    {
+      "hanzi": "自行车",
+      "pinyin": "zì xíng chē",
+      "vietnamese_meaning": "xe đạp",
+      "part_of_speech": "danh từ",
+      "example": "这是我的自行车。\nzhè shì wǒ de zì xíng chē 。\nĐây là xe đạp của tôi.",
+      "order_index": 7,
+      "note": null,
+      "source_key": "1:11:自行车"
+    },
+    {
+      "hanzi": "摩托车",
+      "pinyin": "mó tuō chē",
+      "vietnamese_meaning": "xe máy",
+      "part_of_speech": "danh từ",
+      "example": "这是我的摩托车。\nzhè shì wǒ de mó tuō chē 。\nĐây là xe máy của tôi.",
+      "order_index": 8,
+      "note": null,
+      "source_key": "1:11:摩托车"
+    },
+    {
+      "hanzi": "汽车",
+      "pinyin": "qì chē",
+      "vietnamese_meaning": "ô tô",
+      "part_of_speech": "danh từ",
+      "example": "这是我的汽车。\nzhè shì wǒ de qì chē 。\nĐây là ô tô của tôi.",
+      "order_index": 9,
+      "note": null,
+      "source_key": "1:11:汽车"
+    },
+    {
+      "hanzi": "公共汽车",
+      "pinyin": "gōng gòng qì chē",
+      "vietnamese_meaning": "xe buýt",
+      "part_of_speech": "danh từ",
+      "example": "我们坐公共汽车去。\nwǒ men zuò gōng gòng qì chē qù 。\nChúng tôi đi bằng xe buýt.",
+      "order_index": 10,
+      "note": null,
+      "source_key": "1:11:公共汽车"
+    },
+    {
+      "hanzi": "公交车",
+      "pinyin": "gōng jiāo chē",
+      "vietnamese_meaning": "xe buýt",
+      "part_of_speech": "danh từ",
+      "example": "我们坐公交车去。\nwǒ men zuò gōng jiāo chē qù 。\nChúng tôi đi bằng xe buýt.",
+      "order_index": 11,
+      "note": null,
+      "source_key": "1:11:公交车"
+    },
+    {
+      "hanzi": "飞机",
+      "pinyin": "fēijī",
+      "vietnamese_meaning": "máy bay",
+      "part_of_speech": "danh từ",
+      "example": "我们坐飞机去。\nwǒ men zuò fēi jī qù 。\nChúng tôi đi bằng máy bay.",
+      "order_index": 12,
+      "note": null,
+      "source_key": "1:11:飞机"
+    },
+    {
+      "hanzi": "走路",
+      "pinyin": "zǒu lù",
+      "vietnamese_meaning": "đi bộ",
+      "part_of_speech": "động từ",
+      "example": "我们一起走路吧。\nwǒ men yì qǐ zǒu lù ba 。\nChúng ta cùng đi bộ nhé.",
+      "order_index": 13,
+      "note": null,
+      "source_key": "1:11:走路"
+    },
+    {
+      "hanzi": "骑",
+      "pinyin": "qí",
+      "vietnamese_meaning": "đi, cưỡi (xe đạp, xe máy, ngựa)",
+      "part_of_speech": "động từ",
+      "example": "我骑自行车去学校。\nwǒ qí zì xíng chē qù xué xiào 。\nTôi đi xe đạp đến trường.",
+      "order_index": 14,
+      "note": null,
+      "source_key": "1:11:骑"
+    },
+    {
+      "hanzi": "开",
+      "pinyin": "kāi",
+      "vietnamese_meaning": "lái (xe ô tô, phương tiện có động cơ)",
+      "part_of_speech": "động từ",
+      "example": "我开车去学校。\nwǒ kāi chē qù xué xiào 。\nTôi lái xe đến trường.",
+      "order_index": 15,
+      "note": "开车 là lái ô tô; 骑 dùng với xe đạp, xe máy hoặc ngựa. Không thay tùy ý hai động từ này.",
+      "source_key": "1:11:开"
+    },
+    {
+      "hanzi": "读",
+      "pinyin": "dú",
+      "vietnamese_meaning": "học (theo học một bậc học)",
+      "part_of_speech": "động từ",
+      "example": "我在读大学。\nwǒ zài dú dà xué 。\nTôi đang học đại học.",
+      "order_index": 16,
+      "note": null,
+      "source_key": "1:11:读"
+    },
+    {
+      "hanzi": "小学",
+      "pinyin": "xiǎo xué",
+      "vietnamese_meaning": "trường tiểu học; bậc tiểu học",
+      "part_of_speech": "danh từ",
+      "example": "他在读小学。\ntā zài dú xiǎo xué 。\nAnh ấy đang học trường tiểu học.",
+      "order_index": 17,
+      "note": null,
+      "source_key": "1:11:小学"
+    },
+    {
+      "hanzi": "初中",
+      "pinyin": "chū zhōng",
+      "vietnamese_meaning": "trung học cơ sở",
+      "part_of_speech": "danh từ",
+      "example": "他在读初中。\ntā zài dú chū zhōng 。\nAnh ấy đang học trung học cơ sở.",
+      "order_index": 18,
+      "note": null,
+      "source_key": "1:11:初中"
+    },
+    {
+      "hanzi": "高中",
+      "pinyin": "gāo zhōng",
+      "vietnamese_meaning": "trung học phổ thông",
+      "part_of_speech": "danh từ",
+      "example": "他在读高中。\ntā zài dú gāo zhōng 。\nAnh ấy đang học trung học phổ thông.",
+      "order_index": 19,
+      "note": null,
+      "source_key": "1:11:高中"
+    },
+    {
+      "hanzi": "大学",
+      "pinyin": "dàxué",
+      "vietnamese_meaning": "đại học",
+      "part_of_speech": "danh từ",
+      "example": "他在读大学。\ntā zài dú dà xué 。\nAnh ấy đang học đại học.",
+      "order_index": 20,
+      "note": null,
+      "source_key": "1:11:大学"
+    },
+    {
+      "hanzi": "大学生",
+      "pinyin": "dàxuéshēng",
+      "vietnamese_meaning": "sinh viên",
+      "part_of_speech": "danh từ",
+      "example": "他是大学生。\ntā shì dà xué shēng 。\nAnh ấy là sinh viên.",
+      "order_index": 21,
+      "note": null,
+      "source_key": "1:11:大学生"
+    },
+    {
+      "hanzi": "医",
+      "pinyin": "yī",
+      "vietnamese_meaning": "y",
+      "part_of_speech": "danh từ",
+      "example": "我在大学学医。\nwǒ zài dà xué xué yī 。\nTôi học ngành y ở đại học.",
+      "order_index": 22,
+      "note": null,
+      "source_key": "1:11:医"
+    },
+    {
+      "hanzi": "起床",
+      "pinyin": "qǐchuáng",
+      "vietnamese_meaning": "thức dậy",
+      "part_of_speech": "động từ",
+      "example": "我们一起起床吧。\nwǒ men yì qǐ qǐ chuáng ba 。\nChúng ta cùng thức dậy nhé.",
+      "order_index": 23,
+      "note": null,
+      "source_key": "1:11:起床"
+    },
+    {
+      "hanzi": "睡觉",
+      "pinyin": "shuìjiào",
+      "vietnamese_meaning": "ngủ",
+      "part_of_speech": "động từ",
+      "example": "我们一起睡觉吧。\nwǒ men yì qǐ shuì jiào ba 。\nChúng ta cùng ngủ nhé.",
+      "order_index": 24,
+      "note": null,
+      "source_key": "1:11:睡觉"
+    },
+    {
+      "hanzi": "对",
+      "pinyin": "duì",
+      "vietnamese_meaning": "đối với",
+      "part_of_speech": "giới từ",
+      "example": "他对我很好。\ntā duì wǒ hěn hǎo 。\nAnh ấy đối với tôi rất tốt.",
+      "order_index": 25,
+      "note": "Nhắc lại HSK1 bài 3: 对 (duì) nghĩa là đúng. Trong bài này: đối với.",
+      "source_key": "1:11:对"
+    },
+    {
+      "hanzi": "说",
+      "pinyin": "shuō",
+      "vietnamese_meaning": "nói",
+      "part_of_speech": "động từ",
+      "example": "他说汉语。\ntā shuō hàn yǔ 。\nAnh ấy nói tiếng Trung.",
+      "order_index": 26,
+      "note": null,
+      "source_key": "1:11:说"
+    },
+    {
+      "hanzi": "要",
+      "pinyin": "yào",
+      "vietnamese_meaning": "muốn",
+      "part_of_speech": "động từ năng nguyện",
+      "example": "我要学汉语。\nwǒ yào xué hàn yǔ 。\nTôi muốn học tiếng Trung.",
+      "order_index": 27,
+      "note": null,
+      "source_key": "1:11:要"
+    }
+  ],
+  "grammar": [
+    {
+      "name": "Đang với 在/正在/呢",
+      "structure": "Chủ ngữ + 在/正在 + động từ +（呢）",
+      "explanation": "Diễn đạt hành động đang tiến hành.",
+      "usage": "在学校 là ở trường; 在学习 là đang học. Không dùng hai nghĩa này lẫn vị trí.",
+      "example": "我正在看电视。\nwǒ zhèng zài kàn diàn shì 。\nTôi đang xem tivi.",
+      "note": "在学校 là ở trường; 在学习 là đang học. Không dùng hai nghĩa này lẫn vị trí.",
+      "order_index": 1
+    },
+    {
+      "name": "Dự định rõ với 要",
+      "structure": "Chủ ngữ + 要 + cụm động từ",
+      "explanation": "要 thể hiện mong muốn, quyết định hoặc nhu cầu rõ.",
+      "usage": "想 thường nhẹ hơn, thiên về mong muốn; 要 có thể thể hiện quyết định hoặc cần phải làm.",
+      "example": "妈妈要去超市。\nmā mā yào qù chāo shì 。\nMẹ định đi siêu thị.",
+      "note": "想 thường nhẹ hơn, thiên về mong muốn; 要 có thể thể hiện quyết định hoặc cần phải làm.",
+      "order_index": 2
+    },
+    {
+      "name": "Câu hỏi chính phản",
+      "structure": "Động từ/tính từ + 不/没 + động từ/tính từ",
+      "explanation": "Hỏi lựa chọn khẳng định hay phủ định.",
+      "usage": "Không thêm 吗 vào cuối câu hỏi chính phản thông thường.",
+      "example": "你去不去？\nnǐ qù bù qù ？\nBạn có đi không?",
+      "note": "Không thêm 吗 vào cuối câu hỏi chính phản thông thường.",
+      "order_index": 3
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Tìm đường đến khách sạn",
+      "content": "王一飞:喂,李文,你什么时候能到酒店?\n李文:还不知道,正在找呢。它是不是在超市后边?\n王一飞:是的。你开车没开车?\n李文:我没开车,坐车呢。",
+      "pinyin": "wáng yī fēi : wèi , lǐ wén , nǐ shén me shí hòu néng dào jiǔ diàn ?\nlǐ wén : hái bù zhī dào , zhèng zài zhǎo ne 。 tā shì bú shì zài chāo shì hòu biān ?\nwáng yī fēi : shì de 。 nǐ kāi chē méi kāi chē ?\nlǐ wén : wǒ méi kāi chē , zuò chē ne 。",
+      "vietnamese_translation": "Vương Nhất Phi: Alo, Lý Văn, bạn lúc nào có thể đến khách sạn.\nLý Văn: Vẫn chưa biết, đang tìm đây. Nó có phải ở sau siêu thị không?\nVương Nhất Phi: Đúng vậy. Bạn có lái xe không?\nLý Văn: Tôi không lái xe, tôi đang đi taxi.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 11, PDF 103."
+    },
+    {
+      "order_index": 2,
+      "title": "Theo học đại học",
+      "content": "王一飞:你还在读大学吗?\n李文:对,我读大学呢,还是大学生。\n王一飞:你们学习忙不忙?\n李文:非常忙,我学医,我们的课很多。",
+      "pinyin": "wáng yī fēi : nǐ hái zài dú dà xué ma ?\nlǐ wén : duì , wǒ dú dà xué ne , hái shì dà xué shēng 。\nwáng yī fēi : nǐ men xué xí máng bù máng ?\nlǐ wén : fēi cháng máng , wǒ xué yī , wǒ men de kè hěn duō 。",
+      "vietnamese_translation": "Vương Nhất Phi: Bạn vẫn đang học đại học à?\nLí Văn: Đúng vậy, tôi đang học đại học, vẫn là sinh viên.\nVương Nhất Phi: Các bạn học có bận không?\nLí Văn: Vô cùng bận, tôi học y, tiết học của chúng tôi rất nhiều.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 11, PDF 104."
+    },
+    {
+      "order_index": 3,
+      "title": "Em trai đã dậy chưa?",
+      "content": "刘明:弟弟起床没起床呢?\n刘小雪:没起床呢,还在睡觉。\n刘明:还睡呢?他今天去不去那里?\n刘小雪:去哪里?\n刘明:去超市。\n刘小雪:我昨天问他,他对我说,他不去,他今天要和小朋友玩。",
+      "pinyin": "liú míng : dì di qǐ chuáng méi qǐ chuáng ne ?\nliú xiǎo xuě : méi qǐ chuáng ne , hái zài shuì jiào 。\nliú míng : hái shuì ne ? tā jīn tiān qù bù qù nà lǐ ?\nliú xiǎo xuě : qù nǎ lǐ ?\nliú míng : qù chāo shì 。\nliú xiǎo xuě : wǒ zuó tiān wèn tā , tā duì wǒ shuō , tā bù qù , tā jīn tiān yào hé xiǎo péng yǒu wán 。",
+      "vietnamese_translation": "Lưu Minh: Em trai ngủ dậy chưa?\nLưu Tiểu Tuyết: Chưa ngủ dậy, vẫn đang ngủ.\nLưu Minh: Vẫn đang ngủ? Nó hôm nay có đi đến đó không?\nLưu Tiểu Tuyết : Đi đâu?\nLưu Minh: Đi siêu thị.\nLưu Tiểu Tuyết: Hôm qua con hỏi nó, nó nói với con, nó không đi, nó hôm nay phải đi chơi với bạn.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 11, PDF 106, 107."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 1 · Bài 11 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp; dùng kiến thức của bài này và các bài trước, không dùng bài sau. Đạt từ 80%; được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "review_status": "DRAFT_REQUIRES_EDITOR_REVIEW",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 1).",
+      "options": [
+        {
+          "option_text": "xoài",
+          "is_correct": false
+        },
+        {
+          "option_text": "ngựa",
+          "is_correct": false
+        },
+        {
+          "option_text": "khi nào, bao giờ",
+          "is_correct": true
+        },
+        {
+          "option_text": "mì sợi",
+          "is_correct": false
+        }
+      ],
+      "rubric": "什么时候 (shén me shí hòu) nghĩa là khi nào, bao giờ. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "什么时候"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 11
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “要” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "công việc",
+          "is_correct": false
+        },
+        {
+          "option_text": "muốn",
+          "is_correct": true
+        },
+        {
+          "option_text": "phút",
+          "is_correct": false
+        },
+        {
+          "option_text": "tuần, thứ",
+          "is_correct": false
+        }
+      ],
+      "rubric": "要 (yào) nghĩa là muốn. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 11
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “shuìjiào” và nghĩa “ngủ”.",
+      "options": [
+        {
+          "option_text": "问",
+          "is_correct": false
+        },
+        {
+          "option_text": "同学",
+          "is_correct": false
+        },
+        {
+          "option_text": "手机号码",
+          "is_correct": false
+        },
+        {
+          "option_text": "睡觉",
+          "is_correct": true
+        }
+      ],
+      "rubric": "睡觉 (shuìjiào) nghĩa là ngủ. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 11
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 4).",
+      "options": [
+        {
+          "option_text": "thích",
+          "is_correct": false
+        },
+        {
+          "option_text": "lúc",
+          "is_correct": true
+        },
+        {
+          "option_text": "không có",
+          "is_correct": false
+        },
+        {
+          "option_text": "tiền",
+          "is_correct": false
+        }
+      ],
+      "rubric": "时候 (shíhou) nghĩa là lúc. 时候 chỉ thời điểm/lúc; 时间 chỉ thời gian nói chung. Hỏi 什么时候 là khi nào; 多长时间 là bao lâu.",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "时候"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 11
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “知道” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "tốt, đẹp, hay, ngon",
+          "is_correct": false
+        },
+        {
+          "option_text": "một nửa",
+          "is_correct": false
+        },
+        {
+          "option_text": "biết",
+          "is_correct": true
+        },
+        {
+          "option_text": "cái, chiếc (lượng từ cho ghế, vật có tay cầm)",
+          "is_correct": false
+        }
+      ],
+      "rubric": "知道 (zhīdao) nghĩa là biết. 知道 là biết thông tin; 认识 là quen biết/nhận ra người hoặc mặt chữ; 会 là biết làm một kỹ năng.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 11
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “gāo zhōng” và nghĩa “trung học phổ thông”.",
+      "options": [
+        {
+          "option_text": "都",
+          "is_correct": false
+        },
+        {
+          "option_text": "这",
+          "is_correct": false
+        },
+        {
+          "option_text": "高中",
+          "is_correct": true
+        },
+        {
+          "option_text": "医院",
+          "is_correct": false
+        }
+      ],
+      "rubric": "高中 (gāo zhōng) nghĩa là trung học phổ thông. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 11
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 7).",
+      "options": [
+        {
+          "option_text": "nói",
+          "is_correct": true
+        },
+        {
+          "option_text": "trường tiểu học; bậc tiểu học",
+          "is_correct": false
+        },
+        {
+          "option_text": "rạp chiếu phim",
+          "is_correct": false
+        },
+        {
+          "option_text": "bạn",
+          "is_correct": false
+        }
+      ],
+      "rubric": "说 (shuō) nghĩa là nói. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "说"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 11
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “小学” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "xe buýt",
+          "is_correct": false
+        },
+        {
+          "option_text": "mấy",
+          "is_correct": false
+        },
+        {
+          "option_text": "thích",
+          "is_correct": false
+        },
+        {
+          "option_text": "trường tiểu học; bậc tiểu học",
+          "is_correct": true
+        }
+      ],
+      "rubric": "小学 (xiǎo xué) nghĩa là trường tiểu học; bậc tiểu học. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 11
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “zì xíng chē” và nghĩa “xe đạp”.",
+      "options": [
+        {
+          "option_text": "自行车",
+          "is_correct": true
+        },
+        {
+          "option_text": "钱",
+          "is_correct": false
+        },
+        {
+          "option_text": "上面",
+          "is_correct": false
+        },
+        {
+          "option_text": "馒头",
+          "is_correct": false
+        }
+      ],
+      "rubric": "自行车 (zì xíng chē) nghĩa là xe đạp. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 11
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "anh ấy",
+          "is_correct": false
+        },
+        {
+          "option_text": "sủi cảo",
+          "is_correct": false
+        },
+        {
+          "option_text": "nghỉ ngơi",
+          "is_correct": false
+        },
+        {
+          "option_text": "đại học",
+          "is_correct": true
+        }
+      ],
+      "rubric": "大学 (dàxué) nghĩa là đại học. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "大学"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 11
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “公共汽车” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "Dương Đồng Lạc (tên người)",
+          "is_correct": false
+        },
+        {
+          "option_text": "nhé, đi (gợi ý hoặc đề nghị)",
+          "is_correct": false
+        },
+        {
+          "option_text": "xe buýt",
+          "is_correct": true
+        },
+        {
+          "option_text": "mặc",
+          "is_correct": false
+        }
+      ],
+      "rubric": "公共汽车 (gōng gòng qì chē) nghĩa là xe buýt. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 11
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “de shí hòu” và nghĩa “khi, lúc ...”.",
+      "options": [
+        {
+          "option_text": "的时候",
+          "is_correct": true
+        },
+        {
+          "option_text": "大学生",
+          "is_correct": false
+        },
+        {
+          "option_text": "飞机",
+          "is_correct": false
+        },
+        {
+          "option_text": "读",
+          "is_correct": false
+        }
+      ],
+      "rubric": "的时候 (de shí hòu) nghĩa là khi, lúc .... ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 11
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “đối với” (gợi ý pinyin: duì).",
+      "reference_answer": "对",
+      "rubric": "Đáp án: 对 (duì). Nhắc lại HSK1 bài 3: 对 (duì) nghĩa là đúng. Trong bài này: đối với.",
+      "config": {
+        "accepted_answers": [
+          "对"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 11
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “sinh viên” (gợi ý pinyin: dàxuéshēng).",
+      "reference_answer": "大学生",
+      "rubric": "Đáp án: 大学生 (dàxuéshēng). ",
+      "config": {
+        "accepted_answers": [
+          "大学生"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 11
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “bên ngoài” (gợi ý pinyin: wài miàn).",
+      "reference_answer": "外面",
+      "rubric": "Đáp án: 外面 (wài miàn). ",
+      "config": {
+        "accepted_answers": [
+          "外面"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 8
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “bên ngoài” (gợi ý pinyin: wàibian).",
+      "reference_answer": "外边",
+      "rubric": "Đáp án: 外边 (wàibian). ",
+      "config": {
+        "accepted_answers": [
+          "外边"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 1).",
+      "rubric": "后: sau; phía sau; 零: không (số 0); 骑: đi, cưỡi (xe đạp, xe máy, ngựa); 单身: độc thân",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "后"
+          },
+          {
+            "id": "l1",
+            "text": "零"
+          },
+          {
+            "id": "l2",
+            "text": "骑"
+          },
+          {
+            "id": "l3",
+            "text": "单身"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r3",
+            "text": "độc thân"
+          },
+          {
+            "id": "r1",
+            "text": "không (số 0)"
+          },
+          {
+            "id": "r0",
+            "text": "sau; phía sau"
+          },
+          {
+            "id": "r2",
+            "text": "đi, cưỡi (xe đạp, xe máy, ngựa)"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 8
+        },
+        {
+          "hsk": 1,
+          "lesson": 6
+        },
+        {
+          "hsk": 1,
+          "lesson": 11
+        },
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 2).",
+      "rubric": "晚饭: bữa tối; 爸爸: bố; 白家月: Bạch Gia Nguyệt (tên người); 游戏: trò chơi",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "晚饭"
+          },
+          {
+            "id": "l1",
+            "text": "爸爸"
+          },
+          {
+            "id": "l2",
+            "text": "白家月"
+          },
+          {
+            "id": "l3",
+            "text": "游戏"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r0",
+            "text": "bữa tối"
+          },
+          {
+            "id": "r1",
+            "text": "bố"
+          },
+          {
+            "id": "r2",
+            "text": "Bạch Gia Nguyệt (tên người)"
+          },
+          {
+            "id": "r3",
+            "text": "trò chơi"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 6
+        },
+        {
+          "hsk": 1,
+          "lesson": 4
+        },
+        {
+          "hsk": 1,
+          "lesson": 2
+        },
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Đang với 在/正在/呢”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Diễn đạt hành động đang tiến hành.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ ngữ + 在/正在 + động từ +（呢）. Diễn đạt hành động đang tiến hành. 在学校 là ở trường; 在学习 là đang học. Không dùng hai nghĩa này lẫn vị trí.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 11
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Dự định rõ với 要”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "要 thể hiện mong muốn, quyết định hoặc nhu cầu rõ.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Chủ ngữ + 要 + cụm động từ. 要 thể hiện mong muốn, quyết định hoặc nhu cầu rõ. 想 thường nhẹ hơn, thiên về mong muốn; 要 có thể thể hiện quyết định hoặc cần phải làm.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 11
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Câu hỏi chính phản”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Hỏi lựa chọn khẳng định hay phủ định.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Động từ/tính từ + 不/没 + động từ/tính từ. Hỏi lựa chọn khẳng định hay phủ định. Không thêm 吗 vào cuối câu hỏi chính phản thông thường.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 11
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Đang với 在/正在/呢” (mục 4): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "在学校 là ở trường; 在学习 là đang học. Không dùng hai nghĩa này lẫn vị trí.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ ngữ + 在/正在 + động từ +（呢）. Diễn đạt hành động đang tiến hành. 在学校 là ở trường; 在学习 là đang học. Không dùng hai nghĩa này lẫn vị trí.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 11
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Dự định rõ với 要” (mục 5): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "想 thường nhẹ hơn, thiên về mong muốn; 要 có thể thể hiện quyết định hoặc cần phải làm.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ ngữ + 要 + cụm động từ. 要 thể hiện mong muốn, quyết định hoặc nhu cầu rõ. 想 thường nhẹ hơn, thiên về mong muốn; 要 có thể thể hiện quyết định hoặc cần phải làm.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 11
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Câu hỏi chính phản” (mục 6): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không thêm 吗 vào cuối câu hỏi chính phản thông thường.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Động từ/tính từ + 不/没 + động từ/tính từ. Hỏi lựa chọn khẳng định hay phủ định. Không thêm 吗 vào cuối câu hỏi chính phản thông thường.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 11
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 1).",
+      "reference_answer": "我正在看电视。",
+      "rubric": "Câu đúng: 我正在看电视。 在学校 là ở trường; 在学习 là đang học. Không dùng hai nghĩa này lẫn vị trí.",
+      "config": {
+        "items": [
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w1",
+            "text": "正在"
+          },
+          {
+            "id": "w2",
+            "text": "看"
+          },
+          {
+            "id": "w3",
+            "text": "电视"
+          },
+          {
+            "id": "w4",
+            "text": "。"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 11
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 2).",
+      "reference_answer": "妈妈要去超市。",
+      "rubric": "Câu đúng: 妈妈要去超市。 想 thường nhẹ hơn, thiên về mong muốn; 要 có thể thể hiện quyết định hoặc cần phải làm.",
+      "config": {
+        "items": [
+          {
+            "id": "w4",
+            "text": "。"
+          },
+          {
+            "id": "w3",
+            "text": "超市"
+          },
+          {
+            "id": "w1",
+            "text": "要"
+          },
+          {
+            "id": "w0",
+            "text": "妈妈"
+          },
+          {
+            "id": "w2",
+            "text": "去"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 11
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 3).",
+      "reference_answer": "你去不去？",
+      "rubric": "Câu đúng: 你去不去？ Không thêm 吗 vào cuối câu hỏi chính phản thông thường.",
+      "config": {
+        "items": [
+          {
+            "id": "w0",
+            "text": "你"
+          },
+          {
+            "id": "w1",
+            "text": "去"
+          },
+          {
+            "id": "w3",
+            "text": "去"
+          },
+          {
+            "id": "w2",
+            "text": "不"
+          },
+          {
+            "id": "w4",
+            "text": "？"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 11
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 4).",
+      "reference_answer": "喂,李文,你什么时候能到酒店?",
+      "rubric": "Câu đúng: 喂,李文,你什么时候能到酒店? 在学校 là ở trường; 在学习 là đang học. Không dùng hai nghĩa này lẫn vị trí.",
+      "config": {
+        "items": [
+          {
+            "id": "w8",
+            "text": "酒"
+          },
+          {
+            "id": "w5",
+            "text": "什么时候"
+          },
+          {
+            "id": "w4",
+            "text": "你"
+          },
+          {
+            "id": "w2",
+            "text": "李文"
+          },
+          {
+            "id": "w9",
+            "text": "店"
+          },
+          {
+            "id": "w6",
+            "text": "能"
+          },
+          {
+            "id": "w10",
+            "text": "?"
+          },
+          {
+            "id": "w7",
+            "text": "到"
+          },
+          {
+            "id": "w0",
+            "text": "喂"
+          },
+          {
+            "id": "w3",
+            "text": ","
+          },
+          {
+            "id": "w1",
+            "text": ","
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8",
+          "w9",
+          "w10"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 11
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 5).",
+      "reference_answer": "还不知道,正在找呢。它是不是在超市后边?",
+      "rubric": "Câu đúng: 还不知道,正在找呢。它是不是在超市后边? 想 thường nhẹ hơn, thiên về mong muốn; 要 có thể thể hiện quyết định hoặc cần phải làm.",
+      "config": {
+        "items": [
+          {
+            "id": "w9",
+            "text": "是"
+          },
+          {
+            "id": "w6",
+            "text": "呢"
+          },
+          {
+            "id": "w12",
+            "text": "在"
+          },
+          {
+            "id": "w7",
+            "text": "。"
+          },
+          {
+            "id": "w1",
+            "text": "不"
+          },
+          {
+            "id": "w15",
+            "text": "?"
+          },
+          {
+            "id": "w4",
+            "text": "正在"
+          },
+          {
+            "id": "w8",
+            "text": "它"
+          },
+          {
+            "id": "w13",
+            "text": "超市"
+          },
+          {
+            "id": "w0",
+            "text": "还"
+          },
+          {
+            "id": "w2",
+            "text": "知道"
+          },
+          {
+            "id": "w3",
+            "text": ","
+          },
+          {
+            "id": "w11",
+            "text": "是"
+          },
+          {
+            "id": "w5",
+            "text": "找"
+          },
+          {
+            "id": "w14",
+            "text": "后边"
+          },
+          {
+            "id": "w10",
+            "text": "不"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8",
+          "w9",
+          "w10",
+          "w11",
+          "w12",
+          "w13",
+          "w14",
+          "w15"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 11
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 6).",
+      "reference_answer": "是的。你开车没开车?",
+      "rubric": "Câu đúng: 是的。你开车没开车? Không thêm 吗 vào cuối câu hỏi chính phản thông thường.",
+      "config": {
+        "items": [
+          {
+            "id": "w5",
+            "text": "车"
+          },
+          {
+            "id": "w8",
+            "text": "车"
+          },
+          {
+            "id": "w7",
+            "text": "开"
+          },
+          {
+            "id": "w4",
+            "text": "开"
+          },
+          {
+            "id": "w3",
+            "text": "你"
+          },
+          {
+            "id": "w6",
+            "text": "没"
+          },
+          {
+            "id": "w1",
+            "text": "的"
+          },
+          {
+            "id": "w9",
+            "text": "?"
+          },
+          {
+            "id": "w2",
+            "text": "。"
+          },
+          {
+            "id": "w0",
+            "text": "是"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8",
+          "w9"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 11
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ],
+  "source_documents": {
+    "vocabulary": "DOCX",
+    "theory": "HSK1 PDF"
+  }
+}

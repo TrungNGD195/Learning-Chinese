@@ -445,6 +445,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/v1/me/vocabulary-review": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Vocabulary Review */
+        get: operations["vocabulary_review_api_v1_me_vocabulary_review_get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/v1/hsk-levels": {
         parameters: {
             query?: never;
@@ -3210,6 +3227,48 @@ export interface components {
             /** Correct Order */
             correct_order: string[];
         };
+        /** ReviewCard */
+        ReviewCard: {
+            /** Id */
+            id: string;
+            /** Hanzi */
+            hanzi: string;
+            /** Pinyin */
+            pinyin: string;
+            /** Vietnamese Meaning */
+            vietnamese_meaning: string;
+            /** Part Of Speech */
+            part_of_speech: string | null;
+            /** Lessons */
+            lessons: components["schemas"]["ReviewOrigin"][];
+        };
+        /** ReviewDeck */
+        ReviewDeck: {
+            /** Items */
+            items: components["schemas"]["ReviewCard"][];
+            /** Total */
+            total: number;
+            /** Page */
+            page: number;
+            /** Page Size */
+            page_size: number;
+        };
+        /** ReviewOrigin */
+        ReviewOrigin: {
+            /**
+             * Lesson Id
+             * Format: uuid
+             */
+            lesson_id: string;
+            /** Hsk Level */
+            hsk_level: number;
+            /** Lesson Number */
+            lesson_number: number;
+            /** Title */
+            title: string;
+            /** Note */
+            note: string | null;
+        };
         /** SendMessageResponse */
         SendMessageResponse: {
             user_message: components["schemas"]["MessageResponse"];
@@ -4480,6 +4539,42 @@ export interface operations {
                 };
                 content: {
                     "application/json": components["schemas"]["LessonProgressResponse"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    vocabulary_review_api_v1_me_vocabulary_review_get: {
+        parameters: {
+            query?: {
+                hsk_level?: number | null;
+                lesson_id?: string | null;
+                page?: number;
+                page_size?: number;
+            };
+            header?: never;
+            path?: never;
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ReviewDeck"];
                 };
             };
             /** @description Validation Error */

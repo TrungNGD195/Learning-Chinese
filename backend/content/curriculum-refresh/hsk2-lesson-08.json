@@ -1,0 +1,1764 @@
+{
+  "key": "hsk2-lesson-08-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 2,
+    "lesson_number": 8,
+    "title": "我最讨厌吃药 · Sức khỏe và trạng thái",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "怎么了",
+      "pinyin": "zěn me le",
+      "vietnamese_meaning": "có chuyện gì vậy, làm sao vậy",
+      "part_of_speech": "cụm nghi vấn",
+      "example": "你怎么了？\nnǐ zěn me le ？\nBạn làm sao vậy?",
+      "order_index": 1,
+      "note": null,
+      "source_key": "2:8:怎么了"
+    },
+    {
+      "hanzi": "脸色",
+      "pinyin": "liǎn sè",
+      "vietnamese_meaning": "sắc mặt",
+      "part_of_speech": "danh từ",
+      "example": "请看他的脸色。\nqǐng kàn tā de liǎn sè 。\nHãy nhìn sắc mặt của anh ấy.",
+      "order_index": 2,
+      "note": null,
+      "source_key": "2:8:脸色"
+    },
+    {
+      "hanzi": "疼",
+      "pinyin": "téng",
+      "vietnamese_meaning": "đau",
+      "part_of_speech": "tính từ",
+      "example": "我的头很疼。\nwǒ de tóu hěn téng 。\nĐầu tôi rất đau.",
+      "order_index": 3,
+      "note": null,
+      "source_key": "2:8:疼"
+    },
+    {
+      "hanzi": "头疼",
+      "pinyin": "tóu téng",
+      "vietnamese_meaning": "đau đầu",
+      "part_of_speech": "động từ",
+      "example": "他今天头疼了。\ntā jīn tiān tóu téng le 。\nHôm nay anh ấy đau đầu rồi.",
+      "order_index": 4,
+      "note": null,
+      "source_key": "2:8:头疼"
+    },
+    {
+      "hanzi": "发烧",
+      "pinyin": "fā shāo",
+      "vietnamese_meaning": "sốt, bị sốt",
+      "part_of_speech": "động từ",
+      "example": "他今天发烧了。\ntā jīn tiān fā shāo le 。\nHôm nay anh ấy sốt, bị sốt rồi.",
+      "order_index": 5,
+      "note": null,
+      "source_key": "2:8:发烧"
+    },
+    {
+      "hanzi": "感冒",
+      "pinyin": "gǎn mào",
+      "vietnamese_meaning": "cảm, bị cảm",
+      "part_of_speech": "danh từ, động từ",
+      "example": "他今天感冒了。\ntā jīn tiān gǎn mào le 。\nHôm nay anh ấy cảm, bị cảm rồi.",
+      "order_index": 6,
+      "note": null,
+      "source_key": "2:8:感冒"
+    },
+    {
+      "hanzi": "肚子",
+      "pinyin": "dǔ zi",
+      "vietnamese_meaning": "bụng",
+      "part_of_speech": "danh từ",
+      "example": "请看他的肚子。\nqǐng kàn tā de dǔ zi 。\nHãy nhìn bụng của anh ấy.",
+      "order_index": 7,
+      "note": null,
+      "source_key": "2:8:肚子"
+    },
+    {
+      "hanzi": "拉肚子",
+      "pinyin": "lā dù zi",
+      "vietnamese_meaning": "tiêu chảy",
+      "part_of_speech": "động từ",
+      "example": "他今天拉肚子了。\ntā jīn tiān lā dù zi le 。\nHôm nay anh ấy tiêu chảy rồi.",
+      "order_index": 8,
+      "note": null,
+      "source_key": "2:8:拉肚子"
+    },
+    {
+      "hanzi": "经常",
+      "pinyin": "jīngcháng",
+      "vietnamese_meaning": "thường xuyên",
+      "part_of_speech": "phó từ",
+      "example": "我经常去看他。\nwǒ jīng cháng qù kàn tā 。\nTôi thường xuyên đến thăm anh ấy.",
+      "order_index": 9,
+      "note": null,
+      "source_key": "2:8:经常"
+    },
+    {
+      "hanzi": "站",
+      "pinyin": "zhàn",
+      "vietnamese_meaning": "đứng",
+      "part_of_speech": "động từ",
+      "example": "他站在门口。\ntā zhàn zài mén kǒu 。\nAnh ấy đứng trước cửa.",
+      "order_index": 10,
+      "note": null,
+      "source_key": "2:8:站"
+    },
+    {
+      "hanzi": "动",
+      "pinyin": "dòng",
+      "vietnamese_meaning": "cử động",
+      "part_of_speech": "động từ",
+      "example": "你别动，我帮你。\nnǐ bié dòng ， wǒ bāng nǐ 。\nBạn đừng cử động, tôi giúp bạn.",
+      "order_index": 11,
+      "note": null,
+      "source_key": "2:8:动"
+    },
+    {
+      "hanzi": "好好儿",
+      "pinyin": "hǎo hǎo ér",
+      "vietnamese_meaning": "cho tốt, cẩn thận, đàng hoàng",
+      "part_of_speech": "phó từ",
+      "example": "你好好儿坐着，我帮你。\nnǐ hǎo hǎo ér zuò zhe ， wǒ bāng nǐ 。\nBạn cứ ngồi yên nghỉ cho tốt, tôi giúp bạn.",
+      "order_index": 12,
+      "note": null,
+      "source_key": "2:8:好好儿"
+    },
+    {
+      "hanzi": "着",
+      "pinyin": "(trợ từ)",
+      "vietnamese_meaning": "đang, trạng thái còn duy trì (sau động từ)",
+      "part_of_speech": "trợ từ động thái",
+      "example": "你好好儿坐着，我帮你。\nnǐ hǎo hǎo ér zuò zhe ， wǒ bāng nǐ 。\nBạn cứ ngồi yên nghỉ cho tốt, tôi giúp bạn.",
+      "order_index": 13,
+      "note": "Trong bài này 着 đọc nhẹ zhe để chỉ trạng thái duy trì; 在/正在 thường nhấn mạnh hành động đang tiến hành.",
+      "source_key": "2:8:着"
+    },
+    {
+      "hanzi": "路上",
+      "pinyin": "lùshang",
+      "vietnamese_meaning": "trên đường",
+      "part_of_speech": "danh từ",
+      "example": "我在路上看见他了。\nwǒ zài lù shàng kàn jiàn tā le 。\nTôi đã nhìn thấy anh ấy trên đường.",
+      "order_index": 14,
+      "note": null,
+      "source_key": "2:8:路上"
+    },
+    {
+      "hanzi": "衬衫",
+      "pinyin": "chèn shān",
+      "vietnamese_meaning": "áo sơ mi",
+      "part_of_speech": "danh từ",
+      "example": "这是我的衬衫。\nzhè shì wǒ de chèn shān 。\nĐây là áo sơ mi của tôi.",
+      "order_index": 15,
+      "note": null,
+      "source_key": "2:8:衬衫"
+    },
+    {
+      "hanzi": "白色",
+      "pinyin": "bái sè",
+      "vietnamese_meaning": "màu trắng",
+      "part_of_speech": "danh từ",
+      "example": "我喜欢白色。\nwǒ xǐ huān bái sè 。\nTôi thích màu trắng.",
+      "order_index": 16,
+      "note": null,
+      "source_key": "2:8:白色"
+    },
+    {
+      "hanzi": "黑色",
+      "pinyin": "hēi sè",
+      "vietnamese_meaning": "màu đen",
+      "part_of_speech": "danh từ",
+      "example": "我喜欢黑色。\nwǒ xǐ huān hēi sè 。\nTôi thích màu đen.",
+      "order_index": 17,
+      "note": null,
+      "source_key": "2:8:黑色"
+    },
+    {
+      "hanzi": "慢",
+      "pinyin": "màn",
+      "vietnamese_meaning": "chậm",
+      "part_of_speech": "tính từ",
+      "example": "你慢点儿走。\nnǐ màn diǎn ér zǒu 。\nBạn đi chậm một chút.",
+      "order_index": 18,
+      "note": null,
+      "source_key": "2:8:慢"
+    },
+    {
+      "hanzi": "开药",
+      "pinyin": "kāi yào",
+      "vietnamese_meaning": "kê thuốc",
+      "part_of_speech": "động từ",
+      "example": "医生给他开药。\nyī shēng gěi tā kāi yào 。\nBác sĩ kê thuốc cho anh ấy.",
+      "order_index": 19,
+      "note": null,
+      "source_key": "2:8:开药"
+    },
+    {
+      "hanzi": "最",
+      "pinyin": "zuì",
+      "vietnamese_meaning": "nhất",
+      "part_of_speech": "phó từ",
+      "example": "我最喜欢喝茶。\nwǒ zuì xǐ huān hē chá 。\nTôi thích uống trà nhất.",
+      "order_index": 20,
+      "note": null,
+      "source_key": "2:8:最"
+    },
+    {
+      "hanzi": "讨厌",
+      "pinyin": "tǎo yàn",
+      "vietnamese_meaning": "ghét; đáng ghét",
+      "part_of_speech": "động từ, tính từ",
+      "example": "我讨厌吃药。\nwǒ tǎo yàn chī yào 。\nTôi ghét uống thuốc.",
+      "order_index": 21,
+      "note": null,
+      "source_key": "2:8:讨厌"
+    },
+    {
+      "hanzi": "苦",
+      "pinyin": "kǔ",
+      "vietnamese_meaning": "đắng; khổ",
+      "part_of_speech": "tính từ",
+      "example": "这个药很苦。\nzhè ge yào hěn kǔ 。\nThuốc này rất đắng.",
+      "order_index": 22,
+      "note": null,
+      "source_key": "2:8:苦"
+    },
+    {
+      "hanzi": "办法",
+      "pinyin": "bàn fǎ",
+      "vietnamese_meaning": "cách, biện pháp",
+      "part_of_speech": "danh từ",
+      "example": "我有一个办法。\nwǒ yǒu yí gè bàn fǎ 。\nTôi có một cách.",
+      "order_index": 23,
+      "note": null,
+      "source_key": "2:8:办法"
+    },
+    {
+      "hanzi": "住院",
+      "pinyin": "zhù yuàn",
+      "vietnamese_meaning": "nằm viện, nhập viện",
+      "part_of_speech": "động từ",
+      "example": "他今天住院了。\ntā jīn tiān zhù yuàn le 。\nHôm nay anh ấy nằm viện, nhập viện rồi.",
+      "order_index": 24,
+      "note": null,
+      "source_key": "2:8:住院"
+    },
+    {
+      "hanzi": "检查",
+      "pinyin": "jiǎn chá",
+      "vietnamese_meaning": "kiểm tra, khám",
+      "part_of_speech": "động từ",
+      "example": "医生给我检查身体。\nyī shēng gěi wǒ jiǎn chá shēn tǐ 。\nBác sĩ khám sức khỏe cho tôi.",
+      "order_index": 25,
+      "note": null,
+      "source_key": "2:8:检查"
+    },
+    {
+      "hanzi": "可能",
+      "pinyin": "kě néng",
+      "vietnamese_meaning": "có thể, có khả năng (phỏng đoán)",
+      "part_of_speech": "động từ năng nguyện, phó từ",
+      "example": "他今天可能不来。\ntā jīn tiān kě néng bù lái 。\nHôm nay có thể anh ấy không đến.",
+      "order_index": 26,
+      "note": null,
+      "source_key": "2:8:可能"
+    }
+  ],
+  "grammar": [
+    {
+      "name": "Trạng thái tiếp diễn với 着",
+      "structure": "Động từ + 着 +（tân ngữ）",
+      "explanation": "Mô tả sự duy trì của trạng thái hoặc động tác.",
+      "usage": "在/正在 nhấn mạnh tiến trình hành động; 着 thường nhấn mạnh trạng thái duy trì. 着 đọc nhẹ zhe ở đây.",
+      "example": "他手里拿着一本书。\ntā shǒu lǐ ná zhe yī běn shū 。\nAnh ấy đang cầm một quyển sách trong tay.",
+      "note": "在/正在 nhấn mạnh tiến trình hành động; 着 thường nhấn mạnh trạng thái duy trì. 着 đọc nhẹ zhe ở đây.",
+      "order_index": 1
+    },
+    {
+      "name": "Mức độ cao nhất với 最",
+      "structure": "Phạm vi/ngữ cảnh + 最 + tính từ/động từ tâm lý",
+      "explanation": "Nêu đối tượng có mức độ cao nhất trong phạm vi.",
+      "usage": "最 không cần thêm 很; phạm vi so sánh phải hiểu được từ ngữ cảnh.",
+      "example": "我最讨厌吃药。\nwǒ zuì tǎo yàn chī yào 。\nTôi ghét uống thuốc nhất.",
+      "note": "最 không cần thêm 很; phạm vi so sánh phải hiểu được từ ngữ cảnh.",
+      "order_index": 2
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Hỏi thăm bạn bị đau đầu",
+      "content": "小刚:小丽,你怎么了?你脸色不太好。\n小丽:我头疼,有点儿不舒服。\n小刚:你经常头疼吗?\n小丽:不是,就今天疼得很厉害。(过了一会儿,小丽站起来走到门口)\n小刚:小丽,你要去哪儿?\n小丽:我想喝点儿热水。\n小刚:你别动,好好儿坐着,我帮你。",
+      "pinyin": "xiǎo gāng : xiǎo lì , nǐ zěn me le ? nǐ liǎn sè bù tài hǎo 。\nxiǎo lì : wǒ tóu téng , yǒu diǎn ér bù shū fú 。\nxiǎo gāng : nǐ jīng cháng tóu téng ma ?\nxiǎo lì : bú shì , jiù jīn tiān téng de hěn lì hài 。 ( guò le yī huì er , xiǎo lì zhàn qǐ lái zǒu dào mén kǒu )\nxiǎo gāng : xiǎo lì , nǐ yào qù nǎ ér ?\nxiǎo lì : wǒ xiǎng hē diǎn ér rè shuǐ 。\nxiǎo gāng : nǐ bié dòng , hǎo hǎo ér zuò zhe , wǒ bāng nǐ 。",
+      "vietnamese_translation": "Tiểu Cương: Tiểu Lệ, cậu sao vậy? Sắc\nmặt cậu không được tốt lắm.\nTiểu Lệ: Mình bị đau đầu, hơi khó chịu\nmột chút.\nTiểu Cương: Cậu có hay bị đau đầu\nkhông?\nTiểu Lệ: Không, chỉ hôm nay đau nhiều\nthôi.\n(Một lát sau, Tiểu Lệ đứng dậy đi về\nphía cửa)\nTiểu Cương: Tiểu Lệ, cậu định đi đâu\nvậy?\nTiểu Lệ: Mình muốn uống một chút\nnước nóng.\nTiểu Cương: Cậu đừng đi nữa, ngồi yên\nđi, mình giúp cậu.",
+      "source_reference": "Giáo trình HSK2 3.0 Hanu, bài 8, PDF 86."
+    },
+    {
+      "order_index": 2,
+      "title": "Đưa bạn về nhà",
+      "content": "小丽:小刚,我很不舒服,想回家。\n小刚:那我送你回家吧。(路上)\n小刚:小丽,你看,那个女同学就是我喜欢的人。\n小丽:哪个啊?\n小刚:她上身穿着一件白色的衬衫,下身穿着一条黑色的裙子。\n小丽:那不是小雪吗?你喜欢她啊?\n小刚:挺喜欢的。我们快走吧!\n小丽:你慢点儿走,我生着病呢!",
+      "pinyin": "xiǎo lì : xiǎo gāng , wǒ hěn bù shū fú , xiǎng huí jiā 。\nxiǎo gāng : nà wǒ sòng nǐ huí jiā ba 。 ( lù shàng )\nxiǎo gāng : xiǎo lì , nǐ kàn , nà ge nǚ tóng xué jiù shì wǒ xǐ huān de rén 。\nxiǎo lì : nǎ ge a ?\nxiǎo gāng : tā shàng shēn chuān zhe yī jiàn bái sè de chèn shān , xià shēn chuān zhe yī tiáo hēi sè de qún zi 。\nxiǎo lì : nà bú shì xiǎo xuě ma ? nǐ xǐ huān tā a ?\nxiǎo gāng : tǐng xǐ huān de 。 wǒ men kuài zǒu ba !\nxiǎo lì : nǐ màn diǎn ér zǒu , wǒ shēng zhe bìng ne !",
+      "vietnamese_translation": "Tiểu Lệ: Hôm nay mình rất không khoẻ, mình muốn về nhà.\nTiểu Cương: Vậy mình đưa cậu về nhà nhé.\n(Trên đường)\nTiểu Cương: Tiểu Lệ, cậu nhìn kìa, bạn gái kia chính là người mình thích đấy.\nTiểu Lệ: Bạn nào cơ?\nTiểu Cương: Cô ấy mặc áo sơ mi trắng ở trên,  ở dưới mặc một chiếc váy đen.\nTiểu Lệ:  Đó chẳng phải là Tiểu Tuyết sao? Cậu thích cô ấy á?\nTiểu Cương: Mình thích lắm. Chúng ta đi nhanh lên đi!\nTiểu Lệ: Cậu đi chậm thôi, mình đang bị ốm đấy!",
+      "source_reference": "Giáo trình HSK2 3.0 Hanu, bài 8, PDF 89."
+    },
+    {
+      "order_index": 3,
+      "title": "Đi khám bác sĩ",
+      "content": "小刚:小丽,你身体不舒服,要不要去医院看看?\n小丽:我不喜欢去医院。医生经常给我开药。我最讨厌吃药了,什么药都很苦。\n小刚:不行,身体不舒服的时候,要去医院看医生,也要吃药。\n小丽:可是我不想吃药。\n小刚:那我们先去看看医生,好吗?\n小丽:行吧。",
+      "pinyin": "xiǎo gāng : xiǎo lì , nǐ shēn tǐ bù shū fú , yào bù yào qù yī yuàn kàn kàn ?\nxiǎo lì : wǒ bù xǐ huān qù yī yuàn 。 yī shēng jīng cháng gěi wǒ kāi yào 。 wǒ zuì tǎo yàn chī yào le , shén me yào dōu hěn kǔ 。\nxiǎo gāng : bù xíng , shēn tǐ bù shū fú de shí hòu , yào qù yī yuàn kàn yī shēng , yě yào chī yào 。\nxiǎo lì : kě shì wǒ bù xiǎng chī yào 。\nxiǎo gāng : nà wǒ men xiān qù kàn kàn yī shēng , hǎo ma ?\nxiǎo lì : xíng ba 。",
+      "vietnamese_translation": "Tiểu Cương: Tiểu Lệ, cậu không khỏe, có muốn\nđi bệnh viện khám không?\nTiểu Lệ: Mình không thích đi bệnh viện. Bác sĩ\nthường kê thuốc cho mình. Mình ghét uống\nthuốc nhất, thuốc nào cũng rất đắng.\nTiểu Cương: Không được, khi cơ thể không khỏe\nthì phải đi bệnh viện khám bác sĩ, cũng phải\nuống thuốc.\nTiểu Lệ: Nhưng mình không muốn uống thuốc.\nTiểu Cương: Vậy chúng ta đi khám bác sĩ trước\nnhé, được không?\nTiểu Lệ: Được thôi.",
+      "source_reference": "Giáo trình HSK2 3.0 Hanu, bài 8, PDF 92."
+    },
+    {
+      "order_index": 4,
+      "title": "Một ngày bị ốm",
+      "content": "我今天身体不舒服,头很疼。小刚叫我去医院看看,但是我不太想动。小刚没办法,就去药店帮我买了一些药。我吃了药,觉得身体好多了。现在我可以好好儿休息了。",
+      "pinyin": "wǒ jīn tiān shēn tǐ bù shū fú , tóu hěn téng 。 xiǎo gāng jiào wǒ qù yī yuàn kàn kàn , dàn shì wǒ bù tài xiǎng dòng 。 xiǎo gāng méi bàn fǎ , jiù qù yào diàn bāng wǒ mǎi le yī xiē yào 。 wǒ chī le yào , jué de shēn tǐ hǎo duō le 。 xiàn zài wǒ kě yǐ hǎo hǎo ér xiū xī le 。",
+      "vietnamese_translation": "Hôm nay trong người mình không được khỏe, đầu rất đau. Tiểu Cương bảo mình đi bệnh viện khám xem sao, nhưng mình không muốn cử động lắm (không muốn đi đâu cả). Tiểu Cương không còn cách nào khác, đành ra tiệm thuốc mua giúp mình một ít thuốc. Mình uống thuốc xong thì thấy người đã khỏe hơn nhiều rồi. Giờ mình có thể nghỉ ngơi rồi.",
+      "source_reference": "Giáo trình HSK2 3.0 Hanu, bài 8, PDF 94, 95."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 2 · Bài 8 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp; dùng kiến thức của bài này và các bài trước, không dùng bài sau. Đạt từ 80%; được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "review_status": "DRAFT_REQUIRES_EDITOR_REVIEW",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 1).",
+      "options": [
+        {
+          "option_text": "đang, trạng thái còn duy trì (sau động từ)",
+          "is_correct": false
+        },
+        {
+          "option_text": "biết; có thể (biểu thị biết làm gì)",
+          "is_correct": false
+        },
+        {
+          "option_text": "cười",
+          "is_correct": false
+        },
+        {
+          "option_text": "có chuyện gì vậy, làm sao vậy",
+          "is_correct": true
+        }
+      ],
+      "rubric": "怎么了 (zěn me le) nghĩa là có chuyện gì vậy, làm sao vậy. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "怎么了"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 8
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “头疼” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "vẽ tranh",
+          "is_correct": false
+        },
+        {
+          "option_text": "đồ; đồ vật",
+          "is_correct": false
+        },
+        {
+          "option_text": "thức dậy",
+          "is_correct": false
+        },
+        {
+          "option_text": "đau đầu",
+          "is_correct": true
+        }
+      ],
+      "rubric": "头疼 (tóu téng) nghĩa là đau đầu. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 8
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “bàn fǎ” và nghĩa “cách, biện pháp”.",
+      "options": [
+        {
+          "option_text": "办法",
+          "is_correct": true
+        },
+        {
+          "option_text": "走路",
+          "is_correct": false
+        },
+        {
+          "option_text": "回来",
+          "is_correct": false
+        },
+        {
+          "option_text": "次",
+          "is_correct": false
+        }
+      ],
+      "rubric": "办法 (bàn fǎ) nghĩa là cách, biện pháp. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 8
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 4).",
+      "options": [
+        {
+          "option_text": "học sinh tiểu học",
+          "is_correct": false
+        },
+        {
+          "option_text": "lên, đi lên",
+          "is_correct": false
+        },
+        {
+          "option_text": "ngày (cách ghi trang trọng)",
+          "is_correct": false
+        },
+        {
+          "option_text": "đang, trạng thái còn duy trì (sau động từ)",
+          "is_correct": true
+        }
+      ],
+      "rubric": "着 ((trợ từ)) nghĩa là đang, trạng thái còn duy trì (sau động từ). Trong bài này 着 đọc nhẹ zhe để chỉ trạng thái duy trì; 在/正在 thường nhấn mạnh hành động đang tiến hành.",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "着"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 8
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “回来” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "thủ đô",
+          "is_correct": false
+        },
+        {
+          "option_text": "nước ngoài",
+          "is_correct": false
+        },
+        {
+          "option_text": "về, trở về",
+          "is_correct": true
+        },
+        {
+          "option_text": "trận đấu, thi đấu",
+          "is_correct": false
+        }
+      ],
+      "rubric": "回来 (huílái) nghĩa là về, trở về. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 2
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “liǎn sè” và nghĩa “sắc mặt”.",
+      "options": [
+        {
+          "option_text": "脸色",
+          "is_correct": true
+        },
+        {
+          "option_text": "水果",
+          "is_correct": false
+        },
+        {
+          "option_text": "说话",
+          "is_correct": false
+        },
+        {
+          "option_text": "第",
+          "is_correct": false
+        }
+      ],
+      "rubric": "脸色 (liǎn sè) nghĩa là sắc mặt. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 8
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 7).",
+      "options": [
+        {
+          "option_text": "áp lực",
+          "is_correct": true
+        },
+        {
+          "option_text": "rất",
+          "is_correct": false
+        },
+        {
+          "option_text": "vì vậy, cho nên",
+          "is_correct": false
+        },
+        {
+          "option_text": "âm nhạc",
+          "is_correct": false
+        }
+      ],
+      "rubric": "压力 (yālì) nghĩa là áp lực. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true,
+          "audio_text": "压力"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 7
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “白色” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "màu trắng",
+          "is_correct": true
+        },
+        {
+          "option_text": "con (lượng từ cho một số động vật)",
+          "is_correct": false
+        },
+        {
+          "option_text": "cà phê",
+          "is_correct": false
+        },
+        {
+          "option_text": "nhưng (dạng ngắn của 但是)",
+          "is_correct": false
+        }
+      ],
+      "rubric": "白色 (bái sè) nghĩa là màu trắng. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 8
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “jiǎn chá” và nghĩa “kiểm tra, khám”.",
+      "options": [
+        {
+          "option_text": "和",
+          "is_correct": false
+        },
+        {
+          "option_text": "奶茶",
+          "is_correct": false
+        },
+        {
+          "option_text": "块",
+          "is_correct": false
+        },
+        {
+          "option_text": "检查",
+          "is_correct": true
+        }
+      ],
+      "rubric": "检查 (jiǎn chá) nghĩa là kiểm tra, khám. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 8
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "Vương Nhất Tuyết (tên người)",
+          "is_correct": false
+        },
+        {
+          "option_text": "tàu hỏa",
+          "is_correct": false
+        },
+        {
+          "option_text": "chậm",
+          "is_correct": true
+        },
+        {
+          "option_text": "Việt Nam",
+          "is_correct": false
+        }
+      ],
+      "rubric": "慢 (màn) nghĩa là chậm. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "慢"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 8
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “肚子” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "thường xuyên",
+          "is_correct": false
+        },
+        {
+          "option_text": "ra kia",
+          "is_correct": false
+        },
+        {
+          "option_text": "bụng",
+          "is_correct": true
+        },
+        {
+          "option_text": "độc thân",
+          "is_correct": false
+        }
+      ],
+      "rubric": "肚子 (dǔ zi) nghĩa là bụng. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 8
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “téng” và nghĩa “đau”.",
+      "options": [
+        {
+          "option_text": "你",
+          "is_correct": false
+        },
+        {
+          "option_text": "疼",
+          "is_correct": true
+        },
+        {
+          "option_text": "就",
+          "is_correct": false
+        },
+        {
+          "option_text": "努力",
+          "is_correct": false
+        }
+      ],
+      "rubric": "疼 (téng) nghĩa là đau. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 8
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “có thể, có khả năng (phỏng đoán)” (gợi ý pinyin: kě néng).",
+      "reference_answer": "可能",
+      "rubric": "Đáp án: 可能 (kě néng). ",
+      "config": {
+        "accepted_answers": [
+          "可能"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 8
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “sinh nhật” (gợi ý pinyin: shēngrì).",
+      "reference_answer": "生日",
+      "rubric": "Đáp án: 生日 (shēngrì). ",
+      "config": {
+        "accepted_answers": [
+          "生日"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 4
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “cử động” (gợi ý pinyin: dòng).",
+      "reference_answer": "动",
+      "rubric": "Đáp án: 动 (dòng). ",
+      "config": {
+        "accepted_answers": [
+          "动"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 8
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “đứng” (gợi ý pinyin: zhàn).",
+      "reference_answer": "站",
+      "rubric": "Đáp án: 站 (zhàn). ",
+      "config": {
+        "accepted_answers": [
+          "站"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 8
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 1).",
+      "rubric": "可以: có thể; được phép; 多少: bao nhiêu; 忙: bận; 中午: buổi trưa",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "可以"
+          },
+          {
+            "id": "l1",
+            "text": "多少"
+          },
+          {
+            "id": "l2",
+            "text": "忙"
+          },
+          {
+            "id": "l3",
+            "text": "中午"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r0",
+            "text": "có thể; được phép"
+          },
+          {
+            "id": "r3",
+            "text": "buổi trưa"
+          },
+          {
+            "id": "r1",
+            "text": "bao nhiêu"
+          },
+          {
+            "id": "r2",
+            "text": "bận"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 12
+        },
+        {
+          "hsk": 1,
+          "lesson": 4
+        },
+        {
+          "hsk": 1,
+          "lesson": 3
+        },
+        {
+          "hsk": 1,
+          "lesson": 7
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 2).",
+      "rubric": "久: lâu; 发音: phát âm; cách phát âm; 售货员: nhân viên bán hàng; 再见: tạm biệt",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "久"
+          },
+          {
+            "id": "l1",
+            "text": "发音"
+          },
+          {
+            "id": "l2",
+            "text": "售货员"
+          },
+          {
+            "id": "l3",
+            "text": "再见"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r3",
+            "text": "tạm biệt"
+          },
+          {
+            "id": "r1",
+            "text": "phát âm; cách phát âm"
+          },
+          {
+            "id": "r2",
+            "text": "nhân viên bán hàng"
+          },
+          {
+            "id": "r0",
+            "text": "lâu"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 13
+        },
+        {
+          "hsk": 1,
+          "lesson": 13
+        },
+        {
+          "hsk": 1,
+          "lesson": 10
+        },
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Trạng thái tiếp diễn với 着”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mô tả sự duy trì của trạng thái hoặc động tác.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Động từ + 着 +（tân ngữ）. Mô tả sự duy trì của trạng thái hoặc động tác. 在/正在 nhấn mạnh tiến trình hành động; 着 thường nhấn mạnh trạng thái duy trì. 着 đọc nhẹ zhe ở đây.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 8
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Mức độ cao nhất với 最”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nêu đối tượng có mức độ cao nhất trong phạm vi.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Phạm vi/ngữ cảnh + 最 + tính từ/động từ tâm lý. Nêu đối tượng có mức độ cao nhất trong phạm vi. 最 không cần thêm 很; phạm vi so sánh phải hiểu được từ ngữ cảnh.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 8
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Trạng thái tiếp diễn với 着” (mục 3): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "在/正在 nhấn mạnh tiến trình hành động; 着 thường nhấn mạnh trạng thái duy trì. 着 đọc nhẹ zhe ở đây.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Động từ + 着 +（tân ngữ）. Mô tả sự duy trì của trạng thái hoặc động tác. 在/正在 nhấn mạnh tiến trình hành động; 着 thường nhấn mạnh trạng thái duy trì. 着 đọc nhẹ zhe ở đây.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 8
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Mức độ cao nhất với 最” (mục 4): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "最 không cần thêm 很; phạm vi so sánh phải hiểu được từ ngữ cảnh.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Phạm vi/ngữ cảnh + 最 + tính từ/động từ tâm lý. Nêu đối tượng có mức độ cao nhất trong phạm vi. 最 không cần thêm 很; phạm vi so sánh phải hiểu được từ ngữ cảnh.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 8
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Trạng thái tiếp diễn với 着” (mục 5): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "在/正在 nhấn mạnh tiến trình hành động; 着 thường nhấn mạnh trạng thái duy trì. 着 đọc nhẹ zhe ở đây.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Động từ + 着 +（tân ngữ）. Mô tả sự duy trì của trạng thái hoặc động tác. 在/正在 nhấn mạnh tiến trình hành động; 着 thường nhấn mạnh trạng thái duy trì. 着 đọc nhẹ zhe ở đây.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 8
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Mức độ cao nhất với 最” (mục 6): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "最 không cần thêm 很; phạm vi so sánh phải hiểu được từ ngữ cảnh.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Phạm vi/ngữ cảnh + 最 + tính từ/động từ tâm lý. Nêu đối tượng có mức độ cao nhất trong phạm vi. 最 không cần thêm 很; phạm vi so sánh phải hiểu được từ ngữ cảnh.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 8
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 1).",
+      "reference_answer": "他手里拿着一本书。",
+      "rubric": "Câu đúng: 他手里拿着一本书。 在/正在 nhấn mạnh tiến trình hành động; 着 thường nhấn mạnh trạng thái duy trì. 着 đọc nhẹ zhe ở đây.",
+      "config": {
+        "items": [
+          {
+            "id": "w3",
+            "text": "拿"
+          },
+          {
+            "id": "w2",
+            "text": "里"
+          },
+          {
+            "id": "w5",
+            "text": "一"
+          },
+          {
+            "id": "w8",
+            "text": "。"
+          },
+          {
+            "id": "w7",
+            "text": "书"
+          },
+          {
+            "id": "w4",
+            "text": "着"
+          },
+          {
+            "id": "w6",
+            "text": "本"
+          },
+          {
+            "id": "w0",
+            "text": "他"
+          },
+          {
+            "id": "w1",
+            "text": "手"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 8
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 2).",
+      "reference_answer": "我最讨厌吃药。",
+      "rubric": "Câu đúng: 我最讨厌吃药。 最 không cần thêm 很; phạm vi so sánh phải hiểu được từ ngữ cảnh.",
+      "config": {
+        "items": [
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w1",
+            "text": "最"
+          },
+          {
+            "id": "w3",
+            "text": "吃药"
+          },
+          {
+            "id": "w4",
+            "text": "。"
+          },
+          {
+            "id": "w2",
+            "text": "讨厌"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 8
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 3).",
+      "reference_answer": "小丽,你怎么了?你脸色不太好。",
+      "rubric": "Câu đúng: 小丽,你怎么了?你脸色不太好。 在/正在 nhấn mạnh tiến trình hành động; 着 thường nhấn mạnh trạng thái duy trì. 着 đọc nhẹ zhe ở đây.",
+      "config": {
+        "items": [
+          {
+            "id": "w8",
+            "text": "好"
+          },
+          {
+            "id": "w0",
+            "text": "小丽"
+          },
+          {
+            "id": "w3",
+            "text": "怎么了"
+          },
+          {
+            "id": "w6",
+            "text": "脸色"
+          },
+          {
+            "id": "w9",
+            "text": "。"
+          },
+          {
+            "id": "w7",
+            "text": "不太"
+          },
+          {
+            "id": "w5",
+            "text": "你"
+          },
+          {
+            "id": "w1",
+            "text": ","
+          },
+          {
+            "id": "w4",
+            "text": "?"
+          },
+          {
+            "id": "w2",
+            "text": "你"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8",
+          "w9"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 8
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 4).",
+      "reference_answer": "我头疼,有点儿不舒服。",
+      "rubric": "Câu đúng: 我头疼,有点儿不舒服。 最 không cần thêm 很; phạm vi so sánh phải hiểu được từ ngữ cảnh.",
+      "config": {
+        "items": [
+          {
+            "id": "w4",
+            "text": "不"
+          },
+          {
+            "id": "w3",
+            "text": "有点儿"
+          },
+          {
+            "id": "w1",
+            "text": "头疼"
+          },
+          {
+            "id": "w2",
+            "text": ","
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w5",
+            "text": "舒服"
+          },
+          {
+            "id": "w6",
+            "text": "。"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 8
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 5).",
+      "reference_answer": "你经常头疼吗?",
+      "rubric": "Câu đúng: 你经常头疼吗? 在/正在 nhấn mạnh tiến trình hành động; 着 thường nhấn mạnh trạng thái duy trì. 着 đọc nhẹ zhe ở đây.",
+      "config": {
+        "items": [
+          {
+            "id": "w0",
+            "text": "你"
+          },
+          {
+            "id": "w2",
+            "text": "头疼"
+          },
+          {
+            "id": "w3",
+            "text": "吗"
+          },
+          {
+            "id": "w4",
+            "text": "?"
+          },
+          {
+            "id": "w1",
+            "text": "经常"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 8
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 6).",
+      "reference_answer": "不是,就今天疼得很厉害。(过了一会儿,小丽站起来走到门口)",
+      "rubric": "Câu đúng: 不是,就今天疼得很厉害。(过了一会儿,小丽站起来走到门口) 最 không cần thêm 很; phạm vi so sánh phải hiểu được từ ngữ cảnh.",
+      "config": {
+        "items": [
+          {
+            "id": "w2",
+            "text": ","
+          },
+          {
+            "id": "w13",
+            "text": ","
+          },
+          {
+            "id": "w17",
+            "text": "来"
+          },
+          {
+            "id": "w15",
+            "text": "站"
+          },
+          {
+            "id": "w20",
+            "text": "门"
+          },
+          {
+            "id": "w12",
+            "text": "一会儿"
+          },
+          {
+            "id": "w6",
+            "text": "得"
+          },
+          {
+            "id": "w7",
+            "text": "很"
+          },
+          {
+            "id": "w8",
+            "text": "厉害"
+          },
+          {
+            "id": "w14",
+            "text": "小丽"
+          },
+          {
+            "id": "w16",
+            "text": "起"
+          },
+          {
+            "id": "w18",
+            "text": "走"
+          },
+          {
+            "id": "w3",
+            "text": "就"
+          },
+          {
+            "id": "w5",
+            "text": "疼"
+          },
+          {
+            "id": "w19",
+            "text": "到"
+          },
+          {
+            "id": "w1",
+            "text": "是"
+          },
+          {
+            "id": "w4",
+            "text": "今天"
+          },
+          {
+            "id": "w10",
+            "text": "过"
+          },
+          {
+            "id": "w9",
+            "text": "。"
+          },
+          {
+            "id": "w11",
+            "text": "了"
+          },
+          {
+            "id": "w21",
+            "text": "口"
+          },
+          {
+            "id": "w0",
+            "text": "不"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8",
+          "w9",
+          "w10",
+          "w11",
+          "w12",
+          "w13",
+          "w14",
+          "w15",
+          "w16",
+          "w17",
+          "w18",
+          "w19",
+          "w20",
+          "w21"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 8
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ],
+  "source_documents": {
+    "vocabulary": "DOCX",
+    "theory": "HSK2 PDF"
+  }
+}

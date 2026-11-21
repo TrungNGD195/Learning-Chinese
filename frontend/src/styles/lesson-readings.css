@@ -1,16 +1,19 @@
-.lesson-reading-list { display: grid; gap: var(--space-6); }
+.lesson-reading-list { display: grid; gap: 20px; width: 100%; max-width: 1040px; margin-inline: auto; }
 .lesson-reading-intro { max-width: 65ch; color: var(--color-text-muted); }
-.lesson-reading-card { padding: clamp(20px, 3vw, 32px); }
-.lesson-reading-card__heading { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 24px; }
+.lesson-reading-card { padding: clamp(20px, 2.5vw, 28px); }
+.lesson-reading-card__heading { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; }
 .lesson-reading-card__heading h3 { margin: 0; font-size: 23px; line-height: 1.6; }
-.lesson-reading-text { max-width: 70ch; min-width: 0; }
+.lesson-reading-text { min-width: 0; }
 .lesson-reading-text p { white-space: pre-wrap; overflow-wrap: anywhere; margin: 0; }
-.lesson-reading-text .lesson-reading-text__hanzi { font-family: var(--font-product-cjk); font-size: clamp(28px, calc(var(--reader-font-size, 19px) + 14px), 40px); line-height: 1.9; color: var(--color-text-strong); margin: 0 0 28px; }
+.lesson-reading-text .lesson-reading-text__hanzi { font-family: var(--font-product-cjk); font-size: clamp(28px, 2.6vw, 36px); line-height: 1.8; color: var(--color-text-strong); margin: 0; }
 .admin-screen .admin-reading-preview .lesson-reading-text__hanzi { font-size: clamp(28px, calc(var(--reader-font-size, 19px) + 14px), 40px); line-height: 1.9; color: var(--color-text-strong); }
-.lesson-reading-text__support { margin-top: 20px; }
+.lesson-reading-text[data-illustrated="true"] { display: grid; grid-template-columns: minmax(0,3fr) minmax(0,2fr); align-items: center; gap: 28px; }
+.lesson-reading-text__copy { min-width: 0; }
+.lesson-reading-text__translations { display: grid; gap: 20px 28px; border-top: 1px solid var(--color-border); margin-top: 20px; padding-top: 20px; }
+.lesson-reading-text__support { min-width: 0; }
 .lesson-reading-text__support h4 { font-size: 14px; font-weight: 600; color: var(--color-text-muted); margin: 0 0 8px; }
 .lesson-reading-text__support p { font-size: var(--reader-font-size, 19px); line-height: 1.9; }
-.lesson-reading-card__actions { display: flex; justify-content: flex-end; margin-top: 28px; }
+.lesson-reading-card__actions { display: flex; justify-content: flex-end; margin-top: 20px; }
 .lesson-reading-card .ui-alert { margin-top: 20px; }
 .admin-reading-editor { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 28px; }
 .admin-reading-editor > * { min-width: 0; }
@@ -21,4 +24,12 @@
 @media (max-width: 600px) {
   .lesson-reading-card__actions .ui-button { width: 100%; }
   .lesson-reading-card__heading { flex-direction: column; }
+}
+.lesson-reading-scene { width: 100%; max-width: 380px; justify-self: end; aspect-ratio: 1; background-image: url('/academy/but-reading-scenes-v1.webp'); background-size: 400% 400%; background-repeat: no-repeat; border-radius: 14px; }
+@media(max-width:900px) {
+  .lesson-reading-text[data-illustrated="true"] { gap: 20px; }
+}
+@media(max-width:700px) {
+  .lesson-reading-text[data-illustrated="true"] { grid-template-columns: minmax(0,1fr); }
+  .lesson-reading-scene { width: min(100%,240px); justify-self: center; }
 }

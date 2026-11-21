@@ -334,6 +334,7 @@ describe('Logout, Profile, and change password', () => {
     renderApp('/pronunciation', learner)
     await screen.findByRole('heading', {name:'Giáo trình của bạn'})
     await waitFor(() => expect(queryClient.getQueryData(queryKeys.dashboard)).toEqual(dashboard))
+    await waitFor(() => expect(screen.getByRole('button', { name: "Đăng xuất" })).toBeEnabled())
     fireEvent.click(await screen.findByRole('button', { name: "Đăng xuất" }))
     expect(await screen.findByRole('alert')).toHaveTextContent('Chưa thể xác nhận đăng xuất')
     expect(queryClient.getQueryData(queryKeys.authMe)).toEqual(learner)

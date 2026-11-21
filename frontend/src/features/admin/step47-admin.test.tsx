@@ -409,7 +409,7 @@ describe('Lesson list, canonical editor, lifecycle and content', () => {
     expect(api.detachVocabulary).not.toHaveBeenCalled()
   })
   it('filters and paginates the lesson list, creates exact payload without status, then opens canonical detail', async () => {
-    vi.mocked(api.listAdminLessons).mockResolvedValue({ items: [lesson], page: 1, page_size: 20, total: 40 })
+    vi.mocked(api.listAdminLessons).mockResolvedValue({ items: [lesson], page: 1, page_size: 10, total: 25 })
     const { router } = renderAt('/admin/lessons')
     expect(await screen.findByRole('link', { name: 'Biên soạn bài học: Greetings' })).toBeInTheDocument()
     fireEvent.click(screen.getAllByRole('button', { name: "Tạo bài học" }).at(-1)!)
@@ -419,7 +419,7 @@ describe('Lesson list, canonical editor, lifecycle and content', () => {
     fireEvent.change(screen.getAllByLabelText('HSK', { selector: 'select' }).at(-1)!, { target: { value: level.id } })
     await waitFor(() => expect(screen.getByRole('button', { name: "Tiếp" })).toBeEnabled())
     fireEvent.click(screen.getByRole('button', { name: "Tiếp" }))
-    await waitFor(() => expect(api.listAdminLessons).toHaveBeenCalledWith({ page: 2, page_size: 20, status: 'DRAFT', hsk_level_id: level.id }))
+    await waitFor(() => expect(api.listAdminLessons).toHaveBeenCalledWith({ page: 2, page_size: 10, status: 'DRAFT', hsk_level_id: level.id }))
     fireEvent.click(screen.getAllByRole('button', { name: "Tạo bài học" }).at(-1)!)
     fill("Số thứ tự bài học", '2'); fill("Tiêu đề", 'Introduce yourself'); fill("Mô tả", '');
     fireEvent.change(screen.getAllByLabelText('HSK', { selector: 'select' }).at(0)!, { target: { value: level.id } })

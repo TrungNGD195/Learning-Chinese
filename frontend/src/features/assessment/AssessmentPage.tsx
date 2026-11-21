@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { flushSync } from 'react-dom'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import { Link, useBeforeUnload, useBlocker, useNavigate, useParams } from 'react-router'
@@ -12,11 +12,16 @@ import { createSubmitRequest, hasCompleteDraftAnswer } from './submission'
 import { QuestionMedia } from './QuestionMedia'
 import { questionForAttempt, skillLabels, difficultyLabels } from './practicePresentation'
 import { Companion } from '../../components/academy/Companion'
+import { AssessmentResultPage } from './AssessmentResultPage'
 
 type Assessment = components['schemas']['AssessmentResponse']
 
-export function AssessmentPage() {
-  const { assessmentId } = useParams()
+export function AssessmentPage({ embeddedAssessmentId, onSessionChange }: { embeddedAssessmentId?: string; onSessionChange?: (active: boolean) => void } = {}) {
+  const { assessmentId: routeAssessmentId } = useParams()
+  const assessmentId = embeddedAssessmentId ?? routeAssessmentId
+  const embedded = !!embeddedAssessmentId
+  const titleId = embedded ? 'practice-title' : 'page-title'
+  const [resultAttemptId, setResultAttemptId] = useState<string | null>(null)
   const navigate = useNavigate()
   const queryClient = useQueryClient()
   const [activeAttemptId, setActiveAttemptId] = useState<string | null>(null)
@@ -24,6 +29,7 @@ export function AssessmentPage() {
   const [questionIndex, setQuestionIndex] = useState(0)
   const [error, setError] = useState<string | null>(null)
   const [allowTerminalNavigation, setAllowTerminalNavigation] = useState(false)
+  const autoStarted = useRef(false)
   const questionNavigation = useRef<HTMLDivElement>(null)
   useEffect(() => {
     const nav = questionNavigation.current
@@ -43,15 +49,42 @@ export function AssessmentPage() {
   const startMutation = useMutation({ mutationFn: () => startAttempt(assessmentId!) })
   const submitMutation = useMutation({ mutationFn: ({ attemptId, body }: { attemptId: string; body: Parameters<typeof submitAttempt>[1] }) => submitAttempt(attemptId, body) })
 
-  async function beginAttempt() {
+  const start = startMutation.mutateAsync
+  const beginAttempt = useCallback(async () => {
     if (!assessmentId || startMutation.isPending) return
     setError(null)
+    onSessionChange?.(true)
     try {
-      const started = await startMutation.mutateAsync()
+      const started = await start()
       setActiveAttemptId(started.id)
     } catch {
+      onSessionChange?.(false)
       setError("Không thể bắt đầu hoặc tiếp tục bài luyện tập.")
     }
+  }, [assessmentId, startMutation.isPending, start, onSessionChange])
+
+  useEffect(() => {
+    if (!embedded || !assessment?.questions.length || autoStarted.current || resultAttemptId) return
+    autoStarted.current = true
+    void beginAttempt()
+  }, [embedded, assessment?.questions.length, beginAttempt, resultAttemptId])
+
+  function showResult(attemptId: string) {
+    flushSync(() => setAllowTerminalNavigation(true))
+    if (embedded) {
+      setResultAttemptId(attemptId)
+      onSessionChange?.(false)
+    } else navigate(`/assessment-attempts/${encodeURIComponent(attemptId)}/result`)
+  }
+
+  function retryInline() {
+    autoStarted.current = false
+    setResultAttemptId(null)
+    setActiveAttemptId(null)
+    setDrafts({})
+    setQuestionIndex(0)
+    setError(null)
+    setAllowTerminalNavigation(false)
   }
 
   async function submit() {
@@ -75,43 +108,47 @@ export function AssessmentPage() {
         queryClient.invalidateQueries({ predicate: (query) => query.queryKey[0] === 'lesson' && query.queryKey[2] === 'progress' }),
       ])
       if (result.status === 'GRADED') {
-        flushSync(() => setAllowTerminalNavigation(true))
-        navigate(`/assessment-attempts/${encodeURIComponent(result.attempt_id)}/result`)
+        showResult(result.attempt_id)
       }
     } catch (submissionError) {
       if (submissionError instanceof ApiError && submissionError.code === 'AI_GRADING_UNAVAILABLE') {
         await Promise.all([
+          queryClient.invalidateQueries({ queryKey: ['vocabulary-review'] }),
           queryClient.invalidateQueries({ queryKey: queryKeys.attempt(activeAttemptId) }),
           queryClient.invalidateQueries({ queryKey: queryKeys.attemptRoot }),
         ])
-        flushSync(() => setAllowTerminalNavigation(true))
-        navigate(`/assessment-attempts/${encodeURIComponent(activeAttemptId)}/result`)
+        showResult(activeAttemptId)
       } else setError("Không thể nộp bài. Câu trả lời được giữ lại để bạn thử lại khi sẵn sàng.")
     }
   }
 
-  if (assessmentQuery.isPending && !assessment) return <section className="learner-page assessment-page screen" aria-labelledby="page-title">
-    <PageHeader title="Luyện tập" titleId="page-title" />
+  if (resultAttemptId) return <AssessmentResultPage key={resultAttemptId} embeddedAttemptId={resultAttemptId} onRetry={retryInline}/>
+
+  if (assessmentQuery.isPending && !assessment) return <section className="learner-page assessment-page screen" aria-labelledby={titleId}>
+    {embedded ? <h2 id={titleId}>Luyện tập</h2> : <PageHeader title="Luyện tập" titleId={titleId} artwork={false}/>}
     <LoadingState>Đang tải bài luyện tập…</LoadingState>
   </section>
-  if (assessmentQuery.error instanceof ApiError && assessmentQuery.error.code==='THEORY_INCOMPLETE') return <section className="learner-page assessment-page screen" aria-labelledby="page-title"><PageHeader title="Hoàn thành lý thuyết trước" titleId="page-title"/><Alert tone="info">Bạn cần xem hết từ vựng, ngữ pháp và hoàn thành tất cả bài khóa trước khi mở luyện tập.</Alert><Link className="learner-link-action" to="/dashboard">Tiếp tục bài học</Link></section>
-  if ((assessmentQuery.isError && !assessment) || !assessment) return <section className="learner-page assessment-page screen" aria-labelledby="page-title">
-    <PageHeader title="Luyện tập" titleId="page-title" />
+  if (assessmentQuery.error instanceof ApiError && assessmentQuery.error.code==='THEORY_INCOMPLETE') return <section className="learner-page assessment-page screen" aria-labelledby={titleId}>{embedded ? <h2 id={titleId}>Hoàn thành lý thuyết trước</h2> : <PageHeader title="Hoàn thành lý thuyết trước" titleId={titleId} artwork={false}/>}<Alert tone="info">Bạn cần xem hết từ vựng, ngữ pháp và hoàn thành tất cả bài khóa trước khi mở luyện tập.</Alert><Link className="learner-link-action" to="/dashboard">Tiếp tục bài học</Link></section>
+  if ((assessmentQuery.isError && !assessment) || !assessment) return <section className="learner-page assessment-page screen" aria-labelledby={titleId}>
+    {embedded ? <h2 id={titleId}>Luyện tập</h2> : <PageHeader title="Luyện tập" titleId={titleId} artwork={false}/>}
     <Alert role="alert" tone="error" action={<Button onClick={() => void assessmentQuery.refetch()}>Thử lại</Button>}>Không thể tải bài luyện tập.</Alert>
   </section>
 
   const activeQuestion = activeAttemptId && assessment.questions[questionIndex] ? questionForAttempt(assessment.questions[questionIndex], activeAttemptId) : undefined
   const completeResponseCount = assessment.questions.filter((question) => hasCompleteDraftAnswer(question, drafts[question.id])).length
   const questionCount = assessment.questions.length
-  return <section className="learner-page assessment-page screen assessment-screen practice-workspace" aria-labelledby="page-title">
+  return <section className="learner-page assessment-page screen assessment-screen practice-workspace" aria-labelledby={titleId}>
     {assessmentQuery.isFetching && <LoadingState>Đang cập nhật bài luyện tập…</LoadingState>}
     {assessmentQuery.isError && <Alert role="status" tone="warning">Chưa cập nhật được bài luyện tập. Đang hiển thị thông tin đã tải.</Alert>}
     <Surface as="section" className="learner-surface">
-      <PageHeader title={assessment.title} titleId="page-title" artwork={false} />
-      {!activeAttemptId && <div className="assessment-page__meta"><span>{questionCount} câu hỏi</span><StatusBadge tone="info">Sẵn sàng</StatusBadge></div>}
+      {embedded ? <h2 id={titleId}>{assessment.title}</h2> : <PageHeader title={assessment.title} titleId={titleId} artwork={false}/>}
+      {!embedded && !activeAttemptId && <div className="assessment-page__meta"><span>{questionCount} câu hỏi</span><StatusBadge tone="info">Sẵn sàng</StatusBadge></div>}
+      {embedded && <p className="practice-save-hint">{questionCount} câu hỏi · Đạt từ {assessment.pass_threshold}%</p>}
     </Surface>
-    {error && <Alert role="alert" tone="error">{error}</Alert>}
-    {!activeAttemptId && <Surface as="section" className="learner-surface assessment-panel">
+    {error && <Alert role="alert" tone="error" action={embedded && !activeAttemptId ? <Button disabled={startMutation.isPending} onClick={() => void beginAttempt()}>Thử lại</Button> : undefined}>{error}</Alert>}
+    {embedded && !activeAttemptId && questionCount > 0 && !error && <LoadingState>Đang mở câu hỏi…</LoadingState>}
+    {embedded && questionCount === 0 && <p>Bài luyện tập này chưa có câu hỏi.</p>}
+    {!embedded && !activeAttemptId && <Surface as="section" className="learner-surface assessment-panel">
       <Companion pose="but" decorative/>
       <h2>Bắt đầu khi bạn sẵn sàng</h2>
       <p>{assessment.description || 'Luyện từng câu, xem lại lỗi sai và tiếp tục tiến bộ.'}</p><p>Điểm đạt: <strong>{assessment.pass_threshold}%</strong>. Bạn có thể quay lại các câu trước khi nộp.</p>

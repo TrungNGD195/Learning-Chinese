@@ -83,8 +83,8 @@ export function LessonPage({ part = 'vocabulary' }: { part?: LessonPart }) {
       <nav className="lesson-sequence-nav lesson-sections-horizontal" aria-label="Các phần của bài học">
         {([['vocabulary', '生词', 'Từ vựng'], ['grammar', '语法', 'Ngữ pháp'], ['readings', '课文', 'Bài khóa'], ['practice', '练习', 'Luyện tập']] as const).map(([key, hanzi, label]) => <Link key={key} to={lessonPartPath(lesson.id, key)} aria-label={label} aria-current={part === key ? 'page' : undefined}><span lang="zh-Hans" aria-hidden="true">{hanzi}</span><span>{label}<small>{sectionCounts[key]}</small></span></Link>)}
       </nav>
-    <div className="lesson-manuscript__body" data-has-word-index={words.length > 0}>
-      {words.length > 0 && <StudyItemIndex title="Danh sách từ" count={`${words.length} từ`} className="lesson-word-index" groups={[{ items: words.map((word, index) => ({
+    <div className="lesson-manuscript__body" data-has-word-index={part === 'vocabulary' && words.length > 0}>
+      {part === 'vocabulary' && words.length > 0 && <StudyItemIndex title="Danh sách từ" count={`${words.length} từ`} className="lesson-word-index" groups={[{ items: words.map((word, index) => ({
         id: word.id, number: index + 1, text: word.item.hanzi, pinyin: word.item.pinyin,
         active: part === 'vocabulary' && index === wordIndex, label: `Chọn từ ${index + 1}: ${word.item.hanzi}`,
         to: vocabularyPath(lesson.id, word.id),
@@ -95,7 +95,7 @@ export function LessonPage({ part = 'vocabulary' }: { part?: LessonPart }) {
           pending={grammarPending}
           errors={Object.fromEntries(lesson.grammar.map((item) => [item.id, actionErrors[`g:${item.id}`]]))} onToggle={onGrammarToggle} /><nav className="lesson-part-navigation" aria-label="Chuyển phần học"><Link to={words.length ? vocabularyPath(lesson.id, words.at(-1)!.id) : lessonPartPath(lesson.id, 'vocabulary')}>← Từ vựng</Link><Link className="learner-link-action" to={lessonPartPath(lesson.id, 'readings')}>Tiếp: Bài khóa</Link></nav></>}
         {part === 'readings' && <><ReadingSection key={lesson.id} lessonId={lesson.id} readings={lesson.readings ?? []} completedIds={new Set((progress.readings ?? []).filter(row => row.completed).map(row => row.id))}/><nav className="lesson-part-navigation" aria-label="Chuyển phần học"><Link to={lessonPartPath(lesson.id, 'grammar')}>← Ngữ pháp</Link><Link className="learner-link-action" to={lessonPartPath(lesson.id, 'practice')}>Đến luyện tập</Link></nav></>}
-        {part === 'practice' && <ExerciseSection assessmentIds={lesson.assessment_ids} theoryCompleted={theoryReady} />}
+        {part === 'practice' && <ExerciseSection key={lesson.id} assessmentIds={lesson.assessment_ids} theoryCompleted={theoryReady} />}
       </div>
     </div>
   </section>

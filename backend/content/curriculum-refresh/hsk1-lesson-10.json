@@ -1,0 +1,1610 @@
+{
+  "key": "hsk1-lesson-10-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 1,
+    "lesson_number": 10,
+    "title": "这儿的苹果真便宜 · Mua sắm và giá cả",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "杯子",
+      "pinyin": "bēizi",
+      "vietnamese_meaning": "cốc",
+      "part_of_speech": "danh từ",
+      "example": "这是我的杯子。\nzhè shì wǒ de bēi zi 。\nĐây là cốc của tôi.",
+      "order_index": 1,
+      "note": null,
+      "source_key": "1:10:杯子"
+    },
+    {
+      "hanzi": "售货员",
+      "pinyin": "shòuhuòyuán",
+      "vietnamese_meaning": "nhân viên bán hàng",
+      "part_of_speech": "danh từ",
+      "example": "他是我的售货员。\ntā shì wǒ de shòu huò yuán 。\nAnh ấy là nhân viên bán hàng của tôi.",
+      "order_index": 2,
+      "note": null,
+      "source_key": "1:10:售货员"
+    },
+    {
+      "hanzi": "钱",
+      "pinyin": "qián",
+      "vietnamese_meaning": "tiền",
+      "part_of_speech": "danh từ",
+      "example": "这些苹果一共十块钱。\nzhè xiē píng guǒ yī gòng shí kuài qián 。\nNhững quả táo này tổng cộng mười tệ.",
+      "order_index": 3,
+      "note": null,
+      "source_key": "1:10:钱"
+    },
+    {
+      "hanzi": "这些",
+      "pinyin": "zhèxiē",
+      "vietnamese_meaning": "những cái này",
+      "part_of_speech": "đại từ",
+      "example": "这些苹果很好吃。\nzhè xiē píng guǒ hěn hǎo chī 。\nNhững quả táo này rất ngon.",
+      "order_index": 4,
+      "note": null,
+      "source_key": "1:10:这些"
+    },
+    {
+      "hanzi": "那些",
+      "pinyin": "nàxiē",
+      "vietnamese_meaning": "những cái kia",
+      "part_of_speech": "đại từ",
+      "example": "那些苹果很便宜。\nnà xiē píng guǒ hěn pián yi 。\nNhững quả táo kia rất rẻ.",
+      "order_index": 5,
+      "note": null,
+      "source_key": "1:10:那些"
+    },
+    {
+      "hanzi": "块",
+      "pinyin": "kuài",
+      "vietnamese_meaning": "tệ",
+      "part_of_speech": "lượng từ",
+      "example": "这些苹果一共十块钱。\nzhè xiē píng guǒ yī gòng shí kuài qián 。\nNhững quả táo này tổng cộng mười tệ.",
+      "order_index": 6,
+      "note": null,
+      "source_key": "1:10:块"
+    },
+    {
+      "hanzi": "这儿",
+      "pinyin": "zhèr",
+      "vietnamese_meaning": "đây",
+      "part_of_speech": "đại từ",
+      "example": "我在这儿等你。\nwǒ zài zhè ér děng nǐ 。\nTôi đợi bạn ở đây.",
+      "order_index": 7,
+      "note": null,
+      "source_key": "1:10:这儿"
+    },
+    {
+      "hanzi": "水果",
+      "pinyin": "shuǐguǒ",
+      "vietnamese_meaning": "hoa quả",
+      "part_of_speech": "danh từ",
+      "example": "我喜欢吃水果。\nwǒ xǐ huān chī shuǐ guǒ 。\nTôi thích ăn hoa quả.",
+      "order_index": 8,
+      "note": null,
+      "source_key": "1:10:水果"
+    },
+    {
+      "hanzi": "苹果",
+      "pinyin": "píngguǒ",
+      "vietnamese_meaning": "táo",
+      "part_of_speech": "danh từ",
+      "example": "我喜欢吃苹果。\nwǒ xǐ huān chī píng guǒ 。\nTôi thích ăn táo.",
+      "order_index": 9,
+      "note": null,
+      "source_key": "1:10:苹果"
+    },
+    {
+      "hanzi": "芒果",
+      "pinyin": "máng guǒ",
+      "vietnamese_meaning": "xoài",
+      "part_of_speech": "danh từ",
+      "example": "我喜欢吃芒果。\nwǒ xǐ huān chī máng guǒ 。\nTôi thích ăn xoài.",
+      "order_index": 10,
+      "note": null,
+      "source_key": "1:10:芒果"
+    },
+    {
+      "hanzi": "西瓜",
+      "pinyin": "xī guā",
+      "vietnamese_meaning": "dưa hấu",
+      "part_of_speech": "danh từ",
+      "example": "我喜欢吃西瓜。\nwǒ xǐ huān chī xī guā 。\nTôi thích ăn dưa hấu.",
+      "order_index": 11,
+      "note": null,
+      "source_key": "1:10:西瓜"
+    },
+    {
+      "hanzi": "草莓",
+      "pinyin": "cǎo méi",
+      "vietnamese_meaning": "dâu tây",
+      "part_of_speech": "danh từ",
+      "example": "我喜欢吃草莓。\nwǒ xǐ huān chī cǎo méi 。\nTôi thích ăn dâu tây.",
+      "order_index": 12,
+      "note": null,
+      "source_key": "1:10:草莓"
+    },
+    {
+      "hanzi": "斤",
+      "pinyin": "jīn",
+      "vietnamese_meaning": "nửa cân",
+      "part_of_speech": "lượng từ",
+      "example": "我买两斤苹果。\nwǒ mǎi liǎng jīn píng guǒ 。\nTôi mua hai cân Trung Quốc táo (1kg).",
+      "order_index": 13,
+      "note": "Ở Trung Quốc đại lục, 1 斤 = 500g; 1 公斤 = 1kg. Không nhầm hai 斤 với hai kilôgam.",
+      "source_key": "1:10:斤"
+    },
+    {
+      "hanzi": "公斤",
+      "pinyin": "gōng jīn",
+      "vietnamese_meaning": "kilôgam (kg)",
+      "part_of_speech": "đơn vị đo",
+      "example": "我买一公斤苹果。\nwǒ mǎi yī gōng jīn píng guǒ 。\nTôi mua một kilôgam táo.",
+      "order_index": 14,
+      "note": null,
+      "source_key": "1:10:公斤"
+    },
+    {
+      "hanzi": "贵",
+      "pinyin": "guì",
+      "vietnamese_meaning": "đắt",
+      "part_of_speech": "tính từ",
+      "example": "这件衣服很贵。\nzhè jiàn yī fú hěn guì 。\nBộ quần áo này đắt.",
+      "order_index": 15,
+      "note": null,
+      "source_key": "1:10:贵"
+    },
+    {
+      "hanzi": "便宜",
+      "pinyin": "piányi",
+      "vietnamese_meaning": "rẻ",
+      "part_of_speech": "tính từ",
+      "example": "这件衣服很便宜。\nzhè jiàn yī fú hěn pián yi 。\nBộ quần áo này rẻ.",
+      "order_index": 16,
+      "note": null,
+      "source_key": "1:10:便宜"
+    },
+    {
+      "hanzi": "商店",
+      "pinyin": "shāngdiàn",
+      "vietnamese_meaning": "cửa hàng",
+      "part_of_speech": "danh từ",
+      "example": "我去商店。\nwǒ qù shāng diàn 。\nTôi đến cửa hàng.",
+      "order_index": 17,
+      "note": null,
+      "source_key": "1:10:商店"
+    },
+    {
+      "hanzi": "衣服",
+      "pinyin": "yīfu",
+      "vietnamese_meaning": "quần áo",
+      "part_of_speech": "danh từ",
+      "example": "这是我的衣服。\nzhè shì wǒ de yī fú 。\nĐây là quần áo của tôi.",
+      "order_index": 18,
+      "note": null,
+      "source_key": "1:10:衣服"
+    },
+    {
+      "hanzi": "怎么样",
+      "pinyin": "zěnmeyàng",
+      "vietnamese_meaning": "như thế nào",
+      "part_of_speech": "đại từ",
+      "example": "你穿这件衣服怎么样？\nnǐ chuān zhè jiàn yī fú zěn me yàng ？\nBạn mặc bộ quần áo này thì thế nào?",
+      "order_index": 19,
+      "note": null,
+      "source_key": "1:10:怎么样"
+    },
+    {
+      "hanzi": "穿",
+      "pinyin": "chuān",
+      "vietnamese_meaning": "mặc",
+      "part_of_speech": "động từ",
+      "example": "你穿这件衣服怎么样？\nnǐ chuān zhè jiàn yī fú zěn me yàng ？\nBạn mặc bộ quần áo này thì thế nào?",
+      "order_index": 20,
+      "note": null,
+      "source_key": "1:10:穿"
+    },
+    {
+      "hanzi": "一共",
+      "pinyin": "yī gòng",
+      "vietnamese_meaning": "tổng cộng",
+      "part_of_speech": "phó từ",
+      "example": "这些苹果一共十块钱。\nzhè xiē píng guǒ yī gòng shí kuài qián 。\nNhững quả táo này tổng cộng mười tệ.",
+      "order_index": 21,
+      "note": null,
+      "source_key": "1:10:一共"
+    },
+    {
+      "hanzi": "给",
+      "pinyin": "gěi",
+      "vietnamese_meaning": "cho; đưa cho",
+      "part_of_speech": "động từ",
+      "example": "你等一下，我给他打电话。\nnǐ děng yí xià ， wǒ gěi tā dǎ diàn huà 。\nBạn đợi một lát, tôi gọi điện cho anh ấy.",
+      "order_index": 22,
+      "note": null,
+      "source_key": "1:10:给"
+    }
+  ],
+  "grammar": [
+    {
+      "name": "Hỏi giá và nói tiền",
+      "structure": "多少钱？ / số + 块/元 + 钱",
+      "explanation": "Hỏi giá hoặc nêu số tiền.",
+      "usage": "块 thường dùng khi nói; 元 dùng trong cách ghi chính thức. Một 斤 ở Trung Quốc đại lục bằng 500g.",
+      "example": "这个杯子五块钱。\nzhè ge bēi zi wǔ kuài qián 。\nCái cốc này năm tệ.",
+      "note": "块 thường dùng khi nói; 元 dùng trong cách ghi chính thức. Một 斤 ở Trung Quốc đại lục bằng 500g.",
+      "order_index": 1
+    },
+    {
+      "name": "Hỏi ý kiến với 怎么样",
+      "structure": "Chủ đề + 怎么样？",
+      "explanation": "Hỏi nhận xét hoặc tình trạng.",
+      "usage": "怎么 hỏi cách làm; 怎么样 hỏi đánh giá hoặc tình trạng.",
+      "example": "这件衣服怎么样？\nzhè jiàn yī fú zěn me yàng ？\nBộ quần áo này thế nào?",
+      "note": "怎么 hỏi cách làm; 怎么样 hỏi đánh giá hoặc tình trạng.",
+      "order_index": 2
+    },
+    {
+      "name": "Những ... này/kia",
+      "structure": "这些/那些 + danh từ",
+      "explanation": "这些 và 那些 chỉ nhiều đối tượng.",
+      "usage": "这些 không đi trực tiếp với 个 như 这个; 那些 tương ứng những cái kia.",
+      "example": "这些苹果很便宜。\nzhè xiē píng guǒ hěn pián yi 。\nNhững quả táo này rất rẻ.",
+      "note": "这些 không đi trực tiếp với 个 như 这个; 那些 tương ứng những cái kia.",
+      "order_index": 3
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Mua cốc",
+      "content": "王一雪:请问,有杯子吗?\n售货员:有,杯子在这边。\n王一雪:多少钱一个?\n售货员:这些五块钱一个,那些十块钱一个。\n王一雪:我买这个吧。",
+      "pinyin": "wáng yī xuě : qǐng wèn , yǒu bēi zi ma ?\nshòu huò yuán : yǒu , bēi zi zài zhè biān 。\nwáng yī xuě : duō shǎo qián yí gè ?\nshòu huò yuán : zhè xiē wǔ kuài qián yí gè , nà xiē shí kuài qián yí gè 。\nwáng yī xuě : wǒ mǎi zhè ge ba 。",
+      "vietnamese_translation": "Vương Nhất Tuyết: Xin hỏi, có cốc không?\nNhân viên bán hàng: Có, cốc ở bên này.\nVương Nhất Tuyết: Bao nhiêu tiền một cái?\nNhân viên bán hàng: Những cái này năm tệ một cái, những cái kia mười tệ một cái.\nVương Nhất Tuyết: Tôi mua cái này nhé.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 10, PDF 93."
+    },
+    {
+      "order_index": 2,
+      "title": "Mua hoa quả",
+      "content": "王一雪:这儿的水果真不少!\n售货员:您想买什么?\n王一雪:我想买两斤苹果。\n售货员:苹果三块五一斤。这些七块二,七块钱吧。\n王一雪:好的,这儿的苹果真便宜!",
+      "pinyin": "wáng yī xuě : zhè ér de shuǐ guǒ zhēn bù shǎo !\nshòu huò yuán : nín xiǎng mǎi shén me ?\nwáng yī xuě : wǒ xiǎng mǎi liǎng jīn píng guǒ 。\nshòu huò yuán : píng guǒ sān kuài wǔ yī jīn 。 zhè xiē qī kuài èr , qī kuài qián ba 。\nwáng yī xuě : hǎo de , zhè ér de píng guǒ zhēn pián yi !",
+      "vietnamese_translation": "Vương Nhất Tuyết: Hoa quả ở đây thật nhiều!\nNhân viên bán hàng: Bà muốn mua gì?\nVương Nhất Tuyết: Tôi muốn mua hai cân táo (một kilôgam).\nNhân viên bán hàng: Táo ba tệ rưỡi một cân (500g). Chỗ này bảy tệ hai, lấy bảy tệ thôi.\nVương Nhất Tuyết: Được, táo ở đây thật rẻ!",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 10, PDF 95."
+    },
+    {
+      "order_index": 3,
+      "title": "Chọn quần áo",
+      "content": "王一雪:这家商店衣服真多!这件一百元,怎么样?\n刘明:好看,也不贵。\n王一雪:小雪能穿,买一件吧。\n刘明:好的。小明能穿吗?\n王一雪:不能。这些是女孩子穿的衣服,男孩子的衣服在那儿。\n刘明:好的。",
+      "pinyin": "wáng yī xuě : zhè jiā shāng diàn yī fú zhēn duō ! zhè jiàn yì bǎi yuán , zěn me yàng ?\nliú míng : hǎo kàn , yě bù guì 。\nwáng yī xuě : xiǎo xuě néng chuān , mǎi yī jiàn ba 。\nliú míng : hǎo de 。 xiǎo míng néng chuān ma ?\nwáng yī xuě : bù néng 。 zhè xiē shì nǚ hái zi chuān de yī fú , nán hái zi de yī fú zài nà ér 。\nliú míng : hǎo de 。",
+      "vietnamese_translation": "Vương Nhất Tuyết: Cửa hàng này quần áo thật nhiều! Cái này 100 tệ, thế nào?\nLưu Minh: Đẹp, cũng không đắt.\nVương Nhất Tuyết: Tiểu Tuyết có thể mặc, mua một cái đi.\nLưu Minh: Được. Tiểu Minh có thể mặc không?\nVương Nhất Tuyết: Không thể. Những cái này là quần áo của con gái, quần áo của con trai ở bên kia.\nLưu Minh: Được.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 10, PDF 97."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 1 · Bài 10 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp; dùng kiến thức của bài này và các bài trước, không dùng bài sau. Đạt từ 80%; được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "review_status": "DRAFT_REQUIRES_EDITOR_REVIEW",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 1).",
+      "options": [
+        {
+          "option_text": "hoa quả",
+          "is_correct": true
+        },
+        {
+          "option_text": "con (lượng từ cho một số động vật)",
+          "is_correct": false
+        },
+        {
+          "option_text": "gọi, tên là",
+          "is_correct": false
+        },
+        {
+          "option_text": "mẹ",
+          "is_correct": false
+        }
+      ],
+      "rubric": "水果 (shuǐguǒ) nghĩa là hoa quả. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "水果"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 10
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “给” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "cho; đưa cho",
+          "is_correct": true
+        },
+        {
+          "option_text": "năm",
+          "is_correct": false
+        },
+        {
+          "option_text": "nhân viên bán hàng",
+          "is_correct": false
+        },
+        {
+          "option_text": "cảm thấy",
+          "is_correct": false
+        }
+      ],
+      "rubric": "给 (gěi) nghĩa là cho; đưa cho. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 10
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “gǒu” và nghĩa “chó”.",
+      "options": [
+        {
+          "option_text": "多",
+          "is_correct": false
+        },
+        {
+          "option_text": "狗",
+          "is_correct": true
+        },
+        {
+          "option_text": "刘明",
+          "is_correct": false
+        },
+        {
+          "option_text": "哪里",
+          "is_correct": false
+        }
+      ],
+      "rubric": "狗 (gǒu) nghĩa là chó. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 8
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 4).",
+      "options": [
+        {
+          "option_text": "dâu tây",
+          "is_correct": true
+        },
+        {
+          "option_text": "cơm",
+          "is_correct": false
+        },
+        {
+          "option_text": "là",
+          "is_correct": false
+        },
+        {
+          "option_text": "ngày",
+          "is_correct": false
+        }
+      ],
+      "rubric": "草莓 (cǎo méi) nghĩa là dâu tây. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "草莓"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 10
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “便宜” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "ngồi",
+          "is_correct": false
+        },
+        {
+          "option_text": "rồi (biểu thị hoàn thành hoặc tình huống mới)",
+          "is_correct": false
+        },
+        {
+          "option_text": "rẻ",
+          "is_correct": true
+        },
+        {
+          "option_text": "năm sau",
+          "is_correct": false
+        }
+      ],
+      "rubric": "便宜 (piányi) nghĩa là rẻ. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 10
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “chuān” và nghĩa “mặc”.",
+      "options": [
+        {
+          "option_text": "白天",
+          "is_correct": false
+        },
+        {
+          "option_text": "都",
+          "is_correct": false
+        },
+        {
+          "option_text": "穿",
+          "is_correct": true
+        },
+        {
+          "option_text": "昨天",
+          "is_correct": false
+        }
+      ],
+      "rubric": "穿 (chuān) nghĩa là mặc. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 10
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 7).",
+      "options": [
+        {
+          "option_text": "bên trong",
+          "is_correct": false
+        },
+        {
+          "option_text": "hôm qua",
+          "is_correct": false
+        },
+        {
+          "option_text": "tiền",
+          "is_correct": false
+        },
+        {
+          "option_text": "như thế nào",
+          "is_correct": true
+        }
+      ],
+      "rubric": "怎么样 (zěnmeyàng) nghĩa là như thế nào. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "怎么样"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 10
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “块” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "tệ",
+          "is_correct": true
+        },
+        {
+          "option_text": "năm nay",
+          "is_correct": false
+        },
+        {
+          "option_text": "ngựa",
+          "is_correct": false
+        },
+        {
+          "option_text": "cái bàn",
+          "is_correct": false
+        }
+      ],
+      "rubric": "块 (kuài) nghĩa là tệ. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 10
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “jīn” và nghĩa “nửa cân”.",
+      "options": [
+        {
+          "option_text": "晚饭",
+          "is_correct": false
+        },
+        {
+          "option_text": "茶",
+          "is_correct": false
+        },
+        {
+          "option_text": "人",
+          "is_correct": false
+        },
+        {
+          "option_text": "斤",
+          "is_correct": true
+        }
+      ],
+      "rubric": "斤 (jīn) nghĩa là nửa cân. Ở Trung Quốc đại lục, 1 斤 = 500g; 1 公斤 = 1kg. Không nhầm hai 斤 với hai kilôgam.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 10
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "nghe hay",
+          "is_correct": false
+        },
+        {
+          "option_text": "em trai",
+          "is_correct": false
+        },
+        {
+          "option_text": "đều; tất cả",
+          "is_correct": true
+        },
+        {
+          "option_text": "đâu, nơi nào",
+          "is_correct": false
+        }
+      ],
+      "rubric": "都 (dōu) nghĩa là đều; tất cả. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true,
+          "audio_text": "都"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 8
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “一共” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "tổng cộng",
+          "is_correct": true
+        },
+        {
+          "option_text": "bà ngoại",
+          "is_correct": false
+        },
+        {
+          "option_text": "ghế",
+          "is_correct": false
+        },
+        {
+          "option_text": "bên trong",
+          "is_correct": false
+        }
+      ],
+      "rubric": "一共 (yī gòng) nghĩa là tổng cộng. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 10
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “juéde” và nghĩa “cảm thấy”.",
+      "options": [
+        {
+          "option_text": "多大",
+          "is_correct": false
+        },
+        {
+          "option_text": "超市",
+          "is_correct": false
+        },
+        {
+          "option_text": "家",
+          "is_correct": false
+        },
+        {
+          "option_text": "觉得",
+          "is_correct": true
+        }
+      ],
+      "rubric": "觉得 (juéde) nghĩa là cảm thấy. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “xoài” (gợi ý pinyin: máng guǒ).",
+      "reference_answer": "芒果",
+      "rubric": "Đáp án: 芒果 (máng guǒ). ",
+      "config": {
+        "accepted_answers": [
+          "芒果"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 10
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “đây” (gợi ý pinyin: zhèr).",
+      "reference_answer": "这儿",
+      "rubric": "Đáp án: 这儿 (zhèr). ",
+      "config": {
+        "accepted_answers": [
+          "这儿"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 10
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “táo” (gợi ý pinyin: píngguǒ).",
+      "reference_answer": "苹果",
+      "rubric": "Đáp án: 苹果 (píngguǒ). ",
+      "config": {
+        "accepted_answers": [
+          "苹果"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 10
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “cốc” (gợi ý pinyin: bēizi).",
+      "reference_answer": "杯子",
+      "rubric": "Đáp án: 杯子 (bēizi). ",
+      "config": {
+        "accepted_answers": [
+          "杯子"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 10
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 1).",
+      "rubric": "白家月: Bạch Gia Nguyệt (tên người); 包子: bánh bao có nhân; 明天: ngày mai; 杯: cốc; ly",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "白家月"
+          },
+          {
+            "id": "l1",
+            "text": "包子"
+          },
+          {
+            "id": "l2",
+            "text": "明天"
+          },
+          {
+            "id": "l3",
+            "text": "杯"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r2",
+            "text": "ngày mai"
+          },
+          {
+            "id": "r1",
+            "text": "bánh bao có nhân"
+          },
+          {
+            "id": "r0",
+            "text": "Bạch Gia Nguyệt (tên người)"
+          },
+          {
+            "id": "r3",
+            "text": "cốc; ly"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 2
+        },
+        {
+          "hsk": 1,
+          "lesson": 5
+        },
+        {
+          "hsk": 1,
+          "lesson": 5
+        },
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 2).",
+      "rubric": "八: tám; 谢谢: cảm ơn; 刘明: Lưu Minh (tên người); 班: lớp học; ca làm",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "八"
+          },
+          {
+            "id": "l1",
+            "text": "谢谢"
+          },
+          {
+            "id": "l2",
+            "text": "刘明"
+          },
+          {
+            "id": "l3",
+            "text": "班"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r3",
+            "text": "lớp học; ca làm"
+          },
+          {
+            "id": "r1",
+            "text": "cảm ơn"
+          },
+          {
+            "id": "r0",
+            "text": "tám"
+          },
+          {
+            "id": "r2",
+            "text": "Lưu Minh (tên người)"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 1
+        },
+        {
+          "hsk": 1,
+          "lesson": 2
+        },
+        {
+          "hsk": 1,
+          "lesson": 4
+        },
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Hỏi giá và nói tiền”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Hỏi giá hoặc nêu số tiền.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "多少钱？ / số + 块/元 + 钱. Hỏi giá hoặc nêu số tiền. 块 thường dùng khi nói; 元 dùng trong cách ghi chính thức. Một 斤 ở Trung Quốc đại lục bằng 500g.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 10
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Hỏi ý kiến với 怎么样”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Hỏi nhận xét hoặc tình trạng.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ đề + 怎么样？. Hỏi nhận xét hoặc tình trạng. 怎么 hỏi cách làm; 怎么样 hỏi đánh giá hoặc tình trạng.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 10
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Những ... này/kia”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "这些 và 那些 chỉ nhiều đối tượng.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "这些/那些 + danh từ. 这些 và 那些 chỉ nhiều đối tượng. 这些 không đi trực tiếp với 个 như 这个; 那些 tương ứng những cái kia.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 10
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Hỏi giá và nói tiền” (mục 4): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "块 thường dùng khi nói; 元 dùng trong cách ghi chính thức. Một 斤 ở Trung Quốc đại lục bằng 500g.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "多少钱？ / số + 块/元 + 钱. Hỏi giá hoặc nêu số tiền. 块 thường dùng khi nói; 元 dùng trong cách ghi chính thức. Một 斤 ở Trung Quốc đại lục bằng 500g.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 10
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Hỏi ý kiến với 怎么样” (mục 5): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "怎么 hỏi cách làm; 怎么样 hỏi đánh giá hoặc tình trạng.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ đề + 怎么样？. Hỏi nhận xét hoặc tình trạng. 怎么 hỏi cách làm; 怎么样 hỏi đánh giá hoặc tình trạng.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 10
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Những ... này/kia” (mục 6): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "这些 không đi trực tiếp với 个 như 这个; 那些 tương ứng những cái kia.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "这些/那些 + danh từ. 这些 và 那些 chỉ nhiều đối tượng. 这些 không đi trực tiếp với 个 như 这个; 那些 tương ứng những cái kia.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 10
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 1).",
+      "reference_answer": "这个杯子五块钱。",
+      "rubric": "Câu đúng: 这个杯子五块钱。 块 thường dùng khi nói; 元 dùng trong cách ghi chính thức. Một 斤 ở Trung Quốc đại lục bằng 500g.",
+      "config": {
+        "items": [
+          {
+            "id": "w3",
+            "text": "五"
+          },
+          {
+            "id": "w2",
+            "text": "杯子"
+          },
+          {
+            "id": "w1",
+            "text": "个"
+          },
+          {
+            "id": "w6",
+            "text": "。"
+          },
+          {
+            "id": "w0",
+            "text": "这"
+          },
+          {
+            "id": "w5",
+            "text": "钱"
+          },
+          {
+            "id": "w4",
+            "text": "块"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 10
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 2).",
+      "reference_answer": "这件衣服怎么样？",
+      "rubric": "Câu đúng: 这件衣服怎么样？ 怎么 hỏi cách làm; 怎么样 hỏi đánh giá hoặc tình trạng.",
+      "config": {
+        "items": [
+          {
+            "id": "w2",
+            "text": "衣服"
+          },
+          {
+            "id": "w0",
+            "text": "这"
+          },
+          {
+            "id": "w3",
+            "text": "怎么样"
+          },
+          {
+            "id": "w1",
+            "text": "件"
+          },
+          {
+            "id": "w4",
+            "text": "？"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 10
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 3).",
+      "reference_answer": "这些苹果很便宜。",
+      "rubric": "Câu đúng: 这些苹果很便宜。 这些 không đi trực tiếp với 个 như 这个; 那些 tương ứng những cái kia.",
+      "config": {
+        "items": [
+          {
+            "id": "w4",
+            "text": "。"
+          },
+          {
+            "id": "w2",
+            "text": "很"
+          },
+          {
+            "id": "w0",
+            "text": "这些"
+          },
+          {
+            "id": "w1",
+            "text": "苹果"
+          },
+          {
+            "id": "w3",
+            "text": "便宜"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 10
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 4).",
+      "reference_answer": "请问,有杯子吗?",
+      "rubric": "Câu đúng: 请问,有杯子吗? 块 thường dùng khi nói; 元 dùng trong cách ghi chính thức. Một 斤 ở Trung Quốc đại lục bằng 500g.",
+      "config": {
+        "items": [
+          {
+            "id": "w2",
+            "text": "有"
+          },
+          {
+            "id": "w3",
+            "text": "杯子"
+          },
+          {
+            "id": "w0",
+            "text": "请问"
+          },
+          {
+            "id": "w1",
+            "text": ","
+          },
+          {
+            "id": "w4",
+            "text": "吗"
+          },
+          {
+            "id": "w5",
+            "text": "?"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 10
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 5).",
+      "reference_answer": "有,杯子在这边。",
+      "rubric": "Câu đúng: 有,杯子在这边。 怎么 hỏi cách làm; 怎么样 hỏi đánh giá hoặc tình trạng.",
+      "config": {
+        "items": [
+          {
+            "id": "w2",
+            "text": "杯子"
+          },
+          {
+            "id": "w5",
+            "text": "边"
+          },
+          {
+            "id": "w1",
+            "text": ","
+          },
+          {
+            "id": "w4",
+            "text": "这"
+          },
+          {
+            "id": "w3",
+            "text": "在"
+          },
+          {
+            "id": "w6",
+            "text": "。"
+          },
+          {
+            "id": "w0",
+            "text": "有"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 10
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 6).",
+      "reference_answer": "多少钱一个?",
+      "rubric": "Câu đúng: 多少钱一个? 这些 không đi trực tiếp với 个 như 这个; 那些 tương ứng những cái kia.",
+      "config": {
+        "items": [
+          {
+            "id": "w2",
+            "text": "一"
+          },
+          {
+            "id": "w0",
+            "text": "多少"
+          },
+          {
+            "id": "w3",
+            "text": "个"
+          },
+          {
+            "id": "w4",
+            "text": "?"
+          },
+          {
+            "id": "w1",
+            "text": "钱"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 10
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ],
+  "source_documents": {
+    "vocabulary": "DOCX",
+    "theory": "HSK1 PDF"
+  }
+}

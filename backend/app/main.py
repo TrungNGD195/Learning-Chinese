@@ -5,6 +5,7 @@ from app.core.config import Settings, configure_application_logging, get_setting
 from app.core.errors import register_application_error_handler
 from app.database.readiness import check_database_readiness
 from app.progress.router import router as progress_router
+from app.progress.vocabulary_review import router as vocabulary_review_router
 from app.exercise.router import router as exercise_router
 from app.admin.router import router as admin_router
 from app.admin.users import router as admin_users_router
@@ -31,6 +32,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     if settings.knowledge_ai_enabled:
         application.include_router(conversation_router, prefix=settings.api_v1_prefix)
     application.include_router(progress_router, prefix=settings.api_v1_prefix)
+    application.include_router(vocabulary_review_router, prefix=settings.api_v1_prefix)
     application.include_router(curriculum_router, prefix=settings.api_v1_prefix)
     application.include_router(exercise_router, prefix=settings.api_v1_prefix)
     application.include_router(admin_router, prefix=settings.api_v1_prefix)

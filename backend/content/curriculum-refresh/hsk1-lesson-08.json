@@ -1,0 +1,1710 @@
+{
+  "key": "hsk1-lesson-08-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 1,
+    "lesson_number": 8,
+    "title": "我爸爸在医院工作 · Công việc và nơi chốn",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "房间",
+      "pinyin": "fángjiān",
+      "vietnamese_meaning": "căn phòng",
+      "part_of_speech": "danh từ",
+      "example": "房间里面有一只猫。\nfáng jiān lǐ miàn yǒu yī zhī māo 。\nBên trong phòng có một con mèo.",
+      "order_index": 1,
+      "note": null,
+      "source_key": "1:8:房间"
+    },
+    {
+      "hanzi": "外",
+      "pinyin": "wài",
+      "vietnamese_meaning": "ngoài",
+      "part_of_speech": "danh từ",
+      "example": "学校外有很多人。\nxué xiào wài yǒu hěn duō rén 。\nBên ngoài trường có nhiều người.",
+      "order_index": 2,
+      "note": null,
+      "source_key": "1:8:外"
+    },
+    {
+      "hanzi": "里",
+      "pinyin": "lǐ",
+      "vietnamese_meaning": "trong, bên trong",
+      "part_of_speech": "từ chỉ vị trí",
+      "example": "房间里面有一只猫。\nfáng jiān lǐ miàn yǒu yī zhī māo 。\nBên trong phòng có một con mèo.",
+      "order_index": 3,
+      "note": null,
+      "source_key": "1:8:里"
+    },
+    {
+      "hanzi": "面",
+      "pinyin": "miàn",
+      "vietnamese_meaning": "phía, bên",
+      "part_of_speech": "danh từ",
+      "example": "房间里面有一只猫。\nfáng jiān lǐ miàn yǒu yī zhī māo 。\nBên trong phòng có một con mèo.",
+      "order_index": 4,
+      "note": null,
+      "source_key": "1:8:面"
+    },
+    {
+      "hanzi": "里面",
+      "pinyin": "lǐ miàn",
+      "vietnamese_meaning": "bên trong",
+      "part_of_speech": "từ chỉ vị trí",
+      "example": "房间里面有一只猫。\nfáng jiān lǐ miàn yǒu yī zhī māo 。\nBên trong phòng có một con mèo.",
+      "order_index": 5,
+      "note": null,
+      "source_key": "1:8:里面"
+    },
+    {
+      "hanzi": "外面",
+      "pinyin": "wài miàn",
+      "vietnamese_meaning": "bên ngoài",
+      "part_of_speech": "từ chỉ vị trí",
+      "example": "外面有一只猫。\nwài miàn yǒu yī zhī māo 。\nBên ngoài có một con mèo.",
+      "order_index": 6,
+      "note": null,
+      "source_key": "1:8:外面"
+    },
+    {
+      "hanzi": "只",
+      "pinyin": "zhī",
+      "vietnamese_meaning": "con (lượng từ cho một số động vật)",
+      "part_of_speech": "lượng từ",
+      "example": "我家有一只猫。\nwǒ jiā yǒu yī zhī māo 。\nNhà tôi có một con mèo.",
+      "order_index": 7,
+      "note": "Khi là lượng từ đếm con vật, 只 đọc zhī; khi nghĩa là chỉ, 只 đọc zhǐ. Không đánh đồng hai cách đọc.",
+      "source_key": "1:8:只"
+    },
+    {
+      "hanzi": "猫",
+      "pinyin": "māo",
+      "vietnamese_meaning": "mèo",
+      "part_of_speech": "danh từ",
+      "example": "我家有一只猫。\nwǒ jiā yǒu yī zhī māo 。\nNhà tôi có một con mèo.",
+      "order_index": 8,
+      "note": null,
+      "source_key": "1:8:猫"
+    },
+    {
+      "hanzi": "狗",
+      "pinyin": "gǒu",
+      "vietnamese_meaning": "chó",
+      "part_of_speech": "danh từ",
+      "example": "我家有一只狗。\nwǒ jiā yǒu yī zhī gǒu 。\nNhà tôi có một con chó.",
+      "order_index": 9,
+      "note": null,
+      "source_key": "1:8:狗"
+    },
+    {
+      "hanzi": "没",
+      "pinyin": "méi",
+      "vietnamese_meaning": "không/chưa",
+      "part_of_speech": "phó từ",
+      "example": "我没看见他。\nwǒ méi kàn jiàn tā 。\nTôi không nhìn thấy anh ấy.",
+      "order_index": 10,
+      "note": null,
+      "source_key": "1:8:没"
+    },
+    {
+      "hanzi": "看见",
+      "pinyin": "kànjiàn",
+      "vietnamese_meaning": "nhìn thấy",
+      "part_of_speech": "động từ",
+      "example": "我没看见他。\nwǒ méi kàn jiàn tā 。\nTôi không nhìn thấy anh ấy.",
+      "order_index": 11,
+      "note": null,
+      "source_key": "1:8:看见"
+    },
+    {
+      "hanzi": "桌子",
+      "pinyin": "zhuōzi",
+      "vietnamese_meaning": "cái bàn",
+      "part_of_speech": "danh từ",
+      "example": "这是我的桌子。\nzhè shì wǒ de zhuō zi 。\nĐây là cái bàn của tôi.",
+      "order_index": 12,
+      "note": null,
+      "source_key": "1:8:桌子"
+    },
+    {
+      "hanzi": "下",
+      "pinyin": "xià",
+      "vietnamese_meaning": "dưới",
+      "part_of_speech": "danh từ",
+      "example": "猫在桌子下。\nmāo zài zhuō zi xià 。\nCon mèo ở dưới bàn.",
+      "order_index": 13,
+      "note": null,
+      "source_key": "1:8:下"
+    },
+    {
+      "hanzi": "上",
+      "pinyin": "shang/shàng",
+      "vietnamese_meaning": "phía trên/trên",
+      "part_of_speech": "danh từ",
+      "example": "书在桌子上。\nshū zài zhuō zi shàng 。\nSách ở trên bàn.",
+      "order_index": 14,
+      "note": null,
+      "source_key": "1:8:上"
+    },
+    {
+      "hanzi": "上面",
+      "pinyin": "shàng miàn",
+      "vietnamese_meaning": "bên trên",
+      "part_of_speech": "từ chỉ vị trí",
+      "example": "上面有一本书。\nshàng miàn yǒu yī běn shū 。\nBên trên có một quyển sách.",
+      "order_index": 15,
+      "note": null,
+      "source_key": "1:8:上面"
+    },
+    {
+      "hanzi": "下面",
+      "pinyin": "xià miàn",
+      "vietnamese_meaning": "bên dưới",
+      "part_of_speech": "từ chỉ vị trí",
+      "example": "下面有一只猫。\nxià miàn yǒu yī zhī māo 。\nBên dưới có một con mèo.",
+      "order_index": 16,
+      "note": null,
+      "source_key": "1:8:下面"
+    },
+    {
+      "hanzi": "漂亮",
+      "pinyin": "piàoliang",
+      "vietnamese_meaning": "xinh đẹp",
+      "part_of_speech": "tính từ",
+      "example": "他很漂亮。\ntā hěn piào liàng 。\nAnh ấy xinh đẹp.",
+      "order_index": 17,
+      "note": null,
+      "source_key": "1:8:漂亮"
+    },
+    {
+      "hanzi": "帅",
+      "pinyin": "shuài",
+      "vietnamese_meaning": "đẹp trai",
+      "part_of_speech": "tính từ",
+      "example": "他很帅。\ntā hěn shuài 。\nAnh ấy đẹp trai.",
+      "order_index": 18,
+      "note": null,
+      "source_key": "1:8:帅"
+    },
+    {
+      "hanzi": "学",
+      "pinyin": "xué",
+      "vietnamese_meaning": "học",
+      "part_of_speech": "động từ",
+      "example": "我在中心学汉语。\nwǒ zài zhōng xīn xué hàn yǔ 。\nTôi học tiếng Trung ở trung tâm.",
+      "order_index": 19,
+      "note": null,
+      "source_key": "1:8:学"
+    },
+    {
+      "hanzi": "学习",
+      "pinyin": "xuéxí",
+      "vietnamese_meaning": "học tập",
+      "part_of_speech": "động từ",
+      "example": "我们一起学习吧。\nwǒ men yì qǐ xué xí ba 。\nChúng ta cùng học tập nhé.",
+      "order_index": 20,
+      "note": null,
+      "source_key": "1:8:学习"
+    },
+    {
+      "hanzi": "学校",
+      "pinyin": "xuéxiào",
+      "vietnamese_meaning": "trường học",
+      "part_of_speech": "danh từ",
+      "example": "我去学校。\nwǒ qù xué xiào 。\nTôi đến trường học.",
+      "order_index": 21,
+      "note": null,
+      "source_key": "1:8:学校"
+    },
+    {
+      "hanzi": "中心",
+      "pinyin": "zhōng xīn",
+      "vietnamese_meaning": "trung tâm",
+      "part_of_speech": "danh từ",
+      "example": "我在中心学汉语。\nwǒ zài zhōng xīn xué hàn yǔ 。\nTôi học tiếng Trung ở trung tâm.",
+      "order_index": 22,
+      "note": null,
+      "source_key": "1:8:中心"
+    },
+    {
+      "hanzi": "书店",
+      "pinyin": "shūdiàn",
+      "vietnamese_meaning": "hiệu sách",
+      "part_of_speech": "danh từ",
+      "example": "我去书店。\nwǒ qù shū diàn 。\nTôi đến hiệu sách.",
+      "order_index": 23,
+      "note": null,
+      "source_key": "1:8:书店"
+    },
+    {
+      "hanzi": "后",
+      "pinyin": "hòu",
+      "vietnamese_meaning": "sau; phía sau",
+      "part_of_speech": "danh từ / phương vị từ",
+      "example": "我在学校后等你。\nwǒ zài xué xiào hòu děng nǐ 。\nTôi đợi bạn phía sau trường.",
+      "order_index": 24,
+      "note": null,
+      "source_key": "1:8:后"
+    },
+    {
+      "hanzi": "能",
+      "pinyin": "néng",
+      "vietnamese_meaning": "có thể",
+      "part_of_speech": "động từ năng nguyện",
+      "example": "我们都能到。\nwǒ men dōu néng dào 。\nChúng tôi đều có thể đến.",
+      "order_index": 25,
+      "note": null,
+      "source_key": "1:8:能"
+    },
+    {
+      "hanzi": "到",
+      "pinyin": "dào",
+      "vietnamese_meaning": "đến",
+      "part_of_speech": "động từ",
+      "example": "我们都能到。\nwǒ men dōu néng dào 。\nChúng tôi đều có thể đến.",
+      "order_index": 26,
+      "note": null,
+      "source_key": "1:8:到"
+    },
+    {
+      "hanzi": "都",
+      "pinyin": "dōu",
+      "vietnamese_meaning": "đều; tất cả",
+      "part_of_speech": "phó từ",
+      "example": "我们都能到。\nwǒ men dōu néng dào 。\nChúng tôi đều có thể đến.",
+      "order_index": 27,
+      "note": null,
+      "source_key": "1:8:都"
+    },
+    {
+      "hanzi": "只",
+      "pinyin": "zhǐ",
+      "vietnamese_meaning": "chỉ, chỉ có",
+      "part_of_speech": "phó từ",
+      "example": "我只想喝水。\nWǒ zhǐ xiǎng hē shuǐ.\nTôi chỉ muốn uống nước.",
+      "note": "Khi là lượng từ đếm con vật, 只 đọc zhī; khi nghĩa là chỉ, 只 đọc zhǐ. Không đánh đồng hai cách đọc.",
+      "order_index": 28,
+      "source_key": "1:8:只-zhǐ"
+    }
+  ],
+  "grammar": [
+    {
+      "name": "Phương vị từ",
+      "structure": "Danh từ + 上/下/里/外/前/后",
+      "explanation": "Chỉ vị trí tương đối so với một mốc.",
+      "usage": "桌子下 là vị trí; không đảo thành 下桌子 khi muốn nói dưới bàn.",
+      "example": "小猫在桌子下。\nxiǎo māo zài zhuō zi xià 。\nCon mèo ở dưới bàn.",
+      "note": "桌子下 là vị trí; không đảo thành 下桌子 khi muốn nói dưới bàn.",
+      "order_index": 1
+    },
+    {
+      "name": "Khả năng với 能",
+      "structure": "Chủ ngữ + 能/不能 + động từ",
+      "explanation": "能 biểu thị năng lực, điều kiện hoặc khả năng thực hiện.",
+      "usage": "会 thiên về kỹ năng; 能 còn phụ thuộc điều kiện thực tế.",
+      "example": "下午两点你能到吗？\nxià wǔ liǎng diǎn nǐ néng dào ma ？\nHai giờ chiều bạn có thể đến không?",
+      "note": "会 thiên về kỹ năng; 能 còn phụ thuộc điều kiện thực tế.",
+      "order_index": 2
+    },
+    {
+      "name": "Đều với 都",
+      "structure": "Chủ ngữ số nhiều + 都 + vị ngữ",
+      "explanation": "都 bao quát các thành viên trong phạm vi đã nêu.",
+      "usage": "都 đứng trước động từ; 也 biểu thị cũng, không tự mang nghĩa tất cả.",
+      "example": "我们都是学生。\nwǒ men dōu shì xué shēng 。\nChúng tôi đều là học sinh.",
+      "note": "都 đứng trước động từ; 也 biểu thị cũng, không tự mang nghĩa tất cả.",
+      "order_index": 3
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Con mèo ở đâu?",
+      "content": "白家月:房间外有一只小猫。\n陈天中:我没看见,它在哪儿呢?\n白家月:它在桌子下呢。\n陈天中:这只小猫真漂亮。",
+      "pinyin": "bái jiā yuè : fáng jiān wài yǒu yī zhī xiǎo māo 。\nchén tiān zhōng : wǒ méi kàn jiàn , tā zài nǎ ér ne ?\nbái jiā yuè : tā zài zhuō zi xià ne 。\nchén tiān zhōng : zhè zhǐ xiǎo māo zhēn piào liàng 。",
+      "vietnamese_translation": "Bạch Gia Nguyệt: Bên ngoài phòng có một con mèo\nTrần Thiên Trung: Tôi không nhìn thấy, nó ở đâu nhỉ?\nBạch Gia Nguyệt: Nó ở dưới cái bàn.\nTrần Thiên Trung: Con mèo này thật đẹp.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 8, PDF 73."
+    },
+    {
+      "order_index": 2,
+      "title": "Hẹn gặp trước hiệu sách",
+      "content": "白家月:我们在哪儿见呢?\n陈天中:在学校书店前见吧。\n白家月:好的。下午两点你能到吗?\n陈天中:我能到。我在学校吃午饭。",
+      "pinyin": "bái jiā yuè : wǒ men zài nǎ ér jiàn ne ?\nchén tiān zhōng : zài xué xiào shū diàn qián jiàn ba 。\nbái jiā yuè : hǎo de 。 xià wǔ liǎng diǎn nǐ néng dào ma ?\nchén tiān zhōng : wǒ néng dào 。 wǒ zài xué xiào chī wǔ fàn 。",
+      "vietnamese_translation": "Bạch Gia Nguyệt: Chúng ta gặp nhau ở đâu?\nLí Văn: Ở trước hiệu sách của trường học đi.\nBạch Gia Nguyệt: Được. 2 giờ chiều nay bạn có thể tới không?\nLí Văn: Tôi có thể đến. Tôi ăn trưa ở trường.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 8, PDF 75."
+    },
+    {
+      "order_index": 3,
+      "title": "Công việc của bác sĩ",
+      "content": "刘明:小胡,还没吃饭呢?\n胡医生:没吃呢。\n刘明:大医院病人多,医生非常忙。\n胡医生:是的。我爸爸也在医院工作,他也非常忙。\n刘明:你家有两个医生?\n胡医生:对。",
+      "pinyin": "liú míng : xiǎo hú , hái méi chī fàn ne ?\nhú yī shēng : méi chī ne 。\nliú míng : dà yī yuàn bìng rén duō , yī shēng fēi cháng máng 。\nhú yī shēng : shì de 。 wǒ bà bà yě zài yī yuàn gōng zuò , tā yě fēi cháng máng 。\nliú míng : nǐ jiā yǒu liǎng gè yī shēng ?\nhú yī shēng : duì 。",
+      "vietnamese_translation": "Lưu Minh: Tiểu Hồ, vẫn chưa ăn cơm à?\nBác sĩ Hồ: Chưa ăn nữa.\nLưu Minh: Bệnh viện lớn bệnh nhân nhiều, bác sĩ rất bận.\nBác sĩ Hồ: Đúng vậy. Bố tôi cũng làm việc tại bệnh viện, ông ấy cũng vô cùng bận.\nLưu Minh: Nhà bạn có hai bác sĩ?\nBác sĩ Hồ: Đúng vậy.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 8, PDF 78."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 1 · Bài 8 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp; dùng kiến thức của bài này và các bài trước, không dùng bài sau. Đạt từ 80%; được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "review_status": "DRAFT_REQUIRES_EDITOR_REVIEW",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 1).",
+      "options": [
+        {
+          "option_text": "việc, chuyện",
+          "is_correct": false
+        },
+        {
+          "option_text": "đúng",
+          "is_correct": false
+        },
+        {
+          "option_text": "bạn trai",
+          "is_correct": false
+        },
+        {
+          "option_text": "bên trong",
+          "is_correct": true
+        }
+      ],
+      "rubric": "里面 (lǐ miàn) nghĩa là bên trong. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "里面"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 8
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “部” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "buổi chiều",
+          "is_correct": false
+        },
+        {
+          "option_text": "bên trên",
+          "is_correct": false
+        },
+        {
+          "option_text": "ông nội",
+          "is_correct": false
+        },
+        {
+          "option_text": "chiếc, bộ (lượng từ cho điện thoại, phim...)",
+          "is_correct": true
+        }
+      ],
+      "rubric": "部 (bù) nghĩa là chiếc, bộ (lượng từ cho điện thoại, phim...). 部 dùng đếm điện thoại (一部手机); 辆 đếm xe. Không dùng cùng một lượng từ cho mọi đồ vật.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “gǒu” và nghĩa “chó”.",
+      "options": [
+        {
+          "option_text": "狗",
+          "is_correct": true
+        },
+        {
+          "option_text": "鸡蛋",
+          "is_correct": false
+        },
+        {
+          "option_text": "太",
+          "is_correct": false
+        },
+        {
+          "option_text": "馒头",
+          "is_correct": false
+        }
+      ],
+      "rubric": "狗 (gǒu) nghĩa là chó. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 8
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 4).",
+      "options": [
+        {
+          "option_text": "ngoài",
+          "is_correct": true
+        },
+        {
+          "option_text": "siêu thị",
+          "is_correct": false
+        },
+        {
+          "option_text": "em gái",
+          "is_correct": false
+        },
+        {
+          "option_text": "không/chưa",
+          "is_correct": false
+        }
+      ],
+      "rubric": "外 (wài) nghĩa là ngoài. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "外"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 8
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “下面” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "bên dưới",
+          "is_correct": true
+        },
+        {
+          "option_text": "nhìn thấy",
+          "is_correct": false
+        },
+        {
+          "option_text": "mèo",
+          "is_correct": false
+        },
+        {
+          "option_text": "cảm ơn",
+          "is_correct": false
+        }
+      ],
+      "rubric": "下面 (xià miàn) nghĩa là bên dưới. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 8
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “hào” và nghĩa “số, số hiệu (điện thoại, mã số)”.",
+      "options": [
+        {
+          "option_text": "四",
+          "is_correct": false
+        },
+        {
+          "option_text": "号",
+          "is_correct": true
+        },
+        {
+          "option_text": "晚饭",
+          "is_correct": false
+        },
+        {
+          "option_text": "单身",
+          "is_correct": false
+        }
+      ],
+      "rubric": "号 (hào) nghĩa là số, số hiệu (điện thoại, mã số). 号 chỉ ngày trong ngày tháng; khi đọc số điện thoại hay mã số, 号 là số/số hiệu. 日 trang trọng hơn khi ghi ngày. Nhắc lại HSK1 bài 5: 号 (hào) nghĩa là ngày. Trong bài này: số, số hiệu (điện thoại, mã số).",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 7).",
+      "options": [
+        {
+          "option_text": "quán ăn, nhà hàng; khách sạn (tùy ngữ cảnh)",
+          "is_correct": false
+        },
+        {
+          "option_text": "mẹ",
+          "is_correct": true
+        },
+        {
+          "option_text": "Trung Quốc",
+          "is_correct": false
+        },
+        {
+          "option_text": "bố",
+          "is_correct": false
+        }
+      ],
+      "rubric": "妈妈 (māma) nghĩa là mẹ. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true,
+          "audio_text": "妈妈"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “学校” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "trường học",
+          "is_correct": true
+        },
+        {
+          "option_text": "bạn gái",
+          "is_correct": false
+        },
+        {
+          "option_text": "hậu tố chỉ số nhiều cho người",
+          "is_correct": false
+        },
+        {
+          "option_text": "hôm qua",
+          "is_correct": false
+        }
+      ],
+      "rubric": "学校 (xuéxiào) nghĩa là trường học. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 8
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “māo” và nghĩa “mèo”.",
+      "options": [
+        {
+          "option_text": "猫",
+          "is_correct": true
+        },
+        {
+          "option_text": "口",
+          "is_correct": false
+        },
+        {
+          "option_text": "桌子",
+          "is_correct": false
+        },
+        {
+          "option_text": "下课",
+          "is_correct": false
+        }
+      ],
+      "rubric": "猫 (māo) nghĩa là mèo. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 8
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "xinh đẹp",
+          "is_correct": true
+        },
+        {
+          "option_text": "Bạch Gia Nguyệt (tên người)",
+          "is_correct": false
+        },
+        {
+          "option_text": "bạn trai",
+          "is_correct": false
+        },
+        {
+          "option_text": "phim",
+          "is_correct": false
+        }
+      ],
+      "rubric": "漂亮 (piàoliang) nghĩa là xinh đẹp. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "漂亮"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 8
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “房间” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "cũng",
+          "is_correct": false
+        },
+        {
+          "option_text": "mẹ",
+          "is_correct": false
+        },
+        {
+          "option_text": "làm",
+          "is_correct": false
+        },
+        {
+          "option_text": "căn phòng",
+          "is_correct": true
+        }
+      ],
+      "rubric": "房间 (fángjiān) nghĩa là căn phòng. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 8
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “shàng miàn” và nghĩa “bên trên”.",
+      "options": [
+        {
+          "option_text": "明天",
+          "is_correct": false
+        },
+        {
+          "option_text": "超市",
+          "is_correct": false
+        },
+        {
+          "option_text": "都",
+          "is_correct": false
+        },
+        {
+          "option_text": "上面",
+          "is_correct": true
+        }
+      ],
+      "rubric": "上面 (shàng miàn) nghĩa là bên trên. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 8
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “không/chưa” (gợi ý pinyin: méi).",
+      "reference_answer": "没",
+      "rubric": "Đáp án: 没 (méi). ",
+      "config": {
+        "accepted_answers": [
+          "没"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 8
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “cái bàn” (gợi ý pinyin: zhuōzi).",
+      "reference_answer": "桌子",
+      "rubric": "Đáp án: 桌子 (zhuōzi). ",
+      "config": {
+        "accepted_answers": [
+          "桌子"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 8
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “học” (gợi ý pinyin: xué).",
+      "reference_answer": "学",
+      "rubric": "Đáp án: 学 (xué). ",
+      "config": {
+        "accepted_answers": [
+          "学"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 8
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “sau; phía sau” (gợi ý pinyin: hòu).",
+      "reference_answer": "后",
+      "rubric": "Đáp án: 后 (hòu). ",
+      "config": {
+        "accepted_answers": [
+          "后"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 8
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 1).",
+      "rubric": "包子: bánh bao có nhân; 法国: Pháp; 汉语: tiếng Hán; tiếng Trung; 会: biết; có thể (biểu thị biết làm gì)",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "包子"
+          },
+          {
+            "id": "l1",
+            "text": "法国"
+          },
+          {
+            "id": "l2",
+            "text": "汉语"
+          },
+          {
+            "id": "l3",
+            "text": "会"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r1",
+            "text": "Pháp"
+          },
+          {
+            "id": "r3",
+            "text": "biết; có thể (biểu thị biết làm gì)"
+          },
+          {
+            "id": "r2",
+            "text": "tiếng Hán; tiếng Trung"
+          },
+          {
+            "id": "r0",
+            "text": "bánh bao có nhân"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        },
+        {
+          "hsk": 1,
+          "lesson": 3
+        },
+        {
+          "hsk": 1,
+          "lesson": 3
+        },
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 2).",
+      "rubric": "妈妈: mẹ; 您: ngài, ông, bà; 那边: bên kia, chỗ đó; 新: mới",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "妈妈"
+          },
+          {
+            "id": "l1",
+            "text": "您"
+          },
+          {
+            "id": "l2",
+            "text": "那边"
+          },
+          {
+            "id": "l3",
+            "text": "新"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r0",
+            "text": "mẹ"
+          },
+          {
+            "id": "r3",
+            "text": "mới"
+          },
+          {
+            "id": "r1",
+            "text": "ngài, ông, bà"
+          },
+          {
+            "id": "r2",
+            "text": "bên kia, chỗ đó"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        },
+        {
+          "hsk": 1,
+          "lesson": 2
+        },
+        {
+          "hsk": 1,
+          "lesson": 6
+        },
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Phương vị từ”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chỉ vị trí tương đối so với một mốc.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Danh từ + 上/下/里/外/前/后. Chỉ vị trí tương đối so với một mốc. 桌子下 là vị trí; không đảo thành 下桌子 khi muốn nói dưới bàn.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 8
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Khả năng với 能”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "能 biểu thị năng lực, điều kiện hoặc khả năng thực hiện.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ ngữ + 能/不能 + động từ. 能 biểu thị năng lực, điều kiện hoặc khả năng thực hiện. 会 thiên về kỹ năng; 能 còn phụ thuộc điều kiện thực tế.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 8
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Đều với 都”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "都 bao quát các thành viên trong phạm vi đã nêu.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Chủ ngữ số nhiều + 都 + vị ngữ. 都 bao quát các thành viên trong phạm vi đã nêu. 都 đứng trước động từ; 也 biểu thị cũng, không tự mang nghĩa tất cả.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 8
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Phương vị từ” (mục 4): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "桌子下 là vị trí; không đảo thành 下桌子 khi muốn nói dưới bàn.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Danh từ + 上/下/里/外/前/后. Chỉ vị trí tương đối so với một mốc. 桌子下 là vị trí; không đảo thành 下桌子 khi muốn nói dưới bàn.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 8
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Khả năng với 能” (mục 5): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "会 thiên về kỹ năng; 能 còn phụ thuộc điều kiện thực tế.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ ngữ + 能/不能 + động từ. 能 biểu thị năng lực, điều kiện hoặc khả năng thực hiện. 会 thiên về kỹ năng; 能 còn phụ thuộc điều kiện thực tế.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 8
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Đều với 都” (mục 6): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "都 đứng trước động từ; 也 biểu thị cũng, không tự mang nghĩa tất cả.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ ngữ số nhiều + 都 + vị ngữ. 都 bao quát các thành viên trong phạm vi đã nêu. 都 đứng trước động từ; 也 biểu thị cũng, không tự mang nghĩa tất cả.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 8
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 1).",
+      "reference_answer": "小猫在桌子下。",
+      "rubric": "Câu đúng: 小猫在桌子下。 桌子下 là vị trí; không đảo thành 下桌子 khi muốn nói dưới bàn.",
+      "config": {
+        "items": [
+          {
+            "id": "w2",
+            "text": "在"
+          },
+          {
+            "id": "w0",
+            "text": "小"
+          },
+          {
+            "id": "w5",
+            "text": "。"
+          },
+          {
+            "id": "w3",
+            "text": "桌子"
+          },
+          {
+            "id": "w1",
+            "text": "猫"
+          },
+          {
+            "id": "w4",
+            "text": "下"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 8
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 2).",
+      "reference_answer": "下午两点你能到吗？",
+      "rubric": "Câu đúng: 下午两点你能到吗？ 会 thiên về kỹ năng; 能 còn phụ thuộc điều kiện thực tế.",
+      "config": {
+        "items": [
+          {
+            "id": "w3",
+            "text": "你"
+          },
+          {
+            "id": "w5",
+            "text": "到"
+          },
+          {
+            "id": "w4",
+            "text": "能"
+          },
+          {
+            "id": "w1",
+            "text": "两"
+          },
+          {
+            "id": "w7",
+            "text": "？"
+          },
+          {
+            "id": "w0",
+            "text": "下午"
+          },
+          {
+            "id": "w2",
+            "text": "点"
+          },
+          {
+            "id": "w6",
+            "text": "吗"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 8
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 3).",
+      "reference_answer": "我们都是学生。",
+      "rubric": "Câu đúng: 我们都是学生。 都 đứng trước động từ; 也 biểu thị cũng, không tự mang nghĩa tất cả.",
+      "config": {
+        "items": [
+          {
+            "id": "w2",
+            "text": "都"
+          },
+          {
+            "id": "w1",
+            "text": "们"
+          },
+          {
+            "id": "w3",
+            "text": "是"
+          },
+          {
+            "id": "w4",
+            "text": "学生"
+          },
+          {
+            "id": "w5",
+            "text": "。"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 8
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 4).",
+      "reference_answer": "房间外有一只小猫。",
+      "rubric": "Câu đúng: 房间外有一只小猫。 桌子下 là vị trí; không đảo thành 下桌子 khi muốn nói dưới bàn.",
+      "config": {
+        "items": [
+          {
+            "id": "w1",
+            "text": "外"
+          },
+          {
+            "id": "w2",
+            "text": "有"
+          },
+          {
+            "id": "w4",
+            "text": "只"
+          },
+          {
+            "id": "w0",
+            "text": "房间"
+          },
+          {
+            "id": "w7",
+            "text": "。"
+          },
+          {
+            "id": "w3",
+            "text": "一"
+          },
+          {
+            "id": "w6",
+            "text": "猫"
+          },
+          {
+            "id": "w5",
+            "text": "小"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 8
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 5).",
+      "reference_answer": "我没看见,它在哪儿呢?",
+      "rubric": "Câu đúng: 我没看见,它在哪儿呢? 会 thiên về kỹ năng; 能 còn phụ thuộc điều kiện thực tế.",
+      "config": {
+        "items": [
+          {
+            "id": "w2",
+            "text": "看见"
+          },
+          {
+            "id": "w3",
+            "text": ","
+          },
+          {
+            "id": "w6",
+            "text": "哪儿"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w8",
+            "text": "?"
+          },
+          {
+            "id": "w4",
+            "text": "它"
+          },
+          {
+            "id": "w5",
+            "text": "在"
+          },
+          {
+            "id": "w7",
+            "text": "呢"
+          },
+          {
+            "id": "w1",
+            "text": "没"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 8
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 6).",
+      "reference_answer": "它在桌子下呢。",
+      "rubric": "Câu đúng: 它在桌子下呢。 都 đứng trước động từ; 也 biểu thị cũng, không tự mang nghĩa tất cả.",
+      "config": {
+        "items": [
+          {
+            "id": "w5",
+            "text": "。"
+          },
+          {
+            "id": "w1",
+            "text": "在"
+          },
+          {
+            "id": "w4",
+            "text": "呢"
+          },
+          {
+            "id": "w0",
+            "text": "它"
+          },
+          {
+            "id": "w2",
+            "text": "桌子"
+          },
+          {
+            "id": "w3",
+            "text": "下"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 8
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ],
+  "source_documents": {
+    "vocabulary": "DOCX",
+    "theory": "HSK1 PDF"
+  }
+}

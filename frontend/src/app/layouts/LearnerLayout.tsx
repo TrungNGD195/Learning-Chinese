@@ -8,6 +8,7 @@ import { JourneyCloudProvider } from '../../features/journey/JourneyCloudTransit
 
 const learnerLinks = [
   ['Giáo trình', '/pronunciation', 'book'],
+  ['Ôn từ vựng', '/vocabulary-review', 'library'],
   ['Hồ sơ', '/profile', 'profile'],
 ] as const
 

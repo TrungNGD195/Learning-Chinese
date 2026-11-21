@@ -1,0 +1,1808 @@
+{
+  "key": "hsk2-lesson-07-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 2,
+    "lesson_number": 7,
+    "title": "你觉得词难还是题难？ · Học tập và lựa chọn",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "开学",
+      "pinyin": "kāixué",
+      "vietnamese_meaning": "khai giảng",
+      "part_of_speech": "động từ",
+      "example": "明天就开学了。\nmíng tiān jiù kāi xué le 。\nNgày mai khai giảng rồi.",
+      "order_index": 1,
+      "note": null,
+      "source_key": "2:7:开学"
+    },
+    {
+      "hanzi": "放",
+      "pinyin": "fàng",
+      "vietnamese_meaning": "đặt, để",
+      "part_of_speech": "động từ",
+      "example": "把书放在桌子上。\nbǎ shū fàng zài zhuō zi shàng 。\nĐặt sách lên bàn.",
+      "order_index": 2,
+      "note": null,
+      "source_key": "2:7:放"
+    },
+    {
+      "hanzi": "这样",
+      "pinyin": "zhè yàng",
+      "vietnamese_meaning": "như thế này, như vậy",
+      "part_of_speech": "đại từ",
+      "example": "这样很好。\nzhè yàng hěn hǎo 。\nNhư thế này rất tốt.",
+      "order_index": 3,
+      "note": null,
+      "source_key": "2:7:这样"
+    },
+    {
+      "hanzi": "考试",
+      "pinyin": "kǎoshì",
+      "vietnamese_meaning": "thi, kiểm tra",
+      "part_of_speech": "động từ, danh từ",
+      "example": "明天考试,你准备好了吗?\nmíng tiān kǎo shì , nǐ zhǔn bèi hǎo le ma ?\nMai thi rồi, bạn chuẩn bị xong chưa?",
+      "order_index": 4,
+      "note": null,
+      "source_key": "2:7:考试"
+    },
+    {
+      "hanzi": "差不多",
+      "pinyin": "chà bu duō",
+      "vietnamese_meaning": "xấp xỉ; gần xong; gần như nhau",
+      "part_of_speech": "tính từ, phó từ",
+      "example": "差不多了。\nchà bu duō le 。\nGần xong rồi.",
+      "order_index": 5,
+      "note": null,
+      "source_key": "2:7:差不多"
+    },
+    {
+      "hanzi": "词",
+      "pinyin": "cí",
+      "vietnamese_meaning": "từ",
+      "part_of_speech": "danh từ",
+      "example": "你用本子写词了吗?\nnǐ yòng běn zi xiě cí le ma ?\nBạn đã viết từ vào vở chưa?",
+      "order_index": 6,
+      "note": null,
+      "source_key": "2:7:词"
+    },
+    {
+      "hanzi": "生词",
+      "pinyin": "shēng cí",
+      "vietnamese_meaning": "từ mới",
+      "part_of_speech": "danh từ",
+      "example": "我每天复习生词。\nwǒ měi tiān fù xí shēng cí 。\nMỗi ngày tôi ôn từ mới.",
+      "order_index": 7,
+      "note": null,
+      "source_key": "2:7:生词"
+    },
+    {
+      "hanzi": "题",
+      "pinyin": "tí",
+      "vietnamese_meaning": "đề thi, bài tập",
+      "part_of_speech": "danh từ",
+      "example": "这道题我做错了。\nzhè dào tí wǒ zuò cuò le 。\nCâu này tôi đã làm sai.",
+      "order_index": 8,
+      "note": null,
+      "source_key": "2:7:题"
+    },
+    {
+      "hanzi": "错",
+      "pinyin": "cuò",
+      "vietnamese_meaning": "sai",
+      "part_of_speech": "động từ",
+      "example": "这道题我做错了。\nzhè dào tí wǒ zuò cuò le 。\nCâu này tôi đã làm sai.",
+      "order_index": 9,
+      "note": null,
+      "source_key": "2:7:错"
+    },
+    {
+      "hanzi": "遍",
+      "pinyin": "biàn",
+      "vietnamese_meaning": "lượt (trọn vẹn từ đầu đến cuối)",
+      "part_of_speech": "lượng từ",
+      "example": "我再看一遍吧。\nwǒ zài kàn yī biàn ba 。\nMình xem lại từ thêm một lượt nhé.",
+      "order_index": 10,
+      "note": null,
+      "source_key": "2:7:遍"
+    },
+    {
+      "hanzi": "还是",
+      "pinyin": "háishi",
+      "vietnamese_meaning": "hay, hoặc (câu hỏi lựa chọn)",
+      "part_of_speech": "liên từ",
+      "example": "你喝茶还是咖啡？\nnǐ hē chá hái shì kā fēi ？\nBạn uống trà hay cà phê?",
+      "order_index": 11,
+      "note": "还是 trong câu hỏi A 还是 B nghĩa là hay (chọn một phương án); trong câu trần thuật có thể nghĩa vẫn. Không thêm 吗 vào câu hỏi lựa chọn thông thường. Nhắc lại HSK2 bài 5: 还是 (háishi) nghĩa là vẫn (sau khi đã cân nhắc hoặc có sự thay đổi). Trong bài này: hay, hoặc (câu hỏi lựa chọn).",
+      "source_key": "2:7:还是"
+    },
+    {
+      "hanzi": "可是",
+      "pinyin": "kě shì",
+      "vietnamese_meaning": "nhưng, thế nhưng",
+      "part_of_speech": "liên từ",
+      "example": "我想去，可是没有时间。\nwǒ xiǎng qù ， kě shì méi yǒu shí jiān 。\nTôi muốn đi nhưng không có thời gian.",
+      "order_index": 12,
+      "note": null,
+      "source_key": "2:7:可是"
+    },
+    {
+      "hanzi": "复习",
+      "pinyin": "fù xí",
+      "vietnamese_meaning": "ôn tập",
+      "part_of_speech": "động từ",
+      "example": "我们一边复习，一边讨论。\nwǒ men yī biān fù xí ， yī biān tǎo lùn 。\nChúng tôi vừa ôn tập vừa thảo luận.",
+      "order_index": 13,
+      "note": null,
+      "source_key": "2:7:复习"
+    },
+    {
+      "hanzi": "结束",
+      "pinyin": "jié shù",
+      "vietnamese_meaning": "kết thúc",
+      "part_of_speech": "động từ",
+      "example": "考试结束了。\nkǎo shì jié shù le 。\nKỳ thi kết thúc rồi.",
+      "order_index": 14,
+      "note": null,
+      "source_key": "2:7:结束"
+    },
+    {
+      "hanzi": "水平",
+      "pinyin": "shuǐ píng",
+      "vietnamese_meaning": "trình độ, mức độ",
+      "part_of_speech": "danh từ",
+      "example": "他的汉语水平很高。\ntā de hàn yǔ shuǐ píng hěn gāo 。\nTrình độ tiếng Trung của anh ấy cao.",
+      "order_index": 15,
+      "note": null,
+      "source_key": "2:7:水平"
+    },
+    {
+      "hanzi": "一边",
+      "pinyin": "yī biān",
+      "vietnamese_meaning": "vừa ... vừa ... (一边……一边……)",
+      "part_of_speech": "phó từ",
+      "example": "我们一边复习，一边讨论。\nwǒ men yī biān fù xí ， yī biān tǎo lùn 。\nChúng tôi vừa ôn tập vừa thảo luận.",
+      "order_index": 16,
+      "note": null,
+      "source_key": "2:7:一边"
+    },
+    {
+      "hanzi": "笑",
+      "pinyin": "xiào",
+      "vietnamese_meaning": "cười",
+      "part_of_speech": "động từ",
+      "example": "他高兴地笑了。\ntā gāo xìng de xiào le 。\nAnh ấy vui vẻ cười.",
+      "order_index": 17,
+      "note": null,
+      "source_key": "2:7:笑"
+    },
+    {
+      "hanzi": "平时",
+      "pinyin": "píngshí",
+      "vietnamese_meaning": "thường ngày",
+      "part_of_speech": "danh từ",
+      "example": "我平时很忙。\nwǒ píng shí hěn máng 。\nNgày thường tôi rất bận.",
+      "order_index": 18,
+      "note": null,
+      "source_key": "2:7:平时"
+    },
+    {
+      "hanzi": "应该",
+      "pinyin": "yīnggāi",
+      "vietnamese_meaning": "nên",
+      "part_of_speech": "động từ năng nguyện",
+      "example": "你应该好好儿休息。\nnǐ yīng gāi hǎo hǎo ér xiū xī 。\nBạn nên nghỉ ngơi cho tốt.",
+      "order_index": 19,
+      "note": null,
+      "source_key": "2:7:应该"
+    },
+    {
+      "hanzi": "让",
+      "pinyin": "ràng",
+      "vietnamese_meaning": "để, bảo; khiến cho",
+      "part_of_speech": "động từ",
+      "example": "运动能让人心情愉快。\nyùn dòng néng ràng rén xīn qíng yú kuài 。\nVận động có thể khiến tâm trạng con người vui vẻ.",
+      "order_index": 20,
+      "note": null,
+      "source_key": "2:7:让"
+    },
+    {
+      "hanzi": "心情",
+      "pinyin": "xīnqíng",
+      "vietnamese_meaning": "tâm trạng",
+      "part_of_speech": "danh từ",
+      "example": "运动能让人心情愉快。\nyùn dòng néng ràng rén xīn qíng yú kuài 。\nVận động có thể khiến tâm trạng con người vui vẻ.",
+      "order_index": 21,
+      "note": null,
+      "source_key": "2:7:心情"
+    },
+    {
+      "hanzi": "愉快",
+      "pinyin": "yú kuài",
+      "vietnamese_meaning": "vui vẻ, thoải mái",
+      "part_of_speech": "tính từ",
+      "example": "运动能让人心情愉快。\nyùn dòng néng ràng rén xīn qíng yú kuài 。\nVận động có thể khiến tâm trạng con người vui vẻ.",
+      "order_index": 22,
+      "note": null,
+      "source_key": "2:7:愉快"
+    },
+    {
+      "hanzi": "压力",
+      "pinyin": "yālì",
+      "vietnamese_meaning": "áp lực",
+      "part_of_speech": "danh từ",
+      "example": "我最近压力很大。\nwǒ zuì jìn yā lì hěn dà 。\nGần đây tôi bị áp lực lớn.",
+      "order_index": 23,
+      "note": null,
+      "source_key": "2:7:压力"
+    },
+    {
+      "hanzi": "轻松",
+      "pinyin": "qīngsōng",
+      "vietnamese_meaning": "thoải mái, thư giãn",
+      "part_of_speech": "tính từ",
+      "example": "他很轻松。\ntā hěn qīng sōng 。\nAnh ấy thoải mái, thư giãn.",
+      "order_index": 24,
+      "note": null,
+      "source_key": "2:7:轻松"
+    },
+    {
+      "hanzi": "变得",
+      "pinyin": "biàn dé",
+      "vietnamese_meaning": "trở nên",
+      "part_of_speech": "cụm động từ",
+      "example": "我发现生活变得更有意思了。\nwǒ fā xiàn shēng huó biàn de gèng yǒu yì si le 。\nTôi nhận ra cuộc sống trở nên thú vị hơn.",
+      "order_index": 25,
+      "note": null,
+      "source_key": "2:7:变得"
+    },
+    {
+      "hanzi": "发现",
+      "pinyin": "fā xiàn",
+      "vietnamese_meaning": "phát hiện, nhận ra",
+      "part_of_speech": "động từ",
+      "example": "我发现生活变得更有意思了。\nwǒ fā xiàn shēng huó biàn de gèng yǒu yì si le 。\nTôi nhận ra cuộc sống trở nên thú vị hơn.",
+      "order_index": 26,
+      "note": null,
+      "source_key": "2:7:发现"
+    },
+    {
+      "hanzi": "生活",
+      "pinyin": "shēng huó",
+      "vietnamese_meaning": "cuộc sống; sống, sinh hoạt",
+      "part_of_speech": "danh từ, động từ",
+      "example": "我发现生活变得更有意思了。\nwǒ fā xiàn shēng huó biàn de gèng yǒu yì si le 。\nTôi nhận ra cuộc sống trở nên thú vị hơn.",
+      "order_index": 27,
+      "note": null,
+      "source_key": "2:7:生活"
+    },
+    {
+      "hanzi": "通常",
+      "pinyin": "tōng cháng",
+      "vietnamese_meaning": "thông thường, thường",
+      "part_of_speech": "phó từ",
+      "example": "我通常八点上班。\nwǒ tōng cháng bā diǎn shàng bān 。\nTôi thường đi làm lúc tám giờ.",
+      "order_index": 28,
+      "note": null,
+      "source_key": "2:7:通常"
+    }
+  ],
+  "grammar": [
+    {
+      "name": "Câu vị ngữ chủ vị",
+      "structure": "Chủ đề + chủ ngữ nhỏ + vị ngữ",
+      "explanation": "Một cụm chủ-vị miêu tả một mặt của chủ đề.",
+      "usage": "Không nhất thiết thêm 的 giữa chủ đề và chủ ngữ nhỏ khi miêu tả quan hệ gần gũi.",
+      "example": "他汉语水平很高。\ntā hàn yǔ shuǐ píng hěn gāo 。\nTrình độ tiếng Trung của anh ấy cao.",
+      "note": "Không nhất thiết thêm 的 giữa chủ đề và chủ ngữ nhỏ khi miêu tả quan hệ gần gũi.",
+      "order_index": 1
+    },
+    {
+      "name": "Câu hỏi lựa chọn 还是",
+      "structure": "Phương án A + 还是 + phương án B？",
+      "explanation": "Yêu cầu chọn trong những phương án đã nêu.",
+      "usage": "还是 ở đây nghĩa hay; khác 还是 nghĩa vẫn trong câu trần thuật. Câu hỏi lựa chọn thường không thêm 吗.",
+      "example": "你觉得词难还是题难？\nnǐ jué de cí nán hái shì tí nán ？\nBạn thấy từ khó hay bài tập khó?",
+      "note": "还是 ở đây nghĩa hay; khác 还是 nghĩa vẫn trong câu trần thuật. Câu hỏi lựa chọn thường không thêm 吗.",
+      "order_index": 2
+    },
+    {
+      "name": "Sắp xảy ra với 要/快/就要……了",
+      "structure": "Chủ ngữ + 要/快/快要/就要 + động từ + 了",
+      "explanation": "Báo hiệu sự việc sắp xảy ra.",
+      "usage": "Mốc thời gian cụ thể thường kết hợp 要/就要; không đặt máy móc trước 快/快要.",
+      "example": "老师快要来了。\nlǎo shī kuài yào lái le 。\nThầy/cô sắp đến rồi.",
+      "note": "Mốc thời gian cụ thể thường kết hợp 要/就要; không đặt máy móc trước 快/快要.",
+      "order_index": 3
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Chuẩn bị đi học",
+      "content": "妈妈:明天就开学了,你准备好了吗?\n小李:明天就开学了吗?我的书包你看见了吗?\n妈妈:你的书包在门后面。书和笔呢?\n小李:书在房间里,笔在桌子上。\n妈妈:那就好,你都放在书包里吧。\n小李:这样我可以上学了。\n妈妈:这次我帮你准备,下次你自己准备,好吗?\n小李:太好了,谢谢妈妈!",
+      "pinyin": "mā mā : míng tiān jiù kāi xué le , nǐ zhǔn bèi hǎo le ma ?\nxiǎo lǐ : míng tiān jiù kāi xué le ma ? wǒ de shū bāo nǐ kàn jiàn le ma ?\nmā mā : nǐ de shū bāo zài mén hòu miàn 。 shū hé bǐ ne ?\nxiǎo lǐ : shū zài fáng jiān lǐ , bǐ zài zhuō zi shàng 。\nmā mā : nà jiù hǎo , nǐ dōu fàng zài shū bāo lǐ ba 。\nxiǎo lǐ : zhè yàng wǒ kě yǐ shàng xué le 。\nmā mā : zhè cì wǒ bāng nǐ zhǔn bèi , xià cì nǐ zì jǐ zhǔn bèi , hǎo ma ?\nxiǎo lǐ : tài hǎo le , xiè xiè mā mā !",
+      "vietnamese_translation": "Mẹ: Ngày mai khai giảng rồi, con chuẩn bị\nxong chưa?\nTiểu Lý: Ngày mai khai giảng rồi ạ? Mẹ có nhìn\nthấy cặp của con không?\nMẹ: Cặp của con ở phía sau cửa. Thế còn sách\nTiểu Lý: Sách ở trong phòng, bút ở trên bàn ạ.\nMẹ: Thế thì tốt, con cho hết vào trong cặp đi.\nTiểu Lý: Như vậy là con có thể đi học rồi.\nMẹ: Lần này mẹ giúp con chuẩn bị, lần sau con\ntự chuẩn bị nhé, được không?\nTiểu Lý: Tốt quá ạ, cảm ơn mẹ!\nPhán đoán đúng sai",
+      "source_reference": "Giáo trình HSK2 3.0 Hanu, bài 7, PDF 74."
+    },
+    {
+      "order_index": 2,
+      "title": "Ôn từ hay nghỉ một lát?",
+      "content": "小林:明天考试,你准备好了吗?\n小丽:差不多了。\n小林:你觉得词难还是题难?\n小丽:我觉得题不太难,但是词有点难。\n小林:你用本子写词了吗?\n小丽:写了,不过还有几个词我写错了。\n小林:那你再看一遍词还是休息一下?\n小丽:我再看一遍吧。",
+      "pinyin": "xiǎo lín : míng tiān kǎo shì , nǐ zhǔn bèi hǎo le ma ?\nxiǎo lì : chà bu duō le 。\nxiǎo lín : nǐ jué de cí nán hái shì tí nán ?\nxiǎo lì : wǒ jué de tí bù tài nán , dàn shì cí yǒu diǎn nán 。\nxiǎo lín : nǐ yòng běn zi xiě cí le ma ?\nxiǎo lì : xiě le , bù guò hái yǒu jǐ gè cí wǒ xiě cuò le 。\nxiǎo lín : nà nǐ zài kàn yī biàn cí hái shì xiū xī yī xià ?\nxiǎo lì : wǒ zài kàn yī biàn ba 。",
+      "vietnamese_translation": "Tiểu Lâm: Ngày mai phải thi rồi, cậu chuẩn bị\nxong chưa?\nTiểu Lệ: Gần xong rồi.\nTiểu Lâm: Cậu thấy từ vựng khó hay bài tập\nTiểu Lệ: Tớ thấy bài tập không quá khó,\nnhưng từ vựng hơi khó.\nTiểu Lâm: Cậu đã dùng vở để viết từ chưa?\nTiểu Lệ: Viết rồi, nhưng vẫn còn vài từ tớ viết\nTiểu Lâm: Vậy cậu xem lại từ một lần nữa\nhay nghỉ một chút?\nTiểu Lệ: Tớ sẽ xem lại một lần nữa.",
+      "source_reference": "Giáo trình HSK2 3.0 Hanu, bài 7, PDF 76."
+    },
+    {
+      "order_index": 3,
+      "title": "Nhận xét sau kỳ thi",
+      "content": "小刚:考试考完了,你觉得怎么样?\n小丽:还可以,这次考试不太难。\n小刚:你觉得这次考试比上次难还是容易?\n小丽:我觉得比上次容易一点儿。\n小刚:小李说这次考试很难,他有很多词不认识。\n小丽:可是我觉得他的汉语比我好。\n小刚:老师快要来了,我们回教室吧。\n小丽:好,我们走吧。",
+      "pinyin": "xiǎo gāng : kǎo shì kǎo wán le , nǐ jué de zěn me yàng ?\nxiǎo lì : hái kě yǐ , zhè cì kǎo shì bù tài nán 。\nxiǎo gāng : nǐ jué de zhè cì kǎo shì bǐ shàng cì nán hái shì róng yì ?\nxiǎo lì : wǒ jué de bǐ shàng cì róng yì yì diǎn ér 。\nxiǎo gāng : xiǎo lǐ shuō zhè cì kǎo shì hěn nán , tā yǒu hěn duō cí bù rèn shí 。\nxiǎo lì : kě shì wǒ jué de tā de hàn yǔ bǐ wǒ hǎo 。\nxiǎo gāng : lǎo shī kuài yào lái le , wǒ men huí jiào shì ba 。\nxiǎo lì : hǎo , wǒ men zǒu ba 。",
+      "vietnamese_translation": "Tiểu Cương: Thi xong rồi, cậu thấy thế nào?\nTiểu Lệ: Cũng được, lần thi này không quá khó.\nTiểu Cương: Cậu thấy lần thi này khó hơn hay\ndễ hơn lần thi trước?\nTiểu Lệ: Tớ thấy dễ hơn lần trước một chút.\nTiểu Cương: Tiểu Lý nói lần thi này rất khó, có\nnhiều từ cậu ấy không biết.\nTiểu Lệ: Nhưng tớ thấy tiếng Trung của cậu ấy\ntốt hơn tớ.\nTiểu Cương: Thầy sắp đến rồi, chúng ta về lớp\nTiểu Lệ:  Ừ, đi thôi.\nNgữ pháp\nSắp xếp các từ sau thành câu hoàn chỉnh\nDịch các câu sau sang tiếng Trung Quốc",
+      "source_reference": "Giáo trình HSK2 3.0 Hanu, bài 7, PDF 79."
+    },
+    {
+      "order_index": 4,
+      "title": "Kỳ thi sắp đến",
+      "content": "考试快要来了,我用本子复习汉语词,还做了很多题。考试的时候,我觉得这次考试不太难,比上次容易一点,但是有的词还是不认识。考试结束以后,我和朋友说,小李觉得这次考试很难,但是他的汉语水平比我好。老师就要来了,我们快要回教室了。大家一边说一边笑,都觉得这次考试还可以。",
+      "pinyin": "kǎo shì kuài yào lái le , wǒ yòng běn zi fù xí hàn yǔ cí , hái zuò le hěn duō tí 。 kǎo shì de shí hòu , wǒ jué de zhè cì kǎo shì bù tài nán , bǐ shàng cì róng yì yì diǎn , dàn shì yǒu de cí hái shì bù rèn shí 。 kǎo shì jié shù yǐ hòu , wǒ hé péng yǒu shuō , xiǎo lǐ jué de zhè cì kǎo shì hěn nán , dàn shì tā de hàn yǔ shuǐ píng bǐ wǒ hǎo 。 lǎo shī jiù yào lái le , wǒ men kuài yào huí jiào shì le 。 dà jiā yī biān shuō yī biān xiào , dōu jué de zhè cì kǎo shì hái kě yǐ 。",
+      "vietnamese_translation": "Kỳ thi sắp đến rồi, tôi dùng vở để ôn lại từ vựng tiếng Trung, còn làm rất nhiều bài tập. Trong lúc thi, tôi cảm thấy lần thi này không quá khó, dễ hơn lần trước một chút, nhưng vẫn có một số từ tôi không biết. Sau khi thi xong, tôi nói với bạn rằng Tiểu Lý thấy kỳ thi này rất khó, nhưng trình độ tiếng Trung của cậu ấy lại tốt hơn tôi. Giáo viên sắp đến rồi, chúng tôi cũng chuẩn bị về lớp. Mọi người vừa nói vừa cười, đều cảm thấy kỳ thi lần này cũng ổn.",
+      "source_reference": "Giáo trình HSK2 3.0 Hanu, bài 7, PDF 81, 82."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 2 · Bài 7 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp; dùng kiến thức của bài này và các bài trước, không dùng bài sau. Đạt từ 80%; được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "review_status": "DRAFT_REQUIRES_EDITOR_REVIEW",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 1).",
+      "options": [
+        {
+          "option_text": "trường học",
+          "is_correct": false
+        },
+        {
+          "option_text": "nghìn",
+          "is_correct": false
+        },
+        {
+          "option_text": "bữa tối",
+          "is_correct": false
+        },
+        {
+          "option_text": "kết thúc",
+          "is_correct": true
+        }
+      ],
+      "rubric": "结束 (jié shù) nghĩa là kết thúc. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "结束"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 7
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “让” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "để, bảo; khiến cho",
+          "is_correct": true
+        },
+        {
+          "option_text": "Cố cung",
+          "is_correct": false
+        },
+        {
+          "option_text": "ít",
+          "is_correct": false
+        },
+        {
+          "option_text": "người yêu; đối tượng",
+          "is_correct": false
+        }
+      ],
+      "rubric": "让 (ràng) nghĩa là để, bảo; khiến cho. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 7
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “qīngsōng” và nghĩa “thoải mái, thư giãn”.",
+      "options": [
+        {
+          "option_text": "轻松",
+          "is_correct": true
+        },
+        {
+          "option_text": "读书",
+          "is_correct": false
+        },
+        {
+          "option_text": "累",
+          "is_correct": false
+        },
+        {
+          "option_text": "女儿",
+          "is_correct": false
+        }
+      ],
+      "rubric": "轻松 (qīngsōng) nghĩa là thoải mái, thư giãn. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 7
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 4).",
+      "options": [
+        {
+          "option_text": "tan làm",
+          "is_correct": false
+        },
+        {
+          "option_text": "bao lâu",
+          "is_correct": false
+        },
+        {
+          "option_text": "gọi, tên là",
+          "is_correct": false
+        },
+        {
+          "option_text": "túi, cặp; gói",
+          "is_correct": true
+        }
+      ],
+      "rubric": "包 (bāo) nghĩa là túi, cặp; gói. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true,
+          "audio_text": "包"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 2
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “笑” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "cười",
+          "is_correct": true
+        },
+        {
+          "option_text": "TV",
+          "is_correct": false
+        },
+        {
+          "option_text": "lúc",
+          "is_correct": false
+        },
+        {
+          "option_text": "bài học; tiết học",
+          "is_correct": false
+        }
+      ],
+      "rubric": "笑 (xiào) nghĩa là cười. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 7
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “yī biān” và nghĩa “vừa ... vừa ... (一边……一边……)”.",
+      "options": [
+        {
+          "option_text": "爸爸",
+          "is_correct": false
+        },
+        {
+          "option_text": "快乐",
+          "is_correct": false
+        },
+        {
+          "option_text": "一边",
+          "is_correct": true
+        },
+        {
+          "option_text": "忙",
+          "is_correct": false
+        }
+      ],
+      "rubric": "一边 (yī biān) nghĩa là vừa ... vừa ... (一边……一边……). ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 7
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 7).",
+      "options": [
+        {
+          "option_text": "buổi chiều",
+          "is_correct": false
+        },
+        {
+          "option_text": "để, bảo; khiến cho",
+          "is_correct": false
+        },
+        {
+          "option_text": "lượt (trọn vẹn từ đầu đến cuối)",
+          "is_correct": true
+        },
+        {
+          "option_text": "ở, tại",
+          "is_correct": false
+        }
+      ],
+      "rubric": "遍 (biàn) nghĩa là lượt (trọn vẹn từ đầu đến cuối). ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "遍"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 7
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “题” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "Thái Lan",
+          "is_correct": false
+        },
+        {
+          "option_text": "phía trên/trên",
+          "is_correct": false
+        },
+        {
+          "option_text": "đồ; đồ vật",
+          "is_correct": false
+        },
+        {
+          "option_text": "đề thi, bài tập",
+          "is_correct": true
+        }
+      ],
+      "rubric": "题 (tí) nghĩa là đề thi, bài tập. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 7
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “biàn dé” và nghĩa “trở nên”.",
+      "options": [
+        {
+          "option_text": "变得",
+          "is_correct": true
+        },
+        {
+          "option_text": "所以",
+          "is_correct": false
+        },
+        {
+          "option_text": "那边",
+          "is_correct": false
+        },
+        {
+          "option_text": "课",
+          "is_correct": false
+        }
+      ],
+      "rubric": "变得 (biàn dé) nghĩa là trở nên. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 7
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "khó",
+          "is_correct": false
+        },
+        {
+          "option_text": "muốn",
+          "is_correct": false
+        },
+        {
+          "option_text": "phía trên/trên",
+          "is_correct": false
+        },
+        {
+          "option_text": "thông thường, thường",
+          "is_correct": true
+        }
+      ],
+      "rubric": "通常 (tōng cháng) nghĩa là thông thường, thường. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "通常"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 7
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “放” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "(bàn) chân",
+          "is_correct": false
+        },
+        {
+          "option_text": "cốc",
+          "is_correct": false
+        },
+        {
+          "option_text": "anh ấy",
+          "is_correct": false
+        },
+        {
+          "option_text": "đặt, để",
+          "is_correct": true
+        }
+      ],
+      "rubric": "放 (fàng) nghĩa là đặt, để. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 7
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “shēng huó” và nghĩa “cuộc sống; sống, sinh hoạt”.",
+      "options": [
+        {
+          "option_text": "明年",
+          "is_correct": false
+        },
+        {
+          "option_text": "生活",
+          "is_correct": true
+        },
+        {
+          "option_text": "飞机",
+          "is_correct": false
+        },
+        {
+          "option_text": "散步",
+          "is_correct": false
+        }
+      ],
+      "rubric": "生活 (shēng huó) nghĩa là cuộc sống; sống, sinh hoạt. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 7
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “tâm trạng” (gợi ý pinyin: xīnqíng).",
+      "reference_answer": "心情",
+      "rubric": "Đáp án: 心情 (xīnqíng). ",
+      "config": {
+        "accepted_answers": [
+          "心情"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 7
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “sai” (gợi ý pinyin: cuò).",
+      "reference_answer": "错",
+      "rubric": "Đáp án: 错 (cuò). ",
+      "config": {
+        "accepted_answers": [
+          "错"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 7
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “khai giảng” (gợi ý pinyin: kāixué).",
+      "reference_answer": "开学",
+      "rubric": "Đáp án: 开学 (kāixué). ",
+      "config": {
+        "accepted_answers": [
+          "开学"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 7
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “phát hiện, nhận ra” (gợi ý pinyin: fā xiàn).",
+      "reference_answer": "发现",
+      "rubric": "Đáp án: 发现 (fā xiàn). ",
+      "config": {
+        "accepted_answers": [
+          "发现"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 7
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 1).",
+      "rubric": "爷爷: ông nội; 陈天中: Trần Thiên Trung (tên người); 下班: tan làm; 做: làm",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "爷爷"
+          },
+          {
+            "id": "l1",
+            "text": "陈天中"
+          },
+          {
+            "id": "l2",
+            "text": "下班"
+          },
+          {
+            "id": "l3",
+            "text": "做"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r0",
+            "text": "ông nội"
+          },
+          {
+            "id": "r1",
+            "text": "Trần Thiên Trung (tên người)"
+          },
+          {
+            "id": "r3",
+            "text": "làm"
+          },
+          {
+            "id": "r2",
+            "text": "tan làm"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        },
+        {
+          "hsk": 1,
+          "lesson": 3
+        },
+        {
+          "hsk": 1,
+          "lesson": 7
+        },
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 2).",
+      "rubric": "举行: tổ chức (sự kiện, hoạt động); 应该: nên; 周末: cuối tuần; 馒头: màn thầu; bánh bao không nhân",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "举行"
+          },
+          {
+            "id": "l1",
+            "text": "应该"
+          },
+          {
+            "id": "l2",
+            "text": "周末"
+          },
+          {
+            "id": "l3",
+            "text": "馒头"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r0",
+            "text": "tổ chức (sự kiện, hoạt động)"
+          },
+          {
+            "id": "r1",
+            "text": "nên"
+          },
+          {
+            "id": "r2",
+            "text": "cuối tuần"
+          },
+          {
+            "id": "r3",
+            "text": "màn thầu; bánh bao không nhân"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 4
+        },
+        {
+          "hsk": 2,
+          "lesson": 7
+        },
+        {
+          "hsk": 1,
+          "lesson": 5
+        },
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Câu vị ngữ chủ vị”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Một cụm chủ-vị miêu tả một mặt của chủ đề.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ đề + chủ ngữ nhỏ + vị ngữ. Một cụm chủ-vị miêu tả một mặt của chủ đề. Không nhất thiết thêm 的 giữa chủ đề và chủ ngữ nhỏ khi miêu tả quan hệ gần gũi.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 7
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Câu hỏi lựa chọn 还是”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Yêu cầu chọn trong những phương án đã nêu.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Phương án A + 还是 + phương án B？. Yêu cầu chọn trong những phương án đã nêu. 还是 ở đây nghĩa hay; khác 还是 nghĩa vẫn trong câu trần thuật. Câu hỏi lựa chọn thường không thêm 吗.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 7
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Sắp xảy ra với 要/快/就要……了”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Báo hiệu sự việc sắp xảy ra.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Chủ ngữ + 要/快/快要/就要 + động từ + 了. Báo hiệu sự việc sắp xảy ra. Mốc thời gian cụ thể thường kết hợp 要/就要; không đặt máy móc trước 快/快要.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 7
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Câu vị ngữ chủ vị” (mục 4): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không nhất thiết thêm 的 giữa chủ đề và chủ ngữ nhỏ khi miêu tả quan hệ gần gũi.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ đề + chủ ngữ nhỏ + vị ngữ. Một cụm chủ-vị miêu tả một mặt của chủ đề. Không nhất thiết thêm 的 giữa chủ đề và chủ ngữ nhỏ khi miêu tả quan hệ gần gũi.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 7
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Câu hỏi lựa chọn 还是” (mục 5): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "还是 ở đây nghĩa hay; khác 还是 nghĩa vẫn trong câu trần thuật. Câu hỏi lựa chọn thường không thêm 吗.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Phương án A + 还是 + phương án B？. Yêu cầu chọn trong những phương án đã nêu. 还是 ở đây nghĩa hay; khác 还是 nghĩa vẫn trong câu trần thuật. Câu hỏi lựa chọn thường không thêm 吗.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 7
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Sắp xảy ra với 要/快/就要……了” (mục 6): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mốc thời gian cụ thể thường kết hợp 要/就要; không đặt máy móc trước 快/快要.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ ngữ + 要/快/快要/就要 + động từ + 了. Báo hiệu sự việc sắp xảy ra. Mốc thời gian cụ thể thường kết hợp 要/就要; không đặt máy móc trước 快/快要.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 7
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 1).",
+      "reference_answer": "他汉语水平很高。",
+      "rubric": "Câu đúng: 他汉语水平很高。 Không nhất thiết thêm 的 giữa chủ đề và chủ ngữ nhỏ khi miêu tả quan hệ gần gũi.",
+      "config": {
+        "items": [
+          {
+            "id": "w5",
+            "text": "。"
+          },
+          {
+            "id": "w4",
+            "text": "高"
+          },
+          {
+            "id": "w1",
+            "text": "汉语"
+          },
+          {
+            "id": "w0",
+            "text": "他"
+          },
+          {
+            "id": "w3",
+            "text": "很"
+          },
+          {
+            "id": "w2",
+            "text": "水平"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 7
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 2).",
+      "reference_answer": "你觉得词难还是题难？",
+      "rubric": "Câu đúng: 你觉得词难还是题难？ 还是 ở đây nghĩa hay; khác 还是 nghĩa vẫn trong câu trần thuật. Câu hỏi lựa chọn thường không thêm 吗.",
+      "config": {
+        "items": [
+          {
+            "id": "w0",
+            "text": "你"
+          },
+          {
+            "id": "w4",
+            "text": "还是"
+          },
+          {
+            "id": "w5",
+            "text": "题"
+          },
+          {
+            "id": "w6",
+            "text": "难"
+          },
+          {
+            "id": "w3",
+            "text": "难"
+          },
+          {
+            "id": "w7",
+            "text": "？"
+          },
+          {
+            "id": "w2",
+            "text": "词"
+          },
+          {
+            "id": "w1",
+            "text": "觉得"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 7
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 3).",
+      "reference_answer": "老师快要来了。",
+      "rubric": "Câu đúng: 老师快要来了。 Mốc thời gian cụ thể thường kết hợp 要/就要; không đặt máy móc trước 快/快要.",
+      "config": {
+        "items": [
+          {
+            "id": "w1",
+            "text": "师"
+          },
+          {
+            "id": "w4",
+            "text": "来"
+          },
+          {
+            "id": "w6",
+            "text": "。"
+          },
+          {
+            "id": "w2",
+            "text": "快"
+          },
+          {
+            "id": "w3",
+            "text": "要"
+          },
+          {
+            "id": "w5",
+            "text": "了"
+          },
+          {
+            "id": "w0",
+            "text": "老"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 7
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 4).",
+      "reference_answer": "明天就开学了,你准备好了吗?",
+      "rubric": "Câu đúng: 明天就开学了,你准备好了吗? Không nhất thiết thêm 的 giữa chủ đề và chủ ngữ nhỏ khi miêu tả quan hệ gần gũi.",
+      "config": {
+        "items": [
+          {
+            "id": "w8",
+            "text": "了"
+          },
+          {
+            "id": "w2",
+            "text": "开学"
+          },
+          {
+            "id": "w4",
+            "text": ","
+          },
+          {
+            "id": "w6",
+            "text": "准备"
+          },
+          {
+            "id": "w0",
+            "text": "明天"
+          },
+          {
+            "id": "w9",
+            "text": "吗"
+          },
+          {
+            "id": "w1",
+            "text": "就"
+          },
+          {
+            "id": "w10",
+            "text": "?"
+          },
+          {
+            "id": "w3",
+            "text": "了"
+          },
+          {
+            "id": "w7",
+            "text": "好"
+          },
+          {
+            "id": "w5",
+            "text": "你"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8",
+          "w9",
+          "w10"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 7
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 5).",
+      "reference_answer": "明天就开学了吗?我的书包你看见了吗?",
+      "rubric": "Câu đúng: 明天就开学了吗?我的书包你看见了吗? 还是 ở đây nghĩa hay; khác 还是 nghĩa vẫn trong câu trần thuật. Câu hỏi lựa chọn thường không thêm 吗.",
+      "config": {
+        "items": [
+          {
+            "id": "w9",
+            "text": "包"
+          },
+          {
+            "id": "w7",
+            "text": "的"
+          },
+          {
+            "id": "w14",
+            "text": "?"
+          },
+          {
+            "id": "w13",
+            "text": "吗"
+          },
+          {
+            "id": "w12",
+            "text": "了"
+          },
+          {
+            "id": "w11",
+            "text": "看见"
+          },
+          {
+            "id": "w6",
+            "text": "我"
+          },
+          {
+            "id": "w8",
+            "text": "书"
+          },
+          {
+            "id": "w2",
+            "text": "开学"
+          },
+          {
+            "id": "w5",
+            "text": "?"
+          },
+          {
+            "id": "w1",
+            "text": "就"
+          },
+          {
+            "id": "w3",
+            "text": "了"
+          },
+          {
+            "id": "w0",
+            "text": "明天"
+          },
+          {
+            "id": "w4",
+            "text": "吗"
+          },
+          {
+            "id": "w10",
+            "text": "你"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8",
+          "w9",
+          "w10",
+          "w11",
+          "w12",
+          "w13",
+          "w14"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 7
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 6).",
+      "reference_answer": "你的书包在门后面。书和笔呢?",
+      "rubric": "Câu đúng: 你的书包在门后面。书和笔呢? Mốc thời gian cụ thể thường kết hợp 要/就要; không đặt máy móc trước 快/快要.",
+      "config": {
+        "items": [
+          {
+            "id": "w13",
+            "text": "?"
+          },
+          {
+            "id": "w6",
+            "text": "后"
+          },
+          {
+            "id": "w8",
+            "text": "。"
+          },
+          {
+            "id": "w11",
+            "text": "笔"
+          },
+          {
+            "id": "w0",
+            "text": "你"
+          },
+          {
+            "id": "w12",
+            "text": "呢"
+          },
+          {
+            "id": "w2",
+            "text": "书"
+          },
+          {
+            "id": "w9",
+            "text": "书"
+          },
+          {
+            "id": "w10",
+            "text": "和"
+          },
+          {
+            "id": "w1",
+            "text": "的"
+          },
+          {
+            "id": "w7",
+            "text": "面"
+          },
+          {
+            "id": "w5",
+            "text": "门"
+          },
+          {
+            "id": "w4",
+            "text": "在"
+          },
+          {
+            "id": "w3",
+            "text": "包"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8",
+          "w9",
+          "w10",
+          "w11",
+          "w12",
+          "w13"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 7
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ],
+  "source_documents": {
+    "vocabulary": "DOCX",
+    "theory": "HSK2 PDF"
+  }
+}

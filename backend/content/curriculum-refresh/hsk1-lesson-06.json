@@ -1,0 +1,1725 @@
+{
+  "key": "hsk1-lesson-06-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 1,
+    "lesson_number": 6,
+    "title": "你的手机号是多少？ · Số điện thoại của bạn",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "手机",
+      "pinyin": "shǒu jī",
+      "vietnamese_meaning": "điện thoại di động",
+      "part_of_speech": "danh từ",
+      "example": "这是我的手机。\nzhè shì wǒ de shǒu jī 。\nĐây là điện thoại di động của tôi.",
+      "order_index": 1,
+      "note": null,
+      "source_key": "1:6:手机"
+    },
+    {
+      "hanzi": "部",
+      "pinyin": "bù",
+      "vietnamese_meaning": "chiếc, bộ (lượng từ cho điện thoại, phim...)",
+      "part_of_speech": "lượng từ",
+      "example": "我有一部手机。\nwǒ yǒu yī bù shǒu jī 。\nTôi có một chiếc điện thoại di động.",
+      "order_index": 2,
+      "note": "部 dùng đếm điện thoại (一部手机); 辆 đếm xe. Không dùng cùng một lượng từ cho mọi đồ vật.",
+      "source_key": "1:6:部"
+    },
+    {
+      "hanzi": "电话",
+      "pinyin": "diànhuà",
+      "vietnamese_meaning": "điện thoại; cuộc gọi điện thoại",
+      "part_of_speech": "danh từ",
+      "example": "这是我的电话。\nzhè shì wǒ de diàn huà 。\nĐây là điện thoại của tôi.",
+      "order_index": 3,
+      "note": null,
+      "source_key": "1:6:电话"
+    },
+    {
+      "hanzi": "号",
+      "pinyin": "hào",
+      "vietnamese_meaning": "số, số hiệu (điện thoại, mã số)",
+      "part_of_speech": "danh từ",
+      "example": "今天十一月二十一号。\njīn tiān shí yī yuè èr shí yī hào 。\nHôm nay là ngày 21 tháng 11.",
+      "order_index": 4,
+      "note": "号 chỉ ngày trong ngày tháng; khi đọc số điện thoại hay mã số, 号 là số/số hiệu. 日 trang trọng hơn khi ghi ngày. Nhắc lại HSK1 bài 5: 号 (hào) nghĩa là ngày. Trong bài này: số, số hiệu (điện thoại, mã số).",
+      "source_key": "1:6:号"
+    },
+    {
+      "hanzi": "号码",
+      "pinyin": "hào mǎ",
+      "vietnamese_meaning": "số, mã số",
+      "part_of_speech": "danh từ",
+      "example": "这是我的电话号码。\nzhè shì wǒ de diàn huà hào mǎ 。\nĐây là số điện thoại của tôi.",
+      "order_index": 5,
+      "note": null,
+      "source_key": "1:6:号码"
+    },
+    {
+      "hanzi": "手机号",
+      "pinyin": "shǒu jī hào",
+      "vietnamese_meaning": "số điện thoại di động",
+      "part_of_speech": "danh từ",
+      "example": "我的手机号是多少？\nwǒ de shǒu jī hào shì duō shǎo ？\nSố điện thoại di động của tôi là bao nhiêu?",
+      "order_index": 6,
+      "note": null,
+      "source_key": "1:6:手机号"
+    },
+    {
+      "hanzi": "手机号码",
+      "pinyin": "shǒu jī hào mǎ",
+      "vietnamese_meaning": "số điện thoại di động",
+      "part_of_speech": "danh từ",
+      "example": "你的手机号码是多少？\nnǐ de shǒu jī hào mǎ shì duō shǎo ？\nSố điện thoại di động của bạn là bao nhiêu?",
+      "order_index": 7,
+      "note": null,
+      "source_key": "1:6:手机号码"
+    },
+    {
+      "hanzi": "零",
+      "pinyin": "líng",
+      "vietnamese_meaning": "không (số 0)",
+      "part_of_speech": "số từ",
+      "example": "我的号码有两个零。\nwǒ de hào mǎ yǒu liǎng gè líng 。\nSố của tôi có hai số không.",
+      "order_index": 8,
+      "note": null,
+      "source_key": "1:6:零"
+    },
+    {
+      "hanzi": "去",
+      "pinyin": "qù",
+      "vietnamese_meaning": "đi",
+      "part_of_speech": "động từ",
+      "example": "我去超市买一些东西。\nwǒ qù chāo shì mǎi yī xiē dōng xī 。\nTôi đi siêu thị mua một ít đồ.",
+      "order_index": 9,
+      "note": null,
+      "source_key": "1:6:去"
+    },
+    {
+      "hanzi": "哪儿",
+      "pinyin": "nǎ ér",
+      "vietnamese_meaning": "đâu, nơi nào",
+      "part_of_speech": "đại từ nghi vấn",
+      "example": "你想去哪儿？\nnǐ xiǎng qù nǎ ér ？\nBạn muốn đi đâu?",
+      "order_index": 10,
+      "note": null,
+      "source_key": "1:6:哪儿"
+    },
+    {
+      "hanzi": "哪里",
+      "pinyin": "nǎlǐ",
+      "vietnamese_meaning": "đâu, nơi nào",
+      "part_of_speech": "đại từ nghi vấn",
+      "example": "你想去哪里？\nnǐ xiǎng qù nǎ lǐ ？\nBạn muốn đi đâu?",
+      "order_index": 11,
+      "note": null,
+      "source_key": "1:6:哪里"
+    },
+    {
+      "hanzi": "超市",
+      "pinyin": "chāoshì",
+      "vietnamese_meaning": "siêu thị",
+      "part_of_speech": "danh từ",
+      "example": "我去超市。\nwǒ qù chāo shì 。\nTôi đến siêu thị.",
+      "order_index": 12,
+      "note": null,
+      "source_key": "1:6:超市"
+    },
+    {
+      "hanzi": "买",
+      "pinyin": "mǎi",
+      "vietnamese_meaning": "mua",
+      "part_of_speech": "động từ",
+      "example": "我去超市买一些东西。\nwǒ qù chāo shì mǎi yī xiē dōng xī 。\nTôi đi siêu thị mua một ít đồ.",
+      "order_index": 13,
+      "note": null,
+      "source_key": "1:6:买"
+    },
+    {
+      "hanzi": "杯",
+      "pinyin": "bēi",
+      "vietnamese_meaning": "cốc; ly",
+      "part_of_speech": "lượng từ",
+      "example": "我想喝一杯水。\nwǒ xiǎng hē yī bēi shuǐ 。\nTôi muốn uống một cốc nước.",
+      "order_index": 14,
+      "note": null,
+      "source_key": "1:6:杯"
+    },
+    {
+      "hanzi": "东西",
+      "pinyin": "dōngxi",
+      "vietnamese_meaning": "đồ; đồ vật",
+      "part_of_speech": "danh từ",
+      "example": "我去超市买一些东西。\nwǒ qù chāo shì mǎi yī xiē dōng xī 。\nTôi đi siêu thị mua một ít đồ.",
+      "order_index": 15,
+      "note": null,
+      "source_key": "1:6:东西"
+    },
+    {
+      "hanzi": "一些",
+      "pinyin": "yī xiē",
+      "vietnamese_meaning": "một ít, một số",
+      "part_of_speech": "cụm số lượng",
+      "example": "我去超市买一些东西。\nwǒ qù chāo shì mǎi yī xiē dōng xī 。\nTôi đi siêu thị mua một ít đồ.",
+      "order_index": 16,
+      "note": null,
+      "source_key": "1:6:一些"
+    },
+    {
+      "hanzi": "牛奶",
+      "pinyin": "niú nǎi",
+      "vietnamese_meaning": "sữa bò",
+      "part_of_speech": "danh từ",
+      "example": "我喜欢喝牛奶。\nwǒ xǐ huān hē niú nǎi 。\nTôi thích uống sữa bò.",
+      "order_index": 17,
+      "note": null,
+      "source_key": "1:6:牛奶"
+    },
+    {
+      "hanzi": "新",
+      "pinyin": "xīn",
+      "vietnamese_meaning": "mới",
+      "part_of_speech": "tính từ",
+      "example": "这件衣服很新。\nzhè jiàn yī fú hěn xīn 。\nBộ quần áo này mới.",
+      "order_index": 18,
+      "note": null,
+      "source_key": "1:6:新"
+    },
+    {
+      "hanzi": "旧",
+      "pinyin": "jiù",
+      "vietnamese_meaning": "cũ",
+      "part_of_speech": "tính từ",
+      "example": "这件衣服很旧。\nzhè jiàn yī fú hěn jiù 。\nBộ quần áo này cũ.",
+      "order_index": 19,
+      "note": null,
+      "source_key": "1:6:旧"
+    },
+    {
+      "hanzi": "前",
+      "pinyin": "qián",
+      "vietnamese_meaning": "phía trước",
+      "part_of_speech": "danh từ",
+      "example": "我在学校前等你。\nwǒ zài xué xiào qián děng nǐ 。\nTôi đợi bạn trước trường.",
+      "order_index": 20,
+      "note": null,
+      "source_key": "1:6:前"
+    },
+    {
+      "hanzi": "电脑",
+      "pinyin": "diànnǎo",
+      "vietnamese_meaning": "máy tính",
+      "part_of_speech": "danh từ",
+      "example": "这是我的电脑。\nzhè shì wǒ de diàn nǎo 。\nĐây là máy tính của tôi.",
+      "order_index": 21,
+      "note": null,
+      "source_key": "1:6:电脑"
+    },
+    {
+      "hanzi": "晚饭",
+      "pinyin": "wǎnfàn",
+      "vietnamese_meaning": "bữa tối",
+      "part_of_speech": "danh từ",
+      "example": "晚饭非常好吃。\nwǎn fàn fēi cháng hǎo chī 。\nBữa tối rất ngon.",
+      "order_index": 22,
+      "note": null,
+      "source_key": "1:6:晚饭"
+    },
+    {
+      "hanzi": "饭店",
+      "pinyin": "fàndiàn",
+      "vietnamese_meaning": "quán ăn, nhà hàng; khách sạn (tùy ngữ cảnh)",
+      "part_of_speech": "danh từ",
+      "example": "我去饭店。\nwǒ qù fàn diàn 。\nTôi đến quán ăn, nhà hàng.",
+      "order_index": 23,
+      "note": null,
+      "source_key": "1:6:饭店"
+    },
+    {
+      "hanzi": "非常",
+      "pinyin": "fēicháng",
+      "vietnamese_meaning": "rất, vô cùng",
+      "part_of_speech": "phó từ",
+      "example": "晚饭非常好吃。\nwǎn fàn fēi cháng hǎo chī 。\nBữa tối rất ngon.",
+      "order_index": 24,
+      "note": null,
+      "source_key": "1:6:非常"
+    },
+    {
+      "hanzi": "那边",
+      "pinyin": "nàbiān",
+      "vietnamese_meaning": "bên kia, chỗ đó",
+      "part_of_speech": "đại từ chỉ nơi chốn",
+      "example": "那边有一辆车。\nnà biān yǒu yī liàng chē 。\nBên kia có một chiếc xe.",
+      "order_index": 25,
+      "note": null,
+      "source_key": "1:6:那边"
+    },
+    {
+      "hanzi": "怎么",
+      "pinyin": "zěnme",
+      "vietnamese_meaning": "thế nào, làm sao",
+      "part_of_speech": "đại từ nghi vấn",
+      "example": "我们怎么去？\nwǒ men zěn me qù ？\nChúng ta đi bằng cách nào?",
+      "order_index": 26,
+      "note": null,
+      "source_key": "1:6:怎么"
+    },
+    {
+      "hanzi": "坐",
+      "pinyin": "zuò",
+      "vietnamese_meaning": "ngồi",
+      "part_of_speech": "động từ",
+      "example": "我坐出租车去。\nwǒ zuò chū zū chē qù 。\nTôi đi bằng taxi.",
+      "order_index": 27,
+      "note": null,
+      "source_key": "1:6:坐"
+    },
+    {
+      "hanzi": "出租车",
+      "pinyin": "chūzūchē",
+      "vietnamese_meaning": "taxi",
+      "part_of_speech": "danh từ",
+      "example": "我们坐出租车去。\nwǒ men zuò chū zū chē qù 。\nChúng tôi đi bằng taxi.",
+      "order_index": 28,
+      "note": null,
+      "source_key": "1:6:出租车"
+    },
+    {
+      "hanzi": "车",
+      "pinyin": "chē",
+      "vietnamese_meaning": "xe",
+      "part_of_speech": "danh từ",
+      "example": "那边有一辆车。\nnà biān yǒu yī liàng chē 。\nBên kia có một chiếc xe.",
+      "order_index": 29,
+      "note": null,
+      "source_key": "1:6:车"
+    },
+    {
+      "hanzi": "辆",
+      "pinyin": "liàng",
+      "vietnamese_meaning": "chiếc (lượng từ cho xe)",
+      "part_of_speech": "lượng từ",
+      "example": "那边有一辆车。\nnà biān yǒu yī liàng chē 。\nBên kia có một chiếc xe.",
+      "order_index": 30,
+      "note": null,
+      "source_key": "1:6:辆"
+    },
+    {
+      "hanzi": "西安",
+      "pinyin": "xī ān",
+      "vietnamese_meaning": "Tây An",
+      "part_of_speech": "danh từ riêng",
+      "example": "我想去西安。\nwǒ xiǎng qù xī ān 。\nTôi muốn đến Tây An.",
+      "order_index": 31,
+      "note": null,
+      "source_key": "1:6:西安"
+    }
+  ],
+  "grammar": [
+    {
+      "name": "Đọc số điện thoại",
+      "structure": "Đọc lần lượt từng chữ số",
+      "explanation": "Mã số và số điện thoại được đọc từng chữ số từ trái sang phải.",
+      "usage": "Trong số điện thoại, 一 thường đọc yāo để tránh nhầm; không đọc thành một trăm hai mươi ba.",
+      "example": "我的手机号是一二三。\nwǒ de shǒu jī hào shì yī èr sān 。\nSố điện thoại của tôi là một hai ba.",
+      "note": "Trong số điện thoại, 一 thường đọc yāo để tránh nhầm; không đọc thành một trăm hai mươi ba.",
+      "order_index": 1
+    },
+    {
+      "name": "Dự định với 想",
+      "structure": "Chủ ngữ + 想/不想 + động từ",
+      "explanation": "想 biểu thị mong muốn hoặc dự định.",
+      "usage": "想 + động từ khác 想 + người, khi đó thường có nghĩa nhớ ai.",
+      "example": "我想去超市。\nwǒ xiǎng qù chāo shì 。\nTôi muốn đi siêu thị.",
+      "note": "想 + động từ khác 想 + người, khi đó thường có nghĩa nhớ ai.",
+      "order_index": 2
+    },
+    {
+      "name": "Câu liên động",
+      "structure": "Chủ ngữ + 去 + địa điểm + động từ",
+      "explanation": "Hai động từ diễn tả hoạt động liên quan hoặc mục đích của chuyến đi.",
+      "usage": "Địa điểm đứng sau 去; hành động mua đứng sau địa điểm.",
+      "example": "我去超市买东西。\nwǒ qù chāo shì mǎi dōng xī 。\nTôi đi siêu thị mua đồ.",
+      "note": "Địa điểm đứng sau 去; hành động mua đứng sau địa điểm.",
+      "order_index": 3
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Trao đổi số điện thoại",
+      "content": "李文:家月,你的手机号是多少?\n白家月:我的手机号是0932463321。\n李文:我的手机号是0932581127。\n白家月:好的。",
+      "pinyin": "lǐ wén : jiā yuè , nǐ de shǒu jī hào shì duō shǎo ?\nbái jiā yuè : wǒ de shǒu jī hào shì 0 9 3 2 4 6 3 3 2 1 。\nlǐ wén : wǒ de shǒu jī hào shì 0 9 3 2 5 8 1 1 2 7 。\nbái jiā yuè : hǎo de 。",
+      "vietnamese_translation": "Lý Văn: Gia Nguyệt, số điện thoại của bạn là bao nhiêu?\nBạch Gia Nguyệt: Số điện thoại của tôi là 0932463321.\nLý Văn:  Số điện thoại của tôi là 0932581127.\nBạch Gia Nguyệt: Được rồi.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 6, PDF 52."
+    },
+    {
+      "order_index": 2,
+      "title": "Đi siêu thị mua đồ",
+      "content": "陈天中:家月,明天你去哪儿?\n白家月:我想去超市买东西。\n陈天中:你去超市买什么?\n白家月:我想买一些牛奶。",
+      "pinyin": "chén tiān zhōng : jiā yuè , míng tiān nǐ qù nǎ ér ?\nbái jiā yuè : wǒ xiǎng qù chāo shì mǎi dōng xī 。\nchén tiān zhōng : nǐ qù chāo shì mǎi shén me ?\nbái jiā yuè : wǒ xiǎng mǎi yī xiē niú nǎi 。",
+      "vietnamese_translation": "Trần Thiên Trung: Gia Nguyệt, ngày mai bạn đi đâu?\nBạch Gia Nguyệt: Tôi muốn đi siêu thị mua đồ.\nTrần Thiên Trung: Bạn đi siêu thị mua gì?\nBạch Gia Nguyệt: Tôi muốn mua một ít sữa.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 6, PDF 53, 54."
+    },
+    {
+      "order_index": 3,
+      "title": "Cùng đi ăn tối",
+      "content": "王一雪:星期天我们去哪儿吃晚饭?\n刘明:我还想去西安饭店。\n王一雪:那里的包子非常好吃,我想吃包子。\n刘小明:妈妈,我想吃米饭,不想吃包子。\n王一雪:好的。我们怎么去?\n刘明:坐出租车去。",
+      "pinyin": "wáng yī xuě : xīng qī tiān wǒ men qù nǎ ér chī wǎn fàn ?\nliú míng : wǒ hái xiǎng qù xī ān fàn diàn 。\nwáng yī xuě : nà lǐ de bāo zi fēi cháng hǎo chī , wǒ xiǎng chī bāo zi 。\nliú xiǎo míng : mā mā , wǒ xiǎng chī mǐ fàn , bù xiǎng chī bāo zi 。\nwáng yī xuě : hǎo de 。 wǒ men zěn me qù ?\nliú míng : zuò chū zū chē qù 。",
+      "vietnamese_translation": "Vương Nhất Tuyết: Chủ nhật chúng ta đi đâu ăn tối?\nLưu Minh:              Anh vẫn muốn đi nhà hàng Tây An.\nVương Nhất Tuyết: Sủi cảo ở đó rất ngon, em muốn ăn sủi cảo.\nLưu Tiểu Minh:      Mẹ ơi, con muốn ăn cơm, không muốn ăn sủi cảo.\nVương Nhất Tuyết: Được thôi, chúng ta đi bằng cách nào?\nLưu Minh:              Đi taxi.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 6, PDF 55, 56."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 1 · Bài 6 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp; dùng kiến thức của bài này và các bài trước, không dùng bài sau. Đạt từ 80%; được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "review_status": "DRAFT_REQUIRES_EDITOR_REVIEW",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 1).",
+      "options": [
+        {
+          "option_text": "cốc; ly",
+          "is_correct": true
+        },
+        {
+          "option_text": "tám",
+          "is_correct": false
+        },
+        {
+          "option_text": "tuổi",
+          "is_correct": false
+        },
+        {
+          "option_text": "Thái Lan",
+          "is_correct": false
+        }
+      ],
+      "rubric": "杯 (bēi) nghĩa là cốc; ly. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "杯"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “号” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "bạn trai",
+          "is_correct": false
+        },
+        {
+          "option_text": "số, số hiệu (điện thoại, mã số)",
+          "is_correct": true
+        },
+        {
+          "option_text": "có",
+          "is_correct": false
+        },
+        {
+          "option_text": "Việt Nam",
+          "is_correct": false
+        }
+      ],
+      "rubric": "号 (hào) nghĩa là số, số hiệu (điện thoại, mã số). 号 chỉ ngày trong ngày tháng; khi đọc số điện thoại hay mã số, 号 là số/số hiệu. 日 trang trọng hơn khi ghi ngày. Nhắc lại HSK1 bài 5: 号 (hào) nghĩa là ngày. Trong bài này: số, số hiệu (điện thoại, mã số).",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “jiǎozi” và nghĩa “sủi cảo”.",
+      "options": [
+        {
+          "option_text": "饺子",
+          "is_correct": true
+        },
+        {
+          "option_text": "前",
+          "is_correct": false
+        },
+        {
+          "option_text": "二",
+          "is_correct": false
+        },
+        {
+          "option_text": "白家月",
+          "is_correct": false
+        }
+      ],
+      "rubric": "饺子 (jiǎozi) nghĩa là sủi cảo. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 4).",
+      "options": [
+        {
+          "option_text": "mới",
+          "is_correct": true
+        },
+        {
+          "option_text": "ngựa",
+          "is_correct": false
+        },
+        {
+          "option_text": "ông ngoại",
+          "is_correct": false
+        },
+        {
+          "option_text": "một",
+          "is_correct": false
+        }
+      ],
+      "rubric": "新 (xīn) nghĩa là mới. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "新"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “哪里” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "học sinh",
+          "is_correct": false
+        },
+        {
+          "option_text": "bao gồm",
+          "is_correct": false
+        },
+        {
+          "option_text": "còn, vẫn",
+          "is_correct": false
+        },
+        {
+          "option_text": "đâu, nơi nào",
+          "is_correct": true
+        }
+      ],
+      "rubric": "哪里 (nǎlǐ) nghĩa là đâu, nơi nào. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “zěnme” và nghĩa “thế nào, làm sao”.",
+      "options": [
+        {
+          "option_text": "弟弟",
+          "is_correct": false
+        },
+        {
+          "option_text": "十",
+          "is_correct": false
+        },
+        {
+          "option_text": "怎么",
+          "is_correct": true
+        },
+        {
+          "option_text": "这",
+          "is_correct": false
+        }
+      ],
+      "rubric": "怎么 (zěnme) nghĩa là thế nào, làm sao. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 7).",
+      "options": [
+        {
+          "option_text": "điện thoại di động",
+          "is_correct": true
+        },
+        {
+          "option_text": "cà phê",
+          "is_correct": false
+        },
+        {
+          "option_text": "nhiều",
+          "is_correct": false
+        },
+        {
+          "option_text": "gọi, tên là",
+          "is_correct": false
+        }
+      ],
+      "rubric": "手机 (shǒu jī) nghĩa là điện thoại di động. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "手机"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “手机号码” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "bữa tối",
+          "is_correct": false
+        },
+        {
+          "option_text": "số điện thoại di động",
+          "is_correct": true
+        },
+        {
+          "option_text": "bia",
+          "is_correct": false
+        },
+        {
+          "option_text": "làm",
+          "is_correct": false
+        }
+      ],
+      "rubric": "手机号码 (shǒu jī hào mǎ) nghĩa là số điện thoại di động. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “kāfēi” và nghĩa “cà phê”.",
+      "options": [
+        {
+          "option_text": "号码",
+          "is_correct": false
+        },
+        {
+          "option_text": "咖啡",
+          "is_correct": true
+        },
+        {
+          "option_text": "去",
+          "is_correct": false
+        },
+        {
+          "option_text": "对不起",
+          "is_correct": false
+        }
+      ],
+      "rubric": "咖啡 (kāfēi) nghĩa là cà phê. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "hỏi",
+          "is_correct": false
+        },
+        {
+          "option_text": "món ăn; thức ăn; rau",
+          "is_correct": false
+        },
+        {
+          "option_text": "điện thoại; cuộc gọi điện thoại",
+          "is_correct": true
+        },
+        {
+          "option_text": "kia",
+          "is_correct": false
+        }
+      ],
+      "rubric": "电话 (diànhuà) nghĩa là điện thoại; cuộc gọi điện thoại. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "电话"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “小” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "đâu, nơi nào",
+          "is_correct": false
+        },
+        {
+          "option_text": "ngày",
+          "is_correct": false
+        },
+        {
+          "option_text": "nhỏ; tiền tố thân mật trước tên người",
+          "is_correct": true
+        },
+        {
+          "option_text": "Việt Nam",
+          "is_correct": false
+        }
+      ],
+      "rubric": "小 (xiǎo) nghĩa là nhỏ; tiền tố thân mật trước tên người. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 2
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “nàbiān” và nghĩa “bên kia, chỗ đó”.",
+      "options": [
+        {
+          "option_text": "那边",
+          "is_correct": true
+        },
+        {
+          "option_text": "四",
+          "is_correct": false
+        },
+        {
+          "option_text": "怎么",
+          "is_correct": false
+        },
+        {
+          "option_text": "前",
+          "is_correct": false
+        }
+      ],
+      "rubric": "那边 (nàbiān) nghĩa là bên kia, chỗ đó. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “phía trước” (gợi ý pinyin: qián).",
+      "reference_answer": "前",
+      "rubric": "Đáp án: 前 (qián). ",
+      "config": {
+        "accepted_answers": [
+          "前"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “chiếc, bộ (lượng từ cho điện thoại, phim...)” (gợi ý pinyin: bù).",
+      "reference_answer": "部",
+      "rubric": "Đáp án: 部 (bù). 部 dùng đếm điện thoại (一部手机); 辆 đếm xe. Không dùng cùng một lượng từ cho mọi đồ vật.",
+      "config": {
+        "accepted_answers": [
+          "部"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “cũ” (gợi ý pinyin: jiù).",
+      "reference_answer": "旧",
+      "rubric": "Đáp án: 旧 (jiù). ",
+      "config": {
+        "accepted_answers": [
+          "旧"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “bữa tối” (gợi ý pinyin: wǎnfàn).",
+      "reference_answer": "晚饭",
+      "rubric": "Đáp án: 晚饭 (wǎnfàn). ",
+      "config": {
+        "accepted_answers": [
+          "晚饭"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 1).",
+      "rubric": "是: là; 日: ngày (cách ghi trang trọng); 西安: Tây An; 白: trắng",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "是"
+          },
+          {
+            "id": "l1",
+            "text": "日"
+          },
+          {
+            "id": "l2",
+            "text": "西安"
+          },
+          {
+            "id": "l3",
+            "text": "白"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r2",
+            "text": "Tây An"
+          },
+          {
+            "id": "r3",
+            "text": "trắng"
+          },
+          {
+            "id": "r1",
+            "text": "ngày (cách ghi trang trọng)"
+          },
+          {
+            "id": "r0",
+            "text": "là"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 3
+        },
+        {
+          "hsk": 1,
+          "lesson": 5
+        },
+        {
+          "hsk": 1,
+          "lesson": 6
+        },
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 2).",
+      "rubric": "去年: năm ngoái; 还: còn, vẫn; 名字: tên; 没关系: không sao; không có gì đáng ngại",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "去年"
+          },
+          {
+            "id": "l1",
+            "text": "还"
+          },
+          {
+            "id": "l2",
+            "text": "名字"
+          },
+          {
+            "id": "l3",
+            "text": "没关系"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r3",
+            "text": "không sao; không có gì đáng ngại"
+          },
+          {
+            "id": "r1",
+            "text": "còn, vẫn"
+          },
+          {
+            "id": "r2",
+            "text": "tên"
+          },
+          {
+            "id": "r0",
+            "text": "năm ngoái"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        },
+        {
+          "hsk": 1,
+          "lesson": 3
+        },
+        {
+          "hsk": 1,
+          "lesson": 2
+        },
+        {
+          "hsk": 1,
+          "lesson": 2
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Đọc số điện thoại”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Mã số và số điện thoại được đọc từng chữ số từ trái sang phải.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Đọc lần lượt từng chữ số. Mã số và số điện thoại được đọc từng chữ số từ trái sang phải. Trong số điện thoại, 一 thường đọc yāo để tránh nhầm; không đọc thành một trăm hai mươi ba.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Dự định với 想”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "想 biểu thị mong muốn hoặc dự định.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ ngữ + 想/不想 + động từ. 想 biểu thị mong muốn hoặc dự định. 想 + động từ khác 想 + người, khi đó thường có nghĩa nhớ ai.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Câu liên động”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Hai động từ diễn tả hoạt động liên quan hoặc mục đích của chuyến đi.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ ngữ + 去 + địa điểm + động từ. Hai động từ diễn tả hoạt động liên quan hoặc mục đích của chuyến đi. Địa điểm đứng sau 去; hành động mua đứng sau địa điểm.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Đọc số điện thoại” (mục 4): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Trong số điện thoại, 一 thường đọc yāo để tránh nhầm; không đọc thành một trăm hai mươi ba.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Đọc lần lượt từng chữ số. Mã số và số điện thoại được đọc từng chữ số từ trái sang phải. Trong số điện thoại, 一 thường đọc yāo để tránh nhầm; không đọc thành một trăm hai mươi ba.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Dự định với 想” (mục 5): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "想 + động từ khác 想 + người, khi đó thường có nghĩa nhớ ai.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ ngữ + 想/不想 + động từ. 想 biểu thị mong muốn hoặc dự định. 想 + động từ khác 想 + người, khi đó thường có nghĩa nhớ ai.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Câu liên động” (mục 6): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Địa điểm đứng sau 去; hành động mua đứng sau địa điểm.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ ngữ + 去 + địa điểm + động từ. Hai động từ diễn tả hoạt động liên quan hoặc mục đích của chuyến đi. Địa điểm đứng sau 去; hành động mua đứng sau địa điểm.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 1).",
+      "reference_answer": "我的手机号是一二三。",
+      "rubric": "Câu đúng: 我的手机号是一二三。 Trong số điện thoại, 一 thường đọc yāo để tránh nhầm; không đọc thành một trăm hai mươi ba.",
+      "config": {
+        "items": [
+          {
+            "id": "w7",
+            "text": "。"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w3",
+            "text": "是"
+          },
+          {
+            "id": "w1",
+            "text": "的"
+          },
+          {
+            "id": "w2",
+            "text": "手机号"
+          },
+          {
+            "id": "w6",
+            "text": "三"
+          },
+          {
+            "id": "w5",
+            "text": "二"
+          },
+          {
+            "id": "w4",
+            "text": "一"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 2).",
+      "reference_answer": "我想去超市。",
+      "rubric": "Câu đúng: 我想去超市。 想 + động từ khác 想 + người, khi đó thường có nghĩa nhớ ai.",
+      "config": {
+        "items": [
+          {
+            "id": "w3",
+            "text": "超市"
+          },
+          {
+            "id": "w2",
+            "text": "去"
+          },
+          {
+            "id": "w1",
+            "text": "想"
+          },
+          {
+            "id": "w4",
+            "text": "。"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 3).",
+      "reference_answer": "我去超市买东西。",
+      "rubric": "Câu đúng: 我去超市买东西。 Địa điểm đứng sau 去; hành động mua đứng sau địa điểm.",
+      "config": {
+        "items": [
+          {
+            "id": "w1",
+            "text": "去"
+          },
+          {
+            "id": "w3",
+            "text": "买"
+          },
+          {
+            "id": "w2",
+            "text": "超市"
+          },
+          {
+            "id": "w4",
+            "text": "东西"
+          },
+          {
+            "id": "w5",
+            "text": "。"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 4).",
+      "reference_answer": "家月,你的手机号是多少?",
+      "rubric": "Câu đúng: 家月,你的手机号是多少? Trong số điện thoại, 一 thường đọc yāo để tránh nhầm; không đọc thành một trăm hai mươi ba.",
+      "config": {
+        "items": [
+          {
+            "id": "w0",
+            "text": "家"
+          },
+          {
+            "id": "w8",
+            "text": "?"
+          },
+          {
+            "id": "w5",
+            "text": "手机号"
+          },
+          {
+            "id": "w1",
+            "text": "月"
+          },
+          {
+            "id": "w3",
+            "text": "你"
+          },
+          {
+            "id": "w4",
+            "text": "的"
+          },
+          {
+            "id": "w7",
+            "text": "多少"
+          },
+          {
+            "id": "w2",
+            "text": ","
+          },
+          {
+            "id": "w6",
+            "text": "是"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 5).",
+      "reference_answer": "我的手机号是0932463321。",
+      "rubric": "Câu đúng: 我的手机号是0932463321。 想 + động từ khác 想 + người, khi đó thường có nghĩa nhớ ai.",
+      "config": {
+        "items": [
+          {
+            "id": "w2",
+            "text": "手机号"
+          },
+          {
+            "id": "w1",
+            "text": "的"
+          },
+          {
+            "id": "w5",
+            "text": "。"
+          },
+          {
+            "id": "w4",
+            "text": "0932463321"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w3",
+            "text": "是"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 6).",
+      "reference_answer": "我的手机号是0932581127。",
+      "rubric": "Câu đúng: 我的手机号是0932581127。 Địa điểm đứng sau 去; hành động mua đứng sau địa điểm.",
+      "config": {
+        "items": [
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w5",
+            "text": "。"
+          },
+          {
+            "id": "w2",
+            "text": "手机号"
+          },
+          {
+            "id": "w3",
+            "text": "是"
+          },
+          {
+            "id": "w1",
+            "text": "的"
+          },
+          {
+            "id": "w4",
+            "text": "0932581127"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ],
+  "source_documents": {
+    "vocabulary": "DOCX",
+    "theory": "HSK1 PDF"
+  }
+}

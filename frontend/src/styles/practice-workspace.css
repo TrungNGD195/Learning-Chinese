@@ -1,4 +1,12 @@
 .learner-shell.bo-shell .practice-workspace, .learner-shell.bo-shell .practice-results { max-width: 1380px; margin-inline: auto; }
+.bo-shell .lesson-inline-practice { min-width: 0; padding: 0; background: transparent; }
+.bo-shell .lesson-inline-practice > .learner-page { width: 100%; max-width: none; margin: 0; padding: 0; min-height: 0; }
+.lesson-practice-selector { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.lesson-practice-selector button[aria-pressed="true"] { background: #244b3b; color: #fffbed; border-color: #244b3b; }
+.bo-shell .lesson-inline-practice .practice-overview { top: calc(var(--lesson-header-height) + 100px); }
+@media(max-width:800px) {
+  .bo-shell .lesson-inline-practice .practice-overview { position: static; }
+}
 .learner-shell.bo-shell .practice-workspace > .learner-surface:first-of-type { padding: 8px 0 16px; border: 0; background: transparent; box-shadow: none; }
 .learner-shell.bo-shell .practice-workspace .ui-page-header, .learner-shell.bo-shell .practice-results .ui-page-header { margin: 0; padding: 0; min-height: 0; }
 .learner-shell.bo-shell .practice-workspace .ui-page-header h1, .learner-shell.bo-shell .practice-results .ui-page-header h1 { font-size: clamp(25px, 2.5vw, 34px); line-height: 1.4; }

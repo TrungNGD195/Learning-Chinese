@@ -1,4 +1,5 @@
 import { act, fireEvent, render, screen, waitFor, within } from '@testing-library/react'
+import { StrictMode } from 'react'
 import { createMemoryRouter, Link, RouterProvider, useLocation } from 'react-router'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
@@ -106,7 +107,7 @@ function renderAt(path: string, queryClient = new QueryClient({ defaultOptions: 
     { path: '/exit', element: <CurrentPath /> },
     { path: '*', element: <CurrentPath /> },
   ], { initialEntries: [path] })
-  return render(<QueryClientProvider client={queryClient}><RouterProvider router={router} /></QueryClientProvider>)
+  return { router, ...render(<QueryClientProvider client={queryClient}><RouterProvider router={router} /></QueryClientProvider>) }
 }
 
 beforeEach(() => {
@@ -348,6 +349,66 @@ describe('Step 4.3 lesson and theory behavior', () => {
 })
 
 describe('Step 4.3 Assessment lifecycle and answer submission', () => {
+  it('starts inline once in StrictMode and waits for an explicit retry after a start failure', async () => {
+    vi.mocked(getAssessment).mockResolvedValue(assessmentFixture(questionFixture().slice(0, 1)))
+    vi.mocked(startAttempt).mockRejectedValueOnce(new Error('offline'))
+    const client = new QueryClient({ defaultOptions: { queries: { retry: false } } })
+    const router = createMemoryRouter([{ path: '/inline', element: <StrictMode><AssessmentPage embeddedAssessmentId="assessment-1"/></StrictMode> }], { initialEntries: ['/inline'] })
+    render(<QueryClientProvider client={client}><RouterProvider router={router}/></QueryClientProvider>)
+    expect(await screen.findByRole('alert')).toHaveTextContent('Không thể bắt đầu hoặc tiếp tục bài luyện tập.')
+    expect(startAttempt).toHaveBeenCalledTimes(1)
+    expect(screen.queryByRole('heading', { name: 'Bắt đầu khi bạn sẵn sàng' })).not.toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: 'Thử lại' }))
+    expect(await screen.findByLabelText('Option One')).toBeInTheDocument()
+    expect(startAttempt).toHaveBeenCalledTimes(2)
+  })
+
+  it('keeps questions, results, explanations and repeat attempts inside the lesson', async () => {
+    vi.mocked(getLesson).mockResolvedValue({ ...lessonFixture(), assessment_ids: ['assessment-1'] })
+    vi.mocked(getLessonProgress).mockResolvedValue({ ...lessonProgressFixture(), theory_completed_at: theoryTimestamp })
+    vi.mocked(getAssessment).mockResolvedValue(assessmentFixture(questionFixture().slice(0, 1)))
+    vi.mocked(getAttempt).mockResolvedValue(attemptFixture({ status: 'GRADED', passed: false, score: 0 }))
+    const { router } = renderAt('/lessons/lesson-1/practice')
+    expect(await screen.findByLabelText('Option One')).toBeInTheDocument()
+    expect(startAttempt).toHaveBeenCalledTimes(1)
+    expect(screen.queryByRole('heading', { name: 'Danh sách từ' })).not.toBeInTheDocument()
+    expect(document.querySelectorAll('h1')).toHaveLength(1)
+    fireEvent.click(await screen.findByLabelText('Option One'))
+    fireEvent.click(screen.getByRole('button', { name: 'Nộp bài' }))
+    expect(await screen.findByRole('heading', { name: 'Kết quả luyện tập' })).toBeInTheDocument()
+    expect(await screen.findByRole('heading', { name: 'Xem lại bài làm' })).toBeInTheDocument()
+    expect(router.state.location.pathname).toBe('/lessons/lesson-1/practice')
+    expect(screen.getByRole('link', { name: 'Luyện tập' })).toHaveAttribute('aria-current', 'page')
+    fireEvent.click(screen.getByRole('button', { name: 'Thử lại' }))
+    expect(await screen.findByLabelText('Option One')).toBeInTheDocument()
+    expect(await screen.findByLabelText('Option One')).not.toBeChecked()
+    expect(startAttempt).toHaveBeenCalledTimes(2)
+    expect(router.state.location.pathname).toBe('/lessons/lesson-1/practice')
+  })
+
+  it('protects answers when changing lesson sections and hides the word index outside vocabulary', async () => {
+    vi.mocked(getLessonProgress).mockResolvedValue({ ...lessonProgressFixture(), theory_completed_at: theoryTimestamp })
+    vi.mocked(getAssessment).mockResolvedValue(assessmentFixture(questionFixture().slice(0, 1)))
+    const { router } = renderAt('/lessons/lesson-1/practice')
+    await screen.findByLabelText('Option One')
+    expect(screen.getByRole('button', { name: 'Luyện tập 2' })).toBeDisabled()
+    fireEvent.click(await screen.findByLabelText('Option One'))
+    fireEvent.click(screen.getByRole('link', { name: 'Ngữ pháp' }))
+    expect(await screen.findByRole('dialog', { name: 'Câu trả lời chưa được lưu' })).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: 'Ở lại' }))
+    expect(router.state.location.pathname).toBe('/lessons/lesson-1/practice')
+    expect(screen.getByLabelText('Option One')).toBeChecked()
+    fireEvent.click(screen.getByRole('link', { name: 'Ngữ pháp' }))
+    fireEvent.click(await screen.findByRole('button', { name: 'Rời trang' }))
+    expect(await screen.findByRole('heading', { name: 'Ngữ pháp' })).toBeInTheDocument()
+    expect(screen.queryByRole('heading', { name: 'Danh sách từ' })).not.toBeInTheDocument()
+    fireEvent.click(screen.getByRole('link', { name: 'Bài khóa' }))
+    expect(await screen.findByRole('heading', { name: 'Chưa có bài khóa' })).toBeInTheDocument()
+    expect(screen.queryByRole('heading', { name: 'Danh sách từ' })).not.toBeInTheDocument()
+    fireEvent.click(screen.getByRole('link', { name: 'Từ vựng' }))
+    expect(await screen.findByRole('heading', { name: 'Danh sách từ' })).toBeInTheDocument()
+  })
+
   it.each(lessonExerciseCases)('renders safely with %s Lesson Exercise IDs', async (_label, assessmentIds) => {
     vi.mocked(getLesson).mockResolvedValue({ ...lessonFixture(), assessment_ids: assessmentIds })
     vi.mocked(getLessonProgress).mockResolvedValue({ ...lessonProgressFixture(), theory_completed_at: theoryTimestamp })
@@ -356,9 +417,6 @@ describe('Step 4.3 Assessment lifecycle and answer submission', () => {
     if (assessmentIds.length === 0) {
       expect(screen.getByText("Bài học này chưa có bài luyện tập.")).toBeInTheDocument()
     } else {
-      const exerciseLink = screen.getByRole('link', { name: "Mở luyện tập 1" })
-      expect(exerciseLink).toHaveAttribute('href', '/assessments/assessment-1')
-      fireEvent.click(exerciseLink)
       expect(await screen.findByRole('heading', { name: 'Greetings practice' })).toBeInTheDocument()
     }
   })

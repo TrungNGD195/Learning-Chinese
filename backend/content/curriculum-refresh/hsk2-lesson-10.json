@@ -1,0 +1,1793 @@
+{
+  "key": "hsk2-lesson-10-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 2,
+    "lesson_number": 10,
+    "title": "我去年去了一次上海 · Kinh nghiệm du lịch",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "姓名",
+      "pinyin": "xìng míng",
+      "vietnamese_meaning": "họ và tên",
+      "part_of_speech": "danh từ",
+      "example": "请写你的姓名。\nqǐng xiě nǐ de xìng míng 。\nHãy viết họ và tên của bạn.",
+      "order_index": 1,
+      "note": null,
+      "source_key": "2:10:姓名"
+    },
+    {
+      "hanzi": "姓",
+      "pinyin": "xìng",
+      "vietnamese_meaning": "họ; mang họ",
+      "part_of_speech": "danh từ, động từ",
+      "example": "我姓王。\nwǒ xìng wáng 。\nTôi họ Vương.",
+      "order_index": 2,
+      "note": null,
+      "source_key": "2:10:姓"
+    },
+    {
+      "hanzi": "贵姓",
+      "pinyin": "guì xìng",
+      "vietnamese_meaning": "quý tính (cách hỏi họ lịch sự)",
+      "part_of_speech": "cụm nghi vấn",
+      "example": "请问，您贵姓？\nqǐng wèn ， nín guì xìng ？\nXin hỏi, quý tính của ông/bà là gì?",
+      "order_index": 3,
+      "note": null,
+      "source_key": "2:10:贵姓"
+    },
+    {
+      "hanzi": "交",
+      "pinyin": "jiāo",
+      "vietnamese_meaning": "nộp, giao",
+      "part_of_speech": "động từ",
+      "example": "把作业交给老师吧。\nbǎ zuò yè jiāo gěi lǎo shī ba 。\nHãy nộp bài tập cho thầy cô.",
+      "order_index": 4,
+      "note": null,
+      "source_key": "2:10:交"
+    },
+    {
+      "hanzi": "交给",
+      "pinyin": "jiāo gěi",
+      "vietnamese_meaning": "giao cho, nộp cho",
+      "part_of_speech": "động từ",
+      "example": "把作业交给老师吧。\nbǎ zuò yè jiāo gěi lǎo shī ba 。\nHãy nộp bài tập cho thầy cô.",
+      "order_index": 5,
+      "note": null,
+      "source_key": "2:10:交给"
+    },
+    {
+      "hanzi": "把",
+      "pinyin": "bǎ",
+      "vietnamese_meaning": "đưa tân ngữ lên trước động từ trong câu xử trí",
+      "part_of_speech": "giới từ",
+      "example": "把作业交给老师吧。\nbǎ zuò yè jiāo gěi lǎo shī ba 。\nHãy nộp bài tập cho thầy cô.",
+      "order_index": 6,
+      "note": "把 từng là lượng từ của ghế, đồ có tay cầm; ở đây 把 là giới từ đưa đối tượng lên trước động từ, như 把作业交给老师. Nhắc lại HSK1 bài 9: 把 (bǎ) nghĩa là cái, chiếc (lượng từ cho ghế, vật có tay cầm). Trong bài này: đưa tân ngữ lên trước động từ trong câu xử trí.",
+      "source_key": "2:10:把"
+    },
+    {
+      "hanzi": "作业",
+      "pinyin": "zuò yè",
+      "vietnamese_meaning": "bài tập về nhà",
+      "part_of_speech": "danh từ",
+      "example": "把作业交给老师吧。\nbǎ zuò yè jiāo gěi lǎo shī ba 。\nHãy nộp bài tập cho thầy cô.",
+      "order_index": 7,
+      "note": null,
+      "source_key": "2:10:作业"
+    },
+    {
+      "hanzi": "塔",
+      "pinyin": "tǎ",
+      "vietnamese_meaning": "tháp",
+      "part_of_speech": "danh từ",
+      "example": "这座塔很高。\nzhè zuò tǎ hěn gāo 。\nTòa tháp này rất cao.",
+      "order_index": 8,
+      "note": null,
+      "source_key": "2:10:塔"
+    },
+    {
+      "hanzi": "东方明珠",
+      "pinyin": "dōng fāng míng zhū",
+      "vietnamese_meaning": "Đông Phương Minh Châu (tên tháp ở Thượng Hải)",
+      "part_of_speech": "danh từ riêng",
+      "example": "我想去东方明珠。\nwǒ xiǎng qù dōng fāng míng zhū 。\nTôi muốn đến Đông Phương Minh Châu.",
+      "order_index": 9,
+      "note": null,
+      "source_key": "2:10:东方明珠"
+    },
+    {
+      "hanzi": "方便",
+      "pinyin": "fāng biàn",
+      "vietnamese_meaning": "thuận tiện, tiện lợi",
+      "part_of_speech": "tính từ",
+      "example": "坐公交车很方便。\nzuò gōng jiāo chē hěn fāng biàn 。\nĐi xe buýt rất thuận tiện.",
+      "order_index": 10,
+      "note": null,
+      "source_key": "2:10:方便"
+    },
+    {
+      "hanzi": "出国",
+      "pinyin": "chūguó",
+      "vietnamese_meaning": "đi nước ngoài",
+      "part_of_speech": "động từ",
+      "example": "我们一起出国吧。\nwǒ men yì qǐ chū guó ba 。\nChúng ta cùng đi nước ngoài nhé.",
+      "order_index": 11,
+      "note": null,
+      "source_key": "2:10:出国"
+    },
+    {
+      "hanzi": "行李",
+      "pinyin": "xíng lǐ",
+      "vietnamese_meaning": "hành lý",
+      "part_of_speech": "danh từ",
+      "example": "你的行李有没有超过二十三公斤？\nnǐ de xíng lǐ yǒu méi yǒu chāo guò èr shí sān gōng jīn ？\nHành lý của bạn có vượt quá hai mươi ba kilôgam không?",
+      "order_index": 12,
+      "note": null,
+      "source_key": "2:10:行李"
+    },
+    {
+      "hanzi": "箱子",
+      "pinyin": "xiāng zi",
+      "vietnamese_meaning": "hòm, va-li",
+      "part_of_speech": "danh từ",
+      "example": "这是我的箱子。\nzhè shì wǒ de xiāng zi 。\nĐây là hòm, va-li của tôi.",
+      "order_index": 13,
+      "note": null,
+      "source_key": "2:10:箱子"
+    },
+    {
+      "hanzi": "行李箱",
+      "pinyin": "xínglixiāng",
+      "vietnamese_meaning": "va-li hành lý",
+      "part_of_speech": "danh từ",
+      "example": "这是我的行李箱。\nzhè shì wǒ de xíng lǐ xiāng 。\nĐây là va-li hành lý của tôi.",
+      "order_index": 14,
+      "note": null,
+      "source_key": "2:10:行李箱"
+    },
+    {
+      "hanzi": "护照",
+      "pinyin": "hùzhào",
+      "vietnamese_meaning": "hộ chiếu",
+      "part_of_speech": "danh từ",
+      "example": "这是我的护照。\nzhè shì wǒ de hù zhào 。\nĐây là hộ chiếu của tôi.",
+      "order_index": 15,
+      "note": null,
+      "source_key": "2:10:护照"
+    },
+    {
+      "hanzi": "签证",
+      "pinyin": "qiān zhèng",
+      "vietnamese_meaning": "thị thực, visa",
+      "part_of_speech": "danh từ",
+      "example": "这是我的签证。\nzhè shì wǒ de qiān zhèng 。\nĐây là thị thực, visa của tôi.",
+      "order_index": 16,
+      "note": null,
+      "source_key": "2:10:签证"
+    },
+    {
+      "hanzi": "出发",
+      "pinyin": "chū fā",
+      "vietnamese_meaning": "xuất phát, khởi hành",
+      "part_of_speech": "động từ",
+      "example": "对,我有一年没坐飞机了。明天我们几点出发?\nduì , wǒ yǒu yī nián méi zuò fēi jī le 。 míng tiān wǒ men jǐ diǎn chū fā ?\nĐúng, mình đã một năm không đi máy bay. Mai chúng ta mấy giờ khởi hành?",
+      "order_index": 17,
+      "note": null,
+      "source_key": "2:10:出发"
+    },
+    {
+      "hanzi": "超过",
+      "pinyin": "chāoguò",
+      "vietnamese_meaning": "vượt quá",
+      "part_of_speech": "động từ",
+      "example": "你的行李有没有超过二十三公斤？\nnǐ de xíng lǐ yǒu méi yǒu chāo guò èr shí sān gōng jīn ？\nHành lý của bạn có vượt quá hai mươi ba kilôgam không?",
+      "order_index": 18,
+      "note": null,
+      "source_key": "2:10:超过"
+    },
+    {
+      "hanzi": "国际",
+      "pinyin": "guó jì",
+      "vietnamese_meaning": "quốc tế",
+      "part_of_speech": "danh từ",
+      "example": "我没飞过国际航班。你呢?\nwǒ méi fēi guò guó jì háng bān 。 nǐ ne ?\nMình chưa bay chuyến quốc tế. Bạn thì sao?",
+      "order_index": 19,
+      "note": null,
+      "source_key": "2:10:国际"
+    },
+    {
+      "hanzi": "航班",
+      "pinyin": "háng bān",
+      "vietnamese_meaning": "chuyến bay",
+      "part_of_speech": "danh từ",
+      "example": "我没飞过国际航班。你呢?\nwǒ méi fēi guò guó jì háng bān 。 nǐ ne ?\nMình chưa bay chuyến quốc tế. Bạn thì sao?",
+      "order_index": 20,
+      "note": null,
+      "source_key": "2:10:航班"
+    },
+    {
+      "hanzi": "外滩",
+      "pinyin": "Wàitān",
+      "vietnamese_meaning": "Bến Thượng Hải",
+      "part_of_speech": "danh từ",
+      "example": "我想去外滩。\nwǒ xiǎng qù wài tān 。\nTôi muốn đến Bến Thượng Hải.",
+      "order_index": 21,
+      "note": null,
+      "source_key": "2:10:外滩"
+    },
+    {
+      "hanzi": "暑假",
+      "pinyin": "shǔ jià",
+      "vietnamese_meaning": "kỳ nghỉ hè",
+      "part_of_speech": "danh từ",
+      "example": "暑假我想去中国。\nshǔ jià wǒ xiǎng qù zhōng guó 。\nKỳ nghỉ hè tôi muốn đến Trung Quốc.",
+      "order_index": 22,
+      "note": null,
+      "source_key": "2:10:暑假"
+    },
+    {
+      "hanzi": "好",
+      "pinyin": "hǎo",
+      "vietnamese_meaning": "rất, thật (tăng mức độ cảm thán)",
+      "part_of_speech": "phó từ",
+      "example": "这里好漂亮啊！\nzhè lǐ hǎo piào liàng a ！\nNơi đây đẹp quá!",
+      "order_index": 23,
+      "note": "好 ở đây làm phó từ nhấn mạnh cảm thán như 好漂亮; khác 好 nghĩa tốt/khỏe. Không dùng 好 thay 很 trong mọi tình huống. Nhắc lại HSK1 bài 1: 好 (hǎo) nghĩa là tốt, đẹp, hay, ngon. Trong bài này: rất, thật (tăng mức độ cảm thán).",
+      "source_key": "2:10:好"
+    },
+    {
+      "hanzi": "像",
+      "pinyin": "xiàng",
+      "vietnamese_meaning": "giống, giống như",
+      "part_of_speech": "động từ",
+      "example": "我们好像小鸟。\nwǒ men hǎo xiàng xiǎo niǎo 。\nChúng tôi giống như những chú chim nhỏ.",
+      "order_index": 24,
+      "note": null,
+      "source_key": "2:10:像"
+    },
+    {
+      "hanzi": "鸟",
+      "pinyin": "niǎo",
+      "vietnamese_meaning": "chim",
+      "part_of_speech": "danh từ",
+      "example": "我们好像小鸟。\nwǒ men hǎo xiàng xiǎo niǎo 。\nChúng tôi giống như những chú chim nhỏ.",
+      "order_index": 25,
+      "note": null,
+      "source_key": "2:10:鸟"
+    }
+  ],
+  "grammar": [
+    {
+      "name": "Bổ ngữ động lượng",
+      "structure": "Động từ +（了/过）+ số + 次/遍",
+      "explanation": "Đếm số lần hành động xảy ra hoặc số lượt hoàn chỉnh.",
+      "usage": "次 đếm lần nói chung; 遍 nhấn mạnh trọn quá trình từ đầu đến cuối.",
+      "example": "我去过两次上海。\nwǒ qù guò liǎng cì shàng hǎi 。\nTôi đã từng đến Thượng Hải hai lần.",
+      "note": "次 đếm lần nói chung; 遍 nhấn mạnh trọn quá trình từ đầu đến cuối.",
+      "order_index": 1
+    },
+    {
+      "name": "Vị trí tân ngữ với động lượng",
+      "structure": "Động từ + tân ngữ chỉ người + số lần",
+      "explanation": "Tân ngữ đại từ chỉ người đứng trước động lượng; địa danh có thể trước hoặc sau.",
+      "usage": "Không áp dụng vị trí đại từ cho mọi danh từ sự vật.",
+      "example": "我想找他一次。\nwǒ xiǎng zhǎo tā yī cì 。\nTôi muốn tìm gặp anh ấy một lần.",
+      "note": "Không áp dụng vị trí đại từ cho mọi danh từ sự vật.",
+      "order_index": 2
+    },
+    {
+      "name": "有 chỉ đạt mốc",
+      "structure": "Chủ ngữ + 有/没有 + cụm số lượng",
+      "explanation": "Nêu đánh giá một người/vật có đạt một mốc số lượng hay không.",
+      "usage": "有 ở đây không phải sở hữu một đồ vật; phân biệt 有一年没去 là đã một năm không đi.",
+      "example": "他有一米八。\ntā yǒu yī mǐ bā 。\nAnh ấy cao một mét tám.",
+      "note": "有 ở đây không phải sở hữu một đồ vật; phân biệt 有一年没去 là đã một năm không đi.",
+      "order_index": 3
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Nộp bài tập",
+      "content": "小李:朋友们,练习题写好了没?\n小林:我昨天写了一遍。你写了几个旅游的地方?\n小李:我也写完了,但是旅游的地方只写了一个。\n小美:小李,上海你去过几次?\n小李:我只去过一次上海。你呢?\n小美:我去过两次,都是跟小林一起去的。\n小林:对了,你们看一看姓名,写好了就交给老师吧。",
+      "pinyin": "xiǎo lǐ : péng yǒu men , liàn xí tí xiě hǎo le méi ?\nxiǎo lín : wǒ zuó tiān xiě le yī biàn 。 nǐ xiě le jǐ gè lǚ yóu de dì fāng ?\nxiǎo lǐ : wǒ yě xiě wán le , dàn shì lǚ yóu de dì fāng zhǐ xiě le yí gè 。\nxiǎo měi : xiǎo lǐ , shàng hǎi nǐ qù guò jǐ cì ?\nxiǎo lǐ : wǒ zhǐ qù guò yī cì shàng hǎi 。 nǐ ne ?\nxiǎo měi : wǒ qù guò liǎng cì , dōu shì gēn xiǎo lín yì qǐ qù de 。\nxiǎo lín : duì le , nǐ men kàn yī kàn xìng míng , xiě hǎo le jiù jiāo gěi lǎo shī ba 。",
+      "vietnamese_translation": "Tiểu Lý: Các bạn ơi, bài tập làm xong chưa?\nTiểu Lâm: Hôm qua tớ làm một lượt rồi. Cậu\nviết  được mấy địa điểm du lịch?\nTiểu Lý: Tớ cũng làm xong rồi, nhưng chỉ viết\nmột điểm du lịch thôi.\nTiểu Mỹ: Tiểu Lý, cậu đi Thượng Hải  mấy lần\nrồi thế?\nTiểu Lý: Tớ chỉ mới đi Thượng Hải một lần.\nCòn cậu?\nTiểu Mỹ: Tớ đi hai lần rồi, đều đi cùng Tiểu\nLâm cả.\nTiểu Lâm: À đúng rồi, các cậu kiểm tra lại tên\nxem, viết xong thì nộp cho cô giáo nhé.\nTrả lời câu hỏi",
+      "source_reference": "Giáo trình HSK2 3.0 Hanu, bài 10, PDF 111."
+    },
+    {
+      "order_index": 2,
+      "title": "Thăm tháp Đông Phương Minh Châu",
+      "content": "小林:小美,你周末做什么?\n小美:我周末想去东方明珠塔,你知道门票多少钱吗?\n小林:我买过了,200块。你想怎么过去啊?\n小美:我还没想好呢。\n小林:那你可以坐公交车去,很方便。你出过国吗?\n小美:没有,我没出过国。我只想在上海玩儿。\n小林:我也是。东方明珠塔我去过两次了,还想再去。\n小美:对了,小李也想跟我们一起去。\n小林:好。出门旅游,多个朋友多条路。",
+      "pinyin": "xiǎo lín : xiǎo měi , nǐ zhōu mò zuò shén me ?\nxiǎo měi : wǒ zhōu mò xiǎng qù dōng fāng míng zhū tǎ , nǐ zhī dào mén piào duō shǎo qián ma ?\nxiǎo lín : wǒ mǎi guò le , 2 0 0 kuài 。 nǐ xiǎng zěn me guò qù a ?\nxiǎo měi : wǒ hái méi xiǎng hǎo ne 。\nxiǎo lín : nà nǐ kě yǐ zuò gōng jiāo chē qù , hěn fāng biàn 。 nǐ chū guò guó ma ?\nxiǎo měi : méi yǒu , wǒ méi chū guò guó 。 wǒ zhǐ xiǎng zài shàng hǎi wán ér 。\nxiǎo lín : wǒ yě shì 。 dōng fāng míng zhū tǎ wǒ qù guò liǎng cì le , hái xiǎng zài qù 。\nxiǎo měi : duì le , xiǎo lǐ yě xiǎng gēn wǒ men yì qǐ qù 。\nxiǎo lín : hǎo 。 chū mén lǚ yóu , duō gè péng yǒu duō tiáo lù 。",
+      "vietnamese_translation": "Tiểu Lâm: Tiểu Mỹ, cuối tuần này cậu làm gì thế?\nTiểu Mỹ: Cuối tuần này tớ muốn đi tháp Đông Phương Minh Châu, cậu biết giá vé bao nhiêu không?\nTiểu Lâm: Tớ từng mua rồi, hai trăm tệ. Cậu định đi bằng cách nào?\nTiểu Mỹ: Tớ vẫn chưa nghĩ ra.\nTiểu Lâm: Thế cậu có thể đi xe bus, rất tiện. Cậu đã ra nước ngoài chưa?\nTiểu Mỹ: Chưa, tớ chưa ra nước ngoài lần nào. Tớ chỉ muốn đi chơi ở Thượng Hải thôi.\nTiểu Lâm: Tớ cũng vậy. Tháp Đông Phương Minh Châu tớ đã đi hai lần rồi, vẫn muốn đi lại.\nTiểu Mỹ: À đúng rồi, Tiểu Lý cũng muốn đi cùng chúng ta đấy.\nTiểu Lâm: Tốt quá. Thêm một người bạn, thêm một con đường (có thêm bạn đồng hành thì dễ dàng hơn).",
+      "source_reference": "Giáo trình HSK2 3.0 Hanu, bài 10, PDF 114."
+    },
+    {
+      "order_index": 3,
+      "title": "Chuẩn bị chuyến bay quốc tế",
+      "content": "小王:机票和护照都准备好了吗?\n小陈:都准备好了。你有一年没坐飞机了吧?\n小王:对,我有一年没坐飞机了。明天我们几点出发?\n小陈:上午八点。你的行李箱有没有超过二十三公斤?\n小王:没有,只有二十公斤。你飞过几次国际航班?\n小陈:我没飞过国际航班。你呢?\n小王:我只飞过一次。",
+      "pinyin": "xiǎo wáng : jī piào hé hù zhào dōu zhǔn bèi hǎo le ma ?\nxiǎo chén : dōu zhǔn bèi hǎo le 。 nǐ yǒu yī nián méi zuò fēi jī le ba ?\nxiǎo wáng : duì , wǒ yǒu yī nián méi zuò fēi jī le 。 míng tiān wǒ men jǐ diǎn chū fā ?\nxiǎo chén : shàng wǔ bā diǎn 。 nǐ de xíng lǐ xiāng yǒu méi yǒu chāo guò èr shí sān gōng jīn ?\nxiǎo wáng : méi yǒu , zhǐ yǒu èr shí gōng jīn 。 nǐ fēi guò jǐ cì guó jì háng bān ?\nxiǎo chén : wǒ méi fēi guò guó jì háng bān 。 nǐ ne ?\nxiǎo wáng : wǒ zhǐ fēi guò yī cì 。",
+      "vietnamese_translation": "Tiểu Vương: Vé máy bay và hộ chiếu đều chuẩn bị xong chưa?\nTiểu Trần: Đều chuẩn bị hết rồi. Cậu đã một năm chưa đi máy bay rồi đúng không?\nTiểu Vương: Đúng vậy, tớ một năm chưa đi máy bay rồi. Ngày mai chúng ta xuất phát lúc mấy giờ?\nTiểu Trần: 8 giờ sáng. Vali của cậu có vượt quá 23 kg không?\nTiểu Vương: Không, chỉ có 20 kg thôi. Cậu bay chuyến bay quốc tế mấy lần rồi?\nTiểu Trần: Tớ chưa bay lần nào cả. Còn cậu?\nTiểu Vương: Tớ từng bay một lần rồi.",
+      "source_reference": "Giáo trình HSK2 3.0 Hanu, bài 10, PDF 116."
+    },
+    {
+      "order_index": 4,
+      "title": "Nhớ Thượng Hải",
+      "content": "我去年去了一次上海,现在有一年多没去了。我有点儿想上海的外滩。就要放暑假了,我想再去一次那儿,好好儿玩一玩。小美这次也要去上海,我们都是星期六的飞机。小美说我们好像小鸟,一起飞到上海,再一起飞回这里。",
+      "pinyin": "wǒ qù nián qù le yī cì shàng hǎi , xiàn zài yǒu yī nián duō méi qù le 。 wǒ yǒu diǎn ér xiǎng shàng hǎi de wài tān 。 jiù yào fàng shǔ jià le , wǒ xiǎng zài qù yī cì nà ér , hǎo hǎo ér wán yī wán 。 xiǎo měi zhè cì yě yào qù shàng hǎi , wǒ men dōu shì xīng qī liù de fēi jī 。 xiǎo měi shuō wǒ men hǎo xiàng xiǎo niǎo , yì qǐ fēi dào shàng hǎi , zài yì qǐ fēi huí zhè lǐ 。",
+      "vietnamese_translation": "Năm ngoái tôi đã đến Thượng Hải một lần, đến nay đã hơn một năm chưa quay lại. Tôi hơi nhớ Bến Thượng Hải. Sắp nghỉ hè rồi, tôi muốn đến đó lần nữa và vui chơi cho thỏa thích. Lần này Tiểu Mỹ cũng đến Thượng Hải, chúng tôi đều bay vào thứ Bảy. Tiểu Mỹ nói chúng tôi giống những chú chim nhỏ, cùng bay đến Thượng Hải rồi lại cùng bay về đây.",
+      "source_reference": "Giáo trình HSK2 3.0 Hanu, bài 10, PDF 118, 119."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 2 · Bài 10 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp; dùng kiến thức của bài này và các bài trước, không dùng bài sau. Đạt từ 80%; được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "review_status": "DRAFT_REQUIRES_EDITOR_REVIEW",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 1).",
+      "options": [
+        {
+          "option_text": "Đông Phương Minh Châu (tên tháp ở Thượng Hải)",
+          "is_correct": true
+        },
+        {
+          "option_text": "lạnh",
+          "is_correct": false
+        },
+        {
+          "option_text": "học sinh nam; nam sinh",
+          "is_correct": false
+        },
+        {
+          "option_text": "không sao; không có việc gì",
+          "is_correct": false
+        }
+      ],
+      "rubric": "东方明珠 (dōng fāng míng zhū) nghĩa là Đông Phương Minh Châu (tên tháp ở Thượng Hải). ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "东方明珠"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 10
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “好” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "rất, thật (tăng mức độ cảm thán)",
+          "is_correct": true
+        },
+        {
+          "option_text": "ngay, sắp",
+          "is_correct": false
+        },
+        {
+          "option_text": "chúc",
+          "is_correct": false
+        },
+        {
+          "option_text": "bị ốm",
+          "is_correct": false
+        }
+      ],
+      "rubric": "好 (hǎo) nghĩa là rất, thật (tăng mức độ cảm thán). 好 ở đây làm phó từ nhấn mạnh cảm thán như 好漂亮; khác 好 nghĩa tốt/khỏe. Không dùng 好 thay 很 trong mọi tình huống. Nhắc lại HSK1 bài 1: 好 (hǎo) nghĩa là tốt, đẹp, hay, ngon. Trong bài này: rất, thật (tăng mức độ cảm thán).",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 10
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “xiàng” và nghĩa “giống, giống như”.",
+      "options": [
+        {
+          "option_text": "很",
+          "is_correct": false
+        },
+        {
+          "option_text": "国际",
+          "is_correct": false
+        },
+        {
+          "option_text": "他们",
+          "is_correct": false
+        },
+        {
+          "option_text": "像",
+          "is_correct": true
+        }
+      ],
+      "rubric": "像 (xiàng) nghĩa là giống, giống như. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 10
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 4).",
+      "options": [
+        {
+          "option_text": "cầu lông",
+          "is_correct": false
+        },
+        {
+          "option_text": "phải, bên phải",
+          "is_correct": false
+        },
+        {
+          "option_text": "phút",
+          "is_correct": false
+        },
+        {
+          "option_text": "đề thi, bài tập",
+          "is_correct": true
+        }
+      ],
+      "rubric": "题 (tí) nghĩa là đề thi, bài tập. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true,
+          "audio_text": "题"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 7
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “手表” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "ở bên, đồng hành",
+          "is_correct": false
+        },
+        {
+          "option_text": "đồng hồ đeo tay",
+          "is_correct": true
+        },
+        {
+          "option_text": "đang",
+          "is_correct": false
+        },
+        {
+          "option_text": "chuẩn bị",
+          "is_correct": false
+        }
+      ],
+      "rubric": "手表 (shǒubiǎo) nghĩa là đồng hồ đeo tay. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 6
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “xìng míng” và nghĩa “họ và tên”.",
+      "options": [
+        {
+          "option_text": "看",
+          "is_correct": false
+        },
+        {
+          "option_text": "姓名",
+          "is_correct": true
+        },
+        {
+          "option_text": "猫",
+          "is_correct": false
+        },
+        {
+          "option_text": "吧",
+          "is_correct": false
+        }
+      ],
+      "rubric": "姓名 (xìng míng) nghĩa là họ và tên. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 10
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 7).",
+      "options": [
+        {
+          "option_text": "bài tập về nhà",
+          "is_correct": true
+        },
+        {
+          "option_text": "đang",
+          "is_correct": false
+        },
+        {
+          "option_text": "bệnh viện",
+          "is_correct": false
+        },
+        {
+          "option_text": "đưa tân ngữ lên trước động từ trong câu xử trí",
+          "is_correct": false
+        }
+      ],
+      "rubric": "作业 (zuò yè) nghĩa là bài tập về nhà. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "作业"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 10
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “把” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "nữ, phụ nữ",
+          "is_correct": false
+        },
+        {
+          "option_text": "lớp học",
+          "is_correct": false
+        },
+        {
+          "option_text": "đã từng (trải nghiệm trong quá khứ)",
+          "is_correct": false
+        },
+        {
+          "option_text": "đưa tân ngữ lên trước động từ trong câu xử trí",
+          "is_correct": true
+        }
+      ],
+      "rubric": "把 (bǎ) nghĩa là đưa tân ngữ lên trước động từ trong câu xử trí. 把 từng là lượng từ của ghế, đồ có tay cầm; ở đây 把 là giới từ đưa đối tượng lên trước động từ, như 把作业交给老师. Nhắc lại HSK1 bài 9: 把 (bǎ) nghĩa là cái, chiếc (lượng từ cho ghế, vật có tay cầm). Trong bài này: đưa tân ngữ lên trước động từ trong câu xử trí.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 10
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “niǎo” và nghĩa “chim”.",
+      "options": [
+        {
+          "option_text": "东西",
+          "is_correct": false
+        },
+        {
+          "option_text": "鸟",
+          "is_correct": true
+        },
+        {
+          "option_text": "女生",
+          "is_correct": false
+        },
+        {
+          "option_text": "游泳",
+          "is_correct": false
+        }
+      ],
+      "rubric": "鸟 (niǎo) nghĩa là chim. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 10
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "về phía, hướng về",
+          "is_correct": false
+        },
+        {
+          "option_text": "xuất phát, khởi hành",
+          "is_correct": true
+        },
+        {
+          "option_text": "chiếc, bộ (lượng từ cho điện thoại, phim...)",
+          "is_correct": false
+        },
+        {
+          "option_text": "khi, lúc ...",
+          "is_correct": false
+        }
+      ],
+      "rubric": "出发 (chū fā) nghĩa là xuất phát, khởi hành. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "出发"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 10
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “行李” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "nước ngoài",
+          "is_correct": false
+        },
+        {
+          "option_text": "Lưu Minh (tên người)",
+          "is_correct": false
+        },
+        {
+          "option_text": "hoan nghênh, chào đón",
+          "is_correct": false
+        },
+        {
+          "option_text": "hành lý",
+          "is_correct": true
+        }
+      ],
+      "rubric": "行李 (xíng lǐ) nghĩa là hành lý. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 10
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “shàng cì” và nghĩa “lần trước”.",
+      "options": [
+        {
+          "option_text": "上次",
+          "is_correct": true
+        },
+        {
+          "option_text": "公里",
+          "is_correct": false
+        },
+        {
+          "option_text": "曾经",
+          "is_correct": false
+        },
+        {
+          "option_text": "上网",
+          "is_correct": false
+        }
+      ],
+      "rubric": "上次 (shàng cì) nghĩa là lần trước. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 4
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “thuận tiện, tiện lợi” (gợi ý pinyin: fāng biàn).",
+      "reference_answer": "方便",
+      "rubric": "Đáp án: 方便 (fāng biàn). ",
+      "config": {
+        "accepted_answers": [
+          "方便"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 10
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “chuyến bay” (gợi ý pinyin: háng bān).",
+      "reference_answer": "航班",
+      "rubric": "Đáp án: 航班 (háng bān). ",
+      "config": {
+        "accepted_answers": [
+          "航班"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 10
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “hòm, va-li” (gợi ý pinyin: xiāng zi).",
+      "reference_answer": "箱子",
+      "rubric": "Đáp án: 箱子 (xiāng zi). ",
+      "config": {
+        "accepted_answers": [
+          "箱子"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 10
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “đi nước ngoài” (gợi ý pinyin: chūguó).",
+      "reference_answer": "出国",
+      "rubric": "Đáp án: 出国 (chūguó). ",
+      "config": {
+        "accepted_answers": [
+          "出国"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 10
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 1).",
+      "rubric": "难: khó; 饭店: quán ăn, nhà hàng; khách sạn (tùy ngữ cảnh); 安静: yên tĩnh; 男生: học sinh nam; nam sinh",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "难"
+          },
+          {
+            "id": "l1",
+            "text": "饭店"
+          },
+          {
+            "id": "l2",
+            "text": "安静"
+          },
+          {
+            "id": "l3",
+            "text": "男生"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r0",
+            "text": "khó"
+          },
+          {
+            "id": "r1",
+            "text": "quán ăn, nhà hàng; khách sạn (tùy ngữ cảnh)"
+          },
+          {
+            "id": "r2",
+            "text": "yên tĩnh"
+          },
+          {
+            "id": "r3",
+            "text": "học sinh nam; nam sinh"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        },
+        {
+          "hsk": 1,
+          "lesson": 6
+        },
+        {
+          "hsk": 2,
+          "lesson": 9
+        },
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 2).",
+      "rubric": "七: bảy (số 7); 你好: xin chào; 白天: ban ngày; 一些: một ít, một số",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "七"
+          },
+          {
+            "id": "l1",
+            "text": "你好"
+          },
+          {
+            "id": "l2",
+            "text": "白天"
+          },
+          {
+            "id": "l3",
+            "text": "一些"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r3",
+            "text": "một ít, một số"
+          },
+          {
+            "id": "r0",
+            "text": "bảy (số 7)"
+          },
+          {
+            "id": "r1",
+            "text": "xin chào"
+          },
+          {
+            "id": "r2",
+            "text": "ban ngày"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        },
+        {
+          "hsk": 1,
+          "lesson": 1
+        },
+        {
+          "hsk": 1,
+          "lesson": 9
+        },
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Bổ ngữ động lượng”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Đếm số lần hành động xảy ra hoặc số lượt hoàn chỉnh.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Động từ +（了/过）+ số + 次/遍. Đếm số lần hành động xảy ra hoặc số lượt hoàn chỉnh. 次 đếm lần nói chung; 遍 nhấn mạnh trọn quá trình từ đầu đến cuối.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 10
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Vị trí tân ngữ với động lượng”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Tân ngữ đại từ chỉ người đứng trước động lượng; địa danh có thể trước hoặc sau.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Động từ + tân ngữ chỉ người + số lần. Tân ngữ đại từ chỉ người đứng trước động lượng; địa danh có thể trước hoặc sau. Không áp dụng vị trí đại từ cho mọi danh từ sự vật.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 10
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “有 chỉ đạt mốc”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Nêu đánh giá một người/vật có đạt một mốc số lượng hay không.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ ngữ + 有/没有 + cụm số lượng. Nêu đánh giá một người/vật có đạt một mốc số lượng hay không. 有 ở đây không phải sở hữu một đồ vật; phân biệt 有一年没去 là đã một năm không đi.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 10
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Bổ ngữ động lượng” (mục 4): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "次 đếm lần nói chung; 遍 nhấn mạnh trọn quá trình từ đầu đến cuối.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Động từ +（了/过）+ số + 次/遍. Đếm số lần hành động xảy ra hoặc số lượt hoàn chỉnh. 次 đếm lần nói chung; 遍 nhấn mạnh trọn quá trình từ đầu đến cuối.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 10
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Vị trí tân ngữ với động lượng” (mục 5): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không áp dụng vị trí đại từ cho mọi danh từ sự vật.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Động từ + tân ngữ chỉ người + số lần. Tân ngữ đại từ chỉ người đứng trước động lượng; địa danh có thể trước hoặc sau. Không áp dụng vị trí đại từ cho mọi danh từ sự vật.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 10
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “有 chỉ đạt mốc” (mục 6): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "有 ở đây không phải sở hữu một đồ vật; phân biệt 有一年没去 là đã một năm không đi.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Chủ ngữ + 有/没有 + cụm số lượng. Nêu đánh giá một người/vật có đạt một mốc số lượng hay không. 有 ở đây không phải sở hữu một đồ vật; phân biệt 有一年没去 là đã một năm không đi.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 10
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 1).",
+      "reference_answer": "我去过两次上海。",
+      "rubric": "Câu đúng: 我去过两次上海。 次 đếm lần nói chung; 遍 nhấn mạnh trọn quá trình từ đầu đến cuối.",
+      "config": {
+        "items": [
+          {
+            "id": "w2",
+            "text": "过"
+          },
+          {
+            "id": "w5",
+            "text": "上"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w6",
+            "text": "海"
+          },
+          {
+            "id": "w4",
+            "text": "次"
+          },
+          {
+            "id": "w7",
+            "text": "。"
+          },
+          {
+            "id": "w3",
+            "text": "两"
+          },
+          {
+            "id": "w1",
+            "text": "去"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 10
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 2).",
+      "reference_answer": "我想找他一次。",
+      "rubric": "Câu đúng: 我想找他一次。 Không áp dụng vị trí đại từ cho mọi danh từ sự vật.",
+      "config": {
+        "items": [
+          {
+            "id": "w3",
+            "text": "他"
+          },
+          {
+            "id": "w4",
+            "text": "一"
+          },
+          {
+            "id": "w2",
+            "text": "找"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w6",
+            "text": "。"
+          },
+          {
+            "id": "w5",
+            "text": "次"
+          },
+          {
+            "id": "w1",
+            "text": "想"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 10
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 3).",
+      "reference_answer": "他有一米八。",
+      "rubric": "Câu đúng: 他有一米八。 有 ở đây không phải sở hữu một đồ vật; phân biệt 有一年没去 là đã một năm không đi.",
+      "config": {
+        "items": [
+          {
+            "id": "w1",
+            "text": "有"
+          },
+          {
+            "id": "w5",
+            "text": "。"
+          },
+          {
+            "id": "w0",
+            "text": "他"
+          },
+          {
+            "id": "w3",
+            "text": "米"
+          },
+          {
+            "id": "w4",
+            "text": "八"
+          },
+          {
+            "id": "w2",
+            "text": "一"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 10
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 4).",
+      "reference_answer": "朋友们,练习题写好了没?",
+      "rubric": "Câu đúng: 朋友们,练习题写好了没? 次 đếm lần nói chung; 遍 nhấn mạnh trọn quá trình từ đầu đến cuối.",
+      "config": {
+        "items": [
+          {
+            "id": "w9",
+            "text": "没"
+          },
+          {
+            "id": "w1",
+            "text": "们"
+          },
+          {
+            "id": "w3",
+            "text": "练"
+          },
+          {
+            "id": "w8",
+            "text": "了"
+          },
+          {
+            "id": "w4",
+            "text": "习"
+          },
+          {
+            "id": "w0",
+            "text": "朋友"
+          },
+          {
+            "id": "w6",
+            "text": "写"
+          },
+          {
+            "id": "w2",
+            "text": ","
+          },
+          {
+            "id": "w10",
+            "text": "?"
+          },
+          {
+            "id": "w5",
+            "text": "题"
+          },
+          {
+            "id": "w7",
+            "text": "好"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8",
+          "w9",
+          "w10"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 10
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 5).",
+      "reference_answer": "我昨天写了一遍。你写了几个旅游的地方?",
+      "rubric": "Câu đúng: 我昨天写了一遍。你写了几个旅游的地方? Không áp dụng vị trí đại từ cho mọi danh từ sự vật.",
+      "config": {
+        "items": [
+          {
+            "id": "w2",
+            "text": "写"
+          },
+          {
+            "id": "w6",
+            "text": "。"
+          },
+          {
+            "id": "w1",
+            "text": "昨天"
+          },
+          {
+            "id": "w8",
+            "text": "写"
+          },
+          {
+            "id": "w5",
+            "text": "遍"
+          },
+          {
+            "id": "w13",
+            "text": "的"
+          },
+          {
+            "id": "w15",
+            "text": "?"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w3",
+            "text": "了"
+          },
+          {
+            "id": "w12",
+            "text": "旅游"
+          },
+          {
+            "id": "w11",
+            "text": "个"
+          },
+          {
+            "id": "w7",
+            "text": "你"
+          },
+          {
+            "id": "w14",
+            "text": "地方"
+          },
+          {
+            "id": "w9",
+            "text": "了"
+          },
+          {
+            "id": "w4",
+            "text": "一"
+          },
+          {
+            "id": "w10",
+            "text": "几"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8",
+          "w9",
+          "w10",
+          "w11",
+          "w12",
+          "w13",
+          "w14",
+          "w15"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 10
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 6).",
+      "reference_answer": "我也写完了,但是旅游的地方只写了一个。",
+      "rubric": "Câu đúng: 我也写完了,但是旅游的地方只写了一个。 有 ở đây không phải sở hữu một đồ vật; phân biệt 有一年没去 là đã một năm không đi.",
+      "config": {
+        "items": [
+          {
+            "id": "w8",
+            "text": "的"
+          },
+          {
+            "id": "w11",
+            "text": "写"
+          },
+          {
+            "id": "w6",
+            "text": "但是"
+          },
+          {
+            "id": "w3",
+            "text": "完"
+          },
+          {
+            "id": "w9",
+            "text": "地方"
+          },
+          {
+            "id": "w15",
+            "text": "。"
+          },
+          {
+            "id": "w5",
+            "text": ","
+          },
+          {
+            "id": "w14",
+            "text": "个"
+          },
+          {
+            "id": "w2",
+            "text": "写"
+          },
+          {
+            "id": "w1",
+            "text": "也"
+          },
+          {
+            "id": "w12",
+            "text": "了"
+          },
+          {
+            "id": "w4",
+            "text": "了"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w13",
+            "text": "一"
+          },
+          {
+            "id": "w10",
+            "text": "只"
+          },
+          {
+            "id": "w7",
+            "text": "旅游"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8",
+          "w9",
+          "w10",
+          "w11",
+          "w12",
+          "w13",
+          "w14",
+          "w15"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 10
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ],
+  "source_documents": {
+    "vocabulary": "DOCX",
+    "theory": "HSK2 PDF"
+  }
+}

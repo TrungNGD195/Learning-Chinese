@@ -1,0 +1,1391 @@
+{
+  "key": "hsk1-lesson-01-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 1,
+    "lesson_number": 1,
+    "title": "你好 · Xin chào",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "你",
+      "pinyin": "nǐ",
+      "vietnamese_meaning": "anh, chị, bạn, ông, bà,...",
+      "part_of_speech": "đại từ",
+      "example": "你好，我是小丽。\nnǐ hǎo ， wǒ shì xiǎo lì 。\nXin chào, tôi là Tiểu Lệ.",
+      "order_index": 1,
+      "note": null,
+      "source_key": "1:1:你"
+    },
+    {
+      "hanzi": "我",
+      "pinyin": "wǒ",
+      "vietnamese_meaning": "tôi",
+      "part_of_speech": "đại từ",
+      "example": "你好，我是小丽。\nnǐ hǎo ， wǒ shì xiǎo lì 。\nXin chào, tôi là Tiểu Lệ.",
+      "order_index": 2,
+      "note": null,
+      "source_key": "1:1:我"
+    },
+    {
+      "hanzi": "好",
+      "pinyin": "hǎo",
+      "vietnamese_meaning": "tốt, đẹp, hay, ngon",
+      "part_of_speech": "tính từ",
+      "example": "我们好像小鸟。\nwǒ men hǎo xiàng xiǎo niǎo 。\nChúng tôi giống như những chú chim nhỏ.",
+      "order_index": 3,
+      "note": null,
+      "source_key": "1:1:好"
+    },
+    {
+      "hanzi": "你好",
+      "pinyin": "nǐ hǎo",
+      "vietnamese_meaning": "xin chào",
+      "part_of_speech": "cụm chào hỏi",
+      "example": "你好，我是小丽。\nnǐ hǎo ， wǒ shì xiǎo lì 。\nXin chào, tôi là Tiểu Lệ.",
+      "order_index": 4,
+      "note": null,
+      "source_key": "1:1:你好"
+    },
+    {
+      "hanzi": "大",
+      "pinyin": "dà",
+      "vietnamese_meaning": "to, lớn",
+      "part_of_speech": "tính từ",
+      "example": "这件衣服很大。\nzhè jiàn yī fú hěn dà 。\nBộ quần áo này to, lớn.",
+      "order_index": 5,
+      "note": null,
+      "source_key": "1:1:大"
+    },
+    {
+      "hanzi": "口",
+      "pinyin": "kǒu",
+      "vietnamese_meaning": "miệng, nhân khẩu",
+      "part_of_speech": "danh từ, lượng từ",
+      "example": "请看他的口。\nqǐng kàn tā de kǒu 。\nHãy nhìn miệng, nhân khẩu của anh ấy.",
+      "order_index": 6,
+      "note": "口 là miệng; trong 几口人, 口 làm lượng từ đếm người trong gia đình, không phải lượng từ chung cho mọi người.",
+      "source_key": "1:1:口"
+    },
+    {
+      "hanzi": "白",
+      "pinyin": "bái",
+      "vietnamese_meaning": "trắng",
+      "part_of_speech": "tính từ",
+      "example": "白马。\nbái mǎ 。\nNgựa trắng.",
+      "order_index": 7,
+      "note": null,
+      "source_key": "1:1:白"
+    },
+    {
+      "hanzi": "马",
+      "pinyin": "mǎ",
+      "vietnamese_meaning": "ngựa",
+      "part_of_speech": "danh từ",
+      "example": "白马。\nbái mǎ 。\nNgựa trắng.",
+      "order_index": 8,
+      "note": null,
+      "source_key": "1:1:马"
+    },
+    {
+      "hanzi": "女",
+      "pinyin": "nǚ",
+      "vietnamese_meaning": "nữ, phụ nữ",
+      "part_of_speech": "tính từ",
+      "example": "她是女学生。\ntā shì nǚ xué shēng 。\nCô ấy là học sinh nữ.",
+      "order_index": 9,
+      "note": null,
+      "source_key": "1:1:女"
+    },
+    {
+      "hanzi": "不",
+      "pinyin": "bù",
+      "vietnamese_meaning": "không, chẳng",
+      "part_of_speech": "phó từ",
+      "example": "我不好。\nwǒ bù hǎo 。\nTôi không khỏe.",
+      "order_index": 10,
+      "note": null,
+      "source_key": "1:1:不"
+    },
+    {
+      "hanzi": "一",
+      "pinyin": "yī",
+      "vietnamese_meaning": "một",
+      "part_of_speech": "số từ",
+      "example": "我有一个。\nwǒ yǒu yí gè 。\nTôi có một cái.",
+      "order_index": 11,
+      "note": null,
+      "source_key": "1:1:一"
+    },
+    {
+      "hanzi": "八",
+      "pinyin": "bā",
+      "vietnamese_meaning": "tám",
+      "part_of_speech": "số từ",
+      "example": "我有八个。\nwǒ yǒu bā gè 。\nTôi có tám cái.",
+      "order_index": 12,
+      "note": null,
+      "source_key": "1:1:八"
+    },
+    {
+      "hanzi": "五",
+      "pinyin": "wǔ",
+      "vietnamese_meaning": "năm",
+      "part_of_speech": "số từ",
+      "example": "我有五个。\nwǒ yǒu wǔ gè 。\nTôi có năm cái.",
+      "order_index": 13,
+      "note": null,
+      "source_key": "1:1:五"
+    }
+  ],
+  "grammar": [],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Chào hỏi",
+      "content": "A:你好!\nB:你好!",
+      "pinyin": "A : nǐ hǎo !\nB : nǐ hǎo !",
+      "vietnamese_translation": "A: Xin chào!\nB: Xin chào!",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 1, PDF 3."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 1 · Bài 1 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp; dùng kiến thức của bài này và các bài trước, không dùng bài sau. Đạt từ 80%; được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "review_status": "DRAFT_REQUIRES_EDITOR_REVIEW",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 1).",
+      "options": [
+        {
+          "option_text": "một",
+          "is_correct": true
+        },
+        {
+          "option_text": "tốt, đẹp, hay, ngon",
+          "is_correct": false
+        },
+        {
+          "option_text": "năm",
+          "is_correct": false
+        },
+        {
+          "option_text": "không, chẳng",
+          "is_correct": false
+        }
+      ],
+      "rubric": "一 (yī) nghĩa là một. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "一"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “好” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "tốt, đẹp, hay, ngon",
+          "is_correct": true
+        },
+        {
+          "option_text": "anh, chị, bạn, ông, bà,...",
+          "is_correct": false
+        },
+        {
+          "option_text": "to, lớn",
+          "is_correct": false
+        },
+        {
+          "option_text": "miệng, nhân khẩu",
+          "is_correct": false
+        }
+      ],
+      "rubric": "好 (hǎo) nghĩa là tốt, đẹp, hay, ngon. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “bā” và nghĩa “tám”.",
+      "options": [
+        {
+          "option_text": "八",
+          "is_correct": true
+        },
+        {
+          "option_text": "好",
+          "is_correct": false
+        },
+        {
+          "option_text": "大",
+          "is_correct": false
+        },
+        {
+          "option_text": "口",
+          "is_correct": false
+        }
+      ],
+      "rubric": "八 (bā) nghĩa là tám. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 4).",
+      "options": [
+        {
+          "option_text": "miệng, nhân khẩu",
+          "is_correct": false
+        },
+        {
+          "option_text": "tám",
+          "is_correct": false
+        },
+        {
+          "option_text": "trắng",
+          "is_correct": true
+        },
+        {
+          "option_text": "xin chào",
+          "is_correct": false
+        }
+      ],
+      "rubric": "白 (bái) nghĩa là trắng. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "白"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “我” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "xin chào",
+          "is_correct": false
+        },
+        {
+          "option_text": "miệng, nhân khẩu",
+          "is_correct": false
+        },
+        {
+          "option_text": "ngựa",
+          "is_correct": false
+        },
+        {
+          "option_text": "tôi",
+          "is_correct": true
+        }
+      ],
+      "rubric": "我 (wǒ) nghĩa là tôi. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “dà” và nghĩa “to, lớn”.",
+      "options": [
+        {
+          "option_text": "女",
+          "is_correct": false
+        },
+        {
+          "option_text": "口",
+          "is_correct": false
+        },
+        {
+          "option_text": "不",
+          "is_correct": false
+        },
+        {
+          "option_text": "大",
+          "is_correct": true
+        }
+      ],
+      "rubric": "大 (dà) nghĩa là to, lớn. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 7).",
+      "options": [
+        {
+          "option_text": "tám",
+          "is_correct": false
+        },
+        {
+          "option_text": "không, chẳng",
+          "is_correct": false
+        },
+        {
+          "option_text": "nữ, phụ nữ",
+          "is_correct": false
+        },
+        {
+          "option_text": "năm",
+          "is_correct": true
+        }
+      ],
+      "rubric": "五 (wǔ) nghĩa là năm. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "五"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “你” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "không, chẳng",
+          "is_correct": false
+        },
+        {
+          "option_text": "tám",
+          "is_correct": false
+        },
+        {
+          "option_text": "anh, chị, bạn, ông, bà,...",
+          "is_correct": true
+        },
+        {
+          "option_text": "ngựa",
+          "is_correct": false
+        }
+      ],
+      "rubric": "你 (nǐ) nghĩa là anh, chị, bạn, ông, bà,.... ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “mǎ” và nghĩa “ngựa”.",
+      "options": [
+        {
+          "option_text": "八",
+          "is_correct": false
+        },
+        {
+          "option_text": "马",
+          "is_correct": true
+        },
+        {
+          "option_text": "五",
+          "is_correct": false
+        },
+        {
+          "option_text": "大",
+          "is_correct": false
+        }
+      ],
+      "rubric": "马 (mǎ) nghĩa là ngựa. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "to, lớn",
+          "is_correct": false
+        },
+        {
+          "option_text": "trắng",
+          "is_correct": false
+        },
+        {
+          "option_text": "một",
+          "is_correct": false
+        },
+        {
+          "option_text": "miệng, nhân khẩu",
+          "is_correct": true
+        }
+      ],
+      "rubric": "口 (kǒu) nghĩa là miệng, nhân khẩu. 口 là miệng; trong 几口人, 口 làm lượng từ đếm người trong gia đình, không phải lượng từ chung cho mọi người.",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "口"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “女” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "trắng",
+          "is_correct": false
+        },
+        {
+          "option_text": "anh, chị, bạn, ông, bà,...",
+          "is_correct": false
+        },
+        {
+          "option_text": "nữ, phụ nữ",
+          "is_correct": true
+        },
+        {
+          "option_text": "không, chẳng",
+          "is_correct": false
+        }
+      ],
+      "rubric": "女 (nǚ) nghĩa là nữ, phụ nữ. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “nǐ hǎo” và nghĩa “xin chào”.",
+      "options": [
+        {
+          "option_text": "我",
+          "is_correct": false
+        },
+        {
+          "option_text": "你好",
+          "is_correct": true
+        },
+        {
+          "option_text": "口",
+          "is_correct": false
+        },
+        {
+          "option_text": "八",
+          "is_correct": false
+        }
+      ],
+      "rubric": "你好 (nǐ hǎo) nghĩa là xin chào. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “không, chẳng” (gợi ý pinyin: bù).",
+      "reference_answer": "不",
+      "rubric": "Đáp án: 不 (bù). ",
+      "config": {
+        "accepted_answers": [
+          "不"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “một” (gợi ý pinyin: yī).",
+      "reference_answer": "一",
+      "rubric": "Đáp án: 一 (yī). ",
+      "config": {
+        "accepted_answers": [
+          "一"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “tốt, đẹp, hay, ngon” (gợi ý pinyin: hǎo).",
+      "reference_answer": "好",
+      "rubric": "Đáp án: 好 (hǎo). ",
+      "config": {
+        "accepted_answers": [
+          "好"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “tám” (gợi ý pinyin: bā).",
+      "reference_answer": "八",
+      "rubric": "Đáp án: 八 (bā). ",
+      "config": {
+        "accepted_answers": [
+          "八"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 1).",
+      "rubric": "你: anh, chị, bạn, ông, bà,...; 马: ngựa; 不: không, chẳng; 五: năm",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "你"
+          },
+          {
+            "id": "l1",
+            "text": "马"
+          },
+          {
+            "id": "l2",
+            "text": "不"
+          },
+          {
+            "id": "l3",
+            "text": "五"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r1",
+            "text": "ngựa"
+          },
+          {
+            "id": "r0",
+            "text": "anh, chị, bạn, ông, bà,..."
+          },
+          {
+            "id": "r3",
+            "text": "năm"
+          },
+          {
+            "id": "r2",
+            "text": "không, chẳng"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 1
+        },
+        {
+          "hsk": 1,
+          "lesson": 1
+        },
+        {
+          "hsk": 1,
+          "lesson": 1
+        },
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 2).",
+      "rubric": "八: tám; 我: tôi; 不: không, chẳng; 马: ngựa",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "八"
+          },
+          {
+            "id": "l1",
+            "text": "我"
+          },
+          {
+            "id": "l2",
+            "text": "不"
+          },
+          {
+            "id": "l3",
+            "text": "马"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r1",
+            "text": "tôi"
+          },
+          {
+            "id": "r3",
+            "text": "ngựa"
+          },
+          {
+            "id": "r0",
+            "text": "tám"
+          },
+          {
+            "id": "r2",
+            "text": "không, chẳng"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 1
+        },
+        {
+          "hsk": 1,
+          "lesson": 1
+        },
+        {
+          "hsk": 1,
+          "lesson": 1
+        },
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn pinyin đúng của “一” (mục 1).",
+      "options": [
+        {
+          "option_text": "hǎo",
+          "is_correct": false
+        },
+        {
+          "option_text": "yī",
+          "is_correct": true
+        },
+        {
+          "option_text": "wǒ",
+          "is_correct": false
+        },
+        {
+          "option_text": "nǐ",
+          "is_correct": false
+        }
+      ],
+      "rubric": "一 đọc là yī.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn pinyin đúng của “好” (mục 2).",
+      "options": [
+        {
+          "option_text": "nǐ hǎo",
+          "is_correct": false
+        },
+        {
+          "option_text": "wǒ",
+          "is_correct": false
+        },
+        {
+          "option_text": "hǎo",
+          "is_correct": true
+        },
+        {
+          "option_text": "nǐ",
+          "is_correct": false
+        }
+      ],
+      "rubric": "好 đọc là hǎo.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn pinyin đúng của “八” (mục 3).",
+      "options": [
+        {
+          "option_text": "nǐ",
+          "is_correct": false
+        },
+        {
+          "option_text": "wǒ",
+          "is_correct": false
+        },
+        {
+          "option_text": "bā",
+          "is_correct": true
+        },
+        {
+          "option_text": "hǎo",
+          "is_correct": false
+        }
+      ],
+      "rubric": "八 đọc là bā.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn pinyin đúng của “白” (mục 4).",
+      "options": [
+        {
+          "option_text": "hǎo",
+          "is_correct": false
+        },
+        {
+          "option_text": "bái",
+          "is_correct": true
+        },
+        {
+          "option_text": "wǒ",
+          "is_correct": false
+        },
+        {
+          "option_text": "nǐ",
+          "is_correct": false
+        }
+      ],
+      "rubric": "白 đọc là bái.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn pinyin đúng của “我” (mục 5).",
+      "options": [
+        {
+          "option_text": "nǐ",
+          "is_correct": false
+        },
+        {
+          "option_text": "nǐ hǎo",
+          "is_correct": false
+        },
+        {
+          "option_text": "hǎo",
+          "is_correct": false
+        },
+        {
+          "option_text": "wǒ",
+          "is_correct": true
+        }
+      ],
+      "rubric": "我 đọc là wǒ.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn pinyin đúng của “大” (mục 6).",
+      "options": [
+        {
+          "option_text": "nǐ",
+          "is_correct": false
+        },
+        {
+          "option_text": "dà",
+          "is_correct": true
+        },
+        {
+          "option_text": "hǎo",
+          "is_correct": false
+        },
+        {
+          "option_text": "wǒ",
+          "is_correct": false
+        }
+      ],
+      "rubric": "大 đọc là dà.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 1).",
+      "reference_answer": "你好!",
+      "rubric": "Câu đúng: 你好! Giữ đúng thứ tự từ trong câu chào hoặc câu miêu tả đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "w0",
+            "text": "你好"
+          },
+          {
+            "id": "w1",
+            "text": "!"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 2).",
+      "reference_answer": "白马。",
+      "rubric": "Câu đúng: 白马。 Giữ đúng thứ tự từ trong câu chào hoặc câu miêu tả đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "w1",
+            "text": "马"
+          },
+          {
+            "id": "w2",
+            "text": "。"
+          },
+          {
+            "id": "w0",
+            "text": "白"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 3).",
+      "reference_answer": "我不好。",
+      "rubric": "Câu đúng: 我不好。 Giữ đúng thứ tự từ trong câu chào hoặc câu miêu tả đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "w2",
+            "text": "好"
+          },
+          {
+            "id": "w1",
+            "text": "不"
+          },
+          {
+            "id": "w3",
+            "text": "。"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 4).",
+      "reference_answer": "你好!",
+      "rubric": "Câu đúng: 你好! Giữ đúng thứ tự từ trong câu chào hoặc câu miêu tả đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "w1",
+            "text": "!"
+          },
+          {
+            "id": "w0",
+            "text": "你好"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 5).",
+      "reference_answer": "白马。",
+      "rubric": "Câu đúng: 白马。 Giữ đúng thứ tự từ trong câu chào hoặc câu miêu tả đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "w0",
+            "text": "白"
+          },
+          {
+            "id": "w2",
+            "text": "。"
+          },
+          {
+            "id": "w1",
+            "text": "马"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 6).",
+      "reference_answer": "我不好。",
+      "rubric": "Câu đúng: 我不好。 Giữ đúng thứ tự từ trong câu chào hoặc câu miêu tả đã học.",
+      "config": {
+        "items": [
+          {
+            "id": "w3",
+            "text": "。"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w2",
+            "text": "好"
+          },
+          {
+            "id": "w1",
+            "text": "不"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ],
+  "source_documents": {
+    "vocabulary": "DOCX",
+    "theory": "HSK1 PDF"
+  }
+}

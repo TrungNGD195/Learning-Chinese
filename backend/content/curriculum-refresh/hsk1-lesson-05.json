@@ -1,0 +1,1730 @@
+{
+  "key": "hsk1-lesson-05-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 1,
+    "lesson_number": 5,
+    "title": "今天几月几号？ · Hôm nay ngày tháng mấy?",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "天",
+      "pinyin": "tiān",
+      "vietnamese_meaning": "ngày; trời (tùy ngữ cảnh)",
+      "part_of_speech": "danh từ",
+      "example": "今天是星期一。\njīn tiān shì xīng qī yī 。\nHôm nay là thứ hai.",
+      "order_index": 1,
+      "note": null,
+      "source_key": "1:5:天"
+    },
+    {
+      "hanzi": "今天",
+      "pinyin": "jīntiān",
+      "vietnamese_meaning": "hôm nay",
+      "part_of_speech": "danh từ",
+      "example": "今天是星期一。\njīn tiān shì xīng qī yī 。\nHôm nay là thứ hai.",
+      "order_index": 2,
+      "note": null,
+      "source_key": "1:5:今天"
+    },
+    {
+      "hanzi": "昨天",
+      "pinyin": "zuótiān",
+      "vietnamese_meaning": "hôm qua",
+      "part_of_speech": "danh từ",
+      "example": "昨天是星期三。\nzuó tiān shì xīng qī sān 。\nHôm qua là thứ Tư.",
+      "order_index": 3,
+      "note": null,
+      "source_key": "1:5:昨天"
+    },
+    {
+      "hanzi": "明天",
+      "pinyin": "míngtiān",
+      "vietnamese_meaning": "ngày mai",
+      "part_of_speech": "danh từ",
+      "example": "明天我休息。\nmíng tiān wǒ xiū xī 。\nNgày mai tôi nghỉ.",
+      "order_index": 4,
+      "note": null,
+      "source_key": "1:5:明天"
+    },
+    {
+      "hanzi": "星期",
+      "pinyin": "xīngqī",
+      "vietnamese_meaning": "tuần, thứ",
+      "part_of_speech": "danh từ",
+      "example": "今天是星期一。\njīn tiān shì xīng qī yī 。\nHôm nay là thứ hai.",
+      "order_index": 5,
+      "note": null,
+      "source_key": "1:5:星期"
+    },
+    {
+      "hanzi": "周",
+      "pinyin": "zhōu",
+      "vietnamese_meaning": "tuần",
+      "part_of_speech": "danh từ",
+      "example": "我每周都学习汉语。\nwǒ měi zhōu dōu xué xí hàn yǔ 。\nMỗi tuần tôi đều học tiếng Trung.",
+      "order_index": 6,
+      "note": null,
+      "source_key": "1:5:周"
+    },
+    {
+      "hanzi": "星期几",
+      "pinyin": "xīng qī jǐ",
+      "vietnamese_meaning": "thứ mấy",
+      "part_of_speech": "cụm nghi vấn",
+      "example": "今天星期几？\njīn tiān xīng qī jǐ ？\nHôm nay là thứ mấy?",
+      "order_index": 7,
+      "note": null,
+      "source_key": "1:5:星期几"
+    },
+    {
+      "hanzi": "周几",
+      "pinyin": "zhōu jǐ",
+      "vietnamese_meaning": "thứ mấy",
+      "part_of_speech": "cụm nghi vấn",
+      "example": "今天周几？\njīn tiān zhōu jǐ ？\nHôm nay là thứ mấy?",
+      "order_index": 8,
+      "note": null,
+      "source_key": "1:5:周几"
+    },
+    {
+      "hanzi": "周末",
+      "pinyin": "zhōumò",
+      "vietnamese_meaning": "cuối tuần",
+      "part_of_speech": "danh từ chỉ thời gian",
+      "example": "周末我们休息。\nzhōu mò wǒ men xiū xī 。\nCuối tuần chúng tôi nghỉ.",
+      "order_index": 9,
+      "note": null,
+      "source_key": "1:5:周末"
+    },
+    {
+      "hanzi": "月",
+      "pinyin": "yuè",
+      "vietnamese_meaning": "tháng",
+      "part_of_speech": "danh từ",
+      "example": "今天是八月十号。\njīn tiān shì bā yuè shí hào 。\nHôm nay là ngày 10 tháng 8.",
+      "order_index": 10,
+      "note": null,
+      "source_key": "1:5:月"
+    },
+    {
+      "hanzi": "日",
+      "pinyin": "rì",
+      "vietnamese_meaning": "ngày (cách ghi trang trọng)",
+      "part_of_speech": "danh từ chỉ ngày",
+      "example": "今天是五月五日。\njīn tiān shì wǔ yuè wǔ rì 。\nHôm nay là ngày 5 tháng 5.",
+      "order_index": 11,
+      "note": null,
+      "source_key": "1:5:日"
+    },
+    {
+      "hanzi": "号",
+      "pinyin": "hào",
+      "vietnamese_meaning": "ngày",
+      "part_of_speech": "lượng từ",
+      "example": "今天十一月二十一号。\njīn tiān shí yī yuè èr shí yī hào 。\nHôm nay là ngày 21 tháng 11.",
+      "order_index": 12,
+      "note": "号 chỉ ngày trong ngày tháng; khi đọc số điện thoại hay mã số, 号 là số/số hiệu. 日 trang trọng hơn khi ghi ngày.",
+      "source_key": "1:5:号"
+    },
+    {
+      "hanzi": "休息",
+      "pinyin": "xiūxi",
+      "vietnamese_meaning": "nghỉ ngơi",
+      "part_of_speech": "động từ",
+      "example": "我们一起休息吧。\nwǒ men yì qǐ xiū xī ba 。\nChúng ta cùng nghỉ ngơi nhé.",
+      "order_index": 13,
+      "note": null,
+      "source_key": "1:5:休息"
+    },
+    {
+      "hanzi": "吃",
+      "pinyin": "chī",
+      "vietnamese_meaning": "ăn",
+      "part_of_speech": "động từ",
+      "example": "我喜欢吃饺子。\nwǒ xǐ huān chī jiǎo zi 。\nTôi thích ăn sủi cảo.",
+      "order_index": 14,
+      "note": null,
+      "source_key": "1:5:吃"
+    },
+    {
+      "hanzi": "饭",
+      "pinyin": "fàn",
+      "vietnamese_meaning": "cơm",
+      "part_of_speech": "danh từ",
+      "example": "我会做饭。\nwǒ huì zuò fàn 。\nTôi biết nấu ăn.",
+      "order_index": 15,
+      "note": null,
+      "source_key": "1:5:饭"
+    },
+    {
+      "hanzi": "米饭",
+      "pinyin": "mǐfàn",
+      "vietnamese_meaning": "cơm",
+      "part_of_speech": "danh từ",
+      "example": "我喜欢吃米饭。\nwǒ xǐ huān chī mǐ fàn 。\nTôi thích ăn cơm.",
+      "order_index": 16,
+      "note": null,
+      "source_key": "1:5:米饭"
+    },
+    {
+      "hanzi": "面条儿",
+      "pinyin": "miàntiáor",
+      "vietnamese_meaning": "mì sợi",
+      "part_of_speech": "danh từ",
+      "example": "我喜欢吃面条儿。\nwǒ xǐ huān chī miàn tiáo ér 。\nTôi thích ăn mì sợi.",
+      "order_index": 17,
+      "note": null,
+      "source_key": "1:5:面条儿"
+    },
+    {
+      "hanzi": "饺子",
+      "pinyin": "jiǎozi",
+      "vietnamese_meaning": "sủi cảo",
+      "part_of_speech": "danh từ",
+      "example": "我喜欢吃饺子。\nwǒ xǐ huān chī jiǎo zi 。\nTôi thích ăn sủi cảo.",
+      "order_index": 18,
+      "note": null,
+      "source_key": "1:5:饺子"
+    },
+    {
+      "hanzi": "馒头",
+      "pinyin": "mántou",
+      "vietnamese_meaning": "màn thầu; bánh bao không nhân",
+      "part_of_speech": "danh từ",
+      "example": "我喜欢吃馒头。\nwǒ xǐ huān chī mán tou 。\nTôi thích ăn màn thầu.",
+      "order_index": 19,
+      "note": null,
+      "source_key": "1:5:馒头"
+    },
+    {
+      "hanzi": "包子",
+      "pinyin": "bāozi",
+      "vietnamese_meaning": "bánh bao có nhân",
+      "part_of_speech": "danh từ",
+      "example": "我喜欢吃包子。\nwǒ xǐ huān chī bāo zi 。\nTôi thích ăn bánh bao có nhân.",
+      "order_index": 20,
+      "note": null,
+      "source_key": "1:5:包子"
+    },
+    {
+      "hanzi": "鸡蛋",
+      "pinyin": "jīdàn",
+      "vietnamese_meaning": "trứng gà",
+      "part_of_speech": "danh từ",
+      "example": "我喜欢吃鸡蛋。\nwǒ xǐ huān chī jī dàn 。\nTôi thích ăn trứng gà.",
+      "order_index": 21,
+      "note": null,
+      "source_key": "1:5:鸡蛋"
+    },
+    {
+      "hanzi": "菜",
+      "pinyin": "cài",
+      "vietnamese_meaning": "món ăn; thức ăn; rau",
+      "part_of_speech": "danh từ",
+      "example": "我喜欢吃菜。\nwǒ xǐ huān chī cài 。\nTôi thích ăn món ăn.",
+      "order_index": 22,
+      "note": null,
+      "source_key": "1:5:菜"
+    },
+    {
+      "hanzi": "喝",
+      "pinyin": "hē",
+      "vietnamese_meaning": "uống",
+      "part_of_speech": "động từ",
+      "example": "我想喝茶。\nwǒ xiǎng hē chá 。\nTôi muốn uống trà.",
+      "order_index": 23,
+      "note": null,
+      "source_key": "1:5:喝"
+    },
+    {
+      "hanzi": "茶",
+      "pinyin": "chá",
+      "vietnamese_meaning": "trà",
+      "part_of_speech": "danh từ",
+      "example": "我喜欢喝茶。\nwǒ xǐ huān hē chá 。\nTôi thích uống trà.",
+      "order_index": 24,
+      "note": null,
+      "source_key": "1:5:茶"
+    },
+    {
+      "hanzi": "奶茶",
+      "pinyin": "nǎi chá",
+      "vietnamese_meaning": "trà sữa",
+      "part_of_speech": "danh từ",
+      "example": "我喜欢喝奶茶。\nwǒ xǐ huān hē nǎi chá 。\nTôi thích uống trà sữa.",
+      "order_index": 25,
+      "note": null,
+      "source_key": "1:5:奶茶"
+    },
+    {
+      "hanzi": "咖啡",
+      "pinyin": "kāfēi",
+      "vietnamese_meaning": "cà phê",
+      "part_of_speech": "danh từ",
+      "example": "我喜欢喝咖啡。\nwǒ xǐ huān hē kā fēi 。\nTôi thích uống cà phê.",
+      "order_index": 26,
+      "note": null,
+      "source_key": "1:5:咖啡"
+    },
+    {
+      "hanzi": "可乐",
+      "pinyin": "kělè",
+      "vietnamese_meaning": "nước cola",
+      "part_of_speech": "danh từ",
+      "example": "我喜欢喝可乐。\nwǒ xǐ huān hē kě lè 。\nTôi thích uống nước cola.",
+      "order_index": 27,
+      "note": null,
+      "source_key": "1:5:可乐"
+    },
+    {
+      "hanzi": "水",
+      "pinyin": "shuǐ",
+      "vietnamese_meaning": "nước",
+      "part_of_speech": "danh từ",
+      "example": "我喜欢喝水。\nwǒ xǐ huān hē shuǐ 。\nTôi thích uống nước.",
+      "order_index": 28,
+      "note": null,
+      "source_key": "1:5:水"
+    },
+    {
+      "hanzi": "酒",
+      "pinyin": "jiǔ",
+      "vietnamese_meaning": "rượu; đồ uống có cồn",
+      "part_of_speech": "danh từ",
+      "example": "我喜欢喝酒。\nwǒ xǐ huān hē jiǔ 。\nTôi thích uống rượu.",
+      "order_index": 29,
+      "note": null,
+      "source_key": "1:5:酒"
+    },
+    {
+      "hanzi": "啤酒",
+      "pinyin": "píjiǔ",
+      "vietnamese_meaning": "bia",
+      "part_of_speech": "danh từ",
+      "example": "我喜欢喝啤酒。\nwǒ xǐ huān hē pí jiǔ 。\nTôi thích uống bia.",
+      "order_index": 30,
+      "note": null,
+      "source_key": "1:5:啤酒"
+    },
+    {
+      "hanzi": "喜欢",
+      "pinyin": "xǐhuan",
+      "vietnamese_meaning": "thích",
+      "part_of_speech": "động từ",
+      "example": "我很喜欢它。\nwǒ hěn xǐ huān tā 。\nTôi rất thích nó.",
+      "order_index": 31,
+      "note": null,
+      "source_key": "1:5:喜欢"
+    },
+    {
+      "hanzi": "做",
+      "pinyin": "zuò",
+      "vietnamese_meaning": "làm",
+      "part_of_speech": "động từ",
+      "example": "我会做饭。\nwǒ huì zuò fàn 。\nTôi biết nấu ăn.",
+      "order_index": 32,
+      "note": null,
+      "source_key": "1:5:做"
+    },
+    {
+      "hanzi": "会",
+      "pinyin": "huì",
+      "vietnamese_meaning": "biết; có thể (biểu thị biết làm gì)",
+      "part_of_speech": "động từ năng nguyện",
+      "example": "我参加了学校的运动会。\nwǒ cān jiā le xué xiào de yùn dòng huì 。\nTôi đã tham gia hội thao của trường.",
+      "order_index": 33,
+      "note": null,
+      "source_key": "1:5:会"
+    }
+  ],
+  "grammar": [
+    {
+      "name": "Ngày, tháng và thứ",
+      "structure": "Hôm nay + tháng + 月 + ngày + 号/日",
+      "explanation": "Tháng đứng trước ngày; 星期 + số cho biết thứ trong tuần.",
+      "usage": "号 thường dùng trong lời nói; 日 trang trọng hơn. 星期日 và 星期天 đều chỉ chủ nhật.",
+      "example": "今天十一月二十一号。\njīn tiān shí yī yuè èr shí yī hào 。\nHôm nay là ngày 21 tháng 11.",
+      "note": "号 thường dùng trong lời nói; 日 trang trọng hơn. 星期日 và 星期天 đều chỉ chủ nhật.",
+      "order_index": 1
+    },
+    {
+      "name": "Biết làm với 会",
+      "structure": "Chủ ngữ + 会/不会 + động từ",
+      "explanation": "会 diễn đạt kỹ năng học được.",
+      "usage": "Khác với 是 là là; phủ định kỹ năng là 不会.",
+      "example": "我会做饭。\nwǒ huì zuò fàn 。\nTôi biết nấu ăn.",
+      "note": "Khác với 是 là là; phủ định kỹ năng là 不会.",
+      "order_index": 2
+    },
+    {
+      "name": "Thích với 喜欢",
+      "structure": "Chủ ngữ + 喜欢 + danh từ/cụm động từ",
+      "explanation": "Nói sở thích đối với đồ vật hoặc hoạt động.",
+      "usage": "喜欢 + động từ không cần thêm 去 nếu không nói việc đi đến đâu.",
+      "example": "我喜欢喝茶。\nwǒ xǐ huān hē chá 。\nTôi thích uống trà.",
+      "note": "喜欢 + động từ không cần thêm 去 nếu không nói việc đi đến đâu.",
+      "order_index": 3
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Hỏi ngày tháng và thứ",
+      "content": "小丽:请问,今天几月几号?\n小刚:今天11月21号(日)。\n小丽:明天星期几?\n小刚:星期日。明天我休息。",
+      "pinyin": "xiǎo lì : qǐng wèn , jīn tiān jǐ yuè jǐ hào ?\nxiǎo gāng : jīn tiān 1 1 yuè 2 1 hào ( rì ) 。\nxiǎo lì : míng tiān xīng qī jǐ ?\nxiǎo gāng : xīng qī rì 。 míng tiān wǒ xiū xī 。",
+      "vietnamese_translation": "Tiểu Lệ:Xin hỏi, hôm nay là ngày mấy tháng mấy?\nTiểu Cương:Hôm nay là ngày 21 tháng 11.\nTiểu Lệ:Ngày mai là thứ mấy?\nTiểu Cương :Chủ nhật. Ngày mai tôi nghỉ.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 5, PDF 42."
+    },
+    {
+      "order_index": 2,
+      "title": "Bạn biết nấu món gì?",
+      "content": "小丽:你会做饭吗?\n小刚:我会做。\n小丽:你会做什么?\n小刚:我会做面条儿、饺子,也会做一些菜,星期天我也做饭。",
+      "pinyin": "xiǎo lì : nǐ huì zuò fàn ma ?\nxiǎo gāng : wǒ huì zuò 。\nxiǎo lì : nǐ huì zuò shén me ?\nxiǎo gāng : wǒ huì zuò miàn tiáo ér 、 jiǎo zi , yě huì zuò yī xiē cài , xīng qī tiān wǒ yě zuò fàn 。",
+      "vietnamese_translation": "Tiểu Lệ: Bạn biết nấu ăn không?\nTiểu Cương: Tôi có biết.\nTiểu Lệ: Bạn biết nấu món gì?\nTiểu Cương: Tôi biết làm mì, sủi\ncảo, cũng biết nấu một vài món ăn,\nchủ nhật tôi cũng nấu cơm.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 5, PDF 44, 45."
+    },
+    {
+      "order_index": 3,
+      "title": "Chiếc máy tính mới",
+      "content": "小丽:小刚,下班吗?\n小刚:下班。\n小丽:这是你的新电脑吗?\n小刚:是的,是我的新电脑。\n小丽:真好看!\n小刚:我也很喜欢它。",
+      "pinyin": "xiǎo lì : xiǎo gāng , xià bān ma ?\nxiǎo gāng : xià bān 。\nxiǎo lì : zhè shì nǐ de xīn diàn nǎo ma ?\nxiǎo gāng : shì de , shì wǒ de xīn diàn nǎo 。\nxiǎo lì : zhēn hǎo kàn !\nxiǎo gāng : wǒ yě hěn xǐ huān tā 。",
+      "vietnamese_translation": "Tiểu Lệ: Tiểu Cương, bạn tan làm chưa?\nTiểu Cương: Tan làm rồi.\nTiểu Lệ: Đây là máy tính mới của bạn à?\nTiểu Cương: Đúng vậy, là máy tính mới của tôi.\nTiểu Lệ: Đẹp thật đấy!\nTiểu Cương: Tôi cũng rất thích nó.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 5, PDF 47, 48."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 1 · Bài 5 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp; dùng kiến thức của bài này và các bài trước, không dùng bài sau. Đạt từ 80%; được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "review_status": "DRAFT_REQUIRES_EDITOR_REVIEW",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 1).",
+      "options": [
+        {
+          "option_text": "kết hôn",
+          "is_correct": false
+        },
+        {
+          "option_text": "làm",
+          "is_correct": true
+        },
+        {
+          "option_text": "trà",
+          "is_correct": false
+        },
+        {
+          "option_text": "ngày; trời (tùy ngữ cảnh)",
+          "is_correct": false
+        }
+      ],
+      "rubric": "做 (zuò) nghĩa là làm. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "做"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “喜欢” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "thích",
+          "is_correct": true
+        },
+        {
+          "option_text": "còn, vẫn",
+          "is_correct": false
+        },
+        {
+          "option_text": "cảm ơn",
+          "is_correct": false
+        },
+        {
+          "option_text": "bao nhiêu tuổi; lớn cỡ nào",
+          "is_correct": false
+        }
+      ],
+      "rubric": "喜欢 (xǐhuan) nghĩa là thích. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “zuótiān” và nghĩa “hôm qua”.",
+      "options": [
+        {
+          "option_text": "昨天",
+          "is_correct": true
+        },
+        {
+          "option_text": "谢谢",
+          "is_correct": false
+        },
+        {
+          "option_text": "有",
+          "is_correct": false
+        },
+        {
+          "option_text": "多",
+          "is_correct": false
+        }
+      ],
+      "rubric": "昨天 (zuótiān) nghĩa là hôm qua. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 4).",
+      "options": [
+        {
+          "option_text": "cà phê",
+          "is_correct": false
+        },
+        {
+          "option_text": "nước",
+          "is_correct": true
+        },
+        {
+          "option_text": "không, à",
+          "is_correct": false
+        },
+        {
+          "option_text": "xin chào",
+          "is_correct": false
+        }
+      ],
+      "rubric": "水 (shuǐ) nghĩa là nước. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "水"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “鸡蛋” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "vui; vui vẻ",
+          "is_correct": false
+        },
+        {
+          "option_text": "trứng gà",
+          "is_correct": true
+        },
+        {
+          "option_text": "cái, chiếc",
+          "is_correct": false
+        },
+        {
+          "option_text": "là",
+          "is_correct": false
+        }
+      ],
+      "rubric": "鸡蛋 (jīdàn) nghĩa là trứng gà. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “jiǎozi” và nghĩa “sủi cảo”.",
+      "options": [
+        {
+          "option_text": "岁",
+          "is_correct": false
+        },
+        {
+          "option_text": "饺子",
+          "is_correct": true
+        },
+        {
+          "option_text": "太",
+          "is_correct": false
+        },
+        {
+          "option_text": "家",
+          "is_correct": false
+        }
+      ],
+      "rubric": "饺子 (jiǎozi) nghĩa là sủi cảo. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 7).",
+      "options": [
+        {
+          "option_text": "Vương Nhất Tuyết (tên người)",
+          "is_correct": false
+        },
+        {
+          "option_text": "bạn gái",
+          "is_correct": false
+        },
+        {
+          "option_text": "thứ mấy",
+          "is_correct": true
+        },
+        {
+          "option_text": "bạn",
+          "is_correct": false
+        }
+      ],
+      "rubric": "星期几 (xīng qī jǐ) nghĩa là thứ mấy. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "星期几"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “没有” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "học sinh nam; nam sinh",
+          "is_correct": false
+        },
+        {
+          "option_text": "alo, này",
+          "is_correct": false
+        },
+        {
+          "option_text": "không có",
+          "is_correct": true
+        },
+        {
+          "option_text": "hậu tố chỉ số nhiều cho người",
+          "is_correct": false
+        }
+      ],
+      "rubric": "没有 (méiyǒu) nghĩa là không có. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “jīntiān” và nghĩa “hôm nay”.",
+      "options": [
+        {
+          "option_text": "今天",
+          "is_correct": true
+        },
+        {
+          "option_text": "谁",
+          "is_correct": false
+        },
+        {
+          "option_text": "咖啡",
+          "is_correct": false
+        },
+        {
+          "option_text": "没关系",
+          "is_correct": false
+        }
+      ],
+      "rubric": "今天 (jīntiān) nghĩa là hôm nay. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "thứ mấy",
+          "is_correct": false
+        },
+        {
+          "option_text": "mì sợi",
+          "is_correct": true
+        },
+        {
+          "option_text": "hôm nay",
+          "is_correct": false
+        },
+        {
+          "option_text": "bốn (số 4)",
+          "is_correct": false
+        }
+      ],
+      "rubric": "面条儿 (miàntiáor) nghĩa là mì sợi. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "面条儿"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “大家” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "tám",
+          "is_correct": false
+        },
+        {
+          "option_text": "nước",
+          "is_correct": false
+        },
+        {
+          "option_text": "mọi người",
+          "is_correct": true
+        },
+        {
+          "option_text": "miệng, nhân khẩu",
+          "is_correct": false
+        }
+      ],
+      "rubric": "大家 (dàjiā) nghĩa là mọi người. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 2
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “píjiǔ” và nghĩa “bia”.",
+      "options": [
+        {
+          "option_text": "今天",
+          "is_correct": false
+        },
+        {
+          "option_text": "啤酒",
+          "is_correct": true
+        },
+        {
+          "option_text": "包子",
+          "is_correct": false
+        },
+        {
+          "option_text": "好",
+          "is_correct": false
+        }
+      ],
+      "rubric": "啤酒 (píjiǔ) nghĩa là bia. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “cuối tuần” (gợi ý pinyin: zhōumò).",
+      "reference_answer": "周末",
+      "rubric": "Đáp án: 周末 (zhōumò). ",
+      "config": {
+        "accepted_answers": [
+          "周末"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “biết; có thể (biểu thị biết làm gì)” (gợi ý pinyin: huì).",
+      "reference_answer": "会",
+      "rubric": "Đáp án: 会 (huì). ",
+      "config": {
+        "accepted_answers": [
+          "会"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “nước cola” (gợi ý pinyin: kělè).",
+      "reference_answer": "可乐",
+      "rubric": "Đáp án: 可乐 (kělè). ",
+      "config": {
+        "accepted_answers": [
+          "可乐"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “tháng” (gợi ý pinyin: yuè).",
+      "reference_answer": "月",
+      "rubric": "Đáp án: 月 (yuè). ",
+      "config": {
+        "accepted_answers": [
+          "月"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 1).",
+      "rubric": "弟弟: em trai; 饺子: sủi cảo; 星期: tuần, thứ; 马: ngựa",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "弟弟"
+          },
+          {
+            "id": "l1",
+            "text": "饺子"
+          },
+          {
+            "id": "l2",
+            "text": "星期"
+          },
+          {
+            "id": "l3",
+            "text": "马"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r1",
+            "text": "sủi cảo"
+          },
+          {
+            "id": "r3",
+            "text": "ngựa"
+          },
+          {
+            "id": "r0",
+            "text": "em trai"
+          },
+          {
+            "id": "r2",
+            "text": "tuần, thứ"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        },
+        {
+          "hsk": 1,
+          "lesson": 5
+        },
+        {
+          "hsk": 1,
+          "lesson": 5
+        },
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 2).",
+      "rubric": "哥哥: anh trai; 吃: ăn; 外公: ông ngoại; 姐姐: chị gái",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "哥哥"
+          },
+          {
+            "id": "l1",
+            "text": "吃"
+          },
+          {
+            "id": "l2",
+            "text": "外公"
+          },
+          {
+            "id": "l3",
+            "text": "姐姐"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r3",
+            "text": "chị gái"
+          },
+          {
+            "id": "r2",
+            "text": "ông ngoại"
+          },
+          {
+            "id": "r0",
+            "text": "anh trai"
+          },
+          {
+            "id": "r1",
+            "text": "ăn"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        },
+        {
+          "hsk": 1,
+          "lesson": 5
+        },
+        {
+          "hsk": 1,
+          "lesson": 4
+        },
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Ngày, tháng và thứ”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Tháng đứng trước ngày; 星期 + số cho biết thứ trong tuần.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Hôm nay + tháng + 月 + ngày + 号/日. Tháng đứng trước ngày; 星期 + số cho biết thứ trong tuần. 号 thường dùng trong lời nói; 日 trang trọng hơn. 星期日 và 星期天 đều chỉ chủ nhật.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Biết làm với 会”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "会 diễn đạt kỹ năng học được.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ ngữ + 会/不会 + động từ. 会 diễn đạt kỹ năng học được. Khác với 是 là là; phủ định kỹ năng là 不会.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Thích với 喜欢”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nói sở thích đối với đồ vật hoặc hoạt động.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Chủ ngữ + 喜欢 + danh từ/cụm động từ. Nói sở thích đối với đồ vật hoặc hoạt động. 喜欢 + động từ không cần thêm 去 nếu không nói việc đi đến đâu.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Ngày, tháng và thứ” (mục 4): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "号 thường dùng trong lời nói; 日 trang trọng hơn. 星期日 và 星期天 đều chỉ chủ nhật.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Hôm nay + tháng + 月 + ngày + 号/日. Tháng đứng trước ngày; 星期 + số cho biết thứ trong tuần. 号 thường dùng trong lời nói; 日 trang trọng hơn. 星期日 và 星期天 đều chỉ chủ nhật.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Biết làm với 会” (mục 5): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Khác với 是 là là; phủ định kỹ năng là 不会.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ ngữ + 会/不会 + động từ. 会 diễn đạt kỹ năng học được. Khác với 是 là là; phủ định kỹ năng là 不会.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Thích với 喜欢” (mục 6): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "喜欢 + động từ không cần thêm 去 nếu không nói việc đi đến đâu.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ ngữ + 喜欢 + danh từ/cụm động từ. Nói sở thích đối với đồ vật hoặc hoạt động. 喜欢 + động từ không cần thêm 去 nếu không nói việc đi đến đâu.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 1).",
+      "reference_answer": "今天十一月二十一号。",
+      "rubric": "Câu đúng: 今天十一月二十一号。 号 thường dùng trong lời nói; 日 trang trọng hơn. 星期日 và 星期天 đều chỉ chủ nhật.",
+      "config": {
+        "items": [
+          {
+            "id": "w8",
+            "text": "。"
+          },
+          {
+            "id": "w3",
+            "text": "月"
+          },
+          {
+            "id": "w5",
+            "text": "十"
+          },
+          {
+            "id": "w1",
+            "text": "十"
+          },
+          {
+            "id": "w2",
+            "text": "一"
+          },
+          {
+            "id": "w7",
+            "text": "号"
+          },
+          {
+            "id": "w6",
+            "text": "一"
+          },
+          {
+            "id": "w0",
+            "text": "今天"
+          },
+          {
+            "id": "w4",
+            "text": "二"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 2).",
+      "reference_answer": "我会做饭。",
+      "rubric": "Câu đúng: 我会做饭。 Khác với 是 là là; phủ định kỹ năng là 不会.",
+      "config": {
+        "items": [
+          {
+            "id": "w3",
+            "text": "饭"
+          },
+          {
+            "id": "w1",
+            "text": "会"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w2",
+            "text": "做"
+          },
+          {
+            "id": "w4",
+            "text": "。"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 3).",
+      "reference_answer": "我喜欢喝茶。",
+      "rubric": "Câu đúng: 我喜欢喝茶。 喜欢 + động từ không cần thêm 去 nếu không nói việc đi đến đâu.",
+      "config": {
+        "items": [
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w4",
+            "text": "。"
+          },
+          {
+            "id": "w1",
+            "text": "喜欢"
+          },
+          {
+            "id": "w3",
+            "text": "茶"
+          },
+          {
+            "id": "w2",
+            "text": "喝"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 4).",
+      "reference_answer": "请问,今天几月几号?",
+      "rubric": "Câu đúng: 请问,今天几月几号? 号 thường dùng trong lời nói; 日 trang trọng hơn. 星期日 và 星期天 đều chỉ chủ nhật.",
+      "config": {
+        "items": [
+          {
+            "id": "w7",
+            "text": "?"
+          },
+          {
+            "id": "w4",
+            "text": "月"
+          },
+          {
+            "id": "w6",
+            "text": "号"
+          },
+          {
+            "id": "w2",
+            "text": "今天"
+          },
+          {
+            "id": "w3",
+            "text": "几"
+          },
+          {
+            "id": "w0",
+            "text": "请问"
+          },
+          {
+            "id": "w1",
+            "text": ","
+          },
+          {
+            "id": "w5",
+            "text": "几"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 5).",
+      "reference_answer": "今天11月21号(日)。",
+      "rubric": "Câu đúng: 今天11月21号(日)。 Khác với 是 là là; phủ định kỹ năng là 不会.",
+      "config": {
+        "items": [
+          {
+            "id": "w3",
+            "text": "21"
+          },
+          {
+            "id": "w5",
+            "text": "日"
+          },
+          {
+            "id": "w6",
+            "text": "。"
+          },
+          {
+            "id": "w2",
+            "text": "月"
+          },
+          {
+            "id": "w4",
+            "text": "号"
+          },
+          {
+            "id": "w0",
+            "text": "今天"
+          },
+          {
+            "id": "w1",
+            "text": "11"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 6).",
+      "reference_answer": "明天星期几?",
+      "rubric": "Câu đúng: 明天星期几? 喜欢 + động từ không cần thêm 去 nếu không nói việc đi đến đâu.",
+      "config": {
+        "items": [
+          {
+            "id": "w0",
+            "text": "明天"
+          },
+          {
+            "id": "w2",
+            "text": "?"
+          },
+          {
+            "id": "w1",
+            "text": "星期几"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ],
+  "source_documents": {
+    "vocabulary": "DOCX",
+    "theory": "HSK1 PDF"
+  }
+}

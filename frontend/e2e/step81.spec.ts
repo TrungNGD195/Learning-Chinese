@@ -100,9 +100,9 @@ test('B1 every pronunciation step and explicit finish are required; theory gates
   await page.getByRole('button', { name: "Xem chi tiết", exact: true }).click()
   await expect.poll(async () => (await get(page, `/me/progress/lessons/${lessonA}`)).theory_completed_at).toBeTruthy()
   await page.getByRole('link', { name: 'Luyện tập', exact: true }).click()
-  await expect(page.getByRole('link', { name: "Mở luyện tập 1", exact: true })).toBeVisible()
+  await expect(page.locator('.practice-layout')).toBeVisible()
   await page.reload()
-  await expect(page.getByRole('link', { name: "Mở luyện tập 1", exact: true })).toBeVisible()
+  await expect(page.locator('.practice-layout')).toBeVisible()
 })
 
 test('D-120 forbidden routes preserve separate learner and administrator sessions', async ({ page, browser }) => {
@@ -552,7 +552,7 @@ test('textbook readings require explicit completion before practice; admin edits
     await expect(student.getByRole('button', { name: 'Hoàn thành bài khóa: Chào hỏi từ giáo trình', exact: true })).toBeEnabled()
     await student.getByRole('button', { name: 'Hoàn thành bài khóa: Chào hỏi từ giáo trình', exact: true }).click()
     await student.getByRole('link', { name: 'Luyện tập', exact: true }).click()
-    await expect(student.getByRole('link', { name: 'Mở luyện tập 1', exact: true })).toBeVisible()
+    await expect(student.locator('.practice-layout')).toBeVisible()
     await student.reload()
     await student.getByRole('link', { name: 'Bài khóa', exact: true }).click()
     await expect(student.getByRole('button', { name: 'Đã hoàn thành bài khóa: Chào hỏi từ giáo trình', exact: true })).toBeDisabled()
@@ -567,7 +567,7 @@ test('textbook readings require explicit completion before practice; admin edits
     await student.getByRole('link', { name: 'Bài khóa', exact: true }).click()
     await student.getByRole('button', { name: 'Hoàn thành bài khóa: Chào hỏi từ giáo trình', exact: true }).click()
     await student.getByRole('link', { name: 'Luyện tập', exact: true }).click()
-    await expect(student.getByRole('link', { name: 'Mở luyện tập 1', exact: true })).toBeVisible()
+    await expect(student.locator('.practice-layout')).toBeVisible()
     await noOverflow(student)
   } finally { await learnerContext.close() }
 })

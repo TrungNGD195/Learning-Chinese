@@ -1,0 +1,1675 @@
+{
+  "key": "hsk1-lesson-12-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 1,
+    "lesson_number": 12,
+    "title": "昨天下雪了 · Thời tiết và sức khỏe",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "天气",
+      "pinyin": "tiānqì",
+      "vietnamese_meaning": "thời tiết",
+      "part_of_speech": "danh từ",
+      "example": "今天天气很好。\njīn tiān tiān qì hěn hǎo 。\nHôm nay thời tiết rất đẹp.",
+      "order_index": 1,
+      "note": null,
+      "source_key": "1:12:天气"
+    },
+    {
+      "hanzi": "晴天",
+      "pinyin": "qíng tiān",
+      "vietnamese_meaning": "ngày trời quang, có nắng",
+      "part_of_speech": "danh từ",
+      "example": "今天是晴天。\njīn tiān shì qíng tiān 。\nHôm nay trời quang.",
+      "order_index": 2,
+      "note": null,
+      "source_key": "1:12:晴天"
+    },
+    {
+      "hanzi": "阴天",
+      "pinyin": "yīn tiān",
+      "vietnamese_meaning": "ngày trời âm u",
+      "part_of_speech": "danh từ",
+      "example": "今天是阴天。\njīn tiān shì yīn tiān 。\nHôm nay trời âm u.",
+      "order_index": 3,
+      "note": null,
+      "source_key": "1:12:阴天"
+    },
+    {
+      "hanzi": "云",
+      "pinyin": "yún",
+      "vietnamese_meaning": "mây",
+      "part_of_speech": "danh từ",
+      "example": "天上有很多云。\ntiān shàng yǒu hěn duō yún 。\nTrên trời có nhiều mây.",
+      "order_index": 4,
+      "note": null,
+      "source_key": "1:12:云"
+    },
+    {
+      "hanzi": "风",
+      "pinyin": "fēng",
+      "vietnamese_meaning": "gió",
+      "part_of_speech": "danh từ",
+      "example": "今天风很大。\njīn tiān fēng hěn dà 。\nHôm nay gió rất mạnh.",
+      "order_index": 5,
+      "note": null,
+      "source_key": "1:12:风"
+    },
+    {
+      "hanzi": "下雨",
+      "pinyin": "xià yǔ",
+      "vietnamese_meaning": "mưa; trời mưa",
+      "part_of_speech": "động từ",
+      "example": "今天下雨了。\njīn tiān xià yǔ le 。\nHôm nay mưa rồi.",
+      "order_index": 6,
+      "note": null,
+      "source_key": "1:12:下雨"
+    },
+    {
+      "hanzi": "下大雨",
+      "pinyin": "xià dà yǔ",
+      "vietnamese_meaning": "mưa to",
+      "part_of_speech": "cụm động từ",
+      "example": "今天下大雨了。\njīn tiān xià dà yǔ le 。\nHôm nay mưa to rồi.",
+      "order_index": 7,
+      "note": null,
+      "source_key": "1:12:下大雨"
+    },
+    {
+      "hanzi": "下小雨",
+      "pinyin": "xià xiǎo yǔ",
+      "vietnamese_meaning": "mưa nhỏ",
+      "part_of_speech": "cụm động từ",
+      "example": "今天下小雨了。\njīn tiān xià xiǎo yǔ le 。\nHôm nay mưa nhỏ rồi.",
+      "order_index": 8,
+      "note": null,
+      "source_key": "1:12:下小雨"
+    },
+    {
+      "hanzi": "下雪",
+      "pinyin": "xià xuě",
+      "vietnamese_meaning": "tuyết rơi",
+      "part_of_speech": "động từ",
+      "example": "今天下雪了。\njīn tiān xià xuě le 。\nHôm nay tuyết rơi rồi.",
+      "order_index": 9,
+      "note": null,
+      "source_key": "1:12:下雪"
+    },
+    {
+      "hanzi": "一点儿",
+      "pinyin": "yì diǎn ér",
+      "vietnamese_meaning": "một ít, một chút",
+      "part_of_speech": "cụm số lượng",
+      "example": "我想喝一点儿水。\nwǒ xiǎng hē yì diǎn ér shuǐ 。\nTôi muốn uống một chút nước.",
+      "order_index": 10,
+      "note": null,
+      "source_key": "1:12:一点儿"
+    },
+    {
+      "hanzi": "有点儿",
+      "pinyin": "yǒu diǎn ér",
+      "vietnamese_meaning": "hơi, có chút (thường là điều không như ý)",
+      "part_of_speech": "phó từ",
+      "example": "我有点儿累。\nwǒ yǒu diǎn ér lèi 。\nTôi hơi mệt.",
+      "order_index": 11,
+      "note": null,
+      "source_key": "1:12:有点儿"
+    },
+    {
+      "hanzi": "冷",
+      "pinyin": "lěng",
+      "vietnamese_meaning": "lạnh",
+      "part_of_speech": "tính từ",
+      "example": "今天很冷。\njīn tiān hěn lěng 。\nHôm nay lạnh.",
+      "order_index": 12,
+      "note": null,
+      "source_key": "1:12:冷"
+    },
+    {
+      "hanzi": "热",
+      "pinyin": "rè",
+      "vietnamese_meaning": "nóng",
+      "part_of_speech": "tính từ",
+      "example": "今天很热。\njīn tiān hěn rè 。\nHôm nay nóng.",
+      "order_index": 13,
+      "note": null,
+      "source_key": "1:12:热"
+    },
+    {
+      "hanzi": "凉快",
+      "pinyin": "liáng kuài",
+      "vietnamese_meaning": "mát mẻ",
+      "part_of_speech": "tính từ",
+      "example": "今天很凉快。\njīn tiān hěn liáng kuài 。\nHôm nay mát mẻ.",
+      "order_index": 14,
+      "note": null,
+      "source_key": "1:12:凉快"
+    },
+    {
+      "hanzi": "身体",
+      "pinyin": "shēn tǐ",
+      "vietnamese_meaning": "cơ thể; sức khỏe",
+      "part_of_speech": "danh từ",
+      "example": "请看他的身体。\nqǐng kàn tā de shēn tǐ 。\nHãy nhìn cơ thể của anh ấy.",
+      "order_index": 15,
+      "note": null,
+      "source_key": "1:12:身体"
+    },
+    {
+      "hanzi": "累",
+      "pinyin": "lèi",
+      "vietnamese_meaning": "mệt",
+      "part_of_speech": "tính từ",
+      "example": "他很累。\ntā hěn lèi 。\nAnh ấy mệt.",
+      "order_index": 16,
+      "note": null,
+      "source_key": "1:12:累"
+    },
+    {
+      "hanzi": "舒服",
+      "pinyin": "shū fú",
+      "vietnamese_meaning": "thoải mái, dễ chịu",
+      "part_of_speech": "tính từ",
+      "example": "他很舒服。\ntā hěn shū fú 。\nAnh ấy thoải mái, dễ chịu.",
+      "order_index": 17,
+      "note": null,
+      "source_key": "1:12:舒服"
+    },
+    {
+      "hanzi": "病",
+      "pinyin": "bìng",
+      "vietnamese_meaning": "bị ốm",
+      "part_of_speech": "động từ",
+      "example": "他的病很严重。\ntā de bìng hěn yán zhòng 。\nBệnh của anh ấy rất nghiêm trọng.",
+      "order_index": 18,
+      "note": null,
+      "source_key": "1:12:病"
+    },
+    {
+      "hanzi": "生病",
+      "pinyin": "shēngbìng",
+      "vietnamese_meaning": "ốm",
+      "part_of_speech": "động từ",
+      "example": "他今天生病了。\ntā jīn tiān shēng bìng le 。\nHôm nay anh ấy ốm rồi.",
+      "order_index": 19,
+      "note": null,
+      "source_key": "1:12:生病"
+    },
+    {
+      "hanzi": "严重",
+      "pinyin": "yán zhòng",
+      "vietnamese_meaning": "nghiêm trọng",
+      "part_of_speech": "tính từ",
+      "example": "他的病很严重。\ntā de bìng hěn yán zhòng 。\nBệnh của anh ấy rất nghiêm trọng.",
+      "order_index": 20,
+      "note": null,
+      "source_key": "1:12:严重"
+    },
+    {
+      "hanzi": "医生",
+      "pinyin": "yīshēng",
+      "vietnamese_meaning": "bác sĩ",
+      "part_of_speech": "danh từ",
+      "example": "他是我的医生。\ntā shì wǒ de yī shēng 。\nAnh ấy là bác sĩ của tôi.",
+      "order_index": 21,
+      "note": null,
+      "source_key": "1:12:医生"
+    },
+    {
+      "hanzi": "药",
+      "pinyin": "yào",
+      "vietnamese_meaning": "thuốc",
+      "part_of_speech": "danh từ",
+      "example": "我每天吃两次药。\nwǒ měi tiān chī liǎng cì yào 。\nMỗi ngày tôi uống thuốc hai lần.",
+      "order_index": 22,
+      "note": null,
+      "source_key": "1:12:药"
+    },
+    {
+      "hanzi": "药店",
+      "pinyin": "yào diàn",
+      "vietnamese_meaning": "hiệu thuốc",
+      "part_of_speech": "danh từ",
+      "example": "我去药店。\nwǒ qù yào diàn 。\nTôi đến hiệu thuốc.",
+      "order_index": 23,
+      "note": null,
+      "source_key": "1:12:药店"
+    },
+    {
+      "hanzi": "吃药",
+      "pinyin": "chī yào",
+      "vietnamese_meaning": "uống thuốc",
+      "part_of_speech": "động từ",
+      "example": "我每天吃药。\nwǒ měi tiān chī yào 。\nMỗi ngày tôi uống thuốc.",
+      "order_index": 24,
+      "note": null,
+      "source_key": "1:12:吃药"
+    },
+    {
+      "hanzi": "次",
+      "pinyin": "cì",
+      "vietnamese_meaning": "lần (đếm số lần)",
+      "part_of_speech": "lượng từ",
+      "example": "我每天吃两次药。\nwǒ měi tiān chī liǎng cì yào 。\nMỗi ngày tôi uống thuốc hai lần.",
+      "order_index": 25,
+      "note": null,
+      "source_key": "1:12:次"
+    },
+    {
+      "hanzi": "片",
+      "pinyin": "piàn",
+      "vietnamese_meaning": "viên, miếng, lát",
+      "part_of_speech": "lượng từ",
+      "example": "这部爱情片很有意思。\nzhè bù ài qíng piàn hěn yǒu yì si 。\nBộ phim tình cảm này rất thú vị.",
+      "order_index": 26,
+      "note": "Phân biệt 片 làm lượng từ viên/miếng/lát với 片 trong 爱情片 chỉ phim; đọc piàn trong cả hai trường hợp.",
+      "source_key": "1:12:片"
+    },
+    {
+      "hanzi": "可以",
+      "pinyin": "kěyǐ",
+      "vietnamese_meaning": "có thể; được phép",
+      "part_of_speech": "động từ năng nguyện",
+      "example": "你可以再来吗？\nnǐ kě yǐ zài lái ma ？\nBạn có thể đến nữa không?",
+      "order_index": 27,
+      "note": "可以 thường diễn đạt được phép hoặc khả năng trong tình huống; 会 thiên về kỹ năng, 能 về năng lực/điều kiện.",
+      "source_key": "1:12:可以"
+    },
+    {
+      "hanzi": "再",
+      "pinyin": "zài",
+      "vietnamese_meaning": "lại, thêm; rồi, tiếp theo (hành động chưa thực hiện)",
+      "part_of_speech": "phó từ",
+      "example": "你可以再来吗？\nnǐ kě yǐ zài lái ma ？\nBạn có thể đến nữa không?",
+      "order_index": 28,
+      "note": "再 thường nói việc lặp hoặc tiếp theo chưa thực hiện; 又 thường nói sự lặp đã xảy ra. Không đồng nhất với 再见 là lời chào tạm biệt.",
+      "source_key": "1:12:再"
+    },
+    {
+      "hanzi": "来",
+      "pinyin": "lái",
+      "vietnamese_meaning": "đến",
+      "part_of_speech": "động từ",
+      "example": "你可以再来吗？\nnǐ kě yǐ zài lái ma ？\nBạn có thể đến nữa không?",
+      "order_index": 29,
+      "note": null,
+      "source_key": "1:12:来"
+    }
+  ],
+  "grammar": [
+    {
+      "name": "Thay đổi với 了 cuối câu",
+      "structure": "Mệnh đề + 了",
+      "explanation": "Báo hiệu xuất hiện tình huống mới hoặc sự thay đổi.",
+      "usage": "了 không đồng nghĩa thì quá khứ trong mọi câu; xem tình huống thay đổi.",
+      "example": "昨天下雪了。\nzuó tiān xià xuě le 。\nHôm qua tuyết rơi rồi.",
+      "note": "了 không đồng nghĩa thì quá khứ trong mọi câu; xem tình huống thay đổi.",
+      "order_index": 1
+    },
+    {
+      "name": "Mức độ với 有点儿 và 一点儿",
+      "structure": "有点儿 + tính từ / tính từ + 一点儿",
+      "explanation": "有点儿 nói hơi, thường không như ý; 一点儿 nói mức chênh hoặc một ít.",
+      "usage": "Không đảo 有点儿冷 thành 冷有点儿. 一点儿还可 đứng trước danh từ để chỉ một ít.",
+      "example": "我觉得有点儿冷。\nwǒ jué de yǒu diǎn ér lěng 。\nTôi thấy hơi lạnh.",
+      "note": "Không đảo 有点儿冷 thành 冷有点儿. 一点儿还可 đứng trước danh từ để chỉ một ít.",
+      "order_index": 2
+    },
+    {
+      "name": "Trước và sau hành động",
+      "structure": "Cụm động từ + 前/后",
+      "explanation": "Lấy một hành động làm mốc thời gian.",
+      "usage": "前/后 cũng là phương vị đã gặp; ở đây dùng với hành động để nói thời gian.",
+      "example": "回家后再喝水。\nhuí jiā hòu zài hē shuǐ 。\nVề nhà rồi hãy uống nước tiếp.",
+      "note": "前/后 cũng là phương vị đã gặp; ở đây dùng với hành động để nói thời gian.",
+      "order_index": 3
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Thời tiết hôm nay",
+      "content": "王一雪:今天天气怎么样?\n王一飞:这里的天不太好,下雨了。\n王一雪:雨大吗?\n王一飞:有点儿大,我觉得很冷。",
+      "pinyin": "wáng yī xuě : jīn tiān tiān qì zěn me yàng ?\nwáng yī fēi : zhè lǐ de tiān bù tài hǎo , xià yǔ le 。\nwáng yī xuě : yǔ dà ma ?\nwáng yī fēi : yǒu diǎn ér dà , wǒ jué de hěn lěng 。",
+      "vietnamese_translation": "Vương Nhất Tuyết: Hôm nay thời tiết thế nào?\nVương Nhất Phi: Thời tiết ở đây không tốt lắm, trời mưa rồi.\nVương Nhất Tuyết: Mưa có to không?\nVương Nhất Phi: Hơi to, em cảm thấy rất lạnh.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 12, PDF 112."
+    },
+    {
+      "order_index": 2,
+      "title": "Hôm qua tuyết rơi",
+      "content": "王一雪:昨天下雪了。\n杨同乐:是的,太冷了。\n王一雪:你昨天没来公司,生病了?\n杨同乐:对,我昨天去医院看病了。",
+      "pinyin": "wáng yī xuě : zuó tiān xià xuě le 。\nyáng tóng lè : shì de , tài lěng le 。\nwáng yī xuě : nǐ zuó tiān méi lái gōng sī , shēng bìng le ?\nyáng tóng lè : duì , wǒ zuó tiān qù yī yuàn kàn bìng le 。",
+      "vietnamese_translation": "Vương Nhất Tuyết: Hôm qua tuyết rơi rồi.\nLí Văn: Đúng vậy, lạnh quá.\nBạch Gia Nguyệt: Bạn hôm qua không đến công ty, ốm rồi à?\nLí Văn: Đúng vậy, tôi hôm qua đi bệnh viện khám bệnh.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 12, PDF 114, 115."
+    },
+    {
+      "order_index": 3,
+      "title": "Khám bệnh",
+      "content": "刘明:医生,我病了。\n胡医生:我看看。你觉得怎么样?\n刘明:我很冷。\n胡医生:好的,吃一点儿药,今天休息半天吧。\n刘生:好的。\n刘明:回家后再喝些热水。",
+      "pinyin": "liú míng : yī shēng , wǒ bìng le 。\nhú yī shēng : wǒ kàn kàn 。 nǐ jué de zěn me yàng ?\nliú míng : wǒ hěn lěng 。\nhú yī shēng : hǎo de , chī yì diǎn ér yào , jīn tiān xiū xī bàn tiān ba 。\nliú shēng : hǎo de 。\nliú míng : huí jiā hòu zài hē xiē rè shuǐ 。",
+      "vietnamese_translation": "Dương Đồng Lạc: Bác sĩ, tôi ốm rồi.\nBác sĩ Hồ: Tôi xem một chút, bạn cảm thấy thế nào?\nDương Đồng Lạc: Tôi rất lạnh.\nBác sĩ Hồ: Được, uống một chút thuốc, hôm nay nghỉ ngơi nửa ngày đi.\nDương Đồng Lạc: Được.\nBác sĩ Hồ: Sau khi về nhà thì uống một chút nước nóng.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 12, PDF 116."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 1 · Bài 12 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp; dùng kiến thức của bài này và các bài trước, không dùng bài sau. Đạt từ 80%; được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "review_status": "DRAFT_REQUIRES_EDITOR_REVIEW",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 1).",
+      "options": [
+        {
+          "option_text": "dưới",
+          "is_correct": false
+        },
+        {
+          "option_text": "bạn",
+          "is_correct": false
+        },
+        {
+          "option_text": "nửa cân",
+          "is_correct": false
+        },
+        {
+          "option_text": "ốm",
+          "is_correct": true
+        }
+      ],
+      "rubric": "生病 (shēngbìng) nghĩa là ốm. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "生病"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 12
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “阴天” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "chiếc (lượng từ cho xe)",
+          "is_correct": false
+        },
+        {
+          "option_text": "ngủ",
+          "is_correct": false
+        },
+        {
+          "option_text": "ngày trời âm u",
+          "is_correct": true
+        },
+        {
+          "option_text": "phía sau",
+          "is_correct": false
+        }
+      ],
+      "rubric": "阴天 (yīn tiān) nghĩa là ngày trời âm u. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 12
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “lèi” và nghĩa “mệt”.",
+      "options": [
+        {
+          "option_text": "累",
+          "is_correct": true
+        },
+        {
+          "option_text": "知道",
+          "is_correct": false
+        },
+        {
+          "option_text": "公共汽车",
+          "is_correct": false
+        },
+        {
+          "option_text": "都",
+          "is_correct": false
+        }
+      ],
+      "rubric": "累 (lèi) nghĩa là mệt. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 12
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 4).",
+      "options": [
+        {
+          "option_text": "alo, này",
+          "is_correct": false
+        },
+        {
+          "option_text": "đúng",
+          "is_correct": false
+        },
+        {
+          "option_text": "thuốc",
+          "is_correct": true
+        },
+        {
+          "option_text": "anh ấy",
+          "is_correct": false
+        }
+      ],
+      "rubric": "药 (yào) nghĩa là thuốc. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "药"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 12
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “病” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "bị ốm",
+          "is_correct": true
+        },
+        {
+          "option_text": "công việc",
+          "is_correct": false
+        },
+        {
+          "option_text": "tan học",
+          "is_correct": false
+        },
+        {
+          "option_text": "ông nội",
+          "is_correct": false
+        }
+      ],
+      "rubric": "病 (bìng) nghĩa là bị ốm. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 12
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “yīshēng” và nghĩa “bác sĩ”.",
+      "options": [
+        {
+          "option_text": "医生",
+          "is_correct": true
+        },
+        {
+          "option_text": "到",
+          "is_correct": false
+        },
+        {
+          "option_text": "朋友",
+          "is_correct": false
+        },
+        {
+          "option_text": "在",
+          "is_correct": false
+        }
+      ],
+      "rubric": "医生 (yīshēng) nghĩa là bác sĩ. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 12
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 7).",
+      "options": [
+        {
+          "option_text": "còn, vẫn",
+          "is_correct": false
+        },
+        {
+          "option_text": "lần (đếm số lần)",
+          "is_correct": true
+        },
+        {
+          "option_text": "tiếng Trung",
+          "is_correct": false
+        },
+        {
+          "option_text": "tiếng Hán; tiếng Trung",
+          "is_correct": false
+        }
+      ],
+      "rubric": "次 (cì) nghĩa là lần (đếm số lần). ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "次"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 12
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “说” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "bao gồm",
+          "is_correct": false
+        },
+        {
+          "option_text": "thứ mấy",
+          "is_correct": false
+        },
+        {
+          "option_text": "lúc",
+          "is_correct": false
+        },
+        {
+          "option_text": "nói",
+          "is_correct": true
+        }
+      ],
+      "rubric": "说 (shuō) nghĩa là nói. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 11
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “yún” và nghĩa “mây”.",
+      "options": [
+        {
+          "option_text": "白家月",
+          "is_correct": false
+        },
+        {
+          "option_text": "飞机",
+          "is_correct": false
+        },
+        {
+          "option_text": "读",
+          "is_correct": false
+        },
+        {
+          "option_text": "云",
+          "is_correct": true
+        }
+      ],
+      "rubric": "云 (yún) nghĩa là mây. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 12
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "Dương Đồng Lạc (tên người)",
+          "is_correct": false
+        },
+        {
+          "option_text": "miệng, nhân khẩu",
+          "is_correct": false
+        },
+        {
+          "option_text": "bốn (số 4)",
+          "is_correct": false
+        },
+        {
+          "option_text": "hơi, có chút (thường là điều không như ý)",
+          "is_correct": true
+        }
+      ],
+      "rubric": "有点儿 (yǒu diǎn ér) nghĩa là hơi, có chút (thường là điều không như ý). ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "有点儿"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 12
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “边” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "xem, nhìn, đọc",
+          "is_correct": false
+        },
+        {
+          "option_text": "Dương Đồng Lạc (tên người)",
+          "is_correct": false
+        },
+        {
+          "option_text": "phía/bên",
+          "is_correct": true
+        },
+        {
+          "option_text": "ngày trời âm u",
+          "is_correct": false
+        }
+      ],
+      "rubric": "边 (bian/biān) nghĩa là phía/bên. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 9
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “tiānqì” và nghĩa “thời tiết”.",
+      "options": [
+        {
+          "option_text": "天气",
+          "is_correct": true
+        },
+        {
+          "option_text": "好",
+          "is_correct": false
+        },
+        {
+          "option_text": "法国",
+          "is_correct": false
+        },
+        {
+          "option_text": "公共汽车",
+          "is_correct": false
+        }
+      ],
+      "rubric": "天气 (tiānqì) nghĩa là thời tiết. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 12
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “gió” (gợi ý pinyin: fēng).",
+      "reference_answer": "风",
+      "rubric": "Đáp án: 风 (fēng). ",
+      "config": {
+        "accepted_answers": [
+          "风"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 12
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “hiệu thuốc” (gợi ý pinyin: yào diàn).",
+      "reference_answer": "药店",
+      "rubric": "Đáp án: 药店 (yào diàn). ",
+      "config": {
+        "accepted_answers": [
+          "药店"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 12
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “một ít, một chút” (gợi ý pinyin: yì diǎn ér).",
+      "reference_answer": "一点儿",
+      "rubric": "Đáp án: 一点儿 (yì diǎn ér). ",
+      "config": {
+        "accepted_answers": [
+          "一点儿"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 12
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “mát mẻ” (gợi ý pinyin: liáng kuài).",
+      "reference_answer": "凉快",
+      "rubric": "Đáp án: 凉快 (liáng kuài). ",
+      "config": {
+        "accepted_answers": [
+          "凉快"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 12
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 1).",
+      "rubric": "谁: ai; 骑: đi, cưỡi (xe đạp, xe máy, ngựa); 那: kia; 有点儿: hơi, có chút (thường là điều không như ý)",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "谁"
+          },
+          {
+            "id": "l1",
+            "text": "骑"
+          },
+          {
+            "id": "l2",
+            "text": "那"
+          },
+          {
+            "id": "l3",
+            "text": "有点儿"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r0",
+            "text": "ai"
+          },
+          {
+            "id": "r2",
+            "text": "kia"
+          },
+          {
+            "id": "r1",
+            "text": "đi, cưỡi (xe đạp, xe máy, ngựa)"
+          },
+          {
+            "id": "r3",
+            "text": "hơi, có chút (thường là điều không như ý)"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 3
+        },
+        {
+          "hsk": 1,
+          "lesson": 11
+        },
+        {
+          "hsk": 1,
+          "lesson": 3
+        },
+        {
+          "hsk": 1,
+          "lesson": 12
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 2).",
+      "rubric": "不: không, chẳng; 睡觉: ngủ; 一点儿: một ít, một chút; 白: trắng",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "不"
+          },
+          {
+            "id": "l1",
+            "text": "睡觉"
+          },
+          {
+            "id": "l2",
+            "text": "一点儿"
+          },
+          {
+            "id": "l3",
+            "text": "白"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r3",
+            "text": "trắng"
+          },
+          {
+            "id": "r1",
+            "text": "ngủ"
+          },
+          {
+            "id": "r2",
+            "text": "một ít, một chút"
+          },
+          {
+            "id": "r0",
+            "text": "không, chẳng"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 1
+        },
+        {
+          "hsk": 1,
+          "lesson": 11
+        },
+        {
+          "hsk": 1,
+          "lesson": 12
+        },
+        {
+          "hsk": 1,
+          "lesson": 1
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Thay đổi với 了 cuối câu”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Báo hiệu xuất hiện tình huống mới hoặc sự thay đổi.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Mệnh đề + 了. Báo hiệu xuất hiện tình huống mới hoặc sự thay đổi. 了 không đồng nghĩa thì quá khứ trong mọi câu; xem tình huống thay đổi.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 12
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Mức độ với 有点儿 và 一点儿”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "有点儿 nói hơi, thường không như ý; 一点儿 nói mức chênh hoặc một ít.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "有点儿 + tính từ / tính từ + 一点儿. 有点儿 nói hơi, thường không như ý; 一点儿 nói mức chênh hoặc một ít. Không đảo 有点儿冷 thành 冷有点儿. 一点儿还可 đứng trước danh từ để chỉ một ít.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 12
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Trước và sau hành động”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Lấy một hành động làm mốc thời gian.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Cụm động từ + 前/后. Lấy một hành động làm mốc thời gian. 前/后 cũng là phương vị đã gặp; ở đây dùng với hành động để nói thời gian.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 12
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Thay đổi với 了 cuối câu” (mục 4): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "了 không đồng nghĩa thì quá khứ trong mọi câu; xem tình huống thay đổi.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Mệnh đề + 了. Báo hiệu xuất hiện tình huống mới hoặc sự thay đổi. 了 không đồng nghĩa thì quá khứ trong mọi câu; xem tình huống thay đổi.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 12
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Mức độ với 有点儿 và 一点儿” (mục 5): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không đảo 有点儿冷 thành 冷有点儿. 一点儿还可 đứng trước danh từ để chỉ một ít.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "有点儿 + tính từ / tính từ + 一点儿. 有点儿 nói hơi, thường không như ý; 一点儿 nói mức chênh hoặc một ít. Không đảo 有点儿冷 thành 冷有点儿. 一点儿还可 đứng trước danh từ để chỉ một ít.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 12
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Trước và sau hành động” (mục 6): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "前/后 cũng là phương vị đã gặp; ở đây dùng với hành động để nói thời gian.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Cụm động từ + 前/后. Lấy một hành động làm mốc thời gian. 前/后 cũng là phương vị đã gặp; ở đây dùng với hành động để nói thời gian.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 12
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 1).",
+      "reference_answer": "昨天下雪了。",
+      "rubric": "Câu đúng: 昨天下雪了。 了 không đồng nghĩa thì quá khứ trong mọi câu; xem tình huống thay đổi.",
+      "config": {
+        "items": [
+          {
+            "id": "w1",
+            "text": "下雪"
+          },
+          {
+            "id": "w0",
+            "text": "昨天"
+          },
+          {
+            "id": "w3",
+            "text": "。"
+          },
+          {
+            "id": "w2",
+            "text": "了"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 12
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 2).",
+      "reference_answer": "我觉得有点儿冷。",
+      "rubric": "Câu đúng: 我觉得有点儿冷。 Không đảo 有点儿冷 thành 冷有点儿. 一点儿还可 đứng trước danh từ để chỉ một ít.",
+      "config": {
+        "items": [
+          {
+            "id": "w1",
+            "text": "觉得"
+          },
+          {
+            "id": "w3",
+            "text": "冷"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w2",
+            "text": "有点儿"
+          },
+          {
+            "id": "w4",
+            "text": "。"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 12
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 3).",
+      "reference_answer": "回家后再喝水。",
+      "rubric": "Câu đúng: 回家后再喝水。 前/后 cũng là phương vị đã gặp; ở đây dùng với hành động để nói thời gian.",
+      "config": {
+        "items": [
+          {
+            "id": "w0",
+            "text": "回"
+          },
+          {
+            "id": "w1",
+            "text": "家"
+          },
+          {
+            "id": "w6",
+            "text": "。"
+          },
+          {
+            "id": "w2",
+            "text": "后"
+          },
+          {
+            "id": "w4",
+            "text": "喝"
+          },
+          {
+            "id": "w5",
+            "text": "水"
+          },
+          {
+            "id": "w3",
+            "text": "再"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 12
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 4).",
+      "reference_answer": "今天天气怎么样?",
+      "rubric": "Câu đúng: 今天天气怎么样? 了 không đồng nghĩa thì quá khứ trong mọi câu; xem tình huống thay đổi.",
+      "config": {
+        "items": [
+          {
+            "id": "w0",
+            "text": "今天"
+          },
+          {
+            "id": "w1",
+            "text": "天气"
+          },
+          {
+            "id": "w2",
+            "text": "怎么样"
+          },
+          {
+            "id": "w3",
+            "text": "?"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 12
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 5).",
+      "reference_answer": "这里的天不太好,下雨了。",
+      "rubric": "Câu đúng: 这里的天不太好,下雨了。 Không đảo 有点儿冷 thành 冷有点儿. 一点儿还可 đứng trước danh từ để chỉ một ít.",
+      "config": {
+        "items": [
+          {
+            "id": "w7",
+            "text": "下雨"
+          },
+          {
+            "id": "w4",
+            "text": "不太"
+          },
+          {
+            "id": "w5",
+            "text": "好"
+          },
+          {
+            "id": "w9",
+            "text": "。"
+          },
+          {
+            "id": "w8",
+            "text": "了"
+          },
+          {
+            "id": "w6",
+            "text": ","
+          },
+          {
+            "id": "w2",
+            "text": "的"
+          },
+          {
+            "id": "w3",
+            "text": "天"
+          },
+          {
+            "id": "w0",
+            "text": "这"
+          },
+          {
+            "id": "w1",
+            "text": "里"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8",
+          "w9"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 12
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 6).",
+      "reference_answer": "雨大吗?",
+      "rubric": "Câu đúng: 雨大吗? 前/后 cũng là phương vị đã gặp; ở đây dùng với hành động để nói thời gian.",
+      "config": {
+        "items": [
+          {
+            "id": "w2",
+            "text": "吗"
+          },
+          {
+            "id": "w0",
+            "text": "雨"
+          },
+          {
+            "id": "w3",
+            "text": "?"
+          },
+          {
+            "id": "w1",
+            "text": "大"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 12
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ],
+  "source_documents": {
+    "vocabulary": "DOCX",
+    "theory": "HSK1 PDF"
+  }
+}

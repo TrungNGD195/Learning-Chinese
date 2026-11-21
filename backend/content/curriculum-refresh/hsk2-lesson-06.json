@@ -1,0 +1,1853 @@
+{
+  "key": "hsk2-lesson-06-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 2,
+    "lesson_number": 6,
+    "title": "左边的手表比右边的好看 · So sánh và thời lượng",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "手表",
+      "pinyin": "shǒubiǎo",
+      "vietnamese_meaning": "đồng hồ đeo tay",
+      "part_of_speech": "danh từ",
+      "example": "这是我的手表。\nzhè shì wǒ de shǒu biǎo 。\nĐây là đồng hồ đeo tay của tôi.",
+      "order_index": 1,
+      "note": null,
+      "source_key": "2:6:手表"
+    },
+    {
+      "hanzi": "块",
+      "pinyin": "kuài",
+      "vietnamese_meaning": "chiếc (lượng từ cho đồng hồ)",
+      "part_of_speech": "lượng từ",
+      "example": "我买了一块手表。\nwǒ mǎi le yī kuài shǒu biǎo 。\nTôi đã mua một chiếc đồng hồ.",
+      "order_index": 2,
+      "note": "块 ở đây đếm chiếc đồng hồ trong 一块手表; ở HSK1, 块钱 dùng nói đơn vị tiền. Xác định nghĩa từ danh từ theo sau. Nhắc lại HSK2 bài 3: 块 (kuài) nghĩa là chiếc (lượng từ cho đồng hồ); miếng. Trong bài này: chiếc (lượng từ cho đồng hồ).",
+      "source_key": "2:6:块"
+    },
+    {
+      "hanzi": "比",
+      "pinyin": "bǐ",
+      "vietnamese_meaning": "dùng trong câu so sánh",
+      "part_of_speech": "giới từ",
+      "example": "最近我比较忙。\nzuì jìn wǒ bǐ jiào máng 。\nGần đây tôi khá bận.",
+      "order_index": 3,
+      "note": null,
+      "source_key": "2:6:比"
+    },
+    {
+      "hanzi": "不过",
+      "pinyin": "bù guò",
+      "vietnamese_meaning": "nhưng, tuy nhiên",
+      "part_of_speech": "liên từ",
+      "example": "不过左边的没有右边的那么大,咱们儿子手腕比较大啊。\nbù guò zuǒ biān de méi yǒu yòu biān de nà me dà , zán men ér zi shǒu wàn bǐ jiào dà a 。\nNhưng chiếc bên trái không to bằng chiếc bên phải, cổ tay con trai mình khá to đấy.",
+      "order_index": 4,
+      "note": null,
+      "source_key": "2:6:不过"
+    },
+    {
+      "hanzi": "咱们",
+      "pinyin": "zán men",
+      "vietnamese_meaning": "chúng mình, chúng ta (gồm người nghe)",
+      "part_of_speech": "đại từ",
+      "example": "不过左边的没有右边的那么大,咱们儿子手腕比较大啊。\nbù guò zuǒ biān de méi yǒu yòu biān de nà me dà , zán men ér zi shǒu wàn bǐ jiào dà a 。\nNhưng chiếc bên trái không to bằng chiếc bên phải, cổ tay con trai mình khá to đấy.",
+      "order_index": 5,
+      "note": null,
+      "source_key": "2:6:咱们"
+    },
+    {
+      "hanzi": "手腕",
+      "pinyin": "shǒu wàn",
+      "vietnamese_meaning": "cổ tay",
+      "part_of_speech": "danh từ",
+      "example": "请看他的手腕。\nqǐng kàn tā de shǒu wàn 。\nHãy nhìn cổ tay của anh ấy.",
+      "order_index": 6,
+      "note": null,
+      "source_key": "2:6:手腕"
+    },
+    {
+      "hanzi": "希望",
+      "pinyin": "xī wàng",
+      "vietnamese_meaning": "hy vọng; niềm hy vọng",
+      "part_of_speech": "danh từ, động từ",
+      "example": "我们买右边的吧,希望儿子会喜欢。\nwǒ men mǎi yòu biān de ba , xī wàng ér zi huì xǐ huān 。\nChúng mình mua chiếc bên phải nhé, hy vọng con sẽ thích.",
+      "order_index": 7,
+      "note": null,
+      "source_key": "2:6:希望"
+    },
+    {
+      "hanzi": "比较",
+      "pinyin": "bǐ jiào",
+      "vietnamese_meaning": "khá, tương đối; so sánh",
+      "part_of_speech": "phó từ, động từ",
+      "example": "最近我比较忙。\nzuì jìn wǒ bǐ jiào máng 。\nGần đây tôi khá bận.",
+      "order_index": 8,
+      "note": null,
+      "source_key": "2:6:比较"
+    },
+    {
+      "hanzi": "最近",
+      "pinyin": "zuì jìn",
+      "vietnamese_meaning": "gần đây, dạo này",
+      "part_of_speech": "danh từ chỉ thời gian",
+      "example": "最近我比较忙。\nzuì jìn wǒ bǐ jiào máng 。\nGần đây tôi khá bận.",
+      "order_index": 9,
+      "note": null,
+      "source_key": "2:6:最近"
+    },
+    {
+      "hanzi": "挺",
+      "pinyin": "tǐng",
+      "vietnamese_meaning": "khá, rất (thường dùng với 的)",
+      "part_of_speech": "phó từ",
+      "example": "最近有一部挺有意思的爱情片,我们看这个吧。\nzuì jìn yǒu yī bù tǐng yǒu yì si de ài qíng piàn , wǒ men kàn zhè ge ba 。\nGần đây có một phim tình cảm khá thú vị, chúng mình xem phim này nhé.",
+      "order_index": 10,
+      "note": null,
+      "source_key": "2:6:挺"
+    },
+    {
+      "hanzi": "有意思",
+      "pinyin": "yǒu yì si",
+      "vietnamese_meaning": "thú vị; có ý nghĩa",
+      "part_of_speech": "tính từ",
+      "example": "这部爱情片很有意思。\nzhè bù ài qíng piàn hěn yǒu yì si 。\nBộ phim tình cảm này rất thú vị.",
+      "order_index": 11,
+      "note": null,
+      "source_key": "2:6:有意思"
+    },
+    {
+      "hanzi": "爱情",
+      "pinyin": "ài qíng",
+      "vietnamese_meaning": "tình yêu đôi lứa",
+      "part_of_speech": "danh từ",
+      "example": "这部爱情片很有意思。\nzhè bù ài qíng piàn hěn yǒu yì si 。\nBộ phim tình cảm này rất thú vị.",
+      "order_index": 12,
+      "note": null,
+      "source_key": "2:6:爱情"
+    },
+    {
+      "hanzi": "片",
+      "pinyin": "piàn",
+      "vietnamese_meaning": "phim (trong 爱情片, 电影片)",
+      "part_of_speech": "danh từ",
+      "example": "我喜欢看爱情片。\nwǒ xǐ huān kàn ài qíng piàn 。\nTôi thích xem phim tình cảm.",
+      "order_index": 13,
+      "note": "Phân biệt 片 làm lượng từ viên/miếng/lát với 片 trong 爱情片 chỉ phim; đọc piàn trong cả hai trường hợp. Nhắc lại HSK1 bài 12: 片 (piàn) nghĩa là viên, miếng, lát. Trong bài này: phim (trong 爱情片, 电影片).",
+      "source_key": "2:6:片"
+    },
+    {
+      "hanzi": "离",
+      "pinyin": "lí",
+      "vietnamese_meaning": "cách (về khoảng cách)",
+      "part_of_speech": "giới từ",
+      "example": "学校离我家两公里。\nxué xiào lí wǒ jiā liǎng gōng lǐ 。\nTrường cách nhà tôi hai kilômét.",
+      "order_index": 14,
+      "note": null,
+      "source_key": "2:6:离"
+    },
+    {
+      "hanzi": "远",
+      "pinyin": "yuǎn",
+      "vietnamese_meaning": "xa",
+      "part_of_speech": "tính từ",
+      "example": "学校离我家很远。\nxué xiào lí wǒ jiā hěn yuǎn 。\nTrường cách nhà tôi rất xa.",
+      "order_index": 15,
+      "note": null,
+      "source_key": "2:6:远"
+    },
+    {
+      "hanzi": "近",
+      "pinyin": "jìn",
+      "vietnamese_meaning": "gần",
+      "part_of_speech": "tính từ",
+      "example": "最近有一部挺有意思的爱情片,我们看这个吧。\nzuì jìn yǒu yī bù tǐng yǒu yì si de ài qíng piàn , wǒ men kàn zhè ge ba 。\nGần đây có một phim tình cảm khá thú vị, chúng mình xem phim này nhé.",
+      "order_index": 16,
+      "note": null,
+      "source_key": "2:6:近"
+    },
+    {
+      "hanzi": "多远",
+      "pinyin": "duō yuǎn",
+      "vietnamese_meaning": "bao xa",
+      "part_of_speech": "cụm nghi vấn",
+      "example": "你家离学校多远？\nnǐ jiā lí xué xiào duō yuǎn ？\nNhà bạn cách trường bao xa?",
+      "order_index": 17,
+      "note": null,
+      "source_key": "2:6:多远"
+    },
+    {
+      "hanzi": "公里",
+      "pinyin": "gōng lǐ",
+      "vietnamese_meaning": "kilômét (km)",
+      "part_of_speech": "đơn vị đo",
+      "example": "学校离我家两公里。\nxué xiào lí wǒ jiā liǎng gōng lǐ 。\nTrường cách nhà tôi hai kilômét.",
+      "order_index": 18,
+      "note": null,
+      "source_key": "2:6:公里"
+    },
+    {
+      "hanzi": "米",
+      "pinyin": "mǐ",
+      "vietnamese_meaning": "mét (m)",
+      "part_of_speech": "đơn vị đo",
+      "example": "他有一米八。\ntā yǒu yī mǐ bā 。\nAnh ấy cao một mét tám.",
+      "order_index": 19,
+      "note": null,
+      "source_key": "2:6:米"
+    },
+    {
+      "hanzi": "没想到",
+      "pinyin": "méi xiǎng dào",
+      "vietnamese_meaning": "không ngờ",
+      "part_of_speech": "cụm động từ",
+      "example": "没想到，他送了我一朵花。\nméi xiǎng dào ， tā sòng le wǒ yī duǒ huā 。\nKhông ngờ anh ấy tặng tôi một bông hoa.",
+      "order_index": 20,
+      "note": null,
+      "source_key": "2:6:没想到"
+    },
+    {
+      "hanzi": "丈夫",
+      "pinyin": "zhàngfu",
+      "vietnamese_meaning": "chồng",
+      "part_of_speech": "danh từ",
+      "example": "这是我的丈夫。\nzhè shì wǒ de zhàng fū 。\nĐây là chồng của tôi.",
+      "order_index": 21,
+      "note": null,
+      "source_key": "2:6:丈夫"
+    },
+    {
+      "hanzi": "饭馆",
+      "pinyin": "fànguǎn",
+      "vietnamese_meaning": "nhà hàng",
+      "part_of_speech": "danh từ",
+      "example": "我去饭馆。\nwǒ qù fàn guǎn 。\nTôi đến nhà hàng.",
+      "order_index": 22,
+      "note": null,
+      "source_key": "2:6:饭馆"
+    },
+    {
+      "hanzi": "花",
+      "pinyin": "huā",
+      "vietnamese_meaning": "hoa; tiêu, tốn (tiền, thời gian)",
+      "part_of_speech": "danh từ, động từ",
+      "example": "没想到，他送了我一朵花。\nméi xiǎng dào ， tā sòng le wǒ yī duǒ huā 。\nKhông ngờ anh ấy tặng tôi một bông hoa.",
+      "order_index": 23,
+      "note": null,
+      "source_key": "2:6:花"
+    },
+    {
+      "hanzi": "朵",
+      "pinyin": "duǒ",
+      "vietnamese_meaning": "bông, đóa (lượng từ của hoa, mây)",
+      "part_of_speech": "lượng từ",
+      "example": "没想到，他送了我一朵花。\nméi xiǎng dào ， tā sòng le wǒ yī duǒ huā 。\nKhông ngờ anh ấy tặng tôi một bông hoa.",
+      "order_index": 24,
+      "note": null,
+      "source_key": "2:6:朵"
+    }
+  ],
+  "grammar": [
+    {
+      "name": "So sánh với 比",
+      "structure": "A + 比 + B + tính từ",
+      "explanation": "Nêu mức độ của A cao hơn B ở một thuộc tính.",
+      "usage": "Không dùng 很 trực tiếp trước tính từ trong mẫu 比 thông thường; có thể nói 贵一点儿/贵得多.",
+      "example": "这块手表比那块贵。\nzhè kuài shǒu biǎo bǐ nà kuài guì 。\nChiếc đồng hồ này đắt hơn chiếc kia.",
+      "note": "Không dùng 很 trực tiếp trước tính từ trong mẫu 比 thông thường; có thể nói 贵一点儿/贵得多.",
+      "order_index": 1
+    },
+    {
+      "name": "Không bằng với 没有",
+      "structure": "A + 没有 + B +（那么）+ tính từ",
+      "explanation": "Nêu A chưa đạt mức độ của B.",
+      "usage": "Ở đây 没有 biểu thị so sánh, khác 没有 + danh từ diễn đạt không sở hữu.",
+      "example": "这块手表没有那块大。\nzhè kuài shǒu biǎo méi yǒu nà kuài dà 。\nChiếc đồng hồ này không to bằng chiếc kia.",
+      "note": "Ở đây 没有 biểu thị so sánh, khác 没有 + danh từ diễn đạt không sở hữu.",
+      "order_index": 2
+    },
+    {
+      "name": "Bổ ngữ thời lượng",
+      "structure": "Động từ + khoảng thời gian",
+      "explanation": "Nói hành động kéo dài bao lâu.",
+      "usage": "Danh từ sự vật thường đứng sau thời lượng hoặc lặp động từ; đại từ chỉ người thường đứng trước thời lượng.",
+      "example": "我们休息十分钟。\nwǒ men xiū xī shí fēn zhōng 。\nChúng ta nghỉ mười phút.",
+      "note": "Danh từ sự vật thường đứng sau thời lượng hoặc lặp động từ; đại từ chỉ người thường đứng trước thời lượng.",
+      "order_index": 3
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Chọn đồng hồ cho con",
+      "content": "小丽:儿子的手表不走了,我们给他买块新的吧。你看,这两块怎么样?\n小刚:我觉得左边的手表比右边的好看。\n小丽:不过左边的没有右边的那么大,咱们儿子手腕比较大啊。\n小刚:先看看要多少钱。\n小丽:右边的比左边的更贵,要九百五十块!\n小刚:我们买右边的吧,希望儿子会喜欢。\n小丽:好的,再给他买点儿吃的。",
+      "pinyin": "xiǎo lì : ér zi de shǒu biǎo bù zǒu le , wǒ men gěi tā mǎi kuài xīn de ba 。 nǐ kàn , zhè liǎng kuài zěn me yàng ?\nxiǎo gāng : wǒ jué de zuǒ biān de shǒu biǎo bǐ yòu biān de hǎo kàn 。\nxiǎo lì : bù guò zuǒ biān de méi yǒu yòu biān de nà me dà , zán men ér zi shǒu wàn bǐ jiào dà a 。\nxiǎo gāng : xiān kàn kàn yào duō shǎo qián 。\nxiǎo lì : yòu biān de bǐ zuǒ biān de gèng guì , yào jiǔ bǎi wǔ shí kuài !\nxiǎo gāng : wǒ men mǎi yòu biān de ba , xī wàng ér zi huì xǐ huān 。\nxiǎo lì : hǎo de , zài gěi tā mǎi diǎn ér chī de 。",
+      "vietnamese_translation": "Tiểu Lệ: Đồng hồ đeo tay của con trai không chạy nữa, chúng ta mua cái mới cho thằng bé nhé. Anh\nxem hai chiếc này thế nào?\nTiểu Cương: Anh thấy chiếc đồng hồ bên trái đẹp hơn chiếc bên phải.\nTiểu Lệ: Nhưng chiếc bên trái không to bằng chiếc bên phải, cổ tay con trai chúng ta khá lớn.\nTiểu Cương: Xem bao nhiêu tiền trước đã.\nTiểu Lệ: Chiếc bên phải đắt hơn chiếc bên trái, chín trăm năm mươi tệ!\nTiểu Cương: Chúng ta mua chiếc bên phải đi, hi vọng con trai sẽ thích.\nTiểu Lệ: Được, mua thêm cho thằng bé chút đồ ăn.",
+      "source_reference": "Giáo trình HSK2 3.0 Hanu, bài 6, PDF 61."
+    },
+    {
+      "order_index": 2,
+      "title": "Mua vé xem phim",
+      "content": "小刚:明天是周末了,我们去看电影吧。\n小丽:好啊。你说我们看什么电影比较好?\n小刚:你电影不是比我看得多吗?你肯定知道什么电影好看。\n小丽:最近有一部挺有意思的爱情片,我们看这个吧。\n小刚:好,去电影院买票吗?\n小丽:到网上买吧,网上买比去电影院买便宜多了。",
+      "pinyin": "xiǎo gāng : míng tiān shì zhōu mò liǎo , wǒ men qù kàn diàn yǐng ba 。\nxiǎo lì : hǎo a 。 nǐ shuō wǒ men kàn shén me diàn yǐng bǐ jiào hǎo ?\nxiǎo gāng : nǐ diàn yǐng bú shì bǐ wǒ kàn de duō ma ? nǐ kěn dìng zhī dào shén me diàn yǐng hǎo kàn 。\nxiǎo lì : zuì jìn yǒu yī bù tǐng yǒu yì si de ài qíng piàn , wǒ men kàn zhè ge ba 。\nxiǎo gāng : hǎo , qù diàn yǐng yuàn mǎi piào ma ?\nxiǎo lì : dào wǎng shàng mǎi ba , wǎng shàng mǎi bǐ qù diàn yǐng yuàn mǎi pián yi duō le 。",
+      "vietnamese_translation": "Tiểu Cương: Ngày mai là cuối tuần rồi, chúng ta đi xem phim nhé.\nTiểu Lệ: Được, bạn nói xem chúng ta nên xem phim gì?\nTiểu Cương: Chẳng phải bạn xem phim nhiều hơn mình sao? Bạn chắc chắn biết phim gì hay.\nTiểu Lệ: Dạo gần đây có một bộ phim tình cảm rất thú vị, chúng ta xem phim này nhé.\nTiểu Cương: Được, đến rạp chiếu phim mua vé sao?\nTiểu Lệ: Mua trên mạng đi, mua trên mạng rẻ hơn đến rạp chiếu phim mua nhiều.",
+      "source_reference": "Giáo trình HSK2 3.0 Hanu, bài 6, PDF 64."
+    },
+    {
+      "order_index": 3,
+      "title": "Đi bộ đến rạp phim",
+      "content": "小丽:小刚,你帮我看看,这儿离电影院还有多远?\n小刚:这儿离电影院很近。\n小丽:大概要走多长时间?\n小刚:走二十分钟就到了。\n小丽:今天坐了一天车,我们走路去,运动一下儿吧。",
+      "pinyin": "xiǎo lì : xiǎo gāng , nǐ bāng wǒ kàn kàn , zhè ér lí diàn yǐng yuàn hái yǒu duō yuǎn ?\nxiǎo gāng : zhè ér lí diàn yǐng yuàn hěn jìn 。\nxiǎo lì : dà gài yào zǒu duō zhǎng shí jiān ?\nxiǎo gāng : zǒu èr shí fēn zhōng jiù dào le 。\nxiǎo lì : jīn tiān zuò le yī tiān chē , wǒ men zǒu lù qù , yùn dòng yī xià ér ba 。",
+      "vietnamese_translation": "Tiểu Lệ: Tiểu Cương, bạn giúp mình xem xem nơi này còn cách rạp chiếu phim bao xa?\nTiểu Cương: Nơi này cách rạp chiếu phim rất gần.\nTiểu Lệ: Cần đi khoảng bao lâu?\nTiểu Cương: Đi hai mươi phút là đến rồi.\nTiểu Lệ: Hôm nay ngồi xe cả ngày trời, chúng ta đi bộ đi, thể dục một chút.",
+      "source_reference": "Giáo trình HSK2 3.0 Hanu, bài 6, PDF 67."
+    },
+    {
+      "order_index": 4,
+      "title": "Món quà sinh nhật bất ngờ",
+      "content": "因为最近工作太忙,我忘了自己的生日。没想到,我丈夫还记得。他今天请我去饭馆吃饭,去商店买漂亮的花。我们一起看了一个下午的爱情片,回家后他还送给我一块非常好看的手表。我觉得今天很快乐。",
+      "pinyin": "yīn wèi zuì jìn gōng zuò tài máng , wǒ wàng le zì jǐ de shēng rì 。 méi xiǎng dào , wǒ zhàng fū hái jì de 。 tā jīn tiān qǐng wǒ qù fàn guǎn chī fàn , qù shāng diàn mǎi piào liàng de huā 。 wǒ men yì qǐ kàn le yí gè xià wǔ de ài qíng piàn , huí jiā hòu tā hái sòng gěi wǒ yī kuài fēi cháng hǎo kàn de shǒu biǎo 。 wǒ jué de jīn tiān hěn kuài lè 。",
+      "vietnamese_translation": "Bởi dạo gần đây công việc quá bận rộn, tôi đã quên mất sinh nhật của mình. Không ngờ, chồng tôi vẫn còn nhớ. Hôm nay anh ấy mời tôi đến nhà hàng ăn cơm, đến cửa hàng mua hoa đẹp. Chúng ta đã cùng nhau xem phim tình cảm cả một buổi chiều, sau khi về nhà anh ấy còn tặng cho tôi một chiếc đồng hồ cực kì đẹp. Tôi cảm thấy hôm nay rất vui.",
+      "source_reference": "Giáo trình HSK2 3.0 Hanu, bài 6, PDF 70."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 2 · Bài 6 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp; dùng kiến thức của bài này và các bài trước, không dùng bài sau. Đạt từ 80%; được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "review_status": "DRAFT_REQUIRES_EDITOR_REVIEW",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 1).",
+      "options": [
+        {
+          "option_text": "hoa; tiêu, tốn (tiền, thời gian)",
+          "is_correct": true
+        },
+        {
+          "option_text": "đồ; đồ vật",
+          "is_correct": false
+        },
+        {
+          "option_text": "xe buýt",
+          "is_correct": false
+        },
+        {
+          "option_text": "giỏi, tuyệt vời",
+          "is_correct": false
+        }
+      ],
+      "rubric": "花 (huā) nghĩa là hoa; tiêu, tốn (tiền, thời gian). ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "花"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 6
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “不过” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "lên (xe, tàu)",
+          "is_correct": false
+        },
+        {
+          "option_text": "nhưng, tuy nhiên",
+          "is_correct": true
+        },
+        {
+          "option_text": "Trần Thiên Trung (tên người)",
+          "is_correct": false
+        },
+        {
+          "option_text": "đi làm",
+          "is_correct": false
+        }
+      ],
+      "rubric": "不过 (bù guò) nghĩa là nhưng, tuy nhiên. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 6
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “méi xiǎng dào” và nghĩa “không ngờ”.",
+      "options": [
+        {
+          "option_text": "有",
+          "is_correct": false
+        },
+        {
+          "option_text": "没想到",
+          "is_correct": true
+        },
+        {
+          "option_text": "叫",
+          "is_correct": false
+        },
+        {
+          "option_text": "泰国",
+          "is_correct": false
+        }
+      ],
+      "rubric": "没想到 (méi xiǎng dào) nghĩa là không ngờ. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 6
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 4).",
+      "options": [
+        {
+          "option_text": "tình yêu đôi lứa",
+          "is_correct": true
+        },
+        {
+          "option_text": "nghiêm trọng",
+          "is_correct": false
+        },
+        {
+          "option_text": "cảm ơn",
+          "is_correct": false
+        },
+        {
+          "option_text": "quà, món quà",
+          "is_correct": false
+        }
+      ],
+      "rubric": "爱情 (ài qíng) nghĩa là tình yêu đôi lứa. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "爱情"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 6
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “手表” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "tổng cộng",
+          "is_correct": false
+        },
+        {
+          "option_text": "đồng hồ đeo tay",
+          "is_correct": true
+        },
+        {
+          "option_text": "quán ăn, nhà hàng; khách sạn (tùy ngữ cảnh)",
+          "is_correct": false
+        },
+        {
+          "option_text": "thứ mấy",
+          "is_correct": false
+        }
+      ],
+      "rubric": "手表 (shǒubiǎo) nghĩa là đồng hồ đeo tay. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 6
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “yuǎn” và nghĩa “xa”.",
+      "options": [
+        {
+          "option_text": "越南",
+          "is_correct": false
+        },
+        {
+          "option_text": "外",
+          "is_correct": false
+        },
+        {
+          "option_text": "远",
+          "is_correct": true
+        },
+        {
+          "option_text": "谁",
+          "is_correct": false
+        }
+      ],
+      "rubric": "远 (yuǎn) nghĩa là xa. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 6
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 7).",
+      "options": [
+        {
+          "option_text": "vợ (cách gọi thân mật)",
+          "is_correct": false
+        },
+        {
+          "option_text": "gặp, quen biết",
+          "is_correct": false
+        },
+        {
+          "option_text": "dưa hấu",
+          "is_correct": false
+        },
+        {
+          "option_text": "dùng trong câu so sánh",
+          "is_correct": true
+        }
+      ],
+      "rubric": "比 (bǐ) nghĩa là dùng trong câu so sánh. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "比"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 6
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “帮忙” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "đồng hồ đeo tay",
+          "is_correct": false
+        },
+        {
+          "option_text": "Bạch Gia Nguyệt (tên người)",
+          "is_correct": false
+        },
+        {
+          "option_text": "giúp đỡ",
+          "is_correct": true
+        },
+        {
+          "option_text": "số điện thoại di động",
+          "is_correct": false
+        }
+      ],
+      "rubric": "帮忙 (bāngmáng) nghĩa là giúp đỡ. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 1
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “gōng lǐ” và nghĩa “kilômét (km)”.",
+      "options": [
+        {
+          "option_text": "公里",
+          "is_correct": true
+        },
+        {
+          "option_text": "肉",
+          "is_correct": false
+        },
+        {
+          "option_text": "比较",
+          "is_correct": false
+        },
+        {
+          "option_text": "难",
+          "is_correct": false
+        }
+      ],
+      "rubric": "公里 (gōng lǐ) nghĩa là kilômét (km). ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 6
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "ở, cư trú",
+          "is_correct": false
+        },
+        {
+          "option_text": "bông, đóa (lượng từ của hoa, mây)",
+          "is_correct": true
+        },
+        {
+          "option_text": "em trai",
+          "is_correct": false
+        },
+        {
+          "option_text": "về kia",
+          "is_correct": false
+        }
+      ],
+      "rubric": "朵 (duǒ) nghĩa là bông, đóa (lượng từ của hoa, mây). ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "朵"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 6
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “米” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "nửa cân",
+          "is_correct": false
+        },
+        {
+          "option_text": "vậy thì, thế thì",
+          "is_correct": false
+        },
+        {
+          "option_text": "đắt",
+          "is_correct": false
+        },
+        {
+          "option_text": "mét (m)",
+          "is_correct": true
+        }
+      ],
+      "rubric": "米 (mǐ) nghĩa là mét (m). ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 6
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “piàn” và nghĩa “phim (trong 爱情片, 电影片)”.",
+      "options": [
+        {
+          "option_text": "鸡蛋",
+          "is_correct": false
+        },
+        {
+          "option_text": "片",
+          "is_correct": true
+        },
+        {
+          "option_text": "明天",
+          "is_correct": false
+        },
+        {
+          "option_text": "左",
+          "is_correct": false
+        }
+      ],
+      "rubric": "片 (piàn) nghĩa là phim (trong 爱情片, 电影片). Phân biệt 片 làm lượng từ viên/miếng/lát với 片 trong 爱情片 chỉ phim; đọc piàn trong cả hai trường hợp. Nhắc lại HSK1 bài 12: 片 (piàn) nghĩa là viên, miếng, lát. Trong bài này: phim (trong 爱情片, 电影片).",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 6
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “như vậy, đến thế (chỉ mức độ)” (gợi ý pinyin: nàme).",
+      "reference_answer": "那么",
+      "rubric": "Đáp án: 那么 (nàme). 那么 + tính từ/động từ tâm lý chỉ mức độ đến thế; khác 那么 ở đầu câu mang nghĩa vậy thì. Nhắc lại HSK2 bài 1: 那么 (nàme) nghĩa là vậy thì, thế thì. Trong bài này: như vậy, đến thế (chỉ mức độ).",
+      "config": {
+        "accepted_answers": [
+          "那么"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 2
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “chiếc (lượng từ cho đồng hồ)” (gợi ý pinyin: kuài).",
+      "reference_answer": "块",
+      "rubric": "Đáp án: 块 (kuài). 块 ở đây đếm chiếc đồng hồ trong 一块手表; ở HSK1, 块钱 dùng nói đơn vị tiền. Xác định nghĩa từ danh từ theo sau. Nhắc lại HSK2 bài 3: 块 (kuài) nghĩa là chiếc (lượng từ cho đồng hồ); miếng. Trong bài này: chiếc (lượng từ cho đồng hồ).",
+      "config": {
+        "accepted_answers": [
+          "块"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 6
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “nhà hàng” (gợi ý pinyin: fànguǎn).",
+      "reference_answer": "饭馆",
+      "rubric": "Đáp án: 饭馆 (fànguǎn). ",
+      "config": {
+        "accepted_answers": [
+          "饭馆"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 6
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “gần” (gợi ý pinyin: jìn).",
+      "reference_answer": "近",
+      "rubric": "Đáp án: 近 (jìn). ",
+      "config": {
+        "accepted_answers": [
+          "近"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 6
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 1).",
+      "rubric": "块: tệ; 不客气: không có gì (đáp lời cảm ơn); 比赛: trận đấu, thi đấu; 班: lớp học; ca làm",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "块"
+          },
+          {
+            "id": "l1",
+            "text": "不客气"
+          },
+          {
+            "id": "l2",
+            "text": "比赛"
+          },
+          {
+            "id": "l3",
+            "text": "班"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r0",
+            "text": "tệ"
+          },
+          {
+            "id": "r2",
+            "text": "trận đấu, thi đấu"
+          },
+          {
+            "id": "r1",
+            "text": "không có gì (đáp lời cảm ơn)"
+          },
+          {
+            "id": "r3",
+            "text": "lớp học; ca làm"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 10
+        },
+        {
+          "hsk": 1,
+          "lesson": 2
+        },
+        {
+          "hsk": 2,
+          "lesson": 5
+        },
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 2).",
+      "rubric": "兵马俑: Chiến binh đất nung; 钱: tiền; 下课: tan học; 开: lái (xe ô tô, phương tiện có động cơ)",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "兵马俑"
+          },
+          {
+            "id": "l1",
+            "text": "钱"
+          },
+          {
+            "id": "l2",
+            "text": "下课"
+          },
+          {
+            "id": "l3",
+            "text": "开"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r0",
+            "text": "Chiến binh đất nung"
+          },
+          {
+            "id": "r2",
+            "text": "tan học"
+          },
+          {
+            "id": "r3",
+            "text": "lái (xe ô tô, phương tiện có động cơ)"
+          },
+          {
+            "id": "r1",
+            "text": "tiền"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 2
+        },
+        {
+          "hsk": 1,
+          "lesson": 10
+        },
+        {
+          "hsk": 1,
+          "lesson": 7
+        },
+        {
+          "hsk": 1,
+          "lesson": 11
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “So sánh với 比”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nêu mức độ của A cao hơn B ở một thuộc tính.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "A + 比 + B + tính từ. Nêu mức độ của A cao hơn B ở một thuộc tính. Không dùng 很 trực tiếp trước tính từ trong mẫu 比 thông thường; có thể nói 贵一点儿/贵得多.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 6
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Không bằng với 没有”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nêu A chưa đạt mức độ của B.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "A + 没有 + B +（那么）+ tính từ. Nêu A chưa đạt mức độ của B. Ở đây 没有 biểu thị so sánh, khác 没有 + danh từ diễn đạt không sở hữu.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 6
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Bổ ngữ thời lượng”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nói hành động kéo dài bao lâu.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Động từ + khoảng thời gian. Nói hành động kéo dài bao lâu. Danh từ sự vật thường đứng sau thời lượng hoặc lặp động từ; đại từ chỉ người thường đứng trước thời lượng.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 6
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “So sánh với 比” (mục 4): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không dùng 很 trực tiếp trước tính từ trong mẫu 比 thông thường; có thể nói 贵一点儿/贵得多.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "A + 比 + B + tính từ. Nêu mức độ của A cao hơn B ở một thuộc tính. Không dùng 很 trực tiếp trước tính từ trong mẫu 比 thông thường; có thể nói 贵一点儿/贵得多.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 6
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Không bằng với 没有” (mục 5): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Ở đây 没有 biểu thị so sánh, khác 没有 + danh từ diễn đạt không sở hữu.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "A + 没有 + B +（那么）+ tính từ. Nêu A chưa đạt mức độ của B. Ở đây 没有 biểu thị so sánh, khác 没有 + danh từ diễn đạt không sở hữu.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 6
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Bổ ngữ thời lượng” (mục 6): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Danh từ sự vật thường đứng sau thời lượng hoặc lặp động từ; đại từ chỉ người thường đứng trước thời lượng.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Động từ + khoảng thời gian. Nói hành động kéo dài bao lâu. Danh từ sự vật thường đứng sau thời lượng hoặc lặp động từ; đại từ chỉ người thường đứng trước thời lượng.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 6
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 1).",
+      "reference_answer": "这块手表比那块贵。",
+      "rubric": "Câu đúng: 这块手表比那块贵。 Không dùng 很 trực tiếp trước tính từ trong mẫu 比 thông thường; có thể nói 贵一点儿/贵得多.",
+      "config": {
+        "items": [
+          {
+            "id": "w5",
+            "text": "块"
+          },
+          {
+            "id": "w2",
+            "text": "手表"
+          },
+          {
+            "id": "w7",
+            "text": "。"
+          },
+          {
+            "id": "w6",
+            "text": "贵"
+          },
+          {
+            "id": "w1",
+            "text": "块"
+          },
+          {
+            "id": "w3",
+            "text": "比"
+          },
+          {
+            "id": "w0",
+            "text": "这"
+          },
+          {
+            "id": "w4",
+            "text": "那"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 6
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 2).",
+      "reference_answer": "这块手表没有那块大。",
+      "rubric": "Câu đúng: 这块手表没有那块大。 Ở đây 没有 biểu thị so sánh, khác 没有 + danh từ diễn đạt không sở hữu.",
+      "config": {
+        "items": [
+          {
+            "id": "w0",
+            "text": "这"
+          },
+          {
+            "id": "w3",
+            "text": "没有"
+          },
+          {
+            "id": "w1",
+            "text": "块"
+          },
+          {
+            "id": "w2",
+            "text": "手表"
+          },
+          {
+            "id": "w4",
+            "text": "那"
+          },
+          {
+            "id": "w7",
+            "text": "。"
+          },
+          {
+            "id": "w5",
+            "text": "块"
+          },
+          {
+            "id": "w6",
+            "text": "大"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 6
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 3).",
+      "reference_answer": "我们休息十分钟。",
+      "rubric": "Câu đúng: 我们休息十分钟。 Danh từ sự vật thường đứng sau thời lượng hoặc lặp động từ; đại từ chỉ người thường đứng trước thời lượng.",
+      "config": {
+        "items": [
+          {
+            "id": "w4",
+            "text": "分钟"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w1",
+            "text": "们"
+          },
+          {
+            "id": "w2",
+            "text": "休息"
+          },
+          {
+            "id": "w5",
+            "text": "。"
+          },
+          {
+            "id": "w3",
+            "text": "十"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 6
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 4).",
+      "reference_answer": "儿子的手表不走了,我们给他买块新的吧。你看,这两块怎么样?",
+      "rubric": "Câu đúng: 儿子的手表不走了,我们给他买块新的吧。你看,这两块怎么样? Không dùng 很 trực tiếp trước tính từ trong mẫu 比 thông thường; có thể nói 贵一点儿/贵得多.",
+      "config": {
+        "items": [
+          {
+            "id": "w0",
+            "text": "儿子"
+          },
+          {
+            "id": "w9",
+            "text": "给"
+          },
+          {
+            "id": "w4",
+            "text": "走"
+          },
+          {
+            "id": "w21",
+            "text": "两"
+          },
+          {
+            "id": "w20",
+            "text": "这"
+          },
+          {
+            "id": "w12",
+            "text": "块"
+          },
+          {
+            "id": "w2",
+            "text": "手表"
+          },
+          {
+            "id": "w5",
+            "text": "了"
+          },
+          {
+            "id": "w24",
+            "text": "?"
+          },
+          {
+            "id": "w3",
+            "text": "不"
+          },
+          {
+            "id": "w17",
+            "text": "你"
+          },
+          {
+            "id": "w15",
+            "text": "吧"
+          },
+          {
+            "id": "w8",
+            "text": "们"
+          },
+          {
+            "id": "w23",
+            "text": "怎么样"
+          },
+          {
+            "id": "w1",
+            "text": "的"
+          },
+          {
+            "id": "w6",
+            "text": ","
+          },
+          {
+            "id": "w18",
+            "text": "看"
+          },
+          {
+            "id": "w22",
+            "text": "块"
+          },
+          {
+            "id": "w7",
+            "text": "我"
+          },
+          {
+            "id": "w11",
+            "text": "买"
+          },
+          {
+            "id": "w13",
+            "text": "新"
+          },
+          {
+            "id": "w10",
+            "text": "他"
+          },
+          {
+            "id": "w16",
+            "text": "。"
+          },
+          {
+            "id": "w19",
+            "text": ","
+          },
+          {
+            "id": "w14",
+            "text": "的"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8",
+          "w9",
+          "w10",
+          "w11",
+          "w12",
+          "w13",
+          "w14",
+          "w15",
+          "w16",
+          "w17",
+          "w18",
+          "w19",
+          "w20",
+          "w21",
+          "w22",
+          "w23",
+          "w24"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 6
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 5).",
+      "reference_answer": "我觉得左边的手表比右边的好看。",
+      "rubric": "Câu đúng: 我觉得左边的手表比右边的好看。 Ở đây 没有 biểu thị so sánh, khác 没有 + danh từ diễn đạt không sở hữu.",
+      "config": {
+        "items": [
+          {
+            "id": "w7",
+            "text": "右"
+          },
+          {
+            "id": "w1",
+            "text": "觉得"
+          },
+          {
+            "id": "w2",
+            "text": "左"
+          },
+          {
+            "id": "w10",
+            "text": "好"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w8",
+            "text": "边"
+          },
+          {
+            "id": "w9",
+            "text": "的"
+          },
+          {
+            "id": "w3",
+            "text": "边"
+          },
+          {
+            "id": "w4",
+            "text": "的"
+          },
+          {
+            "id": "w12",
+            "text": "。"
+          },
+          {
+            "id": "w6",
+            "text": "比"
+          },
+          {
+            "id": "w11",
+            "text": "看"
+          },
+          {
+            "id": "w5",
+            "text": "手表"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8",
+          "w9",
+          "w10",
+          "w11",
+          "w12"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 6
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 6).",
+      "reference_answer": "不过左边的没有右边的那么大,咱们儿子手腕比较大啊。",
+      "rubric": "Câu đúng: 不过左边的没有右边的那么大,咱们儿子手腕比较大啊。 Danh từ sự vật thường đứng sau thời lượng hoặc lặp động từ; đại từ chỉ người thường đứng trước thời lượng.",
+      "config": {
+        "items": [
+          {
+            "id": "w11",
+            "text": "咱们"
+          },
+          {
+            "id": "w6",
+            "text": "边"
+          },
+          {
+            "id": "w1",
+            "text": "左"
+          },
+          {
+            "id": "w9",
+            "text": "大"
+          },
+          {
+            "id": "w16",
+            "text": "啊"
+          },
+          {
+            "id": "w5",
+            "text": "右"
+          },
+          {
+            "id": "w17",
+            "text": "。"
+          },
+          {
+            "id": "w7",
+            "text": "的"
+          },
+          {
+            "id": "w10",
+            "text": ","
+          },
+          {
+            "id": "w15",
+            "text": "大"
+          },
+          {
+            "id": "w0",
+            "text": "不过"
+          },
+          {
+            "id": "w4",
+            "text": "没有"
+          },
+          {
+            "id": "w3",
+            "text": "的"
+          },
+          {
+            "id": "w8",
+            "text": "那么"
+          },
+          {
+            "id": "w13",
+            "text": "手腕"
+          },
+          {
+            "id": "w14",
+            "text": "比较"
+          },
+          {
+            "id": "w2",
+            "text": "边"
+          },
+          {
+            "id": "w12",
+            "text": "儿子"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8",
+          "w9",
+          "w10",
+          "w11",
+          "w12",
+          "w13",
+          "w14",
+          "w15",
+          "w16",
+          "w17"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 6
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ],
+  "source_documents": {
+    "vocabulary": "DOCX",
+    "theory": "HSK2 PDF"
+  }
+}

@@ -37,7 +37,7 @@ function LessonLibraryPage() {
   const [title, setTitle] = useState('')
   const [description, setDescription] = useState('')
   const hskQuery = useQuery({ queryKey: queryKeys.adminHskLevels, queryFn: listHskLevels })
-  const filters = { page, page_size: 20, ...(status ? { status } : {}), ...(hskId ? { hsk_level_id: hskId } : {}) }
+  const filters = { page, page_size: 10, ...(status ? { status } : {}), ...(hskId ? { hsk_level_id: hskId } : {}) }
   const list = useQuery({ queryKey: queryKeys.adminLessons(filters), queryFn: () => listAdminLessons(filters) })
   const create = useMutation({
     mutationFn: () => createAdminLesson({

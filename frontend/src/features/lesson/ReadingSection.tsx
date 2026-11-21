@@ -6,6 +6,7 @@ import { queryKeys } from '../../app/query/keys'
 import { ApiError } from '../../lib/api/errors'
 import { completeLessonReading } from './api'
 import { ReadingText, type LessonReading } from './ReadingText'
+import { readingIllustration } from './readingIllustrations'
 
 export function ReadingSection({ lessonId, readings, completedIds }: { lessonId: string; readings: LessonReading[]; completedIds: Set<string> }) {
   const client = useQueryClient()
@@ -39,9 +40,10 @@ export function ReadingSection({ lessonId, readings, completedIds }: { lessonId:
       <p className="lesson-reading-intro">Đọc từng bài khóa, sau đó bấm hoàn thành để lưu tiến độ của bạn.</p>
       <div className="lesson-reading-list">{readings.map(reading => {
         const done = completedIds.has(reading.id)
+        const illustration = readingIllustration(reading.content)
         return <Surface as="article" className="learner-surface lesson-reading-card" key={reading.id} aria-labelledby={'reading-' + reading.id}>
           <div className="lesson-reading-card__heading"><h3 id={'reading-' + reading.id}>{reading.title}</h3><StatusBadge tone={done ? 'success' : 'neutral'}>{done ? 'Đã hoàn thành' : 'Chưa hoàn thành'}</StatusBadge></div>
-          <ReadingText reading={reading}/>
+          <ReadingText reading={reading} illustration={illustration && <div className="lesson-reading-scene" role="img" aria-label={illustration.alt} data-scene={illustration.cell} style={{ backgroundPosition: `${illustration.cell % 4 * 100 / 3}% ${Math.floor(illustration.cell / 4) * 100 / 3}%` }}/>}/>
           {errors[reading.id] && <Alert role="alert" tone="error">{errors[reading.id]}</Alert>}
           <div className="lesson-reading-card__actions"><Button variant={done ? 'secondary' : 'primary'} disabled={done || pending[reading.id]} aria-label={done ? `Đã hoàn thành bài khóa: ${reading.title}` : `Hoàn thành bài khóa: ${reading.title}`} onClick={() => void complete(reading)}>{pending[reading.id] ? 'Đang lưu…' : done ? 'Đã hoàn thành' : 'Hoàn thành bài khóa'}</Button></div>
         </Surface>

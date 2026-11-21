@@ -1,0 +1,1675 @@
+{
+  "key": "hsk1-lesson-13-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 1,
+    "lesson_number": 13,
+    "title": "请给我一杯茶 · Hỏi đáp và gọi món",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "问题",
+      "pinyin": "wèntí",
+      "vietnamese_meaning": "câu hỏi; vấn đề",
+      "part_of_speech": "danh từ",
+      "example": "我有一个问题。\nwǒ yǒu yí gè wèn tí 。\nTôi có một câu hỏi.",
+      "order_index": 1,
+      "note": null,
+      "source_key": "1:13:问题"
+    },
+    {
+      "hanzi": "回答",
+      "pinyin": "huí dá",
+      "vietnamese_meaning": "trả lời",
+      "part_of_speech": "động từ",
+      "example": "请回答这个问题。\nqǐng huí dá zhè ge wèn tí 。\nHãy trả lời câu hỏi này.",
+      "order_index": 2,
+      "note": null,
+      "source_key": "1:13:回答"
+    },
+    {
+      "hanzi": "为什么",
+      "pinyin": "wèi shén me",
+      "vietnamese_meaning": "tại sao, vì sao",
+      "part_of_speech": "đại từ nghi vấn",
+      "example": "你为什么不来？\nnǐ wèi shén me bù lái ？\nTại sao bạn không đến?",
+      "order_index": 3,
+      "note": null,
+      "source_key": "1:13:为什么"
+    },
+    {
+      "hanzi": "因为",
+      "pinyin": "yīn wèi",
+      "vietnamese_meaning": "vì, bởi vì",
+      "part_of_speech": "liên từ",
+      "example": "因为他很忙，所以没来。\nyīn wèi tā hěn máng ， suǒ yǐ méi lái 。\nVì anh ấy bận nên không đến.",
+      "order_index": 4,
+      "note": null,
+      "source_key": "1:13:因为"
+    },
+    {
+      "hanzi": "所以",
+      "pinyin": "suǒ yǐ",
+      "vietnamese_meaning": "vì vậy, cho nên",
+      "part_of_speech": "liên từ",
+      "example": "因为他很忙，所以没来。\nyīn wèi tā hěn máng ， suǒ yǐ méi lái 。\nVì anh ấy bận nên không đến.",
+      "order_index": 5,
+      "note": null,
+      "source_key": "1:13:所以"
+    },
+    {
+      "hanzi": "懂",
+      "pinyin": "dǒng",
+      "vietnamese_meaning": "hiểu",
+      "part_of_speech": "động từ",
+      "example": "我不懂这个词。\nwǒ bù dǒng zhè ge cí 。\nTôi không hiểu từ này.",
+      "order_index": 6,
+      "note": null,
+      "source_key": "1:13:懂"
+    },
+    {
+      "hanzi": "明白",
+      "pinyin": "míng bái",
+      "vietnamese_meaning": "hiểu, rõ",
+      "part_of_speech": "động từ",
+      "example": "我明白你的意思。\nwǒ míng bái nǐ de yì si 。\nTôi hiểu ý của bạn.",
+      "order_index": 7,
+      "note": null,
+      "source_key": "1:13:明白"
+    },
+    {
+      "hanzi": "汉字",
+      "pinyin": "hàn zì",
+      "vietnamese_meaning": "chữ Hán",
+      "part_of_speech": "danh từ",
+      "example": "我会写汉字。\nwǒ huì xiě hàn zì 。\nTôi biết viết chữ Hán.",
+      "order_index": 8,
+      "note": null,
+      "source_key": "1:13:汉字"
+    },
+    {
+      "hanzi": "语法",
+      "pinyin": "yǔ fǎ",
+      "vietnamese_meaning": "ngữ pháp",
+      "part_of_speech": "danh từ",
+      "example": "我觉得语法很难。\nwǒ jué de yǔ fǎ hěn nán 。\nTôi thấy ngữ pháp khó.",
+      "order_index": 9,
+      "note": null,
+      "source_key": "1:13:语法"
+    },
+    {
+      "hanzi": "发音",
+      "pinyin": "fā yīn",
+      "vietnamese_meaning": "phát âm; cách phát âm",
+      "part_of_speech": "danh từ, động từ",
+      "example": "他的发音很好。\ntā de fā yīn hěn hǎo 。\nPhát âm của anh ấy rất tốt.",
+      "order_index": 10,
+      "note": null,
+      "source_key": "1:13:发音"
+    },
+    {
+      "hanzi": "技能",
+      "pinyin": "jì néng",
+      "vietnamese_meaning": "kỹ năng",
+      "part_of_speech": "danh từ",
+      "example": "听和说是两种技能。\ntīng hé shuō shì liǎng zhǒng jì néng 。\nNghe và nói là hai kỹ năng.",
+      "order_index": 11,
+      "note": null,
+      "source_key": "1:13:技能"
+    },
+    {
+      "hanzi": "写",
+      "pinyin": "xiě",
+      "vietnamese_meaning": "viết",
+      "part_of_speech": "động từ",
+      "example": "我会写汉字。\nwǒ huì xiě hàn zì 。\nTôi biết viết chữ Hán.",
+      "order_index": 12,
+      "note": null,
+      "source_key": "1:13:写"
+    },
+    {
+      "hanzi": "久",
+      "pinyin": "jiǔ",
+      "vietnamese_meaning": "lâu",
+      "part_of_speech": "tính từ",
+      "example": "我等了很久。\nwǒ děng le hěn jiǔ 。\nTôi đã đợi rất lâu.",
+      "order_index": 13,
+      "note": null,
+      "source_key": "1:13:久"
+    },
+    {
+      "hanzi": "多久",
+      "pinyin": "duō jiǔ",
+      "vietnamese_meaning": "bao lâu",
+      "part_of_speech": "cụm nghi vấn",
+      "example": "你学汉语多久了？\nnǐ xué hàn yǔ duō jiǔ le ？\nBạn đã học tiếng Trung bao lâu rồi?",
+      "order_index": 14,
+      "note": null,
+      "source_key": "1:13:多久"
+    },
+    {
+      "hanzi": "多长时间",
+      "pinyin": "duō zhǎng shí jiān",
+      "vietnamese_meaning": "bao lâu; khoảng thời gian bao nhiêu",
+      "part_of_speech": "cụm nghi vấn",
+      "example": "你学汉语多长时间了？\nnǐ xué hàn yǔ duō zhǎng shí jiān le ？\nBạn đã học tiếng Trung bao lâu rồi?",
+      "order_index": 15,
+      "note": null,
+      "source_key": "1:13:多长时间"
+    },
+    {
+      "hanzi": "时间",
+      "pinyin": "shíjiān",
+      "vietnamese_meaning": "thời gian",
+      "part_of_speech": "danh từ",
+      "example": "我今天没有时间。\nwǒ jīn tiān méi yǒu shí jiān 。\nHôm nay tôi không có thời gian.",
+      "order_index": 16,
+      "note": null,
+      "source_key": "1:13:时间"
+    },
+    {
+      "hanzi": "但是",
+      "pinyin": "dàn shì",
+      "vietnamese_meaning": "nhưng",
+      "part_of_speech": "liên từ",
+      "example": "我想去，但是没有时间。\nwǒ xiǎng qù ， dàn shì méi yǒu shí jiān 。\nTôi muốn đi, nhưng không có thời gian.",
+      "order_index": 17,
+      "note": "但是 và 但 đều mang nghĩa nhưng; 但 gọn và thường gặp trong văn viết. Không dùng 所以 thay cho quan hệ tương phản.",
+      "source_key": "1:13:但是"
+    },
+    {
+      "hanzi": "但",
+      "pinyin": "dàn",
+      "vietnamese_meaning": "nhưng (dạng ngắn của 但是)",
+      "part_of_speech": "liên từ",
+      "example": "我想去，但是没有时间。\nwǒ xiǎng qù ， dàn shì méi yǒu shí jiān 。\nTôi muốn đi, nhưng không có thời gian.",
+      "order_index": 18,
+      "note": null,
+      "source_key": "1:13:但"
+    },
+    {
+      "hanzi": "打电话",
+      "pinyin": "dǎ diànhuà",
+      "vietnamese_meaning": "gọi điện thoại",
+      "part_of_speech": "động từ",
+      "example": "你等一下，我给他打电话。\nnǐ děng yí xià ， wǒ gěi tā dǎ diàn huà 。\nBạn đợi một lát, tôi gọi điện cho anh ấy.",
+      "order_index": 19,
+      "note": null,
+      "source_key": "1:13:打电话"
+    },
+    {
+      "hanzi": "接",
+      "pinyin": "jiē",
+      "vietnamese_meaning": "đón; nhận (điện thoại, vật được đưa)",
+      "part_of_speech": "động từ",
+      "example": "我去机场接你。\nwǒ qù jī chǎng jiē nǐ 。\nTôi đến sân bay đón bạn.",
+      "order_index": 20,
+      "note": null,
+      "source_key": "1:13:接"
+    },
+    {
+      "hanzi": "一下",
+      "pinyin": "yī xià",
+      "vietnamese_meaning": "một chút, một lát (sau động từ)",
+      "part_of_speech": "bổ ngữ động lượng",
+      "example": "你等一下，我给他打电话。\nnǐ děng yí xià ， wǒ gěi tā dǎ diàn huà 。\nBạn đợi một lát, tôi gọi điện cho anh ấy.",
+      "order_index": 21,
+      "note": null,
+      "source_key": "1:13:一下"
+    },
+    {
+      "hanzi": "等",
+      "pinyin": "děng",
+      "vietnamese_meaning": "đợi, chờ",
+      "part_of_speech": "động từ",
+      "example": "你等一下，我给他打电话。\nnǐ děng yí xià ， wǒ gěi tā dǎ diàn huà 。\nBạn đợi một lát, tôi gọi điện cho anh ấy.",
+      "order_index": 22,
+      "note": null,
+      "source_key": "1:13:等"
+    },
+    {
+      "hanzi": "机场",
+      "pinyin": "jīchǎng",
+      "vietnamese_meaning": "sân bay",
+      "part_of_speech": "danh từ",
+      "example": "我去机场。\nwǒ qù jī chǎng 。\nTôi đến sân bay.",
+      "order_index": 23,
+      "note": null,
+      "source_key": "1:13:机场"
+    }
+  ],
+  "grammar": [
+    {
+      "name": "Xin phép với 可以",
+      "structure": "Chủ ngữ + 可以/不可以 + cụm động từ",
+      "explanation": "可以 biểu thị sự cho phép hoặc khả năng trong ngữ cảnh.",
+      "usage": "会 là biết làm; 能 thường là đủ điều kiện; 可以 có thể là được phép.",
+      "example": "我可以坐吗？\nwǒ kě yǐ zuò ma ？\nTôi có thể ngồi không?",
+      "note": "会 là biết làm; 能 thường là đủ điều kiện; 可以 có thể là được phép.",
+      "order_index": 1
+    },
+    {
+      "name": "Thử làm với 一下",
+      "structure": "Động từ + 一下",
+      "explanation": "Biểu thị làm trong thời gian ngắn hoặc làm thử, làm lời đề nghị nhẹ hơn.",
+      "usage": "一下 đứng sau động từ; không thay cho 一点儿 khi nói một ít danh từ.",
+      "example": "我看一下。\nwǒ kàn yī xià 。\nTôi xem một chút.",
+      "note": "一下 đứng sau động từ; không thay cho 一点儿 khi nói một ít danh từ.",
+      "order_index": 2
+    },
+    {
+      "name": "Câu hai tân ngữ",
+      "structure": "Chủ ngữ + 给/问 + người + sự vật",
+      "explanation": "Người nhận hoặc người được hỏi đứng trước đồ vật/nội dung.",
+      "usage": "Phân biệt 给我一杯茶 là đưa trà cho tôi với 给我打电话 là gọi điện cho tôi.",
+      "example": "请给我一杯茶。\nqǐng gěi wǒ yī bēi chá 。\nXin đưa cho tôi một cốc trà.",
+      "note": "Phân biệt 给我一杯茶 là đưa trà cho tôi với 给我打电话 là gọi điện cho tôi.",
+      "order_index": 3
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Hỏi thầy cô một vấn đề",
+      "content": "白家月:王老师,我可以再问您一个问题吗?\n王一飞:可以。你有什么问题?\n白家月:那个小店卖不卖手机?\n王一飞:我不知道。你可以打电话问一下。",
+      "pinyin": "bái jiā yuè : wáng lǎo shī , wǒ kě yǐ zài wèn nín yí gè wèn tí ma ?\nwáng yī fēi : kě yǐ 。 nǐ yǒu shén me wèn tí ?\nbái jiā yuè : nà ge xiǎo diàn mài bù mài shǒu jī ?\nwáng yī fēi : wǒ bù zhī dào 。 nǐ kě yǐ dǎ diàn huà wèn yī xià 。",
+      "vietnamese_translation": "Bạch Gia Nguyệt: Thưa thầy Vương, em có thể hỏi thêm thầy một câu hỏi nữa được không ạ?\nVương Nhất Phi: Được. Em có câu hỏi gì?\nBạch Gia Nguyệt: Cửa hàng nhỏ đó có bán điện thoại không ạ?\nVương Nhất Phi: Cô không biết. Em có thể gọi điện thoại hỏi thử xem.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 13, PDF 121."
+    },
+    {
+      "order_index": 2,
+      "title": "Gọi đồ uống",
+      "content": "服务员:女士,请坐!您喝什么?\n王一雪:我看一下。请给我一杯牛奶。\n服务员:好的。您还要什么?\n王一雪:我还没吃早饭,再要这个面包和鸡蛋吧。",
+      "pinyin": "fú wù yuán : nǚ shì , qǐng zuò ! nín hē shén me ?\nwáng yī xuě : wǒ kàn yī xià 。 qǐng gěi wǒ yī bēi niú nǎi 。\nfú wù yuán : hǎo de 。 nín hái yào shén me ?\nwáng yī xuě : wǒ hái méi chī zǎo fàn , zài yào zhè ge miàn bāo hé jī dàn ba 。",
+      "vietnamese_translation": "Nhân viên phục vụ: Thưa cô, mời ngồi! Cô uống gì?\nVương Nhất Tuyết: Tôi xem một chút. Cho tôi một cốc sữa.\nNhân viên phục vụ: Vâng ạ. Cô còn muốn gì nữa không?\nVương Nhất Tuyết: Tôi vẫn chưa ăn sáng, lấy thêm bánh mì và trứng này nhé.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 13, PDF 123, 124."
+    },
+    {
+      "order_index": 3,
+      "title": "Gọi sủi cảo và trà",
+      "content": "服务员:先生,请坐!您要什么?\n刘明:我要一斤饺子。\n服务员:好的。一斤饺子四十个。\n刘明:四十个太多了,我要一半吧。\n服务员:半斤二十个。您想喝什么?\n刘明:请给我一杯茶吧。",
+      "pinyin": "fú wù yuán : xiān shēng , qǐng zuò ! nín yào shén me ?\nliú míng : wǒ yào yī jīn jiǎo zi 。\nfú wù yuán : hǎo de 。 yī jīn jiǎo zi sì shí gè 。\nliú míng : sì shí gè tài duō le , wǒ yào yí bàn ba 。\nfú wù yuán : bàn jīn èr shí gè 。 nín xiǎng hē shén me ?\nliú míng : qǐng gěi wǒ yī bēi chá ba 。",
+      "vietnamese_translation": "Nhân viên phục vụ: Thưa ông, mời ngồi! Ông muốn gì?\nLưu Minh:               Tôi muốn một cân sủi cảo.\nNhân viên phục vụ: Vâng. Một cân sủi cảo là 40 cái.\nLưu Minh:             40 cái nhiều quá, tôi lấy một nửa nhé.\nNhân viên phục vụ: Nửa cân là 20 cái. Ông muốn uống gì?\nLưu Minh:              Hãy cho tôi một cốc trà nhé.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 13, PDF 125, 126."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 1 · Bài 13 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp; dùng kiến thức của bài này và các bài trước, không dùng bài sau. Đạt từ 80%; được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "review_status": "DRAFT_REQUIRES_EDITOR_REVIEW",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 1).",
+      "options": [
+        {
+          "option_text": "mua",
+          "is_correct": false
+        },
+        {
+          "option_text": "nhưng",
+          "is_correct": true
+        },
+        {
+          "option_text": "năm",
+          "is_correct": false
+        },
+        {
+          "option_text": "phút",
+          "is_correct": false
+        }
+      ],
+      "rubric": "但是 (dàn shì) nghĩa là nhưng. 但是 và 但 đều mang nghĩa nhưng; 但 gọn và thường gặp trong văn viết. Không dùng 所以 thay cho quan hệ tương phản.",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "但是"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 13
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “打电话” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "không (số 0)",
+          "is_correct": false
+        },
+        {
+          "option_text": "nhân viên bán hàng",
+          "is_correct": false
+        },
+        {
+          "option_text": "nhiều",
+          "is_correct": false
+        },
+        {
+          "option_text": "gọi điện thoại",
+          "is_correct": true
+        }
+      ],
+      "rubric": "打电话 (dǎ diànhuà) nghĩa là gọi điện thoại. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 13
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “duō zhǎng shí jiān” và nghĩa “bao lâu; khoảng thời gian bao nhiêu”.",
+      "options": [
+        {
+          "option_text": "会",
+          "is_correct": false
+        },
+        {
+          "option_text": "啤酒",
+          "is_correct": false
+        },
+        {
+          "option_text": "多长时间",
+          "is_correct": true
+        },
+        {
+          "option_text": "生病",
+          "is_correct": false
+        }
+      ],
+      "rubric": "多长时间 (duō zhǎng shí jiān) nghĩa là bao lâu; khoảng thời gian bao nhiêu. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 13
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 4).",
+      "options": [
+        {
+          "option_text": "đến",
+          "is_correct": false
+        },
+        {
+          "option_text": "bà ngoại",
+          "is_correct": false
+        },
+        {
+          "option_text": "mời",
+          "is_correct": false
+        },
+        {
+          "option_text": "nhưng (dạng ngắn của 但是)",
+          "is_correct": true
+        }
+      ],
+      "rubric": "但 (dàn) nghĩa là nhưng (dạng ngắn của 但是). ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "但"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 13
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “一下” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "ngồi",
+          "is_correct": false
+        },
+        {
+          "option_text": "tan làm",
+          "is_correct": false
+        },
+        {
+          "option_text": "hiểu, rõ",
+          "is_correct": false
+        },
+        {
+          "option_text": "một chút, một lát (sau động từ)",
+          "is_correct": true
+        }
+      ],
+      "rubric": "一下 (yī xià) nghĩa là một chút, một lát (sau động từ). ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 13
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “huí dá” và nghĩa “trả lời”.",
+      "options": [
+        {
+          "option_text": "上课",
+          "is_correct": false
+        },
+        {
+          "option_text": "汉字",
+          "is_correct": false
+        },
+        {
+          "option_text": "读书",
+          "is_correct": false
+        },
+        {
+          "option_text": "回答",
+          "is_correct": true
+        }
+      ],
+      "rubric": "回答 (huí dá) nghĩa là trả lời. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 13
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 7).",
+      "options": [
+        {
+          "option_text": "món ăn; thức ăn; rau",
+          "is_correct": false
+        },
+        {
+          "option_text": "đi",
+          "is_correct": false
+        },
+        {
+          "option_text": "ngủ",
+          "is_correct": false
+        },
+        {
+          "option_text": "viết",
+          "is_correct": true
+        }
+      ],
+      "rubric": "写 (xiě) nghĩa là viết. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "写"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 13
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “课” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "bài học; tiết học",
+          "is_correct": true
+        },
+        {
+          "option_text": "bà ngoại",
+          "is_correct": false
+        },
+        {
+          "option_text": "nửa cân",
+          "is_correct": false
+        },
+        {
+          "option_text": "còn, vẫn",
+          "is_correct": false
+        }
+      ],
+      "rubric": "课 (kè) nghĩa là bài học; tiết học. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 7
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “dǒng” và nghĩa “hiểu”.",
+      "options": [
+        {
+          "option_text": "结婚",
+          "is_correct": false
+        },
+        {
+          "option_text": "去年",
+          "is_correct": false
+        },
+        {
+          "option_text": "懂",
+          "is_correct": true
+        },
+        {
+          "option_text": "看见",
+          "is_correct": false
+        }
+      ],
+      "rubric": "懂 (dǒng) nghĩa là hiểu. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 13
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "ngữ pháp",
+          "is_correct": true
+        },
+        {
+          "option_text": "những cái này",
+          "is_correct": false
+        },
+        {
+          "option_text": "hôm nay",
+          "is_correct": false
+        },
+        {
+          "option_text": "ngoài",
+          "is_correct": false
+        }
+      ],
+      "rubric": "语法 (yǔ fǎ) nghĩa là ngữ pháp. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "语法"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 13
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “晴天” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "con cái",
+          "is_correct": false
+        },
+        {
+          "option_text": "phim",
+          "is_correct": false
+        },
+        {
+          "option_text": "ngày trời quang, có nắng",
+          "is_correct": true
+        },
+        {
+          "option_text": "xe đạp",
+          "is_correct": false
+        }
+      ],
+      "rubric": "晴天 (qíng tiān) nghĩa là ngày trời quang, có nắng. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 12
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “ba” và nghĩa “nhé, đi (gợi ý hoặc đề nghị)”.",
+      "options": [
+        {
+          "option_text": "这些",
+          "is_correct": false
+        },
+        {
+          "option_text": "找",
+          "is_correct": false
+        },
+        {
+          "option_text": "吧",
+          "is_correct": true
+        },
+        {
+          "option_text": "孩子",
+          "is_correct": false
+        }
+      ],
+      "rubric": "吧 (ba) nghĩa là nhé, đi (gợi ý hoặc đề nghị). ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 7
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “hiểu, rõ” (gợi ý pinyin: míng bái).",
+      "reference_answer": "明白",
+      "rubric": "Đáp án: 明白 (míng bái). ",
+      "config": {
+        "accepted_answers": [
+          "明白"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 13
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “quần áo” (gợi ý pinyin: yīfu).",
+      "reference_answer": "衣服",
+      "rubric": "Đáp án: 衣服 (yīfu). ",
+      "config": {
+        "accepted_answers": [
+          "衣服"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 10
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “vì, bởi vì” (gợi ý pinyin: yīn wèi).",
+      "reference_answer": "因为",
+      "rubric": "Đáp án: 因为 (yīn wèi). ",
+      "config": {
+        "accepted_answers": [
+          "因为"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 13
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “lâu” (gợi ý pinyin: jiǔ).",
+      "reference_answer": "久",
+      "rubric": "Đáp án: 久 (jiǔ). ",
+      "config": {
+        "accepted_answers": [
+          "久"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 13
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 1).",
+      "rubric": "下大雨: mưa to; 到: đến; 都: đều; tất cả; 云: mây",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "下大雨"
+          },
+          {
+            "id": "l1",
+            "text": "到"
+          },
+          {
+            "id": "l2",
+            "text": "都"
+          },
+          {
+            "id": "l3",
+            "text": "云"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r0",
+            "text": "mưa to"
+          },
+          {
+            "id": "r3",
+            "text": "mây"
+          },
+          {
+            "id": "r1",
+            "text": "đến"
+          },
+          {
+            "id": "r2",
+            "text": "đều; tất cả"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 12
+        },
+        {
+          "hsk": 1,
+          "lesson": 8
+        },
+        {
+          "hsk": 1,
+          "lesson": 8
+        },
+        {
+          "hsk": 1,
+          "lesson": 12
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 2).",
+      "rubric": "二: hai (số 2); 弟弟: em trai; 明天: ngày mai; 老公: chồng (cách gọi thân mật)",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "二"
+          },
+          {
+            "id": "l1",
+            "text": "弟弟"
+          },
+          {
+            "id": "l2",
+            "text": "明天"
+          },
+          {
+            "id": "l3",
+            "text": "老公"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r2",
+            "text": "ngày mai"
+          },
+          {
+            "id": "r0",
+            "text": "hai (số 2)"
+          },
+          {
+            "id": "r3",
+            "text": "chồng (cách gọi thân mật)"
+          },
+          {
+            "id": "r1",
+            "text": "em trai"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        },
+        {
+          "hsk": 1,
+          "lesson": 4
+        },
+        {
+          "hsk": 1,
+          "lesson": 5
+        },
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Xin phép với 可以”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "可以 biểu thị sự cho phép hoặc khả năng trong ngữ cảnh.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ ngữ + 可以/不可以 + cụm động từ. 可以 biểu thị sự cho phép hoặc khả năng trong ngữ cảnh. 会 là biết làm; 能 thường là đủ điều kiện; 可以 có thể là được phép.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 13
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Thử làm với 一下”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Biểu thị làm trong thời gian ngắn hoặc làm thử, làm lời đề nghị nhẹ hơn.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Động từ + 一下. Biểu thị làm trong thời gian ngắn hoặc làm thử, làm lời đề nghị nhẹ hơn. 一下 đứng sau động từ; không thay cho 一点儿 khi nói một ít danh từ.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 13
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Câu hai tân ngữ”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Người nhận hoặc người được hỏi đứng trước đồ vật/nội dung.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ ngữ + 给/问 + người + sự vật. Người nhận hoặc người được hỏi đứng trước đồ vật/nội dung. Phân biệt 给我一杯茶 là đưa trà cho tôi với 给我打电话 là gọi điện cho tôi.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 13
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Xin phép với 可以” (mục 4): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "会 là biết làm; 能 thường là đủ điều kiện; 可以 có thể là được phép.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Chủ ngữ + 可以/不可以 + cụm động từ. 可以 biểu thị sự cho phép hoặc khả năng trong ngữ cảnh. 会 là biết làm; 能 thường là đủ điều kiện; 可以 có thể là được phép.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 13
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Thử làm với 一下” (mục 5): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "一下 đứng sau động từ; không thay cho 一点儿 khi nói một ít danh từ.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Động từ + 一下. Biểu thị làm trong thời gian ngắn hoặc làm thử, làm lời đề nghị nhẹ hơn. 一下 đứng sau động từ; không thay cho 一点儿 khi nói một ít danh từ.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 13
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Câu hai tân ngữ” (mục 6): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Phân biệt 给我一杯茶 là đưa trà cho tôi với 给我打电话 là gọi điện cho tôi.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ ngữ + 给/问 + người + sự vật. Người nhận hoặc người được hỏi đứng trước đồ vật/nội dung. Phân biệt 给我一杯茶 là đưa trà cho tôi với 给我打电话 là gọi điện cho tôi.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 13
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 1).",
+      "reference_answer": "我可以坐吗？",
+      "rubric": "Câu đúng: 我可以坐吗？ 会 là biết làm; 能 thường là đủ điều kiện; 可以 có thể là được phép.",
+      "config": {
+        "items": [
+          {
+            "id": "w1",
+            "text": "可以"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w3",
+            "text": "吗"
+          },
+          {
+            "id": "w4",
+            "text": "？"
+          },
+          {
+            "id": "w2",
+            "text": "坐"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 13
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 2).",
+      "reference_answer": "我看一下。",
+      "rubric": "Câu đúng: 我看一下。 一下 đứng sau động từ; không thay cho 一点儿 khi nói một ít danh từ.",
+      "config": {
+        "items": [
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w1",
+            "text": "看"
+          },
+          {
+            "id": "w2",
+            "text": "一下"
+          },
+          {
+            "id": "w3",
+            "text": "。"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 13
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 3).",
+      "reference_answer": "请给我一杯茶。",
+      "rubric": "Câu đúng: 请给我一杯茶。 Phân biệt 给我一杯茶 là đưa trà cho tôi với 给我打电话 là gọi điện cho tôi.",
+      "config": {
+        "items": [
+          {
+            "id": "w4",
+            "text": "杯"
+          },
+          {
+            "id": "w1",
+            "text": "给"
+          },
+          {
+            "id": "w3",
+            "text": "一"
+          },
+          {
+            "id": "w5",
+            "text": "茶"
+          },
+          {
+            "id": "w2",
+            "text": "我"
+          },
+          {
+            "id": "w6",
+            "text": "。"
+          },
+          {
+            "id": "w0",
+            "text": "请"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 13
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 4).",
+      "reference_answer": "王老师,我可以再问您一个问题吗?",
+      "rubric": "Câu đúng: 王老师,我可以再问您一个问题吗? 会 là biết làm; 能 thường là đủ điều kiện; 可以 có thể là được phép.",
+      "config": {
+        "items": [
+          {
+            "id": "w13",
+            "text": "?"
+          },
+          {
+            "id": "w6",
+            "text": "再"
+          },
+          {
+            "id": "w10",
+            "text": "个"
+          },
+          {
+            "id": "w4",
+            "text": "我"
+          },
+          {
+            "id": "w0",
+            "text": "王"
+          },
+          {
+            "id": "w5",
+            "text": "可以"
+          },
+          {
+            "id": "w11",
+            "text": "问题"
+          },
+          {
+            "id": "w8",
+            "text": "您"
+          },
+          {
+            "id": "w12",
+            "text": "吗"
+          },
+          {
+            "id": "w2",
+            "text": "师"
+          },
+          {
+            "id": "w1",
+            "text": "老"
+          },
+          {
+            "id": "w7",
+            "text": "问"
+          },
+          {
+            "id": "w3",
+            "text": ","
+          },
+          {
+            "id": "w9",
+            "text": "一"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8",
+          "w9",
+          "w10",
+          "w11",
+          "w12",
+          "w13"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 13
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 5).",
+      "reference_answer": "可以。你有什么问题?",
+      "rubric": "Câu đúng: 可以。你有什么问题? 一下 đứng sau động từ; không thay cho 一点儿 khi nói một ít danh từ.",
+      "config": {
+        "items": [
+          {
+            "id": "w1",
+            "text": "。"
+          },
+          {
+            "id": "w2",
+            "text": "你"
+          },
+          {
+            "id": "w6",
+            "text": "?"
+          },
+          {
+            "id": "w3",
+            "text": "有"
+          },
+          {
+            "id": "w4",
+            "text": "什么"
+          },
+          {
+            "id": "w5",
+            "text": "问题"
+          },
+          {
+            "id": "w0",
+            "text": "可以"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 13
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 6).",
+      "reference_answer": "那个小店卖不卖手机?",
+      "rubric": "Câu đúng: 那个小店卖不卖手机? Phân biệt 给我一杯茶 là đưa trà cho tôi với 给我打电话 là gọi điện cho tôi.",
+      "config": {
+        "items": [
+          {
+            "id": "w7",
+            "text": "手机"
+          },
+          {
+            "id": "w2",
+            "text": "小"
+          },
+          {
+            "id": "w4",
+            "text": "卖"
+          },
+          {
+            "id": "w6",
+            "text": "卖"
+          },
+          {
+            "id": "w3",
+            "text": "店"
+          },
+          {
+            "id": "w0",
+            "text": "那"
+          },
+          {
+            "id": "w8",
+            "text": "?"
+          },
+          {
+            "id": "w1",
+            "text": "个"
+          },
+          {
+            "id": "w5",
+            "text": "不"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 13
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ],
+  "source_documents": {
+    "vocabulary": "DOCX",
+    "theory": "HSK1 PDF"
+  }
+}

@@ -68,10 +68,10 @@ describe('production route tree', () => {
     const nav = screen.getByRole('navigation', { name: "Điều hướng học viên" })
     expect(within(nav).getByRole('link', { name: 'Giáo trình' })).toHaveAttribute('href', '/pronunciation')
     expect(within(nav).getAllByRole('link').map((link) => link.textContent)).toEqual([
-      'Giáo trình', 'Hồ sơ',
+      'Giáo trình', 'Ôn từ vựng', 'Hồ sơ',
     ])
     expect(within(nav).getAllByRole('link').map((link) => link.getAttribute('href'))).toEqual([
-      '/pronunciation', '/profile',
+      '/pronunciation', '/vocabulary-review', '/profile',
     ])
     expect(within(nav).getByRole('link', { name: 'Giáo trình' })).toHaveAttribute('aria-current', 'page')
     expect(screen.getByRole('link', { name: "Chuyển đến nội dung" })).toHaveAttribute('href', '#main-content')
@@ -108,7 +108,8 @@ describe('production route tree', () => {
     expect(document.querySelector('.bo-shell')).toHaveAttribute('data-sidebar-collapsed', 'true')
     expect(screen.getByRole('button', { name: 'Đăng xuất' })).toBeInTheDocument()
     const nav = screen.getByRole('navigation', { name: 'Điều hướng học viên' })
-    expect(within(nav).getAllByRole('link')).toHaveLength(2)
+    expect(within(nav).getAllByRole('link')).toHaveLength(3)
+    expect(within(nav).getByRole('link', { name: 'Ôn từ vựng' })).toHaveAttribute('href', '/vocabulary-review')
     expect(within(nav).getByRole('link', { name: 'Giáo trình' })).toHaveAttribute('href', '/pronunciation')
     fireEvent.click(screen.getByRole('button', { name: 'Mở rộng thanh bên' }))
     expect(toggle).toHaveAttribute('aria-expanded', 'true')

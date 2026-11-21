@@ -1,0 +1,1669 @@
+{
+  "key": "hsk2-lesson-03-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 2,
+    "lesson_number": 3,
+    "title": "你快下来吧 · Trải nghiệm và phương hướng",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "市场",
+      "pinyin": "shì chǎng",
+      "vietnamese_meaning": "chợ, thị trường",
+      "part_of_speech": "danh từ",
+      "example": "我去市场。\nwǒ qù shì chǎng 。\nTôi đến chợ, thị trường.",
+      "order_index": 1,
+      "note": null,
+      "source_key": "2:3:市场"
+    },
+    {
+      "hanzi": "商场",
+      "pinyin": "shāngchǎng",
+      "vietnamese_meaning": "trung tâm thương mại",
+      "part_of_speech": "danh từ",
+      "example": "我去商场。\nwǒ qù shāng chǎng 。\nTôi đến trung tâm thương mại.",
+      "order_index": 2,
+      "note": null,
+      "source_key": "2:3:商场"
+    },
+    {
+      "hanzi": "开",
+      "pinyin": "kāi",
+      "vietnamese_meaning": "mở, khai trương",
+      "part_of_speech": "động từ",
+      "example": "这家商场是新开的。\nzhè jiā shāng chǎng shì xīn kāi de 。\nTrung tâm thương mại này mới mở.",
+      "order_index": 3,
+      "note": "开 ở đây là mở, khai trương (新开的商场); khác 开车 là lái xe và 火车开了 là tàu khởi hành. Nhắc lại HSK1 bài 14: 开 (kāi) nghĩa là khởi hành, rời đi (xe cộ). Trong bài này: mở, khai trương.",
+      "source_key": "2:3:开"
+    },
+    {
+      "hanzi": "聊天儿",
+      "pinyin": "liáo tiān ér",
+      "vietnamese_meaning": "trò chuyện, tán gẫu",
+      "part_of_speech": "động từ",
+      "example": "我们一起聊天儿吧。\nwǒ men yì qǐ liáo tiān ér ba 。\nChúng ta cùng trò chuyện, tán gẫu nhé.",
+      "order_index": 4,
+      "note": null,
+      "source_key": "2:3:聊天儿"
+    },
+    {
+      "hanzi": "过",
+      "pinyin": "guo",
+      "vietnamese_meaning": "đã từng (trải nghiệm trong quá khứ)",
+      "part_of_speech": "trợ từ động thái",
+      "example": "我去过中国。\nwǒ qù guò zhōng guó 。\nTôi đã từng đến Trung Quốc.",
+      "order_index": 5,
+      "note": "过 đọc nhẹ guo khi làm trợ từ sau động từ, biểu thị đã từng; khác 过 guò trong 过生日 ở ngữ cảnh mừng sinh nhật.",
+      "source_key": "2:3:过"
+    },
+    {
+      "hanzi": "曾经",
+      "pinyin": "céng jīng",
+      "vietnamese_meaning": "đã từng",
+      "part_of_speech": "phó từ",
+      "example": "他曾经去过中国。\ntā céng jīng qù guò zhōng guó 。\nAnh ấy đã từng đến Trung Quốc.",
+      "order_index": 6,
+      "note": null,
+      "source_key": "2:3:曾经"
+    },
+    {
+      "hanzi": "裤子",
+      "pinyin": "kù zi",
+      "vietnamese_meaning": "quần",
+      "part_of_speech": "danh từ",
+      "example": "这是我的裤子。\nzhè shì wǒ de kù zi 。\nĐây là quần của tôi.",
+      "order_index": 7,
+      "note": null,
+      "source_key": "2:3:裤子"
+    },
+    {
+      "hanzi": "裙子",
+      "pinyin": "qún zi",
+      "vietnamese_meaning": "váy",
+      "part_of_speech": "danh từ",
+      "example": "这是我的裙子。\nzhè shì wǒ de qún zi 。\nĐây là váy của tôi.",
+      "order_index": 8,
+      "note": null,
+      "source_key": "2:3:裙子"
+    },
+    {
+      "hanzi": "准备",
+      "pinyin": "zhǔnbèi",
+      "vietnamese_meaning": "chuẩn bị",
+      "part_of_speech": "động từ",
+      "example": "我还没准备好呢。你上来等我一会儿!\nwǒ hái méi zhǔn bèi hǎo ne 。 nǐ shàng lái děng wǒ yī huì er !\nMình vẫn chưa chuẩn bị xong, bạn lên đây đợi mình một lúc!",
+      "order_index": 9,
+      "note": null,
+      "source_key": "2:3:准备"
+    },
+    {
+      "hanzi": "一会儿",
+      "pinyin": "yíhuìr",
+      "vietnamese_meaning": "một lúc",
+      "part_of_speech": "cụm số lượng từ",
+      "example": "我马上就来，你等一会儿。\nwǒ mǎ shàng jiù lái ， nǐ děng yī huì er 。\nTôi đến ngay, bạn đợi một lát.",
+      "order_index": 10,
+      "note": null,
+      "source_key": "2:3:一会儿"
+    },
+    {
+      "hanzi": "办公室",
+      "pinyin": "bàn gōng shì",
+      "vietnamese_meaning": "văn phòng",
+      "part_of_speech": "danh từ",
+      "example": "我去办公室。\nwǒ qù bàn gōng shì 。\nTôi đến văn phòng.",
+      "order_index": 11,
+      "note": null,
+      "source_key": "2:3:办公室"
+    },
+    {
+      "hanzi": "马上",
+      "pinyin": "mǎshàng",
+      "vietnamese_meaning": "ngay, sắp",
+      "part_of_speech": "phó từ",
+      "example": "我马上就来，你等一会儿。\nwǒ mǎ shàng jiù lái ， nǐ děng yī huì er 。\nTôi đến ngay, bạn đợi một lát.",
+      "order_index": 12,
+      "note": null,
+      "source_key": "2:3:马上"
+    },
+    {
+      "hanzi": "块",
+      "pinyin": "kuài",
+      "vietnamese_meaning": "chiếc (lượng từ cho đồng hồ); miếng",
+      "part_of_speech": "lượng từ",
+      "example": "我买了一块手表。\nwǒ mǎi le yī kuài shǒu biǎo 。\nTôi đã mua một chiếc đồng hồ.",
+      "order_index": 13,
+      "note": "Nhắc lại HSK1 bài 10: 块 (kuài) nghĩa là tệ. Trong bài này: chiếc (lượng từ cho đồng hồ); miếng.",
+      "source_key": "2:3:块"
+    },
+    {
+      "hanzi": "快点儿",
+      "pinyin": "kuài diǎn ér",
+      "vietnamese_meaning": "nhanh lên, nhanh một chút",
+      "part_of_speech": "cụm giao tiếp",
+      "example": "快点儿!我在下面等你。\nkuài diǎn ér ! wǒ zài xià miàn děng nǐ 。\nNhanh lên , mình ở dưới này chờ bạn.",
+      "order_index": 14,
+      "note": null,
+      "source_key": "2:3:快点儿"
+    },
+    {
+      "hanzi": "礼物",
+      "pinyin": "lǐwù",
+      "vietnamese_meaning": "quà, món quà",
+      "part_of_speech": "danh từ",
+      "example": "这是我的礼物。\nzhè shì wǒ de lǐ wù 。\nĐây là quà, món quà của tôi.",
+      "order_index": 15,
+      "note": null,
+      "source_key": "2:3:礼物"
+    },
+    {
+      "hanzi": "哎",
+      "pinyin": "āi",
+      "vietnamese_meaning": "ôi trời ơi (biểu thị sự ngạc nhiên)",
+      "part_of_speech": "trợ từ",
+      "example": "哎，你怎么来了？\nāi ， nǐ zěn me lái le ？\nỒ, sao bạn lại đến đây?",
+      "order_index": 16,
+      "note": null,
+      "source_key": "2:3:哎"
+    },
+    {
+      "hanzi": "带",
+      "pinyin": "dài",
+      "vietnamese_meaning": "mang, đem theo; dẫn theo",
+      "part_of_speech": "động từ",
+      "example": "我给家人带了一些特产。\nwǒ gěi jiā rén dài le yī xiē tè chǎn 。\nTôi mang một ít đặc sản cho người nhà.",
+      "order_index": 17,
+      "note": null,
+      "source_key": "2:3:带"
+    },
+    {
+      "hanzi": "楼",
+      "pinyin": "lóu",
+      "vietnamese_meaning": "tầng; tòa nhà",
+      "part_of_speech": "danh từ",
+      "example": "他在楼下等你。\ntā zài lóu xià děng nǐ 。\nAnh ấy đợi bạn ở dưới tầng.",
+      "order_index": 18,
+      "note": null,
+      "source_key": "2:3:楼"
+    },
+    {
+      "hanzi": "特产",
+      "pinyin": "tèchǎn",
+      "vietnamese_meaning": "đặc sản",
+      "part_of_speech": "danh từ",
+      "example": "我给家人带了一些特产。\nwǒ gěi jiā rén dài le yī xiē tè chǎn 。\nTôi mang một ít đặc sản cho người nhà.",
+      "order_index": 19,
+      "note": null,
+      "source_key": "2:3:特产"
+    }
+  ],
+  "grammar": [
+    {
+      "name": "Trải nghiệm với 过",
+      "structure": "Chủ ngữ + động từ + 过 + tân ngữ",
+      "explanation": "Đã từng có trải nghiệm làm một việc.",
+      "usage": "过 sau động từ là trải nghiệm; không đồng nghĩa mọi động từ 过 như 过生日.",
+      "example": "我去过中国。\nwǒ qù guò zhōng guó 。\nTôi đã từng đến Trung Quốc.",
+      "note": "过 sau động từ là trải nghiệm; không đồng nghĩa mọi động từ 过 như 过生日.",
+      "order_index": 1
+    },
+    {
+      "name": "Bổ ngữ xu hướng đơn",
+      "structure": "Động từ + 来/去",
+      "explanation": "来 chỉ hướng về phía người nói; 去 chỉ hướng rời người nói.",
+      "usage": "Chọn 来/去 theo điểm nhìn, không chỉ theo việc lên hay xuống.",
+      "example": "你快下来吧。\nnǐ kuài xià lái ba 。\nBạn mau xuống đây đi.",
+      "note": "Chọn 来/去 theo điểm nhìn, không chỉ theo việc lên hay xuống.",
+      "order_index": 2
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Trung tâm thương mại mới",
+      "content": "小丽:那边是新开的商场,你来过了吗?\n小刚:没来过!\n小丽:我也没来过。那我们进去看看吧!\n小刚:好啊!你想买点儿什么?\n小丽:我想买条裤子。你想买什么吗?\n小刚:我买你想买的裤子!",
+      "pinyin": "xiǎo lì : nà biān shì xīn kāi de shāng chǎng , nǐ lái guò le ma ?\nxiǎo gāng : méi lái guò !\nxiǎo lì : wǒ yě méi lái guò 。 nà wǒ men jìn qù kàn kàn ba !\nxiǎo gāng : hǎo a ! nǐ xiǎng mǎi diǎn ér shén me ?\nxiǎo lì : wǒ xiǎng mǎi tiáo kù zi 。 nǐ xiǎng mǎi shén me ma ?\nxiǎo gāng : wǒ mǎi nǐ xiǎng mǎi de kù zi !",
+      "vietnamese_translation": "Tiểu Lệ: Bên kia là trung tâm thương mại mới mở, bạn đã từng đến đó chưa?\nTiểu Cương: Chưa từng!\nTiểu Lệ: Tôi cũng chưa đến đó. Vậy chúng ta vào xem thử đi\nTiểu Cương: Được đó, bạn muốn mua cái gì?\nTiểu Lệ: Tôi muốn mua cái quần, bạn muốn mua gì không?.\nTiểu Cương: Tôi mua cái quần mà bạn muốn mua!",
+      "source_reference": "Giáo trình HSK2 3.0 Hanu, bài 3, PDF 27."
+    },
+    {
+      "order_index": 2,
+      "title": "Bạn mau xuống đây",
+      "content": "小刚:小丽,我来了!你快下来吧!\n小丽:我还没准备好呢。你上来等我一会儿!\n小刚:我不上去了。老师说我们九点半在办公室等他。现在都九点了。我们没有时间了。\n小丽:我马上下去!\n小刚:快点儿!我在下面等你。",
+      "pinyin": "xiǎo gāng : xiǎo lì , wǒ lái le ! nǐ kuài xià lái ba !\nxiǎo lì : wǒ hái méi zhǔn bèi hǎo ne 。 nǐ shàng lái děng wǒ yī huì er !\nxiǎo gāng : wǒ bù shàng qù le 。 lǎo shī shuō wǒ men jiǔ diǎn bàn zài bàn gōng shì děng tā 。 xiàn zài dōu jiǔ diǎn le 。 wǒ men méi yǒu shí jiān le 。\nxiǎo lì : wǒ mǎ shàng xià qù !\nxiǎo gāng : kuài diǎn ér ! wǒ zài xià miàn děng nǐ 。",
+      "vietnamese_translation": "Tiểu Cương: Tiểu Lệ, mình đến rồi! Bạn mau xuống đi!\nTiểu Lệ: Mình vẫn chưa chuẩn bị xong, bạn lên đây đợi mình một lúc!\nTiểu Cương: Mình không lên đâu. Thầy giáo bảo chúng ta 9 rưỡi ở văn phòng chờ thầy, bây\ngiờ đã 9 giờ rồi, chúng ta không còn thời gian đâu.\nTiểu Lệ: Mình xuống ngay đây!\nTiểu Cương: Nhanh lên , mình ở dưới này chờ bạn.",
+      "source_reference": "Giáo trình HSK2 3.0 Hanu, bài 3, PDF 30."
+    },
+    {
+      "order_index": 3,
+      "title": "Mang quà đến thăm ông bà",
+      "content": "爷爷:快进来吧!\n小丽:爷爷,您好!这是我给你们准备的礼物:有您喜欢的茶,还有一些我自己做的菜。\n爷爷:哎,你太客气了!还带那么多礼物来!\n小丽:您喜欢就好了!\n爷爷:快坐吧!\n小丽:爷爷,奶奶去哪儿了?\n爷爷:她上二楼去拿个手机。你等一下儿,她马上下来!",
+      "pinyin": "yé yé : kuài jìn lái ba !\nxiǎo lì : yé yé , nín hǎo ! zhè shì wǒ gěi nǐ men zhǔn bèi de lǐ wù : yǒu nín xǐ huān de chá , hái yǒu yī xiē wǒ zì jǐ zuò de cài 。\nyé yé : āi , nǐ tài kè qì le ! hái dài nà me duō lǐ wù lái !\nxiǎo lì : nín xǐ huān jiù hǎo le !\nyé yé : kuài zuò ba !\nxiǎo lì : yé yé , nǎi nǎi qù nǎ ér le ?\nyé yé : tā shàng èr lóu qù ná gè shǒu jī 。 nǐ děng yí xià ér , tā mǎ shàng xià lái !",
+      "vietnamese_translation": "Ông nội: Mau vào đi!\nTiểu Lệ: Cháu chào ông! Đây là quà cháu chuẩn bị cho ông bà: có trà mà ông thích, còn có cả mấy\nmón cháu tự nấu đấy.\nÔng nội: Ôi, cháu khách sáo quá! Còn mang nhiều quà đến thế này!\nTiểu Lệ: Ông thích là tốt rồi!\nÔng nội: Mau ngồi đi!\nTiểu Lệ:  Ông ơi, bà đi đâu rồi ạ?\nÔng nội: Bà lên tầng 2 lấy điện thoại, cháu chờ chút, bà xuống ngay đây.",
+      "source_reference": "Giáo trình HSK2 3.0 Hanu, bài 3, PDF 33."
+    },
+    {
+      "order_index": 4,
+      "title": "Đặc sản và quà tặng",
+      "content": "下个月我要回中国去了。今天,我给老师准备了一件礼物,想谢谢他。我不知道他喜欢什么,就自己做一些饺子送给他。老师说我做的饺子很好吃,他很喜欢。我还买来很多越南的特产,想送给家人和朋友。",
+      "pinyin": "xià gè yuè wǒ yào huí zhōng guó qù le 。 jīn tiān , wǒ gěi lǎo shī zhǔn bèi le yī jiàn lǐ wù , xiǎng xiè xiè tā 。 wǒ bù zhī dào tā xǐ huān shén me , jiù zì jǐ zuò yī xiē jiǎo zi sòng gěi tā 。 lǎo shī shuō wǒ zuò de jiǎo zi hěn hǎo chī , tā hěn xǐ huān 。 wǒ hái mǎi lái hěn duō yuè nán de tè chǎn , xiǎng sòng gěi jiā rén hé péng yǒu 。",
+      "vietnamese_translation": "Tháng sau tôi phải về Trung Quốc rồi. Hôm nay, tôi chuẩn bị một món quà tặng thầy giáo, muốn cảm ơn thầy. Tôi không biết thầy thích gì, bèn tự làm một ít sủi cảo tặng thầy. Thầy nói rằng sủi cảo tôi làm rất ngon, thầy rất thích. Tôi còn mua rất nhiều đặc sản Việt Nam, tặng cho người thân và bạn bè.",
+      "source_reference": "Giáo trình HSK2 3.0 Hanu, bài 3, PDF 34."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 2 · Bài 3 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp; dùng kiến thức của bài này và các bài trước, không dùng bài sau. Đạt từ 80%; được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "review_status": "DRAFT_REQUIRES_EDITOR_REVIEW",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 1).",
+      "options": [
+        {
+          "option_text": "ôi trời ơi (biểu thị sự ngạc nhiên)",
+          "is_correct": true
+        },
+        {
+          "option_text": "lại, thêm; rồi, tiếp theo (hành động chưa thực hiện)",
+          "is_correct": false
+        },
+        {
+          "option_text": "năm nay",
+          "is_correct": false
+        },
+        {
+          "option_text": "chiếc, bộ (lượng từ cho điện thoại, phim...)",
+          "is_correct": false
+        }
+      ],
+      "rubric": "哎 (āi) nghĩa là ôi trời ơi (biểu thị sự ngạc nhiên). ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "哎"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 3
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “曾经” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "nhé, đi (gợi ý hoặc đề nghị)",
+          "is_correct": false
+        },
+        {
+          "option_text": "đi du lịch, chuyến đi",
+          "is_correct": false
+        },
+        {
+          "option_text": "thế nào, làm sao",
+          "is_correct": false
+        },
+        {
+          "option_text": "đã từng",
+          "is_correct": true
+        }
+      ],
+      "rubric": "曾经 (céng jīng) nghĩa là đã từng. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 3
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “zhǔnbèi” và nghĩa “chuẩn bị”.",
+      "options": [
+        {
+          "option_text": "啤酒",
+          "is_correct": false
+        },
+        {
+          "option_text": "下雪",
+          "is_correct": false
+        },
+        {
+          "option_text": "朋友",
+          "is_correct": false
+        },
+        {
+          "option_text": "准备",
+          "is_correct": true
+        }
+      ],
+      "rubric": "准备 (zhǔnbèi) nghĩa là chuẩn bị. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 3
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 4).",
+      "options": [
+        {
+          "option_text": "như thế nào",
+          "is_correct": false
+        },
+        {
+          "option_text": "thoải mái, dễ chịu",
+          "is_correct": false
+        },
+        {
+          "option_text": "nhanh lên, nhanh một chút",
+          "is_correct": true
+        },
+        {
+          "option_text": "nhà, gia đình",
+          "is_correct": false
+        }
+      ],
+      "rubric": "快点儿 (kuài diǎn ér) nghĩa là nhanh lên, nhanh một chút. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "快点儿"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 3
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “块” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "không có",
+          "is_correct": false
+        },
+        {
+          "option_text": "không, à",
+          "is_correct": false
+        },
+        {
+          "option_text": "phía trước",
+          "is_correct": false
+        },
+        {
+          "option_text": "chiếc (lượng từ cho đồng hồ); miếng",
+          "is_correct": true
+        }
+      ],
+      "rubric": "块 (kuài) nghĩa là chiếc (lượng từ cho đồng hồ); miếng. Nhắc lại HSK1 bài 10: 块 (kuài) nghĩa là tệ. Trong bài này: chiếc (lượng từ cho đồng hồ); miếng.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 3
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “fā yīn” và nghĩa “phát âm; cách phát âm”.",
+      "options": [
+        {
+          "option_text": "发音",
+          "is_correct": true
+        },
+        {
+          "option_text": "外",
+          "is_correct": false
+        },
+        {
+          "option_text": "睡觉",
+          "is_correct": false
+        },
+        {
+          "option_text": "米饭",
+          "is_correct": false
+        }
+      ],
+      "rubric": "发音 (fā yīn) nghĩa là phát âm; cách phát âm. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 13
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 7).",
+      "options": [
+        {
+          "option_text": "đọc sách",
+          "is_correct": false
+        },
+        {
+          "option_text": "những cái này",
+          "is_correct": false
+        },
+        {
+          "option_text": "công ty",
+          "is_correct": false
+        },
+        {
+          "option_text": "mở, khai trương",
+          "is_correct": true
+        }
+      ],
+      "rubric": "开 (kāi) nghĩa là mở, khai trương. 开 ở đây là mở, khai trương (新开的商场); khác 开车 là lái xe và 火车开了 là tàu khởi hành. Nhắc lại HSK1 bài 14: 开 (kāi) nghĩa là khởi hành, rời đi (xe cộ). Trong bài này: mở, khai trương.",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "开"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 3
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “商场” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "tặng",
+          "is_correct": false
+        },
+        {
+          "option_text": "trung tâm thương mại",
+          "is_correct": true
+        },
+        {
+          "option_text": "tốt, được",
+          "is_correct": false
+        },
+        {
+          "option_text": "bận",
+          "is_correct": false
+        }
+      ],
+      "rubric": "商场 (shāngchǎng) nghĩa là trung tâm thương mại. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 3
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “bàn gōng shì” và nghĩa “văn phòng”.",
+      "options": [
+        {
+          "option_text": "便宜",
+          "is_correct": false
+        },
+        {
+          "option_text": "父母",
+          "is_correct": false
+        },
+        {
+          "option_text": "办公室",
+          "is_correct": true
+        },
+        {
+          "option_text": "学",
+          "is_correct": false
+        }
+      ],
+      "rubric": "办公室 (bàn gōng shì) nghĩa là văn phòng. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 3
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "nhìn thấy",
+          "is_correct": false
+        },
+        {
+          "option_text": "(bàn) tay",
+          "is_correct": false
+        },
+        {
+          "option_text": "cửa hàng",
+          "is_correct": false
+        },
+        {
+          "option_text": "mang, đem theo; dẫn theo",
+          "is_correct": true
+        }
+      ],
+      "rubric": "带 (dài) nghĩa là mang, đem theo; dẫn theo. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "带"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 3
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “这么” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "thế này, như thế",
+          "is_correct": true
+        },
+        {
+          "option_text": "buổi trưa",
+          "is_correct": false
+        },
+        {
+          "option_text": "số điện thoại di động",
+          "is_correct": false
+        },
+        {
+          "option_text": "xe buýt",
+          "is_correct": false
+        }
+      ],
+      "rubric": "这么 (zhème) nghĩa là thế này, như thế. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 2
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “kù zi” và nghĩa “quần”.",
+      "options": [
+        {
+          "option_text": "部",
+          "is_correct": false
+        },
+        {
+          "option_text": "裤子",
+          "is_correct": true
+        },
+        {
+          "option_text": "网上",
+          "is_correct": false
+        },
+        {
+          "option_text": "太",
+          "is_correct": false
+        }
+      ],
+      "rubric": "裤子 (kù zi) nghĩa là quần. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 3
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “quà, món quà” (gợi ý pinyin: lǐwù).",
+      "reference_answer": "礼物",
+      "rubric": "Đáp án: 礼物 (lǐwù). ",
+      "config": {
+        "accepted_answers": [
+          "礼物"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 3
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “đặc sản” (gợi ý pinyin: tèchǎn).",
+      "reference_answer": "特产",
+      "rubric": "Đáp án: 特产 (tèchǎn). ",
+      "config": {
+        "accepted_answers": [
+          "特产"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 3
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “một lúc” (gợi ý pinyin: yíhuìr).",
+      "reference_answer": "一会儿",
+      "rubric": "Đáp án: 一会儿 (yíhuìr). ",
+      "config": {
+        "accepted_answers": [
+          "一会儿"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 3
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “y” (gợi ý pinyin: yī).",
+      "reference_answer": "医",
+      "rubric": "Đáp án: 医 (yī). ",
+      "config": {
+        "accepted_answers": [
+          "医"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 11
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 1).",
+      "rubric": "奶奶: bà nội; 没: không/chưa; 介绍: giới thiệu; 下大雨: mưa to",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "奶奶"
+          },
+          {
+            "id": "l1",
+            "text": "没"
+          },
+          {
+            "id": "l2",
+            "text": "介绍"
+          },
+          {
+            "id": "l3",
+            "text": "下大雨"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r2",
+            "text": "giới thiệu"
+          },
+          {
+            "id": "r0",
+            "text": "bà nội"
+          },
+          {
+            "id": "r3",
+            "text": "mưa to"
+          },
+          {
+            "id": "r1",
+            "text": "không/chưa"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        },
+        {
+          "hsk": 1,
+          "lesson": 8
+        },
+        {
+          "hsk": 2,
+          "lesson": 1
+        },
+        {
+          "hsk": 1,
+          "lesson": 12
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 2).",
+      "rubric": "哪里: đâu, nơi nào; 你: anh, chị, bạn, ông, bà,...; 办公室: văn phòng; 便宜: rẻ",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "哪里"
+          },
+          {
+            "id": "l1",
+            "text": "你"
+          },
+          {
+            "id": "l2",
+            "text": "办公室"
+          },
+          {
+            "id": "l3",
+            "text": "便宜"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r3",
+            "text": "rẻ"
+          },
+          {
+            "id": "r0",
+            "text": "đâu, nơi nào"
+          },
+          {
+            "id": "r2",
+            "text": "văn phòng"
+          },
+          {
+            "id": "r1",
+            "text": "anh, chị, bạn, ông, bà,..."
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 6
+        },
+        {
+          "hsk": 1,
+          "lesson": 1
+        },
+        {
+          "hsk": 2,
+          "lesson": 3
+        },
+        {
+          "hsk": 1,
+          "lesson": 10
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Trải nghiệm với 过”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Đã từng có trải nghiệm làm một việc.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ ngữ + động từ + 过 + tân ngữ. Đã từng có trải nghiệm làm một việc. 过 sau động từ là trải nghiệm; không đồng nghĩa mọi động từ 过 như 过生日.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 3
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Bổ ngữ xu hướng đơn”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "来 chỉ hướng về phía người nói; 去 chỉ hướng rời người nói.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Động từ + 来/去. 来 chỉ hướng về phía người nói; 去 chỉ hướng rời người nói. Chọn 来/去 theo điểm nhìn, không chỉ theo việc lên hay xuống.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 3
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Trải nghiệm với 过” (mục 3): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "过 sau động từ là trải nghiệm; không đồng nghĩa mọi động từ 过 như 过生日.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Chủ ngữ + động từ + 过 + tân ngữ. Đã từng có trải nghiệm làm một việc. 过 sau động từ là trải nghiệm; không đồng nghĩa mọi động từ 过 như 过生日.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 3
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Bổ ngữ xu hướng đơn” (mục 4): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chọn 来/去 theo điểm nhìn, không chỉ theo việc lên hay xuống.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Động từ + 来/去. 来 chỉ hướng về phía người nói; 去 chỉ hướng rời người nói. Chọn 来/去 theo điểm nhìn, không chỉ theo việc lên hay xuống.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 3
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Trải nghiệm với 过” (mục 5): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "过 sau động từ là trải nghiệm; không đồng nghĩa mọi động từ 过 như 过生日.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ ngữ + động từ + 过 + tân ngữ. Đã từng có trải nghiệm làm một việc. 过 sau động từ là trải nghiệm; không đồng nghĩa mọi động từ 过 như 过生日.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 3
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Bổ ngữ xu hướng đơn” (mục 6): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chọn 来/去 theo điểm nhìn, không chỉ theo việc lên hay xuống.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Động từ + 来/去. 来 chỉ hướng về phía người nói; 去 chỉ hướng rời người nói. Chọn 来/去 theo điểm nhìn, không chỉ theo việc lên hay xuống.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 3
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 1).",
+      "reference_answer": "我去过中国。",
+      "rubric": "Câu đúng: 我去过中国。 过 sau động từ là trải nghiệm; không đồng nghĩa mọi động từ 过 như 过生日.",
+      "config": {
+        "items": [
+          {
+            "id": "w1",
+            "text": "去"
+          },
+          {
+            "id": "w3",
+            "text": "中国"
+          },
+          {
+            "id": "w2",
+            "text": "过"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w4",
+            "text": "。"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 3
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 2).",
+      "reference_answer": "你快下来吧。",
+      "rubric": "Câu đúng: 你快下来吧。 Chọn 来/去 theo điểm nhìn, không chỉ theo việc lên hay xuống.",
+      "config": {
+        "items": [
+          {
+            "id": "w1",
+            "text": "快"
+          },
+          {
+            "id": "w5",
+            "text": "。"
+          },
+          {
+            "id": "w3",
+            "text": "来"
+          },
+          {
+            "id": "w2",
+            "text": "下"
+          },
+          {
+            "id": "w4",
+            "text": "吧"
+          },
+          {
+            "id": "w0",
+            "text": "你"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 3
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 3).",
+      "reference_answer": "那边是新开的商场,你来过了吗?",
+      "rubric": "Câu đúng: 那边是新开的商场,你来过了吗? 过 sau động từ là trải nghiệm; không đồng nghĩa mọi động từ 过 như 过生日.",
+      "config": {
+        "items": [
+          {
+            "id": "w6",
+            "text": ","
+          },
+          {
+            "id": "w0",
+            "text": "那边"
+          },
+          {
+            "id": "w5",
+            "text": "商场"
+          },
+          {
+            "id": "w3",
+            "text": "开"
+          },
+          {
+            "id": "w2",
+            "text": "新"
+          },
+          {
+            "id": "w12",
+            "text": "?"
+          },
+          {
+            "id": "w1",
+            "text": "是"
+          },
+          {
+            "id": "w4",
+            "text": "的"
+          },
+          {
+            "id": "w7",
+            "text": "你"
+          },
+          {
+            "id": "w8",
+            "text": "来"
+          },
+          {
+            "id": "w10",
+            "text": "了"
+          },
+          {
+            "id": "w9",
+            "text": "过"
+          },
+          {
+            "id": "w11",
+            "text": "吗"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8",
+          "w9",
+          "w10",
+          "w11",
+          "w12"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 3
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 4).",
+      "reference_answer": "没来过!",
+      "rubric": "Câu đúng: 没来过! Chọn 来/去 theo điểm nhìn, không chỉ theo việc lên hay xuống.",
+      "config": {
+        "items": [
+          {
+            "id": "w1",
+            "text": "来"
+          },
+          {
+            "id": "w2",
+            "text": "过"
+          },
+          {
+            "id": "w0",
+            "text": "没"
+          },
+          {
+            "id": "w3",
+            "text": "!"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 3
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 5).",
+      "reference_answer": "我也没来过。那我们进去看看吧!",
+      "rubric": "Câu đúng: 我也没来过。那我们进去看看吧! 过 sau động từ là trải nghiệm; không đồng nghĩa mọi động từ 过 như 过生日.",
+      "config": {
+        "items": [
+          {
+            "id": "w7",
+            "text": "我"
+          },
+          {
+            "id": "w14",
+            "text": "!"
+          },
+          {
+            "id": "w9",
+            "text": "进"
+          },
+          {
+            "id": "w13",
+            "text": "吧"
+          },
+          {
+            "id": "w5",
+            "text": "。"
+          },
+          {
+            "id": "w11",
+            "text": "看"
+          },
+          {
+            "id": "w10",
+            "text": "去"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w3",
+            "text": "来"
+          },
+          {
+            "id": "w4",
+            "text": "过"
+          },
+          {
+            "id": "w1",
+            "text": "也"
+          },
+          {
+            "id": "w6",
+            "text": "那"
+          },
+          {
+            "id": "w8",
+            "text": "们"
+          },
+          {
+            "id": "w12",
+            "text": "看"
+          },
+          {
+            "id": "w2",
+            "text": "没"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8",
+          "w9",
+          "w10",
+          "w11",
+          "w12",
+          "w13",
+          "w14"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 3
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 6).",
+      "reference_answer": "好啊!你想买点儿什么?",
+      "rubric": "Câu đúng: 好啊!你想买点儿什么? Chọn 来/去 theo điểm nhìn, không chỉ theo việc lên hay xuống.",
+      "config": {
+        "items": [
+          {
+            "id": "w4",
+            "text": "想"
+          },
+          {
+            "id": "w9",
+            "text": "?"
+          },
+          {
+            "id": "w6",
+            "text": "点"
+          },
+          {
+            "id": "w3",
+            "text": "你"
+          },
+          {
+            "id": "w8",
+            "text": "什么"
+          },
+          {
+            "id": "w1",
+            "text": "啊"
+          },
+          {
+            "id": "w0",
+            "text": "好"
+          },
+          {
+            "id": "w2",
+            "text": "!"
+          },
+          {
+            "id": "w7",
+            "text": "儿"
+          },
+          {
+            "id": "w5",
+            "text": "买"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8",
+          "w9"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 3
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ],
+  "source_documents": {
+    "vocabulary": "DOCX",
+    "theory": "HSK2 PDF"
+  }
+}

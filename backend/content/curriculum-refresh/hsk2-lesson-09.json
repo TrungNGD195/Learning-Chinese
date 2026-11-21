@@ -1,0 +1,1772 @@
+{
+  "key": "hsk2-lesson-09-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 2,
+    "lesson_number": 9,
+    "title": "你真是我的好朋友 · Bạn bè và cuộc sống",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "门口",
+      "pinyin": "mén kǒu",
+      "vietnamese_meaning": "cửa, chỗ cửa ra vào",
+      "part_of_speech": "danh từ chỉ vị trí",
+      "example": "我在门口等你。\nwǒ zài mén kǒu děng nǐ 。\nTôi đợi bạn ở cửa.",
+      "order_index": 1,
+      "note": null,
+      "source_key": "2:9:门口"
+    },
+    {
+      "hanzi": "蓝色",
+      "pinyin": "lán sè",
+      "vietnamese_meaning": "màu xanh lam",
+      "part_of_speech": "danh từ",
+      "example": "我喜欢蓝色。\nwǒ xǐ huān lán sè 。\nTôi thích màu xanh lam.",
+      "order_index": 2,
+      "note": null,
+      "source_key": "2:9:蓝色"
+    },
+    {
+      "hanzi": "外套",
+      "pinyin": "wài tào",
+      "vietnamese_meaning": "áo khoác",
+      "part_of_speech": "danh từ",
+      "example": "这是我的外套。\nzhè shì wǒ de wài tào 。\nĐây là áo khoác của tôi.",
+      "order_index": 3,
+      "note": null,
+      "source_key": "2:9:外套"
+    },
+    {
+      "hanzi": "红色",
+      "pinyin": "hóng sè",
+      "vietnamese_meaning": "màu đỏ",
+      "part_of_speech": "danh từ",
+      "example": "我喜欢红色。\nwǒ xǐ huān hóng sè 。\nTôi thích màu đỏ.",
+      "order_index": 4,
+      "note": null,
+      "source_key": "2:9:红色"
+    },
+    {
+      "hanzi": "告诉",
+      "pinyin": "gào sù",
+      "vietnamese_meaning": "nói cho, cho biết",
+      "part_of_speech": "động từ",
+      "example": "请告诉我你的名字。\nqǐng gào sù wǒ nǐ de míng zì 。\nHãy cho tôi biết tên của bạn.",
+      "order_index": 5,
+      "note": null,
+      "source_key": "2:9:告诉"
+    },
+    {
+      "hanzi": "发",
+      "pinyin": "fā",
+      "vietnamese_meaning": "gửi, phát",
+      "part_of_speech": "động từ",
+      "example": "你给我发微信吧。\nnǐ gěi wǒ fā wēi xìn ba 。\nBạn nhắn WeChat cho tôi nhé.",
+      "order_index": 6,
+      "note": null,
+      "source_key": "2:9:发"
+    },
+    {
+      "hanzi": "微信",
+      "pinyin": "wēixìn",
+      "vietnamese_meaning": "Wechat",
+      "part_of_speech": "danh từ",
+      "example": "你给我发微信吧。\nnǐ gěi wǒ fā wēi xìn ba 。\nBạn nhắn WeChat cho tôi nhé.",
+      "order_index": 7,
+      "note": null,
+      "source_key": "2:9:微信"
+    },
+    {
+      "hanzi": "难过",
+      "pinyin": "nánguò",
+      "vietnamese_meaning": "buồn, khó chịu",
+      "part_of_speech": "tính từ",
+      "example": "他很难过。\ntā hěn nán guò 。\nAnh ấy buồn, khó chịu.",
+      "order_index": 8,
+      "note": null,
+      "source_key": "2:9:难过"
+    },
+    {
+      "hanzi": "陪",
+      "pinyin": "péi",
+      "vietnamese_meaning": "ở bên, đồng hành",
+      "part_of_speech": "động từ",
+      "example": "就要放假了,你一个人在这儿过年多难过啊,就早点儿过来陪你了。\njiù yào fàng jià le , nǐ yí gè rén zài zhè ér guò nián duō nán guò a , jiù zǎo diǎn ér guò lái péi nǐ le 。\nSắp nghỉ rồi, bạn đón năm mới ở đây một mình buồn biết mấy, nên mình đến sớm ở bên bạn.",
+      "order_index": 9,
+      "note": null,
+      "source_key": "2:9:陪"
+    },
+    {
+      "hanzi": "旁边",
+      "pinyin": "páng biān",
+      "vietnamese_meaning": "bên cạnh",
+      "part_of_speech": "từ chỉ vị trí",
+      "example": "小刚,你旁边这位是?\nxiǎo gāng , nǐ páng biān zhè wèi shì ?\nTiểu Cương, vị bên cạnh bạn là ai?",
+      "order_index": 10,
+      "note": null,
+      "source_key": "2:9:旁边"
+    },
+    {
+      "hanzi": "位",
+      "pinyin": "wèi",
+      "vietnamese_meaning": "vị (lượng từ lịch sự dùng cho người)",
+      "part_of_speech": "lượng từ",
+      "example": "小刚,你旁边这位是?\nxiǎo gāng , nǐ páng biān zhè wèi shì ?\nTiểu Cương, vị bên cạnh bạn là ai?",
+      "order_index": 11,
+      "note": "位 dùng đếm người với sắc thái lịch sự; 个 trung tính, 名 thường dùng trong thông tin hoặc văn phong trang trọng.",
+      "source_key": "2:9:位"
+    },
+    {
+      "hanzi": "附近",
+      "pinyin": "fù jìn",
+      "vietnamese_meaning": "gần đây, vùng lân cận (vị trí)",
+      "part_of_speech": "danh từ chỉ vị trí",
+      "example": "我住的房子在学校附近。\nwǒ zhù de fáng zi zài xué xiào fù jìn 。\nCăn nhà tôi ở nằm gần trường.",
+      "order_index": 12,
+      "note": null,
+      "source_key": "2:9:附近"
+    },
+    {
+      "hanzi": "欢迎",
+      "pinyin": "huān yíng",
+      "vietnamese_meaning": "hoan nghênh, chào đón",
+      "part_of_speech": "động từ",
+      "example": "认识你我也很高兴!我家也在这里附近,有时间欢迎你们来玩儿。\nrèn shí nǐ wǒ yě hěn gāo xìng ! wǒ jiā yě zài zhè lǐ fù jìn , yǒu shí jiān huān yíng nǐ men lái wán ér 。\nMình cũng rất vui được làm quen! Nhà mình cũng gần đây, khi nào có thời gian mời các bạn đến chơi.",
+      "order_index": 13,
+      "note": null,
+      "source_key": "2:9:欢迎"
+    },
+    {
+      "hanzi": "房子",
+      "pinyin": "fángzi",
+      "vietnamese_meaning": "căn nhà",
+      "part_of_speech": "danh từ",
+      "example": "我住的房子在学校附近。\nwǒ zhù de fáng zi zài xué xiào fù jìn 。\nCăn nhà tôi ở nằm gần trường.",
+      "order_index": 14,
+      "note": null,
+      "source_key": "2:9:房子"
+    },
+    {
+      "hanzi": "环境",
+      "pinyin": "huán jìng",
+      "vietnamese_meaning": "môi trường, khung cảnh xung quanh",
+      "part_of_speech": "danh từ",
+      "example": "这里的环境很好。\nzhè lǐ de huán jìng hěn hǎo 。\nMôi trường ở đây rất tốt.",
+      "order_index": 15,
+      "note": null,
+      "source_key": "2:9:环境"
+    },
+    {
+      "hanzi": "安静",
+      "pinyin": "ān jìng",
+      "vietnamese_meaning": "yên tĩnh",
+      "part_of_speech": "tính từ",
+      "example": "他很安静。\ntā hěn ān jìng 。\nAnh ấy yên tĩnh.",
+      "order_index": 16,
+      "note": null,
+      "source_key": "2:9:安静"
+    },
+    {
+      "hanzi": "特别",
+      "pinyin": "tè bié",
+      "vietnamese_meaning": "đặc biệt; rất, vô cùng",
+      "part_of_speech": "tính từ, phó từ",
+      "example": "他特别喜欢学汉语。\ntā tè bié xǐ huān xué hàn yǔ 。\nAnh ấy rất thích học tiếng Trung.",
+      "order_index": 17,
+      "note": null,
+      "source_key": "2:9:特别"
+    },
+    {
+      "hanzi": "热情",
+      "pinyin": "rèqíng",
+      "vietnamese_meaning": "nhiệt tình",
+      "part_of_speech": "tính từ",
+      "example": "他很热情。\ntā hěn rè qíng 。\nAnh ấy nhiệt tình.",
+      "order_index": 18,
+      "note": null,
+      "source_key": "2:9:热情"
+    },
+    {
+      "hanzi": "练",
+      "pinyin": "liàn",
+      "vietnamese_meaning": "luyện, tập",
+      "part_of_speech": "động từ",
+      "example": "我每天练口语。\nwǒ měi tiān liàn kǒu yǔ 。\nMỗi ngày tôi luyện nói.",
+      "order_index": 19,
+      "note": null,
+      "source_key": "2:9:练"
+    },
+    {
+      "hanzi": "口语",
+      "pinyin": "kǒu yǔ",
+      "vietnamese_meaning": "khẩu ngữ; kỹ năng nói",
+      "part_of_speech": "danh từ",
+      "example": "他的口语很好。\ntā de kǒu yǔ hěn hǎo 。\nKhẩu ngữ của anh ấy rất tốt.",
+      "order_index": 20,
+      "note": null,
+      "source_key": "2:9:口语"
+    },
+    {
+      "hanzi": "没错",
+      "pinyin": "méi cuò",
+      "vietnamese_meaning": "đúng vậy, không sai",
+      "part_of_speech": "cụm giao tiếp",
+      "example": "没错，他是我的朋友。\nméi cuò ， tā shì wǒ de péng yǒu 。\nĐúng vậy, anh ấy là bạn của tôi.",
+      "order_index": 21,
+      "note": null,
+      "source_key": "2:9:没错"
+    },
+    {
+      "hanzi": "有空",
+      "pinyin": "yǒu kòng",
+      "vietnamese_meaning": "rảnh, có thời gian rảnh",
+      "part_of_speech": "cụm động từ",
+      "example": "你明天有空吗？\nnǐ míng tiān yǒu kòng ma ？\nNgày mai bạn có rảnh không?",
+      "order_index": 22,
+      "note": null,
+      "source_key": "2:9:有空"
+    },
+    {
+      "hanzi": "同桌",
+      "pinyin": "tóng zhuō",
+      "vietnamese_meaning": "bạn cùng bàn",
+      "part_of_speech": "danh từ",
+      "example": "他是我的同桌。\ntā shì wǒ de tóng zhuō 。\nAnh ấy là bạn cùng bàn của tôi.",
+      "order_index": 23,
+      "note": null,
+      "source_key": "2:9:同桌"
+    },
+    {
+      "hanzi": "个子",
+      "pinyin": "gèzi",
+      "vietnamese_meaning": "thân hình, chiều cao",
+      "part_of_speech": "danh từ",
+      "example": "他个子很高。\ntā gè zi hěn gāo 。\nAnh ấy có vóc dáng cao.",
+      "order_index": 24,
+      "note": null,
+      "source_key": "2:9:个子"
+    },
+    {
+      "hanzi": "眼睛",
+      "pinyin": "yǎnjing",
+      "vietnamese_meaning": "mắt",
+      "part_of_speech": "danh từ",
+      "example": "请看他的眼睛。\nqǐng kàn tā de yǎn jīng 。\nHãy nhìn mắt của anh ấy.",
+      "order_index": 25,
+      "note": null,
+      "source_key": "2:9:眼睛"
+    },
+    {
+      "hanzi": "长得",
+      "pinyin": "zhǎng dé",
+      "vietnamese_meaning": "có ngoại hình ...",
+      "part_of_speech": "cụm động từ",
+      "example": "她长得很漂亮。\ntā zhǎng de hěn piào liàng 。\nCô ấy có ngoại hình rất xinh.",
+      "order_index": 26,
+      "note": null,
+      "source_key": "2:9:长得"
+    },
+    {
+      "hanzi": "耐心",
+      "pinyin": "nàixīn",
+      "vietnamese_meaning": "kiên nhẫn",
+      "part_of_speech": "tính từ",
+      "example": "他耐心地给我讲解题目。\ntā nài xīn de gěi wǒ jiǎng jiě tí mù 。\nAnh ấy kiên nhẫn giải thích bài tập cho tôi.",
+      "order_index": 27,
+      "note": null,
+      "source_key": "2:9:耐心"
+    },
+    {
+      "hanzi": "讲解",
+      "pinyin": "jiǎngjiě",
+      "vietnamese_meaning": "giải thích",
+      "part_of_speech": "động từ",
+      "example": "他耐心地给我讲解题目。\ntā nài xīn de gěi wǒ jiǎng jiě tí mù 。\nAnh ấy kiên nhẫn giải thích bài tập cho tôi.",
+      "order_index": 28,
+      "note": null,
+      "source_key": "2:9:讲解"
+    },
+    {
+      "hanzi": "题目",
+      "pinyin": "tímù",
+      "vietnamese_meaning": "bài tập, câu hỏi",
+      "part_of_speech": "danh từ",
+      "example": "他耐心地给我讲解题目。\ntā nài xīn de gěi wǒ jiǎng jiě tí mù 。\nAnh ấy kiên nhẫn giải thích bài tập cho tôi.",
+      "order_index": 29,
+      "note": null,
+      "source_key": "2:9:题目"
+    }
+  ],
+  "grammar": [
+    {
+      "name": "Tồn hiện với 着",
+      "structure": "Địa điểm + động từ + 着 + số lượng + danh từ",
+      "explanation": "Miêu tả người hoặc vật đang tồn tại với một tư thế/trạng thái tại nơi nào.",
+      "usage": "Khác 我站在门口 lấy người đã biết làm chủ đề. Tân ngữ tồn hiện thường giới thiệu đối tượng chưa xác định.",
+      "example": "门口站着一个人。\nmén kǒu zhàn zhe yí gè rén 。\nỞ cửa có một người đang đứng.",
+      "note": "Khác 我站在门口 lấy người đã biết làm chủ đề. Tân ngữ tồn hiện thường giới thiệu đối tượng chưa xác định.",
+      "order_index": 1
+    },
+    {
+      "name": "Cảm thán với 多",
+      "structure": "多 + tính từ + 啊",
+      "explanation": "Nhấn mạnh mức độ cao trong câu cảm thán.",
+      "usage": "多 ở đây không phải nhiều để đếm và không phải số xấp xỉ sau số từ.",
+      "example": "这本书多有意思啊！\nzhè běn shū duō yǒu yì si a ！\nQuyển sách này thú vị biết bao!",
+      "note": "多 ở đây không phải nhiều để đếm và không phải số xấp xỉ sau số từ.",
+      "order_index": 2
+    },
+    {
+      "name": "Bổ ngữ xu hướng kép",
+      "structure": "Động từ + 上/下/进/出/回/过 + 来/去",
+      "explanation": "Kết hợp hướng di chuyển và điểm nhìn của người nói.",
+      "usage": "Tân ngữ nơi chốn thường đặt trước 来/去; chọn 来 hay 去 theo điểm nhìn.",
+      "example": "老师走进教室来。\nlǎo shī zǒu jìn jiào shì lái 。\nThầy/cô đi vào lớp về phía người nói.",
+      "note": "Tân ngữ nơi chốn thường đặt trước 来/去; chọn 来 hay 去 theo điểm nhìn.",
+      "order_index": 3
+    },
+    {
+      "name": "Đánh giá bằng 看起来/看上去",
+      "structure": "Chủ ngữ + 看起来/看上去 + cụm tính từ",
+      "explanation": "Đưa ra nhận xét dựa trên những gì nhìn thấy.",
+      "usage": "Đây là đánh giá qua quan sát, không phải khẳng định biết chắc cảm xúc bên trong.",
+      "example": "他看起来很高兴。\ntā kàn qǐ lái hěn gāo xìng 。\nTrông anh ấy có vẻ vui.",
+      "note": "Đây là đánh giá qua quan sát, không phải khẳng định biết chắc cảm xúc bên trong.",
+      "order_index": 4
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Người đứng trước cửa",
+      "content": "小刚:张老师,您家门口站着一个人。\n张老师:我家门口?我出去看一下。\n小刚:那个人穿着蓝色的外套,手里还拿着一个红色的本子。\n张老师:我看见了,他是我弟弟。\n小刚:好的,那我们快走吧!",
+      "pinyin": "xiǎo gāng : zhāng lǎo shī , nín jiā mén kǒu zhàn zhe yí gè rén 。\nzhāng lǎo shī : wǒ jiā mén kǒu ? wǒ chū qù kàn yī xià 。\nxiǎo gāng : nà ge rén chuān zhe lán sè de wài tào , shǒu lǐ hái ná zhe yí gè hóng sè de běn zi 。\nzhāng lǎo shī : wǒ kàn jiàn le , tā shì wǒ dì di 。\nxiǎo gāng : hǎo de , nà wǒ men kuài zǒu ba !",
+      "vietnamese_translation": "Tiểu Cương: Cô Trương, ngoài cổng nhà cô có\nmột người đang đứng đợi.\nCô Trương: Ngoài cổng nhà cô sao? Cô ra ngoài\nxem một chút.\nTiểu Cương: Người đó mặc áo khoác màu xanh,\ntay còn cầm một quyển sổ màu đỏ ạ.\nCô Trương: Cô thấy rồi, đó là em trai cô.\nTiểu Cương: Vâng ạ, vậy chúng ta đi mau thôi!",
+      "source_reference": "Giáo trình HSK2 3.0 Hanu, bài 9, PDF 98."
+    },
+    {
+      "order_index": 2,
+      "title": "Bạn tốt đến thăm",
+      "content": "小刚:小丽,是你啊!上次发微信,你说有时间过来找我,没想到这么快就来了!\n小丽:就要放假了,你一个人在这儿过年多难过啊,就早点儿过来陪你了。\n小刚:你真是我的好朋友!\n小丽:小刚,你旁边这位是?\n小刚:小丽,这是小林,他在我们学校学音乐。小林,这是我的同学小丽。\n小丽:小林,很高兴认识你!\n小林:认识你我也很高兴!我家也在这里附近,有时间欢迎你们来玩儿。",
+      "pinyin": "xiǎo gāng : xiǎo lì , shì nǐ a ! shàng cì fā wēi xìn , nǐ shuō yǒu shí jiān guò lái zhǎo wǒ , méi xiǎng dào zhè me kuài jiù lái le !\nxiǎo lì : jiù yào fàng jià le , nǐ yí gè rén zài zhè ér guò nián duō nán guò a , jiù zǎo diǎn ér guò lái péi nǐ le 。\nxiǎo gāng : nǐ zhēn shì wǒ de hǎo péng yǒu !\nxiǎo lì : xiǎo gāng , nǐ páng biān zhè wèi shì ?\nxiǎo gāng : xiǎo lì , zhè shì xiǎo lín , tā zài wǒ men xué xiào xué yīn yuè 。 xiǎo lín , zhè shì wǒ de tóng xué xiǎo lì 。\nxiǎo lì : xiǎo lín , hěn gāo xìng rèn shí nǐ !\nxiǎo lín : rèn shí nǐ wǒ yě hěn gāo xìng ! wǒ jiā yě zài zhè lǐ fù jìn , yǒu shí jiān huān yíng nǐ men lái wán ér 。",
+      "vietnamese_translation": "Tiểu Cương: Tiểu Lệ, là cậu sao! Lần trước cậu nhắn trên Wechat, cậu nói là có thời gian sẽ đến tìm tớ,\nkhông ngờ lại nhanh như thế!\nTiểu Lệ: Sắp nghỉ lễ rồi, cậu đón Tết một mình ở đây buồn lắm nên tớ đến sớm một chút để chơi với cậu\nđây.\nTiểu Cương: Cậu đúng là bạn tốt của tớ!\nTiểu Lệ: Tiểu Cương, người bên cạnh cậu là ai?\nTiểu Cương: Tiểu Lệ, đây là Tiểu Lâm, cậu ấy học âm nhạc ở trường bọn mình. Tiểu Lâm, đây là bạn cùng\nlớp tớ - Tiểu Lệ.\nTiểu Lệ: Tiểu Lâm, rất vui được làm quen với cậu!\nTiểu Lâm: Tớ cũng rất vui được gặp cậu! Nhà tớ cũng ở gần đây, có thời gian mời các cậu đến chơi.",
+      "source_reference": "Giáo trình HSK2 3.0 Hanu, bài 9, PDF 100."
+    },
+    {
+      "order_index": 3,
+      "title": "Nhà ở và hàng xóm",
+      "content": "小刚:小李,你住的房子真不错,离学校近,环境也安静。\n小李:是啊,我楼下住着一家美国人,他们人特别热情。\n小刚:这样你有事情,就可以找他们帮忙,挺不错的。\n小李:他们家的小孩儿想学汉语,经常来我这儿练口语。\n小刚:我记得你说过,是个小女孩儿,学得还挺快的。\n小李:没错,她每天放学都会跑上来问我汉语问题。\n小刚:你问问他们周末有没有空,我请大家吃北京烤鸭。",
+      "pinyin": "xiǎo gāng : xiǎo lǐ , nǐ zhù de fáng zi zhēn bù cuò , lí xué xiào jìn , huán jìng yě ān jìng 。\nxiǎo lǐ : shì a , wǒ lóu xià zhù zhe yī jiā měi guó rén , tā men rén tè bié rè qíng 。\nxiǎo gāng : zhè yàng nǐ yǒu shì qíng , jiù kě yǐ zhǎo tā men bāng máng , tǐng bù cuò de 。\nxiǎo lǐ : tā men jiā de xiǎo hái ér xiǎng xué hàn yǔ , jīng cháng lái wǒ zhè ér liàn kǒu yǔ 。\nxiǎo gāng : wǒ jì de nǐ shuō guò , shì gè xiǎo nǚ hái ér , xué de hái tǐng kuài de 。\nxiǎo lǐ : méi cuò , tā měi tiān fàng xué dōu huì pǎo shàng lái wèn wǒ hàn yǔ wèn tí 。\nxiǎo gāng : nǐ wèn wèn tā men zhōu mò yǒu méi yǒu kòng , wǒ qǐng dà jiā chī běi jīng kǎo yā 。",
+      "vietnamese_translation": "Tiểu Cương: Tiểu Lý, nhà của cậu tốt thật, gần trường học, môi trường cũng yên tĩnh.\nTiểu Lý: Đúng thế, dưới tầng nhà tớ còn có một gia đình người Mỹ, họ rất nhiệt tình.\nTiểu Cương: Như vậy khi cậu có việc, có thể nhờ họ giúp đỡ, tốt quá.\nTiểu Lý: Con họ muốn học tiếng Trung, thường đến đây luyện nói với tớ.\nTiểu Cương: Tớ nhớ cậu đã từng kể rồi, là một bé gái, học rất nhanh.\nTiểu Lý: Đúng vậy, mỗi ngày sau giờ học, cô bé đều chạy lên hỏi tớ câu hỏi tiếng Trung.\nTiểu Cương: Cậu hỏi họ cuối tuần có rảnh không, tớ mời mọi người ăn vịt quay Bắc Kinh.",
+      "source_reference": "Giáo trình HSK2 3.0 Hanu, bài 9, PDF 103."
+    },
+    {
+      "order_index": 4,
+      "title": "Bạn cùng bàn",
+      "content": "我有一个好朋友,他叫小刚。我们是同班同学,也是同桌。他个子很高,眼睛大大的,长得很帅。他很喜欢运动,每天都去操场跑步。小刚学习特别好,他经常帮我学习英语,还会耐心给我讲解不会的题目。我们一起上课、一起吃饭,关系越来越好。",
+      "pinyin": "wǒ yǒu yí gè hǎo péng yǒu , tā jiào xiǎo gāng 。 wǒ men shì tóng bān tóng xué , yě shì tóng zhuō 。 tā gè zi hěn gāo , yǎn jīng dà dà de , zhǎng de hěn shuài 。 tā hěn xǐ huān yùn dòng , měi tiān dōu qù cāo chǎng pǎo bù 。 xiǎo gāng xué xí tè bié hǎo , tā jīng cháng bāng wǒ xué xí yīng yǔ , hái huì nài xīn gěi wǒ jiǎng jiě bú huì de tí mù 。 wǒ men yì qǐ shàng kè 、 yì qǐ chī fàn , guān xì yuè lái yuè hǎo 。",
+      "vietnamese_translation": "Tôi có một người bạn thân, cậu ấy tên là Tiểu Cương. Chúng tôi là bạn cùng lớp, cũng là bạn cùng bàn. Cậu ấy cao ráo, đẹp trai và chơi bóng rổ rất giỏi. Cậu ấy rất thích thể thao, mỗi ngày đều đến sân vận động chạy bộ. Tiểu Cương học rất giỏi, cậu ấy thường giúp tôi học tiếng Anh và kiên nhẫn giải thích cho tôi những bài tập mà tôi không hiểu. Chúng tôi cùng đi học, cùng ăn cơm, càng ngày càng thân hơn.",
+      "source_reference": "Giáo trình HSK2 3.0 Hanu, bài 9, PDF 106."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 2 · Bài 9 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp; dùng kiến thức của bài này và các bài trước, không dùng bài sau. Đạt từ 80%; được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "review_status": "DRAFT_REQUIRES_EDITOR_REVIEW",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 1).",
+      "options": [
+        {
+          "option_text": "rảnh, có thời gian rảnh",
+          "is_correct": false
+        },
+        {
+          "option_text": "khá, tương đối; so sánh",
+          "is_correct": false
+        },
+        {
+          "option_text": "có ngoại hình ...",
+          "is_correct": true
+        },
+        {
+          "option_text": "ban ngày",
+          "is_correct": false
+        }
+      ],
+      "rubric": "长得 (zhǎng dé) nghĩa là có ngoại hình .... ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "长得"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 9
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “眼睛” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "đi, bắt đầu (học, làm)",
+          "is_correct": false
+        },
+        {
+          "option_text": "màu xanh lam",
+          "is_correct": false
+        },
+        {
+          "option_text": "không ngờ",
+          "is_correct": false
+        },
+        {
+          "option_text": "mắt",
+          "is_correct": true
+        }
+      ],
+      "rubric": "眼睛 (yǎnjing) nghĩa là mắt. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 9
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “kāi” và nghĩa “mở, khai trương”.",
+      "options": [
+        {
+          "option_text": "上",
+          "is_correct": false
+        },
+        {
+          "option_text": "开",
+          "is_correct": true
+        },
+        {
+          "option_text": "一些",
+          "is_correct": false
+        },
+        {
+          "option_text": "哎",
+          "is_correct": false
+        }
+      ],
+      "rubric": "开 (kāi) nghĩa là mở, khai trương. 开 ở đây là mở, khai trương (新开的商场); khác 开车 là lái xe và 火车开了 là tàu khởi hành. Nhắc lại HSK1 bài 14: 开 (kāi) nghĩa là khởi hành, rời đi (xe cộ). Trong bài này: mở, khai trương.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 3
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 4).",
+      "options": [
+        {
+          "option_text": "tiếng đồng hồ",
+          "is_correct": false
+        },
+        {
+          "option_text": "phát âm; cách phát âm",
+          "is_correct": false
+        },
+        {
+          "option_text": "màu đỏ",
+          "is_correct": true
+        },
+        {
+          "option_text": "tốt, đẹp, hay, ngon",
+          "is_correct": false
+        }
+      ],
+      "rubric": "红色 (hóng sè) nghĩa là màu đỏ. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "红色"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 9
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “哪年” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "môi trường, khung cảnh xung quanh",
+          "is_correct": false
+        },
+        {
+          "option_text": "bạn gái",
+          "is_correct": false
+        },
+        {
+          "option_text": "năm nào",
+          "is_correct": true
+        },
+        {
+          "option_text": "một ít, một số",
+          "is_correct": false
+        }
+      ],
+      "rubric": "哪年 (nǎ nián) nghĩa là năm nào. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 4
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “tè bié” và nghĩa “đặc biệt; rất, vô cùng”.",
+      "options": [
+        {
+          "option_text": "上课",
+          "is_correct": false
+        },
+        {
+          "option_text": "一",
+          "is_correct": false
+        },
+        {
+          "option_text": "周末",
+          "is_correct": false
+        },
+        {
+          "option_text": "特别",
+          "is_correct": true
+        }
+      ],
+      "rubric": "特别 (tè bié) nghĩa là đặc biệt; rất, vô cùng. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 9
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 7).",
+      "options": [
+        {
+          "option_text": "học tập",
+          "is_correct": false
+        },
+        {
+          "option_text": "nước",
+          "is_correct": false
+        },
+        {
+          "option_text": "ở bên, đồng hành",
+          "is_correct": true
+        },
+        {
+          "option_text": "y",
+          "is_correct": false
+        }
+      ],
+      "rubric": "陪 (péi) nghĩa là ở bên, đồng hành. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "陪"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 9
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “练” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "luyện, tập",
+          "is_correct": true
+        },
+        {
+          "option_text": "bài học; tiết học",
+          "is_correct": false
+        },
+        {
+          "option_text": "thú vị; có ý nghĩa",
+          "is_correct": false
+        },
+        {
+          "option_text": "thì sao, còn ... (hỏi tiếp); trợ từ cuối câu",
+          "is_correct": false
+        }
+      ],
+      "rubric": "练 (liàn) nghĩa là luyện, tập. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 9
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “kǒu yǔ” và nghĩa “khẩu ngữ; kỹ năng nói”.",
+      "options": [
+        {
+          "option_text": "饭店",
+          "is_correct": false
+        },
+        {
+          "option_text": "加油",
+          "is_correct": false
+        },
+        {
+          "option_text": "经常",
+          "is_correct": false
+        },
+        {
+          "option_text": "口语",
+          "is_correct": true
+        }
+      ],
+      "rubric": "口语 (kǒu yǔ) nghĩa là khẩu ngữ; kỹ năng nói. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 9
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "câu hỏi; vấn đề",
+          "is_correct": false
+        },
+        {
+          "option_text": "không/chưa",
+          "is_correct": false
+        },
+        {
+          "option_text": "cho; đưa cho",
+          "is_correct": false
+        },
+        {
+          "option_text": "nhiệt tình",
+          "is_correct": true
+        }
+      ],
+      "rubric": "热情 (rèqíng) nghĩa là nhiệt tình. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "热情"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 9
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “欢迎” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "đắt",
+          "is_correct": false
+        },
+        {
+          "option_text": "hoan nghênh, chào đón",
+          "is_correct": true
+        },
+        {
+          "option_text": "vậy thì, thế thì",
+          "is_correct": false
+        },
+        {
+          "option_text": "bánh kem",
+          "is_correct": false
+        }
+      ],
+      "rubric": "欢迎 (huān yíng) nghĩa là hoan nghênh, chào đón. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 9
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “lán sè” và nghĩa “màu xanh lam”.",
+      "options": [
+        {
+          "option_text": "去",
+          "is_correct": false
+        },
+        {
+          "option_text": "蓝色",
+          "is_correct": true
+        },
+        {
+          "option_text": "哎",
+          "is_correct": false
+        },
+        {
+          "option_text": "那",
+          "is_correct": false
+        }
+      ],
+      "rubric": "蓝色 (lán sè) nghĩa là màu xanh lam. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 9
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “rảnh, có thời gian rảnh” (gợi ý pinyin: yǒu kòng).",
+      "reference_answer": "有空",
+      "rubric": "Đáp án: 有空 (yǒu kòng). ",
+      "config": {
+        "accepted_answers": [
+          "有空"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 9
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “kiên nhẫn” (gợi ý pinyin: nàixīn).",
+      "reference_answer": "耐心",
+      "rubric": "Đáp án: 耐心 (nàixīn). ",
+      "config": {
+        "accepted_answers": [
+          "耐心"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 9
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “đúng vậy, không sai” (gợi ý pinyin: méi cuò).",
+      "reference_answer": "没错",
+      "rubric": "Đáp án: 没错 (méi cuò). ",
+      "config": {
+        "accepted_answers": [
+          "没错"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 9
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “môi trường, khung cảnh xung quanh” (gợi ý pinyin: huán jìng).",
+      "reference_answer": "环境",
+      "rubric": "Đáp án: 环境 (huán jìng). ",
+      "config": {
+        "accepted_answers": [
+          "环境"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 9
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 1).",
+      "rubric": "机场: sân bay; 风: gió; 开始: bắt đầu; 超市: siêu thị",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "机场"
+          },
+          {
+            "id": "l1",
+            "text": "风"
+          },
+          {
+            "id": "l2",
+            "text": "开始"
+          },
+          {
+            "id": "l3",
+            "text": "超市"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r3",
+            "text": "siêu thị"
+          },
+          {
+            "id": "r2",
+            "text": "bắt đầu"
+          },
+          {
+            "id": "r1",
+            "text": "gió"
+          },
+          {
+            "id": "r0",
+            "text": "sân bay"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 13
+        },
+        {
+          "hsk": 1,
+          "lesson": 12
+        },
+        {
+          "hsk": 2,
+          "lesson": 5
+        },
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 2).",
+      "rubric": "没有: không có; 电话: điện thoại; cuộc gọi điện thoại; 觉得: cảm thấy; 肯定: nhất định, chắc chắn",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "没有"
+          },
+          {
+            "id": "l1",
+            "text": "电话"
+          },
+          {
+            "id": "l2",
+            "text": "觉得"
+          },
+          {
+            "id": "l3",
+            "text": "肯定"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r3",
+            "text": "nhất định, chắc chắn"
+          },
+          {
+            "id": "r2",
+            "text": "cảm thấy"
+          },
+          {
+            "id": "r1",
+            "text": "điện thoại; cuộc gọi điện thoại"
+          },
+          {
+            "id": "r0",
+            "text": "không có"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        },
+        {
+          "hsk": 1,
+          "lesson": 6
+        },
+        {
+          "hsk": 1,
+          "lesson": 9
+        },
+        {
+          "hsk": 2,
+          "lesson": 5
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Tồn hiện với 着”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Miêu tả người hoặc vật đang tồn tại với một tư thế/trạng thái tại nơi nào.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Địa điểm + động từ + 着 + số lượng + danh từ. Miêu tả người hoặc vật đang tồn tại với một tư thế/trạng thái tại nơi nào. Khác 我站在门口 lấy người đã biết làm chủ đề. Tân ngữ tồn hiện thường giới thiệu đối tượng chưa xác định.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 9
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Cảm thán với 多”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Nhấn mạnh mức độ cao trong câu cảm thán.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "多 + tính từ + 啊. Nhấn mạnh mức độ cao trong câu cảm thán. 多 ở đây không phải nhiều để đếm và không phải số xấp xỉ sau số từ.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 9
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Bổ ngữ xu hướng kép”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Kết hợp hướng di chuyển và điểm nhìn của người nói.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Động từ + 上/下/进/出/回/过 + 来/去. Kết hợp hướng di chuyển và điểm nhìn của người nói. Tân ngữ nơi chốn thường đặt trước 来/去; chọn 来 hay 去 theo điểm nhìn.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 9
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Đánh giá bằng 看起来/看上去”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Đưa ra nhận xét dựa trên những gì nhìn thấy.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ ngữ + 看起来/看上去 + cụm tính từ. Đưa ra nhận xét dựa trên những gì nhìn thấy. Đây là đánh giá qua quan sát, không phải khẳng định biết chắc cảm xúc bên trong.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 9
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Tồn hiện với 着” (mục 5): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Khác 我站在门口 lấy người đã biết làm chủ đề. Tân ngữ tồn hiện thường giới thiệu đối tượng chưa xác định.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Địa điểm + động từ + 着 + số lượng + danh từ. Miêu tả người hoặc vật đang tồn tại với một tư thế/trạng thái tại nơi nào. Khác 我站在门口 lấy người đã biết làm chủ đề. Tân ngữ tồn hiện thường giới thiệu đối tượng chưa xác định.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 9
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Cảm thán với 多” (mục 6): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "多 ở đây không phải nhiều để đếm và không phải số xấp xỉ sau số từ.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "多 + tính từ + 啊. Nhấn mạnh mức độ cao trong câu cảm thán. 多 ở đây không phải nhiều để đếm và không phải số xấp xỉ sau số từ.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 9
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 1).",
+      "reference_answer": "门口站着一个人。",
+      "rubric": "Câu đúng: 门口站着一个人。 Khác 我站在门口 lấy người đã biết làm chủ đề. Tân ngữ tồn hiện thường giới thiệu đối tượng chưa xác định.",
+      "config": {
+        "items": [
+          {
+            "id": "w2",
+            "text": "着"
+          },
+          {
+            "id": "w6",
+            "text": "。"
+          },
+          {
+            "id": "w3",
+            "text": "一"
+          },
+          {
+            "id": "w0",
+            "text": "门口"
+          },
+          {
+            "id": "w1",
+            "text": "站"
+          },
+          {
+            "id": "w5",
+            "text": "人"
+          },
+          {
+            "id": "w4",
+            "text": "个"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 9
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 2).",
+      "reference_answer": "这本书多有意思啊！",
+      "rubric": "Câu đúng: 这本书多有意思啊！ 多 ở đây không phải nhiều để đếm và không phải số xấp xỉ sau số từ.",
+      "config": {
+        "items": [
+          {
+            "id": "w1",
+            "text": "本"
+          },
+          {
+            "id": "w6",
+            "text": "！"
+          },
+          {
+            "id": "w4",
+            "text": "有意思"
+          },
+          {
+            "id": "w2",
+            "text": "书"
+          },
+          {
+            "id": "w0",
+            "text": "这"
+          },
+          {
+            "id": "w5",
+            "text": "啊"
+          },
+          {
+            "id": "w3",
+            "text": "多"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 9
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 3).",
+      "reference_answer": "老师走进教室来。",
+      "rubric": "Câu đúng: 老师走进教室来。 Tân ngữ nơi chốn thường đặt trước 来/去; chọn 来 hay 去 theo điểm nhìn.",
+      "config": {
+        "items": [
+          {
+            "id": "w1",
+            "text": "师"
+          },
+          {
+            "id": "w2",
+            "text": "走"
+          },
+          {
+            "id": "w3",
+            "text": "进"
+          },
+          {
+            "id": "w0",
+            "text": "老"
+          },
+          {
+            "id": "w6",
+            "text": "。"
+          },
+          {
+            "id": "w4",
+            "text": "教室"
+          },
+          {
+            "id": "w5",
+            "text": "来"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 9
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 4).",
+      "reference_answer": "他看起来很高兴。",
+      "rubric": "Câu đúng: 他看起来很高兴。 Đây là đánh giá qua quan sát, không phải khẳng định biết chắc cảm xúc bên trong.",
+      "config": {
+        "items": [
+          {
+            "id": "w4",
+            "text": "很"
+          },
+          {
+            "id": "w6",
+            "text": "。"
+          },
+          {
+            "id": "w3",
+            "text": "来"
+          },
+          {
+            "id": "w0",
+            "text": "他"
+          },
+          {
+            "id": "w1",
+            "text": "看"
+          },
+          {
+            "id": "w2",
+            "text": "起"
+          },
+          {
+            "id": "w5",
+            "text": "高兴"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 9
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 5).",
+      "reference_answer": "张老师,您家门口站着一个人。",
+      "rubric": "Câu đúng: 张老师,您家门口站着一个人。 Khác 我站在门口 lấy người đã biết làm chủ đề. Tân ngữ tồn hiện thường giới thiệu đối tượng chưa xác định.",
+      "config": {
+        "items": [
+          {
+            "id": "w9",
+            "text": "一"
+          },
+          {
+            "id": "w10",
+            "text": "个"
+          },
+          {
+            "id": "w5",
+            "text": "家"
+          },
+          {
+            "id": "w1",
+            "text": "老"
+          },
+          {
+            "id": "w12",
+            "text": "。"
+          },
+          {
+            "id": "w8",
+            "text": "着"
+          },
+          {
+            "id": "w3",
+            "text": ","
+          },
+          {
+            "id": "w0",
+            "text": "张"
+          },
+          {
+            "id": "w2",
+            "text": "师"
+          },
+          {
+            "id": "w4",
+            "text": "您"
+          },
+          {
+            "id": "w6",
+            "text": "门口"
+          },
+          {
+            "id": "w7",
+            "text": "站"
+          },
+          {
+            "id": "w11",
+            "text": "人"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8",
+          "w9",
+          "w10",
+          "w11",
+          "w12"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 9
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 6).",
+      "reference_answer": "我家门口?我出去看一下。",
+      "rubric": "Câu đúng: 我家门口?我出去看一下。 多 ở đây không phải nhiều để đếm và không phải số xấp xỉ sau số từ.",
+      "config": {
+        "items": [
+          {
+            "id": "w4",
+            "text": "我"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w7",
+            "text": "一下"
+          },
+          {
+            "id": "w2",
+            "text": "门口"
+          },
+          {
+            "id": "w6",
+            "text": "看"
+          },
+          {
+            "id": "w3",
+            "text": "?"
+          },
+          {
+            "id": "w5",
+            "text": "出去"
+          },
+          {
+            "id": "w1",
+            "text": "家"
+          },
+          {
+            "id": "w8",
+            "text": "。"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 2,
+          "lesson": 9
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ],
+  "source_documents": {
+    "vocabulary": "DOCX",
+    "theory": "HSK2 PDF"
+  }
+}

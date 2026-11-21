@@ -1,5 +1,6 @@
 import type { RouteObject } from 'react-router'
 import { Navigate, Outlet, redirect } from 'react-router'
+import { VocabularyReviewPage } from '../../features/review/VocabularyReviewPage'
 import { AdminLayout } from '../layouts/AdminLayout'
 import { LearnerLayout } from '../layouts/LearnerLayout'
 import { PublicLayout } from '../layouts/PublicLayout'
@@ -71,6 +72,7 @@ export function createAppRoutes(): RouteObject[] {
         { path: '/progress', loader: () => redirect('/pronunciation') },
         { path: '/history', loader: () => redirect('/pronunciation') },
         { path: '/profile', element: <ProfilePage /> },
+        { path: '/vocabulary-review', element: <VocabularyReviewPage /> },
         { path: '/companions', loader: () => redirect('/profile#companions') },
         ] },
       ],

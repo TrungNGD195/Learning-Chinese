@@ -1,5 +1,4 @@
 .bo-shell .profile-page { position:relative;isolation:isolate; }
-.bo-shell .profile-page::before { content:'';position:absolute;z-index:-1;inset:0 0 auto;height:240px;background:url('/academy/landscape.png') right top/650px auto no-repeat;opacity:.14;pointer-events:none; }
 .profile-companions { margin-top:24px;padding:0 24px;border:1px solid #d5dfcb;border-radius:13px;background:#fffef8;scroll-margin-top:24px; }
 .profile-companions summary { display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:72px;color:#234d3a;font-size:20px;font-weight:650;cursor:pointer; }
 .profile-companions summary::after { content:'+';font-size:25px;font-weight:400; }
@@ -14,7 +13,7 @@
 .profile-bo-poses button { min-height:36px;padding:6px 10px;border:1px solid #c6d4ba;border-radius:6px;background:#fffef9;color:#375c40;cursor:pointer;font-size:12px; }
 .profile-bo-poses button[aria-pressed=true] { background:#e5edd8;border-color:#789861; }
 .bo-shell .assessment-result-summary > .result-bo-celebrate { width:78px;float:right;margin:0 0 12px 18px; }
-.bo-shell .academy-mobile-nav { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.bo-shell .academy-mobile-nav { grid-template-columns:repeat(3,minmax(0,1fr)); }
 @media(max-width:560px) {
  .profile-companions { padding:0 16px; }
  .profile-companions summary { flex-wrap:wrap;gap:8px;font-size:18px; }

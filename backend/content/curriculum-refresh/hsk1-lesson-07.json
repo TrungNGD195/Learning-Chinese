@@ -1,0 +1,1650 @@
+{
+  "key": "hsk1-lesson-07-docx-2026-11-21",
+  "version": "2026-11-21",
+  "lesson": {
+    "hsk_level": 1,
+    "lesson_number": 7,
+    "title": "我晚上六点半下班 · Giờ giấc và sinh hoạt",
+    "description": null
+  },
+  "vocabulary": [
+    {
+      "hanzi": "现在",
+      "pinyin": "xiànzài",
+      "vietnamese_meaning": "bây giờ, hiện tại",
+      "part_of_speech": "danh từ",
+      "example": "现在是下午两点半。\nxiàn zài shì xià wǔ liǎng diǎn bàn 。\nBây giờ là hai giờ rưỡi chiều.",
+      "order_index": 1,
+      "note": null,
+      "source_key": "1:7:现在"
+    },
+    {
+      "hanzi": "点",
+      "pinyin": "diǎn",
+      "vietnamese_meaning": "giờ (đơn vị chỉ thời điểm)",
+      "part_of_speech": "lượng từ",
+      "example": "现在是下午两点半。\nxiàn zài shì xià wǔ liǎng diǎn bàn 。\nBây giờ là hai giờ rưỡi chiều.",
+      "order_index": 2,
+      "note": null,
+      "source_key": "1:7:点"
+    },
+    {
+      "hanzi": "分",
+      "pinyin": "fēn",
+      "vietnamese_meaning": "phút",
+      "part_of_speech": "lượng từ",
+      "example": "现在八点四十分。\nxiàn zài bā diǎn sì shí fēn 。\nBây giờ là tám giờ bốn mươi phút.",
+      "order_index": 3,
+      "note": null,
+      "source_key": "1:7:分"
+    },
+    {
+      "hanzi": "半",
+      "pinyin": "bàn",
+      "vietnamese_meaning": "một nửa",
+      "part_of_speech": "số từ",
+      "example": "现在是下午两点半。\nxiàn zài shì xià wǔ liǎng diǎn bàn 。\nBây giờ là hai giờ rưỡi chiều.",
+      "order_index": 4,
+      "note": null,
+      "source_key": "1:7:半"
+    },
+    {
+      "hanzi": "早上",
+      "pinyin": "zǎoshang",
+      "vietnamese_meaning": "buổi sáng",
+      "part_of_speech": "danh từ",
+      "example": "我早上八点上课。\nwǒ zǎo shàng bā diǎn shàng kè 。\nTôi vào học lúc tám giờ sáng.",
+      "order_index": 5,
+      "note": null,
+      "source_key": "1:7:早上"
+    },
+    {
+      "hanzi": "上午",
+      "pinyin": "shàngwǔ",
+      "vietnamese_meaning": "buối sáng (trước 12h)",
+      "part_of_speech": "danh từ",
+      "example": "我上午有课。\nwǒ shàng wǔ yǒu kè 。\nBuổi sáng tôi có tiết học.",
+      "order_index": 6,
+      "note": null,
+      "source_key": "1:7:上午"
+    },
+    {
+      "hanzi": "中午",
+      "pinyin": "zhōngwǔ",
+      "vietnamese_meaning": "buổi trưa",
+      "part_of_speech": "danh từ",
+      "example": "我中午在家吃饭。\nwǒ zhōng wǔ zài jiā chī fàn 。\nBuổi trưa tôi ăn cơm ở nhà.",
+      "order_index": 7,
+      "note": null,
+      "source_key": "1:7:中午"
+    },
+    {
+      "hanzi": "下午",
+      "pinyin": "xiàwǔ",
+      "vietnamese_meaning": "buổi chiều",
+      "part_of_speech": "danh từ",
+      "example": "现在是下午两点半。\nxiàn zài shì xià wǔ liǎng diǎn bàn 。\nBây giờ là hai giờ rưỡi chiều.",
+      "order_index": 8,
+      "note": null,
+      "source_key": "1:7:下午"
+    },
+    {
+      "hanzi": "晚上",
+      "pinyin": "wǎnshang",
+      "vietnamese_meaning": "buổi tối",
+      "part_of_speech": "danh từ",
+      "example": "我晚上六点下班。\nwǒ wǎn shàng liù diǎn xià bān 。\nTôi tan làm lúc sáu giờ tối.",
+      "order_index": 9,
+      "note": null,
+      "source_key": "1:7:晚上"
+    },
+    {
+      "hanzi": "课",
+      "pinyin": "kè",
+      "vietnamese_meaning": "bài học; tiết học",
+      "part_of_speech": "danh từ",
+      "example": "我今天有课。\nwǒ jīn tiān yǒu kè 。\nHôm nay tôi có tiết học.",
+      "order_index": 10,
+      "note": null,
+      "source_key": "1:7:课"
+    },
+    {
+      "hanzi": "上课",
+      "pinyin": "shàngkè",
+      "vietnamese_meaning": "lên lớp, đi học",
+      "part_of_speech": "động từ",
+      "example": "我们一起上课吧。\nwǒ men yì qǐ shàng kè ba 。\nChúng ta cùng lên lớp, đi học nhé.",
+      "order_index": 11,
+      "note": null,
+      "source_key": "1:7:上课"
+    },
+    {
+      "hanzi": "下课",
+      "pinyin": "xiàkè",
+      "vietnamese_meaning": "tan học",
+      "part_of_speech": "động từ",
+      "example": "我们一起下课吧。\nwǒ men yì qǐ xià kè ba 。\nChúng ta cùng tan học nhé.",
+      "order_index": 12,
+      "note": null,
+      "source_key": "1:7:下课"
+    },
+    {
+      "hanzi": "吧",
+      "pinyin": "ba",
+      "vietnamese_meaning": "nhé, đi (gợi ý hoặc đề nghị)",
+      "part_of_speech": "trợ từ ngữ khí",
+      "example": "我们去电影院看电影吧。\nwǒ men qù diàn yǐng yuàn kàn diàn yǐng ba 。\nChúng ta đi rạp xem phim nhé.",
+      "order_index": 13,
+      "note": null,
+      "source_key": "1:7:吧"
+    },
+    {
+      "hanzi": "看",
+      "pinyin": "kàn",
+      "vietnamese_meaning": "xem, nhìn, đọc",
+      "part_of_speech": "động từ",
+      "example": "我们去电影院看电影吧。\nwǒ men qù diàn yǐng yuàn kàn diàn yǐng ba 。\nChúng ta đi rạp xem phim nhé.",
+      "order_index": 14,
+      "note": null,
+      "source_key": "1:7:看"
+    },
+    {
+      "hanzi": "电影",
+      "pinyin": "diànyǐng",
+      "vietnamese_meaning": "phim",
+      "part_of_speech": "danh từ",
+      "example": "我喜欢电影。\nwǒ xǐ huān diàn yǐng 。\nTôi thích phim.",
+      "order_index": 15,
+      "note": null,
+      "source_key": "1:7:电影"
+    },
+    {
+      "hanzi": "电影院",
+      "pinyin": "diànyǐngyuàn",
+      "vietnamese_meaning": "rạp chiếu phim",
+      "part_of_speech": "danh từ",
+      "example": "我们去电影院看电影吧。\nwǒ men qù diàn yǐng yuàn kàn diàn yǐng ba 。\nChúng ta đi rạp xem phim nhé.",
+      "order_index": 16,
+      "note": null,
+      "source_key": "1:7:电影院"
+    },
+    {
+      "hanzi": "事",
+      "pinyin": "shì",
+      "vietnamese_meaning": "việc, chuyện",
+      "part_of_speech": "danh từ",
+      "example": "我下午还有事。\nwǒ xià wǔ hái yǒu shì 。\nChiều tôi còn có việc.",
+      "order_index": 17,
+      "note": null,
+      "source_key": "1:7:事"
+    },
+    {
+      "hanzi": "在",
+      "pinyin": "zài",
+      "vietnamese_meaning": "ở, tại",
+      "part_of_speech": "động từ",
+      "example": "他正在工作。\ntā zhèng zài gōng zuò 。\nAnh ấy đang làm việc.",
+      "order_index": 18,
+      "note": null,
+      "source_key": "1:7:在"
+    },
+    {
+      "hanzi": "正在",
+      "pinyin": "zhèngzài",
+      "vietnamese_meaning": "đang",
+      "part_of_speech": "phó từ",
+      "example": "他正在工作。\ntā zhèng zài gōng zuò 。\nAnh ấy đang làm việc.",
+      "order_index": 19,
+      "note": null,
+      "source_key": "1:7:正在"
+    },
+    {
+      "hanzi": "上班",
+      "pinyin": "shàngbān",
+      "vietnamese_meaning": "đi làm",
+      "part_of_speech": "động từ",
+      "example": "我们一起上班吧。\nwǒ men yì qǐ shàng bān ba 。\nChúng ta cùng đi làm nhé.",
+      "order_index": 20,
+      "note": null,
+      "source_key": "1:7:上班"
+    },
+    {
+      "hanzi": "下班",
+      "pinyin": "xiàbān",
+      "vietnamese_meaning": "tan làm",
+      "part_of_speech": "động từ",
+      "example": "我们一起下班吧。\nwǒ men yì qǐ xià bān ba 。\nChúng ta cùng tan làm nhé.",
+      "order_index": 21,
+      "note": null,
+      "source_key": "1:7:下班"
+    },
+    {
+      "hanzi": "医院",
+      "pinyin": "yīyuàn",
+      "vietnamese_meaning": "bệnh viện",
+      "part_of_speech": "danh từ",
+      "example": "我去医院。\nwǒ qù yī yuàn 。\nTôi đến bệnh viện.",
+      "order_index": 22,
+      "note": null,
+      "source_key": "1:7:医院"
+    },
+    {
+      "hanzi": "分钟",
+      "pinyin": "fēnzhōng",
+      "vietnamese_meaning": "phút",
+      "part_of_speech": "lượng từ",
+      "example": "我等你十分钟。\nwǒ děng nǐ shí fēn zhōng 。\nTôi đợi bạn mười phút.",
+      "order_index": 23,
+      "note": null,
+      "source_key": "1:7:分钟"
+    },
+    {
+      "hanzi": "小时",
+      "pinyin": "xiǎoshí",
+      "vietnamese_meaning": "tiếng đồng hồ",
+      "part_of_speech": "danh từ",
+      "example": "我每天学习两个小时。\nwǒ měi tiān xué xí liǎng gè xiǎo shí 。\nMỗi ngày tôi học hai tiếng.",
+      "order_index": 24,
+      "note": null,
+      "source_key": "1:7:小时"
+    }
+  ],
+  "grammar": [
+    {
+      "name": "Nói thời điểm",
+      "structure": "Buổi + số + 点 + số + 分",
+      "explanation": "Điểm giờ đứng trước số phút; 半 biểu thị rưỡi.",
+      "usage": "两点 chỉ hai giờ; 两个小时 chỉ thời lượng hai tiếng.",
+      "example": "我晚上六点半下班。\nwǒ wǎn shàng liù diǎn bàn xià bān 。\nTôi tan làm lúc sáu giờ rưỡi tối.",
+      "note": "两点 chỉ hai giờ; 两个小时 chỉ thời lượng hai tiếng.",
+      "order_index": 1
+    },
+    {
+      "name": "Đề nghị với 吧",
+      "structure": "Câu đề nghị + 吧",
+      "explanation": "吧 làm lời gợi ý mềm hơn.",
+      "usage": "吧 gợi ý hoặc phỏng đoán; không giống 吗 dùng để hỏi có/không.",
+      "example": "我们去看电影吧。\nwǒ men qù kàn diàn yǐng ba 。\nChúng ta đi xem phim nhé.",
+      "note": "吧 gợi ý hoặc phỏng đoán; không giống 吗 dùng để hỏi có/không.",
+      "order_index": 2
+    },
+    {
+      "name": "Hành động tại nơi nào với 在",
+      "structure": "Chủ ngữ + 在 + địa điểm + động từ",
+      "explanation": "Giới thiệu nơi hành động diễn ra.",
+      "usage": "在 + địa điểm khác 在 + động từ khi diễn đạt đang làm.",
+      "example": "我在医院工作。\nwǒ zài yī yuàn gōng zuò 。\nTôi làm việc ở bệnh viện.",
+      "note": "在 + địa điểm khác 在 + động từ khi diễn đạt đang làm.",
+      "order_index": 3
+    }
+  ],
+  "readings": [
+    {
+      "order_index": 1,
+      "title": "Hẹn giờ gặp nhau",
+      "content": "白家月:现在几点?\n安妮:早上八点四十分。\n白家月:我上午十点十分有课。\n安妮:好的,我们下午两点见吧。",
+      "pinyin": "bái jiā yuè : xiàn zài jǐ diǎn ?\nān nī : zǎo shàng bā diǎn sì shí fēn 。\nbái jiā yuè : wǒ shàng wǔ shí diǎn shí fēn yǒu kè 。\nān nī : hǎo de , wǒ men xià wǔ liǎng diǎn jiàn ba 。",
+      "vietnamese_translation": "Bạch Gia Nguyệt: Bây giờ mấy giờ rồi?\nAnnie: 8 giờ 40 phút sáng.\nBạch Gia Nguyệt: Buổi sáng 10 giờ 10 phút tôi có tiết học.\nAnnie: Được rồi, chúng ta gặp nhau lúc 2 giờ chiều nhé.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 7, PDF 62."
+    },
+    {
+      "order_index": 2,
+      "title": "Rủ bạn xem phim",
+      "content": "李文:下午我想去电影院看电影,你去吗?\n白家月:我不想去,下午还有事。\n李文:好的,明天呢?\n白家月:我明天下午两点还上课呢,四点半下课。",
+      "pinyin": "lǐ wén : xià wǔ wǒ xiǎng qù diàn yǐng yuàn kàn diàn yǐng , nǐ qù ma ?\nbái jiā yuè : wǒ bù xiǎng qù , xià wǔ hái yǒu shì 。\nlǐ wén : hǎo de , míng tiān ne ?\nbái jiā yuè : wǒ míng tiān xià wǔ liǎng diǎn hái shàng kè ne , sì diǎn bàn xià kè 。",
+      "vietnamese_translation": "Lý Văn: Chiều nay tớ muốn đi rạp chiếu phim xem phim, bạn đi không?\nBạch Gia Nguyệt: Tớ không muốn đi, chiều nay còn có việc.\nLý Văn: Được thôi, thế ngày mai thì sao?\nBạch Gia Nguyệt: Chiều mai lúc hai giờ tớ vẫn còn phải đi học,bốn giờ rưỡi tan học.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 7, PDF 64, 65."
+    },
+    {
+      "order_index": 3,
+      "title": "Giờ tan làm",
+      "content": "王一雪:喂,你在哪儿呢?\n刘明:我在家里呢。\n王一雪:我晚上六点半下班。\n刘明:我八点去医院上班。\n王一雪:好的,你去店里买些菜吧。\n刘明:好,我十分钟后去。",
+      "pinyin": "wáng yī xuě : wèi , nǐ zài nǎ ér ne ?\nliú míng : wǒ zài jiā lǐ ne 。\nwáng yī xuě : wǒ wǎn shàng liù diǎn bàn xià bān 。\nliú míng : wǒ bā diǎn qù yī yuàn shàng bān 。\nwáng yī xuě : hǎo de , nǐ qù diàn lǐ mǎi xiē cài ba 。\nliú míng : hǎo , wǒ shí fēn zhōng hòu qù 。",
+      "vietnamese_translation": "Vương Nhất Tuyết:  Alô, anh đang ở đâu vậy?\nLưu Minh: Anh đang ở nhà.\nVương Nhất Tuyết: Buổi tối sáu giờ rưỡi em tan làm.\nLưu Minh: Tám giờ anh đi bệnh viện làm việc.\nVương Nhất Tuyết: Vâng, anh đi cửa hàng mua ít rau đi nhé.\nLưu Minh: Được, mười phút nữa anh đi.",
+      "source_reference": "Giáo trình HSK1 3.0 Hanu, bài 7, PDF 67, 68."
+    }
+  ],
+  "assessment": {
+    "title": "HSK 1 · Bài 7 · Luyện tập",
+    "description": "30 câu ôn từ vựng và ngữ pháp; dùng kiến thức của bài này và các bài trước, không dùng bài sau. Đạt từ 80%; được làm lại và lưu từng lượt.",
+    "pass_threshold": 80
+  },
+  "review_status": "DRAFT_REQUIRES_EDITOR_REVIEW",
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 1).",
+      "options": [
+        {
+          "option_text": "sủi cảo",
+          "is_correct": false
+        },
+        {
+          "option_text": "nghỉ ngơi",
+          "is_correct": false
+        },
+        {
+          "option_text": "buổi chiều",
+          "is_correct": false
+        },
+        {
+          "option_text": "việc, chuyện",
+          "is_correct": true
+        }
+      ],
+      "rubric": "事 (shì) nghĩa là việc, chuyện. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "事"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 7
+        }
+      ],
+      "order_index": 1,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “下午” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "ngày (cách ghi trang trọng)",
+          "is_correct": false
+        },
+        {
+          "option_text": "Vương Nhất Phi (tên người)",
+          "is_correct": false
+        },
+        {
+          "option_text": "không sao; không có gì đáng ngại",
+          "is_correct": false
+        },
+        {
+          "option_text": "buổi chiều",
+          "is_correct": true
+        }
+      ],
+      "rubric": "下午 (xiàwǔ) nghĩa là buổi chiều. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 7
+        }
+      ],
+      "order_index": 2,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “xiǎoshí” và nghĩa “tiếng đồng hồ”.",
+      "options": [
+        {
+          "option_text": "她",
+          "is_correct": false
+        },
+        {
+          "option_text": "小时",
+          "is_correct": true
+        },
+        {
+          "option_text": "九",
+          "is_correct": false
+        },
+        {
+          "option_text": "没事",
+          "is_correct": false
+        }
+      ],
+      "rubric": "小时 (xiǎoshí) nghĩa là tiếng đồng hồ. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 7
+        }
+      ],
+      "order_index": 3,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 4).",
+      "options": [
+        {
+          "option_text": "nhé, đi (gợi ý hoặc đề nghị)",
+          "is_correct": false
+        },
+        {
+          "option_text": "không sao; không có gì đáng ngại",
+          "is_correct": false
+        },
+        {
+          "option_text": "rạp chiếu phim",
+          "is_correct": true
+        },
+        {
+          "option_text": "học sinh",
+          "is_correct": false
+        }
+      ],
+      "rubric": "电影院 (diànyǐngyuàn) nghĩa là rạp chiếu phim. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "电影院"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 7
+        }
+      ],
+      "order_index": 4,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “王一雪” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "tiếng Trung",
+          "is_correct": false
+        },
+        {
+          "option_text": "tôi",
+          "is_correct": false
+        },
+        {
+          "option_text": "cha mẹ; bố mẹ",
+          "is_correct": false
+        },
+        {
+          "option_text": "Vương Nhất Tuyết (tên người)",
+          "is_correct": true
+        }
+      ],
+      "rubric": "王一雪 (wáng yī xuě) nghĩa là Vương Nhất Tuyết (tên người). ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 5,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “diànyǐng” và nghĩa “phim”.",
+      "options": [
+        {
+          "option_text": "非常",
+          "is_correct": false
+        },
+        {
+          "option_text": "电影",
+          "is_correct": true
+        },
+        {
+          "option_text": "高兴",
+          "is_correct": false
+        },
+        {
+          "option_text": "妹妹",
+          "is_correct": false
+        }
+      ],
+      "rubric": "电影 (diànyǐng) nghĩa là phim. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 7
+        }
+      ],
+      "order_index": 6,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 7).",
+      "options": [
+        {
+          "option_text": "bây giờ, hiện tại",
+          "is_correct": true
+        },
+        {
+          "option_text": "đâu, nơi nào",
+          "is_correct": false
+        },
+        {
+          "option_text": "em gái",
+          "is_correct": false
+        },
+        {
+          "option_text": "bà ngoại",
+          "is_correct": false
+        }
+      ],
+      "rubric": "现在 (xiànzài) nghĩa là bây giờ, hiện tại. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "现在"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 7
+        }
+      ],
+      "order_index": 7,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “吧” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "nào",
+          "is_correct": false
+        },
+        {
+          "option_text": "đâu, nơi nào",
+          "is_correct": false
+        },
+        {
+          "option_text": "nhé, đi (gợi ý hoặc đề nghị)",
+          "is_correct": true
+        },
+        {
+          "option_text": "Pháp",
+          "is_correct": false
+        }
+      ],
+      "rubric": "吧 (ba) nghĩa là nhé, đi (gợi ý hoặc đề nghị). ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 7
+        }
+      ],
+      "order_index": 8,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “hào mǎ” và nghĩa “số, mã số”.",
+      "options": [
+        {
+          "option_text": "今年",
+          "is_correct": false
+        },
+        {
+          "option_text": "号码",
+          "is_correct": true
+        },
+        {
+          "option_text": "不太",
+          "is_correct": false
+        },
+        {
+          "option_text": "个",
+          "is_correct": false
+        }
+      ],
+      "rubric": "号码 (hào mǎ) nghĩa là số, mã số. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 6
+        }
+      ],
+      "order_index": 9,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Nghe và chọn nghĩa phù hợp (câu 10).",
+      "options": [
+        {
+          "option_text": "nước",
+          "is_correct": false
+        },
+        {
+          "option_text": "phút",
+          "is_correct": true
+        },
+        {
+          "option_text": "không, à",
+          "is_correct": false
+        },
+        {
+          "option_text": "một",
+          "is_correct": false
+        }
+      ],
+      "rubric": "分钟 (fēnzhōng) nghĩa là phút. ",
+      "config": {
+        "presentation": {
+          "skill": "listening",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": false,
+          "audio_text": "分钟"
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 7
+        }
+      ],
+      "order_index": 10,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Trong bài đã học, “年” có nghĩa là gì?",
+      "options": [
+        {
+          "option_text": "năm",
+          "is_correct": true
+        },
+        {
+          "option_text": "bài học; tiết học",
+          "is_correct": false
+        },
+        {
+          "option_text": "hai (số 2)",
+          "is_correct": false
+        },
+        {
+          "option_text": "uống",
+          "is_correct": false
+        }
+      ],
+      "rubric": "年 (nián) nghĩa là năm. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 4
+        }
+      ],
+      "order_index": 11,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Chọn chữ Hán ứng với pinyin “hē” và nghĩa “uống”.",
+      "options": [
+        {
+          "option_text": "外婆",
+          "is_correct": false
+        },
+        {
+          "option_text": "休息",
+          "is_correct": false
+        },
+        {
+          "option_text": "西安",
+          "is_correct": false
+        },
+        {
+          "option_text": "喝",
+          "is_correct": true
+        }
+      ],
+      "rubric": "喝 (hē) nghĩa là uống. ",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "easy",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 5
+        }
+      ],
+      "order_index": 12,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “phút” (gợi ý pinyin: fēn).",
+      "reference_answer": "分",
+      "rubric": "Đáp án: 分 (fēn). ",
+      "config": {
+        "accepted_answers": [
+          "分"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 7
+        }
+      ],
+      "order_index": 13,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “tan làm” (gợi ý pinyin: xiàbān).",
+      "reference_answer": "下班",
+      "rubric": "Đáp án: 下班 (xiàbān). ",
+      "config": {
+        "accepted_answers": [
+          "下班"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 7
+        }
+      ],
+      "order_index": 14,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “tan học” (gợi ý pinyin: xiàkè).",
+      "reference_answer": "下课",
+      "rubric": "Đáp án: 下课 (xiàkè). ",
+      "config": {
+        "accepted_answers": [
+          "下课"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 7
+        }
+      ],
+      "order_index": 15,
+      "points": 1
+    },
+    {
+      "type": "fill_blank",
+      "prompt": "Viết chữ Hán cho nghĩa “buổi sáng” (gợi ý pinyin: zǎoshang).",
+      "reference_answer": "早上",
+      "rubric": "Đáp án: 早上 (zǎoshang). ",
+      "config": {
+        "accepted_answers": [
+          "早上"
+        ],
+        "presentation": {
+          "skill": "vocabulary",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 7
+        }
+      ],
+      "order_index": 16,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 1).",
+      "rubric": "下午: buổi chiều; 晚上: buổi tối; 大: to, lớn; 对: đúng",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "下午"
+          },
+          {
+            "id": "l1",
+            "text": "晚上"
+          },
+          {
+            "id": "l2",
+            "text": "大"
+          },
+          {
+            "id": "l3",
+            "text": "对"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r3",
+            "text": "đúng"
+          },
+          {
+            "id": "r0",
+            "text": "buổi chiều"
+          },
+          {
+            "id": "r1",
+            "text": "buổi tối"
+          },
+          {
+            "id": "r2",
+            "text": "to, lớn"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 7
+        },
+        {
+          "hsk": 1,
+          "lesson": 7
+        },
+        {
+          "hsk": 1,
+          "lesson": 1
+        },
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 17,
+      "points": 1
+    },
+    {
+      "type": "matching",
+      "prompt": "Nối chữ Hán với nghĩa đúng (nhóm 2).",
+      "rubric": "去: đi; 刘明: Lưu Minh (tên người); 超市: siêu thị; 请: mời",
+      "config": {
+        "left_items": [
+          {
+            "id": "l0",
+            "text": "去"
+          },
+          {
+            "id": "l1",
+            "text": "刘明"
+          },
+          {
+            "id": "l2",
+            "text": "超市"
+          },
+          {
+            "id": "l3",
+            "text": "请"
+          }
+        ],
+        "right_items": [
+          {
+            "id": "r3",
+            "text": "mời"
+          },
+          {
+            "id": "r2",
+            "text": "siêu thị"
+          },
+          {
+            "id": "r0",
+            "text": "đi"
+          },
+          {
+            "id": "r1",
+            "text": "Lưu Minh (tên người)"
+          }
+        ],
+        "correct_pairs": [
+          {
+            "left_id": "l0",
+            "right_id": "r0"
+          },
+          {
+            "left_id": "l1",
+            "right_id": "r1"
+          },
+          {
+            "left_id": "l2",
+            "right_id": "r2"
+          },
+          {
+            "left_id": "l3",
+            "right_id": "r3"
+          }
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "vocabulary",
+          "difficulty": "medium",
+          "review": true
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 6
+        },
+        {
+          "hsk": 1,
+          "lesson": 4
+        },
+        {
+          "hsk": 1,
+          "lesson": 6
+        },
+        {
+          "hsk": 1,
+          "lesson": 3
+        }
+      ],
+      "order_index": 18,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Nói thời điểm”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Điểm giờ đứng trước số phút; 半 biểu thị rưỡi.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Buổi + số + 点 + số + 分. Điểm giờ đứng trước số phút; 半 biểu thị rưỡi. 两点 chỉ hai giờ; 两个小时 chỉ thời lượng hai tiếng.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 7
+        }
+      ],
+      "order_index": 19,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Đề nghị với 吧”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "吧 làm lời gợi ý mềm hơn.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Câu đề nghị + 吧. 吧 làm lời gợi ý mềm hơn. 吧 gợi ý hoặc phỏng đoán; không giống 吗 dùng để hỏi có/không.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 7
+        }
+      ],
+      "order_index": 20,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Với “Hành động tại nơi nào với 在”, cách dùng nào đúng?",
+      "options": [
+        {
+          "option_text": "Giới thiệu nơi hành động diễn ra.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Chỉ dùng được với tên riêng, không dùng với đại từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể thay thế mọi từ nghi vấn trong câu.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Từ này bắt buộc đặt ở cuối mọi câu.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Chủ ngữ + 在 + địa điểm + động từ. Giới thiệu nơi hành động diễn ra. 在 + địa điểm khác 在 + động từ khi diễn đạt đang làm.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 7
+        }
+      ],
+      "order_index": 21,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Nói thời điểm” (mục 4): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "两点 chỉ hai giờ; 两个小时 chỉ thời lượng hai tiếng.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Buổi + số + 点 + số + 分. Điểm giờ đứng trước số phút; 半 biểu thị rưỡi. 两点 chỉ hai giờ; 两个小时 chỉ thời lượng hai tiếng.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 7
+        }
+      ],
+      "order_index": 22,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Đề nghị với 吧” (mục 5): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "吧 gợi ý hoặc phỏng đoán; không giống 吗 dùng để hỏi có/không.",
+          "is_correct": true
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        }
+      ],
+      "rubric": "Câu đề nghị + 吧. 吧 làm lời gợi ý mềm hơn. 吧 gợi ý hoặc phỏng đoán; không giống 吗 dùng để hỏi có/không.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 7
+        }
+      ],
+      "order_index": 23,
+      "points": 1
+    },
+    {
+      "type": "multiple_choice",
+      "prompt": "Ghi nhớ “Hành động tại nơi nào với 在” (mục 6): nhận định nào phù hợp?",
+      "options": [
+        {
+          "option_text": "Có thể đảo thứ tự các thành phần trong câu tùy ý.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Luôn thêm 吗 vào mọi câu hỏi, kể cả câu đã có từ nghi vấn.",
+          "is_correct": false
+        },
+        {
+          "option_text": "Không cần căn cứ ngữ cảnh để xác định nghĩa và chức năng của từ.",
+          "is_correct": false
+        },
+        {
+          "option_text": "在 + địa điểm khác 在 + động từ khi diễn đạt đang làm.",
+          "is_correct": true
+        }
+      ],
+      "rubric": "Chủ ngữ + 在 + địa điểm + động từ. Giới thiệu nơi hành động diễn ra. 在 + địa điểm khác 在 + động từ khi diễn đạt đang làm.",
+      "config": {
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "medium",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 7
+        }
+      ],
+      "order_index": 24,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 1).",
+      "reference_answer": "我晚上六点半下班。",
+      "rubric": "Câu đúng: 我晚上六点半下班。 两点 chỉ hai giờ; 两个小时 chỉ thời lượng hai tiếng.",
+      "config": {
+        "items": [
+          {
+            "id": "w5",
+            "text": "下班"
+          },
+          {
+            "id": "w1",
+            "text": "晚上"
+          },
+          {
+            "id": "w3",
+            "text": "点"
+          },
+          {
+            "id": "w6",
+            "text": "。"
+          },
+          {
+            "id": "w4",
+            "text": "半"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w2",
+            "text": "六"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 7
+        }
+      ],
+      "order_index": 25,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 2).",
+      "reference_answer": "我们去看电影吧。",
+      "rubric": "Câu đúng: 我们去看电影吧。 吧 gợi ý hoặc phỏng đoán; không giống 吗 dùng để hỏi có/không.",
+      "config": {
+        "items": [
+          {
+            "id": "w2",
+            "text": "去"
+          },
+          {
+            "id": "w6",
+            "text": "。"
+          },
+          {
+            "id": "w5",
+            "text": "吧"
+          },
+          {
+            "id": "w4",
+            "text": "电影"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w3",
+            "text": "看"
+          },
+          {
+            "id": "w1",
+            "text": "们"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 7
+        }
+      ],
+      "order_index": 26,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 3).",
+      "reference_answer": "我在医院工作。",
+      "rubric": "Câu đúng: 我在医院工作。 在 + địa điểm khác 在 + động từ khi diễn đạt đang làm.",
+      "config": {
+        "items": [
+          {
+            "id": "w3",
+            "text": "工作"
+          },
+          {
+            "id": "w4",
+            "text": "。"
+          },
+          {
+            "id": "w2",
+            "text": "医院"
+          },
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w1",
+            "text": "在"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 7
+        }
+      ],
+      "order_index": 27,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 4).",
+      "reference_answer": "现在几点?",
+      "rubric": "Câu đúng: 现在几点? 两点 chỉ hai giờ; 两个小时 chỉ thời lượng hai tiếng.",
+      "config": {
+        "items": [
+          {
+            "id": "w3",
+            "text": "?"
+          },
+          {
+            "id": "w0",
+            "text": "现在"
+          },
+          {
+            "id": "w2",
+            "text": "点"
+          },
+          {
+            "id": "w1",
+            "text": "几"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 7
+        }
+      ],
+      "order_index": 28,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 5).",
+      "reference_answer": "早上八点四十分。",
+      "rubric": "Câu đúng: 早上八点四十分。 吧 gợi ý hoặc phỏng đoán; không giống 吗 dùng để hỏi có/không.",
+      "config": {
+        "items": [
+          {
+            "id": "w4",
+            "text": "十"
+          },
+          {
+            "id": "w1",
+            "text": "八"
+          },
+          {
+            "id": "w0",
+            "text": "早上"
+          },
+          {
+            "id": "w6",
+            "text": "。"
+          },
+          {
+            "id": "w5",
+            "text": "分"
+          },
+          {
+            "id": "w2",
+            "text": "点"
+          },
+          {
+            "id": "w3",
+            "text": "四"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 7
+        }
+      ],
+      "order_index": 29,
+      "points": 1
+    },
+    {
+      "type": "reorder_sentence",
+      "prompt": "Sắp xếp thành câu đã học (câu 6).",
+      "reference_answer": "我上午十点十分有课。",
+      "rubric": "Câu đúng: 我上午十点十分有课。 在 + địa điểm khác 在 + động từ khi diễn đạt đang làm.",
+      "config": {
+        "items": [
+          {
+            "id": "w0",
+            "text": "我"
+          },
+          {
+            "id": "w8",
+            "text": "。"
+          },
+          {
+            "id": "w7",
+            "text": "课"
+          },
+          {
+            "id": "w6",
+            "text": "有"
+          },
+          {
+            "id": "w4",
+            "text": "十"
+          },
+          {
+            "id": "w2",
+            "text": "十"
+          },
+          {
+            "id": "w5",
+            "text": "分"
+          },
+          {
+            "id": "w1",
+            "text": "上午"
+          },
+          {
+            "id": "w3",
+            "text": "点"
+          }
+        ],
+        "correct_order": [
+          "w0",
+          "w1",
+          "w2",
+          "w3",
+          "w4",
+          "w5",
+          "w6",
+          "w7",
+          "w8"
+        ],
+        "presentation": {
+          "skill": "reading",
+          "focus": "grammar",
+          "difficulty": "challenge",
+          "review": false
+        }
+      },
+      "knowledge_origins": [
+        {
+          "hsk": 1,
+          "lesson": 7
+        }
+      ],
+      "order_index": 30,
+      "points": 1
+    }
+  ],
+  "source_documents": {
+    "vocabulary": "DOCX",
+    "theory": "HSK1 PDF"
+  }
+}
