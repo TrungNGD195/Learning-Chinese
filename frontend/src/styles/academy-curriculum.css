@@ -209,6 +209,7 @@
 .lc-hsk-card:hover { transform:translateY(-4px);box-shadow:0 12px 28px #173f3624; }
 .lc-hsk-art { position:relative;overflow:hidden;background:#e4eddb; }
 .lc-hsk-art .lc-painted-cover { aspect-ratio:1.35; }
+.lc-hsk-art .lc-hsk-level-image { height:auto;object-fit:cover;object-position:center; }
 .lc-hsk-art > span:last-child { position:absolute;bottom:18px;left:20px;padding:8px 14px;border-radius:10px;background:#173f36;color:#fffef9;font-size:26px;font-weight:750; }
 .lc-hsk-copy { display:flex;flex:1;flex-direction:column;gap:14px;padding:24px; }
 .lc-hsk-copy h2 { font-size:23px;line-height:1.35;text-wrap:balance; }
