@@ -11,7 +11,7 @@ import { getPronunciationLesson } from './pronunciation/api'
 import { getCurriculum, getHskLevels } from './curriculum/api'
 import { getLesson, markGrammarViewed, markVocabularyViewed } from './lesson/api'
 import { getLessonProgress, getHskProgress, getProgressOverview } from './progress/api'
-import { getAssessment, getAttempt, startAttempt, submitAttempt } from './assessment/api'
+import { getAssessment, getAttempt, startAttempt, submitAttempt, getPracticeFeedback, checkPracticeAnswer, type PracticeFeedback } from './assessment/api'
 import { DashboardPage } from './dashboard/DashboardPage'
 import { HskCurriculumPage } from './curriculum/HskCurriculumPage'
 import { LessonPage } from './lesson/LessonPage'
@@ -25,7 +25,7 @@ vi.mock('./pronunciation/api', () => ({ getPronunciationLesson: vi.fn() }))
 vi.mock('./curriculum/api', () => ({ getCurriculum: vi.fn(), getHskLevels: vi.fn() }))
 vi.mock('./lesson/api', () => ({ getLesson: vi.fn(), markGrammarViewed: vi.fn(), markVocabularyViewed: vi.fn() }))
 vi.mock('./progress/api', () => ({ getLessonProgress: vi.fn(), getHskProgress: vi.fn(), getProgressOverview: vi.fn() }))
-vi.mock('./assessment/api', () => ({ getAssessment: vi.fn(), getAttempt: vi.fn(), startAttempt: vi.fn(), submitAttempt: vi.fn(), getAttempts: vi.fn() }))
+vi.mock('./assessment/api', () => ({ getAssessment: vi.fn(), getAttempt: vi.fn(), startAttempt: vi.fn(), submitAttempt: vi.fn(), getAttempts: vi.fn(),getPracticeFeedback:vi.fn(),checkPracticeAnswer:vi.fn() }))
 
 type Lesson = components['schemas']['LessonResponse']
 type LessonProgress = components['schemas']['LessonProgressResponse']
@@ -119,6 +119,12 @@ beforeEach(() => {
   vi.mocked(markVocabularyViewed).mockResolvedValue({ viewed_at: theoryTimestamp, theory_completed_at: null })
   vi.mocked(markGrammarViewed).mockResolvedValue({ viewed_at: theoryTimestamp, theory_completed_at: null })
   vi.mocked(getAssessment).mockResolvedValue(assessmentFixture())
+  vi.mocked(getPracticeFeedback).mockResolvedValue([])
+  vi.mocked(checkPracticeAnswer).mockImplementation(async (_id,body)=>({
+    question_id:body.question_id,type:questionFixture().find(q=>q.id===body.question_id)!.type,
+    prompt:'Checked practice question',answer:body.answer,grading_status:'GRADED',score:1,is_correct:true,
+    feedback:'Giải thích ngắn',reference_answer:'Đáp án mẫu',rubric:null,
+  } as PracticeFeedback))
   vi.mocked(startAttempt).mockResolvedValue({ id: 'attempt-1', assessment_id: 'assessment-1', attempt_number: 1, status: 'IN_PROGRESS', started_at: theoryTimestamp })
   vi.mocked(submitAttempt).mockResolvedValue({ attempt_id: 'attempt-1', status: 'GRADED', score: 100, passed: true })
   vi.mocked(getAttempt).mockResolvedValue(attemptFixture())
@@ -374,6 +380,7 @@ describe('Step 4.3 Assessment lifecycle and answer submission', () => {
     expect(screen.queryByRole('heading', { name: 'Danh sách từ' })).not.toBeInTheDocument()
     expect(document.querySelectorAll('h1')).toHaveLength(1)
     fireEvent.click(await screen.findByLabelText('Option One'))
+    await waitFor(()=>expect(screen.getByRole('button',{name:'Nộp bài'})).toBeEnabled())
     fireEvent.click(screen.getByRole('button', { name: 'Nộp bài' }))
     expect(await screen.findByRole('heading', { name: 'Kết quả luyện tập' })).toBeInTheDocument()
     expect(await screen.findByRole('heading', { name: 'Xem lại bài làm' })).toBeInTheDocument()
@@ -422,6 +429,7 @@ describe('Step 4.3 Assessment lifecycle and answer submission', () => {
   })
 
   it('loads the assessment without starting an Attempt; explicit action renders all seven question types and submits exact shapes', async () => {
+    vi.mocked(getAssessment).mockResolvedValue({...assessmentFixture(),type:'PERIODIC_TEST'})
     renderAt('/assessments/assessment-1')
     expect(await screen.findByRole('heading', { name: 'Greetings practice' })).toBeInTheDocument()
     expect(getAssessment).toHaveBeenCalledWith('assessment-1')
@@ -470,6 +478,7 @@ describe('Step 4.3 Assessment lifecycle and answer submission', () => {
     renderAt('/assessments/assessment-1')
     fireEvent.click(await screen.findByRole('button', { name: "Bắt đầu / Tiếp tục luyện tập" }))
     fireEvent.click(await screen.findByLabelText('Option One'))
+    await waitFor(()=>expect(screen.getByRole('button',{name:'Nộp bài'})).toBeEnabled())
     fireEvent.click(screen.getByRole('button', { name: "Nộp bài" }))
     expect(await screen.findByText("Câu trả lời đã được lưu, nhưng chưa thể chấm điểm.")).toBeInTheDocument()
     expect(getAttempt).toHaveBeenCalledWith('attempt-1')
@@ -509,6 +518,7 @@ describe('Step 4.3 Assessment lifecycle and answer submission', () => {
     fireEvent.click(await screen.findByRole('button', { name: "Bắt đầu / Tiếp tục luyện tập" }))
     const option = await screen.findByLabelText('Option One')
     fireEvent.click(option)
+    await waitFor(()=>expect(screen.getByRole('button',{name:'Nộp bài'})).toBeEnabled())
     fireEvent.click(screen.getByRole('button', { name: "Nộp bài" }))
     expect(await screen.findByRole('alert')).toHaveTextContent('Câu trả lời được giữ lại')
     expect(option).toBeChecked()

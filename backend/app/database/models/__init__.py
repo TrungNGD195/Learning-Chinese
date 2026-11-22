@@ -34,6 +34,7 @@ from app.database.models.progress import (
     LearnerGrammarProgress,
     LearnerReadingProgress,
 )
+from app.database.models.learning_assessment import PracticeResponse, HskExamAttempt
 from app.database.models.conversation import Conversation, Message, MessageCitation
 from app.database.models.document import Document
 from app.database.models.ingestion import ParsingRun

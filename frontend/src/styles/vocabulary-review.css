@@ -4,9 +4,15 @@
 .review-heading p { margin: 0; color: #52694e; }
 .review-heading > .academy-companion { width: 100px; }
 .review-toolbar,.review-navigation,.review-batches { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
-.review-toolbar { padding-block: 16px; border-block: 1px solid #ccd8c0; margin-bottom: 20px; }
-.review-toolbar label { display: flex; gap: 12px; align-items: center; font-size: 16px; }
-.review-toolbar select { min-height: 44px; padding: 8px 12px; border: 1px solid #a7bba0; border-radius: 8px; background: #fffef8; color: #244b3b; font: inherit; }
+.review-filter-panel { padding: 20px; border: 1px solid #c4d2b8; border-radius: 14px; background: #edf2e5; margin-bottom: 24px; }
+.review-toolbar { align-items: stretch; }
+.review-toolbar label { display: grid; gap: 8px; min-width: 0; font-size: 16px; font-weight: 650; flex: 0 0 180px; }
+.review-toolbar .review-lesson-filter { flex: 1; min-width: 200px; }
+.review-toolbar select { width: 100%; min-width: 0; min-height: 50px; padding: 10px 36px 10px 12px; border: 1px solid #8da780; border-radius: 8px; background: #fffef8; color: #244b3b; font: inherit; font-weight: 450; text-overflow: ellipsis; }
+.review-toolbar select:focus-visible { outline: 3px solid #a56c26; outline-offset: 3px; }
+.review-toolbar select:disabled { color: #52694e; background: #f6f7ef; cursor: not-allowed; }
+.review-filter-summary { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; min-height: 44px; margin-top: 12px; color: #52694e; font-size: 14px; }
+.review-filter-summary strong { color: #173f36; font-size: 20px; font-variant-numeric: tabular-nums; }
 .review-toolbar > span,.review-position,.review-origin,.review-batches { color: #52694e; font-size: 14px; }
 .review-position { margin-bottom: 12px; font-variant-numeric: tabular-nums; }
 .review-flashcard { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 20px; width: 100%; min-height: 350px; padding: 32px; border: 1px solid #8da780; border-radius: 16px; background: #fffef8; color: #173f36; text-align: center; font: inherit; cursor: pointer; box-shadow: 0 8px 24px #173f360a; }
@@ -28,3 +34,4 @@
 .review-empty p { max-width: 65ch; }
 .review-batches { margin-top: 24px; padding-top: 20px; border-top: 1px solid #ccd8c0; }
 @media(max-width:600px) { .review-heading { gap: 12px; } .review-heading > .academy-companion { width: 64px; } .review-heading p { font-size: 15px; } .review-flashcard { padding: 24px 16px; min-height: 320px; } .review-flashcard__answer { font-size: 21px; } .review-navigation > button { flex: 1; } .review-empty { padding: 20px; } }
+@media(max-width:600px) { .review-filter-panel { padding: 16px; } .review-toolbar { flex-direction: column; } .review-toolbar label,.review-toolbar .review-lesson-filter { flex: auto; min-width: 0; } }

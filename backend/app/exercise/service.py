@@ -205,6 +205,9 @@ async def submit_attempt(session: AsyncSession, user_id: UUID, attempt_id: UUID,
     async with session.begin():
         locked = await repository.get_attempt(session,attempt_id,for_update=True)
         if locked.user_id != user_id or locked.status != "IN_PROGRESS": raise _error("ATTEMPT_ALREADY_SUBMITTED", "Assessment attempt has already been submitted", 409)
+        for saved in await repository.practice_responses(session, attempt_id):
+            if validated.get(saved.question_id) != saved.answer:
+                raise _error('PRACTICE_ANSWER_LOCKED', 'The first checked answer cannot be changed within this attempt', 409)
         now = datetime.now(UTC)
         score,passed=calculate_score(questions,results,pass_threshold)
         answer_rows=[{"question_id":q["id"],"user_answer":validated[q["id"]],

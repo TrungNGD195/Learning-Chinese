@@ -1,0 +1,2284 @@
+{
+  "level": 3,
+  "standard": "HSK 3.0",
+  "version": "2026-11-22-v1",
+  "title": "Thi thử HSK 3 · HSK 3.0",
+  "pinyin_support": false,
+  "source_url": "https://www.chinesetest.cn/HSK/3",
+  "sections": [
+    {
+      "id": "listening",
+      "label": "Nghe hiểu",
+      "duration_seconds": 1680,
+      "questions": [
+        {
+          "id": "h3-listening-01",
+          "part": 1,
+          "type": "choice",
+          "prompt": "听对话，选择合适的图片。",
+          "explanation": "会议、资料、打印 cho biết hai người đang chuẩn bị tài liệu họp.",
+          "reference_answer": "准备会议资料",
+          "accepted_answers": [],
+          "audio_text": "男：会议马上开始了，资料打印好了吗？女：刚打好，我现在拿过去。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "准备会议资料",
+              "image_hanzi": null,
+              "illustration_topic": "office-documents"
+            },
+            {
+              "id": "o2",
+              "text": "借书",
+              "image_hanzi": null,
+              "illustration_topic": "reading-library"
+            },
+            {
+              "id": "o3",
+              "text": "搬家",
+              "image_hanzi": null,
+              "illustration_topic": "moving-home"
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-listening-02",
+          "part": 1,
+          "type": "choice",
+          "prompt": "听对话，选择合适的图片。",
+          "explanation": "箱子 và 搬进新家 miêu tả hoạt động chuyển nhà.",
+          "reference_answer": "搬家",
+          "accepted_answers": [],
+          "audio_text": "女：箱子太重了，你帮我搬进新家吧。男：没问题，我来帮你。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "搬家",
+              "image_hanzi": null,
+              "illustration_topic": "moving-home"
+            },
+            {
+              "id": "o2",
+              "text": "看熊猫",
+              "image_hanzi": null,
+              "illustration_topic": "panda-zoo"
+            },
+            {
+              "id": "o3",
+              "text": "打网球",
+              "image_hanzi": null,
+              "illustration_topic": "tennis"
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-listening-03",
+          "part": 1,
+          "type": "choice",
+          "prompt": "听对话，选择合适的图片。",
+          "explanation": "坐高铁 nghĩa là đi tàu cao tốc.",
+          "reference_answer": "乘坐高铁",
+          "accepted_answers": [],
+          "audio_text": "男：车站到了，准备上车吧。女：好的，坐高铁两个小时就能到了。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "乘坐高铁",
+              "image_hanzi": null,
+              "illustration_topic": "high-speed-train"
+            },
+            {
+              "id": "o2",
+              "text": "选择衣服",
+              "image_hanzi": null,
+              "illustration_topic": "wedding-clothes"
+            },
+            {
+              "id": "o3",
+              "text": "准备会议资料",
+              "image_hanzi": null,
+              "illustration_topic": "office-documents"
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-listening-04",
+          "part": 1,
+          "type": "choice",
+          "prompt": "听对话，选择合适的图片。",
+          "explanation": "拍下来 và 相机 cho biết họ đang chụp ảnh.",
+          "reference_answer": "拍照",
+          "accepted_answers": [],
+          "audio_text": "女：那边的鸟真漂亮，你快拍下来。男：好，我把相机拿出来。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "拍照",
+              "image_hanzi": null,
+              "illustration_topic": "photography"
+            },
+            {
+              "id": "o2",
+              "text": "看病",
+              "image_hanzi": null,
+              "illustration_topic": "recovery"
+            },
+            {
+              "id": "o3",
+              "text": "过春节",
+              "image_hanzi": null,
+              "illustration_topic": "spring-festival"
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-listening-05",
+          "part": 1,
+          "type": "choice",
+          "prompt": "听对话，选择合适的图片。",
+          "explanation": "参加婚礼、裙子 cho biết người nữ đang chọn trang phục dự cưới.",
+          "reference_answer": "选择衣服",
+          "accepted_answers": [],
+          "audio_text": "男：你准备穿哪件衣服去参加婚礼？女：我想试试这条裙子。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "选择衣服",
+              "image_hanzi": null,
+              "illustration_topic": "wedding-clothes"
+            },
+            {
+              "id": "o2",
+              "text": "搬家",
+              "image_hanzi": null,
+              "illustration_topic": "moving-home"
+            },
+            {
+              "id": "o3",
+              "text": "看熊猫",
+              "image_hanzi": null,
+              "illustration_topic": "panda-zoo"
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-listening-06",
+          "part": 1,
+          "type": "choice",
+          "prompt": "听对话，选择合适的图片。",
+          "explanation": "医生、吃药 cho thấy bối cảnh khám và điều trị bệnh.",
+          "reference_answer": "看病",
+          "accepted_answers": [],
+          "audio_text": "女：医生，我的身体比昨天好多了。男：再休息几天，按时吃药。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "看病",
+              "image_hanzi": null,
+              "illustration_topic": "recovery"
+            },
+            {
+              "id": "o2",
+              "text": "拍照",
+              "image_hanzi": null,
+              "illustration_topic": "photography"
+            },
+            {
+              "id": "o3",
+              "text": "打网球",
+              "image_hanzi": null,
+              "illustration_topic": "tennis"
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-listening-07",
+          "part": 1,
+          "type": "choice",
+          "prompt": "听对话，选择合适的图片。",
+          "explanation": "网球场 là sân quần vợt, phù hợp cảnh thi đấu.",
+          "reference_answer": "打网球",
+          "accepted_answers": [],
+          "audio_text": "男：比赛几点开始？女：九点，我们先去网球场练习一下吧。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "打网球",
+              "image_hanzi": null,
+              "illustration_topic": "tennis"
+            },
+            {
+              "id": "o2",
+              "text": "过春节",
+              "image_hanzi": null,
+              "illustration_topic": "spring-festival"
+            },
+            {
+              "id": "o3",
+              "text": "借书",
+              "image_hanzi": null,
+              "illustration_topic": "reading-library"
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-listening-08",
+          "part": 1,
+          "type": "choice",
+          "prompt": "听对话，选择合适的图片。",
+          "explanation": "借、还、图书馆 nói về mượn và trả sách ở thư viện.",
+          "reference_answer": "借书",
+          "accepted_answers": [],
+          "audio_text": "女：这本书可以借多久？男：两个星期，请按时还到图书馆。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "借书",
+              "image_hanzi": null,
+              "illustration_topic": "reading-library"
+            },
+            {
+              "id": "o2",
+              "text": "乘坐高铁",
+              "image_hanzi": null,
+              "illustration_topic": "high-speed-train"
+            },
+            {
+              "id": "o3",
+              "text": "看病",
+              "image_hanzi": null,
+              "illustration_topic": "recovery"
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-listening-09",
+          "part": 1,
+          "type": "choice",
+          "prompt": "听对话，选择合适的图片。",
+          "explanation": "春节 và 一起包饺子 gợi cảnh gia đình đón Tết.",
+          "reference_answer": "过春节",
+          "accepted_answers": [],
+          "audio_text": "男：春节快到了，大家都回来了吗？女：回来了，正在一起包饺子。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "过春节",
+              "image_hanzi": null,
+              "illustration_topic": "spring-festival"
+            },
+            {
+              "id": "o2",
+              "text": "准备会议资料",
+              "image_hanzi": null,
+              "illustration_topic": "office-documents"
+            },
+            {
+              "id": "o3",
+              "text": "拍照",
+              "image_hanzi": null,
+              "illustration_topic": "photography"
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-listening-10",
+          "part": 1,
+          "type": "choice",
+          "prompt": "听对话，选择合适的图片。",
+          "explanation": "熊猫、竹子 nói về quan sát gấu trúc ăn tre.",
+          "reference_answer": "看熊猫",
+          "accepted_answers": [],
+          "audio_text": "女：熊猫在吃什么？男：竹子，它们一天要吃很多。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "看熊猫",
+              "image_hanzi": null,
+              "illustration_topic": "panda-zoo"
+            },
+            {
+              "id": "o2",
+              "text": "打网球",
+              "image_hanzi": null,
+              "illustration_topic": "tennis"
+            },
+            {
+              "id": "o3",
+              "text": "搬家",
+              "image_hanzi": null,
+              "illustration_topic": "moving-home"
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-listening-11",
+          "part": 2,
+          "type": "choice",
+          "prompt": "她为什么换工作？",
+          "explanation": "Công ty quá xa nhà 离家太远, khiến cô ấy mất ba giờ đi đường mỗi ngày.",
+          "reference_answer": "离家太远",
+          "accepted_answers": [],
+          "audio_text": "男：你为什么要换工作？女：现在的公司离家太远，每天在路上要花三个小时。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "离家太远",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "工资太高",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "同事太多",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-listening-12",
+          "part": 2,
+          "type": "choice",
+          "prompt": "他们准备怎么去？",
+          "explanation": "Họ chọn tàu cao tốc 高铁 vì vé máy bay đắt; thời gian chỉ lâu hơn một giờ.",
+          "reference_answer": "坐高铁",
+          "accepted_answers": [],
+          "audio_text": "女：飞机票有点儿贵。男：那我们坐高铁吧，只多花一个小时。女：好。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "坐高铁",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "坐飞机",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "开车",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-listening-13",
+          "part": 2,
+          "type": "choice",
+          "prompt": "会议几点开始？",
+          "explanation": "Lịch họp đã đổi từ 9 giờ sang 9 giờ 30, thể hiện bằng 改到九点半.",
+          "reference_answer": "九点半",
+          "accepted_answers": [],
+          "audio_text": "男：会议还是九点开始吗？女：改到九点半了，经理刚通知我。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "九点半",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "九点",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "十点",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-listening-14",
+          "part": 2,
+          "type": "choice",
+          "prompt": "她想买什么颜色的裙子？",
+          "explanation": "Cô ấy loại váy đỏ và đen, rồi quyết định chọn váy xanh 蓝色.",
+          "reference_answer": "蓝色",
+          "accepted_answers": [],
+          "audio_text": "女：红色的太贵，黑色的又不适合婚礼，我还是买这条蓝色的吧。男：蓝色也很好看。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "蓝色",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "红色",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "黑色",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-listening-15",
+          "part": 2,
+          "type": "choice",
+          "prompt": "男的把什么忘在办公室了？",
+          "explanation": "Ví đã mang theo, nhưng hộ chiếu 护照 vẫn ở văn phòng.",
+          "reference_answer": "护照",
+          "accepted_answers": [],
+          "audio_text": "女：你的钱包带了吗？男：带了，可是护照还在办公室，我得回去拿。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "护照",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "手机",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "钱包",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-listening-16",
+          "part": 2,
+          "type": "choice",
+          "prompt": "这本书是谁借的？",
+          "explanation": "Tiểu Lý là người mượn sách trước, sau đó đưa cho Tiểu Vương. Câu hỏi hỏi người mượn ban đầu.",
+          "reference_answer": "小李",
+          "accepted_answers": [],
+          "audio_text": "女：这是小王从图书馆借的书吗？男：不是，是小李借的，后来给了小王。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "小李",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "小王",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "老师",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-listening-17",
+          "part": 2,
+          "type": "choice",
+          "prompt": "她什么时候开始学游泳？",
+          "explanation": "上个月才开始 nghĩa là mãi tháng trước mới bắt đầu, không phải đã học nhiều năm.",
+          "reference_answer": "上个月",
+          "accepted_answers": [],
+          "audio_text": "男：你游得真好，学了几年了？女：没有那么久，我上个月才开始学。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "上个月",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "去年",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "昨天",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-listening-18",
+          "part": 2,
+          "type": "choice",
+          "prompt": "男的现在最想做什么？",
+          "explanation": "累得不想动 diễn tả mệt đến mức không muốn cử động; anh ấy muốn nghỉ trước.",
+          "reference_answer": "休息一下",
+          "accepted_answers": [],
+          "audio_text": "女：我们跑了这么久，一起去吃饭吧。男：我累得不想动了，先让我休息一会儿。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "休息一下",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "继续跑步",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "去吃饭",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-listening-19",
+          "part": 2,
+          "type": "choice",
+          "prompt": "他们要先做什么？",
+          "explanation": "Máy in hỏng nên cần kiểm tra máy 检查打印机 trước khi in tài liệu.",
+          "reference_answer": "检查打印机",
+          "accepted_answers": [],
+          "audio_text": "男：资料还没打印好？女：打印机坏了，得先检查一下。男：我来看看。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "检查打印机",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "打印资料",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "离开公司",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-listening-20",
+          "part": 2,
+          "type": "choice",
+          "prompt": "她为什么没拍照？",
+          "explanation": "手机没电 nghĩa là điện thoại hết pin, vì thế cô ấy không chụp ảnh được.",
+          "reference_answer": "手机没电了",
+          "accepted_answers": [],
+          "audio_text": "男：风景这么美，你怎么不拍照？女：我想拍，可是手机没电了。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "手机没电了",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "不喜欢风景",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "忘带相机",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-listening-21",
+          "part": 3,
+          "type": "choice",
+          "prompt": "关于小林，可以知道什么？",
+          "explanation": "Họp lúc 9 giờ nhưng Tiểu Lâm đã đến lúc 8 giờ 30: anh ấy đến sớm nửa giờ.",
+          "reference_answer": "他提前到了",
+          "accepted_answers": [],
+          "audio_text": "小林担心堵车，所以今天很早就出门了。会议九点开始，他八点半已经到了。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "他提前到了",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "他迟到了",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "他忘记了会议",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-listening-22",
+          "part": 3,
+          "type": "choice",
+          "prompt": "这家饭馆为什么受欢迎？",
+          "explanation": "又便宜又好吃 nêu hai ưu điểm: giá rẻ và đồ ăn ngon.",
+          "reference_answer": "又便宜又好吃",
+          "accepted_answers": [],
+          "audio_text": "学校门口的这家饭馆不大，但是菜又便宜又好吃，学生们常常到这里吃饭。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "又便宜又好吃",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "只卖外国菜",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "离学校很远",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-listening-23",
+          "part": 3,
+          "type": "choice",
+          "prompt": "她现在的身体怎么样？",
+          "explanation": "Cô ấy đã xuất viện và có thể đi dạo; sức khỏe tốt hơn trước nhiều.",
+          "reference_answer": "比以前好多了",
+          "accepted_answers": [],
+          "audio_text": "上个月她生病住院了。现在她已经出院，每天还能去公园散步，身体比以前好多了。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "比以前好多了",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "越来越差",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "还不能走路",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-listening-24",
+          "part": 3,
+          "type": "choice",
+          "prompt": "周末的天气会怎样？",
+          "explanation": "Dự báo nói cuối tuần có thể mưa 可能下雨, vì vậy nên mang ô.",
+          "reference_answer": "可能下雨",
+          "accepted_answers": [],
+          "audio_text": "今天阳光很好，但是天气预报说周末可能下雨。打算出门的人最好带上雨伞。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "可能下雨",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "一直晴天",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "非常热",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-listening-25",
+          "part": 3,
+          "type": "choice",
+          "prompt": "小张怎么提高汉语水平？",
+          "explanation": "Cậu ấy đọc tiếng Trung và giao tiếp mỗi ngày, kiên trì một năm nên tiến bộ.",
+          "reference_answer": "坚持每天练习",
+          "accepted_answers": [],
+          "audio_text": "小张每天都读一段中文，也常常用汉语和朋友聊天。坚持了一年，他的汉语水平提高了很多。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "坚持每天练习",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "只在考试前复习",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "不和别人交流",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-listening-26",
+          "part": 3,
+          "type": "choice",
+          "prompt": "他为什么选择这套房子？",
+          "explanation": "Nhà gần ga tàu điện và siêu thị, thuận tiện đi lại và mua sắm; không phải rẻ nhất.",
+          "reference_answer": "附近很方便",
+          "accepted_answers": [],
+          "audio_text": "这套房子的房租不是最便宜的，房间也不大。不过，楼下就是地铁站，旁边还有超市，所以他决定租下来。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "附近很方便",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "房租最低",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "房间最多",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-listening-27",
+          "part": 3,
+          "type": "choice",
+          "prompt": "关于熊猫，可以知道什么？",
+          "explanation": "主要吃竹子 nghĩa là chủ yếu ăn tre; đôi lúc còn ăn một ít trái cây.",
+          "reference_answer": "主要吃竹子",
+          "accepted_answers": [],
+          "audio_text": "熊猫很可爱，很多人喜欢看它们吃东西。它们主要吃竹子，有时也会吃一点儿水果。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "主要吃竹子",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "只吃水果",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "每年换颜色",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-listening-28",
+          "part": 3,
+          "type": "choice",
+          "prompt": "他今年有什么计划？",
+          "explanation": "Anh ấy tốt nghiệp tháng Sáu và muốn tìm việc trước, thay vì học tiếp ngay.",
+          "reference_answer": "毕业后找工作",
+          "accepted_answers": [],
+          "audio_text": "今年六月我就要毕业了。我不打算马上继续读书，想先找一份工作，多了解社会。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "毕业后找工作",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "去医院上班",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "买一辆汽车",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-listening-29",
+          "part": 3,
+          "type": "choice",
+          "prompt": "春节前他们在做什么？",
+          "explanation": "Dọn nhà và gói sủi cảo là những việc gia đình đang làm để chuẩn bị đón Tết.",
+          "reference_answer": "准备过年",
+          "accepted_answers": [],
+          "audio_text": "春节快到了。爸爸在打扫房间，妈妈和奶奶一起包饺子，孩子们正在帮忙。大家都很高兴。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "准备过年",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "搬到国外",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "准备考试",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-listening-30",
+          "part": 3,
+          "type": "choice",
+          "prompt": "她觉得这次比赛怎么样？",
+          "explanation": "Dù không thắng, cô ấy nhận ra vấn đề của mình và học được nhiều điều.",
+          "reference_answer": "学到了很多",
+          "accepted_answers": [],
+          "audio_text": "这次比赛我们没有赢。但是我认识了很多打得很好的同学，也发现了自己的问题。我觉得学到了很多。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "学到了很多",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "完全没有意思",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "太容易了",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        }
+      ]
+    },
+    {
+      "id": "reading",
+      "label": "Đọc hiểu",
+      "duration_seconds": 1800,
+      "questions": [
+        {
+          "id": "h3-reading-01",
+          "part": 1,
+          "type": "choice",
+          "prompt": "你知道图书馆几点关门吗？",
+          "explanation": "几点关门 hỏi giờ đóng cửa; câu trả lời phù hợp là 9 giờ tối.",
+          "reference_answer": "晚上九点，周末也一样。",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "晚上九点，周末也一样。",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "在三楼左边。",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "我昨天去了。",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-reading-02",
+          "part": 1,
+          "type": "choice",
+          "prompt": "这件衬衫有点儿小。",
+          "explanation": "Áo hơi nhỏ 有点儿小, nên lời đáp hợp lý là thử cỡ lớn hơn.",
+          "reference_answer": "那试试大一号的吧。",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "那试试大一号的吧。",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "我坐地铁来。",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "今天星期六。",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-reading-03",
+          "part": 1,
+          "type": "choice",
+          "prompt": "你把文件发给经理了吗？",
+          "explanation": "已经发了 xác nhận tài liệu đã gửi; 收到了 xác nhận người nhận đã nhận được.",
+          "reference_answer": "已经发了，他说收到了。",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "已经发了，他说收到了。",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "我觉得很好吃。",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "我们住在楼上。",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-reading-04",
+          "part": 1,
+          "type": "choice",
+          "prompt": "最近工作忙不忙？",
+          "explanation": "忙不忙 hỏi công việc có bận không; 天天加班 cho biết ngày nào cũng tăng ca.",
+          "reference_answer": "比较忙，天天加班。",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "比较忙，天天加班。",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "八点到九点。",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "这是他的书。",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-reading-05",
+          "part": 1,
+          "type": "choice",
+          "prompt": "你的感冒好些了吗？",
+          "explanation": "好些了吗 ở đây hỏi bệnh cảm đã đỡ hơn chưa; 好多了 nghĩa là đã đỡ nhiều.",
+          "reference_answer": "好多了，谢谢关心。",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "好多了，谢谢关心。",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "天气非常好。",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "没关系，下次再来。",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-reading-06",
+          "part": 1,
+          "type": "choice",
+          "prompt": "我们坐飞机还是坐高铁？",
+          "explanation": "还是 đặt giữa hai lựa chọn. Lời đáp chọn 高铁 và giải thích ga gần nhà.",
+          "reference_answer": "坐高铁吧，车站离家近。",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "坐高铁吧，车站离家近。",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "他已经到了。",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "这本书是我的。",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-reading-07",
+          "part": 1,
+          "type": "choice",
+          "prompt": "你为什么喜欢这座城市？",
+          "explanation": "为什么 hỏi nguyên nhân; 因为 mở đầu lời giải thích về môi trường và con người.",
+          "reference_answer": "因为这里环境好，人也热情。",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "因为这里环境好，人也热情。",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "我明天去。",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "这里有两个人。",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-reading-08",
+          "part": 1,
+          "type": "choice",
+          "prompt": "这张照片是在哪儿拍的？",
+          "explanation": "在哪儿拍的 hỏi nơi chụp ảnh; 在草原上 trả lời là ở thảo nguyên.",
+          "reference_answer": "去年在草原上拍的。",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "去年在草原上拍的。",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "我觉得很漂亮。",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "照片有三张。",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-reading-09",
+          "part": 1,
+          "type": "choice",
+          "prompt": "你能帮我搬一下箱子吗？",
+          "explanation": "当然可以 nghĩa là tất nhiên được, phù hợp lời đồng ý giúp chuyển thùng đồ.",
+          "reference_answer": "当然可以，我来帮你。",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "当然可以，我来帮你。",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "他住得很远。",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "我已经吃饱了。",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-reading-10",
+          "part": 1,
+          "type": "choice",
+          "prompt": "明天的比赛你参加吗？",
+          "explanation": "已经报名了 nghĩa là đã đăng ký, nên người nói sẽ tham gia cuộc thi.",
+          "reference_answer": "参加，我已经报名了。",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "参加，我已经报名了。",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "这双鞋很好看。",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "早上天气晴朗。",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-reading-11",
+          "part": 2,
+          "type": "choice",
+          "prompt": "我刚到北京，对这里还不太（　）。",
+          "explanation": "了解 nghĩa là hiểu, biết rõ hoặc quen thuộc với một nơi hay tình huống.",
+          "reference_answer": "了解",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "了解",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "结婚",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "打印",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-reading-12",
+          "part": 2,
+          "type": "choice",
+          "prompt": "他把房间打扫得很（　）。",
+          "explanation": "打扫得干净 dùng 得 để nối hành động dọn dẹp với mức độ sạch sẽ đạt được.",
+          "reference_answer": "干净",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "干净",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "突然",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "按时",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-reading-13",
+          "part": 2,
+          "type": "choice",
+          "prompt": "这道题太难，我还没找到解决的（　）。",
+          "explanation": "解决问题的办法 là cách giải quyết vấn đề; 办法 đồng nghĩa với phương pháp.",
+          "reference_answer": "办法",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "办法",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "照片",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "季节",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-reading-14",
+          "part": 2,
+          "type": "choice",
+          "prompt": "请（　）护照放在包里。",
+          "explanation": "Cấu trúc 把 + đồ vật + hành động mô tả cách xử lý đồ vật: cất hộ chiếu vào túi.",
+          "reference_answer": "把",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "把",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "被",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "比",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-reading-15",
+          "part": 2,
+          "type": "choice",
+          "prompt": "除了汉语，他（　）会说英语。",
+          "explanation": "除了…还… bổ sung một khả năng ngoài khả năng đã nhắc: ngoài tiếng Trung còn biết tiếng Anh.",
+          "reference_answer": "还",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "还",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "才",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "别",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-reading-16",
+          "part": 2,
+          "type": "choice",
+          "prompt": "外面风很大，你（　）穿件外套。",
+          "explanation": "应该 diễn tả lời khuyên hoặc điều nên làm: trời gió lớn thì nên mặc áo khoác.",
+          "reference_answer": "应该",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "应该",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "突然",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "终于",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-reading-17",
+          "part": 2,
+          "type": "choice",
+          "prompt": "这本书我看了三遍，（　）觉得很有意思。",
+          "explanation": "还是 ở đây nghĩa là vẫn: dù đã đọc ba lần, người nói vẫn thấy cuốn sách thú vị.",
+          "reference_answer": "还是",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "还是",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "或者",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "于是",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-reading-18",
+          "part": 2,
+          "type": "choice",
+          "prompt": "你想吃（　）就点什么。",
+          "explanation": "想…什么就…什么 thể hiện lựa chọn tự do: muốn ăn món gì thì gọi món đó.",
+          "reference_answer": "什么",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "什么",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "多少",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "哪儿",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-reading-19",
+          "part": 2,
+          "type": "choice",
+          "prompt": "雨越下越大，我们只好（　）计划。",
+          "explanation": "改变计划 nghĩa là thay đổi kế hoạch; mưa lớn khiến họ phải điều chỉnh dự định.",
+          "reference_answer": "改变",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "改变",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "毕业",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "结婚",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-reading-20",
+          "part": 2,
+          "type": "choice",
+          "prompt": "他努力学习，（　）通过了考试。",
+          "explanation": "终于 nhấn mạnh kết quả cuối cùng đạt được sau một quá trình nỗ lực.",
+          "reference_answer": "终于",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "终于",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "已经",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "正在",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-reading-21",
+          "part": 3,
+          "type": "choice",
+          "prompt": "为什么他们没有坐飞机？",
+          "explanation": "Vé tàu cao tốc chỉ 400 tệ, bằng nửa vé máy bay; họ có nhiều thời gian nên chọn tàu.",
+          "reference_answer": "高铁更便宜",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": "去上海坐飞机要八百元，坐高铁只要四百元。我们时间比较多，所以买了高铁票。",
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "高铁更便宜",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "机场关门了",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "飞机飞得太慢",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-reading-22",
+          "part": 3,
+          "type": "choice",
+          "prompt": "小王为什么买新的打印机？",
+          "explanation": "Máy in cũ thường xuyên hỏng, khiến tài liệu không được in đúng giờ, nên cần thay máy.",
+          "reference_answer": "旧的经常出问题",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": "办公室的打印机最近经常出问题，资料总是不能按时打印。小王决定换一台新的。",
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "旧的经常出问题",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "旧的颜色不好",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "新的不用电",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-reading-23",
+          "part": 3,
+          "type": "choice",
+          "prompt": "小李对这次旅行感觉怎样？",
+          "explanation": "虽然…但是… nêu sự tương phản: tuy mệt nhưng cảnh đẹp khiến Tiểu Lý hài lòng.",
+          "reference_answer": "虽然累但很满意",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": "这次草原旅行每天都要走很远的路，大家都很累。但是景色比我们想象的还美，小李说下次还想来。",
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "虽然累但很满意",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "完全不满意",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "后悔参加",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-reading-24",
+          "part": 3,
+          "type": "choice",
+          "prompt": "她找工作的主要要求是什么？",
+          "explanation": "Cô ấy coi trọng cơ hội học hỏi và giao tiếp với nhiều người, không chỉ xem mức lương.",
+          "reference_answer": "能学到东西",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": "找工作时，她不只看工资，更想找一份能学到东西、能和不同的人交流的工作。",
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "能学到东西",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "工资一定最高",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "不用和别人交流",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-reading-25",
+          "part": 3,
+          "type": "choice",
+          "prompt": "关于张老师，可以知道什么？",
+          "explanation": "Thầy Trương khuyến khích học sinh nói ý kiến, đặt câu hỏi và cùng thảo luận.",
+          "reference_answer": "他重视学生提问",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": "张老师常常请学生说说自己的想法。遇到不明白的地方，他鼓励大家提问，然后一起讨论。",
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "他重视学生提问",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "他不许学生说话",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "他只讲课本",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-reading-26",
+          "part": 3,
+          "type": "choice",
+          "prompt": "春节前，孩子们为什么高兴？",
+          "explanation": "Ông bà ở xa sẽ về đón Tết, tạo cơ hội đoàn tụ khiến các em nhỏ vui mừng.",
+          "reference_answer": "可以和家人团聚",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": "爷爷奶奶住得远，平时很少见面。春节他们要来一起过年，孩子们一听就高兴得跳了起来。",
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "可以和家人团聚",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "不用吃饭",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "都要搬家",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-reading-27",
+          "part": 3,
+          "type": "choice",
+          "prompt": "借书的人需要做什么？",
+          "explanation": "Sách phải trả trong hai tuần; muốn mượn lâu hơn cần làm thủ tục trước.",
+          "reference_answer": "按时还书",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": "图书馆的书每次可以借两本，两个星期以内要还。如果需要多借几天，请提前办理手续。",
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "按时还书",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "每天买一本书",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "只能借一天",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-reading-28",
+          "part": 3,
+          "type": "choice",
+          "prompt": "哪句话符合短文？",
+          "explanation": "Trước đây cô ấy ngại nói, nay chủ động hỏi đường và giới thiệu đất nước: sự tự tin tăng lên.",
+          "reference_answer": "她比以前自信",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": "以前她不敢开口说汉语。练习了半年后，现在她能主动向别人问路，也愿意介绍自己的国家。",
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "她比以前自信",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "她不再学汉语",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "她从来不练习",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-reading-29",
+          "part": 3,
+          "type": "choice",
+          "prompt": "他为什么带两把伞？",
+          "explanation": "Anh ấy biết bạn hay quên ô nên mang thêm một chiếc để cho bạn mượn.",
+          "reference_answer": "一把借给朋友",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": "天气预报说下午下雨。他知道朋友常常忘记带伞，就在包里放了两把，准备借一把给朋友。",
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "一把借给朋友",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "因为伞坏了",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "因为今天很热",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        },
+        {
+          "id": "h3-reading-30",
+          "part": 3,
+          "type": "choice",
+          "prompt": "这段话主要想告诉我们什么？",
+          "explanation": "Đoạn văn khuyên học đều mỗi ngày và vận dụng kiến thức, thay vì chỉ học gấp trước kỳ thi.",
+          "reference_answer": "坚持比着急更重要",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": "学语言不能只在考试前着急。每天学一点儿，再把学过的内容用起来，时间长了就会发现自己的进步。",
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "坚持比着急更重要",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o2",
+              "text": "学习不需要计划",
+              "image_hanzi": null,
+              "illustration_topic": null
+            },
+            {
+              "id": "o3",
+              "text": "一天必须学很多",
+              "image_hanzi": null,
+              "illustration_topic": null
+            }
+          ],
+          "correct_option_id": "o1"
+        }
+      ]
+    },
+    {
+      "id": "writing",
+      "label": "Viết",
+      "duration_seconds": 1200,
+      "questions": [
+        {
+          "id": "h3-writing-01",
+          "part": 1,
+          "type": "fill",
+          "prompt": "地图上可以找到南（　）。",
+          "explanation": "南方 nghĩa là phía nam; chữ cần điền là 方, chỉ phương hướng.",
+          "reference_answer": "方",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": "fāng",
+          "options": []
+        },
+        {
+          "id": "h3-writing-02",
+          "part": 1,
+          "type": "fill",
+          "prompt": "你应（　）早点儿休息。",
+          "explanation": "应该 nghĩa là nên, biểu thị lời khuyên hoặc việc cần làm; chữ còn thiếu là 该.",
+          "reference_answer": "该",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": "gāi",
+          "options": []
+        },
+        {
+          "id": "h3-writing-03",
+          "part": 1,
+          "type": "fill",
+          "prompt": "这次考试的成（　）提高了。",
+          "explanation": "成绩 là kết quả học tập hoặc điểm thi; chữ cần điền là 绩.",
+          "reference_answer": "绩",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": "jì",
+          "options": []
+        },
+        {
+          "id": "h3-writing-04",
+          "part": 1,
+          "type": "fill",
+          "prompt": "这个办（　）很有用。",
+          "explanation": "办法 là cách hoặc phương pháp giải quyết vấn đề; điền chữ 法.",
+          "reference_answer": "法",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": "fǎ",
+          "options": []
+        },
+        {
+          "id": "h3-writing-05",
+          "part": 1,
+          "type": "fill",
+          "prompt": "请把窗户（　）开。",
+          "explanation": "打开 nghĩa là mở ra; trong 打开窗户, chữ cần điền là 打.",
+          "reference_answer": "打",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": "dǎ",
+          "options": []
+        },
+        {
+          "id": "h3-writing-06",
+          "part": 2,
+          "type": "sentence",
+          "prompt": "看图，用“搬”写一个句子。",
+          "explanation": "Câu cần dùng 搬 để tả hành động chuyển đồ, có chủ ngữ và ngữ cảnh rõ.",
+          "reference_answer": "他们一起把箱子搬进新家。",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": "moving-home",
+          "phonetic_hint": null,
+          "options": []
+        },
+        {
+          "id": "h3-writing-07",
+          "part": 2,
+          "type": "sentence",
+          "prompt": "看图，用“比赛”写一个句子。",
+          "explanation": "比赛 là cuộc thi hoặc thi đấu; nêu đúng hoạt động trong tranh.",
+          "reference_answer": "他们正在参加网球比赛。",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": "tennis",
+          "phonetic_hint": null,
+          "options": []
+        },
+        {
+          "id": "h3-writing-08",
+          "part": 2,
+          "type": "sentence",
+          "prompt": "看图，用“借”写一个句子。",
+          "explanation": "借 chỉ mượn; có thể dùng 从…借… để diễn tả mượn sách ở thư viện.",
+          "reference_answer": "她从图书馆借了一本书。",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": "reading-library",
+          "phonetic_hint": null,
+          "options": []
+        },
+        {
+          "id": "h3-writing-09",
+          "part": 2,
+          "type": "sentence",
+          "prompt": "看图，用“饺子”写一个句子。",
+          "explanation": "饺子 là sủi cảo; 包饺子 là gói sủi cảo.",
+          "reference_answer": "一家人正在一起包饺子。",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": "spring-festival",
+          "phonetic_hint": null,
+          "options": []
+        },
+        {
+          "id": "h3-writing-10",
+          "part": 2,
+          "type": "sentence",
+          "prompt": "看图，用“点菜”写一个句子。",
+          "explanation": "点菜 là gọi món; chú ý câu phải có hành động và bối cảnh phù hợp.",
+          "reference_answer": "他们正在饭馆看菜单、点菜。",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": "restaurant-menu",
+          "phonetic_hint": null,
+          "options": []
+        }
+      ]
+    }
+  ],
+  "total_questions": 70,
+  "max_score": 300,
+  "pass_score": 180.0
+}

@@ -1,0 +1,61 @@
+import {expect,test} from '@playwright/test'
+import {execFileSync} from 'node:child_process'
+import {resolve} from 'node:path'
+
+function courseFixture(action:string){execFileSync('uv',['run','python','-m','tests.step81.exam_course_fixture',action],{cwd:resolve(process.cwd(),'../backend'),env:{...process.env,APP_ENV:'test',DEBUG:'false'},stdio:'inherit'})}
+
+test('HSK 3.0 mock exam saves a shuffled attempt, keeps keys private and reviews only after submission',async({page})=>{
+ test.setTimeout(120000)
+ await page.goto('/login')
+ await page.getByLabel('Email').fill('step81-learner@example.invalid')
+ await page.getByLabel('Mật khẩu',{exact:true}).fill(process.env.STEP81_TEST_PASSWORD!)
+ await page.getByRole('button',{name:'Đăng nhập',exact:true}).click()
+ await expect(page).toHaveURL(/\/pronunciation$/)
+ await page.goto('/hsk/3')
+ await expect(page.getByRole('group',{name:'Thi thử HSK 3, chưa mở'})).toBeVisible()
+ expect((await page.request.post('http://127.0.0.1:8000/api/v1/hsk-mock-exams/3/attempts')).status()).toBe(403)
+ await page.goto('/hsk/3/exam')
+ await expect(page.getByRole('heading',{name:'Bài thi chưa mở',exact:true})).toBeVisible()
+ await expect(page.getByRole('button',{name:'Hoàn thành HSK để mở bài thi'})).toBeDisabled()
+ courseFixture('--complete-test-course')
+ try{
+ await page.goto('/hsk/3')
+ await page.getByRole('link',{name:/Thi thử HSK 3/}).click()
+ await expect(page.getByRole('heading',{name:'Thi thử HSK 3 · HSK 3.0',exact:true})).toBeVisible()
+ await expect(page.getByText('70 câu',{exact:true})).toBeVisible()
+ await page.getByRole('button',{name:'Bắt đầu thi thử',exact:true}).click()
+ await expect(page).toHaveURL(/\/hsk-exam-attempts\//)
+ const path=new URL(page.url()).pathname,id=path.split('/').at(-1)!
+ const root='http://127.0.0.1:8000/api/v1/hsk-mock-exam-attempts/'+id
+ const before=await (await page.request.get(root)).json()
+ expect(before.questions).toHaveLength(30)
+ expect(JSON.stringify(before)).not.toMatch(/reference_answer|correct_option_id|explanation|accepted_answers/)
+ await page.locator('.exam-option input').first().check()
+ await expect(page.locator('.exam-question-nav')).toContainText('1/30')
+ await expect(page.getByText('Các câu đã trả lời được lưu trên server.')).toBeVisible()
+ await page.reload()
+ await expect(page.locator('.exam-option input').first()).toBeChecked()
+ const resumed=await (await page.request.get(root)).json()
+ expect(resumed.questions).toEqual(before.questions)
+ expect(resumed.section_deadline).toEqual(before.section_deadline)
+ await page.request.post(root+'/next-section',{data:{section_index:0}})
+ await page.request.post(root+'/next-section',{data:{section_index:1}})
+ await page.reload()
+ await expect(page.locator('.exam-toolbar [aria-current]')).toHaveText('Viết')
+ const writing=await (await page.request.get(root)).json()
+ const sentence=writing.questions.find(q=>q.type==='sentence')
+ const saved=await page.request.put(root+'/answer',{data:{section_index:2,question_id:sentence.id,answer:'他们正在一起学习。'}})
+ expect(saved.ok()).toBe(true)
+ await page.request.post(root+'/next-section',{data:{section_index:2}})
+ await page.reload()
+ await expect(page.getByRole('heading',{name:'Kết quả bài thi thử',exact:true})).toBeVisible()
+ await expect(page.getByText('Đáp án và giải thích',{exact:true})).toBeVisible()
+ const card=page.locator('.exam-answer-review>li').filter({hasText:sentence.prompt})
+ await expect(card).toContainText('Đáp án mẫu:')
+ await card.getByRole('button',{name:'Đúng một phần',exact:true}).click()
+ await expect(card.getByRole('button',{name:'Đúng một phần',exact:true})).toHaveAttribute('aria-pressed','true')
+ await expect(page.getByText('Có phần tự chấm:',{exact:true})).toBeVisible()
+ await page.setViewportSize({width:390,height:844})
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true)
+ }finally{courseFixture('--remove-test-course')}
+})

@@ -1,0 +1,40 @@
+.learning-curriculum .lc-exam-entry {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(240px, 1fr);
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  margin: 24px 0 32px;
+  min-height: 300px;
+  border-radius: 16px;
+  background: #173f36;
+  color: #fff9e9;
+  text-decoration: none;
+}
+.lc-exam-entry__content { padding: 32px 0 32px 36px; position: relative; z-index: 1; }
+.bo-shell .learning-curriculum .lc-exam-entry h2 { margin: 0 0 12px; font-size: clamp(30px, 3vw, 42px); line-height: 1.25; color: #fff9e9; }
+.learning-curriculum .lc-exam-entry p { color: #e0e8d9; margin: 0; line-height: 1.65; }
+.learning-curriculum .lc-exam-entry .lc-exam-entry__description { max-width: 42ch; font-size: 18px; }
+.learning-curriculum .lc-exam-entry .lc-exam-entry__skills { color: #e9ca8b; font-size: 16px; margin-top: 10px; }
+.lc-exam-entry__art { position: relative; min-width: 0; background: linear-gradient(90deg,#173f36,transparent 95%),url('../assets/admin_exam_pavilion_banner.webp') right center / auto 100% no-repeat; }
+.lc-exam-entry__art > .academy-companion { position: absolute; width: 220px; max-width: 90%; bottom: 12px; right: 12%; filter: drop-shadow(0 12px 16px #112b3133); }
+.lc-exam-entry__action { display: inline-flex; align-items: center; justify-content: space-between; gap: 32px; min-height: 50px; padding: 10px 20px; margin-top: 24px; border-radius: 9px; background: #f2d495; color: #173f36; font-size: 18px; font-weight: 750; }
+.learning-curriculum .lc-exam-entry .lc-exam-entry__note { font-size: 14px; margin-top: 12px; }
+.lc-exam-entry__progress { display: grid; gap: 10px; max-width: 340px; margin-top: 24px; font-size: 16px; font-variant-numeric: tabular-nums; }
+.lc-exam-entry__progress progress { width: 100%; height: 7px; border: 0; border-radius: 6px; overflow: hidden; background: #49675c; accent-color: #f2d495; }
+.lc-exam-entry__progress progress::-webkit-progress-bar { background: #49675c; }
+.lc-exam-entry__progress progress::-webkit-progress-value { background: #f2d495; }
+.lc-exam-entry__progress progress::-moz-progress-bar { background: #f2d495; }
+.learning-curriculum .lc-exam-entry .lc-exam-entry__lock { display: flex; align-items: center; gap: 9px; font-size: 14px; margin-top: 14px; }
+.lc-exam-entry__lock > svg { flex: none; }
+.learning-curriculum a.lc-exam-entry:hover { background: #204e41; }
+.learning-curriculum a.lc-exam-entry:hover .lc-exam-entry__action { background: #ffe1a2; }
+.learning-curriculum .lc-exam-entry:focus-visible { outline: 3px solid #a66b18; outline-offset: 4px; }
+@media (max-width: 700px) {
+  .learning-curriculum .lc-exam-entry { grid-template-columns: minmax(0, 1fr); min-height: 0; }
+  .lc-exam-entry__content { padding: 24px; }
+  .lc-exam-entry__art { position: absolute; inset: 0; z-index: -1; opacity: .12; background-position: right center; }
+  .lc-exam-entry__art > .academy-companion { width: 180px; right: 0; bottom: 8px; }
+  .learning-curriculum .lc-exam-entry .lc-exam-entry__description { font-size: 17px; }
+  .lc-exam-entry__progress { max-width: none; }
+}

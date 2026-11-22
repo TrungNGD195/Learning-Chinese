@@ -4,5 +4,6 @@ export function AcademyIcon({name,size=20}:{name:string;size?:number}){
   paths['sidebar-close'] = <><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 4v16m8-12-4 4 4 4"/></>
   paths['sidebar-open'] = <><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 4v16m4-12 4 4-4 4"/></>
   paths.logout = <><path d="M9 4H4v16h5m5-12 4 4-4 4m-6-4h14"/></>
+  paths.lock = <><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/></>
   return <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{paths[name]??paths.book}</svg>
 }

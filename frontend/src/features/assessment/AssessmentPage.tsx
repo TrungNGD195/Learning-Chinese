@@ -6,9 +6,9 @@ import type { components } from '../../types/api.generated'
 import { Alert, Button, Dialog, LoadingState, PageHeader, StatusBadge, Surface } from '../../components/ui'
 import { queryKeys } from '../../app/query/keys'
 import { ApiError } from '../../lib/api/errors'
-import { getAssessment, startAttempt, submitAttempt } from './api'
+import { getAssessment, startAttempt, submitAttempt, checkPracticeAnswer, getPracticeFeedback, type PracticeFeedback } from './api'
 import { QuestionRenderer, type DraftAnswer } from './QuestionRenderer'
-import { createSubmitRequest, hasCompleteDraftAnswer } from './submission'
+import { createSubmitRequest, hasCompleteDraftAnswer, draftFromAnswer } from './submission'
 import { QuestionMedia } from './QuestionMedia'
 import { questionForAttempt, skillLabels, difficultyLabels } from './practicePresentation'
 import { Companion } from '../../components/academy/Companion'
@@ -28,9 +28,18 @@ export function AssessmentPage({ embeddedAssessmentId, onSessionChange }: { embe
   const [drafts, setDrafts] = useState<Record<string, DraftAnswer>>({})
   const [questionIndex, setQuestionIndex] = useState(0)
   const [error, setError] = useState<string | null>(null)
+  const [feedback, setFeedback] = useState<Record<string, PracticeFeedback>>({})
+  const [checking, setChecking] = useState(false)
   const [allowTerminalNavigation, setAllowTerminalNavigation] = useState(false)
   const autoStarted = useRef(false)
   const questionNavigation = useRef<HTMLDivElement>(null)
+  const feedbackPanel = useRef<HTMLDivElement>(null)
+  useEffect(()=>{
+    const panel=feedbackPanel.current
+    if(!panel)return
+    const rect=panel.getBoundingClientRect()
+    if(rect.bottom>window.innerHeight-80||rect.top<0)panel.scrollIntoView?.({block:'nearest',behavior:window.matchMedia?.('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'})
+  },[feedback,questionIndex])
   useEffect(() => {
     const nav = questionNavigation.current
     const active = nav?.querySelector<HTMLElement>('[aria-current=step]')
@@ -56,12 +65,30 @@ export function AssessmentPage({ embeddedAssessmentId, onSessionChange }: { embe
     onSessionChange?.(true)
     try {
       const started = await start()
+      if (assessment?.type === 'LESSON_EXERCISE') {
+        const saved = await getPracticeFeedback(started.id)
+        setFeedback(Object.fromEntries(saved.map(row=>[row.question_id,row])))
+        setDrafts(Object.fromEntries(saved.filter(row=>row.answer).map(row=>[row.question_id,draftFromAnswer(row.answer!)])))
+      }
       setActiveAttemptId(started.id)
     } catch {
       onSessionChange?.(false)
       setError("Không thể bắt đầu hoặc tiếp tục bài luyện tập.")
     }
-  }, [assessmentId, startMutation.isPending, start, onSessionChange])
+  }, [assessmentId, assessment, startMutation.isPending, start, onSessionChange])
+
+  async function checkAnswer(question: Assessment['questions'][number], draft: DraftAnswer | undefined) {
+    if (!activeAttemptId || checking || feedback[question.id]) return
+    const request = createSubmitRequest([question],draft ? {[question.id]:draft} : {})
+    if (!request) {setError('Hãy trả lời câu hỏi trước khi xem đáp án.');return}
+    setChecking(true);setError(null)
+    try {
+      const result=await checkPracticeAnswer(activeAttemptId,request.answers[0])
+      setFeedback(current=>({...current,[question.id]:result}))
+      if(result.answer)setDrafts(current=>({...current,[question.id]:draftFromAnswer(result.answer!)}))
+    } catch {setError('Chưa kiểm tra được câu trả lời. Bạn có thể thử lại; nội dung đang làm vẫn được giữ.')}
+    finally {setChecking(false)}
+  }
 
   useEffect(() => {
     if (!embedded || !assessment?.questions.length || autoStarted.current || resultAttemptId) return
@@ -84,11 +111,16 @@ export function AssessmentPage({ embeddedAssessmentId, onSessionChange }: { embe
     setDrafts({})
     setQuestionIndex(0)
     setError(null)
+    setFeedback({})
     setAllowTerminalNavigation(false)
   }
 
   async function submit() {
     if (!activeAttemptId || !assessment || submitMutation.isPending) return
+    const last = assessment.questions[questionIndex]
+    if (assessment.type==='LESSON_EXERCISE' && last && !feedback[last.id]) {
+      await checkAnswer(last,drafts[last.id]);return
+    }
     const body = createSubmitRequest(assessment.questions, drafts)
     if (!body) {
       setError("Vui lòng trả lời đầy đủ các câu hỏi trước khi nộp bài.")
@@ -103,6 +135,8 @@ export function AssessmentPage({ embeddedAssessmentId, onSessionChange }: { embe
         queryClient.invalidateQueries({ queryKey: queryKeys.dashboard }),
         queryClient.invalidateQueries({ queryKey: queryKeys.progressOverview }),
         queryClient.invalidateQueries({ queryKey: queryKeys.curriculumLevels }),
+        queryClient.invalidateQueries({ queryKey: ['hsk-exam-info'] }),
+        queryClient.invalidateQueries({ queryKey: ['vocabulary-review'] }),
         queryClient.invalidateQueries({ queryKey: queryKeys.curriculumHskRoot }),
         queryClient.invalidateQueries({ queryKey: queryKeys.progressHskRoot }),
         queryClient.invalidateQueries({ predicate: (query) => query.queryKey[0] === 'lesson' && query.queryKey[2] === 'progress' }),
@@ -137,6 +171,8 @@ export function AssessmentPage({ embeddedAssessmentId, onSessionChange }: { embe
   const activeQuestion = activeAttemptId && assessment.questions[questionIndex] ? questionForAttempt(assessment.questions[questionIndex], activeAttemptId) : undefined
   const completeResponseCount = assessment.questions.filter((question) => hasCompleteDraftAnswer(question, drafts[question.id])).length
   const questionCount = assessment.questions.length
+  const immediate = assessment.type === 'LESSON_EXERCISE'
+  const checked = activeQuestion ? feedback[activeQuestion.id] : undefined
   return <section className="learner-page assessment-page screen assessment-screen practice-workspace" aria-labelledby={titleId}>
     {assessmentQuery.isFetching && <LoadingState>Đang cập nhật bài luyện tập…</LoadingState>}
     {assessmentQuery.isError && <Alert role="status" tone="warning">Chưa cập nhật được bài luyện tập. Đang hiển thị thông tin đã tải.</Alert>}
@@ -162,13 +198,20 @@ export function AssessmentPage({ embeddedAssessmentId, onSessionChange }: { embe
       </div>
       {activeQuestion.config.presentation && <div className="practice-question-tags"><span>{skillLabels[activeQuestion.config.presentation.skill]}</span><span>{difficultyLabels[activeQuestion.config.presentation.difficulty]}</span>{activeQuestion.config.presentation.review && <span>Ôn bài trước</span>}</div>}
       <QuestionMedia key={activeQuestion.id} question={activeQuestion}/>
-      <QuestionRenderer question={activeQuestion} draft={drafts[activeQuestion.id]} onChange={(answer) => setDrafts((current) => ({ ...current, [activeQuestion.id]: answer }))} />
+      <fieldset className="practice-answer-input" disabled={checking || !!checked}>
+      <QuestionRenderer question={activeQuestion} draft={drafts[activeQuestion.id]} onChange={(answer) => {
+        setDrafts((current) => ({ ...current, [activeQuestion.id]: answer }))
+        if(immediate && activeQuestion.type === 'multiple_choice')void checkAnswer(activeQuestion,answer)
+      }} />
+      </fieldset>
+      {immediate && !checked && activeQuestion.type !== 'multiple_choice' && <Button disabled={checking || !hasCompleteDraftAnswer(activeQuestion,drafts[activeQuestion.id])} onClick={()=>void checkAnswer(activeQuestion,drafts[activeQuestion.id])}>{checking?'Đang kiểm tra…':'Kiểm tra câu trả lời'}</Button>}
+      {checked && <div ref={feedbackPanel} className="practice-instant-feedback" data-correct={checked.is_correct} role="status"><strong>{checked.is_correct===null?'Đáp án tham khảo':checked.is_correct?'Chính xác!':'Chưa đúng'}</strong>{checked.reference_answer&&<p>Đáp án: <span lang="zh-Hans">{checked.reference_answer}</span></p>}{(checked.feedback||checked.rubric)&&<p>{checked.feedback||checked.rubric}</p>}<small>Đã lưu câu trả lời đầu tiên. Bạn có thể làm lại cả bài để ôn tập.</small></div>}
       <div className="assessment-question__navigation">
         <Button disabled={questionIndex === 0 || submitMutation.isPending} onClick={() => setQuestionIndex((index) => index - 1)}>Trước</Button>
-        {questionIndex < questionCount - 1 && <Button variant="primary" disabled={submitMutation.isPending} onClick={() => setQuestionIndex((index) => index + 1)}>Tiếp theo</Button>}
-        {questionIndex === questionCount - 1 && <Button variant="primary" disabled={submitMutation.isPending} onClick={() => void submit()}>{submitMutation.isPending ? "Đang nộp bài…" : "Nộp bài"}</Button>}
+        {questionIndex < questionCount - 1 && <Button variant="primary" disabled={submitMutation.isPending || checking} onClick={() => {if(immediate&&!checked){void checkAnswer(activeQuestion,drafts[activeQuestion.id]);return}setQuestionIndex((index) => index + 1)}}>Tiếp theo</Button>}
+        {questionIndex === questionCount - 1 && <Button variant="primary" disabled={submitMutation.isPending || checking} onClick={() => void submit()}>{submitMutation.isPending ? "Đang nộp bài…" : "Nộp bài"}</Button>}
       </div>
-      <p className="practice-save-hint">Câu trả lời được giữ khi chuyển câu. Nộp bài để lưu kết quả và xem giải thích.</p>
+      <p className="practice-save-hint">{immediate?'Xem đáp án sau từng câu; điểm được tính từ câu trả lời đầu tiên. Nộp bài để lưu kết quả tổng kết.':'Câu trả lời được giữ khi chuyển câu. Nộp bài để lưu kết quả và xem giải thích.'}</p>
     </Surface></div>}
     {activeAttemptId && !activeQuestion && <Surface as="section" className="learner-surface"><p>Bài luyện tập này chưa có câu hỏi.</p></Surface>}
     <Dialog open={blocker.state === 'blocked'} title="Câu trả lời chưa được lưu" cancelLabel="Ở lại" confirmLabel="Rời trang"

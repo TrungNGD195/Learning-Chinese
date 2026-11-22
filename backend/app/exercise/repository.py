@@ -5,7 +5,18 @@ from sqlalchemy import delete, func, insert, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.database.models import (Assessment, AssessmentAttempt, AssessmentGrammar, AssessmentLesson,
-    AssessmentVocabulary, AttemptAnswer, Grammar, Lesson, Question, QuestionOption, Vocabulary)
+    AssessmentVocabulary, AttemptAnswer, Grammar, Lesson, Question, QuestionOption, Vocabulary, PracticeResponse)
+
+async def practice_responses(session, attempt_id):
+    return (await session.scalars(select(PracticeResponse).where(PracticeResponse.attempt_id==attempt_id))).all()
+
+async def practice_response(session,attempt_id,question_id):
+    return await session.scalar(select(PracticeResponse).where(PracticeResponse.attempt_id==attempt_id,
+        PracticeResponse.question_id==question_id))
+
+async def add_practice_response(session,attempt_id,question_id,answer,result):
+    session.add(PracticeResponse(attempt_id=attempt_id,question_id=question_id,answer=answer,result=result))
+    await session.flush()
 
 
 async def passed_periodic_assessment_ids(session: AsyncSession,user_id: UUID) -> set[UUID]:

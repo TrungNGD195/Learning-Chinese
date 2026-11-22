@@ -10,7 +10,7 @@ from app.database.models import (
     LearnerVocabularyProgress, Lesson, LessonVocabulary, Question, User, Vocabulary,
 )
 from app.database.session import SessionFactory
-from app.progress.vocabulary_review import ReviewDeck, review_deck
+from app.progress.vocabulary_review import ReviewDeck, ReviewLesson, review_deck, review_lessons
 from scripts.import_curriculum_refresh import load_definitions, refresh, word_key
 
 
@@ -20,9 +20,11 @@ def test_review_api_requires_student_and_validates_filters():
     from app.main import app
     with TestClient(app) as client:
         assert client.get('/api/v1/me/vocabulary-review').status_code == 401
+        assert client.get('/api/v1/me/vocabulary-review/lessons').status_code == 401
         try:
             app.dependency_overrides[get_current_user] = lambda: SimpleNamespace(id=uuid4(), role='ADMIN')
             assert client.get('/api/v1/me/vocabulary-review').status_code == 403
+            assert client.get('/api/v1/me/vocabulary-review/lessons').status_code == 403
             app.dependency_overrides[get_current_user] = lambda: SimpleNamespace(id=uuid4(), role='LEARNER')
             assert client.get('/api/v1/me/vocabulary-review?page_size=101').status_code == 422
             assert client.get('/api/v1/me/vocabulary-review?lesson_id=invalid').status_code == 422
@@ -116,6 +118,15 @@ def test_flashcards_only_own_completed_published_lessons_and_keep_distinct_sense
                 page2 = await review_deck(session, users[0].id, page=2, page_size=1)
                 assert page2['total'] == 2 and len(page2['items']) == 1
                 assert (await review_deck(session, users[0].id, lesson_id=uuid4()))['total'] == 0
+                options = [ReviewLesson.model_validate(row) for row in await review_lessons(session, users[0].id)]
+                assert [row.lesson_number for row in options] == [1, 2, 3]
+                selected = await review_deck(session, users[0].id, hsk_level=level.level_number, lesson_id=options[2].lesson_id)
+                assert selected['total'] == 1 and selected['items'][0]['vietnamese_meaning'] == 'lên xe'
+                assert len(selected['items'][0]['lessons']) == 1
+                assert (await review_deck(session, users[0].id, hsk_level=level.level_number + 1, lesson_id=options[2].lesson_id))['total'] == 0
+                other_options = [ReviewLesson.model_validate(row) for row in await review_lessons(session, users[1].id)]
+                assert [row.lesson_number for row in other_options] == [5]
+                assert (await review_deck(session, users[0].id, lesson_id=other_options[0].lesson_id))['total'] == 0
             finally:
                 await session.rollback()
     asyncio.run(run())

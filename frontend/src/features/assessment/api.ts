@@ -39,3 +39,11 @@ export function getAttempt(attemptId: string) {
     method: 'GET', path: `/me/assessment-attempts/${encodeURIComponent(attemptId)}`,
   })
 }
+
+export type PracticeFeedback = ResponseBodyOf<typeof attemptPath, 'get'>['answers'][number]
+export function getPracticeFeedback(attemptId: string) {
+  return apiClient<PracticeFeedback[]>({method:'GET',path:`/assessment-attempts/${encodeURIComponent(attemptId)}/practice-feedback`})
+}
+export function checkPracticeAnswer(attemptId: string, body: SubmitAttemptRequest['answers'][number]) {
+  return apiClient<PracticeFeedback, SubmitAttemptRequest['answers'][number]>({method:'POST',path:`/assessment-attempts/${encodeURIComponent(attemptId)}/practice-feedback`,body})
+}

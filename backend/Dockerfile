@@ -17,6 +17,7 @@ COPY --from=builder /app/.venv ./.venv
 COPY app ./app
 COPY content/curriculum-refresh ./content/curriculum-refresh
 COPY content/hsk3 ./content/hsk3
+COPY content/hsk-exams ./content/hsk-exams
 COPY scripts/import_curriculum_refresh.py scripts/import_hsk3_curriculum.py scripts/release_curriculum.py ./scripts/
 COPY migrations ./migrations
 COPY alembic.ini ./alembic.ini

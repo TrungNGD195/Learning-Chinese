@@ -7,6 +7,8 @@ from app.database.readiness import check_database_readiness
 from app.progress.router import router as progress_router
 from app.progress.vocabulary_review import router as vocabulary_review_router
 from app.exercise.router import router as exercise_router
+from app.exercise.feedback import router as feedback_router
+from app.hsk_exam.router import router as hsk_exam_router
 from app.admin.router import router as admin_router
 from app.admin.users import router as admin_users_router
 from app.curriculum.router import router as curriculum_router
@@ -35,6 +37,8 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     application.include_router(vocabulary_review_router, prefix=settings.api_v1_prefix)
     application.include_router(curriculum_router, prefix=settings.api_v1_prefix)
     application.include_router(exercise_router, prefix=settings.api_v1_prefix)
+    application.include_router(feedback_router, prefix=settings.api_v1_prefix)
+    application.include_router(hsk_exam_router, prefix=settings.api_v1_prefix)
     application.include_router(admin_router, prefix=settings.api_v1_prefix)
     application.include_router(admin_users_router, prefix=settings.api_v1_prefix)
 

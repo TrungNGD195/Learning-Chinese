@@ -1,6 +1,7 @@
 import type { RouteObject } from 'react-router'
 import { Navigate, Outlet, redirect } from 'react-router'
 import { VocabularyReviewPage } from '../../features/review/VocabularyReviewPage'
+import { HskMockExamPage } from '../../features/hsk-exam/HskMockExamPage'
 import { AdminLayout } from '../layouts/AdminLayout'
 import { LearnerLayout } from '../layouts/LearnerLayout'
 import { PublicLayout } from '../layouts/PublicLayout'
@@ -56,6 +57,8 @@ export function createAppRoutes(): RouteObject[] {
         { path: '/pronunciation/lesson', element: <PronunciationLessonPage /> },
         { path: '/pronunciation/lesson/:sectionSlug', element: <PronunciationSectionPage /> },
         { path: '/hsk/:hskLevel', element: <HskCurriculumPage /> },
+        { path: '/hsk/:hskLevel/exam', element: <HskMockExamPage /> },
+        { path: '/hsk-exam-attempts/:examAttemptId', element: <HskMockExamPage /> },
         { path: '/measure-words', element: <Navigate to="/pronunciation" replace /> },
         { path: '/preview/great-wall/*', loader: () => redirect('/pronunciation') },
         { path: '/lessons/:lessonId', element: <LessonPage /> },

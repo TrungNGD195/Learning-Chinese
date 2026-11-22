@@ -3,6 +3,13 @@ import type { AssessmentQuestion, DraftAnswer } from './QuestionRenderer'
 
 export type SubmitRequest = components['schemas']['SubmitAttemptRequest']
 
+export function draftFromAnswer(answer: SubmitRequest['answers'][number]['answer']): DraftAnswer {
+  if ('option_id' in answer) return {kind:'multiple_choice',option_id:answer.option_id}
+  if ('pairs' in answer) return {kind:'matching',pairs:answer.pairs}
+  if ('item_ids' in answer) return {kind:'reorder_sentence',item_ids:answer.item_ids}
+  return {kind:'text',text:answer.text}
+}
+
 function answerFor(question: AssessmentQuestion, draft: DraftAnswer | undefined): SubmitRequest['answers'][number]['answer'] | null {
   switch (question.type) {
     case 'multiple_choice':

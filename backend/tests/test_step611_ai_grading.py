@@ -426,6 +426,7 @@ def test_assessment_routes_only_free_form_types_and_ai_runs_after_read_transacti
     async def get_attempt(*_args, **_kwargs): return attempt
     async def get_assessment(*_args, **_kwargs): return assessment
     async def list_questions(*_args, **_kwargs): return [q]
+    async def practice_responses(*_args, **_kwargs): return []
     async def list_options(*_args, **_kwargs): return options
     async def access(*_args, **_kwargs): pass
     async def add_answers(_session, _attempt_id, answers): calls["answers"].extend(answers)
@@ -435,6 +436,7 @@ def test_assessment_routes_only_free_form_types_and_ai_runs_after_read_transacti
     monkeypatch.setattr(exercise_service.repository, "get_attempt", get_attempt)
     monkeypatch.setattr(exercise_service.repository, "get_assessment", get_assessment)
     monkeypatch.setattr(exercise_service.repository, "list_questions", list_questions)
+    monkeypatch.setattr(exercise_service.repository, "practice_responses", practice_responses)
     monkeypatch.setattr(exercise_service.repository, "list_question_options", list_options)
     monkeypatch.setattr(exercise_service.repository, "add_attempt_answers", add_answers)
     monkeypatch.setattr(exercise_service.repository, "finalize_attempt", finalize_attempt)
@@ -503,6 +505,7 @@ def test_mixed_technical_failure_persists_all_answers_atomically_without_progres
     async def get_attempt(*_args, **_kwargs): return attempt
     async def get_assessment(*_args, **_kwargs): return assessment
     async def list_questions(*_args, **_kwargs): return questions
+    async def practice_responses(*_args, **_kwargs): return []
     async def list_options(*_args, **_kwargs): return []
     async def access(*_args, **_kwargs): pass
     async def add_answers(_session, _id, rows): calls["answer_writes"].append(rows)
@@ -516,6 +519,7 @@ def test_mixed_technical_failure_persists_all_answers_atomically_without_progres
     monkeypatch.setattr(exercise_service.repository, "list_question_options", list_options)
     monkeypatch.setattr(exercise_service.repository, "add_attempt_answers", add_answers)
     monkeypatch.setattr(exercise_service.repository, "finalize_attempt", finalize)
+    monkeypatch.setattr(exercise_service.repository, "practice_responses", practice_responses)
     monkeypatch.setattr(exercise_service, "_assessment_access", access)
     monkeypatch.setattr(exercise_service.progress, "after_attempt", after_attempt)
 

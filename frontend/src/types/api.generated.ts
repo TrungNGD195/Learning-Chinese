@@ -445,6 +445,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/v1/me/vocabulary-review/lessons": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Vocabulary Review Lessons */
+        get: operations["vocabulary_review_lessons_api_v1_me_vocabulary_review_lessons_get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/v1/me/vocabulary-review": {
         parameters: {
             query?: never;
@@ -592,6 +609,127 @@ export interface paths {
         get: operations["detail_api_v1_me_assessment_attempts__attempt_id__get"];
         put?: never;
         post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/assessment-attempts/{attempt_id}/practice-feedback": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Saved Feedback */
+        get: operations["saved_feedback_api_v1_assessment_attempts__attempt_id__practice_feedback_get"];
+        put?: never;
+        /** Answer Feedback */
+        post: operations["answer_feedback_api_v1_assessment_attempts__attempt_id__practice_feedback_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/hsk-mock-exams/{level}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Exam Info */
+        get: operations["exam_info_api_v1_hsk_mock_exams__level__get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/hsk-mock-exams/{level}/attempts": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** History */
+        get: operations["history_api_v1_hsk_mock_exams__level__attempts_get"];
+        put?: never;
+        /** Start */
+        post: operations["start_api_v1_hsk_mock_exams__level__attempts_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/hsk-mock-exam-attempts/{attempt_id}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Attempt */
+        get: operations["attempt_api_v1_hsk_mock_exam_attempts__attempt_id__get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/hsk-mock-exam-attempts/{attempt_id}/answer": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        /** Save */
+        put: operations["save_api_v1_hsk_mock_exam_attempts__attempt_id__answer_put"];
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/hsk-mock-exam-attempts/{attempt_id}/next-section": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Advance */
+        post: operations["advance_api_v1_hsk_mock_exam_attempts__attempt_id__next_section_post"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/hsk-mock-exam-attempts/{attempt_id}/self-review": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** Review */
+        post: operations["review_api_v1_hsk_mock_exam_attempts__attempt_id__self_review_post"];
         delete?: never;
         options?: never;
         head?: never;
@@ -1988,6 +2126,230 @@ export interface components {
         EmptyMetadata: Record<string, never>;
         /** EmptyStructuredData */
         EmptyStructuredData: Record<string, never>;
+        /** ExamAccess */
+        ExamAccess: {
+            /** Unlocked */
+            unlocked: boolean;
+            /** Completed Lessons */
+            completed_lessons: number;
+            /** Total Lessons */
+            total_lessons: number;
+        };
+        /** ExamHistoryItem */
+        ExamHistoryItem: {
+            /**
+             * Id
+             * Format: uuid
+             */
+            id: string;
+            /** Attempt Number */
+            attempt_number: number;
+            /** Status */
+            status: string;
+            /**
+             * Started At
+             * Format: date-time
+             */
+            started_at: string;
+            /** Submitted At */
+            submitted_at: string | null;
+            /** Score */
+            score: number | null;
+            /** Max Score */
+            max_score: number;
+            /** Pending Self Reviews */
+            pending_self_reviews: number;
+            /** Includes Self Assessment */
+            includes_self_assessment: boolean;
+        };
+        /** ExamInfo */
+        ExamInfo: {
+            /** Level */
+            level: number;
+            /** Standard */
+            standard: string;
+            /** Version */
+            version: string;
+            /** Title */
+            title: string;
+            /** Pinyin Support */
+            pinyin_support: boolean;
+            /** Total Questions */
+            total_questions: number;
+            /** Max Score */
+            max_score: number;
+            /** Pass Score */
+            pass_score: number;
+            /** Sections */
+            sections: components["schemas"]["ExamSection"][];
+            access?: components["schemas"]["ExamAccess"] | null;
+        };
+        /** ExamOption */
+        ExamOption: {
+            /** Id */
+            id: string;
+            /** Text */
+            text: string;
+            /** Image Hanzi */
+            image_hanzi?: string | null;
+            /** Pinyin */
+            pinyin?: string | null;
+            /** Illustration Topic */
+            illustration_topic?: ("moving-home" | "tennis" | "reading-library" | "spring-festival" | "restaurant-menu" | "office-documents" | "high-speed-train" | "photography" | "wedding-clothes" | "recovery" | "panda-zoo") | null;
+        };
+        /** ExamQuestion */
+        ExamQuestion: {
+            /** Id */
+            id: string;
+            /** Part */
+            part: number;
+            /**
+             * Type
+             * @enum {string}
+             */
+            type: "choice" | "fill" | "sentence";
+            /** Prompt */
+            prompt: string;
+            /** Prompt Pinyin */
+            prompt_pinyin?: string | null;
+            /** Reading Text */
+            reading_text?: string | null;
+            /** Reading Text Pinyin */
+            reading_text_pinyin?: string | null;
+            /** Audio Text */
+            audio_text?: string | null;
+            /** Image Hanzi */
+            image_hanzi?: string | null;
+            /** Illustration Topic */
+            illustration_topic?: ("moving-home" | "tennis" | "reading-library" | "spring-festival" | "restaurant-menu" | "office-documents" | "high-speed-train" | "photography" | "wedding-clothes" | "recovery" | "panda-zoo") | null;
+            /** Phonetic Hint */
+            phonetic_hint?: string | null;
+            /** Options */
+            options: components["schemas"]["ExamOption"][];
+        };
+        /** ExamResult */
+        ExamResult: {
+            /** Score */
+            score: number | null;
+            /** Score Min */
+            score_min: number;
+            /** Score Max */
+            score_max: number;
+            /** Max Score */
+            max_score: number;
+            /** Pass Score */
+            pass_score: number;
+            /** Passed */
+            passed: boolean | null;
+            /** Pending Self Reviews */
+            pending_self_reviews: number;
+            /** Includes Self Assessment */
+            includes_self_assessment: boolean;
+            /** Sections */
+            sections: components["schemas"]["SectionResult"][];
+            /** Questions */
+            questions: components["schemas"]["ExamReview"][];
+        };
+        /** ExamReview */
+        ExamReview: {
+            /** Id */
+            id: string;
+            /** Part */
+            part: number;
+            /**
+             * Type
+             * @enum {string}
+             */
+            type: "choice" | "fill" | "sentence";
+            /** Prompt */
+            prompt: string;
+            /** Prompt Pinyin */
+            prompt_pinyin?: string | null;
+            /** Reading Text */
+            reading_text?: string | null;
+            /** Reading Text Pinyin */
+            reading_text_pinyin?: string | null;
+            /** Audio Text */
+            audio_text?: string | null;
+            /** Image Hanzi */
+            image_hanzi?: string | null;
+            /** Illustration Topic */
+            illustration_topic?: ("moving-home" | "tennis" | "reading-library" | "spring-festival" | "restaurant-menu" | "office-documents" | "high-speed-train" | "photography" | "wedding-clothes" | "recovery" | "panda-zoo") | null;
+            /** Phonetic Hint */
+            phonetic_hint?: string | null;
+            /** Options */
+            options: components["schemas"]["ExamOption"][];
+            /** Section Id */
+            section_id: string;
+            /** Section Label */
+            section_label: string;
+            /** Answer */
+            answer: string | null;
+            /** Answer Text */
+            answer_text: string | null;
+            /** Reference Answer */
+            reference_answer: string;
+            /** Explanation */
+            explanation: string;
+            /** Is Correct */
+            is_correct: boolean | null;
+            /** Earned Fraction */
+            earned_fraction: number | null;
+            /** Self Rating */
+            self_rating?: number | null;
+        };
+        /** ExamSection */
+        ExamSection: {
+            /** Id */
+            id: string;
+            /** Label */
+            label: string;
+            /** Duration Seconds */
+            duration_seconds: number;
+            /** Question Count */
+            question_count: number;
+        };
+        /** ExamSession */
+        ExamSession: {
+            /**
+             * Id
+             * Format: uuid
+             */
+            id: string;
+            /** Level */
+            level: number;
+            /** Attempt Number */
+            attempt_number: number;
+            /**
+             * Status
+             * @enum {string}
+             */
+            status: "IN_PROGRESS" | "GRADED";
+            info: components["schemas"]["ExamInfo"];
+            /**
+             * Started At
+             * Format: date-time
+             */
+            started_at: string;
+            /** Submitted At */
+            submitted_at: string | null;
+            /**
+             * Server Time
+             * Format: date-time
+             */
+            server_time: string;
+            /** Section Index */
+            section_index: number;
+            /** Section Deadline */
+            section_deadline: string | null;
+            /** Questions */
+            questions: components["schemas"]["ExamQuestion"][];
+            /** Answers */
+            answers: {
+                [key: string]: string;
+            };
+            result: components["schemas"]["ExamResult"] | null;
+        };
         /** FillBlankAnswer */
         FillBlankAnswer: {
             /** Text */
@@ -2030,6 +2392,11 @@ export interface components {
             presentation?: components["schemas"]["PracticePresentation"] | null;
             /** Accepted Answers */
             accepted_answers?: string[];
+        };
+        /** FinishSection */
+        FinishSection: {
+            /** Section Index */
+            section_index: number;
         };
         /** GrammarAttachRequest */
         GrammarAttachRequest: {
@@ -3253,6 +3620,20 @@ export interface components {
             /** Page Size */
             page_size: number;
         };
+        /** ReviewLesson */
+        ReviewLesson: {
+            /**
+             * Lesson Id
+             * Format: uuid
+             */
+            lesson_id: string;
+            /** Hsk Level */
+            hsk_level: number;
+            /** Lesson Number */
+            lesson_number: number;
+            /** Title */
+            title: string;
+        };
         /** ReviewOrigin */
         ReviewOrigin: {
             /**
@@ -3268,6 +3649,42 @@ export interface components {
             title: string;
             /** Note */
             note: string | null;
+        };
+        /** SaveAnswer */
+        SaveAnswer: {
+            /** Section Index */
+            section_index: number;
+            /** Question Id */
+            question_id: string;
+            /** Answer */
+            answer: string;
+        };
+        /** SectionResult */
+        SectionResult: {
+            /** Id */
+            id: string;
+            /** Label */
+            label: string;
+            /** Score */
+            score: number | null;
+            /** Score Min */
+            score_min: number;
+            /** Score Max */
+            score_max: number;
+            /** Correct */
+            correct: number;
+            /** Total */
+            total: number;
+        };
+        /** SelfReview */
+        SelfReview: {
+            /** Question Id */
+            question_id: string;
+            /**
+             * Rating
+             * @enum {unknown}
+             */
+            rating: 0 | 0.5 | 1;
         };
         /** SendMessageResponse */
         SendMessageResponse: {
@@ -3336,7 +3753,7 @@ export interface components {
              * @description discriminator enum property added by openapi-typescript
              * @enum {string}
              */
-            type: "sentence_writing" | "translate_vi_zh" | "translate_zh_vi";
+            type: "translate_vi_zh" | "translate_zh_vi" | "sentence_writing";
             answer: components["schemas"]["TextAnswer"] | null;
             config?: components["schemas"]["AnswerKeyFreeConfig"] | null;
         };
@@ -4552,6 +4969,37 @@ export interface operations {
             };
         };
     };
+    vocabulary_review_lessons_api_v1_me_vocabulary_review_lessons_get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ReviewLesson"][];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
     vocabulary_review_api_v1_me_vocabulary_review_get: {
         parameters: {
             query?: {
@@ -4845,6 +5293,319 @@ export interface operations {
                 };
                 content: {
                     "application/json": components["schemas"]["AttemptDetailResponse"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    saved_feedback_api_v1_assessment_attempts__attempt_id__practice_feedback_get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                attempt_id: string;
+            };
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": (components["schemas"]["MultipleChoiceAttemptAnswerResult"] | components["schemas"]["FillBlankAttemptAnswerResult"] | components["schemas"]["MatchingAttemptAnswerResult"] | components["schemas"]["ReorderAttemptAnswerResult"] | components["schemas"]["TextAttemptAnswerResult"])[];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    answer_feedback_api_v1_assessment_attempts__attempt_id__practice_feedback_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                attempt_id: string;
+            };
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["SubmissionAnswer"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["MultipleChoiceAttemptAnswerResult"] | components["schemas"]["FillBlankAttemptAnswerResult"] | components["schemas"]["MatchingAttemptAnswerResult"] | components["schemas"]["ReorderAttemptAnswerResult"] | components["schemas"]["TextAttemptAnswerResult"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    exam_info_api_v1_hsk_mock_exams__level__get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                level: number;
+            };
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ExamInfo"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    history_api_v1_hsk_mock_exams__level__attempts_get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                level: number;
+            };
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ExamHistoryItem"][];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    start_api_v1_hsk_mock_exams__level__attempts_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                level: number;
+            };
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ExamSession"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    attempt_api_v1_hsk_mock_exam_attempts__attempt_id__get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                attempt_id: string;
+            };
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ExamSession"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    save_api_v1_hsk_mock_exam_attempts__attempt_id__answer_put: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                attempt_id: string;
+            };
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["SaveAnswer"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ExamSession"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    advance_api_v1_hsk_mock_exam_attempts__attempt_id__next_section_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                attempt_id: string;
+            };
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["FinishSection"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ExamSession"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    review_api_v1_hsk_mock_exam_attempts__attempt_id__self_review_post: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                attempt_id: string;
+            };
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["SelfReview"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ExamSession"];
                 };
             };
             /** @description Validation Error */

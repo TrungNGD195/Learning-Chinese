@@ -13,6 +13,7 @@ import { curriculumCoverTopic } from '../curriculum/curriculumCoverData'
 import {Companion} from '../../components/academy/Companion'
 import {getDashboard} from '../dashboard/api'
 import {ResumeLearningLink} from '../curriculum/ResumeLearningLink'
+import { ExamEntryCard } from '../hsk-exam/ExamEntryCard'
 import { FoundationCards } from '../curriculum/FoundationCards'
 import { LearningFlow } from '../curriculum/LearningFlow'
 import '../../styles/academy-curriculum.css'
@@ -43,6 +44,8 @@ export function GreatWallJourneyPage({ requestedLevel }: { requestedLevel?: stri
   const stale = (levels.isError && !!levels.data) || (foundationRequired && pronunciation.isError && !!pronunciation.data) || (curriculum.isError && !!curriculum.data)
   const completedLessons = allStops.filter(stop => stop.kind === 'lesson' && stop.state === 'COMPLETED').length
   const totalLessons = Math.max(plannedLessonCounts[level?.level_number ?? 1] ?? 0, allStops.filter(stop => stop.kind === 'lesson').length)
+  const examLessons=allStops.filter(stop=>stop.kind==='lesson'&&(!stop.unpublished||(stop.lessonNumber??0)<=(plannedLessonCounts[levelNumber]??0)))
+  const examUnlocked=examLessons.length>0&&examLessons.length>=(plannedLessonCounts[levelNumber]??0)&&examLessons.every(stop=>stop.state==='COMPLETED'&&!stop.planned&&!stop.unpublished)
   const normalize=(text:string)=>text.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/\u0111/g,'d').toLowerCase()
   const visible=allStops.filter(stop=>(!search||normalize(stop.name).includes(normalize(search)))&&(filter==='all'||(filter==='COMPLETED'?stop.state==='COMPLETED':filter==='AVAILABLE'?!!stop.destination&&stop.state!=='COMPLETED':!stop.destination)))
   const explain=(stop:JourneyStop)=>setNotice(stop.planned||stop.unpublished?`${stop.shortName} đang được chuẩn bị.`:!foundationReady?'Hoàn thành bài phát âm để mở HSK 1.':`${stop.shortName} chưa mở. Hoàn thành bài trước và đạt từ 80% luyện tập để tiếp tục.`)
@@ -59,9 +62,11 @@ export function GreatWallJourneyPage({ requestedLevel }: { requestedLevel?: stri
     {requestedLevel&&!levels.isPending&&!levels.isError&&!level&&<Alert tone="error" role="alert">Không tìm thấy cấp độ HSK này.</Alert>}
     {ready&&!failed&&(!requestedLevel||level)&&<>
         <section className="lc-course-meta"><div><h2>Các bài học {level?.title??`HSK ${levelNumber}`}</h2><p>{completedLessons}/{totalLessons} bài đã hoàn thành</p></div><progress aria-label="Tiến độ cấp độ" value={completedLessons} max={totalLessons||1}/></section>
+        <ExamEntryCard level={levelNumber} unlocked={examUnlocked} completed={completedLessons} total={Math.max(plannedLessonCounts[levelNumber]??0,examLessons.length)}/>
         <div className="lc-list-tools"><label><AcademyIcon name="book" size={17}/><span className="lc-accessible-title">Tìm bài học</span><input type="search" placeholder="Tìm tên hoặc số bài…" value={search} onChange={event=>setSearch(event.target.value)}/></label><select aria-label="Lọc trạng thái bài học" value={filter} onChange={event=>setFilter(event.target.value)}><option value="all">Tất cả bài học</option><option value="AVAILABLE">Có thể học</option><option value="COMPLETED">Đã hoàn thành</option><option value="LOCKED">Chưa mở</option></select></div>
         <ol className="lc-lesson-grid" aria-label="Các bài trong cấp độ HSK">{visible.map(stop=><CurriculumCard key={stop.id} stop={stop} level={levelNumber} current={stop.id===active?.id} onExplain={explain}/>)}</ol>
         {!visible.length&&<div className="lc-empty"><Companion pose="think" decorative/><h2>Chưa tìm thấy bài phù hợp</h2><p>Thử tên ngắn hơn hoặc xem lại toàn bộ bài học.</p><button type="button" className="lc-inline-button" onClick={()=>{setSearch('');setFilter('all')}}>Xóa bộ lọc</button></div>}
+
     </>}
   </section>
 }

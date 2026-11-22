@@ -38,6 +38,25 @@ class ReviewDeck(BaseModel):
     page_size: int
 
 
+class ReviewLesson(BaseModel):
+    lesson_id: UUID
+    hsk_level: int
+    lesson_number: int
+    title: str
+
+
+async def review_lessons(session, user_id):
+    statement = (select(Lesson.id.label('lesson_id'), HSKLevel.level_number.label('hsk_level'),
+                        Lesson.lesson_number, Lesson.title)
+        .join(HSKLevel, HSKLevel.id == Lesson.hsk_level_id)
+        .join(LearnerLessonProgress, LearnerLessonProgress.lesson_id == Lesson.id)
+        .join(LessonVocabulary, LessonVocabulary.lesson_id == Lesson.id)
+        .where(LearnerLessonProgress.user_id == user_id,
+               LearnerLessonProgress.completed_at.is_not(None), Lesson.status == 'PUBLISHED')
+        .distinct().order_by(HSKLevel.level_number, Lesson.lesson_number, Lesson.id))
+    return (await session.execute(statement)).mappings().all()
+
+
 async def review_deck(session, user_id, *, hsk_level=None, lesson_id=None, page=1, page_size=50):
     statement = (select(Vocabulary, LessonVocabulary, Lesson, HSKLevel.level_number)
         .join(LessonVocabulary, LessonVocabulary.vocabulary_id == Vocabulary.id)
@@ -67,6 +86,13 @@ async def review_deck(session, user_id, *, hsk_level=None, lesson_id=None, page=
 
 
 router = APIRouter()
+
+
+@router.get('/me/vocabulary-review/lessons', response_model=list[ReviewLesson])
+async def vocabulary_review_lessons(
+    current_user: User = Depends(require_learner), session: AsyncSession = Depends(get_db_session),
+):
+    return await review_lessons(session, current_user.id)
 
 
 @router.get('/me/vocabulary-review', response_model=ReviewDeck)

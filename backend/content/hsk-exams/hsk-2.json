@@ -1,0 +1,2319 @@
+{
+  "level": 2,
+  "standard": "HSK 3.0",
+  "version": "2026-11-22-v1",
+  "title": "Thi thử HSK 2 · HSK 3.0",
+  "pinyin_support": true,
+  "source_url": "https://www.chinesetest.cn/HSK/2",
+  "sections": [
+    {
+      "id": "listening",
+      "label": "Nghe hiểu",
+      "duration_seconds": 1200,
+      "questions": [
+        {
+          "id": "h2-listening-01",
+          "part": 1,
+          "type": "choice",
+          "prompt": "Nghe và chọn hình phù hợp。",
+          "explanation": "Bản nghe nhắc đến quyển sách 这本书.",
+          "reference_answer": "书",
+          "accepted_answers": [],
+          "audio_text": "请把这本书放在桌子上。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "",
+              "image_hanzi": "书",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o2",
+              "text": "",
+              "image_hanzi": "茶",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o3",
+              "text": "",
+              "image_hanzi": "水",
+              "illustration_topic": null,
+              "pinyin": null
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": null,
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-listening-02",
+          "part": 1,
+          "type": "choice",
+          "prompt": "Nghe và chọn hình phù hợp。",
+          "explanation": "Sau khi vận động, người nói muốn uống nước.",
+          "reference_answer": "水",
+          "accepted_answers": [],
+          "audio_text": "运动以后，我想喝一杯水。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "",
+              "image_hanzi": "水",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o2",
+              "text": "",
+              "image_hanzi": "茶",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o3",
+              "text": "",
+              "image_hanzi": "书",
+              "illustration_topic": null,
+              "pinyin": null
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": null,
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-listening-03",
+          "part": 1,
+          "type": "choice",
+          "prompt": "Nghe và chọn hình phù hợp。",
+          "explanation": "跟朋友见面 nghĩa là gặp bạn bè.",
+          "reference_answer": "朋友",
+          "accepted_answers": [],
+          "audio_text": "周末我常常跟朋友见面。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "",
+              "image_hanzi": "朋友",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o2",
+              "text": "",
+              "image_hanzi": "山",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o3",
+              "text": "",
+              "image_hanzi": "马",
+              "illustration_topic": null,
+              "pinyin": null
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": null,
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-listening-04",
+          "part": 1,
+          "type": "choice",
+          "prompt": "Nghe và chọn hình phù hợp。",
+          "explanation": "爬山 là leo núi.",
+          "reference_answer": "山",
+          "accepted_answers": [],
+          "audio_text": "我们明天去爬山吧。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "",
+              "image_hanzi": "山",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o2",
+              "text": "",
+              "image_hanzi": "马",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o3",
+              "text": "",
+              "image_hanzi": "书",
+              "illustration_topic": null,
+              "pinyin": null
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": null,
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-listening-05",
+          "part": 1,
+          "type": "choice",
+          "prompt": "Nghe và chọn hình phù hợp。",
+          "explanation": "Người bố uống trà 每天早上.",
+          "reference_answer": "茶",
+          "accepted_answers": [],
+          "audio_text": "爸爸每天早上喝茶。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "",
+              "image_hanzi": "茶",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o2",
+              "text": "",
+              "image_hanzi": "水",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o3",
+              "text": "",
+              "image_hanzi": "书",
+              "illustration_topic": null,
+              "pinyin": null
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": null,
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-listening-06",
+          "part": 2,
+          "type": "choice",
+          "prompt": "Nghe và chọn hình phù hợp。",
+          "explanation": "Người nam đã có trà: 我有茶.",
+          "reference_answer": "茶",
+          "accepted_answers": [],
+          "audio_text": "女：你要喝水吗？男：不用了，我有茶。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "",
+              "image_hanzi": "茶",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o2",
+              "text": "",
+              "image_hanzi": "水",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o3",
+              "text": "",
+              "image_hanzi": "马",
+              "illustration_topic": null,
+              "pinyin": null
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": null,
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-listening-07",
+          "part": 2,
+          "type": "choice",
+          "prompt": "Nghe và chọn hình phù hợp。",
+          "explanation": "Người nữ đang tìm quyển sách mua hôm qua.",
+          "reference_answer": "书",
+          "accepted_answers": [],
+          "audio_text": "男：你在找什么？女：我在找昨天买的书。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "",
+              "image_hanzi": "书",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o2",
+              "text": "",
+              "image_hanzi": "茶",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o3",
+              "text": "",
+              "image_hanzi": "山",
+              "illustration_topic": null,
+              "pinyin": null
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": null,
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-listening-08",
+          "part": 2,
+          "type": "choice",
+          "prompt": "Nghe và chọn hình phù hợp。",
+          "explanation": "Hai người có quan hệ bạn bè.",
+          "reference_answer": "朋友",
+          "accepted_answers": [],
+          "audio_text": "女：你们是什么关系？男：我们是朋友。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "",
+              "image_hanzi": "朋友",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o2",
+              "text": "",
+              "image_hanzi": "书",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o3",
+              "text": "",
+              "image_hanzi": "水",
+              "illustration_topic": null,
+              "pinyin": null
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": null,
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-listening-09",
+          "part": 2,
+          "type": "choice",
+          "prompt": "Nghe và chọn hình phù hợp。",
+          "explanation": "那座山 chỉ ngọn núi mà họ sẽ leo.",
+          "reference_answer": "山",
+          "accepted_answers": [],
+          "audio_text": "男：周末去哪儿？女：去爬那座山。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "",
+              "image_hanzi": "山",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o2",
+              "text": "",
+              "image_hanzi": "茶",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o3",
+              "text": "",
+              "image_hanzi": "书",
+              "illustration_topic": null,
+              "pinyin": null
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": null,
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-listening-10",
+          "part": 2,
+          "type": "choice",
+          "prompt": "Nghe và chọn hình phù hợp。",
+          "explanation": "Người nam xác nhận đó là nước của mình.",
+          "reference_answer": "水",
+          "accepted_answers": [],
+          "audio_text": "女：这是你的水吗？男：是的，谢谢。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "",
+              "image_hanzi": "水",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o2",
+              "text": "",
+              "image_hanzi": "茶",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o3",
+              "text": "",
+              "image_hanzi": "书",
+              "illustration_topic": null,
+              "pinyin": null
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": null,
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-listening-11",
+          "part": 2,
+          "type": "choice",
+          "prompt": "Nghe và chọn hình phù hợp。",
+          "explanation": "Cuộc hội thoại đánh giá trà rất ngon.",
+          "reference_answer": "茶",
+          "accepted_answers": [],
+          "audio_text": "男：这里的茶怎么样？女：非常好喝。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "",
+              "image_hanzi": "茶",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o2",
+              "text": "",
+              "image_hanzi": "山",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o3",
+              "text": "",
+              "image_hanzi": "水",
+              "illustration_topic": null,
+              "pinyin": null
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": null,
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-listening-12",
+          "part": 2,
+          "type": "choice",
+          "prompt": "Nghe và chọn hình phù hợp。",
+          "explanation": "每天都看书: đọc sách mỗi ngày.",
+          "reference_answer": "书",
+          "accepted_answers": [],
+          "audio_text": "女：你喜欢看书吗？男：喜欢，我每天都看。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "",
+              "image_hanzi": "书",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o2",
+              "text": "",
+              "image_hanzi": "马",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o3",
+              "text": "",
+              "image_hanzi": "茶",
+              "illustration_topic": null,
+              "pinyin": null
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": null,
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-listening-13",
+          "part": 2,
+          "type": "choice",
+          "prompt": "Nghe và chọn hình phù hợp。",
+          "explanation": "Câu trả lời nói con ngựa thuộc về ông.",
+          "reference_answer": "马",
+          "accepted_answers": [],
+          "audio_text": "男：这是你家的马吗？女：不是，是爷爷的。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "",
+              "image_hanzi": "马",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o2",
+              "text": "",
+              "image_hanzi": "山",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o3",
+              "text": "",
+              "image_hanzi": "书",
+              "illustration_topic": null,
+              "pinyin": null
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": null,
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-listening-14",
+          "part": 2,
+          "type": "choice",
+          "prompt": "Nghe và chọn hình phù hợp。",
+          "explanation": "Hai người bạn sẽ đến nhà.",
+          "reference_answer": "朋友",
+          "accepted_answers": [],
+          "audio_text": "女：谁来你家？男：我的两个朋友。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "",
+              "image_hanzi": "朋友",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o2",
+              "text": "",
+              "image_hanzi": "水",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o3",
+              "text": "",
+              "image_hanzi": "茶",
+              "illustration_topic": null,
+              "pinyin": null
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": null,
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-listening-15",
+          "part": 2,
+          "type": "choice",
+          "prompt": "Nghe và chọn hình phù hợp。",
+          "explanation": "Hai người đang nói về ngọn núi vừa cao vừa đẹp.",
+          "reference_answer": "山",
+          "accepted_answers": [],
+          "audio_text": "男：这座山高不高？女：很高，也很漂亮。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "",
+              "image_hanzi": "山",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o2",
+              "text": "",
+              "image_hanzi": "书",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o3",
+              "text": "",
+              "image_hanzi": "水",
+              "illustration_topic": null,
+              "pinyin": null
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": null,
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-listening-16",
+          "part": 3,
+          "type": "choice",
+          "prompt": "他为什么不去打球？",
+          "explanation": "Người nam nói 身体不舒服 (không khỏe) nên muốn nghỉ thay vì đi chơi bóng.",
+          "reference_answer": "身体不舒服",
+          "accepted_answers": [],
+          "audio_text": "女：下午一起打球吧。男：我今天身体不舒服，想休息。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "身体不舒服",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "shēn tǐ bù shū fú"
+            },
+            {
+              "id": "o2",
+              "text": "没有球",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "méi yǒu qiú"
+            },
+            {
+              "id": "o3",
+              "text": "要去上课",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "yào qù shàng kè"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "tā wèi shén me bù qù dǎ qiú ？",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-listening-17",
+          "part": 3,
+          "type": "choice",
+          "prompt": "他们在哪儿见面？",
+          "explanation": "电影院门口 là trước cửa rạp phim.",
+          "reference_answer": "电影院门口",
+          "accepted_answers": [],
+          "audio_text": "男：我们在哪儿见？女：电影院门口，别迟到。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "电影院门口",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "diàn yǐng yuàn mén kǒu"
+            },
+            {
+              "id": "o2",
+              "text": "学校里面",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "xué xiào lǐ miàn"
+            },
+            {
+              "id": "o3",
+              "text": "饭店门口",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "fàn diàn mén kǒu"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "tā men zài nǎ ér jiàn miàn ？",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-listening-18",
+          "part": 3,
+          "type": "choice",
+          "prompt": "女的买了几件衣服？",
+          "explanation": "Hai chiếc áo sơ mi 两件衬衫 là hai món quần áo, không phải ba.",
+          "reference_answer": "两件",
+          "accepted_answers": [],
+          "audio_text": "男：你买衣服了吗？女：买了两件衬衫，没买裤子。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "两件",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "liǎng jiàn"
+            },
+            {
+              "id": "o2",
+              "text": "三件",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "sān jiàn"
+            },
+            {
+              "id": "o3",
+              "text": "一件",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "yī jiàn"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "nǚ de mǎi le jǐ jiàn yī fú ？",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-listening-19",
+          "part": 3,
+          "type": "choice",
+          "prompt": "男的几点出门？",
+          "explanation": "七点半 đi ra khỏi nhà.",
+          "reference_answer": "七点半",
+          "accepted_answers": [],
+          "audio_text": "女：你每天几点出门？男：七点半，八点到公司。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "七点半",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "qī diǎn bàn"
+            },
+            {
+              "id": "o2",
+              "text": "八点半",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "bā diǎn bàn"
+            },
+            {
+              "id": "o3",
+              "text": "七点",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "qī diǎn"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "nán de jǐ diǎn chū mén ？",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-listening-20",
+          "part": 3,
+          "type": "choice",
+          "prompt": "这杯咖啡怎么样？",
+          "explanation": "太甜了 nghĩa là quá ngọt.",
+          "reference_answer": "太甜了",
+          "accepted_answers": [],
+          "audio_text": "男：咖啡好喝吗？女：糖太多了，太甜了。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "太甜了",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "tài tián le"
+            },
+            {
+              "id": "o2",
+              "text": "不热",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "bù rè"
+            },
+            {
+              "id": "o3",
+              "text": "很便宜",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "hěn pián yi"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "zhè bēi kā fēi zěn me yàng ？",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-listening-21",
+          "part": 3,
+          "type": "choice",
+          "prompt": "她什么时候回来？",
+          "explanation": "她下星期回来: cô ấy về vào tuần sau.",
+          "reference_answer": "下星期",
+          "accepted_answers": [],
+          "audio_text": "男：小王回来了吗？女：没有，她下星期回来。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "下星期",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "xià xīng qī"
+            },
+            {
+              "id": "o2",
+              "text": "明天",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "míng tiān"
+            },
+            {
+              "id": "o3",
+              "text": "下个月",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "xià gè yuè"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "tā shén me shí hòu huí lái ？",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-listening-22",
+          "part": 3,
+          "type": "choice",
+          "prompt": "他要去哪里？",
+          "explanation": "Mua vé đi 北京, Bắc Kinh.",
+          "reference_answer": "北京",
+          "accepted_answers": [],
+          "audio_text": "女：您要买去哪里的票？男：一张明天去北京的票。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "北京",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "běi jīng"
+            },
+            {
+              "id": "o2",
+              "text": "上海",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "shàng hǎi"
+            },
+            {
+              "id": "o3",
+              "text": "西安",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "xī ān"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "tā yào qù nǎ lǐ ？",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-listening-23",
+          "part": 3,
+          "type": "choice",
+          "prompt": "谁比较高？",
+          "explanation": "哥哥比弟弟高: anh trai cao hơn em trai.",
+          "reference_answer": "哥哥",
+          "accepted_answers": [],
+          "audio_text": "女：你哥哥和弟弟谁高？男：哥哥比弟弟高一点。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "哥哥",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "gē gē"
+            },
+            {
+              "id": "o2",
+              "text": "弟弟",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "dì di"
+            },
+            {
+              "id": "o3",
+              "text": "一样高",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "yī yàng gāo"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "shuí bǐ jiào gāo ？",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-listening-24",
+          "part": 3,
+          "type": "choice",
+          "prompt": "她为什么迟到？",
+          "explanation": "起床晚了 là dậy muộn.",
+          "reference_answer": "起床晚了",
+          "accepted_answers": [],
+          "audio_text": "男：你怎么迟到了？女：对不起，我今天起床晚了。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "起床晚了",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "qǐ chuáng wǎn le"
+            },
+            {
+              "id": "o2",
+              "text": "车坏了",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "chē huài le"
+            },
+            {
+              "id": "o3",
+              "text": "下雨了",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "xià yǔ le"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "tā wèi shén me chí dào ？",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-listening-25",
+          "part": 3,
+          "type": "choice",
+          "prompt": "男的想吃什么？",
+          "explanation": "Người nam đã ăn sủi cảo hôm qua và muốn đổi sang mì 面条 hôm nay.",
+          "reference_answer": "面条",
+          "accepted_answers": [],
+          "audio_text": "女：今天吃饺子，行吗？男：昨天吃过了，今天吃面条吧。",
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "面条",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "miàn tiáo"
+            },
+            {
+              "id": "o2",
+              "text": "米饭",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "mǐ fàn"
+            },
+            {
+              "id": "o3",
+              "text": "饺子",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "jiǎo zi"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "nán de xiǎng chī shén me ？",
+          "reading_text_pinyin": null
+        }
+      ]
+    },
+    {
+      "id": "reading",
+      "label": "Đọc hiểu",
+      "duration_seconds": 1500,
+      "questions": [
+        {
+          "id": "h2-reading-01",
+          "part": 1,
+          "type": "choice",
+          "prompt": "选择合适的图片：我喜欢喝茶。",
+          "explanation": "喝茶 nghĩa là uống trà, phù hợp hình bộ ấm và chén trà.",
+          "reference_answer": "茶",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "",
+              "image_hanzi": "茶",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o2",
+              "text": "",
+              "image_hanzi": "水",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o3",
+              "text": "",
+              "image_hanzi": "书",
+              "illustration_topic": null,
+              "pinyin": null
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "xuǎn zé hé shì de tú piàn ： wǒ xǐ huān hē chá 。",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-reading-02",
+          "part": 1,
+          "type": "choice",
+          "prompt": "选择合适的图片：他们是好朋友。",
+          "explanation": "朋友 nghĩa là bạn bè, phù hợp hình hai người bạn.",
+          "reference_answer": "朋友",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "",
+              "image_hanzi": "朋友",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o2",
+              "text": "",
+              "image_hanzi": "山",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o3",
+              "text": "",
+              "image_hanzi": "马",
+              "illustration_topic": null,
+              "pinyin": null
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "xuǎn zé hé shì de tú piàn ： tā men shì hǎo péng yǒu 。",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-reading-03",
+          "part": 1,
+          "type": "choice",
+          "prompt": "选择合适的图片：这是我刚买的书。",
+          "explanation": "刚买的书 là sách vừa mua.",
+          "reference_answer": "书",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "",
+              "image_hanzi": "书",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o2",
+              "text": "",
+              "image_hanzi": "水",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o3",
+              "text": "",
+              "image_hanzi": "茶",
+              "illustration_topic": null,
+              "pinyin": null
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "xuǎn zé hé shì de tú piàn ： zhè shì wǒ gāng mǎi de shū 。",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-reading-04",
+          "part": 1,
+          "type": "choice",
+          "prompt": "选择合适的图片：周末我们去爬山。",
+          "explanation": "爬山 là leo núi.",
+          "reference_answer": "山",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "",
+              "image_hanzi": "山",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o2",
+              "text": "",
+              "image_hanzi": "马",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o3",
+              "text": "",
+              "image_hanzi": "朋友",
+              "illustration_topic": null,
+              "pinyin": null
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "xuǎn zé hé shì de tú piàn ： zhōu mò wǒ men qù pá shān 。",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-reading-05",
+          "part": 1,
+          "type": "choice",
+          "prompt": "选择合适的图片：请给我一杯水。",
+          "explanation": "一杯水 nghĩa là một cốc nước.",
+          "reference_answer": "水",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "",
+              "image_hanzi": "水",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o2",
+              "text": "",
+              "image_hanzi": "茶",
+              "illustration_topic": null,
+              "pinyin": null
+            },
+            {
+              "id": "o3",
+              "text": "",
+              "image_hanzi": "书",
+              "illustration_topic": null,
+              "pinyin": null
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "xuǎn zé hé shì de tú piàn ： qǐng gěi wǒ yī bēi shuǐ 。",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-reading-06",
+          "part": 2,
+          "type": "choice",
+          "prompt": "你为什么学汉语？",
+          "explanation": "为什么 hỏi nguyên nhân; 因为 mở đầu nguyên nhân.",
+          "reference_answer": "因为我想去中国。",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "因为我想去中国。",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "yīn wèi wǒ xiǎng qù zhōng guó 。"
+            },
+            {
+              "id": "o2",
+              "text": "我学了两年。",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "wǒ xué le liǎng nián 。"
+            },
+            {
+              "id": "o3",
+              "text": "我在家学习。",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "wǒ zài jiā xué xí 。"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "nǐ wèi shén me xué hàn yǔ ？",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-reading-07",
+          "part": 2,
+          "type": "choice",
+          "prompt": "这件衣服有大一点儿的吗？",
+          "explanation": "Người mua hỏi cỡ lớn hơn, người bán mời thử áo khác.",
+          "reference_answer": "有，请试试这件。",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "有，请试试这件。",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "yǒu ， qǐng shì shì zhè jiàn 。"
+            },
+            {
+              "id": "o2",
+              "text": "在桌子上。",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "zài zhuō zi shàng 。"
+            },
+            {
+              "id": "o3",
+              "text": "是昨天。",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "shì zuó tiān 。"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "zhè jiàn yī fú yǒu dà yī diǎn ér de ma ？",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-reading-08",
+          "part": 2,
+          "type": "choice",
+          "prompt": "请问，去机场怎么走？",
+          "explanation": "怎么走 hỏi đường đi, trả lời bằng phương tiện và thứ tự.",
+          "reference_answer": "先坐地铁，再坐公共汽车。",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "先坐地铁，再坐公共汽车。",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "xiān zuò dì tiě ， zài zuò gōng gòng qì chē 。"
+            },
+            {
+              "id": "o2",
+              "text": "九点到了。",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "jiǔ diǎn dào le 。"
+            },
+            {
+              "id": "o3",
+              "text": "我去过。",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "wǒ qù guò 。"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "qǐng wèn ， qù jī chǎng zěn me zǒu ？",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-reading-09",
+          "part": 2,
+          "type": "choice",
+          "prompt": "你的生日是什么时候？",
+          "explanation": "生日 hỏi ngày sinh; 十月二日 là ngày 2 tháng 10.",
+          "reference_answer": "十月二日。",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "十月二日。",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "shí yuè èr rì 。"
+            },
+            {
+              "id": "o2",
+              "text": "下午三点。",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "xià wǔ sān diǎn 。"
+            },
+            {
+              "id": "o3",
+              "text": "我二十岁。",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "wǒ èr shí suì 。"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "nǐ de shēng rì shì shén me shí hòu ？",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-reading-10",
+          "part": 2,
+          "type": "choice",
+          "prompt": "你觉得这个电影怎么样？",
+          "explanation": "怎么样 hỏi đánh giá; 很有意思 nghĩa là thú vị.",
+          "reference_answer": "我觉得很有意思。",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "我觉得很有意思。",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "wǒ jué de hěn yǒu yì si 。"
+            },
+            {
+              "id": "o2",
+              "text": "我在电影院。",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "wǒ zài diàn yǐng yuàn 。"
+            },
+            {
+              "id": "o3",
+              "text": "我想去。",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "wǒ xiǎng qù 。"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "nǐ jué de zhè ge diàn yǐng zěn me yàng ？",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-reading-11",
+          "part": 3,
+          "type": "choice",
+          "prompt": "今天（　）昨天冷。",
+          "explanation": "比 dùng để so sánh hai đối tượng.",
+          "reference_answer": "比",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "比",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "bǐ"
+            },
+            {
+              "id": "o2",
+              "text": "给",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "gěi"
+            },
+            {
+              "id": "o3",
+              "text": "从",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "cóng"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "jīn tiān （　） zuó tiān lěng 。",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-reading-12",
+          "part": 3,
+          "type": "choice",
+          "prompt": "他（　）吃完饭，就去上班。",
+          "explanation": "一…就… diễn tả vừa làm xong việc này liền làm việc khác.",
+          "reference_answer": "一",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "一",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "yī"
+            },
+            {
+              "id": "o2",
+              "text": "很",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "hěn"
+            },
+            {
+              "id": "o3",
+              "text": "最",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "zuì"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "tā （　） chī wán fàn ， jiù qù shàng bān 。",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-reading-13",
+          "part": 3,
+          "type": "choice",
+          "prompt": "这件事我已经（　）了。",
+          "explanation": "已经知道了: đã biết rồi.",
+          "reference_answer": "知道",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "知道",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "zhī dào"
+            },
+            {
+              "id": "o2",
+              "text": "高兴",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "gāo xìng"
+            },
+            {
+              "id": "o3",
+              "text": "漂亮",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "piào liàng"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "zhè jiàn shì wǒ yǐ jīng （　） le 。",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-reading-14",
+          "part": 3,
+          "type": "choice",
+          "prompt": "请你（　）我一下。",
+          "explanation": "等我一下 nghĩa là đợi tôi một chút.",
+          "reference_answer": "等",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "等",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "děng"
+            },
+            {
+              "id": "o2",
+              "text": "热",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "rè"
+            },
+            {
+              "id": "o3",
+              "text": "远",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "yuǎn"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "qǐng nǐ （　） wǒ yī xià 。",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-reading-15",
+          "part": 3,
+          "type": "choice",
+          "prompt": "他跑得（　）快。",
+          "explanation": "Sau 得 dùng bổ ngữ mức độ, 很快 là rất nhanh.",
+          "reference_answer": "很",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "很",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "hěn"
+            },
+            {
+              "id": "o2",
+              "text": "个",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "gè"
+            },
+            {
+              "id": "o3",
+              "text": "本",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "běn"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "tā pǎo dé （　） kuài 。",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-reading-16",
+          "part": 3,
+          "type": "choice",
+          "prompt": "我想买两（　）电影票。",
+          "explanation": "张 là lượng từ của vé.",
+          "reference_answer": "张",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "张",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "zhāng"
+            },
+            {
+              "id": "o2",
+              "text": "本",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "běn"
+            },
+            {
+              "id": "o3",
+              "text": "口",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "kǒu"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "wǒ xiǎng mǎi liǎng （　） diàn yǐng piào 。",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-reading-17",
+          "part": 3,
+          "type": "choice",
+          "prompt": "我们（　）坐地铁去吧。",
+          "explanation": "一起 nghĩa là cùng nhau.",
+          "reference_answer": "一起",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "一起",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "yì qǐ"
+            },
+            {
+              "id": "o2",
+              "text": "已经",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "yǐ jīng"
+            },
+            {
+              "id": "o3",
+              "text": "正在",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "zhèng zài"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "wǒ men （　） zuò dì tiě qù ba 。",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-reading-18",
+          "part": 3,
+          "type": "choice",
+          "prompt": "外面下雨了，别忘了（　）伞。",
+          "explanation": "带伞 nghĩa là mang ô.",
+          "reference_answer": "带",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "带",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "dài"
+            },
+            {
+              "id": "o2",
+              "text": "喝",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "hē"
+            },
+            {
+              "id": "o3",
+              "text": "问",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "wèn"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "wài miàn xià yǔ le ， bié wàng le （　） sǎn 。",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-reading-19",
+          "part": 3,
+          "type": "choice",
+          "prompt": "我在中国住（　）两年。",
+          "explanation": "过 biểu thị trải nghiệm đã từng sống ở Trung Quốc.",
+          "reference_answer": "过",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "过",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "guò"
+            },
+            {
+              "id": "o2",
+              "text": "得",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "dé"
+            },
+            {
+              "id": "o3",
+              "text": "着",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "zhe"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "wǒ zài zhōng guó zhù （　） liǎng nián 。",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-reading-20",
+          "part": 3,
+          "type": "choice",
+          "prompt": "他不但会说汉语，（　）会写汉字。",
+          "explanation": "不但…而且… nghĩa là không những…mà còn….",
+          "reference_answer": "而且",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "而且",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "ér qiě"
+            },
+            {
+              "id": "o2",
+              "text": "所以",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "suǒ yǐ"
+            },
+            {
+              "id": "o3",
+              "text": "但是",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "dàn shì"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "tā bù dàn huì shuō hàn yǔ ，（　） huì xiě hàn zì 。",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-reading-21",
+          "part": 4,
+          "type": "choice",
+          "prompt": "他打算什么时候去看奶奶？",
+          "explanation": "Thứ Bảy có lớp học; người nói định thăm bà vào Chủ nhật 星期日.",
+          "reference_answer": "星期日",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": "星期六我有课，星期日我打算去看奶奶。",
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "星期日",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "xīng qī rì"
+            },
+            {
+              "id": "o2",
+              "text": "星期六",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "xīng qī liù"
+            },
+            {
+              "id": "o3",
+              "text": "星期一",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "xīng qī yī"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "tā dǎ suàn shén me shí hòu qù kàn nǎi nǎi ？",
+          "reading_text_pinyin": "xīng qī liù wǒ yǒu kè ， xīng qī rì wǒ dǎ suàn qù kàn nǎi nǎi 。"
+        },
+        {
+          "id": "h2-reading-22",
+          "part": 4,
+          "type": "choice",
+          "prompt": "她为什么买这双鞋？",
+          "explanation": "Ngoài màu sắc đẹp, đôi giày còn khá rẻ 比较便宜, nên cô ấy mua.",
+          "reference_answer": "比较便宜",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": "这双鞋颜色很好看，也比较便宜，我买了一双。",
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "比较便宜",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "bǐ jiào pián yi"
+            },
+            {
+              "id": "o2",
+              "text": "颜色不好看",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "yán sè bù hǎo kàn"
+            },
+            {
+              "id": "o3",
+              "text": "太小",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "tài xiǎo"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "tā wèi shén me mǎi zhè shuāng xié ？",
+          "reading_text_pinyin": "zhè shuāng xié yán sè hěn hǎo kàn ， yě bǐ jiào pián yi ， wǒ mǎi le yī shuāng 。"
+        },
+        {
+          "id": "h2-reading-23",
+          "part": 4,
+          "type": "choice",
+          "prompt": "他今天怎么上班？",
+          "explanation": "Xe đạp hỏng 自行车坏了, nên hôm nay người nói đi xe buýt 公共汽车.",
+          "reference_answer": "坐公共汽车",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": "我的自行车坏了，今天坐公共汽车上班。",
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "坐公共汽车",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "zuò gōng gòng qì chē"
+            },
+            {
+              "id": "o2",
+              "text": "骑自行车",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "qí zì xíng chē"
+            },
+            {
+              "id": "o3",
+              "text": "坐地铁",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "zuò dì tiě"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "tā jīn tiān zěn me shàng bān ？",
+          "reading_text_pinyin": "wǒ de zì xíng chē huài le ， jīn tiān zuò gōng gòng qì chē shàng bān 。"
+        },
+        {
+          "id": "h2-reading-24",
+          "part": 4,
+          "type": "choice",
+          "prompt": "哪句话是对的？",
+          "explanation": "Chị gái bơi giỏi 游泳游得很好 và dạy em trai; em trai chưa biết bơi.",
+          "reference_answer": "姐姐会游泳",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": "姐姐游泳游得很好，弟弟还不会，姐姐每个周末教他。",
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "姐姐会游泳",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "jiě jiě huì yóu yǒng"
+            },
+            {
+              "id": "o2",
+              "text": "姐姐不会游泳",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "jiě jiě bú huì yóu yǒng"
+            },
+            {
+              "id": "o3",
+              "text": "弟弟每天游泳",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "dì di měi tiān yóu yǒng"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "nǎ jù huà shì duì de ？",
+          "reading_text_pinyin": "jiě jiě yóu yǒng yóu dé hěn hǎo ， dì di hái bú huì ， jiě jiě měi gè zhōu mò jiào tā 。"
+        },
+        {
+          "id": "h2-reading-25",
+          "part": 4,
+          "type": "choice",
+          "prompt": "他的手机在哪里？",
+          "explanation": "忘在家里了 nghĩa là đã để quên ở nhà.",
+          "reference_answer": "家里",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": "我到公司以后才发现，手机忘在家里了。",
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "家里",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "jiā lǐ"
+            },
+            {
+              "id": "o2",
+              "text": "公司",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "gōng sī"
+            },
+            {
+              "id": "o3",
+              "text": "出租车上",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "chū zū chē shàng"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "tā de shǒu jī zài nǎ lǐ ？",
+          "reading_text_pinyin": "wǒ dào gōng sī yǐ hòu cái fā xiàn ， shǒu jī wàng zài jiā lǐ le 。"
+        }
+      ]
+    },
+    {
+      "id": "writing",
+      "label": "Viết",
+      "duration_seconds": 600,
+      "questions": [
+        {
+          "id": "h2-writing-01",
+          "part": 1,
+          "type": "choice",
+          "prompt": "选择“河”里的部件。",
+          "explanation": "河 mang bộ 氵, thường liên quan đến nước.",
+          "reference_answer": "氵",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "氵",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "shui"
+            },
+            {
+              "id": "o2",
+              "text": "亻",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "rén"
+            },
+            {
+              "id": "o3",
+              "text": "口",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "kǒu"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "xuǎn zé “ hé ” lǐ de bù jiàn 。",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-writing-02",
+          "part": 1,
+          "type": "choice",
+          "prompt": "选择“妈”里的部件。",
+          "explanation": "妈 có bộ 女, bên phải là 马.",
+          "reference_answer": "女",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "女",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "nǚ"
+            },
+            {
+              "id": "o2",
+              "text": "木",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "mù"
+            },
+            {
+              "id": "o3",
+              "text": "日",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "rì"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "xuǎn zé “ mā ” lǐ de bù jiàn 。",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-writing-03",
+          "part": 1,
+          "type": "choice",
+          "prompt": "选择“你”里的部件。",
+          "explanation": "你 có bộ 亻 ở bên trái.",
+          "reference_answer": "亻",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "亻",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "rén"
+            },
+            {
+              "id": "o2",
+              "text": "扌",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "shou"
+            },
+            {
+              "id": "o3",
+              "text": "心",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "xīn"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "xuǎn zé “ nǐ ” lǐ de bù jiàn 。",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-writing-04",
+          "part": 1,
+          "type": "choice",
+          "prompt": "选择“喝”里的部件。",
+          "explanation": "喝 có bộ 口, liên quan đến hoạt động của miệng.",
+          "reference_answer": "口",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "口",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "kǒu"
+            },
+            {
+              "id": "o2",
+              "text": "月",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "yuè"
+            },
+            {
+              "id": "o3",
+              "text": "土",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "tǔ"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "xuǎn zé “ hē ” lǐ de bù jiàn 。",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-writing-05",
+          "part": 1,
+          "type": "choice",
+          "prompt": "选择“休”里的部件。",
+          "explanation": "休 gồm 亻 và 木; ở đây chọn thành phần 木.",
+          "reference_answer": "木",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": null,
+          "options": [
+            {
+              "id": "o1",
+              "text": "木",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "mù"
+            },
+            {
+              "id": "o2",
+              "text": "火",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "huǒ"
+            },
+            {
+              "id": "o3",
+              "text": "水",
+              "image_hanzi": null,
+              "illustration_topic": null,
+              "pinyin": "shuǐ"
+            }
+          ],
+          "correct_option_id": "o1",
+          "prompt_pinyin": "xuǎn zé “ xiū ” lǐ de bù jiàn 。",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-writing-06",
+          "part": 2,
+          "type": "fill",
+          "prompt": "这本书是我（　）。",
+          "explanation": "的 dùng để chỉ sở hữu: quyển sách này là của tôi.",
+          "reference_answer": "的",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": "de",
+          "options": [],
+          "prompt_pinyin": "zhè běn shū shì wǒ （　）。",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-writing-07",
+          "part": 2,
+          "type": "fill",
+          "prompt": "我（　）以坐这里吗？",
+          "explanation": "可以 biểu thị sự cho phép.",
+          "reference_answer": "可",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": "kě",
+          "options": [],
+          "prompt_pinyin": "wǒ （　） yǐ zuò zhè lǐ ma ？",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-writing-08",
+          "part": 2,
+          "type": "fill",
+          "prompt": "今天的天气很（　）。",
+          "explanation": "天气很好: thời tiết rất tốt.",
+          "reference_answer": "好",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": "hǎo",
+          "options": [],
+          "prompt_pinyin": "jīn tiān de tiān qì hěn （　）。",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-writing-09",
+          "part": 2,
+          "type": "fill",
+          "prompt": "我们每天（　）习汉语。",
+          "explanation": "学习 là học tập; chữ còn thiếu là 学.",
+          "reference_answer": "学",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": "xué",
+          "options": [],
+          "prompt_pinyin": "wǒ men měi tiān （　） xí hàn yǔ 。",
+          "reading_text_pinyin": null
+        },
+        {
+          "id": "h2-writing-10",
+          "part": 2,
+          "type": "fill",
+          "prompt": "吃饭以前要（　）手。",
+          "explanation": "洗手 là rửa tay.",
+          "reference_answer": "洗",
+          "accepted_answers": [],
+          "audio_text": null,
+          "reading_text": null,
+          "image_hanzi": null,
+          "illustration_topic": null,
+          "phonetic_hint": "xǐ",
+          "options": [],
+          "prompt_pinyin": "chī fàn yǐ qián yào （　） shǒu 。",
+          "reading_text_pinyin": null
+        }
+      ]
+    }
+  ],
+  "total_questions": 60,
+  "max_score": 300,
+  "pass_score": 180.0
+}
