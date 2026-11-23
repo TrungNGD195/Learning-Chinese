@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import { queryKeys } from '../../app/query/keys'
@@ -28,10 +28,10 @@ function HskMetadataEditor({ hsk }: { hsk: HskLevel }) {
   const queryClient = useQueryClient()
   const [title, setTitle] = useState(hsk.title ?? '')
   const [description, setDescription] = useState(hsk.description ?? '')
-  const [dirty, setDirty] = useState(false)
+  const dirty = useRef(false)
   useEffect(() => {
-    if (!dirty) { setTitle(hsk.title ?? ''); setDescription(hsk.description ?? '') }
-  }, [hsk.title, hsk.description, dirty])
+    if (!dirty.current) { setTitle(hsk.title ?? ''); setDescription(hsk.description ?? '') }
+  }, [hsk.title, hsk.description])
   const mutation = useMutation({
     mutationFn: () => updateHskLevel(hsk.id, { title, description: description || null }),
     retry: false,
@@ -40,7 +40,7 @@ function HskMetadataEditor({ hsk }: { hsk: HskLevel }) {
         levels?.map((level) => level.id === saved.id ? saved : level))
       setTitle(saved.title ?? '')
       setDescription(saved.description ?? '')
-      setDirty(false)
+      dirty.current = false
       await invalidateHskMetadata(queryClient, hsk.id)
     },
   })
@@ -48,8 +48,8 @@ function HskMetadataEditor({ hsk }: { hsk: HskLevel }) {
   return <Surface as="section" className="admin-editor-section admin-editor-card admin-hsk-metadata" aria-labelledby="hsk-metadata-title">
     <div className="admin-page-header"><div><h2 id="hsk-metadata-title">Thông tin HSK {hsk.level_number}</h2><p>Số cấp độ và thứ tự trong danh mục được cố định.</p></div>{changed && <StatusBadge tone="warning">Thông tin chưa được lưu</StatusBadge>}</div>
     <form className="admin-form-grid" onSubmit={(event) => { event.preventDefault(); if (!mutation.isPending && changed) mutation.mutate() }}>
-      <label>Tiêu đề<input value={title} disabled={mutation.isPending} onChange={(event) => { setTitle(event.target.value); setDirty(true) }} /></label>
-      <label>Mô tả<textarea value={description} disabled={mutation.isPending} onChange={(event) => { setDescription(event.target.value); setDirty(true) }} /></label>
+      <label>Tiêu đề<input value={title} disabled={mutation.isPending} onChange={(event) => { dirty.current = true; setTitle(event.target.value) }} /></label>
+      <label>Mô tả<textarea value={description} disabled={mutation.isPending} onChange={(event) => { dirty.current = true; setDescription(event.target.value) }} /></label>
       {mutation.isError && <Alert role="alert" tone="error">{adminErrorText(mutation.error, "Không thể lưu thông tin cấp độ HSK.")}</Alert>}
       <div className="admin-form-actions"><Button type="submit" variant="primary" className="admin-primary-action" disabled={!changed || mutation.isPending}>{mutation.isPending ? "Đang lưu…" : "Lưu thông tin HSK"}</Button></div>
     </form>
