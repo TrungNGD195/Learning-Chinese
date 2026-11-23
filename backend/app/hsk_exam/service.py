@@ -13,6 +13,7 @@ from functools import lru_cache
 from pathlib import Path
 from uuid import UUID
 from app.core.errors import ApplicationError
+from app.auth.learning_access import bypasses_learning_prerequisites
 from app.hsk_exam import repository
 from app.hsk_exam.schemas import ExamInfo, ExamQuestion
 
@@ -43,7 +44,8 @@ async def availability(session,user_id,level):
     missing=set(range(1,REQUIRED_LESSONS[level]+1))-{row.lesson_number for row in rows}
     total=len(rows)+len(missing)
     completed=sum(row.completed_at is not None for row in rows)
-    return {'unlocked':completed==total and total>0,'completed_lessons':completed,'total_lessons':total}
+    return {'unlocked':await bypasses_learning_prerequisites(session,user_id) or (completed==total and total>0),
+            'completed_lessons':completed,'total_lessons':total}
 
 async def require_completion(session,user_id,level):
     access=await availability(session,user_id,level)

@@ -4,6 +4,7 @@ from uuid import UUID
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.errors import ApplicationError
+from app.auth.learning_access import bypasses_learning_prerequisites
 from app.database.models import Assessment
 from app.exercise.grading import DeterministicGrader, GradingUnavailable, UnavailableAIGrader
 from app.exercise import repository
@@ -21,6 +22,8 @@ async def _assessment_access(session: AsyncSession, user_id: UUID, assessment: A
         raise _error("NOT_FOUND", "Assessment was not found", 404)
     if assessment.type == "LESSON_EXERCISE":
         await progress.require_lesson_access(session, user_id, assessment.lesson_id)
+        if await bypasses_learning_prerequisites(session, user_id):
+            return
         lesson_progress = await progress_repository.get_lesson_progress(session, user_id, assessment.lesson_id)
         if lesson_progress is None or lesson_progress.theory_completed_at is None or not await progress_repository.readings_complete(session, user_id, assessment.lesson_id):
             raise _error("THEORY_INCOMPLETE", "View all required lesson theory before opening the exercise", 403)

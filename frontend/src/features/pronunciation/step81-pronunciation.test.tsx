@@ -16,6 +16,7 @@ vi.mock('../progress/api', () => ({ getHskProgress: vi.fn(), getProgressOverview
 vi.mock('../dashboard/api', () => ({ getDashboard: vi.fn() }))
 
 const initial: api.PronunciationLessonState = {
+  prerequisites_bypassed: false,
   sections: [
     { id: 'initials-id', code: 'INITIALS', completed_at: null, total_steps: 21 },
     { id: 'finals-id', code: 'FINALS', completed_at: null, total_steps: 36 },
@@ -47,6 +48,20 @@ beforeEach(() => {
 })
 
 describe('server-owned pronunciation lesson', () => {
+  it('lets a server-authorized test learner open every pronunciation section and move freely', async () => {
+    vi.mocked(api.getPronunciationLesson).mockResolvedValue({ ...initial, prerequisites_bypassed: true })
+    const { router } = setup('/pronunciation/lesson')
+    expect(await screen.findByRole('link', { name: 'Học biến điệu' })).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('link', { name: 'Học thanh điệu' }))
+    await waitFor(() => expect(router.state.location.pathname).toBe('/pronunciation/lesson/thanh-dieu'))
+    expect(await screen.findByRole('link', { name: 'Học vận mẫu' })).toBeInTheDocument()
+    expect(screen.queryByRole('heading', { name: 'Phần học này chưa mở' })).not.toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: 'Tiếp theo' }))
+    expect(await screen.findByText('Âm 2 / 5')).toBeInTheDocument()
+    expect(api.advancePronunciation).not.toHaveBeenCalled()
+    expect(api.completeSection).not.toHaveBeenCalled()
+  })
+
   it('shows illustrated HSK choices before loading lessons or pronunciation', async () => {
     vi.mocked(getHskLevels).mockResolvedValue([1,2,3].map(number => ({id:`hsk-${number}`,level_number:number,title:`HSK ${number}`,description:null,state:'LOCKED'})))
     const {container,router}=setup('/pronunciation')

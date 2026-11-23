@@ -34,7 +34,7 @@ export function LessonPage({ part = 'vocabulary' }: { part?: LessonPart }) {
   const grammarViewed = Object.fromEntries(progress?.grammar.map((row) => [row.id, row.viewed]) ?? [])
   const words = [...(lesson?.vocabulary ?? [])].sort((a, b) => a.order_index - b.order_index)
   const wordIndex = vocabularyId ? words.findIndex(word => word.id === vocabularyId) : 0
-  const theoryReady = Boolean(progress?.theory_completed_at) && (lesson?.readings ?? []).every(reading => (progress?.readings ?? []).some(row => row.id === reading.id && row.completed))
+  const theoryReady = progress?.prerequisites_bypassed === true || (Boolean(progress?.theory_completed_at) && (lesson?.readings ?? []).every(reading => (progress?.readings ?? []).some(row => row.id === reading.id && row.completed)))
   const root = useLessonStudyPosition(Boolean(lesson?.id && progress?.lesson_id), `${lessonId}:${part}:${vocabularyId ?? ''}`)
   const sectionCounts = {
     vocabulary: `${progress?.vocabulary.filter(row => row.viewed).length ?? 0}/${words.length}`,

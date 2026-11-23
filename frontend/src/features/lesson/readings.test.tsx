@@ -25,7 +25,7 @@ vi.mock('../admin/readingApi', () => ({ createLessonReading: vi.fn(), listLesson
 const time = '2026-11-05T10:00:00Z'
 const reading = { id: 'reading-1', order_index: 1, title: 'Chào hỏi', content: 'A：你好！\nB：你好！', pinyin: 'A: Nǐ hǎo!\nB: Nǐ hǎo!', vietnamese_translation: 'A: Xin chào!\nB: Xin chào!', source_reference: 'Giáo trình, bài 1, trang 1.', version: 1 }
 const lesson: components['schemas']['LessonResponse'] = { id: 'lesson-1', hsk_level_id: 'hsk-1', lesson_number: 1, title: 'Xin chào', description: null, vocabulary: [], grammar: [], readings: [reading], assessment_ids: ['practice'] }
-const progress: components['schemas']['LessonProgressResponse'] = { lesson_id: 'lesson-1', started_at: time, theory_completed_at: null, completed_at: null, vocabulary: [], grammar: [], readings: [{ id: reading.id, completed: false, completed_at: null }] }
+const progress: components['schemas']['LessonProgressResponse'] = { prerequisites_bypassed: false, lesson_id: 'lesson-1', started_at: time, theory_completed_at: null, completed_at: null, vocabulary: [], grammar: [], readings: [{ id: reading.id, completed: false, completed_at: null }] }
 
 function DirtyIndicator() { return <output data-testid="dirty">{String(useHasUnsavedDrafts())}</output> }
 function mount(element = <LessonPage/>) {

@@ -47,7 +47,7 @@ function lessonFixture(): Lesson {
 }
 
 function lessonProgressFixture(viewed = false): LessonProgress {
-  return { lesson_id: 'lesson-1', started_at: null, theory_completed_at: null, completed_at: null,
+  return { prerequisites_bypassed: false, lesson_id: 'lesson-1', started_at: null, theory_completed_at: null, completed_at: null,
     vocabulary: [{ id: 'vocabulary-link-1', viewed }], grammar: [{ id: 'grammar-link-1', viewed }] }
 }
 
@@ -112,7 +112,7 @@ function renderAt(path: string, queryClient = new QueryClient({ defaultOptions: 
 
 beforeEach(() => {
   vi.clearAllMocks()
-  vi.mocked(getPronunciationLesson).mockResolvedValue({ sections: [], current_section: null, step_index: 0, total_steps: 0, completed_at: theoryTimestamp, can_finish: false })
+  vi.mocked(getPronunciationLesson).mockResolvedValue({ prerequisites_bypassed: false, sections: [], current_section: null, step_index: 0, total_steps: 0, completed_at: theoryTimestamp, can_finish: false })
   vi.mocked(getLesson).mockResolvedValue(lessonFixture())
   vi.mocked(getLessonProgress).mockResolvedValue(lessonProgressFixture())
   vi.mocked(getHskLevels).mockResolvedValue([{ id: 'hsk-1', level_number: 1, title: 'HSK 1', description: null, state: 'AVAILABLE' }])
@@ -233,7 +233,7 @@ describe('Step 4.3 lesson and theory behavior', () => {
 
   it('refreshes authoritative progress after the final Vocabulary view and renders backend completion', async () => {
     const completedProgress: LessonProgress = {
-      lesson_id: 'lesson-1', started_at: theoryTimestamp, theory_completed_at: theoryTimestamp, completed_at: theoryTimestamp,
+      prerequisites_bypassed: false, lesson_id: 'lesson-1', started_at: theoryTimestamp, theory_completed_at: theoryTimestamp, completed_at: theoryTimestamp,
       vocabulary: [{ id: 'vocabulary-link-1', viewed: true }], grammar: [{ id: 'grammar-link-1', viewed: true }],
     }
     vi.mocked(getLessonProgress).mockResolvedValueOnce(lessonProgressFixture()).mockResolvedValue(completedProgress)
@@ -246,7 +246,7 @@ describe('Step 4.3 lesson and theory behavior', () => {
 
   it('does not derive completion from viewed rows or the partial viewed-mutation response', async () => {
     const viewedButIncomplete: LessonProgress = {
-      lesson_id: 'lesson-1', started_at: null, theory_completed_at: null, completed_at: null,
+      prerequisites_bypassed: false, lesson_id: 'lesson-1', started_at: null, theory_completed_at: null, completed_at: null,
       vocabulary: [{ id: 'vocabulary-link-1', viewed: true }], grammar: [{ id: 'grammar-link-1', viewed: true }],
     }
     vi.mocked(getLessonProgress).mockResolvedValueOnce(lessonProgressFixture()).mockResolvedValueOnce(viewedButIncomplete)
@@ -367,6 +367,16 @@ describe('Step 4.3 Assessment lifecycle and answer submission', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Thử lại' }))
     expect(await screen.findByLabelText('Option One')).toBeInTheDocument()
     expect(startAttempt).toHaveBeenCalledTimes(2)
+  })
+
+  it('opens practice before theory only with the server test-learner capability', async () => {
+    vi.mocked(getLesson).mockResolvedValue({ ...lessonFixture(), assessment_ids: ['assessment-1'] })
+    vi.mocked(getLessonProgress).mockResolvedValue({ ...lessonProgressFixture(), prerequisites_bypassed: true })
+    vi.mocked(getAssessment).mockResolvedValue(assessmentFixture(questionFixture().slice(0, 1)))
+    renderAt('/lessons/lesson-1/practice')
+    expect(await screen.findByLabelText('Option One')).toBeInTheDocument()
+    expect(startAttempt).toHaveBeenCalledTimes(1)
+    expect(screen.queryByText(/Xem hết từ vựng, ngữ pháp/)).not.toBeInTheDocument()
   })
 
   it('keeps questions, results, explanations and repeat attempts inside the lesson', async () => {

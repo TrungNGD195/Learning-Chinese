@@ -59,6 +59,7 @@ class PronunciationLessonSection(BaseModel):
 
 
 class PronunciationLessonResponse(BaseModel):
+    prerequisites_bypassed: bool = False
     sections: list[PronunciationLessonSection]
     current_section: Literal["INITIALS", "FINALS", "TONES", "SANDHI"] | None
     step_index: int
@@ -185,6 +186,7 @@ class LessonResponse(BaseModel):
 
 
 class LessonProgressResponse(BaseModel):
+    prerequisites_bypassed: bool = False
     lesson_id: UUID
     started_at: datetime | None
     theory_completed_at: datetime | None

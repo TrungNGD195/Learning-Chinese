@@ -4,6 +4,7 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Annotated, Literal
 from urllib.parse import urlsplit
+from uuid import UUID
 
 from pydantic import Field, SecretStr, field_validator, model_validator
 from pydantic_settings import BaseSettings, NoDecode, SettingsConfigDict
@@ -46,6 +47,7 @@ class Settings(BaseSettings):
     document_max_upload_mb: int = Field(default=20, gt=0)
     document_storage_root: Path = Path("storage/documents")
     knowledge_ai_enabled: bool = True
+    learning_test_user_ids: Annotated[tuple[UUID, ...], NoDecode] = ()
     embedding_provider: Literal["local", "modal"] = "local"
     embedding_model_name: Literal["BAAI/bge-m3"] = "BAAI/bge-m3"
     embedding_model_revision: Literal["5617a9f61b028005a4858fdac845db406aefb181"] = "5617a9f61b028005a4858fdac845db406aefb181"
@@ -86,6 +88,13 @@ class Settings(BaseSettings):
     llm_model_input_limit: int = 400_000
     ai_generation_max_questions: int = Field(default=10, ge=1, le=10)
     ai_generation_max_output_tokens: int = Field(default=4000, ge=1, le=4000)
+
+    @field_validator("learning_test_user_ids", mode="before")
+    @classmethod
+    def parse_learning_test_user_ids(cls, value: object):
+        if isinstance(value, str):
+            return tuple(UUID(item.strip()) for item in value.split(",") if item.strip())
+        return value
 
     @field_validator("rag_memory_max_turns", mode="before")
     @classmethod

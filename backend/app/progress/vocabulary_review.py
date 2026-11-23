@@ -10,6 +10,7 @@ from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.auth.current_user import require_learner
+from app.auth.learning_access import bypasses_learning_prerequisites
 from app.database.models import HSKLevel, LearnerLessonProgress, Lesson, LessonVocabulary, User, Vocabulary
 from app.database.session import get_db_session
 
@@ -49,11 +50,12 @@ async def review_lessons(session, user_id):
     statement = (select(Lesson.id.label('lesson_id'), HSKLevel.level_number.label('hsk_level'),
                         Lesson.lesson_number, Lesson.title)
         .join(HSKLevel, HSKLevel.id == Lesson.hsk_level_id)
-        .join(LearnerLessonProgress, LearnerLessonProgress.lesson_id == Lesson.id)
         .join(LessonVocabulary, LessonVocabulary.lesson_id == Lesson.id)
-        .where(LearnerLessonProgress.user_id == user_id,
-               LearnerLessonProgress.completed_at.is_not(None), Lesson.status == 'PUBLISHED')
+        .where(Lesson.status == 'PUBLISHED')
         .distinct().order_by(HSKLevel.level_number, Lesson.lesson_number, Lesson.id))
+    if not await bypasses_learning_prerequisites(session, user_id):
+        statement = statement.join(LearnerLessonProgress, LearnerLessonProgress.lesson_id == Lesson.id).where(
+            LearnerLessonProgress.user_id == user_id, LearnerLessonProgress.completed_at.is_not(None))
     return (await session.execute(statement)).mappings().all()
 
 
@@ -62,10 +64,11 @@ async def review_deck(session, user_id, *, hsk_level=None, lesson_id=None, page=
         .join(LessonVocabulary, LessonVocabulary.vocabulary_id == Vocabulary.id)
         .join(Lesson, Lesson.id == LessonVocabulary.lesson_id)
         .join(HSKLevel, HSKLevel.id == Lesson.hsk_level_id)
-        .join(LearnerLessonProgress, LearnerLessonProgress.lesson_id == Lesson.id)
-        .where(LearnerLessonProgress.user_id == user_id,
-               LearnerLessonProgress.completed_at.is_not(None), Lesson.status == 'PUBLISHED')
+        .where(Lesson.status == 'PUBLISHED')
         .order_by(HSKLevel.level_number, Lesson.lesson_number, LessonVocabulary.order_index))
+    if not await bypasses_learning_prerequisites(session, user_id):
+        statement = statement.join(LearnerLessonProgress, LearnerLessonProgress.lesson_id == Lesson.id).where(
+            LearnerLessonProgress.user_id == user_id, LearnerLessonProgress.completed_at.is_not(None))
     if hsk_level is not None:
         statement = statement.where(HSKLevel.level_number == hsk_level)
     if lesson_id is not None:

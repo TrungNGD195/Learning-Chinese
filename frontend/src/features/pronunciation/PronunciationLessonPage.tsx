@@ -43,12 +43,12 @@ export function PronunciationLessonPage() {
         const meta = pronunciationSections[section.code]
         const completed = Boolean(section.completed_at)
         const current = state.current_section === section.code
-        const available = completed || current
+        const available = completed || current || state.prerequisites_bypassed === true
         const content = <>
-          <div className="pronunciation-section-block__heading"><h2>{index + 1}. {meta.title}</h2><StatusBadge tone={completed ? 'success' : current ? 'info' : 'neutral'}>{completed ? 'Đã xong' : current ? 'Đang học' : 'Đã khóa'}</StatusBadge></div>
+          <div className="pronunciation-section-block__heading"><h2>{index + 1}. {meta.title}</h2><StatusBadge tone={completed ? 'success' : current ? 'info' : 'neutral'}>{completed ? 'Đã xong' : current ? 'Đang học' : available ? 'Có thể học' : 'Đã khóa'}</StatusBadge></div>
           <span className="pronunciation-section-block__preview" aria-hidden="true">{meta.preview}</span>
           <p>{meta.description}</p>
-          <span className="pronunciation-section-block__action">{completed ? 'Ôn tập' : current ? 'Vào học' : 'Hoàn thành phần trước để mở'}{available && <AcademyIcon name="arrow" size={20}/>}</span>
+          <span className="pronunciation-section-block__action">{completed ? 'Ôn tập' : available ? 'Vào học' : 'Hoàn thành phần trước để mở'}{available && <AcademyIcon name="arrow" size={20}/>}</span>
         </>
         return <li key={section.code}>{available ? <Link className="pronunciation-section-block" data-state={completed ? 'completed' : 'current'} to={pronunciationSectionPath(section.code)} aria-label={`${completed ? 'Ôn' : 'Học'} ${sectionNames[section.code]}`}>{content}</Link> : <div className="pronunciation-section-block" data-state="locked" aria-disabled="true">{content}</div>}</li>
       })}</ol>
@@ -92,8 +92,9 @@ function PronunciationSectionSession({ code }: { code: PronunciationCode }) {
   const state = lesson.data
   const section = state?.sections.find(row => row.code === code)
   const reviewing = Boolean(section?.completed_at)
-  const available = reviewing || state?.current_section === code
-  const step = reviewing ? viewedStep ?? 0 : viewedStep ?? state?.step_index ?? 0
+  const bypass = state?.prerequisites_bypassed === true
+  const available = reviewing || state?.current_section === code || bypass
+  const step = reviewing || state?.current_section !== code ? viewedStep ?? 0 : viewedStep ?? state?.step_index ?? 0
   const pending = advance.isPending || complete.isPending
   const root = useLessonStudyPosition(Boolean(state), `pronunciation:${code}:${step}`)
   return <section ref={root} className="learner-page pronunciation-page pronunciation-session lesson-study-workspace pronunciation-study-workspace screen" aria-labelledby="page-title">
@@ -107,12 +108,13 @@ function PronunciationSectionSession({ code }: { code: PronunciationCode }) {
       <div id="lesson-study-content" className="lesson-manuscript__chapters">
       {(advance.isError || complete.isError) && <Alert role="alert" tone="error">Không thể lưu bước học. Tiến độ mới nhất đang được tải lại; vui lòng thử lại.</Alert>}
       {available && section ? <>
-        <PronunciationStep code={code} step={step} savedStep={reviewing ? undefined : state.step_index} total={reviewing ? section.total_steps : state.total_steps}
+        <PronunciationStep code={code} step={step} savedStep={reviewing || bypass ? undefined : state.step_index} total={reviewing || bypass ? section.total_steps : state.total_steps}
           completionLabel={reviewing ? 'Về các phần phát âm' : undefined}
           sectionId={section.id} pending={pending} voiceAvailable={voiceAvailable} speak={speak}
           onBack={(_, value) => setViewedStep(Math.max(0, value - 1))}
           onNext={(_, value) => {
-            if (!reviewing && value > state.step_index) setViewedStep(null)
+            if (bypass) setViewedStep(value + 1)
+            else if (!reviewing && value > state.step_index) setViewedStep(null)
             else if (reviewing || value < state.step_index) setViewedStep(value + 1)
             else { setViewedStep(null); advance.mutate({ code, step: value }) }
           }}

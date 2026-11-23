@@ -30,7 +30,7 @@ beforeEach(()=>{
  Object.defineProperty(HTMLElement.prototype,'scrollTo',{configurable:true,value:vi.fn()})
  vi.mocked(getHskLevels).mockResolvedValue([1,2,3].map(n=>({id:`hsk-${n}`,level_number:n,title:`HSK ${n}`,description:null,state:'AVAILABLE'})))
  vi.mocked(getCurriculum).mockImplementation(async id=>({hsk:{id,level_number:Number(id.slice(-1)),title:'HSK'},units}))
- vi.mocked(getPronunciationLesson).mockResolvedValue({sections:[],current_section:null,step_index:0,total_steps:0,completed_at:'2026-11-10T00:00:00Z',can_finish:false})
+ vi.mocked(getPronunciationLesson).mockResolvedValue({prerequisites_bypassed:false,sections:[],current_section:null,step_index:0,total_steps:0,completed_at:'2026-11-10T00:00:00Z',can_finish:false})
  vi.mocked(getProgressOverview).mockResolvedValue({current_hsk:1,progress_percentage:0,pronunciation_complete:true,hsk_levels:[]})
 })
 afterEach(()=>{vi.unstubAllGlobals();Reflect.deleteProperty(HTMLElement.prototype,'scrollTo')})
@@ -48,7 +48,7 @@ describe('approved academy curriculum with real learning access',()=>{
   expect(screen.getByRole('status')).toHaveTextContent('Bài 2 đang được chuẩn bị')
  })
  it('requires pronunciation for HSK1 but allows HSK2 independently',async()=>{
-  vi.mocked(getPronunciationLesson).mockResolvedValue({sections:[],current_section:null,step_index:0,total_steps:0,completed_at:null,can_finish:false})
+  vi.mocked(getPronunciationLesson).mockResolvedValue({prerequisites_bypassed:false,sections:[],current_section:null,step_index:0,total_steps:0,completed_at:null,can_finish:false})
   const first=mount()
   await screen.findByRole('link',{name:/phát âm nền tảng/i})
   expect(first.container.querySelector('a[href="/lessons/real-lesson"]')).toBeNull()

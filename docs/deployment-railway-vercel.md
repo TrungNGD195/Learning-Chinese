@@ -94,6 +94,30 @@ visibility, HSK2/3 access and logout. Its temporary account was removed.
 
 ## Subsequent releases
 
+### Account-scoped learning tests
+
+`LEARNING_TEST_USER_IDS` is an optional comma-separated list of immutable learner
+UUIDs configured on the backend only. It defaults to empty. The owner-designated
+student456 account is configured separately in local and Railway environments;
+account identities and credentials are not stored in this document.
+
+Only an existing active LEARNER whose ID is listed can bypass pronunciation
+ordering, the HSK1 pronunciation gate, ordered lesson/periodic-test access,
+theory-before-practice, completed-lessons-before-HSK-exam and completed-lessons
+before vocabulary review. Lesson progress and pronunciation state expose a
+read-only `prerequisites_bypassed` capability for consistent frontend controls.
+Do not infer this capability from names, email prefixes, local storage or URL
+parameters. Renaming another account never grants access.
+
+This grants no admin permissions, draft/archived content access, access to other
+learners' attempts, answer-key access before exam submission, or changes to
+grading thresholds and server exam timers. Real progress, grades and completion
+timestamps remain real; unlocking does not mark content as completed. Explicit
+pronunciation section completion remains available without prior sections.
+Remove the UUID and restart the backend to restore prerequisites without
+deleting the account or its history. No database migration is needed. Deploy
+the backend and configure the capability before deploying the frontend.
+
 From the repository root after validation:
 
 ```powershell

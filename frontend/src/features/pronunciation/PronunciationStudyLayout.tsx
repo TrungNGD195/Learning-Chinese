@@ -21,9 +21,9 @@ export function PronunciationStudyHeader({ state, code }: { state?: Pronunciatio
 export function PronunciationSectionNav({ state, active }: { state: PronunciationLessonState; active: PronunciationCode }) {
   return <nav className="lesson-sequence-nav pronunciation-sections-nav" aria-label="Các phần phát âm">
     {state.sections.map((section, index) => {
-      const available = Boolean(section.completed_at) || state.current_section === section.code
+      const available = Boolean(section.completed_at) || state.current_section === section.code || state.prerequisites_bypassed === true
       const label = `${section.completed_at ? 'Ôn' : 'Học'} ${pronunciationSections[section.code].title.toLocaleLowerCase('vi')}`
-      const content = <><span aria-hidden="true">{index + 1}</span><span>{pronunciationSections[section.code].title}<small>{section.completed_at ? 'Đã xong' : state.current_section === section.code ? 'Đang học' : 'Chưa mở'}</small></span></>
+      const content = <><span aria-hidden="true">{index + 1}</span><span>{pronunciationSections[section.code].title}<small>{section.completed_at ? 'Đã xong' : state.current_section === section.code ? 'Đang học' : available ? 'Có thể học' : 'Chưa mở'}</small></span></>
       return available ? <Link key={section.code} to={pronunciationSectionPath(section.code)} aria-label={label} aria-current={active === section.code ? 'page' : undefined}>{content}</Link>
         : <span className="pronunciation-section-locked" key={section.code} aria-disabled="true">{content}</span>
     })}

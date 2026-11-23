@@ -2887,6 +2887,11 @@ export interface components {
         /** LessonProgressResponse */
         LessonProgressResponse: {
             /**
+             * Prerequisites Bypassed
+             * @default false
+             */
+            prerequisites_bypassed: boolean;
+            /**
              * Lesson Id
              * Format: uuid
              */
@@ -3296,6 +3301,11 @@ export interface components {
         };
         /** PronunciationLessonResponse */
         PronunciationLessonResponse: {
+            /**
+             * Prerequisites Bypassed
+             * @default false
+             */
+            prerequisites_bypassed: boolean;
             /** Sections */
             sections: components["schemas"]["PronunciationLessonSection"][];
             /** Current Section */

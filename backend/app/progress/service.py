@@ -4,6 +4,7 @@ from uuid import UUID
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.errors import ApplicationError
+from app.auth.learning_access import bypasses_learning_prerequisites
 from app.database.models import Assessment
 from app.readings import repository as reading_repository
 from app.curriculum import repository as curriculum_repository
@@ -42,7 +43,8 @@ def _pronunciation_lesson_payload(by_code, lesson):
 
 async def pronunciation_lesson(session: AsyncSession, user_id: UUID) -> dict:
     rows = await curriculum_repository.pronunciation_rows(session, user_id)
-    return _pronunciation_lesson_payload(_pronunciation_rows_by_code(rows), await repository.get_pronunciation_lesson(session, user_id))
+    return {**_pronunciation_lesson_payload(_pronunciation_rows_by_code(rows), await repository.get_pronunciation_lesson(session, user_id)),
+            "prerequisites_bypassed": await bypasses_learning_prerequisites(session, user_id)}
 
 
 def _active_target(unit_type: str, lesson, assessment) -> bool:
@@ -52,6 +54,7 @@ def _active_target(unit_type: str, lesson, assessment) -> bool:
 
 
 async def progression_snapshot(session: AsyncSession, user_id: UUID):
+    bypass = await bypasses_learning_prerequisites(session, user_id)
     levels, raw_units = await curriculum_repository.catalog_snapshot(session)
     lesson_done = await repository.learner_completion_snapshot(session,user_id)
     passed_assessments = await exercise_repository.passed_periodic_assessment_ids(session,user_id)
@@ -91,7 +94,7 @@ async def progression_snapshot(session: AsyncSession, user_id: UUID):
                 entry["state"] = "COMPLETED"
             elif not entry["active"]:
                 entry["state"] = "LOCKED"
-            elif hsk_gate and prior_complete:
+            elif bypass or (hsk_gate and prior_complete):
                 entry["state"] = "AVAILABLE"
             else:
                 entry["state"] = "LOCKED"
@@ -169,6 +172,7 @@ async def pronunciation_list(session: AsyncSession, user_id: UUID) -> list[dict]
 
 
 async def complete_pronunciation(session: AsyncSession, user_id: UUID, section_id: UUID) -> dict:
+    bypass = await bypasses_learning_prerequisites(session, user_id)
     async with session.begin_nested():
         by_code = _pronunciation_rows_by_code(await curriculum_repository.pronunciation_rows(session, user_id))
         section = next((section for section, _ in by_code.values() if section.id == section_id), None)
@@ -179,10 +183,11 @@ async def complete_pronunciation(session: AsyncSession, user_id: UUID, section_i
         if existing is not None and existing.completed_at is not None:
             return {"section_id": section_id, "completed_at": existing.completed_at}
         index = lesson.section_index
-        if index >= len(PRONUNCIATION_STEPS) or PRONUNCIATION_STEPS[index][0] != section.code or lesson.step_index != PRONUNCIATION_STEPS[index][1]:
+        if not bypass and (index >= len(PRONUNCIATION_STEPS) or PRONUNCIATION_STEPS[index][0] != section.code or lesson.step_index != PRONUNCIATION_STEPS[index][1]):
             raise ApplicationError("PRONUNCIATION_INCOMPLETE", "Complete each sound in order first", status_code=409)
         completed_at = await repository.complete_pronunciation(session, user_id, section_id)
-        lesson.section_index = index + 1
+        lesson.section_index = (_first_unfinished_section(_pronunciation_rows_by_code(
+            await curriculum_repository.pronunciation_rows(session, user_id))) if bypass else index + 1)
         lesson.step_index = 0
         while lesson.section_index < len(PRONUNCIATION_STEPS):
             next_progress = by_code[PRONUNCIATION_STEPS[lesson.section_index][0]][1]
@@ -194,9 +199,16 @@ async def complete_pronunciation(session: AsyncSession, user_id: UUID, section_i
 
 
 async def advance_pronunciation(session: AsyncSession, user_id: UUID, section_code: str, step_index: int) -> dict:
+    bypass = await bypasses_learning_prerequisites(session, user_id)
     async with session.begin_nested():
         by_code = _pronunciation_rows_by_code(await curriculum_repository.pronunciation_rows(session, user_id))
         lesson = await repository.lock_pronunciation_lesson(session, user_id, _first_unfinished_section(by_code))
+        if bypass:
+            index = next((i for i, (code, _) in enumerate(PRONUNCIATION_STEPS) if code == section_code), len(PRONUNCIATION_STEPS))
+            if index >= len(PRONUNCIATION_STEPS) or not 0 <= step_index < PRONUNCIATION_STEPS[index][1]:
+                raise ApplicationError("PRONUNCIATION_STEP_CONFLICT", "Invalid pronunciation step", status_code=409)
+            lesson.section_index = index
+            lesson.step_index = step_index
         index = lesson.section_index
         if index >= len(PRONUNCIATION_STEPS) or PRONUNCIATION_STEPS[index][0] != section_code:
             raise ApplicationError("PRONUNCIATION_OUT_OF_ORDER", "Continue with the current section", status_code=409)
@@ -204,12 +216,13 @@ async def advance_pronunciation(session: AsyncSession, user_id: UUID, section_co
             raise ApplicationError("PRONUNCIATION_STEP_CONFLICT", "Refresh your current lesson step", status_code=409)
         lesson.step_index += 1
         await session.flush()
-        result = _pronunciation_lesson_payload(by_code, lesson)
+        result = {**_pronunciation_lesson_payload(by_code, lesson), "prerequisites_bypassed": bypass}
     await session.commit()
     return result
 
 
 async def finish_pronunciation(session: AsyncSession, user_id: UUID) -> dict:
+    bypass = await bypasses_learning_prerequisites(session, user_id)
     async with session.begin_nested():
         by_code = _pronunciation_rows_by_code(await curriculum_repository.pronunciation_rows(session, user_id))
         lesson = await repository.lock_pronunciation_lesson(session, user_id, _first_unfinished_section(by_code))
@@ -222,7 +235,7 @@ async def finish_pronunciation(session: AsyncSession, user_id: UUID) -> dict:
             if first_level:
                 await repository.ensure_hsk_started(session, user_id, first_level.id)
         await session.flush()
-        result = _pronunciation_lesson_payload(by_code, lesson)
+        result = {**_pronunciation_lesson_payload(by_code, lesson), "prerequisites_bypassed": bypass}
     await session.commit()
     return result
 
@@ -290,7 +303,8 @@ async def lesson_progress(session: AsyncSession, user_id: UUID, lesson_id: UUID)
     viewed_grammar = await repository.viewed_grammar_ids(session,user_id,grammar_ids)
     readings = await repository.reading_progress(session, user_id, lesson_id)
     theory_completed_at = progress.theory_completed_at if progress and all(row['completed'] for row in readings) else None
-    return {"lesson_id": lesson_id, "started_at": progress.started_at if progress else None,
+    return {"prerequisites_bypassed": await bypasses_learning_prerequisites(session, user_id),
+            "lesson_id": lesson_id, "started_at": progress.started_at if progress else None,
             "theory_completed_at": theory_completed_at,
             "completed_at": progress.completed_at if progress else None,
             "vocabulary": [{"id": item, "viewed": item in viewed_vocabulary} for item in vocabulary_ids],
