@@ -13,10 +13,12 @@ const hskIllustrations:Record<string,[number,string]>={'口':[0,'miệng'],'马'
 const numerals:Record<string,number>={'零':0,'一':1,'二':2,'两':2,'三':3,'四':4,'五':5,'六':6,'七':7,'八':8,'九':9,'十':10,'百':100,'千':1000,'万':10000}
 const extraIllustrations:Record<string,[number,string]>={'你':[0,'người đang được nói chuyện cùng'],'好':[1,'tốt, được'],'不':[2,'không, từ chối']}
 const pandaWords = new Set(['人', '朋友', '口', '女', '你好', '你', '好', '不'])
-export function VocabularyIllustration({hanzi,partOfSpeech}:{hanzi:string;partOfSpeech?:string|null}){
+export function VocabularyIllustration({hanzi,partOfSpeech,inline=false}:{hanzi:string;partOfSpeech?:string|null;inline?:boolean}){
   const key=hanzi.trim()
-  if(key in numerals)return <figure className="academy-numeral-illustration" aria-label={'Minh họa số '+numerals[key]}>{numerals[key] > 10 || numerals[key] === 0 ? <strong>{numerals[key].toLocaleString('vi-VN')}</strong> : Array.from({length:numerals[key]},(_,index)=><i key={index} aria-hidden="true"/>)}<figcaption>{key} · {numerals[key].toLocaleString('vi-VN')}</figcaption></figure>
-  if (countryIllustrations[key]) return <CountryVocabularyIllustration hanzi={key}/>
+  const Frame = inline ? 'span' : 'figure'
+  const Caption = inline ? 'span' : 'figcaption'
+  if(key in numerals)return <Frame className="academy-numeral-illustration" aria-label={'Minh họa số '+numerals[key]}>{numerals[key] > 10 || numerals[key] === 0 ? <strong>{numerals[key].toLocaleString('vi-VN')}</strong> : Array.from({length:numerals[key]},(_,index)=><i key={index} aria-hidden="true"/>)}<Caption>{key} · {numerals[key].toLocaleString('vi-VN')}</Caption></Frame>
+  if (countryIllustrations[key]) return <CountryVocabularyIllustration hanzi={key} inline={inline}/>
   const family = familyIllustrations[key]
   if (family) return <span className="academy-word-illustration" data-illustration="chibi-family" role="img" aria-label={family[1]} style={{backgroundImage:"url('/academy/chibi-family-v1.png')", backgroundSize:'400% 400%', backgroundPosition:`${family[0]%4*100/3}% ${Math.floor(family[0]/4)*100/3}%`}}/>
   const food = foodIllustrations[key]

@@ -26,6 +26,7 @@ EXPECTED_TABLES = {
     "message_retrievals", "refresh_tokens", "password_reset_tokens", "parsing_runs", "transformation_runs",
     "lesson_readings", "learner_reading_progress",
     "practice_responses", "hsk_exam_attempts",
+    "vocabulary_review_preferences", "vocabulary_review_states",
 }
 
 
@@ -117,7 +118,7 @@ def test_auth_token_schema_matches_d013_and_migration_head() -> None:
             ))
         raw_columns, indexes, foreign_keys, revision = details
         columns = {table: {item["name"]: item for item in values} for table, values in raw_columns.items()}
-        assert revision == "0018_learning_assessment_sessions"
+        assert revision == "0019_vocabulary_review_progress"
         assert set(columns["refresh_tokens"]) == {"id", "user_id", "token_hash", "expires_at", "revoked_at", "created_at"}
         assert set(columns["password_reset_tokens"]) == {"id", "user_id", "token_hash", "expires_at", "used_at", "created_at"}
         assert {item["name"] for item in indexes["refresh_tokens"]} == {"ix_refresh_tokens_user_id", "ix_refresh_tokens_expires_at", "uq_refresh_tokens_token_hash"}
@@ -193,7 +194,7 @@ def test_step53_parsing_run_schema_has_frozen_constraints_and_indexes() -> None:
                 sync.execute(text("select version_num from alembic_version")).scalar_one(),
             ))
         columns, checks, foreign_keys, indexes, revision = details
-        assert revision == "0018_learning_assessment_sessions"
+        assert revision == "0019_vocabulary_review_progress"
         assert {column["name"] for column in columns} == {
             "id", "source_type", "document_id", "lesson_id", "raw_storage_reference", "raw_content_hash",
             "parser_name", "parser_version", "cleaning_strategy", "cleaning_version", "status",
@@ -291,7 +292,7 @@ def test_step54_transformation_run_schema_has_frozen_constraints_and_indexes() -
                 inspect(sync).get_indexes("transformation_runs"),
                 sync.execute(text("select version_num from alembic_version")).scalar_one(),
             ))
-        assert revision == "0018_learning_assessment_sessions"
+        assert revision == "0019_vocabulary_review_progress"
         assert {column["name"] for column in columns} == {
             "id", "source_type", "document_id", "lesson_id", "parsing_run_id", "parsed_storage_reference",
             "transformation_strategy", "transformation_version", "status", "transformed_storage_reference",
@@ -407,7 +408,7 @@ def test_step56_schema_has_pinned_review_fk_and_source_processing_uniqueness() -
         processing = next(item for item in indexes if item["name"] == "uq_knowledge_versions_one_processing_per_source")
         assert processing["unique"] is True
         assert "PROCESSING" in processing["dialect_options"]["postgresql_where"]
-        assert revision == "0018_learning_assessment_sessions"
+        assert revision == "0019_vocabulary_review_progress"
 
     asyncio.run(inspect_step56_schema())
 
@@ -433,7 +434,7 @@ def test_step57_schema_has_nullable_exact_lineage_foreign_keys() -> None:
         assert approved_fk["options"].get("ondelete") == "SET NULL"
         assert version_fk["referred_table"] == "transformation_runs"
         assert version_fk["options"].get("ondelete") == "RESTRICT"
-        assert revision == "0018_learning_assessment_sessions"
+        assert revision == "0019_vocabulary_review_progress"
     asyncio.run(inspect_step57_schema())
 
 

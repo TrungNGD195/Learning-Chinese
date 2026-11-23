@@ -2,10 +2,12 @@ import { countryIllustrations } from './lessonVocabularyArt'
 
 const star = '0,-1 .2245,-.309 .9511,-.309 .3633,.118 .5878,.809 0,.382 -.5878,.809 -.3633,.118 -.9511,-.309 -.2245,-.309'
 
-export function CountryVocabularyIllustration({ hanzi }: { hanzi: string }) {
+export function CountryVocabularyIllustration({ hanzi, inline = false }: { hanzi: string; inline?: boolean }) {
   const country = countryIllustrations[hanzi]
   if (!country) return null
-  return <figure className="academy-word-illustration academy-country-illustration" aria-label={'Quốc kỳ ' + country.label}>
+  const Frame = inline ? 'span' : 'figure'
+  const Caption = inline ? 'span' : 'figcaption'
+  return <Frame className="academy-word-illustration academy-country-illustration" aria-label={'Quốc kỳ ' + country.label}>
     <svg viewBox="0 0 30 20" role="img" aria-label={country.label}>
       {country.colors.length === 1 ? <><rect width="30" height="20" fill={country.colors[0]} />
         {hanzi === '越南' ? <polygon points={star} transform="translate(15 10) scale(6)" fill="#ffdf00" /> : <g fill="#ffde00">
@@ -15,6 +17,6 @@ export function CountryVocabularyIllustration({ hanzi }: { hanzi: string }) {
       </> : country.colors.map((color, index) => hanzi === '法国'
         ? <rect key={index} x={index * 10} width="10" height="20" fill={color} />
         : <rect key={index} y={index * 20 / 6} width="30" height={20 / 6 + .01} fill={color} />)}
-    </svg><figcaption>{country.label}</figcaption>
-  </figure>
+    </svg><Caption>{country.label}</Caption>
+  </Frame>
 }

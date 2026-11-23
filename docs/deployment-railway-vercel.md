@@ -94,6 +94,45 @@ visibility, HSK2/3 access and logout. Its temporary account was removed.
 
 ## Subsequent releases
 
+### Flashcard release — 2026-11-23
+
+Vocabulary review supports two-sided cards with the same lesson
+illustrations, account-scoped tracking preferences, KNOWN/LEARNING self-ratings,
+undo and whole-deck shuffle. Migration `0019_vocabulary_review_progress` adds only
+`vocabulary_review_preferences` and `vocabulary_review_states`; it does not rewrite
+lesson completion, grades or accounts. The new `/me/vocabulary-review/progress`,
+`/preferences` and `/cards/{card_id}` endpoints require a learner. Each write
+rechecks eligible published/completed content (or the configured test learner).
+
+Ratings use the existing canonical spelling/pronunciation/meaning card ID. Undo
+restores the prior status with a monotonically increasing version; a stale write
+returns 409 rather than overwriting another tab. Unseen status retains its
+revision. Disabling tracking preserves existing ratings and blocks new rating
+writes. Preferences and ratings survive reload; the undo stack and shuffle mode
+belong to the current study session. Filter or shuffle changes clear undo history,
+while paging preserves it. One shuffle seed orders the entire filtered deck, so
+page changes cannot duplicate or omit cards. Counts cover that entire selection.
+
+Review opens on a selection screen; cards and their progress controls mount only
+after the learner confirms the HSK/lesson selection. In-session filters are
+replaced by "Đổi bài ôn". Up/down flips the card; left/right records
+LEARNING/KNOWN and advances after the write succeeds. The 150ms diagonal toss starts
+immediately alongside the write: KNOWN goes up/right; LEARNING goes down/left.
+A failed save returns the same card to its original position. Successful write
+receipts update the local counts directly; other progress views are marked stale
+without an extra GET in the card transition. An exit/entry card animation
+and the write share a lock, so holding or rapidly repeating keys cannot rate the
+next card accidentally. With tracking disabled, left/right browses without writes.
+Touch gestures and labeled buttons provide alternatives. Data pages join
+automatically, with the next page prefetched near the boundary. The final card
+opens a round-end view that supports undo or restarting; restarting preserves
+saved ratings. Reduced-motion mode uses short fades instead of spatial movement.
+
+Release order: deploy the backend/migration before the frontend; keep the existing
+production database and storage volumes. Verify a database backup and unchanged
+account/content/history fingerprints around migration. No AI provider or paid
+service is added.
+
 ### Account-scoped learning tests
 
 `LEARNING_TEST_USER_IDS` is an optional comma-separated list of immutable learner

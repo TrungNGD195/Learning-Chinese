@@ -479,6 +479,57 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/v1/me/vocabulary-review/progress": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Vocabulary Review Progress */
+        get: operations["vocabulary_review_progress_api_v1_me_vocabulary_review_progress_get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/me/vocabulary-review/preferences": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        /** Vocabulary Review Preference */
+        put: operations["vocabulary_review_preference_api_v1_me_vocabulary_review_preferences_put"];
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/me/vocabulary-review/cards/{card_id}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        /** Vocabulary Review State */
+        put: operations["vocabulary_review_state_api_v1_me_vocabulary_review_cards__card_id__put"];
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/v1/hsk-levels": {
         parameters: {
             query?: never;
@@ -3660,6 +3711,42 @@ export interface components {
             /** Note */
             note: string | null;
         };
+        /** ReviewPreferenceInput */
+        ReviewPreferenceInput: {
+            /** Tracking Enabled */
+            tracking_enabled: boolean;
+        };
+        /** ReviewProgress */
+        ReviewProgress: {
+            /** Tracking Enabled */
+            tracking_enabled: boolean;
+            /** Total */
+            total: number;
+            /** Known */
+            known: number;
+            /** Learning */
+            learning: number;
+            /** Unseen */
+            unseen: number;
+            /** Cards */
+            cards: components["schemas"]["ReviewState"][];
+        };
+        /** ReviewState */
+        ReviewState: {
+            /** Card Id */
+            card_id: string;
+            /** Status */
+            status: ("LEARNING" | "KNOWN") | null;
+            /** Version */
+            version: number;
+        };
+        /** ReviewStateInput */
+        ReviewStateInput: {
+            /** Status */
+            status: ("LEARNING" | "KNOWN") | null;
+            /** Expected Version */
+            expected_version: number;
+        };
         /** SaveAnswer */
         SaveAnswer: {
             /** Section Index */
@@ -5017,6 +5104,7 @@ export interface operations {
                 lesson_id?: string | null;
                 page?: number;
                 page_size?: number;
+                shuffle_seed?: string | null;
             };
             header?: never;
             path?: never;
@@ -5033,6 +5121,112 @@ export interface operations {
                 };
                 content: {
                     "application/json": components["schemas"]["ReviewDeck"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    vocabulary_review_progress_api_v1_me_vocabulary_review_progress_get: {
+        parameters: {
+            query?: {
+                hsk_level?: number | null;
+                lesson_id?: string | null;
+            };
+            header?: never;
+            path?: never;
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ReviewProgress"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    vocabulary_review_preference_api_v1_me_vocabulary_review_preferences_put: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["ReviewPreferenceInput"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ReviewPreferenceInput"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    vocabulary_review_state_api_v1_me_vocabulary_review_cards__card_id__put: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                card_id: string;
+            };
+            cookie?: {
+                access_token?: string | null;
+            };
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["ReviewStateInput"];
+            };
+        };
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ReviewState"];
                 };
             };
             /** @description Validation Error */
