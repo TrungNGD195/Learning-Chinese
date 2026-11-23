@@ -20,7 +20,7 @@ export function VocabularyDiscovery({ discovery, hanzi, pinyin }: { discovery: D
       <h2>{discovery.title}</h2>
       <p className="vocabulary-discovery-popup__word"><span lang="zh-Hans">{hanzi}</span> · {pinyin}</p>
       <p className="vocabulary-discovery-popup__text">{discovery.text}</p>
-      <details className="vocabulary-discovery-popup__sources"><summary>Nguồn tham khảo</summary><a href={discovery.sourceUrl} target="_blank" rel="noreferrer">{discovery.sourceLabel} ↗</a></details>
+      <details className="vocabulary-discovery-popup__sources"><summary>Nguồn tham khảo</summary>{discovery.sources.map(source => <a key={source.url} href={source.url} target="_blank" rel="noreferrer">{source.label} ↗</a>)}</details>
       <button type="button" className="vocabulary-discovery-popup__return" onClick={() => popup.current?.close()}>Quay lại từ đang học<AcademyIcon name="arrow" size={18}/></button>
     </dialog>
   </>

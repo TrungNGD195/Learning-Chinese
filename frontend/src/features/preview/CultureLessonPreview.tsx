@@ -4,7 +4,8 @@ import { Companion, VocabularyIllustration } from '../../components/academy/Comp
 import { vocabularyDiscovery } from '../lesson/vocabularyDiscoveries'
 import './culture-preview.css'
 
-const source = vocabularyDiscovery('饺子')!.sourceUrl
+const dumplingDiscovery = vocabularyDiscovery({ hanzi: '饺子', pinyin: 'jiǎozi', vietnamese_meaning: 'sủi cảo' })!
+const source = dumplingDiscovery.sources[0]
 const words = [
   {hanzi:'米饭',pinyin:'mǐfàn',meaning:'cơm',example:'我喜欢吃米饭。',examplePinyin:'Wǒ xǐhuan chī mǐfàn.',translation:'Tôi thích ăn cơm.'},
   {hanzi:'饺子',pinyin:'jiǎozi',meaning:'sủi cảo',example:'我喜欢吃饺子。',examplePinyin:'Wǒ xǐhuan chī jiǎozi.',translation:'Tôi thích ăn sủi cảo.'},
@@ -61,8 +62,8 @@ export function CultureLessonPreview() {
     <dialog ref={discovery} className="cp-discovery-modal" aria-labelledby="cp-discovery-title" onClick={event=>{const rect=event.currentTarget.getBoundingClientRect();if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)discovery.current?.close()}}>
       <div className="cp-modal-heading"><div><Companion pose="truc" decorative/><span>Khám phá thêm cùng Trúc</span></div><button autoFocus aria-label="Đóng khám phá" onClick={()=>discovery.current?.close()}>Đóng ×</button></div>
       <div className="cp-modal-intro"><div className="cp-modal-art"><VocabularyIllustration hanzi="饺子"/></div><div><h2 id="cp-discovery-title">Sủi cảo trong dịp Tết</h2><p><span lang="zh-Hans">饺子</span> · jiǎozi · sủi cảo</p></div></div>
-      <p className="cp-modal-story">Ở miền Bắc Trung Quốc, sủi cảo thường xuất hiện trong bữa ăn dịp Tết Nguyên đán. Hình dáng bánh được liên tưởng với thỏi vàng, bạc xưa, mang lời mong ước một năm đủ đầy. Đây là phong tục gắn với vùng miền; món ăn và cách đón Tết có thể khác nhau giữa các gia đình.</p>
-      <details className="cp-sources"><summary>Nguồn tham khảo</summary><a href={source} target="_blank" rel="noreferrer">China.org.cn · Top 5 Spring Festival customs in China · 13/02/2018 ↗</a><p>Nội dung minh họa diễn giải từ nguồn bên ngoài, không trích nguyên văn giáo trình.</p></details>
+      <p className="cp-modal-story">{dumplingDiscovery.text}</p>
+      <details className="cp-sources"><summary>Nguồn tham khảo</summary><a href={source.url} target="_blank" rel="noreferrer">{source.label} ↗</a><p>Nội dung minh họa diễn giải từ nguồn bên ngoài, không trích nguyên văn giáo trình.</p></details>
       <button className="cp-back-to-word" onClick={()=>discovery.current?.close()}>Quay lại từ đang học<AcademyIcon name="arrow" size={18}/></button>
     </dialog>
   </div>

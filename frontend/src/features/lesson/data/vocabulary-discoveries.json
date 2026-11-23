@@ -1,0 +1,1663 @@
+{
+  "version": "2026-11-23",
+  "sources": {
+    "pronouns": {
+      "label": "ChinGram · Đại học Palacký · Personal pronouns",
+      "url": "https://chingram.upol.cz/grammar/personal-pronouns",
+      "checkedOn": "2026-11-23"
+    },
+    "names": {
+      "label": "Chinese Language Institute · Chinese names",
+      "url": "https://studycli.org/chinese-culture/chinese-names/",
+      "checkedOn": "2026-11-23"
+    },
+    "family": {
+      "label": "Chinese Language Institute · Chinese family tree",
+      "url": "https://studycli.org/learn-chinese/chinese-family-tree/",
+      "checkedOn": "2026-11-23"
+    },
+    "thanks": {
+      "label": "Yabla · CC-CEDICT · 不客气",
+      "url": "https://chinese.yabla.com/chinese-english-pinyin-dictionary.php?define=不客气",
+      "checkedOn": "2026-11-23"
+    },
+    "apology": {
+      "label": "Yabla · CC-CEDICT · 对不起",
+      "url": "https://chinese.yabla.com/chinese-english-pinyin-dictionary.php?define=对不起",
+      "checkedOn": "2026-11-23"
+    },
+    "language": {
+      "label": "Liên Hợp Quốc · Chinese Language Day",
+      "url": "https://www.ungeneva.org/en/about/director-general/multilingualism/chinese-language-day",
+      "checkedOn": "2026-11-23"
+    },
+    "tea": {
+      "label": "UNESCO · Trà và các thực hành xã hội ở Trung Quốc",
+      "url": "https://ich.unesco.org/RL/traditional-tea-processing-techniques-and-associated-social-practices-in-china-01884",
+      "checkedOn": "2026-11-23"
+    },
+    "milktea": {
+      "label": "Văn phòng Di sản văn hóa phi vật thể Hong Kong · Trà sữa kiểu Hong Kong",
+      "url": "https://www.icho.hk/en/web/icho/representative_list_milk_tea.html",
+      "checkedOn": "2026-11-23"
+    },
+    "grains": {
+      "label": "Smithsonian · Art and Archaeology of Ancient China · Food",
+      "url": "https://asia-archive.si.edu/wp-content/uploads/2020/05/Art-and-Archaeology-of-Ancient-China.pdf",
+      "checkedOn": "2026-11-23"
+    },
+    "buns": {
+      "label": "Chính quyền Bắc Kinh · Delicacies along the Central Axis",
+      "url": "https://english.beijing.gov.cn/specials/centralaxis/sightseeingalongthecentralaxis/202206/t20220602_2728696.html",
+      "checkedOn": "2026-11-23"
+    },
+    "baozi": {
+      "label": "Chính quyền Bắc Kinh · Các thương hiệu ẩm thực lâu đời",
+      "url": "https://english.beijing.gov.cn/consuminginbeijing/onedayinbeijing/abiteofbeijing/updatesofabiteofbeijing/202508/t20250803_4165167.html",
+      "checkedOn": "2026-11-23"
+    },
+    "food-symbols": {
+      "label": "World Federation of Chinese Catering Industry · Biểu tượng trong món ăn",
+      "url": "https://artsandculture.google.com/story/fun-symbolism-in-chinese-foods-world-federation-of-chinese-catering-industry/mAVRtdoHH9c2Sw?hl=en",
+      "checkedOn": "2026-11-23"
+    },
+    "qin": {
+      "label": "UNESCO · Lăng Tần Thủy Hoàng và đội quân đất nung",
+      "url": "https://whc.unesco.org/en/list/441/",
+      "checkedOn": "2026-11-23"
+    },
+    "erhua": {
+      "label": "Khanji School · 儿化: The Erhua Pronunciation",
+      "url": "https://khanjischool.com/blog/chinese/the-erhua-pronunciation",
+      "checkedOn": "2026-11-23"
+    },
+    "weight": {
+      "label": "Đại học Oxford · CTCFL · Đơn vị 斤",
+      "url": "https://www.ctcfl.ox.ac.uk/materials_mcd_intermediate_htw2_l25a/",
+      "checkedOn": "2026-11-23"
+    },
+    "currency": {
+      "label": "Đại sứ quán Trung Quốc · Currency",
+      "url": "https://in.china-embassy.gov.cn/eng/zgly/201011/t20101124_2223593.htm",
+      "checkedOn": "2026-11-23"
+    },
+    "kuai": {
+      "label": "Yabla · CC-CEDICT · 块",
+      "url": "https://chinese.yabla.com/chinese-english-pinyin-dictionary.php?define=块",
+      "checkedOn": "2026-11-23"
+    },
+    "school": {
+      "label": "Chính quyền Hải Điến, Bắc Kinh · Primary and Secondary Education",
+      "url": "https://en.bjhd.gov.cn/livinginhaidian/easylife/schoolenrolmentforchildren/202601/t20260122_4802759.shtml",
+      "checkedOn": "2026-11-23"
+    },
+    "university": {
+      "label": "Chính quyền Alberta · International Education Guide: China",
+      "url": "https://www.alberta.ca/iqas-education-guide-china",
+      "checkedOn": "2026-11-23"
+    },
+    "calligraphy": {
+      "label": "UNESCO · Chinese calligraphy",
+      "url": "https://ich.unesco.org/en/RL/chinese-calligraphy-00216",
+      "checkedOn": "2026-11-23"
+    },
+    "palace": {
+      "label": "UNESCO · Hoàng cung Minh–Thanh ở Bắc Kinh và Thẩm Dương",
+      "url": "https://whc.unesco.org/en/list/439/",
+      "checkedOn": "2026-11-23"
+    },
+    "duck": {
+      "label": "Chính quyền Bắc Kinh · Ẩm thực mùa thu và vịt quay",
+      "url": "https://english.beijing.gov.cn/consuminginbeijing/onedayinbeijing/abiteofbeijing/updatesofabiteofbeijing/202511/t20251103_4251266.html",
+      "checkedOn": "2026-11-23"
+    },
+    "birthday": {
+      "label": "Chinese Language Institute · Happy Birthday in Chinese",
+      "url": "https://studycli.org/learn-chinese/happy-birthday-in-chinese/",
+      "checkedOn": "2026-11-23"
+    },
+    "gift": {
+      "label": "Yabla · CC-CEDICT · 礼物",
+      "url": "https://chinese.yabla.com/chinese-english-pinyin-dictionary.php?define=礼物",
+      "checkedOn": "2026-11-23"
+    },
+    "speciality": {
+      "label": "Yabla · CC-CEDICT · 特产",
+      "url": "https://chinese.yabla.com/chinese-english-pinyin-dictionary.php?define=特产",
+      "checkedOn": "2026-11-23"
+    },
+    "taiji": {
+      "label": "UNESCO · Taijiquan",
+      "url": "https://ich.unesco.org/en/RL/taijiquan-00424?RL=00424",
+      "checkedOn": "2026-11-23"
+    },
+    "badminton": {
+      "label": "Ủy ban Olympic Quốc tế · Lịch sử cầu lông Olympic",
+      "url": "https://www.olympics.com/ioc/news/olympics-badminton-history-winners-debut-barcelona-1992",
+      "checkedOn": "2026-11-23"
+    },
+    "cheer": {
+      "label": "Yabla · CC-CEDICT · 加油",
+      "url": "https://chinese.yabla.com/chinese-english-pinyin-dictionary.php?define=加油",
+      "checkedOn": "2026-11-23"
+    },
+    "weixin": {
+      "label": "Tencent · Weixin & WeChat",
+      "url": "https://www.tencent.com/products/weixin-wechat/",
+      "checkedOn": "2026-11-23"
+    },
+    "spring": {
+      "label": "UNESCO · Spring festival",
+      "url": "https://ich.unesco.org/en/RL/spring-festival-social-practices-of-the-chinese-people-in-celebration-of-traditional-new-year-02126?RL=02126",
+      "checkedOn": "2026-11-23"
+    },
+    "shanghai": {
+      "label": "Chính quyền Thượng Hải · Oriental Pearl Tower Line",
+      "url": "https://english.shanghai.gov.cn/en-CityTour/20231226/c3c795cf933a43b7a2538a372980d24f.html",
+      "checkedOn": "2026-11-23"
+    },
+    "chopsticks": {
+      "label": "Cơ quan du lịch Bắc Kinh · Rules and Conventions Relating to Chopstick",
+      "url": "https://english.visitbeijing.com.cn/article/47ON8LxPO23",
+      "checkedOn": "2026-11-23"
+    },
+    "dining": {
+      "label": "Chinese Language Institute · Chinese table manners",
+      "url": "https://studycli.org/chinese-culture/chinese-table-manners/",
+      "checkedOn": "2026-11-23"
+    },
+    "kaoyu": {
+      "label": "ZIM Dictionary · 烤鱼",
+      "url": "https://dictionary.zim.vn/trung-viet/烤鱼",
+      "checkedOn": "2026-11-23"
+    },
+    "hainan": {
+      "label": "Chính quyền Hải Nam · Khí hậu và tài nguyên nông nghiệp nhiệt đới",
+      "url": "https://en.hainan.gov.cn/englishsite/ili/202506/d2aebd55545740e5aa27eee2651c231f.shtml?ddtab=true",
+      "checkedOn": "2026-11-23"
+    },
+    "summerpalace": {
+      "label": "UNESCO · Di Hòa Viên",
+      "url": "https://whc.unesco.org/en/list/880/",
+      "checkedOn": "2026-11-23"
+    },
+    "temple": {
+      "label": "UNESCO · Thiên Đàn",
+      "url": "https://whc.unesco.org/en/list/881/",
+      "checkedOn": "2026-11-23"
+    },
+    "hutong": {
+      "label": "Chính quyền Bắc Kinh · Living in Hutong",
+      "url": "https://english.beijing.gov.cn/foreignersinbeijing/focus/202106/t20210604_2407473.html",
+      "checkedOn": "2026-11-23"
+    },
+    "nanjing": {
+      "label": "Chính quyền Nam Kinh · Tổng quan thành phố",
+      "url": "https://www.nanjing.gov.cn/zzb/njgl/",
+      "checkedOn": "2026-11-23"
+    },
+    "xinjiang": {
+      "label": "UNESCO · Thiên Sơn, Tân Cương",
+      "url": "https://whc.unesco.org/en/list/1414/",
+      "checkedOn": "2026-11-23"
+    },
+    "rail": {
+      "label": "China Railway · Vé tàu và kiểm tra giấy tờ",
+      "url": "https://www.12306.cn/en/faq.html?item=2",
+      "checkedOn": "2026-11-23"
+    },
+    "highspeed": {
+      "label": "Chính quyền Bắc Kinh · Tickets for High-Speed Railway",
+      "url": "https://english.beijing.gov.cn/specials/beijingservice/pek/trafficthree/index.html",
+      "checkedOn": "2026-11-23"
+    },
+    "double11": {
+      "label": "Alibaba · Alizila · 11.11 Shopping Festival",
+      "url": "https://www.alizila.com/11-11-is-must-do-for-worlds-most-valuable-brands/",
+      "checkedOn": "2026-11-23"
+    },
+    "payment": {
+      "label": "Cổng thông tin Chính phủ Trung Quốc · Payment service guide",
+      "url": "https://english.www.gov.cn/news/202404/11/content_WS6617c858c6d0868f4e8e5f4d.html",
+      "checkedOn": "2026-11-23"
+    },
+    "olympics": {
+      "label": "Ủy ban Olympic Quốc tế · Beijing 2022 venues overview",
+      "url": "https://www.olympics.com/ioc/news/beijing-2022-olympic-venues-overview",
+      "checkedOn": "2026-11-23"
+    },
+    "hotpot": {
+      "label": "Chính quyền Trùng Khánh · Culinary Symbol: Hot Pot",
+      "url": "https://english.cq.gov.cn/specials/Eat/DiscoverLocalFood/202608/t20260818_15947625.html",
+      "checkedOn": "2026-11-23"
+    },
+    "modesty": {
+      "label": "Microsoft Bing Dictionary · 过奖",
+      "url": "https://global.bing.com/dict/search?cc=cn&q=过奖",
+      "checkedOn": "2026-11-23"
+    },
+    "studyabroad": {
+      "label": "Chinese Language Institute · Study Abroad in China",
+      "url": "https://studycli.org/study-abroad-in-china/",
+      "checkedOn": "2026-11-23"
+    },
+    "postgraduate": {
+      "label": "Bộ Giáo dục Trung Quốc · Tuyển sinh sau đại học",
+      "url": "https://www.moe.gov.cn/srcsite/A15/moe_778/s3261/202609/t20260923_1451734.html",
+      "checkedOn": "2026-11-23"
+    },
+    "classteacher": {
+      "label": "Bộ Giáo dục Trung Quốc · Công việc của giáo viên chủ nhiệm",
+      "url": "https://www.moe.gov.cn/srcsite/A06/s3325/200908/t20090812_81878.html",
+      "checkedOn": "2026-11-23"
+    },
+    "alma": {
+      "label": "Yabla · CC-CEDICT · 母校",
+      "url": "https://chinese.yabla.com/chinese-english-pinyin-dictionary.php?define=母校",
+      "checkedOn": "2026-11-23"
+    },
+    "panda": {
+      "label": "Smithsonian’s National Zoo · Giant Panda FAQs",
+      "url": "https://nationalzoo.si.edu/animals/giant-panda-faqs",
+      "checkedOn": "2026-11-23"
+    },
+    "treasure": {
+      "label": "Yabla · CC-CEDICT · 国宝",
+      "url": "https://chinese.yabla.com/chinese-english-pinyin-dictionary.php?define=国宝",
+      "checkedOn": "2026-11-23"
+    },
+    "douyin": {
+      "label": "ByteDance · Products & Services",
+      "url": "https://www.bytedance-global.com/products-services",
+      "checkedOn": "2026-11-23"
+    },
+    "newyear": {
+      "label": "Yabla · CC-CEDICT · 元旦",
+      "url": "https://chinese.yabla.com/chinese-english-pinyin-dictionary.php?define=元旦",
+      "checkedOn": "2026-11-23"
+    },
+    "nationalday": {
+      "label": "Cổng thông tin Chính phủ Trung Quốc · National Day",
+      "url": "https://english.www.gov.cn/archive/china_abc/2014/08/27/content_281474983873427.htm",
+      "checkedOn": "2026-11-23"
+    },
+    "teachersday": {
+      "label": "Bộ Giáo dục Trung Quốc · Teacher’s Day in China",
+      "url": "https://en.moe.gov.cn/Specials/Specials_TeachersDay/teachersday_about/201808/t20180831_346820.html",
+      "checkedOn": "2026-11-23"
+    },
+    "gala": {
+      "label": "CCTV · Spring Festival Gala",
+      "url": "https://english.cctv.com/program/newshour/20100213/101966.shtml",
+      "checkedOn": "2026-11-23"
+    },
+    "envelope": {
+      "label": "Cổng thông tin Chính phủ Trung Quốc · How people celebrate Spring Festival",
+      "url": "https://english.www.gov.cn/english.www.gov.cn/news/202501/28/content_WS6798c6bbc6d0868f4e8ef3f8.html",
+      "checkedOn": "2026-11-23"
+    }
+  },
+  "topics": {
+    "respect": {
+      "title": "Một lời chào, hai cách xưng hô",
+      "teaser": "你 và 您 khác nhau ở đâu?",
+      "text": "你好 và 您好 đều là lời chào. 您 thể hiện sự kính trọng, thường gặp khi trò chuyện với người lớn tuổi, thầy cô hoặc người mình chưa quen. Chọn cách xưng hô theo mối quan hệ và hoàn cảnh; không cần thay mọi 你 bằng 您. Một lời chào tự nhiên còn nằm ở giọng nói và thái độ thân thiện.",
+      "sourceIds": [
+        "pronouns"
+      ]
+    },
+    "personal-names": {
+      "title": "Đọc một tên người Trung Quốc",
+      "teaser": "Họ hay tên đứng trước?",
+      "text": "Tên người Trung Quốc thường đặt họ trước tên riêng. Trong 王小明, 王 là họ, 小明 là tên. 姓名 nhấn mạnh đầy đủ họ tên, còn 名字 được dùng rộng hơn khi hỏi hoặc nói về tên. Tên riêng có thể gồm một hoặc hai chữ; không nên đoán họ tên chỉ theo số chữ.",
+      "sourceIds": [
+        "names"
+      ]
+    },
+    "polite-surname": {
+      "title": "Một cách hỏi họ lịch sự",
+      "teaser": "Vì sao hỏi họ lại có chữ 贵?",
+      "text": "贵 trong 您贵姓？ là cách thể hiện sự kính trọng khi hỏi họ người đối diện, không phải nhận xét họ ấy “đắt” hay “quý” hơn họ khác. Bạn có thể trả lời 我姓王. Khi giới thiệu họ của mình, không dùng 贵 để tự nâng mình lên.",
+      "sourceIds": [
+        "names"
+      ]
+    },
+    "thanks": {
+      "title": "Một lời cảm ơn, một lời đáp",
+      "teaser": "Hai nửa của một cuộc trò chuyện",
+      "text": "Sau 谢谢, bạn có thể nghe 不客气, nghĩa là “không có gì”. Hãy thử hình dung một người giữ cửa giúp bạn: một người cảm ơn, người kia đáp lại. Cụm này là lời đáp lịch sự trong tình huống ấy; ngữ cảnh khác có thể khiến 不客气 mang nghĩa khác.",
+      "sourceIds": [
+        "thanks"
+      ]
+    },
+    "apology": {
+      "title": "Xin lỗi và đáp lời xin lỗi",
+      "teaser": "Khi một lời xin lỗi được đáp lại",
+      "text": "对不起 dùng để xin lỗi khi làm phiền hoặc mắc lỗi. Trong một cuộc hội thoại nhẹ nhàng, người nghe có thể đáp 没关系, “không sao”. Đó là cặp lời thoại khác với 谢谢 — 不客气. Khi đọc bài khóa, thử để ý ai gây ra sự việc và ai đang đáp lời.",
+      "sourceIds": [
+        "apology",
+        "thanks"
+      ]
+    },
+    "cultural-regions": {
+      "title": "Một đất nước, nhiều nếp sinh hoạt",
+      "teaser": "Một món ăn chưa kể hết cả đất nước",
+      "text": "Cùng ở Trung Quốc, cách uống trà, món ăn và sinh hoạt lễ hội có thể thay đổi theo địa phương và cộng đồng. Chẳng hạn, UNESCO mô tả nhiều loại trà và phong tục chia sẻ trà khác nhau. Vì vậy, khi gặp một câu chuyện văn hóa, hãy để ý nó nói về vùng nào, thay vì áp dụng cho mọi gia đình.",
+      "sourceIds": [
+        "tea"
+      ]
+    },
+    "language-day": {
+      "title": "Tiếng Trung có một ngày riêng",
+      "teaser": "Một ngày dành cho ngôn ngữ bạn đang học",
+      "text": "Tiếng Trung là một trong sáu ngôn ngữ chính thức của Liên Hợp Quốc. Ngày Tiếng Trung của tổ chức này được tổ chức vào 20 tháng 4, nhằm tôn vinh ngôn ngữ và sự đa dạng văn hóa. Học thêm một từ cũng là một bước nhỏ để đọc và hiểu những câu chuyện ấy.",
+      "sourceIds": [
+        "language"
+      ]
+    },
+    "grandparents": {
+      "title": "Ông bà bên nội, ông bà bên ngoại",
+      "teaser": "Bốn cách gọi, hai phía gia đình",
+      "text": "Trong cách gọi phổ biến ở Quan thoại, 爷爷 và 奶奶 là ông bà nội; 外公 và 外婆 là ông bà ngoại. Tiếng Trung cho biết rõ phía gia đình ngay trong từ xưng hô. Bạn cũng có thể gặp những cách gọi địa phương khác, vì vậy hãy nghe cách chính gia đình ấy tự gọi nhau.",
+      "sourceIds": [
+        "family"
+      ]
+    },
+    "home": {
+      "title": "Một chữ, cả ngôi nhà và gia đình",
+      "teaser": "Về nhà cũng là về bên người thân",
+      "text": "家 có thể gợi cả nơi ở lẫn những người thân trong gia đình. Vì thế, 我家 có thể nói về nhà mình hoặc gia đình mình tùy câu. Những cách gọi người thân trong tiếng Trung còn cho biết thế hệ và quan hệ nội, ngoại. Ngữ cảnh giúp một chữ ngắn mang rất nhiều thông tin.",
+      "sourceIds": [
+        "family"
+      ]
+    },
+    "tea": {
+      "title": "Một chén trà, một cuộc gặp",
+      "teaser": "Không chỉ là đồ uống",
+      "text": "Pha và chia sẻ trà là một phần sinh hoạt xã hội ở nhiều cộng đồng Trung Quốc. Trà có thể xuất hiện trong lúc tiếp khách, trò chuyện với hàng xóm hoặc gặp gỡ gia đình. UNESCO ghi danh các kỹ thuật và thực hành liên quan đến trà năm 2022; cách pha, loại trà và nghi thức không giống nhau ở mọi nơi.",
+      "sourceIds": [
+        "tea"
+      ]
+    },
+    "milk-tea": {
+      "title": "Trà sữa cũng có nhiều phong cách",
+      "teaser": "Trà sữa không chỉ có trân châu",
+      "text": "奶茶 là tên gọi rộng cho trà kết hợp với sữa. Một ví dụ là trà sữa kiểu Hong Kong, với kỹ thuật pha được đưa vào danh mục di sản văn hóa phi vật thể của địa phương. Khi gặp tên một loại trà sữa, hãy xem cả cách pha và nơi gắn với nó; không phải loại nào cũng có trân châu.",
+      "sourceIds": [
+        "milktea"
+      ]
+    },
+    "rice": {
+      "title": "Cơm và dấu ấn của hạt gạo",
+      "teaser": "Một bát cơm, một câu chuyện vùng miền",
+      "text": "Lúa gạo và các loại ngũ cốc đã tạo nên những thói quen ăn uống khác nhau trong lịch sử Trung Quốc. Cơm gắn với vùng trồng lúa, còn nhiều món bột mì phát triển ở vùng trồng lúa mì. Ngày nay các món ăn được trao đổi rộng rãi, nên không thể đoán thực đơn của một người chỉ từ nơi họ sống.",
+      "sourceIds": [
+        "grains"
+      ]
+    },
+    "noodles": {
+      "title": "Mì có thể mang một lời chúc",
+      "teaser": "Từ món ăn đến lời chúc sống lâu",
+      "text": "Trong một số dịp sinh nhật, người ta ăn 长寿面, “mì trường thọ”, để gửi lời chúc sống lâu. Không phải bát mì nào cũng mang ý nghĩa nghi lễ ấy; 面条儿 vẫn là món ăn thường ngày. Câu chuyện này giúp bạn nhận ra khi nào tên món ăn còn chứa một lời chúc.",
+      "sourceIds": [
+        "food-symbols"
+      ]
+    },
+    "mantou": {
+      "title": "Bánh hấp có cần nhân không?",
+      "teaser": "馒头 và 包子 khác nhau thế nào?",
+      "text": "馒头 thường là bánh bột mì hấp không nhân, còn 包子 thường có nhân bên trong. Tại Bắc Kinh, bánh hấp có nhiều biến thể như bánh có táo đỏ hoặc đậu đỏ. Tên gọi và cách làm có thể thay đổi theo vùng; nhìn món thật hoặc đọc tên đầy đủ sẽ rõ hơn chỉ dịch chung là “bánh bao”.",
+      "sourceIds": [
+        "buns"
+      ]
+    },
+    "baozi": {
+      "title": "Một chiếc bánh, nhiều loại nhân",
+      "teaser": "Nhìn tên nhân để chọn món",
+      "text": "包子 thường là bánh hấp có nhân. Nhiều quán lâu đời ở Bắc Kinh phục vụ món này như một phần đời sống ẩm thực của thành phố. Khi đọc thực đơn, phần đứng trước 包子 thường giúp bạn nhận ra nhân hoặc kiểu bánh; đừng mặc định mọi chiếc bánh đều có cùng một loại thịt.",
+      "sourceIds": [
+        "baozi"
+      ]
+    },
+    "dumplings": {
+      "title": "Sủi cảo trong dịp Tết",
+      "teaser": "Sủi cảo có câu chuyện gì?",
+      "text": "Trong văn hóa ẩm thực Trung Quốc, hình dáng sủi cảo thường được liên tưởng tới thỏi vàng, bạc xưa, gửi gắm lời chúc đủ đầy. Món ăn này cũng gắn với dịp Tết ở nhiều gia đình. Đây là một lớp ý nghĩa văn hóa, không phải quy tắc rằng mọi vùng hay mọi gia đình đều đón Tết bằng cùng một món.",
+      "sourceIds": [
+        "food-symbols"
+      ]
+    },
+    "xian": {
+      "title": "Tây An và những lớp lịch sử",
+      "teaser": "Từ địa danh đến đội quân đất nung",
+      "text": "Gần Tây An, tỉnh Thiểm Tây, có khu lăng Tần Thủy Hoàng nổi tiếng với các tượng binh sĩ và ngựa bằng đất nung. Những gương mặt và chi tiết khác nhau khiến di tích trở thành một cửa sổ nhìn vào lịch sử. Khi gặp 兵马俑 ở bài sau, bạn sẽ có thêm một mối liên hệ với địa danh 西安.",
+      "sourceIds": [
+        "qin"
+      ]
+    },
+    "where-erhua": {
+      "title": "Hai cách hỏi “ở đâu”",
+      "teaser": "Vì sao 哪儿 có âm r ở cuối?",
+      "text": "哪儿 và 哪里 đều có thể hỏi “ở đâu”. Trong 哪儿, 儿 thường làm phần cuối âm mang màu sắc r, gọi là 儿化, chứ không đọc tách thành một từ “đứa trẻ”. Cách dùng 儿化 khá rõ trong lời nói Bắc Kinh nhưng không xuất hiện với mức độ giống nhau ở mọi vùng.",
+      "sourceIds": [
+        "erhua"
+      ]
+    },
+    "weight": {
+      "title": "Đọc giá cân ở chợ",
+      "teaser": "Một 斤 có bằng một kilogram?",
+      "text": "Trong hệ cân thông dụng ở Trung Quốc đại lục, 1 斤 bằng 500 gram; 1 公斤 bằng 1 kilogram, tức 2 斤. Vì vậy hai tấm giá ghi cùng một con số nhưng khác đơn vị chưa chắc là cùng giá. Đây là cách tính theo bối cảnh đại lục; không nên suy rộng cho mọi nơi dùng chữ 斤.",
+      "sourceIds": [
+        "weight"
+      ]
+    },
+    "currency": {
+      "title": "Tên tiền và tên đơn vị",
+      "teaser": "人民币, 元 và 钱 khác nhau ở đâu?",
+      "text": "人民币 là tên đồng tiền, còn 元 là đơn vị cơ bản. 钱 là từ nói chung về tiền. Bạn có thể thấy giá ghi bằng 元 nhưng khi nói chuyện lại nghe cách gọi khẩu ngữ khác. Nhận ra tên đồng tiền và đơn vị giúp việc đọc giá rõ ràng hơn; không cần học tỷ giá để hiểu câu.",
+      "sourceIds": [
+        "currency"
+      ]
+    },
+    "money-kuai": {
+      "title": "Một cách nói giá tiền hằng ngày",
+      "teaser": "Vì sao giá tiền lại đọc là 块?",
+      "text": "Khi nói giá bằng nhân dân tệ, 块 thường là cách gọi khẩu ngữ của đơn vị 元. Chẳng hạn 十块钱 nói một khoản mười tệ. Cùng chữ 块 còn có thể đếm miếng hoặc khối ở ngữ cảnh khác, nên đừng mang cách hiểu “tiền” sang mọi câu có chữ này.",
+      "sourceIds": [
+        "kuai",
+        "currency"
+      ]
+    },
+    "school-stages": {
+      "title": "Ba tên gọi trên hành trình đi học",
+      "teaser": "小学 → 初中 → 高中",
+      "text": "Ba tên này lần lượt chỉ tiểu học, trung học cơ sở và trung học phổ thông. Trong mô hình phổ biến ở Trung Quốc, 初中 và 高中 là hai giai đoạn khác nhau của bậc trung học. Khi đọc bài giới thiệu bản thân, tên trường hoặc bậc học giúp bạn hình dung người nói đang ở chặng nào.",
+      "sourceIds": [
+        "school"
+      ]
+    },
+    "university": {
+      "title": "大学 và con đường sau phổ thông",
+      "teaser": "Tên trường không nói hết ngành học",
+      "text": "大学 là đại học, còn chương trình học và bằng cấp có nhiều loại. Khi nghe một người nói 在大学学习, bạn mới biết bối cảnh học tập, chưa biết ngành hay bậc bằng của họ. Những thông tin ấy thường nằm ở phần giới thiệu tiếp theo; không nên mặc định mọi chương trình đại học đều giống nhau.",
+      "sourceIds": [
+        "university"
+      ]
+    },
+    "calligraphy": {
+      "title": "Khi chữ viết trở thành nghệ thuật",
+      "teaser": "Chữ Hán còn có một đời sống nghệ thuật",
+      "text": "Thư pháp dùng nét chữ để thể hiện nhịp điệu, bố cục và cá tính của người viết. UNESCO ghi danh thư pháp Trung Quốc vào danh sách di sản văn hóa phi vật thể năm 2009. Khi luyện từng nét Hán tự, bạn đang làm quen với nền tảng chữ viết cũng hiện diện trong tranh, câu đối và tác phẩm thư pháp.",
+      "sourceIds": [
+        "calligraphy"
+      ]
+    },
+    "beijing": {
+      "title": "Một thành phố, nhiều lớp kiến trúc",
+      "teaser": "Đọc Bắc Kinh qua những công trình",
+      "text": "Bắc Kinh có những công trình mang chức năng rất khác nhau: hoàng cung, nơi tế lễ và vườn ngự uyển. 故宫, 天坛 và 颐和园 vì vậy không phải ba tên gọi của cùng một kiểu nơi chốn. Ghi nhớ chức năng riêng của mỗi địa danh giúp bạn theo dõi các bài đọc du lịch dễ hơn.",
+      "sourceIds": [
+        "palace",
+        "temple",
+        "summerpalace"
+      ]
+    },
+    "forbidden-city": {
+      "title": "Từ hoàng cung đến di sản",
+      "teaser": "故宫 kể câu chuyện gì?",
+      "text": "故宫 ở Bắc Kinh là quần thể hoàng cung từng gắn với các triều Minh và Thanh. Những sân rộng, cổng và điện tạo thành một không gian lớn chứ không chỉ một tòa nhà. Di tích thuộc quần thể hoàng cung được UNESCO ghi danh; tên gọi giúp bạn nhận ra dấu vết của đời sống cung đình trong bài đọc.",
+      "sourceIds": [
+        "palace"
+      ]
+    },
+    "roast-duck": {
+      "title": "Vịt quay và những chiếc bánh mỏng",
+      "teaser": "Vì sao vịt quay được ăn cùng bánh?",
+      "text": "Vịt quay Bắc Kinh thường được thái lát rồi ăn cùng bánh mỏng, hành, dưa chuột và sốt. Người ăn tự cuốn các thành phần thành từng miếng. 烤鸭 nghĩa là vịt quay nói chung; khi tên món có 北京 ở phía trước, bạn có thêm thông tin về phong cách nổi tiếng gắn với thành phố này.",
+      "sourceIds": [
+        "duck"
+      ]
+    },
+    "terracotta": {
+      "title": "Một đội quân bằng đất nung",
+      "teaser": "Những binh sĩ không hoàn toàn giống nhau",
+      "text": "兵马俑 là các tượng binh sĩ và ngựa bằng đất nung thuộc khu lăng Tần Thủy Hoàng gần Tây An. Di tích được phát hiện năm 1974 và là một phần của di sản thế giới UNESCO. Điều đáng chú ý là các tượng có những chi tiết khác nhau, chứ không chỉ lặp lại một khuôn mặt.",
+      "sourceIds": [
+        "qin"
+      ]
+    },
+    "gifts": {
+      "title": "Một món quà, một lời nhắn",
+      "teaser": "Điều muốn nói qua món quà",
+      "text": "Trong tình huống tặng quà, 送 nói về hành động tặng, còn 礼物 là món quà. Bạn có thể nói 这是送给你的礼物, “đây là món quà tặng bạn”. Một lời nhắn ngắn cho biết dịp tặng và người nhận làm câu nói gần gũi hơn. Lựa chọn quà nên theo sở thích và quan hệ cụ thể.",
+      "sourceIds": [
+        "gift"
+      ]
+    },
+    "specialities": {
+      "title": "Mang một địa phương về làm quà",
+      "teaser": "特产 không chỉ có đồ ăn",
+      "text": "特产 là sản vật hoặc sản phẩm đặc trưng của một nơi. Đó có thể là thực phẩm hay một sản phẩm thủ công địa phương. Khi gặp tên nơi đứng trước 特产, bạn đang đọc mối liên hệ giữa món hàng và vùng làm ra nó, chứ không chỉ một lời khen “ngon” hoặc “đặc biệt”.",
+      "sourceIds": [
+        "speciality"
+      ]
+    },
+    "birthday": {
+      "title": "Sinh nhật có thể có nhiều món",
+      "teaser": "Ngoài bánh kem còn có gì?",
+      "text": "Bánh kem xuất hiện trong nhiều dịp sinh nhật hiện đại, nhưng một số gia đình còn ăn mì trường thọ để gửi lời chúc sống lâu. Cách tổ chức phụ thuộc vào gia đình và sở thích của người được mừng. Đừng biến một phong tục thành quy tắc bắt buộc cho mọi buổi sinh nhật.",
+      "sourceIds": [
+        "birthday"
+      ]
+    },
+    "longevity-noodles": {
+      "title": "Một bát mì mang lời chúc",
+      "teaser": "Sợi mì và lời chúc sống lâu",
+      "text": "长寿面 thường được ăn vào dịp sinh nhật với ý nghĩa chúc trường thọ. Tên món ghép 长寿, “sống lâu”, với 面, “mì”. Khi đọc lời chúc hay bài khóa về sinh nhật, nhận ra ý nghĩa này giúp bạn hiểu vì sao nhân vật nhắc tới mì chứ không chỉ bánh kem.",
+      "sourceIds": [
+        "food-symbols"
+      ]
+    },
+    "taijiquan": {
+      "title": "Những chuyển động tròn, chậm và liền",
+      "teaser": "Thái cực quyền không chỉ là một tên môn tập",
+      "text": "Thái cực quyền là một thực hành vận động có những chuyển động mềm, tròn và kết hợp điều hòa hơi thở. Có nhiều trường phái và cách truyền dạy khác nhau. UNESCO ghi danh loại hình này năm 2020; câu chuyện ở đây là kỹ năng và sự truyền nối giữa người học, người dạy, không phải lời hứa chữa bệnh.",
+      "sourceIds": [
+        "taiji"
+      ]
+    },
+    "badminton": {
+      "title": "Từ sân tập đến Olympic",
+      "teaser": "Cầu lông bước vào Olympic khi nào?",
+      "text": "Cầu lông trở thành môn tranh huy chương chính thức tại Olympic Barcelona năm 1992. Trong tiếng Trung, 羽毛 gợi chiếc lông vũ, còn 球 là cầu hoặc bóng trong tên nhiều môn thể thao. Một cái tên quen thuộc trong bài học có thể dẫn bạn tới cả câu chuyện thể thao quốc tế.",
+      "sourceIds": [
+        "badminton"
+      ]
+    },
+    "cheering": {
+      "title": "Một từ có thể tiếp sức",
+      "teaser": "Không phải lúc nào cũng là “thêm dầu”",
+      "text": "Ngoài nghĩa đổ thêm nhiên liệu, 加油 còn được dùng để cổ vũ. Bạn có thể nghe lời hô này ở sân đấu hoặc khi động viên ai đó cố gắng. Trong bài luyện giao tiếp, hãy hình dung giọng nói và hoàn cảnh: một lời 加油 gửi tới bạn học khác với biển 加油站 ở trạm xăng.",
+      "sourceIds": [
+        "cheer"
+      ]
+    },
+    "weixin": {
+      "title": "Một ứng dụng trong nhiều tình huống",
+      "teaser": "微信 không chỉ để nhắn tin",
+      "text": "Weixin, thường được biết tới qua tên WeChat, kết hợp trò chuyện, cuộc gọi và nhiều dịch vụ số. Theo Tencent, Weixin và WeChat là hai dịch vụ chị em có thể tương tác, phục vụ các thị trường khác nhau. Khi nghe 加微信, bạn đang gặp một cách nói gắn với việc kết nối liên lạc trong đời sống hiện đại.",
+      "sourceIds": [
+        "weixin"
+      ]
+    },
+    "red": {
+      "title": "Màu sắc trong một hoàn cảnh cụ thể",
+      "teaser": "Vì sao dịp Tết thường có màu đỏ?",
+      "text": "Trong nhiều hình ảnh đón Tết, bạn sẽ gặp đồ trang trí và phong bao màu đỏ, gắn với lời chúc tốt lành. Nhưng ý nghĩa của màu còn phụ thuộc đồ vật và tình huống. Không nên hiểu mọi thứ màu đỏ đều là một biểu tượng lễ hội, cũng không mặc định mọi cộng đồng dùng màu giống nhau.",
+      "sourceIds": [
+        "envelope"
+      ]
+    },
+    "shanghai-landmarks": {
+      "title": "Hai góc nhìn bên sông Hoàng Phố",
+      "teaser": "Tháp và bờ sông kể hai câu chuyện",
+      "text": "东方明珠 là tháp truyền hình nổi bật ở Thượng Hải; 外滩 là khu bờ sông nổi tiếng với nhiều công trình kiến trúc. Đây là hai địa điểm khác nhau cùng gắn với cảnh quan sông Hoàng Phố. Nhận ra “tháp” và “khu bờ sông” giúp bạn hiểu lộ trình tham quan trong bài khóa.",
+      "sourceIds": [
+        "shanghai"
+      ]
+    },
+    "chopsticks": {
+      "title": "Dùng đũa trong một bữa ăn chung",
+      "teaser": "Một đôi đũa, một chút ý tứ",
+      "text": "Khi dùng bữa, tránh cắm đũa thẳng đứng trong bát cơm vì hình ảnh ấy gợi tới nghi thức tang lễ. Nếu bàn có đũa hoặc thìa dùng chung, dùng chúng để lấy thức ăn từ đĩa chung về bát mình. Thói quen từng bàn ăn có thể khác nhau; quan sát chủ nhà là một cách học thêm.",
+      "sourceIds": [
+        "chopsticks"
+      ]
+    },
+    "hosting-meal": {
+      "title": "Một lời mời cũng nói về người đãi",
+      "teaser": "“Tôi mời” trong một buổi ăn",
+      "text": "请客 có thể nói việc mời hoặc đãi khách. Trong một lời mời ăn uống, 我请客 thường cho biết người nói muốn đãi bữa đó. Bối cảnh và lời trao đổi giúp làm rõ việc thanh toán; đừng suy ra chỉ từ một cử chỉ rằng mọi bữa ăn đều phải có cùng một nghi thức.",
+      "sourceIds": [
+        "dining"
+      ]
+    },
+    "ordering": {
+      "title": "Đọc thực đơn để cùng chọn món",
+      "teaser": "Gọi món có thể là việc của cả bàn",
+      "text": "Trong nhiều bữa ăn Trung Quốc, các món được đặt giữa bàn để cùng dùng. Vì vậy 点菜 có thể là cùng chọn một nhóm món, không chỉ mỗi người chọn một đĩa riêng. Khi luyện hội thoại, việc hỏi khẩu vị và món muốn ăn giúp câu chuyện tự nhiên hơn. Cách phục vụ vẫn tùy quán và kiểu bữa ăn.",
+      "sourceIds": [
+        "dining"
+      ]
+    },
+    "green-tea": {
+      "title": "Tên màu sắc trong thế giới trà",
+      "teaser": "绿茶 là một nhóm trà riêng",
+      "text": "Trà xanh là một trong những nhóm trà được nhắc tới trong hồ sơ UNESCO về kỹ thuật chế biến trà Trung Quốc. Tên nhóm liên quan tới cách làm và đặc điểm của trà, không chỉ màu nước trong cốc. Các địa phương có thể có giống trà và cách pha khác nhau, nên 绿茶 chưa phải tên của một sản phẩm duy nhất.",
+      "sourceIds": [
+        "tea"
+      ]
+    },
+    "grilled-fish": {
+      "title": "Đọc tên món qua từng phần",
+      "teaser": "四川 + 烤 + 鱼 kể điều gì?",
+      "text": "Trong tên món 四川烤鱼, 四川 gợi phong cách Tứ Xuyên, 烤 là nướng và 鱼 là cá. Cách đọc từng phần giúp bạn hiểu nhiều tên món khác mà không cần thuộc cả cụm. Tên này chưa nói hết nguyên liệu hay mức cay; khi gọi món, có thể hỏi thêm thay vì mặc định mọi cách làm đều giống nhau.",
+      "sourceIds": [
+        "kaoyu"
+      ]
+    },
+    "hainan": {
+      "title": "Hải Nam và cảnh quan đảo",
+      "teaser": "Tên địa danh mở ra một khung cảnh",
+      "text": "Hải Nam là một tỉnh đảo nhiệt đới ở phía nam Trung Quốc. Khi gặp địa danh này trong bài du lịch, bạn có thể liên tưởng tới cảnh quan biển đảo và đời sống địa phương. Câu chuyện ấy khác với một chuyến thăm hoàng cung ở Bắc Kinh: cùng là du lịch nhưng bối cảnh từ vựng đã đổi.",
+      "sourceIds": [
+        "hainan"
+      ]
+    },
+    "summer-palace": {
+      "title": "Một khu vườn có hồ và núi",
+      "teaser": "Di Hòa Viên không chỉ có cung điện",
+      "text": "Di Hòa Viên ở Bắc Kinh kết hợp đồi, mặt nước với điện, hành lang và cầu. UNESCO ghi nhận đây là một tác phẩm nổi bật của nghệ thuật vườn cảnh Trung Quốc. Nhớ hình ảnh “khu vườn và hồ” giúp phân biệt địa danh này với 故宫, vốn gắn với không gian hoàng cung.",
+      "sourceIds": [
+        "summerpalace"
+      ]
+    },
+    "heaven-temple": {
+      "title": "Kiến trúc gắn với một nghi lễ",
+      "teaser": "Thiên Đàn từng dùng để làm gì?",
+      "text": "Thiên Đàn ở Bắc Kinh là quần thể kiến trúc từng dùng cho các nghi lễ tế trời và cầu mùa của hoàng đế thời Minh–Thanh. Những công trình tròn và cách bố trí không gian mang ý nghĩa biểu tượng. Đây là nơi có chức năng nghi lễ riêng, không đơn thuần là tên của một cung điện hay một ngọn tháp.",
+      "sourceIds": [
+        "temple"
+      ]
+    },
+    "hutong": {
+      "title": "Đọc thành phố qua những con ngõ",
+      "teaser": "Phía sau một con ngõ Bắc Kinh",
+      "text": "胡同 thường gợi những con ngõ gắn với các dãy nhà sân trong truyền thống ở Bắc Kinh. Đó vừa là đường đi, vừa là một phần không gian sinh hoạt của khu dân cư. Khi đọc bài du lịch, hãy hình dung cả cuộc sống quanh ngõ, thay vì coi 胡同 chỉ là một điểm chụp ảnh.",
+      "sourceIds": [
+        "hutong"
+      ]
+    },
+    "nanjing": {
+      "title": "Một địa danh mang chữ “kinh”",
+      "teaser": "Nam Kinh và những lớp đô thị",
+      "text": "Nam Kinh nằm ở tỉnh Giang Tô và là một trong những cố đô nổi tiếng của Trung Quốc. Tên 南京 có thể gợi liên hệ với 北京 khi bạn nhận ra hai chữ 南 và 北 chỉ phương hướng. Tuy nhiên, tên gọi là một dấu vết lịch sử, không có nghĩa hai thành phố hiện giữ cùng một vai trò.",
+      "sourceIds": [
+        "nanjing"
+      ]
+    },
+    "xinjiang": {
+      "title": "Một địa danh, nhiều kiểu cảnh quan",
+      "teaser": "Tân Cương không chỉ có một khung cảnh",
+      "text": "Di sản Thiên Sơn ở Tân Cương gồm cảnh quan núi, đỉnh phủ tuyết, rừng và đồng cỏ. Vì vậy, không nên hình dung một vùng rộng lớn chỉ bằng một bức ảnh duy nhất. Khi đọc 新疆 trong bài du lịch, những từ chỉ cảnh quan đi kèm sẽ cho biết nhân vật đang nói về trải nghiệm nào.",
+      "sourceIds": [
+        "xinjiang"
+      ]
+    },
+    "north-south": {
+      "title": "“Miền Bắc” và “miền Nam” rộng đến đâu?",
+      "teaser": "Một hướng không kể hết mọi địa phương",
+      "text": "Trong câu chuyện ẩm thực lịch sử, khác biệt vùng trồng lúa và lúa mì góp phần tạo nên những món ăn khác nhau. Tuy vậy 北方 và 南方 là các phạm vi rất rộng, không phải mỗi bên chỉ có một khẩu vị hay nếp sống. Hãy đọc thêm địa danh cụ thể trước khi khái quát về một vùng.",
+      "sourceIds": [
+        "grains"
+      ]
+    },
+    "high-speed": {
+      "title": "Một hành trình gắn với nhà ga",
+      "teaser": "Đi tàu bắt đầu trước khi lên tàu",
+      "text": "高铁 đưa bạn vào bối cảnh tàu cao tốc. Trên đường đi, bạn sẽ gặp tên ga, thông tin chuyến và khu kiểm tra vé. China Railway dùng hệ thống 12306 cho nhiều thao tác tra cứu và đặt vé; nhìn chuỗi hoạt động ấy giúp các từ về đi lại liên kết thành một trải nghiệm.",
+      "sourceIds": [
+        "highspeed"
+      ]
+    },
+    "ticket-check": {
+      "title": "Vé và giấy tờ đi cùng nhau",
+      "teaser": "检票 nằm ở đâu trong hành trình?",
+      "text": "检票 là bước kiểm tra vé trước khi vào khu hoặc lên chuyến tàu phù hợp. Trong bối cảnh vé tàu theo tên thật của China Railway, giấy tờ dùng khi đặt vé cũng liên quan tới việc kiểm tra. Đây là một điểm khác với chỉ “mua vé”; quy trình cụ thể cần theo hướng dẫn hiện hành của nhà ga.",
+      "sourceIds": [
+        "rail"
+      ]
+    },
+    "double-eleven": {
+      "title": "Khi một ngày trở thành tên sự kiện",
+      "teaser": "Hai số 11 trên lịch mua sắm",
+      "text": "双十一 nghĩa đen là “hai số mười một”, chỉ ngày 11 tháng 11. Alibaba bắt đầu sự kiện mua sắm trực tuyến 11.11 năm 2009, rồi cách gọi này trở nên quen thuộc trong bối cảnh mua sắm. Gặp từ ấy trong bài đọc, bạn cần nhận ra tên sự kiện, không chỉ đọc một ngày theo lịch.",
+      "sourceIds": [
+        "double11"
+      ]
+    },
+    "qr-payment": {
+      "title": "Một hình vuông, nhiều thao tác",
+      "teaser": "二维码 là hình, 扫码 là hành động",
+      "text": "二维码 là mã QR; 扫码 là thao tác quét mã. Trong đời sống số, bạn có thể gặp chúng khi thanh toán hoặc mở một dịch vụ. Không phải mã QR nào cũng dùng để trả tiền: hãy nhìn nội dung đi kèm và xác nhận đúng người nhận, số tiền trước khi chấp thuận một giao dịch.",
+      "sourceIds": [
+        "payment"
+      ]
+    },
+    "olympics": {
+      "title": "Bắc Kinh và hai kỳ Olympic",
+      "teaser": "Một thành phố đón cả mùa hè lẫn mùa đông",
+      "text": "Bắc Kinh tổ chức Olympic mùa hè năm 2008 và Olympic mùa đông năm 2022, trở thành thành phố đầu tiên đăng cai cả hai loại đại hội. Vì vậy, khi đọc 奥运会 cùng 北京, những từ 夏季 hoặc 冬季 và mốc năm sẽ giúp bạn nhận ra nhân vật đang nói tới sự kiện nào.",
+      "sourceIds": [
+        "olympics"
+      ]
+    },
+    "hotpot": {
+      "title": "Một nồi lẩu, nhiều phong cách",
+      "teaser": "Lẩu không chỉ có một vị nước dùng",
+      "text": "Lẩu gắn với việc cùng dùng một nồi nước dùng và nấu nguyên liệu trong bữa ăn. Trùng Khánh có truyền thống lẩu nổi bật, nhưng không phải mọi món 火锅 đều là lẩu cay kiểu Trùng Khánh. Tên vùng, loại nước dùng và nguyên liệu đi kèm giúp bạn nhận ra phong cách của món.",
+      "sourceIds": [
+        "hotpot"
+      ]
+    },
+    "toasting": {
+      "title": "Một lời chúc trong bữa gặp mặt",
+      "teaser": "Mời nâng cốc và gửi lời chúc",
+      "text": "敬 có thể xuất hiện khi mời hoặc chúc rượu, còn 干杯 là lời nâng cốc. Lời chúc thường nhắm tới người dự hoặc dịp gặp mặt. Khi luyện hội thoại, bạn có thể dùng đồ uống không cồn và một lời chúc phù hợp; học cách nói không có nghĩa phải uống theo người khác.",
+      "sourceIds": [
+        "dining"
+      ]
+    },
+    "modesty": {
+      "title": "Đáp lại một lời khen",
+      "teaser": "“Bạn khen quá rồi” nói điều gì?",
+      "text": "过奖了 là một cách đáp khi cho rằng lời khen dành cho mình hơi quá, gần với “bạn quá khen”. Nó thể hiện sự khiêm nhường trong tình huống ấy, không có nghĩa bạn bắt buộc phải phủ nhận mọi lời khen. Trong một cuộc nói chuyện thân thiện, cảm ơn hoặc đáp lại nhẹ nhàng cũng tùy mối quan hệ.",
+      "sourceIds": [
+        "modesty"
+      ]
+    },
+    "study-abroad": {
+      "title": "Học ngôn ngữ giữa đời sống",
+      "teaser": "Lớp học có thể tiếp tục ngoài lớp",
+      "text": "留学 nói về việc đi học ở nước ngoài, còn 留学生 là người học trong bối cảnh ấy. Ngoài giờ học, những việc như hỏi đường, đọc thực đơn hay làm quen bạn mới cũng tạo cơ hội dùng ngôn ngữ. Đọc bài khóa về du học, bạn có thể nối các từ thuộc nhiều bài thành những tình huống đời thường.",
+      "sourceIds": [
+        "studyabroad"
+      ]
+    },
+    "postgraduate": {
+      "title": "Một cách gọi ngắn trong đời sinh viên",
+      "teaser": "考研 không phải tên một môn học",
+      "text": "考研 thường nói việc thi tuyển để học sau đại học, đặc biệt trong bối cảnh tuyển sinh thạc sĩ ở Trung Quốc. Vì vậy, nhân vật nói 正在准备考研 đang nhắc tới một mục tiêu học tập, không chỉ bài kiểm tra cuối kỳ. Yêu cầu và lịch tuyển sinh thay đổi theo năm, nên nội dung khám phá không thay cho thông báo tuyển sinh.",
+      "sourceIds": [
+        "postgraduate"
+      ]
+    },
+    "class-teacher": {
+      "title": "Người đồng hành với cả một lớp",
+      "teaser": "Giáo viên chủ nhiệm khác giáo viên bộ môn",
+      "text": "班主任 là giáo viên chủ nhiệm, gắn với quản lý lớp và hỗ trợ sự phát triển của học sinh. Trong bối cảnh trường học Trung Quốc, vai trò này còn liên hệ với giáo viên bộ môn và gia đình. Vì vậy, một nhân vật tìm 班主任 có thể muốn trao đổi chuyện của lớp, không chỉ hỏi một bài tập riêng.",
+      "sourceIds": [
+        "classteacher"
+      ]
+    },
+    "alma-mater": {
+      "title": "Một cách gọi trường cũ đầy gắn bó",
+      "teaser": "Vì sao trường cũ có chữ 母?",
+      "text": "母校 là cách gọi ngôi trường mình từng học, gần với “trường cũ” hay “alma mater”. Chữ 母 ở đây gợi sự gắn bó, không phải nói về trường của mẹ. Trong một bài viết về tốt nghiệp hoặc quay lại thăm trường, từ này thường giúp người đọc nhận ra góc nhìn của một cựu học sinh.",
+      "sourceIds": [
+        "alma"
+      ]
+    },
+    "panda": {
+      "title": "Gấu trúc và ngôi nhà trong rừng núi",
+      "teaser": "Đằng sau hình ảnh dễ thương",
+      "text": "Gấu trúc lớn sống trong những khu rừng núi ở miền trung Trung Quốc và thức ăn chủ yếu là tre trúc. Những điều kiện sống ấy khiến bảo vệ sinh cảnh trở thành phần quan trọng của bảo tồn. Khi gặp 熊猫 trong bài đọc, hãy nghĩ tới cả môi trường sống của con vật, không chỉ hình ảnh biểu tượng hay nhân vật hoạt hình.",
+      "sourceIds": [
+        "panda"
+      ]
+    },
+    "bamboo": {
+      "title": "Vì sao gấu trúc gắn với tre trúc?",
+      "teaser": "Một mối liên hệ đến từ thức ăn",
+      "text": "Trong tự nhiên, gấu trúc lớn ăn gần như toàn tre trúc. Mối liên hệ rất cụ thể ấy khiến hai hình ảnh thường đi cùng nhau. Tuy nhiên, 竹子 là tên thực vật nói chung, không chỉ “thức ăn của gấu trúc”; trong bài đọc khác, bối cảnh của từ có thể thay đổi.",
+      "sourceIds": [
+        "panda"
+      ]
+    },
+    "national-treasure": {
+      "title": "Một tên gọi thể hiện sự trân trọng",
+      "teaser": "“Bảo vật quốc gia” có thể chỉ điều gì?",
+      "text": "国宝 là thứ được xem như bảo vật của một quốc gia. Trong bài về gấu trúc, cách gọi ấy nhấn mạnh sự quý giá và trân trọng dành cho con vật. Không nên hiểu 国宝 chỉ là một loài cụ thể; ở bài đọc khác, nó có thể nói về hiện vật hoặc một giá trị được cộng đồng gìn giữ.",
+      "sourceIds": [
+        "treasure",
+        "panda"
+      ]
+    },
+    "douyin": {
+      "title": "Một tên ứng dụng trong bài đọc",
+      "teaser": "抖音 và bối cảnh video ngắn",
+      "text": "Douyin là nền tảng video ngắn của ByteDance dành cho thị trường Trung Quốc. TikTok là một sản phẩm khác của cùng công ty cho các thị trường quốc tế. Vì vậy, khi bài khóa nhắc 抖音, không nên tự đổi tên thành TikTok; giữ đúng tên giúp bạn hiểu môi trường giao tiếp mà nhân vật đang nói tới.",
+      "sourceIds": [
+        "douyin"
+      ]
+    },
+    "festivals": {
+      "title": "Ngày lễ không chỉ có một loại lịch",
+      "teaser": "Ngày nào cố định, ngày nào thay đổi?",
+      "text": "元旦 theo lịch dương, còn 春节 theo lịch truyền thống Trung Quốc. Vì thế, ngày dương lịch của Tết có thể thay đổi từng năm. Nhớ loại lịch giúp bạn hiểu đúng tên ngày lễ.",
+      "sourceIds": [
+        "newyear",
+        "spring"
+      ]
+    },
+    "tradition": {
+      "title": "Truyền thống được tiếp nối ra sao?",
+      "teaser": "Không phải mọi gia đình đều làm giống nhau",
+      "text": "Truyền thống được tiếp nối qua gia đình và cộng đồng, từ món ăn đến lời chúc và cách trang trí. Nhưng cùng một dịp Tết, những người ở các vùng khác nhau không nhất thiết thực hiện giống nhau.",
+      "sourceIds": [
+        "spring"
+      ]
+    },
+    "spring-festival": {
+      "title": "Tết và những cuộc trở về",
+      "teaser": "Một dịp lễ gắn với đoàn tụ",
+      "text": "春节 bắt đầu vào ngày đầu năm theo lịch truyền thống Trung Quốc. Nhiều gia đình dọn nhà, chuẩn bị thực phẩm, ăn bữa đoàn tụ và chúc Tết người thân. Món ăn và hoạt động thay đổi theo vùng.",
+      "sourceIds": [
+        "spring"
+      ]
+    },
+    "gregorian-newyear": {
+      "title": "Hai cách đón năm mới",
+      "teaser": "元旦 khác 春节 ở điểm nào?",
+      "text": "元旦 ngày nay là 1 tháng 1 dương lịch. 春节 lại mở đầu năm theo lịch truyền thống Trung Quốc. Cả hai đều là dịp năm mới, nhưng là hai mốc khác nhau, không thể thay tên cho nhau.",
+      "sourceIds": [
+        "newyear",
+        "spring"
+      ]
+    },
+    "national-day": {
+      "title": "Một ngày trên lịch hiện đại",
+      "teaser": "Quốc khánh Trung Quốc là ngày nào?",
+      "text": "国庆节 của Trung Quốc diễn ra vào ngày 1 tháng 10, gắn với ngày thành lập nước Cộng hòa Nhân dân Trung Hoa năm 1949. Đây là mốc theo lịch dương. Tên ngày lễ giúp bạn nhận ra bối cảnh của bài đọc hoặc lời kể chuyến đi; lịch nghỉ cụ thể có thể được sắp xếp khác nhau từng năm.",
+      "sourceIds": [
+        "nationalday"
+      ]
+    },
+    "teachers-day": {
+      "title": "Một lời cảm ơn dành cho thầy cô",
+      "teaser": "Ngày Nhà giáo không trùng ở mọi nước",
+      "text": "Ở Trung Quốc, 教师节 là ngày 10 tháng 9. Đây là một ví dụ cho thấy cùng tên “Ngày Nhà giáo” nhưng ngày tổ chức có thể khác giữa các quốc gia. Khi gặp lời chúc 教师节快乐, bạn biết người nói đang gửi sự tri ân tới thầy cô, không phải nhắc tên một kỳ thi hay ngày khai giảng.",
+      "sourceIds": [
+        "teachersday"
+      ]
+    },
+    "newyear-shopping": {
+      "title": "Chuẩn bị Tết qua những món đồ",
+      "teaser": "年货 có nhất thiết là một món ăn?",
+      "text": "年货 là những thứ sắm để đón năm mới, gồm thực phẩm, đồ dùng hoặc đồ trang trí. Không phải một món ăn cố định: mỗi gia đình có danh sách riêng để chuẩn bị cho Tết.",
+      "sourceIds": [
+        "spring"
+      ]
+    },
+    "gala": {
+      "title": "Một chương trình trong đêm giao thừa",
+      "teaser": "春晚 là tên gọi tắt của điều gì?",
+      "text": "春晚 là cách gọi ngắn của chương trình văn nghệ mừng Tết; nổi tiếng nhất là Gala Tết của đài truyền hình trung ương, bắt đầu từ năm 1983. Chương trình có ca múa, hài và nhiều tiết mục khác. Trong bài khóa, 看春晚 gợi một hoạt động giải trí gắn với đêm giao thừa.",
+      "sourceIds": [
+        "gala"
+      ]
+    },
+    "red-envelopes": {
+      "title": "Một phong bao gửi lời chúc",
+      "teaser": "Từ phong bao tới lời chúc may mắn",
+      "text": "Dịp Tết, nhiều gia đình có tục tặng phong bao đỏ chứa tiền, thường từ người lớn tới trẻ nhỏ, để gửi lời chúc tốt lành. Cách tặng và người nhận tùy gia đình, quan hệ và hoàn cảnh. Ý nghĩa của 红包 vì vậy không chỉ ở số tiền, mà còn ở lời chúc và sự quan tâm đi cùng nó.",
+      "sourceIds": [
+        "envelope"
+      ]
+    }
+  },
+  "bindings": [
+    {
+      "hanzi": "你",
+      "pinyin": "nǐ",
+      "vietnamese_meaning": "anh, chị, bạn, ông, bà,...",
+      "topicId": "respect",
+      "hskLevel": 1,
+      "lessonNumber": 1
+    },
+    {
+      "hanzi": "你好",
+      "pinyin": "nǐ hǎo",
+      "vietnamese_meaning": "xin chào",
+      "topicId": "respect",
+      "hskLevel": 1,
+      "lessonNumber": 1
+    },
+    {
+      "hanzi": "您",
+      "pinyin": "nín",
+      "vietnamese_meaning": "ngài, ông, bà",
+      "topicId": "respect",
+      "hskLevel": 1,
+      "lessonNumber": 2
+    },
+    {
+      "hanzi": "名字",
+      "pinyin": "míngzi",
+      "vietnamese_meaning": "tên",
+      "topicId": "personal-names",
+      "hskLevel": 1,
+      "lessonNumber": 2
+    },
+    {
+      "hanzi": "谢谢",
+      "pinyin": "xièxie",
+      "vietnamese_meaning": "cảm ơn",
+      "topicId": "thanks",
+      "hskLevel": 1,
+      "lessonNumber": 2
+    },
+    {
+      "hanzi": "不客气",
+      "pinyin": "bú kèqi",
+      "vietnamese_meaning": "không có gì (đáp lời cảm ơn)",
+      "topicId": "thanks",
+      "hskLevel": 1,
+      "lessonNumber": 2
+    },
+    {
+      "hanzi": "对不起",
+      "pinyin": "duìbuqǐ",
+      "vietnamese_meaning": "xin lỗi",
+      "topicId": "apology",
+      "hskLevel": 1,
+      "lessonNumber": 2
+    },
+    {
+      "hanzi": "中国",
+      "pinyin": "Zhōngguó",
+      "vietnamese_meaning": "Trung Quốc",
+      "topicId": "cultural-regions",
+      "hskLevel": 1,
+      "lessonNumber": 3
+    },
+    {
+      "hanzi": "中文",
+      "pinyin": "Zhōngwén",
+      "vietnamese_meaning": "tiếng Trung",
+      "topicId": "language-day",
+      "hskLevel": 1,
+      "lessonNumber": 3
+    },
+    {
+      "hanzi": "汉语",
+      "pinyin": "Hànyǔ",
+      "vietnamese_meaning": "tiếng Hán; tiếng Trung",
+      "topicId": "language-day",
+      "hskLevel": 1,
+      "lessonNumber": 3
+    },
+    {
+      "hanzi": "家",
+      "pinyin": "jiā",
+      "vietnamese_meaning": "nhà, gia đình",
+      "topicId": "home",
+      "hskLevel": 1,
+      "lessonNumber": 4
+    },
+    {
+      "hanzi": "奶奶",
+      "pinyin": "nǎinai",
+      "vietnamese_meaning": "bà nội",
+      "topicId": "grandparents",
+      "hskLevel": 1,
+      "lessonNumber": 4
+    },
+    {
+      "hanzi": "爷爷",
+      "pinyin": "yéye",
+      "vietnamese_meaning": "ông nội",
+      "topicId": "grandparents",
+      "hskLevel": 1,
+      "lessonNumber": 4
+    },
+    {
+      "hanzi": "外公",
+      "pinyin": "wàigōng",
+      "vietnamese_meaning": "ông ngoại",
+      "topicId": "grandparents",
+      "hskLevel": 1,
+      "lessonNumber": 4
+    },
+    {
+      "hanzi": "外婆",
+      "pinyin": "wàipó",
+      "vietnamese_meaning": "bà ngoại",
+      "topicId": "grandparents",
+      "hskLevel": 1,
+      "lessonNumber": 4
+    },
+    {
+      "hanzi": "米饭",
+      "pinyin": "mǐfàn",
+      "vietnamese_meaning": "cơm",
+      "topicId": "rice",
+      "hskLevel": 1,
+      "lessonNumber": 5
+    },
+    {
+      "hanzi": "面条儿",
+      "pinyin": "miàntiáor",
+      "vietnamese_meaning": "mì sợi",
+      "topicId": "noodles",
+      "hskLevel": 1,
+      "lessonNumber": 5
+    },
+    {
+      "hanzi": "饺子",
+      "pinyin": "jiǎozi",
+      "vietnamese_meaning": "sủi cảo",
+      "topicId": "dumplings",
+      "hskLevel": 1,
+      "lessonNumber": 5
+    },
+    {
+      "hanzi": "馒头",
+      "pinyin": "mántou",
+      "vietnamese_meaning": "màn thầu; bánh bao không nhân",
+      "topicId": "mantou",
+      "hskLevel": 1,
+      "lessonNumber": 5
+    },
+    {
+      "hanzi": "包子",
+      "pinyin": "bāozi",
+      "vietnamese_meaning": "bánh bao có nhân",
+      "topicId": "baozi",
+      "hskLevel": 1,
+      "lessonNumber": 5
+    },
+    {
+      "hanzi": "茶",
+      "pinyin": "chá",
+      "vietnamese_meaning": "trà",
+      "topicId": "tea",
+      "hskLevel": 1,
+      "lessonNumber": 5
+    },
+    {
+      "hanzi": "奶茶",
+      "pinyin": "nǎi chá",
+      "vietnamese_meaning": "trà sữa",
+      "topicId": "milk-tea",
+      "hskLevel": 1,
+      "lessonNumber": 5
+    },
+    {
+      "hanzi": "哪儿",
+      "pinyin": "nǎ ér",
+      "vietnamese_meaning": "đâu, nơi nào",
+      "topicId": "where-erhua",
+      "hskLevel": 1,
+      "lessonNumber": 6
+    },
+    {
+      "hanzi": "哪里",
+      "pinyin": "nǎlǐ",
+      "vietnamese_meaning": "đâu, nơi nào",
+      "topicId": "where-erhua",
+      "hskLevel": 1,
+      "lessonNumber": 6
+    },
+    {
+      "hanzi": "西安",
+      "pinyin": "xī ān",
+      "vietnamese_meaning": "Tây An",
+      "topicId": "xian",
+      "hskLevel": 1,
+      "lessonNumber": 6
+    },
+    {
+      "hanzi": "钱",
+      "pinyin": "qián",
+      "vietnamese_meaning": "tiền",
+      "topicId": "currency",
+      "hskLevel": 1,
+      "lessonNumber": 10
+    },
+    {
+      "hanzi": "块",
+      "pinyin": "kuài",
+      "vietnamese_meaning": "tệ",
+      "topicId": "money-kuai",
+      "hskLevel": 1,
+      "lessonNumber": 10
+    },
+    {
+      "hanzi": "斤",
+      "pinyin": "jīn",
+      "vietnamese_meaning": "nửa cân",
+      "topicId": "weight",
+      "hskLevel": 1,
+      "lessonNumber": 10
+    },
+    {
+      "hanzi": "公斤",
+      "pinyin": "gōng jīn",
+      "vietnamese_meaning": "kilôgam (kg)",
+      "topicId": "weight",
+      "hskLevel": 1,
+      "lessonNumber": 10
+    },
+    {
+      "hanzi": "小学",
+      "pinyin": "xiǎo xué",
+      "vietnamese_meaning": "trường tiểu học; bậc tiểu học",
+      "topicId": "school-stages",
+      "hskLevel": 1,
+      "lessonNumber": 11
+    },
+    {
+      "hanzi": "初中",
+      "pinyin": "chū zhōng",
+      "vietnamese_meaning": "trung học cơ sở",
+      "topicId": "school-stages",
+      "hskLevel": 1,
+      "lessonNumber": 11
+    },
+    {
+      "hanzi": "高中",
+      "pinyin": "gāo zhōng",
+      "vietnamese_meaning": "trung học phổ thông",
+      "topicId": "school-stages",
+      "hskLevel": 1,
+      "lessonNumber": 11
+    },
+    {
+      "hanzi": "大学",
+      "pinyin": "dàxué",
+      "vietnamese_meaning": "đại học",
+      "topicId": "university",
+      "hskLevel": 1,
+      "lessonNumber": 11
+    },
+    {
+      "hanzi": "汉字",
+      "pinyin": "hàn zì",
+      "vietnamese_meaning": "chữ Hán",
+      "topicId": "calligraphy",
+      "hskLevel": 1,
+      "lessonNumber": 13
+    },
+    {
+      "hanzi": "北京",
+      "pinyin": "běi jīng",
+      "vietnamese_meaning": "Bắc Kinh",
+      "topicId": "beijing",
+      "hskLevel": 2,
+      "lessonNumber": 1
+    },
+    {
+      "hanzi": "故宫",
+      "pinyin": "Gùgōng",
+      "vietnamese_meaning": "Cố cung",
+      "topicId": "forbidden-city",
+      "hskLevel": 2,
+      "lessonNumber": 1
+    },
+    {
+      "hanzi": "烤鸭",
+      "pinyin": "kǎo yā",
+      "vietnamese_meaning": "vịt quay",
+      "topicId": "roast-duck",
+      "hskLevel": 2,
+      "lessonNumber": 1
+    },
+    {
+      "hanzi": "兵马俑",
+      "pinyin": "Bīngmǎyǒng",
+      "vietnamese_meaning": "Chiến binh đất nung",
+      "topicId": "terracotta",
+      "hskLevel": 2,
+      "lessonNumber": 2
+    },
+    {
+      "hanzi": "送",
+      "pinyin": "sòng",
+      "vietnamese_meaning": "tặng",
+      "topicId": "gifts",
+      "hskLevel": 2,
+      "lessonNumber": 2
+    },
+    {
+      "hanzi": "礼物",
+      "pinyin": "lǐwù",
+      "vietnamese_meaning": "quà, món quà",
+      "topicId": "gifts",
+      "hskLevel": 2,
+      "lessonNumber": 3
+    },
+    {
+      "hanzi": "特产",
+      "pinyin": "tèchǎn",
+      "vietnamese_meaning": "đặc sản",
+      "topicId": "specialities",
+      "hskLevel": 2,
+      "lessonNumber": 3
+    },
+    {
+      "hanzi": "生日",
+      "pinyin": "shēngrì",
+      "vietnamese_meaning": "sinh nhật",
+      "topicId": "birthday",
+      "hskLevel": 2,
+      "lessonNumber": 4
+    },
+    {
+      "hanzi": "长寿面",
+      "pinyin": "chángshòumiàn",
+      "vietnamese_meaning": "mì trường thọ",
+      "topicId": "longevity-noodles",
+      "hskLevel": 2,
+      "lessonNumber": 4
+    },
+    {
+      "hanzi": "羽毛球",
+      "pinyin": "yǔmáoqiú",
+      "vietnamese_meaning": "cầu lông",
+      "topicId": "badminton",
+      "hskLevel": 2,
+      "lessonNumber": 5
+    },
+    {
+      "hanzi": "太极拳",
+      "pinyin": "tàijíquán",
+      "vietnamese_meaning": "thái cực quyền",
+      "topicId": "taijiquan",
+      "hskLevel": 2,
+      "lessonNumber": 5
+    },
+    {
+      "hanzi": "加油",
+      "pinyin": "jiāyóu",
+      "vietnamese_meaning": "cố lên",
+      "topicId": "cheering",
+      "hskLevel": 2,
+      "lessonNumber": 5
+    },
+    {
+      "hanzi": "红色",
+      "pinyin": "hóng sè",
+      "vietnamese_meaning": "màu đỏ",
+      "topicId": "red",
+      "hskLevel": 2,
+      "lessonNumber": 9
+    },
+    {
+      "hanzi": "微信",
+      "pinyin": "wēixìn",
+      "vietnamese_meaning": "Wechat",
+      "topicId": "weixin",
+      "hskLevel": 2,
+      "lessonNumber": 9
+    },
+    {
+      "hanzi": "姓名",
+      "pinyin": "xìng míng",
+      "vietnamese_meaning": "họ và tên",
+      "topicId": "personal-names",
+      "hskLevel": 2,
+      "lessonNumber": 10
+    },
+    {
+      "hanzi": "姓",
+      "pinyin": "xìng",
+      "vietnamese_meaning": "họ; mang họ",
+      "topicId": "personal-names",
+      "hskLevel": 2,
+      "lessonNumber": 10
+    },
+    {
+      "hanzi": "贵姓",
+      "pinyin": "guì xìng",
+      "vietnamese_meaning": "quý tính (cách hỏi họ lịch sự)",
+      "topicId": "polite-surname",
+      "hskLevel": 2,
+      "lessonNumber": 10
+    },
+    {
+      "hanzi": "东方明珠",
+      "pinyin": "dōng fāng míng zhū",
+      "vietnamese_meaning": "Đông Phương Minh Châu (tên tháp ở Thượng Hải)",
+      "topicId": "shanghai-landmarks",
+      "hskLevel": 2,
+      "lessonNumber": 10
+    },
+    {
+      "hanzi": "外滩",
+      "pinyin": "Wàitān",
+      "vietnamese_meaning": "Bến Thượng Hải",
+      "topicId": "shanghai-landmarks",
+      "hskLevel": 2,
+      "lessonNumber": 10
+    },
+    {
+      "hanzi": "点菜",
+      "pinyin": "diǎncài",
+      "vietnamese_meaning": "gọi món",
+      "topicId": "ordering",
+      "hskLevel": 3,
+      "lessonNumber": 1
+    },
+    {
+      "hanzi": "请客",
+      "pinyin": "qǐngkè",
+      "vietnamese_meaning": "mời, đãi khách",
+      "topicId": "hosting-meal",
+      "hskLevel": 3,
+      "lessonNumber": 1
+    },
+    {
+      "hanzi": "四川烤鱼",
+      "pinyin": "sìchuānkǎoyú",
+      "vietnamese_meaning": "cá nướng Tứ Xuyên",
+      "topicId": "grilled-fish",
+      "hskLevel": 3,
+      "lessonNumber": 1
+    },
+    {
+      "hanzi": "绿茶",
+      "pinyin": "lǜchá",
+      "vietnamese_meaning": "trà xanh",
+      "topicId": "green-tea",
+      "hskLevel": 3,
+      "lessonNumber": 1
+    },
+    {
+      "hanzi": "筷子",
+      "pinyin": "kuàizi",
+      "vietnamese_meaning": "đũa",
+      "topicId": "chopsticks",
+      "hskLevel": 3,
+      "lessonNumber": 1
+    },
+    {
+      "hanzi": "海南",
+      "pinyin": "hǎinán",
+      "vietnamese_meaning": "Hải Nam",
+      "topicId": "hainan",
+      "hskLevel": 3,
+      "lessonNumber": 1
+    },
+    {
+      "hanzi": "颐和园",
+      "pinyin": "yíhéyuán",
+      "vietnamese_meaning": "Di Hòa Viên",
+      "topicId": "summer-palace",
+      "hskLevel": 3,
+      "lessonNumber": 3
+    },
+    {
+      "hanzi": "天坛",
+      "pinyin": "tiāntán",
+      "vietnamese_meaning": "Thiên Đàn",
+      "topicId": "heaven-temple",
+      "hskLevel": 3,
+      "lessonNumber": 3
+    },
+    {
+      "hanzi": "胡同",
+      "pinyin": "hútòng",
+      "vietnamese_meaning": "ngõ, hẻm truyền thống ở Bắc Kinh",
+      "topicId": "hutong",
+      "hskLevel": 3,
+      "lessonNumber": 3
+    },
+    {
+      "hanzi": "南京",
+      "pinyin": "nánjīng",
+      "vietnamese_meaning": "Nam Kinh",
+      "topicId": "nanjing",
+      "hskLevel": 3,
+      "lessonNumber": 3
+    },
+    {
+      "hanzi": "北方",
+      "pinyin": "běifāng",
+      "vietnamese_meaning": "miền Bắc, phương Bắc",
+      "topicId": "north-south",
+      "hskLevel": 3,
+      "lessonNumber": 3
+    },
+    {
+      "hanzi": "南方",
+      "pinyin": "nánfāng",
+      "vietnamese_meaning": "miền Nam, phương Nam",
+      "topicId": "north-south",
+      "hskLevel": 3,
+      "lessonNumber": 3
+    },
+    {
+      "hanzi": "新疆",
+      "pinyin": "xīnjiāng",
+      "vietnamese_meaning": "Tân Cương",
+      "topicId": "xinjiang",
+      "hskLevel": 3,
+      "lessonNumber": 3
+    },
+    {
+      "hanzi": "高铁",
+      "pinyin": "gāotiě",
+      "vietnamese_meaning": "tàu cao tốc",
+      "topicId": "high-speed",
+      "hskLevel": 3,
+      "lessonNumber": 5
+    },
+    {
+      "hanzi": "检票",
+      "pinyin": "jiǎnpiào",
+      "vietnamese_meaning": "kiểm tra vé",
+      "topicId": "ticket-check",
+      "hskLevel": 3,
+      "lessonNumber": 5
+    },
+    {
+      "hanzi": "扫码",
+      "pinyin": "sǎomǎ",
+      "vietnamese_meaning": "quét mã",
+      "topicId": "qr-payment",
+      "hskLevel": 3,
+      "lessonNumber": 6
+    },
+    {
+      "hanzi": "二维码",
+      "pinyin": "èrwéimǎ",
+      "vietnamese_meaning": "mã QR",
+      "topicId": "qr-payment",
+      "hskLevel": 3,
+      "lessonNumber": 6
+    },
+    {
+      "hanzi": "双十一",
+      "pinyin": "shuāngshíyī",
+      "vietnamese_meaning": "ngày mua sắm 11 tháng 11",
+      "topicId": "double-eleven",
+      "hskLevel": 3,
+      "lessonNumber": 6
+    },
+    {
+      "hanzi": "奥运会",
+      "pinyin": "àoyùnhuì",
+      "vietnamese_meaning": "Thế vận hội, Olympic",
+      "topicId": "olympics",
+      "hskLevel": 3,
+      "lessonNumber": 8
+    },
+    {
+      "hanzi": "过奖",
+      "pinyin": "guòjiǎng",
+      "vietnamese_meaning": "quá khen",
+      "topicId": "modesty",
+      "hskLevel": 3,
+      "lessonNumber": 10
+    },
+    {
+      "hanzi": "敬",
+      "pinyin": "jìng",
+      "vietnamese_meaning": "kính, mời (rượu)",
+      "topicId": "toasting",
+      "hskLevel": 3,
+      "lessonNumber": 10
+    },
+    {
+      "hanzi": "干杯",
+      "pinyin": "gānbēi",
+      "vietnamese_meaning": "nâng cốc, cạn ly",
+      "topicId": "toasting",
+      "hskLevel": 3,
+      "lessonNumber": 10
+    },
+    {
+      "hanzi": "火锅",
+      "pinyin": "huǒguō",
+      "vietnamese_meaning": "lẩu",
+      "topicId": "hotpot",
+      "hskLevel": 3,
+      "lessonNumber": 10
+    },
+    {
+      "hanzi": "留学",
+      "pinyin": "liúxué",
+      "vietnamese_meaning": "du học",
+      "topicId": "study-abroad",
+      "hskLevel": 3,
+      "lessonNumber": 12
+    },
+    {
+      "hanzi": "留学生",
+      "pinyin": "liúxuéshēng",
+      "vietnamese_meaning": "du học sinh",
+      "topicId": "study-abroad",
+      "hskLevel": 3,
+      "lessonNumber": 12
+    },
+    {
+      "hanzi": "考研",
+      "pinyin": "kǎoyán",
+      "vietnamese_meaning": "thi tuyển sinh sau đại học",
+      "topicId": "postgraduate",
+      "hskLevel": 3,
+      "lessonNumber": 13
+    },
+    {
+      "hanzi": "班主任",
+      "pinyin": "bānzhǔrèn",
+      "vietnamese_meaning": "giáo viên chủ nhiệm",
+      "topicId": "class-teacher",
+      "hskLevel": 3,
+      "lessonNumber": 13
+    },
+    {
+      "hanzi": "母校",
+      "pinyin": "mǔxiào",
+      "vietnamese_meaning": "trường cũ (nơi từng theo học)",
+      "topicId": "alma-mater",
+      "hskLevel": 3,
+      "lessonNumber": 13
+    },
+    {
+      "hanzi": "竹子",
+      "pinyin": "zhúzi",
+      "vietnamese_meaning": "tre, trúc",
+      "topicId": "bamboo",
+      "hskLevel": 3,
+      "lessonNumber": 14
+    },
+    {
+      "hanzi": "熊猫",
+      "pinyin": "xióngmāo",
+      "vietnamese_meaning": "gấu trúc",
+      "topicId": "panda",
+      "hskLevel": 3,
+      "lessonNumber": 14
+    },
+    {
+      "hanzi": "国宝",
+      "pinyin": "guóbǎo",
+      "vietnamese_meaning": "bảo vật quốc gia",
+      "topicId": "national-treasure",
+      "hskLevel": 3,
+      "lessonNumber": 14
+    },
+    {
+      "hanzi": "抖音",
+      "pinyin": "dǒuyīn",
+      "vietnamese_meaning": "Douyin (ứng dụng video ngắn)",
+      "topicId": "douyin",
+      "hskLevel": 3,
+      "lessonNumber": 14
+    },
+    {
+      "hanzi": "节日",
+      "pinyin": "jiérì",
+      "vietnamese_meaning": "ngày lễ",
+      "topicId": "festivals",
+      "hskLevel": 3,
+      "lessonNumber": 15
+    },
+    {
+      "hanzi": "传统",
+      "pinyin": "chuántǒng",
+      "vietnamese_meaning": "truyền thống",
+      "topicId": "tradition",
+      "hskLevel": 3,
+      "lessonNumber": 15
+    },
+    {
+      "hanzi": "春节",
+      "pinyin": "chūnjié",
+      "vietnamese_meaning": "Tết Nguyên đán",
+      "topicId": "spring-festival",
+      "hskLevel": 3,
+      "lessonNumber": 15
+    },
+    {
+      "hanzi": "元旦节",
+      "pinyin": "yuándànjié",
+      "vietnamese_meaning": "Tết Dương lịch",
+      "topicId": "gregorian-newyear",
+      "hskLevel": 3,
+      "lessonNumber": 15
+    },
+    {
+      "hanzi": "国庆节",
+      "pinyin": "guóqìngjié",
+      "vietnamese_meaning": "Quốc khánh",
+      "topicId": "national-day",
+      "hskLevel": 3,
+      "lessonNumber": 15
+    },
+    {
+      "hanzi": "教师节",
+      "pinyin": "jiàoshījié",
+      "vietnamese_meaning": "Ngày Nhà giáo",
+      "topicId": "teachers-day",
+      "hskLevel": 3,
+      "lessonNumber": 15
+    },
+    {
+      "hanzi": "年货",
+      "pinyin": "niánhuò",
+      "vietnamese_meaning": "đồ sắm Tết",
+      "topicId": "newyear-shopping",
+      "hskLevel": 3,
+      "lessonNumber": 15
+    },
+    {
+      "hanzi": "春晚",
+      "pinyin": "chūnwǎn",
+      "vietnamese_meaning": "chương trình văn nghệ đêm giao thừa",
+      "topicId": "gala",
+      "hskLevel": 3,
+      "lessonNumber": 15
+    },
+    {
+      "hanzi": "红包",
+      "pinyin": "hóngbāo",
+      "vietnamese_meaning": "lì xì, phong bao đỏ",
+      "topicId": "red-envelopes",
+      "hskLevel": 3,
+      "lessonNumber": 15
+    }
+  ]
+}
