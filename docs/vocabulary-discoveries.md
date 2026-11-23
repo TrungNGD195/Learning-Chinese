@@ -1,9 +1,10 @@
 # Vocabulary discoveries
 
-The optional “Khám phá thêm” library contains 75 short Vietnamese articles for
-94 vocabulary senses across 26 lessons: 34 senses in HSK1, 19 in HSK2 and 41 in
-HSK3. This completes the 23 November 2026 audit scope (92 additions plus the
-existing 你 and 饺子). Not every vocabulary word needs an article.
+The optional “Khám phá thêm” library contains 77 short Vietnamese articles for
+97 vocabulary senses across 27 lessons: 37 senses in HSK1, 19 in HSK2 and 41 in
+HSK3. The initial 23 November 2026 audit covered 94 senses (92 additions plus
+the existing 你 and 饺子); the curiosity update adds three more senses. Not every
+vocabulary word needs an article.
 
 ## Content and matching
 
@@ -55,7 +56,26 @@ popup introduces no additional progress request.
 ## Validation
 
 The discovery tests compare every binding with the checked-in 40-lesson curriculum,
-verify 34/19/41 coverage and source references, and test homographs, Unicode and
+verify 37/19/41 coverage and source references, and test homographs, Unicode and
 unknown meanings. Browser checks cover the real lesson layout, popup dismissal,
 returning focus, source links and small screens. Keep the catalog and these
 coverage expectations in sync when deliberately adding or removing articles.
+
+## Verified curiosity update — 23 November 2026
+
+Four existing articles now lead with a verified surprising fact: the panda's
+wrist-bone pseudo-thumb, green/black tea from the same plant species, painted
+terracotta warriors, and the transition from heavy coin strings to Song paper
+money. Tea's social practices remain on 茶; the botanical story is on 绿茶.
+Two new articles cover the lunisolar leap month (年 and 月) and the 福倒/福到
+wordplay (到 meaning arrival, never its result-complement sense). They retain
+one brief paragraph each, no quizzes and no completion requirements.
+
+Each claim was checked against its specific reference: the Natural History
+Museum of Los Angeles County, Kew, archaeologist Li Xiuzhen's Oxford article,
+Columbia University, the Hong Kong Observatory, and Edinburgh's Confucius
+Institute. The Fu article explains wordplay rather than asserting a historical
+origin or a universal placement rule. The paper-money article avoids an
+ambiguous claim about the first paper money of every kind. The Great Wall
+space-visibility idea is deferred because 长城 is not an authored vocabulary
+sense in the current curriculum; no lesson content is invented to host it.

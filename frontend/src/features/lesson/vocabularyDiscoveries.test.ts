@@ -11,18 +11,18 @@ const lessons = Object.values(import.meta.glob<CurriculumLesson>([
 describe('curated vocabulary discoveries', () => {
   it('covers all audited senses against the real forty-lesson curriculum', () => {
     expect(lessons).toHaveLength(40)
-    expect(catalog.bindings).toHaveLength(94)
+    expect(catalog.bindings).toHaveLength(97)
     for (const binding of catalog.bindings) {
       const lesson = lessons.find(row => row.lesson.hsk_level === binding.hskLevel && row.lesson.lesson_number === binding.lessonNumber)
       const word = lesson?.vocabulary.find(row => row.hanzi === binding.hanzi && row.pinyin === binding.pinyin && row.vietnamese_meaning === binding.vietnamese_meaning)
       expect(word, `Published sense missing: HSK ${binding.hskLevel} / ${binding.lessonNumber} / ${binding.hanzi}`).toBeDefined()
       expect(vocabularyDiscovery(word!)?.id).toBe(binding.topicId)
     }
-    expect([1, 2, 3].map(hsk => lessons.filter(row => row.lesson.hsk_level === hsk).flatMap(row => row.vocabulary).filter(word => vocabularyDiscovery(word)).length)).toEqual([34, 19, 41])
+    expect([1, 2, 3].map(hsk => lessons.filter(row => row.lesson.hsk_level === hsk).flatMap(row => row.vocabulary).filter(word => vocabularyDiscovery(word)).length)).toEqual([37, 19, 41])
   })
 
-  it('does not attach family or money articles to classifier senses of the same character', () => {
-    for (const hanzi of ['家', '块']) {
+  it('does not attach articles to a different classifier or result-complement sense', () => {
+    for (const hanzi of ['家', '块', '到']) {
       const senses = lessons.flatMap(lesson => lesson.vocabulary).filter(word => word.hanzi === hanzi)
       expect(senses.length).toBeGreaterThan(1)
       expect(senses.filter(word => vocabularyDiscovery(word))).toHaveLength(1)
@@ -39,6 +39,9 @@ describe('curated vocabulary discoveries', () => {
     expect(find('外婆')?.id).toBe(find('爷爷')?.id)
     expect(find('春节')?.id).not.toBe(find('春晚')?.id)
     expect(find('茶')?.id).not.toBe(find('奶茶')?.id)
+    expect(find('年')?.id).toBe('leap-month')
+    expect(find('月')?.id).toBe(find('年')?.id)
+    expect(find('到')?.id).toBe('fu-arrives')
   })
 
   it('accepts harmless Unicode and pinyin spacing variations but has no generic fallback', () => {

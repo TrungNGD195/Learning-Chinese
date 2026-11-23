@@ -295,6 +295,36 @@
       "label": "Cổng thông tin Chính phủ Trung Quốc · How people celebrate Spring Festival",
       "url": "https://english.www.gov.cn/english.www.gov.cn/news/202501/28/content_WS6798c6bbc6d0868f4e8ef3f8.html",
       "checkedOn": "2026-11-23"
+    },
+    "panda-thumb": {
+      "label": "Bảo tàng Lịch sử Tự nhiên Los Angeles · Ngón cái giả của gấu trúc",
+      "url": "https://nhm.org/press/eating-bamboo-its-all-wrist",
+      "checkedOn": "2026-11-23"
+    },
+    "camellia": {
+      "label": "Vườn thực vật Hoàng gia Kew · Camellia sinensis",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:828548-1/general-information",
+      "checkedOn": "2026-11-23"
+    },
+    "painted-warriors": {
+      "label": "Oxford Academic · The Terracotta Warriors · Li Xiuzhen",
+      "url": "https://academic.oup.com/reference/62338/reference-article-abstract/554174739",
+      "checkedOn": "2026-11-23"
+    },
+    "paper-money": {
+      "label": "Đại học Columbia · Từ tiền xu đến tiền giấy thời Tống",
+      "url": "https://afe.easia.columbia.edu/songdynasty-module/econ-rev-money.html",
+      "checkedOn": "2026-11-23"
+    },
+    "fu-wordplay": {
+      "label": "Viện Khổng Tử tại Đại học Edinburgh · Chữ 福 đón Tết",
+      "url": "https://www.confuciusinstitute.ac.uk/welcoming-good-fortune-at-chinese-new-year/",
+      "checkedOn": "2026-11-23"
+    },
+    "lunisolar-calendar": {
+      "label": "Đài Thiên văn Hồng Kông · Lịch truyền thống Trung Quốc",
+      "url": "https://www.hko.gov.hk/en/gts/time/calendarinfo.htm",
+      "checkedOn": "2026-11-23"
     }
   },
   "topics": {
@@ -452,11 +482,11 @@
       ]
     },
     "currency": {
-      "title": "Tên tiền và tên đơn vị",
-      "teaser": "人民币, 元 và 钱 khác nhau ở đâu?",
-      "text": "人民币 là tên đồng tiền, còn 元 là đơn vị cơ bản. 钱 là từ nói chung về tiền. Bạn có thể thấy giá ghi bằng 元 nhưng khi nói chuyện lại nghe cách gọi khẩu ngữ khác. Nhận ra tên đồng tiền và đơn vị giúp việc đọc giá rõ ràng hơn; không cần học tỷ giá để hiểu câu.",
+      "title": "Mang tiền từng là một việc rất… nặng",
+      "teaser": "Từ những xâu tiền nặng đến tờ giấy nhẹ",
+      "text": "Trước khi tiền giấy phổ biến, người ta xâu tiền xu qua lỗ ở giữa; mang nhiều xâu đi xa rất nặng. Tại Trung Quốc, thương nhân dùng chứng từ gửi tiền, rồi chính quyền nhà Tống tiếp quản hệ thống và phát hành tiền giấy vào những năm 1020. Khi học 钱, hãy hình dung cả quãng đường từ xâu tiền tới tờ giấy.",
       "sourceIds": [
-        "currency"
+        "paper-money"
       ]
     },
     "money-kuai": {
@@ -519,11 +549,11 @@
       ]
     },
     "terracotta": {
-      "title": "Một đội quân bằng đất nung",
-      "teaser": "Những binh sĩ không hoàn toàn giống nhau",
-      "text": "兵马俑 là các tượng binh sĩ và ngựa bằng đất nung thuộc khu lăng Tần Thủy Hoàng gần Tây An. Di tích được phát hiện năm 1974 và là một phần của di sản thế giới UNESCO. Điều đáng chú ý là các tượng có những chi tiết khác nhau, chứ không chỉ lặp lại một khuôn mặt.",
+      "title": "Đội quân đất nung từng đầy màu sắc",
+      "teaser": "Những chiến binh từng được tô nhiều màu!",
+      "text": "兵马俑 thường xuất hiện trong ảnh với màu đất nung, nhưng các tượng vốn được tô nhiều màu rực rỡ như đỏ, xanh và tím. Nhiều lớp màu đã phai hoặc bong mất sau khi tượng tiếp xúc với không khí. Bảo tồn những dấu màu còn lại giúp các nhà nghiên cứu hiểu rõ hơn diện mạo ban đầu của đội quân.",
       "sourceIds": [
-        "qin"
+        "painted-warriors"
       ]
     },
     "gifts": {
@@ -631,11 +661,11 @@
       ]
     },
     "green-tea": {
-      "title": "Tên màu sắc trong thế giới trà",
-      "teaser": "绿茶 là một nhóm trà riêng",
-      "text": "Trà xanh là một trong những nhóm trà được nhắc tới trong hồ sơ UNESCO về kỹ thuật chế biến trà Trung Quốc. Tên nhóm liên quan tới cách làm và đặc điểm của trà, không chỉ màu nước trong cốc. Các địa phương có thể có giống trà và cách pha khác nhau, nên 绿茶 chưa phải tên của một sản phẩm duy nhất.",
+      "title": "Trà xanh và hồng trà có cùng một loài cây?",
+      "teaser": "Hai loại trà, cùng một loài cây?",
+      "text": "绿茶 là trà xanh, còn 红茶 là hồng trà. Chúng đều được làm từ loài cây Camellia sinensis; khác biệt đến từ cách chế biến, không nhất thiết từ hai loài cây riêng. Vì vậy, nhìn hai cốc trà khác màu, bạn có thể đang gặp hai cách làm khác nhau từ cùng một loài cây.",
       "sourceIds": [
-        "tea"
+        "camellia"
       ]
     },
     "grilled-fish": {
@@ -799,11 +829,11 @@
       ]
     },
     "panda": {
-      "title": "Gấu trúc và ngôi nhà trong rừng núi",
-      "teaser": "Đằng sau hình ảnh dễ thương",
-      "text": "Gấu trúc lớn sống trong những khu rừng núi ở miền trung Trung Quốc và thức ăn chủ yếu là tre trúc. Những điều kiện sống ấy khiến bảo vệ sinh cảnh trở thành phần quan trọng của bảo tồn. Khi gặp 熊猫 trong bài đọc, hãy nghĩ tới cả môi trường sống của con vật, không chỉ hình ảnh biểu tượng hay nhân vật hoạt hình.",
+      "title": "“Ngón tay” giữ tre không phải ngón tay?",
+      "teaser": "Gấu trúc giữ tre bằng xương cổ tay?",
+      "text": "Nhìn 熊猫 cầm 竹子, bạn có thể tưởng nó có ngón cái như người. Thực ra, gấu trúc có một “ngón cái giả” hình thành từ xương cổ tay phát triển lớn. Bộ phận này giúp nó giữ tre khi ăn. Một chi tiết nhỏ trên bàn chân lại góp phần giúp con vật thích nghi với nguồn thức ăn quen thuộc.",
       "sourceIds": [
-        "panda"
+        "panda-thumb"
       ]
     },
     "bamboo": {
@@ -903,6 +933,22 @@
       "text": "Dịp Tết, nhiều gia đình có tục tặng phong bao đỏ chứa tiền, thường từ người lớn tới trẻ nhỏ, để gửi lời chúc tốt lành. Cách tặng và người nhận tùy gia đình, quan hệ và hoàn cảnh. Ý nghĩa của 红包 vì vậy không chỉ ở số tiền, mà còn ở lời chúc và sự quan tâm đi cùng nó.",
       "sourceIds": [
         "envelope"
+      ]
+    },
+    "fu-arrives": {
+      "title": "Vì sao có nhà dán chữ 福 ngược?",
+      "teaser": "Lộn ngược một chữ mà lại thành lời chúc?",
+      "text": "到 đọc là dào, nghĩa là “đến”. Trong cách nói về chữ 福 treo ngược, 倒 cũng đọc là dào. Hai âm giống nhau tạo cách chơi chữ: 福倒 gợi 福到, tức “phúc đến”. Vì thế, một số cách trang trí Tết đặt chữ 福 ngược để gửi lời chúc. Đây là tập quán có biến thể, không phải mọi chữ 福 đều phải treo ngược.",
+      "sourceIds": [
+        "fu-wordplay"
+      ]
+    },
+    "leap-month": {
+      "title": "Một năm có thể có 13 tháng?",
+      "teaser": "Tháng nhuận: thêm hẳn một tháng!",
+      "text": "Lịch truyền thống Trung Quốc kết hợp chu kỳ Mặt Trăng và Mặt Trời. Mười hai tháng theo chu kỳ Mặt Trăng ngắn hơn một năm theo Mặt Trời khoảng 11 ngày. Để điều chỉnh chênh lệch, có năm thêm một tháng nhuận và thành 13 tháng. Vì thế, “tháng nhuận” ở đây là thêm một tháng, khác với việc thêm ngày 29 tháng 2 của lịch dương.",
+      "sourceIds": [
+        "lunisolar-calendar"
       ]
     }
   },
@@ -1658,6 +1704,30 @@
       "topicId": "red-envelopes",
       "hskLevel": 3,
       "lessonNumber": 15
+    },
+    {
+      "hanzi": "年",
+      "pinyin": "nián",
+      "vietnamese_meaning": "năm",
+      "topicId": "leap-month",
+      "hskLevel": 1,
+      "lessonNumber": 4
+    },
+    {
+      "hanzi": "月",
+      "pinyin": "yuè",
+      "vietnamese_meaning": "tháng",
+      "topicId": "leap-month",
+      "hskLevel": 1,
+      "lessonNumber": 5
+    },
+    {
+      "hanzi": "到",
+      "pinyin": "dào",
+      "vietnamese_meaning": "đến",
+      "topicId": "fu-arrives",
+      "hskLevel": 1,
+      "lessonNumber": 8
     }
   ]
 }
