@@ -1,4 +1,4 @@
-import { act, fireEvent, render, screen, waitFor } from '@testing-library/react'
+import { act, fireEvent, render, screen, waitFor, within } from '@testing-library/react'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { StrokeOrder } from './StrokeOrder'
 import { loadStrokeData } from './strokeData'
@@ -25,22 +25,26 @@ afterEach(() => {
 })
 
 describe('real stroke-sequence player controls', () => {
-  it('can pause, inspect strokes, restart and change character without marking learner progress', async () => {
+  it('shows all characters side by side with independent controls and no character selector', async () => {
     const { container, unmount } = render(<StrokeOrder hanzi="你好"/>)
     const pause = await screen.findByRole('button', { name: 'Tạm dừng chữ 你' })
+    const first = screen.getByRole('group', { name: 'Chữ 你, vị trí 1' })
+    const second = screen.getByRole('group', { name: 'Chữ 好, vị trí 2' })
+    expect(screen.queryByRole('group', { name: 'Chọn chữ để xem thứ tự nét' })).not.toBeInTheDocument()
     await waitFor(() => expect(players[0].play).toHaveBeenCalled())
     fireEvent.click(pause)
     expect(players[0].pause).toHaveBeenCalled()
     fireEvent.click(screen.getByRole('button', { name: 'Nét tiếp theo của chữ 你' }))
-    expect(screen.getByText('Đã viết 1 / 2 nét')).toBeInTheDocument()
-    expect(container.querySelectorAll('.hanzi-stroke-active')).toHaveLength(2)
+    expect(within(first).getByText('Đã viết 1 / 2 nét')).toBeInTheDocument()
+    expect(within(second).getByText('Đã viết 0 / 2 nét')).toBeInTheDocument()
+    expect(first.querySelectorAll('.hanzi-stroke-active')).toHaveLength(2)
     fireEvent.click(screen.getByRole('button', { name: 'Nét tiếp theo của chữ 你' }))
-    expect(screen.getByText('Đã viết đủ 2 / 2 nét')).toBeInTheDocument()
+    expect(within(first).getByText('Đã viết đủ 2 / 2 nét')).toBeInTheDocument()
     fireEvent.click(screen.getByRole('button', { name: 'Bắt đầu lại chữ 你' }))
-    expect(screen.getByText('Đã viết 0 / 2 nét')).toBeInTheDocument()
-    fireEvent.click(screen.getByRole('button', { name: 'Chữ 好, vị trí 2' }))
+    expect(within(first).getByText('Đã viết 0 / 2 nét')).toBeInTheDocument()
     await waitFor(() => expect(loadStrokeData).toHaveBeenCalledWith('好'))
     expect(screen.getByRole('img', { name: /Thứ tự nét chữ 好/ })).toBeInTheDocument()
+    expect(container.querySelectorAll('.hanzi-stroke-player')).toHaveLength(2)
     unmount()
     expect(players.every(player => player.cancel.mock.calls.length)).toBe(true)
   })

@@ -233,7 +233,7 @@ function ReviewSession({ selection: { level, lessonId, title }, onExit }: { sele
         <span className="review-flashcard__rotor">
           <span className="review-flashcard__face review-flashcard__face--front" aria-hidden={revealed} inert={revealed}><strong lang="zh-Hans">{card.hanzi}</strong></span>
           <span className="review-flashcard__face review-flashcard__face--back" aria-hidden={!revealed} inert={!revealed}>
-            <span className="review-flashcard__back-content"><span className="review-flashcard__art" aria-hidden="true"><VocabularyIllustration hanzi={card.hanzi} partOfSpeech={card.part_of_speech} inline/></span>
+            <span className="review-flashcard__back-content"><span className="review-flashcard__art" aria-hidden="true"><VocabularyIllustration hanzi={card.hanzi} pinyin={card.pinyin} meaning={card.vietnamese_meaning} partOfSpeech={card.part_of_speech} inline/></span>
               <span id={answerId} className="review-flashcard__answer"><span className="review-flashcard__pinyin" lang="zh-Latn-pinyin">{card.pinyin}</span>{' '}<span>{card.vietnamese_meaning}</span></span>
             </span>
           </span>

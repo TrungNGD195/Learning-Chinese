@@ -1,0 +1,8785 @@
+{
+  "version": 1,
+  "columns": 4,
+  "rows": 4,
+  "count": 1097,
+  "expected": 1097,
+  "entries": [
+    {
+      "hanzi": "你",
+      "pinyin": "nǐ",
+      "meaning": "anh, chị, bạn, ông, bà,...",
+      "id": "4bca04cdad0a8bec",
+      "atlas": 0,
+      "cell": 0
+    },
+    {
+      "hanzi": "我",
+      "pinyin": "wǒ",
+      "meaning": "tôi",
+      "id": "85ba52136a2616d0",
+      "atlas": 0,
+      "cell": 1
+    },
+    {
+      "hanzi": "好",
+      "pinyin": "hǎo",
+      "meaning": "tốt, đẹp, hay, ngon",
+      "id": "de1760f793502c9a",
+      "atlas": 0,
+      "cell": 2
+    },
+    {
+      "hanzi": "你好",
+      "pinyin": "nǐ hǎo",
+      "meaning": "xin chào",
+      "id": "b5944c5da6ba78cb",
+      "atlas": 0,
+      "cell": 3
+    },
+    {
+      "hanzi": "大",
+      "pinyin": "dà",
+      "meaning": "to, lớn",
+      "id": "24861a5b46d7ae78",
+      "atlas": 0,
+      "cell": 4
+    },
+    {
+      "hanzi": "口",
+      "pinyin": "kǒu",
+      "meaning": "miệng, nhân khẩu",
+      "id": "7cdc1faef8e48f8e",
+      "atlas": 0,
+      "cell": 5
+    },
+    {
+      "hanzi": "白",
+      "pinyin": "bái",
+      "meaning": "trắng",
+      "id": "c296b97217428c0c",
+      "atlas": 0,
+      "cell": 6
+    },
+    {
+      "hanzi": "马",
+      "pinyin": "mǎ",
+      "meaning": "ngựa",
+      "id": "b7bc3370297de9ac",
+      "atlas": 0,
+      "cell": 7
+    },
+    {
+      "hanzi": "女",
+      "pinyin": "nǚ",
+      "meaning": "nữ, phụ nữ",
+      "id": "f3a74830968cb0ae",
+      "atlas": 0,
+      "cell": 8
+    },
+    {
+      "hanzi": "不",
+      "pinyin": "bù",
+      "meaning": "không, chẳng",
+      "id": "21a95b6ca492d43e",
+      "atlas": 0,
+      "cell": 9
+    },
+    {
+      "hanzi": "一",
+      "pinyin": "yī",
+      "meaning": "một",
+      "id": "d25a2d02ac2716c9",
+      "atlas": 0,
+      "cell": 10
+    },
+    {
+      "hanzi": "八",
+      "pinyin": "bā",
+      "meaning": "tám",
+      "id": "0d859dd4ad63c620",
+      "atlas": 0,
+      "cell": 11
+    },
+    {
+      "hanzi": "五",
+      "pinyin": "wǔ",
+      "meaning": "năm",
+      "id": "175ec9124f2b5ccb",
+      "atlas": 0,
+      "cell": 12
+    },
+    {
+      "hanzi": "大家",
+      "pinyin": "dàjiā",
+      "meaning": "mọi người",
+      "id": "59546dbb8298ad27",
+      "atlas": 1,
+      "cell": 0
+    },
+    {
+      "hanzi": "同学",
+      "pinyin": "tóngxué",
+      "meaning": "bạn học",
+      "id": "ef34f39f65112e41",
+      "atlas": 1,
+      "cell": 1
+    },
+    {
+      "hanzi": "您",
+      "pinyin": "nín",
+      "meaning": "ngài, ông, bà",
+      "id": "789bc53ea8e3fbd3",
+      "atlas": 1,
+      "cell": 2
+    },
+    {
+      "hanzi": "们",
+      "pinyin": "men",
+      "meaning": "hậu tố chỉ số nhiều cho người",
+      "id": "5a3dc55485f7800f",
+      "atlas": 1,
+      "cell": 3
+    },
+    {
+      "hanzi": "叫",
+      "pinyin": "jiào",
+      "meaning": "gọi, tên là",
+      "id": "91172235a1abb5d7",
+      "atlas": 1,
+      "cell": 4
+    },
+    {
+      "hanzi": "什么",
+      "pinyin": "shénme",
+      "meaning": "cái gì, gì",
+      "id": "f5bd7a9678c34c06",
+      "atlas": 1,
+      "cell": 5
+    },
+    {
+      "hanzi": "名字",
+      "pinyin": "míngzi",
+      "meaning": "tên",
+      "id": "4dddb3dbdad7f0f8",
+      "atlas": 1,
+      "cell": 6
+    },
+    {
+      "hanzi": "阿",
+      "pinyin": "ā",
+      "meaning": "tiền tố thân mật trước tên người",
+      "id": "b5577efb3cb575b8",
+      "atlas": 1,
+      "cell": 7
+    },
+    {
+      "hanzi": "小",
+      "pinyin": "xiǎo",
+      "meaning": "nhỏ; tiền tố thân mật trước tên người",
+      "id": "744b15e7df12f79e",
+      "atlas": 1,
+      "cell": 8
+    },
+    {
+      "hanzi": "谢谢",
+      "pinyin": "xièxie",
+      "meaning": "cảm ơn",
+      "id": "92f7b58d79f1f6fe",
+      "atlas": 1,
+      "cell": 9
+    },
+    {
+      "hanzi": "不客气",
+      "pinyin": "bú kèqi",
+      "meaning": "không có gì (đáp lời cảm ơn)",
+      "id": "334d94d966eb3a21",
+      "atlas": 1,
+      "cell": 10
+    },
+    {
+      "hanzi": "对不起",
+      "pinyin": "duìbuqǐ",
+      "meaning": "xin lỗi",
+      "id": "6e5f3d981364661c",
+      "atlas": 1,
+      "cell": 11
+    },
+    {
+      "hanzi": "没关系",
+      "pinyin": "méi guānxi",
+      "meaning": "không sao; không có gì đáng ngại",
+      "id": "6018d724f8023da0",
+      "atlas": 1,
+      "cell": 12
+    },
+    {
+      "hanzi": "没事",
+      "pinyin": "méishì",
+      "meaning": "không sao; không có việc gì",
+      "id": "06a66701c266a975",
+      "atlas": 1,
+      "cell": 13
+    },
+    {
+      "hanzi": "很",
+      "pinyin": "hěn",
+      "meaning": "rất",
+      "id": "d8a783f7aebf128a",
+      "atlas": 1,
+      "cell": 14
+    },
+    {
+      "hanzi": "高兴",
+      "pinyin": "gāoxìng",
+      "meaning": "vui; vui vẻ",
+      "id": "c13a5c64a1026e60",
+      "atlas": 1,
+      "cell": 15
+    },
+    {
+      "hanzi": "认识",
+      "pinyin": "rènshi",
+      "meaning": "gặp, quen biết",
+      "id": "4c5d85e24b3c385c",
+      "atlas": 2,
+      "cell": 0
+    },
+    {
+      "hanzi": "也",
+      "pinyin": "yě",
+      "meaning": "cũng",
+      "id": "e1a7d74c07990d7e",
+      "atlas": 2,
+      "cell": 1
+    },
+    {
+      "hanzi": "吗",
+      "pinyin": "ma",
+      "meaning": "không, à",
+      "id": "d87e7a448270892a",
+      "atlas": 2,
+      "cell": 2
+    },
+    {
+      "hanzi": "小丽",
+      "pinyin": "xiǎo lì",
+      "meaning": "Tiểu Lệ (tên người)",
+      "id": "6b7db41c24c747e8",
+      "atlas": 2,
+      "cell": 3
+    },
+    {
+      "hanzi": "李文",
+      "pinyin": "lǐ wén",
+      "meaning": "Lý Văn (tên người)",
+      "id": "d075fb902e8abc98",
+      "atlas": 2,
+      "cell": 4
+    },
+    {
+      "hanzi": "白家月",
+      "pinyin": "bái jiā yuè",
+      "meaning": "Bạch Gia Nguyệt (tên người)",
+      "id": "9fc309f1492c5bb8",
+      "atlas": 2,
+      "cell": 5
+    },
+    {
+      "hanzi": "请",
+      "pinyin": "qǐng",
+      "meaning": "mời",
+      "id": "cd9ffa03151dadd2",
+      "atlas": 2,
+      "cell": 6
+    },
+    {
+      "hanzi": "问",
+      "pinyin": "wèn",
+      "meaning": "hỏi",
+      "id": "e20d9fe82d3be869",
+      "atlas": 2,
+      "cell": 7
+    },
+    {
+      "hanzi": "请问",
+      "pinyin": "qǐngwèn",
+      "meaning": "Xin hỏi",
+      "id": "dd78c842d02238b0",
+      "atlas": 2,
+      "cell": 8
+    },
+    {
+      "hanzi": "是",
+      "pinyin": "shì",
+      "meaning": "là",
+      "id": "50a9d275d316f87d",
+      "atlas": 2,
+      "cell": 9
+    },
+    {
+      "hanzi": "哪",
+      "pinyin": "n",
+      "meaning": "nào",
+      "id": "853ae49dab97e75e",
+      "atlas": 2,
+      "cell": 10
+    },
+    {
+      "hanzi": "国",
+      "pinyin": "guó",
+      "meaning": "nước",
+      "id": "6c9f56b85cd3e5ec",
+      "atlas": 2,
+      "cell": 11
+    },
+    {
+      "hanzi": "人",
+      "pinyin": "rén",
+      "meaning": "người",
+      "id": "efe9b158e2be300b",
+      "atlas": 2,
+      "cell": 12
+    },
+    {
+      "hanzi": "中国",
+      "pinyin": "Zhōngguó",
+      "meaning": "Trung Quốc",
+      "id": "2c91567e5cc7980d",
+      "atlas": 2,
+      "cell": 13
+    },
+    {
+      "hanzi": "越南",
+      "pinyin": "Yuènán",
+      "meaning": "Việt Nam",
+      "id": "999d667c7de49c38",
+      "atlas": 2,
+      "cell": 14
+    },
+    {
+      "hanzi": "韩国",
+      "pinyin": "hán guó",
+      "meaning": "Hàn Quốc",
+      "id": "79a9d11b03584c81",
+      "atlas": 2,
+      "cell": 15
+    },
+    {
+      "hanzi": "日本",
+      "pinyin": "rì běn",
+      "meaning": "Nhật Bản",
+      "id": "90ffb797aa437866",
+      "atlas": 3,
+      "cell": 0
+    },
+    {
+      "hanzi": "泰国",
+      "pinyin": "Tàiguó",
+      "meaning": "Thái Lan",
+      "id": "3e69d3cef3335cdd",
+      "atlas": 3,
+      "cell": 1
+    },
+    {
+      "hanzi": "法国",
+      "pinyin": "Fǎguó",
+      "meaning": "Pháp",
+      "id": "999b81f1ab192e67",
+      "atlas": 3,
+      "cell": 2
+    },
+    {
+      "hanzi": "美国",
+      "pinyin": "měi guó",
+      "meaning": "Hoa Kỳ, Mỹ",
+      "id": "72b10e2bdff807f5",
+      "atlas": 3,
+      "cell": 3
+    },
+    {
+      "hanzi": "他",
+      "pinyin": "tā",
+      "meaning": "anh ấy",
+      "id": "076cba1d2476f68e",
+      "atlas": 3,
+      "cell": 4
+    },
+    {
+      "hanzi": "她",
+      "pinyin": "t",
+      "meaning": "cô ấy",
+      "id": "52404abe787a2cf3",
+      "atlas": 3,
+      "cell": 5
+    },
+    {
+      "hanzi": "它",
+      "pinyin": "tā",
+      "meaning": "nó",
+      "id": "448d7dbb8ad7c7c4",
+      "atlas": 3,
+      "cell": 6
+    },
+    {
+      "hanzi": "陈天中",
+      "pinyin": "chén tiān zhōng",
+      "meaning": "Trần Thiên Trung (tên người)",
+      "id": "f9ccb0131d1da0d0",
+      "atlas": 3,
+      "cell": 7
+    },
+    {
+      "hanzi": "这",
+      "pinyin": "zhè",
+      "meaning": "đây, này",
+      "id": "612858fab5f23906",
+      "atlas": 3,
+      "cell": 8
+    },
+    {
+      "hanzi": "那",
+      "pinyin": "nà",
+      "meaning": "kia",
+      "id": "38bf181d54e1a956",
+      "atlas": 3,
+      "cell": 9
+    },
+    {
+      "hanzi": "谁",
+      "pinyin": "shéi/shuí",
+      "meaning": "ai",
+      "id": "ce995377c6b5cb05",
+      "atlas": 3,
+      "cell": 10
+    },
+    {
+      "hanzi": "中文",
+      "pinyin": "Zhōngwén",
+      "meaning": "tiếng Trung",
+      "id": "73ba7f0dad0d5556",
+      "atlas": 3,
+      "cell": 11
+    },
+    {
+      "hanzi": "汉语",
+      "pinyin": "Hànyǔ",
+      "meaning": "tiếng Hán; tiếng Trung",
+      "id": "61ab7942918704b5",
+      "atlas": 3,
+      "cell": 12
+    },
+    {
+      "hanzi": "的",
+      "pinyin": "de",
+      "meaning": "của; trợ từ nối quan hệ bổ nghĩa",
+      "id": "7878e8c77c0bab0c",
+      "atlas": 3,
+      "cell": 13
+    },
+    {
+      "hanzi": "朋友",
+      "pinyin": "péngyou",
+      "meaning": "bạn",
+      "id": "9bf17b2e433a3006",
+      "atlas": 3,
+      "cell": 14
+    },
+    {
+      "hanzi": "女朋友",
+      "pinyin": "nǚ péng yǒu",
+      "meaning": "bạn gái",
+      "id": "7ff3890d7f976ec3",
+      "atlas": 3,
+      "cell": 15
+    },
+    {
+      "hanzi": "男朋友",
+      "pinyin": "nánpéngyou",
+      "meaning": "bạn trai",
+      "id": "cabb2c5718975bbe",
+      "atlas": 4,
+      "cell": 0
+    },
+    {
+      "hanzi": "喂",
+      "pinyin": "wèi",
+      "meaning": "alo, này",
+      "id": "0720de61f34d48c6",
+      "atlas": 4,
+      "cell": 1
+    },
+    {
+      "hanzi": "姐姐",
+      "pinyin": "jiějie",
+      "meaning": "chị gái",
+      "id": "90407a2126c44717",
+      "atlas": 4,
+      "cell": 2
+    },
+    {
+      "hanzi": "工作",
+      "pinyin": "gōngzuò",
+      "meaning": "công việc",
+      "id": "7dbc0255d758972b",
+      "atlas": 4,
+      "cell": 3
+    },
+    {
+      "hanzi": "还",
+      "pinyin": "hái",
+      "meaning": "còn, vẫn",
+      "id": "4c9653c184937bc4",
+      "atlas": 4,
+      "cell": 4
+    },
+    {
+      "hanzi": "忙",
+      "pinyin": "máng",
+      "meaning": "bận",
+      "id": "993dc3df19a981fe",
+      "atlas": 4,
+      "cell": 5
+    },
+    {
+      "hanzi": "对",
+      "pinyin": "duì",
+      "meaning": "đúng",
+      "id": "f6ad57b9c3214a6b",
+      "atlas": 4,
+      "cell": 6
+    },
+    {
+      "hanzi": "太",
+      "pinyin": "tài",
+      "meaning": "quá, lắm",
+      "id": "316d76b03d767211",
+      "atlas": 4,
+      "cell": 7
+    },
+    {
+      "hanzi": "不太",
+      "pinyin": "bù tài",
+      "meaning": "không ... lắm",
+      "id": "834ace2e6dc04788",
+      "atlas": 4,
+      "cell": 8
+    },
+    {
+      "hanzi": "想",
+      "pinyin": "xiǎng",
+      "meaning": "nhớ, muốn, nghĩ",
+      "id": "67345a1a831d2f77",
+      "atlas": 4,
+      "cell": 9
+    },
+    {
+      "hanzi": "再见",
+      "pinyin": "zàijiàn",
+      "meaning": "tạm biệt",
+      "id": "bfd60ddbe7313dd8",
+      "atlas": 4,
+      "cell": 10
+    },
+    {
+      "hanzi": "王一飞",
+      "pinyin": "wáng yī fēi",
+      "meaning": "Vương Nhất Phi (tên người)",
+      "id": "d75a9b1eb7c6bfe8",
+      "atlas": 4,
+      "cell": 11
+    },
+    {
+      "hanzi": "王一雪",
+      "pinyin": "wáng yī xuě",
+      "meaning": "Vương Nhất Tuyết (tên người)",
+      "id": "aa16f264f6188dd6",
+      "atlas": 4,
+      "cell": 12
+    },
+    {
+      "hanzi": "有",
+      "pinyin": "yǒu",
+      "meaning": "có",
+      "id": "8af1284c5ed6e6b6",
+      "atlas": 4,
+      "cell": 13
+    },
+    {
+      "hanzi": "没有",
+      "pinyin": "méiyǒu",
+      "meaning": "không có",
+      "id": "f7da35e0e3a72cc1",
+      "atlas": 4,
+      "cell": 14
+    },
+    {
+      "hanzi": "多少",
+      "pinyin": "duōshao",
+      "meaning": "bao nhiêu",
+      "id": "66ea1c5e11649a84",
+      "atlas": 4,
+      "cell": 15
+    },
+    {
+      "hanzi": "多",
+      "pinyin": "duō",
+      "meaning": "nhiều",
+      "id": "9003512cc0acec88",
+      "atlas": 5,
+      "cell": 0
+    },
+    {
+      "hanzi": "少",
+      "pinyin": "shǎo",
+      "meaning": "ít",
+      "id": "8535d9135ac30696",
+      "atlas": 5,
+      "cell": 1
+    },
+    {
+      "hanzi": "个",
+      "pinyin": "gè",
+      "meaning": "cái, chiếc",
+      "id": "4d74223064a4a58b",
+      "atlas": 5,
+      "cell": 2
+    },
+    {
+      "hanzi": "学生",
+      "pinyin": "xuésheng",
+      "meaning": "học sinh",
+      "id": "ed3fe8928899a557",
+      "atlas": 5,
+      "cell": 3
+    },
+    {
+      "hanzi": "男生",
+      "pinyin": "nán shēng",
+      "meaning": "học sinh nam; nam sinh",
+      "id": "d291ca8f84059d5d",
+      "atlas": 5,
+      "cell": 4
+    },
+    {
+      "hanzi": "女生",
+      "pinyin": "nǚ shēng",
+      "meaning": "học sinh nữ; nữ sinh",
+      "id": "d539703771232b61",
+      "atlas": 5,
+      "cell": 5
+    },
+    {
+      "hanzi": "班",
+      "pinyin": "bān",
+      "meaning": "lớp học; ca làm",
+      "id": "7ee0c9a7d41a0327",
+      "atlas": 5,
+      "cell": 6
+    },
+    {
+      "hanzi": "二",
+      "pinyin": "èr",
+      "meaning": "hai (số 2)",
+      "id": "3cef78f9d3ce4343",
+      "atlas": 5,
+      "cell": 7
+    },
+    {
+      "hanzi": "三",
+      "pinyin": "sān",
+      "meaning": "ba (số 3)",
+      "id": "661308cc37f6eb83",
+      "atlas": 5,
+      "cell": 8
+    },
+    {
+      "hanzi": "四",
+      "pinyin": "sì",
+      "meaning": "bốn (số 4)",
+      "id": "93d1f72d1babd697",
+      "atlas": 5,
+      "cell": 9
+    },
+    {
+      "hanzi": "六",
+      "pinyin": "liù",
+      "meaning": "sáu (số 6)",
+      "id": "44259e8f0ac1a41b",
+      "atlas": 5,
+      "cell": 10
+    },
+    {
+      "hanzi": "七",
+      "pinyin": "qī",
+      "meaning": "bảy (số 7)",
+      "id": "7a2f3167b0f041d7",
+      "atlas": 5,
+      "cell": 11
+    },
+    {
+      "hanzi": "九",
+      "pinyin": "jiǔ",
+      "meaning": "chín (số 9)",
+      "id": "13539169e2e48239",
+      "atlas": 5,
+      "cell": 12
+    },
+    {
+      "hanzi": "十",
+      "pinyin": "shí",
+      "meaning": "mười (số 10)",
+      "id": "126e729519b509c1",
+      "atlas": 5,
+      "cell": 13
+    },
+    {
+      "hanzi": "家",
+      "pinyin": "jiā",
+      "meaning": "nhà, gia đình",
+      "id": "fc47996417621668",
+      "atlas": 5,
+      "cell": 14
+    },
+    {
+      "hanzi": "几",
+      "pinyin": "jǐ",
+      "meaning": "mấy",
+      "id": "b51a9eb6213da878",
+      "atlas": 5,
+      "cell": 15
+    },
+    {
+      "hanzi": "包括",
+      "pinyin": "bāokuò",
+      "meaning": "bao gồm",
+      "id": "5b8e955b61472653",
+      "atlas": 6,
+      "cell": 0
+    },
+    {
+      "hanzi": "爸爸",
+      "pinyin": "bàba",
+      "meaning": "bố",
+      "id": "7569fca19d4d95fe",
+      "atlas": 6,
+      "cell": 1
+    },
+    {
+      "hanzi": "妈妈",
+      "pinyin": "māma",
+      "meaning": "mẹ",
+      "id": "94fcd2d8db78400c",
+      "atlas": 6,
+      "cell": 2
+    },
+    {
+      "hanzi": "父母",
+      "pinyin": "fùmǔ",
+      "meaning": "cha mẹ; bố mẹ",
+      "id": "7689efac7258ad6d",
+      "atlas": 6,
+      "cell": 3
+    },
+    {
+      "hanzi": "哥哥",
+      "pinyin": "gēge",
+      "meaning": "anh trai",
+      "id": "e2ea7104f381b7ac",
+      "atlas": 6,
+      "cell": 4
+    },
+    {
+      "hanzi": "弟弟",
+      "pinyin": "dìdi",
+      "meaning": "em trai",
+      "id": "0bd41f299933f3f2",
+      "atlas": 6,
+      "cell": 5
+    },
+    {
+      "hanzi": "妹妹",
+      "pinyin": "mèimei",
+      "meaning": "em gái",
+      "id": "e07a3d633b3db574",
+      "atlas": 6,
+      "cell": 6
+    },
+    {
+      "hanzi": "和",
+      "pinyin": "hé",
+      "meaning": "và",
+      "id": "29ab51ea3a89acbc",
+      "atlas": 6,
+      "cell": 7
+    },
+    {
+      "hanzi": "呢",
+      "pinyin": "ne",
+      "meaning": "thì sao, còn ... (hỏi tiếp); trợ từ cuối câu",
+      "id": "5157e0e8a2acb718",
+      "atlas": 6,
+      "cell": 8
+    },
+    {
+      "hanzi": "刘明",
+      "pinyin": "liú míng",
+      "meaning": "Lưu Minh (tên người)",
+      "id": "6f79da3b8a66b117",
+      "atlas": 6,
+      "cell": 9
+    },
+    {
+      "hanzi": "杨同乐",
+      "pinyin": "yáng tóng lè",
+      "meaning": "Dương Đồng Lạc (tên người)",
+      "id": "0557c695f6a636d4",
+      "atlas": 6,
+      "cell": 10
+    },
+    {
+      "hanzi": "老公",
+      "pinyin": "lǎogōng",
+      "meaning": "chồng (cách gọi thân mật)",
+      "id": "d5e089bad76d7770",
+      "atlas": 6,
+      "cell": 11
+    },
+    {
+      "hanzi": "老婆",
+      "pinyin": "lǎopo",
+      "meaning": "vợ (cách gọi thân mật)",
+      "id": "b2e176c68270bae5",
+      "atlas": 6,
+      "cell": 12
+    },
+    {
+      "hanzi": "孩子",
+      "pinyin": "háizi",
+      "meaning": "con cái",
+      "id": "317f050026e9d44e",
+      "atlas": 6,
+      "cell": 13
+    },
+    {
+      "hanzi": "儿子",
+      "pinyin": "érzi",
+      "meaning": "con trai",
+      "id": "c2d3ce1cae2e43d7",
+      "atlas": 6,
+      "cell": 14
+    },
+    {
+      "hanzi": "女儿",
+      "pinyin": "nǚér",
+      "meaning": "con gái",
+      "id": "ae1fffa838de08c6",
+      "atlas": 6,
+      "cell": 15
+    },
+    {
+      "hanzi": "奶奶",
+      "pinyin": "nǎinai",
+      "meaning": "bà nội",
+      "id": "ee281dc49b27c10f",
+      "atlas": 7,
+      "cell": 0
+    },
+    {
+      "hanzi": "爷爷",
+      "pinyin": "yéye",
+      "meaning": "ông nội",
+      "id": "9a64f87c0aac950d",
+      "atlas": 7,
+      "cell": 1
+    },
+    {
+      "hanzi": "外公",
+      "pinyin": "wàigōng",
+      "meaning": "ông ngoại",
+      "id": "603cd6321d496d21",
+      "atlas": 7,
+      "cell": 2
+    },
+    {
+      "hanzi": "外婆",
+      "pinyin": "wàipó",
+      "meaning": "bà ngoại",
+      "id": "6b6ee9c60a535ea6",
+      "atlas": 7,
+      "cell": 3
+    },
+    {
+      "hanzi": "结婚",
+      "pinyin": "jiéhūn",
+      "meaning": "kết hôn",
+      "id": "fb6fa9b2220e889e",
+      "atlas": 7,
+      "cell": 4
+    },
+    {
+      "hanzi": "单身",
+      "pinyin": "dānshēn",
+      "meaning": "độc thân",
+      "id": "caa3f98709167c9c",
+      "atlas": 7,
+      "cell": 5
+    },
+    {
+      "hanzi": "对象",
+      "pinyin": "duìxiàng",
+      "meaning": "người yêu; đối tượng",
+      "id": "39fffea1699b955e",
+      "atlas": 7,
+      "cell": 6
+    },
+    {
+      "hanzi": "了",
+      "pinyin": "le",
+      "meaning": "rồi (biểu thị hoàn thành hoặc tình huống mới)",
+      "id": "0e69614043bf9cea",
+      "atlas": 7,
+      "cell": 7
+    },
+    {
+      "hanzi": "年",
+      "pinyin": "nián",
+      "meaning": "năm",
+      "id": "0e48f31189099175",
+      "atlas": 7,
+      "cell": 8
+    },
+    {
+      "hanzi": "今年",
+      "pinyin": "jīnnián",
+      "meaning": "năm nay",
+      "id": "05388f68c87781e9",
+      "atlas": 7,
+      "cell": 9
+    },
+    {
+      "hanzi": "去年",
+      "pinyin": "qùnián",
+      "meaning": "năm ngoái",
+      "id": "35f5f6cb1b57c5b7",
+      "atlas": 7,
+      "cell": 10
+    },
+    {
+      "hanzi": "明年",
+      "pinyin": "míngnián",
+      "meaning": "năm sau",
+      "id": "b1dc80fed5fef647",
+      "atlas": 7,
+      "cell": 11
+    },
+    {
+      "hanzi": "岁",
+      "pinyin": "suì",
+      "meaning": "tuổi",
+      "id": "247f4a43e110fa44",
+      "atlas": 7,
+      "cell": 12
+    },
+    {
+      "hanzi": "几岁",
+      "pinyin": "jǐ suì",
+      "meaning": "mấy tuổi (thường hỏi trẻ nhỏ)",
+      "id": "efd05f4d9a80a079",
+      "atlas": 7,
+      "cell": 13
+    },
+    {
+      "hanzi": "多大",
+      "pinyin": "duō dà",
+      "meaning": "bao nhiêu tuổi; lớn cỡ nào",
+      "id": "14762d1440368393",
+      "atlas": 7,
+      "cell": 14
+    },
+    {
+      "hanzi": "天",
+      "pinyin": "tiān",
+      "meaning": "ngày; trời (tùy ngữ cảnh)",
+      "id": "51b5f3aa2009ef17",
+      "atlas": 7,
+      "cell": 15
+    },
+    {
+      "hanzi": "今天",
+      "pinyin": "jīntiān",
+      "meaning": "hôm nay",
+      "id": "b520aa625cd20aca",
+      "atlas": 8,
+      "cell": 0
+    },
+    {
+      "hanzi": "昨天",
+      "pinyin": "zuótiān",
+      "meaning": "hôm qua",
+      "id": "77fb67d3db68f8b2",
+      "atlas": 8,
+      "cell": 1
+    },
+    {
+      "hanzi": "明天",
+      "pinyin": "míngtiān",
+      "meaning": "ngày mai",
+      "id": "79d336fe81561836",
+      "atlas": 8,
+      "cell": 2
+    },
+    {
+      "hanzi": "星期",
+      "pinyin": "xīngqī",
+      "meaning": "tuần, thứ",
+      "id": "b39f6d08dd7e7580",
+      "atlas": 8,
+      "cell": 3
+    },
+    {
+      "hanzi": "周",
+      "pinyin": "zhōu",
+      "meaning": "tuần",
+      "id": "18bc7b871d779ae0",
+      "atlas": 8,
+      "cell": 4
+    },
+    {
+      "hanzi": "星期几",
+      "pinyin": "xīng qī jǐ",
+      "meaning": "thứ mấy",
+      "id": "915e505cfe0b91ac",
+      "atlas": 8,
+      "cell": 5
+    },
+    {
+      "hanzi": "周几",
+      "pinyin": "zhōu jǐ",
+      "meaning": "thứ mấy",
+      "id": "87695687ca20e7dd",
+      "atlas": 8,
+      "cell": 6
+    },
+    {
+      "hanzi": "周末",
+      "pinyin": "zhōumò",
+      "meaning": "cuối tuần",
+      "id": "57f51a5f543e48b2",
+      "atlas": 8,
+      "cell": 7
+    },
+    {
+      "hanzi": "月",
+      "pinyin": "yuè",
+      "meaning": "tháng",
+      "id": "e9daeb6fdabe4437",
+      "atlas": 8,
+      "cell": 8
+    },
+    {
+      "hanzi": "日",
+      "pinyin": "rì",
+      "meaning": "ngày (cách ghi trang trọng)",
+      "id": "819c9522dde4a94e",
+      "atlas": 8,
+      "cell": 9
+    },
+    {
+      "hanzi": "号",
+      "pinyin": "hào",
+      "meaning": "ngày",
+      "id": "99101a2b28e20c00",
+      "atlas": 8,
+      "cell": 10
+    },
+    {
+      "hanzi": "休息",
+      "pinyin": "xiūxi",
+      "meaning": "nghỉ ngơi",
+      "id": "ed5fd016693745fd",
+      "atlas": 8,
+      "cell": 11
+    },
+    {
+      "hanzi": "吃",
+      "pinyin": "chī",
+      "meaning": "ăn",
+      "id": "dbf0935b043a865d",
+      "atlas": 8,
+      "cell": 12
+    },
+    {
+      "hanzi": "饭",
+      "pinyin": "fàn",
+      "meaning": "cơm",
+      "id": "ec1c66660879d181",
+      "atlas": 8,
+      "cell": 13
+    },
+    {
+      "hanzi": "米饭",
+      "pinyin": "mǐfàn",
+      "meaning": "cơm",
+      "id": "0cea8dce2f4fce64",
+      "atlas": 8,
+      "cell": 14
+    },
+    {
+      "hanzi": "面条儿",
+      "pinyin": "miàntiáor",
+      "meaning": "mì sợi",
+      "id": "195778b8e098b87a",
+      "atlas": 8,
+      "cell": 15
+    },
+    {
+      "hanzi": "饺子",
+      "pinyin": "jiǎozi",
+      "meaning": "sủi cảo",
+      "id": "3c71503f9ace00f7",
+      "atlas": 9,
+      "cell": 0
+    },
+    {
+      "hanzi": "馒头",
+      "pinyin": "mántou",
+      "meaning": "màn thầu; bánh bao không nhân",
+      "id": "319d2929e99e3e85",
+      "atlas": 9,
+      "cell": 1
+    },
+    {
+      "hanzi": "包子",
+      "pinyin": "bāozi",
+      "meaning": "bánh bao có nhân",
+      "id": "2e5f918e3d0ab7c1",
+      "atlas": 9,
+      "cell": 2
+    },
+    {
+      "hanzi": "鸡蛋",
+      "pinyin": "jīdàn",
+      "meaning": "trứng gà",
+      "id": "b437487c5333c556",
+      "atlas": 9,
+      "cell": 3
+    },
+    {
+      "hanzi": "菜",
+      "pinyin": "cài",
+      "meaning": "món ăn; thức ăn; rau",
+      "id": "222b0263e88f1679",
+      "atlas": 9,
+      "cell": 4
+    },
+    {
+      "hanzi": "喝",
+      "pinyin": "hē",
+      "meaning": "uống",
+      "id": "1b189d25deee2ea3",
+      "atlas": 9,
+      "cell": 5
+    },
+    {
+      "hanzi": "茶",
+      "pinyin": "chá",
+      "meaning": "trà",
+      "id": "afad51ff54cb7485",
+      "atlas": 9,
+      "cell": 6
+    },
+    {
+      "hanzi": "奶茶",
+      "pinyin": "nǎi chá",
+      "meaning": "trà sữa",
+      "id": "f02d27a67014fcdb",
+      "atlas": 9,
+      "cell": 7
+    },
+    {
+      "hanzi": "咖啡",
+      "pinyin": "kāfēi",
+      "meaning": "cà phê",
+      "id": "f7ffb688bf05a2bc",
+      "atlas": 9,
+      "cell": 8
+    },
+    {
+      "hanzi": "可乐",
+      "pinyin": "kělè",
+      "meaning": "nước cola",
+      "id": "7700a8846fb6b707",
+      "atlas": 9,
+      "cell": 9
+    },
+    {
+      "hanzi": "水",
+      "pinyin": "shuǐ",
+      "meaning": "nước",
+      "id": "35eb94a9504650d5",
+      "atlas": 9,
+      "cell": 10
+    },
+    {
+      "hanzi": "酒",
+      "pinyin": "jiǔ",
+      "meaning": "rượu; đồ uống có cồn",
+      "id": "ba0fab135e4e31d6",
+      "atlas": 9,
+      "cell": 11
+    },
+    {
+      "hanzi": "啤酒",
+      "pinyin": "píjiǔ",
+      "meaning": "bia",
+      "id": "94290566f1021b1f",
+      "atlas": 9,
+      "cell": 12
+    },
+    {
+      "hanzi": "喜欢",
+      "pinyin": "xǐhuan",
+      "meaning": "thích",
+      "id": "26e2674834976613",
+      "atlas": 9,
+      "cell": 13
+    },
+    {
+      "hanzi": "做",
+      "pinyin": "zuò",
+      "meaning": "làm",
+      "id": "bbe2badb5ede2d7f",
+      "atlas": 9,
+      "cell": 14
+    },
+    {
+      "hanzi": "会",
+      "pinyin": "huì",
+      "meaning": "biết; có thể (biểu thị biết làm gì)",
+      "id": "bb9ab5cdeb11fbcc",
+      "atlas": 9,
+      "cell": 15
+    },
+    {
+      "hanzi": "手机",
+      "pinyin": "shǒu jī",
+      "meaning": "điện thoại di động",
+      "id": "2bd3a20592e55a2a",
+      "atlas": 10,
+      "cell": 0
+    },
+    {
+      "hanzi": "部",
+      "pinyin": "bù",
+      "meaning": "chiếc, bộ (lượng từ cho điện thoại, phim...)",
+      "id": "82d6a49277884154",
+      "atlas": 10,
+      "cell": 1
+    },
+    {
+      "hanzi": "电话",
+      "pinyin": "diànhuà",
+      "meaning": "điện thoại; cuộc gọi điện thoại",
+      "id": "3e188c52a2e12eea",
+      "atlas": 10,
+      "cell": 2
+    },
+    {
+      "hanzi": "号",
+      "pinyin": "hào",
+      "meaning": "số, số hiệu (điện thoại, mã số)",
+      "id": "ea45b14daa557835",
+      "atlas": 10,
+      "cell": 3
+    },
+    {
+      "hanzi": "号码",
+      "pinyin": "hào mǎ",
+      "meaning": "số, mã số",
+      "id": "76b4be7e9d0715cf",
+      "atlas": 10,
+      "cell": 4
+    },
+    {
+      "hanzi": "手机号",
+      "pinyin": "shǒu jī hào",
+      "meaning": "số điện thoại di động",
+      "id": "e0f674632d5bc088",
+      "atlas": 10,
+      "cell": 5
+    },
+    {
+      "hanzi": "手机号码",
+      "pinyin": "shǒu jī hào mǎ",
+      "meaning": "số điện thoại di động",
+      "id": "067c17574c98a220",
+      "atlas": 10,
+      "cell": 6
+    },
+    {
+      "hanzi": "零",
+      "pinyin": "líng",
+      "meaning": "không (số 0)",
+      "id": "31db62166e64f21f",
+      "atlas": 10,
+      "cell": 7
+    },
+    {
+      "hanzi": "去",
+      "pinyin": "qù",
+      "meaning": "đi",
+      "id": "6a24fb8f15777044",
+      "atlas": 10,
+      "cell": 8
+    },
+    {
+      "hanzi": "哪儿",
+      "pinyin": "nǎ ér",
+      "meaning": "đâu, nơi nào",
+      "id": "cde656cfce888dfc",
+      "atlas": 10,
+      "cell": 9
+    },
+    {
+      "hanzi": "哪里",
+      "pinyin": "nǎlǐ",
+      "meaning": "đâu, nơi nào",
+      "id": "688537ec44929006",
+      "atlas": 10,
+      "cell": 10
+    },
+    {
+      "hanzi": "超市",
+      "pinyin": "chāoshì",
+      "meaning": "siêu thị",
+      "id": "2e51e6dddc1e9cf6",
+      "atlas": 10,
+      "cell": 11
+    },
+    {
+      "hanzi": "买",
+      "pinyin": "mǎi",
+      "meaning": "mua",
+      "id": "738f3a0b5a83e77e",
+      "atlas": 10,
+      "cell": 12
+    },
+    {
+      "hanzi": "杯",
+      "pinyin": "bēi",
+      "meaning": "cốc; ly",
+      "id": "7738fd51f5693465",
+      "atlas": 10,
+      "cell": 13
+    },
+    {
+      "hanzi": "东西",
+      "pinyin": "dōngxi",
+      "meaning": "đồ; đồ vật",
+      "id": "1199b9b213a4ff72",
+      "atlas": 10,
+      "cell": 14
+    },
+    {
+      "hanzi": "一些",
+      "pinyin": "yī xiē",
+      "meaning": "một ít, một số",
+      "id": "141bcd19cff2950c",
+      "atlas": 10,
+      "cell": 15
+    },
+    {
+      "hanzi": "牛奶",
+      "pinyin": "niú nǎi",
+      "meaning": "sữa bò",
+      "id": "65f6cb089a4b4a0e",
+      "atlas": 11,
+      "cell": 0
+    },
+    {
+      "hanzi": "新",
+      "pinyin": "xīn",
+      "meaning": "mới",
+      "id": "b0ec4bc715059910",
+      "atlas": 11,
+      "cell": 1
+    },
+    {
+      "hanzi": "旧",
+      "pinyin": "jiù",
+      "meaning": "cũ",
+      "id": "3f2ac8b076093617",
+      "atlas": 11,
+      "cell": 2
+    },
+    {
+      "hanzi": "前",
+      "pinyin": "qián",
+      "meaning": "phía trước",
+      "id": "6d23516deae1602c",
+      "atlas": 11,
+      "cell": 3
+    },
+    {
+      "hanzi": "电脑",
+      "pinyin": "diànnǎo",
+      "meaning": "máy tính",
+      "id": "43b085fe362f5d27",
+      "atlas": 11,
+      "cell": 4
+    },
+    {
+      "hanzi": "晚饭",
+      "pinyin": "wǎnfàn",
+      "meaning": "bữa tối",
+      "id": "d6d4d7923a60d3cd",
+      "atlas": 11,
+      "cell": 5
+    },
+    {
+      "hanzi": "饭店",
+      "pinyin": "fàndiàn",
+      "meaning": "quán ăn, nhà hàng; khách sạn (tùy ngữ cảnh)",
+      "id": "2fad95325e879b24",
+      "atlas": 11,
+      "cell": 6
+    },
+    {
+      "hanzi": "非常",
+      "pinyin": "fēicháng",
+      "meaning": "rất, vô cùng",
+      "id": "bd68998e735f0f18",
+      "atlas": 11,
+      "cell": 7
+    },
+    {
+      "hanzi": "那边",
+      "pinyin": "nàbiān",
+      "meaning": "bên kia, chỗ đó",
+      "id": "e1aa2fa01d52eb50",
+      "atlas": 11,
+      "cell": 8
+    },
+    {
+      "hanzi": "怎么",
+      "pinyin": "zěnme",
+      "meaning": "thế nào, làm sao",
+      "id": "fa8420d6a2437ee3",
+      "atlas": 11,
+      "cell": 9
+    },
+    {
+      "hanzi": "坐",
+      "pinyin": "zuò",
+      "meaning": "ngồi",
+      "id": "196788df6a1e9978",
+      "atlas": 11,
+      "cell": 10
+    },
+    {
+      "hanzi": "出租车",
+      "pinyin": "chūzūchē",
+      "meaning": "taxi",
+      "id": "a2a9b926fceb6f24",
+      "atlas": 11,
+      "cell": 11
+    },
+    {
+      "hanzi": "车",
+      "pinyin": "chē",
+      "meaning": "xe",
+      "id": "3a0ee8a7dc15bc19",
+      "atlas": 11,
+      "cell": 12
+    },
+    {
+      "hanzi": "辆",
+      "pinyin": "liàng",
+      "meaning": "chiếc (lượng từ cho xe)",
+      "id": "9a3001b74a5913f2",
+      "atlas": 11,
+      "cell": 13
+    },
+    {
+      "hanzi": "西安",
+      "pinyin": "xī ān",
+      "meaning": "Tây An",
+      "id": "da14887751d0ec2a",
+      "atlas": 11,
+      "cell": 14
+    },
+    {
+      "hanzi": "现在",
+      "pinyin": "xiànzài",
+      "meaning": "bây giờ, hiện tại",
+      "id": "8c9ef4cfd2ef17fa",
+      "atlas": 11,
+      "cell": 15
+    },
+    {
+      "hanzi": "点",
+      "pinyin": "diǎn",
+      "meaning": "giờ (đơn vị chỉ thời điểm)",
+      "id": "eda3576c456ab3d7",
+      "atlas": 12,
+      "cell": 0
+    },
+    {
+      "hanzi": "分",
+      "pinyin": "fēn",
+      "meaning": "phút",
+      "id": "a72fcad921140604",
+      "atlas": 12,
+      "cell": 1
+    },
+    {
+      "hanzi": "半",
+      "pinyin": "bàn",
+      "meaning": "một nửa",
+      "id": "f45a5d9bfeb5ec47",
+      "atlas": 12,
+      "cell": 2
+    },
+    {
+      "hanzi": "早上",
+      "pinyin": "zǎoshang",
+      "meaning": "buổi sáng",
+      "id": "ad01750637520cfd",
+      "atlas": 12,
+      "cell": 3
+    },
+    {
+      "hanzi": "上午",
+      "pinyin": "shàngwǔ",
+      "meaning": "buối sáng (trước 12h)",
+      "id": "d6983688d9a3b76e",
+      "atlas": 12,
+      "cell": 4
+    },
+    {
+      "hanzi": "中午",
+      "pinyin": "zhōngwǔ",
+      "meaning": "buổi trưa",
+      "id": "60c6683d85ab8323",
+      "atlas": 12,
+      "cell": 5
+    },
+    {
+      "hanzi": "下午",
+      "pinyin": "xiàwǔ",
+      "meaning": "buổi chiều",
+      "id": "83762f92a4b8f6d5",
+      "atlas": 12,
+      "cell": 6
+    },
+    {
+      "hanzi": "晚上",
+      "pinyin": "wǎnshang",
+      "meaning": "buổi tối",
+      "id": "446aeb8614d16cd0",
+      "atlas": 12,
+      "cell": 7
+    },
+    {
+      "hanzi": "课",
+      "pinyin": "kè",
+      "meaning": "bài học; tiết học",
+      "id": "01b7ab8e0c75664e",
+      "atlas": 12,
+      "cell": 8
+    },
+    {
+      "hanzi": "上课",
+      "pinyin": "shàngkè",
+      "meaning": "lên lớp, đi học",
+      "id": "e187f99fedf413c9",
+      "atlas": 12,
+      "cell": 9
+    },
+    {
+      "hanzi": "下课",
+      "pinyin": "xiàkè",
+      "meaning": "tan học",
+      "id": "a91417889105ea03",
+      "atlas": 12,
+      "cell": 10
+    },
+    {
+      "hanzi": "吧",
+      "pinyin": "ba",
+      "meaning": "nhé, đi (gợi ý hoặc đề nghị)",
+      "id": "0fa193b2693f6333",
+      "atlas": 12,
+      "cell": 11
+    },
+    {
+      "hanzi": "看",
+      "pinyin": "kàn",
+      "meaning": "xem, nhìn, đọc",
+      "id": "8e27b7edd13b712f",
+      "atlas": 12,
+      "cell": 12
+    },
+    {
+      "hanzi": "电影",
+      "pinyin": "diànyǐng",
+      "meaning": "phim",
+      "id": "e9c1533b3d77aa42",
+      "atlas": 12,
+      "cell": 13
+    },
+    {
+      "hanzi": "电影院",
+      "pinyin": "diànyǐngyuàn",
+      "meaning": "rạp chiếu phim",
+      "id": "3b99f387d8178cd2",
+      "atlas": 12,
+      "cell": 14
+    },
+    {
+      "hanzi": "事",
+      "pinyin": "shì",
+      "meaning": "việc, chuyện",
+      "id": "921471fd523fbe89",
+      "atlas": 12,
+      "cell": 15
+    },
+    {
+      "hanzi": "在",
+      "pinyin": "zài",
+      "meaning": "ở, tại",
+      "id": "ac1c79eeb055f377",
+      "atlas": 13,
+      "cell": 0
+    },
+    {
+      "hanzi": "正在",
+      "pinyin": "zhèngzài",
+      "meaning": "đang",
+      "id": "5aa6a4c58e93b387",
+      "atlas": 13,
+      "cell": 1
+    },
+    {
+      "hanzi": "上班",
+      "pinyin": "shàngbān",
+      "meaning": "đi làm",
+      "id": "775512ee00322d48",
+      "atlas": 13,
+      "cell": 2
+    },
+    {
+      "hanzi": "下班",
+      "pinyin": "xiàbān",
+      "meaning": "tan làm",
+      "id": "d73180ccff444ad6",
+      "atlas": 13,
+      "cell": 3
+    },
+    {
+      "hanzi": "医院",
+      "pinyin": "yīyuàn",
+      "meaning": "bệnh viện",
+      "id": "33ef7179b3d70531",
+      "atlas": 13,
+      "cell": 4
+    },
+    {
+      "hanzi": "分钟",
+      "pinyin": "fēnzhōng",
+      "meaning": "phút",
+      "id": "35d23b04938bda9c",
+      "atlas": 13,
+      "cell": 5
+    },
+    {
+      "hanzi": "小时",
+      "pinyin": "xiǎoshí",
+      "meaning": "tiếng đồng hồ",
+      "id": "5604e5c27df9527d",
+      "atlas": 13,
+      "cell": 6
+    },
+    {
+      "hanzi": "房间",
+      "pinyin": "fángjiān",
+      "meaning": "căn phòng",
+      "id": "0bd7db6989f1bae8",
+      "atlas": 13,
+      "cell": 7
+    },
+    {
+      "hanzi": "外",
+      "pinyin": "wài",
+      "meaning": "ngoài",
+      "id": "0c4bbcae06091649",
+      "atlas": 13,
+      "cell": 8
+    },
+    {
+      "hanzi": "里",
+      "pinyin": "lǐ",
+      "meaning": "trong, bên trong",
+      "id": "1ea8dc1e03c3117a",
+      "atlas": 13,
+      "cell": 9
+    },
+    {
+      "hanzi": "面",
+      "pinyin": "miàn",
+      "meaning": "phía, bên",
+      "id": "b5b24d33e37c2a5d",
+      "atlas": 13,
+      "cell": 10
+    },
+    {
+      "hanzi": "里面",
+      "pinyin": "lǐ miàn",
+      "meaning": "bên trong",
+      "id": "9bc825a7c47b3c9b",
+      "atlas": 13,
+      "cell": 11
+    },
+    {
+      "hanzi": "外面",
+      "pinyin": "wài miàn",
+      "meaning": "bên ngoài",
+      "id": "c910c35a21a8b1ae",
+      "atlas": 13,
+      "cell": 12
+    },
+    {
+      "hanzi": "只",
+      "pinyin": "zhī",
+      "meaning": "con (lượng từ cho một số động vật)",
+      "id": "669fbf4a9c3eb13f",
+      "atlas": 13,
+      "cell": 13
+    },
+    {
+      "hanzi": "猫",
+      "pinyin": "māo",
+      "meaning": "mèo",
+      "id": "6539bb8ae48b0295",
+      "atlas": 13,
+      "cell": 14
+    },
+    {
+      "hanzi": "狗",
+      "pinyin": "gǒu",
+      "meaning": "chó",
+      "id": "a7935fe58121e212",
+      "atlas": 13,
+      "cell": 15
+    },
+    {
+      "hanzi": "没",
+      "pinyin": "méi",
+      "meaning": "không/chưa",
+      "id": "765421eec976b58e",
+      "atlas": 14,
+      "cell": 0
+    },
+    {
+      "hanzi": "看见",
+      "pinyin": "kànjiàn",
+      "meaning": "nhìn thấy",
+      "id": "c40c3f351aee8b7e",
+      "atlas": 14,
+      "cell": 1
+    },
+    {
+      "hanzi": "桌子",
+      "pinyin": "zhuōzi",
+      "meaning": "cái bàn",
+      "id": "a2a81cddb83af660",
+      "atlas": 14,
+      "cell": 2
+    },
+    {
+      "hanzi": "下",
+      "pinyin": "xià",
+      "meaning": "dưới",
+      "id": "f48c90fc8d1c266b",
+      "atlas": 14,
+      "cell": 3
+    },
+    {
+      "hanzi": "上",
+      "pinyin": "shang/shàng",
+      "meaning": "phía trên/trên",
+      "id": "cf1cf362e6a08c7b",
+      "atlas": 14,
+      "cell": 4
+    },
+    {
+      "hanzi": "上面",
+      "pinyin": "shàng miàn",
+      "meaning": "bên trên",
+      "id": "71805590ded4d150",
+      "atlas": 14,
+      "cell": 5
+    },
+    {
+      "hanzi": "下面",
+      "pinyin": "xià miàn",
+      "meaning": "bên dưới",
+      "id": "baa1b72a13a45f89",
+      "atlas": 14,
+      "cell": 6
+    },
+    {
+      "hanzi": "漂亮",
+      "pinyin": "piàoliang",
+      "meaning": "xinh đẹp",
+      "id": "f89008d0bd8f9982",
+      "atlas": 14,
+      "cell": 7
+    },
+    {
+      "hanzi": "帅",
+      "pinyin": "shuài",
+      "meaning": "đẹp trai",
+      "id": "78a02ce716bffff0",
+      "atlas": 14,
+      "cell": 8
+    },
+    {
+      "hanzi": "学",
+      "pinyin": "xué",
+      "meaning": "học",
+      "id": "45f449b50029a827",
+      "atlas": 14,
+      "cell": 9
+    },
+    {
+      "hanzi": "学习",
+      "pinyin": "xuéxí",
+      "meaning": "học tập",
+      "id": "72bb869b9e3fdc70",
+      "atlas": 14,
+      "cell": 10
+    },
+    {
+      "hanzi": "学校",
+      "pinyin": "xuéxiào",
+      "meaning": "trường học",
+      "id": "04d391996e9e7850",
+      "atlas": 14,
+      "cell": 11
+    },
+    {
+      "hanzi": "中心",
+      "pinyin": "zhōng xīn",
+      "meaning": "trung tâm",
+      "id": "ab804d6b0edccc9a",
+      "atlas": 14,
+      "cell": 12
+    },
+    {
+      "hanzi": "书店",
+      "pinyin": "shūdiàn",
+      "meaning": "hiệu sách",
+      "id": "7b5f76fb27d5531b",
+      "atlas": 14,
+      "cell": 13
+    },
+    {
+      "hanzi": "后",
+      "pinyin": "hòu",
+      "meaning": "sau; phía sau",
+      "id": "8c9fe9b4a5c5acf5",
+      "atlas": 14,
+      "cell": 14
+    },
+    {
+      "hanzi": "能",
+      "pinyin": "néng",
+      "meaning": "có thể",
+      "id": "bcc324fe6e66b7c8",
+      "atlas": 14,
+      "cell": 15
+    },
+    {
+      "hanzi": "到",
+      "pinyin": "dào",
+      "meaning": "đến",
+      "id": "080eb8c89cad1a4b",
+      "atlas": 15,
+      "cell": 0
+    },
+    {
+      "hanzi": "都",
+      "pinyin": "dōu",
+      "meaning": "đều; tất cả",
+      "id": "271562051f1c4903",
+      "atlas": 15,
+      "cell": 1
+    },
+    {
+      "hanzi": "只",
+      "pinyin": "zhǐ",
+      "meaning": "chỉ, chỉ có",
+      "id": "3a308c22ee8e9b44",
+      "atlas": 15,
+      "cell": 2
+    },
+    {
+      "hanzi": "边",
+      "pinyin": "bian/biān",
+      "meaning": "phía/bên",
+      "id": "d77ab80b94ededc6",
+      "atlas": 15,
+      "cell": 3
+    },
+    {
+      "hanzi": "前边",
+      "pinyin": "qiánbian",
+      "meaning": "phía trước",
+      "id": "2c14e53fc71261d8",
+      "atlas": 15,
+      "cell": 4
+    },
+    {
+      "hanzi": "后边",
+      "pinyin": "hòu biān",
+      "meaning": "phía sau",
+      "id": "82f787ed7577839e",
+      "atlas": 15,
+      "cell": 5
+    },
+    {
+      "hanzi": "外边",
+      "pinyin": "wàibian",
+      "meaning": "bên ngoài",
+      "id": "fb97cb449b28e8a6",
+      "atlas": 15,
+      "cell": 6
+    },
+    {
+      "hanzi": "里边",
+      "pinyin": "lǐ biān",
+      "meaning": "bên trong",
+      "id": "c8ac0e9458bcb066",
+      "atlas": 15,
+      "cell": 7
+    },
+    {
+      "hanzi": "左",
+      "pinyin": "zuǒ",
+      "meaning": "trái, bên trái",
+      "id": "60b8267635502d32",
+      "atlas": 15,
+      "cell": 8
+    },
+    {
+      "hanzi": "右",
+      "pinyin": "yòu",
+      "meaning": "phải, bên phải",
+      "id": "9b171acdc15faa35",
+      "atlas": 15,
+      "cell": 9
+    },
+    {
+      "hanzi": "椅子",
+      "pinyin": "yǐzi",
+      "meaning": "ghế",
+      "id": "d196df58787d15ec",
+      "atlas": 15,
+      "cell": 10
+    },
+    {
+      "hanzi": "把",
+      "pinyin": "bǎ",
+      "meaning": "cái, chiếc (lượng từ cho ghế, vật có tay cầm)",
+      "id": "32de811150536358",
+      "atlas": 15,
+      "cell": 11
+    },
+    {
+      "hanzi": "本",
+      "pinyin": "běn",
+      "meaning": "quyển",
+      "id": "9884c8163e93ba01",
+      "atlas": 15,
+      "cell": 12
+    },
+    {
+      "hanzi": "第",
+      "pinyin": "dì",
+      "meaning": "thứ (đứng trước số để chỉ thứ tự)",
+      "id": "256e23c7153dfc8e",
+      "atlas": 15,
+      "cell": 13
+    },
+    {
+      "hanzi": "公司",
+      "pinyin": "gōngsī",
+      "meaning": "công ty",
+      "id": "065be3f47ab55e5c",
+      "atlas": 15,
+      "cell": 14
+    },
+    {
+      "hanzi": "家",
+      "pinyin": "jiā",
+      "meaning": "nhà, cơ sở (lượng từ cho công ty, cửa hàng)",
+      "id": "2c07cb72d14975cc",
+      "atlas": 15,
+      "cell": 15
+    },
+    {
+      "hanzi": "觉得",
+      "pinyin": "juéde",
+      "meaning": "cảm thấy",
+      "id": "b2ddbfbfd602f6e9",
+      "atlas": 16,
+      "cell": 0
+    },
+    {
+      "hanzi": "难",
+      "pinyin": "nán",
+      "meaning": "khó",
+      "id": "62f218a6663fa49a",
+      "atlas": 16,
+      "cell": 1
+    },
+    {
+      "hanzi": "容易",
+      "pinyin": "róng yì",
+      "meaning": "dễ, dễ dàng",
+      "id": "ac945cb192c0d6f5",
+      "atlas": 16,
+      "cell": 2
+    },
+    {
+      "hanzi": "白天",
+      "pinyin": "báitiān",
+      "meaning": "ban ngày",
+      "id": "40b238dc60165617",
+      "atlas": 16,
+      "cell": 3
+    },
+    {
+      "hanzi": "读书",
+      "pinyin": "dúshū",
+      "meaning": "đọc sách",
+      "id": "ecf16c98afb8ef68",
+      "atlas": 16,
+      "cell": 4
+    },
+    {
+      "hanzi": "唱歌",
+      "pinyin": "chàng gē",
+      "meaning": "hát",
+      "id": "8fad55eeb7206040",
+      "atlas": 16,
+      "cell": 5
+    },
+    {
+      "hanzi": "听",
+      "pinyin": "tīng",
+      "meaning": "nghe",
+      "id": "5830f3e56f43d03d",
+      "atlas": 16,
+      "cell": 6
+    },
+    {
+      "hanzi": "音乐",
+      "pinyin": "yīn yuè",
+      "meaning": "âm nhạc",
+      "id": "df150fa1044124fa",
+      "atlas": 16,
+      "cell": 7
+    },
+    {
+      "hanzi": "好听",
+      "pinyin": "hǎotīng",
+      "meaning": "nghe hay",
+      "id": "032981910bbd2dd2",
+      "atlas": 16,
+      "cell": 8
+    },
+    {
+      "hanzi": "电视",
+      "pinyin": "diànshì",
+      "meaning": "TV",
+      "id": "b2aba516b3fb8ad3",
+      "atlas": 16,
+      "cell": 9
+    },
+    {
+      "hanzi": "玩儿",
+      "pinyin": "wán ér",
+      "meaning": "chơi",
+      "id": "977743ecdd8ead99",
+      "atlas": 16,
+      "cell": 10
+    },
+    {
+      "hanzi": "游戏",
+      "pinyin": "yóu xì",
+      "meaning": "trò chơi",
+      "id": "fa530f4d1d702698",
+      "atlas": 16,
+      "cell": 11
+    },
+    {
+      "hanzi": "杯子",
+      "pinyin": "bēizi",
+      "meaning": "cốc",
+      "id": "0cdb296b30d6ed19",
+      "atlas": 16,
+      "cell": 12
+    },
+    {
+      "hanzi": "售货员",
+      "pinyin": "shòuhuòyuán",
+      "meaning": "nhân viên bán hàng",
+      "id": "98eefe79cb7668fe",
+      "atlas": 16,
+      "cell": 13
+    },
+    {
+      "hanzi": "钱",
+      "pinyin": "qián",
+      "meaning": "tiền",
+      "id": "0b7b752a31b8993a",
+      "atlas": 16,
+      "cell": 14
+    },
+    {
+      "hanzi": "这些",
+      "pinyin": "zhèxiē",
+      "meaning": "những cái này",
+      "id": "4aeafa7fcdaa8750",
+      "atlas": 16,
+      "cell": 15
+    },
+    {
+      "hanzi": "那些",
+      "pinyin": "nàxiē",
+      "meaning": "những cái kia",
+      "id": "6abea618f7346d82",
+      "atlas": 17,
+      "cell": 0
+    },
+    {
+      "hanzi": "块",
+      "pinyin": "kuài",
+      "meaning": "tệ",
+      "id": "2e6cb017ed6f15fc",
+      "atlas": 17,
+      "cell": 1
+    },
+    {
+      "hanzi": "这儿",
+      "pinyin": "zhèr",
+      "meaning": "đây",
+      "id": "d6da2cfe459c6390",
+      "atlas": 17,
+      "cell": 2
+    },
+    {
+      "hanzi": "水果",
+      "pinyin": "shuǐguǒ",
+      "meaning": "hoa quả",
+      "id": "a41161378c667c00",
+      "atlas": 17,
+      "cell": 3
+    },
+    {
+      "hanzi": "苹果",
+      "pinyin": "píngguǒ",
+      "meaning": "táo",
+      "id": "fb608c08e6a93794",
+      "atlas": 17,
+      "cell": 4
+    },
+    {
+      "hanzi": "芒果",
+      "pinyin": "máng guǒ",
+      "meaning": "xoài",
+      "id": "da1b341f1b8e2d9b",
+      "atlas": 17,
+      "cell": 5
+    },
+    {
+      "hanzi": "西瓜",
+      "pinyin": "xī guā",
+      "meaning": "dưa hấu",
+      "id": "02b1ce185adb2818",
+      "atlas": 17,
+      "cell": 6
+    },
+    {
+      "hanzi": "草莓",
+      "pinyin": "cǎo méi",
+      "meaning": "dâu tây",
+      "id": "960862a7ffc51840",
+      "atlas": 17,
+      "cell": 7
+    },
+    {
+      "hanzi": "斤",
+      "pinyin": "jīn",
+      "meaning": "nửa cân",
+      "id": "c5d6ebbf633cd1fb",
+      "atlas": 17,
+      "cell": 8
+    },
+    {
+      "hanzi": "公斤",
+      "pinyin": "gōng jīn",
+      "meaning": "kilôgam (kg)",
+      "id": "42b52f27101e43e6",
+      "atlas": 17,
+      "cell": 9
+    },
+    {
+      "hanzi": "贵",
+      "pinyin": "guì",
+      "meaning": "đắt",
+      "id": "ef1a353f3391a526",
+      "atlas": 17,
+      "cell": 10
+    },
+    {
+      "hanzi": "便宜",
+      "pinyin": "piányi",
+      "meaning": "rẻ",
+      "id": "dcd008b3ed1bf051",
+      "atlas": 17,
+      "cell": 11
+    },
+    {
+      "hanzi": "商店",
+      "pinyin": "shāngdiàn",
+      "meaning": "cửa hàng",
+      "id": "fe39686891e3ba9c",
+      "atlas": 17,
+      "cell": 12
+    },
+    {
+      "hanzi": "衣服",
+      "pinyin": "yīfu",
+      "meaning": "quần áo",
+      "id": "0540f9dc84f44573",
+      "atlas": 17,
+      "cell": 13
+    },
+    {
+      "hanzi": "怎么样",
+      "pinyin": "zěnmeyàng",
+      "meaning": "như thế nào",
+      "id": "df1e5bbcf76d8f11",
+      "atlas": 17,
+      "cell": 14
+    },
+    {
+      "hanzi": "穿",
+      "pinyin": "chuān",
+      "meaning": "mặc",
+      "id": "bc4eb21ed6dcd58b",
+      "atlas": 17,
+      "cell": 15
+    },
+    {
+      "hanzi": "一共",
+      "pinyin": "yī gòng",
+      "meaning": "tổng cộng",
+      "id": "4a5888041e1b63a3",
+      "atlas": 18,
+      "cell": 0
+    },
+    {
+      "hanzi": "给",
+      "pinyin": "gěi",
+      "meaning": "cho; đưa cho",
+      "id": "038cc7b701b1cc3d",
+      "atlas": 18,
+      "cell": 1
+    },
+    {
+      "hanzi": "时候",
+      "pinyin": "shíhou",
+      "meaning": "lúc",
+      "id": "d86ced2782d0391b",
+      "atlas": 18,
+      "cell": 2
+    },
+    {
+      "hanzi": "有时候",
+      "pinyin": "yǒu shí hòu",
+      "meaning": "có lúc, thỉnh thoảng",
+      "id": "39029f7755661746",
+      "atlas": 18,
+      "cell": 3
+    },
+    {
+      "hanzi": "什么时候",
+      "pinyin": "shén me shí hòu",
+      "meaning": "khi nào, bao giờ",
+      "id": "d71f75bf90bcf51c",
+      "atlas": 18,
+      "cell": 4
+    },
+    {
+      "hanzi": "的时候",
+      "pinyin": "de shí hòu",
+      "meaning": "khi, lúc ...",
+      "id": "a9bafc3c2ca4a251",
+      "atlas": 18,
+      "cell": 5
+    },
+    {
+      "hanzi": "知道",
+      "pinyin": "zhīdao",
+      "meaning": "biết",
+      "id": "38bcff3904d75c87",
+      "atlas": 18,
+      "cell": 6
+    },
+    {
+      "hanzi": "找",
+      "pinyin": "zhǎo",
+      "meaning": "tìm",
+      "id": "ac6cb8f24388c6c2",
+      "atlas": 18,
+      "cell": 7
+    },
+    {
+      "hanzi": "自行车",
+      "pinyin": "zì xíng chē",
+      "meaning": "xe đạp",
+      "id": "c49ae759647a65df",
+      "atlas": 18,
+      "cell": 8
+    },
+    {
+      "hanzi": "摩托车",
+      "pinyin": "mó tuō chē",
+      "meaning": "xe máy",
+      "id": "14e7ca8c7882f323",
+      "atlas": 18,
+      "cell": 9
+    },
+    {
+      "hanzi": "汽车",
+      "pinyin": "qì chē",
+      "meaning": "ô tô",
+      "id": "5e169b79abdb7e6e",
+      "atlas": 18,
+      "cell": 10
+    },
+    {
+      "hanzi": "公共汽车",
+      "pinyin": "gōng gòng qì chē",
+      "meaning": "xe buýt",
+      "id": "44a4c1c4de1ce0ae",
+      "atlas": 18,
+      "cell": 11
+    },
+    {
+      "hanzi": "公交车",
+      "pinyin": "gōng jiāo chē",
+      "meaning": "xe buýt",
+      "id": "371a512430ce9c63",
+      "atlas": 18,
+      "cell": 12
+    },
+    {
+      "hanzi": "飞机",
+      "pinyin": "fēijī",
+      "meaning": "máy bay",
+      "id": "9243f457a12dbd8f",
+      "atlas": 18,
+      "cell": 13
+    },
+    {
+      "hanzi": "走路",
+      "pinyin": "zǒu lù",
+      "meaning": "đi bộ",
+      "id": "611f7ca165be4fe3",
+      "atlas": 18,
+      "cell": 14
+    },
+    {
+      "hanzi": "骑",
+      "pinyin": "qí",
+      "meaning": "đi, cưỡi (xe đạp, xe máy, ngựa)",
+      "id": "bb278dedb8d04d74",
+      "atlas": 18,
+      "cell": 15
+    },
+    {
+      "hanzi": "开",
+      "pinyin": "kāi",
+      "meaning": "lái (xe ô tô, phương tiện có động cơ)",
+      "id": "4a0abcb761abeba0",
+      "atlas": 19,
+      "cell": 0
+    },
+    {
+      "hanzi": "读",
+      "pinyin": "dú",
+      "meaning": "học (theo học một bậc học)",
+      "id": "67ea861361c3907c",
+      "atlas": 19,
+      "cell": 1
+    },
+    {
+      "hanzi": "小学",
+      "pinyin": "xiǎo xué",
+      "meaning": "trường tiểu học; bậc tiểu học",
+      "id": "f8a09bd2adbda445",
+      "atlas": 19,
+      "cell": 2
+    },
+    {
+      "hanzi": "初中",
+      "pinyin": "chū zhōng",
+      "meaning": "trung học cơ sở",
+      "id": "649af2609596123d",
+      "atlas": 19,
+      "cell": 3
+    },
+    {
+      "hanzi": "高中",
+      "pinyin": "gāo zhōng",
+      "meaning": "trung học phổ thông",
+      "id": "edcb6d976b60d314",
+      "atlas": 19,
+      "cell": 4
+    },
+    {
+      "hanzi": "大学",
+      "pinyin": "dàxué",
+      "meaning": "đại học",
+      "id": "761fd5c72b9635b4",
+      "atlas": 19,
+      "cell": 5
+    },
+    {
+      "hanzi": "大学生",
+      "pinyin": "dàxuéshēng",
+      "meaning": "sinh viên",
+      "id": "820f8e93a9ce0a73",
+      "atlas": 19,
+      "cell": 6
+    },
+    {
+      "hanzi": "医",
+      "pinyin": "yī",
+      "meaning": "y",
+      "id": "4fa07937961d4358",
+      "atlas": 19,
+      "cell": 7
+    },
+    {
+      "hanzi": "起床",
+      "pinyin": "qǐchuáng",
+      "meaning": "thức dậy",
+      "id": "d274f466b7ebbeb0",
+      "atlas": 19,
+      "cell": 8
+    },
+    {
+      "hanzi": "睡觉",
+      "pinyin": "shuìjiào",
+      "meaning": "ngủ",
+      "id": "de890899ca756cc1",
+      "atlas": 19,
+      "cell": 9
+    },
+    {
+      "hanzi": "对",
+      "pinyin": "duì",
+      "meaning": "đối với",
+      "id": "41ba2f5dc3f02f56",
+      "atlas": 19,
+      "cell": 10
+    },
+    {
+      "hanzi": "说",
+      "pinyin": "shuō",
+      "meaning": "nói",
+      "id": "0153c35493518fa4",
+      "atlas": 19,
+      "cell": 11
+    },
+    {
+      "hanzi": "要",
+      "pinyin": "yào",
+      "meaning": "muốn",
+      "id": "e68b11d68403ce5d",
+      "atlas": 19,
+      "cell": 12
+    },
+    {
+      "hanzi": "天气",
+      "pinyin": "tiānqì",
+      "meaning": "thời tiết",
+      "id": "e06c4bbb750ee597",
+      "atlas": 19,
+      "cell": 13
+    },
+    {
+      "hanzi": "晴天",
+      "pinyin": "qíng tiān",
+      "meaning": "ngày trời quang, có nắng",
+      "id": "1664ad34b1da7e62",
+      "atlas": 19,
+      "cell": 14
+    },
+    {
+      "hanzi": "阴天",
+      "pinyin": "yīn tiān",
+      "meaning": "ngày trời âm u",
+      "id": "3a367220cf7a596d",
+      "atlas": 19,
+      "cell": 15
+    },
+    {
+      "hanzi": "云",
+      "pinyin": "yún",
+      "meaning": "mây",
+      "id": "d113ee4f7bcb61bc",
+      "atlas": 20,
+      "cell": 0
+    },
+    {
+      "hanzi": "风",
+      "pinyin": "fēng",
+      "meaning": "gió",
+      "id": "3b41da821ac99afc",
+      "atlas": 20,
+      "cell": 1
+    },
+    {
+      "hanzi": "下雨",
+      "pinyin": "xià yǔ",
+      "meaning": "mưa; trời mưa",
+      "id": "7d03d7937e7cff4e",
+      "atlas": 20,
+      "cell": 2
+    },
+    {
+      "hanzi": "下大雨",
+      "pinyin": "xià dà yǔ",
+      "meaning": "mưa to",
+      "id": "a71ec88b54696ea9",
+      "atlas": 20,
+      "cell": 3
+    },
+    {
+      "hanzi": "下小雨",
+      "pinyin": "xià xiǎo yǔ",
+      "meaning": "mưa nhỏ",
+      "id": "a07290b68421dc63",
+      "atlas": 20,
+      "cell": 4
+    },
+    {
+      "hanzi": "下雪",
+      "pinyin": "xià xuě",
+      "meaning": "tuyết rơi",
+      "id": "6591706be05fbb9c",
+      "atlas": 20,
+      "cell": 5
+    },
+    {
+      "hanzi": "一点儿",
+      "pinyin": "yì diǎn ér",
+      "meaning": "một ít, một chút",
+      "id": "cbcb2588566cd593",
+      "atlas": 20,
+      "cell": 6
+    },
+    {
+      "hanzi": "有点儿",
+      "pinyin": "yǒu diǎn ér",
+      "meaning": "hơi, có chút (thường là điều không như ý)",
+      "id": "13f9981c9836ba7b",
+      "atlas": 20,
+      "cell": 7
+    },
+    {
+      "hanzi": "冷",
+      "pinyin": "lěng",
+      "meaning": "lạnh",
+      "id": "a1de625a0986ff38",
+      "atlas": 20,
+      "cell": 8
+    },
+    {
+      "hanzi": "热",
+      "pinyin": "rè",
+      "meaning": "nóng",
+      "id": "f5eba528609c6420",
+      "atlas": 20,
+      "cell": 9
+    },
+    {
+      "hanzi": "凉快",
+      "pinyin": "liáng kuài",
+      "meaning": "mát mẻ",
+      "id": "a038c26a081e99d5",
+      "atlas": 20,
+      "cell": 10
+    },
+    {
+      "hanzi": "身体",
+      "pinyin": "shēn tǐ",
+      "meaning": "cơ thể; sức khỏe",
+      "id": "79418944584f9074",
+      "atlas": 20,
+      "cell": 11
+    },
+    {
+      "hanzi": "累",
+      "pinyin": "lèi",
+      "meaning": "mệt",
+      "id": "197332ddc5cdde83",
+      "atlas": 20,
+      "cell": 12
+    },
+    {
+      "hanzi": "舒服",
+      "pinyin": "shū fú",
+      "meaning": "thoải mái, dễ chịu",
+      "id": "3baad215ede1f0ed",
+      "atlas": 20,
+      "cell": 13
+    },
+    {
+      "hanzi": "病",
+      "pinyin": "bìng",
+      "meaning": "bị ốm",
+      "id": "27b3853473073887",
+      "atlas": 20,
+      "cell": 14
+    },
+    {
+      "hanzi": "生病",
+      "pinyin": "shēngbìng",
+      "meaning": "ốm",
+      "id": "9666875226c38559",
+      "atlas": 20,
+      "cell": 15
+    },
+    {
+      "hanzi": "严重",
+      "pinyin": "yán zhòng",
+      "meaning": "nghiêm trọng",
+      "id": "a1a03218ce19dba2",
+      "atlas": 21,
+      "cell": 0
+    },
+    {
+      "hanzi": "医生",
+      "pinyin": "yīshēng",
+      "meaning": "bác sĩ",
+      "id": "042bf2e7b5911ef2",
+      "atlas": 21,
+      "cell": 1
+    },
+    {
+      "hanzi": "药",
+      "pinyin": "yào",
+      "meaning": "thuốc",
+      "id": "9ee7226747839efa",
+      "atlas": 21,
+      "cell": 2
+    },
+    {
+      "hanzi": "药店",
+      "pinyin": "yào diàn",
+      "meaning": "hiệu thuốc",
+      "id": "e0c379ac415deb81",
+      "atlas": 21,
+      "cell": 3
+    },
+    {
+      "hanzi": "吃药",
+      "pinyin": "chī yào",
+      "meaning": "uống thuốc",
+      "id": "7f010c7629105d87",
+      "atlas": 21,
+      "cell": 4
+    },
+    {
+      "hanzi": "次",
+      "pinyin": "cì",
+      "meaning": "lần (đếm số lần)",
+      "id": "5f8d3da327c1a9dd",
+      "atlas": 21,
+      "cell": 5
+    },
+    {
+      "hanzi": "片",
+      "pinyin": "piàn",
+      "meaning": "viên, miếng, lát",
+      "id": "7d8b8f1dbdbcae6a",
+      "atlas": 21,
+      "cell": 6
+    },
+    {
+      "hanzi": "可以",
+      "pinyin": "kěyǐ",
+      "meaning": "có thể; được phép",
+      "id": "ea14dec40f3399de",
+      "atlas": 21,
+      "cell": 7
+    },
+    {
+      "hanzi": "再",
+      "pinyin": "zài",
+      "meaning": "lại, thêm; rồi, tiếp theo (hành động chưa thực hiện)",
+      "id": "92cf38fd661621ce",
+      "atlas": 21,
+      "cell": 8
+    },
+    {
+      "hanzi": "来",
+      "pinyin": "lái",
+      "meaning": "đến",
+      "id": "a97ea7d17bcc2a49",
+      "atlas": 21,
+      "cell": 9
+    },
+    {
+      "hanzi": "问题",
+      "pinyin": "wèntí",
+      "meaning": "câu hỏi; vấn đề",
+      "id": "2fade3bb87ff9a5c",
+      "atlas": 21,
+      "cell": 10
+    },
+    {
+      "hanzi": "回答",
+      "pinyin": "huí dá",
+      "meaning": "trả lời",
+      "id": "2d999cb3647d3280",
+      "atlas": 21,
+      "cell": 11
+    },
+    {
+      "hanzi": "为什么",
+      "pinyin": "wèi shén me",
+      "meaning": "tại sao, vì sao",
+      "id": "1c0b0f82b16b4ec7",
+      "atlas": 21,
+      "cell": 12
+    },
+    {
+      "hanzi": "因为",
+      "pinyin": "yīn wèi",
+      "meaning": "vì, bởi vì",
+      "id": "5726bdad2f02feb6",
+      "atlas": 21,
+      "cell": 13
+    },
+    {
+      "hanzi": "所以",
+      "pinyin": "suǒ yǐ",
+      "meaning": "vì vậy, cho nên",
+      "id": "eaf0961616ec00ee",
+      "atlas": 21,
+      "cell": 14
+    },
+    {
+      "hanzi": "懂",
+      "pinyin": "dǒng",
+      "meaning": "hiểu",
+      "id": "35920c8cc5dabb50",
+      "atlas": 21,
+      "cell": 15
+    },
+    {
+      "hanzi": "明白",
+      "pinyin": "míng bái",
+      "meaning": "hiểu, rõ",
+      "id": "5028e251fa540459",
+      "atlas": 22,
+      "cell": 0
+    },
+    {
+      "hanzi": "汉字",
+      "pinyin": "hàn zì",
+      "meaning": "chữ Hán",
+      "id": "ff6567d908b47cd5",
+      "atlas": 22,
+      "cell": 1
+    },
+    {
+      "hanzi": "语法",
+      "pinyin": "yǔ fǎ",
+      "meaning": "ngữ pháp",
+      "id": "be8bf748bf438043",
+      "atlas": 22,
+      "cell": 2
+    },
+    {
+      "hanzi": "发音",
+      "pinyin": "fā yīn",
+      "meaning": "phát âm; cách phát âm",
+      "id": "c989a558f3704e4f",
+      "atlas": 22,
+      "cell": 3
+    },
+    {
+      "hanzi": "技能",
+      "pinyin": "jì néng",
+      "meaning": "kỹ năng",
+      "id": "0e456ef49c32539d",
+      "atlas": 22,
+      "cell": 4
+    },
+    {
+      "hanzi": "写",
+      "pinyin": "xiě",
+      "meaning": "viết",
+      "id": "e954d6598f5c397b",
+      "atlas": 22,
+      "cell": 5
+    },
+    {
+      "hanzi": "久",
+      "pinyin": "jiǔ",
+      "meaning": "lâu",
+      "id": "41854373b92ea612",
+      "atlas": 22,
+      "cell": 6
+    },
+    {
+      "hanzi": "多久",
+      "pinyin": "duō jiǔ",
+      "meaning": "bao lâu",
+      "id": "e22081c9c0b5381b",
+      "atlas": 22,
+      "cell": 7
+    },
+    {
+      "hanzi": "多长时间",
+      "pinyin": "duō zhǎng shí jiān",
+      "meaning": "bao lâu; khoảng thời gian bao nhiêu",
+      "id": "e7acc065ca64f8b9",
+      "atlas": 22,
+      "cell": 8
+    },
+    {
+      "hanzi": "时间",
+      "pinyin": "shíjiān",
+      "meaning": "thời gian",
+      "id": "418935109f40b5c9",
+      "atlas": 22,
+      "cell": 9
+    },
+    {
+      "hanzi": "但是",
+      "pinyin": "dàn shì",
+      "meaning": "nhưng",
+      "id": "6e07b2ae0867184a",
+      "atlas": 22,
+      "cell": 10
+    },
+    {
+      "hanzi": "但",
+      "pinyin": "dàn",
+      "meaning": "nhưng (dạng ngắn của 但是)",
+      "id": "c0124540692eee95",
+      "atlas": 22,
+      "cell": 11
+    },
+    {
+      "hanzi": "打电话",
+      "pinyin": "dǎ diànhuà",
+      "meaning": "gọi điện thoại",
+      "id": "a306a0d451979b62",
+      "atlas": 22,
+      "cell": 12
+    },
+    {
+      "hanzi": "接",
+      "pinyin": "jiē",
+      "meaning": "đón; nhận (điện thoại, vật được đưa)",
+      "id": "0dd3de6f3624eeb9",
+      "atlas": 22,
+      "cell": 13
+    },
+    {
+      "hanzi": "一下",
+      "pinyin": "yī xià",
+      "meaning": "một chút, một lát (sau động từ)",
+      "id": "16487081f9335a08",
+      "atlas": 22,
+      "cell": 14
+    },
+    {
+      "hanzi": "等",
+      "pinyin": "děng",
+      "meaning": "đợi, chờ",
+      "id": "5a9f4b8e2f8981c6",
+      "atlas": 22,
+      "cell": 15
+    },
+    {
+      "hanzi": "机场",
+      "pinyin": "jīchǎng",
+      "meaning": "sân bay",
+      "id": "28bedac75f43b8c7",
+      "atlas": 23,
+      "cell": 0
+    },
+    {
+      "hanzi": "上",
+      "pinyin": "shàng",
+      "meaning": "lên (xe, tàu)",
+      "id": "6d3650de1441e817",
+      "atlas": 23,
+      "cell": 1
+    },
+    {
+      "hanzi": "火车",
+      "pinyin": "huǒ chē",
+      "meaning": "tàu hỏa",
+      "id": "9e7b882b897cb14a",
+      "atlas": 23,
+      "cell": 2
+    },
+    {
+      "hanzi": "开",
+      "pinyin": "kāi",
+      "meaning": "khởi hành, rời đi (xe cộ)",
+      "id": "7cae27ec6185a1b1",
+      "atlas": 23,
+      "cell": 3
+    },
+    {
+      "hanzi": "有些",
+      "pinyin": "yǒuxiē",
+      "meaning": "một vài; một số",
+      "id": "91745c045bf35fae",
+      "atlas": 23,
+      "cell": 4
+    },
+    {
+      "hanzi": "有的",
+      "pinyin": "yǒude",
+      "meaning": "một số; có người thì…",
+      "id": "6e75a45ac3c2487a",
+      "atlas": 23,
+      "cell": 5
+    },
+    {
+      "hanzi": "听见",
+      "pinyin": "tīngjiàn",
+      "meaning": "nghe thấy",
+      "id": "f0429591f465a878",
+      "atlas": 23,
+      "cell": 6
+    },
+    {
+      "hanzi": "不要",
+      "pinyin": "búyào",
+      "meaning": "đừng; không được",
+      "id": "92384da613dbe9f9",
+      "atlas": 23,
+      "cell": 7
+    },
+    {
+      "hanzi": "说话",
+      "pinyin": "shuōhuà",
+      "meaning": "nói chuyện; nói",
+      "id": "b42ae3d2d0c63608",
+      "atlas": 23,
+      "cell": 8
+    },
+    {
+      "hanzi": "哪些",
+      "pinyin": "nǎxiē",
+      "meaning": "những… nào",
+      "id": "4adadf177f4aee90",
+      "atlas": 23,
+      "cell": 9
+    },
+    {
+      "hanzi": "字",
+      "pinyin": "zì",
+      "meaning": "chữ; ký tự",
+      "id": "fc9d17bc97654353",
+      "atlas": 23,
+      "cell": 10
+    },
+    {
+      "hanzi": "上",
+      "pinyin": "shàng",
+      "meaning": "đi, bắt đầu (học, làm)",
+      "id": "c5e300a6b041be04",
+      "atlas": 23,
+      "cell": 11
+    },
+    {
+      "hanzi": "中学",
+      "pinyin": "zhōngxué",
+      "meaning": "trường trung học",
+      "id": "3f2c39464d9529b0",
+      "atlas": 23,
+      "cell": 12
+    },
+    {
+      "hanzi": "中学生",
+      "pinyin": "zhōng xué shēng",
+      "meaning": "học sinh trung học",
+      "id": "5c620601d7b3f816",
+      "atlas": 23,
+      "cell": 13
+    },
+    {
+      "hanzi": "小学生",
+      "pinyin": "xiǎo xué shēng",
+      "meaning": "học sinh tiểu học",
+      "id": "5c85f3f3e8fa7716",
+      "atlas": 23,
+      "cell": 14
+    },
+    {
+      "hanzi": "上学",
+      "pinyin": "shàngxué",
+      "meaning": "đi học",
+      "id": "c5267b96591e2f4a",
+      "atlas": 23,
+      "cell": 15
+    },
+    {
+      "hanzi": "他们",
+      "pinyin": "tāmen",
+      "meaning": "họ (giống chung/nam)",
+      "id": "e1797a1efa20ab09",
+      "atlas": 24,
+      "cell": 0
+    },
+    {
+      "hanzi": "她们",
+      "pinyin": "tāmen",
+      "meaning": "họ (nữ)",
+      "id": "868ef428c14f694a",
+      "atlas": 24,
+      "cell": 1
+    },
+    {
+      "hanzi": "它们",
+      "pinyin": "tāmen",
+      "meaning": "chúng (đồ vật/động vật)",
+      "id": "50bef8b66daed427",
+      "atlas": 24,
+      "cell": 2
+    },
+    {
+      "hanzi": "晚",
+      "pinyin": "wǎn",
+      "meaning": "muộn",
+      "id": "fed8ffb7d96cca3c",
+      "atlas": 24,
+      "cell": 3
+    },
+    {
+      "hanzi": "爱",
+      "pinyin": "ài",
+      "meaning": "yêu, thích",
+      "id": "41f767dc208fab5a",
+      "atlas": 24,
+      "cell": 4
+    },
+    {
+      "hanzi": "哪个",
+      "pinyin": "nǎgè",
+      "meaning": "cái nào",
+      "id": "c3dc22d0686e9906",
+      "atlas": 24,
+      "cell": 5
+    },
+    {
+      "hanzi": "好玩儿",
+      "pinyin": "hǎowánr",
+      "meaning": "vui, chơi vui",
+      "id": "274e3da66606e794",
+      "atlas": 24,
+      "cell": 6
+    },
+    {
+      "hanzi": "要",
+      "pinyin": "yào",
+      "meaning": "cần, phải, muốn",
+      "id": "6fb062c2d79b6181",
+      "atlas": 24,
+      "cell": 7
+    },
+    {
+      "hanzi": "家人",
+      "pinyin": "jiārén",
+      "meaning": "người nhà, gia đình",
+      "id": "cf768c1c5651bcae",
+      "atlas": 24,
+      "cell": 8
+    },
+    {
+      "hanzi": "住",
+      "pinyin": "zhù",
+      "meaning": "ở, cư trú",
+      "id": "c981b24aeedbb067",
+      "atlas": 24,
+      "cell": 9
+    },
+    {
+      "hanzi": "早",
+      "pinyin": "zǎo",
+      "meaning": "sớm",
+      "id": "3b041a87633a2cfa",
+      "atlas": 24,
+      "cell": 10
+    },
+    {
+      "hanzi": "那",
+      "pinyin": "nà",
+      "meaning": "vậy, thế thì",
+      "id": "36d5422a90dd8fd0",
+      "atlas": 24,
+      "cell": 11
+    },
+    {
+      "hanzi": "首都",
+      "pinyin": "shǒudū",
+      "meaning": "thủ đô",
+      "id": "992b8b7fc1c6c296",
+      "atlas": 24,
+      "cell": 12
+    },
+    {
+      "hanzi": "旅游",
+      "pinyin": "lǚyóu",
+      "meaning": "du lịch",
+      "id": "41f49b2c05233a19",
+      "atlas": 24,
+      "cell": 13
+    },
+    {
+      "hanzi": "旅行",
+      "pinyin": "lǚ xíng",
+      "meaning": "đi du lịch, chuyến đi",
+      "id": "f45cde02e92157e4",
+      "atlas": 24,
+      "cell": 14
+    },
+    {
+      "hanzi": "介绍",
+      "pinyin": "jièshào",
+      "meaning": "giới thiệu",
+      "id": "68934c3a359dbbe1",
+      "atlas": 24,
+      "cell": 15
+    },
+    {
+      "hanzi": "帮",
+      "pinyin": "bāng",
+      "meaning": "giúp, giúp đỡ",
+      "id": "bf051a44796a9e0a",
+      "atlas": 25,
+      "cell": 0
+    },
+    {
+      "hanzi": "帮助",
+      "pinyin": "bāng zhù",
+      "meaning": "giúp đỡ; sự giúp đỡ",
+      "id": "2ec4ef4872eb366e",
+      "atlas": 25,
+      "cell": 1
+    },
+    {
+      "hanzi": "帮忙",
+      "pinyin": "bāngmáng",
+      "meaning": "giúp đỡ",
+      "id": "7beed5024fad4b02",
+      "atlas": 25,
+      "cell": 2
+    },
+    {
+      "hanzi": "意思",
+      "pinyin": "yìsi",
+      "meaning": "ý nghĩa",
+      "id": "417afb7afacccf86",
+      "atlas": 25,
+      "cell": 3
+    },
+    {
+      "hanzi": "不好意思",
+      "pinyin": "bù hǎo yì sī",
+      "meaning": "ngại quá; xin lỗi, làm phiền",
+      "id": "c50699158f6ac062",
+      "atlas": 25,
+      "cell": 4
+    },
+    {
+      "hanzi": "已经",
+      "pinyin": "yǐjīng",
+      "meaning": "đã",
+      "id": "8db3690bc1b6de22",
+      "atlas": 25,
+      "cell": 5
+    },
+    {
+      "hanzi": "就",
+      "pinyin": "jiù",
+      "meaning": "liền, ngay; đã (sớm hơn dự kiến)",
+      "id": "fbacac0a028e179b",
+      "atlas": 25,
+      "cell": 6
+    },
+    {
+      "hanzi": "感谢",
+      "pinyin": "gǎn xiè",
+      "meaning": "cảm ơn, biết ơn",
+      "id": "609cabdcf6fc3ec9",
+      "atlas": 25,
+      "cell": 7
+    },
+    {
+      "hanzi": "那",
+      "pinyin": "nà",
+      "meaning": "vậy thì, thế thì",
+      "id": "3a5a923e3c469c36",
+      "atlas": 25,
+      "cell": 8
+    },
+    {
+      "hanzi": "那么",
+      "pinyin": "nàme",
+      "meaning": "vậy thì, thế thì",
+      "id": "86f325164108d87a",
+      "atlas": 25,
+      "cell": 9
+    },
+    {
+      "hanzi": "啊",
+      "pinyin": "a",
+      "meaning": "dùng ở cuối câu để biểu thị sự tán thưởng, đồng ý…",
+      "id": "bdd77c4bc17b4af7",
+      "atlas": 25,
+      "cell": 10
+    },
+    {
+      "hanzi": "千",
+      "pinyin": "qiān",
+      "meaning": "nghìn",
+      "id": "02cbd7f31c5b6d86",
+      "atlas": 25,
+      "cell": 11
+    },
+    {
+      "hanzi": "万",
+      "pinyin": "wàn",
+      "meaning": "mười nghìn, vạn",
+      "id": "1f120402e9b2e26a",
+      "atlas": 25,
+      "cell": 12
+    },
+    {
+      "hanzi": "名",
+      "pinyin": "míng",
+      "meaning": "vị, người (lượng từ trang trọng cho người)",
+      "id": "968aab680b0e9e71",
+      "atlas": 25,
+      "cell": 13
+    },
+    {
+      "hanzi": "网",
+      "pinyin": "wǎng",
+      "meaning": "mạng, lưới",
+      "id": "86b7c07a53585a67",
+      "atlas": 25,
+      "cell": 14
+    },
+    {
+      "hanzi": "上网",
+      "pinyin": "shàng wǎng",
+      "meaning": "lên mạng",
+      "id": "dba5f85a50293066",
+      "atlas": 25,
+      "cell": 15
+    },
+    {
+      "hanzi": "网上",
+      "pinyin": "wǎngshang",
+      "meaning": "trên mạng",
+      "id": "969325fb555f15c2",
+      "atlas": 26,
+      "cell": 0
+    },
+    {
+      "hanzi": "外国",
+      "pinyin": "wàiguó",
+      "meaning": "nước ngoài",
+      "id": "d0073b0f184f443e",
+      "atlas": 26,
+      "cell": 1
+    },
+    {
+      "hanzi": "教室",
+      "pinyin": "jiàoshì",
+      "meaning": "lớp học",
+      "id": "d796464726d9f226",
+      "atlas": 26,
+      "cell": 2
+    },
+    {
+      "hanzi": "走",
+      "pinyin": "zǒu",
+      "meaning": "đi; rời đi",
+      "id": "0aa1b6133631cb77",
+      "atlas": 26,
+      "cell": 3
+    },
+    {
+      "hanzi": "北京",
+      "pinyin": "běi jīng",
+      "meaning": "Bắc Kinh",
+      "id": "e3ccff12463bbc2f",
+      "atlas": 26,
+      "cell": 4
+    },
+    {
+      "hanzi": "故宫",
+      "pinyin": "Gùgōng",
+      "meaning": "Cố cung",
+      "id": "e7b8cca57765a6d1",
+      "atlas": 26,
+      "cell": 5
+    },
+    {
+      "hanzi": "烤鸭",
+      "pinyin": "kǎo yā",
+      "meaning": "vịt quay",
+      "id": "ecc5d5b56c1f3bbb",
+      "atlas": 26,
+      "cell": 6
+    },
+    {
+      "hanzi": "地方",
+      "pinyin": "dì fāng",
+      "meaning": "nơi, chỗ, địa điểm",
+      "id": "698d4ff17d0d3b31",
+      "atlas": 26,
+      "cell": 7
+    },
+    {
+      "hanzi": "哪个地方",
+      "pinyin": "nǎ ge dì fāng",
+      "meaning": "nơi nào (trong các nơi)",
+      "id": "6ee3fab87df23461",
+      "atlas": 26,
+      "cell": 8
+    },
+    {
+      "hanzi": "什么地方",
+      "pinyin": "shén me dì fāng",
+      "meaning": "nơi nào, chỗ nào",
+      "id": "42e0aff2bef8899a",
+      "atlas": 26,
+      "cell": 9
+    },
+    {
+      "hanzi": "这么",
+      "pinyin": "zhème",
+      "meaning": "thế này, như thế",
+      "id": "dfc64597ccc535e0",
+      "atlas": 26,
+      "cell": 10
+    },
+    {
+      "hanzi": "那么",
+      "pinyin": "nàme",
+      "meaning": "như vậy, đến thế (chỉ mức độ)",
+      "id": "22d60e432575fc20",
+      "atlas": 26,
+      "cell": 11
+    },
+    {
+      "hanzi": "才",
+      "pinyin": "cái",
+      "meaning": "mãi ... mới; mới chỉ",
+      "id": "e768feb375836c1f",
+      "atlas": 26,
+      "cell": 12
+    },
+    {
+      "hanzi": "完",
+      "pinyin": "wán",
+      "meaning": "xong",
+      "id": "add573eb377d81f7",
+      "atlas": 26,
+      "cell": 13
+    },
+    {
+      "hanzi": "先",
+      "pinyin": "xiān",
+      "meaning": "trước, trước tiên",
+      "id": "515686e2ca0e8e16",
+      "atlas": 26,
+      "cell": 14
+    },
+    {
+      "hanzi": "然后",
+      "pinyin": "rán hòu",
+      "meaning": "sau đó, rồi",
+      "id": "a005c4665b7f5ca5",
+      "atlas": 26,
+      "cell": 15
+    },
+    {
+      "hanzi": "放假",
+      "pinyin": "fàng jià",
+      "meaning": "nghỉ lễ",
+      "id": "4bc8097f31eac3e8",
+      "atlas": 27,
+      "cell": 0
+    },
+    {
+      "hanzi": "一起",
+      "pinyin": "yìqǐ",
+      "meaning": "cùng nhau",
+      "id": "20260fd5ec58bae0",
+      "atlas": 27,
+      "cell": 1
+    },
+    {
+      "hanzi": "跟",
+      "pinyin": "gēn",
+      "meaning": "với, cùng với",
+      "id": "9ff255078a69af75",
+      "atlas": 27,
+      "cell": 2
+    },
+    {
+      "hanzi": "出去",
+      "pinyin": "chūqù",
+      "meaning": "ra kia",
+      "id": "44fcf66e82a7c87e",
+      "atlas": 27,
+      "cell": 3
+    },
+    {
+      "hanzi": "回来",
+      "pinyin": "huílái",
+      "meaning": "về, trở về",
+      "id": "799dea6135bbacbc",
+      "atlas": 27,
+      "cell": 4
+    },
+    {
+      "hanzi": "回去",
+      "pinyin": "huíqù",
+      "meaning": "về kia",
+      "id": "f0f8bdfde18b3206",
+      "atlas": 27,
+      "cell": 5
+    },
+    {
+      "hanzi": "上来",
+      "pinyin": "shànglái",
+      "meaning": "lên, đi lên",
+      "id": "b0814fb625978433",
+      "atlas": 27,
+      "cell": 6
+    },
+    {
+      "hanzi": "上去",
+      "pinyin": "shàngqù",
+      "meaning": "lên, đi lên",
+      "id": "dbe154add60c80a6",
+      "atlas": 27,
+      "cell": 7
+    },
+    {
+      "hanzi": "票",
+      "pinyin": "piào",
+      "meaning": "vé",
+      "id": "500708bf308d00d1",
+      "atlas": 27,
+      "cell": 8
+    },
+    {
+      "hanzi": "洗",
+      "pinyin": "xǐ",
+      "meaning": "rửa",
+      "id": "f20ec4bcffe832fe",
+      "atlas": 27,
+      "cell": 9
+    },
+    {
+      "hanzi": "手",
+      "pinyin": "shǒu",
+      "meaning": "(bàn) tay",
+      "id": "dd4a39f9b2bb6923",
+      "atlas": 27,
+      "cell": 10
+    },
+    {
+      "hanzi": "脚",
+      "pinyin": "jiǎo",
+      "meaning": "(bàn) chân",
+      "id": "e5b6a347cb4dee86",
+      "atlas": 27,
+      "cell": 11
+    },
+    {
+      "hanzi": "不错",
+      "pinyin": "búcuò",
+      "meaning": "tốt, được",
+      "id": "f39bbd2356de7742",
+      "atlas": 27,
+      "cell": 12
+    },
+    {
+      "hanzi": "兵马俑",
+      "pinyin": "Bīngmǎyǒng",
+      "meaning": "Chiến binh đất nung",
+      "id": "c3ff2ef75c77e078",
+      "atlas": 27,
+      "cell": 13
+    },
+    {
+      "hanzi": "每",
+      "pinyin": "měi",
+      "meaning": "mỗi, hàng (ngày)",
+      "id": "0122a051789b4d5a",
+      "atlas": 27,
+      "cell": 14
+    },
+    {
+      "hanzi": "送",
+      "pinyin": "sòng",
+      "meaning": "tặng",
+      "id": "7be8261f94831ba8",
+      "atlas": 27,
+      "cell": 15
+    },
+    {
+      "hanzi": "自己",
+      "pinyin": "zìjǐ",
+      "meaning": "tự mình",
+      "id": "e79a7e24d469c04e",
+      "atlas": 28,
+      "cell": 0
+    },
+    {
+      "hanzi": "拿",
+      "pinyin": "ná",
+      "meaning": "cầm, nắm",
+      "id": "bf29ff470be13c89",
+      "atlas": 28,
+      "cell": 1
+    },
+    {
+      "hanzi": "包",
+      "pinyin": "bāo",
+      "meaning": "túi, cặp; gói",
+      "id": "be89cdcdd5e0bf4d",
+      "atlas": 28,
+      "cell": 2
+    },
+    {
+      "hanzi": "市场",
+      "pinyin": "shì chǎng",
+      "meaning": "chợ, thị trường",
+      "id": "0fc00d89c6a5bd30",
+      "atlas": 28,
+      "cell": 3
+    },
+    {
+      "hanzi": "商场",
+      "pinyin": "shāngchǎng",
+      "meaning": "trung tâm thương mại",
+      "id": "8114893a39801521",
+      "atlas": 28,
+      "cell": 4
+    },
+    {
+      "hanzi": "开",
+      "pinyin": "kāi",
+      "meaning": "mở, khai trương",
+      "id": "7c82370a304263c0",
+      "atlas": 28,
+      "cell": 5
+    },
+    {
+      "hanzi": "聊天儿",
+      "pinyin": "liáo tiān ér",
+      "meaning": "trò chuyện, tán gẫu",
+      "id": "4e1525d12e6a5ed3",
+      "atlas": 28,
+      "cell": 6
+    },
+    {
+      "hanzi": "过",
+      "pinyin": "guo",
+      "meaning": "đã từng (trải nghiệm trong quá khứ)",
+      "id": "a9e2e5ba394f997a",
+      "atlas": 28,
+      "cell": 7
+    },
+    {
+      "hanzi": "曾经",
+      "pinyin": "céng jīng",
+      "meaning": "đã từng",
+      "id": "7dec01559c619fba",
+      "atlas": 28,
+      "cell": 8
+    },
+    {
+      "hanzi": "裤子",
+      "pinyin": "kù zi",
+      "meaning": "quần",
+      "id": "2ea6bccd8cbf850a",
+      "atlas": 28,
+      "cell": 9
+    },
+    {
+      "hanzi": "裙子",
+      "pinyin": "qún zi",
+      "meaning": "váy",
+      "id": "b0eeea091e8ad530",
+      "atlas": 28,
+      "cell": 10
+    },
+    {
+      "hanzi": "准备",
+      "pinyin": "zhǔnbèi",
+      "meaning": "chuẩn bị",
+      "id": "3901d2535427c009",
+      "atlas": 28,
+      "cell": 11
+    },
+    {
+      "hanzi": "一会儿",
+      "pinyin": "yíhuìr",
+      "meaning": "một lúc",
+      "id": "2b9888bd01bfa38b",
+      "atlas": 28,
+      "cell": 12
+    },
+    {
+      "hanzi": "办公室",
+      "pinyin": "bàn gōng shì",
+      "meaning": "văn phòng",
+      "id": "a776d78719c01eeb",
+      "atlas": 28,
+      "cell": 13
+    },
+    {
+      "hanzi": "马上",
+      "pinyin": "mǎshàng",
+      "meaning": "ngay, sắp",
+      "id": "7dc780f4c345f93b",
+      "atlas": 28,
+      "cell": 14
+    },
+    {
+      "hanzi": "块",
+      "pinyin": "kuài",
+      "meaning": "chiếc (lượng từ cho đồng hồ); miếng",
+      "id": "3842fc9d8cfb125c",
+      "atlas": 28,
+      "cell": 15
+    },
+    {
+      "hanzi": "快点儿",
+      "pinyin": "kuài diǎn ér",
+      "meaning": "nhanh lên, nhanh một chút",
+      "id": "d7b93d86c1441d97",
+      "atlas": 29,
+      "cell": 0
+    },
+    {
+      "hanzi": "礼物",
+      "pinyin": "lǐwù",
+      "meaning": "quà, món quà",
+      "id": "7e87a955af0d2d9e",
+      "atlas": 29,
+      "cell": 1
+    },
+    {
+      "hanzi": "哎",
+      "pinyin": "āi",
+      "meaning": "ôi trời ơi (biểu thị sự ngạc nhiên)",
+      "id": "fca25e084100f2ec",
+      "atlas": 29,
+      "cell": 2
+    },
+    {
+      "hanzi": "带",
+      "pinyin": "dài",
+      "meaning": "mang, đem theo; dẫn theo",
+      "id": "79301fc813e09493",
+      "atlas": 29,
+      "cell": 3
+    },
+    {
+      "hanzi": "楼",
+      "pinyin": "lóu",
+      "meaning": "tầng; tòa nhà",
+      "id": "b2b8f9a853715b09",
+      "atlas": 29,
+      "cell": 4
+    },
+    {
+      "hanzi": "特产",
+      "pinyin": "tèchǎn",
+      "meaning": "đặc sản",
+      "id": "7985f7b31b2828f6",
+      "atlas": 29,
+      "cell": 5
+    },
+    {
+      "hanzi": "出生",
+      "pinyin": "chū shēng",
+      "meaning": "sinh ra, chào đời",
+      "id": "136cf54698d2b4ab",
+      "atlas": 29,
+      "cell": 6
+    },
+    {
+      "hanzi": "哪年",
+      "pinyin": "nǎ nián",
+      "meaning": "năm nào",
+      "id": "dcc823e9c4de6981",
+      "atlas": 29,
+      "cell": 7
+    },
+    {
+      "hanzi": "生日",
+      "pinyin": "shēngrì",
+      "meaning": "sinh nhật",
+      "id": "07b2a284f3bfceec",
+      "atlas": 29,
+      "cell": 8
+    },
+    {
+      "hanzi": "过",
+      "pinyin": "guò",
+      "meaning": "đón, mừng (sinh nhật, lễ tết)",
+      "id": "d2d98ac367ae6bae",
+      "atlas": 29,
+      "cell": 9
+    },
+    {
+      "hanzi": "举行",
+      "pinyin": "jǔ xíng",
+      "meaning": "tổ chức (sự kiện, hoạt động)",
+      "id": "b7d6059bd5476c5a",
+      "atlas": 29,
+      "cell": 10
+    },
+    {
+      "hanzi": "会",
+      "pinyin": "huì",
+      "meaning": "cuộc họp, buổi hội, sự kiện",
+      "id": "4c9af378c65c17e0",
+      "atlas": 29,
+      "cell": 11
+    },
+    {
+      "hanzi": "参加",
+      "pinyin": "cān jiā",
+      "meaning": "tham gia",
+      "id": "dfa21387668f24d1",
+      "atlas": 29,
+      "cell": 12
+    },
+    {
+      "hanzi": "忘",
+      "pinyin": "wàng",
+      "meaning": "quên",
+      "id": "503effc1ec0d263c",
+      "atlas": 29,
+      "cell": 13
+    },
+    {
+      "hanzi": "蛋糕",
+      "pinyin": "dàngāo",
+      "meaning": "bánh kem",
+      "id": "aa2b34e8f12a8116",
+      "atlas": 29,
+      "cell": 14
+    },
+    {
+      "hanzi": "打开",
+      "pinyin": "dǎ kāi",
+      "meaning": "mở ra",
+      "id": "287bbe684da1aabb",
+      "atlas": 29,
+      "cell": 15
+    },
+    {
+      "hanzi": "画笔",
+      "pinyin": "huàbǐ",
+      "meaning": "bút vẽ",
+      "id": "fca87eca446f4858",
+      "atlas": 30,
+      "cell": 0
+    },
+    {
+      "hanzi": "画画",
+      "pinyin": "huà huà",
+      "meaning": "vẽ tranh",
+      "id": "8e51da5c71143b6f",
+      "atlas": 30,
+      "cell": 1
+    },
+    {
+      "hanzi": "上次",
+      "pinyin": "shàng cì",
+      "meaning": "lần trước",
+      "id": "e0b73f039577566d",
+      "atlas": 30,
+      "cell": 2
+    },
+    {
+      "hanzi": "从",
+      "pinyin": "cóng",
+      "meaning": "từ (điểm xuất phát, bắt đầu)",
+      "id": "4c6b68f267718330",
+      "atlas": 30,
+      "cell": 3
+    },
+    {
+      "hanzi": "往",
+      "pinyin": "wǎng",
+      "meaning": "về phía, hướng về",
+      "id": "19376aaf55066e16",
+      "atlas": 30,
+      "cell": 4
+    },
+    {
+      "hanzi": "鱼",
+      "pinyin": "yú",
+      "meaning": "cá",
+      "id": "932832f20bd991db",
+      "atlas": 30,
+      "cell": 5
+    },
+    {
+      "hanzi": "肉",
+      "pinyin": "ròu",
+      "meaning": "thịt",
+      "id": "b2cea18450179d2e",
+      "atlas": 30,
+      "cell": 6
+    },
+    {
+      "hanzi": "长寿面",
+      "pinyin": "chángshòumiàn",
+      "meaning": "mì trường thọ",
+      "id": "8cbe68953e11861b",
+      "atlas": 30,
+      "cell": 7
+    },
+    {
+      "hanzi": "祝",
+      "pinyin": "zhù",
+      "meaning": "chúc",
+      "id": "03f08aba05e22776",
+      "atlas": 30,
+      "cell": 8
+    },
+    {
+      "hanzi": "快乐",
+      "pinyin": "kuài lè",
+      "meaning": "vui vẻ, hạnh phúc",
+      "id": "4e1c3a5ca5492002",
+      "atlas": 30,
+      "cell": 9
+    },
+    {
+      "hanzi": "顺利",
+      "pinyin": "shùn lì",
+      "meaning": "thuận lợi, suôn sẻ",
+      "id": "2c6ce4d14f20782c",
+      "atlas": 30,
+      "cell": 10
+    },
+    {
+      "hanzi": "健康",
+      "pinyin": "jiàn kāng",
+      "meaning": "khỏe mạnh; sức khỏe",
+      "id": "b641d69c06eec1e7",
+      "atlas": 30,
+      "cell": 11
+    },
+    {
+      "hanzi": "进步",
+      "pinyin": "jìn bù",
+      "meaning": "tiến bộ; sự tiến bộ",
+      "id": "4bad1c1850837e51",
+      "atlas": 30,
+      "cell": 12
+    },
+    {
+      "hanzi": "运动",
+      "pinyin": "yùndòng",
+      "meaning": "thể thao, vận động",
+      "id": "1d54e6f129daf157",
+      "atlas": 30,
+      "cell": 13
+    },
+    {
+      "hanzi": "当然",
+      "pinyin": "dāng rán",
+      "meaning": "đương nhiên, tất nhiên",
+      "id": "4ebfe738773b7628",
+      "atlas": 30,
+      "cell": 14
+    },
+    {
+      "hanzi": "打",
+      "pinyin": "dǎ",
+      "meaning": "đánh, chơi (một số môn thể thao)",
+      "id": "2470b33cf8a3b229",
+      "atlas": 30,
+      "cell": 15
+    },
+    {
+      "hanzi": "羽毛球",
+      "pinyin": "yǔmáoqiú",
+      "meaning": "cầu lông",
+      "id": "8349541aa9e239c5",
+      "atlas": 31,
+      "cell": 0
+    },
+    {
+      "hanzi": "试",
+      "pinyin": "shì",
+      "meaning": "thử",
+      "id": "cb96b6b253d511db",
+      "atlas": 31,
+      "cell": 1
+    },
+    {
+      "hanzi": "散步",
+      "pinyin": "sànbù",
+      "meaning": "đi bộ",
+      "id": "1a6f914e4c577b37",
+      "atlas": 31,
+      "cell": 2
+    },
+    {
+      "hanzi": "跑步",
+      "pinyin": "pǎo bù",
+      "meaning": "chạy bộ",
+      "id": "fc1e4196a01cb177",
+      "atlas": 31,
+      "cell": 3
+    },
+    {
+      "hanzi": "太极拳",
+      "pinyin": "tàijíquán",
+      "meaning": "thái cực quyền",
+      "id": "5ed2d1f893da68b3",
+      "atlas": 31,
+      "cell": 4
+    },
+    {
+      "hanzi": "游泳",
+      "pinyin": "yóuyǒng",
+      "meaning": "bơi lội",
+      "id": "eb1a77cbb2e38d72",
+      "atlas": 31,
+      "cell": 5
+    },
+    {
+      "hanzi": "虽然",
+      "pinyin": "suī rán",
+      "meaning": "mặc dù, tuy",
+      "id": "158080bf496edc57",
+      "atlas": 31,
+      "cell": 6
+    },
+    {
+      "hanzi": "更",
+      "pinyin": "gèng",
+      "meaning": "càng, hơn",
+      "id": "033884bce1542702",
+      "atlas": 31,
+      "cell": 7
+    },
+    {
+      "hanzi": "厉害",
+      "pinyin": "lìhai",
+      "meaning": "lợi hại, giỏi",
+      "id": "69a3cb0449f9ffec",
+      "atlas": 31,
+      "cell": 8
+    },
+    {
+      "hanzi": "运动会",
+      "pinyin": "yùndònghuì",
+      "meaning": "hội thao",
+      "id": "943cfd6f26bb6d1b",
+      "atlas": 31,
+      "cell": 9
+    },
+    {
+      "hanzi": "比赛",
+      "pinyin": "bǐsài",
+      "meaning": "trận đấu, thi đấu",
+      "id": "648ae0dec9d93dd5",
+      "atlas": 31,
+      "cell": 10
+    },
+    {
+      "hanzi": "报名",
+      "pinyin": "bào míng",
+      "meaning": "đăng ký (tham gia)",
+      "id": "f32e834ba51632ea",
+      "atlas": 31,
+      "cell": 11
+    },
+    {
+      "hanzi": "棒",
+      "pinyin": "bàng",
+      "meaning": "giỏi, tuyệt vời",
+      "id": "14dbf2bacce50c9f",
+      "atlas": 31,
+      "cell": 12
+    },
+    {
+      "hanzi": "刚",
+      "pinyin": "gāng",
+      "meaning": "vừa, vừa mới",
+      "id": "76aabd031ee76cf4",
+      "atlas": 31,
+      "cell": 13
+    },
+    {
+      "hanzi": "开始",
+      "pinyin": "kāi shǐ",
+      "meaning": "bắt đầu",
+      "id": "de7ea897c185e3e3",
+      "atlas": 31,
+      "cell": 14
+    },
+    {
+      "hanzi": "加油",
+      "pinyin": "jiāyóu",
+      "meaning": "cố lên",
+      "id": "951368ba4b0ad355",
+      "atlas": 31,
+      "cell": 15
+    },
+    {
+      "hanzi": "操场",
+      "pinyin": "cāochǎng",
+      "meaning": "sân tập",
+      "id": "040864c43d1ab0a1",
+      "atlas": 32,
+      "cell": 0
+    },
+    {
+      "hanzi": "锻炼",
+      "pinyin": "duànliàn",
+      "meaning": "luyện tập",
+      "id": "024ad7f3060097d9",
+      "atlas": 32,
+      "cell": 1
+    },
+    {
+      "hanzi": "努力",
+      "pinyin": "nǔ lì",
+      "meaning": "nỗ lực, cố gắng",
+      "id": "b990a5a215d3d17c",
+      "atlas": 32,
+      "cell": 2
+    },
+    {
+      "hanzi": "放心",
+      "pinyin": "fàng xīn",
+      "meaning": "yên tâm",
+      "id": "321fdef0e5a71946",
+      "atlas": 32,
+      "cell": 3
+    },
+    {
+      "hanzi": "对手",
+      "pinyin": "duìshǒu",
+      "meaning": "đối thủ",
+      "id": "5afc352dc407e8ee",
+      "atlas": 32,
+      "cell": 4
+    },
+    {
+      "hanzi": "肯定",
+      "pinyin": "kěndìng",
+      "meaning": "nhất định, chắc chắn",
+      "id": "136cc4fc8697c70d",
+      "atlas": 32,
+      "cell": 5
+    },
+    {
+      "hanzi": "还是",
+      "pinyin": "háishi",
+      "meaning": "vẫn (sau khi đã cân nhắc hoặc có sự thay đổi)",
+      "id": "5c15b4ca29c5a777",
+      "atlas": 32,
+      "cell": 6
+    },
+    {
+      "hanzi": "为",
+      "pinyin": "wèi",
+      "meaning": "vì, cho (đối tượng được cổ vũ, phục vụ)",
+      "id": "00ca2dbde8899d91",
+      "atlas": 32,
+      "cell": 7
+    },
+    {
+      "hanzi": "手表",
+      "pinyin": "shǒubiǎo",
+      "meaning": "đồng hồ đeo tay",
+      "id": "b2f74a4d3b2807a5",
+      "atlas": 32,
+      "cell": 8
+    },
+    {
+      "hanzi": "块",
+      "pinyin": "kuài",
+      "meaning": "chiếc (lượng từ cho đồng hồ)",
+      "id": "00036cb015f7d3d4",
+      "atlas": 32,
+      "cell": 9
+    },
+    {
+      "hanzi": "比",
+      "pinyin": "bǐ",
+      "meaning": "dùng trong câu so sánh",
+      "id": "0cad5fde3b1f9762",
+      "atlas": 32,
+      "cell": 10
+    },
+    {
+      "hanzi": "不过",
+      "pinyin": "bù guò",
+      "meaning": "nhưng, tuy nhiên",
+      "id": "5dbacee26e7fc4c4",
+      "atlas": 32,
+      "cell": 11
+    },
+    {
+      "hanzi": "咱们",
+      "pinyin": "zán men",
+      "meaning": "chúng mình, chúng ta (gồm người nghe)",
+      "id": "048e4a1f1a907542",
+      "atlas": 32,
+      "cell": 12
+    },
+    {
+      "hanzi": "手腕",
+      "pinyin": "shǒu wàn",
+      "meaning": "cổ tay",
+      "id": "d3875c9ff284eb40",
+      "atlas": 32,
+      "cell": 13
+    },
+    {
+      "hanzi": "希望",
+      "pinyin": "xī wàng",
+      "meaning": "hy vọng; niềm hy vọng",
+      "id": "7963b58953a61d93",
+      "atlas": 32,
+      "cell": 14
+    },
+    {
+      "hanzi": "比较",
+      "pinyin": "bǐ jiào",
+      "meaning": "khá, tương đối; so sánh",
+      "id": "7e96100f8bba2d7e",
+      "atlas": 32,
+      "cell": 15
+    },
+    {
+      "hanzi": "最近",
+      "pinyin": "zuì jìn",
+      "meaning": "gần đây, dạo này",
+      "id": "60e3af8996f80a3d",
+      "atlas": 33,
+      "cell": 0
+    },
+    {
+      "hanzi": "挺",
+      "pinyin": "tǐng",
+      "meaning": "khá, rất (thường dùng với 的)",
+      "id": "facc26f96b058ae6",
+      "atlas": 33,
+      "cell": 1
+    },
+    {
+      "hanzi": "有意思",
+      "pinyin": "yǒu yì si",
+      "meaning": "thú vị; có ý nghĩa",
+      "id": "e3740fcd20aec508",
+      "atlas": 33,
+      "cell": 2
+    },
+    {
+      "hanzi": "爱情",
+      "pinyin": "ài qíng",
+      "meaning": "tình yêu đôi lứa",
+      "id": "554d4180cbb4ae1c",
+      "atlas": 33,
+      "cell": 3
+    },
+    {
+      "hanzi": "片",
+      "pinyin": "piàn",
+      "meaning": "phim (trong 爱情片, 电影片)",
+      "id": "98b844a5cd4911a5",
+      "atlas": 33,
+      "cell": 4
+    },
+    {
+      "hanzi": "离",
+      "pinyin": "lí",
+      "meaning": "cách (về khoảng cách)",
+      "id": "4ac725f4ad3a9fd2",
+      "atlas": 33,
+      "cell": 5
+    },
+    {
+      "hanzi": "远",
+      "pinyin": "yuǎn",
+      "meaning": "xa",
+      "id": "73bb79d70badcb3d",
+      "atlas": 33,
+      "cell": 6
+    },
+    {
+      "hanzi": "近",
+      "pinyin": "jìn",
+      "meaning": "gần",
+      "id": "34d04c6f2752b5fa",
+      "atlas": 33,
+      "cell": 7
+    },
+    {
+      "hanzi": "多远",
+      "pinyin": "duō yuǎn",
+      "meaning": "bao xa",
+      "id": "1b72927ccbc83a3a",
+      "atlas": 33,
+      "cell": 8
+    },
+    {
+      "hanzi": "公里",
+      "pinyin": "gōng lǐ",
+      "meaning": "kilômét (km)",
+      "id": "69ff6587c00f5d2c",
+      "atlas": 33,
+      "cell": 9
+    },
+    {
+      "hanzi": "米",
+      "pinyin": "mǐ",
+      "meaning": "mét (m)",
+      "id": "2c2e33d86e750f48",
+      "atlas": 33,
+      "cell": 10
+    },
+    {
+      "hanzi": "没想到",
+      "pinyin": "méi xiǎng dào",
+      "meaning": "không ngờ",
+      "id": "b71643cc34a6042d",
+      "atlas": 33,
+      "cell": 11
+    },
+    {
+      "hanzi": "丈夫",
+      "pinyin": "zhàngfu",
+      "meaning": "chồng",
+      "id": "3d589abb6b90561a",
+      "atlas": 33,
+      "cell": 12
+    },
+    {
+      "hanzi": "饭馆",
+      "pinyin": "fànguǎn",
+      "meaning": "nhà hàng",
+      "id": "0ab1609fb8336dc0",
+      "atlas": 33,
+      "cell": 13
+    },
+    {
+      "hanzi": "花",
+      "pinyin": "huā",
+      "meaning": "hoa; tiêu, tốn (tiền, thời gian)",
+      "id": "9b59ab21f320ce83",
+      "atlas": 33,
+      "cell": 14
+    },
+    {
+      "hanzi": "朵",
+      "pinyin": "duǒ",
+      "meaning": "bông, đóa (lượng từ của hoa, mây)",
+      "id": "f3d032cd279280db",
+      "atlas": 33,
+      "cell": 15
+    },
+    {
+      "hanzi": "开学",
+      "pinyin": "kāixué",
+      "meaning": "khai giảng",
+      "id": "dc7153b241255165",
+      "atlas": 34,
+      "cell": 0
+    },
+    {
+      "hanzi": "放",
+      "pinyin": "fàng",
+      "meaning": "đặt, để",
+      "id": "89e5bffff31d1cb1",
+      "atlas": 34,
+      "cell": 1
+    },
+    {
+      "hanzi": "这样",
+      "pinyin": "zhè yàng",
+      "meaning": "như thế này, như vậy",
+      "id": "e7a6485485583f6e",
+      "atlas": 34,
+      "cell": 2
+    },
+    {
+      "hanzi": "考试",
+      "pinyin": "kǎoshì",
+      "meaning": "thi, kiểm tra",
+      "id": "62572ff4ec4e9555",
+      "atlas": 34,
+      "cell": 3
+    },
+    {
+      "hanzi": "差不多",
+      "pinyin": "chà bu duō",
+      "meaning": "xấp xỉ; gần xong; gần như nhau",
+      "id": "901891eebdd9b217",
+      "atlas": 34,
+      "cell": 4
+    },
+    {
+      "hanzi": "词",
+      "pinyin": "cí",
+      "meaning": "từ",
+      "id": "5f0945ee79409b7d",
+      "atlas": 34,
+      "cell": 5
+    },
+    {
+      "hanzi": "生词",
+      "pinyin": "shēng cí",
+      "meaning": "từ mới",
+      "id": "133898fc73691d30",
+      "atlas": 34,
+      "cell": 6
+    },
+    {
+      "hanzi": "题",
+      "pinyin": "tí",
+      "meaning": "đề thi, bài tập",
+      "id": "ef627df7d0b1ce97",
+      "atlas": 34,
+      "cell": 7
+    },
+    {
+      "hanzi": "错",
+      "pinyin": "cuò",
+      "meaning": "sai",
+      "id": "8542a8327a6319c2",
+      "atlas": 34,
+      "cell": 8
+    },
+    {
+      "hanzi": "遍",
+      "pinyin": "biàn",
+      "meaning": "lượt (trọn vẹn từ đầu đến cuối)",
+      "id": "7e2be9615f95010b",
+      "atlas": 34,
+      "cell": 9
+    },
+    {
+      "hanzi": "还是",
+      "pinyin": "háishi",
+      "meaning": "hay, hoặc (câu hỏi lựa chọn)",
+      "id": "67cb3da1d3dc24e6",
+      "atlas": 34,
+      "cell": 10
+    },
+    {
+      "hanzi": "可是",
+      "pinyin": "kě shì",
+      "meaning": "nhưng, thế nhưng",
+      "id": "a8b6a758de23ec1f",
+      "atlas": 34,
+      "cell": 11
+    },
+    {
+      "hanzi": "复习",
+      "pinyin": "fù xí",
+      "meaning": "ôn tập",
+      "id": "9986bfd8b3226c1b",
+      "atlas": 34,
+      "cell": 12
+    },
+    {
+      "hanzi": "结束",
+      "pinyin": "jié shù",
+      "meaning": "kết thúc",
+      "id": "1fbf6cfbe024bcf8",
+      "atlas": 34,
+      "cell": 13
+    },
+    {
+      "hanzi": "水平",
+      "pinyin": "shuǐ píng",
+      "meaning": "trình độ, mức độ",
+      "id": "1bcffc2c77f1ca1c",
+      "atlas": 34,
+      "cell": 14
+    },
+    {
+      "hanzi": "一边",
+      "pinyin": "yī biān",
+      "meaning": "vừa ... vừa ... (一边……一边……)",
+      "id": "6456d1332f7b1138",
+      "atlas": 34,
+      "cell": 15
+    },
+    {
+      "hanzi": "笑",
+      "pinyin": "xiào",
+      "meaning": "cười",
+      "id": "49863abd4bfbda0d",
+      "atlas": 35,
+      "cell": 0
+    },
+    {
+      "hanzi": "平时",
+      "pinyin": "píngshí",
+      "meaning": "thường ngày",
+      "id": "9afd4f9663b50bc0",
+      "atlas": 35,
+      "cell": 1
+    },
+    {
+      "hanzi": "应该",
+      "pinyin": "yīnggāi",
+      "meaning": "nên",
+      "id": "6deef9504012a4cf",
+      "atlas": 35,
+      "cell": 2
+    },
+    {
+      "hanzi": "让",
+      "pinyin": "ràng",
+      "meaning": "để, bảo; khiến cho",
+      "id": "6a977671e282b321",
+      "atlas": 35,
+      "cell": 3
+    },
+    {
+      "hanzi": "心情",
+      "pinyin": "xīnqíng",
+      "meaning": "tâm trạng",
+      "id": "5c543bceb1727bc8",
+      "atlas": 35,
+      "cell": 4
+    },
+    {
+      "hanzi": "愉快",
+      "pinyin": "yú kuài",
+      "meaning": "vui vẻ, thoải mái",
+      "id": "b8b9875b6a36a2ed",
+      "atlas": 35,
+      "cell": 5
+    },
+    {
+      "hanzi": "压力",
+      "pinyin": "yālì",
+      "meaning": "áp lực",
+      "id": "f8f123de9a24e4bb",
+      "atlas": 35,
+      "cell": 6
+    },
+    {
+      "hanzi": "轻松",
+      "pinyin": "qīngsōng",
+      "meaning": "thoải mái, thư giãn",
+      "id": "3648bf1fbde4ca8b",
+      "atlas": 35,
+      "cell": 7
+    },
+    {
+      "hanzi": "变得",
+      "pinyin": "biàn dé",
+      "meaning": "trở nên",
+      "id": "52fb1817bba4df90",
+      "atlas": 35,
+      "cell": 8
+    },
+    {
+      "hanzi": "发现",
+      "pinyin": "fā xiàn",
+      "meaning": "phát hiện, nhận ra",
+      "id": "ac468b594853787b",
+      "atlas": 35,
+      "cell": 9
+    },
+    {
+      "hanzi": "生活",
+      "pinyin": "shēng huó",
+      "meaning": "cuộc sống; sống, sinh hoạt",
+      "id": "82494d7bd5d1e1c8",
+      "atlas": 35,
+      "cell": 10
+    },
+    {
+      "hanzi": "通常",
+      "pinyin": "tōng cháng",
+      "meaning": "thông thường, thường",
+      "id": "0a36144fd7a3f77b",
+      "atlas": 35,
+      "cell": 11
+    },
+    {
+      "hanzi": "怎么了",
+      "pinyin": "zěn me le",
+      "meaning": "có chuyện gì vậy, làm sao vậy",
+      "id": "50482bf3d498a73c",
+      "atlas": 35,
+      "cell": 12
+    },
+    {
+      "hanzi": "脸色",
+      "pinyin": "liǎn sè",
+      "meaning": "sắc mặt",
+      "id": "95067a168622ca25",
+      "atlas": 35,
+      "cell": 13
+    },
+    {
+      "hanzi": "疼",
+      "pinyin": "téng",
+      "meaning": "đau",
+      "id": "7f1417246ea699fc",
+      "atlas": 35,
+      "cell": 14
+    },
+    {
+      "hanzi": "头疼",
+      "pinyin": "tóu téng",
+      "meaning": "đau đầu",
+      "id": "d67f3cac3ee7e7ed",
+      "atlas": 35,
+      "cell": 15
+    },
+    {
+      "hanzi": "发烧",
+      "pinyin": "fā shāo",
+      "meaning": "sốt, bị sốt",
+      "id": "d5111fd8921cc910",
+      "atlas": 36,
+      "cell": 0
+    },
+    {
+      "hanzi": "感冒",
+      "pinyin": "gǎn mào",
+      "meaning": "cảm, bị cảm",
+      "id": "cb5ab1c997320c50",
+      "atlas": 36,
+      "cell": 1
+    },
+    {
+      "hanzi": "肚子",
+      "pinyin": "dǔ zi",
+      "meaning": "bụng",
+      "id": "c348abd09b1df593",
+      "atlas": 36,
+      "cell": 2
+    },
+    {
+      "hanzi": "拉肚子",
+      "pinyin": "lā dù zi",
+      "meaning": "tiêu chảy",
+      "id": "0785ffab276e08d9",
+      "atlas": 36,
+      "cell": 3
+    },
+    {
+      "hanzi": "经常",
+      "pinyin": "jīngcháng",
+      "meaning": "thường xuyên",
+      "id": "42b9c637b3b987c9",
+      "atlas": 36,
+      "cell": 4
+    },
+    {
+      "hanzi": "站",
+      "pinyin": "zhàn",
+      "meaning": "đứng",
+      "id": "bc583dd49f89ce6b",
+      "atlas": 36,
+      "cell": 5
+    },
+    {
+      "hanzi": "动",
+      "pinyin": "dòng",
+      "meaning": "cử động",
+      "id": "317f7051e1424db5",
+      "atlas": 36,
+      "cell": 6
+    },
+    {
+      "hanzi": "好好儿",
+      "pinyin": "hǎo hǎo ér",
+      "meaning": "cho tốt, cẩn thận, đàng hoàng",
+      "id": "54cb9916e16eb611",
+      "atlas": 36,
+      "cell": 7
+    },
+    {
+      "hanzi": "着",
+      "pinyin": "(trợ từ)",
+      "meaning": "đang, trạng thái còn duy trì (sau động từ)",
+      "id": "7c084c07baf255fc",
+      "atlas": 36,
+      "cell": 8
+    },
+    {
+      "hanzi": "路上",
+      "pinyin": "lùshang",
+      "meaning": "trên đường",
+      "id": "c588357f16041239",
+      "atlas": 36,
+      "cell": 9
+    },
+    {
+      "hanzi": "衬衫",
+      "pinyin": "chèn shān",
+      "meaning": "áo sơ mi",
+      "id": "d650afdcd538dbd0",
+      "atlas": 36,
+      "cell": 10
+    },
+    {
+      "hanzi": "白色",
+      "pinyin": "bái sè",
+      "meaning": "màu trắng",
+      "id": "1e81bd0d64835c0f",
+      "atlas": 36,
+      "cell": 11
+    },
+    {
+      "hanzi": "黑色",
+      "pinyin": "hēi sè",
+      "meaning": "màu đen",
+      "id": "6c9e46b1d8d9b4b5",
+      "atlas": 36,
+      "cell": 12
+    },
+    {
+      "hanzi": "慢",
+      "pinyin": "màn",
+      "meaning": "chậm",
+      "id": "0d79d72aaca9489f",
+      "atlas": 36,
+      "cell": 13
+    },
+    {
+      "hanzi": "开药",
+      "pinyin": "kāi yào",
+      "meaning": "kê thuốc",
+      "id": "4ecfbb6e05fac239",
+      "atlas": 36,
+      "cell": 14
+    },
+    {
+      "hanzi": "最",
+      "pinyin": "zuì",
+      "meaning": "nhất",
+      "id": "754867e4e25b0c23",
+      "atlas": 36,
+      "cell": 15
+    },
+    {
+      "hanzi": "讨厌",
+      "pinyin": "tǎo yàn",
+      "meaning": "ghét; đáng ghét",
+      "id": "224e679c4c75ee34",
+      "atlas": 37,
+      "cell": 0
+    },
+    {
+      "hanzi": "苦",
+      "pinyin": "kǔ",
+      "meaning": "đắng; khổ",
+      "id": "0fcf33b3ac945d3f",
+      "atlas": 37,
+      "cell": 1
+    },
+    {
+      "hanzi": "办法",
+      "pinyin": "bàn fǎ",
+      "meaning": "cách, biện pháp",
+      "id": "a346eeaefaa67ec7",
+      "atlas": 37,
+      "cell": 2
+    },
+    {
+      "hanzi": "住院",
+      "pinyin": "zhù yuàn",
+      "meaning": "nằm viện, nhập viện",
+      "id": "59c35a3b174d621b",
+      "atlas": 37,
+      "cell": 3
+    },
+    {
+      "hanzi": "检查",
+      "pinyin": "jiǎn chá",
+      "meaning": "kiểm tra, khám",
+      "id": "2b0bafe6c38ed74b",
+      "atlas": 37,
+      "cell": 4
+    },
+    {
+      "hanzi": "可能",
+      "pinyin": "kě néng",
+      "meaning": "có thể, có khả năng (phỏng đoán)",
+      "id": "a0ce8341804d53e0",
+      "atlas": 37,
+      "cell": 5
+    },
+    {
+      "hanzi": "门口",
+      "pinyin": "mén kǒu",
+      "meaning": "cửa, chỗ cửa ra vào",
+      "id": "571e0fd096e8363d",
+      "atlas": 37,
+      "cell": 6
+    },
+    {
+      "hanzi": "蓝色",
+      "pinyin": "lán sè",
+      "meaning": "màu xanh lam",
+      "id": "6d1d051c286c615b",
+      "atlas": 37,
+      "cell": 7
+    },
+    {
+      "hanzi": "外套",
+      "pinyin": "wài tào",
+      "meaning": "áo khoác",
+      "id": "7843bb14ae3e3ca5",
+      "atlas": 37,
+      "cell": 8
+    },
+    {
+      "hanzi": "红色",
+      "pinyin": "hóng sè",
+      "meaning": "màu đỏ",
+      "id": "378b31f1433d8639",
+      "atlas": 37,
+      "cell": 9
+    },
+    {
+      "hanzi": "告诉",
+      "pinyin": "gào sù",
+      "meaning": "nói cho, cho biết",
+      "id": "86f9caa47744fcac",
+      "atlas": 37,
+      "cell": 10
+    },
+    {
+      "hanzi": "发",
+      "pinyin": "fā",
+      "meaning": "gửi, phát",
+      "id": "8cd6001507af1eb6",
+      "atlas": 37,
+      "cell": 11
+    },
+    {
+      "hanzi": "微信",
+      "pinyin": "wēixìn",
+      "meaning": "Wechat",
+      "id": "fa036222925cb67d",
+      "atlas": 37,
+      "cell": 12
+    },
+    {
+      "hanzi": "难过",
+      "pinyin": "nánguò",
+      "meaning": "buồn, khó chịu",
+      "id": "d834ac1e59dbf824",
+      "atlas": 37,
+      "cell": 13
+    },
+    {
+      "hanzi": "陪",
+      "pinyin": "péi",
+      "meaning": "ở bên, đồng hành",
+      "id": "64199d885d66d665",
+      "atlas": 37,
+      "cell": 14
+    },
+    {
+      "hanzi": "旁边",
+      "pinyin": "páng biān",
+      "meaning": "bên cạnh",
+      "id": "1f6ddb11d7e74feb",
+      "atlas": 37,
+      "cell": 15
+    },
+    {
+      "hanzi": "位",
+      "pinyin": "wèi",
+      "meaning": "vị (lượng từ lịch sự dùng cho người)",
+      "id": "fd7ba28b2b2b1483",
+      "atlas": 38,
+      "cell": 0
+    },
+    {
+      "hanzi": "附近",
+      "pinyin": "fù jìn",
+      "meaning": "gần đây, vùng lân cận (vị trí)",
+      "id": "9ad52e08954cb14e",
+      "atlas": 38,
+      "cell": 1
+    },
+    {
+      "hanzi": "欢迎",
+      "pinyin": "huān yíng",
+      "meaning": "hoan nghênh, chào đón",
+      "id": "8ab331bda4ef8917",
+      "atlas": 38,
+      "cell": 2
+    },
+    {
+      "hanzi": "房子",
+      "pinyin": "fángzi",
+      "meaning": "căn nhà",
+      "id": "f302b528700e0b2e",
+      "atlas": 38,
+      "cell": 3
+    },
+    {
+      "hanzi": "环境",
+      "pinyin": "huán jìng",
+      "meaning": "môi trường, khung cảnh xung quanh",
+      "id": "0c8cb9490f01e901",
+      "atlas": 38,
+      "cell": 4
+    },
+    {
+      "hanzi": "安静",
+      "pinyin": "ān jìng",
+      "meaning": "yên tĩnh",
+      "id": "30154251d07f4150",
+      "atlas": 38,
+      "cell": 5
+    },
+    {
+      "hanzi": "特别",
+      "pinyin": "tè bié",
+      "meaning": "đặc biệt; rất, vô cùng",
+      "id": "a14299f53d6aa54a",
+      "atlas": 38,
+      "cell": 6
+    },
+    {
+      "hanzi": "热情",
+      "pinyin": "rèqíng",
+      "meaning": "nhiệt tình",
+      "id": "6aff61cf7147a49c",
+      "atlas": 38,
+      "cell": 7
+    },
+    {
+      "hanzi": "练",
+      "pinyin": "liàn",
+      "meaning": "luyện, tập",
+      "id": "5d80fda9acb118b7",
+      "atlas": 38,
+      "cell": 8
+    },
+    {
+      "hanzi": "口语",
+      "pinyin": "kǒu yǔ",
+      "meaning": "khẩu ngữ; kỹ năng nói",
+      "id": "5fddcbf31e99e659",
+      "atlas": 38,
+      "cell": 9
+    },
+    {
+      "hanzi": "没错",
+      "pinyin": "méi cuò",
+      "meaning": "đúng vậy, không sai",
+      "id": "ae9f28f81b58e6e6",
+      "atlas": 38,
+      "cell": 10
+    },
+    {
+      "hanzi": "有空",
+      "pinyin": "yǒu kòng",
+      "meaning": "rảnh, có thời gian rảnh",
+      "id": "65fd6b77fe129c6f",
+      "atlas": 38,
+      "cell": 11
+    },
+    {
+      "hanzi": "同桌",
+      "pinyin": "tóng zhuō",
+      "meaning": "bạn cùng bàn",
+      "id": "4dfe3c223d87d09b",
+      "atlas": 38,
+      "cell": 12
+    },
+    {
+      "hanzi": "个子",
+      "pinyin": "gèzi",
+      "meaning": "thân hình, chiều cao",
+      "id": "38fadd25cabd1de3",
+      "atlas": 38,
+      "cell": 13
+    },
+    {
+      "hanzi": "眼睛",
+      "pinyin": "yǎnjing",
+      "meaning": "mắt",
+      "id": "3cd767094cff9bed",
+      "atlas": 38,
+      "cell": 14
+    },
+    {
+      "hanzi": "长得",
+      "pinyin": "zhǎng dé",
+      "meaning": "có ngoại hình ...",
+      "id": "2e26a9ca9c2e376a",
+      "atlas": 38,
+      "cell": 15
+    },
+    {
+      "hanzi": "耐心",
+      "pinyin": "nàixīn",
+      "meaning": "kiên nhẫn",
+      "id": "7533d61626c35cd3",
+      "atlas": 39,
+      "cell": 0
+    },
+    {
+      "hanzi": "讲解",
+      "pinyin": "jiǎngjiě",
+      "meaning": "giải thích",
+      "id": "24d6933c2c402c7c",
+      "atlas": 39,
+      "cell": 1
+    },
+    {
+      "hanzi": "题目",
+      "pinyin": "tímù",
+      "meaning": "bài tập, câu hỏi",
+      "id": "f498fb8ddc1c9e65",
+      "atlas": 39,
+      "cell": 2
+    },
+    {
+      "hanzi": "姓名",
+      "pinyin": "xìng míng",
+      "meaning": "họ và tên",
+      "id": "94756ebf7df199e4",
+      "atlas": 39,
+      "cell": 3
+    },
+    {
+      "hanzi": "姓",
+      "pinyin": "xìng",
+      "meaning": "họ; mang họ",
+      "id": "a1b21701278728cf",
+      "atlas": 39,
+      "cell": 4
+    },
+    {
+      "hanzi": "贵姓",
+      "pinyin": "guì xìng",
+      "meaning": "quý tính (cách hỏi họ lịch sự)",
+      "id": "2d184e07e7379173",
+      "atlas": 39,
+      "cell": 5
+    },
+    {
+      "hanzi": "交",
+      "pinyin": "jiāo",
+      "meaning": "nộp, giao",
+      "id": "9f3a9447bef4e107",
+      "atlas": 39,
+      "cell": 6
+    },
+    {
+      "hanzi": "交给",
+      "pinyin": "jiāo gěi",
+      "meaning": "giao cho, nộp cho",
+      "id": "a55c9f3a6a884480",
+      "atlas": 39,
+      "cell": 7
+    },
+    {
+      "hanzi": "把",
+      "pinyin": "bǎ",
+      "meaning": "đưa tân ngữ lên trước động từ trong câu xử trí",
+      "id": "29abf0db79790960",
+      "atlas": 39,
+      "cell": 8
+    },
+    {
+      "hanzi": "作业",
+      "pinyin": "zuò yè",
+      "meaning": "bài tập về nhà",
+      "id": "76d879c5e16d7e81",
+      "atlas": 39,
+      "cell": 9
+    },
+    {
+      "hanzi": "塔",
+      "pinyin": "tǎ",
+      "meaning": "tháp",
+      "id": "0853ed0607e49ff6",
+      "atlas": 39,
+      "cell": 10
+    },
+    {
+      "hanzi": "东方明珠",
+      "pinyin": "dōng fāng míng zhū",
+      "meaning": "Đông Phương Minh Châu (tên tháp ở Thượng Hải)",
+      "id": "b8aaf955e8d762d8",
+      "atlas": 39,
+      "cell": 11
+    },
+    {
+      "hanzi": "方便",
+      "pinyin": "fāng biàn",
+      "meaning": "thuận tiện, tiện lợi",
+      "id": "d65afe2c1d35670c",
+      "atlas": 39,
+      "cell": 12
+    },
+    {
+      "hanzi": "出国",
+      "pinyin": "chūguó",
+      "meaning": "đi nước ngoài",
+      "id": "18734632378cc693",
+      "atlas": 39,
+      "cell": 13
+    },
+    {
+      "hanzi": "行李",
+      "pinyin": "xíng lǐ",
+      "meaning": "hành lý",
+      "id": "44a795eab3962ad5",
+      "atlas": 39,
+      "cell": 14
+    },
+    {
+      "hanzi": "箱子",
+      "pinyin": "xiāng zi",
+      "meaning": "hòm, va-li",
+      "id": "657eadc02a2629cd",
+      "atlas": 39,
+      "cell": 15
+    },
+    {
+      "hanzi": "行李箱",
+      "pinyin": "xínglixiāng",
+      "meaning": "va-li hành lý",
+      "id": "68879f62dcc78b85",
+      "atlas": 40,
+      "cell": 0
+    },
+    {
+      "hanzi": "护照",
+      "pinyin": "hùzhào",
+      "meaning": "hộ chiếu",
+      "id": "6ae74de13d24fd31",
+      "atlas": 40,
+      "cell": 1
+    },
+    {
+      "hanzi": "签证",
+      "pinyin": "qiān zhèng",
+      "meaning": "thị thực, visa",
+      "id": "d46af84eb4225de9",
+      "atlas": 40,
+      "cell": 2
+    },
+    {
+      "hanzi": "出发",
+      "pinyin": "chū fā",
+      "meaning": "xuất phát, khởi hành",
+      "id": "4b15119e31748d51",
+      "atlas": 40,
+      "cell": 3
+    },
+    {
+      "hanzi": "超过",
+      "pinyin": "chāoguò",
+      "meaning": "vượt quá",
+      "id": "3fc8a85d66cf321b",
+      "atlas": 40,
+      "cell": 4
+    },
+    {
+      "hanzi": "国际",
+      "pinyin": "guó jì",
+      "meaning": "quốc tế",
+      "id": "1950cdc76139d07e",
+      "atlas": 40,
+      "cell": 5
+    },
+    {
+      "hanzi": "航班",
+      "pinyin": "háng bān",
+      "meaning": "chuyến bay",
+      "id": "8dae211bb627b808",
+      "atlas": 40,
+      "cell": 6
+    },
+    {
+      "hanzi": "外滩",
+      "pinyin": "Wàitān",
+      "meaning": "Bến Thượng Hải",
+      "id": "f713925a8eb6e061",
+      "atlas": 40,
+      "cell": 7
+    },
+    {
+      "hanzi": "暑假",
+      "pinyin": "shǔ jià",
+      "meaning": "kỳ nghỉ hè",
+      "id": "c41e671043fa41a0",
+      "atlas": 40,
+      "cell": 8
+    },
+    {
+      "hanzi": "好",
+      "pinyin": "hǎo",
+      "meaning": "rất, thật (tăng mức độ cảm thán)",
+      "id": "d0a695ac4d219e97",
+      "atlas": 40,
+      "cell": 9
+    },
+    {
+      "hanzi": "像",
+      "pinyin": "xiàng",
+      "meaning": "giống, giống như",
+      "id": "d712c120d3c04da4",
+      "atlas": 40,
+      "cell": 10
+    },
+    {
+      "hanzi": "鸟",
+      "pinyin": "niǎo",
+      "meaning": "chim",
+      "id": "0a7d08e25af865f4",
+      "atlas": 40,
+      "cell": 11
+    },
+    {
+      "hanzi": "饿",
+      "pinyin": "è",
+      "meaning": "đói",
+      "id": "9a12e6ecefdbcf59",
+      "atlas": 40,
+      "cell": 12
+    },
+    {
+      "hanzi": "点",
+      "pinyin": "diǎn",
+      "meaning": "gọi, chọn (món ăn)",
+      "id": "c5afd0dcd775e646",
+      "atlas": 40,
+      "cell": 13
+    },
+    {
+      "hanzi": "点菜",
+      "pinyin": "diǎncài",
+      "meaning": "gọi món",
+      "id": "45196c2282a739ab",
+      "atlas": 40,
+      "cell": 14
+    },
+    {
+      "hanzi": "请客",
+      "pinyin": "qǐngkè",
+      "meaning": "mời, đãi khách",
+      "id": "150bdc91caa4d75a",
+      "atlas": 40,
+      "cell": 15
+    },
+    {
+      "hanzi": "担心",
+      "pinyin": "dānxīn",
+      "meaning": "lo lắng",
+      "id": "006df276cec6a783",
+      "atlas": 41,
+      "cell": 0
+    },
+    {
+      "hanzi": "菜单",
+      "pinyin": "càidān",
+      "meaning": "thực đơn",
+      "id": "77708da99aac9880",
+      "atlas": 41,
+      "cell": 1
+    },
+    {
+      "hanzi": "饮料",
+      "pinyin": "yǐnliào",
+      "meaning": "đồ uống",
+      "id": "2ac63d6e065196b3",
+      "atlas": 41,
+      "cell": 2
+    },
+    {
+      "hanzi": "四川烤鱼",
+      "pinyin": "sìchuānkǎoyú",
+      "meaning": "cá nướng Tứ Xuyên",
+      "id": "5f29a6d1bb25ef0b",
+      "atlas": 41,
+      "cell": 3
+    },
+    {
+      "hanzi": "渴",
+      "pinyin": "kě",
+      "meaning": "khát",
+      "id": "d156f0fab84ed021",
+      "atlas": 41,
+      "cell": 4
+    },
+    {
+      "hanzi": "绿茶",
+      "pinyin": "lǜchá",
+      "meaning": "trà xanh",
+      "id": "4930f1b340c91ff2",
+      "atlas": 41,
+      "cell": 5
+    },
+    {
+      "hanzi": "碗",
+      "pinyin": "wǎn",
+      "meaning": "bát; lượng từ chỉ bát thức ăn",
+      "id": "b95566fc62249450",
+      "atlas": 41,
+      "cell": 6
+    },
+    {
+      "hanzi": "尝",
+      "pinyin": "cháng",
+      "meaning": "nếm, ăn thử",
+      "id": "511bcf7d54b0d9ab",
+      "atlas": 41,
+      "cell": 7
+    },
+    {
+      "hanzi": "醋鱼",
+      "pinyin": "cùyú",
+      "meaning": "cá sốt giấm",
+      "id": "88da258150ecab5c",
+      "atlas": 41,
+      "cell": 8
+    },
+    {
+      "hanzi": "瓶",
+      "pinyin": "píng",
+      "meaning": "chai, lọ; lượng từ cho đồ đựng trong chai",
+      "id": "35a906f163f80024",
+      "atlas": 41,
+      "cell": 9
+    },
+    {
+      "hanzi": "勺子",
+      "pinyin": "sháozi",
+      "meaning": "thìa, muỗng",
+      "id": "b8f2a9d8e18d2462",
+      "atlas": 41,
+      "cell": 10
+    },
+    {
+      "hanzi": "筷子",
+      "pinyin": "kuàizi",
+      "meaning": "đũa",
+      "id": "94f15ae3581828da",
+      "atlas": 41,
+      "cell": 11
+    },
+    {
+      "hanzi": "死",
+      "pinyin": "sǐ",
+      "meaning": "chết; chỉ mức độ rất cao sau tính từ",
+      "id": "1b1329f8a32cb8e7",
+      "atlas": 41,
+      "cell": 12
+    },
+    {
+      "hanzi": "外卖",
+      "pinyin": "wàimài",
+      "meaning": "đồ ăn giao tận nơi",
+      "id": "cce759c4aac09d1c",
+      "atlas": 41,
+      "cell": 13
+    },
+    {
+      "hanzi": "点外卖",
+      "pinyin": "diǎnwàimài",
+      "meaning": "đặt đồ ăn giao tận nơi",
+      "id": "d858612476d12c36",
+      "atlas": 41,
+      "cell": 14
+    },
+    {
+      "hanzi": "服务员",
+      "pinyin": "fúwùyuán",
+      "meaning": "nhân viên phục vụ",
+      "id": "a343d0e6b21591f7",
+      "atlas": 41,
+      "cell": 15
+    },
+    {
+      "hanzi": "海南",
+      "pinyin": "hǎinán",
+      "meaning": "Hải Nam",
+      "id": "067bb9a329111e1a",
+      "atlas": 42,
+      "cell": 0
+    },
+    {
+      "hanzi": "记住",
+      "pinyin": "jìzhù",
+      "meaning": "nhớ kỹ, ghi nhớ",
+      "id": "850390511c8545d2",
+      "atlas": 42,
+      "cell": 1
+    },
+    {
+      "hanzi": "下单",
+      "pinyin": "xiàdān",
+      "meaning": "đặt đơn hàng",
+      "id": "9912d05f1f60c9d1",
+      "atlas": 42,
+      "cell": 2
+    },
+    {
+      "hanzi": "香菜",
+      "pinyin": "xiāngcài",
+      "meaning": "rau mùi, ngò rí",
+      "id": "1f573e75a983a99f",
+      "atlas": 42,
+      "cell": 3
+    },
+    {
+      "hanzi": "选",
+      "pinyin": "xuǎn",
+      "meaning": "chọn",
+      "id": "af0ed1605eac1ce4",
+      "atlas": 42,
+      "cell": 4
+    },
+    {
+      "hanzi": "别的",
+      "pinyin": "biéde",
+      "meaning": "khác, những cái khác",
+      "id": "b4fbd6d3351ac798",
+      "atlas": 42,
+      "cell": 5
+    },
+    {
+      "hanzi": "备注",
+      "pinyin": "bèizhù",
+      "meaning": "ghi chú",
+      "id": "1b73d0bb295accee",
+      "atlas": 42,
+      "cell": 6
+    },
+    {
+      "hanzi": "简单",
+      "pinyin": "jiǎndān",
+      "meaning": "đơn giản",
+      "id": "35519f93d0884d1a",
+      "atlas": 42,
+      "cell": 7
+    },
+    {
+      "hanzi": "复杂",
+      "pinyin": "fùzá",
+      "meaning": "phức tạp",
+      "id": "9f3aeb78690e1ccc",
+      "atlas": 42,
+      "cell": 8
+    },
+    {
+      "hanzi": "换",
+      "pinyin": "huàn",
+      "meaning": "đổi, thay",
+      "id": "81c552930afc430b",
+      "atlas": 42,
+      "cell": 9
+    },
+    {
+      "hanzi": "到",
+      "pinyin": "dào",
+      "meaning": "đạt được kết quả (sau động từ)",
+      "id": "09c713a33b54dfc5",
+      "atlas": 42,
+      "cell": 10
+    },
+    {
+      "hanzi": "小区",
+      "pinyin": "xiǎoqū",
+      "meaning": "khu dân cư",
+      "id": "1ac6265fbecf45b8",
+      "atlas": 42,
+      "cell": 11
+    },
+    {
+      "hanzi": "花园",
+      "pinyin": "huāyuán",
+      "meaning": "vườn hoa",
+      "id": "a5e8d3c099143043",
+      "atlas": 42,
+      "cell": 12
+    },
+    {
+      "hanzi": "空调",
+      "pinyin": "kōngtiáo",
+      "meaning": "máy điều hòa",
+      "id": "d8c7b384b2b03ae8",
+      "atlas": 42,
+      "cell": 13
+    },
+    {
+      "hanzi": "洗衣机",
+      "pinyin": "xǐyījī",
+      "meaning": "máy giặt",
+      "id": "978fc6449345ed3e",
+      "atlas": 42,
+      "cell": 14
+    },
+    {
+      "hanzi": "套",
+      "pinyin": "tào",
+      "meaning": "bộ, căn (lượng từ cho nhà ở)",
+      "id": "f9f9b41a62ce4d8e",
+      "atlas": 42,
+      "cell": 15
+    },
+    {
+      "hanzi": "层",
+      "pinyin": "céng",
+      "meaning": "tầng; lớp",
+      "id": "857fd201e010fec2",
+      "atlas": 43,
+      "cell": 0
+    },
+    {
+      "hanzi": "楼",
+      "pinyin": "lóu",
+      "meaning": "tầng lầu; tòa nhà",
+      "id": "a013431ec360abff",
+      "atlas": 43,
+      "cell": 1
+    },
+    {
+      "hanzi": "搬",
+      "pinyin": "bān",
+      "meaning": "chuyển, dọn, khuân",
+      "id": "bdb431652712d6e8",
+      "atlas": 43,
+      "cell": 2
+    },
+    {
+      "hanzi": "坏",
+      "pinyin": "huài",
+      "meaning": "hỏng, xấu",
+      "id": "dad6d98ff63c4654",
+      "atlas": 43,
+      "cell": 3
+    },
+    {
+      "hanzi": "对面",
+      "pinyin": "duìmiàn",
+      "meaning": "đối diện",
+      "id": "adf0b7ab72b07e88",
+      "atlas": 43,
+      "cell": 4
+    },
+    {
+      "hanzi": "冰箱",
+      "pinyin": "bīngxiāng",
+      "meaning": "tủ lạnh",
+      "id": "a714f263c21faf3a",
+      "atlas": 43,
+      "cell": 5
+    },
+    {
+      "hanzi": "卫生间",
+      "pinyin": "wèishēngjiān",
+      "meaning": "nhà vệ sinh",
+      "id": "c8e284f1864efc3e",
+      "atlas": 43,
+      "cell": 6
+    },
+    {
+      "hanzi": "打扫",
+      "pinyin": "dǎsǎo",
+      "meaning": "quét dọn",
+      "id": "1238056b01cf38b2",
+      "atlas": 43,
+      "cell": 7
+    },
+    {
+      "hanzi": "关灯",
+      "pinyin": "guāndēng",
+      "meaning": "tắt đèn",
+      "id": "f0c88dbf56595938",
+      "atlas": 43,
+      "cell": 8
+    },
+    {
+      "hanzi": "着",
+      "pinyin": "zháo",
+      "meaning": "đạt được kết quả, chuyển sang trạng thái (đọc zháo)",
+      "id": "7a5b99f2e946f5b6",
+      "atlas": 43,
+      "cell": 9
+    },
+    {
+      "hanzi": "银行",
+      "pinyin": "yínháng",
+      "meaning": "ngân hàng",
+      "id": "3a0e9280d485acff",
+      "atlas": 43,
+      "cell": 10
+    },
+    {
+      "hanzi": "办",
+      "pinyin": "bàn",
+      "meaning": "làm, giải quyết (thủ tục)",
+      "id": "2eef698db219890b",
+      "atlas": 43,
+      "cell": 11
+    },
+    {
+      "hanzi": "信用卡",
+      "pinyin": "xìnyòngkǎ",
+      "meaning": "thẻ tín dụng",
+      "id": "c19df9c8d0c92287",
+      "atlas": 43,
+      "cell": 12
+    },
+    {
+      "hanzi": "还",
+      "pinyin": "huán",
+      "meaning": "trả, hoàn lại",
+      "id": "7c35c36f3338e2ca",
+      "atlas": 43,
+      "cell": 13
+    },
+    {
+      "hanzi": "借",
+      "pinyin": "jiè",
+      "meaning": "vay, mượn; cho vay, cho mượn",
+      "id": "a24a8c27c4fee2f7",
+      "atlas": 43,
+      "cell": 14
+    },
+    {
+      "hanzi": "纸",
+      "pinyin": "zhǐ",
+      "meaning": "giấy",
+      "id": "cabd3fa980e1cb4d",
+      "atlas": 43,
+      "cell": 15
+    },
+    {
+      "hanzi": "需要",
+      "pinyin": "xūyào",
+      "meaning": "cần, cần phải",
+      "id": "9ef93f14a73318ee",
+      "atlas": 44,
+      "cell": 0
+    },
+    {
+      "hanzi": "各",
+      "pinyin": "gè",
+      "meaning": "mỗi, từng; các",
+      "id": "be3795be690ec0c4",
+      "atlas": 44,
+      "cell": 1
+    },
+    {
+      "hanzi": "夏天",
+      "pinyin": "xiàtiān",
+      "meaning": "mùa hè",
+      "id": "cfcc9208483e8c19",
+      "atlas": 44,
+      "cell": 2
+    },
+    {
+      "hanzi": "以前",
+      "pinyin": "yǐqián",
+      "meaning": "trước đây; trước khi",
+      "id": "579daeae240a60a6",
+      "atlas": 44,
+      "cell": 3
+    },
+    {
+      "hanzi": "一样",
+      "pinyin": "yīyàng",
+      "meaning": "giống nhau, như nhau",
+      "id": "14c89853b44fa55e",
+      "atlas": 44,
+      "cell": 4
+    },
+    {
+      "hanzi": "国家",
+      "pinyin": "guójiā",
+      "meaning": "quốc gia, đất nước",
+      "id": "e6b862ca4c2b8c30",
+      "atlas": 44,
+      "cell": 5
+    },
+    {
+      "hanzi": "团",
+      "pinyin": "tuán",
+      "meaning": "đoàn, nhóm",
+      "id": "d98ca3d8fd66be0c",
+      "atlas": 44,
+      "cell": 6
+    },
+    {
+      "hanzi": "当",
+      "pinyin": "dāng",
+      "meaning": "làm, đảm nhiệm (nghề hoặc chức vụ)",
+      "id": "55dd829619a6c06a",
+      "atlas": 44,
+      "cell": 7
+    },
+    {
+      "hanzi": "翻译",
+      "pinyin": "fānyì",
+      "meaning": "phiên dịch, biên dịch; người phiên dịch",
+      "id": "300a52b5a8f97e59",
+      "atlas": 44,
+      "cell": 8
+    },
+    {
+      "hanzi": "成",
+      "pinyin": "chéng",
+      "meaning": "thành, sang (kết quả biến đổi)",
+      "id": "9a9f1b642a57f879",
+      "atlas": 44,
+      "cell": 9
+    },
+    {
+      "hanzi": "颐和园",
+      "pinyin": "yíhéyuán",
+      "meaning": "Di Hòa Viên",
+      "id": "2f1ba3be18563904",
+      "atlas": 44,
+      "cell": 10
+    },
+    {
+      "hanzi": "天坛",
+      "pinyin": "tiāntán",
+      "meaning": "Thiên Đàn",
+      "id": "aa7574e10aeb8cae",
+      "atlas": 44,
+      "cell": 11
+    },
+    {
+      "hanzi": "参观",
+      "pinyin": "cānguān",
+      "meaning": "tham quan",
+      "id": "3527c6db61752972",
+      "atlas": 44,
+      "cell": 12
+    },
+    {
+      "hanzi": "羡慕",
+      "pinyin": "xiànmù",
+      "meaning": "ngưỡng mộ, ao ước được như ai",
+      "id": "161d0e5cfb64c6d3",
+      "atlas": 44,
+      "cell": 13
+    },
+    {
+      "hanzi": "景点",
+      "pinyin": "jǐngdiǎn",
+      "meaning": "địa điểm tham quan",
+      "id": "58ceb007ee70233a",
+      "atlas": 44,
+      "cell": 14
+    },
+    {
+      "hanzi": "除了",
+      "pinyin": "chúle",
+      "meaning": "ngoài, ngoại trừ",
+      "id": "639d55b00e173952",
+      "atlas": 44,
+      "cell": 15
+    },
+    {
+      "hanzi": "胡同",
+      "pinyin": "hútòng",
+      "meaning": "ngõ, hẻm truyền thống ở Bắc Kinh",
+      "id": "ca4c44bbba2344f6",
+      "atlas": 45,
+      "cell": 0
+    },
+    {
+      "hanzi": "地铁",
+      "pinyin": "dìtiě",
+      "meaning": "tàu điện ngầm",
+      "id": "261bcabf743dcb7a",
+      "atlas": 45,
+      "cell": 1
+    },
+    {
+      "hanzi": "南京",
+      "pinyin": "nánjīng",
+      "meaning": "Nam Kinh",
+      "id": "9669c885e908246b",
+      "atlas": 45,
+      "cell": 2
+    },
+    {
+      "hanzi": "城市",
+      "pinyin": "chéngshì",
+      "meaning": "thành phố",
+      "id": "89d6806c83ff032e",
+      "atlas": 45,
+      "cell": 3
+    },
+    {
+      "hanzi": "风景",
+      "pinyin": "fēngjǐng",
+      "meaning": "phong cảnh",
+      "id": "56813aa89ba472c3",
+      "atlas": 45,
+      "cell": 4
+    },
+    {
+      "hanzi": "迪士尼乐园",
+      "pinyin": "díshìnílèyuán",
+      "meaning": "công viên Disneyland",
+      "id": "05ac8fdf92406c5e",
+      "atlas": 45,
+      "cell": 5
+    },
+    {
+      "hanzi": "无聊",
+      "pinyin": "wúliáo",
+      "meaning": "buồn chán, tẻ nhạt",
+      "id": "47165e34c816f907",
+      "atlas": 45,
+      "cell": 6
+    },
+    {
+      "hanzi": "草原",
+      "pinyin": "cǎoyuán",
+      "meaning": "thảo nguyên",
+      "id": "5bea43c85c7547c7",
+      "atlas": 45,
+      "cell": 7
+    },
+    {
+      "hanzi": "海边",
+      "pinyin": "hǎibiān",
+      "meaning": "bờ biển, ven biển",
+      "id": "fc92b34b48255778",
+      "atlas": 45,
+      "cell": 8
+    },
+    {
+      "hanzi": "羊",
+      "pinyin": "yáng",
+      "meaning": "dê, cừu",
+      "id": "0a646354f9518010",
+      "atlas": 45,
+      "cell": 9
+    },
+    {
+      "hanzi": "牛",
+      "pinyin": "niú",
+      "meaning": "bò",
+      "id": "ec8470cd97925f5e",
+      "atlas": 45,
+      "cell": 10
+    },
+    {
+      "hanzi": "海鲜",
+      "pinyin": "hǎixiān",
+      "meaning": "hải sản",
+      "id": "6f220e5fca75a63e",
+      "atlas": 45,
+      "cell": 11
+    },
+    {
+      "hanzi": "虾",
+      "pinyin": "xiā",
+      "meaning": "tôm",
+      "id": "04a33d4a79d30a01",
+      "atlas": 45,
+      "cell": 12
+    },
+    {
+      "hanzi": "鱿鱼",
+      "pinyin": "yóuyú",
+      "meaning": "mực ống",
+      "id": "090575249d936417",
+      "atlas": 45,
+      "cell": 13
+    },
+    {
+      "hanzi": "螃蟹",
+      "pinyin": "pángxiè",
+      "meaning": "cua",
+      "id": "a505ff1193269cc9",
+      "atlas": 45,
+      "cell": 14
+    },
+    {
+      "hanzi": "章鱼",
+      "pinyin": "zhāngyú",
+      "meaning": "bạch tuộc",
+      "id": "8c9d475359a0da10",
+      "atlas": 45,
+      "cell": 15
+    },
+    {
+      "hanzi": "假期",
+      "pinyin": "jiàqī",
+      "meaning": "kỳ nghỉ",
+      "id": "5252bfaa7a573b89",
+      "atlas": 46,
+      "cell": 0
+    },
+    {
+      "hanzi": "酒店",
+      "pinyin": "jiǔdiàn",
+      "meaning": "khách sạn",
+      "id": "5ed65eddeed55ab9",
+      "atlas": 46,
+      "cell": 1
+    },
+    {
+      "hanzi": "接送",
+      "pinyin": "jiēsòng",
+      "meaning": "đưa đón",
+      "id": "1e677f6386159846",
+      "atlas": 46,
+      "cell": 2
+    },
+    {
+      "hanzi": "服务",
+      "pinyin": "fúwù",
+      "meaning": "phục vụ; dịch vụ",
+      "id": "ed501a6b6737239c",
+      "atlas": 46,
+      "cell": 3
+    },
+    {
+      "hanzi": "订",
+      "pinyin": "dìng",
+      "meaning": "đặt trước",
+      "id": "f03001c407737710",
+      "atlas": 46,
+      "cell": 4
+    },
+    {
+      "hanzi": "季节",
+      "pinyin": "jìjié",
+      "meaning": "mùa",
+      "id": "4f46c899516f34cd",
+      "atlas": 46,
+      "cell": 5
+    },
+    {
+      "hanzi": "春天",
+      "pinyin": "chūntiān",
+      "meaning": "mùa xuân",
+      "id": "72bfe3155e4cd4d2",
+      "atlas": 46,
+      "cell": 6
+    },
+    {
+      "hanzi": "秋天",
+      "pinyin": "qiūtiān",
+      "meaning": "mùa thu",
+      "id": "446aa49e2ef3641a",
+      "atlas": 46,
+      "cell": 7
+    },
+    {
+      "hanzi": "冬天",
+      "pinyin": "dōngtiān",
+      "meaning": "mùa đông",
+      "id": "65670053f9effafc",
+      "atlas": 46,
+      "cell": 8
+    },
+    {
+      "hanzi": "北方",
+      "pinyin": "běifāng",
+      "meaning": "miền Bắc, phương Bắc",
+      "id": "4d9580095bed4e16",
+      "atlas": 46,
+      "cell": 9
+    },
+    {
+      "hanzi": "南方",
+      "pinyin": "nánfāng",
+      "meaning": "miền Nam, phương Nam",
+      "id": "6abafcab897cc8be",
+      "atlas": 46,
+      "cell": 10
+    },
+    {
+      "hanzi": "雨季",
+      "pinyin": "yǔjì",
+      "meaning": "mùa mưa",
+      "id": "7848f51fbe70031f",
+      "atlas": 46,
+      "cell": 11
+    },
+    {
+      "hanzi": "旱季",
+      "pinyin": "hànjì",
+      "meaning": "mùa khô",
+      "id": "1f095703f7ec473a",
+      "atlas": 46,
+      "cell": 12
+    },
+    {
+      "hanzi": "新疆",
+      "pinyin": "xīnjiāng",
+      "meaning": "Tân Cương",
+      "id": "e0e2ed9d18000a40",
+      "atlas": 46,
+      "cell": 13
+    },
+    {
+      "hanzi": "极了",
+      "pinyin": "jí le",
+      "meaning": "cực kỳ, vô cùng (sau tính từ)",
+      "id": "b84ea19743bdd236",
+      "atlas": 46,
+      "cell": 14
+    },
+    {
+      "hanzi": "体验",
+      "pinyin": "tǐyàn",
+      "meaning": "trải nghiệm",
+      "id": "cbc18029d6dcedd8",
+      "atlas": 46,
+      "cell": 15
+    },
+    {
+      "hanzi": "一般",
+      "pinyin": "yìbān",
+      "meaning": "bình thường, ở mức trung bình; nói chung",
+      "id": "bae11b1b1582d063",
+      "atlas": 47,
+      "cell": 0
+    },
+    {
+      "hanzi": "全家",
+      "pinyin": "quánjiā",
+      "meaning": "cả gia đình",
+      "id": "dd06589b4e74370e",
+      "atlas": 47,
+      "cell": 1
+    },
+    {
+      "hanzi": "全部",
+      "pinyin": "quánbù",
+      "meaning": "toàn bộ, tất cả",
+      "id": "c672d4fcca6b038a",
+      "atlas": 47,
+      "cell": 2
+    },
+    {
+      "hanzi": "终于",
+      "pinyin": "zhōngyú",
+      "meaning": "cuối cùng (sau chờ đợi hoặc nỗ lực)",
+      "id": "686204a72071c328",
+      "atlas": 47,
+      "cell": 3
+    },
+    {
+      "hanzi": "要不",
+      "pinyin": "yàobù",
+      "meaning": "hay là, nếu không thì",
+      "id": "fb34346377f211bb",
+      "atlas": 47,
+      "cell": 4
+    },
+    {
+      "hanzi": "爬山",
+      "pinyin": "páshān",
+      "meaning": "leo núi",
+      "id": "90d4c9a67d1dd06a",
+      "atlas": 47,
+      "cell": 5
+    },
+    {
+      "hanzi": "注意",
+      "pinyin": "zhùyì",
+      "meaning": "chú ý",
+      "id": "2e0ce3015f07e18c",
+      "atlas": 47,
+      "cell": 6
+    },
+    {
+      "hanzi": "照",
+      "pinyin": "zhào",
+      "meaning": "chụp (ảnh); chiếu",
+      "id": "98bc91e676dae99f",
+      "atlas": 47,
+      "cell": 7
+    },
+    {
+      "hanzi": "拍照",
+      "pinyin": "pāizhào",
+      "meaning": "chụp ảnh",
+      "id": "2465ea69ae463ffa",
+      "atlas": 47,
+      "cell": 8
+    },
+    {
+      "hanzi": "照片",
+      "pinyin": "zhàopiān",
+      "meaning": "ảnh, bức ảnh",
+      "id": "0683a8480a8bf1c8",
+      "atlas": 47,
+      "cell": 9
+    },
+    {
+      "hanzi": "张",
+      "pinyin": "zhāng",
+      "meaning": "tấm, tờ (lượng từ cho ảnh, giấy)",
+      "id": "729cf7adf444ad1a",
+      "atlas": 47,
+      "cell": 10
+    },
+    {
+      "hanzi": "运动鞋",
+      "pinyin": "yùndòngxié",
+      "meaning": "giày thể thao",
+      "id": "098d1d720cc6e8c9",
+      "atlas": 47,
+      "cell": 11
+    },
+    {
+      "hanzi": "大衣",
+      "pinyin": "dàyī",
+      "meaning": "áo khoác dài",
+      "id": "39fb773591306896",
+      "atlas": 47,
+      "cell": 12
+    },
+    {
+      "hanzi": "总是",
+      "pinyin": "zǒngshì",
+      "meaning": "luôn luôn",
+      "id": "cf712263b2c23e75",
+      "atlas": 47,
+      "cell": 13
+    },
+    {
+      "hanzi": "教",
+      "pinyin": "jiāo",
+      "meaning": "dạy (đọc jiāo)",
+      "id": "25b5c586b9561379",
+      "atlas": 47,
+      "cell": 14
+    },
+    {
+      "hanzi": "感兴趣",
+      "pinyin": "gǎnxìngqù",
+      "meaning": "có hứng thú",
+      "id": "76aa519bc6d13116",
+      "atlas": 47,
+      "cell": 15
+    },
+    {
+      "hanzi": "一定",
+      "pinyin": "yídìng",
+      "meaning": "nhất định, chắc chắn",
+      "id": "cf501f8923a2546f",
+      "atlas": 48,
+      "cell": 0
+    },
+    {
+      "hanzi": "太阳",
+      "pinyin": "tàiyáng",
+      "meaning": "mặt trời",
+      "id": "dc89c25147a77a9e",
+      "atlas": 48,
+      "cell": 1
+    },
+    {
+      "hanzi": "树",
+      "pinyin": "shù",
+      "meaning": "cây",
+      "id": "f9ba0493e8097866",
+      "atlas": 48,
+      "cell": 2
+    },
+    {
+      "hanzi": "中间",
+      "pinyin": "zhōngjiān",
+      "meaning": "ở giữa",
+      "id": "3161684627aedcc2",
+      "atlas": 48,
+      "cell": 3
+    },
+    {
+      "hanzi": "阳光",
+      "pinyin": "yángguāng",
+      "meaning": "ánh nắng",
+      "id": "deb4eb45fc6351a6",
+      "atlas": 48,
+      "cell": 4
+    },
+    {
+      "hanzi": "树叶",
+      "pinyin": "shùyè",
+      "meaning": "lá cây",
+      "id": "d3eddbba2fcc4cdf",
+      "atlas": 48,
+      "cell": 5
+    },
+    {
+      "hanzi": "干",
+      "pinyin": "gàn",
+      "meaning": "làm (việc)",
+      "id": "fae4c8a5d3b05fa9",
+      "atlas": 48,
+      "cell": 6
+    },
+    {
+      "hanzi": "镜头",
+      "pinyin": "jìngtóu",
+      "meaning": "ống kính; cảnh quay",
+      "id": "e075f05291c4c70b",
+      "atlas": 48,
+      "cell": 7
+    },
+    {
+      "hanzi": "照相机",
+      "pinyin": "zhàoxiàngjī",
+      "meaning": "máy ảnh",
+      "id": "59883ccc3077bc0c",
+      "atlas": 48,
+      "cell": 8
+    },
+    {
+      "hanzi": "电",
+      "pinyin": "diàn",
+      "meaning": "điện",
+      "id": "4b71861755cc6d82",
+      "atlas": 48,
+      "cell": 9
+    },
+    {
+      "hanzi": "收到",
+      "pinyin": "shōudào",
+      "meaning": "nhận được",
+      "id": "fc9c0fed660f3567",
+      "atlas": 48,
+      "cell": 10
+    },
+    {
+      "hanzi": "邮件",
+      "pinyin": "yóujiàn",
+      "meaning": "thư, thư điện tử",
+      "id": "bf1896f3e33a12e0",
+      "atlas": 48,
+      "cell": 11
+    },
+    {
+      "hanzi": "封",
+      "pinyin": "fēng",
+      "meaning": "bức (lượng từ cho thư)",
+      "id": "5e021c1dc382834c",
+      "atlas": 48,
+      "cell": 12
+    },
+    {
+      "hanzi": "哈哈",
+      "pinyin": "hāhā",
+      "meaning": "ha ha, tiếng cười",
+      "id": "4478dae7dd59d37d",
+      "atlas": 48,
+      "cell": 13
+    },
+    {
+      "hanzi": "提高",
+      "pinyin": "tígāo",
+      "meaning": "nâng cao",
+      "id": "68574baf4ad34099",
+      "atlas": 48,
+      "cell": 14
+    },
+    {
+      "hanzi": "句",
+      "pinyin": "jù",
+      "meaning": "câu (lượng từ cho lời nói, câu văn)",
+      "id": "2e61950d2346e2cc",
+      "atlas": 48,
+      "cell": 15
+    },
+    {
+      "hanzi": "音乐会",
+      "pinyin": "yīnyuèhuì",
+      "meaning": "buổi hòa nhạc",
+      "id": "6dbbd39750007890",
+      "atlas": 49,
+      "cell": 0
+    },
+    {
+      "hanzi": "学期",
+      "pinyin": "xuéqī",
+      "meaning": "học kỳ",
+      "id": "ea827042ac022fc5",
+      "atlas": 49,
+      "cell": 1
+    },
+    {
+      "hanzi": "打算",
+      "pinyin": "dǎsuàn",
+      "meaning": "dự định; kế hoạch",
+      "id": "bf47c11c2d8347dd",
+      "atlas": 49,
+      "cell": 2
+    },
+    {
+      "hanzi": "高铁",
+      "pinyin": "gāotiě",
+      "meaning": "tàu cao tốc",
+      "id": "5811e3e5776444c4",
+      "atlas": 49,
+      "cell": 3
+    },
+    {
+      "hanzi": "奇怪",
+      "pinyin": "qíguài",
+      "meaning": "kỳ lạ",
+      "id": "595827481fd33722",
+      "atlas": 49,
+      "cell": 4
+    },
+    {
+      "hanzi": "路口",
+      "pinyin": "lùkǒu",
+      "meaning": "ngã đường, giao lộ",
+      "id": "d179d989ae8fdaa2",
+      "atlas": 49,
+      "cell": 5
+    },
+    {
+      "hanzi": "小心",
+      "pinyin": "xiǎoxīn",
+      "meaning": "cẩn thận",
+      "id": "fde2748c39435ea1",
+      "atlas": 49,
+      "cell": 6
+    },
+    {
+      "hanzi": "红绿灯",
+      "pinyin": "hónglǜdēng",
+      "meaning": "đèn giao thông",
+      "id": "074ed71550191bb0",
+      "atlas": 49,
+      "cell": 7
+    },
+    {
+      "hanzi": "迟到",
+      "pinyin": "chídào",
+      "meaning": "đến muộn",
+      "id": "6f90337693e03dd7",
+      "atlas": 49,
+      "cell": 8
+    },
+    {
+      "hanzi": "急",
+      "pinyin": "jí",
+      "meaning": "vội, sốt ruột",
+      "id": "e87ad78c469fa8c4",
+      "atlas": 49,
+      "cell": 9
+    },
+    {
+      "hanzi": "后来",
+      "pinyin": "hòulái",
+      "meaning": "sau đó, về sau",
+      "id": "ab8576661f5aa470",
+      "atlas": 49,
+      "cell": 10
+    },
+    {
+      "hanzi": "熟",
+      "pinyin": "shú",
+      "meaning": "quen, thông thạo",
+      "id": "8e19673f9b6d0e2d",
+      "atlas": 49,
+      "cell": 11
+    },
+    {
+      "hanzi": "检票",
+      "pinyin": "jiǎnpiào",
+      "meaning": "kiểm tra vé",
+      "id": "e7b6e78f8814166f",
+      "atlas": 49,
+      "cell": 12
+    },
+    {
+      "hanzi": "刷",
+      "pinyin": "shuā",
+      "meaning": "quẹt, quét (vé hoặc thẻ); chải",
+      "id": "d97b69038e62da53",
+      "atlas": 49,
+      "cell": 13
+    },
+    {
+      "hanzi": "站",
+      "pinyin": "zhàn",
+      "meaning": "trạm, ga, bến",
+      "id": "9a1328b22f1646f1",
+      "atlas": 49,
+      "cell": 14
+    },
+    {
+      "hanzi": "耳机",
+      "pinyin": "ěrjī",
+      "meaning": "tai nghe",
+      "id": "bd8576d987570416",
+      "atlas": 49,
+      "cell": 15
+    },
+    {
+      "hanzi": "充电宝",
+      "pinyin": "chōngdiànbǎo",
+      "meaning": "sạc dự phòng",
+      "id": "b8ead539a455c6eb",
+      "atlas": 50,
+      "cell": 0
+    },
+    {
+      "hanzi": "分开",
+      "pinyin": "fēnkāi",
+      "meaning": "tách ra, chia ra",
+      "id": "3021db3553d571bd",
+      "atlas": 50,
+      "cell": 1
+    },
+    {
+      "hanzi": "安全",
+      "pinyin": "ānquán",
+      "meaning": "an toàn",
+      "id": "99ed4777dcaef23d",
+      "atlas": 50,
+      "cell": 2
+    },
+    {
+      "hanzi": "对方",
+      "pinyin": "duìfāng",
+      "meaning": "đối phương, người bên kia",
+      "id": "0668692ead20ac31",
+      "atlas": 50,
+      "cell": 3
+    },
+    {
+      "hanzi": "电梯",
+      "pinyin": "diàntī",
+      "meaning": "thang máy",
+      "id": "3a6d68b91e1a3b79",
+      "atlas": 50,
+      "cell": 4
+    },
+    {
+      "hanzi": "选择",
+      "pinyin": "xuǎnzé",
+      "meaning": "lựa chọn",
+      "id": "246fdee0d4e0c408",
+      "atlas": 50,
+      "cell": 5
+    },
+    {
+      "hanzi": "紧张",
+      "pinyin": "jǐnzhāng",
+      "meaning": "căng thẳng, hồi hộp",
+      "id": "326ee8aade7f2cdd",
+      "atlas": 50,
+      "cell": 6
+    },
+    {
+      "hanzi": "必须",
+      "pinyin": "bìxū",
+      "meaning": "nhất thiết phải",
+      "id": "f9d0a300b6f5b972",
+      "atlas": 50,
+      "cell": 7
+    },
+    {
+      "hanzi": "座位",
+      "pinyin": "zuòwèi",
+      "meaning": "chỗ ngồi",
+      "id": "3de38633d90ea8a1",
+      "atlas": 50,
+      "cell": 8
+    },
+    {
+      "hanzi": "沙发",
+      "pinyin": "shāfā",
+      "meaning": "ghế sofa",
+      "id": "1597ad93a2e81066",
+      "atlas": 50,
+      "cell": 9
+    },
+    {
+      "hanzi": "速度",
+      "pinyin": "sùdù",
+      "meaning": "tốc độ",
+      "id": "34faa8ca32e26812",
+      "atlas": 50,
+      "cell": 10
+    },
+    {
+      "hanzi": "变化",
+      "pinyin": "biànhuà",
+      "meaning": "thay đổi; sự thay đổi",
+      "id": "daa5b81fa4f19bc0",
+      "atlas": 50,
+      "cell": 11
+    },
+    {
+      "hanzi": "过得",
+      "pinyin": "guò de",
+      "meaning": "trôi qua, sống như thế nào (kèm bổ ngữ)",
+      "id": "b84ae5fce42422a3",
+      "atlas": 50,
+      "cell": 12
+    },
+    {
+      "hanzi": "出行",
+      "pinyin": "chūxíng",
+      "meaning": "đi lại, lên đường",
+      "id": "424f00c6ab5b61f9",
+      "atlas": 50,
+      "cell": 13
+    },
+    {
+      "hanzi": "方式",
+      "pinyin": "fāngshì",
+      "meaning": "cách thức, phương thức",
+      "id": "07f2337703b8358b",
+      "atlas": 50,
+      "cell": 14
+    },
+    {
+      "hanzi": "交通",
+      "pinyin": "jiāotōng",
+      "meaning": "giao thông",
+      "id": "eb76a037c1e061e0",
+      "atlas": 50,
+      "cell": 15
+    },
+    {
+      "hanzi": "工具",
+      "pinyin": "gōngjù",
+      "meaning": "công cụ, dụng cụ",
+      "id": "757ee91dbc6ae8a6",
+      "atlas": 51,
+      "cell": 0
+    },
+    {
+      "hanzi": "交通工具",
+      "pinyin": "jiāotōnggōngjù",
+      "meaning": "phương tiện giao thông",
+      "id": "c30530e9d9d2f8f1",
+      "atlas": 51,
+      "cell": 1
+    },
+    {
+      "hanzi": "机会",
+      "pinyin": "jīhuì",
+      "meaning": "cơ hội",
+      "id": "a5c1368c9eea8cef",
+      "atlas": 51,
+      "cell": 2
+    },
+    {
+      "hanzi": "矮",
+      "pinyin": "ǎi",
+      "meaning": "thấp (chiều cao)",
+      "id": "08b5ba7fc503333a",
+      "atlas": 51,
+      "cell": 3
+    },
+    {
+      "hanzi": "一直",
+      "pinyin": "yìzhí",
+      "meaning": "suốt, liên tục; luôn",
+      "id": "c1bbc44a7ad488c9",
+      "atlas": 51,
+      "cell": 4
+    },
+    {
+      "hanzi": "付",
+      "pinyin": "fù",
+      "meaning": "trả, thanh toán",
+      "id": "0fb45aaf78b5fb62",
+      "atlas": 51,
+      "cell": 5
+    },
+    {
+      "hanzi": "付钱",
+      "pinyin": "fùqián",
+      "meaning": "trả tiền",
+      "id": "99bfd5ce59d181b2",
+      "atlas": 51,
+      "cell": 6
+    },
+    {
+      "hanzi": "付款",
+      "pinyin": "fùkuǎn",
+      "meaning": "thanh toán",
+      "id": "4337ef75d9e8f3a4",
+      "atlas": 51,
+      "cell": 7
+    },
+    {
+      "hanzi": "买单",
+      "pinyin": "mǎidān",
+      "meaning": "thanh toán hóa đơn (ở nhà hàng)",
+      "id": "2280fd1d9c3a1e88",
+      "atlas": 51,
+      "cell": 8
+    },
+    {
+      "hanzi": "现金",
+      "pinyin": "xiànjīn",
+      "meaning": "tiền mặt",
+      "id": "945c988bce33ee56",
+      "atlas": 51,
+      "cell": 9
+    },
+    {
+      "hanzi": "转账",
+      "pinyin": "zhuǎnzhàng",
+      "meaning": "chuyển khoản",
+      "id": "4f4601046a218506",
+      "atlas": 51,
+      "cell": 10
+    },
+    {
+      "hanzi": "账号",
+      "pinyin": "zhànghào",
+      "meaning": "số tài khoản, tài khoản",
+      "id": "5449e207e487558c",
+      "atlas": 51,
+      "cell": 11
+    },
+    {
+      "hanzi": "扫码",
+      "pinyin": "sǎomǎ",
+      "meaning": "quét mã",
+      "id": "d53a7819e6a516f6",
+      "atlas": 51,
+      "cell": 12
+    },
+    {
+      "hanzi": "二维码",
+      "pinyin": "èrwéimǎ",
+      "meaning": "mã QR",
+      "id": "09feaf12d4b90971",
+      "atlas": 51,
+      "cell": 13
+    },
+    {
+      "hanzi": "双十一",
+      "pinyin": "shuāngshíyī",
+      "meaning": "ngày mua sắm 11 tháng 11",
+      "id": "f2c0f2b160be162e",
+      "atlas": 51,
+      "cell": 14
+    },
+    {
+      "hanzi": "黄色",
+      "pinyin": "huángsè",
+      "meaning": "màu vàng",
+      "id": "dc3a9a89db97b645",
+      "atlas": 51,
+      "cell": 15
+    },
+    {
+      "hanzi": "短裙",
+      "pinyin": "duǎnqún",
+      "meaning": "váy ngắn",
+      "id": "f6cf9d3cd0d377fb",
+      "atlas": 52,
+      "cell": 0
+    },
+    {
+      "hanzi": "大小",
+      "pinyin": "dàxiǎo",
+      "meaning": "kích thước, độ lớn nhỏ",
+      "id": "a7d0560c345136e3",
+      "atlas": 52,
+      "cell": 1
+    },
+    {
+      "hanzi": "合适",
+      "pinyin": "héshì",
+      "meaning": "vừa vặn, phù hợp",
+      "id": "0ada3f2637023f85",
+      "atlas": 52,
+      "cell": 2
+    },
+    {
+      "hanzi": "决定",
+      "pinyin": "juédìng",
+      "meaning": "quyết định",
+      "id": "1147c2f9d826705f",
+      "atlas": 52,
+      "cell": 3
+    },
+    {
+      "hanzi": "新鲜",
+      "pinyin": "xīnxiān",
+      "meaning": "tươi, tươi mới",
+      "id": "db2e7da40f4b3713",
+      "atlas": 52,
+      "cell": 4
+    },
+    {
+      "hanzi": "甜",
+      "pinyin": "tián",
+      "meaning": "ngọt",
+      "id": "8ab74b097d8c0e23",
+      "atlas": 52,
+      "cell": 5
+    },
+    {
+      "hanzi": "香蕉",
+      "pinyin": "xiāngjiāo",
+      "meaning": "chuối",
+      "id": "a7928d06b51053fe",
+      "atlas": 52,
+      "cell": 6
+    },
+    {
+      "hanzi": "为了",
+      "pinyin": "wèile",
+      "meaning": "để, nhằm",
+      "id": "6700187a1f25e016",
+      "atlas": 52,
+      "cell": 7
+    },
+    {
+      "hanzi": "婚礼",
+      "pinyin": "hūnlǐ",
+      "meaning": "lễ cưới",
+      "id": "05a2e7870ef27ae5",
+      "atlas": 52,
+      "cell": 8
+    },
+    {
+      "hanzi": "不但",
+      "pinyin": "bùdàn",
+      "meaning": "không những",
+      "id": "ec9851010a311653",
+      "atlas": 52,
+      "cell": 9
+    },
+    {
+      "hanzi": "而且",
+      "pinyin": "érqiě",
+      "meaning": "mà còn, hơn nữa",
+      "id": "65131ae93dded822",
+      "atlas": 52,
+      "cell": 10
+    },
+    {
+      "hanzi": "看中",
+      "pinyin": "kànzhòng",
+      "meaning": "ưng ý, chọn vì thấy phù hợp",
+      "id": "930c72acac834d70",
+      "atlas": 52,
+      "cell": 11
+    },
+    {
+      "hanzi": "圈",
+      "pinyin": "quān",
+      "meaning": "vòng (đếm vòng chạy)",
+      "id": "48ded7e2ed34cdf9",
+      "atlas": 52,
+      "cell": 12
+    },
+    {
+      "hanzi": "坚持",
+      "pinyin": "jiānchí",
+      "meaning": "kiên trì, duy trì",
+      "id": "d9a66ab6aa341dc8",
+      "atlas": 52,
+      "cell": 13
+    },
+    {
+      "hanzi": "体检",
+      "pinyin": "tǐjiǎn",
+      "meaning": "khám sức khỏe tổng quát",
+      "id": "7b0b5612abc46a70",
+      "atlas": 52,
+      "cell": 14
+    },
+    {
+      "hanzi": "胖",
+      "pinyin": "pàng",
+      "meaning": "béo, mập",
+      "id": "f73ff1cd8dc51397",
+      "atlas": 52,
+      "cell": 15
+    },
+    {
+      "hanzi": "瘦",
+      "pinyin": "shòu",
+      "meaning": "gầy, ốm",
+      "id": "a35f86b4c2af3519",
+      "atlas": 53,
+      "cell": 0
+    },
+    {
+      "hanzi": "原来",
+      "pinyin": "yuánlái",
+      "meaning": "hóa ra; vốn dĩ, ban đầu",
+      "id": "1754f9b52a84d69a",
+      "atlas": 53,
+      "cell": 1
+    },
+    {
+      "hanzi": "足球",
+      "pinyin": "zúqiú",
+      "meaning": "bóng đá",
+      "id": "8807cab404d1c3fa",
+      "atlas": 53,
+      "cell": 2
+    },
+    {
+      "hanzi": "踢",
+      "pinyin": "tī",
+      "meaning": "đá (bằng chân)",
+      "id": "0995b2d18128276d",
+      "atlas": 53,
+      "cell": 3
+    },
+    {
+      "hanzi": "从来",
+      "pinyin": "cónglái",
+      "meaning": "từ trước đến nay",
+      "id": "9c7de074f0244a26",
+      "atlas": 53,
+      "cell": 4
+    },
+    {
+      "hanzi": "怕",
+      "pinyin": "pà",
+      "meaning": "sợ",
+      "id": "1660567bdbec3d24",
+      "atlas": 53,
+      "cell": 5
+    },
+    {
+      "hanzi": "拖后腿",
+      "pinyin": "tuōhòutuǐ",
+      "meaning": "làm cản trở, kéo lùi người khác",
+      "id": "ca0dbc463a16d8a2",
+      "atlas": 53,
+      "cell": 6
+    },
+    {
+      "hanzi": "眼睛",
+      "pinyin": "yǎnjīng",
+      "meaning": "mắt",
+      "id": "2cf000b442b4b841",
+      "atlas": 53,
+      "cell": 7
+    },
+    {
+      "hanzi": "难受",
+      "pinyin": "nánshòu",
+      "meaning": "khó chịu, không khỏe",
+      "id": "dd919cd36f767652",
+      "atlas": 53,
+      "cell": 8
+    },
+    {
+      "hanzi": "好像",
+      "pinyin": "hǎoxiàng",
+      "meaning": "hình như, dường như; giống như",
+      "id": "fc4cd354b6a78a15",
+      "atlas": 53,
+      "cell": 9
+    },
+    {
+      "hanzi": "低",
+      "pinyin": "dī",
+      "meaning": "thấp (mức độ, vị trí)",
+      "id": "42e678f4e279373c",
+      "atlas": 53,
+      "cell": 10
+    },
+    {
+      "hanzi": "关心",
+      "pinyin": "guānxīn",
+      "meaning": "quan tâm",
+      "id": "38599c5d21070092",
+      "atlas": 53,
+      "cell": 11
+    },
+    {
+      "hanzi": "以为",
+      "pinyin": "yǐwéi",
+      "meaning": "tưởng rằng (thường khác thực tế)",
+      "id": "47161f6a24036476",
+      "atlas": 53,
+      "cell": 12
+    },
+    {
+      "hanzi": "又",
+      "pinyin": "yòu",
+      "meaning": "lại (việc lặp lại đã xảy ra)",
+      "id": "120057a74ec5b6c4",
+      "atlas": 53,
+      "cell": 13
+    },
+    {
+      "hanzi": "段",
+      "pinyin": "duàn",
+      "meaning": "đoạn, quãng (lượng từ cho thời gian, văn bản)",
+      "id": "28c7d71e7bad5a09",
+      "atlas": 53,
+      "cell": 14
+    },
+    {
+      "hanzi": "结果",
+      "pinyin": "jiéguǒ",
+      "meaning": "kết quả; rốt cuộc",
+      "id": "9dbe2b29191611af",
+      "atlas": 53,
+      "cell": 15
+    },
+    {
+      "hanzi": "养",
+      "pinyin": "yǎng",
+      "meaning": "nuôi, dưỡng, chăm sóc để hồi phục",
+      "id": "262d4ac64d335d4f",
+      "atlas": 54,
+      "cell": 0
+    },
+    {
+      "hanzi": "猜",
+      "pinyin": "cāi",
+      "meaning": "đoán",
+      "id": "6e5d4fa14ccd205e",
+      "atlas": 54,
+      "cell": 1
+    },
+    {
+      "hanzi": "根据",
+      "pinyin": "gēnjù",
+      "meaning": "căn cứ vào, dựa theo",
+      "id": "4dbfcb6d026187bb",
+      "atlas": 54,
+      "cell": 2
+    },
+    {
+      "hanzi": "情况",
+      "pinyin": "qíngkuàng",
+      "meaning": "tình hình, tình trạng",
+      "id": "d06c72588611013e",
+      "atlas": 54,
+      "cell": 3
+    },
+    {
+      "hanzi": "受伤",
+      "pinyin": "shòushāng",
+      "meaning": "bị thương",
+      "id": "95ae92769e961744",
+      "atlas": 54,
+      "cell": 4
+    },
+    {
+      "hanzi": "继续",
+      "pinyin": "jìxù",
+      "meaning": "tiếp tục",
+      "id": "eba6b7b1b9ce9ab1",
+      "atlas": 54,
+      "cell": 5
+    },
+    {
+      "hanzi": "不然",
+      "pinyin": "bùrán",
+      "meaning": "nếu không thì",
+      "id": "ee509e06f7984a8a",
+      "atlas": 54,
+      "cell": 6
+    },
+    {
+      "hanzi": "影响",
+      "pinyin": "yǐngxiǎng",
+      "meaning": "ảnh hưởng",
+      "id": "ab3b1248113be295",
+      "atlas": 54,
+      "cell": 7
+    },
+    {
+      "hanzi": "药效",
+      "pinyin": "yàoxiào",
+      "meaning": "tác dụng của thuốc",
+      "id": "6edaaa5db2a4a01f",
+      "atlas": 54,
+      "cell": 8
+    },
+    {
+      "hanzi": "校园",
+      "pinyin": "xiàoyuán",
+      "meaning": "khuôn viên trường",
+      "id": "0e5854e3c4f58f47",
+      "atlas": 54,
+      "cell": 9
+    },
+    {
+      "hanzi": "球场",
+      "pinyin": "qiúchǎng",
+      "meaning": "sân bóng",
+      "id": "f1eb69190069378e",
+      "atlas": 54,
+      "cell": 10
+    },
+    {
+      "hanzi": "刚才",
+      "pinyin": "gāngcái",
+      "meaning": "vừa nãy",
+      "id": "a726d81ae3ca6b8d",
+      "atlas": 54,
+      "cell": 11
+    },
+    {
+      "hanzi": "练球",
+      "pinyin": "liànqiú",
+      "meaning": "tập chơi bóng",
+      "id": "c0e94d212d4b95c9",
+      "atlas": 54,
+      "cell": 12
+    },
+    {
+      "hanzi": "网球",
+      "pinyin": "wǎngqiú",
+      "meaning": "quần vợt, tennis",
+      "id": "fb2f4cf1fb4658f0",
+      "atlas": 54,
+      "cell": 13
+    },
+    {
+      "hanzi": "了",
+      "pinyin": "liǎo",
+      "meaning": "xong, được (đọc liǎo trong bổ ngữ khả năng)",
+      "id": "0e518e58cef67a72",
+      "atlas": 54,
+      "cell": 14
+    },
+    {
+      "hanzi": "几乎",
+      "pinyin": "jīhū",
+      "meaning": "hầu như, gần như",
+      "id": "86943e7ea390d5fa",
+      "atlas": 54,
+      "cell": 15
+    },
+    {
+      "hanzi": "队",
+      "pinyin": "duì",
+      "meaning": "đội, đoàn",
+      "id": "56b96e39dfa27b34",
+      "atlas": 55,
+      "cell": 0
+    },
+    {
+      "hanzi": "赢",
+      "pinyin": "yíng",
+      "meaning": "thắng",
+      "id": "d6b7f698643cf0d9",
+      "atlas": 55,
+      "cell": 1
+    },
+    {
+      "hanzi": "输",
+      "pinyin": "shū",
+      "meaning": "thua",
+      "id": "f833796349e70bf3",
+      "atlas": 55,
+      "cell": 2
+    },
+    {
+      "hanzi": "回",
+      "pinyin": "huí",
+      "meaning": "lần (lượng từ cho sự việc)",
+      "id": "93e26f5b36f6bdba",
+      "atlas": 55,
+      "cell": 3
+    },
+    {
+      "hanzi": "主要",
+      "pinyin": "zhǔyào",
+      "meaning": "chủ yếu, chính",
+      "id": "f2f88abff925c0be",
+      "atlas": 55,
+      "cell": 4
+    },
+    {
+      "hanzi": "球员",
+      "pinyin": "qiúyuán",
+      "meaning": "cầu thủ, vận động viên chơi bóng",
+      "id": "e1731258afa97f19",
+      "atlas": 55,
+      "cell": 5
+    },
+    {
+      "hanzi": "受到",
+      "pinyin": "shòudào",
+      "meaning": "nhận, chịu (tác động)",
+      "id": "3dcc8f6a34555393",
+      "atlas": 55,
+      "cell": 6
+    },
+    {
+      "hanzi": "分",
+      "pinyin": "fēn",
+      "meaning": "điểm (trong thi đấu, học tập)",
+      "id": "58cbf05a73b7127a",
+      "atlas": 55,
+      "cell": 7
+    },
+    {
+      "hanzi": "得",
+      "pinyin": "dé",
+      "meaning": "đạt được, giành được (đọc dé)",
+      "id": "f555c166543024c9",
+      "atlas": 55,
+      "cell": 8
+    },
+    {
+      "hanzi": "体育",
+      "pinyin": "tǐyù",
+      "meaning": "thể dục, thể thao",
+      "id": "bcadc9c69d19e051",
+      "atlas": 55,
+      "cell": 9
+    },
+    {
+      "hanzi": "奥运会",
+      "pinyin": "àoyùnhuì",
+      "meaning": "Thế vận hội, Olympic",
+      "id": "84ab68de8171685f",
+      "atlas": 55,
+      "cell": 10
+    },
+    {
+      "hanzi": "世界",
+      "pinyin": "shìjiè",
+      "meaning": "thế giới",
+      "id": "acd30815d0d402e5",
+      "atlas": 55,
+      "cell": 11
+    },
+    {
+      "hanzi": "重要",
+      "pinyin": "zhòngyào",
+      "meaning": "quan trọng",
+      "id": "5c01dc87e8145dad",
+      "atlas": 55,
+      "cell": 12
+    },
+    {
+      "hanzi": "成绩",
+      "pinyin": "chéngjì",
+      "meaning": "thành tích, kết quả học tập",
+      "id": "6bb4d74512e49a20",
+      "atlas": 55,
+      "cell": 13
+    },
+    {
+      "hanzi": "阮氏映园",
+      "pinyin": "Ruǎn Shì Yìngyuán",
+      "meaning": "Nguyễn Thị Ánh Viên",
+      "id": "f201a904c4322cfc",
+      "atlas": 55,
+      "cell": 14
+    },
+    {
+      "hanzi": "有名",
+      "pinyin": "yǒumíng",
+      "meaning": "nổi tiếng",
+      "id": "949df990794e0ccb",
+      "atlas": 55,
+      "cell": 15
+    },
+    {
+      "hanzi": "难忘",
+      "pinyin": "nánwàng",
+      "meaning": "khó quên",
+      "id": "b292caca6ac02b0a",
+      "atlas": 56,
+      "cell": 0
+    },
+    {
+      "hanzi": "数学",
+      "pinyin": "shùxué",
+      "meaning": "toán học",
+      "id": "1ba225e06db09906",
+      "atlas": 56,
+      "cell": 1
+    },
+    {
+      "hanzi": "清楚",
+      "pinyin": "qīngchǔ",
+      "meaning": "rõ ràng; hiểu rõ",
+      "id": "2e9add30e98be9c1",
+      "atlas": 56,
+      "cell": 2
+    },
+    {
+      "hanzi": "讲",
+      "pinyin": "jiǎng",
+      "meaning": "giảng, nói, kể",
+      "id": "15412d7e094e5192",
+      "atlas": 56,
+      "cell": 3
+    },
+    {
+      "hanzi": "黑板",
+      "pinyin": "hēibǎn",
+      "meaning": "bảng đen",
+      "id": "e0c52783dd88853b",
+      "atlas": 56,
+      "cell": 4
+    },
+    {
+      "hanzi": "认真",
+      "pinyin": "rènzhēn",
+      "meaning": "nghiêm túc, chăm chú",
+      "id": "8b8b242db30d0593",
+      "atlas": 56,
+      "cell": 5
+    },
+    {
+      "hanzi": "笔记",
+      "pinyin": "bǐjì",
+      "meaning": "ghi chép, vở ghi",
+      "id": "390397acacc9151e",
+      "atlas": 56,
+      "cell": 6
+    },
+    {
+      "hanzi": "道",
+      "pinyin": "dào",
+      "meaning": "câu, bài (lượng từ cho câu hỏi, bài tập)",
+      "id": "ded7dab0b28610e5",
+      "atlas": 56,
+      "cell": 7
+    },
+    {
+      "hanzi": "把",
+      "pinyin": "bǎ",
+      "meaning": "đưa đối tượng bị tác động lên trước động từ",
+      "id": "a115f6f8511a08c0",
+      "atlas": 56,
+      "cell": 8
+    },
+    {
+      "hanzi": "遇到",
+      "pinyin": "yùdào",
+      "meaning": "gặp, gặp phải",
+      "id": "aa6cc22d0850f6c7",
+      "atlas": 56,
+      "cell": 9
+    },
+    {
+      "hanzi": "困难",
+      "pinyin": "kùnnán",
+      "meaning": "khó khăn",
+      "id": "653cd1a4abae9c26",
+      "atlas": 56,
+      "cell": 10
+    },
+    {
+      "hanzi": "要求",
+      "pinyin": "yāoqiú",
+      "meaning": "yêu cầu",
+      "id": "6f792bdff68d751f",
+      "atlas": 56,
+      "cell": 11
+    },
+    {
+      "hanzi": "历史",
+      "pinyin": "lìshǐ",
+      "meaning": "lịch sử",
+      "id": "31d507659dcf9e51",
+      "atlas": 56,
+      "cell": 12
+    },
+    {
+      "hanzi": "差",
+      "pinyin": "chà",
+      "meaning": "kém, tệ (đọc chà)",
+      "id": "5912d372a5b2c1f3",
+      "atlas": 56,
+      "cell": 13
+    },
+    {
+      "hanzi": "生气",
+      "pinyin": "shēngqì",
+      "meaning": "tức giận",
+      "id": "52edf7c1a971f53d",
+      "atlas": 56,
+      "cell": 14
+    },
+    {
+      "hanzi": "页",
+      "pinyin": "yè",
+      "meaning": "trang",
+      "id": "93c8cb2213343d50",
+      "atlas": 56,
+      "cell": 15
+    },
+    {
+      "hanzi": "对话",
+      "pinyin": "duìhuà",
+      "meaning": "hội thoại, đối thoại",
+      "id": "2dfedd8aa2ffa77b",
+      "atlas": 57,
+      "cell": 0
+    },
+    {
+      "hanzi": "作业本",
+      "pinyin": "zuòyèběn",
+      "meaning": "vở bài tập",
+      "id": "8cb25cb18a782329",
+      "atlas": 57,
+      "cell": 1
+    },
+    {
+      "hanzi": "年级",
+      "pinyin": "niánjí",
+      "meaning": "khối, năm học (trong trường)",
+      "id": "aeb9185e2b9260d0",
+      "atlas": 57,
+      "cell": 2
+    },
+    {
+      "hanzi": "节",
+      "pinyin": "jié",
+      "meaning": "tiết (lượng từ cho tiết học)",
+      "id": "8ed8702980b01e1c",
+      "atlas": 57,
+      "cell": 3
+    },
+    {
+      "hanzi": "自习",
+      "pinyin": "zìxí",
+      "meaning": "tự học",
+      "id": "f87f23b846c3369d",
+      "atlas": 57,
+      "cell": 4
+    },
+    {
+      "hanzi": "内容",
+      "pinyin": "nèiróng",
+      "meaning": "nội dung",
+      "id": "74082adee7ed6555",
+      "atlas": 57,
+      "cell": 5
+    },
+    {
+      "hanzi": "后年",
+      "pinyin": "hòunián",
+      "meaning": "năm sau nữa",
+      "id": "1f76e3e6029850de",
+      "atlas": 57,
+      "cell": 6
+    },
+    {
+      "hanzi": "正确",
+      "pinyin": "zhèngquè",
+      "meaning": "đúng, chính xác",
+      "id": "41903868d380cd89",
+      "atlas": 57,
+      "cell": 7
+    },
+    {
+      "hanzi": "答案",
+      "pinyin": "dáàn",
+      "meaning": "đáp án, câu trả lời",
+      "id": "b05aff2b50399e05",
+      "atlas": 57,
+      "cell": 8
+    },
+    {
+      "hanzi": "开会",
+      "pinyin": "kāihuì",
+      "meaning": "họp, mở cuộc họp",
+      "id": "9a72712dff65d503",
+      "atlas": 57,
+      "cell": 9
+    },
+    {
+      "hanzi": "会议",
+      "pinyin": "huìyì",
+      "meaning": "cuộc họp, hội nghị",
+      "id": "3244efc35a3dd3b7",
+      "atlas": 57,
+      "cell": 10
+    },
+    {
+      "hanzi": "会议室",
+      "pinyin": "huìyìshì",
+      "meaning": "phòng họp",
+      "id": "85212f1528705c94",
+      "atlas": 57,
+      "cell": 11
+    },
+    {
+      "hanzi": "资料",
+      "pinyin": "zīliào",
+      "meaning": "tài liệu",
+      "id": "3062a08b3d688d0b",
+      "atlas": 57,
+      "cell": 12
+    },
+    {
+      "hanzi": "整理",
+      "pinyin": "zhěnglǐ",
+      "meaning": "sắp xếp, chỉnh lý",
+      "id": "76915764226ca257",
+      "atlas": 57,
+      "cell": 13
+    },
+    {
+      "hanzi": "秘书",
+      "pinyin": "mìshū",
+      "meaning": "thư ký",
+      "id": "a548929020976f72",
+      "atlas": 57,
+      "cell": 14
+    },
+    {
+      "hanzi": "或者",
+      "pinyin": "huòzhě",
+      "meaning": "hoặc (trong câu trần thuật)",
+      "id": "526a8ccade9fcc5c",
+      "atlas": 57,
+      "cell": 15
+    },
+    {
+      "hanzi": "笔记本电脑",
+      "pinyin": "bǐjìběndiànnǎo",
+      "meaning": "máy tính xách tay",
+      "id": "5c3f67d81391993f",
+      "atlas": 58,
+      "cell": 0
+    },
+    {
+      "hanzi": "周到",
+      "pinyin": "zhōudào",
+      "meaning": "chu đáo",
+      "id": "1cf7bdfca2f23b35",
+      "atlas": 58,
+      "cell": 1
+    },
+    {
+      "hanzi": "提",
+      "pinyin": "tí",
+      "meaning": "nêu ra; xách",
+      "id": "c502f6f1110483e4",
+      "atlas": 58,
+      "cell": 2
+    },
+    {
+      "hanzi": "解决",
+      "pinyin": "jiějué",
+      "meaning": "giải quyết",
+      "id": "1c797e4ed71a28ce",
+      "atlas": 58,
+      "cell": 3
+    },
+    {
+      "hanzi": "认为",
+      "pinyin": "rènwéi",
+      "meaning": "cho rằng",
+      "id": "5cac4afd8e7fcede",
+      "atlas": 58,
+      "cell": 4
+    },
+    {
+      "hanzi": "双方",
+      "pinyin": "shuāngfāng",
+      "meaning": "hai bên",
+      "id": "e1325b1f8a72ff07",
+      "atlas": 58,
+      "cell": 5
+    },
+    {
+      "hanzi": "打印",
+      "pinyin": "dǎyìn",
+      "meaning": "in (tài liệu)",
+      "id": "011f2a276d1dbd61",
+      "atlas": 58,
+      "cell": 6
+    },
+    {
+      "hanzi": "谈",
+      "pinyin": "tán",
+      "meaning": "nói chuyện, bàn bạc",
+      "id": "2fdab59f5a776fa8",
+      "atlas": 58,
+      "cell": 7
+    },
+    {
+      "hanzi": "合同",
+      "pinyin": "hétong",
+      "meaning": "hợp đồng",
+      "id": "ceb0405f3d38dc08",
+      "atlas": 58,
+      "cell": 8
+    },
+    {
+      "hanzi": "处理",
+      "pinyin": "chǔlǐ",
+      "meaning": "xử lý",
+      "id": "c550758431ad27bb",
+      "atlas": 58,
+      "cell": 9
+    },
+    {
+      "hanzi": "成功",
+      "pinyin": "chénggōng",
+      "meaning": "thành công",
+      "id": "f7d23cd388b5a53f",
+      "atlas": 58,
+      "cell": 10
+    },
+    {
+      "hanzi": "支持",
+      "pinyin": "zhīchí",
+      "meaning": "ủng hộ, hỗ trợ",
+      "id": "4d4c899ab67ff347",
+      "atlas": 58,
+      "cell": 11
+    },
+    {
+      "hanzi": "过奖",
+      "pinyin": "guòjiǎng",
+      "meaning": "quá khen",
+      "id": "cfe9d76f12a74041",
+      "atlas": 58,
+      "cell": 12
+    },
+    {
+      "hanzi": "看来",
+      "pinyin": "kànlái",
+      "meaning": "xem ra, có vẻ",
+      "id": "7a4ded522f5932d9",
+      "atlas": 58,
+      "cell": 13
+    },
+    {
+      "hanzi": "签",
+      "pinyin": "qiān",
+      "meaning": "ký (tên, hợp đồng)",
+      "id": "78685b2465298353",
+      "atlas": 58,
+      "cell": 14
+    },
+    {
+      "hanzi": "合作",
+      "pinyin": "hézuò",
+      "meaning": "hợp tác",
+      "id": "4d686aafd7ed1978",
+      "atlas": 58,
+      "cell": 15
+    },
+    {
+      "hanzi": "敬",
+      "pinyin": "jìng",
+      "meaning": "kính, mời (rượu)",
+      "id": "4c7da3a9ec9e75f2",
+      "atlas": 59,
+      "cell": 0
+    },
+    {
+      "hanzi": "干杯",
+      "pinyin": "gānbēi",
+      "meaning": "nâng cốc, cạn ly",
+      "id": "bd32a00bbee766da",
+      "atlas": 59,
+      "cell": 1
+    },
+    {
+      "hanzi": "出差",
+      "pinyin": "chūchāi",
+      "meaning": "đi công tác",
+      "id": "aca61dc1d90f0719",
+      "atlas": 59,
+      "cell": 2
+    },
+    {
+      "hanzi": "野营",
+      "pinyin": "yěyíng",
+      "meaning": "cắm trại",
+      "id": "cfd20904bffc4cd5",
+      "atlas": 59,
+      "cell": 3
+    },
+    {
+      "hanzi": "郊区",
+      "pinyin": "jiāoqū",
+      "meaning": "ngoại ô",
+      "id": "466147a76d1bc732",
+      "atlas": 59,
+      "cell": 4
+    },
+    {
+      "hanzi": "火锅",
+      "pinyin": "huǒguō",
+      "meaning": "lẩu",
+      "id": "aba2ad2fa8a5b016",
+      "atlas": 59,
+      "cell": 5
+    },
+    {
+      "hanzi": "烧烤",
+      "pinyin": "shāokǎo",
+      "meaning": "đồ nướng; nướng",
+      "id": "0f3a23d9d91b92a5",
+      "atlas": 59,
+      "cell": 6
+    },
+    {
+      "hanzi": "点火",
+      "pinyin": "diǎnhuǒ",
+      "meaning": "nhóm lửa, châm lửa",
+      "id": "799fdf20cff54574",
+      "atlas": 59,
+      "cell": 7
+    },
+    {
+      "hanzi": "干活儿",
+      "pinyin": "gànhuóér",
+      "meaning": "làm việc",
+      "id": "c96ccb30f7692d08",
+      "atlas": 59,
+      "cell": 8
+    },
+    {
+      "hanzi": "火堆",
+      "pinyin": "huǒduī",
+      "meaning": "đống lửa",
+      "id": "604dbdb416454a38",
+      "atlas": 59,
+      "cell": 9
+    },
+    {
+      "hanzi": "拉近",
+      "pinyin": "lājìn",
+      "meaning": "kéo gần, làm gần gũi hơn",
+      "id": "7a2b55bcfdb1faa4",
+      "atlas": 59,
+      "cell": 10
+    },
+    {
+      "hanzi": "意义",
+      "pinyin": "yìyì",
+      "meaning": "ý nghĩa",
+      "id": "f0d749ec25acc5a7",
+      "atlas": 59,
+      "cell": 11
+    },
+    {
+      "hanzi": "街道",
+      "pinyin": "jiēdào",
+      "meaning": "đường phố",
+      "id": "84c3cd31b4c35b69",
+      "atlas": 59,
+      "cell": 12
+    },
+    {
+      "hanzi": "开花",
+      "pinyin": "kāihuā",
+      "meaning": "nở hoa",
+      "id": "3cb285fcc9e70f62",
+      "atlas": 59,
+      "cell": 13
+    },
+    {
+      "hanzi": "船",
+      "pinyin": "chuán",
+      "meaning": "thuyền, tàu",
+      "id": "3cefed19bf51b950",
+      "atlas": 59,
+      "cell": 14
+    },
+    {
+      "hanzi": "工作日",
+      "pinyin": "gōngzuòrì",
+      "meaning": "ngày làm việc",
+      "id": "bc1685c61ba4d061",
+      "atlas": 59,
+      "cell": 15
+    },
+    {
+      "hanzi": "改天",
+      "pinyin": "gǎitiān",
+      "meaning": "hôm khác",
+      "id": "fdb7302acaeb33d3",
+      "atlas": 60,
+      "cell": 0
+    },
+    {
+      "hanzi": "后天",
+      "pinyin": "hòutiān",
+      "meaning": "ngày kia",
+      "id": "53f8089b5a7a4c5c",
+      "atlas": 60,
+      "cell": 1
+    },
+    {
+      "hanzi": "同意",
+      "pinyin": "tóngyì",
+      "meaning": "đồng ý",
+      "id": "122ac09e68b8ea83",
+      "atlas": 60,
+      "cell": 2
+    },
+    {
+      "hanzi": "突然",
+      "pinyin": "tūrán",
+      "meaning": "đột nhiên",
+      "id": "bfff97b7c1d1d4a9",
+      "atlas": 60,
+      "cell": 3
+    },
+    {
+      "hanzi": "刮风",
+      "pinyin": "guāfēng",
+      "meaning": "có gió, gió thổi",
+      "id": "a3f231fdf1a6abb5",
+      "atlas": 60,
+      "cell": 4
+    },
+    {
+      "hanzi": "新闻",
+      "pinyin": "xīnwén",
+      "meaning": "tin tức",
+      "id": "987496c4fb213bd7",
+      "atlas": 60,
+      "cell": 5
+    },
+    {
+      "hanzi": "雨伞",
+      "pinyin": "yǔsǎn",
+      "meaning": "ô, dù che mưa",
+      "id": "0e7e2998d1c7b4ae",
+      "atlas": 60,
+      "cell": 6
+    },
+    {
+      "hanzi": "雨衣",
+      "pinyin": "yǔyī",
+      "meaning": "áo mưa",
+      "id": "441cbe558e104e93",
+      "atlas": 60,
+      "cell": 7
+    },
+    {
+      "hanzi": "变",
+      "pinyin": "biàn",
+      "meaning": "biến, trở nên",
+      "id": "fdb55f4df353b083",
+      "atlas": 60,
+      "cell": 8
+    },
+    {
+      "hanzi": "打雪仗",
+      "pinyin": "dǎxuězhàng",
+      "meaning": "chơi ném tuyết",
+      "id": "6a3f582f8bdf47ea",
+      "atlas": 60,
+      "cell": 9
+    },
+    {
+      "hanzi": "关注",
+      "pinyin": "guānzhù",
+      "meaning": "chú ý, quan tâm theo dõi",
+      "id": "f1549b4d1b1f61c9",
+      "atlas": 60,
+      "cell": 10
+    },
+    {
+      "hanzi": "天气预报",
+      "pinyin": "tiānqìyùbào",
+      "meaning": "dự báo thời tiết",
+      "id": "bcf1ef48641cfaae",
+      "atlas": 60,
+      "cell": 11
+    },
+    {
+      "hanzi": "习惯",
+      "pinyin": "xíguàn",
+      "meaning": "quen; thói quen",
+      "id": "d24da58bc29b0d3a",
+      "atlas": 60,
+      "cell": 12
+    },
+    {
+      "hanzi": "家乡",
+      "pinyin": "jiāxiāng",
+      "meaning": "quê hương",
+      "id": "4998095f7c0afe9f",
+      "atlas": 60,
+      "cell": 13
+    },
+    {
+      "hanzi": "感受",
+      "pinyin": "gǎnshòu",
+      "meaning": "cảm nhận; cảm xúc",
+      "id": "43dd64777cf35048",
+      "atlas": 60,
+      "cell": 14
+    },
+    {
+      "hanzi": "避暑",
+      "pinyin": "bìshǔ",
+      "meaning": "tránh nóng",
+      "id": "5770bf8baf354d91",
+      "atlas": 60,
+      "cell": 15
+    },
+    {
+      "hanzi": "叶子",
+      "pinyin": "yèzi",
+      "meaning": "lá cây",
+      "id": "81fc4178923a3d30",
+      "atlas": 61,
+      "cell": 0
+    },
+    {
+      "hanzi": "变成",
+      "pinyin": "biànchéng",
+      "meaning": "biến thành, trở thành",
+      "id": "fa8cd789530107c9",
+      "atlas": 61,
+      "cell": 1
+    },
+    {
+      "hanzi": "滑雪",
+      "pinyin": "huáxuě",
+      "meaning": "trượt tuyết",
+      "id": "db9fb708b1b9726e",
+      "atlas": 61,
+      "cell": 2
+    },
+    {
+      "hanzi": "词典",
+      "pinyin": "cídiǎn",
+      "meaning": "từ điển",
+      "id": "8c0e9a87f7314aef",
+      "atlas": 61,
+      "cell": 3
+    },
+    {
+      "hanzi": "美丽",
+      "pinyin": "měilì",
+      "meaning": "đẹp, xinh đẹp",
+      "id": "34356a6ff71b429b",
+      "atlas": 61,
+      "cell": 4
+    },
+    {
+      "hanzi": "图书馆",
+      "pinyin": "túshūguǎn",
+      "meaning": "thư viện",
+      "id": "f73ae53b937455f6",
+      "atlas": 61,
+      "cell": 5
+    },
+    {
+      "hanzi": "正好",
+      "pinyin": "zhènghǎo",
+      "meaning": "vừa hay, đúng lúc",
+      "id": "1e50575a528e1156",
+      "atlas": 61,
+      "cell": 6
+    },
+    {
+      "hanzi": "被",
+      "pinyin": "bèi",
+      "meaning": "bị, được (dẫn đối tượng gây tác động)",
+      "id": "8dddd2a0f9dd783f",
+      "atlas": 61,
+      "cell": 7
+    },
+    {
+      "hanzi": "名人",
+      "pinyin": "míngrén",
+      "meaning": "người nổi tiếng, danh nhân",
+      "id": "33cfe73008d78f93",
+      "atlas": 61,
+      "cell": 8
+    },
+    {
+      "hanzi": "失败",
+      "pinyin": "shībài",
+      "meaning": "thất bại",
+      "id": "beacdd26a76bf016",
+      "atlas": 61,
+      "cell": 9
+    },
+    {
+      "hanzi": "说不定",
+      "pinyin": "shuōbùdìng",
+      "meaning": "biết đâu, có thể",
+      "id": "ebe98f7d50ea5aa3",
+      "atlas": 61,
+      "cell": 10
+    },
+    {
+      "hanzi": "故事",
+      "pinyin": "gùshì",
+      "meaning": "câu chuyện",
+      "id": "0c278c15d8e39d01",
+      "atlas": 61,
+      "cell": 11
+    },
+    {
+      "hanzi": "安排",
+      "pinyin": "ānpái",
+      "meaning": "sắp xếp, bố trí; kế hoạch",
+      "id": "1f8d3745682efdd5",
+      "atlas": 61,
+      "cell": 12
+    },
+    {
+      "hanzi": "电子",
+      "pinyin": "diànzi",
+      "meaning": "điện tử",
+      "id": "372a706ab5f65290",
+      "atlas": 61,
+      "cell": 13
+    },
+    {
+      "hanzi": "报纸",
+      "pinyin": "bàozhǐ",
+      "meaning": "báo (giấy)",
+      "id": "d8ccf479c9fb002a",
+      "atlas": 61,
+      "cell": 14
+    },
+    {
+      "hanzi": "杂志",
+      "pinyin": "zázhì",
+      "meaning": "tạp chí",
+      "id": "551a4447e6d52208",
+      "atlas": 61,
+      "cell": 15
+    },
+    {
+      "hanzi": "记",
+      "pinyin": "jì",
+      "meaning": "ghi, nhớ",
+      "id": "765e800b3e7e1565",
+      "atlas": 62,
+      "cell": 0
+    },
+    {
+      "hanzi": "忘记",
+      "pinyin": "wàngjì",
+      "meaning": "quên",
+      "id": "0ee5482d8815bc52",
+      "atlas": 62,
+      "cell": 1
+    },
+    {
+      "hanzi": "一块儿",
+      "pinyin": "yīkuàiér",
+      "meaning": "cùng nhau",
+      "id": "c41373df03835bd1",
+      "atlas": 62,
+      "cell": 2
+    },
+    {
+      "hanzi": "相信",
+      "pinyin": "xiāngxìn",
+      "meaning": "tin, tin tưởng",
+      "id": "4b8b5a2b2cce3f88",
+      "atlas": 62,
+      "cell": 3
+    },
+    {
+      "hanzi": "充实",
+      "pinyin": "chōngshí",
+      "meaning": "đầy đủ, phong phú, có ý nghĩa",
+      "id": "5a90f95f9aa211ed",
+      "atlas": 62,
+      "cell": 4
+    },
+    {
+      "hanzi": "校长",
+      "pinyin": "xiàozhǎng",
+      "meaning": "hiệu trưởng",
+      "id": "5292c41cc84f7397",
+      "atlas": 62,
+      "cell": 5
+    },
+    {
+      "hanzi": "面前",
+      "pinyin": "miànqián",
+      "meaning": "trước mặt",
+      "id": "a0d57d4d6e7519d5",
+      "atlas": 62,
+      "cell": 6
+    },
+    {
+      "hanzi": "表演",
+      "pinyin": "biǎoyǎn",
+      "meaning": "biểu diễn",
+      "id": "0e0d4f0b8ccf8f1e",
+      "atlas": 62,
+      "cell": 7
+    },
+    {
+      "hanzi": "节目",
+      "pinyin": "jiémù",
+      "meaning": "tiết mục, chương trình",
+      "id": "e5aefe47bfcfd798",
+      "atlas": 62,
+      "cell": 8
+    },
+    {
+      "hanzi": "表现",
+      "pinyin": "biǎoxiàn",
+      "meaning": "thể hiện; biểu hiện",
+      "id": "e9db77ee9078e5ac",
+      "atlas": 62,
+      "cell": 9
+    },
+    {
+      "hanzi": "够",
+      "pinyin": "gòu",
+      "meaning": "đủ",
+      "id": "6d2ad1bbde8bbcb6",
+      "atlas": 62,
+      "cell": 10
+    },
+    {
+      "hanzi": "视频",
+      "pinyin": "shìpín",
+      "meaning": "video",
+      "id": "224b1f8315640a59",
+      "atlas": 62,
+      "cell": 11
+    },
+    {
+      "hanzi": "网站",
+      "pinyin": "wǎngzhàn",
+      "meaning": "trang web",
+      "id": "3e8051fa4891b240",
+      "atlas": 62,
+      "cell": 12
+    },
+    {
+      "hanzi": "跳舞",
+      "pinyin": "tiàowǔ",
+      "meaning": "nhảy múa",
+      "id": "bdb2a9239d13a32a",
+      "atlas": 62,
+      "cell": 13
+    },
+    {
+      "hanzi": "留学",
+      "pinyin": "liúxué",
+      "meaning": "du học",
+      "id": "772f67b267ad1bd4",
+      "atlas": 62,
+      "cell": 14
+    },
+    {
+      "hanzi": "留学生",
+      "pinyin": "liúxuéshēng",
+      "meaning": "du học sinh",
+      "id": "8122f59b5bb8d878",
+      "atlas": 62,
+      "cell": 15
+    },
+    {
+      "hanzi": "明明",
+      "pinyin": "míngmíng",
+      "meaning": "rõ ràng là",
+      "id": "6e47dd93e539272d",
+      "atlas": 63,
+      "cell": 0
+    },
+    {
+      "hanzi": "东门",
+      "pinyin": "dōngmén",
+      "meaning": "cổng phía đông",
+      "id": "2940c91600e49c27",
+      "atlas": 63,
+      "cell": 1
+    },
+    {
+      "hanzi": "自习室",
+      "pinyin": "zìxíshì",
+      "meaning": "phòng tự học",
+      "id": "b16b724c86fba6c8",
+      "atlas": 63,
+      "cell": 2
+    },
+    {
+      "hanzi": "考研",
+      "pinyin": "kǎoyán",
+      "meaning": "thi tuyển sinh sau đại học",
+      "id": "651c4933fee41915",
+      "atlas": 63,
+      "cell": 3
+    },
+    {
+      "hanzi": "专业",
+      "pinyin": "zhuānyè",
+      "meaning": "chuyên ngành",
+      "id": "84c4c332519552f8",
+      "atlas": 63,
+      "cell": 4
+    },
+    {
+      "hanzi": "国际关系",
+      "pinyin": "guójìguānxì",
+      "meaning": "quan hệ quốc tế",
+      "id": "41d423ee1b89584f",
+      "atlas": 63,
+      "cell": 5
+    },
+    {
+      "hanzi": "全球化",
+      "pinyin": "quánqiúhuà",
+      "meaning": "toàn cầu hóa",
+      "id": "5d1d71a3d49436f4",
+      "atlas": 63,
+      "cell": 6
+    },
+    {
+      "hanzi": "发展",
+      "pinyin": "fāzhǎn",
+      "meaning": "phát triển",
+      "id": "9baf25afecf35401",
+      "atlas": 63,
+      "cell": 7
+    },
+    {
+      "hanzi": "交流",
+      "pinyin": "jiāoliú",
+      "meaning": "giao lưu, trao đổi",
+      "id": "ad7e2c5ed4167a33",
+      "atlas": 63,
+      "cell": 8
+    },
+    {
+      "hanzi": "从事",
+      "pinyin": "cóngshì",
+      "meaning": "làm, hoạt động trong (lĩnh vực)",
+      "id": "8f06f595e1c5aaa1",
+      "atlas": 63,
+      "cell": 9
+    },
+    {
+      "hanzi": "方面",
+      "pinyin": "fāngmiàn",
+      "meaning": "phương diện, mặt",
+      "id": "03a43e0a73a88f9c",
+      "atlas": 63,
+      "cell": 10
+    },
+    {
+      "hanzi": "实现",
+      "pinyin": "shíxiàn",
+      "meaning": "thực hiện được (ước mơ, mục tiêu)",
+      "id": "909baa721f28e958",
+      "atlas": 63,
+      "cell": 11
+    },
+    {
+      "hanzi": "梦想",
+      "pinyin": "mèngxiǎng",
+      "meaning": "ước mơ",
+      "id": "c9af1ffa9cdcc20c",
+      "atlas": 63,
+      "cell": 12
+    },
+    {
+      "hanzi": "班主任",
+      "pinyin": "bānzhǔrèn",
+      "meaning": "giáo viên chủ nhiệm",
+      "id": "a7d8c98eb8c3d8da",
+      "atlas": 63,
+      "cell": 13
+    },
+    {
+      "hanzi": "敲门",
+      "pinyin": "qiāomén",
+      "meaning": "gõ cửa",
+      "id": "5ece94cd2f142505",
+      "atlas": 63,
+      "cell": 14
+    },
+    {
+      "hanzi": "没什么大不了",
+      "pinyin": "méishénmedàbùliǎo",
+      "meaning": "không có gì nghiêm trọng, không có gì ghê gớm",
+      "id": "3391037832ed2a62",
+      "atlas": 63,
+      "cell": 15
+    },
+    {
+      "hanzi": "犯错",
+      "pinyin": "fàncuò",
+      "meaning": "mắc lỗi",
+      "id": "cdc5f4bd241d6c3c",
+      "atlas": 64,
+      "cell": 0
+    },
+    {
+      "hanzi": "正常",
+      "pinyin": "zhèngcháng",
+      "meaning": "bình thường",
+      "id": "7aedb6b20b5cbbb7",
+      "atlas": 64,
+      "cell": 1
+    },
+    {
+      "hanzi": "成长",
+      "pinyin": "chéngzhǎng",
+      "meaning": "trưởng thành, lớn lên",
+      "id": "7ef27935687c6e69",
+      "atlas": 64,
+      "cell": 2
+    },
+    {
+      "hanzi": "向",
+      "pinyin": "xiàng",
+      "meaning": "hướng về; với, từ (trong cấu trúc cụ thể)",
+      "id": "b956e4bd470b3363",
+      "atlas": 64,
+      "cell": 3
+    },
+    {
+      "hanzi": "关机",
+      "pinyin": "guānjī",
+      "meaning": "tắt máy",
+      "id": "d06c96c167e1b68c",
+      "atlas": 64,
+      "cell": 4
+    },
+    {
+      "hanzi": "消息",
+      "pinyin": "xiāoxī",
+      "meaning": "tin tức, tin nhắn",
+      "id": "4431b200b56af48d",
+      "atlas": 64,
+      "cell": 5
+    },
+    {
+      "hanzi": "回",
+      "pinyin": "huí",
+      "meaning": "trả lời, đáp lại",
+      "id": "6b9a82e65846481d",
+      "atlas": 64,
+      "cell": 6
+    },
+    {
+      "hanzi": "回复",
+      "pinyin": "huífù",
+      "meaning": "trả lời, hồi đáp",
+      "id": "04c7fa8ae0920aa1",
+      "atlas": 64,
+      "cell": 7
+    },
+    {
+      "hanzi": "有道理",
+      "pinyin": "yǒudàolǐ",
+      "meaning": "có lý",
+      "id": "9604455e75ba5e54",
+      "atlas": 64,
+      "cell": 8
+    },
+    {
+      "hanzi": "了解",
+      "pinyin": "liǎojiě",
+      "meaning": "tìm hiểu, hiểu rõ",
+      "id": "16a62905142e88ee",
+      "atlas": 64,
+      "cell": 9
+    },
+    {
+      "hanzi": "离开",
+      "pinyin": "líkāi",
+      "meaning": "rời khỏi",
+      "id": "e471c348156cb5c2",
+      "atlas": 64,
+      "cell": 10
+    },
+    {
+      "hanzi": "母校",
+      "pinyin": "mǔxiào",
+      "meaning": "trường cũ (nơi từng theo học)",
+      "id": "7922b835f84b8f32",
+      "atlas": 64,
+      "cell": 11
+    },
+    {
+      "hanzi": "面对",
+      "pinyin": "miànduì",
+      "meaning": "đối mặt, đối diện",
+      "id": "460f55f813d445d1",
+      "atlas": 64,
+      "cell": 12
+    },
+    {
+      "hanzi": "毕业",
+      "pinyin": "bìyè",
+      "meaning": "tốt nghiệp",
+      "id": "8324e961682fda4f",
+      "atlas": 64,
+      "cell": 13
+    },
+    {
+      "hanzi": "不同",
+      "pinyin": "bùtóng",
+      "meaning": "khác nhau",
+      "id": "eff33d94fcd4ad59",
+      "atlas": 64,
+      "cell": 14
+    },
+    {
+      "hanzi": "大胆",
+      "pinyin": "dàdǎn",
+      "meaning": "mạnh dạn, táo bạo",
+      "id": "00191b1a2fe218cd",
+      "atlas": 64,
+      "cell": 15
+    },
+    {
+      "hanzi": "未来",
+      "pinyin": "wèilái",
+      "meaning": "tương lai",
+      "id": "b5a0341da97971ee",
+      "atlas": 65,
+      "cell": 0
+    },
+    {
+      "hanzi": "真正",
+      "pinyin": "zhēnzhèng",
+      "meaning": "thật sự, đích thực",
+      "id": "5269ac8fab14b3be",
+      "atlas": 65,
+      "cell": 1
+    },
+    {
+      "hanzi": "方向",
+      "pinyin": "fāngxiàng",
+      "meaning": "phương hướng",
+      "id": "c4b9141163a0bd9a",
+      "atlas": 65,
+      "cell": 2
+    },
+    {
+      "hanzi": "无论",
+      "pinyin": "wúlùn",
+      "meaning": "bất kể, dù cho",
+      "id": "3c9e4c3438d895fa",
+      "atlas": 65,
+      "cell": 3
+    },
+    {
+      "hanzi": "毛球",
+      "pinyin": "máoqiú",
+      "meaning": "cục lông, quả cầu lông",
+      "id": "c6d72f655cba0ed4",
+      "atlas": 65,
+      "cell": 4
+    },
+    {
+      "hanzi": "活泼",
+      "pinyin": "huópō",
+      "meaning": "hoạt bát",
+      "id": "6cd4e8e126abbe2d",
+      "atlas": 65,
+      "cell": 5
+    },
+    {
+      "hanzi": "聪明",
+      "pinyin": "cōngmíng",
+      "meaning": "thông minh",
+      "id": "5d4c56714fb8849f",
+      "atlas": 65,
+      "cell": 6
+    },
+    {
+      "hanzi": "粘人",
+      "pinyin": "niánrén",
+      "meaning": "quấn người",
+      "id": "6dbda8efdc0def2e",
+      "atlas": 65,
+      "cell": 7
+    },
+    {
+      "hanzi": "怀里",
+      "pinyin": "huáilǐ",
+      "meaning": "trong lòng, trong vòng tay",
+      "id": "8086c43151cf6aa5",
+      "atlas": 65,
+      "cell": 8
+    },
+    {
+      "hanzi": "成员",
+      "pinyin": "chéngyuán",
+      "meaning": "thành viên",
+      "id": "075e6ddcbd0386d8",
+      "atlas": 65,
+      "cell": 9
+    },
+    {
+      "hanzi": "养",
+      "pinyin": "yǎng",
+      "meaning": "nuôi, chăm sóc (người hoặc động vật)",
+      "id": "e77872b514dcd1c4",
+      "atlas": 65,
+      "cell": 10
+    },
+    {
+      "hanzi": "照顾",
+      "pinyin": "zhàogù",
+      "meaning": "chăm sóc",
+      "id": "e5d52cae83fa6686",
+      "atlas": 65,
+      "cell": 11
+    },
+    {
+      "hanzi": "晚睡晚起",
+      "pinyin": "wǎnshuìwǎnqǐ",
+      "meaning": "ngủ muộn dậy muộn",
+      "id": "42613b14c8353f7c",
+      "atlas": 65,
+      "cell": 12
+    },
+    {
+      "hanzi": "竹子",
+      "pinyin": "zhúzi",
+      "meaning": "tre, trúc",
+      "id": "ded7b6024fb6c01f",
+      "atlas": 65,
+      "cell": 13
+    },
+    {
+      "hanzi": "熊猫",
+      "pinyin": "xióngmāo",
+      "meaning": "gấu trúc",
+      "id": "a9b985fd7f0d14dd",
+      "atlas": 65,
+      "cell": 14
+    },
+    {
+      "hanzi": "国宝",
+      "pinyin": "guóbǎo",
+      "meaning": "bảo vật quốc gia",
+      "id": "f3ae24765b06eb17",
+      "atlas": 65,
+      "cell": 15
+    },
+    {
+      "hanzi": "其他",
+      "pinyin": "qítā",
+      "meaning": "khác, những cái khác",
+      "id": "b04db0d2c0c6d1dc",
+      "atlas": 66,
+      "cell": 0
+    },
+    {
+      "hanzi": "野生",
+      "pinyin": "yěshēng",
+      "meaning": "hoang dã, sống ngoài tự nhiên",
+      "id": "8f4a9c8879481c7a",
+      "atlas": 66,
+      "cell": 1
+    },
+    {
+      "hanzi": "动物",
+      "pinyin": "dòngwù",
+      "meaning": "động vật",
+      "id": "555406d04d6143d7",
+      "atlas": 66,
+      "cell": 2
+    },
+    {
+      "hanzi": "动物园",
+      "pinyin": "dòngwùyuán",
+      "meaning": "vườn thú",
+      "id": "0f4bba67d5e176fe",
+      "atlas": 66,
+      "cell": 3
+    },
+    {
+      "hanzi": "抖音",
+      "pinyin": "dǒuyīn",
+      "meaning": "Douyin (ứng dụng video ngắn)",
+      "id": "6c340f5d8fa5b5fd",
+      "atlas": 66,
+      "cell": 4
+    },
+    {
+      "hanzi": "关于",
+      "pinyin": "guānyú",
+      "meaning": "về, liên quan đến (chủ đề)",
+      "id": "1a0ae12deed8b61a",
+      "atlas": 66,
+      "cell": 5
+    },
+    {
+      "hanzi": "停",
+      "pinyin": "tíng",
+      "meaning": "dừng",
+      "id": "47e6a4c0d0f8f82e",
+      "atlas": 66,
+      "cell": 6
+    },
+    {
+      "hanzi": "饱",
+      "pinyin": "bǎo",
+      "meaning": "no",
+      "id": "de4cea4ad4cb0178",
+      "atlas": 66,
+      "cell": 7
+    },
+    {
+      "hanzi": "张嘴",
+      "pinyin": "zhāngzuǐ",
+      "meaning": "há miệng",
+      "id": "1046b996f50fa5e0",
+      "atlas": 66,
+      "cell": 8
+    },
+    {
+      "hanzi": "应该",
+      "pinyin": "yīnggāi",
+      "meaning": "chắc là, có lẽ (phỏng đoán)",
+      "id": "543f9058e017d9bc",
+      "atlas": 66,
+      "cell": 9
+    },
+    {
+      "hanzi": "一动不动",
+      "pinyin": "yīdòngbùdòng",
+      "meaning": "không nhúc nhích",
+      "id": "700905bdbc542fa4",
+      "atlas": 66,
+      "cell": 10
+    },
+    {
+      "hanzi": "声音",
+      "pinyin": "shēngyīn",
+      "meaning": "âm thanh, tiếng",
+      "id": "999b5e8c2cdd200a",
+      "atlas": 66,
+      "cell": 11
+    },
+    {
+      "hanzi": "比个耶",
+      "pinyin": "bǐ ge yē",
+      "meaning": "làm dấu chữ V khi chụp ảnh",
+      "id": "fc4ac3c58906ff84",
+      "atlas": 66,
+      "cell": 12
+    },
+    {
+      "hanzi": "合照",
+      "pinyin": "hézhào",
+      "meaning": "ảnh chụp chung; chụp ảnh chung",
+      "id": "d0e1e049ee9f3c3b",
+      "atlas": 66,
+      "cell": 13
+    },
+    {
+      "hanzi": "各种各样",
+      "pinyin": "gèzhǒnggèyàng",
+      "meaning": "đủ mọi loại, đủ kiểu",
+      "id": "96c3bd5232bda46b",
+      "atlas": 66,
+      "cell": 14
+    },
+    {
+      "hanzi": "游客",
+      "pinyin": "yóukè",
+      "meaning": "khách tham quan, du khách",
+      "id": "af29f90791869057",
+      "atlas": 66,
+      "cell": 15
+    },
+    {
+      "hanzi": "入园",
+      "pinyin": "rùyuán",
+      "meaning": "vào công viên, vườn thú",
+      "id": "0d6edfc5a7baacce",
+      "atlas": 67,
+      "cell": 0
+    },
+    {
+      "hanzi": "逛",
+      "pinyin": "guàng",
+      "meaning": "dạo, đi chơi, đi xem",
+      "id": "d461a808e5cc9b0e",
+      "atlas": 67,
+      "cell": 1
+    },
+    {
+      "hanzi": "节日",
+      "pinyin": "jiérì",
+      "meaning": "ngày lễ",
+      "id": "c41d0d7bb4bcd32f",
+      "atlas": 67,
+      "cell": 2
+    },
+    {
+      "hanzi": "传统",
+      "pinyin": "chuántǒng",
+      "meaning": "truyền thống",
+      "id": "a08204c6db8bac8d",
+      "atlas": 67,
+      "cell": 3
+    },
+    {
+      "hanzi": "春节",
+      "pinyin": "chūnjié",
+      "meaning": "Tết Nguyên đán",
+      "id": "1fa1b92a59515d9b",
+      "atlas": 67,
+      "cell": 4
+    },
+    {
+      "hanzi": "元旦节",
+      "pinyin": "yuándànjié",
+      "meaning": "Tết Dương lịch",
+      "id": "851d781987c6dfdf",
+      "atlas": 67,
+      "cell": 5
+    },
+    {
+      "hanzi": "国庆节",
+      "pinyin": "guóqìngjié",
+      "meaning": "Quốc khánh",
+      "id": "80184cc74df94459",
+      "atlas": 67,
+      "cell": 6
+    },
+    {
+      "hanzi": "教师节",
+      "pinyin": "jiàoshījié",
+      "meaning": "Ngày Nhà giáo",
+      "id": "7c6ac1949a369926",
+      "atlas": 67,
+      "cell": 7
+    },
+    {
+      "hanzi": "年货",
+      "pinyin": "niánhuò",
+      "meaning": "đồ sắm Tết",
+      "id": "fd9f8937b25ef201",
+      "atlas": 67,
+      "cell": 8
+    },
+    {
+      "hanzi": "包",
+      "pinyin": "bāo",
+      "meaning": "gói, làm (bánh, sủi cảo)",
+      "id": "4f2c66516da13bea",
+      "atlas": 67,
+      "cell": 9
+    },
+    {
+      "hanzi": "春晚",
+      "pinyin": "chūnwǎn",
+      "meaning": "chương trình văn nghệ đêm giao thừa",
+      "id": "408a0e3fb8b033fd",
+      "atlas": 67,
+      "cell": 10
+    },
+    {
+      "hanzi": "联欢会",
+      "pinyin": "liánhuānhuì",
+      "meaning": "buổi liên hoan văn nghệ",
+      "id": "10c0fd2fa550acba",
+      "atlas": 67,
+      "cell": 11
+    },
+    {
+      "hanzi": "阿姨",
+      "pinyin": "āyí",
+      "meaning": "cô, dì; cách gọi phụ nữ thuộc thế hệ của mẹ",
+      "id": "2317e7a75590ca23",
+      "atlas": 67,
+      "cell": 12
+    },
+    {
+      "hanzi": "叔叔",
+      "pinyin": "shūshū",
+      "meaning": "chú, bác; cách gọi nam giới thuộc thế hệ của bố",
+      "id": "154c8672f7fd5cd8",
+      "atlas": 67,
+      "cell": 13
+    },
+    {
+      "hanzi": "见面",
+      "pinyin": "jiànmiàn",
+      "meaning": "gặp mặt",
+      "id": "2084c9739902a86e",
+      "atlas": 67,
+      "cell": 14
+    },
+    {
+      "hanzi": "红包",
+      "pinyin": "hóngbāo",
+      "meaning": "lì xì, phong bao đỏ",
+      "id": "6ffdd4a92bc304ad",
+      "atlas": 67,
+      "cell": 15
+    },
+    {
+      "hanzi": "收下",
+      "pinyin": "shōuxià",
+      "meaning": "nhận, nhận lấy",
+      "id": "0c954348044d9847",
+      "atlas": 68,
+      "cell": 0
+    },
+    {
+      "hanzi": "刚刚",
+      "pinyin": "gānggāng",
+      "meaning": "vừa mới",
+      "id": "303a0fb9e3635502",
+      "atlas": 68,
+      "cell": 1
+    },
+    {
+      "hanzi": "发生",
+      "pinyin": "fāshēng",
+      "meaning": "xảy ra",
+      "id": "a074e53b679c86d4",
+      "atlas": 68,
+      "cell": 2
+    },
+    {
+      "hanzi": "过去",
+      "pinyin": "guòqù",
+      "meaning": "quá khứ, trước đây",
+      "id": "287d3e30d1f7cd84",
+      "atlas": 68,
+      "cell": 3
+    },
+    {
+      "hanzi": "懂得",
+      "pinyin": "dǒngde",
+      "meaning": "hiểu, biết rõ",
+      "id": "8a73e8cb50724b91",
+      "atlas": 68,
+      "cell": 4
+    },
+    {
+      "hanzi": "目标",
+      "pinyin": "mùbiāo",
+      "meaning": "mục tiêu",
+      "id": "030323a43d7a4a3e",
+      "atlas": 68,
+      "cell": 5
+    },
+    {
+      "hanzi": "知识",
+      "pinyin": "zhīshí",
+      "meaning": "kiến thức",
+      "id": "896776aad7e2f50c",
+      "atlas": 68,
+      "cell": 6
+    },
+    {
+      "hanzi": "辛苦",
+      "pinyin": "xīnkǔ",
+      "meaning": "vất vả",
+      "id": "208d5edba1cd77b1",
+      "atlas": 68,
+      "cell": 7
+    },
+    {
+      "hanzi": "放弃",
+      "pinyin": "fàngqì",
+      "meaning": "từ bỏ",
+      "id": "6d53e1cc61cf7fe6",
+      "atlas": 68,
+      "cell": 8
+    },
+    {
+      "hanzi": "强",
+      "pinyin": "qiáng",
+      "meaning": "mạnh, giỏi",
+      "id": "22aff60b4f8347d4",
+      "atlas": 68,
+      "cell": 9
+    },
+    {
+      "hanzi": "完成",
+      "pinyin": "wánchéng",
+      "meaning": "hoàn thành",
+      "id": "a6aa0464c3a269b0",
+      "atlas": 68,
+      "cell": 10
+    },
+    {
+      "hanzi": "从……起",
+      "pinyin": "cóng … qǐ",
+      "meaning": "từ…trở đi, bắt đầu từ…",
+      "id": "1f766360449e5761",
+      "atlas": 68,
+      "cell": 11
+    }
+  ]
+}

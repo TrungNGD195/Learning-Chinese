@@ -39,6 +39,22 @@
 .vocabulary-study-card__artwork-placeholder{padding:24px;text-align:center;color:#596f54;font-size:15px;line-height:1.7}
 .vocabulary-study-card__artwork>.academy-country-illustration svg{max-width:none}
 .vocabulary-study-card__identity{overflow-wrap:anywhere}
+.vocabulary-study-card[data-multi-character=true],.lesson-study-workspace .vocabulary-study-card[data-multi-character=true]{grid-template-areas:'summary summary artwork' 'writing writing writing' 'example example discovery' 'note note note'}
+.vocabulary-study-card[data-multi-character=true] .vocabulary-study-card__writing{width:100%;max-width:none;margin:0}
+.lesson-study-workspace .vocabulary-study-card[data-multi-character=true] .hanzi-stroke-word{max-width:none}
+@container(min-width:841px){
+ .vocabulary-study-card[data-character-count='2'],.lesson-study-workspace .vocabulary-study-card[data-character-count='2']{grid-template-columns:332px minmax(0,1fr) 260px;grid-template-areas:'writing summary artwork' 'example example discovery' 'note note note';column-gap:20px}
+ .vocabulary-study-card[data-character-count='2'] .hanzi-stroke-word{gap:12px}
+ .vocabulary-study-card[data-character-count='2'] .hanzi-stroke-player{flex-basis:156px}
+}
+@container(min-width:1101px){
+ .vocabulary-study-card[data-character-count='2'],.lesson-study-workspace .vocabulary-study-card[data-character-count='2']{grid-template-columns:420px minmax(0,1fr) 320px;column-gap:24px}
+ .vocabulary-study-card[data-character-count='2'] .hanzi-stroke-player{flex-basis:200px}
+}
+.bo-shell .vocabulary-study-card .hanzi-stroke-hint{font-size:14px;line-height:1.7;color:#49604b}
+@container(max-width:840px){.vocabulary-study-card[data-multi-character=true],.lesson-study-workspace .vocabulary-study-card[data-multi-character=true]{grid-template-areas:'summary artwork' 'writing writing' 'example discovery' 'note note'}}
+@container(max-width:540px){.vocabulary-study-card[data-multi-character=true],.lesson-study-workspace .vocabulary-study-card[data-multi-character=true]{grid-template-areas:'summary artwork' 'writing writing' 'discovery discovery' 'example example' 'note note'}}
+@container(max-width:340px){.vocabulary-study-card[data-multi-character=true],.lesson-study-workspace .vocabulary-study-card[data-multi-character=true]{grid-template-areas:'summary' 'artwork' 'writing' 'discovery' 'example' 'note'}}
 .vocabulary-study-card .vocabulary-study-card__summary{min-height:320px}
 @container(min-width:841px) and (max-width:1000px){.vocabulary-study-card .vocabulary-study-card__summary{min-height:280px}}
 @container(max-width:840px){.vocabulary-study-card .vocabulary-study-card__summary{min-height:260px}}

@@ -19,7 +19,7 @@ const units:JourneyUnit[]=[
  {id:'draft',order_index:2,unit_type:'LESSON',state:'AVAILABLE',lesson:{id:'draft-lesson',lesson_number:2,title:'Đang biên soạn',status:'DRAFT'},assessment:null},
  {id:'locked',order_index:3,unit_type:'LESSON',state:'LOCKED',lesson:{id:'locked-lesson',lesson_number:3,title:'Bài tiếp theo',status:'PUBLISHED'},assessment:null},
 ]
-function mount(level=1,view='list'){
+function mount(level:number|string=1,view='list'){
  const client=new QueryClient({defaultOptions:{queries:{retry:false}}})
  return render(<QueryClientProvider client={client}><MemoryRouter initialEntries={[`/hsk/${level}?view=${view}`]}><GreatWallJourneyPage requestedLevel={String(level)}/></MemoryRouter></QueryClientProvider>)
 }
@@ -35,6 +35,12 @@ beforeEach(()=>{
 })
 afterEach(()=>{vi.unstubAllGlobals();Reflect.deleteProperty(HTMLElement.prototype,'scrollTo')})
 describe('approved academy curriculum with real learning access',()=>{
+ it('accepts the lesson HSK identity while its numeric metadata is unavailable',async()=>{
+  const {container}=mount('hsk-2')
+  await screen.findByRole('link',{name:'Học Bài học 1: Xin chào'})
+  expect(getCurriculum).toHaveBeenCalledWith('hsk-2')
+  expect(container.querySelectorAll('.lc-lesson-grid > li')).toHaveLength(10)
+ })
  it('links the published lesson but never drafts, locked lessons or planned slots, in either view',async()=>{
   const {container}=mount()
   expect(await screen.findByRole('link',{name:'Học Bài học 1: Xin chào'})).toHaveAttribute('href','/lessons/real-lesson')

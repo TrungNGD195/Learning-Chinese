@@ -79,7 +79,7 @@ export function LessonPage({ part = 'vocabulary' }: { part?: LessonPart }) {
 
   return <section ref={root} className="learner-page lesson-page lesson-manuscript lesson-part-page screen lesson-study-workspace" data-lesson-part={part} aria-labelledby="page-title">
     {(lessonQuery.isError || progressQuery.isError) && <Alert role="status" tone="warning">Chưa cập nhật được bài học. Đang hiển thị thông tin đã tải.</Alert>}
-    <LessonHeader lesson={lesson} progress={progress} hskLabel={hskLabel} refreshing={lessonQuery.isFetching || progressQuery.isFetching} />
+    <LessonHeader lesson={lesson} progress={progress} hskLabel={hskLabel} hskLevelNumber={hskLevel?.level_number} refreshing={lessonQuery.isFetching || progressQuery.isFetching} />
       <nav className="lesson-sequence-nav lesson-sections-horizontal" aria-label="Các phần của bài học">
         {([['vocabulary', '生词', 'Từ vựng'], ['grammar', '语法', 'Ngữ pháp'], ['readings', '课文', 'Bài khóa'], ['practice', '练习', 'Luyện tập']] as const).map(([key, hanzi, label]) => <Link key={key} to={lessonPartPath(lesson.id, key)} aria-label={label} aria-current={part === key ? 'page' : undefined}><span lang="zh-Hans" aria-hidden="true">{hanzi}</span><span>{label}<small>{sectionCounts[key]}</small></span></Link>)}
       </nav>

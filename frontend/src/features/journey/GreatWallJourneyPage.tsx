@@ -27,7 +27,7 @@ export function GreatWallJourneyPage({ requestedLevel }: { requestedLevel?: stri
   const pronunciation = useQuery({ queryKey: queryKeys.pronunciationLesson, queryFn: getPronunciationLesson })
   const overview = useQuery({ queryKey: queryKeys.progressOverview, queryFn: getProgressOverview })
   const allLevels = [...(levels.data ?? [])].sort((a, b) => a.level_number - b.level_number)
-  const level = requestedLevel ? allLevels.find(row => String(row.level_number) === requestedLevel) : allLevels.find(row => row.level_number === overview.data?.current_hsk) ?? allLevels.find(row => row.state === 'AVAILABLE') ?? [...allLevels].reverse().find(row => row.state === 'COMPLETED') ?? allLevels[0]
+  const level = requestedLevel ? allLevels.find(row => String(row.level_number) === requestedLevel || row.id === requestedLevel) : allLevels.find(row => row.level_number === overview.data?.current_hsk) ?? allLevels.find(row => row.state === 'AVAILABLE') ?? [...allLevels].reverse().find(row => row.state === 'COMPLETED') ?? allLevels[0]
   const selectionReady = Boolean(requestedLevel) || !overview.isPending
   const curriculum = useQuery({ queryKey: queryKeys.curriculumHsk(level?.id ?? requestedLevel ?? ''), queryFn: () => getCurriculum(level!.id), enabled: !!level && selectionReady })
   const foundationDone = Boolean(pronunciation.data?.completed_at)

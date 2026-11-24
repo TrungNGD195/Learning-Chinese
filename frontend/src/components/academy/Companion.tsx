@@ -1,6 +1,7 @@
 import type { CSSProperties } from 'react'
 import { lessonVocabularyScenes, countryIllustrations, foodIllustrations, familyIllustrations } from './lessonVocabularyArt'
 import { CountryVocabularyIllustration } from './CountryVocabularyIllustration'
+import { vocabularyArtwork, vocabularyArtworkStyle } from './vocabularyArt'
 
 export type CompanionPose='welcome'|'guide'|'think'|'encourage'|'celebrate'|'rest'|'truc'|'but'|'but-happy'
 const poses:Record<CompanionPose,[number,string]>={welcome:[0,'Bo vẫy tay chào bạn'],guide:[1,'Bo hướng dẫn bài học'],think:[2,'Bo suy nghĩ cùng bạn'],encourage:[3,'Bo động viên bạn thử lại'],celebrate:[4,'Bo chúc mừng bạn hoàn thành'],rest:[5,'Bo nghỉ ngơi và đợi bạn quay lại'],truc:[6,'Trúc giải thích lưu ý'],but:[7,'Bút đồng hành luyện tập'],'but-happy':[8,'Bút vui mừng cùng bạn']}
@@ -13,8 +14,10 @@ const hskIllustrations:Record<string,[number,string]>={'口':[0,'miệng'],'马'
 const numerals:Record<string,number>={'零':0,'一':1,'二':2,'两':2,'三':3,'四':4,'五':5,'六':6,'七':7,'八':8,'九':9,'十':10,'百':100,'千':1000,'万':10000}
 const extraIllustrations:Record<string,[number,string]>={'你':[0,'người đang được nói chuyện cùng'],'好':[1,'tốt, được'],'不':[2,'không, từ chối']}
 const pandaWords = new Set(['人', '朋友', '口', '女', '你好', '你', '好', '不'])
-export function VocabularyIllustration({hanzi,partOfSpeech,inline=false}:{hanzi:string;partOfSpeech?:string|null;inline?:boolean}){
+export function VocabularyIllustration({hanzi,pinyin,meaning,partOfSpeech,inline=false}:{hanzi:string;pinyin?:string|null;meaning?:string|null;partOfSpeech?:string|null;inline?:boolean}){
   const key=hanzi.trim()
+  const artwork=key==='口'&&partOfSpeech==='lượng từ'&&!meaning?undefined:vocabularyArtwork(hanzi,pinyin,meaning)
+  if(artwork)return <span className="academy-word-illustration" data-illustration="vocabulary-sense" data-artwork-id={artwork.id} role="img" aria-label={`Minh họa ${artwork.hanzi}: ${artwork.meaning}`} style={vocabularyArtworkStyle(artwork)}/>
   const Frame = inline ? 'span' : 'figure'
   const Caption = inline ? 'span' : 'figcaption'
   if(key in numerals)return <Frame className="academy-numeral-illustration" aria-label={'Minh họa số '+numerals[key]}>{numerals[key] > 10 || numerals[key] === 0 ? <strong>{numerals[key].toLocaleString('vi-VN')}</strong> : Array.from({length:numerals[key]},(_,index)=><i key={index} aria-hidden="true"/>)}<Caption>{key} · {numerals[key].toLocaleString('vi-VN')}</Caption></Frame>
@@ -30,6 +33,6 @@ export function VocabularyIllustration({hanzi,partOfSpeech,inline=false}:{hanzi:
   const hsk=hskIllustrations[key]
   const illustration=hsk??illustrations[key]
   if(!illustration)return null
-  const [index,meaning]=illustration
-  return <span className="academy-word-illustration" data-illustration={pandaWords.has(key) ? 'panda' : 'object'} role="img" aria-label={`${pandaWords.has(key) ? 'Gấu trúc minh họa' : 'Minh họa'} ${meaning}`} style={{...(hsk?{backgroundImage:"url('/academy/panda-hsk1-v3.png')"}:{}),backgroundPosition:`${index%3*50}% ${Math.floor(index/3)*100}%`}}/>
+  const [index,legacyMeaning]=illustration
+  return <span className="academy-word-illustration" data-illustration={pandaWords.has(key) ? 'panda' : 'object'} role="img" aria-label={`${pandaWords.has(key) ? 'Gấu trúc minh họa' : 'Minh họa'} ${legacyMeaning}`} style={{...(hsk?{backgroundImage:"url('/academy/panda-hsk1-v3.png')"}:{}),backgroundPosition:`${index%3*50}% ${Math.floor(index/3)*100}%`}}/>
 }

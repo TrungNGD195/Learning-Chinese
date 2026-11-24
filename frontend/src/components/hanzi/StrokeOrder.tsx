@@ -17,15 +17,13 @@ export function StrokeOrder({ hanzi }: { hanzi: string }) {
 
 function StrokeWord({ hanzi }: { hanzi: string }) {
   const characters = hanziCharacters(hanzi)
-  const [selected, setSelected] = useState(0)
   if (!characters.length) return null
-  return <div className="hanzi-stroke-word" aria-label={'Tập viết ' + hanzi}>
-    {characters.length > 1 && <div className="hanzi-character-tabs" role="group" aria-label="Chọn chữ để xem thứ tự nét">{characters.map((character, index) => <button type="button" key={index} lang="zh-Hans" aria-pressed={selected === index} aria-label={`Chữ ${character}, vị trí ${index + 1}`} onClick={() => setSelected(index)}>{character}</button>)}</div>}
-    <StrokePlayer key={selected} character={characters[selected]}/>
+  return <div className="hanzi-stroke-word" data-character-count={characters.length} aria-label={'Tập viết ' + hanzi}>
+    {characters.map((character, index) => <StrokePlayer key={index} character={character} position={index + 1}/>)}
   </div>
 }
 
-function StrokePlayer({ character }: { character: string }) {
+function StrokePlayer({ character, position }: { character: string; position: number }) {
   const root = useRef<HTMLDivElement>(null)
   const trace = useRef<SVGPathElement>(null)
   const animation = useRef<Animation | null>(null)
@@ -92,7 +90,7 @@ function StrokePlayer({ character }: { character: string }) {
   const next = () => { setPlaying(false); setStroke(value => Math.min(total, value + 1)) }
   const toggle = () => { if (complete) restart(); else setPlaying(value => !value) }
 
-  return <div ref={root} className="hanzi-stroke-player" data-character={character} data-written-strokes={stroke} data-total-strokes={total}>
+  return <div ref={root} className="hanzi-stroke-player" role="group" aria-label={`Chữ ${character}, vị trí ${position}`} data-character={character} data-written-strokes={stroke} data-total-strokes={total}>
     <svg className="hanzi-writing-square" viewBox="0 0 1024 1024" role="img" aria-label={`Thứ tự nét chữ ${character}${total ? `, đã viết ${stroke} trên ${total} nét` : ''}`}>
       <g className="hanzi-writing-guides" aria-hidden="true"><path d="M0 0L1024 1024M1024 0L0 1024M512 0V1024M0 512H1024"/></g>
       {data ? <g transform="translate(64 852) scale(.875 -.875)" aria-hidden="true">

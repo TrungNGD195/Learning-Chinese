@@ -65,5 +65,5 @@ export function LessonLibraryPreview({ lessonId }: { lessonId: string }) {
   if (vocabulary.isPending || grammar.isPending) return <p role="status">Đang tải nội dung…</p>
   if (vocabulary.isError || grammar.isError) return <div><p role="alert">Chưa tải được nội dung xem nhanh.</p><button type="button" onClick={() => { void vocabulary.refetch(); void grammar.refetch() }}>Thử lại</button></div>
   const word = vocabulary.data[0]
-  return <div className="admin-lesson-glimpse"><p>{vocabulary.data.length} từ vựng · {grammar.data.length} mục ngữ pháp</p>{word ? <><VocabularyIllustration hanzi={word.hanzi ?? ''}/><p className="admin-glimpse-hanzi" lang="zh-Hans">{word.hanzi}</p><p>{word.pinyin}</p><p>{word.vietnamese_meaning}</p></> : <p>Bài học chưa có từ vựng.</p>}</div>
+  return <div className="admin-lesson-glimpse"><p>{vocabulary.data.length} từ vựng · {grammar.data.length} mục ngữ pháp</p>{word ? <><VocabularyIllustration hanzi={word.hanzi ?? ''} pinyin={word.pinyin} meaning={word.vietnamese_meaning}/><p className="admin-glimpse-hanzi" lang="zh-Hans">{word.hanzi}</p><p>{word.pinyin}</p><p>{word.vietnamese_meaning}</p></> : <p>Bài học chưa có từ vựng.</p>}</div>
 }
